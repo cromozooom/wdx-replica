@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 import {
   NgbOffcanvas,
   NgbOffcanvasModule,
-  NgbActiveOffcanvas
+  NgbActiveOffcanvas,
 } from "@ng-bootstrap/ng-bootstrap";
 import { BreachListItem } from "./widget-automation-content.models";
 import { BreachListGridComponent } from "./breach-list-grid.component";
