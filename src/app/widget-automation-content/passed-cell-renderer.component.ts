@@ -18,17 +18,6 @@ import { ICellRendererAngularComp } from "ag-grid-angular";
       <ng-template #partial> {{ passed }} </ng-template>
     </span>
   `,
-  styles: [
-    `
-      .all-passed {
-        color: green;
-        font-weight: bold;
-      }
-      .partial-passed {
-        color: #1976d2;
-      }
-    `,
-  ],
 })
 export class PassedCellRendererComponent implements ICellRendererAngularComp {
   passed: number = 0;

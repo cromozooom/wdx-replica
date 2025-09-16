@@ -76,9 +76,9 @@ export const widgetDemoAutomations: AutomationItem[] = [
     status: "running",
     breachListLink: "http://example.com/breach-list",
     testedRecordsCount: 90,
-    passedRecordsCount: 60,
-    failedRecordsCount: 25,
-    failedRecordsWithErrorCount: 5,
+    passedRecordsCount: 5,
+    failedRecordsCount: 2,
+    failedRecordsWithErrorCount: 0,
   },
   {
     id: "3",
