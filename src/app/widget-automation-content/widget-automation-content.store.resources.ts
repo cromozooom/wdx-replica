@@ -1,36 +1,63 @@
-import { computed } from '@angular/core';
-import { patchState, signalStore, withComputed, withMethods, withState } from '@ngrx/signals';
-import { AutomationItem, AutomationStep, PreviewRecord } from './widget-automation-content.models';
-import { widgetDemoAutomations } from './widget-automation-content.dummy-data';
+import { computed } from "@angular/core";
+import {
+  patchState,
+  signalStore,
+  withComputed,
+  withMethods,
+  withState,
+} from "@ngrx/signals";
+import {
+  AutomationItem,
+  AutomationStep,
+  PreviewRecord,
+} from "./widget-automation-content.models";
+import { widgetDemoAutomations } from "./widget-automation-content.dummy-data";
 
 export const WidgetAutomationContentStore = signalStore(
-  { providedIn: 'root' },
+  { providedIn: "root" },
   withState({
-    selectedAutomationId: widgetDemoAutomations[0]?.id ?? '',
+    selectedAutomationId: widgetDemoAutomations[0]?.id ?? "",
     selectedStepIndex: 0 as number,
-    toastMessage: '' as string,
-    toastVariant: 'warning' as 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info',
+    toastMessage: "" as string,
+    toastVariant: "warning" as
+      | "primary"
+      | "secondary"
+      | "success"
+      | "danger"
+      | "warning"
+      | "info",
     showToast: false as boolean,
     editingAutomationId: null as string | null,
-    editingAutomationName: '' as string,
+    editingAutomationName: "" as string,
     automations: widgetDemoAutomations as AutomationItem[],
   }),
   withComputed((store) => {
-    const automationsArr = computed<AutomationItem[]>(() => store.automations?.() ?? []);
+    const automationsArr = computed<AutomationItem[]>(
+      () => store.automations?.() ?? []
+    );
     const selectedAutomation = computed<AutomationItem | undefined>(() => {
       const id = store.selectedAutomationId?.() as string;
       let a = automationsArr();
       return a.find((a: AutomationItem) => a.id === id);
     });
-    const steps = computed<AutomationStep[]>(() => selectedAutomation()?.steps ?? []);
+    const steps = computed<AutomationStep[]>(
+      () => selectedAutomation()?.steps ?? []
+    );
     const selectedStep = computed<AutomationStep | undefined>(() => {
       const idx = store.selectedStepIndex?.() as number;
       const list = steps();
       return idx >= 0 && idx < list.length ? list[idx] : undefined;
     });
-    const selectedStepResults = computed<PreviewRecord[]>(() => selectedStep()?.results ?? []);
+    const selectedStepResults = computed<PreviewRecord[]>(
+      () => selectedStep()?.results ?? []
+    );
     const resultsCount = computed<number>(() => selectedStepResults().length);
-    const isReady = computed<boolean>(() => steps().every((step: AutomationStep) => step.status === 'ready' || step.status === 'idle'));
+    const isReady = computed<boolean>(() =>
+      steps().every(
+        (step: AutomationStep) =>
+          step.status === "ready" || step.status === "idle"
+      )
+    );
     return {
       automations: automationsArr,
       selectedAutomation,
@@ -51,7 +78,10 @@ export const WidgetAutomationContentStore = signalStore(
       }
     },
     selectAutomation(id: string) {
-      patchState(store, { selectedAutomationId: id, selectedStepIndex: 0 } as any);
+      patchState(store, {
+        selectedAutomationId: id,
+        selectedStepIndex: 0,
+      } as any);
     },
     selectStep(stepId: string) {
       const steps = store.steps?.() ?? [];
@@ -60,8 +90,21 @@ export const WidgetAutomationContentStore = signalStore(
         patchState(store, { selectedStepIndex: idx } as any);
       }
     },
-    showToastMessage(message: string, variant: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' = 'warning') {
-      patchState(store, { toastMessage: message, toastVariant: variant, showToast: true } as any);
+    showToastMessage(
+      message: string,
+      variant:
+        | "primary"
+        | "secondary"
+        | "success"
+        | "danger"
+        | "warning"
+        | "info" = "warning"
+    ) {
+      patchState(store, {
+        toastMessage: message,
+        toastVariant: variant,
+        showToast: true,
+      } as any);
       setTimeout(() => patchState(store, { showToast: false } as any), 3000);
     },
     hideToast() {
@@ -71,7 +114,10 @@ export const WidgetAutomationContentStore = signalStore(
       patchState(store, { editingAutomationName: name } as any);
     },
     cancelRenameAutomation() {
-      patchState(store, { editingAutomationId: null, editingAutomationName: '' } as any);
+      patchState(store, {
+        editingAutomationId: null,
+        editingAutomationName: "",
+      } as any);
     },
-  })),
+  }))
 );

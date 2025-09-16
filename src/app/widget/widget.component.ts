@@ -8,7 +8,11 @@ import { CommonModule } from "@angular/common";
   standalone: true,
   templateUrl: "./widget.component.html",
   styleUrls: ["./widget.component.scss"],
-  imports: [CommonModule, WidgetDefaultContentComponent, WidgetAutomationContentComponent],
+  imports: [
+    CommonModule,
+    WidgetDefaultContentComponent,
+    WidgetAutomationContentComponent,
+  ],
 })
 export class WidgetComponent {
   showAutomationContent = false;
