@@ -8,6 +8,7 @@ import { FailedErrorCellRendererComponent } from "../widget-automation-content/f
 import { PassedCellRendererComponent } from "../widget-automation-content/passed-cell-renderer.component";
 import { FailedCellRendererComponent } from "../widget-automation-content/failed-cell-renderer.component";
 import { JobNameCellRendererComponent } from "../widget-automation-content/job-name-cell-renderer.component";
+import { JobActionsCellRendererComponent } from "../widget-automation-content/job-actions-cell-renderer.component";
 
 @Component({
   selector: "app-jobs-grid",
@@ -20,6 +21,7 @@ import { JobNameCellRendererComponent } from "../widget-automation-content/job-n
     PassedCellRendererComponent,
     FailedCellRendererComponent,
     JobNameCellRendererComponent,
+    JobActionsCellRendererComponent,
   ],
   template: `
     <ag-grid-angular
@@ -32,11 +34,14 @@ import { JobNameCellRendererComponent } from "../widget-automation-content/job-n
       [groupDefaultExpanded]="-1"
       [animateRows]="true"
       [defaultColDef]="defaultColDef"
+      [context]="context"
     ></ag-grid-angular>
   `,
+  styleUrls: ["./jobs-grid.component.scss"],
 })
 export class JobsGridComponent {
   @Input() jobs: AutomationItem[] = [];
+  @Input() context: any;
   theme = themeAlpine;
   columnDefs: ColDef<AutomationItem>[] = [
     {
@@ -45,6 +50,7 @@ export class JobsGridComponent {
       filter: true,
       rowGroup: true,
       cellRenderer: JobNameCellRendererComponent,
+      width: 260,
     },
     { field: "dateOfRun", headerName: "Date of Run", filter: true },
     {
@@ -80,6 +86,15 @@ export class JobsGridComponent {
       headerName: "Failed (Error)",
       filter: true,
       cellRenderer: FailedErrorCellRendererComponent,
+    },
+    {
+      headerName: "Actions",
+      cellRenderer: JobActionsCellRendererComponent,
+      width: 160,
+      pinned: "right",
+      // suppressMenu removed: not a valid ColDef property
+      sortable: false,
+      filter: false,
     },
     // Validation details (breach list) will be handled as a custom cell renderer in the next step
   ];
