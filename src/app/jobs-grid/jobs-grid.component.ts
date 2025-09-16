@@ -3,11 +3,12 @@ import { CommonModule } from "@angular/common";
 import { AgGridModule } from "ag-grid-angular";
 import { ColDef, themeAlpine } from "ag-grid-community";
 import { AutomationItem } from "../widget-automation-content/widget-automation-content.models";
+import { StatusCellRendererComponent } from "../widget-automation-content/status-cell-renderer.component";
 
 @Component({
   selector: "app-jobs-grid",
   standalone: true,
-  imports: [CommonModule, AgGridModule],
+  imports: [CommonModule, AgGridModule, StatusCellRendererComponent],
   template: `
     <ag-grid-angular
       [theme]="theme"
@@ -33,7 +34,13 @@ export class JobsGridComponent {
     },
     { field: "name", headerName: "Job Name", filter: true, rowGroup: true },
     { field: "dateOfRun", headerName: "Date of Run", filter: true },
-    { field: "status", headerName: "Status", filter: true },
+    {
+      field: "status",
+      headerName: "Status",
+      filter: true,
+      cellRenderer: StatusCellRendererComponent,
+      cellRendererParams: (params: any) => ({ status: params.value }),
+    },
     { field: "breachListLink", headerName: "Breach List", filter: true },
     { field: "testedRecordsCount", headerName: "Tested", filter: true },
     { field: "passedRecordsCount", headerName: "Passed", filter: true },
