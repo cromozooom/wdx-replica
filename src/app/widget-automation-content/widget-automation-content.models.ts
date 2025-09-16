@@ -1,29 +1,24 @@
-export type StepStatus = "idle" | "ready" | "running";
-
-export interface AutomationStep {
+export interface BreachListItem {
   id: string;
-  kind: "trigger" | "action";
-  icon: string;
-  title: string;
-  description: string;
-  color: "success" | "primary" | "warning" | "info" | "secondary";
-  status: StepStatus;
-  actionType?: "select" | "validate" | "notify";
-  source?: string;
-  filter?: string;
-  limit?: number;
-  orderBy?: string;
-  results?: PreviewRecord[];
-  validationType?: "form" | "document";
-  validationTarget?: string;
-  message?: string;
-  schedule?: string;
+  recordName: string;
+  type: "mine" | "Teams";
+  outcome: "passed" | "review" | "error";
+  errorMessage?: string;
+  details?: string;
 }
-
 export interface AutomationItem {
   id: string;
   name: string;
-  steps: AutomationStep[];
+  type: "form" | "document";
+  // details about the validation (breach list)
+  breachList: BreachListItem[];
+  dateOfRun: string;
+  status: "running" | "completed" | "failed";
+  breachListLink?: string; // link to download the breach list
+  testedRecordsCount?: number;
+  passedRecordsCount?: number;
+  failedRecordsCount?: number;
+  failedRecordsWithErrorCount?: number;
 }
 
 export interface PreviewRecord {
