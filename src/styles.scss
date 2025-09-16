@@ -1,3 +1,6 @@
+@import "../node_modules/ag-grid-community/styles/ag-theme-alpine.css";
+// AG Grid styles
+@import "../node_modules/ag-grid-community/styles/ag-theme-alpine.css";
 // Bootstrap functions and variables first
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -38,3 +41,9 @@
 @import "../node_modules/bootstrap/scss/close";
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/utilities/api";
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}

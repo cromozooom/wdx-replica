@@ -1,8 +1,16 @@
-<div class="widget">
+<div class="flex-grow-1 d-flex flex-column">
+  <div class="p-2 border-bottom">
+    <header>Data Remediation</header>
+  </div>
+
   <ng-container *ngIf="type === 'automation'; else defaultContent">
-    <app-widget-automation-content></app-widget-automation-content>
+    <app-widget-automation-content
+      class="flex-grow-1"
+    ></app-widget-automation-content>
   </ng-container>
   <ng-template #defaultContent>
-    <app-widget-default-content></app-widget-default-content>
+    <app-widget-default-content
+      class="flex-grow-1"
+    ></app-widget-default-content>
   </ng-template>
 </div>

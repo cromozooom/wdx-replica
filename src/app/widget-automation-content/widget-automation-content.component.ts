@@ -1,12 +1,14 @@
 import { Component } from "@angular/core";
+import { JobsGridComponent } from "../jobs-grid/jobs-grid.component";
+import { widgetDemoAutomations } from "./widget-automation-content.dummy-data";
 
 @Component({
   selector: "app-widget-automation-content",
   standalone: true,
-  template: `<div class="automation-content">
-    Automation Content Placeholder
-  </div>`,
+  templateUrl: "./widget-automation-content.component.html",
   styleUrls: [],
-  imports: [],
+  imports: [JobsGridComponent],
 })
-export class WidgetAutomationContentComponent {}
+export class WidgetAutomationContentComponent {
+  jobs = widgetDemoAutomations;
+}
