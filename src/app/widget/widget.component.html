@@ -1,9 +1,5 @@
 <div class="widget">
-  <button (click)="toggleContent()">
-    Switch to
-    {{ showAutomationContent ? "Default Content" : "Automation Content" }}
-  </button>
-  <ng-container *ngIf="showAutomationContent; else defaultContent">
+  <ng-container *ngIf="type === 'automation'; else defaultContent">
     <app-widget-automation-content></app-widget-automation-content>
   </ng-container>
   <ng-template #defaultContent>
