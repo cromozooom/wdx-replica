@@ -1,0 +1,80 @@
+import {
+  AutomationItem,
+  PreviewRecord,
+} from "./widget-automation-content.models";
+
+export const widgetDemoAutomations: AutomationItem[] = [
+  {
+    id: "w1",
+    name: "Widget Validate Contacts",
+    steps: [
+      {
+        id: "ws1",
+        kind: "trigger",
+        icon: "fa-clock",
+        title: "Trigger Schedule",
+        description: "Runs every day at 03:00 UTC",
+        color: "success",
+        status: "idle",
+        schedule: "every day at 03:00 UTC",
+      },
+      {
+        id: "ws2",
+        kind: "action",
+        icon: "fa-filter",
+        title: "Action: Select Records",
+        description: 'Filter: status = "active"',
+        color: "primary",
+        status: "ready",
+        actionType: "select",
+        source: "customers",
+        filter: 'status = "active"',
+        limit: 3,
+        orderBy: "updated_at desc",
+        results: [
+          {
+            id: "#w1001",
+            name: "Widget Alice",
+            status: "active",
+            updated: "Today 01:42",
+          },
+          {
+            id: "#w1002",
+            name: "Widget Bob",
+            status: "active",
+            updated: "Today 00:55",
+          },
+          {
+            id: "#w1003",
+            name: "Widget Carla",
+            status: "active",
+            updated: "Yesterday 22:13",
+          },
+        ],
+      },
+      {
+        id: "ws3",
+        kind: "action",
+        icon: "fa-check-circle",
+        title: "Action: Run Validation",
+        description: "Validate each record using selected Form",
+        color: "warning",
+        status: "idle",
+        actionType: "validate",
+        validationType: "form",
+        validationTarget: "Widget Contact Form",
+      },
+      {
+        id: "ws4",
+        kind: "action",
+        icon: "fa-bell",
+        title: "Action: Send Notification",
+        description: "Send email notification with results",
+        color: "info",
+        status: "idle",
+        actionType: "notify",
+        message: "Validation completed: {results_count} records processed",
+      },
+    ],
+  },
+];
