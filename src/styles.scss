@@ -1,9 +1,14 @@
+// Custom Offcanvas width for breach list
+.offcanvas-90 {
+  width: 90vw !important;
+  max-width: 90vw !important;
+}
+@import "../node_modules/bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
 @import "../node_modules/ag-grid-community/styles/ag-theme-alpine.css";
 // AG Grid styles
 @import "../node_modules/ag-grid-community/styles/ag-theme-alpine.css";
-
-@import "../node_modules/bootstrap/scss/mixins/banner";
-@include bsBanner("");
 
 // scss-docs-start import-stack
 // Configuration
@@ -64,4 +69,9 @@ html {
 .tab-pane.fade.active.show {
   height: 100%;
   display: flex;
+}
+
+.offcanvas-end {
+  width: 90vw !important;
+  max-width: 90vw !important;
 }
