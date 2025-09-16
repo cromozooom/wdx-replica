@@ -1,4 +1,3 @@
-
 import { Component, Input } from "@angular/core";
 import { WidgetDefaultContentComponent } from "../widget-default-content/widget-default-content.component";
 import { WidgetAutomationContentComponent } from "../widget-automation-content/widget-automation-content.component";
@@ -17,5 +16,5 @@ import { FormsModule } from "@angular/forms";
   ],
 })
 export class WidgetComponent {
-  @Input() type: 'default' | 'automation' = 'default';
+  @Input() type: "default" | "automation" = "default";
 }
