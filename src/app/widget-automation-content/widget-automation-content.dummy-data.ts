@@ -38,8 +38,8 @@ export const widgetDemoAutomations: AutomationItem[] = [
     status: "completed",
     breachListLink: "http://example.com/breach-list",
     testedRecordsCount: 120,
-    passedRecordsCount: 110,
-    failedRecordsCount: 8,
+    passedRecordsCount: 120,
+    failedRecordsCount: 0,
     failedRecordsWithErrorCount: 0,
   },
   {
