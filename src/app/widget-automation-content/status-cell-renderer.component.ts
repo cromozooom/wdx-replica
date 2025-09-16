@@ -7,29 +7,53 @@ import { CommonModule } from "@angular/common";
   standalone: true,
   imports: [CommonModule],
   template: `
-    <span [ngClass]="statusClass">
-      <ng-container [ngSwitch]="status">
-        <span class="badge text-success-emphasis" *ngSwitchCase="'completed'"
-          >✅ Completed</span
-        >
-        <span
-          class="badge bg-warning-subtle text-warning-emphasis"
-          *ngSwitchCase="'running'"
-          >⏳ Running</span
-        >
-        <span
-          class="badge bg-danger-subtle text-danger-emphasis"
-          *ngSwitchCase="'failed'"
-          >Failed</span
-        >
-        <span
-          class="badge bg-danger-subtle text-danger-emphasis"
-          *ngSwitchDefault
-          >{{ status }}</span
-        >
-      </ng-container>
+    <span class="d-flex gap-1 align-items-center h-100">
+      <span [ngClass]="statusClass">
+        <ng-container [ngSwitch]="status">
+          <span *ngSwitchCase="'completed'" class="d-flex align-items-center">
+            <span
+              class="badge text-success-emphasis d-flex gap-1 align-items-center"
+              ><i class="fa-solid fa-check"></i> Completed
+            </span>
+          </span>
+          <span
+            *ngSwitchCase="'running'"
+            class=" d-flex gap-1 align-items-center"
+          >
+            <div
+              class="spinner-border spinner-border-sm text-info"
+              role="status"
+            >
+              <span class="visually-hidden">Running...</span>
+            </div>
+            <small> Running... </small>
+          </span>
+          <span
+            class="badge bg-danger-subtle text-danger-emphasis d-flex gap-1 align-items-center"
+            *ngSwitchCase="'failed'"
+          >
+            <i class="fa-solid fa-circle-exclamation"></i>
+            Failed</span
+          >
+          <span
+            class="badge bg-danger-subtle text-danger-emphasis"
+            *ngSwitchDefault
+            >{{ status }}</span
+          >
+        </ng-container>
+      </span>
     </span>
   `,
+  styles: [
+    `
+      :host {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+    `,
+  ],
 })
 export class StatusCellRendererComponent implements ICellRendererAngularComp {
   status: string = "";

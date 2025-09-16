@@ -16,14 +16,14 @@ import { ICellRendererAngularComp } from "ag-grid-angular";
       >
         List
       </button>
-      <button
+      <!-- <button
         (click)="onOpenEditor()"
         title="Open Editor"
         type="button"
         class="btn btn-sm btn-outline-primary"
       >
         Edit
-      </button>
+      </button> -->
     </div>
   `,
 })
