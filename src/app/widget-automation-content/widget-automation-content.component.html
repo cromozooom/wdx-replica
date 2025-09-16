@@ -1,3 +1,15 @@
-<div class="flex-grow-1 d-flex w-100 h-100">
-  <app-jobs-grid class="flex-grow-1 w-100" [jobs]="jobs"></app-jobs-grid>
+<div class="w-100 flex-grow-1 d-flex flex-column">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="activeTab">
+    <li [ngbNavItem]="1">
+      <button ngbNavLink>Jobs</button>
+      <ng-template ngbNavContent>
+        <app-jobs-grid class="flex-grow-1 w-100" [jobs]="jobs"></app-jobs-grid>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <button ngbNavLink>Editor</button>
+      <ng-template ngbNavContent> editor </ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav" class="flex-grow-1 w-100"></div>
 </div>

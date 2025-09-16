@@ -34,6 +34,7 @@ import { JobNameCellRendererComponent } from "../widget-automation-content/job-n
       [defaultColDef]="defaultColDef"
     ></ag-grid-angular>
   `,
+  styleUrls: ["./jobs-grid.component.scss"],
 })
 export class JobsGridComponent {
   @Input() jobs: AutomationItem[] = [];
