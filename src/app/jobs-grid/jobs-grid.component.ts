@@ -8,6 +8,8 @@ import { FailedErrorCellRendererComponent } from "../widget-automation-content/f
 import { PassedCellRendererComponent } from "../widget-automation-content/passed-cell-renderer.component";
 import { FailedCellRendererComponent } from "../widget-automation-content/failed-cell-renderer.component";
 import { JobNameCellRendererComponent } from "../widget-automation-content/job-name-cell-renderer.component";
+import { JobActionsCellRendererComponent } from "../widget-automation-content/job-actions-cell-renderer.component";
+import { JobGroupCellRendererComponent } from "../widget-automation-content/job-group-cell-renderer.component";
 
 @Component({
   selector: "app-jobs-grid",
@@ -20,6 +22,8 @@ import { JobNameCellRendererComponent } from "../widget-automation-content/job-n
     PassedCellRendererComponent,
     FailedCellRendererComponent,
     JobNameCellRendererComponent,
+    JobActionsCellRendererComponent,
+    JobGroupCellRendererComponent,
   ],
   template: `
     <ag-grid-angular
@@ -30,23 +34,29 @@ import { JobNameCellRendererComponent } from "../widget-automation-content/job-n
       [columnDefs]="columnDefs"
       [groupDisplayType]="'groupRows'"
       [groupDefaultExpanded]="-1"
+      [groupRowRenderer]="'agGroupCellRenderer'"
+      [groupRowRendererParams]="groupRowRendererParams"
       [animateRows]="true"
       [defaultColDef]="defaultColDef"
+      [context]="context"
     ></ag-grid-angular>
   `,
+  styleUrls: ["./jobs-grid.component.scss"],
 })
 export class JobsGridComponent {
   @Input() jobs: AutomationItem[] = [];
+  @Input() context: any;
   theme = themeAlpine;
+  groupRowRendererParams = { innerRenderer: JobGroupCellRendererComponent };
   columnDefs: ColDef<AutomationItem>[] = [
     {
       field: "name",
       headerName: "Job Name",
       filter: true,
       rowGroup: true,
-      cellRenderer: JobNameCellRendererComponent,
+      width: 420,
     },
-    { field: "dateOfRun", headerName: "Date of Run", filter: true },
+    { field: "dateOfRun", headerName: "Date of Run", filter: false },
     {
       field: "type",
       headerName: "Type",
@@ -57,29 +67,51 @@ export class JobsGridComponent {
     {
       field: "status",
       headerName: "Status",
-      filter: true,
+      filter: false,
       cellRenderer: StatusCellRendererComponent,
       cellRendererParams: (params: any) => ({ status: params.value }),
     },
-    { field: "breachListLink", headerName: "Breach List", filter: true },
-    { field: "testedRecordsCount", headerName: "Tested", filter: true },
+    {
+      field: "breachListLink",
+      headerName: "Breach List",
+      filter: true,
+      width: 200,
+    },
+    {
+      field: "testedRecordsCount",
+      headerName: "Tested",
+      filter: false,
+      width: 150,
+    },
     {
       field: "passedRecordsCount",
       headerName: "Passed",
-      filter: true,
+      filter: false,
+      width: 150,
       cellRenderer: PassedCellRendererComponent,
     },
     {
       field: "failedRecordsCount",
       headerName: "Failed",
-      filter: true,
+      filter: false,
+      width: 150,
       cellRenderer: FailedCellRendererComponent,
     },
     {
       field: "failedRecordsWithErrorCount",
       headerName: "Failed (Error)",
-      filter: true,
+      filter: false,
+      width: 150,
       cellRenderer: FailedErrorCellRendererComponent,
+    },
+    {
+      headerName: "Actions",
+      cellRenderer: JobActionsCellRendererComponent,
+      width: 120,
+      pinned: "right",
+      // suppressMenu removed: not a valid ColDef property
+      sortable: false,
+      filter: false,
     },
     // Validation details (breach list) will be handled as a custom cell renderer in the next step
   ];
