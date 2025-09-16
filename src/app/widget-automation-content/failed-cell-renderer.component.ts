@@ -3,39 +3,45 @@ import { CommonModule } from "@angular/common";
 import { ICellRendererAngularComp } from "ag-grid-angular";
 
 @Component({
-  selector: "app-failed-error-cell-renderer",
+  selector: "app-failed-cell-renderer",
   standalone: true,
   imports: [CommonModule],
   template: `
-    <span>
-      <ng-container *ngIf="value > 0; else noError">
+    <span [ngClass]="{ 'has-failed': failed > 0 }">
+      <ng-container *ngIf="failed > 0; else noneFailed">
         <span
           [ngClass]="{
-            'badge bg-danger-subtle text-danger-emphasis': value > 0,
+            'badge bg-warning-subtle text-warning-emphasis': failed > 0,
           }"
         >
-          {{ value }}
+          {{ failed }}
         </span>
       </ng-container>
-      <ng-template #noError>
+      <ng-template #noneFailed>
         <span class="badge bg-success-subtle text-success-emphasis">
           <i class="fa-solid fa-check"></i>
         </span>
       </ng-template>
     </span>
   `,
+  styles: [
+    `
+      .has-failed {
+        color: #b71c1c;
+        font-weight: bold;
+      }
+    `,
+  ],
 })
-export class FailedErrorCellRendererComponent
-  implements ICellRendererAngularComp
-{
-  value: number = 0;
+export class FailedCellRendererComponent implements ICellRendererAngularComp {
+  failed: number = 0;
 
   agInit(params: any): void {
-    this.value = params.value;
+    this.failed = params.value;
   }
 
   refresh(params: any): boolean {
-    this.value = params.value;
+    this.agInit(params);
     return true;
   }
 }

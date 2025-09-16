@@ -5,6 +5,9 @@ import { ColDef, themeAlpine } from "ag-grid-community";
 import { AutomationItem } from "../widget-automation-content/widget-automation-content.models";
 import { StatusCellRendererComponent } from "../widget-automation-content/status-cell-renderer.component";
 import { FailedErrorCellRendererComponent } from "../widget-automation-content/failed-error-cell-renderer.component";
+import { PassedCellRendererComponent } from "../widget-automation-content/passed-cell-renderer.component";
+import { FailedCellRendererComponent } from "../widget-automation-content/failed-cell-renderer.component";
+import { JobNameCellRendererComponent } from "../widget-automation-content/job-name-cell-renderer.component";
 
 @Component({
   selector: "app-jobs-grid",
@@ -14,6 +17,9 @@ import { FailedErrorCellRendererComponent } from "../widget-automation-content/f
     AgGridModule,
     StatusCellRendererComponent,
     FailedErrorCellRendererComponent,
+    PassedCellRendererComponent,
+    FailedCellRendererComponent,
+    JobNameCellRendererComponent,
   ],
   template: `
     <ag-grid-angular
@@ -23,6 +29,7 @@ import { FailedErrorCellRendererComponent } from "../widget-automation-content/f
       class="flex-grow-1"
       [columnDefs]="columnDefs"
       [groupDisplayType]="'groupRows'"
+      [groupDefaultExpanded]="-1"
       [animateRows]="true"
       [defaultColDef]="defaultColDef"
     ></ag-grid-angular>
@@ -33,13 +40,20 @@ export class JobsGridComponent {
   theme = themeAlpine;
   columnDefs: ColDef<AutomationItem>[] = [
     {
+      field: "name",
+      headerName: "Job Name",
+      filter: true,
+      rowGroup: true,
+      cellRenderer: JobNameCellRendererComponent,
+    },
+    { field: "dateOfRun", headerName: "Date of Run", filter: true },
+    {
       field: "type",
       headerName: "Type",
       filter: true,
-      hide: true,
+      hide: false,
+      width: 100,
     },
-    { field: "name", headerName: "Job Name", filter: true, rowGroup: true },
-    { field: "dateOfRun", headerName: "Date of Run", filter: true },
     {
       field: "status",
       headerName: "Status",
@@ -49,8 +63,18 @@ export class JobsGridComponent {
     },
     { field: "breachListLink", headerName: "Breach List", filter: true },
     { field: "testedRecordsCount", headerName: "Tested", filter: true },
-    { field: "passedRecordsCount", headerName: "Passed", filter: true },
-    { field: "failedRecordsCount", headerName: "Failed", filter: true },
+    {
+      field: "passedRecordsCount",
+      headerName: "Passed",
+      filter: true,
+      cellRenderer: PassedCellRendererComponent,
+    },
+    {
+      field: "failedRecordsCount",
+      headerName: "Failed",
+      filter: true,
+      cellRenderer: FailedCellRendererComponent,
+    },
     {
       field: "failedRecordsWithErrorCount",
       headerName: "Failed (Error)",
