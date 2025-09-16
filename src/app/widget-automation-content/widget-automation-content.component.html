@@ -3,7 +3,11 @@
     <li [ngbNavItem]="1">
       <button ngbNavLink>Jobs</button>
       <ng-template ngbNavContent>
-        <app-jobs-grid class="flex-grow-1 w-100" [jobs]="jobs"></app-jobs-grid>
+        <app-jobs-grid
+          class="flex-grow-1 w-100"
+          [jobs]="jobs"
+          [context]="{ showBreachList: showBreachList }"
+        ></app-jobs-grid>
       </ng-template>
     </li>
     <li [ngbNavItem]="2">

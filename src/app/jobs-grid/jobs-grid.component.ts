@@ -34,12 +34,14 @@ import { JobActionsCellRendererComponent } from "../widget-automation-content/jo
       [groupDefaultExpanded]="-1"
       [animateRows]="true"
       [defaultColDef]="defaultColDef"
+      [context]="context"
     ></ag-grid-angular>
   `,
   styleUrls: ["./jobs-grid.component.scss"],
 })
 export class JobsGridComponent {
   @Input() jobs: AutomationItem[] = [];
+  @Input() context: any;
   theme = themeAlpine;
   columnDefs: ColDef<AutomationItem>[] = [
     {
@@ -48,6 +50,7 @@ export class JobsGridComponent {
       filter: true,
       rowGroup: true,
       cellRenderer: JobNameCellRendererComponent,
+      width: 260,
     },
     { field: "dateOfRun", headerName: "Date of Run", filter: true },
     {
