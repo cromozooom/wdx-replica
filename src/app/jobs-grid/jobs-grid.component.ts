@@ -90,7 +90,7 @@ export class JobsGridComponent {
       valueGetter: (params: any) => {
         const passed = params.data?.passedRecordsCount ?? 0;
         const tested = params.data?.testedRecordsCount ?? 0;
-        return (passed === tested && tested > 0) ? "All Passed" : passed;
+        return passed === tested && tested > 0 ? "All Passed" : passed;
       },
       width: 150,
       cellRenderer: PassedCellRendererComponent,
