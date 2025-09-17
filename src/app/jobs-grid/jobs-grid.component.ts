@@ -67,7 +67,7 @@ export class JobsGridComponent {
     {
       field: "status",
       headerName: "Status",
-      filter: false,
+      filter: true,
       cellRenderer: StatusCellRendererComponent,
       cellRendererParams: (params: any) => ({ status: params.value }),
     },
@@ -80,7 +80,7 @@ export class JobsGridComponent {
     {
       field: "testedRecordsCount",
       headerName: "Tested",
-      filter: false,
+      filter: true,
       width: 150,
     },
     {
@@ -97,7 +97,7 @@ export class JobsGridComponent {
     },
     {
       field: "failedRecordsCount",
-      headerName: "Failed",
+      headerName: "Failed (Review)",
       filter: true,
       width: 150,
       cellRenderer: FailedCellRendererComponent,
