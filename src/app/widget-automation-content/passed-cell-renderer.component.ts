@@ -7,17 +7,43 @@ import { ICellRendererAngularComp } from "ag-grid-angular";
   standalone: true,
   imports: [CommonModule],
   template: `
-    <span
-      [ngClass]="{ 'all-passed': isAllPassed, 'partial-passed': !isAllPassed }"
-    >
-      <ng-container *ngIf="isAllPassed; else partial">
-        <span class="badge bg-success-subtle text-success-emphasis">
-          <i class="fa-solid fa-check"></i> All Passed
-        </span>
-      </ng-container>
-      <ng-template #partial> {{ passed }} </ng-template>
+    <span class="celContent">
+      <span
+        [ngClass]="{
+          'all-passed': isAllPassed,
+          'partial-passed': !isAllPassed,
+        }"
+      >
+        <ng-container *ngIf="isAllPassed; else partial">
+          <span
+            class="rounded py-1 px-2  bg-success-subtle text-success-emphasis"
+          >
+            <i class="fa-solid fa-check"></i> All Passed
+          </span>
+        </ng-container>
+        <ng-template #partial> {{ passed }} </ng-template>
+      </span>
     </span>
   `,
+  styles: [
+    `
+      .celContent {
+        height: 100%;
+        flex-grow: 0;
+        width: 100%;
+        align-self: center;
+        text-align: left;
+      }
+
+      :host {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+    `,
+  ],
 })
 export class PassedCellRendererComponent implements ICellRendererAngularComp {
   passed: number = 0;
@@ -25,7 +51,8 @@ export class PassedCellRendererComponent implements ICellRendererAngularComp {
   isAllPassed: boolean = false;
 
   agInit(params: any): void {
-    this.passed = params.value;
+    // params.value is either 'All Passed' or a number (from valueGetter)
+    this.passed = params.data?.passedRecordsCount ?? 0;
     this.tested = params.data?.testedRecordsCount ?? 0;
     this.isAllPassed = this.passed === this.tested && this.tested > 0;
   }
