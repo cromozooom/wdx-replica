@@ -2,14 +2,14 @@ import { Component, Input } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { AgGridModule } from "ag-grid-angular";
 import { ColDef, themeAlpine } from "ag-grid-community";
-import { AutomationItem } from "../widget-automation-content/widget-automation-content.models";
-import { StatusCellRendererComponent } from "../widget-automation-content/status-cell-renderer.component";
-import { FailedErrorCellRendererComponent } from "../widget-automation-content/failed-error-cell-renderer.component";
-import { PassedCellRendererComponent } from "../widget-automation-content/passed-cell-renderer.component";
-import { FailedCellRendererComponent } from "../widget-automation-content/failed-cell-renderer.component";
-import { JobNameCellRendererComponent } from "../widget-automation-content/job-name-cell-renderer.component";
-import { JobActionsCellRendererComponent } from "../widget-automation-content/job-actions-cell-renderer.component";
-import { JobGroupCellRendererComponent } from "../widget-automation-content/job-group-cell-renderer.component";
+import { AutomationItem } from "../../core/modules/dashboard-widgets/widget-automation-content/widget-automation-content.models";
+import { StatusCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/status-cell-renderer.component";
+import { FailedErrorCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/failed-error-cell-renderer.component";
+import { PassedCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/passed-cell-renderer.component";
+import { FailedCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/failed-cell-renderer.component";
+import { JobNameCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/job-name-cell-renderer.component";
+import { JobActionsCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/job-actions-cell-renderer.component";
+import { JobGroupCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/job-group-cell-renderer.component";
 
 @Component({
   selector: "app-jobs-grid",

@@ -1,0 +1,25 @@
+<div ngbDropdown container="body" class="d-inline-block">
+  <button id="button-container" type="button" class="btn btn-link text-decoration-none hide-arrow" ngbDropdownToggle>
+    <div class="dropdown profile-container">
+      <i class="fa fa-ellipsis-h fa-2x pointer text-size-xxl"></i>
+    </div>
+  </button>
+  <ul ngbDropdownMenu id="dropdown-actions" aria-labelledby="button-container">
+    <ng-container *ngFor="let action of actions">
+      <li
+        *ngIf="action"
+        ngbDropdownItem
+        [class.opacity-50]="!action.Enabled"
+        class="pointer"
+        [ngClass]="{
+          disabled: !action.Enabled,
+          enabled: action.Enabled,
+        }"
+        (click)="resolveAction(action)"
+      >
+        <i *ngIf="action.Icon !== null" class="{{ action.Icon }}" style="margin-right: 0.7rem"></i>
+        <span>{{ action.Name }}</span>
+      </li>
+    </ng-container>
+  </ul>
+</div>
