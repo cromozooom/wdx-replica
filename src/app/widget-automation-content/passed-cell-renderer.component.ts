@@ -51,7 +51,8 @@ export class PassedCellRendererComponent implements ICellRendererAngularComp {
   isAllPassed: boolean = false;
 
   agInit(params: any): void {
-    this.passed = params.value;
+    // params.value is either 'All Passed' or a number (from valueGetter)
+    this.passed = params.data?.passedRecordsCount ?? 0;
     this.tested = params.data?.testedRecordsCount ?? 0;
     this.isAllPassed = this.passed === this.tested && this.tested > 0;
   }

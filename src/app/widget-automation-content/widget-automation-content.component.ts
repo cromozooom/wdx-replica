@@ -19,10 +19,20 @@ import { BreachListOffcanvasComponent } from "./breach-list-offcanvas.component"
 })
 export class WidgetAutomationContentComponent {
   jobs = widgetDemoAutomations;
-  activeTab = 1;
+  private _activeTab = 1;
   currentJob: any = null;
 
   constructor(private offcanvas: NgbOffcanvas) {}
+
+  get activeTab() {
+    return this._activeTab;
+  }
+  set activeTab(val: number) {
+    this._activeTab = val;
+    if (val === 1) {
+      this.currentJob = null;
+    }
+  }
 
   showBreachList = (job: any) => {
     if (job && job.breachList) {
