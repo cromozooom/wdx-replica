@@ -7,50 +7,51 @@ import { CommonModule } from "@angular/common";
   standalone: true,
   imports: [CommonModule],
   template: `
-    <span class="d-flex gap-1 align-items-center h-100">
-      <span [ngClass]="statusClass">
-        <ng-container [ngSwitch]="status">
-          <span *ngSwitchCase="'completed'" class="d-flex align-items-center">
-            <span
-              class="badge text-success-emphasis d-flex gap-1 align-items-center"
-              ><i class="fa-solid fa-check"></i> Completed
-            </span>
-          </span>
-          <span
-            *ngSwitchCase="'running'"
-            class=" d-flex gap-1 align-items-center"
-          >
-            <div
-              class="spinner-border spinner-border-sm text-info"
-              role="status"
-            >
-              <span class="visually-hidden">Running...</span>
-            </div>
-            <small> Running... </small>
-          </span>
-          <span
-            class="badge bg-danger-subtle text-danger-emphasis d-flex gap-1 align-items-center"
-            *ngSwitchCase="'failed'"
-          >
-            <i class="fa-solid fa-circle-exclamation"></i>
-            Failed</span
-          >
-          <span
-            class="badge bg-danger-subtle text-danger-emphasis"
-            *ngSwitchDefault
-            >{{ status }}</span
-          >
-        </ng-container>
-      </span>
+    <span class="celContent">
+      <ng-container [ngSwitch]="status">
+        <span
+          *ngSwitchCase="'completed'"
+          class="rounded py-1 px-2 bg-success-subtle text-success-emphasis"
+          ><i class="fa-solid fa-check"></i>
+          Completed
+        </span>
+        <div *ngSwitchCase="'running'" class=" d-flex gap-1 align-items-center">
+          <div class="spinner-border spinner-border-sm text-info" role="status">
+            <span class="visually-hidden">Running...</span>
+          </div>
+          <small class="opacity-50"> Running... </small>
+        </div>
+        <span
+          class="rounded py-1 px-2 bg-danger-subtle text-danger-emphasis"
+          *ngSwitchCase="'failed'"
+        >
+          <i class="fa-solid fa-circle-exclamation"></i>
+          Failed</span
+        >
+        <span
+          class="badge bg-danger-subtle text-danger-emphasis"
+          *ngSwitchDefault
+          >{{ status }}</span
+        >
+      </ng-container>
     </span>
   `,
   styles: [
     `
+      .celContent {
+        height: 100%;
+        flex-grow: 0;
+        width: 100%;
+        align-self: center;
+        text-align: left;
+      }
+
       :host {
-        display: flex;
-        align-items: center;
         width: 100%;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
       }
     `,
   ],

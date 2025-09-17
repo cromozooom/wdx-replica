@@ -7,23 +7,43 @@ import { ICellRendererAngularComp } from "ag-grid-angular";
   standalone: true,
   imports: [CommonModule],
   template: `
-    <span>
+    <span class="celContent">
       <ng-container *ngIf="value > 0; else noError">
         <span
           [ngClass]="{
-            'badge bg-danger-subtle text-danger-emphasis': value > 0,
+            'rounded py-1 px-2 bg-danger-subtle text-danger-emphasis':
+              value > 0,
           }"
         >
           {{ value }}
         </span>
       </ng-container>
       <ng-template #noError>
-        <span class="badge bg-success-subtle text-success-emphasis">
-          <i class="fa-solid fa-check"></i>
+        <span class="rounded py-1 px-2 bg-success-subtle text-success-emphasis">
+          <i class="fa-solid fa-check"></i> All Passed
         </span>
       </ng-template>
     </span>
   `,
+  styles: [
+    `
+      .celContent {
+        height: 100%;
+        flex-grow: 0;
+        width: 100%;
+        align-self: center;
+        text-align: left;
+      }
+
+      :host {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+    `,
+  ],
 })
 export class FailedErrorCellRendererComponent
   implements ICellRendererAngularComp
