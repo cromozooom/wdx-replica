@@ -86,21 +86,26 @@ export class JobsGridComponent {
     {
       field: "passedRecordsCount",
       headerName: "Passed",
-      filter: false,
+      filter: true,
+      valueGetter: (params: any) => {
+        const passed = params.data?.passedRecordsCount ?? 0;
+        const tested = params.data?.testedRecordsCount ?? 0;
+        return (passed === tested && tested > 0) ? "All Passed" : passed;
+      },
       width: 150,
       cellRenderer: PassedCellRendererComponent,
     },
     {
       field: "failedRecordsCount",
       headerName: "Failed",
-      filter: false,
+      filter: true,
       width: 150,
       cellRenderer: FailedCellRendererComponent,
     },
     {
       field: "failedRecordsWithErrorCount",
       headerName: "Failed (Error)",
-      filter: false,
+      filter: true,
       width: 150,
       cellRenderer: FailedErrorCellRendererComponent,
     },
