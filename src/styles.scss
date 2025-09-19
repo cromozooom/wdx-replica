@@ -75,3 +75,10 @@ html {
   width: 90vw !important;
   max-width: 90vw !important;
 }
+
+.separator {
+  background-color: var(--bs-gray-400);
+  width: 2px;
+  height: 1rem;
+  margin: 0;
+}

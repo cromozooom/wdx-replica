@@ -45,3 +45,18 @@ from widget-automation-content.component.html
    - Update jobs-grid.component.ts to use the new actions cell renderer and wire up the required event outputs for Offcanvas and Editor tab actions.
 5. Test and polish UI/UX for actions
    - Verify that both actions work as expected: Offcanvas opens with correct breachList, and Editor tab is activated with the correct job context. Polish UI as needed.
+
+src\core\modules\dashboard-widgets\automation-configurator
+src\app\modules\dashboard-widgets\widget-automation-content
+src\libs\ag-grid-wrapper
+src\libs\ag-grid-wrapper
+
+\src\core\modules\dashboard-widgets\automation-configurator
+
+\src\libs\ag-grid-wrapper
+
+\src\core\components\portal-grid-wrapper
+
+src\core\services\lazy-loader.service.ts
+
+\src\core\models\lazy-load-components.ts

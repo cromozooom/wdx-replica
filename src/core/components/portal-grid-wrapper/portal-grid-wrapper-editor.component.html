@@ -1,0 +1,333 @@
+<ng-container *ngIf="isPreviewSide">
+  <ng-container *ngIf="!loadingData && !updatingParameters && !hasErrors && (!parametersContainBraces || (allDummyParametersPopulated && dummyConfiguration))">
+    <portal-grid-wrapper
+      class="w-100 h-100"
+      [columnDefs]="configuration.Columns"
+      [apiMetaData]="configuration.Api"
+      [parameters]="parametersContainBraces ? dummyConfiguration.Parameters : configuration.Parameters"
+      [fetchXml]="configuration.FetchXml"
+      [dashboardQueryName]="configuration.DashboardQuery"
+      [columnsVersion]="columnsVersion"
+    ></portal-grid-wrapper>
+  </ng-container>
+</ng-container>
+<ng-container *ngIf="!isPreviewSide">
+  <div class="container-fluid">
+    <div class="row py-2 px-2">
+      <div class="col-12 mb-3">
+        <label class="text-muted">Data Source Type</label>
+        <div class="d-flex gap-2">
+          <button
+            *ngIf="false"
+            class="btn btn-outline-secondary"
+            [ngClass]="{ active: configuration.DataSourceType === 'fetchXml' }"
+            (click)="configuration.DataSourceType = 'fetchXml'; onDataSourceTypeChange()"
+          >
+            FetchXML
+          </button>
+          <button
+            class="btn btn-outline-secondary"
+            [ngClass]="{ active: configuration.DataSourceType === 'dashboardQuery' }"
+            (click)="configuration.DataSourceType = 'dashboardQuery'; onDataSourceTypeChange()"
+          >
+            Dashboard Query
+          </button>
+          <button
+            class="btn btn-outline-secondary"
+            [ngClass]="{ active: configuration.DataSourceType === 'api' }"
+            (click)="configuration.DataSourceType = 'api'; onDataSourceTypeChange()"
+          >
+            API
+          </button>
+        </div>
+      </div>
+
+      <div class="col-12 mb-3" *ngIf="configuration.DataSourceType === 'fetchXml'">
+        <label class="text-muted">FetchXML</label>
+        <textarea
+          class="form-control"
+          rows="5"
+          [(ngModel)]="configuration.FetchXml"
+          (ngModelChange)="onFetchXmlChange()"
+          placeholder="Paste your FetchXML here"
+        ></textarea>
+      </div>
+
+      <div class="col-12 mb-3" *ngIf="configuration.DataSourceType === 'dashboardQuery'">
+        <div class="col-12 mb-3">
+          <label class="text-muted">Entity Type</label>
+          <ng-select
+            class="min-w-15"
+            [items]="entityOptions"
+            bindLabel="displayName"
+            bindValue="schemaName"
+            [(ngModel)]="configuration.EntityName"
+            placeholder="Select an Entity"
+            (change)="onSelectEntity($event)"
+            [searchable]="true"
+            [clearable]="true"
+            required
+          >
+          </ng-select>
+        </div>
+        <ng-container *ngIf="configuration?.EntityName">
+          <portal-query-selector
+            [configuration]="configuration"
+            [filteredDashboardQueries]="filteredDashboardQueries"
+            (selectedQuery)="onSelectDashboardQuery($event)"
+          >
+          </portal-query-selector>
+        </ng-container>
+      </div>
+
+      <div class="col-12 mb-3" *ngIf="configuration.DataSourceType === 'api'">
+        <label class="text-muted">API</label>
+        <ng-select
+          [items]="allApis"
+          bindLabel="Endpoint"
+          bindValue="Endpoint"
+          [(ngModel)]="apiEndpoint"
+          (change)="onSelectApi($event)"
+          placeholder="Select an API"
+          [clearable]="false"
+        >
+          <ng-template ng-label-tmp let-item="item">
+            <span>{{ item.Method }} - {{ item.Endpoint }}</span>
+          </ng-template>
+          <ng-template ng-option-tmp let-item="item">
+            <span>{{ item.Method }} - {{ item.Endpoint }}</span>
+          </ng-template>
+        </ng-select>
+      </div>
+
+      <div class="col-12 mb-3" *ngIf="displayParameters.length > 0">
+        <label class="text-muted">Parameters</label>
+
+        <div *ngFor="let param of displayParameters; index as i" class="mb-2">
+          <div *ngIf="!param.IsOptional">
+            <label>{{ param.label }}</label>
+            <div class="mb-2" *ngIf="configuration.DataSource.API">
+              <button class="btn btn-sm btn-link" (click)="toggleParameterMode(i)">
+                {{ param.isPropertySelectionMode ? 'Manual Input' : 'Select Property' }}
+              </button>
+            </div>
+
+            <div *ngIf="!param.isPropertySelectionMode">
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="param.value"
+                (ngModelChange)="onParameterInputChange(i, $event)"
+                placeholder="Enter JSON value for &quot;{{ param.label }}&quot; (e.g., &quot;Hello&quot;, 72, true, {&quot;key&quot;: &quot;value&quot;})"
+              />
+            </div>
+
+            <div *ngIf="param.isPropertySelectionMode">
+              <div *ngFor="let options of param.propertySelectionOptions; let level = index">
+                <ng-select
+                  [items]="options"
+                  bindLabel="label"
+                  bindValue="label"
+                  [(ngModel)]="param.propertySelectionPath[level]"
+                  (change)="onParameterPropertySelected(i, level)"
+                  placeholder="Select property"
+                  [clearable]="true"
+                >
+                  <ng-template ng-option-tmp let-item="item">
+                    <span>{{ item.label }} <i *ngIf="item.isObject" class="fa fa-folder"></i></span>
+                  </ng-template>
+                </ng-select>
+              </div>
+            </div>
+
+            <div *ngIf="parameterErrors[i]" class="text-danger mt-1">
+              {{ parameterErrors[i] }}
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-2" *ngIf="optionalParametersPresent">
+          <button class="btn btn-sm btn-link" (click)="toggleOptionalParameters()">
+            {{ showOptionalParameters ? 'Hide Optional Parameters' : 'Show Optional Parameters' }}
+          </button>
+        </div>
+
+        <div *ngIf="showOptionalParameters">
+          <div *ngFor="let param of displayParameters; index as i" class="mb-2">
+            <div *ngIf="param.IsOptional">
+              <label>{{ param.label }}</label>
+              <div class="mb-2" *ngIf="configuration.DataSource.API">
+                <button class="btn btn-sm btn-link" (click)="toggleParameterMode(i)">
+                  {{ param.isPropertySelectionMode ? 'Manual Input' : 'Select Property' }}
+                </button>
+              </div>
+
+              <div *ngIf="!param.isPropertySelectionMode">
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="param.value"
+                  (ngModelChange)="onParameterInputChange(i, $event)"
+                  placeholder="Enter JSON value for &quot;{{ param.label }}&quot; (e.g., &quot;Hello&quot;, 72, true, {&quot;key&quot;: &quot;value&quot;})"
+                />
+                <div *ngIf="parameterErrors[i]" class="text-danger mt-1">
+                  {{ parameterErrors[i] }}
+                </div>
+              </div>
+
+              <div *ngIf="param.isPropertySelectionMode">
+                <div *ngFor="let options of param.propertySelectionOptions; let level = index">
+                  <ng-select
+                    [items]="options"
+                    bindLabel="label"
+                    bindValue="label"
+                    [(ngModel)]="param.propertySelectionPath[level]"
+                    (change)="onParameterPropertySelected(i, level)"
+                    placeholder="Select property"
+                    [clearable]="true"
+                  >
+                    <ng-template ng-option-tmp let-item="item">
+                      <span>{{ item.label }} <i *ngIf="item.isObject" class="fa fa-folder"></i></span>
+                    </ng-template>
+                  </ng-select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 mb-3" *ngIf="parametersContainBraces && !configuration.DataSource.API">
+        <div class="alert alert-warning" role="alert">
+          <strong>Attention:</strong> Some parameters contain dynamic values. Please complete the Data Source configuration section to ensure these parameters
+          are handled correctly.
+        </div>
+      </div>
+
+      <div
+        class="col-12 mb-3"
+        *ngIf="
+          ((configuration.DataSourceType === 'dashboardQuery' || configuration.DataSourceType === 'fetchXml') && availableColumns.length > 0) ||
+          (configuration.DataSourceType === 'api' && configuration.Api)
+        "
+      >
+        <div class="d-flex justify-content-between w-100 align-items-center border-bottom">
+          <div class="d-flex flex-grow-1 align-items-center">
+            <strong class="p-2"> Columns </strong>
+          </div>
+          <div class="d-flex align-items-center pe-2">
+            <button ngbTooltip="Add new column" class="btn btn-link text-decoration-none d-flex align-items-center gap-1 px-2" (click)="onAddColumn()">
+              <i class="far fa-plus"></i>
+              <span class="sr-only"> Add new column </span>
+            </button>
+          </div>
+        </div>
+        <div>
+          <div *ngFor="let column of columnsCopy">
+            <ng-container *ngTemplateOutlet="columnDisplay; context: { column: column, edit: column === editingColumn }"></ng-container>
+          </div>
+          <ng-container *ngIf="creatingColumn">
+            <ng-container *ngTemplateOutlet="columnDisplay; context: { column: creatingColumn, create: true }"></ng-container>
+          </ng-container>
+        </div>
+      </div>
+
+      <div class="col-12 mb-3" *ngIf="!hasErrors && dataSourceApiContainsBraces && parametersContainBraces">
+        <div class="alert alert-info" *ngIf="!allDummyParametersPopulated">
+          Please provide dummy values for data source API parameters in order to preview the grid.
+        </div>
+        <div *ngFor="let param of dataSourceApiDummyParameterValues" class="mb-2">
+          <label>{{ param.label }}</label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="param.value"
+            (ngModelChange)="onDummyParameterInputChange(param.label, $event)"
+            placeholder="Enter dummy value for {{ param.label }}"
+          />
+        </div>
+      </div>
+
+      <div class="col-12 mb-3" *ngIf="hasErrors">
+        <div class="alert alert-info">Cannot display grid when parameters are not valid JSON.</div>
+      </div>
+
+      <div
+        class="col-12 mb-3"
+        *ngIf="configuration.Api && configuration.DataSource.API && allDummyParametersPopulated && !dummyConfiguration && !hasErrors && parametersContainBraces"
+      >
+        <div class="alert alert-danger">Error fetching data from DataSource API.</div>
+      </div>
+
+      <div *ngIf="loadingData && !hasErrors">
+        <portal-load [size]="1"></portal-load>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #columnDisplay let-column="column" let-edit="edit" let-create="create">
+    <div class="d-flex flex-column border-s-2" [class.border-color-highlight]="edit || create" [class.border-color-transparent]="!edit && !create">
+      <div class="d-flex justify-content-between border-bottom hover-opacity py-1">
+        <div class="flex-grow-1 d-flex align-items-center">
+          <i *ngIf="!column.field" class="fa fa-exclamation-triangle text-danger" tooltip="Column needs to be re-mapped"></i>
+          <div class="ms-1">
+            {{ create ? 'New Column' : column.headerName }}
+          </div>
+        </div>
+        <div class="d-flex align-items-center hover-opacity_elem pe-2">
+          <button *ngIf="!edit && !create" class="btn btn-link text-decoration-none d-flex align-items-center gap-1 px-2" (click)="onEditColumn(column)">
+            <i class="far fa-pen"></i>
+            <span class="sr-only">Edit</span>
+          </button>
+          <button class="btn btn-link text-decoration-none d-flex align-items-center gap-1 px-2" (click)="onDeleteColumn(column)">
+            <i class="far fa-trash"></i>
+            <span class="sr-only">Delete</span>
+          </button>
+        </div>
+      </div>
+      <div class="d-flex flex-column px-2 py-3 gap-2" *ngIf="edit || create">
+        <div class="form-group">
+          <label>Header Name</label>
+          <input type="text" [(ngModel)]="column.headerName" class="form-control" placeholder="Column header name" />
+        </div>
+        <div class="form-group">
+          <label>Field</label>
+
+          <ng-container *ngIf="configuration.DataSourceType === 'api' && apiProperties && propertySelectionPath.length > 0; else fieldSelect">
+            <div *ngFor="let options of propertySelectionOptions; let i = index">
+              <ng-select
+                [items]="options"
+                bindLabel="label"
+                bindValue="label"
+                [(ngModel)]="propertySelectionPath[i]"
+                (change)="onPropertySelected(i)"
+                placeholder="Select property"
+                [clearable]="false"
+              >
+                <ng-template ng-option-tmp let-item="item">
+                  <span>{{ item.label }} <i *ngIf="item.isObject" class="fa fa-folder"></i></span>
+                </ng-template>
+              </ng-select>
+            </div>
+          </ng-container>
+
+          <ng-template #fieldSelect>
+            <ng-select
+              [items]="availableColumns"
+              bindLabel="attribute.displayName"
+              bindValue="attribute.displayName"
+              [(ngModel)]="column.field"
+              (change)="onUpdateColumnMapping(column, $event)"
+              placeholder="Select field"
+              [clearable]="false"
+            ></ng-select>
+          </ng-template>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-light me-2" (click)="onCancelEdit()">Cancel</button>
+          <button class="btn btn-primary" [disabled]="!column.field || !column.headerName" (click)="onSaveColumn()">Save</button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</ng-container>

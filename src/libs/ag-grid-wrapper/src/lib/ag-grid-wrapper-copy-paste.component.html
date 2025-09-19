@@ -1,0 +1,15 @@
+<div *ngIf="!isPasteMode" class="d-flex align-items-center pointer" (click)="onCopyClick()">
+  <i class="far fa-copy" aria-hidden="true"></i>
+</div>
+
+<div *ngIf="isPasteMode" class="d-flex align-items-center">
+  <ng-container *ngIf="rowData.DocumentTemplateId === currentSelected">
+    <div class="text-success d-flex align-items-center gap-1">
+      <i class="far fa-check"></i>
+      fields copied
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!(rowData.DocumentTemplateId === currentSelected)">
+    <input #showCheck type="checkbox" [checked]="checked" (change)="onCheckboxChange($event)" />
+  </ng-container>
+</div>
