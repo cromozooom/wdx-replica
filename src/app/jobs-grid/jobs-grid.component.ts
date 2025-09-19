@@ -26,6 +26,7 @@ import { JobGroupCellRendererComponent } from "../../core/modules/dashboard-widg
     JobGroupCellRendererComponent,
   ],
   template: `
+    <!-- [groupDefaultExpanded]="-1" -->
     <ag-grid-angular
       [theme]="theme"
       style="width: 100%; height: 100%;"
@@ -33,7 +34,6 @@ import { JobGroupCellRendererComponent } from "../../core/modules/dashboard-widg
       class="flex-grow-1"
       [columnDefs]="columnDefs"
       [groupDisplayType]="'groupRows'"
-      [groupDefaultExpanded]="-1"
       [groupRowRenderer]="'agGroupCellRenderer'"
       [groupRowRendererParams]="groupRowRendererParams"
       [animateRows]="true"
@@ -54,7 +54,7 @@ export class JobsGridComponent {
       headerName: "Job Name",
       filter: true,
       rowGroup: true,
-      width: 420,
+      width: 560,
     },
     { field: "dateOfRun", headerName: "Date of Run", filter: false },
     {
@@ -62,7 +62,7 @@ export class JobsGridComponent {
       headerName: "Type",
       filter: true,
       hide: false,
-      width: 100,
+      width: 300,
     },
     {
       field: "status",
@@ -71,12 +71,12 @@ export class JobsGridComponent {
       cellRenderer: StatusCellRendererComponent,
       cellRendererParams: (params: any) => ({ status: params.value }),
     },
-    {
-      field: "breachListLink",
-      headerName: "Breach List",
-      filter: true,
-      width: 200,
-    },
+    // {
+    //   field: "breachListLink",
+    //   headerName: "Breach List",
+    //   filter: true,
+    //   width: 200,
+    // },
     {
       field: "testedRecordsCount",
       headerName: "Tested",
@@ -109,16 +109,6 @@ export class JobsGridComponent {
       width: 150,
       cellRenderer: FailedErrorCellRendererComponent,
     },
-    {
-      headerName: "Actions",
-      cellRenderer: JobActionsCellRendererComponent,
-      width: 120,
-      pinned: "right",
-      // suppressMenu removed: not a valid ColDef property
-      sortable: false,
-      filter: false,
-    },
-    // Validation details (breach list) will be handled as a custom cell renderer in the next step
   ];
 
   defaultColDef: ColDef = {

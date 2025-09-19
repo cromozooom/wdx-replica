@@ -11,7 +11,7 @@ export const widgetDemoAutomations: AutomationItem[] = [
     breachList: [
       {
         id: "1",
-        recordName: "Contact 1",
+        recordName: "Last Contact 1",
         type: "mine",
         outcome: "passed",
         errorMessage: "",
@@ -35,7 +35,7 @@ export const widgetDemoAutomations: AutomationItem[] = [
       },
     ],
     dateOfRun: "4/12/25, 8:21 AM",
-    status: "completed",
+    status: "running",
     breachListLink: "http://example.com/breach-list",
     testedRecordsCount: 120,
     passedRecordsCount: 120,
@@ -73,7 +73,7 @@ export const widgetDemoAutomations: AutomationItem[] = [
       },
     ],
     dateOfRun: "11/3/25, 1:44 PM",
-    status: "running",
+    status: "completed",
     breachListLink: "http://example.com/breach-list",
     testedRecordsCount: 90,
     passedRecordsCount: 5,

@@ -106,6 +106,7 @@
         "@types/jasmine": "~3.6.0",
         "@types/jasminewd2": "~2.0.3",
         "@types/jquery": "^3.5.32",
+        "@types/lodash": "^4.17.20",
         "@types/node": "^22.15.17",
         "@types/signalr": "^2.4.3",
         "@typescript-eslint/eslint-plugin": "^8.32.0",

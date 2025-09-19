@@ -56,3 +56,7 @@ src\libs\ag-grid-wrapper
 \src\libs\ag-grid-wrapper
 
 \src\core\components\portal-grid-wrapper
+
+src\core\services\lazy-loader.service.ts
+
+\src\core\models\lazy-load-components.ts
