@@ -1,0 +1,24 @@
+<ag-grid-angular
+  *ngIf="!loadingData && !error && columnDefs?.length"
+  class="w-100 h-100"
+  [theme]="theme"
+  [rowData]="rowData"
+  [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColDef"
+  [pagination]="pagination"
+  [paginationPageSize]="paginationPageSize"
+  [rowSelection]="rowSelection?.mode !== 'none' ? rowSelection : null"
+  [rowSelection]="rowSelection ? rowSelection : null"
+  (gridReady)="onGridReady($event)"
+  (selectionChanged)="onSelectionChanged()"
+  (paginationChanged)="onPaginationChanged($event)"
+>
+</ag-grid-angular>
+<div *ngIf="error" class="d-flex justify-content-center align-items-center text-center w-100">
+  <div class="alert alert-danger w-50">
+    {{ error }}
+  </div>
+</div>
+<div *ngIf="loadingData && !error">
+  <portal-load [size]="1"></portal-load>
+</div>

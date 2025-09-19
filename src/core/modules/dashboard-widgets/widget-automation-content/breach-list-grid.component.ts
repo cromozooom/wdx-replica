@@ -8,21 +8,7 @@ import { BreachListItem } from "./widget-automation-content.models";
   selector: "app-breach-list-grid",
   standalone: true,
   imports: [CommonModule, AgGridModule],
-  template: `
-    <ag-grid-angular
-      style="width: 100%; height: 300px;"
-      class="ag-theme-alpine"
-      [rowData]="breachList"
-      [columnDefs]="columnDefs"
-      [defaultColDef]="{
-        resizable: true,
-        sortable: true,
-        filter: true,
-        floatingFilter: true,
-      }"
-      [domLayout]="'autoHeight'"
-    ></ag-grid-angular>
-  `,
+  templateUrl: "./breach-list-grid.component.html",
 })
 export class BreachListGridComponent {
   @Input() breachList: BreachListItem[] = [];
@@ -34,4 +20,11 @@ export class BreachListGridComponent {
     { field: "errorMessage", headerName: "Error Message" },
     { field: "details", headerName: "Details" },
   ];
+
+  defaultColDef: ColDef = {
+    resizable: true,
+    sortable: true,
+    filter: true,
+    floatingFilter: true,
+  };
 }

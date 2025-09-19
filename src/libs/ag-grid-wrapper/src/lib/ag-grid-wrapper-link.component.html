@@ -1,0 +1,8 @@
+<a (click)="onLinkClick()" target="_blank" class="pointer px-1 hover-opacity d-flex gap-1 text-decoration-none align-items-center">
+  <span class="auto-trim">
+    {{ params?.value }}
+  </span>
+  <div (click)="onExternalLinkClick($event)">
+    <i class="far fa-external-link hover-opacity_elem"></i>
+  </div>
+</a>

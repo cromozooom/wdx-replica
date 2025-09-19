@@ -2,14 +2,14 @@ import { Component, Input } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { AgGridModule } from "ag-grid-angular";
 import { ColDef, themeAlpine } from "ag-grid-community";
-import { AutomationItem } from "../widget-automation-content/widget-automation-content.models";
-import { StatusCellRendererComponent } from "../widget-automation-content/status-cell-renderer.component";
-import { FailedErrorCellRendererComponent } from "../widget-automation-content/failed-error-cell-renderer.component";
-import { PassedCellRendererComponent } from "../widget-automation-content/passed-cell-renderer.component";
-import { FailedCellRendererComponent } from "../widget-automation-content/failed-cell-renderer.component";
-import { JobNameCellRendererComponent } from "../widget-automation-content/job-name-cell-renderer.component";
-import { JobActionsCellRendererComponent } from "../widget-automation-content/job-actions-cell-renderer.component";
-import { JobGroupCellRendererComponent } from "../widget-automation-content/job-group-cell-renderer.component";
+import { AutomationItem } from "../../core/modules/dashboard-widgets/widget-automation-content/widget-automation-content.models";
+import { StatusCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/status-cell-renderer.component";
+import { FailedErrorCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/failed-error-cell-renderer.component";
+import { PassedCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/passed-cell-renderer.component";
+import { FailedCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/failed-cell-renderer.component";
+import { JobNameCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/job-name-cell-renderer.component";
+import { JobActionsCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/job-actions-cell-renderer.component";
+import { JobGroupCellRendererComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/job-group-cell-renderer.component";
 
 @Component({
   selector: "app-jobs-grid",
@@ -26,6 +26,7 @@ import { JobGroupCellRendererComponent } from "../widget-automation-content/job-
     JobGroupCellRendererComponent,
   ],
   template: `
+    <!-- [groupDefaultExpanded]="-1" -->
     <ag-grid-angular
       [theme]="theme"
       style="width: 100%; height: 100%;"
@@ -33,7 +34,6 @@ import { JobGroupCellRendererComponent } from "../widget-automation-content/job-
       class="flex-grow-1"
       [columnDefs]="columnDefs"
       [groupDisplayType]="'groupRows'"
-      [groupDefaultExpanded]="-1"
       [groupRowRenderer]="'agGroupCellRenderer'"
       [groupRowRendererParams]="groupRowRendererParams"
       [animateRows]="true"
@@ -54,7 +54,7 @@ export class JobsGridComponent {
       headerName: "Job Name",
       filter: true,
       rowGroup: true,
-      width: 420,
+      width: 560,
     },
     { field: "dateOfRun", headerName: "Date of Run", filter: false },
     {
@@ -62,25 +62,25 @@ export class JobsGridComponent {
       headerName: "Type",
       filter: true,
       hide: false,
-      width: 100,
+      width: 300,
     },
     {
       field: "status",
       headerName: "Status",
-      filter: false,
+      filter: true,
       cellRenderer: StatusCellRendererComponent,
       cellRendererParams: (params: any) => ({ status: params.value }),
     },
-    {
-      field: "breachListLink",
-      headerName: "Breach List",
-      filter: true,
-      width: 200,
-    },
+    // {
+    //   field: "breachListLink",
+    //   headerName: "Breach List",
+    //   filter: true,
+    //   width: 200,
+    // },
     {
       field: "testedRecordsCount",
       headerName: "Tested",
-      filter: false,
+      filter: true,
       width: 150,
     },
     {
@@ -97,7 +97,7 @@ export class JobsGridComponent {
     },
     {
       field: "failedRecordsCount",
-      headerName: "Failed",
+      headerName: "Failed (Review)",
       filter: true,
       width: 150,
       cellRenderer: FailedCellRendererComponent,
@@ -109,16 +109,6 @@ export class JobsGridComponent {
       width: 150,
       cellRenderer: FailedErrorCellRendererComponent,
     },
-    {
-      headerName: "Actions",
-      cellRenderer: JobActionsCellRendererComponent,
-      width: 120,
-      pinned: "right",
-      // suppressMenu removed: not a valid ColDef property
-      sortable: false,
-      filter: false,
-    },
-    // Validation details (breach list) will be handled as a custom cell renderer in the next step
   ];
 
   defaultColDef: ColDef = {

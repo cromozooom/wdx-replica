@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { JobsGridComponent } from "../jobs-grid/jobs-grid.component";
+import { JobsGridComponent } from "../../../../app/jobs-grid/jobs-grid.component";
 import { JobEditorComponent } from "./job-editor.component";
 import { widgetDemoAutomations } from "./widget-automation-content.dummy-data";
 import { NgbNavModule, NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
