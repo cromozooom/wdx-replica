@@ -295,7 +295,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     }
 
     const width = document.getElementById("d3-timeline")?.clientWidth || 600;
-    const height = 100;
+    const height = 150;
     const margin = { left: 30, right: 30, top: 30, bottom: 30 };
     const svg = d3
       .select("#d3-timeline")
@@ -464,12 +464,131 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
           const spiral = spiralOrder(gridRows, gridCols, dotsInGrid);
           for (let s = 0; s < spiral.length; s++, modIdx++) {
             const [i, j] = spiral[s];
-            svg
+            const mod = mods[modIdx];
+            let tooltipHtml = "";
+            if (mod) {
+              const localTime = new Date(mod.timestamp).toLocaleString();
+              tooltipHtml =
+                `<div class='position-relative'>` +
+                `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+                `<strong>Time:</strong> ${localTime}<br/>` +
+                `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+                (mod.description
+                  ? `<strong>Description:</strong> ${mod.description}<br/>`
+                  : "") +
+                `<div class='btn-group mt-2'>` +
+                `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+                `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+                `</div>` +
+                `</div>`;
+            }
+            const circle = svg
               .append("circle")
               .attr("cx", gridStartX + (j - (gridCols - 1) / 2) * gridCell)
               .attr("cy", centerY + (i - (gridRows - 1) / 2) * gridCell)
               .attr("r", dotRadius)
               .attr("fill", "var(--bs-primary)");
+            // Popper.js tooltip logic (sticky, with close and buttons)
+            let popperInstance: any = null;
+            let tooltipEl: HTMLElement | null = null;
+            let sticky = false;
+            let outsideClickHandler: any = null;
+            function removeTooltip() {
+              if (popperInstance) {
+                popperInstance.destroy();
+                popperInstance = null;
+              }
+              if (tooltipEl) {
+                tooltipEl.remove();
+                tooltipEl = null;
+              }
+              sticky = false;
+              if (outsideClickHandler) {
+                document.removeEventListener(
+                  "mousedown",
+                  outsideClickHandler,
+                  true
+                );
+                outsideClickHandler = null;
+              }
+            }
+            circle
+              .on("mouseover", function (event: any) {
+                if (sticky) return;
+                document
+                  .querySelectorAll(".d3-popper-tooltip")
+                  .forEach((el) => el.remove());
+                tooltipEl = document.createElement("div");
+                tooltipEl.className = "d3-popper-tooltip";
+                tooltipEl.style.background = "rgba(30,30,30,0.97)";
+                tooltipEl.style.color = "#fff";
+                tooltipEl.style.padding = "8px 12px";
+                tooltipEl.style.borderRadius = "6px";
+                tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+                tooltipEl.style.zIndex = "9999";
+                tooltipEl.style.pointerEvents = "auto";
+                tooltipEl.innerHTML = tooltipHtml;
+                document.body.appendChild(tooltipEl);
+                popperInstance = (window as any).Popper.createPopper(
+                  this,
+                  tooltipEl,
+                  {
+                    placement: "top",
+                    modifiers: [
+                      { name: "offset", options: { offset: [0, 8] } },
+                      {
+                        name: "preventOverflow",
+                        options: { boundary: "viewport" },
+                      },
+                    ],
+                  }
+                );
+                // Close button
+                tooltipEl
+                  .querySelector(".d3-tooltip-close")
+                  ?.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    removeTooltip();
+                  });
+                // Action buttons
+                tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+                  btn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    const action = (e.target as HTMLElement).getAttribute(
+                      "data-action"
+                    );
+                    if (action === "details") {
+                      alert("Show details for this modification!");
+                    } else if (action === "copy") {
+                      navigator.clipboard.writeText(
+                        JSON.stringify(mod, null, 2)
+                      );
+                    }
+                  });
+                });
+                sticky = true;
+                // Add click-outside handler
+                outsideClickHandler = function (e: MouseEvent) {
+                  if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                    removeTooltip();
+                  }
+                };
+                setTimeout(() => {
+                  document.addEventListener(
+                    "mousedown",
+                    outsideClickHandler,
+                    true
+                  );
+                }, 0);
+              })
+              .on("mousemove", function (event: any) {
+                if (tooltipEl && popperInstance && !sticky) {
+                  popperInstance.update();
+                }
+              })
+              .on("mouseleave", function () {
+                if (!sticky) removeTooltip();
+              });
           }
           gridStartX += gridCell * gridCols + 20;
         }
