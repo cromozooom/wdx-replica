@@ -213,7 +213,9 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     } else if (this.timeframe === "all") {
       // Show all unique days in the dataset, sorted
       const allTimestamps = this.fakeData.map((d) => d.timestamp);
-      const allDates = allTimestamps.map((ts) => new Date(ts).toISOString().slice(0, 10));
+      const allDates = allTimestamps.map((ts) =>
+        new Date(ts).toISOString().slice(0, 10)
+      );
       allDays = Array.from(new Set(allDates)).sort();
       if (allDays.length > 0) {
         startDate = new Date(allDays[0]);
