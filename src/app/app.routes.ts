@@ -3,21 +3,21 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 
 export const routes: Routes = [
   {
-    path: 'dashboard',
+    path: "dashboard",
     children: [
       {
-        path: '',
+        path: "",
         component: DashboardComponent,
       },
       {
-        path: ':type',
+        path: ":type",
         component: DashboardComponent,
       },
     ],
   },
   {
-    path: '',
-    redirectTo: 'dashboard',
-    pathMatch: 'full',
+    path: "",
+    redirectTo: "dashboard",
+    pathMatch: "full",
   },
 ];
