@@ -35,16 +35,28 @@
               <button
                 type="button"
                 class="btn btn-sm btn-link text-decoration-none"
-                (click)="goPrevDay()"
-                [disabled]="!canGoPrevDay"
+                (click)="timeframe === 'daily' ? goPrevDay() : onPrev()"
+                [disabled]="
+                  timeframe === 'daily'
+                    ? !canGoPrevDay
+                    : timeframe === 'week'
+                      ? !canGoPrevWeek
+                      : false
+                "
               >
                 Prev
               </button>
               <button
                 type="button"
                 class="btn btn-sm btn-link text-decoration-none"
-                (click)="goNextDay()"
-                [disabled]="!canGoNextDay"
+                (click)="timeframe === 'daily' ? goNextDay() : onNext()"
+                [disabled]="
+                  timeframe === 'daily'
+                    ? !canGoNextDay
+                    : timeframe === 'week'
+                      ? !canGoNextWeek
+                      : false
+                "
               >
                 Next
               </button>

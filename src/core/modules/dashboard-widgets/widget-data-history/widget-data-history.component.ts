@@ -32,6 +32,32 @@ import {
   ],
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
+  // --- Week Navigation Helpers ---
+  weekStartDatesWithNodes: string[] = [];
+
+  /**
+   * Given a date, return the ISO string for the start of the week (Sunday).
+   */
+  getWeekStart(date: Date): string {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() - d.getDay());
+    return d.toISOString().slice(0, 10);
+  }
+
+  /**
+   * Compute all week start dates (ISO string) that have at least one node in them.
+   */
+  computeWeeksWithNodes(): void {
+    const allTimestamps = this.fakeData.map((d) => d.timestamp);
+    const allDates = allTimestamps.map((ts) => new Date(ts));
+    const weekStarts = new Set<string>();
+    for (const d of allDates) {
+      const weekStart = this.getWeekStart(d);
+      weekStarts.add(weekStart);
+    }
+    this.weekStartDatesWithNodes = Array.from(weekStarts).sort();
+  }
   gridApi: any;
   timeframe: "month" | "week" | "year" | "all" | "daily" = "daily";
   selectedDay: string | null = null;
@@ -127,6 +153,20 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       this.uniqueDays.indexOf(this.selectedDay) < this.uniqueDays.length - 1
     );
   }
+  get canGoPrevWeek(): boolean {
+    if (this.timeframe !== "week" || !this.weekStartDatesWithNodes.length)
+      return false;
+    const currentWeekStart = this.getWeekStart(this.currentDate);
+    const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+    return idx > 0;
+  }
+  get canGoNextWeek(): boolean {
+    if (this.timeframe !== "week" || !this.weekStartDatesWithNodes.length)
+      return false;
+    const currentWeekStart = this.getWeekStart(this.currentDate);
+    const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+    return idx >= 0 && idx < this.weekStartDatesWithNodes.length - 1;
+  }
 
   // --- Lifecycle Hooks ---
   ngOnInit(): void {
@@ -139,6 +179,14 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     this.selectedDay = this.uniqueDays.length
       ? this.uniqueDays[this.uniqueDays.length - 1]
       : null;
+    this.computeWeeksWithNodes();
+    // If in week mode, ensure currentDate is a valid week
+    if (this.timeframe === "week" && this.weekStartDatesWithNodes.length) {
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      if (!this.weekStartDatesWithNodes.includes(currentWeekStart)) {
+        this.currentDate = new Date(this.weekStartDatesWithNodes[0]);
+      }
+    }
   }
 
   ngAfterViewInit() {
@@ -162,8 +210,24 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   onPrev() {
     if (this.timeframe === "month") {
       this.currentDate = new Date();
-      this.renderTimeline();
     } else if (this.timeframe === "week") {
+      if (!this.canGoPrevWeek) return;
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+      if (idx > 0) {
+        // Set currentDate to the first day with nodes in the previous week
+        const prevWeekStart = this.weekStartDatesWithNodes[idx - 1];
+        const prevWeekNodes = this.fakeData.filter(
+          (d) => this.getWeekStart(new Date(d.timestamp)) === prevWeekStart
+        );
+        if (prevWeekNodes.length) {
+          // Set to the first node's date in that week
+          this.currentDate = new Date(prevWeekNodes[0].timestamp);
+        } else {
+          this.currentDate = new Date(prevWeekStart);
+        }
+      }
+    } else if (this.timeframe === "year") {
       this.currentDate = new Date(this.currentDate.getFullYear() - 1, 0, 1);
     }
     this.renderTimeline();
@@ -177,8 +241,21 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         1
       );
     } else if (this.timeframe === "week") {
-      this.currentDate = new Date(this.currentDate);
-      this.currentDate.setDate(this.currentDate.getDate() + 7);
+      if (!this.canGoNextWeek) return;
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+      if (idx >= 0 && idx < this.weekStartDatesWithNodes.length - 1) {
+        // Set currentDate to the first day with nodes in the next week
+        const nextWeekStart = this.weekStartDatesWithNodes[idx + 1];
+        const nextWeekNodes = this.fakeData.filter(
+          (d) => this.getWeekStart(new Date(d.timestamp)) === nextWeekStart
+        );
+        if (nextWeekNodes.length) {
+          this.currentDate = new Date(nextWeekNodes[0].timestamp);
+        } else {
+          this.currentDate = new Date(nextWeekStart);
+        }
+      }
     } else if (this.timeframe === "year") {
       this.currentDate = new Date(this.currentDate.getFullYear() + 1, 0, 1);
     }
@@ -305,23 +382,238 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
     if (this.timeframe === "daily" && this.selectedDay) {
       this.renderDailyTimeline(svg, margin, width, height);
-    }
-
-    // Draw month start/end markers and vertical lines at each ending day
-    if (allDays.length > 0) {
-      const months: string[] = [];
-      allDays.forEach((d) => {
-        const m = d.slice(0, 7); // YYYY-MM
-        if (months.length === 0 || months[months.length - 1] !== m) {
-          months.push(m);
-        }
-      });
-      months.forEach((month, idx) => {
-        // Optionally render month markers here
-        // console.log("Month:", month);
-      });
+    } else if (this.timeframe === "week") {
+      this.renderWeeklyTimeline(svg, margin, width, height);
     }
   }
+
+  /**
+   * Render the D3 timeline for the weekly view.
+   */
+  private renderWeeklyTimeline(
+    svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>,
+    margin: any,
+    width: number,
+    height: number
+  ) {
+    // Calculate week start/end
+    const dayOfWeek = this.currentDate.getDay();
+    const weekStart = new Date(this.currentDate);
+    weekStart.setDate(this.currentDate.getDate() - dayOfWeek);
+    const weekDays: string[] = [];
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(weekStart);
+      d.setDate(weekStart.getDate() + i);
+      weekDays.push(d.toISOString().slice(0, 10));
+    }
+    // Draw timeline axis
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2)
+      .attr("y2", height / 2)
+      .attr("stroke", "var(--bs-gray-200)")
+      .attr("stroke-width", 2);
+
+    // Draw 8 vertical lines (7 days = 8 boundaries)
+    const numDays = 7;
+    const numLines = numDays + 1;
+    const daySpacing = (width - margin.left - margin.right) / numDays;
+    for (let i = 0; i < numLines; i++) {
+      const x = margin.left + i * daySpacing;
+      svg
+        .append("line")
+        .attr("x1", x)
+        .attr("x2", x)
+        .attr("y1", height / 2 - 28)
+        .attr("y2", height / 2 + 28)
+        .attr("stroke", "var(--bs-gray-400)")
+        .attr("stroke-width", 2);
+    }
+    // Draw 7 labels centered between lines
+    for (let i = 0; i < numDays; i++) {
+      const x = margin.left + (i + 0.5) * daySpacing;
+      svg
+        .append("text")
+        .attr("x", x)
+        .attr("y", height / 2 - 52)
+        .attr("text-anchor", "middle")
+        .attr("font-size", 13)
+        .attr("fill", "var(--bs-gray-700)")
+        .text(weekDays[i]);
+    }
+    // For each day, group mods and render a grid in S/coil (snake) pattern
+    const dotRadius = 4 * 1.3;
+    const gridPadding = 4;
+    const dayWidth = daySpacing;
+    const dayHeight = 56; // vertical space between the two verticals
+    weekDays.forEach((day, idx) => {
+      const mods = this.fakeData.filter(
+        (mod) => new Date(mod.timestamp).toISOString().slice(0, 10) === day
+      );
+      if (!mods.length) return;
+      const n = mods.length;
+      // Compute grid size
+      const maxCols = Math.floor(
+        (dayWidth - 2 * gridPadding) / (dotRadius * 2 + gridPadding)
+      );
+      const maxRows = Math.floor(
+        (dayHeight - 2 * gridPadding) / (dotRadius * 2 + gridPadding)
+      );
+      let cols = Math.min(maxCols, n);
+      let rows = Math.ceil(n / cols);
+      if (rows > maxRows) {
+        rows = maxRows;
+        cols = Math.ceil(n / rows);
+      }
+      // Center grid in the day's area
+      const gridW = cols * (dotRadius * 2 + gridPadding) - gridPadding;
+      const gridH = rows * (dotRadius * 2 + gridPadding) - gridPadding;
+      const startX =
+        margin.left + idx * daySpacing + (dayWidth - gridW) / 2 + dotRadius;
+      const startY = height / 2 - gridH / 2 + dotRadius;
+      for (let i = 0; i < n; i++) {
+        // S/coil (snake) pattern: row by row, alternate direction
+        const row = Math.floor(i / cols);
+        let col = i % cols;
+        if (row % 2 === 1) col = cols - 1 - col;
+        const x = startX + col * (dotRadius * 2 + gridPadding);
+        const y = startY + row * (dotRadius * 2 + gridPadding);
+        const mod = mods[i];
+        // Color by fieldDisplayName
+        const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+        function fieldDisplayNameToColorIndex(name: string) {
+          let hash = 0;
+          for (let i = 0; i < name.length; i++)
+            hash = (hash * 31 + name.charCodeAt(i)) % 68;
+          return hash + 1; // 1-based
+        }
+        const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+        const fillColor = `var(--${colorIdx})`;
+        let tooltipHtml = "";
+        if (mod) {
+          const localTime = new Date(mod.timestamp).toLocaleString();
+          tooltipHtml =
+            `<div class='position-relative'>` +
+            `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+            `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
+            `<strong>Time:</strong> ${localTime}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+            (mod.description
+              ? `<strong>Description:</strong> ${mod.description}<br/>`
+              : "") +
+            `<div class='btn-group mt-2'>` +
+            `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+            `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+            `</div>` +
+            `</div>`;
+        }
+        const circle = svg
+          .append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", dotRadius)
+          .attr("fill", fillColor);
+        // Popper.js tooltip logic (sticky, with close and buttons)
+        let popperInstance: any = null;
+        let tooltipEl: HTMLElement | null = null;
+        let sticky = false;
+        let outsideClickHandler: any = null;
+        function removeTooltip() {
+          if (popperInstance) {
+            popperInstance.destroy();
+            popperInstance = null;
+          }
+          if (tooltipEl) {
+            tooltipEl.remove();
+            tooltipEl = null;
+          }
+          sticky = false;
+          if (outsideClickHandler) {
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            outsideClickHandler = null;
+          }
+        }
+        circle
+          .on("mouseover", function (event: any) {
+            if (sticky) return;
+            document
+              .querySelectorAll(".d3-popper-tooltip")
+              .forEach((el) => el.remove());
+            tooltipEl = document.createElement("div");
+            tooltipEl.className = "d3-popper-tooltip";
+            tooltipEl.style.background = "rgba(30,30,30,0.97)";
+            tooltipEl.style.color = "#fff";
+            tooltipEl.style.padding = "8px 12px";
+            tooltipEl.style.borderRadius = "6px";
+            tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+            tooltipEl.style.zIndex = "9999";
+            tooltipEl.style.pointerEvents = "auto";
+            tooltipEl.innerHTML = tooltipHtml;
+            document.body.appendChild(tooltipEl);
+            popperInstance = (window as any).Popper.createPopper(
+              this,
+              tooltipEl,
+              {
+                placement: "top",
+                modifiers: [
+                  { name: "offset", options: { offset: [0, 8] } },
+                  {
+                    name: "preventOverflow",
+                    options: { boundary: "viewport" },
+                  },
+                ],
+              }
+            );
+            // Close button
+            tooltipEl
+              .querySelector(".d3-tooltip-close")
+              ?.addEventListener("click", (e) => {
+                e.stopPropagation();
+                removeTooltip();
+              });
+            // Action buttons
+            tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const action = (e.target as HTMLElement).getAttribute(
+                  "data-action"
+                );
+                if (action === "details") {
+                  alert("Show details for this modification!");
+                } else if (action === "copy") {
+                  navigator.clipboard.writeText(JSON.stringify(mod, null, 2));
+                }
+              });
+            });
+            sticky = true;
+            // Add click-outside handler
+            outsideClickHandler = function (e: MouseEvent) {
+              if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                removeTooltip();
+              }
+            };
+            setTimeout(() => {
+              document.addEventListener("mousedown", outsideClickHandler, true);
+            }, 0);
+          })
+          .on("mousemove", function (event: any) {
+            if (tooltipEl && popperInstance && !sticky) {
+              popperInstance.update();
+            }
+          })
+          .on("mouseleave", function () {
+            if (!sticky) removeTooltip();
+          });
+      }
+    });
+  }
+
   /**
    * Render the D3 timeline for the daily view.
    */
@@ -613,6 +905,14 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     const idx = select.selectedIndex;
     this.selectedDataset = this.datasets[idx];
     this.fakeData = this.selectedDataset.value;
+    this.computeWeeksWithNodes();
+    // If in week mode, ensure currentDate is a valid week
+    if (this.timeframe === "week" && this.weekStartDatesWithNodes.length) {
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      if (!this.weekStartDatesWithNodes.includes(currentWeekStart)) {
+        this.currentDate = new Date(this.weekStartDatesWithNodes[0]);
+      }
+    }
     setTimeout(() => {
       if (this.gridApi) {
         this.gridApi.resetRowHeights();
