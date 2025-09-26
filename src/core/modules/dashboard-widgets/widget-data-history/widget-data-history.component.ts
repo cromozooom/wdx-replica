@@ -672,231 +672,157 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
           new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
       );
     if (mods.length > 0) {
-      const minTime = new Date(this.selectedDay + "T00:00:00Z").getTime();
-      const maxTime = new Date(this.selectedDay + "T23:59:59Z").getTime();
-      const timeSpan = maxTime - minTime || 1;
-      const dotPositions: { x: number; mods: any[] }[] = [];
-      mods.forEach((mod) => {
-        const t = new Date(mod.timestamp).getTime();
-        const xPos =
-          margin.left +
-          ((width - margin.left - margin.right) * (t - minTime)) / timeSpan;
-        const epsilon = 2; // px
-        let found = false;
-        for (const pos of dotPositions) {
-          if (Math.abs(pos.x - xPos) < epsilon) {
-            pos.mods.push(mod);
-            found = true;
-            break;
+      // Calculate grid size based on number of nodes and available width
+      const availableWidth = width - margin.left - margin.right;
+      const minSpacing = dotRadius * 2 + 8;
+      // Try to fit as many as possible in a single row, but at least 1
+      let gridCols = Math.floor(availableWidth / minSpacing);
+      gridCols = Math.max(1, gridCols);
+      // If not enough for all, use multiple rows
+      const gridRows = Math.ceil(mods.length / gridCols);
+      // Center the grid
+      const gridWidth = (gridCols - 1) * minSpacing;
+      const gridHeight = (gridRows - 1) * minSpacing;
+      const startX = margin.left + (availableWidth - gridWidth) / 2;
+      const centerY = height / 2;
+      for (let idx = 0; idx < mods.length; idx++) {
+        const row = Math.floor(idx / gridCols);
+        let col = idx % gridCols;
+        // Zig-zag: reverse direction every other row
+        if (row % 2 === 1) {
+          col = gridCols - 1 - col;
+        }
+        const mod = mods[idx];
+        // Color by fieldDisplayName
+        const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+        function fieldDisplayNameToColorIndex(name: string) {
+          let hash = 0;
+          for (let i = 0; i < name.length; i++)
+            hash = (hash * 31 + name.charCodeAt(i)) % 68;
+          return hash + 1; // 1-based
+        }
+        const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+        const fillColor = `var(--${colorIdx})`;
+        let tooltipHtml = "";
+        if (mod) {
+          const localTime = new Date(mod.timestamp).toLocaleString();
+          tooltipHtml =
+            `<div class='position-relative'>` +
+            `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+            `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
+            `<strong>Time:</strong> ${localTime}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+            (mod.description
+              ? `<strong>Description:</strong> ${mod.description}<br/>`
+              : "") +
+            `<div class='btn-group mt-2'>` +
+            `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+            `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+            `</div>` +
+            `</div>`;
+        }
+        const circle = svg
+          .append("circle")
+          .attr("cx", startX + col * minSpacing)
+          .attr("cy", centerY + (row - (gridRows - 1) / 2) * minSpacing)
+          .attr("r", dotRadius)
+          .attr("fill", fillColor);
+        // Popper.js tooltip logic (sticky, with close and buttons)
+        let popperInstance: any = null;
+        let tooltipEl: HTMLElement | null = null;
+        let sticky = false;
+        let outsideClickHandler: any = null;
+        function removeTooltip() {
+          if (popperInstance) {
+            popperInstance.destroy();
+            popperInstance = null;
+          }
+          if (tooltipEl) {
+            tooltipEl.remove();
+            tooltipEl = null;
+          }
+          sticky = false;
+          if (outsideClickHandler) {
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            outsideClickHandler = null;
           }
         }
-        if (!found) {
-          dotPositions.push({ x: xPos, mods: [mod] });
-        }
-      });
-      // Spiral parameters
-      const spiralStep = dotRadius * 2 + 8; // distance between dots
-      let lastSpiralEndX = -Infinity;
-
-      dotPositions.forEach((pos) => {
-        const mods = pos.mods;
-        let gridStartX = pos.x;
-        // Ensure at least 20px from previous grid
-        if (gridStartX < lastSpiralEndX + 20) {
-          gridStartX = lastSpiralEndX + 20;
-        }
-        const centerY = height / 2;
-        const gridCols = 6;
-        const gridRows = 6;
-        const gridCell = dotRadius * 2 + 8;
-        // Generate spiral order indices for a grid
-        function spiralOrder(nRows: number, nCols: number, count: number) {
-          const res: [number, number][] = [];
-          let top = 0,
-            bottom = nRows - 1,
-            left = 0,
-            right = nCols - 1;
-          let x = Math.floor((nCols - 1) / 2),
-            y = Math.floor((nRows - 1) / 2);
-          let dx = [0, 1, 0, -1],
-            dy = [-1, 0, 1, 0]; // up, right, down, left
-          let dir = 0,
-            steps = 1,
-            stepCount = 0,
-            change = 0;
-          let visited = Array.from({ length: nRows }, () =>
-            Array(nCols).fill(false)
-          );
-          let total = 0;
-          while (total < count) {
-            if (x >= 0 && x < nCols && y >= 0 && y < nRows && !visited[y][x]) {
-              res.push([y, x]);
-              visited[y][x] = true;
-              total++;
-            }
-            x += dx[dir];
-            y += dy[dir];
-            stepCount++;
-            if (stepCount === steps) {
-              stepCount = 0;
-              dir = (dir + 1) % 4;
-              change++;
-              if (change % 2 === 0) steps++;
-            }
-          }
-          return res;
-        }
-        let modIdx = 0;
-        let gridsNeeded = Math.ceil(mods.length / (gridCols * gridRows));
-        for (let g = 0; g < gridsNeeded; g++) {
-          const dotsInGrid = Math.min(
-            gridCols * gridRows,
-            mods.length - modIdx
-          );
-          const spiral = spiralOrder(gridRows, gridCols, dotsInGrid);
-          for (let s = 0; s < spiral.length; s++, modIdx++) {
-            const [i, j] = spiral[s];
-            const mod = mods[modIdx];
-            // Color by fieldDisplayName
-            const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
-            function fieldDisplayNameToColorIndex(name: string) {
-              let hash = 0;
-              for (let i = 0; i < name.length; i++)
-                hash = (hash * 31 + name.charCodeAt(i)) % 68;
-              return hash + 1; // 1-based
-            }
-            const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
-            const fillColor = `var(--${colorIdx})`;
-            let tooltipHtml = "";
-            if (mod) {
-              const localTime = new Date(mod.timestamp).toLocaleString();
-              tooltipHtml =
-                `<div class='position-relative'>` +
-                `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
-                `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
-                `<strong>Time:</strong> ${localTime}<br/>` +
-                `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
-                (mod.description
-                  ? `<strong>Description:</strong> ${mod.description}<br/>`
-                  : "") +
-                `<div class='btn-group mt-2'>` +
-                `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
-                `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
-                `</div>` +
-                `</div>`;
-            }
-            const circle = svg
-              .append("circle")
-              .attr("cx", gridStartX + (j - (gridCols - 1) / 2) * gridCell)
-              .attr("cy", centerY + (i - (gridRows - 1) / 2) * gridCell)
-              .attr("r", dotRadius)
-              .attr("fill", fillColor);
-            // Popper.js tooltip logic (sticky, with close and buttons)
-            let popperInstance: any = null;
-            let tooltipEl: HTMLElement | null = null;
-            let sticky = false;
-            let outsideClickHandler: any = null;
-            function removeTooltip() {
-              if (popperInstance) {
-                popperInstance.destroy();
-                popperInstance = null;
-              }
-              if (tooltipEl) {
-                tooltipEl.remove();
-                tooltipEl = null;
-              }
-              sticky = false;
-              if (outsideClickHandler) {
-                document.removeEventListener(
-                  "mousedown",
-                  outsideClickHandler,
-                  true
-                );
-                outsideClickHandler = null;
-              }
-            }
-            circle
-              .on("mouseover", function (event: any) {
-                if (sticky) return;
-                document
-                  .querySelectorAll(".d3-popper-tooltip")
-                  .forEach((el) => el.remove());
-                tooltipEl = document.createElement("div");
-                tooltipEl.className = "d3-popper-tooltip";
-                tooltipEl.style.background = "rgba(30,30,30,0.97)";
-                tooltipEl.style.color = "#fff";
-                tooltipEl.style.padding = "8px 12px";
-                tooltipEl.style.borderRadius = "6px";
-                tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
-                tooltipEl.style.zIndex = "9999";
-                tooltipEl.style.pointerEvents = "auto";
-                tooltipEl.innerHTML = tooltipHtml;
-                document.body.appendChild(tooltipEl);
-                popperInstance = (window as any).Popper.createPopper(
-                  this,
-                  tooltipEl,
+        circle
+          .on("mouseover", function (event: any) {
+            if (sticky) return;
+            document
+              .querySelectorAll(".d3-popper-tooltip")
+              .forEach((el) => el.remove());
+            tooltipEl = document.createElement("div");
+            tooltipEl.className = "d3-popper-tooltip";
+            tooltipEl.style.background = "rgba(30,30,30,0.97)";
+            tooltipEl.style.color = "#fff";
+            tooltipEl.style.padding = "8px 12px";
+            tooltipEl.style.borderRadius = "6px";
+            tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+            tooltipEl.style.zIndex = "9999";
+            tooltipEl.style.pointerEvents = "auto";
+            tooltipEl.innerHTML = tooltipHtml;
+            document.body.appendChild(tooltipEl);
+            popperInstance = (window as any).Popper.createPopper(
+              this,
+              tooltipEl,
+              {
+                placement: "top",
+                modifiers: [
+                  { name: "offset", options: { offset: [0, 8] } },
                   {
-                    placement: "top",
-                    modifiers: [
-                      { name: "offset", options: { offset: [0, 8] } },
-                      {
-                        name: "preventOverflow",
-                        options: { boundary: "viewport" },
-                      },
-                    ],
-                  }
-                );
-                // Close button
-                tooltipEl
-                  .querySelector(".d3-tooltip-close")
-                  ?.addEventListener("click", (e) => {
-                    e.stopPropagation();
-                    removeTooltip();
-                  });
-                // Action buttons
-                tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
-                  btn.addEventListener("click", (e) => {
-                    e.stopPropagation();
-                    const action = (e.target as HTMLElement).getAttribute(
-                      "data-action"
-                    );
-                    if (action === "details") {
-                      alert("Show details for this modification!");
-                    } else if (action === "copy") {
-                      navigator.clipboard.writeText(
-                        JSON.stringify(mod, null, 2)
-                      );
-                    }
-                  });
-                });
-                sticky = true;
-                // Add click-outside handler
-                outsideClickHandler = function (e: MouseEvent) {
-                  if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
-                    removeTooltip();
-                  }
-                };
-                setTimeout(() => {
-                  document.addEventListener(
-                    "mousedown",
-                    outsideClickHandler,
-                    true
-                  );
-                }, 0);
-              })
-              .on("mousemove", function (event: any) {
-                if (tooltipEl && popperInstance && !sticky) {
-                  popperInstance.update();
-                }
-              })
-              .on("mouseleave", function () {
-                if (!sticky) removeTooltip();
+                    name: "preventOverflow",
+                    options: { boundary: "viewport" },
+                  },
+                ],
+              }
+            );
+            // Close button
+            tooltipEl
+              .querySelector(".d3-tooltip-close")
+              ?.addEventListener("click", (e) => {
+                e.stopPropagation();
+                removeTooltip();
               });
-          }
-          gridStartX += gridCell * gridCols + 20;
-        }
-        lastSpiralEndX = gridStartX - 20;
-      });
+            // Action buttons
+            tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const action = (e.target as HTMLElement).getAttribute(
+                  "data-action"
+                );
+                if (action === "details") {
+                  alert("Show details for this modification!");
+                } else if (action === "copy") {
+                  navigator.clipboard.writeText(JSON.stringify(mod, null, 2));
+                }
+              });
+            });
+            sticky = true;
+            // Add click-outside handler
+            outsideClickHandler = function (e: MouseEvent) {
+              if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                removeTooltip();
+              }
+            };
+            setTimeout(() => {
+              document.addEventListener("mousedown", outsideClickHandler, true);
+            }, 0);
+          })
+          .on("mousemove", function (event: any) {
+            if (tooltipEl && popperInstance && !sticky) {
+              popperInstance.update();
+            }
+          })
+          .on("mouseleave", function () {
+            if (!sticky) removeTooltip();
+          });
+      }
     }
   }
 
