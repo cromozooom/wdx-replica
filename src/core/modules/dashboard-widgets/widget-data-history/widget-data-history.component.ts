@@ -467,19 +467,17 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         rows = maxRows;
         cols = Math.ceil(n / rows);
       }
-      // Center grid in the day's area
-      const gridW = cols * (dotRadius * 2 + gridPadding) - gridPadding;
-      const gridH = rows * (dotRadius * 2 + gridPadding) - gridPadding;
-      const startX =
-        margin.left + idx * daySpacing + (dayWidth - gridW) / 2 + dotRadius;
-      const startY = height / 2 - gridH / 2 + dotRadius;
+      // Center grid horizontally between verticals
+      const gridW = (cols - 1) * (dotRadius * 2 + gridPadding);
+      const startX = margin.left + idx * daySpacing + (dayWidth - gridW) / 2;
+      const centerY = height / 2;
       for (let i = 0; i < n; i++) {
         // S/coil (snake) pattern: row by row, alternate direction
         const row = Math.floor(i / cols);
         let col = i % cols;
         if (row % 2 === 1) col = cols - 1 - col;
         const x = startX + col * (dotRadius * 2 + gridPadding);
-        const y = startY + row * (dotRadius * 2 + gridPadding);
+        const y = centerY;
         const mod = mods[i];
         // Color by fieldDisplayName
         const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
@@ -673,17 +671,16 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       );
     if (mods.length > 0) {
       // Calculate grid size based on number of nodes and available width
-      const availableWidth = width - margin.left - margin.right;
+      const dayWidth = width - margin.left - margin.right;
       const minSpacing = dotRadius * 2 + 8;
       // Try to fit as many as possible in a single row, but at least 1
-      let gridCols = Math.floor(availableWidth / minSpacing);
+      let gridCols = Math.min(mods.length, Math.floor(dayWidth / minSpacing));
       gridCols = Math.max(1, gridCols);
       // If not enough for all, use multiple rows
       const gridRows = Math.ceil(mods.length / gridCols);
-      // Center the grid
+      // Center the grid horizontally between the two vertical lines (like weekly view)
       const gridWidth = (gridCols - 1) * minSpacing;
-      const gridHeight = (gridRows - 1) * minSpacing;
-      const startX = margin.left + (availableWidth - gridWidth) / 2;
+      const startX = margin.left + (dayWidth - gridWidth) / 2;
       const centerY = height / 2;
       for (let idx = 0; idx < mods.length; idx++) {
         const row = Math.floor(idx / gridCols);
