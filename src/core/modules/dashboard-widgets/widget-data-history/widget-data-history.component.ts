@@ -265,8 +265,8 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
     // D3 segmented timeline with dots for each modification and month markers
     const width = document.getElementById("d3-timeline")?.clientWidth || 600;
-    const height = 60;
-    const margin = { left: 30, right: 30, top: 20, bottom: 20 };
+    const height = 100;
+    const margin = { left: 30, right: 30, top: 30, bottom: 30 };
     const svg = d3
       .select("#d3-timeline")
       .append("svg")
@@ -279,8 +279,9 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       .domain(allDays)
       .range([margin.left, width - margin.right]);
 
-    // --- D3 drawing temporarily commented out for debugging ---
-    // Draw the main horizontal line
+    // --- Only render SVG for daily view ---
+    // Draw the main horizontal line (for non-daily views, commented out)
+    /*
     svg
       .append("line")
       .attr("x1", margin.left)
@@ -290,7 +291,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       .attr("stroke", "var(--bs-gray-200)")
       .attr("stroke-width", 2);
 
-    // Draw vertical lines for each day
+    // Draw vertical lines for each day (for non-daily views, commented out)
     allDays.forEach((day, idx) => {
       const isEndOfMonth =
         idx === allDays.length - 1 ||
@@ -307,11 +308,50 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         )
         .attr("stroke-width", 2);
     });
+    */
 
     // Draw dots for modifications inside each day's segment
     const dotRadius = 4;
     if (this.timeframe === "daily" && this.selectedDay) {
-      // Show all modifications for the selected day, spread horizontally by time
+      // Add a single center label for the selected day
+      svg
+        .append("text")
+        .attr("x", (margin.left + width - margin.right) / 2)
+        .attr("y", height / 2 - 32)
+        .attr("text-anchor", "middle")
+        .attr("font-size", 16)
+        .attr("fill", "var(--bs-gray-700)")
+        .text(this.selectedDay);
+
+      // Draw main horizontal line
+      svg
+        .append("line")
+        .attr("x1", margin.left)
+        .attr("x2", width - margin.right)
+        .attr("y1", height / 2)
+        .attr("y2", height / 2)
+        .attr("stroke", "var(--bs-gray-200)")
+        .attr("stroke-width", 2);
+
+      // Draw vertical lines at start and end (no month markers)
+      svg
+        .append("line")
+        .attr("x1", margin.left)
+        .attr("x2", margin.left)
+        .attr("y1", height / 2 - 28)
+        .attr("y2", height / 2 + 28)
+        .attr("stroke", "var(--bs-gray-400)")
+        .attr("stroke-width", 2);
+      svg
+        .append("line")
+        .attr("x1", width - margin.right)
+        .attr("x2", width - margin.right)
+        .attr("y1", height / 2 - 28)
+        .attr("y2", height / 2 + 28)
+        .attr("stroke", "var(--bs-gray-400)")
+        .attr("stroke-width", 2);
+
+      // 3. Draw dots at the correct time, stacking vertically if they overlap
       const mods = this.fakeData
         .filter(
           (mod) =>
@@ -326,71 +366,45 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         const minTime = new Date(this.selectedDay + "T00:00:00Z").getTime();
         const maxTime = new Date(this.selectedDay + "T23:59:59Z").getTime();
         const timeSpan = maxTime - minTime || 1;
+        // Compute x positions for each mod
+        const dotPositions: { x: number; mods: any[] }[] = [];
         mods.forEach((mod) => {
           const t = new Date(mod.timestamp).getTime();
-          // Map time to horizontal position within the available width
           const xPos =
             margin.left +
             ((width - margin.left - margin.right) * (t - minTime)) / timeSpan;
-          svg
-            .append("circle")
-            .attr("cx", xPos)
-            .attr("cy", height / 2)
-            .attr("r", dotRadius)
-            .attr("fill", "var(--bs-primary)");
-        });
-      }
-    } else {
-      // Group modifications by day (for all, month, week, year)
-      const modsByDay: Record<string, any[]> = {};
-      for (const mod of this.fakeData) {
-        const day = new Date(mod.timestamp).toISOString().slice(0, 10);
-        if (!modsByDay[day]) modsByDay[day] = [];
-        modsByDay[day].push(mod);
-      }
-      allDays.forEach((day) => {
-        const mods = (modsByDay[day] || []).sort(
-          (a, b) =>
-            new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
-        );
-        if (mods.length === 0) return;
-        // If all modifications are more than 20 minutes apart, place horizontally (overlap)
-        let stackGroups: any[][] = [];
-        let currentGroup: any[] = [];
-        for (let i = 0; i < mods.length; i++) {
-          if (i === 0) {
-            currentGroup.push(mods[i]);
-          } else {
-            const prev = new Date(mods[i - 1].timestamp).getTime();
-            const curr = new Date(mods[i].timestamp).getTime();
-            if (curr - prev <= 20 * 60 * 1000) {
-              currentGroup.push(mods[i]);
-            } else {
-              stackGroups.push(currentGroup);
-              currentGroup = [mods[i]];
+          // Check if a dot already exists at this x (within a small epsilon)
+          const epsilon = 2; // px
+          let found = false;
+          for (const pos of dotPositions) {
+            if (Math.abs(pos.x - xPos) < epsilon) {
+              pos.mods.push(mod);
+              found = true;
+              break;
             }
           }
-        }
-        if (currentGroup.length) stackGroups.push(currentGroup);
-
-        // For each group: if group has 1, place horizontally; if >1, stack vertically
-        stackGroups.forEach((group) => {
-          if (group.length === 1) {
+          if (!found) {
+            dotPositions.push({ x: xPos, mods: [mod] });
+          }
+        });
+        // Draw dots, stacking vertically if they overlap
+        dotPositions.forEach((pos) => {
+          if (pos.mods.length === 1) {
             svg
               .append("circle")
-              .attr("cx", x(day)!)
+              .attr("cx", pos.x)
               .attr("cy", height / 2)
               .attr("r", dotRadius)
               .attr("fill", "var(--bs-primary)");
           } else {
-            group.forEach((mod, i) => {
+            pos.mods.forEach((mod, i) => {
               svg
                 .append("circle")
-                .attr("cx", x(day)!)
+                .attr("cx", pos.x)
                 .attr(
                   "cy",
                   height / 2 -
-                    ((dotRadius * 2 + 2) * (group.length - 1)) / 2 +
+                    ((dotRadius * 2 + 2) * (pos.mods.length - 1)) / 2 +
                     i * (dotRadius * 2 + 2)
                 )
                 .attr("r", dotRadius)
@@ -398,8 +412,52 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
             });
           }
         });
+      }
+    } else {
+      console.log("Not rendering SVG for non-daily view");
+      /*
+      // For week/month/year/all: spread dots horizontally within each day's segment by time
+      const modsByDay: Record<string, any[]> = {};
+      for (const mod of this.fakeData) {
+        const day = new Date(mod.timestamp).toISOString().slice(0, 10);
+        if (!modsByDay[day]) modsByDay[day] = [];
+        modsByDay[day].push(mod);
+      }
+      allDays.forEach((day, idx) => {
+        const mods = (modsByDay[day] || []).sort(
+          (a, b) =>
+            new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
+        );
+        if (mods.length === 0) return;
+        // Calculate segment boundaries for this day
+        const x0 = x(day)!;
+        let x1: number;
+        if (idx < allDays.length - 1) {
+          x1 = x(allDays[idx + 1])!;
+        } else {
+          // Last day: estimate segment width as same as previous
+          x1 = x0 + (idx > 0 ? x0 - x(allDays[idx - 1])! : 40);
+        }
+        const minTime = new Date(day + "T00:00:00Z").getTime();
+        const maxTime = new Date(day + "T23:59:59Z").getTime();
+        const timeSpan = maxTime - minTime || 1;
+        mods.forEach((mod) => {
+          const t = new Date(mod.timestamp).getTime();
+          // Map time to horizontal position within the day's segment
+          const xPos = x0 + ((x1 - x0) * (t - minTime)) / timeSpan;
+          svg
+            .append("circle")
+            .attr("cx", xPos)
+            .attr("cy", height / 2)
+            .attr("r", dotRadius)
+            .attr("fill", "var(--bs-primary)");
+        });
       });
+      */
     }
+    // Draw month start/end markers and vertical lines at each ending day
+    // (Removed month marker lines and texts)
+
     // Draw month start/end markers and vertical lines at each ending day
     if (allDays.length > 0) {
       const months: string[] = [];
@@ -410,6 +468,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         }
       });
       months.forEach((month, idx) => {
+        /*
         // Find first and last day in allDays for this month
         const monthDays = allDays.filter((d) => d.startsWith(month));
         if (monthDays.length) {
@@ -467,76 +526,43 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
             .attr("stroke", "var(--bs-gray-200)")
             .attr("stroke-width", 3);
         }
-      });
-    }
-
-    // Draw month start/end markers and vertical lines at each ending day
-    if (allDays.length > 0) {
-      const months: string[] = [];
-      allDays.forEach((d) => {
-        const m = d.slice(0, 7); // YYYY-MM
-        if (months.length === 0 || months[months.length - 1] !== m) {
-          months.push(m);
-        }
-      });
-      months.forEach((month, idx) => {
-        // Find first and last day in allDays for this month
-        const monthDays = allDays.filter((d) => d.startsWith(month));
-        if (monthDays.length) {
-          // Start marker
-          svg
-            .append("line")
-            .attr("x1", x(monthDays[0])!)
-            .attr("x2", x(monthDays[0])!)
-            .attr("y1", height / 2 - 18)
-            .attr("y2", height / 2 + 18)
-            .attr("stroke", "var(--bs-success)")
-            .attr("stroke-width", 2);
-          svg
-            .append("text")
-            .attr("x", x(monthDays[0])!)
-            .attr("y", height / 2 - 22)
-            .attr("text-anchor", "middle")
-            .attr("font-size", 10)
-            .attr("fill", "var(--bs-success)")
-            .text(month);
-          // End marker
-          const endX = x(monthDays[monthDays.length - 1])!;
-          svg
-            .append("line")
-            .attr("x1", endX)
-            .attr("x2", endX)
-            .attr("y1", height / 2 - 18)
-            .attr("y2", height / 2 + 18)
-            .attr("stroke", "var(--bs-danger)")
-            .attr("stroke-width", 2);
-          svg
-            .append("text")
-            .attr("x", endX)
-            .attr("y", height / 2 + 32)
-            .attr("text-anchor", "middle")
-            .attr("font-size", 10)
-            .attr("fill", "var(--bs-danger)")
-            .text(month);
-
-          // Add two vertical lines at each ending day: white (5px), then --bs-gray-200 (3px) on top
-          svg
-            .append("line")
-            .attr("x1", endX)
-            .attr("x2", endX)
-            .attr("y1", height / 2 - 22)
-            .attr("y2", height / 2 + 22)
-            .attr("stroke", "#fff")
-            .attr("stroke-width", 5);
-          svg
-            .append("line")
-            .attr("x1", endX)
-            .attr("x2", endX)
-            .attr("y1", height / 2 - 22)
-            .attr("y2", height / 2 + 22)
-            .attr("stroke", "var(--bs-gray-200)")
-            .attr("stroke-width", 3);
-        }
+        */
+        // End marker
+        //   const endX = x(monthDays[monthDays.length - 1])!;
+        //   svg
+        //     .append("line")
+        //     .attr("x1", endX)
+        //     .attr("x2", endX)
+        //     .attr("y1", height / 2 - 18)
+        //     .attr("y2", height / 2 + 18)
+        //     .attr("stroke", "var(--bs-danger)")
+        //     .attr("stroke-width", 2);
+        //   svg
+        //     .append("text")
+        //     .attr("x", endX)
+        //     .attr("y", height / 2 + 32)
+        //     .attr("text-anchor", "middle")
+        //     .attr("font-size", 10)
+        //     .attr("fill", "var(--bs-danger)")
+        //     .text(month);
+        //   // Add two vertical lines at each ending day: white (5px), then --bs-gray-200 (3px) on top
+        //   svg
+        //     .append("line")
+        //     .attr("x1", endX)
+        //     .attr("x2", endX)
+        //     .attr("y1", height / 2 - 22)
+        //     .attr("y2", height / 2 + 22)
+        //     .attr("stroke", "#fff")
+        //     .attr("stroke-width", 5);
+        //   svg
+        //     .append("line")
+        //     .attr("x1", endX)
+        //     .attr("x2", endX)
+        //     .attr("y1", height / 2 - 22)
+        //     .attr("y2", height / 2 + 22)
+        //     .attr("stroke", "var(--bs-gray-200)")
+        //     .attr("stroke-width", 3);
+        // }
       });
     }
   }
