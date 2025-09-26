@@ -96,11 +96,28 @@ export class WidgetDataHistoryComponent implements OnInit {
       width: 250,
       headerName: "Author",
       valueGetter: (params: any) => {
-        if (params.node?.group && params.colDef.field !== params.node.field)
-          return "";
+        // If this is a group row and grouping by Author, show the group key (author name)
+        if (params.node?.group && params.colDef.field === params.node.field) {
+          return params.node.key;
+        }
+        // For other group rows, show nothing
+        if (params.node?.group) return "";
         return params.data?.actor?.displayName;
       },
-      cellRenderer: ActorCellRendererComponent,
+      cellRendererSelector: (params: any) => {
+        // If this is a group row and grouping by Author, just show the name (no circle)
+        if (params.node?.group && params.colDef.field === params.node.field) {
+          return undefined; // ag-grid will just show the value
+        }
+        // For all other rows, use the Angular cell renderer
+        if (!params.node?.group) {
+          return {
+            component: ActorCellRendererComponent,
+            params: {},
+          };
+        }
+        return undefined;
+      },
       enableRowGroup: true,
     },
     {
