@@ -1,0 +1,34 @@
+<div class="w-100 flex-grow-1 d-flex flex-column">
+  <div class="w-100 pt-2 px-2">
+    <select
+      class="form-select w-auto d-inline-block"
+      (change)="onDatasetChange($event)"
+    >
+      <option *ngFor="let ds of datasets" [selected]="ds === selectedDataset">
+        {{ ds.label }}
+      </option>
+    </select>
+    <span class="ms-2">{{ fakeData.length }} changes</span>
+  </div>
+  <div class="flex-grow-1 w-100 d-flex">
+    <div class="w-100 h-100 d-flex p-2">
+      <!-- [groupDisplayType]="'groupRows'" -->
+      <ag-grid-angular
+        #agGrid
+        class="ag-theme-alpine w-100 flex-grow-1"
+        [rowData]="fakeData"
+        [columnDefs]="columnDefs"
+        [groupDisplayType]="'singleColumn'"
+        [autoGroupColumnDef]="autoGroupColumnDef"
+        groupDisplayPanel="always"
+        [defaultColDef]="{
+          resizable: true,
+          sortable: true,
+          filter: true,
+          autoHeight: true,
+        }"
+        (gridReady)="onGridReady($event)"
+      ></ag-grid-angular>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+}
+
+// .ag-theme-alpine {
+//   min-height: unset !important;
+// }
+// Ensure word wrap for ag-grid cells with .ag-cell-wrap-text
+// .ag-cell.ag-cell-wrap-text {
+//   white-space: normal !important;
+//   word-break: break-word;
+// }
