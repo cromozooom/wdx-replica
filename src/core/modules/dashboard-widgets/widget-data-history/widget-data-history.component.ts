@@ -332,6 +332,11 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     height: number
   ) {
     const dotRadius = 4 * 1.3; // 30% bigger
+    // Count modifications for the selected day
+    const modsCount = this.fakeData.filter(
+      (mod) =>
+        new Date(mod.timestamp).toISOString().slice(0, 10) === this.selectedDay
+    ).length;
     svg
       .append("text")
       .attr("x", (margin.left + width - margin.right) / 2)
@@ -339,7 +344,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       .attr("text-anchor", "middle")
       .attr("font-size", 16)
       .attr("fill", "var(--bs-gray-700)")
-      .text(this.selectedDay);
+      .text(this.selectedDay + (modsCount > 0 ? `  (${modsCount})` : ""));
     svg
       .append("line")
       .attr("x1", margin.left)
@@ -397,32 +402,78 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
           dotPositions.push({ x: xPos, mods: [mod] });
         }
       });
+      // Spiral parameters
+      const spiralStep = dotRadius * 2 + 8; // distance between dots
+      let lastSpiralEndX = -Infinity;
+
       dotPositions.forEach((pos) => {
-        if (pos.mods.length === 1) {
-          svg
-            .append("circle")
-            .attr("cx", pos.x)
-            .attr("cy", height / 2)
-            .attr("r", dotRadius)
-            .attr("fill", "var(--bs-primary)");
-        } else {
-          // Increase vertical spacing between circles by 30%
-          const spacing = dotRadius * 2 + 2;
-          const increasedSpacing = spacing * 1.3;
-          pos.mods.forEach((mod, i) => {
+        const mods = pos.mods;
+        let gridStartX = pos.x;
+        // Ensure at least 20px from previous grid
+        if (gridStartX < lastSpiralEndX + 20) {
+          gridStartX = lastSpiralEndX + 20;
+        }
+        const centerY = height / 2;
+        const gridCols = 6;
+        const gridRows = 6;
+        const gridCell = dotRadius * 2 + 8;
+        // Generate spiral order indices for a grid
+        function spiralOrder(nRows: number, nCols: number, count: number) {
+          const res: [number, number][] = [];
+          let top = 0,
+            bottom = nRows - 1,
+            left = 0,
+            right = nCols - 1;
+          let x = Math.floor((nCols - 1) / 2),
+            y = Math.floor((nRows - 1) / 2);
+          let dx = [0, 1, 0, -1],
+            dy = [-1, 0, 1, 0]; // up, right, down, left
+          let dir = 0,
+            steps = 1,
+            stepCount = 0,
+            change = 0;
+          let visited = Array.from({ length: nRows }, () =>
+            Array(nCols).fill(false)
+          );
+          let total = 0;
+          while (total < count) {
+            if (x >= 0 && x < nCols && y >= 0 && y < nRows && !visited[y][x]) {
+              res.push([y, x]);
+              visited[y][x] = true;
+              total++;
+            }
+            x += dx[dir];
+            y += dy[dir];
+            stepCount++;
+            if (stepCount === steps) {
+              stepCount = 0;
+              dir = (dir + 1) % 4;
+              change++;
+              if (change % 2 === 0) steps++;
+            }
+          }
+          return res;
+        }
+        let modIdx = 0;
+        let gridsNeeded = Math.ceil(mods.length / (gridCols * gridRows));
+        for (let g = 0; g < gridsNeeded; g++) {
+          const dotsInGrid = Math.min(
+            gridCols * gridRows,
+            mods.length - modIdx
+          );
+          const spiral = spiralOrder(gridRows, gridCols, dotsInGrid);
+          for (let s = 0; s < spiral.length; s++, modIdx++) {
+            const [i, j] = spiral[s];
             svg
               .append("circle")
-              .attr("cx", pos.x)
-              .attr(
-                "cy",
-                height / 2 -
-                  (increasedSpacing * (pos.mods.length - 1)) / 2 +
-                  i * increasedSpacing
-              )
+              .attr("cx", gridStartX + (j - (gridCols - 1) / 2) * gridCell)
+              .attr("cy", centerY + (i - (gridRows - 1) / 2) * gridCell)
               .attr("r", dotRadius)
               .attr("fill", "var(--bs-primary)");
-          });
+          }
+          gridStartX += gridCell * gridCols + 20;
         }
+        lastSpiralEndX = gridStartX - 20;
       });
     }
   }
