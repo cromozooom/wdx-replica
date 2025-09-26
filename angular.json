@@ -53,6 +53,11 @@
                             {
                                 "glob": "**/*",
                                 "input": "public"
+                            },
+                            {
+                                "glob": "_redirects",
+                                "input": "src/assets",
+                                "output": "."
                             }
                         ],
                         "styles": [
@@ -71,6 +76,6 @@
         }
     },
     "cli": {
-      "analytics": false
+        "analytics": false
     }
 }
