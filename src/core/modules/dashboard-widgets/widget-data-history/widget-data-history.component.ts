@@ -115,15 +115,27 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     },
   };
 
+  uniqueDays: string[] = [];
+  get canGoPrevDay(): boolean {
+    if (this.timeframe !== "daily" || !this.selectedDay) return false;
+    return this.uniqueDays.indexOf(this.selectedDay) > 0;
+  }
+  get canGoNextDay(): boolean {
+    if (this.timeframe !== "daily" || !this.selectedDay) return false;
+    return (
+      this.uniqueDays.indexOf(this.selectedDay) < this.uniqueDays.length - 1
+    );
+  }
+
   ngOnInit(): void {
     // Set selectedDay to the last day with modifications by default
     const allTimestamps = this.fakeData.map((d) => d.timestamp);
     const allDates = allTimestamps.map((ts) =>
       new Date(ts).toISOString().slice(0, 10)
     );
-    const uniqueDays = Array.from(new Set(allDates)).sort();
-    this.selectedDay = uniqueDays.length
-      ? uniqueDays[uniqueDays.length - 1]
+    this.uniqueDays = Array.from(new Set(allDates)).sort();
+    this.selectedDay = this.uniqueDays.length
+      ? this.uniqueDays[this.uniqueDays.length - 1]
       : null;
   }
 
@@ -168,6 +180,23 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       this.currentDate = new Date(this.currentDate.getFullYear() + 1, 0, 1);
     }
     this.renderTimeline();
+  }
+
+  goPrevDay() {
+    if (!this.canGoPrevDay) return;
+    const idx = this.uniqueDays.indexOf(this.selectedDay!);
+    if (idx > 0) {
+      this.selectedDay = this.uniqueDays[idx - 1];
+      this.renderTimeline();
+    }
+  }
+  goNextDay() {
+    if (!this.canGoNextDay) return;
+    const idx = this.uniqueDays.indexOf(this.selectedDay!);
+    if (idx < this.uniqueDays.length - 1) {
+      this.selectedDay = this.uniqueDays[idx + 1];
+      this.renderTimeline();
+    }
   }
 
   renderTimeline() {

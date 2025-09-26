@@ -35,14 +35,16 @@
               <button
                 type="button"
                 class="btn btn-sm btn-link text-decoration-none"
-                (click)="onPrev()"
+                (click)="goPrevDay()"
+                [disabled]="!canGoPrevDay"
               >
                 Prev
               </button>
               <button
                 type="button"
                 class="btn btn-sm btn-link text-decoration-none"
-                (click)="onNext()"
+                (click)="goNextDay()"
+                [disabled]="!canGoNextDay"
               >
                 Next
               </button>
