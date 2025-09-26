@@ -11,16 +11,25 @@ import { CommonModule } from "@angular/common";
     <span *ngIf="icon" class="me-3 text-muted opacity-50">
       <i [ngClass]="icon"></i>
     </span>
-    <span>{{ params.value }}</span>
+    <span>{{ value }}</span>
   `,
   styles: [``],
 })
 export class FieldIconCellRendererComponent {
   params: any;
   icon: string | undefined;
+  value: string = "";
 
   agInit(params: any): void {
-    this.params = params;
-    this.icon = FieldIconMap[params.value as FieldTypeIcon];
+    // ag-Grid passes either a params object or just the value for innerRenderer
+    if (typeof params === "string") {
+      this.value = params;
+      this.icon = FieldIconMap[params as FieldTypeIcon];
+      this.params = { value: params };
+    } else {
+      this.params = params;
+      this.value = params.value;
+      this.icon = FieldIconMap[params.value as FieldTypeIcon];
+    }
   }
 }
