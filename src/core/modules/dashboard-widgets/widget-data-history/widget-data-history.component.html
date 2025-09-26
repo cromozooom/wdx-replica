@@ -10,8 +10,48 @@
     </select>
     <span class="ms-2">{{ fakeData.length }} changes</span>
   </div>
-  <div class="flex-grow-1 w-100 d-flex">
-    <div class="w-100 h-100 d-flex p-2">
+  <div class="flex-grow-1 w-100 d-flex flex-column">
+    <div class="w-100 p-2 d-flex align-items-center">
+      <div class="border w-100 flex-grow-1 p-2">
+        <div
+          class="controlls d-flex justify-content-start align-items-center gap-2"
+        >
+          <div>
+            <select
+              class="form-select form-select-sm"
+              aria-label="select timeframe"
+              [(ngModel)]="timeframe"
+              (change)="onTimeframeChange()"
+            >
+              <option value="month">Month</option>
+              <option value="week">Week</option>
+              <option value="year">Year</option>
+            </select>
+          </div>
+          <div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button
+                type="button"
+                class="btn btn-sm btn-link text-decoration-none"
+                (click)="onPrev()"
+              >
+                Prev
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-link text-decoration-none"
+                (click)="onNext()"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- D3 Timeline Visualization -->
+        <div id="d3-timeline" style="width: 100%; height: 60px"></div>
+      </div>
+    </div>
+    <div class="w-100 flex-grow-1 d-flex p-2">
       <!-- [groupDisplayType]="'groupRows'" -->
       <ag-grid-angular
         #agGrid

@@ -1,67 +1,13 @@
-// Enum for icons to associate with each field type
-export enum FieldIcon {
-  RemoteWorkItemLink = "fas fa-link",
-  Link = "fas fa-link",
-  Status = "fas fa-flag",
-  Assignee = "fas fa-user",
-  TAApprovalDate = "fas fa-calendar-check",
-  TAApprovalStatus = "fas fa-check-circle",
-  TAApprover = "fas fa-user-tie",
-  TAComments = "fas fa-comment-dots",
-  DAApprovalDate = "fas fa-calendar-check",
-  DAApprover = "fas fa-user-tie",
-  DAApprovalStatus = "fas fa-check-circle",
-  DAComments = "fas fa-comment-dots",
-  DesignApproval = "fas fa-drafting-compass",
-  Description = "fas fa-align-left",
-}
-
-// Map fieldDisplayName to icon class
-export const FieldIconMap: Record<string, string> = {
-  RemoteWorkItemLink: FieldIcon.RemoteWorkItemLink,
-  Link: FieldIcon.Link,
-  Status: FieldIcon.Status,
-  Assignee: FieldIcon.Assignee,
-  "TA Approval Date": FieldIcon.TAApprovalDate,
-  "TA Approval Status": FieldIcon.TAApprovalStatus,
-  "TA Approver": FieldIcon.TAApprover,
-  "TA Comment(s)": FieldIcon.TAComments,
-  "DA Approval Date": FieldIcon.DAApprovalDate,
-  "DA Approver": FieldIcon.DAApprover,
-  "DA Approval Status": FieldIcon.DAApprovalStatus,
-  "DA Comment(s)": FieldIcon.DAComments,
-  "Design Approval": FieldIcon.DesignApproval,
-  Description: FieldIcon.Description,
-};
-// Enum for all unique fieldDisplayName values to associate icons
-export enum FieldTypeIcon {
-  RemoteWorkItemLink = "RemoteWorkItemLink",
-  Link = "Link",
-  Status = "Status",
-  Assignee = "Assignee",
-  TAApprovalDate = "TA Approval Date",
-  TAApprovalStatus = "TA Approval Status",
-  TAApprover = "TA Approver",
-  TAComments = "TA Comment(s)",
-  DAApprovalDate = "DA Approval Date",
-  DAApprover = "DA Approver",
-  DAApprovalStatus = "DA Approval Status",
-  DAComments = "DA Comment(s)",
-  DesignApproval = "Design Approval",
-  Description = "Description",
-}
-// removed misplaced gridApi and onGridReady
-import { Component, OnInit, ViewChild } from "@angular/core";
-// (removed misplaced @ViewChild)
+import { FieldTypeIcon, FieldIconMap } from './field-icons';
+import { Component, OnInit, AfterViewInit } from "@angular/core";
 import { ColDef, RowAutoHeightModule, ModuleRegistry } from "ag-grid-community";
-// Register ag-grid modules
-ModuleRegistry.registerModules([RowAutoHeightModule]);
-import { Component as NgComponent, Input } from "@angular/core";
+import * as d3 from "d3";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+import { AgGridModule } from "ag-grid-angular";
 import { ActorCellRendererComponent } from "./actor-cell-renderer.component";
 import { MultilineCellRenderer } from "./multiline-cell-renderer.component";
 import { FieldIconCellRendererComponent } from "./field-icon-cell-renderer.component";
-import { CommonModule } from "@angular/common";
-import { AgGridModule } from "ag-grid-angular";
 import { AuthorGroupCellRendererComponent } from "./author-group-cell-renderer.component";
 import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.component";
 import {
@@ -69,70 +15,43 @@ import {
   WPO_16698,
 } from "./widget-data-history.dummy-data";
 
+ModuleRegistry.registerModules([RowAutoHeightModule]);
+
 @Component({
   selector: "app-widget-data-history",
   standalone: true,
+  templateUrl: "./widget-data-history.component.html",
+  styleUrls: ["./widget-data-history.component.scss"],
   imports: [
     CommonModule,
+    FormsModule,
     AgGridModule,
     ActorCellRendererComponent,
     MultilineCellRenderer,
     FieldIconCellRendererComponent,
     AuthorGroupCellRendererComponent,
     FieldGroupCellRendererComponent,
-    AuthorGroupCellRendererComponent,
   ],
-  templateUrl: "./widget-data-history.component.html",
-  styleUrls: ["./widget-data-history.component.scss"],
 })
-export class WidgetDataHistoryComponent implements OnInit {
-  @ViewChild("agGrid") grid!: any;
-  private gridApi: any;
-
-  public datasets = [
+export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
+  gridApi: any;
+  timeframe: "month" | "week" | "year" = "month";
+  currentDate: Date = new Date();
+  datasets = [
+    { label: "Default", value: WIDGET_DATA_HISTORY_FAKE_DATA },
     { label: "WPO_16698", value: WPO_16698 },
-    { label: "Fake Data", value: WIDGET_DATA_HISTORY_FAKE_DATA },
   ];
-  public selectedDataset = this.datasets[0];
-  public fakeData = this.selectedDataset.value;
-
-  public columnDefs: ColDef[] = [
+  selectedDataset = this.datasets[1];
+  fakeData: any[] = this.selectedDataset.value;
+  columnDefs: ColDef[] = [
     {
-      width: 250,
-      headerName: "Author",
-      filter: true,
-      floatingFilter: true,
+      headerName: "Actor",
       field: "actor.displayName",
-      valueGetter: (params: any) => {
-        // If this is a group row and grouping by Author, show the group key (author name)
-        if (params.node?.group && params.colDef.field === params.node.field) {
-          return params.node.key;
-        }
-        // For other group rows, show nothing
-        if (params.node?.group) return "";
-        return params.data?.actor?.displayName;
-      },
-      cellRendererSelector: (params: any) => {
-        // If this is a group row and grouping by Author, use the group cell renderer
-        if (params.node?.group && params.colDef.field === params.node.field) {
-          return {
-            component: AuthorGroupCellRendererComponent,
-            params: {},
-          };
-        }
-        // For all other rows, use the Angular cell renderer
-        if (!params.node?.group) {
-          return {
-            component: ActorCellRendererComponent,
-            params: {},
-          };
-        }
-        return undefined;
-      },
+      cellRenderer: ActorCellRendererComponent,
       enableRowGroup: true,
+      width: 180,
     },
     {
-      width: 250,
       headerName: "Date",
       field: "timestamp",
       valueFormatter: (params: any) => {
@@ -140,6 +59,7 @@ export class WidgetDataHistoryComponent implements OnInit {
           return "";
         return new Date(params.value).toLocaleString();
       },
+      width: 250,
     },
     {
       headerName: "Field",
@@ -182,7 +102,6 @@ export class WidgetDataHistoryComponent implements OnInit {
     headerName: "Group",
     minWidth: 250,
     cellRendererSelector: (params: any) => {
-      // Use AuthorGroupCellRendererComponent for author grouping, FieldGroupCellRendererComponent for field grouping
       if (params.node?.field === "actor.displayName") {
         return { component: AuthorGroupCellRendererComponent };
       }
@@ -196,8 +115,165 @@ export class WidgetDataHistoryComponent implements OnInit {
     },
   };
 
-  ngOnInit(): void {
-    // nothing needed
+  ngOnInit(): void {}
+
+  ngAfterViewInit() {
+    this.renderTimeline();
+  }
+
+  onTimeframeChange() {
+    this.currentDate = new Date();
+    this.renderTimeline();
+  }
+
+  onPrev() {
+    if (this.timeframe === "month") {
+      this.currentDate = new Date(
+        this.currentDate.getFullYear(),
+        this.currentDate.getMonth() - 1,
+        1
+      );
+    } else if (this.timeframe === "week") {
+      this.currentDate = new Date(this.currentDate);
+      this.currentDate.setDate(this.currentDate.getDate() - 7);
+    } else if (this.timeframe === "year") {
+      this.currentDate = new Date(this.currentDate.getFullYear() - 1, 0, 1);
+    }
+    this.renderTimeline();
+  }
+
+  onNext() {
+    if (this.timeframe === "month") {
+      this.currentDate = new Date(
+        this.currentDate.getFullYear(),
+        this.currentDate.getMonth() + 1,
+        1
+      );
+    } else if (this.timeframe === "week") {
+      this.currentDate = new Date(this.currentDate);
+      this.currentDate.setDate(this.currentDate.getDate() + 7);
+    } else if (this.timeframe === "year") {
+      this.currentDate = new Date(this.currentDate.getFullYear() + 1, 0, 1);
+    }
+    this.renderTimeline();
+  }
+
+  renderTimeline() {
+    d3.select("#d3-timeline svg").remove();
+
+    const timestamps = this.fakeData.map((d) => d.timestamp);
+    if (!timestamps.length) return;
+
+    let startDate: Date,
+      endDate: Date,
+      allDays: string[] = [];
+    if (this.timeframe === "month") {
+      startDate = new Date(
+        this.currentDate.getFullYear(),
+        this.currentDate.getMonth(),
+        1
+      );
+      endDate = new Date(
+        this.currentDate.getFullYear(),
+        this.currentDate.getMonth() + 1,
+        0
+      );
+      const daysInMonth = endDate.getDate();
+      allDays = Array.from({ length: daysInMonth }, (_, i) => {
+        const d = new Date(
+          this.currentDate.getFullYear(),
+          this.currentDate.getMonth(),
+          i + 1
+        );
+        return d.toISOString().slice(0, 10);
+      });
+    } else if (this.timeframe === "week") {
+      const dayOfWeek = this.currentDate.getDay();
+      startDate = new Date(this.currentDate);
+      startDate.setDate(this.currentDate.getDate() - dayOfWeek);
+      endDate = new Date(startDate);
+      endDate.setDate(startDate.getDate() + 6);
+      allDays = Array.from({ length: 7 }, (_, i) => {
+        const d = new Date(startDate);
+        d.setDate(startDate.getDate() + i);
+        return d.toISOString().slice(0, 10);
+      });
+    } else {
+      startDate = new Date(this.currentDate.getFullYear(), 0, 1);
+      endDate = new Date(this.currentDate.getFullYear(), 11, 31);
+      const daysInYear =
+        Math.floor(
+          (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
+        ) + 1;
+      allDays = Array.from({ length: daysInYear }, (_, i) => {
+        const d = new Date(this.currentDate.getFullYear(), 0, 1);
+        d.setDate(d.getDate() + i);
+        return d.toISOString().slice(0, 10);
+      });
+    }
+
+    const filledDaysSet = new Set(
+      this.fakeData
+        .filter((d: any) => {
+          const dt = new Date(d.timestamp);
+          return dt >= startDate && dt <= endDate;
+        })
+        .map((d: any) => {
+          const dt = new Date(d.timestamp);
+          return dt.toISOString().slice(0, 10);
+        })
+    );
+
+    const width = document.getElementById("d3-timeline")?.clientWidth || 600;
+    const height = 60;
+    const margin = { left: 30, right: 30, top: 20, bottom: 20 };
+    const svg = d3
+      .select("#d3-timeline")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    const x = d3
+      .scalePoint()
+      .domain(allDays)
+      .range([margin.left, width - margin.right]);
+
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2)
+      .attr("y2", height / 2)
+      .attr("stroke", "var(--bs-gray-200)")
+      .attr("stroke-width", 2);
+
+    svg
+      .selectAll("circle")
+      .data(allDays)
+      .enter()
+      .append("circle")
+      .attr("cx", (d) => x(d)!)
+      .attr("cy", height / 2)
+      .attr("r", (d) => (filledDaysSet.has(d) ? 7 : 5))
+      .attr("fill", (d) =>
+        filledDaysSet.has(d) ? "var(--bs-primary)" : "#fff"
+      )
+      .attr("stroke", (d) =>
+        filledDaysSet.has(d) ? "var(--bs-primary)" : "var(--bs-gray-200)"
+      )
+      .attr("stroke-width", 2);
+
+    svg
+      .selectAll("text")
+      .data(allDays)
+      .enter()
+      .append("text")
+      .attr("x", (d) => x(d)!)
+      .attr("y", height / 2 + 22)
+      .attr("text-anchor", "middle")
+      .attr("font-size", 10)
+      .attr("fill", "#555")
+      .text((d) => d.slice(8, 10));
   }
 
   onDatasetChange(event: Event) {
@@ -206,16 +282,19 @@ export class WidgetDataHistoryComponent implements OnInit {
     this.selectedDataset = this.datasets[idx];
     this.fakeData = this.selectedDataset.value;
     setTimeout(() => {
-      if (this.grid && this.grid.api) {
-        this.grid.api.resetRowHeights();
+      if (this.gridApi) {
+        this.gridApi.resetRowHeights();
       }
     }, 100);
+    this.renderTimeline();
   }
 
   onGridReady(params: any) {
     this.gridApi = params.api;
     setTimeout(() => {
-      this.gridApi.resetRowHeights();
+      if (this.gridApi) {
+        this.gridApi.resetRowHeights();
+      }
     }, 200);
   }
 }

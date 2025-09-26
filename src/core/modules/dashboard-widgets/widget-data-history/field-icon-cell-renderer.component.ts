@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { FieldTypeIcon, FieldIconMap } from "./widget-data-history.component";
+import { FieldTypeIcon, FieldIconMap } from "./field-icons";
 
 import { CommonModule } from "@angular/common";
 
