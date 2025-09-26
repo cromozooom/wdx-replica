@@ -62,6 +62,8 @@ import { MultilineCellRenderer } from "./multiline-cell-renderer.component";
 import { FieldIconCellRendererComponent } from "./field-icon-cell-renderer.component";
 import { CommonModule } from "@angular/common";
 import { AgGridModule } from "ag-grid-angular";
+import { AuthorGroupCellRendererComponent } from "./author-group-cell-renderer.component";
+import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.component";
 import {
   WIDGET_DATA_HISTORY_FAKE_DATA,
   WPO_16698,
@@ -76,6 +78,9 @@ import {
     ActorCellRendererComponent,
     MultilineCellRenderer,
     FieldIconCellRendererComponent,
+    AuthorGroupCellRendererComponent,
+    FieldGroupCellRendererComponent,
+    AuthorGroupCellRendererComponent,
   ],
   templateUrl: "./widget-data-history.component.html",
   styleUrls: ["./widget-data-history.component.scss"],
@@ -95,6 +100,9 @@ export class WidgetDataHistoryComponent implements OnInit {
     {
       width: 250,
       headerName: "Author",
+      filter: true,
+      floatingFilter: true,
+      field: "actor.displayName",
       valueGetter: (params: any) => {
         // If this is a group row and grouping by Author, show the group key (author name)
         if (params.node?.group && params.colDef.field === params.node.field) {
@@ -105,9 +113,12 @@ export class WidgetDataHistoryComponent implements OnInit {
         return params.data?.actor?.displayName;
       },
       cellRendererSelector: (params: any) => {
-        // If this is a group row and grouping by Author, just show the name (no circle)
+        // If this is a group row and grouping by Author, use the group cell renderer
         if (params.node?.group && params.colDef.field === params.node.field) {
-          return undefined; // ag-grid will just show the value
+          return {
+            component: AuthorGroupCellRendererComponent,
+            params: {},
+          };
         }
         // For all other rows, use the Angular cell renderer
         if (!params.node?.group) {
@@ -132,6 +143,8 @@ export class WidgetDataHistoryComponent implements OnInit {
     },
     {
       headerName: "Field",
+      filter: true,
+      floatingFilter: true,
       field: "fieldDisplayName",
       cellRenderer: FieldIconCellRendererComponent,
       enableRowGroup: true,
@@ -168,6 +181,16 @@ export class WidgetDataHistoryComponent implements OnInit {
   public autoGroupColumnDef: ColDef = {
     headerName: "Group",
     minWidth: 250,
+    cellRendererSelector: (params: any) => {
+      // Use AuthorGroupCellRendererComponent for author grouping, FieldGroupCellRendererComponent for field grouping
+      if (params.node?.field === "actor.displayName") {
+        return { component: AuthorGroupCellRendererComponent };
+      }
+      if (params.node?.field === "fieldDisplayName") {
+        return { component: FieldGroupCellRendererComponent };
+      }
+      return undefined;
+    },
     cellRendererParams: {
       suppressCount: false,
     },
