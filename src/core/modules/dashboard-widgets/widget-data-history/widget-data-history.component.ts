@@ -34,7 +34,7 @@ import {
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   gridApi: any;
-  timeframe: "month" | "week" | "year" | "all" | "daily" = "all";
+  timeframe: "month" | "week" | "year" | "all" | "daily" = "daily";
   selectedDay: string | null = null;
   currentDate: Date = new Date();
   datasets = [
@@ -115,7 +115,17 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     },
   };
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // Set selectedDay to the last day with modifications by default
+    const allTimestamps = this.fakeData.map((d) => d.timestamp);
+    const allDates = allTimestamps.map((ts) =>
+      new Date(ts).toISOString().slice(0, 10)
+    );
+    const uniqueDays = Array.from(new Set(allDates)).sort();
+    this.selectedDay = uniqueDays.length
+      ? uniqueDays[uniqueDays.length - 1]
+      : null;
+  }
 
   ngAfterViewInit() {
     this.renderTimeline();
@@ -136,15 +146,9 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
   onPrev() {
     if (this.timeframe === "month") {
-      this.currentDate = new Date(
-        this.currentDate.getFullYear(),
-        this.currentDate.getMonth() - 1,
-        1
-      );
+      this.currentDate = new Date();
+      this.renderTimeline();
     } else if (this.timeframe === "week") {
-      this.currentDate = new Date(this.currentDate);
-      this.currentDate.setDate(this.currentDate.getDate() - 7);
-    } else if (this.timeframe === "year") {
       this.currentDate = new Date(this.currentDate.getFullYear() - 1, 0, 1);
     }
     this.renderTimeline();
