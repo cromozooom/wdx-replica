@@ -340,7 +340,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     svg
       .append("text")
       .attr("x", (margin.left + width - margin.right) / 2)
-      .attr("y", height / 2 - 32)
+      .attr("y", height / 2 - 62) // move up by 20px
       .attr("text-anchor", "middle")
       .attr("font-size", 16)
       .attr("fill", "var(--bs-gray-700)")
@@ -465,12 +465,23 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
           for (let s = 0; s < spiral.length; s++, modIdx++) {
             const [i, j] = spiral[s];
             const mod = mods[modIdx];
+            // Color by fieldDisplayName
+            const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+            function fieldDisplayNameToColorIndex(name: string) {
+              let hash = 0;
+              for (let i = 0; i < name.length; i++)
+                hash = (hash * 31 + name.charCodeAt(i)) % 68;
+              return hash + 1; // 1-based
+            }
+            const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+            const fillColor = `var(--${colorIdx})`;
             let tooltipHtml = "";
             if (mod) {
               const localTime = new Date(mod.timestamp).toLocaleString();
               tooltipHtml =
                 `<div class='position-relative'>` +
                 `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+                `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
                 `<strong>Time:</strong> ${localTime}<br/>` +
                 `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
                 (mod.description
@@ -487,7 +498,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
               .attr("cx", gridStartX + (j - (gridCols - 1) / 2) * gridCell)
               .attr("cy", centerY + (i - (gridRows - 1) / 2) * gridCell)
               .attr("r", dotRadius)
-              .attr("fill", "var(--bs-primary)");
+              .attr("fill", fillColor);
             // Popper.js tooltip logic (sticky, with close and buttons)
             let popperInstance: any = null;
             let tooltipEl: HTMLElement | null = null;
