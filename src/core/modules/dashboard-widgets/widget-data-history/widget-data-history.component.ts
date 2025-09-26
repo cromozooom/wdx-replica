@@ -1,4 +1,4 @@
-import { FieldTypeIcon, FieldIconMap } from './field-icons';
+import { FieldTypeIcon, FieldIconMap } from "./field-icons";
 import { Component, OnInit, AfterViewInit } from "@angular/core";
 import { ColDef, RowAutoHeightModule, ModuleRegistry } from "ag-grid-community";
 import * as d3 from "d3";
@@ -35,7 +35,7 @@ ModuleRegistry.registerModules([RowAutoHeightModule]);
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   gridApi: any;
-  timeframe: "month" | "week" | "year" = "month";
+  timeframe: "month" | "week" | "year" | "all" = "month";
   currentDate: Date = new Date();
   datasets = [
     { label: "Default", value: WIDGET_DATA_HISTORY_FAKE_DATA },
@@ -198,7 +198,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         d.setDate(startDate.getDate() + i);
         return d.toISOString().slice(0, 10);
       });
-    } else {
+    } else if (this.timeframe === "year") {
       startDate = new Date(this.currentDate.getFullYear(), 0, 1);
       endDate = new Date(this.currentDate.getFullYear(), 11, 31);
       const daysInYear =
@@ -210,6 +210,17 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         d.setDate(d.getDate() + i);
         return d.toISOString().slice(0, 10);
       });
+    } else if (this.timeframe === "all") {
+      // Show all unique days in the dataset, sorted
+      const allTimestamps = this.fakeData.map((d) => d.timestamp);
+      const allDates = allTimestamps.map((ts) => new Date(ts).toISOString().slice(0, 10));
+      allDays = Array.from(new Set(allDates)).sort();
+      if (allDays.length > 0) {
+        startDate = new Date(allDays[0]);
+        endDate = new Date(allDays[allDays.length - 1]);
+      } else {
+        startDate = endDate = new Date();
+      }
     }
 
     const filledDaysSet = new Set(
