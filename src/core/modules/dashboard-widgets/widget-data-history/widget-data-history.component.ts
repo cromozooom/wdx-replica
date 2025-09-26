@@ -10,12 +10,11 @@ import { MultilineCellRenderer } from "./multiline-cell-renderer.component";
 import { FieldIconCellRendererComponent } from "./field-icon-cell-renderer.component";
 import { AuthorGroupCellRendererComponent } from "./author-group-cell-renderer.component";
 import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.component";
+
 import {
   WIDGET_DATA_HISTORY_FAKE_DATA,
   WPO_16698,
 } from "./widget-data-history.dummy-data";
-
-ModuleRegistry.registerModules([RowAutoHeightModule]);
 
 @Component({
   selector: "app-widget-data-history",
@@ -35,7 +34,8 @@ ModuleRegistry.registerModules([RowAutoHeightModule]);
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   gridApi: any;
-  timeframe: "month" | "week" | "year" | "all" = "month";
+  timeframe: "month" | "week" | "year" | "all" | "daily" = "all";
+  selectedDay: string | null = null;
   currentDate: Date = new Date();
   datasets = [
     { label: "Default", value: WIDGET_DATA_HISTORY_FAKE_DATA },
@@ -123,6 +123,14 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
   onTimeframeChange() {
     this.currentDate = new Date();
+    if (this.timeframe === "daily") {
+      // Default to first day in data
+      const allTimestamps = this.fakeData.map((d) => d.timestamp);
+      const allDates = allTimestamps.map((ts) =>
+        new Date(ts).toISOString().slice(0, 10)
+      );
+      this.selectedDay = allDates.length ? allDates.sort()[0] : null;
+    }
     this.renderTimeline();
   }
 
@@ -211,32 +219,47 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         return d.toISOString().slice(0, 10);
       });
     } else if (this.timeframe === "all") {
-      // Show all unique days in the dataset, sorted
-      const allTimestamps = this.fakeData.map((d) => d.timestamp);
-      const allDates = allTimestamps.map((ts) =>
+      // Show all years in the data, each with 12 months, each month split into days as segments
+      const allTimestampsAll = this.fakeData.map((d) => d.timestamp);
+      const allDatesAll = allTimestampsAll.map((ts) => new Date(ts));
+      if (allDatesAll.length > 0) {
+        const minYear = Math.min(...allDatesAll.map((d) => d.getFullYear()));
+        const maxYear = Math.max(...allDatesAll.map((d) => d.getFullYear()));
+        startDate = new Date(minYear, 0, 1);
+        endDate = new Date(maxYear, 11, 31);
+        allDays = [];
+        for (let year = minYear; year <= maxYear; year++) {
+          for (let month = 0; month < 12; month++) {
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            for (let day = 1; day <= daysInMonth; day++) {
+              const d = new Date(year, month, day);
+              allDays.push(d.toISOString().slice(0, 10));
+            }
+          }
+        }
+      } else {
+        startDate = endDate = new Date();
+        allDays = [];
+      }
+    } else if (this.timeframe === "daily") {
+      // Show a detailed view for a single day
+      const allTimestampsDaily = this.fakeData.map((d) => d.timestamp);
+      const allDatesDaily = allTimestampsDaily.map((ts) =>
         new Date(ts).toISOString().slice(0, 10)
       );
-      allDays = Array.from(new Set(allDates)).sort();
-      if (allDays.length > 0) {
-        startDate = new Date(allDays[0]);
-        endDate = new Date(allDays[allDays.length - 1]);
+      const uniqueDays = Array.from(new Set(allDatesDaily)).sort();
+      if (!this.selectedDay && uniqueDays.length) {
+        this.selectedDay = uniqueDays[0];
+      }
+      allDays = this.selectedDay ? [this.selectedDay] : [];
+      if (this.selectedDay) {
+        startDate = endDate = new Date(this.selectedDay);
       } else {
         startDate = endDate = new Date();
       }
     }
 
-    const filledDaysSet = new Set(
-      this.fakeData
-        .filter((d: any) => {
-          const dt = new Date(d.timestamp);
-          return dt >= startDate && dt <= endDate;
-        })
-        .map((d: any) => {
-          const dt = new Date(d.timestamp);
-          return dt.toISOString().slice(0, 10);
-        })
-    );
-
+    // D3 segmented timeline with dots for each modification and month markers
     const width = document.getElementById("d3-timeline")?.clientWidth || 600;
     const height = 60;
     const margin = { left: 30, right: 30, top: 20, bottom: 20 };
@@ -246,11 +269,14 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       .attr("width", width)
       .attr("height", height);
 
+    // X scale: each day is a segment
     const x = d3
       .scalePoint()
       .domain(allDays)
       .range([margin.left, width - margin.right]);
 
+    // --- D3 drawing temporarily commented out for debugging ---
+    // Draw the main horizontal line
     svg
       .append("line")
       .attr("x1", margin.left)
@@ -260,33 +286,255 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       .attr("stroke", "var(--bs-gray-200)")
       .attr("stroke-width", 2);
 
-    svg
-      .selectAll("circle")
-      .data(allDays)
-      .enter()
-      .append("circle")
-      .attr("cx", (d) => x(d)!)
-      .attr("cy", height / 2)
-      .attr("r", (d) => (filledDaysSet.has(d) ? 7 : 5))
-      .attr("fill", (d) =>
-        filledDaysSet.has(d) ? "var(--bs-primary)" : "#fff"
-      )
-      .attr("stroke", (d) =>
-        filledDaysSet.has(d) ? "var(--bs-primary)" : "var(--bs-gray-200)"
-      )
-      .attr("stroke-width", 2);
+    // Draw vertical lines for each day
+    allDays.forEach((day, idx) => {
+      const isEndOfMonth =
+        idx === allDays.length - 1 ||
+        day.slice(0, 7) !== allDays[idx + 1]?.slice(0, 7);
+      svg
+        .append("line")
+        .attr("x1", x(day)!)
+        .attr("x2", x(day)!)
+        .attr("y1", height / 2 - 18)
+        .attr("y2", height / 2 + 18)
+        .attr(
+          "stroke",
+          isEndOfMonth ? "var(--bs-gray-400)" : "var(--bs-gray-200)"
+        )
+        .attr("stroke-width", 2);
+    });
 
-    svg
-      .selectAll("text")
-      .data(allDays)
-      .enter()
-      .append("text")
-      .attr("x", (d) => x(d)!)
-      .attr("y", height / 2 + 22)
-      .attr("text-anchor", "middle")
-      .attr("font-size", 10)
-      .attr("fill", "#555")
-      .text((d) => d.slice(8, 10));
+    // Draw dots for modifications inside each day's segment
+    const dotRadius = 4;
+    if (this.timeframe === "daily" && this.selectedDay) {
+      // Show all modifications for the selected day, spread horizontally by time
+      const mods = this.fakeData
+        .filter(
+          (mod) =>
+            new Date(mod.timestamp).toISOString().slice(0, 10) ===
+            this.selectedDay
+        )
+        .sort(
+          (a, b) =>
+            new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
+        );
+      if (mods.length > 0) {
+        const minTime = new Date(this.selectedDay + "T00:00:00Z").getTime();
+        const maxTime = new Date(this.selectedDay + "T23:59:59Z").getTime();
+        const timeSpan = maxTime - minTime || 1;
+        mods.forEach((mod) => {
+          const t = new Date(mod.timestamp).getTime();
+          // Map time to horizontal position within the available width
+          const xPos =
+            margin.left +
+            ((width - margin.left - margin.right) * (t - minTime)) / timeSpan;
+          svg
+            .append("circle")
+            .attr("cx", xPos)
+            .attr("cy", height / 2)
+            .attr("r", dotRadius)
+            .attr("fill", "var(--bs-primary)");
+        });
+      }
+    } else {
+      // Group modifications by day (for all, month, week, year)
+      const modsByDay: Record<string, any[]> = {};
+      for (const mod of this.fakeData) {
+        const day = new Date(mod.timestamp).toISOString().slice(0, 10);
+        if (!modsByDay[day]) modsByDay[day] = [];
+        modsByDay[day].push(mod);
+      }
+      allDays.forEach((day) => {
+        const mods = (modsByDay[day] || []).sort(
+          (a, b) =>
+            new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
+        );
+        if (mods.length === 0) return;
+        // If all modifications are more than 20 minutes apart, place horizontally (overlap)
+        let stackGroups: any[][] = [];
+        let currentGroup: any[] = [];
+        for (let i = 0; i < mods.length; i++) {
+          if (i === 0) {
+            currentGroup.push(mods[i]);
+          } else {
+            const prev = new Date(mods[i - 1].timestamp).getTime();
+            const curr = new Date(mods[i].timestamp).getTime();
+            if (curr - prev <= 20 * 60 * 1000) {
+              currentGroup.push(mods[i]);
+            } else {
+              stackGroups.push(currentGroup);
+              currentGroup = [mods[i]];
+            }
+          }
+        }
+        if (currentGroup.length) stackGroups.push(currentGroup);
+
+        // For each group: if group has 1, place horizontally; if >1, stack vertically
+        stackGroups.forEach((group) => {
+          if (group.length === 1) {
+            svg
+              .append("circle")
+              .attr("cx", x(day)!)
+              .attr("cy", height / 2)
+              .attr("r", dotRadius)
+              .attr("fill", "var(--bs-primary)");
+          } else {
+            group.forEach((mod, i) => {
+              svg
+                .append("circle")
+                .attr("cx", x(day)!)
+                .attr(
+                  "cy",
+                  height / 2 -
+                    ((dotRadius * 2 + 2) * (group.length - 1)) / 2 +
+                    i * (dotRadius * 2 + 2)
+                )
+                .attr("r", dotRadius)
+                .attr("fill", "var(--bs-primary)");
+            });
+          }
+        });
+      });
+    }
+    // Draw month start/end markers and vertical lines at each ending day
+    if (allDays.length > 0) {
+      const months: string[] = [];
+      allDays.forEach((d) => {
+        const m = d.slice(0, 7); // YYYY-MM
+        if (months.length === 0 || months[months.length - 1] !== m) {
+          months.push(m);
+        }
+      });
+      months.forEach((month, idx) => {
+        // Find first and last day in allDays for this month
+        const monthDays = allDays.filter((d) => d.startsWith(month));
+        if (monthDays.length) {
+          // Start marker
+          svg
+            .append("line")
+            .attr("x1", x(monthDays[0])!)
+            .attr("x2", x(monthDays[0])!)
+            .attr("y1", height / 2 - 18)
+            .attr("y2", height / 2 + 18)
+            .attr("stroke", "var(--bs-success)")
+            .attr("stroke-width", 2);
+          svg
+            .append("text")
+            .attr("x", x(monthDays[0])!)
+            .attr("y", height / 2 - 22)
+            .attr("text-anchor", "middle")
+            .attr("font-size", 10)
+            .attr("fill", "var(--bs-success)")
+            .text(month);
+          // End marker
+          const endX = x(monthDays[monthDays.length - 1])!;
+          svg
+            .append("line")
+            .attr("x1", endX)
+            .attr("x2", endX)
+            .attr("y1", height / 2 - 18)
+            .attr("y2", height / 2 + 18)
+            .attr("stroke", "var(--bs-danger)")
+            .attr("stroke-width", 2);
+          svg
+            .append("text")
+            .attr("x", endX)
+            .attr("y", height / 2 + 32)
+            .attr("text-anchor", "middle")
+            .attr("font-size", 10)
+            .attr("fill", "var(--bs-danger)")
+            .text(month);
+
+          // Add two vertical lines at each ending day: white (5px), then --bs-gray-200 (3px) on top
+          svg
+            .append("line")
+            .attr("x1", endX)
+            .attr("x2", endX)
+            .attr("y1", height / 2 - 22)
+            .attr("y2", height / 2 + 22)
+            .attr("stroke", "#fff")
+            .attr("stroke-width", 5);
+          svg
+            .append("line")
+            .attr("x1", endX)
+            .attr("x2", endX)
+            .attr("y1", height / 2 - 22)
+            .attr("y2", height / 2 + 22)
+            .attr("stroke", "var(--bs-gray-200)")
+            .attr("stroke-width", 3);
+        }
+      });
+    }
+
+    // Draw month start/end markers and vertical lines at each ending day
+    if (allDays.length > 0) {
+      const months: string[] = [];
+      allDays.forEach((d) => {
+        const m = d.slice(0, 7); // YYYY-MM
+        if (months.length === 0 || months[months.length - 1] !== m) {
+          months.push(m);
+        }
+      });
+      months.forEach((month, idx) => {
+        // Find first and last day in allDays for this month
+        const monthDays = allDays.filter((d) => d.startsWith(month));
+        if (monthDays.length) {
+          // Start marker
+          svg
+            .append("line")
+            .attr("x1", x(monthDays[0])!)
+            .attr("x2", x(monthDays[0])!)
+            .attr("y1", height / 2 - 18)
+            .attr("y2", height / 2 + 18)
+            .attr("stroke", "var(--bs-success)")
+            .attr("stroke-width", 2);
+          svg
+            .append("text")
+            .attr("x", x(monthDays[0])!)
+            .attr("y", height / 2 - 22)
+            .attr("text-anchor", "middle")
+            .attr("font-size", 10)
+            .attr("fill", "var(--bs-success)")
+            .text(month);
+          // End marker
+          const endX = x(monthDays[monthDays.length - 1])!;
+          svg
+            .append("line")
+            .attr("x1", endX)
+            .attr("x2", endX)
+            .attr("y1", height / 2 - 18)
+            .attr("y2", height / 2 + 18)
+            .attr("stroke", "var(--bs-danger)")
+            .attr("stroke-width", 2);
+          svg
+            .append("text")
+            .attr("x", endX)
+            .attr("y", height / 2 + 32)
+            .attr("text-anchor", "middle")
+            .attr("font-size", 10)
+            .attr("fill", "var(--bs-danger)")
+            .text(month);
+
+          // Add two vertical lines at each ending day: white (5px), then --bs-gray-200 (3px) on top
+          svg
+            .append("line")
+            .attr("x1", endX)
+            .attr("x2", endX)
+            .attr("y1", height / 2 - 22)
+            .attr("y2", height / 2 + 22)
+            .attr("stroke", "#fff")
+            .attr("stroke-width", 5);
+          svg
+            .append("line")
+            .attr("x1", endX)
+            .attr("x2", endX)
+            .attr("y1", height / 2 - 22)
+            .attr("y2", height / 2 + 22)
+            .attr("stroke", "var(--bs-gray-200)")
+            .attr("stroke-width", 3);
+        }
+      });
+    }
   }
 
   onDatasetChange(event: Event) {
