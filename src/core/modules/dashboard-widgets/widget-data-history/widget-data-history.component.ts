@@ -1,4 +1,6 @@
 // (Removed duplicate/stray class and method stubs. File now starts with imports and a single class definition.)
+import { signalState } from "@ngrx/signals";
+import { patchState } from "@ngrx/signals";
 import { FieldTypeIcon, FieldIconMap } from "./field-icons";
 import {
   Component,
@@ -49,7 +51,9 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     { label: "WPO_16698", value: WPO_16698 },
   ];
   selectedDataset = this.datasets[1];
-  fakeData: any[] = this.selectedDataset.value;
+  dataStore = signalState<{ data: any[] }>({
+    data: this.selectedDataset.value,
+  });
   gridApi: any;
   syncData: boolean = false;
 
@@ -110,7 +114,10 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
   // Provide filteredData for template compatibility (update with real filtering logic if needed)
   get filteredData(): any[] {
-    return this.fakeData;
+    return this.dataStore.data();
+  }
+  get fakeData(): any[] {
+    return this.dataStore.data();
   }
 
   // --- Timeline/Navigation State ---
@@ -119,7 +126,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     const select = event.target as HTMLSelectElement;
     const idx = select.selectedIndex;
     this.selectedDataset = this.datasets[idx];
-    this.fakeData = this.selectedDataset.value;
+    patchState(this.dataStore, { data: this.selectedDataset.value });
     this.computeWeeksWithNodes();
     // If in week mode, ensure currentDate is a valid week
     if (this.timeframe === "week" && this.weekStartDatesWithNodes.length) {
@@ -170,7 +177,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   // --- Lifecycle Hooks ---
   ngOnInit(): void {
     // Set selectedDay to the last day with modifications by default
-    const allTimestamps = this.fakeData.map((d: any) => d.timestamp);
+    const allTimestamps = this.dataStore.data().map((d: any) => d.timestamp);
     const allDates = allTimestamps.map((ts: any) =>
       new Date(ts).toISOString().slice(0, 10)
     );
@@ -197,7 +204,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     this.currentDate = new Date();
     if (this.timeframe === "daily") {
       // Default to first day in data
-      const allTimestamps = this.fakeData.map((d: any) => d.timestamp);
+      const allTimestamps = this.dataStore.data().map((d: any) => d.timestamp);
       const allDates = allTimestamps.map((ts: any) =>
         new Date(ts).toISOString().slice(0, 10)
       );
@@ -235,7 +242,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     return d.toISOString().slice(0, 10);
   }
   computeWeeksWithNodes(): void {
-    const allTimestamps = this.fakeData.map((d: any) => d.timestamp);
+    const allTimestamps = this.dataStore.data().map((d: any) => d.timestamp);
     const allDates = allTimestamps.map((ts: any) => new Date(ts));
     const weekStarts = new Set<string>();
     for (const d of allDates) {
@@ -248,6 +255,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   // --- D3 Timeline Render Stub ---
   renderTimeline() {
     // This is a stub. Actual D3 rendering is handled by the child component.
+    return this.dataStore.data();
   }
 
   // --- ag-Grid Event Handler Stub ---
@@ -261,9 +269,12 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       if (idx > 0) {
         // Set currentDate to the first day with nodes in the previous week
         const prevWeekStart = this.weekStartDatesWithNodes[idx - 1];
-        const prevWeekNodes = this.fakeData.filter(
-          (d: any) => this.getWeekStart(new Date(d.timestamp)) === prevWeekStart
-        );
+        const prevWeekNodes = this.dataStore
+          .data()
+          .filter(
+            (d: any) =>
+              this.getWeekStart(new Date(d.timestamp)) === prevWeekStart
+          );
         if (prevWeekNodes.length) {
           // Set to the first node's date in that week
           this.currentDate = new Date(prevWeekNodes[0].timestamp);
@@ -292,9 +303,12 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       if (idx >= 0 && idx < this.weekStartDatesWithNodes.length - 1) {
         // Set currentDate to the first day with nodes in the next week
         const nextWeekStart = this.weekStartDatesWithNodes[idx + 1];
-        const nextWeekNodes = this.fakeData.filter(
-          (d: any) => this.getWeekStart(new Date(d.timestamp)) === nextWeekStart
-        );
+        const nextWeekNodes = this.dataStore
+          .data()
+          .filter(
+            (d: any) =>
+              this.getWeekStart(new Date(d.timestamp)) === nextWeekStart
+          );
         if (nextWeekNodes.length) {
           this.currentDate = new Date(nextWeekNodes[0].timestamp);
         } else {
