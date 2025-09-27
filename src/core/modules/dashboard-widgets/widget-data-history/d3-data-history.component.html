@@ -8,19 +8,34 @@
       </button>
     </div>
 
-    <div class="form-check form-switch">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        role="switch"
-        id="toggleInactiveHours"
-        [(ngModel)]="hideInactiveHours"
-        (change)="onToggleInactiveHours()"
-        checked
-      />
-      <label class="form-check-label" for="toggleInactiveHours"
-        >Hide inactive hours</label
-      >
+    <div class="d-flex">
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="toggleInactiveHours"
+          [(ngModel)]="hideInactiveHours"
+          (change)="onToggleInactiveHours()"
+          checked
+        />
+        <label class="form-check-label" for="toggleInactiveHours"
+          >Hide inactive hours</label
+        >
+      </div>
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="toggleInitialValues"
+          [(ngModel)]="hideInitialValues"
+          (change)="onHideInitialValues()"
+        />
+        <label class="form-check-label" for="toggleInitialValues"
+          >Hide initial values</label
+        >
+      </div>
     </div>
   </div>
   <svg #d3svg style="width: 100%; height: 400px; display: block"></svg>

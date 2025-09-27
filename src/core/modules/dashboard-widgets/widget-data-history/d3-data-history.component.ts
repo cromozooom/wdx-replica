@@ -31,6 +31,34 @@ export class D3DataHistoryComponent {
     // Otherwise, interpolateRainbow
     return Array.from({ length: n }, (_, i) => d3.interpolateRainbow(i / n));
   }
+  hideInitialValues = false;
+  private filteredData: any[] = [];
+
+  onHideInitialValues() {
+    this.hideInitialValues = !this.hideInitialValues;
+    if (this.hideInitialValues) {
+      // Find all fields that have more than one timestamp
+      const fieldCounts = new Map<string, number>();
+      for (const d of this.data) {
+        if (!d.fieldDisplayName) continue;
+        fieldCounts.set(
+          d.fieldDisplayName,
+          (fieldCounts.get(d.fieldDisplayName) || 0) + 1
+        );
+      }
+      const multiFields = new Set(
+        Array.from(fieldCounts.entries())
+          .filter(([_, count]) => count > 1)
+          .map(([field]) => field)
+      );
+      this.filteredData = this.data.filter((d) =>
+        multiFields.has(d.fieldDisplayName)
+      );
+    } else {
+      this.filteredData = this.data;
+    }
+    this.render();
+  }
   onToggleInactiveHours() {
     this.render();
   }
@@ -152,9 +180,14 @@ export class D3DataHistoryComponent {
     // Move this block after hours, hourX, margin, timelineHeight are defined
     if (!this.g) return;
     this.g.selectAll("*").remove();
+    // Use filteredData if set, otherwise use this.data
+    const data =
+      this.filteredData && this.filteredData.length > 0
+        ? this.filteredData
+        : this.data;
     // 0. Prepare unique fieldDisplayNames and assign colors
     const allFields = Array.from(
-      new Set(this.data.map((d) => d.fieldDisplayName).filter(Boolean))
+      new Set(data.map((d) => d.fieldDisplayName).filter(Boolean))
     );
     this.fieldNames = allFields;
     const palette = this.getColorPalette(allFields.length);
@@ -164,16 +197,14 @@ export class D3DataHistoryComponent {
     let width = 800;
     const height = this.svgRef?.nativeElement?.clientHeight || 400;
     // Dynamic hour stretching: expand hours with overlapping events
-    const timestamps = Array.from(
-      new Set(this.data.map((d) => d.timestamp))
-    ).sort();
+    const timestamps = Array.from(new Set(data.map((d) => d.timestamp))).sort();
     const minDate = new Date(Math.min(...timestamps));
     const maxDate = new Date(Math.max(...timestamps));
     // 1. Group events by hour
     const hourFormat = d3.timeFormat("%Y-%m-%d %H:00");
     const hourParse = d3.timeParse("%Y-%m-%d %H:00");
     const hourMap = new Map<string, any[]>();
-    for (const d of this.data) {
+    for (const d of data) {
       const hour = hourFormat(new Date(d.timestamp));
       if (!hourMap.has(hour)) hourMap.set(hour, []);
       hourMap.get(hour)!.push(d);
