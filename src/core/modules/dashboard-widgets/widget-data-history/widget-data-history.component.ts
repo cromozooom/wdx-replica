@@ -51,8 +51,8 @@ import { D3DataHistoryComponent } from "./d3-data-history.component";
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   constructor(private cdr: ChangeDetectorRef) {}
   datasets = [
-    { label: "WPO_16698", value: WPO_16698 },
     { label: "Default", value: WIDGET_DATA_HISTORY_FAKE_DATA },
+    { label: "WPO_16698", value: WPO_16698 },
   ];
   selectedDataset = this.datasets[1];
   dataStore = signalState<{ data: any[] }>({
