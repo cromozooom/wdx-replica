@@ -27,7 +27,7 @@
   </div>
   <div class="flex-grow-1 w-100 d-flex flex-column">
     <div class="w-100 p-2 d-flex align-items-center">
-      <div class="border w-100 flex-grow-1 p-2">
+      <div class="d-none border w-100 flex-grow-1 p-2">
         <div
           class="controlls d-flex justify-content-start align-items-center gap-2"
         >
@@ -101,7 +101,7 @@
         }"
       ></app-grid-history-data>
     </div>
-    <div class="w-100 flex-grow-1 d-flex p-2">
+    <div class="w-100 flex-grow-0 d-flex p-2">
       <app-d3-data-history
         [data]="syncData ? filteredData : fakeData"
       ></app-d3-data-history>

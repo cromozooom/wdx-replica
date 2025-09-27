@@ -359,7 +359,62 @@ export class D3DataHistoryComponent {
     // 5. Draw events as circles at exact timestamp (x) and author (y)
     // For each hour, group events by timestamp, then for each group, spread horizontally if >1 in group
     // For each hour, sort events by timestamp, and space them equally from left to right
-    const eventDots: { event: any; x: number; y: number }[] = [];
+    // --- FIELD SNAKE PATHS CALCULATION (moved here to fix errors) ---
+    let eventDotPositions = new Map();
+    if (hours.length > 0 && this.fieldNames.length > 0) {
+      const firstHourX = hourX[0];
+      const axisY = margin.top + timelineHeight + 10; // y position of the timeline axis
+      // Precompute event dot positions for all events, keyed by field and timestamp and actor
+      for (let i = 0; i < hours.length; i++) {
+        const hour = hours[i];
+        const hourStart = hourX[i];
+        const events = (hourMap.get(hour) || []).slice();
+        // Sort events by timestamp ascending
+        events.sort((a, b) => a.timestamp - b.timestamp);
+        for (let j = 0; j < events.length; j++) {
+          const ev = events[j];
+          const field = ev.fieldDisplayName;
+          if (!field) continue;
+          const actor = ev.actor?.displayName || "";
+          const x = hourStart + 20 + j * minDotGap;
+          const y = yScale(actor) as number;
+          eventDotPositions.set(field + "|" + ev.timestamp + "|" + actor, {
+            x,
+            y,
+          });
+        }
+      }
+      for (const field of this.fieldNames) {
+        // Get all events for this field, sorted by timestamp
+        const events = this.data
+          .filter((d) => d.fieldDisplayName === field)
+          .sort((a, b) => a.timestamp - b.timestamp);
+        // For each event, get x (timeline) and y (author) from precomputed positions
+        let points: { x: number; y: number; ts: number }[] = events.map(
+          (ev) => {
+            const actor = ev.actor?.displayName || "";
+            const pos = eventDotPositions.get(
+              field + "|" + ev.timestamp + "|" + actor
+            );
+            if (!pos) {
+              // fallback, should not happen
+              return { x: firstHourX, y: axisY, ts: ev.timestamp };
+            }
+            return { x: pos.x, y: pos.y, ts: ev.timestamp };
+          }
+        );
+        // Do NOT sort by x; keep points in timestamp order so the line snakes through all dots
+        const pointsNoTs = points.map(({ x, y }) => ({ x, y }));
+        // Step 1: start at the timeline axis (bottom) at x = firstHourX, y = axisY
+        // Step 2: go directly to first event dot, then through all event dots in order
+        if (pointsNoTs.length > 0) {
+          const pathPoints = [{ x: firstHourX, y: axisY }, ...pointsNoTs];
+          fieldPaths.set(field, pathPoints);
+        }
+      }
+    }
+    // fieldPaths is now ready for drawing in the next step
+
     // 2. Draw colored snake lines for each field
     // (draw before event dots)
     if (fieldPaths && fieldPaths.size > 0) {
@@ -367,84 +422,112 @@ export class D3DataHistoryComponent {
         .line<{ x: number; y: number }>()
         .x((d) => d.x)
         .y((d) => d.y)
-        .curve(d3.curveCatmullRom.alpha(0.7));
+        .curve(d3.curveLinear);
       for (const [field, points] of fieldPaths.entries()) {
         if (Array.isArray(points) && points.length >= 2) {
+          // Main visible line, 1px
           this.g
             .append("path")
             .datum(points)
             .attr("fill", "none")
             .attr("stroke", this.fieldColors.get(field) || "#888")
-            .attr("stroke-width", 3)
-            .attr("opacity", 0.85)
-            .attr("class", "field-snake-line")
+            .attr("stroke-width", 1)
+            .attr("opacity", 1)
+            .attr(
+              "class",
+              `field-snake-line field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+            )
             .attr("d", lineGen);
+          // Transparent duplicate for interaction
+          this.g
+            .append("path")
+            .datum(points)
+            .attr("fill", "none")
+            .attr("stroke", "transparent")
+            .attr("stroke-width", 16)
+            .attr(
+              "class",
+              `field-snake-line-hit field-snake-line-hit-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+            )
+            .attr("d", lineGen)
+            .style("cursor", "pointer")
+            .on("mouseenter", () => {
+              d3.selectAll(
+                `.field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+              )
+                .attr("stroke-width", 6)
+                .raise();
+            })
+            .on("mouseleave", () => {
+              d3.selectAll(
+                `.field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+              ).attr("stroke-width", 1);
+            });
         }
       }
     }
-    // --- FIELD SNAKE PATHS CALCULATION (moved here to fix errors) ---
-    if (hours.length > 0 && this.fieldNames.length > 0) {
-      const firstHourX = hourX[0];
-      for (const field of this.fieldNames) {
-        // Get all events for this field
-        const events = this.data.filter((d) => d.fieldDisplayName === field);
-        // For each event, get x (timeline) and y (author)
-        const points: { x: number; y: number }[] = events.map((ev) => {
-          // Find hour index for this event
-          const date = new Date(ev.timestamp);
-          const hour = hourFormat(date);
-          const idx = hourToIndex.get(hour) ?? 0;
-          // Use same x logic as event dots
-          let x = hourX[idx] + 20; // default offset for dot
-          // If multiple events in hour, spread horizontally
-          const hourEvents = (hourMap.get(hour) || []).filter(
-            (e) => e.fieldDisplayName === field
-          );
-          const j = hourEvents.findIndex(
-            (e) =>
-              e.timestamp === ev.timestamp &&
-              e.actor?.displayName === ev.actor?.displayName
-          );
-          if (j >= 0) x += j * minDotGap;
-          // y is author line
-          const y = yScale(ev.actor?.displayName) as number;
-          return { x, y };
-        });
-        // Prepend a start point 50px left of first hour marker, at y of first event (or vertical center)
-        let startY =
-          points.length > 0 ? points[0].y : margin.top + timelineHeight / 2;
-        const startPoint = { x: firstHourX - 50, y: startY };
-        fieldPaths.set(field, [startPoint, ...points]);
-      }
-    }
-    // fieldPaths is now ready for drawing in the next step
+    // Build eventDots with size info for start/end, using the same precomputed positions as the line
+    const eventDots: {
+      event: any;
+      x: number;
+      y: number;
+      r: number;
+      field: string;
+      isFirst: boolean;
+      isLast: boolean;
+    }[] = [];
+    // For each field, mark first/last event for dot sizing
+    const fieldEventMap: Record<string, { idx: number; total: number }> = {};
     for (let i = 0; i < hours.length; i++) {
       const hour = hours[i];
-      const hourStart = hourX[i];
-      const hourW = hourWidths[i];
       const events = (hourMap.get(hour) || []).slice();
-      if (events.length === 0) continue;
       // Sort events by timestamp ascending
       events.sort((a, b) => a.timestamp - b.timestamp);
       for (let j = 0; j < events.length; j++) {
+        const field = events[j].fieldDisplayName;
+        if (!field) continue;
+        if (!(field in fieldEventMap)) {
+          // Count total events for this field
+          const total = this.data.filter(
+            (d) => d.fieldDisplayName === field
+          ).length;
+          fieldEventMap[field] = { idx: 0, total };
+        }
+        const idx = fieldEventMap[field].idx;
+        const total = fieldEventMap[field].total;
+        const isFirst = idx === 0;
+        const isLast = idx === total - 1;
+        const actor = events[j].actor?.displayName || "";
+        const pos = eventDotPositions.get(
+          field + "|" + events[j].timestamp + "|" + actor
+        );
         eventDots.push({
           event: events[j],
-          x: hourStart + 20 + j * minDotGap,
-          y: yScale(events[j].actor?.displayName) as number,
+          x: pos ? pos.x : 0,
+          y: pos ? pos.y : 0,
+          r: isFirst || isLast ? 8 : 4,
+          field,
+          isFirst,
+          isLast,
         });
+        fieldEventMap[field].idx++;
       }
     }
-    this.g
+    // Render dots after lines so they appear on top
+    const dotSel = this.g
       .selectAll("circle.event-dot")
       .data(eventDots)
       .enter()
       .append("circle")
-      .attr("class", "event-dot")
+      .attr(
+        "class",
+        (d) => `event-dot event-dot-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+      )
       .attr("cx", (d) => d.x)
       .attr("cy", (d) => d.y)
-      .attr("r", 8)
+      .attr("r", (d) => d.r)
       .attr("fill", (d) => {
-        const field = d.event.fieldDisplayName;
+        const field = d.field;
         if (field && this.fieldColors.has(field)) {
           return this.fieldColors.get(field) || "#1976d2";
         }
@@ -452,6 +535,36 @@ export class D3DataHistoryComponent {
       })
       .attr("stroke", "#fff")
       .attr("stroke-width", 2)
+      .style("cursor", "pointer")
+      .on("mouseenter", function (event, d) {
+        // Fade all lines and dots except this field
+        d3.selectAll(".field-snake-line").attr("opacity", 0.4);
+        d3.selectAll(".event-dot").attr("opacity", 0.4);
+        d3.selectAll(
+          `.field-snake-line-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+        )
+          .attr("opacity", 1)
+          .attr("stroke-width", 6)
+          .raise();
+        d3.selectAll(`.event-dot-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`)
+          .attr("opacity", 1)
+          .attr("r", (d2) => {
+            const dot = d2 as { isFirst: boolean; isLast: boolean };
+            return dot.isFirst || dot.isLast ? 10 : 6;
+          });
+      })
+      .on("mouseleave", function (event, d) {
+        d3.selectAll(".field-snake-line")
+          .attr("opacity", 1)
+          .attr("stroke-width", 1);
+        d3.selectAll(".event-dot")
+          .attr("opacity", 1)
+          .attr("r", (d2) => {
+            const dot = d2 as { isFirst: boolean; isLast: boolean };
+            return dot.isFirst || dot.isLast ? 8 : 4;
+          });
+      });
+    dotSel
       .append("title")
       .text(
         (d) =>
