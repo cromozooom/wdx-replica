@@ -1,7 +1,27 @@
 import { Component, Input, Output, EventEmitter } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { AgGridModule } from "ag-grid-angular";
-import { ColDef, RowGroupingDisplayType } from "ag-grid-community";
+import {
+  ColDef,
+  GridOptions,
+  RowGroupingDisplayType,
+  TextFilterModule,
+  ModuleRegistry,
+  ClientSideRowModelModule,
+} from "ag-grid-community";
+import {
+  AdvancedFilterModule,
+  ColumnMenuModule,
+  ContextMenuModule,
+} from "ag-grid-enterprise";
+ModuleRegistry.registerModules([
+  TextFilterModule,
+  AdvancedFilterModule,
+  ClientSideRowModelModule,
+  ColumnMenuModule,
+  ContextMenuModule,
+  // ...(process.env.NODE_ENV !== "production" ? [ValidationModule] : []),
+]);
 
 @Component({
   selector: "app-grid-history-data",
@@ -11,6 +31,9 @@ import { ColDef, RowGroupingDisplayType } from "ag-grid-community";
   styleUrls: ["./grid-history-data.component.scss"],
 })
 export class GridHistoryDataComponent {
+  gridOptions: GridOptions = {
+    enableAdvancedFilter: true,
+  };
   @Input() rowData: any[] = [];
   @Input() columnDefs: ColDef[] = [];
   @Input() autoGroupColumnDef: ColDef | undefined;
