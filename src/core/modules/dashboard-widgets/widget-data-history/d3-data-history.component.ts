@@ -260,7 +260,7 @@ export class D3DataHistoryComponent {
       )
       .attr("y1", (d) => yScale(d) as number)
       .attr("y2", (d) => yScale(d) as number)
-      .attr("stroke", "#ccc");
+      .attr("stroke", "var(--bs-gray-300)");
 
     // Draw author names on the y-axis
     this.g
@@ -277,8 +277,7 @@ export class D3DataHistoryComponent {
       .attr("dominant-baseline", "middle")
       .attr("text-anchor", "start")
       .attr("font-size", 14)
-      .attr("fill", "#444")
-      .attr("font-weight", "bold")
+      .attr("fill", "var(--bs-gray-600)")
       .text((d) => d);
 
     // 6. Draw x-axis (timeline) with hour ticks (YYYY-MM-DD HH:00)
@@ -286,6 +285,21 @@ export class D3DataHistoryComponent {
     const axisG = this.g
       .append("g")
       .attr("transform", `translate(0,${margin.top + timelineHeight + 10})`);
+    // Draw the main axis line (make it visible)
+    if (hours.length > 0) {
+      const axisStart = hourX[0];
+      const axisEnd =
+        hourX[hourX.length - 1] + hourWidths[hourWidths.length - 1];
+      axisG
+        .append("line")
+        .attr("class", "timeline-axis-line")
+        .attr("x1", axisStart)
+        .attr("x2", axisEnd)
+        .attr("y1", 0)
+        .attr("y2", 0)
+        .attr("stroke", "var(--bs-gray-200)")
+        .attr("stroke-width", 2);
+    }
     axisG
       .selectAll("line.hour-tick")
       .data(hours)
