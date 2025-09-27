@@ -392,8 +392,17 @@ export class D3DataHistoryComponent {
     // --- FIELD SNAKE PATHS CALCULATION (moved here to fix errors) ---
     let eventDotPositions = new Map();
     if (hours.length > 0 && this.fieldNames.length > 0) {
+      // Compute new start point: x = 100px left of first hour, y = vertical center between first and last author
       const firstHourX = hourX[0];
-      const axisY = margin.top + timelineHeight + 10; // y position of the timeline axis
+      let startY = margin.top + timelineHeight / 2;
+      if (authors.length > 1) {
+        const yFirst = yScale(authors[0]);
+        const yLast = yScale(authors[authors.length - 1]);
+        startY = ((yFirst as number) + (yLast as number)) / 2;
+      } else if (authors.length === 1) {
+        startY = yScale(authors[0]) as number;
+      }
+      const startX = firstHourX - 100;
       // Precompute event dot positions for all events, keyed by field and timestamp and actor
       for (let i = 0; i < hours.length; i++) {
         const hour = hours[i];
@@ -428,7 +437,8 @@ export class D3DataHistoryComponent {
             );
             if (!pos) {
               // fallback, should not happen
-              return { x: firstHourX, y: axisY, ts: ev.timestamp };
+              // axisY is no longer needed; this fallback should not be used
+              return { x: firstHourX, y: startY, ts: ev.timestamp };
             }
             return { x: pos.x, y: pos.y, ts: ev.timestamp };
           }
@@ -438,7 +448,7 @@ export class D3DataHistoryComponent {
         // Step 1: start at the timeline axis (bottom) at x = firstHourX, y = axisY
         // Step 2: go directly to first event dot, then through all event dots in order
         if (pointsNoTs.length > 0) {
-          const pathPoints = [{ x: firstHourX, y: axisY }, ...pointsNoTs];
+          const pathPoints = [{ x: startX, y: startY }, ...pointsNoTs];
           fieldPaths.set(field, pathPoints);
         }
       }
