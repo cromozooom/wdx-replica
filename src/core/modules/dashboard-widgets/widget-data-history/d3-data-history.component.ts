@@ -448,17 +448,23 @@ export class D3DataHistoryComponent {
     // 2. Draw colored snake lines for each field
     // (draw before event dots)
     if (fieldPaths && fieldPaths.size > 0) {
-      const lineGen = d3
-        .line<{ x: number; y: number }>()
-        .x((d) => d.x)
-        .y((d) => d.y)
-        .curve(d3.curveLinear);
+      // Custom path generator for S-curve connectors with horizontal tangents, no synthetic end point
+      function sCurvePath(points: { x: number; y: number }[]) {
+        if (points.length < 2) return "";
+        let d = `M${points[0].x},${points[0].y}`;
+        for (let i = 1; i < points.length; i++) {
+          const p0 = points[i - 1];
+          const p1 = points[i];
+          const dx = (p1.x - p0.x) / 2;
+          d += ` C${p0.x + dx},${p0.y} ${p1.x - dx},${p1.y} ${p1.x},${p1.y}`;
+        }
+        return d;
+      }
       for (const [field, points] of fieldPaths.entries()) {
         if (Array.isArray(points) && points.length >= 2) {
           // Main visible line, 1px
           this.g
             .append("path")
-            .datum(points)
             .attr("fill", "none")
             .attr("stroke", this.fieldColors.get(field) || "#888")
             .attr("stroke-width", 1)
@@ -467,11 +473,10 @@ export class D3DataHistoryComponent {
               "class",
               `field-snake-line field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
             )
-            .attr("d", lineGen);
+            .attr("d", sCurvePath(points));
           // Transparent duplicate for interaction
           this.g
             .append("path")
-            .datum(points)
             .attr("fill", "none")
             .attr("stroke", "transparent")
             .attr("stroke-width", 16)
@@ -479,7 +484,7 @@ export class D3DataHistoryComponent {
               "class",
               `field-snake-line-hit field-snake-line-hit-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
             )
-            .attr("d", lineGen)
+            .attr("d", sCurvePath(points))
             .style("cursor", "pointer")
             .on("mouseenter", () => {
               d3.selectAll(
