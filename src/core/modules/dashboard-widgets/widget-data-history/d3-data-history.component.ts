@@ -321,14 +321,12 @@ export class D3DataHistoryComponent {
           ? "hour-label extended-hour-label"
           : "hour-label"
       )
-      .attr("x", (h, i) => hourX[i] + hourWidths[i] / 2)
+      // Place label at the start of the hour (aligned with tick)
+      .attr("x", (h, i) => hourX[i])
       .attr("y", 32)
       .attr("text-anchor", "start")
       .attr("font-size", 10)
-      .attr(
-        "transform",
-        (h, i) => `rotate(60,${hourX[i] + hourWidths[i] / 2},32)`
-      )
+      .attr("transform", (h, i) => `rotate(60,${hourX[i]},32)`)
       .text((h) => h);
 
     // Remove any other axisG or allHours code below (cleanup)
