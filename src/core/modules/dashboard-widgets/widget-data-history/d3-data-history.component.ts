@@ -488,19 +488,28 @@ export class D3DataHistoryComponent {
         if (pointsNoTs.length > 0) {
           // Find the y-position of the label for this field
           let labelY = fieldYMap.get(field);
-          if (typeof labelY !== 'number') labelY = startY;
+          if (typeof labelY !== "number") labelY = startY;
           // Add the same offsetY as used for the label group transform
           let offsetY = 0;
-          if (authors && authors.length > 0 && fieldFirstTimestamps.length > 0) {
+          if (
+            authors &&
+            authors.length > 0 &&
+            fieldFirstTimestamps.length > 0
+          ) {
             const lastAuthorY = yScale(authors[authors.length - 1]);
-            const lastField = fieldFirstTimestamps[fieldFirstTimestamps.length - 1].field;
+            const lastField =
+              fieldFirstTimestamps[fieldFirstTimestamps.length - 1].field;
             const lastLabelY = fieldYMap.get(lastField);
-            if (typeof lastAuthorY === 'number' && typeof lastLabelY === 'number') {
+            if (
+              typeof lastAuthorY === "number" &&
+              typeof lastLabelY === "number"
+            ) {
               offsetY = lastAuthorY - lastLabelY;
             }
           }
           // Calculate the x/y for the right edge and vertical center of the colored square
-          const firstHourX = (typeof hourX !== 'undefined' && hourX.length > 0) ? hourX[0] : 60;
+          const firstHourX =
+            typeof hourX !== "undefined" && hourX.length > 0 ? hourX[0] : 60;
           const squareX = firstHourX - 100 + 10 - 35 + 16; // left edge + width
           const squareY = (labelY ?? 0) + offsetY;
           const pathPoints = [{ x: squareX, y: squareY }, ...pointsNoTs];
