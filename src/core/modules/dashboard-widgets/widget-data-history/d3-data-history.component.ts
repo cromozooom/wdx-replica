@@ -171,6 +171,9 @@ export class D3DataHistoryComponent {
   }
 
   private render() {
+    // Step 3: Assign a y-position for each field label, stacking them vertically on the left, 20px apart
+    const labelSpacing = 20;
+    const labelPadding = 10;
     // Step 1: Extract all unique fieldDisplayName values from the data
     const allFields = Array.from(
       new Set(
