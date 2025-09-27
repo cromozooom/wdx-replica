@@ -18,6 +18,19 @@ import { FormsModule } from "@angular/forms";
   styleUrls: ["./d3-data-history.component.scss"],
 })
 export class D3DataHistoryComponent {
+  // Store unique fieldDisplayNames and their colors
+  private fieldNames: string[] = [];
+  private fieldColors: Map<string, string> = new Map();
+
+  // Helper to generate a color palette
+  private getColorPalette(n: number): string[] {
+    // Use d3.schemeCategory10 or interpolateRainbow for more colors
+    if ((d3 as any).schemeCategory10 && n <= 10) {
+      return (d3 as any).schemeCategory10.slice(0, n);
+    }
+    // Otherwise, interpolateRainbow
+    return Array.from({ length: n }, (_, i) => d3.interpolateRainbow(i / n));
+  }
   onToggleInactiveHours() {
     this.render();
   }
@@ -131,8 +144,21 @@ export class D3DataHistoryComponent {
   }
 
   private render() {
+    // ...existing code...
+    // ...existing code...
+    // 1. For each field, collect event points and prepend a start point 50px left of first hour marker
+    // We'll store: Map<fieldName, Array<{x: number, y: number}>>
+    const fieldPaths: Map<string, { x: number; y: number }[]> = new Map();
+    // Move this block after hours, hourX, margin, timelineHeight are defined
     if (!this.g) return;
     this.g.selectAll("*").remove();
+    // 0. Prepare unique fieldDisplayNames and assign colors
+    const allFields = Array.from(
+      new Set(this.data.map((d) => d.fieldDisplayName).filter(Boolean))
+    );
+    this.fieldNames = allFields;
+    const palette = this.getColorPalette(allFields.length);
+    this.fieldColors = new Map(allFields.map((f, i) => [f, palette[i]]));
     // Calculate number of unique event timestamps (to the second)
     // Always use a large enough width for the SVG, not just the container
     let width = 800;
@@ -334,6 +360,64 @@ export class D3DataHistoryComponent {
     // For each hour, group events by timestamp, then for each group, spread horizontally if >1 in group
     // For each hour, sort events by timestamp, and space them equally from left to right
     const eventDots: { event: any; x: number; y: number }[] = [];
+    // 2. Draw colored snake lines for each field
+    // (draw before event dots)
+    if (fieldPaths && fieldPaths.size > 0) {
+      const lineGen = d3
+        .line<{ x: number; y: number }>()
+        .x((d) => d.x)
+        .y((d) => d.y)
+        .curve(d3.curveCatmullRom.alpha(0.7));
+      for (const [field, points] of fieldPaths.entries()) {
+        if (Array.isArray(points) && points.length >= 2) {
+          this.g
+            .append("path")
+            .datum(points)
+            .attr("fill", "none")
+            .attr("stroke", this.fieldColors.get(field) || "#888")
+            .attr("stroke-width", 3)
+            .attr("opacity", 0.85)
+            .attr("class", "field-snake-line")
+            .attr("d", lineGen);
+        }
+      }
+    }
+    // --- FIELD SNAKE PATHS CALCULATION (moved here to fix errors) ---
+    if (hours.length > 0 && this.fieldNames.length > 0) {
+      const firstHourX = hourX[0];
+      for (const field of this.fieldNames) {
+        // Get all events for this field
+        const events = this.data.filter((d) => d.fieldDisplayName === field);
+        // For each event, get x (timeline) and y (author)
+        const points: { x: number; y: number }[] = events.map((ev) => {
+          // Find hour index for this event
+          const date = new Date(ev.timestamp);
+          const hour = hourFormat(date);
+          const idx = hourToIndex.get(hour) ?? 0;
+          // Use same x logic as event dots
+          let x = hourX[idx] + 20; // default offset for dot
+          // If multiple events in hour, spread horizontally
+          const hourEvents = (hourMap.get(hour) || []).filter(
+            (e) => e.fieldDisplayName === field
+          );
+          const j = hourEvents.findIndex(
+            (e) =>
+              e.timestamp === ev.timestamp &&
+              e.actor?.displayName === ev.actor?.displayName
+          );
+          if (j >= 0) x += j * minDotGap;
+          // y is author line
+          const y = yScale(ev.actor?.displayName) as number;
+          return { x, y };
+        });
+        // Prepend a start point 50px left of first hour marker, at y of first event (or vertical center)
+        let startY =
+          points.length > 0 ? points[0].y : margin.top + timelineHeight / 2;
+        const startPoint = { x: firstHourX - 50, y: startY };
+        fieldPaths.set(field, [startPoint, ...points]);
+      }
+    }
+    // fieldPaths is now ready for drawing in the next step
     for (let i = 0; i < hours.length; i++) {
       const hour = hours[i];
       const hourStart = hourX[i];
@@ -359,7 +443,13 @@ export class D3DataHistoryComponent {
       .attr("cx", (d) => d.x)
       .attr("cy", (d) => d.y)
       .attr("r", 8)
-      .attr("fill", "#1976d2")
+      .attr("fill", (d) => {
+        const field = d.event.fieldDisplayName;
+        if (field && this.fieldColors.has(field)) {
+          return this.fieldColors.get(field) || "#1976d2";
+        }
+        return "#1976d2";
+      })
       .attr("stroke", "#fff")
       .attr("stroke-width", 2)
       .append("title")
