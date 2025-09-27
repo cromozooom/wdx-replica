@@ -35,7 +35,6 @@ export class D3DataHistoryComponent {
   private filteredData: any[] = [];
 
   onHideInitialValues() {
-    this.hideInitialValues = !this.hideInitialValues;
     if (this.hideInitialValues) {
       // Find all fields that have more than one timestamp
       const fieldCounts = new Map<string, number>();
