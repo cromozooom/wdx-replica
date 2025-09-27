@@ -64,23 +64,19 @@ export class D3DataHistoryComponent {
   private render() {
     if (!this.g) return;
     this.g.selectAll("*").remove();
-    // Calculate number of hours between min and max date
+    // Calculate number of unique event timestamps (to the second)
     // Always use a large enough width for the SVG, not just the container
     let width = 800;
     const height = this.svgRef?.nativeElement?.clientHeight || 400;
-    // Only show hours where there is at least one event
-    // Group events by hour (YYYY-MM-DD HH:00)
-    const hourFormat = d3.timeFormat("%Y-%m-%d %H:00");
-    const hourParse = d3.timeParse("%Y-%m-%d %H:00");
-    const eventHoursSet = new Set(
-      this.data.map((d) => hourFormat(new Date(d.timestamp)))
-    );
-    const eventHours = Array.from(eventHoursSet)
-      .map((h) => hourParse(h) as Date)
-      .sort((a, b) => +a - +b);
-    // Use only these hours for the timeline
-    let hoursCount = eventHours.length;
-    width = Math.max(800, 100 * hoursCount + 200);
+    // Use a linear scale for exact timestamp placement
+    const timestamps = Array.from(
+      new Set(this.data.map((d) => d.timestamp))
+    ).sort();
+    const minDate = new Date(Math.min(...timestamps));
+    const maxDate = new Date(Math.max(...timestamps));
+    let hoursCount =
+      Math.ceil((maxDate.getTime() - minDate.getTime()) / (60 * 60 * 1000)) + 1;
+    width = Math.max(800, 60 * hoursCount + 200);
     if (this.svg) {
       this.svg.attr("width", width).attr("viewBox", `0 0 ${width} ${height}`);
     }
@@ -90,10 +86,7 @@ export class D3DataHistoryComponent {
     const authors = Array.from(
       new Set(this.data.map((d) => d.actor?.displayName))
     ).filter(Boolean);
-    const timestamps = Array.from(
-      new Set(this.data.map((d) => d.timestamp))
-    ).sort();
-    const dates = timestamps.map((ts) => new Date(ts));
+    // const timestamps and dates removed (now declared above)
 
     // 2. Scales
     const margin = { top: 40, right: 120, bottom: 40, left: 60 };
@@ -104,12 +97,11 @@ export class D3DataHistoryComponent {
       .domain(authors)
       .range([margin.top, margin.top + timelineHeight])
       .padding(0.5);
-    // Use a point scale for compact, non-continuous hours
+    // Use a linear scale for exact timestamp placement
     const xScale = d3
-      .scalePoint<Date>()
-      .domain(eventHours)
-      .range([margin.left, margin.left + timelineWidth])
-      .padding(0.5);
+      .scaleTime()
+      .domain([minDate, maxDate])
+      .range([margin.left, margin.left + timelineWidth]);
 
     // 3. Draw horizontal lines for each author
     this.g
@@ -138,17 +130,14 @@ export class D3DataHistoryComponent {
       .attr("fill", "#333")
       .text((d) => d);
 
-    // 5. Draw events as circles at (date, author)
+    // 5. Draw events as circles at exact timestamp (x) and author (y)
     this.g
       .selectAll("circle.event-dot")
       .data(this.data)
       .enter()
       .append("circle")
       .attr("class", "event-dot")
-      .attr("cx", (d) => {
-        const parsed = hourParse(hourFormat(new Date(d.timestamp)));
-        return parsed ? (xScale(parsed) as number) : margin.left;
-      })
+      .attr("cx", (d) => xScale(new Date(d.timestamp)))
       .attr("cy", (d) => yScale(d.actor?.displayName) as number)
       .attr("r", 8)
       .attr("fill", "#1976d2")
@@ -160,22 +149,32 @@ export class D3DataHistoryComponent {
           `${d.actor?.displayName}\n${new Date(d.timestamp).toLocaleString()}`
       );
 
-    // 6. Draw x-axis (timeline) with hourly ticks
-    // Find the min and max date, round to the nearest hour
-    // Use previously calculated minDate and maxDate
-    if (eventHours.length > 0) {
-      const xAxis = d3
-        .axisBottom(xScale)
-        .tickValues(eventHours)
-        .tickFormat(d3.timeFormat("%Y-%m-%d %H:00") as any);
-      this.g
-        .append("g")
-        .attr("transform", `translate(0,${margin.top + timelineHeight + 10})`)
-        .call(xAxis)
-        .selectAll("text")
-        .attr("transform", "rotate(60)")
-        .style("text-anchor", "start")
-        .style("font-size", "10px");
-    }
+    // 6. Draw x-axis (timeline) with hour ticks (YYYY-MM-DD HH:00)
+    const xAxis = d3
+      .axisBottom(xScale)
+      .ticks(d3.timeHour.every(1))
+      .tickFormat((domainValue, _i) => {
+        // domainValue can be Date or NumberValue (object with valueOf)
+        let date: Date;
+        if (domainValue instanceof Date) {
+          date = domainValue;
+        } else if (
+          typeof domainValue === "object" &&
+          "valueOf" in domainValue
+        ) {
+          date = new Date(Number(domainValue.valueOf()));
+        } else {
+          date = new Date(domainValue as any);
+        }
+        return d3.timeFormat("%Y-%m-%d %H:00")(date);
+      });
+    this.g
+      .append("g")
+      .attr("transform", `translate(0,${margin.top + timelineHeight + 10})`)
+      .call(xAxis as any)
+      .selectAll("text")
+      .attr("transform", "rotate(60)")
+      .style("text-anchor", "start")
+      .style("font-size", "10px");
   }
 }
