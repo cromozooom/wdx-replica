@@ -436,22 +436,41 @@ export class D3DataHistoryComponent {
       .attr("y2", 8)
       .attr("stroke", "#888");
     axisG
-      .selectAll("text.hour-label")
+      .selectAll("g.hour-label-group")
       .data(hours)
       .enter()
-      .append("text")
+      .append("g")
       .attr("class", (h, i) =>
         hourWidths[i] > minHourWidth
-          ? "hour-label extended-hour-label"
-          : "hour-label"
+          ? "hour-label-group extended-hour-label-group"
+          : "hour-label-group"
       )
-      // Place label at the start of the hour (aligned with tick)
-      .attr("x", (h, i) => hourX[i])
-      .attr("y", 32)
-      .attr("text-anchor", "start")
-      .attr("font-size", 10)
-      .attr("transform", (h, i) => `rotate(60,${hourX[i]},32)`)
-      .text((h) => h);
+  .attr("transform", (h, i) => `translate(${hourX[i]},22)`)
+      .each(function (h) {
+        // Parse the hour string: 'YYYY-MM-DD HH:00'
+        // Split into year, date, time
+        let year = h.slice(0, 4);
+        let date = h.slice(5, 10); // MM-DD
+        let time = h.slice(11); // HH:00
+        // Add year (top line)
+        d3.select(this)
+          .append("text")
+          .attr("class", "hour-label-year")
+          .attr("x", 0)
+          .attr("y", 0)
+          .attr("text-anchor", "middle")
+          .attr("font-size", 9)
+          .text(year);
+        // Add date and time (bottom line)
+        d3.select(this)
+          .append("text")
+          .attr("class", "hour-label-date-time")
+          .attr("x", 0)
+          .attr("y", 12)
+          .attr("text-anchor", "middle")
+          .attr("font-size", 10)
+          .text(`${date} ${time}`);
+      });
 
     // Remove any other axisG or allHours code below (cleanup)
     // 5. Draw events as circles at exact timestamp (x) and author (y)
