@@ -477,7 +477,6 @@ export class D3DataHistoryComponent {
             );
             if (!pos) {
               // fallback, should not happen
-              // axisY is no longer needed; this fallback should not be used
               return { x: firstHourX, y: startY, ts: ev.timestamp };
             }
             return { x: pos.x, y: pos.y, ts: ev.timestamp };
@@ -485,10 +484,26 @@ export class D3DataHistoryComponent {
         );
         // Do NOT sort by x; keep points in timestamp order so the line snakes through all dots
         const pointsNoTs = points.map(({ x, y }) => ({ x, y }));
-        // Step 1: start at the timeline axis (bottom) at x = firstHourX, y = axisY
-        // Step 2: go directly to first event dot, then through all event dots in order
+        // Step 1: start at the label's y-position and margin-left, then connect to first event dot, then through all event dots in order
         if (pointsNoTs.length > 0) {
-          const pathPoints = [{ x: startX, y: startY }, ...pointsNoTs];
+          // Find the y-position of the label for this field
+          let labelY = fieldYMap.get(field);
+          if (typeof labelY !== 'number') labelY = startY;
+          // Add the same offsetY as used for the label group transform
+          let offsetY = 0;
+          if (authors && authors.length > 0 && fieldFirstTimestamps.length > 0) {
+            const lastAuthorY = yScale(authors[authors.length - 1]);
+            const lastField = fieldFirstTimestamps[fieldFirstTimestamps.length - 1].field;
+            const lastLabelY = fieldYMap.get(lastField);
+            if (typeof lastAuthorY === 'number' && typeof lastLabelY === 'number') {
+              offsetY = lastAuthorY - lastLabelY;
+            }
+          }
+          // Calculate the x/y for the right edge and vertical center of the colored square
+          const firstHourX = (typeof hourX !== 'undefined' && hourX.length > 0) ? hourX[0] : 60;
+          const squareX = firstHourX - 100 + 10 - 35 + 16; // left edge + width
+          const squareY = (labelY ?? 0) + offsetY;
+          const pathPoints = [{ x: squareX, y: squareY }, ...pointsNoTs];
           fieldPaths.set(field, pathPoints);
         }
       }
@@ -690,7 +705,7 @@ export class D3DataHistoryComponent {
         .attr("y", (d: any) => fieldYMap.get(d.field)!)
         .attr("text-anchor", "end")
         .attr("dominant-baseline", "middle")
-        .attr("font-size", 13)
+        .attr("font-size", 14)
         .attr("fill", "#222")
         .text((d: any) => d.field);
 
@@ -706,7 +721,35 @@ export class D3DataHistoryComponent {
         .attr("width", 16)
         .attr("height", 16)
         .attr("rx", 4)
-        .attr("fill", (d: any) => this.fieldColors.get(d.field) || "#888");
+        .attr("fill", (d: any) => this.fieldColors.get(d.field) || "#888")
+        .style("cursor", "pointer")
+        .on("mouseenter", function (event, d) {
+          d3.selectAll(".field-snake-line").attr("opacity", 0.4);
+          d3.selectAll(".event-dot").attr("opacity", 0.4);
+          d3.selectAll(
+            `.field-snake-line-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+          )
+            .attr("opacity", 1)
+            .attr("stroke-width", 6)
+            .raise();
+          d3.selectAll(`.event-dot-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`)
+            .attr("opacity", 1)
+            .attr("r", (d2) => {
+              const dot = d2 as { isFirst: boolean; isLast: boolean };
+              return dot.isFirst || dot.isLast ? 10 : 6;
+            });
+        })
+        .on("mouseleave", function (event, d) {
+          d3.selectAll(".field-snake-line")
+            .attr("opacity", 1)
+            .attr("stroke-width", 1);
+          d3.selectAll(".event-dot")
+            .attr("opacity", 1)
+            .attr("r", (d2) => {
+              const dot = d2 as { isFirst: boolean; isLast: boolean };
+              return dot.isFirst || dot.isLast ? 8 : 4;
+            });
+        });
     }
   }
 }
