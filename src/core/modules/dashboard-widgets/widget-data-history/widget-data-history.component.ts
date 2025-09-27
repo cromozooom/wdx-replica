@@ -10,10 +10,12 @@ import { MultilineCellRenderer } from "./multiline-cell-renderer.component";
 import { FieldIconCellRendererComponent } from "./field-icon-cell-renderer.component";
 import { AuthorGroupCellRendererComponent } from "./author-group-cell-renderer.component";
 import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.component";
+
 import {
   WPO_16698,
   WIDGET_DATA_HISTORY_FAKE_DATA,
 } from "./widget-data-history.dummy-data";
+import { GridHistoryDataComponent } from "./grid-history-data.component";
 
 @Component({
   selector: "app-widget-data-history",
@@ -29,6 +31,7 @@ import {
     FieldIconCellRendererComponent,
     AuthorGroupCellRendererComponent,
     FieldGroupCellRendererComponent,
+    GridHistoryDataComponent,
   ],
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
@@ -750,6 +753,11 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   ];
   selectedDataset = this.datasets[1];
   fakeData: any[] = this.selectedDataset.value;
+  syncData: boolean = false;
+  filteredData: any[] = [];
+  get d3Data(): any[] {
+    return this.syncData ? this.filteredData : this.fakeData;
+  }
   columnDefs: ColDef[] = [
     {
       headerName: "Actor",
@@ -964,7 +972,8 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   // --- Timeline Rendering ---
   renderTimeline() {
     d3.select("#d3-timeline svg").remove();
-    const timestamps = this.fakeData.map((d) => d.timestamp);
+    const data = this.d3Data;
+    const timestamps = data.map((d) => d.timestamp);
     if (!timestamps.length) return;
     let startDate: Date,
       endDate: Date,
@@ -1403,7 +1412,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
             `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
             `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
             `<strong>Time:</strong> ${localTime}<br/>` +
-            `<strong>from:</strong> ${toValue}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
             (mod.description
               ? `<strong>Description:</strong> ${mod.description}<br/>`
               : "") +
@@ -1544,7 +1553,26 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       if (this.gridApi) {
         this.gridApi.resetRowHeights();
+        // Listen for filter changes
+        this.gridApi.addEventListener("filterChanged", () => {
+          this.updateFilteredData();
+        });
+        this.updateFilteredData();
       }
     }, 200);
+  }
+
+  updateFilteredData() {
+    if (!this.gridApi) return;
+    const filtered: any[] = [];
+    const rowCount = this.gridApi.getDisplayedRowCount();
+    for (let i = 0; i < rowCount; i++) {
+      const row = this.gridApi.getDisplayedRowAtIndex(i);
+      if (row && row.data) filtered.push(row.data);
+    }
+    this.filteredData = filtered;
+    if (this.syncData) {
+      this.renderTimeline();
+    }
   }
 }
