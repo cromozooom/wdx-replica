@@ -445,7 +445,8 @@ export class D3DataHistoryComponent {
           ? "hour-label-group extended-hour-label-group"
           : "hour-label-group"
       )
-      .attr("transform", (h, i) => `translate(${hourX[i]},22)`)
+      // Move label group slightly right of the marker line (e.g. +4px)
+      .attr("transform", (h, i) => `translate(${hourX[i] + 4},22)`)
       .each(function (h) {
         // Parse the hour string: 'YYYY-MM-DD HH:00'
         // Split into year, date, time
@@ -458,7 +459,7 @@ export class D3DataHistoryComponent {
           .attr("class", "hour-label-year")
           .attr("x", 0)
           .attr("y", 0)
-          .attr("text-anchor", "middle")
+          .attr("text-anchor", "start")
           .attr("font-size", 9)
           .text(year);
         // Add date and time (bottom line)
@@ -467,7 +468,7 @@ export class D3DataHistoryComponent {
           .attr("class", "hour-label-date-time")
           .attr("x", 0)
           .attr("y", 12)
-          .attr("text-anchor", "middle")
+          .attr("text-anchor", "start")
           .attr("font-size", 10)
           .text(`${date} ${time}`);
       });
