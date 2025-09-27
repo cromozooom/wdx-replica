@@ -33,6 +33,453 @@ import {
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   /**
+   * Render the D3 timeline for the year view (each month is a column).
+   */
+  private renderYearlyTimeline(
+    svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>,
+    margin: any,
+    width: number,
+    height: number
+  ) {
+    const year = this.currentDate.getFullYear();
+    const months = Array.from({ length: 12 }, (_, i) => i);
+    // Draw timeline axis
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2)
+      .attr("y2", height / 2)
+      .attr("stroke", "var(--bs-gray-200)")
+      .attr("stroke-width", 2);
+    // Draw vertical lines for each month (boundaries)
+    const numMonths = 12;
+    const numLines = numMonths + 1;
+    const monthSpacing = (width - margin.left - margin.right) / numMonths;
+    for (let i = 0; i < numLines; i++) {
+      const x = margin.left + i * monthSpacing;
+      svg
+        .append("line")
+        .attr("x1", x)
+        .attr("x2", x)
+        .attr("y1", height / 2 - 28)
+        .attr("y2", height / 2 + 28)
+        .attr("stroke", "var(--bs-gray-400)")
+        .attr("stroke-width", 1);
+    }
+    // Draw month labels (Jan, Feb, ...)
+    const monthNames = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    for (let i = 0; i < numMonths; i++) {
+      const x = margin.left + (i + 0.5) * monthSpacing;
+      svg
+        .append("text")
+        .attr("x", x)
+        .attr("y", height / 2 - 52)
+        .attr("text-anchor", "middle")
+        .attr("font-size", 13)
+        .attr("fill", "var(--bs-gray-700)")
+        .text(monthNames[i]);
+    }
+    // For each month, group mods and render a grid in S/coil (snake) pattern
+    const dotRadius = 4 * 1.3;
+    const gridPadding = 4;
+    const horizontalSpacing = dotRadius * 2 + 24;
+    const verticalSpacing = dotRadius * 2 + 24;
+    const monthWidth = monthSpacing;
+    const monthHeight = 56;
+    months.forEach((monthIdx) => {
+      // Get all days in this month
+      const mods = this.fakeData.filter((mod) => {
+        const d = new Date(mod.timestamp);
+        return d.getFullYear() === year && d.getMonth() === monthIdx;
+      });
+      if (!mods.length) return;
+      const n = mods.length;
+      // Compute grid size based on actual node count (not stretched)
+      const maxCols = Math.max(
+        1,
+        Math.floor((monthWidth - 2 * gridPadding) / horizontalSpacing)
+      );
+      let gridCols = Math.min(n, maxCols);
+      let gridRows = Math.ceil(n / gridCols);
+      // Center the grid horizontally within the month column
+      const gridW = (gridCols - 1) * horizontalSpacing;
+      const startX =
+        margin.left + monthIdx * monthSpacing + (monthWidth - gridW) / 2;
+      const centerY = height / 2;
+      for (let idx = 0; idx < n; idx++) {
+        const row = Math.floor(idx / gridCols);
+        let col = idx % gridCols;
+        if (row % 2 === 1) col = gridCols - 1 - col;
+        const x = startX + col * horizontalSpacing;
+        const y = centerY + (row - (gridRows - 1) / 2) * verticalSpacing;
+        const mod = mods[idx];
+        // ...existing code for color, tooltip, and circle...
+        const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+        function fieldDisplayNameToColorIndex(name: string) {
+          let hash = 0;
+          for (let i = 0; i < name.length; i++)
+            hash = (hash * 31 + name.charCodeAt(i)) % 68;
+          return hash + 1; // 1-based
+        }
+        const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+        const fillColor = `var(--${colorIdx})`;
+        let tooltipHtml = "";
+        if (mod) {
+          const localTime = new Date(mod.timestamp).toLocaleString();
+          tooltipHtml =
+            `<div class='position-relative'>` +
+            `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+            `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
+            `<strong>Time:</strong> ${localTime}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+            (mod.description
+              ? `<strong>Description:</strong> ${mod.description}<br/>`
+              : "") +
+            `<div class='btn-group mt-2'>` +
+            `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+            `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+            `</div>` +
+            `</div>`;
+        }
+        const circle = svg
+          .append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", dotRadius)
+          .attr("fill", fillColor);
+        // ...existing code for tooltip logic...
+        let popperInstance: any = null;
+        let tooltipEl: HTMLElement | null = null;
+        let sticky = false;
+        let outsideClickHandler: any = null;
+        function removeTooltip() {
+          if (popperInstance) {
+            popperInstance.destroy();
+            popperInstance = null;
+          }
+          if (tooltipEl) {
+            tooltipEl.remove();
+            tooltipEl = null;
+          }
+          sticky = false;
+          if (outsideClickHandler) {
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            outsideClickHandler = null;
+          }
+        }
+        circle
+          .on("mouseover", function (event: any) {
+            if (sticky) return;
+            document
+              .querySelectorAll(".d3-popper-tooltip")
+              .forEach((el) => el.remove());
+            tooltipEl = document.createElement("div");
+            tooltipEl.className = "d3-popper-tooltip";
+            tooltipEl.style.background = "rgba(30,30,30,0.97)";
+            tooltipEl.style.color = "#fff";
+            tooltipEl.style.padding = "8px 12px";
+            tooltipEl.style.borderRadius = "6px";
+            tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+            tooltipEl.style.zIndex = "9999";
+            tooltipEl.style.pointerEvents = "auto";
+            tooltipEl.innerHTML = tooltipHtml;
+            document.body.appendChild(tooltipEl);
+            popperInstance = (window as any).Popper.createPopper(
+              this,
+              tooltipEl,
+              {
+                placement: "top",
+                modifiers: [
+                  { name: "offset", options: { offset: [0, 8] } },
+                  {
+                    name: "preventOverflow",
+                    options: { boundary: "viewport" },
+                  },
+                ],
+              }
+            );
+            // Close button
+            tooltipEl
+              .querySelector(".d3-tooltip-close")
+              ?.addEventListener("click", (e) => {
+                e.stopPropagation();
+                removeTooltip();
+              });
+            // Action buttons
+            tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const action = (e.target as HTMLElement).getAttribute(
+                  "data-action"
+                );
+                if (action === "details") {
+                  alert("Show details for this modification!");
+                } else if (action === "copy") {
+                  navigator.clipboard.writeText(JSON.stringify(mod, null, 2));
+                }
+              });
+            });
+            sticky = true;
+            // Add click-outside handler
+            outsideClickHandler = function (e: MouseEvent) {
+              if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                removeTooltip();
+              }
+            };
+            setTimeout(() => {
+              document.addEventListener("mousedown", outsideClickHandler, true);
+            }, 0);
+          })
+          .on("mousemove", function (event: any) {
+            if (tooltipEl && popperInstance && !sticky) {
+              popperInstance.update();
+            }
+          })
+          .on("mouseleave", function () {
+            if (!sticky) removeTooltip();
+          });
+      }
+    });
+  }
+
+  /**
+   * Render the D3 timeline for the all-time view (each year is a column).
+   */
+  private renderAllTimeTimeline(
+    svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>,
+    margin: any,
+    width: number,
+    height: number
+  ) {
+    // Find min/max year in data
+    const allTimestamps = this.fakeData.map((d) => d.timestamp);
+    const allDates = allTimestamps.map((ts) => new Date(ts));
+    if (!allDates.length) return;
+    const minYear = Math.min(...allDates.map((d) => d.getFullYear()));
+    const maxYear = Math.max(...allDates.map((d) => d.getFullYear()));
+    const years = Array.from(
+      { length: maxYear - minYear + 1 },
+      (_, i) => minYear + i
+    );
+    // Draw timeline axis
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2)
+      .attr("y2", height / 2)
+      .attr("stroke", "var(--bs-gray-200)")
+      .attr("stroke-width", 2);
+    // Draw vertical lines for each year (boundaries)
+    const numYears = years.length;
+    const numLines = numYears + 1;
+    const yearSpacing = (width - margin.left - margin.right) / numYears;
+    for (let i = 0; i < numLines; i++) {
+      const x = margin.left + i * yearSpacing;
+      svg
+        .append("line")
+        .attr("x1", x)
+        .attr("x2", x)
+        .attr("y1", height / 2 - 28)
+        .attr("y2", height / 2 + 28)
+        .attr("stroke", "var(--bs-gray-400)")
+        .attr("stroke-width", 1);
+    }
+    // Draw year labels
+    for (let i = 0; i < numYears; i++) {
+      const x = margin.left + (i + 0.5) * yearSpacing;
+      svg
+        .append("text")
+        .attr("x", x)
+        .attr("y", height / 2 - 52)
+        .attr("text-anchor", "middle")
+        .attr("font-size", 13)
+        .attr("fill", "var(--bs-gray-700)")
+        .text(years[i]);
+    }
+    // For each year, group mods and render a grid in S/coil (snake) pattern
+    const dotRadius = 4 * 1.3;
+    const gridPadding = 4;
+    const horizontalSpacing = dotRadius * 2 + 24;
+    const verticalSpacing = dotRadius * 2 + 24;
+    const yearWidth = yearSpacing;
+    const yearHeight = 56;
+    years.forEach((yearVal, idx) => {
+      const mods = this.fakeData.filter((mod) => {
+        const d = new Date(mod.timestamp);
+        return d.getFullYear() === yearVal;
+      });
+      if (!mods.length) return;
+      const n = mods.length;
+      // Compute grid size based on actual node count (not stretched)
+      const maxCols = Math.max(
+        1,
+        Math.floor((yearWidth - 2 * gridPadding) / horizontalSpacing)
+      );
+      let gridCols = Math.min(n, maxCols);
+      let gridRows = Math.ceil(n / gridCols);
+      // Center the grid horizontally within the year column
+      const gridW = (gridCols - 1) * horizontalSpacing;
+      const startX = margin.left + idx * yearSpacing + (yearWidth - gridW) / 2;
+      const centerY = height / 2;
+      for (let idx2 = 0; idx2 < n; idx2++) {
+        const row = Math.floor(idx2 / gridCols);
+        let col = idx2 % gridCols;
+        if (row % 2 === 1) col = gridCols - 1 - col;
+        const x = startX + col * horizontalSpacing;
+        const y = centerY + (row - (gridRows - 1) / 2) * verticalSpacing;
+        const mod = mods[idx2];
+        // ...existing code for color, tooltip, and circle...
+        const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+        function fieldDisplayNameToColorIndex(name: string) {
+          let hash = 0;
+          for (let i = 0; i < name.length; i++)
+            hash = (hash * 31 + name.charCodeAt(i)) % 68;
+          return hash + 1; // 1-based
+        }
+        const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+        const fillColor = `var(--${colorIdx})`;
+        let tooltipHtml = "";
+        if (mod) {
+          const localTime = new Date(mod.timestamp).toLocaleString();
+          tooltipHtml =
+            `<div class='position-relative'>` +
+            `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+            `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
+            `<strong>Time:</strong> ${localTime}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+            (mod.description
+              ? `<strong>Description:</strong> ${mod.description}<br/>`
+              : "") +
+            `<div class='btn-group mt-2'>` +
+            `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+            `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+            `</div>` +
+            `</div>`;
+        }
+        const circle = svg
+          .append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", dotRadius)
+          .attr("fill", fillColor);
+        // ...existing code for tooltip logic...
+        let popperInstance: any = null;
+        let tooltipEl: HTMLElement | null = null;
+        let sticky = false;
+        let outsideClickHandler: any = null;
+        function removeTooltip() {
+          if (popperInstance) {
+            popperInstance.destroy();
+            popperInstance = null;
+          }
+          if (tooltipEl) {
+            tooltipEl.remove();
+            tooltipEl = null;
+          }
+          sticky = false;
+          if (outsideClickHandler) {
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            outsideClickHandler = null;
+          }
+        }
+        circle
+          .on("mouseover", function (event: any) {
+            if (sticky) return;
+            document
+              .querySelectorAll(".d3-popper-tooltip")
+              .forEach((el) => el.remove());
+            tooltipEl = document.createElement("div");
+            tooltipEl.className = "d3-popper-tooltip";
+            tooltipEl.style.background = "rgba(30,30,30,0.97)";
+            tooltipEl.style.color = "#fff";
+            tooltipEl.style.padding = "8px 12px";
+            tooltipEl.style.borderRadius = "6px";
+            tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+            tooltipEl.style.zIndex = "9999";
+            tooltipEl.style.pointerEvents = "auto";
+            tooltipEl.innerHTML = tooltipHtml;
+            document.body.appendChild(tooltipEl);
+            popperInstance = (window as any).Popper.createPopper(
+              this,
+              tooltipEl,
+              {
+                placement: "top",
+                modifiers: [
+                  { name: "offset", options: { offset: [0, 8] } },
+                  {
+                    name: "preventOverflow",
+                    options: { boundary: "viewport" },
+                  },
+                ],
+              }
+            );
+            // Close button
+            tooltipEl
+              .querySelector(".d3-tooltip-close")
+              ?.addEventListener("click", (e) => {
+                e.stopPropagation();
+                removeTooltip();
+              });
+            // Action buttons
+            tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const action = (e.target as HTMLElement).getAttribute(
+                  "data-action"
+                );
+                if (action === "details") {
+                  alert("Show details for this modification!");
+                } else if (action === "copy") {
+                  navigator.clipboard.writeText(JSON.stringify(mod, null, 2));
+                }
+              });
+            });
+            sticky = true;
+            // Add click-outside handler
+            outsideClickHandler = function (e: MouseEvent) {
+              if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                removeTooltip();
+              }
+            };
+            setTimeout(() => {
+              document.addEventListener("mousedown", outsideClickHandler, true);
+            }, 0);
+          })
+          .on("mousemove", function (event: any) {
+            if (tooltipEl && popperInstance && !sticky) {
+              popperInstance.update();
+            }
+          })
+          .on("mouseleave", function () {
+            if (!sticky) removeTooltip();
+          });
+      }
+    });
+  }
+  /**
    * Render the D3 timeline for the monthly view.
    */
   private renderMonthlyTimeline(
@@ -621,6 +1068,10 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       this.renderWeeklyTimeline(svg, margin, width, height);
     } else if (this.timeframe === "month") {
       this.renderMonthlyTimeline(svg, margin, width, height);
+    } else if (this.timeframe === "year") {
+      this.renderYearlyTimeline(svg, margin, width, height);
+    } else if (this.timeframe === "all") {
+      this.renderAllTimeTimeline(svg, margin, width, height);
     }
   }
 
