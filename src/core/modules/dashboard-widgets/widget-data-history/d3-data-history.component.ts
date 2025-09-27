@@ -42,8 +42,59 @@ export class D3DataHistoryComponent {
   }
 
   fitToScreen() {
-    console.log("fit to screen");
-  }
+      if (!this.svg || !this.g) return;
+      const svgWidth = this.svgRef?.nativeElement?.clientWidth || 800;
+      // The timeline content width is the rightmost edge of the last hour plus margin
+      // Use the same calculation as in render()
+      let acc = 60; // margin.left
+      const minHourWidth = 60;
+      const minDotGap = 20;
+      // Recompute hours and hourWidths to match current view
+      const hourFormat = d3.timeFormat("%Y-%m-%d %H:00");
+      const hourMap = new Map<string, any[]>();
+      for (const d of this.data) {
+        const hour = hourFormat(new Date(d.timestamp));
+        if (!hourMap.has(hour)) hourMap.set(hour, []);
+        hourMap.get(hour)!.push(d);
+      }
+      let hours: string[] = [];
+      if (this.data.length > 0) {
+        const timestamps = Array.from(new Set(this.data.map((d) => d.timestamp))).sort();
+        const minDate = new Date(Math.min(...timestamps));
+        const maxDate = new Date(Math.max(...timestamps));
+        let current = new Date(minDate);
+        current.setMinutes(0, 0, 0);
+        const end = new Date(maxDate);
+        end.setMinutes(0, 0, 0);
+        while (current <= end) {
+          const hourStr = hourFormat(current);
+          if (!this.hideInactiveHours || (hourMap.get(hourStr)?.length ?? 0) > 0) {
+            hours.push(hourStr);
+          }
+          current = new Date(current.getTime() + 60 * 60 * 1000);
+        }
+      }
+      const hourWidths: number[] = hours.map((h: string) => {
+        const count = hourMap.get(h)?.length || 0;
+        if (count <= 1) return minHourWidth;
+        return (count - 1) * minDotGap + minHourWidth;
+      });
+      for (let i = 0; i < hourWidths.length; i++) {
+        acc += hourWidths[i];
+      }
+      const contentWidth = acc;
+      const marginLeft = 60;
+      const marginRight = 120;
+      const timelineWidth = contentWidth;
+      const viewWidth = svgWidth;
+      // Center the timeline horizontally
+      let tx = 0;
+      if (timelineWidth + marginLeft + marginRight < viewWidth) {
+        tx = (viewWidth - (timelineWidth + marginLeft + marginRight)) / 2;
+      }
+      // Reset zoom and pan, then apply translation
+      this.svg.transition().duration(400).call((this.zoom as any).transform, d3.zoomIdentity.translate(tx, 0));
+    }
 
   private initSvg() {
     this.svg = d3.select(this.svgRef.nativeElement);
