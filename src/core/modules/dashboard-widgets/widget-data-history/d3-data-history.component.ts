@@ -41,6 +41,10 @@ export class D3DataHistoryComponent {
     }
   }
 
+  fitToScreen() {
+    console.log("fit to screen");
+  }
+
   private initSvg() {
     this.svg = d3.select(this.svgRef.nativeElement);
     if (!this.svg) return;
