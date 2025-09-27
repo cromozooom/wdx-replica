@@ -171,6 +171,37 @@ export class D3DataHistoryComponent {
   }
 
   private render() {
+    // Step 1: Extract all unique fieldDisplayName values from the data
+    const allFields = Array.from(
+      new Set(
+        (this.filteredData && this.filteredData.length > 0
+          ? this.filteredData
+          : this.data
+        )
+          .map((d: any) => d.fieldDisplayName)
+          .filter(Boolean)
+      )
+    );
+    // allFields now contains all unique fieldDisplayName values
+
+    // Step 2: For each field, determine the earliest timestamp and sort the fields accordingly
+    const fieldFirstTimestamps = allFields.map((field) => {
+      // Find all events for this field
+      const events = (
+        this.filteredData && this.filteredData.length > 0
+          ? this.filteredData
+          : this.data
+      ).filter((d: any) => d.fieldDisplayName === field);
+      // Find the earliest timestamp
+      const firstTimestamp = Math.min(...events.map((e: any) => e.timestamp));
+      return { field, firstTimestamp };
+    });
+    // Sort fields by earliest timestamp (ascending)
+    fieldFirstTimestamps.sort((a, b) => a.firstTimestamp - b.firstTimestamp);
+
+    this.fieldNames = allFields;
+    const palette = this.getColorPalette(allFields.length);
+    this.fieldColors = new Map(allFields.map((f, i) => [f, palette[i]]));
     // ...existing code...
     // ...existing code...
     // 1. For each field, collect event points and prepend a start point 50px left of first hour marker
@@ -184,13 +215,7 @@ export class D3DataHistoryComponent {
       this.filteredData && this.filteredData.length > 0
         ? this.filteredData
         : this.data;
-    // 0. Prepare unique fieldDisplayNames and assign colors
-    const allFields = Array.from(
-      new Set(data.map((d) => d.fieldDisplayName).filter(Boolean))
-    );
-    this.fieldNames = allFields;
-    const palette = this.getColorPalette(allFields.length);
-    this.fieldColors = new Map(allFields.map((f, i) => [f, palette[i]]));
+    // ...existing code...
     // Calculate number of unique event timestamps (to the second)
     // Always use a large enough width for the SVG, not just the container
     let width = 800;
