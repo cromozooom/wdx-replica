@@ -79,7 +79,13 @@
           </div>
         </div>
         <!-- D3 Timeline Visualization -->
-        <div id="d3-timeline" style="width: 100%"></div>
+        <app-history-visualisation-data
+          [data]="syncData ? filteredData : fakeData"
+          [timeframe]="timeframe"
+          [selectedDay]="selectedDay"
+          [currentDate]="currentDate"
+          [syncData]="syncData"
+        ></app-history-visualisation-data>
       </div>
     </div>
     <div class="w-100 flex-grow-1 d-flex p-2">
@@ -87,14 +93,12 @@
         class="w-100 flex-grow-1"
         [rowData]="fakeData"
         [columnDefs]="columnDefs"
-        [autoGroupColumnDef]="autoGroupColumnDef"
         [defaultColDef]="{
           resizable: true,
           sortable: true,
           filter: true,
           autoHeight: true,
         }"
-        (gridReady)="onGridReady($event)"
       ></app-grid-history-data>
     </div>
   </div>

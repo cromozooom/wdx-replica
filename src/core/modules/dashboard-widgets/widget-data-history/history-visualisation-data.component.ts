@@ -1,5 +1,13 @@
-import { Component, Input } from "@angular/core";
+import {
+  Component,
+  Input,
+  OnChanges,
+  SimpleChanges,
+  ElementRef,
+  ViewChild,
+} from "@angular/core";
 import { CommonModule } from "@angular/common";
+import * as d3 from "d3";
 
 @Component({
   selector: "app-history-visualisation-data",
@@ -8,10 +16,1435 @@ import { CommonModule } from "@angular/common";
   templateUrl: "./history-visualisation-data.component.html",
   styleUrls: ["./history-visualisation-data.component.scss"],
 })
-export class HistoryVisualisationDataComponent {
+export class HistoryVisualisationDataComponent implements OnChanges {
+  @ViewChild("d3container", { static: true }) d3container!: ElementRef;
   @Input() data: any[] = [];
-  @Input() timeframe: string = "daily";
+  @Input() timeframe: "month" | "week" | "year" | "all" | "daily" = "daily";
   @Input() selectedDay: string | null = null;
   @Input() currentDate: Date = new Date();
+  @Input() syncData: boolean = false;
+
+  ngOnChanges(changes: SimpleChanges): void {
+    // Re-render D3 timeline on any input change
+    this.renderTimeline();
+  }
+
   // Add more @Input()s as needed for D3 rendering
+  /**
+   * Render the D3 timeline for the year view (each month is a column).
+   */
+  // No dataset change logic needed in D3 component
+  private renderYearlyTimeline(
+    svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>,
+    margin: any,
+    width: number,
+    height: number
+  ) {
+    const year = this.currentDate.getFullYear();
+    const months = Array.from({ length: 12 }, (_, i) => i);
+    // Draw timeline axis
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2)
+      .attr("y2", height / 2)
+      .attr("stroke", "var(--bs-gray-200)")
+      .attr("stroke-width", 2);
+    // Draw vertical lines for each month (boundaries)
+    const numMonths = 12;
+    const numLines = numMonths + 1;
+    const monthSpacing = (width - margin.left - margin.right) / numMonths;
+    for (let i = 0; i < numLines; i++) {
+      const x = margin.left + i * monthSpacing;
+      svg
+        .append("line")
+        .attr("x1", x)
+        .attr("x2", x)
+        .attr("y1", height / 2 - 28)
+        .attr("y2", height / 2 + 28)
+        .attr("stroke", "var(--bs-gray-400)")
+        .attr("stroke-width", 1);
+    }
+    // Draw month labels (Jan, Feb, ...)
+    const monthNames = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    for (let i = 0; i < numMonths; i++) {
+      const x = margin.left + (i + 0.5) * monthSpacing;
+      svg
+        .append("text")
+        .attr("x", x)
+        .attr("y", height / 2 - 52)
+        .attr("text-anchor", "middle")
+        .attr("font-size", 13)
+        .attr("fill", "var(--bs-gray-700)")
+        .text(monthNames[i]);
+    }
+    // For each month, group mods and render a grid in S/coil (snake) pattern
+    const dotRadius = 4 * 1.3;
+    const gridPadding = 4;
+    const horizontalSpacing = dotRadius * 2 + 24;
+    const verticalSpacing = dotRadius * 2 + 24;
+    const monthWidth = monthSpacing;
+    const monthHeight = 56;
+    months.forEach((monthIdx) => {
+      // Get all days in this month
+      const mods = this.d3Data.filter((mod: any) => {
+        const d = new Date(mod.timestamp);
+        return d.getFullYear() === year && d.getMonth() === monthIdx;
+      });
+      if (!mods.length) return;
+      const n = mods.length;
+      // Compute grid size based on actual node count (not stretched)
+      const maxCols = Math.max(
+        1,
+        Math.floor((monthWidth - 2 * gridPadding) / horizontalSpacing)
+      );
+      let gridCols = Math.min(n, maxCols);
+      let gridRows = Math.ceil(n / gridCols);
+      // Center the grid horizontally within the month column
+      const gridW = (gridCols - 1) * horizontalSpacing;
+      const startX =
+        margin.left + monthIdx * monthSpacing + (monthWidth - gridW) / 2;
+      const centerY = height / 2;
+      for (let idx = 0; idx < n; idx++) {
+        const row = Math.floor(idx / gridCols);
+        let col = idx % gridCols;
+        if (row % 2 === 1) col = gridCols - 1 - col;
+        const x = startX + col * horizontalSpacing;
+        const y = centerY + (row - (gridRows - 1) / 2) * verticalSpacing;
+        const mod = mods[idx];
+        // ...existing code for color, tooltip, and circle...
+        const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+        function fieldDisplayNameToColorIndex(name: string) {
+          let hash = 0;
+          for (let i = 0; i < name.length; i++)
+            hash = (hash * 31 + name.charCodeAt(i)) % 68;
+          return hash + 1; // 1-based
+        }
+        const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+        const fillColor = `var(--${colorIdx})`;
+        let tooltipHtml = "";
+        if (mod) {
+          const localTime = new Date(mod.timestamp).toLocaleString();
+          tooltipHtml =
+            `<div class='position-relative'>` +
+            `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+            `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
+            `<strong>Time:</strong> ${localTime}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+            (mod.description
+              ? `<strong>Description:</strong> ${mod.description}<br/>`
+              : "") +
+            `<div class='btn-group mt-2'>` +
+            `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+            `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+            `</div>` +
+            `</div>`;
+        }
+        const circle = svg
+          .append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", dotRadius)
+          .attr("fill", fillColor);
+        // ...existing code for tooltip logic...
+        let popperInstance: any = null;
+        let tooltipEl: HTMLElement | null = null;
+        let sticky = false;
+        let outsideClickHandler: any = null;
+        function removeTooltip() {
+          if (popperInstance) {
+            popperInstance.destroy();
+            popperInstance = null;
+          }
+          if (tooltipEl) {
+            tooltipEl.remove();
+            tooltipEl = null;
+          }
+          sticky = false;
+          if (outsideClickHandler) {
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            outsideClickHandler = null;
+          }
+        }
+        circle
+          .on("mouseover", function (event: any) {
+            if (sticky) return;
+            document
+              .querySelectorAll(".d3-popper-tooltip")
+              .forEach((el) => el.remove());
+            tooltipEl = document.createElement("div");
+            tooltipEl.className = "d3-popper-tooltip";
+            tooltipEl.style.background = "rgba(30,30,30,0.97)";
+            tooltipEl.style.color = "#fff";
+            tooltipEl.style.padding = "8px 12px";
+            tooltipEl.style.borderRadius = "6px";
+            tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+            tooltipEl.style.zIndex = "9999";
+            tooltipEl.style.pointerEvents = "auto";
+            tooltipEl.innerHTML = tooltipHtml;
+            document.body.appendChild(tooltipEl);
+            popperInstance = (window as any).Popper.createPopper(
+              this,
+              tooltipEl,
+              {
+                placement: "top",
+                modifiers: [
+                  { name: "offset", options: { offset: [0, 8] } },
+                  {
+                    name: "preventOverflow",
+                    options: { boundary: "viewport" },
+                  },
+                ],
+              }
+            );
+            // Close button
+            tooltipEl
+              .querySelector(".d3-tooltip-close")
+              ?.addEventListener("click", (e) => {
+                e.stopPropagation();
+                removeTooltip();
+              });
+            // Action buttons
+            tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const action = (e.target as HTMLElement).getAttribute(
+                  "data-action"
+                );
+                if (action === "details") {
+                  alert("Show details for this modification!");
+                } else if (action === "copy") {
+                  navigator.clipboard.writeText(JSON.stringify(mod, null, 2));
+                }
+              });
+            });
+            sticky = true;
+            // Add click-outside handler
+            outsideClickHandler = function (e: MouseEvent) {
+              if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                removeTooltip();
+              }
+            };
+            setTimeout(() => {
+              document.addEventListener("mousedown", outsideClickHandler, true);
+            }, 0);
+          })
+          .on("mousemove", function (event: any) {
+            if (tooltipEl && popperInstance && !sticky) {
+              popperInstance.update();
+            }
+          })
+          .on("mouseleave", function () {
+            if (!sticky) removeTooltip();
+          });
+      }
+    });
+  }
+
+  /**
+   * Render the D3 timeline for the all-time view (each year is a column).
+   */
+  private renderAllTimeTimeline(
+    svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>,
+    margin: any,
+    width: number,
+    height: number
+  ) {
+    // Find min/max year in data
+    const allTimestamps = this.d3Data.map((d: any) => d.timestamp);
+    const allDates = allTimestamps.map((ts: any) => new Date(ts));
+    if (!allDates.length) return;
+    const minYear = Math.min(...allDates.map((d) => d.getFullYear()));
+    const maxYear = Math.max(...allDates.map((d) => d.getFullYear()));
+    const years = Array.from(
+      { length: maxYear - minYear + 1 },
+      (_, i) => minYear + i
+    );
+    // Draw timeline axis
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2)
+      .attr("y2", height / 2)
+      .attr("stroke", "var(--bs-gray-200)")
+      .attr("stroke-width", 2);
+    // Draw vertical lines for each year (boundaries)
+    const numYears = years.length;
+    const numLines = numYears + 1;
+    const yearSpacing = (width - margin.left - margin.right) / numYears;
+    for (let i = 0; i < numLines; i++) {
+      const x = margin.left + i * yearSpacing;
+      svg
+        .append("line")
+        .attr("x1", x)
+        .attr("x2", x)
+        .attr("y1", height / 2 - 28)
+        .attr("y2", height / 2 + 28)
+        .attr("stroke", "var(--bs-gray-400)")
+        .attr("stroke-width", 1);
+    }
+    // Draw year labels
+    for (let i = 0; i < numYears; i++) {
+      const x = margin.left + (i + 0.5) * yearSpacing;
+      svg
+        .append("text")
+        .attr("x", x)
+        .attr("y", height / 2 - 52)
+        .attr("text-anchor", "middle")
+        .attr("font-size", 13)
+        .attr("fill", "var(--bs-gray-700)")
+        .text(years[i]);
+    }
+    // For each year, group mods and render a grid in S/coil (snake) pattern
+    const dotRadius = 4 * 1.3;
+    const gridPadding = 4;
+    const horizontalSpacing = dotRadius * 2 + 24;
+    const verticalSpacing = dotRadius * 2 + 24;
+    const yearWidth = yearSpacing;
+    const yearHeight = 56;
+    years.forEach((yearVal, idx) => {
+      const mods = this.d3Data.filter((mod: any) => {
+        const d = new Date(mod.timestamp);
+        return d.getFullYear() === yearVal;
+      });
+      if (!mods.length) return;
+      const n = mods.length;
+      // Compute grid size based on actual node count (not stretched)
+      const maxCols = Math.max(
+        1,
+        Math.floor((yearWidth - 2 * gridPadding) / horizontalSpacing)
+      );
+      let gridCols = Math.min(n, maxCols);
+      let gridRows = Math.ceil(n / gridCols);
+      // Center the grid horizontally within the year column
+      const gridW = (gridCols - 1) * horizontalSpacing;
+      const startX = margin.left + idx * yearSpacing + (yearWidth - gridW) / 2;
+      const centerY = height / 2;
+      for (let idx2 = 0; idx2 < n; idx2++) {
+        const row = Math.floor(idx2 / gridCols);
+        let col = idx2 % gridCols;
+        if (row % 2 === 1) col = gridCols - 1 - col;
+        const x = startX + col * horizontalSpacing;
+        const y = centerY + (row - (gridRows - 1) / 2) * verticalSpacing;
+        const mod = mods[idx2];
+        // ...existing code for color, tooltip, and circle...
+        const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+        function fieldDisplayNameToColorIndex(name: string) {
+          let hash = 0;
+          for (let i = 0; i < name.length; i++)
+            hash = (hash * 31 + name.charCodeAt(i)) % 68;
+          return hash + 1; // 1-based
+        }
+        const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+        const fillColor = `var(--${colorIdx})`;
+        let tooltipHtml = "";
+        if (mod) {
+          const localTime = new Date(mod.timestamp).toLocaleString();
+          tooltipHtml =
+            `<div class='position-relative'>` +
+            `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+            `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
+            `<strong>Time:</strong> ${localTime}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+            (mod.description
+              ? `<strong>Description:</strong> ${mod.description}<br/>`
+              : "") +
+            `<div class='btn-group mt-2'>` +
+            `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+            `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+            `</div>` +
+            `</div>`;
+        }
+        const circle = svg
+          .append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", dotRadius)
+          .attr("fill", fillColor);
+        // ...existing code for tooltip logic...
+        let popperInstance: any = null;
+        let tooltipEl: HTMLElement | null = null;
+        let sticky = false;
+        let outsideClickHandler: any = null;
+        function removeTooltip() {
+          if (popperInstance) {
+            popperInstance.destroy();
+            popperInstance = null;
+          }
+          if (tooltipEl) {
+            tooltipEl.remove();
+            tooltipEl = null;
+          }
+          sticky = false;
+          if (outsideClickHandler) {
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            outsideClickHandler = null;
+          }
+        }
+        circle
+          .on("mouseover", function (event: any) {
+            if (sticky) return;
+            document
+              .querySelectorAll(".d3-popper-tooltip")
+              .forEach((el) => el.remove());
+            tooltipEl = document.createElement("div");
+            tooltipEl.className = "d3-popper-tooltip";
+            tooltipEl.style.background = "rgba(30,30,30,0.97)";
+            tooltipEl.style.color = "#fff";
+            tooltipEl.style.padding = "8px 12px";
+            tooltipEl.style.borderRadius = "6px";
+            tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+            tooltipEl.style.zIndex = "9999";
+            tooltipEl.style.pointerEvents = "auto";
+            tooltipEl.innerHTML = tooltipHtml;
+            document.body.appendChild(tooltipEl);
+            popperInstance = (window as any).Popper.createPopper(
+              this,
+              tooltipEl,
+              {
+                placement: "top",
+                modifiers: [
+                  { name: "offset", options: { offset: [0, 8] } },
+                  {
+                    name: "preventOverflow",
+                    options: { boundary: "viewport" },
+                  },
+                ],
+              }
+            );
+            // Close button
+            tooltipEl
+              .querySelector(".d3-tooltip-close")
+              ?.addEventListener("click", (e) => {
+                e.stopPropagation();
+                removeTooltip();
+              });
+            // Action buttons
+            tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const action = (e.target as HTMLElement).getAttribute(
+                  "data-action"
+                );
+                if (action === "details") {
+                  alert("Show details for this modification!");
+                } else if (action === "copy") {
+                  navigator.clipboard.writeText(JSON.stringify(mod, null, 2));
+                }
+              });
+            });
+            sticky = true;
+            // Add click-outside handler
+            outsideClickHandler = function (e: MouseEvent) {
+              if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                removeTooltip();
+              }
+            };
+            setTimeout(() => {
+              document.addEventListener("mousedown", outsideClickHandler, true);
+            }, 0);
+          })
+          .on("mousemove", function (event: any) {
+            if (tooltipEl && popperInstance && !sticky) {
+              popperInstance.update();
+            }
+          })
+          .on("mouseleave", function () {
+            if (!sticky) removeTooltip();
+          });
+      }
+    });
+  }
+  /**
+   * Render the D3 timeline for the monthly view.
+   */
+  private renderMonthlyTimeline(
+    svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>,
+    margin: any,
+    width: number,
+    height: number
+  ) {
+    // Calculate month start/end
+    const startDate = new Date(
+      this.currentDate.getFullYear(),
+      this.currentDate.getMonth(),
+      1
+    );
+    const endDate = new Date(
+      this.currentDate.getFullYear(),
+      this.currentDate.getMonth() + 1,
+      0
+    );
+    const daysInMonth = endDate.getDate();
+    const monthDays: string[] = Array.from({ length: daysInMonth }, (_, i) => {
+      const d = new Date(
+        this.currentDate.getFullYear(),
+        this.currentDate.getMonth(),
+        i + 1
+      );
+      return d.toISOString().slice(0, 10);
+    });
+    // Draw timeline axis
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2)
+      .attr("y2", height / 2)
+      .attr("stroke", "var(--bs-gray-200)")
+      .attr("stroke-width", 2);
+    // Draw vertical lines for each day (boundaries)
+    const numDays = daysInMonth;
+    const numLines = numDays + 1;
+    const daySpacing = (width - margin.left - margin.right) / numDays;
+    for (let i = 0; i < numLines; i++) {
+      const x = margin.left + i * daySpacing;
+      svg
+        .append("line")
+        .attr("x1", x)
+        .attr("x2", x)
+        .attr("y1", height / 2 - 28)
+        .attr("y2", height / 2 + 28)
+        .attr("stroke", "var(--bs-gray-400)")
+        .attr("stroke-width", 1);
+    }
+    // Draw day labels (1, 2, ..., daysInMonth)
+    for (let i = 0; i < numDays; i++) {
+      const x = margin.left + (i + 0.5) * daySpacing;
+      svg
+        .append("text")
+        .attr("x", x)
+        .attr("y", height / 2 - 52)
+        .attr("text-anchor", "middle")
+        .attr("font-size", 11)
+        .attr("fill", "var(--bs-gray-700)")
+        .text(i + 1);
+    }
+    // For each day, group mods and render a grid in S/coil (snake) pattern
+    const dotRadius = 4 * 1.3;
+    const gridPadding = 4;
+    const horizontalSpacing = dotRadius * 2 + 24;
+    const verticalSpacing = dotRadius * 2 + 24;
+    const dayWidth = daySpacing;
+    const dayHeight = 56;
+    monthDays.forEach((day, idx) => {
+      const mods = this.d3Data.filter(
+        (mod: any) => new Date(mod.timestamp).toISOString().slice(0, 10) === day
+      );
+      if (!mods.length) return;
+      const n = mods.length;
+      // Compute grid size
+      const maxCols = Math.floor(
+        (dayWidth - 2 * gridPadding) / horizontalSpacing
+      );
+      const maxRows = Math.floor(
+        (dayHeight - 2 * gridPadding) / verticalSpacing
+      );
+      let cols = Math.min(maxCols, n);
+      let rows = Math.ceil(n / cols);
+      if (rows > maxRows) {
+        rows = maxRows;
+        cols = Math.ceil(n / rows);
+      }
+      // Center grid horizontally between verticals
+      const gridW = (cols - 1) * horizontalSpacing;
+      const startX = margin.left + idx * daySpacing + (dayWidth - gridW) / 2;
+      const centerY = height / 2;
+      for (let i = 0; i < n; i++) {
+        // S/coil (snake) pattern: row by row, alternate direction
+        const row = Math.floor(i / cols);
+        let col = i % cols;
+        if (row % 2 === 1) col = cols - 1 - col;
+        const x = startX + col * horizontalSpacing;
+        const y = centerY + (row - (rows - 1) / 2) * verticalSpacing;
+        const mod = mods[i];
+        // Color by fieldDisplayName
+        const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+        function fieldDisplayNameToColorIndex(name: string) {
+          let hash = 0;
+          for (let i = 0; i < name.length; i++)
+            hash = (hash * 31 + name.charCodeAt(i)) % 68;
+          return hash + 1; // 1-based
+        }
+        const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+        const fillColor = `var(--${colorIdx})`;
+        let tooltipHtml = "";
+        if (mod) {
+          const localTime = new Date(mod.timestamp).toLocaleString();
+          tooltipHtml =
+            `<div class='position-relative'>` +
+            `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+            `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
+            `<strong>Time:</strong> ${localTime}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+            (mod.description
+              ? `<strong>Description:</strong> ${mod.description}<br/>`
+              : "") +
+            `<div class='btn-group mt-2'>` +
+            `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+            `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+            `</div>` +
+            `</div>`;
+        }
+        const circle = svg
+          .append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", dotRadius)
+          .attr("fill", fillColor);
+        // Popper.js tooltip logic (sticky, with close and buttons)
+        let popperInstance: any = null;
+        let tooltipEl: HTMLElement | null = null;
+        let sticky = false;
+        let outsideClickHandler: any = null;
+        function removeTooltip() {
+          if (popperInstance) {
+            popperInstance.destroy();
+            popperInstance = null;
+          }
+          if (tooltipEl) {
+            tooltipEl.remove();
+            tooltipEl = null;
+          }
+          sticky = false;
+          if (outsideClickHandler) {
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            outsideClickHandler = null;
+          }
+        }
+        circle
+          .on("mouseover", function (event: any) {
+            if (sticky) return;
+            document
+              .querySelectorAll(".d3-popper-tooltip")
+              .forEach((el) => el.remove());
+            tooltipEl = document.createElement("div");
+            tooltipEl.className = "d3-popper-tooltip";
+            tooltipEl.style.background = "rgba(30,30,30,0.97)";
+            tooltipEl.style.color = "#fff";
+            tooltipEl.style.padding = "8px 12px";
+            tooltipEl.style.borderRadius = "6px";
+            tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+            tooltipEl.style.zIndex = "9999";
+            tooltipEl.style.pointerEvents = "auto";
+            tooltipEl.innerHTML = tooltipHtml;
+            document.body.appendChild(tooltipEl);
+            popperInstance = (window as any).Popper.createPopper(
+              this,
+              tooltipEl,
+              {
+                placement: "top",
+                modifiers: [
+                  { name: "offset", options: { offset: [0, 8] } },
+                  {
+                    name: "preventOverflow",
+                    options: { boundary: "viewport" },
+                  },
+                ],
+              }
+            );
+            // Close button
+            tooltipEl
+              .querySelector(".d3-tooltip-close")
+              ?.addEventListener("click", (e) => {
+                e.stopPropagation();
+                removeTooltip();
+              });
+            // Action buttons
+            tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const action = (e.target as HTMLElement).getAttribute(
+                  "data-action"
+                );
+                if (action === "details") {
+                  alert("Show details for this modification!");
+                } else if (action === "copy") {
+                  navigator.clipboard.writeText(JSON.stringify(mod, null, 2));
+                }
+              });
+            });
+            sticky = true;
+            // Add click-outside handler
+            outsideClickHandler = function (e: MouseEvent) {
+              if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                removeTooltip();
+              }
+            };
+            setTimeout(() => {
+              document.addEventListener("mousedown", outsideClickHandler, true);
+            }, 0);
+          })
+          .on("mousemove", function (event: any) {
+            if (tooltipEl && popperInstance && !sticky) {
+              popperInstance.update();
+            }
+          })
+          .on("mouseleave", function () {
+            if (!sticky) removeTooltip();
+          });
+      }
+    });
+  }
+  // --- Week Navigation Helpers ---
+  weekStartDatesWithNodes: string[] = [];
+
+  /**
+   * Given a date, return the ISO string for the start of the week (Sunday).
+   */
+  getWeekStart(date: Date): string {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() - d.getDay());
+    return d.toISOString().slice(0, 10);
+  }
+
+  /**
+   * Compute all week start dates (ISO string) that have at least one node in them.
+   */
+  computeWeeksWithNodes(): void {
+    const allTimestamps = this.d3Data.map((d: any) => d.timestamp);
+    const allDates = allTimestamps.map((ts: any) => new Date(ts));
+    const weekStarts = new Set<string>();
+    for (const d of allDates) {
+      const weekStart = this.getWeekStart(d);
+      weekStarts.add(weekStart);
+    }
+    this.weekStartDatesWithNodes = Array.from(weekStarts).sort();
+  }
+  filteredData: any[] = [];
+  get d3Data(): any[] {
+    return this.syncData ? this.filteredData : this.data;
+  }
+  uniqueDays: string[] = [];
+
+  // --- Computed Properties ---
+  get canGoPrevDay(): boolean {
+    if (this.timeframe !== "daily" || !this.selectedDay) return false;
+    return this.uniqueDays.indexOf(this.selectedDay) > 0;
+  }
+  get canGoNextDay(): boolean {
+    if (this.timeframe !== "daily" || !this.selectedDay) return false;
+    return (
+      this.uniqueDays.indexOf(this.selectedDay) < this.uniqueDays.length - 1
+    );
+  }
+  get canGoPrevWeek(): boolean {
+    if (this.timeframe !== "week" || !this.weekStartDatesWithNodes.length)
+      return false;
+    const currentWeekStart = this.getWeekStart(this.currentDate);
+    const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+    return idx > 0;
+  }
+  get canGoNextWeek(): boolean {
+    if (this.timeframe !== "week" || !this.weekStartDatesWithNodes.length)
+      return false;
+    const currentWeekStart = this.getWeekStart(this.currentDate);
+    const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+    return idx >= 0 && idx < this.weekStartDatesWithNodes.length - 1;
+  }
+
+  // --- Lifecycle Hooks ---
+  ngOnInit(): void {
+    // Set selectedDay to the last day with modifications by default
+    const allTimestamps = this.d3Data.map((d: any) => d.timestamp);
+    const allDates = allTimestamps.map((ts: any) =>
+      new Date(ts).toISOString().slice(0, 10)
+    );
+    this.uniqueDays = Array.from(new Set(allDates)).sort() as string[];
+    this.selectedDay = this.uniqueDays.length
+      ? this.uniqueDays[this.uniqueDays.length - 1]
+      : null;
+    this.computeWeeksWithNodes();
+    // If in week mode, ensure currentDate is a valid week
+    if (this.timeframe === "week" && this.weekStartDatesWithNodes.length) {
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      if (!this.weekStartDatesWithNodes.includes(currentWeekStart)) {
+        this.currentDate = new Date(this.weekStartDatesWithNodes[0]);
+      }
+    }
+  }
+
+  ngAfterViewInit() {
+    this.renderTimeline();
+  }
+
+  // --- Event Handlers ---
+  onTimeframeChange() {
+    this.currentDate = new Date();
+    if (this.timeframe === "daily") {
+      // Default to first day in data
+      const allTimestamps = this.d3Data.map((d: any) => d.timestamp);
+      const allDates = allTimestamps.map((ts: any) =>
+        new Date(ts).toISOString().slice(0, 10)
+      );
+      this.selectedDay = allDates.length
+        ? (allDates.sort()[0] as string)
+        : null;
+    }
+    this.renderTimeline();
+  }
+
+  onPrev() {
+    if (this.timeframe === "month") {
+      this.currentDate = new Date();
+    } else if (this.timeframe === "week") {
+      if (!this.canGoPrevWeek) return;
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+      if (idx > 0) {
+        // Set currentDate to the first day with nodes in the previous week
+        const prevWeekStart = this.weekStartDatesWithNodes[idx - 1];
+        const prevWeekNodes = this.d3Data.filter(
+          (d: any) => this.getWeekStart(new Date(d.timestamp)) === prevWeekStart
+        );
+        if (prevWeekNodes.length) {
+          // Set to the first node's date in that week
+          this.currentDate = new Date(prevWeekNodes[0].timestamp);
+        } else {
+          this.currentDate = new Date(prevWeekStart);
+        }
+      }
+    } else if (this.timeframe === "year") {
+      this.currentDate = new Date(this.currentDate.getFullYear() - 1, 0, 1);
+    }
+    this.renderTimeline();
+  }
+
+  onNext() {
+    if (this.timeframe === "month") {
+      this.currentDate = new Date(
+        this.currentDate.getFullYear(),
+        this.currentDate.getMonth() + 1,
+        1
+      );
+    } else if (this.timeframe === "week") {
+      if (!this.canGoNextWeek) return;
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+      if (idx >= 0 && idx < this.weekStartDatesWithNodes.length - 1) {
+        // Set currentDate to the first day with nodes in the next week
+        const nextWeekStart = this.weekStartDatesWithNodes[idx + 1];
+        const nextWeekNodes = this.d3Data.filter(
+          (d: any) => this.getWeekStart(new Date(d.timestamp)) === nextWeekStart
+        );
+        if (nextWeekNodes.length) {
+          this.currentDate = new Date(nextWeekNodes[0].timestamp);
+        } else {
+          this.currentDate = new Date(nextWeekStart);
+        }
+      }
+    } else if (this.timeframe === "year") {
+      this.currentDate = new Date(this.currentDate.getFullYear() + 1, 0, 1);
+    }
+    this.renderTimeline();
+  }
+
+  goPrevDay() {
+    if (!this.canGoPrevDay) return;
+    const idx = this.uniqueDays.indexOf(this.selectedDay!);
+    if (idx > 0) {
+      this.selectedDay = this.uniqueDays[idx - 1];
+      this.renderTimeline();
+    }
+  }
+  goNextDay() {
+    if (!this.canGoNextDay) return;
+    const idx = this.uniqueDays.indexOf(this.selectedDay!);
+    if (idx < this.uniqueDays.length - 1) {
+      this.selectedDay = this.uniqueDays[idx + 1];
+      this.renderTimeline();
+    }
+  }
+
+  // --- Timeline Rendering ---
+  renderTimeline() {
+    d3.select("#d3-timeline svg").remove();
+    const data = this.d3Data;
+    const timestamps = data.map((d) => d.timestamp);
+    if (!timestamps.length) return;
+    let startDate: Date,
+      endDate: Date,
+      allDays: string[] = [];
+
+    // Compute allDays for each timeframe
+    if (this.timeframe === "month") {
+      startDate = new Date(
+        this.currentDate.getFullYear(),
+        this.currentDate.getMonth(),
+        1
+      );
+      endDate = new Date(
+        this.currentDate.getFullYear(),
+        this.currentDate.getMonth() + 1,
+        0
+      );
+      const daysInMonth = endDate.getDate();
+      allDays = Array.from({ length: daysInMonth }, (_, i) => {
+        const d = new Date(
+          this.currentDate.getFullYear(),
+          this.currentDate.getMonth(),
+          i + 1
+        );
+        return d.toISOString().slice(0, 10);
+      });
+    } else if (this.timeframe === "week") {
+      const dayOfWeek = this.currentDate.getDay();
+      startDate = new Date(this.currentDate);
+      startDate.setDate(this.currentDate.getDate() - dayOfWeek);
+      endDate = new Date(startDate);
+      endDate.setDate(startDate.getDate() + 6);
+      allDays = Array.from({ length: 7 }, (_, i) => {
+        const d = new Date(startDate);
+        d.setDate(startDate.getDate() + i);
+        return d.toISOString().slice(0, 10);
+      });
+    } else if (this.timeframe === "year") {
+      startDate = new Date(this.currentDate.getFullYear(), 0, 1);
+      endDate = new Date(this.currentDate.getFullYear(), 11, 31);
+      const daysInYear =
+        Math.floor(
+          (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
+        ) + 1;
+      allDays = Array.from({ length: daysInYear }, (_, i) => {
+        const d = new Date(this.currentDate.getFullYear(), 0, 1);
+        d.setDate(d.getDate() + i);
+        return d.toISOString().slice(0, 10);
+      });
+    } else if (this.timeframe === "all") {
+      const allTimestampsAll = this.d3Data.map((d: any) => d.timestamp);
+      const allDatesAll = allTimestampsAll.map((ts: any) => new Date(ts));
+      if (allDatesAll.length > 0) {
+        const minYear = Math.min(
+          ...allDatesAll.map((d: Date) => d.getFullYear())
+        );
+        const maxYear = Math.max(
+          ...allDatesAll.map((d: Date) => d.getFullYear())
+        );
+        startDate = new Date(minYear, 0, 1);
+        endDate = new Date(maxYear, 11, 31);
+        allDays = [];
+        for (let year = minYear; year <= maxYear; year++) {
+          for (let month = 0; month < 12; month++) {
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            for (let day = 1; day <= daysInMonth; day++) {
+              const d = new Date(year, month, day);
+              allDays.push(d.toISOString().slice(0, 10));
+            }
+          }
+        }
+      } else {
+        startDate = endDate = new Date();
+        allDays = [];
+      }
+    } else if (this.timeframe === "daily") {
+      const allTimestampsDaily = this.d3Data.map((d: any) => d.timestamp);
+      const allDatesDaily = allTimestampsDaily.map((ts: any) =>
+        new Date(ts).toISOString().slice(0, 10)
+      );
+      const uniqueDays = Array.from(new Set(allDatesDaily)).sort() as string[];
+      if (!this.selectedDay && uniqueDays.length) {
+        this.selectedDay = uniqueDays[0] as string;
+      }
+      allDays = this.selectedDay ? [this.selectedDay] : [];
+      if (this.selectedDay) {
+        startDate = endDate = new Date(this.selectedDay);
+      } else {
+        startDate = endDate = new Date();
+      }
+    }
+
+    const width = document.getElementById("d3-timeline")?.clientWidth || 600;
+    const height = 150;
+    const margin = { left: 30, right: 30, top: 30, bottom: 30 };
+    const svg = d3
+      .select("#d3-timeline")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    if (this.timeframe === "daily" && this.selectedDay) {
+      this.renderDailyTimeline(svg, margin, width, height);
+    } else if (this.timeframe === "week") {
+      this.renderWeeklyTimeline(svg, margin, width, height);
+    } else if (this.timeframe === "month") {
+      this.renderMonthlyTimeline(svg, margin, width, height);
+    } else if (this.timeframe === "year") {
+      this.renderYearlyTimeline(svg, margin, width, height);
+    } else if (this.timeframe === "all") {
+      this.renderAllTimeTimeline(svg, margin, width, height);
+    }
+  }
+
+  /**
+   * Render the D3 timeline for the weekly view.
+   */
+  private renderWeeklyTimeline(
+    svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>,
+    margin: any,
+    width: number,
+    height: number
+  ) {
+    // Calculate week start/end
+    const dayOfWeek = this.currentDate.getDay();
+    const weekStart = new Date(this.currentDate);
+    weekStart.setDate(this.currentDate.getDate() - dayOfWeek);
+    const weekDays: string[] = [];
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(weekStart);
+      d.setDate(weekStart.getDate() + i);
+      weekDays.push(d.toISOString().slice(0, 10));
+    }
+    // Draw timeline axis
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2)
+      .attr("y2", height / 2)
+      .attr("stroke", "var(--bs-gray-200)")
+      .attr("stroke-width", 2);
+
+    // Draw 8 vertical lines (7 days = 8 boundaries)
+    const numDays = 7;
+    const numLines = numDays + 1;
+    const daySpacing = (width - margin.left - margin.right) / numDays;
+    for (let i = 0; i < numLines; i++) {
+      const x = margin.left + i * daySpacing;
+      svg
+        .append("line")
+        .attr("x1", x)
+        .attr("x2", x)
+        .attr("y1", height / 2 - 28)
+        .attr("y2", height / 2 + 28)
+        .attr("stroke", "var(--bs-gray-400)")
+        .attr("stroke-width", 2);
+    }
+    // Draw 7 labels centered between lines
+    for (let i = 0; i < numDays; i++) {
+      const x = margin.left + (i + 0.5) * daySpacing;
+      svg
+        .append("text")
+        .attr("x", x)
+        .attr("y", height / 2 - 52)
+        .attr("text-anchor", "middle")
+        .attr("font-size", 13)
+        .attr("fill", "var(--bs-gray-700)")
+        .text(weekDays[i]);
+    }
+    // For each day, group mods and render a grid in S/coil (snake) pattern
+    const dotRadius = 4 * 1.3;
+    const gridPadding = 4;
+    const horizontalSpacing = dotRadius * 2 + 24; // Increased horizontal space between nodes
+    const dayWidth = daySpacing;
+    const dayHeight = 56; // vertical space between the two verticals
+    weekDays.forEach((day, idx) => {
+      const mods = this.d3Data.filter(
+        (mod: any) => new Date(mod.timestamp).toISOString().slice(0, 10) === day
+      );
+      if (!mods.length) return;
+      const n = mods.length;
+      // Compute grid size
+      const maxCols = Math.floor(
+        (dayWidth - 2 * gridPadding) / horizontalSpacing
+      );
+      const maxRows = Math.floor(
+        (dayHeight - 2 * gridPadding) / (dotRadius * 2 + gridPadding)
+      );
+      let cols = Math.min(maxCols, n);
+      let rows = Math.ceil(n / cols);
+      if (rows > maxRows) {
+        rows = maxRows;
+        cols = Math.ceil(n / rows);
+      }
+      // Center grid horizontally between verticals
+      const gridW = (cols - 1) * horizontalSpacing;
+      const startX = margin.left + idx * daySpacing + (dayWidth - gridW) / 2;
+      const centerY = height / 2;
+      const verticalSpacing = dotRadius * 2 + 24; // Increased vertical space between rows
+      for (let i = 0; i < n; i++) {
+        // S/coil (snake) pattern: row by row, alternate direction
+        const row = Math.floor(i / cols);
+        let col = i % cols;
+        if (row % 2 === 1) col = cols - 1 - col;
+        const x = startX + col * horizontalSpacing;
+        const y = centerY + (row - (rows - 1) / 2) * verticalSpacing;
+        const mod = mods[i];
+        // Color by fieldDisplayName
+        const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+        function fieldDisplayNameToColorIndex(name: string) {
+          let hash = 0;
+          for (let i = 0; i < name.length; i++)
+            hash = (hash * 31 + name.charCodeAt(i)) % 68;
+          return hash + 1; // 1-based
+        }
+        const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+        const fillColor = `var(--${colorIdx})`;
+        let tooltipHtml = "";
+        if (mod) {
+          const localTime = new Date(mod.timestamp).toLocaleString();
+          tooltipHtml =
+            `<div class='position-relative'>` +
+            `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+            `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
+            `<strong>Time:</strong> ${localTime}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+            (mod.description
+              ? `<strong>Description:</strong> ${mod.description}<br/>`
+              : "") +
+            `<div class='btn-group mt-2'>` +
+            `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+            `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+            `</div>` +
+            `</div>`;
+        }
+        const circle = svg
+          .append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", dotRadius)
+          .attr("fill", fillColor);
+        // Popper.js tooltip logic (sticky, with close and buttons)
+        let popperInstance: any = null;
+        let tooltipEl: HTMLElement | null = null;
+        let sticky = false;
+        let outsideClickHandler: any = null;
+        function removeTooltip() {
+          if (popperInstance) {
+            popperInstance.destroy();
+            popperInstance = null;
+          }
+          if (tooltipEl) {
+            tooltipEl.remove();
+            tooltipEl = null;
+          }
+          sticky = false;
+          if (outsideClickHandler) {
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            outsideClickHandler = null;
+          }
+        }
+        circle
+          .on("mouseover", function (event: any) {
+            if (sticky) return;
+            document
+              .querySelectorAll(".d3-popper-tooltip")
+              .forEach((el) => el.remove());
+            tooltipEl = document.createElement("div");
+            tooltipEl.className = "d3-popper-tooltip";
+            tooltipEl.style.background = "rgba(30,30,30,0.97)";
+            tooltipEl.style.color = "#fff";
+            tooltipEl.style.padding = "8px 12px";
+            tooltipEl.style.borderRadius = "6px";
+            tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+            tooltipEl.style.zIndex = "9999";
+            tooltipEl.style.pointerEvents = "auto";
+            tooltipEl.innerHTML = tooltipHtml;
+            document.body.appendChild(tooltipEl);
+            popperInstance = (window as any).Popper.createPopper(
+              this,
+              tooltipEl,
+              {
+                placement: "top",
+                modifiers: [
+                  { name: "offset", options: { offset: [0, 8] } },
+                  {
+                    name: "preventOverflow",
+                    options: { boundary: "viewport" },
+                  },
+                ],
+              }
+            );
+            // Close button
+            tooltipEl
+              .querySelector(".d3-tooltip-close")
+              ?.addEventListener("click", (e) => {
+                e.stopPropagation();
+                removeTooltip();
+              });
+            // Action buttons
+            tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const action = (e.target as HTMLElement).getAttribute(
+                  "data-action"
+                );
+                if (action === "details") {
+                  alert("Show details for this modification!");
+                } else if (action === "copy") {
+                  navigator.clipboard.writeText(JSON.stringify(mod, null, 2));
+                }
+              });
+            });
+            sticky = true;
+            // Add click-outside handler
+            outsideClickHandler = function (e: MouseEvent) {
+              if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                removeTooltip();
+              }
+            };
+            setTimeout(() => {
+              document.addEventListener("mousedown", outsideClickHandler, true);
+            }, 0);
+          })
+          .on("mousemove", function (event: any) {
+            if (tooltipEl && popperInstance && !sticky) {
+              popperInstance.update();
+            }
+          })
+          .on("mouseleave", function () {
+            if (!sticky) removeTooltip();
+          });
+      }
+    });
+  }
+
+  /**
+   * Render the D3 timeline for the daily view.
+   */
+  private renderDailyTimeline(
+    svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>,
+    margin: any,
+    width: number,
+    height: number
+  ) {
+    const dotRadius = 4 * 1.3; // 30% bigger
+    // Count modifications for the selected day
+    const modsCount = this.d3Data.filter(
+      (mod: any) =>
+        new Date(mod.timestamp).toISOString().slice(0, 10) === this.selectedDay
+    ).length;
+    svg
+      .append("text")
+      .attr("x", (margin.left + width - margin.right) / 2)
+      .attr("y", height / 2 - 62) // move up by 20px
+      .attr("text-anchor", "middle")
+      .attr("font-size", 16)
+      .attr("fill", "var(--bs-gray-700)")
+      .text(this.selectedDay + (modsCount > 0 ? `  (${modsCount})` : ""));
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2)
+      .attr("y2", height / 2)
+      .attr("stroke", "var(--bs-gray-200)")
+      .attr("stroke-width", 2);
+    svg
+      .append("line")
+      .attr("x1", margin.left)
+      .attr("x2", margin.left)
+      .attr("y1", height / 2 - 28)
+      .attr("y2", height / 2 + 28)
+      .attr("stroke", "var(--bs-gray-400)")
+      .attr("stroke-width", 2);
+    svg
+      .append("line")
+      .attr("x1", width - margin.right)
+      .attr("x2", width - margin.right)
+      .attr("y1", height / 2 - 28)
+      .attr("y2", height / 2 + 28)
+      .attr("stroke", "var(--bs-gray-400)")
+      .attr("stroke-width", 2);
+    const mods = this.d3Data
+      .filter(
+        (mod: any) =>
+          new Date(mod.timestamp).toISOString().slice(0, 10) ===
+          this.selectedDay
+      )
+      .sort(
+        (a: any, b: any) =>
+          new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
+      );
+    if (mods.length > 0) {
+      // Calculate grid size based on number of nodes and available width
+      const dayWidth = width - margin.left - margin.right;
+      const horizontalSpacing = dotRadius * 2 + 24; // Increased horizontal space between nodes
+      // Try to fit as many as possible in a single row, but at least 1
+      let gridCols = Math.min(
+        mods.length,
+        Math.floor(dayWidth / horizontalSpacing)
+      );
+      gridCols = Math.max(1, gridCols);
+      // If not enough for all, use multiple rows
+      const gridRows = Math.ceil(mods.length / gridCols);
+      // Center the grid horizontally between the two vertical lines (like weekly view)
+      const gridWidth = (gridCols - 1) * horizontalSpacing;
+      const startX = margin.left + (dayWidth - gridWidth) / 2;
+      const centerY = height / 2;
+      const verticalSpacing = dotRadius * 2 + 24; // Increased vertical space between rows
+      for (let idx = 0; idx < mods.length; idx++) {
+        const row = Math.floor(idx / gridCols);
+        let col = idx % gridCols;
+        // Zig-zag: reverse direction every other row
+        if (row % 2 === 1) {
+          col = gridCols - 1 - col;
+        }
+        const mod = mods[idx];
+        // Color by fieldDisplayName
+        const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
+        const toValue = mod?.to.displayValue || "Unknown";
+        function fieldDisplayNameToColorIndex(name: string) {
+          let hash = 0;
+          for (let i = 0; i < name.length; i++)
+            hash = (hash * 31 + name.charCodeAt(i)) % 68;
+          return hash + 1; // 1-based
+        }
+        const colorIdx = fieldDisplayNameToColorIndex(fieldDisplayName);
+        const fillColor = `var(--${colorIdx})`;
+        let tooltipHtml = "";
+        if (mod) {
+          const localTime = new Date(mod.timestamp).toLocaleString();
+          tooltipHtml =
+            `<div class='position-relative'>` +
+            `<strong>Actor:</strong> ${mod.actor?.displayName || ""}<br/>` +
+            `<strong>Field:</strong> ${fieldDisplayName}<br/>` +
+            `<strong>Time:</strong> ${localTime}<br/>` +
+            `<strong>Raw:</strong> ${mod.timestamp}<br/>` +
+            (mod.description
+              ? `<strong>Description:</strong> ${mod.description}<br/>`
+              : "") +
+            `<div class='btn-group mt-2'>` +
+            `<button class='btn btn-sm btn-primary' data-action='details' >Details</button>` +
+            `<button class='btn btn-sm btn-primary' data-action='copy'>Copy</button>` +
+            `</div>` +
+            `</div>`;
+        }
+        const circle = svg
+          .append("circle")
+          .attr("cx", startX + col * horizontalSpacing)
+          .attr("cy", centerY + (row - (gridRows - 1) / 2) * verticalSpacing)
+          .attr("r", dotRadius)
+          .attr("fill", fillColor);
+        // Popper.js tooltip logic (sticky, with close and buttons)
+        let popperInstance: any = null;
+        let tooltipEl: HTMLElement | null = null;
+        let sticky = false;
+        let outsideClickHandler: any = null;
+        function removeTooltip() {
+          if (popperInstance) {
+            popperInstance.destroy();
+            popperInstance = null;
+          }
+          if (tooltipEl) {
+            tooltipEl.remove();
+            tooltipEl = null;
+          }
+          sticky = false;
+          if (outsideClickHandler) {
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            outsideClickHandler = null;
+          }
+        }
+        circle
+          .on("mouseover", function (event: any) {
+            if (sticky) return;
+            document
+              .querySelectorAll(".d3-popper-tooltip")
+              .forEach((el) => el.remove());
+            tooltipEl = document.createElement("div");
+            tooltipEl.className = "d3-popper-tooltip";
+            tooltipEl.style.background = "rgba(30,30,30,0.97)";
+            tooltipEl.style.color = "#fff";
+            tooltipEl.style.padding = "8px 12px";
+            tooltipEl.style.borderRadius = "6px";
+            tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+            tooltipEl.style.zIndex = "9999";
+            tooltipEl.style.pointerEvents = "auto";
+            tooltipEl.innerHTML = tooltipHtml;
+            document.body.appendChild(tooltipEl);
+            popperInstance = (window as any).Popper.createPopper(
+              this,
+              tooltipEl,
+              {
+                placement: "top",
+                modifiers: [
+                  { name: "offset", options: { offset: [0, 8] } },
+                  {
+                    name: "preventOverflow",
+                    options: { boundary: "viewport" },
+                  },
+                ],
+              }
+            );
+            // Close button
+            tooltipEl
+              .querySelector(".d3-tooltip-close")
+              ?.addEventListener("click", (e) => {
+                e.stopPropagation();
+                removeTooltip();
+              });
+            // Action buttons
+            tooltipEl.querySelectorAll(".d3-tooltip-btn").forEach((btn) => {
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const action = (e.target as HTMLElement).getAttribute(
+                  "data-action"
+                );
+                if (action === "details") {
+                  alert("Show details for this modification!");
+                } else if (action === "copy") {
+                  navigator.clipboard.writeText(JSON.stringify(mod, null, 2));
+                }
+              });
+            });
+            sticky = true;
+            // Add click-outside handler
+            outsideClickHandler = function (e: MouseEvent) {
+              if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+                removeTooltip();
+              }
+            };
+            setTimeout(() => {
+              document.addEventListener("mousedown", outsideClickHandler, true);
+            }, 0);
+          })
+          .on("mousemove", function (event: any) {
+            if (tooltipEl && popperInstance && !sticky) {
+              popperInstance.update();
+            }
+          })
+          .on("mouseleave", function () {
+            if (!sticky) removeTooltip();
+          });
+      }
+    }
+  }
+
+  // No ag-grid logic in D3 component
 }
