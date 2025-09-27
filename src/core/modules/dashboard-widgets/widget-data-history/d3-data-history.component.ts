@@ -171,9 +171,6 @@ export class D3DataHistoryComponent {
   }
 
   private render() {
-    // Step 3: Assign a y-position for each field label, stacking them vertically on the left, 20px apart
-    const labelSpacing = 20;
-    const labelPadding = 10;
     // Step 1: Extract all unique fieldDisplayName values from the data
     const allFields = Array.from(
       new Set(
@@ -202,9 +199,24 @@ export class D3DataHistoryComponent {
     // Sort fields by earliest timestamp (ascending)
     fieldFirstTimestamps.sort((a, b) => a.firstTimestamp - b.firstTimestamp);
 
-    this.fieldNames = allFields;
-    const palette = this.getColorPalette(allFields.length);
-    this.fieldColors = new Map(allFields.map((f, i) => [f, palette[i]]));
+    // Step 3: Assign a y-position for each field label, stacking them vertically on the left, 20px apart
+    const labelSpacing = 20;
+    const labelPadding = 10;
+    const fieldYMap = new Map<string, number>();
+    const labelSpacingActual = labelSpacing + 4;
+    fieldFirstTimestamps.forEach((f, i) => {
+      fieldYMap.set(f.field, 40 + i * labelSpacingActual); // 40 is a top margin
+    });
+
+    // Step 4: Render the fieldDisplayName labels on the left side of the timeline, using the computed y-positions
+    // Also set this.fieldNames and this.fieldColors for downstream drawing
+    this.fieldNames = fieldFirstTimestamps.map((f) => f.field);
+    const palette = this.getColorPalette(this.fieldNames.length);
+    this.fieldColors = new Map(this.fieldNames.map((f, i) => [f, palette[i]]));
+
+    // ...existing code...
+    // Move field label rendering to after all timeline drawing
+    // ...existing code...
     // ...existing code...
     // ...existing code...
     // 1. For each field, collect event points and prepend a start point 50px left of first hour marker
@@ -643,5 +655,58 @@ export class D3DataHistoryComponent {
         (d) =>
           `${d.event.actor?.displayName}\n${new Date(d.event.timestamp).toLocaleString()}`
       );
+
+    // Now render the field labels (after all timeline content)
+    if (this.g) {
+      this.g.selectAll(".field-label-group").remove();
+      // Calculate vertical offset to align bottom of label block with bottom author
+      let offsetY = 0;
+      if (authors && authors.length > 0 && fieldFirstTimestamps.length > 0) {
+        const lastAuthorY = yScale(authors[authors.length - 1]);
+        const lastField =
+          fieldFirstTimestamps[fieldFirstTimestamps.length - 1].field;
+        const lastLabelY = fieldYMap.get(lastField);
+        if (typeof lastAuthorY === "number" && typeof lastLabelY === "number") {
+          offsetY = lastAuthorY - lastLabelY;
+        }
+      }
+      const labelGroups = this.g
+        .selectAll(".field-label-group")
+        .data(fieldFirstTimestamps)
+        .enter()
+        .append("g")
+        .attr("class", "field-label-group")
+        .attr("transform", `translate(0,${offsetY})`);
+
+      // Draw the text first
+      labelGroups
+        .append("text")
+        .attr("class", "field-label")
+        .attr("x", () => {
+          const firstHourX =
+            typeof hourX !== "undefined" && hourX.length > 0 ? hourX[0] : 60;
+          return firstHourX - 100 - 35;
+        })
+        .attr("y", (d: any) => fieldYMap.get(d.field)!)
+        .attr("text-anchor", "end")
+        .attr("dominant-baseline", "middle")
+        .attr("font-size", 13)
+        .attr("fill", "#222")
+        .text((d: any) => d.field);
+
+      // Draw the colored square 10px to the right of the text
+      labelGroups
+        .append("rect")
+        .attr("x", () => {
+          const firstHourX =
+            typeof hourX !== "undefined" && hourX.length > 0 ? hourX[0] : 60;
+          return firstHourX - 100 + 10 - 35;
+        })
+        .attr("y", (d: any) => (fieldYMap.get(d.field) ?? 0) - 8)
+        .attr("width", 16)
+        .attr("height", 16)
+        .attr("rx", 4)
+        .attr("fill", (d: any) => this.fieldColors.get(d.field) || "#888");
+    }
   }
 }
