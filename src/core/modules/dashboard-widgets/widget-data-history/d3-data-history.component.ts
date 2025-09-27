@@ -445,7 +445,7 @@ export class D3DataHistoryComponent {
           ? "hour-label-group extended-hour-label-group"
           : "hour-label-group"
       )
-  .attr("transform", (h, i) => `translate(${hourX[i]},22)`)
+      .attr("transform", (h, i) => `translate(${hourX[i]},22)`)
       .each(function (h) {
         // Parse the hour string: 'YYYY-MM-DD HH:00'
         // Split into year, date, time
