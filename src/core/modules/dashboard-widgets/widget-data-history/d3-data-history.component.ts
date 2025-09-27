@@ -166,9 +166,12 @@ export class D3DataHistoryComponent {
       .scaleExtent([0.05, 50]) // allow much deeper zoom in and out
       .on("zoom", (event) => {
         // Close all open tooltips on zoom
-        document.querySelectorAll('.d3-popper-tooltip').forEach((el) => {
+        document.querySelectorAll(".d3-popper-tooltip").forEach((el) => {
           // Try to destroy Popper instance if attached
-          if ((el as any)._popperInstance && typeof (el as any)._popperInstance.destroy === 'function') {
+          if (
+            (el as any)._popperInstance &&
+            typeof (el as any)._popperInstance.destroy === "function"
+          ) {
             (el as any)._popperInstance.destroy();
           }
           el.remove();
