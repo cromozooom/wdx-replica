@@ -18,6 +18,9 @@ import { FormsModule } from "@angular/forms";
   styleUrls: ["./d3-data-history.component.scss"],
 })
 export class D3DataHistoryComponent {
+  // Container for all tooltips
+  private tooltipContainerId = "d3-data-history-tooltips";
+
   // Store unique fieldDisplayNames and their colors
   private fieldNames: string[] = [];
   private fieldColors: Map<string, string> = new Map();
@@ -162,6 +165,14 @@ export class D3DataHistoryComponent {
       .zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.05, 50]) // allow much deeper zoom in and out
       .on("zoom", (event) => {
+        // Close all open tooltips on zoom
+        document.querySelectorAll('.d3-popper-tooltip').forEach((el) => {
+          // Try to destroy Popper instance if attached
+          if ((el as any)._popperInstance && typeof (el as any)._popperInstance.destroy === 'function') {
+            (el as any)._popperInstance.destroy();
+          }
+          el.remove();
+        });
         if (this.g) {
           this.g.attr("transform", event.transform);
         }
@@ -171,6 +182,20 @@ export class D3DataHistoryComponent {
   }
 
   private render() {
+    // --- TOOLTIP HTML CLEANUP/SETUP ---
+    // Remove any old tooltips for this component
+    let tooltipContainer = document.getElementById(this.tooltipContainerId);
+    if (!tooltipContainer) {
+      tooltipContainer = document.createElement("div");
+      tooltipContainer.id = this.tooltipContainerId;
+      tooltipContainer.style.position = "absolute";
+      tooltipContainer.style.top = "0";
+      tooltipContainer.style.left = "0";
+      tooltipContainer.style.zIndex = "9999";
+      document.body.appendChild(tooltipContainer);
+    } else {
+      tooltipContainer.innerHTML = "";
+    }
     // Step 1: Extract all unique fieldDisplayName values from the data
     const allFields = Array.from(
       new Set(
@@ -548,8 +573,8 @@ export class D3DataHistoryComponent {
               `field-snake-line field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
             )
             .attr("d", sCurvePath(points));
-          // Transparent duplicate for interaction
-          this.g
+          // Transparent duplicate for interaction and tooltip
+          const hitPath = this.g
             .append("path")
             .attr("fill", "none")
             .attr("stroke", "transparent")
@@ -559,7 +584,8 @@ export class D3DataHistoryComponent {
               `field-snake-line-hit field-snake-line-hit-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
             )
             .attr("d", sCurvePath(points))
-            .style("cursor", "pointer")
+            .style("cursor", "pointer");
+          hitPath
             .on("mouseenter", () => {
               d3.selectAll(
                 `.field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
@@ -571,6 +597,76 @@ export class D3DataHistoryComponent {
               d3.selectAll(
                 `.field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
               ).attr("stroke-width", 1);
+            })
+            .on("click", function (event) {
+              // Remove any other open tooltips
+              document
+                .querySelectorAll(".d3-popper-tooltip")
+                .forEach((el) => el.remove());
+              // Tooltip HTML (show field info)
+              const tooltipEl = document.createElement("div");
+              tooltipEl.className = "d3-popper-tooltip";
+              tooltipEl.style.background = "rgba(30,30,30,0.97)";
+              tooltipEl.style.color = "#fff";
+              tooltipEl.style.padding = "8px 12px";
+              tooltipEl.style.borderRadius = "6px";
+              tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+              tooltipEl.style.zIndex = "9999";
+              tooltipEl.style.pointerEvents = "auto";
+              tooltipEl.innerHTML =
+                `<div class='position-relative'>` +
+                `<strong>Field:</strong> ${field}<br/>` +
+                `<strong>Events:</strong> ${points.length}<br/>` +
+                `</div>`;
+              document.body.appendChild(tooltipEl);
+              // Use Popper.js to anchor to mouse position
+              const virtualElement = {
+                getBoundingClientRect: () => ({
+                  width: 0,
+                  height: 0,
+                  top: event.clientY,
+                  left: event.clientX,
+                  right: event.clientX,
+                  bottom: event.clientY,
+                }),
+                contextElement: this,
+              };
+              const popperInstance = (window as any).Popper.createPopper(
+                virtualElement,
+                tooltipEl,
+                {
+                  placement: "top",
+                  modifiers: [
+                    { name: "offset", options: { offset: [0, 8] } },
+                    {
+                      name: "preventOverflow",
+                      options: { boundary: "viewport" },
+                    },
+                  ],
+                }
+              );
+              // Click outside handler
+              function outsideClickHandler(e: MouseEvent) {
+                if (
+                  tooltipEl &&
+                  !tooltipEl.contains((e as MouseEvent).target as Node)
+                ) {
+                  tooltipEl.remove();
+                  popperInstance.destroy();
+                  document.removeEventListener(
+                    "mousedown",
+                    outsideClickHandler,
+                    true
+                  );
+                }
+              }
+              setTimeout(() => {
+                document.addEventListener(
+                  "mousedown",
+                  outsideClickHandler,
+                  true
+                );
+              }, 0);
             });
         }
       }
@@ -628,10 +724,17 @@ export class D3DataHistoryComponent {
       .data(eventDots)
       .enter()
       .append("circle")
-      .attr(
-        "class",
-        (d) => `event-dot event-dot-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
-      )
+      .attr("class", (d) => {
+        // Add event-dot, event-dot-field, and event-dot-eventname (if available)
+        let base = `event-dot event-dot-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`;
+        const eventName = d.event && d.event.name ? String(d.event.name) : null;
+        if (eventName) {
+          // Sanitize for class usage
+          const safeName = eventName.replace(/[^a-zA-Z0-9_-]/g, "_");
+          base += ` event-dot-eventname-${safeName}`;
+        }
+        return base;
+      })
       .attr("cx", (d) => d.x)
       .attr("cy", (d) => d.y)
       .attr("r", (d) => d.r)
@@ -646,7 +749,6 @@ export class D3DataHistoryComponent {
       .attr("stroke-width", 2)
       .style("cursor", "pointer")
       .on("mouseenter", function (event, d) {
-        // Fade all lines and dots except this field
         d3.selectAll(".field-snake-line").attr("opacity", 0.4);
         d3.selectAll(".event-dot").attr("opacity", 0.4);
         d3.selectAll(
@@ -673,12 +775,80 @@ export class D3DataHistoryComponent {
             return dot.isFirst || dot.isLast ? 8 : 4;
           });
       });
-    dotSel
-      .append("title")
-      .text(
-        (d) =>
-          `${d.event.actor?.displayName}\n${new Date(d.event.timestamp).toLocaleString()}`
-      );
+    // --- Popper.js sticky tooltip logic for event dots ---
+    // Use a WeakMap to track sticky state per dot element
+    // (define outside the handler so it persists)
+    const stickyMap: WeakMap<SVGCircleElement, boolean> =
+      (window as any)._d3StickyMap || new WeakMap<SVGCircleElement, boolean>();
+    (window as any)._d3StickyMap = stickyMap;
+    dotSel.on(
+      "click",
+      function (this: SVGCircleElement, event: MouseEvent, d: any) {
+        console.log("[Popper] Tooltip triggered for dot:", d);
+        // Remove any other open tooltips
+        document
+          .querySelectorAll(".d3-popper-tooltip")
+          .forEach((el) => el.remove());
+        // If a tooltip is already open for this dot, close and return
+        if (stickyMap.get(this)) {
+          stickyMap.set(this, false);
+          return;
+        }
+        // Tooltip HTML
+        const tooltipEl = document.createElement("div");
+        tooltipEl.className = "d3-popper-tooltip";
+        tooltipEl.style.background = "rgba(30,30,30,0.97)";
+        tooltipEl.style.color = "#fff";
+        tooltipEl.style.padding = "8px 12px";
+        tooltipEl.style.borderRadius = "6px";
+        tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+        tooltipEl.style.zIndex = "9999";
+        tooltipEl.style.pointerEvents = "auto";
+        tooltipEl.innerHTML =
+          `<div class='position-relative'>` +
+          `<strong>Field:</strong> ${d.field}<br/>` +
+          `<strong>Actor:</strong> ${d.event.actor?.displayName || ""}<br/>` +
+          `<strong>Time:</strong> ${new Date(d.event.timestamp).toLocaleString()}<br/>` +
+          (d.event.description
+            ? `<strong>Description:</strong> ${d.event.description}<br/>`
+            : "") +
+          `<button style='margin-top:8px;padding:4px 12px;border-radius:4px;border:none;background:#1976d2;color:#fff;cursor:pointer;'>Action</button>` +
+          `</div>`;
+        document.body.appendChild(tooltipEl);
+        // Attach Popper.js
+        const popperInstance = (window as any).Popper.createPopper(
+          this,
+          tooltipEl,
+          {
+            placement: "top",
+            modifiers: [
+              { name: "offset", options: { offset: [0, 8] } },
+              { name: "preventOverflow", options: { boundary: "viewport" } },
+            ],
+          }
+        );
+        // Attach popperInstance to tooltipEl for cleanup on zoom
+        (tooltipEl as any)._popperInstance = popperInstance;
+        stickyMap.set(this, true);
+        // Click outside handler
+        const self = this;
+        function outsideClickHandler(e: MouseEvent) {
+          if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+            tooltipEl.remove();
+            popperInstance.destroy();
+            document.removeEventListener(
+              "mousedown",
+              outsideClickHandler,
+              true
+            );
+            stickyMap.set(self, false);
+          }
+        }
+        setTimeout(() => {
+          document.addEventListener("mousedown", outsideClickHandler, true);
+        }, 0);
+      }
+    );
 
     // Now render the field labels (after all timeline content)
     if (this.g) {
