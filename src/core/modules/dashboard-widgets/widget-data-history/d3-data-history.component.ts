@@ -6,7 +6,9 @@ import {
   AfterViewInit,
   OnChanges,
   SimpleChanges,
+  TemplateRef,
 } from "@angular/core";
+import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
 import * as d3 from "d3";
 import { FormsModule } from "@angular/forms";
 
@@ -18,6 +20,26 @@ import { FormsModule } from "@angular/forms";
   styleUrls: ["./d3-data-history.component.scss"],
 })
 export class D3DataHistoryComponent {
+  constructor(private offcanvasService: NgbOffcanvas) {}
+
+  @ViewChild("offcanvasContent", { static: true })
+  offcanvasContentRef!: TemplateRef<any>;
+  offcanvasFrom: any = null;
+  offcanvasTo: any = null;
+
+  openEnd(content: TemplateRef<any>, from: any, to: any) {
+    this.offcanvasFrom = from;
+    this.offcanvasTo = to;
+    const ref = this.offcanvasService.open(content, { position: "end" });
+    ref.closed.subscribe(() => {
+      this.offcanvasFrom = null;
+      this.offcanvasTo = null;
+    });
+    ref.dismissed.subscribe(() => {
+      this.offcanvasFrom = null;
+      this.offcanvasTo = null;
+    });
+  }
   // Container for all tooltips
   private tooltipContainerId = "d3-data-history-tooltips";
 
@@ -804,74 +826,101 @@ export class D3DataHistoryComponent {
     const stickyMap: WeakMap<SVGCircleElement, boolean> =
       (window as any)._d3StickyMap || new WeakMap<SVGCircleElement, boolean>();
     (window as any)._d3StickyMap = stickyMap;
-    dotSel.on(
-      "click",
-      function (this: SVGCircleElement, event: MouseEvent, d: any) {
-        console.log("[Popper] Tooltip triggered for dot:", d);
-        // Remove any other open tooltips
-        document
-          .querySelectorAll(".d3-popper-tooltip")
-          .forEach((el) => el.remove());
-        // If a tooltip is already open for this dot, close and return
-        if (stickyMap.get(this)) {
-          stickyMap.set(this, false);
-          return;
-        }
-        // Tooltip HTML
-        const tooltipEl = document.createElement("div");
-        tooltipEl.className = "d3-popper-tooltip";
-        tooltipEl.style.background = "rgba(30,30,30,0.97)";
-        tooltipEl.style.color = "#fff";
-        tooltipEl.style.padding = "8px 12px";
-        tooltipEl.style.borderRadius = "6px";
-        tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
-        tooltipEl.style.zIndex = "9999";
-        tooltipEl.style.pointerEvents = "auto";
-        tooltipEl.innerHTML =
-          `<div class='position-relative'>` +
-          `<strong>Field:</strong> ${d.field}<br/>` +
-          `<strong>Actor:</strong> ${d.event.actor?.displayName || ""}<br/>` +
-          `<strong>Time:</strong> ${new Date(d.event.timestamp).toLocaleString()}<br/>` +
-          (d.event.description
-            ? `<strong>Description:</strong> ${d.event.description}<br/>`
-            : "") +
-          `<button style='margin-top:8px;padding:4px 12px;border-radius:4px;border:none;background:#1976d2;color:#fff;cursor:pointer;'>Action</button>` +
-          `</div>`;
-        document.body.appendChild(tooltipEl);
-        // Attach Popper.js
-        const popperInstance = (window as any).Popper.createPopper(
-          this,
-          tooltipEl,
-          {
-            placement: "top",
-            modifiers: [
-              { name: "offset", options: { offset: [0, 8] } },
-              { name: "preventOverflow", options: { boundary: "viewport" } },
-            ],
-          }
-        );
-        // Attach popperInstance to tooltipEl for cleanup on zoom
-        (tooltipEl as any)._popperInstance = popperInstance;
-        stickyMap.set(this, true);
-        // Click outside handler
-        const self = this;
-        function outsideClickHandler(e: MouseEvent) {
-          if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
-            tooltipEl.remove();
-            popperInstance.destroy();
-            document.removeEventListener(
-              "mousedown",
-              outsideClickHandler,
-              true
-            );
-            stickyMap.set(self, false);
-          }
-        }
-        setTimeout(() => {
-          document.addEventListener("mousedown", outsideClickHandler, true);
-        }, 0);
+    dotSel.on("click", (event: MouseEvent, d: any) => {
+      // Remove any other open tooltips
+      document
+        .querySelectorAll(".d3-popper-tooltip")
+        .forEach((el) => el.remove());
+      // If a tooltip is already open for this dot, close and return
+      if (stickyMap.get(event.currentTarget as SVGCircleElement)) {
+        stickyMap.set(event.currentTarget as SVGCircleElement, false);
+        return;
       }
-    );
+      // Tooltip HTML
+      const tooltipEl = document.createElement("div");
+      tooltipEl.className = "d3-popper-tooltip";
+      tooltipEl.style.background = "rgba(30,30,30,0.97)";
+      tooltipEl.style.color = "#fff";
+      tooltipEl.style.padding = "8px 12px";
+      tooltipEl.style.borderRadius = "6px";
+      tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+      tooltipEl.style.zIndex = "9999";
+      tooltipEl.style.pointerEvents = "auto";
+      // Add a button that triggers openEnd with from/to values
+      const from = d.event.from;
+      const to = d.event.to;
+      const btnId = `open-end-btn-${Math.random().toString(36).substr(2, 9)}`;
+      let btnHtml = "";
+      // Debug: log the 'to' value for every tooltip
+      console.log("[D3DataHistory] Tooltip render, to value:", to);
+      if (
+        to &&
+        typeof to.displayValue !== "undefined" &&
+        to.displayValue !== null &&
+        to.displayValue !== ""
+      ) {
+        btnHtml = `<button id='${btnId}' class="btn btn-sm btn-primary mt-2 mb-2 me-2">Right position</button>`;
+      }
+      tooltipEl.innerHTML =
+        `<div class='position-relative'>` +
+        `<strong>Field:</strong> ${d.field}<br/>` +
+        `<strong>Actor:</strong> ${d.event.actor?.displayName || ""}<br/>` +
+        `<strong>Time:</strong> ${new Date(d.event.timestamp).toLocaleString()}<br/>` +
+        (d.event.description
+          ? `<strong>Description:</strong> ${d.event.description}<br/>`
+          : "") +
+        btnHtml +
+        `</div>`;
+      document.body.appendChild(tooltipEl);
+      // Attach Popper.js
+      const popperInstance = (window as any).Popper.createPopper(
+        event.currentTarget,
+        tooltipEl,
+        {
+          placement: "top",
+          modifiers: [
+            { name: "offset", options: { offset: [0, 8] } },
+            { name: "preventOverflow", options: { boundary: "viewport" } },
+          ],
+        }
+      );
+      (tooltipEl as any)._popperInstance = popperInstance;
+      stickyMap.set(event.currentTarget as SVGCircleElement, true);
+      // Click outside handler
+      const self = event.currentTarget as SVGCircleElement;
+      function outsideClickHandler(e: MouseEvent) {
+        if (tooltipEl && !tooltipEl.contains(e.target as Node)) {
+          tooltipEl.remove();
+          popperInstance.destroy();
+          document.removeEventListener("mousedown", outsideClickHandler, true);
+          stickyMap.set(self, false);
+        }
+      }
+      setTimeout(() => {
+        document.addEventListener("mousedown", outsideClickHandler, true);
+      }, 0);
+      // Add click handler for the button to open offcanvas
+      // Store a reference to the Angular component on the tooltip element
+      (tooltipEl as any)._ngComponent = this;
+      setTimeout(() => {
+        const btn = document.getElementById(btnId);
+        if (btn) {
+          btn.addEventListener("click", () => {
+            // Debug: log the 'to' value
+            console.log(
+              "[D3DataHistory] Tooltip button clicked, to value:",
+              to
+            );
+            // Use the component reference stored on the tooltip
+            const ngComponent = (tooltipEl as any)._ngComponent;
+            if (ngComponent && typeof ngComponent.openEnd === "function") {
+              const contentTemplate = ngComponent.offcanvasContentRef;
+              ngComponent.openEnd(contentTemplate, from, to);
+            }
+          });
+        }
+      }, 0);
+    });
 
     // Now render the field labels (after all timeline content)
     if (this.g) {
