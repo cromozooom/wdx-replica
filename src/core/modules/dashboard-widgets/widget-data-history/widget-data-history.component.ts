@@ -19,6 +19,8 @@ import { FieldIconCellRendererComponent } from "./field-icon-cell-renderer.compo
 import { AuthorGroupCellRendererComponent } from "./author-group-cell-renderer.component";
 import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.component";
 
+ModuleRegistry.registerModules([RowAutoHeightModule]);
+
 import {
   WPO_16698,
   WIDGET_DATA_HISTORY_FAKE_DATA,
@@ -57,15 +59,43 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   gridApi: any;
   syncData: boolean = false;
 
-  columnDefs: ColDef[] = [
+  public columnDefs: ColDef[] = [
     {
-      headerName: "Actor",
+      width: 250,
+      headerName: "Author",
+      filter: true,
+      floatingFilter: true,
       field: "actor.displayName",
-      cellRenderer: ActorCellRendererComponent,
+      valueGetter: (params: any) => {
+        // If this is a group row and grouping by Author, show the group key (author name)
+        if (params.node?.group && params.colDef.field === params.node.field) {
+          return params.node.key;
+        }
+        // For other group rows, show nothing
+        if (params.node?.group) return "";
+        return params.data?.actor?.displayName;
+      },
+      cellRendererSelector: (params: any) => {
+        // If this is a group row and grouping by Author, use the group cell renderer
+        if (params.node?.group && params.colDef.field === params.node.field) {
+          return {
+            component: AuthorGroupCellRendererComponent,
+            params: {},
+          };
+        }
+        // For all other rows, use the Angular cell renderer
+        if (!params.node?.group) {
+          return {
+            component: ActorCellRendererComponent,
+            params: {},
+          };
+        }
+        return undefined;
+      },
       enableRowGroup: true,
-      width: 180,
     },
     {
+      width: 250,
       headerName: "Date",
       field: "timestamp",
       valueFormatter: (params: any) => {
@@ -73,7 +103,6 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
           return "";
         return new Date(params.value).toLocaleString();
       },
-      width: 250,
     },
     {
       headerName: "Field",
