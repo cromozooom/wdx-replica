@@ -446,6 +446,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     // For each day, group mods and render a grid in S/coil (snake) pattern
     const dotRadius = 4 * 1.3;
     const gridPadding = 4;
+    const horizontalSpacing = dotRadius * 2 + 24; // Increased horizontal space between nodes
     const dayWidth = daySpacing;
     const dayHeight = 56; // vertical space between the two verticals
     weekDays.forEach((day, idx) => {
@@ -456,7 +457,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       const n = mods.length;
       // Compute grid size
       const maxCols = Math.floor(
-        (dayWidth - 2 * gridPadding) / (dotRadius * 2 + gridPadding)
+        (dayWidth - 2 * gridPadding) / horizontalSpacing
       );
       const maxRows = Math.floor(
         (dayHeight - 2 * gridPadding) / (dotRadius * 2 + gridPadding)
@@ -468,16 +469,17 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         cols = Math.ceil(n / rows);
       }
       // Center grid horizontally between verticals
-      const gridW = (cols - 1) * (dotRadius * 2 + gridPadding);
+      const gridW = (cols - 1) * horizontalSpacing;
       const startX = margin.left + idx * daySpacing + (dayWidth - gridW) / 2;
       const centerY = height / 2;
+      const verticalSpacing = dotRadius * 2 + 24; // Increased vertical space between rows
       for (let i = 0; i < n; i++) {
         // S/coil (snake) pattern: row by row, alternate direction
         const row = Math.floor(i / cols);
         let col = i % cols;
         if (row % 2 === 1) col = cols - 1 - col;
-        const x = startX + col * (dotRadius * 2 + gridPadding);
-        const y = centerY;
+        const x = startX + col * horizontalSpacing;
+        const y = centerY + (row - (rows - 1) / 2) * verticalSpacing;
         const mod = mods[i];
         // Color by fieldDisplayName
         const fieldDisplayName = mod?.fieldDisplayName || "Unknown";
@@ -672,16 +674,20 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     if (mods.length > 0) {
       // Calculate grid size based on number of nodes and available width
       const dayWidth = width - margin.left - margin.right;
-      const minSpacing = dotRadius * 2 + 8;
+      const horizontalSpacing = dotRadius * 2 + 24; // Increased horizontal space between nodes
       // Try to fit as many as possible in a single row, but at least 1
-      let gridCols = Math.min(mods.length, Math.floor(dayWidth / minSpacing));
+      let gridCols = Math.min(
+        mods.length,
+        Math.floor(dayWidth / horizontalSpacing)
+      );
       gridCols = Math.max(1, gridCols);
       // If not enough for all, use multiple rows
       const gridRows = Math.ceil(mods.length / gridCols);
       // Center the grid horizontally between the two vertical lines (like weekly view)
-      const gridWidth = (gridCols - 1) * minSpacing;
+      const gridWidth = (gridCols - 1) * horizontalSpacing;
       const startX = margin.left + (dayWidth - gridWidth) / 2;
       const centerY = height / 2;
+      const verticalSpacing = dotRadius * 2 + 24; // Increased vertical space between rows
       for (let idx = 0; idx < mods.length; idx++) {
         const row = Math.floor(idx / gridCols);
         let col = idx % gridCols;
@@ -720,8 +726,8 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         }
         const circle = svg
           .append("circle")
-          .attr("cx", startX + col * minSpacing)
-          .attr("cy", centerY + (row - (gridRows - 1) / 2) * minSpacing)
+          .attr("cx", startX + col * horizontalSpacing)
+          .attr("cy", centerY + (row - (gridRows - 1) / 2) * verticalSpacing)
           .attr("r", dotRadius)
           .attr("fill", fillColor);
         // Popper.js tooltip logic (sticky, with close and buttons)
