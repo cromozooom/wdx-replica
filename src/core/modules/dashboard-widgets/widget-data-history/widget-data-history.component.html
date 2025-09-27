@@ -101,5 +101,10 @@
         }"
       ></app-grid-history-data>
     </div>
+    <div class="w-100 flex-grow-1 d-flex p-2">
+      <app-d3-data-history
+        [data]="syncData ? filteredData : fakeData"
+      ></app-d3-data-history>
+    </div>
   </div>
 </div>

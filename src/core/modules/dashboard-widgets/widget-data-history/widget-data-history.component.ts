@@ -27,6 +27,7 @@ import {
 } from "./widget-data-history.dummy-data";
 import { GridHistoryDataComponent } from "./grid-history-data.component";
 import { HistoryVisualisationDataComponent } from "./history-visualisation-data.component";
+import { D3DataHistoryComponent } from "./d3-data-history.component";
 
 @Component({
   selector: "app-widget-data-history",
@@ -44,6 +45,7 @@ import { HistoryVisualisationDataComponent } from "./history-visualisation-data.
     FieldGroupCellRendererComponent,
     GridHistoryDataComponent,
     HistoryVisualisationDataComponent,
+    D3DataHistoryComponent,
   ],
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
