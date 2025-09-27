@@ -1,3 +1,11 @@
+.author-label {
+  font-family: inherit;
+  fill: #444;
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none;
+  text-shadow: 0 1px 2px #fff;
+}
 :host {
   display: flex;
   flex-direction: column;
@@ -14,4 +22,22 @@
 
 svg {
   outline: 1px solid red;
+}
+
+/* Style for D3 hour labels to ensure visibility */
+.hour-label {
+  fill: #222;
+  font-weight: 500;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.extended-hour-label {
+  fill: #1976d2;
+  stroke: #fff;
+  font-weight: bold;
 }
