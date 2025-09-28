@@ -14,7 +14,7 @@ import { ColDef } from "ag-grid-community";
 import { signalState, patchState } from "@ngrx/signals";
 import { FieldTypeIcon, FieldIconMap } from "./field-icons";
 import {
-  WPO_16698,
+  WIPO_16698,
   WIDGET_DATA_HISTORY_FAKE_DATA,
 } from "./widget-data-history.dummy-data";
 import { GridHistoryDataComponent } from "./grid-history-data.component";
@@ -50,7 +50,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   constructor(private cdr: ChangeDetectorRef) {}
   datasets = [
     { label: "Default", value: WIDGET_DATA_HISTORY_FAKE_DATA },
-    { label: "WPO_16698", value: WPO_16698 },
+    { label: "WIPO_16698", value: WIPO_16698 },
   ];
   selectedDataset = this.datasets[1];
   dataStore = signalState<{ data: any[] }>({
