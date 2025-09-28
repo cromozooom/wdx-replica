@@ -1,3 +1,4 @@
+// ...existing code...
 import {
   Component,
   Input,
@@ -21,6 +22,7 @@ import { FormsModule } from "@angular/forms";
   styleUrls: ["./d3-data-history.component.scss"],
 })
 export class D3DataHistoryComponent {
+  diffView: "side-by-side" | "unified" = "side-by-side";
   constructor(private offcanvasService: NgbOffcanvas) {}
 
   @ViewChild("offcanvasContent", { static: true })

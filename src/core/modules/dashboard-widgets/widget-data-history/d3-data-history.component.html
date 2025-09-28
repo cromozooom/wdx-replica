@@ -64,18 +64,50 @@
             </div>
           </div>
         </div> -->
-        <div class="row ngx-diff-dark-theme">
-          <!-- <div class="col-12">
+        <div class="row g-0">
+          <div class="col-auto pb-2">
+            <div class="btn-group btn-group-sm" role="group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="diffView"
+                id="diffViewSideBySide"
+                autocomplete="off"
+                [(ngModel)]="diffView"
+                value="side-by-side"
+              />
+              <label class="btn btn-outline-primary" for="diffViewSideBySide"
+                >Side by Side</label
+              >
+              <input
+                type="radio"
+                class="btn-check"
+                name="diffView"
+                id="diffViewUnified"
+                autocomplete="off"
+                [(ngModel)]="diffView"
+                value="unified"
+              />
+              <label class="btn btn-outline-primary" for="diffViewUnified"
+                >Unified</label
+              >
+            </div>
+            <!-- {{ diffView }} -->
+          </div>
+        </div>
+
+        <div class="row g-0 ngx-diff-dark-theme">
+          <div class="col-12">
             <ngx-unified-diff
               [before]="offcanvasFrom?.displayValue ?? ''"
               [after]="offcanvasTo?.displayValue ?? ''"
               [lineContextSize]="4"
-            />
-          </div> -->
-          <div class="col-12">
+              [hidden]="diffView !== 'unified'"
+            ></ngx-unified-diff>
             <ngx-side-by-side-diff
               [before]="offcanvasFrom?.displayValue ?? ''"
               [after]="offcanvasTo?.displayValue ?? ''"
+              [hidden]="diffView !== 'side-by-side'"
             ></ngx-side-by-side-diff>
           </div>
         </div>
