@@ -77,7 +77,7 @@ export class D3DataHistoryComponent {
   }
   hideInitialValues = false;
 
-  // onHideInitialValues and internal filter state removed; all filtering is handled by the parent.
+  // onHideInitialValues removed: filtering is now handled in the parent and data is passed via @Input() only.
   onToggleInactiveHours() {
     this.render();
   }

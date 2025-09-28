@@ -30,12 +30,18 @@ export const setAuthorFilter = createAction(
 
 export const widgetDataHistoryReducer = createReducer(
   initialWidgetDataHistoryState,
-  on(setFieldFilter, (state, { field }) => ({
-    ...state,
-    filters: { ...state.filters, selectedField: field },
-  })),
-  on(setAuthorFilter, (state, { author }) => ({
-    ...state,
-    filters: { ...state.filters, selectedAuthor: author },
-  }))
+  on(
+    setFieldFilter,
+    (state: WidgetDataHistoryState, { field }: { field: string | null }) => ({
+      ...state,
+      filters: { ...state.filters, selectedField: field },
+    })
+  ),
+  on(
+    setAuthorFilter,
+    (state: WidgetDataHistoryState, { author }: { author: string | null }) => ({
+      ...state,
+      filters: { ...state.filters, selectedAuthor: author },
+    })
+  )
 );

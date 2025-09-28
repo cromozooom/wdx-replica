@@ -14,6 +14,18 @@
       <span class="ms-2">{{ fakeData.length }} changes</span>
     </div>
     <div class="d-flex gap-2 align-items-center">
+      <label
+        class="form-check form-switch mb-0 align-items-center d-flex"
+        title="Hide initial values"
+      >
+        <input
+          type="checkbox"
+          class="form-check-input"
+          [checked]="hideInitialValues"
+          (change)="onToggleHideInitialValues()"
+        />
+        <span class="ms-1">Hide initial values</span>
+      </label>
       <ng-select
         class="w-auto"
         [items]="fieldNames"
@@ -53,7 +65,7 @@
     <div class="w-100 flex-grow-1 d-flex p-2">
       <app-grid-history-data
         class="w-100 flex-grow-1"
-        [rowData]="filteredData"
+        [rowData]="filteredDataArray"
         [columnDefs]="columnDefs"
         [defaultColDef]="{
           resizable: true,
@@ -61,6 +73,7 @@
           filter: true,
           autoHeight: true,
         }"
+        (gridReady)="onGridReady($event)"
       ></app-grid-history-data>
     </div>
   </div>

@@ -23,12 +23,12 @@ export class FieldIconCellRendererComponent {
   agInit(params: any): void {
     // ag-Grid passes either a params object or just the value for innerRenderer
     if (typeof params === "string") {
-      this.value = params;
+      this.value = params && params !== "" ? params : "-";
       this.icon = FieldIconMap[params as FieldTypeIcon];
       this.params = { value: params };
     } else {
       this.params = params;
-      this.value = params.value;
+      this.value = params.value && params.value !== "" ? params.value : "-";
       this.icon = FieldIconMap[params.value as FieldTypeIcon];
     }
   }

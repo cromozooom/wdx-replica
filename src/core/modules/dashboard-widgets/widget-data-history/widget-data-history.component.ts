@@ -41,6 +41,8 @@ import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.com
   ],
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
+  hideInitialValues = false;
+  filteredDataArray: any[] = [];
   // Store filter state
   d3SelectedFields: string[] = [];
   d3SelectedAuthors: string[] = [];
@@ -118,7 +120,8 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       valueGetter: (params: any) => {
         if (params.node?.group && params.colDef.field !== params.node.field)
           return "";
-        return params.data?.from?.displayValue;
+        const val = params.data?.from?.displayValue;
+        return val !== undefined && val !== null && val !== "" ? val : "-";
       },
       wrapText: true,
       autoHeight: true,
@@ -131,7 +134,8 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       valueGetter: (params: any) => {
         if (params.node?.group && params.colDef.field !== params.node.field)
           return "";
-        return params.data?.to?.displayValue;
+        const val = params.data?.to?.displayValue;
+        return val !== undefined && val !== null && val !== "" ? val : "-";
       },
       wrapText: true,
       autoHeight: true,
@@ -152,11 +156,76 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   }
 
   // Provide filteredData for template compatibility (update with real filtering logic if needed)
-  get filteredData(): any[] {
-    if (!this.d3SelectedFields.length && !this.d3SelectedAuthors.length) {
-      return this.dataStore.data();
+  get filteredData() {
+    // Kept for compatibility, but not used for ag-grid rowData anymore
+    return this.filteredDataArray;
+  }
+  onD3FilterChanged(filter: { fields: string[]; authors: string[] }) {
+    this.d3SelectedFields = filter.fields;
+    this.d3SelectedAuthors = filter.authors;
+    this.applyAllFilters();
+  }
+
+  onToggleHideInitialValues() {
+    this.hideInitialValues = !this.hideInitialValues;
+    this.applyAllFilters();
+  }
+
+  applyAllFilters() {
+    // Start with all data
+    let data = this.dataStore.data();
+    // 1. Field/author filter
+    if (this.d3SelectedFields.length || this.d3SelectedAuthors.length) {
+      data = data.filter((d: any) => {
+        const fieldMatch =
+          !this.d3SelectedFields.length ||
+          this.d3SelectedFields.includes(d.fieldDisplayName);
+        const authorMatch =
+          !this.d3SelectedAuthors.length ||
+          (d.actor && this.d3SelectedAuthors.includes(d.actor.displayName));
+        return fieldMatch && authorMatch;
+      });
     }
-    return this.dataStore.data().filter((d: any) => {
+    // 2. Hide initial values (fields with only one timestamp)
+    if (this.hideInitialValues) {
+      const fieldCounts = new Map<string, number>();
+      for (const d of data) {
+        if (!d.fieldDisplayName) continue;
+        fieldCounts.set(
+          d.fieldDisplayName,
+          (fieldCounts.get(d.fieldDisplayName) || 0) + 1
+        );
+      }
+      const multiFields = new Set(
+        Array.from(fieldCounts.entries())
+          .filter(([_, count]) => count > 1)
+          .map(([field]) => field)
+      );
+      data = data.filter((d) => multiFields.has(d.fieldDisplayName));
+    }
+    this.filteredDataArray = [...data];
+    this.cdr.detectChanges();
+    if (this.gridApi) {
+      this.gridApi.setRowData(this.filteredDataArray);
+      setTimeout(() => {
+        this.gridApi.resetRowHeights();
+      }, 0);
+    }
+  }
+
+  onGridReady(event: any) {
+    this.gridApi = event.api;
+    // Set initial data
+    this.filteredDataArray = this.getInitialFilteredData();
+    this.gridApi.setRowData(this.filteredDataArray);
+  }
+
+  getInitialFilteredData() {
+    const data = this.dataStore.data();
+    if (!this.d3SelectedFields.length && !this.d3SelectedAuthors.length) {
+      return [...data];
+    }
+    return data.filter((d: any) => {
       const fieldMatch =
         !this.d3SelectedFields.length ||
         this.d3SelectedFields.includes(d.fieldDisplayName);
@@ -165,11 +234,6 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
         (d.actor && this.d3SelectedAuthors.includes(d.actor.displayName));
       return fieldMatch && authorMatch;
     });
-  }
-  onD3FilterChanged(filter: { fields: string[]; authors: string[] }) {
-    this.d3SelectedFields = filter.fields;
-    this.d3SelectedAuthors = filter.authors;
-    this.cdr.detectChanges();
   }
   get fakeData(): any[] {
     return this.dataStore.data();

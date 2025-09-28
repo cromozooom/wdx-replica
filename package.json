@@ -31,6 +31,7 @@
         "@ng-idle/keepalive": "^13.0.0",
         "@ng-select/ng-select": "^14.2.2",
         "@ngrx/signals": "^19.2.1",
+        "@ngrx/store": "^19.2.1",
         "@ngx-translate/core": "^14.0.0",
         "@popperjs/core": "^2.11.8",
         "@tinymce/tinymce-angular": "^8.0.0",
