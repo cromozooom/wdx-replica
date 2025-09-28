@@ -31,7 +31,7 @@ import { CommonModule } from "@angular/common";
   styleUrls: ["./d3-data-history.component.scss"],
 })
 export class D3DataHistoryComponent {
-  @Input() hideOpenModalButton = false;
+  @Input() isModal = false;
   @Output() openModal = new EventEmitter<void>();
   diffView: "side-by-side" | "unified" = "side-by-side";
   constructor(private offcanvasService: NgbOffcanvas) {}

@@ -57,6 +57,19 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     this.modalRef = this.modalService.open(this.contentTpl, {
       fullscreen: true,
     });
+    // Reset filters when modal closes
+    this.modalRef.closed.subscribe(() => {
+      this.d3SelectedFields = [];
+      this.d3SelectedAuthors = [];
+      this.applyAllFilters();
+      this.cdr.detectChanges();
+    });
+    this.modalRef.dismissed.subscribe(() => {
+      this.d3SelectedFields = [];
+      this.d3SelectedAuthors = [];
+      this.applyAllFilters();
+      this.cdr.detectChanges();
+    });
   }
 
   closeModal() {
