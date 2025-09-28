@@ -138,23 +138,6 @@
           Initial Values
         </span>
       </label>
-      <label
-        class="form-check form-switch mb-0 align-items-center d-flex"
-        title="Show timeline"
-      >
-        <input
-          type="checkbox"
-          class="form-check-input"
-          [checked]="showTimeline"
-          (change)="showTimeline = !showTimeline"
-        />
-        <span class="ms-2">
-          <div class="sr-only">
-            {{ showTimeline ? "Hide" : "Show" }}
-          </div>
-          Timeline
-        </span>
-      </label>
       <ng-select
         class="w-auto"
         [items]="fieldNames"
