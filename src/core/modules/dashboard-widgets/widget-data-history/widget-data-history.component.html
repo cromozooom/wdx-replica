@@ -119,7 +119,73 @@
       (click)="modal.dismiss('Cross click')"
     ></button>
   </div>
-  <div class="modal-body p-0">
+  <div class="modal-body p-0 d-flex flex-column">
+    <div class="d-flex gap-3 align-items-center justify-content-end p-2">
+      <label
+        class="form-check form-switch mb-0 align-items-center d-flex"
+        title="Hide initial values"
+      >
+        <input
+          type="checkbox"
+          class="form-check-input"
+          [checked]="!hideInitialValues"
+          (change)="onToggleHideInitialValues()"
+        />
+        <span class="ms-2">
+          <div class="sr-only">
+            {{ !hideInitialValues ? "Showing" : "Hiding" }}
+          </div>
+          Initial Values
+        </span>
+      </label>
+      <label
+        class="form-check form-switch mb-0 align-items-center d-flex"
+        title="Show timeline"
+      >
+        <input
+          type="checkbox"
+          class="form-check-input"
+          [checked]="showTimeline"
+          (change)="showTimeline = !showTimeline"
+        />
+        <span class="ms-2">
+          <div class="sr-only">
+            {{ showTimeline ? "Hide" : "Show" }}
+          </div>
+          Timeline
+        </span>
+      </label>
+      <ng-select
+        class="w-auto"
+        [items]="fieldNames"
+        bindLabel="field"
+        placeholder="Filter by field"
+        [(ngModel)]="d3SelectedFields"
+        [multiple]="true"
+        [clearable]="true"
+        (change)="
+          onD3FilterChanged({
+            fields: d3SelectedFields,
+            authors: d3SelectedAuthors,
+          })
+        "
+      ></ng-select>
+      <ng-select
+        class="w-auto"
+        [items]="authorNames"
+        bindLabel="author"
+        [multiple]="true"
+        placeholder="Filter by author"
+        [(ngModel)]="d3SelectedAuthors"
+        [clearable]="true"
+        (change)="
+          onD3FilterChanged({
+            fields: d3SelectedFields,
+            authors: d3SelectedAuthors,
+          })
+        "
+      ></ng-select>
+    </div>
     <div
       style="
         height: 100%;
