@@ -244,25 +244,14 @@ export class D3DataHistoryComponent {
     }
     // Step 1: Extract all unique fieldDisplayName values from the data
     const allFields = Array.from(
-      new Set(
-        (this.filteredData && this.filteredData.length > 0
-          ? this.filteredData
-          : this.data
-        )
-          .map((d: any) => d.fieldDisplayName)
-          .filter(Boolean)
-      )
+      new Set(this.data.map((d: any) => d.fieldDisplayName).filter(Boolean))
     );
     // allFields now contains all unique fieldDisplayName values
 
     // Step 2: For each field, determine the earliest timestamp and sort the fields accordingly
     const fieldFirstTimestamps = allFields.map((field) => {
       // Find all events for this field
-      const events = (
-        this.filteredData && this.filteredData.length > 0
-          ? this.filteredData
-          : this.data
-      ).filter((d: any) => d.fieldDisplayName === field);
+      const events = this.data.filter((d: any) => d.fieldDisplayName === field);
       // Find the earliest timestamp
       const firstTimestamp = Math.min(...events.map((e: any) => e.timestamp));
       return { field, firstTimestamp };
@@ -296,11 +285,8 @@ export class D3DataHistoryComponent {
     // Move this block after hours, hourX, margin, timelineHeight are defined
     if (!this.g) return;
     this.g.selectAll("*").remove();
-    // Use filteredData if set, otherwise use this.data
-    const data =
-      this.filteredData && this.filteredData.length > 0
-        ? this.filteredData
-        : this.data;
+    // Use this.data directly
+    const data = this.data;
     // ...existing code...
     // Calculate number of unique event timestamps (to the second)
     // Always use a large enough width for the SVG, not just the container
