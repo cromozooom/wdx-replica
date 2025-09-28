@@ -14,17 +14,7 @@ import { JobGroupCellRendererComponent } from "../../core/modules/dashboard-widg
 @Component({
   selector: "app-jobs-grid",
   standalone: true,
-  imports: [
-    CommonModule,
-    AgGridModule,
-    StatusCellRendererComponent,
-    FailedErrorCellRendererComponent,
-    PassedCellRendererComponent,
-    FailedCellRendererComponent,
-    JobNameCellRendererComponent,
-    JobActionsCellRendererComponent,
-    JobGroupCellRendererComponent,
-  ],
+  imports: [CommonModule, AgGridModule],
   template: `
     <!-- [groupDefaultExpanded]="-1" -->
     <ag-grid-angular

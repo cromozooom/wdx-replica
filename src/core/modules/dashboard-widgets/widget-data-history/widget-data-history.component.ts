@@ -1,101 +1,66 @@
-// Enum for icons to associate with each field type
-export enum FieldIcon {
-  RemoteWorkItemLink = "fas fa-link",
-  Link = "fas fa-link",
-  Status = "fas fa-flag",
-  Assignee = "fas fa-user",
-  TAApprovalDate = "fas fa-calendar-check",
-  TAApprovalStatus = "fas fa-check-circle",
-  TAApprover = "fas fa-user-tie",
-  TAComments = "fas fa-comment-dots",
-  DAApprovalDate = "fas fa-calendar-check",
-  DAApprover = "fas fa-user-tie",
-  DAApprovalStatus = "fas fa-check-circle",
-  DAComments = "fas fa-comment-dots",
-  DesignApproval = "fas fa-drafting-compass",
-  Description = "fas fa-align-left",
-}
+// (Removed duplicate/stray class and method stubs. File now starts with imports and a single class definition.)
 
-// Map fieldDisplayName to icon class
-export const FieldIconMap: Record<string, string> = {
-  RemoteWorkItemLink: FieldIcon.RemoteWorkItemLink,
-  Link: FieldIcon.Link,
-  Status: FieldIcon.Status,
-  Assignee: FieldIcon.Assignee,
-  "TA Approval Date": FieldIcon.TAApprovalDate,
-  "TA Approval Status": FieldIcon.TAApprovalStatus,
-  "TA Approver": FieldIcon.TAApprover,
-  "TA Comment(s)": FieldIcon.TAComments,
-  "DA Approval Date": FieldIcon.DAApprovalDate,
-  "DA Approver": FieldIcon.DAApprover,
-  "DA Approval Status": FieldIcon.DAApprovalStatus,
-  "DA Comment(s)": FieldIcon.DAComments,
-  "Design Approval": FieldIcon.DesignApproval,
-  Description: FieldIcon.Description,
-};
-// Enum for all unique fieldDisplayName values to associate icons
-export enum FieldTypeIcon {
-  RemoteWorkItemLink = "RemoteWorkItemLink",
-  Link = "Link",
-  Status = "Status",
-  Assignee = "Assignee",
-  TAApprovalDate = "TA Approval Date",
-  TAApprovalStatus = "TA Approval Status",
-  TAApprover = "TA Approver",
-  TAComments = "TA Comment(s)",
-  DAApprovalDate = "DA Approval Date",
-  DAApprover = "DA Approver",
-  DAApprovalStatus = "DA Approval Status",
-  DAComments = "DA Comment(s)",
-  DesignApproval = "Design Approval",
-  Description = "Description",
-}
-// removed misplaced gridApi and onGridReady
-import { Component, OnInit, ViewChild } from "@angular/core";
-// (removed misplaced @ViewChild)
-import { ColDef, RowAutoHeightModule, ModuleRegistry } from "ag-grid-community";
-// Register ag-grid modules
-ModuleRegistry.registerModules([RowAutoHeightModule]);
-import { Component as NgComponent, Input } from "@angular/core";
+import {
+  Component,
+  OnInit,
+  AfterViewInit,
+  ChangeDetectorRef,
+} from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+import { AgGridModule } from "ag-grid-angular";
+import { NgSelectModule } from "@ng-select/ng-select";
+import { ColDef } from "ag-grid-community";
+import { signalState, patchState } from "@ngrx/signals";
+import { FieldTypeIcon, FieldIconMap } from "./field-icons";
+import {
+  WPO_16698,
+  WIDGET_DATA_HISTORY_FAKE_DATA,
+} from "./widget-data-history.dummy-data";
+import { GridHistoryDataComponent } from "./grid-history-data.component";
+import { D3DataHistoryComponent } from "./d3-data-history.component";
 import { ActorCellRendererComponent } from "./actor-cell-renderer.component";
 import { MultilineCellRenderer } from "./multiline-cell-renderer.component";
 import { FieldIconCellRendererComponent } from "./field-icon-cell-renderer.component";
-import { CommonModule } from "@angular/common";
-import { AgGridModule } from "ag-grid-angular";
 import { AuthorGroupCellRendererComponent } from "./author-group-cell-renderer.component";
 import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.component";
-import {
-  WIDGET_DATA_HISTORY_FAKE_DATA,
-  WPO_16698,
-} from "./widget-data-history.dummy-data";
 
 @Component({
   selector: "app-widget-data-history",
   standalone: true,
-  imports: [
-    CommonModule,
-    AgGridModule,
-    ActorCellRendererComponent,
-    MultilineCellRenderer,
-    FieldIconCellRendererComponent,
-    AuthorGroupCellRendererComponent,
-    FieldGroupCellRendererComponent,
-    AuthorGroupCellRendererComponent,
-  ],
   templateUrl: "./widget-data-history.component.html",
   styleUrls: ["./widget-data-history.component.scss"],
+  imports: [
+    CommonModule,
+    FormsModule,
+    AgGridModule,
+    NgSelectModule,
+    // Removed unused cell renderer components from imports
+    GridHistoryDataComponent,
+    D3DataHistoryComponent,
+  ],
 })
-export class WidgetDataHistoryComponent implements OnInit {
-  @ViewChild("agGrid") grid!: any;
-  private gridApi: any;
-
-  public datasets = [
+export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
+  showTimeline = true;
+  hideInitialValues = false;
+  filteredDataArray: any[] = [];
+  // Store filter state
+  d3SelectedFields: string[] = [];
+  d3SelectedAuthors: string[] = [];
+  constructor(private cdr: ChangeDetectorRef) {}
+  datasets = [
+    { label: "Default", value: WIDGET_DATA_HISTORY_FAKE_DATA },
     { label: "WPO_16698", value: WPO_16698 },
-    { label: "Fake Data", value: WIDGET_DATA_HISTORY_FAKE_DATA },
   ];
-  public selectedDataset = this.datasets[0];
-  public fakeData = this.selectedDataset.value;
+  selectedDataset = this.datasets[1];
+  dataStore = signalState<{ data: any[] }>({
+    data: this.selectedDataset.value,
+  });
+  gridApi: any;
+  syncData: boolean = false;
 
+  public fieldNames: string[] = [];
+  public authorNames: string[] = [];
   public columnDefs: ColDef[] = [
     {
       width: 250,
@@ -156,7 +121,8 @@ export class WidgetDataHistoryComponent implements OnInit {
       valueGetter: (params: any) => {
         if (params.node?.group && params.colDef.field !== params.node.field)
           return "";
-        return params.data?.from?.displayValue;
+        const val = params.data?.from?.displayValue;
+        return val !== undefined && val !== null && val !== "" ? val : "-";
       },
       wrapText: true,
       autoHeight: true,
@@ -169,7 +135,8 @@ export class WidgetDataHistoryComponent implements OnInit {
       valueGetter: (params: any) => {
         if (params.node?.group && params.colDef.field !== params.node.field)
           return "";
-        return params.data?.to?.displayValue;
+        const val = params.data?.to?.displayValue;
+        return val !== undefined && val !== null && val !== "" ? val : "-";
       },
       wrapText: true,
       autoHeight: true,
@@ -177,45 +144,303 @@ export class WidgetDataHistoryComponent implements OnInit {
       cellStyle: { whiteSpace: "pre-line", wordBreak: "break-word" },
     },
   ];
-
-  public autoGroupColumnDef: ColDef = {
-    headerName: "Group",
-    minWidth: 250,
-    cellRendererSelector: (params: any) => {
-      // Use AuthorGroupCellRendererComponent for author grouping, FieldGroupCellRendererComponent for field grouping
-      if (params.node?.field === "actor.displayName") {
-        return { component: AuthorGroupCellRendererComponent };
-      }
-      if (params.node?.field === "fieldDisplayName") {
-        return { component: FieldGroupCellRendererComponent };
-      }
-      return undefined;
-    },
-    cellRendererParams: {
-      suppressCount: false,
-    },
-  };
-
-  ngOnInit(): void {
-    // nothing needed
+  updateFieldAndAuthorNames() {
+    const data = this.dataStore.data();
+    this.fieldNames = Array.from(
+      new Set(data.map((d: any) => d.fieldDisplayName).filter(Boolean))
+    );
+    this.authorNames = Array.from(
+      new Set(
+        data.map((d: any) => d.actor && d.actor.displayName).filter(Boolean)
+      )
+    );
   }
+
+  // Provide filteredData for template compatibility (update with real filtering logic if needed)
+  get filteredData() {
+    // Kept for compatibility, but not used for ag-grid rowData anymore
+    return this.filteredDataArray;
+  }
+  onD3FilterChanged(filter: { fields: string[]; authors: string[] }) {
+    this.d3SelectedFields = filter.fields;
+    this.d3SelectedAuthors = filter.authors;
+    this.applyAllFilters();
+  }
+
+  onToggleHideInitialValues() {
+    this.hideInitialValues = !this.hideInitialValues;
+    this.applyAllFilters();
+  }
+
+  applyAllFilters() {
+    // Start with all data
+    let data = this.dataStore.data();
+    // 1. Field/author filter
+    if (this.d3SelectedFields.length || this.d3SelectedAuthors.length) {
+      data = data.filter((d: any) => {
+        const fieldMatch =
+          !this.d3SelectedFields.length ||
+          this.d3SelectedFields.includes(d.fieldDisplayName);
+        const authorMatch =
+          !this.d3SelectedAuthors.length ||
+          (d.actor && this.d3SelectedAuthors.includes(d.actor.displayName));
+        return fieldMatch && authorMatch;
+      });
+    }
+    // 2. Hide initial values (fields with only one timestamp)
+    if (this.hideInitialValues) {
+      const fieldCounts = new Map<string, number>();
+      for (const d of data) {
+        if (!d.fieldDisplayName) continue;
+        fieldCounts.set(
+          d.fieldDisplayName,
+          (fieldCounts.get(d.fieldDisplayName) || 0) + 1
+        );
+      }
+      const multiFields = new Set(
+        Array.from(fieldCounts.entries())
+          .filter(([_, count]) => count > 1)
+          .map(([field]) => field)
+      );
+      data = data.filter((d) => multiFields.has(d.fieldDisplayName));
+    }
+    this.filteredDataArray = [...data];
+    this.cdr.detectChanges();
+    if (this.gridApi) {
+      this.gridApi.setRowData(this.filteredDataArray);
+      setTimeout(() => {
+        this.gridApi.resetRowHeights();
+      }, 0);
+    }
+  }
+
+  onGridReady(event: any) {
+    this.gridApi = event.api;
+    // Set initial data
+    this.filteredDataArray = this.getInitialFilteredData();
+    this.gridApi.setRowData(this.filteredDataArray);
+  }
+
+  getInitialFilteredData() {
+    const data = this.dataStore.data();
+    if (!this.d3SelectedFields.length && !this.d3SelectedAuthors.length) {
+      return [...data];
+    }
+    return data.filter((d: any) => {
+      const fieldMatch =
+        !this.d3SelectedFields.length ||
+        this.d3SelectedFields.includes(d.fieldDisplayName);
+      const authorMatch =
+        !this.d3SelectedAuthors.length ||
+        (d.actor && this.d3SelectedAuthors.includes(d.actor.displayName));
+      return fieldMatch && authorMatch;
+    });
+  }
+  get fakeData(): any[] {
+    return this.dataStore.data();
+  }
+
+  // --- Timeline/Navigation State ---
 
   onDatasetChange(event: Event) {
     const select = event.target as HTMLSelectElement;
     const idx = select.selectedIndex;
     this.selectedDataset = this.datasets[idx];
-    this.fakeData = this.selectedDataset.value;
+    patchState(this.dataStore, { data: this.selectedDataset.value });
+    this.updateFieldAndAuthorNames();
+    this.computeWeeksWithNodes();
+    // If in week mode, ensure currentDate is a valid week
+    if (this.timeframe === "week" && this.weekStartDatesWithNodes.length) {
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      if (!this.weekStartDatesWithNodes.includes(currentWeekStart)) {
+        this.currentDate = new Date(this.weekStartDatesWithNodes[0]);
+      }
+    }
     setTimeout(() => {
-      if (this.grid && this.grid.api) {
-        this.grid.api.resetRowHeights();
+      if (this.gridApi) {
+        this.gridApi.resetRowHeights();
       }
     }, 100);
+    this.renderTimeline();
+  }
+  timeframe: "month" | "week" | "year" | "all" | "daily" = "daily";
+  selectedDay: string | null = null;
+  currentDate: Date = new Date();
+  weekStartDatesWithNodes: string[] = [];
+  uniqueDays: string[] = [];
+
+  // --- Navigation Computed Properties ---
+  get canGoPrevDay(): boolean {
+    if (this.timeframe !== "daily" || !this.selectedDay) return false;
+    return this.uniqueDays.indexOf(this.selectedDay) > 0;
+  }
+  get canGoNextDay(): boolean {
+    if (this.timeframe !== "daily" || !this.selectedDay) return false;
+    return (
+      this.uniqueDays.indexOf(this.selectedDay) < this.uniqueDays.length - 1
+    );
+  }
+  get canGoPrevWeek(): boolean {
+    if (this.timeframe !== "week" || !this.weekStartDatesWithNodes.length)
+      return false;
+    const currentWeekStart = this.getWeekStart(this.currentDate);
+    const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+    return idx > 0;
+  }
+  get canGoNextWeek(): boolean {
+    if (this.timeframe !== "week" || !this.weekStartDatesWithNodes.length)
+      return false;
+    const currentWeekStart = this.getWeekStart(this.currentDate);
+    const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+    return idx >= 0 && idx < this.weekStartDatesWithNodes.length - 1;
   }
 
-  onGridReady(params: any) {
-    this.gridApi = params.api;
-    setTimeout(() => {
-      this.gridApi.resetRowHeights();
-    }, 200);
+  // --- Lifecycle Hooks ---
+  ngOnInit(): void {
+    this.updateFieldAndAuthorNames();
+    // Set selectedDay to the last day with modifications by default
+    const allTimestamps = this.dataStore.data().map((d: any) => d.timestamp);
+    const allDates = allTimestamps.map((ts: any) =>
+      new Date(ts).toISOString().slice(0, 10)
+    );
+    this.uniqueDays = Array.from(new Set(allDates)).sort() as string[];
+    this.selectedDay = this.uniqueDays.length
+      ? this.uniqueDays[this.uniqueDays.length - 1]
+      : null;
+    this.computeWeeksWithNodes();
+    // If in week mode, ensure currentDate is a valid week
+    if (this.timeframe === "week" && this.weekStartDatesWithNodes.length) {
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      if (!this.weekStartDatesWithNodes.includes(currentWeekStart)) {
+        this.currentDate = new Date(this.weekStartDatesWithNodes[0]);
+      }
+    }
+  }
+
+  ngAfterViewInit() {
+    this.renderTimeline();
+  }
+
+  // --- Event Handlers ---
+  onTimeframeChange() {
+    this.currentDate = new Date();
+    if (this.timeframe === "daily") {
+      // Default to first day in data
+      const allTimestamps = this.dataStore.data().map((d: any) => d.timestamp);
+      const allDates = allTimestamps.map((ts: any) =>
+        new Date(ts).toISOString().slice(0, 10)
+      );
+      this.selectedDay = allDates.length
+        ? (allDates.sort()[0] as string)
+        : null;
+    }
+    this.renderTimeline();
+  }
+
+  goPrevDay() {
+    if (!this.canGoPrevDay) return;
+    const idx = this.uniqueDays.indexOf(this.selectedDay!);
+    if (idx > 0) {
+      this.selectedDay = this.uniqueDays[idx - 1];
+      this.renderTimeline();
+      this.cdr.detectChanges();
+    }
+  }
+  goNextDay() {
+    if (!this.canGoNextDay) return;
+    const idx = this.uniqueDays.indexOf(this.selectedDay!);
+    if (idx < this.uniqueDays.length - 1) {
+      this.selectedDay = this.uniqueDays[idx + 1];
+      this.renderTimeline();
+      this.cdr.detectChanges();
+    }
+  }
+
+  // --- Week Navigation Helpers ---
+  getWeekStart(date: Date): string {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() - d.getDay());
+    return d.toISOString().slice(0, 10);
+  }
+  computeWeeksWithNodes(): void {
+    const allTimestamps = this.dataStore.data().map((d: any) => d.timestamp);
+    const allDates = allTimestamps.map((ts: any) => new Date(ts));
+    const weekStarts = new Set<string>();
+    for (const d of allDates) {
+      const weekStart = this.getWeekStart(d);
+      weekStarts.add(weekStart);
+    }
+    this.weekStartDatesWithNodes = Array.from(weekStarts).sort();
+  }
+
+  // --- D3 Timeline Render Stub ---
+  renderTimeline() {
+    // This is a stub. Actual D3 rendering is handled by the child component.
+    return this.dataStore.data();
+  }
+
+  // --- ag-Grid Event Handler Stub ---
+  onPrev() {
+    if (this.timeframe === "month") {
+      this.currentDate = new Date();
+    } else if (this.timeframe === "week") {
+      if (!this.canGoPrevWeek) return;
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+      if (idx > 0) {
+        // Set currentDate to the first day with nodes in the previous week
+        const prevWeekStart = this.weekStartDatesWithNodes[idx - 1];
+        const prevWeekNodes = this.dataStore
+          .data()
+          .filter(
+            (d: any) =>
+              this.getWeekStart(new Date(d.timestamp)) === prevWeekStart
+          );
+        if (prevWeekNodes.length) {
+          // Set to the first node's date in that week
+          this.currentDate = new Date(prevWeekNodes[0].timestamp);
+        } else {
+          this.currentDate = new Date(prevWeekStart);
+        }
+      }
+    } else if (this.timeframe === "year") {
+      this.currentDate = new Date(this.currentDate.getFullYear() - 1, 0, 1);
+    }
+    this.renderTimeline();
+    this.cdr.detectChanges();
+  }
+
+  onNext() {
+    if (this.timeframe === "month") {
+      this.currentDate = new Date(
+        this.currentDate.getFullYear(),
+        this.currentDate.getMonth() + 1,
+        1
+      );
+    } else if (this.timeframe === "week") {
+      if (!this.canGoNextWeek) return;
+      const currentWeekStart = this.getWeekStart(this.currentDate);
+      const idx = this.weekStartDatesWithNodes.indexOf(currentWeekStart);
+      if (idx >= 0 && idx < this.weekStartDatesWithNodes.length - 1) {
+        // Set currentDate to the first day with nodes in the next week
+        const nextWeekStart = this.weekStartDatesWithNodes[idx + 1];
+        const nextWeekNodes = this.dataStore
+          .data()
+          .filter(
+            (d: any) =>
+              this.getWeekStart(new Date(d.timestamp)) === nextWeekStart
+          );
+        if (nextWeekNodes.length) {
+          this.currentDate = new Date(nextWeekNodes[0].timestamp);
+        } else {
+          this.currentDate = new Date(nextWeekStart);
+        }
+      }
+    } else if (this.timeframe === "year") {
+      this.currentDate = new Date(this.currentDate.getFullYear() + 1, 0, 1);
+    }
+    this.renderTimeline();
+    this.cdr.detectChanges();
   }
 }

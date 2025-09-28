@@ -1,0 +1,116 @@
+<div class="d3-data-history border rounded w-100 position-relative">
+  <div
+    class="position-absolute bg-white border-start border-bottom end-0 top-0"
+    style="z-index: 10; width: auto"
+  >
+    <div class="d-flex gap-2 align-items-center p-2">
+      <div class="btn-group">
+        <button
+          class="btn btn-link btn-sm d-flex align-items-center gap-2 text-decoration-none"
+          (click)="fitToScreen()"
+        >
+          <i class="fa-solid fa-expand"></i>
+
+          Fit to screen
+        </button>
+      </div>
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="toggleInactiveHours"
+          [(ngModel)]="hideInactiveHours"
+          (change)="onToggleInactiveHours()"
+          checked
+        />
+        <label class="form-check-label" for="toggleInactiveHours">
+          <div class="sr-only">
+            {{ hideInactiveHours ? "Show" : "Hide" }}
+          </div>
+          Inactive Hours</label
+        >
+      </div>
+      <!-- Removed Hide initial values switch: onHideInitialValues no longer exists -->
+    </div>
+  </div>
+  <svg #d3svg style="width: 100%; height: 400px; display: block"></svg>
+
+  <!-- Offcanvas template for event details -->
+  <ng-template #offcanvasContent let-offcanvas>
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title">Details</h4>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="offcanvas.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container-fluid">
+        <!-- <div class="row">
+          <div class="col-6 mb-2">
+            <div class="border rounded p-2 d-flex flex-column">
+              <strong>Before:</strong>
+              {{ offcanvasFrom?.displayValue ?? "null" }}
+            </div>
+          </div>
+          <div class="col-6 mb-2">
+            <div class="border rounded p-2 d-flex flex-column">
+              <strong>After:</strong>
+              {{ offcanvasTo?.displayValue ?? "null" }}
+            </div>
+          </div>
+        </div> -->
+        <div class="row g-0">
+          <div class="col-auto pb-2">
+            <div class="btn-group btn-group-sm" role="group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="diffView"
+                id="diffViewSideBySide"
+                autocomplete="off"
+                [(ngModel)]="diffView"
+                value="side-by-side"
+              />
+              <label class="btn btn-outline-primary" for="diffViewSideBySide"
+                >Side by Side</label
+              >
+              <input
+                type="radio"
+                class="btn-check"
+                name="diffView"
+                id="diffViewUnified"
+                autocomplete="off"
+                [(ngModel)]="diffView"
+                value="unified"
+              />
+              <label class="btn btn-outline-primary" for="diffViewUnified"
+                >Unified</label
+              >
+            </div>
+            <!-- {{ diffView }} -->
+          </div>
+        </div>
+
+        <div class="row g-0 ngx-diff-dark-theme">
+          <div class="col-12">
+            <ngx-unified-diff
+              [before]="offcanvasFrom?.displayValue ?? ''"
+              [after]="offcanvasTo?.displayValue ?? ''"
+              [lineContextSize]="4"
+              [hidden]="diffView !== 'unified'"
+            ></ngx-unified-diff>
+            <ngx-side-by-side-diff
+              [before]="offcanvasFrom?.displayValue ?? ''"
+              [after]="offcanvasTo?.displayValue ?? ''"
+              [hidden]="diffView !== 'side-by-side'"
+            ></ngx-side-by-side-diff>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>

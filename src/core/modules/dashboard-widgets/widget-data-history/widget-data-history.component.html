@@ -1,26 +1,88 @@
 <div class="w-100 flex-grow-1 d-flex flex-column">
-  <div class="w-100 pt-2 px-2">
-    <select
-      class="form-select w-auto d-inline-block"
-      (change)="onDatasetChange($event)"
-    >
-      <option *ngFor="let ds of datasets" [selected]="ds === selectedDataset">
-        {{ ds.label }}
-      </option>
-    </select>
-    <span class="ms-2">{{ fakeData.length }} changes</span>
+  <div
+    class="w-100 pt-2 px-2 d-flex align-items-center justify-content-between"
+  >
+    <div class="d-flex align-items-center gap-2">
+      <select
+        class="form-select w-auto d-inline-block"
+        (change)="onDatasetChange($event)"
+      >
+        <option *ngFor="let ds of datasets" [selected]="ds === selectedDataset">
+          {{ ds.label }}
+        </option>
+      </select>
+      <span class="ms-2">{{ fakeData.length }} changes</span>
+    </div>
+    <div class="d-flex gap-3 align-items-center">
+      <label
+        class="form-check form-switch mb-0 align-items-center d-flex"
+        title="Hide initial values"
+      >
+        <input
+          type="checkbox"
+          class="form-check-input"
+          [checked]="hideInitialValues"
+          (change)="onToggleHideInitialValues()"
+        />
+        <span class="ms-1"
+          >{{ hideInitialValues ? "Show" : "Hide" }} initial values</span
+        >
+      </label>
+      <label
+        class="form-check form-switch mb-0 align-items-center d-flex"
+        title="Show timeline"
+      >
+        <input
+          type="checkbox"
+          class="form-check-input"
+          [checked]="showTimeline"
+          (change)="showTimeline = !showTimeline"
+        />
+        <span class="ms-1">
+          {{ showTimeline ? "Hide" : "Show" }} timeline
+        </span>
+      </label>
+      <ng-select
+        class="w-auto"
+        [items]="fieldNames"
+        bindLabel="field"
+        placeholder="Filter by field"
+        [(ngModel)]="d3SelectedFields"
+        [multiple]="true"
+        [clearable]="true"
+        (change)="
+          onD3FilterChanged({
+            fields: d3SelectedFields,
+            authors: d3SelectedAuthors,
+          })
+        "
+      ></ng-select>
+      <ng-select
+        class="w-auto"
+        [items]="authorNames"
+        bindLabel="author"
+        [multiple]="true"
+        placeholder="Filter by author"
+        [(ngModel)]="d3SelectedAuthors"
+        [clearable]="true"
+        (change)="
+          onD3FilterChanged({
+            fields: d3SelectedFields,
+            authors: d3SelectedAuthors,
+          })
+        "
+      ></ng-select>
+    </div>
   </div>
-  <div class="flex-grow-1 w-100 d-flex">
-    <div class="w-100 h-100 d-flex p-2">
-      <!-- [groupDisplayType]="'groupRows'" -->
-      <ag-grid-angular
-        #agGrid
-        class="ag-theme-alpine w-100 flex-grow-1"
-        [rowData]="fakeData"
+  <div class="flex-grow-1 w-100 d-flex flex-column">
+    <div class="w-100 flex-grow-0 d-flex p-2" *ngIf="showTimeline">
+      <app-d3-data-history [data]="filteredData"></app-d3-data-history>
+    </div>
+    <div class="w-100 flex-grow-1 d-flex p-2">
+      <app-grid-history-data
+        class="w-100 flex-grow-1"
+        [rowData]="filteredDataArray"
         [columnDefs]="columnDefs"
-        [groupDisplayType]="'singleColumn'"
-        [autoGroupColumnDef]="autoGroupColumnDef"
-        groupDisplayPanel="always"
         [defaultColDef]="{
           resizable: true,
           sortable: true,
@@ -28,7 +90,7 @@
           autoHeight: true,
         }"
         (gridReady)="onGridReady($event)"
-      ></ag-grid-angular>
+      ></app-grid-history-data>
     </div>
   </div>
 </div>

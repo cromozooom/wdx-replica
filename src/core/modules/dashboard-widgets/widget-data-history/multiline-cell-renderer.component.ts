@@ -31,8 +31,12 @@ import { ICellRendererAngularComp } from "ag-grid-angular";
 export class MultilineCellRenderer implements ICellRendererAngularComp {
   @Input() value: string = "";
   agInit(params: any) {
-    this.value = (params.value || "").replace(/\n/g, "<br>");
-    this.rawValue = params.value || "";
+    const val =
+      params.value !== undefined && params.value !== null && params.value !== ""
+        ? params.value
+        : "-";
+    this.value = val.replace(/\n/g, "<br>");
+    this.rawValue = val;
   }
 
   rawValue: string = "";
