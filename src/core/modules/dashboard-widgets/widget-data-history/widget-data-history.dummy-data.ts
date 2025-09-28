@@ -38,8 +38,8 @@ export const WIPO_16698 = [
     isDueToRedaction: false,
     isDueToRedactionRestore: false,
     from: {
-      displayValue: "This work item relates to WPO-16832",
-      value: "WPO-16832",
+      displayValue: "This work item relates to WiPO-16832",
+      value: "WiPO-16832",
     },
     to: null,
   },
@@ -61,8 +61,8 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "This work item is tested by WPO-16832",
-      value: "WPO-16832",
+      displayValue: "This work item is tested by WiPO-16832",
+      value: "WiPO-16832",
     },
   },
   {
@@ -283,7 +283,7 @@ export const WIPO_16698 = [
     from: null,
     to: {
       displayValue:
-        "Approve - see notes https://wealthdynamixltd.atlassian.net/browse/WPO-16698?focusedCommentId=247091",
+        "Approve - see notes https://spx.atlassian.net/browse/WIP-16698?focusedCommentId=247091",
       value: "",
     },
   },
@@ -528,12 +528,12 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n* Task queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n* Task queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side",
       value: null,
     },
     to: {
       displayValue:
-        'Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n* Task queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side\n\n!image-20250922-124754.png|width=100%,alt="image-20250922-124754.png"!\n\nThe below view should be ungrouped to begin with as viewing jobs in reverse chronological is more preferred until there is a need to group.\n\n!image-20250922-124828.png|width=100%,alt="image-20250922-124828.png"!',
+        'Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n* Task queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side\n\n!image-20250922-124754.png|width=100%,alt="image-20250922-124754.png"!\n\nThe below view should be ungrouped to begin with as viewing jobs in reverse chronological is more preferred until there is a need to group.\n\n!image-20250922-124828.png|width=100%,alt="image-20250922-124828.png"!',
       value: null,
     },
   },
@@ -558,12 +558,12 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n* Task queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n* Task queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
       value: null,
     },
     to: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n* Task queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n* Task queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side",
       value: null,
     },
   },
@@ -585,8 +585,8 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "This work item relates to WPO-16832",
-      value: "WPO-16832",
+      displayValue: "This work item relates to WiPO-16832",
+      value: "WiPO-16832",
     },
   },
   {
@@ -610,12 +610,12 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n* Task queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n* History: [https://wealthdynamixltd.atlassian.net/browse/WPO-16715|https://wealthdynamixltd.atlassian.net/browse/WPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n* Task queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n* History: [https://spx.atlassian.net/browse/WiPO-16715|https://spx.atlassian.net/browse/WiPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
       value: null,
     },
     to: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n* Task queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n* Task queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
       value: null,
     },
   },
@@ -636,8 +636,8 @@ export const WIPO_16698 = [
     isDueToRedaction: false,
     isDueToRedactionRestore: false,
     from: {
-      displayValue: "This work item blocks WPO-16792",
-      value: "WPO-16792",
+      displayValue: "This work item blocks WiPO-16792",
+      value: "WiPO-16792",
     },
     to: null,
   },
@@ -659,8 +659,8 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "This work item blocks WPO-16792",
-      value: "WPO-16792",
+      displayValue: "This work item blocks WiPO-16792",
+      value: "WiPO-16792",
     },
   },
   {
@@ -827,8 +827,8 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "This work item relates to WPO-16797",
-      value: "WPO-16797",
+      displayValue: "This work item relates to WiPO-16797",
+      value: "WiPO-16797",
     },
   },
   {
@@ -852,12 +852,12 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. Both of these grids will have to be created, under separate tickets. \n\n* Breach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n* Task queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n* History: [https://wealthdynamixltd.atlassian.net/browse/WPO-16715|https://wealthdynamixltd.atlassian.net/browse/WPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. Both of these grids will have to be created, under separate tickets. \n\n* Breach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n* Task queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n* History: [https://spx.atlassian.net/browse/WiPO-16715|https://spx.atlassian.net/browse/WiPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
       value: null,
     },
     to: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n* Task queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n* History: [https://wealthdynamixltd.atlassian.net/browse/WPO-16715|https://wealthdynamixltd.atlassian.net/browse/WPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. These grids will have to be created, under separate tickets.\n\n* Breach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n* Task queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n* History: [https://spx.atlassian.net/browse/WiPO-16715|https://spx.atlassian.net/browse/WiPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
       value: null,
     },
   },
@@ -912,12 +912,12 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n\nTask queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n\n[https://wealthdynamixltd.atlassian.net/browse/WPO-16715|https://wealthdynamixltd.atlassian.net/browse/WPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n\nTask queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n\n[https://spx.atlassian.net/browse/WiPO-16715|https://spx.atlassian.net/browse/WiPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu",
       value: null,
     },
     to: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. Both of these grids will have to be created, under separate tickets. \n\n* Breach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n* Task queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n* History: [https://wealthdynamixltd.atlassian.net/browse/WPO-16715|https://wealthdynamixltd.atlassian.net/browse/WPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. Both of these grids will have to be created, under separate tickets. \n\n* Breach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n* Task queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n* History: [https://spx.atlassian.net/browse/WiPO-16715|https://spx.atlassian.net/browse/WiPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu.",
       value: null,
     },
   },
@@ -942,12 +942,12 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List then Task Queue. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n\nTask queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List then Task Queue. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n\nTask queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu",
       value: null,
     },
     to: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n\nTask queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n\n[https://wealthdynamixltd.atlassian.net/browse/WPO-16715|https://wealthdynamixltd.atlassian.net/browse/WPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List, Job Queue and Job History. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n\nTask queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n\n[https://spx.atlassian.net/browse/WiPO-16715|https://spx.atlassian.net/browse/WiPO-16715|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu",
       value: null,
     },
   },
@@ -972,12 +972,12 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List then Task Queue. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n\nTask queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] ",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List then Task Queue. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n\nTask queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] ",
       value: null,
     },
     to: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List then Task Queue. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n\nTask queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List then Task Queue. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n\nTask queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] \n\nThis will be accessible from both the main SPA menu on the left hand side, and the top menu",
       value: null,
     },
   },
@@ -1002,12 +1002,12 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n\nTask queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] ",
+        "Data Remediation dashboard containing the CO’s task queue and breach list. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n\nTask queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] ",
       value: null,
     },
     to: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List then Task Queue. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n\nTask queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] ",
+        "Data Remediation dashboard containing the CO’s task queue and breach list, under separate tabs, Breach List then Task Queue. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n\nTask queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] ",
       value: null,
     },
   },
@@ -1037,7 +1037,7 @@ export const WIPO_16698 = [
     },
     to: {
       displayValue:
-        "Data Remediation dashboard containing the CO’s task queue and breach list. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://wealthdynamixltd.atlassian.net/browse/WPO-16697|https://wealthdynamixltd.atlassian.net/browse/WPO-16697]\n\nTask queue: [https://wealthdynamixltd.atlassian.net/browse/WPO-16700|https://wealthdynamixltd.atlassian.net/browse/WPO-16700|smart-link] ",
+        "Data Remediation dashboard containing the CO’s task queue and breach list. Both of these grids will have to be created, under separate tickets. \n\nBreach List: [https://spx.atlassian.net/browse/WiPO-16697|https://spx.atlassian.net/browse/WiPO-16697]\n\nTask queue: [https://spx.atlassian.net/browse/WiPO-16700|https://spx.atlassian.net/browse/WiPO-16700|smart-link] ",
       value: null,
     },
   },
@@ -1117,7 +1117,7 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "WPO-16694",
+      displayValue: "WiPO-16694",
       value: "135285",
     },
   },
@@ -1340,8 +1340,8 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "This work item relates to WPO-16698",
-      value: "WPO-16698",
+      displayValue: "This work item relates to WiPO-16698",
+      value: "WiPO-16698",
     },
   },
   {
@@ -1362,8 +1362,8 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "This work item relates to WPO-16697",
-      value: "WPO-16697",
+      displayValue: "This work item relates to WiPO-16697",
+      value: "WiPO-16697",
     },
   },
   {
@@ -1434,8 +1434,8 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "This work item is cloned by WPO-16798",
-      value: "WPO-16798",
+      displayValue: "This work item is cloned by WiPO-16798",
+      value: "WiPO-16798",
     },
   },
   {
@@ -1456,8 +1456,8 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "This work item clones WPO-16794",
-      value: "WPO-16794",
+      displayValue: "This work item clones WiPO-16794",
+      value: "WiPO-16794",
     },
   },
   {
@@ -1478,7 +1478,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "WPO-16694",
+      displayValue: "WiPO-16694",
       value: "135285",
     },
   },
