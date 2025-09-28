@@ -1,8 +1,16 @@
 <div class="d3-data-history border rounded w-100 position-relative">
-  <div>
-    <div class="d-flex gap-2 align-items-center p-2 border-bottom">
+  <div
+    class="position-absolute bg-white border-start border-bottom end-0 top-0"
+    style="z-index: 10; width: auto"
+  >
+    <div class="d-flex gap-2 align-items-center p-2">
       <div class="btn-group">
-        <button class="btn btn-primary btn-sm" (click)="fitToScreen()">
+        <button
+          class="btn btn-link btn-sm d-flex align-items-center gap-2 text-decoration-none"
+          (click)="fitToScreen()"
+        >
+          <i class="fa-solid fa-expand"></i>
+
           Fit to screen
         </button>
       </div>
@@ -16,8 +24,11 @@
           (change)="onToggleInactiveHours()"
           checked
         />
-        <label class="form-check-label" for="toggleInactiveHours"
-          >Hide inactive hours</label
+        <label class="form-check-label" for="toggleInactiveHours">
+          <div class="sr-only">
+            {{ hideInactiveHours ? "Show" : "Hide" }}
+          </div>
+          Inactive Hours</label
         >
       </div>
       <!-- Removed Hide initial values switch: onHideInitialValues no longer exists -->

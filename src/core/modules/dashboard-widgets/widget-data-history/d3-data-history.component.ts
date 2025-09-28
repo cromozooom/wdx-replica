@@ -840,7 +840,7 @@ export class D3DataHistoryComponent {
         to.displayValue !== null &&
         to.displayValue !== ""
       ) {
-        btnHtml = `<button id='${btnId}' class="btn btn-sm btn-primary mt-2 mb-2 me-2">Right position</button>`;
+        btnHtml = `<button id='${btnId}' class="btn btn-sm btn-primary mt-2 mb-2 me-2">See Changes</button>`;
       }
       tooltipEl.innerHTML =
         `<div class='position-relative'>` +
