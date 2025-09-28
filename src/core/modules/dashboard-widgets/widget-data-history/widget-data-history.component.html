@@ -3,6 +3,12 @@
     class="w-100 pt-2 px-2 d-flex align-items-center justify-content-between"
   >
     <div class="d-flex align-items-center gap-2">
+      <button
+        class="btn btn-outline-primary me-2"
+        (click)="openFullscreenModal(content)"
+      >
+        Fullscreen modal
+      </button>
       <select
         class="form-select w-auto d-inline-block"
         [(ngModel)]="selectedDataset"
@@ -105,3 +111,18 @@
     </div>
   </div>
 </div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Modal title</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <app-d3-data-history [data]="filteredData"></app-d3-data-history>
+  </div>
+</ng-template>

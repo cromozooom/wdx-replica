@@ -5,7 +5,10 @@ import {
   OnInit,
   AfterViewInit,
   ChangeDetectorRef,
+  ViewChild,
+  TemplateRef,
 } from "@angular/core";
+import { NgbModal, NgbModalRef } from "@ng-bootstrap/ng-bootstrap";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { AgGridModule } from "ag-grid-angular";
@@ -41,13 +44,33 @@ import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.com
   ],
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
+  @ViewChild("content") contentTpl!: TemplateRef<any>;
+  private modalRef?: NgbModalRef;
+
+  constructor(
+    private cdr: ChangeDetectorRef,
+    private modalService: NgbModal
+  ) {}
+
+  openFullscreenModal(data?: any) {
+    // Optionally store data for modal use
+    this.modalRef = this.modalService.open(this.contentTpl, {
+      fullscreen: true,
+    });
+  }
+
+  closeModal() {
+    if (this.modalRef) {
+      this.modalRef.close();
+      this.modalRef = undefined;
+    }
+  }
   showTimeline = true;
   hideInitialValues = false;
   filteredDataArray: any[] = [];
   // Store filter state
   d3SelectedFields: string[] = [];
   d3SelectedAuthors: string[] = [];
-  constructor(private cdr: ChangeDetectorRef) {}
   datasets = [
     { label: "Default", value: WIDGET_DATA_HISTORY_FAKE_DATA },
     { label: "WIPO_16698", value: WIPO_16698 },
