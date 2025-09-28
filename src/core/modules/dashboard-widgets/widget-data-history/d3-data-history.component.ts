@@ -88,7 +88,8 @@ export class D3DataHistoryComponent {
   private svg: d3.Selection<SVGSVGElement, unknown, null, undefined> | null =
     null;
   private g: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
-  private dotLayer: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
+  private dotLayer: d3.Selection<SVGGElement, unknown, null, undefined> | null =
+    null;
   private zoom: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null;
 
   ngAfterViewInit() {
@@ -177,9 +178,9 @@ export class D3DataHistoryComponent {
       .attr("viewBox", `0 0 ${width} ${height}`)
       .style("cursor", "grab");
 
-  this.g = this.svg.append("g");
-  // Dedicated group for event dots, always appended last
-  this.dotLayer = this.svg.append("g").attr("class", "dot-layer");
+    this.g = this.svg.append("g");
+    // Dedicated group for event dots, always appended last
+    this.dotLayer = this.svg.append("g").attr("class", "dot-layer");
 
     this.zoom = d3
       .zoom<SVGSVGElement, unknown>()
