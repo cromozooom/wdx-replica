@@ -50,7 +50,7 @@
     </div>
     <div class="offcanvas-body">
       <div class="container-fluid">
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-6 mb-2">
             <div class="border rounded p-2 d-flex flex-column">
               <strong>Before:</strong>
@@ -62,6 +62,21 @@
               <strong>After:</strong>
               {{ offcanvasTo?.displayValue ?? "null" }}
             </div>
+          </div>
+        </div> -->
+        <div class="row ngx-diff-dark-theme">
+          <!-- <div class="col-12">
+            <ngx-unified-diff
+              [before]="offcanvasFrom?.displayValue ?? ''"
+              [after]="offcanvasTo?.displayValue ?? ''"
+              [lineContextSize]="4"
+            />
+          </div> -->
+          <div class="col-12">
+            <ngx-side-by-side-diff
+              [before]="offcanvasFrom?.displayValue ?? ''"
+              [after]="offcanvasTo?.displayValue ?? ''"
+            ></ngx-side-by-side-diff>
           </div>
         </div>
       </div>

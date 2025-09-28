@@ -9,13 +9,14 @@ import {
   TemplateRef,
 } from "@angular/core";
 import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
+import { SideBySideDiffComponent, UnifiedDiffComponent } from "ngx-diff";
 import * as d3 from "d3";
 import { FormsModule } from "@angular/forms";
 
 @Component({
   selector: "app-d3-data-history",
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, SideBySideDiffComponent, UnifiedDiffComponent],
   templateUrl: "./d3-data-history.component.html",
   styleUrls: ["./d3-data-history.component.scss"],
 })

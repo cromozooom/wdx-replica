@@ -1,3 +1,5 @@
+@use "ngx-diff/styles/default-theme";
+
 // Custom Offcanvas width for breach list
 .offcanvas-90 {
   width: 90vw !important;
@@ -58,6 +60,7 @@
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
+@import "ngx-diff.scss";
 
 body,
 html {
