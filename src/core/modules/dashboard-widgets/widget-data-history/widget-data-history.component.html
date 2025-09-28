@@ -5,9 +5,10 @@
     <div class="d-flex align-items-center gap-2">
       <select
         class="form-select w-auto d-inline-block"
-        (change)="onDatasetChange($event)"
+        [(ngModel)]="selectedDataset"
+        (ngModelChange)="onDatasetChange($event)"
       >
-        <option *ngFor="let ds of datasets" [selected]="ds === selectedDataset">
+        <option *ngFor="let ds of datasets" [ngValue]="ds">
           {{ ds.label }}
         </option>
       </select>
