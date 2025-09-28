@@ -61,8 +61,6 @@ export class D3DataHistoryComponent {
   public fieldNames: string[] = [];
 
   public authorNames: string[] = [];
-  public selectedFields: string[] = [];
-  public selectedAuthors: string[] = [];
   ngOnInit() {
     // No-op: fieldNames and authorNames are now handled in the parent.
   }
@@ -78,32 +76,8 @@ export class D3DataHistoryComponent {
     return Array.from({ length: n }, (_, i) => d3.interpolateRainbow(i / n));
   }
   hideInitialValues = false;
-  private filteredData: any[] = [];
 
-  onHideInitialValues() {
-    if (this.hideInitialValues) {
-      // Find all fields that have more than one timestamp
-      const fieldCounts = new Map<string, number>();
-      for (const d of this.data) {
-        if (!d.fieldDisplayName) continue;
-        fieldCounts.set(
-          d.fieldDisplayName,
-          (fieldCounts.get(d.fieldDisplayName) || 0) + 1
-        );
-      }
-      const multiFields = new Set(
-        Array.from(fieldCounts.entries())
-          .filter(([_, count]) => count > 1)
-          .map(([field]) => field)
-      );
-      this.filteredData = this.data.filter((d) =>
-        multiFields.has(d.fieldDisplayName)
-      );
-    } else {
-      this.filteredData = this.data;
-    }
-    this.render();
-  }
+  // onHideInitialValues and internal filter state removed; all filtering is handled by the parent.
   onToggleInactiveHours() {
     this.render();
   }

@@ -35,11 +35,7 @@ import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.com
     FormsModule,
     AgGridModule,
     NgSelectModule,
-    ActorCellRendererComponent,
-    MultilineCellRenderer,
-    FieldIconCellRendererComponent,
-    AuthorGroupCellRendererComponent,
-    FieldGroupCellRendererComponent,
+    // Removed unused cell renderer components from imports
     GridHistoryDataComponent,
     D3DataHistoryComponent,
   ],
