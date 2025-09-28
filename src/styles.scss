@@ -61,7 +61,7 @@
 @import "../node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 @import "ngx-diff.scss";
-
+@import "../node_modules/@ng-select/ng-select/themes/default.theme.css";
 body,
 html {
   width: 100%;

@@ -11,13 +11,19 @@ import {
 } from "@angular/core";
 import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
 import { SideBySideDiffComponent, UnifiedDiffComponent } from "ngx-diff";
+import { NgSelectModule } from "@ng-select/ng-select";
 import * as d3 from "d3";
 import { FormsModule } from "@angular/forms";
 
 @Component({
   selector: "app-d3-data-history",
   standalone: true,
-  imports: [FormsModule, SideBySideDiffComponent, UnifiedDiffComponent],
+  imports: [
+    FormsModule,
+    SideBySideDiffComponent,
+    UnifiedDiffComponent,
+    NgSelectModule,
+  ],
   templateUrl: "./d3-data-history.component.html",
   styleUrls: ["./d3-data-history.component.scss"],
 })
@@ -47,7 +53,32 @@ export class D3DataHistoryComponent {
   private tooltipContainerId = "d3-data-history-tooltips";
 
   // Store unique fieldDisplayNames and their colors
-  private fieldNames: string[] = [];
+  public fieldNames: string[] = [];
+
+  public authorNames: string[] = [];
+  public selectedField: string | null = null;
+  public selectedAuthor: string | null = null;
+  ngOnInit() {
+    // Populate fieldNames and authorNames from your data source (replace 'this.data' with your actual data array)
+    if (this.data) {
+      this.fieldNames = Array.from(
+        new Set(this.data.map((d: any) => d.fieldDisplayName).filter(Boolean))
+      );
+      this.authorNames = Array.from(
+        new Set(
+          this.data
+            .map((d: any) => d.actor && d.actor.displayName)
+            .filter(Boolean)
+        )
+      );
+    }
+  }
+
+  onFilterChange() {
+    // Implement filtering logic here
+    // Example: filter this.data based on selectedField and selectedAuthor, then re-render D3
+    // You may want to call your D3 render/update method here
+  }
   private fieldColors: Map<string, string> = new Map();
 
   // Helper to generate a color palette
