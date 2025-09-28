@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { FieldIconMap } from "./widget-data-history.component";
+import { FieldIconMap } from "./field-icons";
 
 @Component({
   selector: "app-field-group-cell-renderer",

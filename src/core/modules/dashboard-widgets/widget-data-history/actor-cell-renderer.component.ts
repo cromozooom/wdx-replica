@@ -41,7 +41,7 @@ export class ActorCellRendererComponent implements ICellRendererAngularComp {
 
   agInit(params: any): void {
     const actor = params.data?.actor;
-    this.name = actor?.displayName || "";
+    this.name = actor?.displayName || "-";
     this.initials = this.getInitials(this.name);
     // Hash the name to a number between 1 and 68
     const hash = this.hashString(this.name);
