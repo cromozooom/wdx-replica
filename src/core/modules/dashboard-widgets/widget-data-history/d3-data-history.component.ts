@@ -10,6 +10,7 @@ import {
   TemplateRef,
 } from "@angular/core";
 import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
+import { Output, EventEmitter } from "@angular/core";
 import { SideBySideDiffComponent, UnifiedDiffComponent } from "ngx-diff";
 import { NgSelectModule } from "@ng-select/ng-select";
 import * as d3 from "d3";
@@ -30,6 +31,10 @@ import { FormsModule } from "@angular/forms";
 export class D3DataHistoryComponent {
   diffView: "side-by-side" | "unified" = "side-by-side";
   constructor(private offcanvasService: NgbOffcanvas) {}
+  @Output() filterChanged = new EventEmitter<{
+    fields: string[];
+    authors: string[];
+  }>();
 
   @ViewChild("offcanvasContent", { static: true })
   offcanvasContentRef!: TemplateRef<any>;
@@ -56,8 +61,8 @@ export class D3DataHistoryComponent {
   public fieldNames: string[] = [];
 
   public authorNames: string[] = [];
-  public selectedField: string | null = null;
-  public selectedAuthor: string | null = null;
+  public selectedFields: string[] = [];
+  public selectedAuthors: string[] = [];
   ngOnInit() {
     // Populate fieldNames and authorNames from your data source (replace 'this.data' with your actual data array)
     if (this.data) {
@@ -77,11 +82,16 @@ export class D3DataHistoryComponent {
   onFilterChange() {
     this.filteredData = this.data.filter((d: any) => {
       const fieldMatch =
-        !this.selectedField || d.fieldDisplayName === this.selectedField;
+        !this.selectedFields.length ||
+        this.selectedFields.includes(d.fieldDisplayName);
       const authorMatch =
-        !this.selectedAuthor ||
-        (d.actor && d.actor.displayName === this.selectedAuthor);
+        !this.selectedAuthors.length ||
+        (d.actor && this.selectedAuthors.includes(d.actor.displayName));
       return fieldMatch && authorMatch;
+    });
+    this.filterChanged.emit({
+      fields: this.selectedFields,
+      authors: this.selectedAuthors,
     });
     this.render();
   }

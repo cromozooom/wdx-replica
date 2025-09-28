@@ -38,7 +38,8 @@
         [items]="fieldNames"
         bindLabel="field"
         placeholder="Filter by field"
-        [(ngModel)]="selectedField"
+        [(ngModel)]="selectedFields"
+        [multiple]="true"
         [clearable]="true"
         (change)="onFilterChange()"
       ></ng-select>
@@ -46,8 +47,9 @@
         class="w-auto"
         [items]="authorNames"
         bindLabel="author"
+        [multiple]="true"
         placeholder="Filter by author"
-        [(ngModel)]="selectedAuthor"
+        [(ngModel)]="selectedAuthors"
         [clearable]="true"
         (change)="onFilterChange()"
       ></ng-select>

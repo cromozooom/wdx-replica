@@ -13,17 +13,6 @@
       </select>
       <span class="ms-2">{{ fakeData.length }} changes</span>
     </div>
-    <div class="form-check form-switch">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        role="switch"
-        id="syncDataSwitch"
-        [(ngModel)]="syncData"
-        (change)="renderTimeline()"
-      />
-      <label class="form-check-label" for="syncDataSwitch">Sync data</label>
-    </div>
   </div>
   <div class="flex-grow-1 w-100 d-flex flex-column">
     <div class="w-100 p-2 d-flex align-items-center">
@@ -104,6 +93,7 @@
     <div class="w-100 flex-grow-0 d-flex p-2">
       <app-d3-data-history
         [data]="syncData ? filteredData : fakeData"
+        (filterChanged)="onD3FilterChanged($event)"
       ></app-d3-data-history>
     </div>
   </div>

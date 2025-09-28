@@ -49,6 +49,9 @@ import { D3DataHistoryComponent } from "./d3-data-history.component";
   ],
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
+  // Store filter state
+  d3SelectedFields: string[] = [];
+  d3SelectedAuthors: string[] = [];
   constructor(private cdr: ChangeDetectorRef) {}
   datasets = [
     { label: "Default", value: WIDGET_DATA_HISTORY_FAKE_DATA },
@@ -145,7 +148,24 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
   // Provide filteredData for template compatibility (update with real filtering logic if needed)
   get filteredData(): any[] {
-    return this.dataStore.data();
+    if (!this.d3SelectedFields.length && !this.d3SelectedAuthors.length) {
+      return this.dataStore.data();
+    }
+    return this.dataStore.data().filter((d: any) => {
+      const fieldMatch =
+        !this.d3SelectedFields.length ||
+        this.d3SelectedFields.includes(d.fieldDisplayName);
+      const authorMatch =
+        !this.d3SelectedAuthors.length ||
+        (d.actor && this.d3SelectedAuthors.includes(d.actor.displayName));
+      return fieldMatch && authorMatch;
+    });
+  }
+  onD3FilterChanged(filter: { fields: string[]; authors: string[] }) {
+    this.d3SelectedFields = filter.fields;
+    this.d3SelectedAuthors = filter.authors;
+    // Optionally, trigger grid refresh or other logic here
+    this.cdr.detectChanges();
   }
   get fakeData(): any[] {
     return this.dataStore.data();
