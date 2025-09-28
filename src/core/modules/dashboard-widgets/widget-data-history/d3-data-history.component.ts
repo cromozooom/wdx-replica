@@ -463,18 +463,42 @@ export class D3DataHistoryComponent {
       .attr("y2", (d) => yScale(d) as number)
       .attr("stroke", "var(--bs-gray-300)");
 
-    // Draw author names on the y-axis
-    this.g
-      .selectAll("text.author-label")
+    // Draw author names and images on the y-axis
+    const authorLabelGroup = this.g
+      .selectAll("g.author-label-group")
       .data(authors)
       .enter()
+      .append("g")
+      .attr("class", "author-label-group")
+      .attr(
+        "transform",
+        (d) =>
+          `translate(${hourX[hourX.length - 1] + hourWidths[hourWidths.length - 1] + 16},${yScale(d)})`
+      );
+
+    // Add author image (left of name)
+    authorLabelGroup
+      .append("image")
+      .attr("x", 0)
+      .attr("y", -15)
+      .attr("width", 30)
+      .attr("height", 30)
+      .attr("href", (d) => {
+        // Convert author name to lowercase, spaces to '-', .jpg
+        const fileName = d
+          .toLowerCase()
+          .replace(/\s+/g, "-")
+          .replace(/[^a-z0-9\-]/g, "");
+        return `assets/images/${fileName}.jpg`;
+      })
+      .attr("class", "author-img rounded-circle");
+
+    // Add author name text (right of image)
+    authorLabelGroup
       .append("text")
       .attr("class", "author-label")
-      .attr(
-        "x",
-        hourX[hourX.length - 1] + hourWidths[hourWidths.length - 1] + 16
-      )
-      .attr("y", (d) => yScale(d) as number)
+      .attr("x", 40)
+      .attr("y", 0)
       .attr("dominant-baseline", "middle")
       .attr("text-anchor", "start")
       .attr("font-size", 14)
