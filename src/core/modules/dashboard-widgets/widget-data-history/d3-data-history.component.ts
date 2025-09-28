@@ -10,6 +10,7 @@ import {
   TemplateRef,
 } from "@angular/core";
 import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
+import { ZIndexService } from "../../../services/z-index.service";
 import { Output, EventEmitter } from "@angular/core";
 import { SideBySideDiffComponent, UnifiedDiffComponent } from "ngx-diff";
 import { NgSelectModule } from "@ng-select/ng-select";
@@ -34,7 +35,10 @@ export class D3DataHistoryComponent {
   @Input() isModal = false;
   @Output() openModal = new EventEmitter<void>();
   diffView: "side-by-side" | "unified" = "side-by-side";
-  constructor(private offcanvasService: NgbOffcanvas) {}
+  constructor(
+    private offcanvasService: NgbOffcanvas,
+    private zIndexService: ZIndexService
+  ) {}
   @Output() filterChanged = new EventEmitter<{
     fields: string[];
     authors: string[];
@@ -48,7 +52,29 @@ export class D3DataHistoryComponent {
   openEnd(content: TemplateRef<any>, from: any, to: any) {
     this.offcanvasFrom = from;
     this.offcanvasTo = to;
-    const ref = this.offcanvasService.open(content, { position: "end" });
+    // Get a new z-index for this offcanvas
+    const zIndex = this.zIndexService.next();
+    // Add a custom class to the offcanvas panel
+    const ref = this.offcanvasService.open(content, {
+      position: "end",
+      panelClass: "custom-offcanvas-z",
+    });
+    // After the panel and backdrop are attached, set their z-index
+    setTimeout(() => {
+      const panel = document.querySelector(
+        ".offcanvas.custom-offcanvas-z"
+      ) as HTMLElement;
+      if (panel) {
+        panel.style.zIndex = zIndex.toString();
+      }
+      // Set backdrop z-index just below the panel
+      const backdrop = document.querySelector(
+        ".offcanvas-backdrop"
+      ) as HTMLElement;
+      if (backdrop) {
+        backdrop.style.zIndex = (zIndex - 1).toString();
+      }
+    }, 0);
     ref.closed.subscribe(() => {
       this.offcanvasFrom = null;
       this.offcanvasTo = null;
@@ -60,6 +86,46 @@ export class D3DataHistoryComponent {
   }
   // Container for all tooltips
   private tooltipContainerId = "d3-data-history-tooltips";
+
+  /**
+   * Show a tooltip at the given element/position, ensuring z-index is above overlays.
+   * Example usage: this.showTooltip(...)
+   */
+  showTooltip(element: HTMLElement, content: string) {
+    let tooltip = document.getElementById(
+      this.tooltipContainerId
+    ) as HTMLDivElement;
+    if (!tooltip) {
+      tooltip = document.createElement("div");
+      tooltip.id = this.tooltipContainerId;
+      tooltip.style.position = "absolute";
+      document.body.appendChild(tooltip);
+    }
+    tooltip.innerHTML = content;
+    // Set z-index using the service
+    tooltip.style.zIndex = this.zIndexService.next().toString();
+    // Positioning logic (example: below the element)
+    const rect = element.getBoundingClientRect();
+    tooltip.style.left = `${rect.left + window.scrollX}px`;
+    tooltip.style.top = `${rect.bottom + window.scrollY + 4}px`;
+    tooltip.style.background = "#222";
+    tooltip.style.color = "#fff";
+    tooltip.style.padding = "4px 8px";
+    tooltip.style.borderRadius = "4px";
+    tooltip.style.pointerEvents = "none";
+    tooltip.style.fontSize = "12px";
+    tooltip.style.maxWidth = "300px";
+    tooltip.style.whiteSpace = "pre-line";
+    tooltip.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+    tooltip.style.display = "block";
+  }
+
+  hideTooltip() {
+    const tooltip = document.getElementById(this.tooltipContainerId);
+    if (tooltip) {
+      tooltip.style.display = "none";
+    }
+  }
 
   // Store unique fieldDisplayNames and their colors
   public fieldNames: string[] = [];
@@ -219,7 +285,7 @@ export class D3DataHistoryComponent {
       tooltipContainer.style.position = "absolute";
       tooltipContainer.style.top = "0";
       tooltipContainer.style.left = "0";
-      tooltipContainer.style.zIndex = "9999";
+      tooltipContainer.style.zIndex = this.zIndexService.next().toString();
       document.body.appendChild(tooltipContainer);
     } else {
       tooltipContainer.innerHTML = "";
@@ -593,6 +659,8 @@ export class D3DataHistoryComponent {
         }
         return d;
       }
+      // Capture Angular component context for D3 handler
+      const self = this;
       for (const [field, points] of fieldPaths.entries()) {
         if (Array.isArray(points) && points.length >= 2) {
           // Main visible line, 1px, default opacity 0.5
@@ -644,7 +712,8 @@ export class D3DataHistoryComponent {
               tooltipEl.style.padding = "8px 12px";
               tooltipEl.style.borderRadius = "6px";
               tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
-              tooltipEl.style.zIndex = "9999";
+              // Use captured Angular component context for zIndexService
+              tooltipEl.style.zIndex = self.zIndexService.next().toString();
               tooltipEl.style.pointerEvents = "auto";
               tooltipEl.innerHTML =
                 `<div class='position-relative'>` +
@@ -833,7 +902,13 @@ export class D3DataHistoryComponent {
       tooltipEl.style.padding = "8px 12px";
       tooltipEl.style.borderRadius = "6px";
       tooltipEl.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
-      tooltipEl.style.zIndex = "9999";
+      // Use Angular component context for zIndexService
+      const ngComponent =
+        (this as any)._ngComponent || (window as any)._ngD3ComponentInstance;
+      tooltipEl.style.zIndex =
+        ngComponent && ngComponent.zIndexService
+          ? ngComponent.zIndexService.next().toString()
+          : "1";
       tooltipEl.style.pointerEvents = "auto";
       // Add a button that triggers openEnd with from/to values
       const from = d.event.from;
@@ -883,7 +958,10 @@ export class D3DataHistoryComponent {
       }, 0);
       // Add click handler for the button to open offcanvas
       // Store a reference to the Angular component on the tooltip element
+      // Store Angular component reference for later use
       (tooltipEl as any)._ngComponent = this;
+      // Also store globally for event handler context
+      (window as any)._ngD3ComponentInstance = this;
       setTimeout(() => {
         const btn = document.getElementById(btnId);
         if (btn) {
