@@ -75,9 +75,15 @@ export class D3DataHistoryComponent {
   }
 
   onFilterChange() {
-    // Implement filtering logic here
-    // Example: filter this.data based on selectedField and selectedAuthor, then re-render D3
-    // You may want to call your D3 render/update method here
+    this.filteredData = this.data.filter((d: any) => {
+      const fieldMatch =
+        !this.selectedField || d.fieldDisplayName === this.selectedField;
+      const authorMatch =
+        !this.selectedAuthor ||
+        (d.actor && d.actor.displayName === this.selectedAuthor);
+      return fieldMatch && authorMatch;
+    });
+    this.render();
   }
   private fieldColors: Map<string, string> = new Map();
 
