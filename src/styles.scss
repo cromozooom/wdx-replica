@@ -235,3 +235,11 @@ body {
     }
   }
 }
+
+.author-img,
+.rounded-circle {
+  clip-path: circle(50% at 50% 50%);
+  overflow: visible;
+  outline: 2px solid rgb(var(--bs-info-rgb));
+  outline-offset: 2px;
+}

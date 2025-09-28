@@ -78,7 +78,7 @@ export const WIPO_16698 = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Status",
@@ -108,7 +108,7 @@ export const WIPO_16698 = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Status",
@@ -138,7 +138,7 @@ export const WIPO_16698 = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Assignee",
@@ -165,7 +165,7 @@ export const WIPO_16698 = [
         large:
           "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:34b2626e-8d35-4800-af2a-596185dc52cc/e4e7ebbb-ac35-4009-8afc-b9c9a8c81002/48",
       },
-      displayName: "Don Juan",
+      displayName: "Don Juan (DJ)",
       accountId: "557058:34b2626e-8d35-4800-af2a-596185dc52cc",
     },
     fieldDisplayName: "Status",
@@ -196,7 +196,7 @@ export const WIPO_16698 = [
         large:
           "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:34b2626e-8d35-4800-af2a-596185dc52cc/e4e7ebbb-ac35-4009-8afc-b9c9a8c81002/48",
       },
-      displayName: "Don Juan",
+      displayName: "Don Juan (DJ)",
       accountId: "557058:34b2626e-8d35-4800-af2a-596185dc52cc",
     },
     fieldDisplayName: "TA Approval Date",
@@ -222,7 +222,7 @@ export const WIPO_16698 = [
         large:
           "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:34b2626e-8d35-4800-af2a-596185dc52cc/e4e7ebbb-ac35-4009-8afc-b9c9a8c81002/48",
       },
-      displayName: "Don Juan",
+      displayName: "Don Juan (DJ)",
       accountId: "557058:34b2626e-8d35-4800-af2a-596185dc52cc",
     },
     fieldDisplayName: "TA Approval Status",
@@ -248,7 +248,7 @@ export const WIPO_16698 = [
         large:
           "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:34b2626e-8d35-4800-af2a-596185dc52cc/e4e7ebbb-ac35-4009-8afc-b9c9a8c81002/48",
       },
-      displayName: "Don Juan",
+      displayName: "Don Juan (DJ)",
       accountId: "557058:34b2626e-8d35-4800-af2a-596185dc52cc",
     },
     fieldDisplayName: "TA Approver",
@@ -256,7 +256,7 @@ export const WIPO_16698 = [
     isDueToRedactionRestore: false,
     from: null,
     to: {
-      displayValue: "Don Juan",
+      displayValue: "Don Juan (DJ)",
       value: "557058:34b2626e-8d35-4800-af2a-596185dc52cc",
     },
   },
@@ -274,7 +274,7 @@ export const WIPO_16698 = [
         large:
           "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:34b2626e-8d35-4800-af2a-596185dc52cc/e4e7ebbb-ac35-4009-8afc-b9c9a8c81002/48",
       },
-      displayName: "Don Juan",
+      displayName: "Don Juan (DJ)",
       accountId: "557058:34b2626e-8d35-4800-af2a-596185dc52cc",
     },
     fieldDisplayName: "TA Comment(s)",
@@ -301,7 +301,7 @@ export const WIPO_16698 = [
         large:
           "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:34b2626e-8d35-4800-af2a-596185dc52cc/e4e7ebbb-ac35-4009-8afc-b9c9a8c81002/48",
       },
-      displayName: "Don Juan",
+      displayName: "Don Juan (DJ)",
       accountId: "557058:34b2626e-8d35-4800-af2a-596185dc52cc",
     },
     fieldDisplayName: "DA Approval Date",
@@ -629,7 +629,7 @@ export const WIPO_16698 = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Link",
@@ -651,7 +651,7 @@ export const WIPO_16698 = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Link",
@@ -819,7 +819,7 @@ export const WIPO_16698 = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Link",
@@ -1136,7 +1136,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Status",
@@ -1166,7 +1166,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Status",
@@ -1196,7 +1196,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Status",
@@ -1227,7 +1227,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "DA Approval Status",
@@ -1253,7 +1253,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Bypass DA Rationale",
@@ -1308,7 +1308,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Assignee",
@@ -1354,7 +1354,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Link",
@@ -1379,7 +1379,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Remaining Estimate",
@@ -1404,7 +1404,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Original estimate",
@@ -1448,7 +1448,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "Link",
@@ -1470,7 +1470,7 @@ export const WIDGET_DATA_HISTORY_FAKE_DATA = [
         large:
           "https://secure.gravatar.com/avatar/73893e9fca75fd294c91e8ad2be26502?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDF-0.png",
       },
-      displayName: "Dough Fr.",
+      displayName: "Doug Fr. (JD)",
       accountId: "557058:5b4cfa11-b3a1-44b2-9a6a-8340cc0d95b3",
     },
     fieldDisplayName: "IssueParentAssociation",
