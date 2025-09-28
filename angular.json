@@ -58,6 +58,11 @@
                                 "glob": "_redirects",
                                 "input": "src/assets",
                                 "output": "."
+                            },
+                            {
+                                "glob": "**/*",
+                                "input": "src/assets/images",
+                                "output": "assets/images"
                             }
                         ],
                         "styles": [

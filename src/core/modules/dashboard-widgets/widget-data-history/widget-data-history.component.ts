@@ -9,6 +9,7 @@ import {
   TemplateRef,
 } from "@angular/core";
 import { NgbModal, NgbModalRef } from "@ng-bootstrap/ng-bootstrap";
+import { ZIndexService } from "../../../services/z-index.service";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { AgGridModule } from "ag-grid-angular";
@@ -49,13 +50,38 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
   constructor(
     private cdr: ChangeDetectorRef,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private zIndexService: ZIndexService
   ) {}
 
   openFullscreenModal(data?: any) {
     // Optionally store data for modal use
+    const zIndex = this.zIndexService.next();
     this.modalRef = this.modalService.open(this.contentTpl, {
       fullscreen: true,
+      windowClass: "custom-modal-z",
+    });
+    // After the modal is attached, set its z-index
+    setTimeout(() => {
+      const modalEl = document.querySelector(
+        ".modal.custom-modal-z"
+      ) as HTMLElement;
+      if (modalEl) {
+        modalEl.style.zIndex = zIndex.toString();
+      }
+    }, 0);
+    // Reset filters when modal closes
+    this.modalRef.closed.subscribe(() => {
+      this.d3SelectedFields = [];
+      this.d3SelectedAuthors = [];
+      this.applyAllFilters();
+      this.cdr.detectChanges();
+    });
+    this.modalRef.dismissed.subscribe(() => {
+      this.d3SelectedFields = [];
+      this.d3SelectedAuthors = [];
+      this.applyAllFilters();
+      this.cdr.detectChanges();
     });
   }
 

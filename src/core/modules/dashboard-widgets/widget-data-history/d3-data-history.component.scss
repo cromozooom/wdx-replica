@@ -1,18 +1,3 @@
-/* Ensure offcanvas and its backdrop are above D3 tooltips */
-.offcanvas-backdrop,
-.offcanvas,
-.offcanvas.show {
-  z-index: 12001 !important;
-}
-
-.offcanvas.offcanvas-end.show {
-  z-index: 12001 !important;
-}
-
-/* Ensure offcanvas is above D3 tooltips */
-.offcanvas {
-  z-index: 12000 !important;
-}
 .author-label {
   font-family: inherit;
   fill: #444;
