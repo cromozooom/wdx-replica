@@ -41,6 +41,7 @@ import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.com
   ],
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
+  showTimeline = true;
   hideInitialValues = false;
   filteredDataArray: any[] = [];
   // Store filter state
