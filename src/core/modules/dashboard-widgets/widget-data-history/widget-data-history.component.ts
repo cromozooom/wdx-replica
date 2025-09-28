@@ -11,6 +11,7 @@ import {
 import { ColDef, RowAutoHeightModule, ModuleRegistry } from "ag-grid-community";
 import * as d3 from "d3";
 import { CommonModule } from "@angular/common";
+import { NgSelectModule } from "@ng-select/ng-select";
 import { FormsModule } from "@angular/forms";
 import { AgGridModule } from "ag-grid-angular";
 import { ActorCellRendererComponent } from "./actor-cell-renderer.component";
@@ -26,7 +27,6 @@ import {
   WIDGET_DATA_HISTORY_FAKE_DATA,
 } from "./widget-data-history.dummy-data";
 import { GridHistoryDataComponent } from "./grid-history-data.component";
-import { HistoryVisualisationDataComponent } from "./history-visualisation-data.component";
 import { D3DataHistoryComponent } from "./d3-data-history.component";
 
 @Component({
@@ -38,13 +38,13 @@ import { D3DataHistoryComponent } from "./d3-data-history.component";
     CommonModule,
     FormsModule,
     AgGridModule,
+    NgSelectModule,
     ActorCellRendererComponent,
     MultilineCellRenderer,
     FieldIconCellRendererComponent,
     AuthorGroupCellRendererComponent,
     FieldGroupCellRendererComponent,
     GridHistoryDataComponent,
-    HistoryVisualisationDataComponent,
     D3DataHistoryComponent,
   ],
 })
@@ -64,6 +64,8 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   gridApi: any;
   syncData: boolean = false;
 
+  public fieldNames: string[] = [];
+  public authorNames: string[] = [];
   public columnDefs: ColDef[] = [
     {
       width: 250,
@@ -164,7 +166,6 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   onD3FilterChanged(filter: { fields: string[]; authors: string[] }) {
     this.d3SelectedFields = filter.fields;
     this.d3SelectedAuthors = filter.authors;
-    // Optionally, trigger grid refresh or other logic here
     this.cdr.detectChanges();
   }
   get fakeData(): any[] {

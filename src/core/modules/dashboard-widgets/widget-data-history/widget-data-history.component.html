@@ -13,69 +13,44 @@
       </select>
       <span class="ms-2">{{ fakeData.length }} changes</span>
     </div>
+    <div class="d-flex gap-2 align-items-center">
+      <ng-select
+        class="w-auto"
+        [items]="fieldNames"
+        bindLabel="field"
+        placeholder="Filter by field"
+        [(ngModel)]="d3SelectedFields"
+        [multiple]="true"
+        [clearable]="true"
+        (change)="
+          onD3FilterChanged({
+            fields: d3SelectedFields,
+            authors: d3SelectedAuthors,
+          })
+        "
+      ></ng-select>
+      <ng-select
+        class="w-auto"
+        [items]="authorNames"
+        bindLabel="author"
+        [multiple]="true"
+        placeholder="Filter by author"
+        [(ngModel)]="d3SelectedAuthors"
+        [clearable]="true"
+        (change)="
+          onD3FilterChanged({
+            fields: d3SelectedFields,
+            authors: d3SelectedAuthors,
+          })
+        "
+      ></ng-select>
+    </div>
   </div>
   <div class="flex-grow-1 w-100 d-flex flex-column">
-    <div class="w-100 p-2 d-flex align-items-center">
-      <div class="d-none border w-100 flex-grow-1 p-2">
-        <div
-          class="controlls d-flex justify-content-start align-items-center gap-2"
-        >
-          <div>
-            <select
-              class="form-select form-select-sm"
-              aria-label="select timeframe"
-              [(ngModel)]="timeframe"
-              (change)="onTimeframeChange()"
-            >
-              <option value="daily">Day</option>
-              <option value="week">Week</option>
-              <option value="month">Month</option>
-              <option value="year">Year</option>
-              <option value="all">All the time</option>
-            </select>
-          </div>
-          <div>
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button
-                type="button"
-                class="btn btn-sm btn-link text-decoration-none"
-                (click)="timeframe === 'daily' ? goPrevDay() : onPrev()"
-                [disabled]="
-                  timeframe === 'daily'
-                    ? !canGoPrevDay
-                    : timeframe === 'week'
-                      ? !canGoPrevWeek
-                      : false
-                "
-              >
-                Prev
-              </button>
-              <button
-                type="button"
-                class="btn btn-sm btn-link text-decoration-none"
-                (click)="timeframe === 'daily' ? goNextDay() : onNext()"
-                [disabled]="
-                  timeframe === 'daily'
-                    ? !canGoNextDay
-                    : timeframe === 'week'
-                      ? !canGoNextWeek
-                      : false
-                "
-              >
-                Next
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- D3 Timeline Visualization -->
-        <app-history-visualisation-data
-          [data]="syncData ? filteredData : fakeData"
-          [timeframe]="timeframe"
-          [selectedDay]="selectedDay"
-          [currentDate]="currentDate"
-          [syncData]="syncData"
-        ></app-history-visualisation-data>
-      </div>
+    <div class="w-100 flex-grow-0 d-flex p-2">
+      <app-d3-data-history
+        [data]="syncData ? filteredData : fakeData"
+      ></app-d3-data-history>
     </div>
     <div class="w-100 flex-grow-1 d-flex p-2">
       <app-grid-history-data
@@ -89,12 +64,6 @@
           autoHeight: true,
         }"
       ></app-grid-history-data>
-    </div>
-    <div class="w-100 flex-grow-0 d-flex p-2">
-      <app-d3-data-history
-        [data]="syncData ? filteredData : fakeData"
-        (filterChanged)="onD3FilterChanged($event)"
-      ></app-d3-data-history>
     </div>
   </div>
 </div>

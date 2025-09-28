@@ -33,26 +33,6 @@
           >Hide initial values</label
         >
       </div>
-      <ng-select
-        class="w-auto"
-        [items]="fieldNames"
-        bindLabel="field"
-        placeholder="Filter by field"
-        [(ngModel)]="selectedFields"
-        [multiple]="true"
-        [clearable]="true"
-        (change)="onFilterChange()"
-      ></ng-select>
-      <ng-select
-        class="w-auto"
-        [items]="authorNames"
-        bindLabel="author"
-        [multiple]="true"
-        placeholder="Filter by author"
-        [(ngModel)]="selectedAuthors"
-        [clearable]="true"
-        (change)="onFilterChange()"
-      ></ng-select>
     </div>
   </div>
   <svg #d3svg style="width: 100%; height: 400px; display: block"></svg>

@@ -64,20 +64,9 @@ export class D3DataHistoryComponent {
   public selectedFields: string[] = [];
   public selectedAuthors: string[] = [];
   ngOnInit() {
-    // Populate fieldNames and authorNames from your data source (replace 'this.data' with your actual data array)
-    if (this.data) {
-      this.fieldNames = Array.from(
-        new Set(this.data.map((d: any) => d.fieldDisplayName).filter(Boolean))
-      );
-      this.authorNames = Array.from(
-        new Set(
-          this.data
-            .map((d: any) => d.actor && d.actor.displayName)
-            .filter(Boolean)
-        )
-      );
-    }
+    // No-op: fieldNames and authorNames are now handled in the parent.
   }
+  // updateFieldAndAuthorNames is now handled in the parent; no longer needed here.
 
   onFilterChange() {
     this.filteredData = this.data.filter((d: any) => {
