@@ -24,8 +24,11 @@
           [checked]="hideInitialValues"
           (change)="onToggleHideInitialValues()"
         />
-        <span class="ms-1"
-          >{{ hideInitialValues ? "Show" : "Hide" }} initial values</span
+        <span class="ms-2">
+          <div class="sr-only">
+            {{ hideInitialValues ? "Show" : "Hide" }}
+          </div>
+          Initial Values</span
         >
       </label>
       <label
@@ -38,8 +41,11 @@
           [checked]="showTimeline"
           (change)="showTimeline = !showTimeline"
         />
-        <span class="ms-1">
-          {{ showTimeline ? "Hide" : "Show" }} timeline
+        <span class="ms-2">
+          <div class="sr-only">
+            {{ showTimeline ? "Hide" : "Show" }}
+          </div>
+          Timeline
         </span>
       </label>
       <ng-select

@@ -587,13 +587,13 @@ export class D3DataHistoryComponent {
       }
       for (const [field, points] of fieldPaths.entries()) {
         if (Array.isArray(points) && points.length >= 2) {
-          // Main visible line, 1px
+          // Main visible line, 1px, default opacity 0.5
           this.g
             .append("path")
             .attr("fill", "none")
             .attr("stroke", this.fieldColors.get(field) || "#888")
             .attr("stroke-width", 1)
-            .attr("opacity", 1)
+            .attr("opacity", 0.5)
             .attr(
               "class",
               `field-snake-line field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
@@ -613,16 +613,15 @@ export class D3DataHistoryComponent {
             .style("cursor", "pointer");
           hitPath
             .on("mouseenter", () => {
+              d3.selectAll(".field-snake-line").attr("opacity", 0.2);
               d3.selectAll(
                 `.field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
               )
-                .attr("stroke-width", 6)
+                .attr("opacity", 1)
                 .raise();
             })
             .on("mouseleave", () => {
-              d3.selectAll(
-                `.field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
-              ).attr("stroke-width", 1);
+              d3.selectAll(".field-snake-line").attr("opacity", 0.5);
             })
             .on("click", function (event) {
               // Remove any other open tooltips
@@ -775,13 +774,11 @@ export class D3DataHistoryComponent {
       .attr("stroke-width", 2)
       .style("cursor", "pointer")
       .on("mouseenter", function (event, d) {
-        d3.selectAll(".field-snake-line").attr("opacity", 0.4);
-        d3.selectAll(".event-dot").attr("opacity", 0.4);
+        d3.selectAll(".field-snake-line").attr("opacity", 0.2);
         d3.selectAll(
           `.field-snake-line-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
         )
           .attr("opacity", 1)
-          .attr("stroke-width", 6)
           .raise();
         d3.selectAll(`.event-dot-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`)
           .attr("opacity", 1)
@@ -789,11 +786,14 @@ export class D3DataHistoryComponent {
             const dot = d2 as { isFirst: boolean; isLast: boolean };
             return dot.isFirst || dot.isLast ? 10 : 6;
           });
+        d3.selectAll(
+          ".event-dot:not(.event-dot-" +
+            d.field.replace(/[^a-zA-Z0-9_-]/g, "_") +
+            ")"
+        ).attr("opacity", 0.2);
       })
       .on("mouseleave", function (event, d) {
-        d3.selectAll(".field-snake-line")
-          .attr("opacity", 1)
-          .attr("stroke-width", 1);
+        d3.selectAll(".field-snake-line").attr("opacity", 0.5);
         d3.selectAll(".event-dot")
           .attr("opacity", 1)
           .attr("r", (d2) => {
@@ -834,14 +834,7 @@ export class D3DataHistoryComponent {
       let btnHtml = "";
       // Debug: log the 'to' value for every tooltip
       console.log("[D3DataHistory] Tooltip render, to value:", to);
-      if (
-        to &&
-        typeof to.displayValue !== "undefined" &&
-        to.displayValue !== null &&
-        to.displayValue !== ""
-      ) {
-        btnHtml = `<button id='${btnId}' class="btn btn-sm btn-primary mt-2 mb-2 me-2">See Changes</button>`;
-      }
+      btnHtml = `<button id='${btnId}' class="btn btn-sm btn-primary mt-2 mb-2 me-2">See Changes</button>`;
       tooltipEl.innerHTML =
         `<div class='position-relative'>` +
         `<strong>Field:</strong> ${d.field}<br/>` +
