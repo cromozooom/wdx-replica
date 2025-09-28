@@ -15,11 +15,13 @@ import { SideBySideDiffComponent, UnifiedDiffComponent } from "ngx-diff";
 import { NgSelectModule } from "@ng-select/ng-select";
 import * as d3 from "d3";
 import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-d3-data-history",
   standalone: true,
   imports: [
+    CommonModule,
     FormsModule,
     SideBySideDiffComponent,
     UnifiedDiffComponent,
@@ -29,6 +31,8 @@ import { FormsModule } from "@angular/forms";
   styleUrls: ["./d3-data-history.component.scss"],
 })
 export class D3DataHistoryComponent {
+  @Input() hideOpenModalButton = false;
+  @Output() openModal = new EventEmitter<void>();
   diffView: "side-by-side" | "unified" = "side-by-side";
   constructor(private offcanvasService: NgbOffcanvas) {}
   @Output() filterChanged = new EventEmitter<{

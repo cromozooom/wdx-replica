@@ -6,6 +6,14 @@
     <div class="d-flex gap-2 align-items-center p-2">
       <div class="btn-group">
         <button
+          *ngIf="!hideOpenModalButton"
+          class="btn btn-link btn-sm d-flex align-items-center gap-2 text-decoration-none"
+          (click)="openModal.emit()"
+        >
+          <i class="fa-solid fa-expand"></i>
+          Open Modal
+        </button>
+        <button
           class="btn btn-link btn-sm d-flex align-items-center gap-2 text-decoration-none"
           (click)="fitToScreen()"
         >

@@ -3,12 +3,6 @@
     class="w-100 pt-2 px-2 d-flex align-items-center justify-content-between"
   >
     <div class="d-flex align-items-center gap-2">
-      <button
-        class="btn btn-outline-primary me-2"
-        (click)="openFullscreenModal(content)"
-      >
-        Fullscreen modal
-      </button>
       <select
         class="form-select w-auto d-inline-block"
         [(ngModel)]="selectedDataset"
@@ -93,7 +87,10 @@
   </div>
   <div class="flex-grow-1 w-100 d-flex flex-column">
     <div class="w-100 flex-grow-0 d-flex p-2" *ngIf="showTimeline">
-      <app-d3-data-history [data]="filteredData"></app-d3-data-history>
+      <app-d3-data-history
+        [data]="filteredData"
+        (openModal)="openFullscreenModal()"
+      ></app-d3-data-history>
     </div>
     <div class="w-100 flex-grow-1 d-flex p-2">
       <app-grid-history-data
@@ -134,6 +131,8 @@
       <app-d3-data-history
         [data]="filteredData"
         style="flex: 1 1 0%; height: 100%"
+        (openModal)="openFullscreenModal()"
+        [hideOpenModalButton]="true"
       ></app-d3-data-history>
     </div>
   </div>
