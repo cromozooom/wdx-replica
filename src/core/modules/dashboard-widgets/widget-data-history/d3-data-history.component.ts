@@ -949,13 +949,11 @@ export class D3DataHistoryComponent {
         .attr("fill", (d: any) => this.fieldColors.get(d.field) || "#888")
         .style("cursor", "pointer")
         .on("mouseenter", function (event, d) {
-          d3.selectAll(".field-snake-line").attr("opacity", 0.4);
-          d3.selectAll(".event-dot").attr("opacity", 0.4);
+          d3.selectAll(".field-snake-line").attr("opacity", 0.2);
           d3.selectAll(
             `.field-snake-line-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
           )
             .attr("opacity", 1)
-            .attr("stroke-width", 6)
             .raise();
           d3.selectAll(`.event-dot-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`)
             .attr("opacity", 1)
@@ -963,11 +961,14 @@ export class D3DataHistoryComponent {
               const dot = d2 as { isFirst: boolean; isLast: boolean };
               return dot.isFirst || dot.isLast ? 10 : 6;
             });
+          d3.selectAll(
+            ".event-dot:not(.event-dot-" +
+              d.field.replace(/[^a-zA-Z0-9_-]/g, "_") +
+              ")"
+          ).attr("opacity", 0.2);
         })
         .on("mouseleave", function (event, d) {
-          d3.selectAll(".field-snake-line")
-            .attr("opacity", 1)
-            .attr("stroke-width", 1);
+          d3.selectAll(".field-snake-line").attr("opacity", 0.5);
           d3.selectAll(".event-dot")
             .attr("opacity", 1)
             .attr("r", (d2) => {
