@@ -8,6 +8,7 @@ import {
   TextFilterModule,
   ModuleRegistry,
   ClientSideRowModelModule,
+  RowAutoHeightModule,
 } from "ag-grid-community";
 import {
   AdvancedFilterModule,
@@ -20,6 +21,7 @@ ModuleRegistry.registerModules([
   ClientSideRowModelModule,
   ColumnMenuModule,
   ContextMenuModule,
+  RowAutoHeightModule,
   // ...(process.env.NODE_ENV !== "production" ? [ValidationModule] : []),
 ]);
 
