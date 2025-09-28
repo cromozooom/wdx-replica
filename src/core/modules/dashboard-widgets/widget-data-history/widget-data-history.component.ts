@@ -242,11 +242,11 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
   // --- Timeline/Navigation State ---
 
-  onDatasetChange(event: Event) {
-    const select = event.target as HTMLSelectElement;
-    const idx = select.selectedIndex;
-    this.selectedDataset = this.datasets[idx];
+  onDatasetChange(selected: any) {
+    this.selectedDataset = selected;
     patchState(this.dataStore, { data: this.selectedDataset.value });
+    this.applyAllFilters();
+    this.cdr.detectChanges();
     this.updateFieldAndAuthorNames();
     this.computeWeeksWithNodes();
     // If in week mode, ensure currentDate is a valid week
