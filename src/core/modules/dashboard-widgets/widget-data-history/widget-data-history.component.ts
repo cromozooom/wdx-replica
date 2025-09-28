@@ -218,7 +218,9 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     this.gridApi = event.api;
     // Set initial data
     this.filteredDataArray = this.getInitialFilteredData();
-    this.gridApi.setRowData(this.filteredDataArray);
+    if (this.gridApi && typeof this.gridApi.setRowData === "function") {
+      this.gridApi.setRowData(this.filteredDataArray);
+    }
   }
 
   getInitialFilteredData() {
@@ -245,9 +247,12 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   onDatasetChange(selected: any) {
     this.selectedDataset = selected;
     patchState(this.dataStore, { data: this.selectedDataset.value });
+    this.updateFieldAndAuthorNames();
+    // Reset filters after updating available options
+    this.d3SelectedFields = [];
+    this.d3SelectedAuthors = [];
     this.applyAllFilters();
     this.cdr.detectChanges();
-    this.updateFieldAndAuthorNames();
     this.computeWeeksWithNodes();
     // If in week mode, ensure currentDate is a valid week
     if (this.timeframe === "week" && this.weekStartDatesWithNodes.length) {
