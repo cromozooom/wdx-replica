@@ -66,24 +66,6 @@ export class D3DataHistoryComponent {
   ngOnInit() {
     // No-op: fieldNames and authorNames are now handled in the parent.
   }
-  // updateFieldAndAuthorNames is now handled in the parent; no longer needed here.
-
-  onFilterChange() {
-    this.filteredData = this.data.filter((d: any) => {
-      const fieldMatch =
-        !this.selectedFields.length ||
-        this.selectedFields.includes(d.fieldDisplayName);
-      const authorMatch =
-        !this.selectedAuthors.length ||
-        (d.actor && this.selectedAuthors.includes(d.actor.displayName));
-      return fieldMatch && authorMatch;
-    });
-    this.filterChanged.emit({
-      fields: this.selectedFields,
-      authors: this.selectedAuthors,
-    });
-    this.render();
-  }
   private fieldColors: Map<string, string> = new Map();
 
   // Helper to generate a color palette
