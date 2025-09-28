@@ -12,7 +12,11 @@
           {{ ds.label }}
         </option>
       </select>
-      <span class="ms-2">{{ fakeData.length }} changes</span>
+      <span class="ms-2">
+        <div class="badge text-info-emphasis bg-info-subtle">
+          {{ fakeData.length }} changes
+        </div>
+      </span>
     </div>
     <div class="d-flex gap-3 align-items-center">
       <label
