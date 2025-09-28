@@ -5,9 +5,10 @@
     <div class="d-flex align-items-center gap-2">
       <select
         class="form-select w-auto d-inline-block"
-        (change)="onDatasetChange($event)"
+        [(ngModel)]="selectedDataset"
+        (ngModelChange)="onDatasetChange($event)"
       >
-        <option *ngFor="let ds of datasets" [selected]="ds === selectedDataset">
+        <option *ngFor="let ds of datasets" [ngValue]="ds">
           {{ ds.label }}
         </option>
       </select>
@@ -21,15 +22,15 @@
         <input
           type="checkbox"
           class="form-check-input"
-          [checked]="hideInitialValues"
+          [checked]="!hideInitialValues"
           (change)="onToggleHideInitialValues()"
         />
         <span class="ms-2">
           <div class="sr-only">
-            {{ hideInitialValues ? "Show" : "Hide" }}
+            {{ !hideInitialValues ? "Showing" : "Hiding" }}
           </div>
-          Initial Values</span
-        >
+          Initial Values
+        </span>
       </label>
       <label
         class="form-check form-switch mb-0 align-items-center d-flex"

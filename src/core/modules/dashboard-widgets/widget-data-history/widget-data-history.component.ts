@@ -14,7 +14,7 @@ import { ColDef } from "ag-grid-community";
 import { signalState, patchState } from "@ngrx/signals";
 import { FieldTypeIcon, FieldIconMap } from "./field-icons";
 import {
-  WPO_16698,
+  WIPO_16698,
   WIDGET_DATA_HISTORY_FAKE_DATA,
 } from "./widget-data-history.dummy-data";
 import { GridHistoryDataComponent } from "./grid-history-data.component";
@@ -50,7 +50,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
   constructor(private cdr: ChangeDetectorRef) {}
   datasets = [
     { label: "Default", value: WIDGET_DATA_HISTORY_FAKE_DATA },
-    { label: "WPO_16698", value: WPO_16698 },
+    { label: "WIPO_16698", value: WIPO_16698 },
   ];
   selectedDataset = this.datasets[1];
   dataStore = signalState<{ data: any[] }>({
@@ -218,7 +218,9 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     this.gridApi = event.api;
     // Set initial data
     this.filteredDataArray = this.getInitialFilteredData();
-    this.gridApi.setRowData(this.filteredDataArray);
+    if (this.gridApi && typeof this.gridApi.setRowData === "function") {
+      this.gridApi.setRowData(this.filteredDataArray);
+    }
   }
 
   getInitialFilteredData() {
@@ -242,12 +244,15 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
   // --- Timeline/Navigation State ---
 
-  onDatasetChange(event: Event) {
-    const select = event.target as HTMLSelectElement;
-    const idx = select.selectedIndex;
-    this.selectedDataset = this.datasets[idx];
+  onDatasetChange(selected: any) {
+    this.selectedDataset = selected;
     patchState(this.dataStore, { data: this.selectedDataset.value });
     this.updateFieldAndAuthorNames();
+    // Reset filters after updating available options
+    this.d3SelectedFields = [];
+    this.d3SelectedAuthors = [];
+    this.applyAllFilters();
+    this.cdr.detectChanges();
     this.computeWeeksWithNodes();
     // If in week mode, ensure currentDate is a valid week
     if (this.timeframe === "week" && this.weekStartDatesWithNodes.length) {
