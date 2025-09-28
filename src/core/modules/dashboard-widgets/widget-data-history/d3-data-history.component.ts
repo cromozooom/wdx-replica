@@ -15,11 +15,13 @@ import { SideBySideDiffComponent, UnifiedDiffComponent } from "ngx-diff";
 import { NgSelectModule } from "@ng-select/ng-select";
 import * as d3 from "d3";
 import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-d3-data-history",
   standalone: true,
   imports: [
+    CommonModule,
     FormsModule,
     SideBySideDiffComponent,
     UnifiedDiffComponent,
@@ -29,6 +31,8 @@ import { FormsModule } from "@angular/forms";
   styleUrls: ["./d3-data-history.component.scss"],
 })
 export class D3DataHistoryComponent {
+  @Input() hideOpenModalButton = false;
+  @Output() openModal = new EventEmitter<void>();
   diffView: "side-by-side" | "unified" = "side-by-side";
   constructor(private offcanvasService: NgbOffcanvas) {}
   @Output() filterChanged = new EventEmitter<{
@@ -88,6 +92,8 @@ export class D3DataHistoryComponent {
   private svg: d3.Selection<SVGSVGElement, unknown, null, undefined> | null =
     null;
   private g: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
+  private dotLayer: d3.Selection<SVGGElement, unknown, null, undefined> | null =
+    null;
   private zoom: d3.ZoomBehavior<SVGSVGElement, unknown> | null = null;
 
   ngAfterViewInit() {
@@ -177,6 +183,8 @@ export class D3DataHistoryComponent {
       .style("cursor", "grab");
 
     this.g = this.svg.append("g");
+    // Dedicated group for event dots, always appended last
+    this.dotLayer = this.svg.append("g").attr("class", "dot-layer");
 
     this.zoom = d3
       .zoom<SVGSVGElement, unknown>()

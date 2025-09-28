@@ -87,7 +87,10 @@
   </div>
   <div class="flex-grow-1 w-100 d-flex flex-column">
     <div class="w-100 flex-grow-0 d-flex p-2" *ngIf="showTimeline">
-      <app-d3-data-history [data]="filteredData"></app-d3-data-history>
+      <app-d3-data-history
+        [data]="filteredData"
+        (openModal)="openFullscreenModal()"
+      ></app-d3-data-history>
     </div>
     <div class="w-100 flex-grow-1 d-flex p-2">
       <app-grid-history-data
@@ -105,3 +108,32 @@
     </div>
   </div>
 </div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Timeline mode</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body p-0">
+    <div
+      style="
+        height: 100%;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+      "
+    >
+      <app-d3-data-history
+        [data]="filteredData"
+        style="flex: 1 1 0%; height: 100%"
+        (openModal)="openFullscreenModal()"
+        [hideOpenModalButton]="true"
+      ></app-d3-data-history>
+    </div>
+  </div>
+</ng-template>
