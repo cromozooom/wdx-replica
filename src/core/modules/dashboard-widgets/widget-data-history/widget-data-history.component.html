@@ -48,14 +48,12 @@
   </div>
   <div class="flex-grow-1 w-100 d-flex flex-column">
     <div class="w-100 flex-grow-0 d-flex p-2">
-      <app-d3-data-history
-        [data]="syncData ? filteredData : fakeData"
-      ></app-d3-data-history>
+      <app-d3-data-history [data]="filteredData"></app-d3-data-history>
     </div>
     <div class="w-100 flex-grow-1 d-flex p-2">
       <app-grid-history-data
         class="w-100 flex-grow-1"
-        [rowData]="fakeData"
+        [rowData]="filteredData"
         [columnDefs]="columnDefs"
         [defaultColDef]="{
           resizable: true,

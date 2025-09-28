@@ -1,33 +1,29 @@
 // (Removed duplicate/stray class and method stubs. File now starts with imports and a single class definition.)
-import { signalState } from "@ngrx/signals";
-import { patchState } from "@ngrx/signals";
-import { FieldTypeIcon, FieldIconMap } from "./field-icons";
+
 import {
   Component,
   OnInit,
   AfterViewInit,
   ChangeDetectorRef,
 } from "@angular/core";
-import { ColDef, RowAutoHeightModule, ModuleRegistry } from "ag-grid-community";
-import * as d3 from "d3";
 import { CommonModule } from "@angular/common";
-import { NgSelectModule } from "@ng-select/ng-select";
 import { FormsModule } from "@angular/forms";
 import { AgGridModule } from "ag-grid-angular";
-import { ActorCellRendererComponent } from "./actor-cell-renderer.component";
-import { MultilineCellRenderer } from "./multiline-cell-renderer.component";
-import { FieldIconCellRendererComponent } from "./field-icon-cell-renderer.component";
-import { AuthorGroupCellRendererComponent } from "./author-group-cell-renderer.component";
-import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.component";
-
-ModuleRegistry.registerModules([RowAutoHeightModule]);
-
+import { NgSelectModule } from "@ng-select/ng-select";
+import { ColDef } from "ag-grid-community";
+import { signalState, patchState } from "@ngrx/signals";
+import { FieldTypeIcon, FieldIconMap } from "./field-icons";
 import {
   WPO_16698,
   WIDGET_DATA_HISTORY_FAKE_DATA,
 } from "./widget-data-history.dummy-data";
 import { GridHistoryDataComponent } from "./grid-history-data.component";
 import { D3DataHistoryComponent } from "./d3-data-history.component";
+import { ActorCellRendererComponent } from "./actor-cell-renderer.component";
+import { MultilineCellRenderer } from "./multiline-cell-renderer.component";
+import { FieldIconCellRendererComponent } from "./field-icon-cell-renderer.component";
+import { AuthorGroupCellRendererComponent } from "./author-group-cell-renderer.component";
+import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.component";
 
 @Component({
   selector: "app-widget-data-history",
@@ -147,6 +143,17 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
       cellStyle: { whiteSpace: "pre-line", wordBreak: "break-word" },
     },
   ];
+  updateFieldAndAuthorNames() {
+    const data = this.dataStore.data();
+    this.fieldNames = Array.from(
+      new Set(data.map((d: any) => d.fieldDisplayName).filter(Boolean))
+    );
+    this.authorNames = Array.from(
+      new Set(
+        data.map((d: any) => d.actor && d.actor.displayName).filter(Boolean)
+      )
+    );
+  }
 
   // Provide filteredData for template compatibility (update with real filtering logic if needed)
   get filteredData(): any[] {
@@ -179,6 +186,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
     const idx = select.selectedIndex;
     this.selectedDataset = this.datasets[idx];
     patchState(this.dataStore, { data: this.selectedDataset.value });
+    this.updateFieldAndAuthorNames();
     this.computeWeeksWithNodes();
     // If in week mode, ensure currentDate is a valid week
     if (this.timeframe === "week" && this.weekStartDatesWithNodes.length) {
@@ -228,6 +236,7 @@ export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {
 
   // --- Lifecycle Hooks ---
   ngOnInit(): void {
+    this.updateFieldAndAuthorNames();
     // Set selectedDay to the last day with modifications by default
     const allTimestamps = this.dataStore.data().map((d: any) => d.timestamp);
     const allDates = allTimestamps.map((ts: any) =>
