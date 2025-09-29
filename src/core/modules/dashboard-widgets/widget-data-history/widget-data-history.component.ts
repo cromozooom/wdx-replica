@@ -28,6 +28,7 @@ import { MultilineCellRenderer } from "./multiline-cell-renderer.component";
 import { FieldIconCellRendererComponent } from "./field-icon-cell-renderer.component";
 import { AuthorGroupCellRendererComponent } from "./author-group-cell-renderer.component";
 import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.component";
+import { WidgetLayoutComponent } from "../../../../app/widget-layout/widget-layout.component";
 
 @Component({
   selector: "app-widget-data-history",
@@ -42,6 +43,7 @@ import { FieldGroupCellRendererComponent } from "./field-group-cell-renderer.com
     // Removed unused cell renderer components from imports
     GridHistoryDataComponent,
     D3DataHistoryComponent,
+    WidgetLayoutComponent,
   ],
 })
 export class WidgetDataHistoryComponent implements OnInit, AfterViewInit {

@@ -243,3 +243,9 @@ body {
   outline: 2px solid rgb(var(--bs-info-rgb));
   outline-offset: 2px;
 }
+.blur-bg {
+  background: #fffc;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  box-shadow: var(--bs-box-shadow-sm);
+}
