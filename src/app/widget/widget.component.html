@@ -1,12 +1,14 @@
 <div class="flex-grow-1 d-flex flex-column m-2 border shadow rounded">
-  <ng-container [ngSwitch]="type">
-    <div *ngSwitchCase="'automation'" class="p-2 border-bottom">
-      <strong>Data Remediation</strong>
-    </div>
-    <div *ngSwitchCase="'widget-data-history'" class="p-2 border-bottom">
-      <strong>Data History</strong>
-    </div>
-  </ng-container>
+  <div class="p-2 border-bottom">
+    <ng-container [ngSwitch]="type">
+      <ng-container *ngSwitchCase="'automation'">
+        <strong>Data Remediation</strong>
+      </ng-container>
+      <ng-container *ngSwitchCase="'widget-data-history'">
+        <strong>Data History</strong>
+      </ng-container>
+    </ng-container>
+  </div>
 
   <ng-container [ngSwitch]="type">
     <app-widget-automation-content

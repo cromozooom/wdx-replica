@@ -1,6 +1,6 @@
 <div class="d3-data-history border rounded w-100 position-relative">
   <div
-    class="position-absolute bg-white border-start border-bottom end-0 top-0"
+    class="position-absolute blur-bg border-start border-bottom end-0 top-0"
     style="z-index: 10; width: auto"
   >
     <div class="d-flex gap-2 align-items-center p-2">
@@ -11,15 +11,15 @@
           (click)="openModal.emit()"
         >
           <i class="fa-solid fa-expand"></i>
-          Open Modal
+          Expand
         </button>
         <button
           class="btn btn-link btn-sm d-flex align-items-center gap-2 text-decoration-none"
           (click)="fitToScreen()"
         >
-          <i class="fa-solid fa-expand"></i>
+          <i class="fa-solid fa-arrows-to-circle"></i>
 
-          Fit to screen
+          Fit
         </button>
       </div>
       <div class="form-check form-switch">
