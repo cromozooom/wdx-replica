@@ -1,27 +1,16 @@
-<div class="flex-grow-1 d-flex flex-column m-2 border shadow rounded">
-  <div class="p-2 border-bottom">
-    <ng-container [ngSwitch]="type">
-      <ng-container *ngSwitchCase="'automation'">
-        <strong>Data Remediation</strong>
-      </ng-container>
-      <ng-container *ngSwitchCase="'widget-data-history'">
-        <strong>Data History</strong>
-      </ng-container>
-    </ng-container>
-  </div>
+<ng-container [ngSwitch]="type">
+  <app-widget-automation-content
+    *ngSwitchCase="'automation'"
+    class="flex-grow-1"
+  ></app-widget-automation-content>
+  <app-widget-data-history
+    *ngSwitchCase="'widget-data-history'"
+    class="flex-grow-1"
+  ></app-widget-data-history>
 
-  <ng-container [ngSwitch]="type">
-    <app-widget-automation-content
-      *ngSwitchCase="'automation'"
-      class="flex-grow-1"
-    ></app-widget-automation-content>
-    <app-widget-data-history
-      *ngSwitchCase="'widget-data-history'"
-      class="flex-grow-1"
-    ></app-widget-data-history>
-    <app-widget-default-content
-      *ngSwitchDefault
-      class="flex-grow-1"
-    ></app-widget-default-content>
-  </ng-container>
-</div>
+  <!-- from this component I would like to receive the template that should be used -->
+  <app-widget-default-content
+    *ngSwitchDefault
+    class="flex-grow-1"
+  ></app-widget-default-content>
+</ng-container>
