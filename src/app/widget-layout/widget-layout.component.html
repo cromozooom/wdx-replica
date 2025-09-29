@@ -1,0 +1,9 @@
+<div class="flex-grow-1 d-flex flex-column border shadow rounded m-2">
+  <div class="border-bottom d-flex align-items-center justify-content-between">
+    <ng-content select="[slot=title]"></ng-content>
+    <ng-content select="[slot=header]"></ng-content>
+  </div>
+  <div class="flex-grow-1 d-flex flex-column">
+    <ng-content></ng-content>
+  </div>
+</div>
