@@ -1,4 +1,4 @@
-import { Component, signal } from "@angular/core";
+import { Component, signal, effect } from "@angular/core";
 import { NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { FormEditorComponent } from "./form-editor/form-editor.component";
@@ -24,24 +24,10 @@ import {
   ],
 })
 export class WidgetFormHistoryComponent {
-  active = 1;
+  active = 3;
 
-  // --- Single Signal Store ---
   state = signal({
-    users: [
-      {
-        id: "1",
-        name: "Alice",
-        role: "admin",
-        current: true,
-      },
-      {
-        id: "2",
-        name: "Bob",
-        role: "default",
-        current: false,
-      },
-    ] as User[],
+    users: [] as User[],
     forms: [
       {
         id: "f1",
@@ -82,7 +68,74 @@ export class WidgetFormHistoryComponent {
         saveType: "automatic",
       },
     ] as FormHistoryEntry[],
-    currentUserId: "1" as string | null,
+    currentUserId: null as string | null,
     selectedFormId: "f1" as string | null,
   });
+
+  constructor() {
+    // Load users from localStorage if available
+    const usersJson = localStorage.getItem("widgetUsers");
+    if (usersJson) {
+      try {
+        const users = JSON.parse(usersJson);
+        this.state.update((s) => ({ ...s, users }));
+      } catch {}
+    } else {
+      // If no users in storage, set some demo users
+      this.state.update((s) => ({
+        ...s,
+        users: [
+          { id: "1", name: "Alice", role: "admin", current: true },
+          { id: "2", name: "Bob", role: "default", current: false },
+        ],
+        currentUserId: "1",
+      }));
+    }
+    // Sync users to localStorage on state change
+    effect(() => {
+      const users = this.state().users;
+      localStorage.setItem("widgetUsers", JSON.stringify(users));
+    });
+  }
+
+  handleAddUser(user: Omit<User, "id">) {
+    const id = Date.now().toString();
+    const newUser: User = { ...user, id };
+    this.state.update((s) => {
+      let users = [...s.users, newUser];
+      let currentUserId = s.currentUserId;
+      if (user.current) {
+        users = users.map((u) => ({ ...u, current: u.id === id }));
+        currentUserId = id;
+      }
+      return {
+        ...s,
+        users,
+        currentUserId,
+      };
+    });
+  }
+
+  handleEditUser(user: User) {
+    this.state.update((s) => ({
+      ...s,
+      users: s.users.map((u) => (u.id === user.id ? { ...user } : u)),
+    }));
+  }
+
+  handleSetCurrentUser(userId: string) {
+    this.state.update((s) => ({
+      ...s,
+      users: s.users.map((u) => ({ ...u, current: u.id === userId })),
+      currentUserId: userId,
+    }));
+  }
+
+  handleRemoveUser(userId: string) {
+    this.state.update((s) => ({
+      ...s,
+      users: s.users.filter((u) => u.id !== userId),
+      currentUserId: s.currentUserId === userId ? null : s.currentUserId,
+    }));
+  }
 }

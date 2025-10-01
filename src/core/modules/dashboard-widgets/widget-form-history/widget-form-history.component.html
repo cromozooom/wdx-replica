@@ -24,7 +24,13 @@
       <button ngbNavLink>User Editors</button>
       <ng-template ngbNavContent>
         <!-- User Editors Tab Placeholder -->
-        <app-user-editors [users]="state().users"></app-user-editors>
+        <app-user-editors
+          [users]="state().users"
+          (addUser)="handleAddUser($event)"
+          (editUser)="handleEditUser($event)"
+          (setCurrentUser)="handleSetCurrentUser($event)"
+          (removeUser)="handleRemoveUser($event)"
+        ></app-user-editors>
       </ng-template>
     </li>
   </ul>
