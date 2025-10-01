@@ -2,7 +2,11 @@ import { Component } from "@angular/core";
 import { WidgetComponent } from "../widget/widget.component";
 import { ActivatedRoute } from "@angular/router";
 
-type WidgetType = "default" | "automation" | "widget-data-history";
+type WidgetType =
+  | "default"
+  | "automation"
+  | "widget-data-history"
+  | "widget-form-history";
 
 @Component({
   selector: "app-dashboard",
@@ -21,6 +25,7 @@ export class DashboardComponent {
         if (
           param === "automation" ||
           param === "widget-data-history" ||
+          param === "widget-form-history" ||
           param === "default"
         ) {
           this.type = param;

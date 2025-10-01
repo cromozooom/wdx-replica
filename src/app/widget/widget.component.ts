@@ -2,6 +2,7 @@ import { Component, Input } from "@angular/core";
 import { WidgetDefaultContentComponent } from "../widget-default-content/widget-default-content.component";
 import { WidgetAutomationContentComponent } from "../../core/modules/dashboard-widgets/widget-automation-content/widget-automation-content.component";
 import { WidgetDataHistoryComponent } from "../../core/modules/dashboard-widgets/widget-data-history/widget-data-history.component";
+import { WidgetFormHistoryComponent } from "../../core/modules/dashboard-widgets/widget-form-history/widget-form-history.component";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 
@@ -15,8 +16,13 @@ import { FormsModule } from "@angular/forms";
     WidgetDefaultContentComponent,
     WidgetAutomationContentComponent,
     WidgetDataHistoryComponent,
+    WidgetFormHistoryComponent,
   ],
 })
 export class WidgetComponent {
-  @Input() type: "default" | "automation" | "widget-data-history" = "default";
+  @Input() type:
+    | "default"
+    | "automation"
+    | "widget-data-history"
+    | "widget-form-history" = "default";
 }

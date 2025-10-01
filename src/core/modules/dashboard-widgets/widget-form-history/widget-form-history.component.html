@@ -1,0 +1,18 @@
+<div class="widget-form-history">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <button ngbNavLink>Form</button>
+      <ng-template ngbNavContent> 1 </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <button ngbNavLink>Forms</button>
+      <ng-template ngbNavContent> 2 </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <button ngbNavLink>Users</button>
+      <ng-template ngbNavContent> 3 </ng-template>
+    </li>
+  </ul>
+
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
