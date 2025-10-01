@@ -1,6 +1,18 @@
 <div class="widget-form-history">
   <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
     <li [ngbNavItem]="1">
+      <button ngbNavLink>Compare states</button>
+      <ng-template ngbNavContent>
+        <app-compare-states
+          [forms]="state().forms"
+          [formHistory]="state().formHistory"
+          [users]="state().users"
+          [historyA]="null"
+          [historyB]="null"
+        ></app-compare-states>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
       <button ngbNavLink>Form Editor</button>
       <ng-template ngbNavContent>
         <!-- Form Editor Tab Placeholder -->
@@ -16,7 +28,7 @@
         ></app-form-editor>
       </ng-template>
     </li>
-    <li [ngbNavItem]="2">
+    <li [ngbNavItem]="3">
       <button ngbNavLink>Form Creator</button>
       <ng-template ngbNavContent>
         <!-- Form Creator Tab Placeholder -->
@@ -27,7 +39,7 @@
         ></app-form-creator>
       </ng-template>
     </li>
-    <li [ngbNavItem]="3">
+    <li [ngbNavItem]="4">
       <button ngbNavLink>User Editors</button>
       <ng-template ngbNavContent>
         <!-- User Editors Tab Placeholder -->

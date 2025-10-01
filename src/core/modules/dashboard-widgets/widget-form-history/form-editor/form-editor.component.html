@@ -20,11 +20,12 @@
         [items]="users"
         bindLabel="name"
         bindValue="id"
-        [(ngModel)]="currentUserId"
-        name="currentUserId"
+        [(ngModel)]="selectedUserIdLocal"
+        name="selectedUserIdLocal"
         placeholder="Select user"
         [clearable]="false"
         class="w-100"
+        (change)="onUserChange($event)"
       >
         <ng-template ng-option-tmp let-item="item">
           {{ item.name }} <span *ngIf="item.role">({{ item.role }})</span>
@@ -34,7 +35,14 @@
   </form>
 
   <div *ngIf="selectedForm?.schema" (focusout)="onFormFocusOut($event)">
-    <div class="d-flex justify-content-end mb-2">
+    <div class="d-flex justify-content-end mb-2 gap-2">
+      <button
+        class="btn btn-outline-primary btn-sm"
+        (click)="onManualSave()"
+        [disabled]="!currentUserId"
+      >
+        Save
+      </button>
       <button
         class="btn btn-outline-secondary btn-sm"
         (click)="onRevert()"

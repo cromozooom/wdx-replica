@@ -1,0 +1,32 @@
+<div class="w-100 d-flex flex-column">
+  <div class="mb-3">
+    <label for="formSelect" class="form-label">Select Form</label>
+    <select id="formSelect" class="form-select" [(ngModel)]="selectedFormId">
+      <option *ngFor="let form of forms" [value]="form.id">
+        {{ form.name }}
+      </option>
+    </select>
+  </div>
+  <div class="w-100" *ngIf="selectedFormId">
+    <ag-grid-angular
+      style="width: 100%; height: 100%"
+      class="ag-theme-alpine"
+      [rowData]="historyRows"
+      [columnDefs]="columnDefs"
+      [domLayout]="'autoHeight'"
+      [animateRows]="true"
+      rowSelection="single"
+      (selectionChanged)="onSelectionChanged($event)"
+    ></ag-grid-angular>
+    <pre class="mt-2 bg-light p-2 border">Debug: {{ historyRows | json }}</pre>
+  </div>
+  <div *ngIf="historyA && historyB; else selectStates">
+    <h5>Compare States</h5>
+    <pre>{{ historyA.data | json }}</pre>
+    <pre>{{ historyB.data | json }}</pre>
+    <!-- TODO: Add a diff viewer here -->
+  </div>
+  <ng-template #selectStates>
+    <div class="text-muted">Select two states to compare.</div>
+  </ng-template>
+</div>

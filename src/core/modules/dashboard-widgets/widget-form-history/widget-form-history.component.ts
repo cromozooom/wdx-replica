@@ -5,6 +5,7 @@ import { NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 import { FormEditorComponent } from "./form-editor/form-editor.component";
 import { FormCreatorComponent } from "./form-creator/form-creator.component";
 import { UserEditorsComponent } from "./user-editors/user-editors.component";
+import { CompareStatesComponent } from "./compare-states/compare-states.component";
 
 import {
   User,
@@ -24,6 +25,7 @@ type FormHistoryMap = { [formId: string]: FormHistoryEntry[] };
     FormEditorComponent,
     FormCreatorComponent,
     UserEditorsComponent,
+    CompareStatesComponent,
   ],
 })
 export class WidgetFormHistoryComponent implements OnInit {
