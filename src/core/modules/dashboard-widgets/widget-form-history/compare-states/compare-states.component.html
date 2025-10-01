@@ -15,18 +15,17 @@
       [columnDefs]="columnDefs"
       [domLayout]="'autoHeight'"
       [animateRows]="true"
-      rowSelection="single"
-      (selectionChanged)="onSelectionChanged($event)"
+      [rowSelection]="{ mode: 'singleRow' }"
     ></ag-grid-angular>
-    <pre class="mt-2 bg-light p-2 border">Debug: {{ historyRows | json }}</pre>
+    <!-- (selectionChanged)="onSelectionChanged($event)" -->
+    <!-- <pre class="mt-2 bg-light p-2 border">Debug: {{ historyRows | json }}</pre> -->
   </div>
-  <div *ngIf="historyA && historyB; else selectStates">
+  <!-- <div *ngIf="historyA && historyB; else selectStates">
     <h5>Compare States</h5>
     <pre>{{ historyA.data | json }}</pre>
     <pre>{{ historyB.data | json }}</pre>
-    <!-- TODO: Add a diff viewer here -->
   </div>
   <ng-template #selectStates>
     <div class="text-muted">Select two states to compare.</div>
-  </ng-template>
+  </ng-template> -->
 </div>

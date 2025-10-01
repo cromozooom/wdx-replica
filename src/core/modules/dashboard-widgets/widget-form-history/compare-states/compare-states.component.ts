@@ -3,11 +3,34 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { AgGridAngular } from "ag-grid-angular";
 
-import { ColDef, ModuleRegistry } from "ag-grid-community";
-import { RowSelectionModule } from "ag-grid-community";
+import {
+  ClientSideRowModelModule,
+  ColDef,
+  GridApi,
+  GridOptions,
+  ModuleRegistry,
+  RowSelectionMode,
+  RowSelectionModule,
+  ValidationModule,
+  createGrid,
+} from "ag-grid-community";
+import {
+  ColumnMenuModule,
+  ColumnsToolPanelModule,
+  ContextMenuModule,
+  RowGroupingModule,
+} from "ag-grid-enterprise";
 
-// Register the RowSelectionModule for AG Grid v33+
-ModuleRegistry.registerModules([RowSelectionModule]);
+ModuleRegistry.registerModules([
+  RowSelectionModule,
+  RowSelectionModule,
+  ClientSideRowModelModule,
+  ColumnsToolPanelModule,
+  ColumnMenuModule,
+  ContextMenuModule,
+  RowGroupingModule,
+  // ...(process.env.NODE_ENV !== "production" ? [ValidationModule] : []),
+]);
 
 @Component({
   selector: "app-compare-states",
