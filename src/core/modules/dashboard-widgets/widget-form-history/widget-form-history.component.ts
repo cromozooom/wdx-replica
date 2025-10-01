@@ -24,7 +24,7 @@ import {
   ],
 })
 export class WidgetFormHistoryComponent {
-  active = 3;
+  active = 2;
 
   state = signal({
     users: [] as User[],
@@ -128,6 +128,13 @@ export class WidgetFormHistoryComponent {
       ...s,
       users: s.users.map((u) => ({ ...u, current: u.id === userId })),
       currentUserId: userId,
+    }));
+  }
+
+  handleAddForm(form: FormConfig) {
+    this.state.update((s) => ({
+      ...s,
+      forms: [...s.forms, form],
     }));
   }
 

@@ -1,4 +1,33 @@
 <div class="form-creator">
   <h4>Form Creator</h4>
-  <!-- Form creator UI will go here -->
+  <form class="row g-2 align-items-end mb-4" (ngSubmit)="onAddForm()">
+    <div class="col-md-4">
+      <label class="form-label">Form Name</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="formName"
+        name="formName"
+        required
+      />
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Form Config (JSON)</label>
+      <div
+        #jsonEditorContainer
+        style="height: 200px; border: 1px solid #ccc"
+      ></div>
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-success w-100">Add Form</button>
+    </div>
+  </form>
+
+  <h5>Existing Forms</h5>
+  <ul>
+    <li *ngFor="let form of forms">
+      <strong>{{ form.name }}</strong>
+      <pre>{{ form.formConfig | json }}</pre>
+    </li>
+  </ul>
 </div>

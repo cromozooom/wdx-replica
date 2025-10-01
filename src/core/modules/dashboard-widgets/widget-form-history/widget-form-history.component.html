@@ -17,7 +17,10 @@
       <button ngbNavLink>Form Creator</button>
       <ng-template ngbNavContent>
         <!-- Form Creator Tab Placeholder -->
-        <app-form-creator [forms]="state().forms"></app-form-creator>
+        <app-form-creator
+          [forms]="state().forms"
+          (addForm)="handleAddForm($event)"
+        ></app-form-creator>
       </ng-template>
     </li>
     <li [ngbNavItem]="3">
