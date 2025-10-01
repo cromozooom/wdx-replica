@@ -11,11 +11,16 @@ import { FilterByIdPipe } from "./filter-by-id.pipe";
 import { NgSelectModule } from "@ng-select/ng-select";
 import { JsonFormsAngularMaterialModule } from "@jsonforms/angular-material";
 import { angularMaterialRenderers } from "@jsonforms/angular-material";
+
 import {
   User,
   FormConfig,
   FormHistoryEntry,
 } from "../widget-form-history.models";
+
+type FormHistoryMap = { [formId: string]: FormHistoryEntry[] };
+import { deepEqual } from "../deep-equal.util";
+import { v4 as uuidv4 } from "uuid";
 
 @Component({
   selector: "app-form-editor",
@@ -34,15 +39,26 @@ export class FormEditorComponent implements AfterViewInit {
   renderers = angularMaterialRenderers;
   @Input() users: User[] = [];
   @Input() forms: FormConfig[] = [];
-  @Input() formHistory: FormHistoryEntry[] = [];
+  @Input() formHistory: FormHistoryMap = {};
   @Input() currentUserId: string | null = null;
   @Input() selectedFormId: string | null = null;
   @Input() schema: any = null;
   @Input() uischema: any = null;
 
-  selectedFormIdLocal: string | null = null;
+  // Minimal working schema and data for testing JSONForms
+  testSchema = {
+    type: "object",
+    properties: {
+      name: { type: "string", title: "Name" },
+    },
+  };
+  testUiSchema = {
+    type: "VerticalLayout",
+    elements: [{ type: "Control", scope: "#/properties/name" }],
+  };
+  jsonformsData: any = { name: "" };
 
-  jsonformsData: any = {};
+  selectedFormIdLocal: string | null = null;
 
   // Emits an event to parent to update formHistory
   @Input() saveFormHistory: (entry: FormHistoryEntry) => void = () => {};
@@ -50,6 +66,7 @@ export class FormEditorComponent implements AfterViewInit {
   ngOnInit() {
     this.selectedFormIdLocal =
       this.selectedFormId || (this.forms[0]?.id ?? null);
+    this.updateJsonForms();
   }
 
   ngAfterViewInit() {
@@ -57,7 +74,7 @@ export class FormEditorComponent implements AfterViewInit {
   }
 
   ngOnChanges(changes: any) {
-    // Only reset jsonformsData if the selected form or user actually changed
+    // Always update form data from history when form or user changes
     let shouldReset = false;
     if (
       changes.selectedFormId &&
@@ -78,15 +95,20 @@ export class FormEditorComponent implements AfterViewInit {
       this.updateJsonForms();
     }
   }
+
+  onUserChange(userId: string) {
+    this.currentUserId = userId;
+    this.updateJsonForms();
+  }
   // Returns true if there is a previous history entry to revert to
   canRevert(): boolean {
     if (!this.selectedForm || !this.currentUserId || !this.formHistory)
       return false;
-    const history = (this.formHistory as FormHistoryEntry[])
-      .filter(
-        (h: FormHistoryEntry) =>
-          h.formId === this.selectedForm!.id && h.userId === this.currentUserId
-      )
+    const formId = this.selectedForm.id;
+    const userId = this.currentUserId;
+    const historyArr = this.formHistory[formId] || [];
+    const history = historyArr
+      .filter((h: FormHistoryEntry) => h.userId === userId)
       .sort(
         (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp
       );
@@ -96,11 +118,11 @@ export class FormEditorComponent implements AfterViewInit {
   // Revert to the previous state in history
   onRevert(): void {
     if (!this.selectedForm || !this.currentUserId || !this.formHistory) return;
-    const history = (this.formHistory as FormHistoryEntry[])
-      .filter(
-        (h: FormHistoryEntry) =>
-          h.formId === this.selectedForm!.id && h.userId === this.currentUserId
-      )
+    const formId = this.selectedForm.id;
+    const userId = this.currentUserId;
+    const historyArr = this.formHistory[formId] || [];
+    const history = historyArr
+      .filter((h: FormHistoryEntry) => h.userId === userId)
       .sort(
         (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp
       );
@@ -110,8 +132,8 @@ export class FormEditorComponent implements AfterViewInit {
       // Register the revert as a manual save
       const entry: FormHistoryEntry = {
         id: Date.now().toString(),
-        formId: this.selectedForm.id,
-        userId: this.currentUserId,
+        formId: formId,
+        userId: userId,
         timestamp: Date.now(),
         data: { ...prev.data },
         saveType: "button",
@@ -125,39 +147,48 @@ export class FormEditorComponent implements AfterViewInit {
   }
 
   get selectedForm() {
+    // Use real form selection logic
     return this.forms.find((f) => f.id === this.selectedFormIdLocal) || null;
   }
 
   get selectedFormData() {
-    // Find the latest form data for the selected form (any user)
-    if (!this.selectedForm) return {};
-    const formId = this.selectedForm?.id;
-    if (!formId) return {};
-    const history = this.formHistory
-      .filter((h) => h.formId === formId)
-      .sort((a, b) => b.timestamp - a.timestamp);
+    // Find the latest form data for the selected form and current user
+    if (!this.selectedForm || !this.currentUserId) return {};
+    const formId = this.selectedForm.id;
+    const userId = this.currentUserId;
+    console.log(
+      "[FormEditor] Looking for formId in history:",
+      formId,
+      "userId:",
+      userId
+    );
+    const historyArr = this.formHistory[formId] || [];
+    const history = historyArr
+      .filter((h: FormHistoryEntry) => h.userId === userId)
+      .sort(
+        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp
+      );
+    console.log(
+      "[FormEditor] Filtered history for formId",
+      formId,
+      "userId",
+      userId,
+      ":",
+      history
+    );
     return history[0]?.data || {};
   }
 
   onFormChange(event: Event) {
     const formId = (event.target as HTMLSelectElement)?.value;
     this.selectedFormIdLocal = formId;
-    // Log all history entries for this form (all users)
-    const allHistory = this.formHistory
-      .filter((h) => h.formId === formId)
-      .sort((a, b) => b.timestamp - a.timestamp);
-    const selectedForm = this.forms.find((f) => f.id === formId);
-    const schema = selectedForm?.schema;
-    const uischema = selectedForm?.uischema;
-    const data = allHistory[0]?.data || {};
-    console.log("[FormEditor] JSONForms schema:", schema);
-    console.log("[FormEditor] JSONForms uischema:", uischema);
-    console.log("[FormEditor] JSONForms data:", data);
+    console.log("[FormEditor] Selected form id:", formId);
     this.updateJsonForms();
   }
 
   updateJsonForms() {
-    if (!this.schema) {
+    // Always reset jsonformsData to the latest history data for the selected form/user
+    if (!this.selectedForm || !this.selectedForm.schema) {
       this.jsonformsData = {};
       return;
     }
@@ -171,20 +202,41 @@ export class FormEditorComponent implements AfterViewInit {
   }
 
   onJsonFormsChange(event: any) {
-    if (event.data) {
-      this.jsonformsData = event.data;
-      // TODO: Save to history here
-      // (Manual save can be implemented here if needed)
-    }
+    console.log("[FormEditor] onJsonFormsChange event:", event);
+    this.jsonformsData = event;
+    // TODO: Save to history here
+    // (Manual save can be implemented here if needed)
   }
 
   onFormFocusOut(event: FocusEvent) {
     // Save to history on out-of-focus (automatic save)
     if (!this.selectedForm || !this.currentUserId) return;
+    // Find the last saved data for this form/user
+    const formId = this.selectedForm.id;
+    const userId = this.currentUserId;
+    const historyArr = this.formHistory[formId] || [];
+    const history = historyArr
+      .filter((h: FormHistoryEntry) => h.userId === userId)
+      .sort(
+        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp
+      );
+    const lastData = history[0]?.data || {};
+    const isEqual = deepEqual(this.jsonformsData, lastData);
+    console.log(
+      "[FormEditor] Compare current vs lastData:",
+      this.jsonformsData,
+      lastData,
+      "equal:",
+      isEqual
+    );
+    if (isEqual) {
+      // No change, do not save duplicate
+      return;
+    }
     const entry: FormHistoryEntry = {
       id: Date.now().toString(),
-      formId: this.selectedForm.id,
-      userId: this.currentUserId,
+      formId: formId,
+      userId: userId,
       timestamp: Date.now(),
       data: { ...this.jsonformsData },
       saveType: "automatic",

@@ -12,6 +12,8 @@ import {
   FormHistoryEntry,
 } from "./widget-form-history.models";
 
+type FormHistoryMap = { [formId: string]: FormHistoryEntry[] };
+
 @Component({
   selector: "app-widget-form-history",
   templateUrl: "./widget-form-history.component.html",
@@ -62,7 +64,7 @@ export class WidgetFormHistoryComponent implements OnInit {
   state = signal({
     users: [] as User[],
     forms: [] as FormConfig[],
-    formHistory: [] as FormHistoryEntry[],
+    formHistory: {} as FormHistoryMap,
     currentUserId: null as string | null,
     selectedFormId: "f1" as string | null,
   });
@@ -100,7 +102,7 @@ export class WidgetFormHistoryComponent implements OnInit {
         ...s,
         forms: [
           {
-            id: "sample-form-1",
+            id: "123456789",
             name: "Sample Form",
             schema: {
               type: "object",
@@ -290,9 +292,16 @@ export class WidgetFormHistoryComponent implements OnInit {
   // (duplicate removed)
   // Save a new form history entry
   handleSaveFormHistory = (entry: FormHistoryEntry) => {
-    this.state.update((s) => ({
-      ...s,
-      formHistory: [...s.formHistory, entry],
-    }));
+    this.state.update((s) => {
+      const formHistory = { ...s.formHistory };
+      if (!formHistory[entry.formId]) {
+        formHistory[entry.formId] = [];
+      }
+      formHistory[entry.formId] = [entry, ...formHistory[entry.formId]];
+      return {
+        ...s,
+        formHistory,
+      };
+    });
   };
 }

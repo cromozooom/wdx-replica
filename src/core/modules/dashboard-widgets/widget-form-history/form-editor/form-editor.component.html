@@ -44,13 +44,26 @@
       </button>
     </div>
     <ng-container *ngIf="currentUserId; else selectUserWarning">
-      <jsonforms
-        [data]="jsonformsData"
-        [schema]="selectedForm?.schema"
-        [uischema]="selectedForm?.uischema"
-        [renderers]="renderers"
-        (change)="onJsonFormsChange($event)"
-      ></jsonforms>
+      <div class="d-flex">
+        <div
+          class="alert alert-info mb-2"
+          style="white-space: pre-wrap; font-size: 12px"
+        >
+          <b>id:</b> {{ selectedForm?.id }}<br />
+          <b>jsonformsData:</b> {{ jsonformsData | json }}<br />
+          <b>schema:</b> {{ selectedForm?.schema | json }}<br />
+          <b>uischema:</b> {{ selectedForm?.uischema | json }}
+        </div>
+        <div>
+          <jsonforms
+            [data]="jsonformsData"
+            [schema]="selectedForm?.schema"
+            [uischema]="selectedForm?.uischema"
+            [renderers]="renderers"
+            (dataChange)="onJsonFormsChange($event)"
+          ></jsonforms>
+        </div>
+      </div>
     </ng-container>
     <ng-template #selectUserWarning>
       <div class="alert alert-warning mt-2">
