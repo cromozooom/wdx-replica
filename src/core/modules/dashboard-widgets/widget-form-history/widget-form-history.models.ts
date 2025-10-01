@@ -22,4 +22,6 @@ export interface FormHistoryEntry {
   timestamp: number;
   data: any;
   saveType: "automatic" | "button";
+  schema?: any;
+  uischema?: any;
 }

@@ -199,6 +199,15 @@ export class WidgetFormHistoryComponent implements OnInit {
       }));
     }
 
+    // Load formHistory from localStorage if available
+    const historyJson = localStorage.getItem("widgetFormHistory");
+    if (historyJson) {
+      try {
+        const formHistory = JSON.parse(historyJson);
+        this.state.update((s) => ({ ...s, formHistory }));
+      } catch {}
+    }
+
     // Sync users to localStorage on state change
     effect(() => {
       const users = this.state().users;
@@ -209,6 +218,12 @@ export class WidgetFormHistoryComponent implements OnInit {
     effect(() => {
       const forms = this.state().forms;
       localStorage.setItem("widgetForms", JSON.stringify(forms));
+    });
+
+    // Sync formHistory to localStorage on state change
+    effect(() => {
+      const formHistory = this.state().formHistory;
+      localStorage.setItem("widgetFormHistory", JSON.stringify(formHistory));
     });
   }
 
@@ -272,4 +287,12 @@ export class WidgetFormHistoryComponent implements OnInit {
       currentUserId: s.currentUserId === userId ? null : s.currentUserId,
     }));
   }
+  // (duplicate removed)
+  // Save a new form history entry
+  handleSaveFormHistory = (entry: FormHistoryEntry) => {
+    this.state.update((s) => ({
+      ...s,
+      formHistory: [...s.formHistory, entry],
+    }));
+  };
 }

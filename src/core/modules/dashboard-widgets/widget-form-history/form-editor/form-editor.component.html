@@ -33,13 +33,29 @@
     </div>
   </form>
 
-  <div *ngIf="selectedForm?.schema">
-    <jsonforms
-      [data]="jsonformsData"
-      [schema]="selectedForm?.schema"
-      [uischema]="selectedForm?.uischema"
-      [renderers]="renderers"
-      (change)="onJsonFormsChange($event)"
-    ></jsonforms>
+  <div *ngIf="selectedForm?.schema" (focusout)="onFormFocusOut($event)">
+    <div class="d-flex justify-content-end mb-2">
+      <button
+        class="btn btn-outline-secondary btn-sm"
+        (click)="onRevert()"
+        [disabled]="!canRevert() || !currentUserId"
+      >
+        Revert to Previous State
+      </button>
+    </div>
+    <ng-container *ngIf="currentUserId; else selectUserWarning">
+      <jsonforms
+        [data]="jsonformsData"
+        [schema]="selectedForm?.schema"
+        [uischema]="selectedForm?.uischema"
+        [renderers]="renderers"
+        (change)="onJsonFormsChange($event)"
+      ></jsonforms>
+    </ng-container>
+    <ng-template #selectUserWarning>
+      <div class="alert alert-warning mt-2">
+        Please select a user to edit the form.
+      </div>
+    </ng-template>
   </div>
 </div>
