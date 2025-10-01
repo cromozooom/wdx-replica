@@ -9,7 +9,10 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { FilterByIdPipe } from "./filter-by-id.pipe";
 import { NgSelectModule } from "@ng-select/ng-select";
-import { JsonFormsAngularMaterialModule } from "@jsonforms/angular-material";
+import {
+  JsonFormsAngularMaterialModule,
+  angularMaterialRenderers,
+} from "@jsonforms/angular-material";
 import {
   User,
   FormConfig,
@@ -30,6 +33,7 @@ import {
   ],
 })
 export class FormEditorComponent implements AfterViewInit {
+  renderers = angularMaterialRenderers;
   @Input() users: User[] = [];
   @Input() forms: FormConfig[] = [];
   @Input() formHistory: FormHistoryEntry[] = [];

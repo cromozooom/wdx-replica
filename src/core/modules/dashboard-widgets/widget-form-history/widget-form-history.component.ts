@@ -25,6 +25,18 @@ import {
   ],
 })
 export class WidgetFormHistoryComponent implements OnInit {
+  get selectedForm() {
+    return (
+      this.state().forms.find((f) => f.id === this.state().selectedFormId) ||
+      null
+    );
+  }
+  get selectedFormSchema() {
+    return this.selectedForm?.schema;
+  }
+  get selectedFormUiSchema() {
+    return this.selectedForm?.uischema;
+  }
   ngOnInit() {
     // Fix ExpressionChangedAfterItHasBeenCheckedError by ensuring selectedFormId is set after forms are loaded
     if (!this.state().selectedFormId && this.state().forms.length > 0) {
@@ -74,10 +86,129 @@ export class WidgetFormHistoryComponent implements OnInit {
         currentUserId: "1",
       }));
     }
+
+    // Load forms from localStorage if available, otherwise add default sample form
+    const formsJson = localStorage.getItem("widgetForms");
+    if (formsJson) {
+      try {
+        const forms = JSON.parse(formsJson);
+        this.state.update((s) => ({ ...s, forms }));
+      } catch {}
+    } else {
+      // Add default sample form
+      this.state.update((s) => ({
+        ...s,
+        forms: [
+          {
+            id: "sample-form-1",
+            name: "Sample Form",
+            schema: {
+              type: "object",
+              required: ["age"],
+              properties: {
+                firstName: { type: "string", minLength: 2, maxLength: 20 },
+                lastName: { type: "string", minLength: 5, maxLength: 15 },
+                age: { type: "integer", minimum: 18, maximum: 100 },
+                gender: {
+                  type: "string",
+                  enum: ["Male", "Female", "Undisclosed"],
+                },
+                height: { type: "number" },
+                dateOfBirth: { type: "string", format: "date" },
+                rating: { type: "integer" },
+                committer: { type: "boolean" },
+                address: {
+                  type: "object",
+                  properties: {
+                    street: { type: "string" },
+                    streetnumber: { type: "string" },
+                    postalCode: { type: "string" },
+                    city: { type: "string" },
+                  },
+                },
+              },
+            },
+            uischema: {
+              type: "VerticalLayout",
+              elements: [
+                {
+                  type: "HorizontalLayout",
+                  elements: [
+                    { type: "Control", scope: "#/properties/firstName" },
+                    { type: "Control", scope: "#/properties/lastName" },
+                  ],
+                },
+                {
+                  type: "HorizontalLayout",
+                  elements: [
+                    { type: "Control", scope: "#/properties/age" },
+                    { type: "Control", scope: "#/properties/dateOfBirth" },
+                  ],
+                },
+                {
+                  type: "HorizontalLayout",
+                  elements: [
+                    { type: "Control", scope: "#/properties/height" },
+                    { type: "Control", scope: "#/properties/gender" },
+                    { type: "Control", scope: "#/properties/committer" },
+                  ],
+                },
+                {
+                  type: "Group",
+                  label: "Address for Shipping T-Shirt",
+                  elements: [
+                    {
+                      type: "HorizontalLayout",
+                      elements: [
+                        {
+                          type: "Control",
+                          scope: "#/properties/address/properties/street",
+                        },
+                        {
+                          type: "Control",
+                          scope: "#/properties/address/properties/streetnumber",
+                        },
+                      ],
+                    },
+                    {
+                      type: "HorizontalLayout",
+                      elements: [
+                        {
+                          type: "Control",
+                          scope: "#/properties/address/properties/postalCode",
+                        },
+                        {
+                          type: "Control",
+                          scope: "#/properties/address/properties/city",
+                        },
+                      ],
+                    },
+                  ],
+                  rule: {
+                    effect: "ENABLE",
+                    condition: {
+                      scope: "#/properties/committer",
+                      schema: { const: true },
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      }));
+    }
+
     // Sync users to localStorage on state change
     effect(() => {
       const users = this.state().users;
       localStorage.setItem("widgetUsers", JSON.stringify(users));
+    });
+
+    // Sync forms to localStorage on state change
+    effect(() => {
+      const forms = this.state().forms;
+      localStorage.setItem("widgetForms", JSON.stringify(forms));
     });
   }
 

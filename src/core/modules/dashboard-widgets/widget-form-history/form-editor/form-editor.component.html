@@ -33,11 +33,12 @@
     </div>
   </form>
 
-  <div *ngIf="schema">
+  <div *ngIf="selectedForm?.schema">
     <jsonforms
       [data]="jsonformsData"
-      [schema]="schema"
-      [uischema]="uischema"
+      [schema]="selectedForm?.schema"
+      [uischema]="selectedForm?.uischema"
+      [renderers]="renderers"
       (change)="onJsonFormsChange($event)"
     ></jsonforms>
   </div>
