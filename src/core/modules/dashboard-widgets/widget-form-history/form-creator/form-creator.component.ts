@@ -20,13 +20,23 @@ import JSONEditor from "jsoneditor";
   imports: [CommonModule, FormsModule],
 })
 export class FormCreatorComponent implements AfterViewInit {
+  showValidation = false;
+  schemaValid = true;
+  uiSchemaValid = true;
   @Input() forms: FormConfig[] = [];
   @Output() addForm = new EventEmitter<FormConfig>();
+  @Output() removeForm = new EventEmitter<string>();
+  onRemoveForm(formId: string) {
+    this.removeForm.emit(formId);
+  }
 
   formName = "";
   editor: any = null;
+  uiEditor: any = null;
   @ViewChild("jsonEditorContainer", { static: false })
   jsonEditorContainer!: ElementRef;
+  @ViewChild("uiJsonEditorContainer", { static: false })
+  uiJsonEditorContainer!: ElementRef;
 
   ngAfterViewInit() {
     this.editor = new JSONEditor(this.jsonEditorContainer.nativeElement, {
@@ -34,25 +44,56 @@ export class FormCreatorComponent implements AfterViewInit {
       modes: ["code", "tree"],
       onChange: () => {},
     });
-    // Set default schema
-    this.editor.set({ schema: { type: "object", properties: {} } });
+    this.uiEditor = new JSONEditor(this.uiJsonEditorContainer.nativeElement, {
+      mode: "code",
+      modes: ["code", "tree"],
+      onChange: () => {},
+    });
+    // Set default schema and uischema
+    this.editor.set({ type: "object", properties: {} });
+    this.uiEditor.set({ type: "VerticalLayout", elements: [] });
   }
 
   onAddForm() {
-    if (!this.formName.trim() || !this.editor) return;
-    let formConfig: any;
+    this.showValidation = true;
+    this.schemaValid = true;
+    this.uiSchemaValid = true;
+    if (!this.formName.trim() || !this.editor || !this.uiEditor) return;
+    let schema: any;
+    let uischema: any;
     try {
-      formConfig = this.editor.get();
+      schema = this.editor.get();
     } catch {
-      alert("Invalid JSON");
-      return;
+      this.schemaValid = false;
     }
-    this.addForm.emit({
+    try {
+      uischema = this.uiEditor.get();
+    } catch {
+      this.uiSchemaValid = false;
+    }
+    if (!this.formName.trim() || !schema || !uischema) return;
+    const newForm = {
       id: Date.now().toString(),
       name: this.formName,
-      formConfig,
-    });
+      schema,
+      uischema,
+    };
+    // Save to localStorage
+    const stored = localStorage.getItem("widgetForms");
+    let forms = [];
+    if (stored) {
+      try {
+        forms = JSON.parse(stored);
+      } catch {}
+    }
+    forms.push(newForm);
+    localStorage.setItem("widgetForms", JSON.stringify(forms));
+    this.addForm.emit(newForm);
     this.formName = "";
-    this.editor.set({ schema: { type: "object", properties: {} } });
+    this.editor.set({ type: "object", properties: {} });
+    this.uiEditor.set({ type: "VerticalLayout", elements: [] });
+    this.showValidation = false;
+    this.schemaValid = true;
+    this.uiSchemaValid = true;
   }
 }

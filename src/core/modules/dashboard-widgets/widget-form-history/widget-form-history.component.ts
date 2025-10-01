@@ -1,3 +1,4 @@
+import { OnInit } from "@angular/core";
 import { Component, signal, effect } from "@angular/core";
 import { NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 
@@ -23,51 +24,33 @@ import {
     UserEditorsComponent,
   ],
 })
-export class WidgetFormHistoryComponent {
-  active = 2;
+export class WidgetFormHistoryComponent implements OnInit {
+  ngOnInit() {
+    // Fix ExpressionChangedAfterItHasBeenCheckedError by ensuring selectedFormId is set after forms are loaded
+    if (!this.state().selectedFormId && this.state().forms.length > 0) {
+      this.state.update((s) => ({ ...s, selectedFormId: s.forms[0].id }));
+    }
+  }
+  handleRemoveForm(formId: string) {
+    this.state.update((s) => {
+      const forms = s.forms.filter((f) => f.id !== formId);
+      let selectedFormId = s.selectedFormId;
+      if (selectedFormId === formId) {
+        selectedFormId = forms.length > 0 ? forms[0].id : null;
+      }
+      return {
+        ...s,
+        forms,
+        selectedFormId,
+      };
+    });
+  }
+  active = 1;
 
   state = signal({
     users: [] as User[],
-    forms: [
-      {
-        id: "f1",
-        name: "Employee Form",
-        formConfig: {
-          schema: {
-            type: "object",
-            properties: { name: { type: "string" }, age: { type: "number" } },
-          },
-        },
-      },
-      {
-        id: "f2",
-        name: "Feedback Form",
-        formConfig: {
-          schema: {
-            type: "object",
-            properties: { feedback: { type: "string" } },
-          },
-        },
-      },
-    ] as FormConfig[],
-    formHistory: [
-      {
-        id: "h1",
-        formId: "f1",
-        userId: "1",
-        timestamp: Date.now() - 100000,
-        data: { name: "Alice", age: 30 },
-        saveType: "button",
-      },
-      {
-        id: "h2",
-        formId: "f2",
-        userId: "2",
-        timestamp: Date.now() - 50000,
-        data: { feedback: "Great!" },
-        saveType: "automatic",
-      },
-    ] as FormHistoryEntry[],
+    forms: [] as FormConfig[],
+    formHistory: [] as FormHistoryEntry[],
     currentUserId: null as string | null,
     selectedFormId: "f1" as string | null,
   });
@@ -132,9 +115,22 @@ export class WidgetFormHistoryComponent {
   }
 
   handleAddForm(form: FormConfig) {
+    // Flatten schema/uischema if nested in formConfig
+    let newForm: FormConfig = form;
+    if (
+      form.formConfig &&
+      (form.formConfig.schema || form.formConfig.uischema)
+    ) {
+      newForm = {
+        ...form,
+        formConfig: undefined,
+        schema: form.formConfig.schema,
+        uischema: form.formConfig.uischema,
+      };
+    }
     this.state.update((s) => ({
       ...s,
-      forms: [...s.forms, form],
+      forms: [...s.forms, newForm],
     }));
   }
 

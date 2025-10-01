@@ -1,4 +1,44 @@
 <div class="form-editor">
   <h4>Form Editor</h4>
-  <!-- Form editor UI will go here -->
+  <form class="row g-2 align-items-end mb-4">
+    <div class="col-md-4">
+      <label class="form-label">Select Form</label>
+      <select
+        class="form-select"
+        [(ngModel)]="selectedFormIdLocal"
+        name="selectedFormIdLocal"
+        (change)="onFormChange($event)"
+      >
+        <option *ngFor="let form of forms" [value]="form.id">
+          {{ form.name }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Current User</label>
+      <ng-select
+        [items]="users"
+        bindLabel="name"
+        bindValue="id"
+        [(ngModel)]="currentUserId"
+        name="currentUserId"
+        placeholder="Select user"
+        [clearable]="false"
+        class="w-100"
+      >
+        <ng-template ng-option-tmp let-item="item">
+          {{ item.name }} <span *ngIf="item.role">({{ item.role }})</span>
+        </ng-template>
+      </ng-select>
+    </div>
+  </form>
+
+  <div *ngIf="schema">
+    <jsonforms
+      [data]="jsonformsData"
+      [schema]="schema"
+      [uischema]="uischema"
+      (change)="onJsonFormsChange($event)"
+    ></jsonforms>
+  </div>
 </div>

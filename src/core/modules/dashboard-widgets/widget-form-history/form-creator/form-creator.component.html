@@ -10,13 +10,32 @@
         name="formName"
         required
       />
+      <div *ngIf="showValidation && !formName" class="form-text text-danger">
+        Required. The display name for your form.
+      </div>
     </div>
-    <div class="col-md-6">
-      <label class="form-label">Form Config (JSON)</label>
+    <div class="col-md-3">
+      <label class="form-label">Form Schema (JSON)</label>
       <div
         #jsonEditorContainer
         style="height: 200px; border: 1px solid #ccc"
       ></div>
+      <div *ngIf="showValidation && !schemaValid" class="form-text text-danger">
+        Required. Enter a valid JSON Schema for your form fields.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">UI Schema (JSON)</label>
+      <div
+        #uiJsonEditorContainer
+        style="height: 200px; border: 1px solid #ccc"
+      ></div>
+      <div
+        *ngIf="showValidation && !uiSchemaValid"
+        class="form-text text-danger"
+      >
+        Required. Enter a valid UI Schema for layout and controls.
+      </div>
     </div>
     <div class="col-md-2">
       <button type="submit" class="btn btn-success w-100">Add Form</button>
@@ -25,9 +44,18 @@
 
   <h5>Existing Forms</h5>
   <ul>
-    <li *ngFor="let form of forms">
-      <strong>{{ form.name }}</strong>
-      <pre>{{ form.formConfig | json }}</pre>
+    <li *ngFor="let form of forms" class="d-flex align-items-start mb-2">
+      <div class="flex-grow-1">
+        <strong>{{ form.name }}</strong>
+        <pre>{{ form.formConfig | json }}</pre>
+      </div>
+      <button
+        type="button"
+        class="btn btn-danger btn-sm ms-2"
+        (click)="onRemoveForm(form.id)"
+      >
+        Remove
+      </button>
     </li>
   </ul>
 </div>

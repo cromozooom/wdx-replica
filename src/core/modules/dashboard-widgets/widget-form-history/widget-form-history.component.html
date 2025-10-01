@@ -20,6 +20,7 @@
         <app-form-creator
           [forms]="state().forms"
           (addForm)="handleAddForm($event)"
+          (removeForm)="handleRemoveForm($event)"
         ></app-form-creator>
       </ng-template>
     </li>

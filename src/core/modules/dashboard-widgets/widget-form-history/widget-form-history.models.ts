@@ -10,7 +10,9 @@ export interface User {
 export interface FormConfig {
   id: string;
   name: string;
-  formConfig: any; // JSON schema/config
+  formConfig?: any; // legacy support
+  schema?: any;
+  uischema?: any;
 }
 
 export interface FormHistoryEntry {
