@@ -1,16 +1,31 @@
 <div class="widget-form-history">
   <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
     <li [ngbNavItem]="1">
-      <button ngbNavLink>Form</button>
-      <ng-template ngbNavContent> 1 </ng-template>
+      <button ngbNavLink>Form Editor</button>
+      <ng-template ngbNavContent>
+        <!-- Form Editor Tab Placeholder -->
+        <app-form-editor
+          [users]="state().users"
+          [forms]="state().forms"
+          [formHistory]="state().formHistory"
+          [currentUserId]="state().currentUserId"
+          [selectedFormId]="state().selectedFormId"
+        ></app-form-editor>
+      </ng-template>
     </li>
     <li [ngbNavItem]="2">
-      <button ngbNavLink>Forms</button>
-      <ng-template ngbNavContent> 2 </ng-template>
+      <button ngbNavLink>Form Creator</button>
+      <ng-template ngbNavContent>
+        <!-- Form Creator Tab Placeholder -->
+        <app-form-creator [forms]="state().forms"></app-form-creator>
+      </ng-template>
     </li>
     <li [ngbNavItem]="3">
-      <button ngbNavLink>Users</button>
-      <ng-template ngbNavContent> 3 </ng-template>
+      <button ngbNavLink>User Editors</button>
+      <ng-template ngbNavContent>
+        <!-- User Editors Tab Placeholder -->
+        <app-user-editors [users]="state().users"></app-user-editors>
+      </ng-template>
     </li>
   </ul>
 

@@ -1,6 +1,10 @@
 import { Component, signal } from "@angular/core";
 import { NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 
+import { FormEditorComponent } from "./form-editor/form-editor.component";
+import { FormCreatorComponent } from "./form-creator/form-creator.component";
+import { UserEditorsComponent } from "./user-editors/user-editors.component";
+
 import {
   User,
   FormConfig,
@@ -12,7 +16,12 @@ import {
   templateUrl: "./widget-form-history.component.html",
   styleUrls: ["./widget-form-history.component.scss"],
   standalone: true,
-  imports: [NgbNavModule],
+  imports: [
+    NgbNavModule,
+    FormEditorComponent,
+    FormCreatorComponent,
+    UserEditorsComponent,
+  ],
 })
 export class WidgetFormHistoryComponent {
   active = 1;
