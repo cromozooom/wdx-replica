@@ -53,8 +53,8 @@ export class CompareGridComponent {
   }
 
   columnDefs: ColDef[] = [
-    { field: "group", headerName: "Group", rowGroup: true },
-    { field: "field", headerName: "Field", rowGroup: true },
+    { field: "group", headerName: "Group", rowGroup: true, hide: true },
+    { field: "field", headerName: "Field" },
     {
       field: "prevValue",
       headerName: "Previous",
@@ -71,7 +71,6 @@ export class CompareGridComponent {
     },
     { field: "status", headerName: "Status", flex: 0 },
   ];
-
   gridOptions: GridOptions = {
     animateRows: true,
     defaultColDef: {
@@ -84,6 +83,8 @@ export class CompareGridComponent {
     // autoGroupColumnDef: {
     //   minWidth: 200,
     // },
+    groupDisplayType: "singleColumn",
+    groupDefaultExpanded: 1,
     domLayout: "autoHeight",
   };
 
