@@ -1,6 +1,46 @@
 <div class="compare-grid-placeholder">
-  <table class="table table-bordered table-sm w-auto">
+  <table class="table table-bordered table-sm w-100">
     <thead>
+      <tr>
+        <th></th>
+        <th class="text-center">Previous</th>
+        <th class="text-center">Current</th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th class="text-center">
+          <ng-container *ngIf="prevMeta">
+            <div>
+              <b>{{ prevMeta.user || prevMeta.author }}</b>
+            </div>
+            <div class="small text-muted">{{ prevMeta.date }}</div>
+          </ng-container>
+        </th>
+        <th class="text-center">
+          <ng-container *ngIf="currentMeta">
+            <div>
+              <b>{{ currentMeta.user || currentMeta.author }}</b>
+            </div>
+            <div class="small text-muted">{{ currentMeta.date }}</div>
+          </ng-container>
+        </th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th class="text-center">
+          <ng-container *ngIf="prevMeta">
+            <span class="badge bg-secondary">{{ prevMeta.saveType }}</span>
+          </ng-container>
+        </th>
+        <th class="text-center">
+          <ng-container *ngIf="currentMeta">
+            <span class="badge bg-secondary">{{ currentMeta.saveType }}</span>
+          </ng-container>
+        </th>
+        <th></th>
+      </tr>
       <tr>
         <th>Field</th>
         <th>Previous</th>
@@ -17,7 +57,7 @@
         </tr>
         <ng-container *ngIf="row.status === 'group' && row.children">
           <tr *ngFor="let child of row.children" [ngClass]="child.status">
-            <td class="ps-4">{{ child.label }}</td>
+            <td>{{ child.label }}</td>
             <td>{{ child.prevValue === undefined ? "—" : child.prevValue }}</td>
             <td>
               {{ child.currentValue === undefined ? "—" : child.currentValue }}

@@ -50,44 +50,11 @@ ModuleRegistry.registerModules([
 })
 export class CompareStatesComponent implements OnChanges {
   exampleFormSchema = exampleFormSchema;
-  // ngOnChanges() {
-  //   if (this.selectedFormId && this.formHistory[this.selectedFormId]) {
-  //     this.historyRows = this.formHistory[this.selectedFormId].map((entry: any) => ({
-  //       date: new Date(entry.timestamp).toLocaleString(),
-  //       saveType: entry.saveType,
-  //       user: this.users.find((u: any) => u.id === entry.userId)?.name || entry.userId,
-  //       entry,
-  //     }));
-  //   } else {
-  //     this.historyRows = [];
-  //   }
-  // }
-  ngOnChanges(changes: SimpleChanges) {
-    if (
-      this.selectedFormId &&
-      this.formHistory &&
-      this.formHistory[this.selectedFormId]
-    ) {
-      this.historyRows = this.formHistory[this.selectedFormId].map(
-        (entry: any) => ({
-          date: new Date(entry.timestamp).toLocaleString(),
-          saveType: entry.saveType,
-          user:
-            this.users.find((u: any) => u.id === entry.userId)?.name ||
-            entry.userId,
-          entry,
-        })
-      );
-    } else {
-      this.historyRows = [];
-    }
-  }
+  @Input() selectedForm: any = null;
   @Input() formHistory: { [formId: string]: any[] } = {};
   @Input() selectedFormId: string = "";
   @Input() users: any[] = [];
   @Input() forms: any[] = [];
-
-  // For state comparison
   @Input() historyA: any = null;
   @Input() historyB: any = null;
   private modalService = inject(NgbModal);
@@ -110,13 +77,31 @@ export class CompareStatesComponent implements OnChanges {
     },
   };
 
-  // Allow multiple selection
   selectedRows: any[] = [];
   historyRows: any[] = [];
-
-  // Modal navigation state (for multi-select)
   modalSelectedIndexes: number[] = [];
   modalCompareIndex: number = 0;
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (
+      this.selectedFormId &&
+      this.formHistory &&
+      this.formHistory[this.selectedFormId]
+    ) {
+      this.historyRows = this.formHistory[this.selectedFormId].map(
+        (entry: any) => ({
+          date: new Date(entry.timestamp).toLocaleString(),
+          saveType: entry.saveType,
+          user:
+            this.users.find((u: any) => u.id === entry.userId)?.name ||
+            entry.userId,
+          entry,
+        })
+      );
+    } else {
+      this.historyRows = [];
+    }
+  }
 
   get canCompareSelected() {
     return this.selectedRows.length >= 2;
@@ -152,10 +137,8 @@ export class CompareStatesComponent implements OnChanges {
       this.modalCompareIndex++;
     }
   }
-  // Removed old single-select modal navigation logic
 
   openFullscreen(content: TemplateRef<any>) {
-    // Only allow modal if at least one row is selected
     if (this.selectedRows.length > 0) {
       this.modalCompareIndex = 0;
     }
@@ -164,7 +147,6 @@ export class CompareStatesComponent implements OnChanges {
 
   onSelectionChanged(event: any) {
     this.selectedRows = event.api.getSelectedRows();
-    // Reset modal index if selection changes
     this.modalCompareIndex = 0;
     console.log("Selected Rows:", this.selectedRows);
   }

@@ -13,6 +13,8 @@ export class CompareGridComponent {
   @Input() prev: any = null;
   @Input() current: any = null;
   @Input() schema: any = null;
+  @Input() prevMeta: any = null;
+  @Input() currentMeta: any = null;
 
   get compareRows(): CompareGridRow[] {
     return buildCompareRows(this.prev, this.current, this.schema);

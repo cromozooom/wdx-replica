@@ -30,6 +30,7 @@ export function buildCompareRows(
   if (!schema || !schema.properties) return [];
   const rows: CompareGridRow[] = [];
   for (const key of Object.keys(schema.properties)) {
+    if (key === "formAuthors") continue; // skip formAuthors as a row
     const prop = schema.properties[key];
     const label = prop.title || key;
     if (prop.type === "object" && prop.properties) {
@@ -48,8 +49,8 @@ export function buildCompareRows(
         children,
       });
     } else {
-      const prevValue = prev ? prev[key] : undefined;
-      const currentValue = current ? current[key] : undefined;
+      const prevValue = prev && key in prev ? prev[key] : undefined;
+      const currentValue = current && key in current ? current[key] : undefined;
       let status: CompareGridRow["status"];
       if (prevValue === undefined && currentValue === undefined) {
         status = "untouched";
