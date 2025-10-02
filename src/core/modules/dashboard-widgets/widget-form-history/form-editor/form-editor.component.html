@@ -25,7 +25,6 @@
         placeholder="Select user"
         [clearable]="false"
         class="w-100"
-        (change)="onUserChange($event)"
       >
         <ng-template ng-option-tmp let-item="item">
           {{ item.name }} <span *ngIf="item.role">({{ item.role }})</span>
@@ -39,19 +38,19 @@
       <button
         class="btn btn-outline-primary btn-sm"
         (click)="onManualSave()"
-        [disabled]="!currentUserId"
+        [disabled]="!selectedUserIdLocal"
       >
         Save
       </button>
       <button
         class="btn btn-outline-secondary btn-sm"
         (click)="onRevert()"
-        [disabled]="!canRevert() || !currentUserId"
+        [disabled]="!canRevert() || !selectedUserIdLocal"
       >
         Revert to Previous State
       </button>
     </div>
-    <ng-container *ngIf="currentUserId; else selectUserWarning">
+    <ng-container *ngIf="selectedUserIdLocal; else selectUserWarning">
       <div class="d-flex">
         <div
           class="alert alert-info mb-2"

@@ -96,113 +96,116 @@ export class WidgetFormHistoryComponent implements OnInit {
     if (formsJson) {
       try {
         const forms = JSON.parse(formsJson);
-        this.state.update((s) => ({ ...s, forms }));
+        this.state.update((s) => ({
+          ...s,
+          forms,
+          selectedFormId: forms.length > 0 ? forms[0].id : null,
+        }));
       } catch {}
     } else {
       // Add default sample form
-      this.state.update((s) => ({
-        ...s,
-        forms: [
-          {
-            id: "123456789",
-            name: "Sample Form",
-            schema: {
+      const defaultForm = {
+        id: "123456789",
+        name: "Sample Form",
+        schema: {
+          type: "object",
+          required: ["age"],
+          properties: {
+            firstName: { type: "string", minLength: 2, maxLength: 20 },
+            lastName: { type: "string", minLength: 5, maxLength: 15 },
+            age: { type: "integer", minimum: 18, maximum: 100 },
+            gender: {
+              type: "string",
+              enum: ["Male", "Female", "Undisclosed"],
+            },
+            height: { type: "number" },
+            dateOfBirth: { type: "string", format: "date" },
+            rating: { type: "integer" },
+            committer: { type: "boolean" },
+            address: {
               type: "object",
-              required: ["age"],
               properties: {
-                firstName: { type: "string", minLength: 2, maxLength: 20 },
-                lastName: { type: "string", minLength: 5, maxLength: 15 },
-                age: { type: "integer", minimum: 18, maximum: 100 },
-                gender: {
-                  type: "string",
-                  enum: ["Male", "Female", "Undisclosed"],
-                },
-                height: { type: "number" },
-                dateOfBirth: { type: "string", format: "date" },
-                rating: { type: "integer" },
-                committer: { type: "boolean" },
-                address: {
-                  type: "object",
-                  properties: {
-                    street: { type: "string" },
-                    streetnumber: { type: "string" },
-                    postalCode: { type: "string" },
-                    city: { type: "string" },
-                  },
-                },
+                street: { type: "string" },
+                streetnumber: { type: "string" },
+                postalCode: { type: "string" },
+                city: { type: "string" },
               },
             },
-            uischema: {
-              type: "VerticalLayout",
+          },
+        },
+        uischema: {
+          type: "VerticalLayout",
+          elements: [
+            {
+              type: "HorizontalLayout",
+              elements: [
+                { type: "Control", scope: "#/properties/firstName" },
+                { type: "Control", scope: "#/properties/lastName" },
+              ],
+            },
+            {
+              type: "HorizontalLayout",
+              elements: [
+                { type: "Control", scope: "#/properties/age" },
+                { type: "Control", scope: "#/properties/dateOfBirth" },
+              ],
+            },
+            {
+              type: "HorizontalLayout",
+              elements: [
+                { type: "Control", scope: "#/properties/height" },
+                { type: "Control", scope: "#/properties/gender" },
+                { type: "Control", scope: "#/properties/committer" },
+              ],
+            },
+            {
+              type: "Group",
+              label: "Address for Shipping T-Shirt",
               elements: [
                 {
                   type: "HorizontalLayout",
                   elements: [
-                    { type: "Control", scope: "#/properties/firstName" },
-                    { type: "Control", scope: "#/properties/lastName" },
+                    {
+                      type: "Control",
+                      scope: "#/properties/address/properties/street",
+                    },
+                    {
+                      type: "Control",
+                      scope: "#/properties/address/properties/streetnumber",
+                    },
                   ],
                 },
                 {
                   type: "HorizontalLayout",
                   elements: [
-                    { type: "Control", scope: "#/properties/age" },
-                    { type: "Control", scope: "#/properties/dateOfBirth" },
-                  ],
-                },
-                {
-                  type: "HorizontalLayout",
-                  elements: [
-                    { type: "Control", scope: "#/properties/height" },
-                    { type: "Control", scope: "#/properties/gender" },
-                    { type: "Control", scope: "#/properties/committer" },
-                  ],
-                },
-                {
-                  type: "Group",
-                  label: "Address for Shipping T-Shirt",
-                  elements: [
                     {
-                      type: "HorizontalLayout",
-                      elements: [
-                        {
-                          type: "Control",
-                          scope: "#/properties/address/properties/street",
-                        },
-                        {
-                          type: "Control",
-                          scope: "#/properties/address/properties/streetnumber",
-                        },
-                      ],
+                      type: "Control",
+                      scope: "#/properties/address/properties/postalCode",
                     },
                     {
-                      type: "HorizontalLayout",
-                      elements: [
-                        {
-                          type: "Control",
-                          scope: "#/properties/address/properties/postalCode",
-                        },
-                        {
-                          type: "Control",
-                          scope: "#/properties/address/properties/city",
-                        },
-                      ],
+                      type: "Control",
+                      scope: "#/properties/address/properties/city",
                     },
                   ],
-                  rule: {
-                    effect: "ENABLE",
-                    condition: {
-                      scope: "#/properties/committer",
-                      schema: { const: true },
-                    },
-                  },
                 },
               ],
+              rule: {
+                effect: "ENABLE",
+                condition: {
+                  scope: "#/properties/committer",
+                  schema: { const: true },
+                },
+              },
             },
-          },
-        ],
+          ],
+        },
+      };
+      this.state.update((s) => ({
+        ...s,
+        forms: [defaultForm],
+        selectedFormId: defaultForm.id,
       }));
     }
-
     // Load formHistory from localStorage if available
     const historyJson = localStorage.getItem("widgetFormHistory");
     if (historyJson) {

@@ -62,10 +62,10 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
   };
 
   canRevert(): boolean {
-    if (!this.selectedForm || !this.currentUserId || !this.formHistory)
+    if (!this.selectedForm || !this.selectedUserIdLocal || !this.formHistory)
       return false;
     const formId = this.selectedForm.id;
-    const userId = this.currentUserId;
+    const userId = this.selectedUserIdLocal;
     const historyArr = this.formHistory[formId] || [];
     const history = historyArr
       .filter((h: FormHistoryEntry) => h.userId === userId)
@@ -76,9 +76,10 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
   }
 
   onRevert(): void {
-    if (!this.selectedForm || !this.currentUserId || !this.formHistory) return;
+    if (!this.selectedForm || !this.selectedUserIdLocal || !this.formHistory)
+      return;
     const formId = this.selectedForm.id;
-    const userId = this.currentUserId;
+    const userId = this.selectedUserIdLocal;
     const historyArr = this.formHistory[formId] || [];
     const history = historyArr
       .filter((h: FormHistoryEntry) => h.userId === userId)
@@ -92,7 +93,7 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
       const entry: FormHistoryEntry = {
         id: Date.now().toString(),
         formId: formId,
-        userId: userId,
+        userId: userId ?? "",
         timestamp: Date.now(),
         data: { ...prev.data },
         saveType: "button",
@@ -110,9 +111,9 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
   }
 
   get selectedFormData() {
-    if (!this.selectedForm || !this.currentUserId) return {};
+    if (!this.selectedForm || !this.selectedUserIdLocal) return {};
     const formId = this.selectedForm.id;
-    const userId = this.currentUserId;
+    const userId = this.selectedUserIdLocal;
     const historyArr = this.formHistory[formId] || [];
     const history = historyArr
       .filter((h: FormHistoryEntry) => h.userId === userId)
@@ -142,9 +143,9 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
   }
 
   onFormFocusOut(event: FocusEvent) {
-    if (!this.selectedForm || !this.currentUserId) return;
+    if (!this.selectedForm || !this.selectedUserIdLocal) return;
     const formId = this.selectedForm.id;
-    const userId = this.currentUserId;
+    const userId = this.selectedUserIdLocal;
     const historyArr = this.formHistory[formId] || [];
     const history = historyArr
       .filter((h: FormHistoryEntry) => h.userId === userId)
@@ -157,7 +158,7 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
     const entry: FormHistoryEntry = {
       id: Date.now().toString(),
       formId: formId,
-      userId: userId,
+      userId: userId ?? "",
       timestamp: Date.now(),
       data: { ...this.jsonformsData },
       saveType: "automatic",
@@ -170,13 +171,13 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
   }
 
   onManualSave() {
-    if (!this.selectedForm || !this.currentUserId) return;
+    if (!this.selectedForm || !this.selectedUserIdLocal) return;
     const formId = this.selectedForm.id;
-    const userId = this.currentUserId;
+    const userId = this.selectedUserIdLocal;
     const entry: FormHistoryEntry = {
       id: Date.now().toString(),
       formId: formId,
-      userId: userId,
+      userId: userId ?? "",
       timestamp: Date.now(),
       data: { ...this.jsonformsData },
       saveType: "button",
@@ -191,6 +192,7 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
   ngOnInit() {
     this.selectedFormIdLocal =
       this.selectedFormId || (this.forms[0]?.id ?? null);
+    this.selectedUserIdLocal = this.users[0]?.id ?? null;
     this.updateJsonForms();
   }
 
@@ -210,10 +212,10 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
       shouldReset = true;
     }
     if (
-      changes["currentUserId"] &&
-      changes["currentUserId"].currentValue !==
-        changes["currentUserId"].previousValue
+      changes["users"] &&
+      changes["users"].currentValue !== changes["users"].previousValue
     ) {
+      this.selectedUserIdLocal = this.users[0]?.id ?? null;
       shouldReset = true;
     }
     if (shouldReset) {
@@ -221,9 +223,5 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
     }
   }
 
-  // Remove assignment to @Input() in onUserChange
-  onUserChange(userId: string) {
-    this.selectedUserIdLocal = userId;
-    this.updateJsonForms();
-  }
+  // onUserChange removed: ng-select now uses only ngModel for id binding
 }

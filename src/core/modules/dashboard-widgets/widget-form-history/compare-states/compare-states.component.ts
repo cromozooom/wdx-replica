@@ -63,19 +63,33 @@ export class CompareStatesComponent {
   // No gridOptions needed; set rowSelection directly in template
 
   selectedRows: any[] = [];
+  historyRows: any[] = [];
 
-  get historyRows() {
-    if (!this.selectedFormId || !this.formHistory[this.selectedFormId])
-      return [];
-    return this.formHistory[this.selectedFormId].map((entry) => ({
-      date: new Date(entry.timestamp).toLocaleString(),
-      saveType: entry.saveType,
-      user: this.users.find((u) => u.id === entry.userId)?.name || entry.userId,
-      entry,
-    }));
+  ngOnChanges(changes: any) {
+    if (
+      changes["formHistory"] ||
+      changes["selectedFormId"] ||
+      changes["users"]
+    ) {
+      if (!this.selectedFormId || !this.formHistory[this.selectedFormId]) {
+        this.historyRows = [];
+      } else {
+        this.historyRows = this.formHistory[this.selectedFormId].map(
+          (entry: any) => ({
+            date: new Date(entry.timestamp).toLocaleString(),
+            saveType: entry.saveType,
+            user:
+              this.users.find((u: any) => u.id === entry.userId)?.name ||
+              entry.userId,
+            entry,
+          })
+        );
+      }
+    }
   }
 
   onSelectionChanged(event: any) {
     this.selectedRows = event.api.getSelectedRows();
+    console.log("Selected Rows:", this.selectedRows);
   }
 }

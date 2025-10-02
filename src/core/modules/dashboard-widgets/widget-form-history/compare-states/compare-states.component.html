@@ -16,9 +16,11 @@
       [domLayout]="'autoHeight'"
       [animateRows]="true"
       [rowSelection]="{ mode: 'singleRow' }"
+      (selectionChanged)="onSelectionChanged($event)"
     ></ag-grid-angular>
-    <!-- (selectionChanged)="onSelectionChanged($event)" -->
-    <!-- <pre class="mt-2 bg-light p-2 border">Debug: {{ historyRows | json }}</pre> -->
+    <div class="mt-2 bg-light p-2 border">
+      Selected row id: {{ selectedRows[0]?.entry?.id }}
+    </div>
   </div>
   <!-- <div *ngIf="historyA && historyB; else selectStates">
     <h5>Compare States</h5>
