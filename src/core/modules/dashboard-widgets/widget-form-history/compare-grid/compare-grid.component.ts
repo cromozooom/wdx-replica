@@ -58,7 +58,9 @@ export class CompareGridComponent {
       }
       return result;
     }
-    const rows = toFlatRows(buildCompareRows(this.prev, this.current, this.schema));
+    const rows = toFlatRows(
+      buildCompareRows(this.prev, this.current, this.schema)
+    );
     return rows.sort((a, b) => a.sortIndex - b.sortIndex);
   }
 
