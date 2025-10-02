@@ -10,7 +10,7 @@ export interface CompareGridRow {
   label: string;
   prevValue: any;
   currentValue: any;
-  status: "untouched" | "removedField" | "newField" | "changed" | "group";
+  status: "untouched" | "removedValue" | "newValue" | "changed" | "group";
   children?: CompareGridRow[];
 }
 
@@ -55,9 +55,9 @@ export function buildCompareRows(
       if (prevValue === undefined && currentValue === undefined) {
         status = "untouched";
       } else if (prevValue === undefined) {
-        status = "newField";
+        status = "newValue";
       } else if (currentValue === undefined) {
-        status = "removedField";
+        status = "removedValue";
       } else if (prevValue !== currentValue) {
         status = "changed";
       } else {

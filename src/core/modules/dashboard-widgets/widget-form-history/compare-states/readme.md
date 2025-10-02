@@ -10,12 +10,25 @@ this json should make the next thing:
 
 example
 
-previous
+previous form
+
+- name
+- age
+- heigh (mandatory)
+
+previous modification
 
 - name (value Null)
 - age (value 3)
 
-current
+current form
+
+- full name
+- age
+- heigh (mandatory)
+- gender
+
+current Modifications
 
 - full Name ( Razvan Nicu)
 - age (value 3)
@@ -26,10 +39,11 @@ the json should be
 form
 
 - Form Authors (prevValue UserX and currentVal UserY)
-- name ( prevValue Null and currentVal removedField)
-- full Name (prevVal removedField and currentVal 'Razvan Nicu')
+- name ( prevValue Null and currentVal removedValue)
+- full Name (prevVal removedValue and currentVal 'Razvan Nicu')
 - age ( prevVal 3 and currentVal 3)
-- gender (prevVal newField and currentVal 'male')
+- gender (prevVal newValue and currentVal 'male')
+- heigh (prevVal untouched and currentVal untouched)
 
 So I can iterate on each row and show what is changed What would be tha plan to
 do something like that, please start by creating a new component "compare-grid"
