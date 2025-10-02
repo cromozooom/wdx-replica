@@ -66,6 +66,45 @@ export class CompareStatesComponent {
   selectedRows: any[] = [];
   historyRows: any[] = [];
 
+  // Modal navigation state
+  modalHistoryIndex: number | null = null;
+
+  get hasModalHistory() {
+    return this.historyRows.length > 0 && this.modalHistoryIndex !== null;
+  }
+
+  get modalCurrent() {
+    return this.hasModalHistory
+      ? this.historyRows[this.modalHistoryIndex!]
+      : null;
+  }
+  get modalPrev() {
+    if (!this.hasModalHistory) return null;
+    return this.modalHistoryIndex! > 0
+      ? this.historyRows[this.modalHistoryIndex! - 1]
+      : null;
+  }
+  get modalNext() {
+    if (!this.hasModalHistory) return null;
+    return this.modalHistoryIndex! < this.historyRows.length - 1
+      ? this.historyRows[this.modalHistoryIndex! + 1]
+      : null;
+  }
+
+  modalGoPrev() {
+    if (this.modalHistoryIndex !== null && this.modalHistoryIndex > 0) {
+      this.modalHistoryIndex--;
+    }
+  }
+  modalGoNext() {
+    if (
+      this.modalHistoryIndex !== null &&
+      this.modalHistoryIndex < this.historyRows.length - 1
+    ) {
+      this.modalHistoryIndex++;
+    }
+  }
+
   ngOnChanges(changes: any) {
     if (
       changes["formHistory"] ||
@@ -90,6 +129,15 @@ export class CompareStatesComponent {
   }
 
   openFullscreen(content: TemplateRef<any>) {
+    // Open modal at selected row, or first if none selected
+    if (this.selectedRows.length > 0) {
+      const idx = this.historyRows.findIndex(
+        (r) => r.entry?.id === this.selectedRows[0]?.entry?.id
+      );
+      this.modalHistoryIndex = idx >= 0 ? idx : 0;
+    } else {
+      this.modalHistoryIndex = 0;
+    }
     this.modalService.open(content, { fullscreen: true });
   }
 

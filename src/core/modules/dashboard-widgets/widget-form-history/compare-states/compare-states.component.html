@@ -44,27 +44,55 @@
   <div class="modal-body">
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <div class="border border-success">selected</div>
+        <div class="col-12">
+          <button
+            class="btn btn-sm btn-outline-secondary"
+            (click)="modalGoPrev()"
+            [disabled]="!modalPrev"
+          >
+            &#8592; Previous
+          </button>
+          <button
+            class="btn btn-sm btn-outline-secondary"
+            (click)="modalGoNext()"
+            [disabled]="!modalNext"
+          >
+            Next &#8594;
+          </button>
         </div>
         <div class="col-6">
           <div class="border border-info">
-            <div class="btn-group">
-              <button>Next</button>
-              <button>Previous</button>
-            </div>
+            <div
+              class="btn-group mb-2 w-100 d-flex justify-content-between"
+            ></div>
+            <ng-container *ngIf="modalPrev; else showNextEntry">
+              <b>Previous Entry:</b><br />
+              <b>Date:</b> {{ modalPrev.date }}<br />
+              <b>User:</b> {{ modalPrev.user }}<br />
+              <b>Save Type:</b> {{ modalPrev.saveType }}<br />
+              <pre>{{ modalPrev.entry?.data | json }}</pre>
+            </ng-container>
+            <ng-template #showNextEntry>
+              <b>Next Entry:</b><br />
+              <b>Date:</b> {{ modalNext.date }}<br />
+              <b>User:</b> {{ modalNext.user }}<br />
+              <b>Save Type:</b> {{ modalNext.saveType }}<br />
+              <pre>{{ modalNext.entry?.data | json }}</pre>
+            </ng-template>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-6">
           <div class="border border-success">
-            <!-- add selected history content -->
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="border border-info">
-            <!-- add the next or previous history content -->
+            <div *ngIf="modalCurrent; else noCurrent">
+              <b>Current:</b><br />
+              <b>Date:</b> {{ modalCurrent.date }}<br />
+              <b>User:</b> {{ modalCurrent.user }}<br />
+              <b>Save Type:</b> {{ modalCurrent.saveType }}<br />
+              <pre>{{ modalCurrent.entry?.data | json }}</pre>
+            </div>
+            <ng-template #noCurrent>
+              <span class="text-muted">No entry selected.</span>
+            </ng-template>
           </div>
         </div>
       </div>
