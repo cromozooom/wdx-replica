@@ -9,6 +9,7 @@ import {
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { AgGridAngular } from "ag-grid-angular";
+import { CompareGridComponent } from "../compare-grid/compare-grid.component";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import {
   ClientSideRowModelModule,
@@ -42,7 +43,7 @@ ModuleRegistry.registerModules([
 @Component({
   selector: "app-compare-states",
   standalone: true,
-  imports: [CommonModule, FormsModule, AgGridAngular],
+  imports: [CommonModule, FormsModule, AgGridAngular, CompareGridComponent],
   templateUrl: "./compare-states.component.html",
   styleUrls: ["./compare-states.component.scss"],
 })

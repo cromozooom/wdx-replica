@@ -66,6 +66,12 @@
             <span> Length of selected rowData: {{ selectedRows.length }} </span>
           </div>
         </div>
+        <!-- Add the gridcompare here -->
+        <app-compare-grid
+          [prev]="modalComparePrev?.entry?.data"
+          [current]="modalCompareCurrent?.entry?.data"
+        ></app-compare-grid>
+
         <ng-container *ngIf="modalComparePrev; else showNextEntry">
           <div class="col-6">
             <div class="border">

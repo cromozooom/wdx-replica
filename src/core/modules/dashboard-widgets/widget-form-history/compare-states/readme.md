@@ -1,32 +1,88 @@
-1. Build a Unified Schema
+# task description
 
-   - Collect all unique field names from both form versions (current and
-     previous/next).
+I need to be able to compare 2 history states In order to do so, I need to
+generate a compare json
 
-2. Prepare Data for Display
+this json should make the next thing:
 
-   - For each field in the unified schema:
-     - Get the value from each version (current and previous/next).
-     - If a field is missing, treat its value as null.
+1. for every 2 items to compare it should take the form schema and add uniques
+   fields in both
 
-3. Render Parallel Field Comparison
+example
 
-   - Display a two-column layout:
-     - Left: Current version values.
-     - Right: Previous/next version values.
-   - Each row represents a field, with the field name and both values side by
-     side.
+previous
 
-4. Visual Cues
-   - If a field is missing in one version, show a dotted border for that cell.
-   - If values differ, highlight the cells (green/red for updated/removed).
-   - If values are the same, no highlight.
-5. Implementation Steps
+- name (value Null)
+- age (value 3)
 
-   - Write a function to merge field names from both objects.
-   - Map over the unified field list to build a display array.
-   - Use an HTML table or flex layout to render:
+current
 
-     - Field name | Current value | Previous/Next value
+- full Name ( Razvan Nicu)
+- age (value 3)
+- gender (male)
 
-   - Use ngClass or inline styles for dotted borders and highlights.
+the json should be
+
+form
+
+- Form Authors (prevValue UserX and currentVal UserY)
+- name ( prevValue Null and currentVal removedField)
+- full Name (prevVal removedField and currentVal 'Razvan Nicu')
+- age ( prevVal 3 and currentVal 3)
+- gender (prevVal newField and currentVal 'male')
+
+So I can iterate on each row and show what is changed What would be tha plan to
+do something like that, please start by creating a new component "compare-grid"
+and give a list of task so I can check the compilation after every step
+
+## PLan
+
+1. Scaffold the Component
+
+- Create a new standalone Angular component named compare-grid in the
+  appropriate folder.
+- Expose two @Input() properties: prev and current (objects to compare).
+- Expose an optional @Input() for the schema if needed.
+
+Checkpoint: Ensure the project compiles and the new component renders a
+placeholder.
+
+2. Implement the Comparison Logic
+
+- Write a function to:
+  - Collect all unique field names from both prev and current.
+  - For each field, determine:
+    - prevValue (from prev or special marker if missing)
+    - currentValue (from current or special marker if missing)
+    - status: "both", "onlyPrev", "onlyCurrent"
+- Output an array of comparison rows.
+
+Checkpoint: Add a debug output (e.g., <pre>{{ compareRows | json }}</pre>) and
+check compilation.
+
+3. Render the Comparison Table
+
+- Use an HTML table or flex layout.
+- For each row, display:
+  - Field name
+  - Previous value
+  - Current value
+  - Status (for debugging/visual cues)
+
+Checkpoint: Table renders with correct data for various test cases.
+
+4. Add Visual Cues
+
+- Use ngClass or inline styles to:
+  - Add a dotted border for missing fields.
+  - Highlight changed values (green/red).
+  - Show no highlight for unchanged values.
+
+Checkpoint: Visual cues appear as expected.
+
+5. Polish and Document
+
+- Add a README or inline comments explaining usage.
+- Ensure the component is reusable and inputs are well-typed.
+
+Checkpoint: Final compilation and visual check.

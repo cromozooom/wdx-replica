@@ -1,0 +1,20 @@
+<div class="compare-grid-placeholder">
+  <table class="table table-bordered table-sm w-auto">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Previous</th>
+        <th>Current</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of compareRows">
+        <td>{{ row.field }}</td>
+        <td>{{ row.prevValue === undefined ? "—" : row.prevValue }}</td>
+        <td>{{ row.currentValue === undefined ? "—" : row.currentValue }}</td>
+        <td>{{ row.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
