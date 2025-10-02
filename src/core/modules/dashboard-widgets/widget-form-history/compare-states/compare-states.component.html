@@ -20,14 +20,54 @@
     ></ag-grid-angular>
     <div class="mt-2 bg-light p-2 border">
       Selected row id: {{ selectedRows[0]?.entry?.id }}
+
+      <button
+        class="btn btn-outline-primary mb-2 me-2"
+        (click)="openFullscreen(content)"
+      >
+        Fullscreen modal
+      </button>
     </div>
   </div>
-  <!-- <div *ngIf="historyA && historyB; else selectStates">
-    <h5>Compare States</h5>
-    <pre>{{ historyA.data | json }}</pre>
-    <pre>{{ historyB.data | json }}</pre>
-  </div>
-  <ng-template #selectStates>
-    <div class="text-muted">Select two states to compare.</div>
-  </ng-template> -->
 </div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Modal title</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="border border-success">selected</div>
+        </div>
+        <div class="col-6">
+          <div class="border border-info">
+            <div class="btn-group">
+              <button>Next</button>
+              <button>Previous</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="border border-success">
+            <!-- add selected history content -->
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="border border-info">
+            <!-- add the next or previous history content -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>

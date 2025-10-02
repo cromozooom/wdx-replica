@@ -1,8 +1,8 @@
-import { Component, Input } from "@angular/core";
+import { Component, inject, Input, TemplateRef } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { AgGridAngular } from "ag-grid-angular";
-
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import {
   ClientSideRowModelModule,
   ColDef,
@@ -48,6 +48,7 @@ export class CompareStatesComponent {
   // For state comparison
   @Input() historyA: any = null;
   @Input() historyB: any = null;
+  private modalService = inject(NgbModal);
 
   columnDefs: ColDef[] = [
     { headerName: "Date", field: "date", sortable: true, filter: true },
@@ -86,6 +87,10 @@ export class CompareStatesComponent {
         );
       }
     }
+  }
+
+  openFullscreen(content: TemplateRef<any>) {
+    this.modalService.open(content, { fullscreen: true });
   }
 
   onSelectionChanged(event: any) {
