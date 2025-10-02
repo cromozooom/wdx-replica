@@ -15,7 +15,7 @@
       [columnDefs]="columnDefs"
       [domLayout]="'autoHeight'"
       [animateRows]="true"
-      [rowSelection]="{ mode: 'singleRow' }"
+      [rowSelection]="{ mode: 'multiRow' }"
       (selectionChanged)="onSelectionChanged($event)"
     ></ag-grid-angular>
     <div class="mt-2 bg-light p-2 border">
@@ -48,39 +48,39 @@
           <div class="btn-group mx-auto">
             <button
               class="btn btn-sm btn-outline-secondary"
-              (click)="modalGoNext()"
-              [disabled]="!modalNext"
+              (click)="modalGoPrev()"
+              [disabled]="!modalComparePrev"
             >
               &#8592; Previous
             </button>
             <button
               class="btn btn-sm btn-outline-secondary"
-              (click)="modalGoPrev()"
-              [disabled]="!modalPrev"
+              (click)="modalGoNext()"
+              [disabled]="!modalCompareNext"
             >
               Next &#8594;
             </button>
           </div>
         </div>
-        <ng-container *ngIf="modalPrev; else showNextEntry">
+        <ng-container *ngIf="modalComparePrev; else showNextEntry">
           <div class="col-6">
             <div class="border">
               <b>Previous Entry:</b><br />
-              <b>Date:</b> {{ modalPrev.date }}<br />
-              <b>User:</b> {{ modalPrev.user }}<br />
-              <b>Save Type:</b> {{ modalPrev.saveType }}<br />
-              <pre>{{ modalPrev.entry?.data | json }}</pre>
+              <b>Date:</b> {{ modalComparePrev.date }}<br />
+              <b>User:</b> {{ modalComparePrev.user }}<br />
+              <b>Save Type:</b> {{ modalComparePrev.saveType }}<br />
+              <pre>{{ modalComparePrev.entry?.data | json }}</pre>
             </div>
           </div>
         </ng-container>
         <div class="col-6">
           <div class="border border-success">
-            <div *ngIf="modalCurrent; else noCurrent">
+            <div *ngIf="modalCompareCurrent; else noCurrent">
               <b>Current:</b><br />
-              <b>Date:</b> {{ modalCurrent.date }}<br />
-              <b>User:</b> {{ modalCurrent.user }}<br />
-              <b>Save Type:</b> {{ modalCurrent.saveType }}<br />
-              <pre>{{ modalCurrent.entry?.data | json }}</pre>
+              <b>Date:</b> {{ modalCompareCurrent.date }}<br />
+              <b>User:</b> {{ modalCompareCurrent.user }}<br />
+              <b>Save Type:</b> {{ modalCompareCurrent.saveType }}<br />
+              <pre>{{ modalCompareCurrent.entry?.data | json }}</pre>
             </div>
             <ng-template #noCurrent>
               <span class="text-muted">No entry selected.</span>
@@ -91,10 +91,10 @@
           <div class="col-6">
             <div class="border">
               <b>Next Entry:</b><br />
-              <b>Date:</b> {{ modalNext.date }}<br />
-              <b>User:</b> {{ modalNext.user }}<br />
-              <b>Save Type:</b> {{ modalNext.saveType }}<br />
-              <pre>{{ modalNext.entry?.data | json }}</pre>
+              <b>Date:</b> {{ modalCompareNext?.date }}<br />
+              <b>User:</b> {{ modalCompareNext?.user }}<br />
+              <b>Save Type:</b> {{ modalCompareNext?.saveType }}<br />
+              <pre>{{ modalCompareNext?.entry?.data | json }}</pre>
             </div>
           </div>
         </ng-template>

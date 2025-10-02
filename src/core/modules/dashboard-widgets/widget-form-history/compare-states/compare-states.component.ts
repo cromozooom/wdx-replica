@@ -1,4 +1,11 @@
-import { Component, inject, Input, TemplateRef } from "@angular/core";
+import {
+  Component,
+  inject,
+  Input,
+  TemplateRef,
+  OnChanges,
+  SimpleChanges,
+} from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { AgGridAngular } from "ag-grid-angular";
@@ -39,7 +46,39 @@ ModuleRegistry.registerModules([
   templateUrl: "./compare-states.component.html",
   styleUrls: ["./compare-states.component.scss"],
 })
-export class CompareStatesComponent {
+export class CompareStatesComponent implements OnChanges {
+  // ngOnChanges() {
+  //   if (this.selectedFormId && this.formHistory[this.selectedFormId]) {
+  //     this.historyRows = this.formHistory[this.selectedFormId].map((entry: any) => ({
+  //       date: new Date(entry.timestamp).toLocaleString(),
+  //       saveType: entry.saveType,
+  //       user: this.users.find((u: any) => u.id === entry.userId)?.name || entry.userId,
+  //       entry,
+  //     }));
+  //   } else {
+  //     this.historyRows = [];
+  //   }
+  // }
+  ngOnChanges(changes: SimpleChanges) {
+    if (
+      this.selectedFormId &&
+      this.formHistory &&
+      this.formHistory[this.selectedFormId]
+    ) {
+      this.historyRows = this.formHistory[this.selectedFormId].map(
+        (entry: any) => ({
+          date: new Date(entry.timestamp).toLocaleString(),
+          saveType: entry.saveType,
+          user:
+            this.users.find((u: any) => u.id === entry.userId)?.name ||
+            entry.userId,
+          entry,
+        })
+      );
+    } else {
+      this.historyRows = [];
+    }
+  }
   @Input() formHistory: { [formId: string]: any[] } = {};
   @Input() selectedFormId: string = "";
   @Input() users: any[] = [];
@@ -61,88 +100,62 @@ export class CompareStatesComponent {
     { headerName: "User", field: "user", sortable: true, filter: true },
   ];
 
-  // No gridOptions needed; set rowSelection directly in template
-
+  // Allow multiple selection
   selectedRows: any[] = [];
   historyRows: any[] = [];
 
-  // Modal navigation state
-  modalHistoryIndex: number | null = null;
+  // Modal navigation state (for multi-select)
+  modalSelectedIndexes: number[] = [];
+  modalCompareIndex: number = 0;
 
-  get hasModalHistory() {
-    return this.historyRows.length > 0 && this.modalHistoryIndex !== null;
+  get canCompareSelected() {
+    return this.selectedRows.length >= 2;
   }
 
-  get modalCurrent() {
-    return this.hasModalHistory
-      ? this.historyRows[this.modalHistoryIndex!]
+  get modalCompareCurrent() {
+    return this.canCompareSelected
+      ? this.selectedRows[this.modalCompareIndex]
       : null;
   }
-  get modalPrev() {
-    if (!this.hasModalHistory) return null;
-    return this.modalHistoryIndex! > 0
-      ? this.historyRows[this.modalHistoryIndex! - 1]
+  get modalComparePrev() {
+    return this.canCompareSelected && this.modalCompareIndex > 0
+      ? this.selectedRows[this.modalCompareIndex - 1]
       : null;
   }
-  get modalNext() {
-    if (!this.hasModalHistory) return null;
-    return this.modalHistoryIndex! < this.historyRows.length - 1
-      ? this.historyRows[this.modalHistoryIndex! + 1]
+  get modalCompareNext() {
+    return this.canCompareSelected &&
+      this.modalCompareIndex < this.selectedRows.length - 1
+      ? this.selectedRows[this.modalCompareIndex + 1]
       : null;
   }
 
   modalGoPrev() {
-    if (this.modalHistoryIndex !== null && this.modalHistoryIndex > 0) {
-      this.modalHistoryIndex--;
+    if (this.canCompareSelected && this.modalCompareIndex > 0) {
+      this.modalCompareIndex--;
     }
   }
   modalGoNext() {
     if (
-      this.modalHistoryIndex !== null &&
-      this.modalHistoryIndex < this.historyRows.length - 1
+      this.canCompareSelected &&
+      this.modalCompareIndex < this.selectedRows.length - 1
     ) {
-      this.modalHistoryIndex++;
+      this.modalCompareIndex++;
     }
   }
-
-  ngOnChanges(changes: any) {
-    if (
-      changes["formHistory"] ||
-      changes["selectedFormId"] ||
-      changes["users"]
-    ) {
-      if (!this.selectedFormId || !this.formHistory[this.selectedFormId]) {
-        this.historyRows = [];
-      } else {
-        this.historyRows = this.formHistory[this.selectedFormId].map(
-          (entry: any) => ({
-            date: new Date(entry.timestamp).toLocaleString(),
-            saveType: entry.saveType,
-            user:
-              this.users.find((u: any) => u.id === entry.userId)?.name ||
-              entry.userId,
-            entry,
-          })
-        );
-      }
-    }
-  }
+  // Removed old single-select modal navigation logic
 
   openFullscreen(content: TemplateRef<any>) {
-    // Open modal at selected row, or first if none selected
+    // Only allow modal if at least one row is selected
     if (this.selectedRows.length > 0) {
-      const idx = this.historyRows.findIndex(
-        (r) => r.entry?.id === this.selectedRows[0]?.entry?.id
-      );
-      this.modalHistoryIndex = idx >= 0 ? idx : 0;
-    } else {
-      this.modalHistoryIndex = 0;
+      this.modalCompareIndex = 0;
     }
     this.modalService.open(content, { fullscreen: true });
   }
 
   onSelectionChanged(event: any) {
     this.selectedRows = event.api.getSelectedRows();
+    // Reset modal index if selection changes
+    this.modalCompareIndex = 0;
     console.log("Selected Rows:", this.selectedRows);
   }
 }
