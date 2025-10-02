@@ -10,7 +10,6 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { AgGridAngular } from "ag-grid-angular";
 import { CompareGridComponent } from "../compare-grid/compare-grid.component";
-import { exampleFormSchema } from "../compare-grid/example-form-schema";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import {
   ClientSideRowModelModule,
@@ -40,7 +39,6 @@ ModuleRegistry.registerModules([
   RowGroupingModule,
   // ...(process.env.NODE_ENV !== "production" ? [ValidationModule] : []),
 ]);
-
 @Component({
   selector: "app-compare-states",
   standalone: true,
@@ -49,7 +47,6 @@ ModuleRegistry.registerModules([
   styleUrls: ["./compare-states.component.scss"],
 })
 export class CompareStatesComponent implements OnChanges {
-  exampleFormSchema = exampleFormSchema;
   @Input() selectedForm: any = null;
   @Input() formHistory: { [formId: string]: any[] } = {};
   @Input() selectedFormId: string = "";
