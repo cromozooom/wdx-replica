@@ -5,12 +5,14 @@
  * - status 'onlyPrev': field exists only in prev
  * - status 'onlyCurrent': field exists only in current
  */
+import { CompareStatus } from "./compare-status.enum";
+
 export interface CompareGridRow {
   field: string;
   label: string;
   prevValue: any;
   currentValue: any;
-  status: "untouched" | "removedValue" | "newValue" | "changed" | "group";
+  status: CompareStatus;
   children?: CompareGridRow[];
 }
 
@@ -45,7 +47,7 @@ export function buildCompareRows(
         label,
         prevValue: undefined,
         currentValue: undefined,
-        status: "group",
+        status: CompareStatus.Group,
         children,
       });
     } else {
@@ -53,15 +55,15 @@ export function buildCompareRows(
       const currentValue = current && key in current ? current[key] : undefined;
       let status: CompareGridRow["status"];
       if (prevValue === undefined && currentValue === undefined) {
-        status = "untouched";
+        status = CompareStatus.Untouched;
       } else if (prevValue === undefined) {
-        status = "newValue";
+        status = CompareStatus.New;
       } else if (currentValue === undefined) {
-        status = "removedValue";
+        status = CompareStatus.Removed;
       } else if (prevValue !== currentValue) {
-        status = "changed";
+        status = CompareStatus.Changed;
       } else {
-        status = "untouched";
+        status = CompareStatus.Untouched;
       }
       rows.push({
         field: key,
