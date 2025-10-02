@@ -12,8 +12,9 @@ import { buildCompareRows, CompareGridRow } from "./compare-grid.utils";
 export class CompareGridComponent {
   @Input() prev: any = null;
   @Input() current: any = null;
+  @Input() schema: any = null;
 
   get compareRows(): CompareGridRow[] {
-    return buildCompareRows(this.prev, this.current);
+    return buildCompareRows(this.prev, this.current, this.schema);
   }
 }

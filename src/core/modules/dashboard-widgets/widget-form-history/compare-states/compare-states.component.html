@@ -70,6 +70,7 @@
         <app-compare-grid
           [prev]="modalComparePrev?.entry?.data"
           [current]="modalCompareCurrent?.entry?.data"
+          [schema]="exampleFormSchema"
         ></app-compare-grid>
 
         <ng-container *ngIf="modalComparePrev; else showNextEntry">

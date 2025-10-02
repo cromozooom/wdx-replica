@@ -9,12 +9,29 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let row of compareRows">
-        <td>{{ row.field }}</td>
-        <td>{{ row.prevValue === undefined ? "—" : row.prevValue }}</td>
-        <td>{{ row.currentValue === undefined ? "—" : row.currentValue }}</td>
-        <td>{{ row.status }}</td>
-      </tr>
+      <ng-container *ngFor="let row of compareRows">
+        <tr *ngIf="row.status === 'group'" class="group-row">
+          <td colspan="4">
+            <b>{{ row.label }}</b>
+          </td>
+        </tr>
+        <ng-container *ngIf="row.status === 'group' && row.children">
+          <tr *ngFor="let child of row.children" [ngClass]="child.status">
+            <td class="ps-4">{{ child.label }}</td>
+            <td>{{ child.prevValue === undefined ? "—" : child.prevValue }}</td>
+            <td>
+              {{ child.currentValue === undefined ? "—" : child.currentValue }}
+            </td>
+            <td>{{ child.status }}</td>
+          </tr>
+        </ng-container>
+        <tr *ngIf="row.status !== 'group'" [ngClass]="row.status">
+          <td>{{ row.label }}</td>
+          <td>{{ row.prevValue === undefined ? "—" : row.prevValue }}</td>
+          <td>{{ row.currentValue === undefined ? "—" : row.currentValue }}</td>
+          <td>{{ row.status }}</td>
+        </tr>
+      </ng-container>
     </tbody>
   </table>
 </div>
