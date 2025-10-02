@@ -63,7 +63,6 @@
             >
               Next &#8594;
             </button>
-            <span> Length of selected rowData: {{ selectedRows.length }} </span>
           </div>
         </div>
         <!-- Add the gridcompare here -->
@@ -75,7 +74,7 @@
           [currentMeta]="modalCompareCurrent"
         ></app-compare-grid>
 
-        <ng-container *ngIf="modalComparePrev; else showNextEntry">
+        <!-- <ng-container *ngIf="modalComparePrev; else showNextEntry">
           <div class="col-6">
             <div class="border">
               <b>Previous Entry:</b><br />
@@ -110,7 +109,7 @@
               <pre>{{ modalCompareNext?.entry?.data | json }}</pre>
             </div>
           </div>
-        </ng-template>
+        </ng-template> -->
       </div>
     </div>
   </div>

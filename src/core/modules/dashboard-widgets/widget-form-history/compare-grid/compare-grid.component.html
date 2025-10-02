@@ -1,77 +1,33 @@
-<div class="compare-grid-placeholder">
-  <table class="table table-bordered table-sm w-100">
-    <thead>
-      <tr>
-        <th></th>
-        <th class="text-center">Previous</th>
-        <th class="text-center">Current</th>
-        <th></th>
-      </tr>
-      <tr>
-        <th></th>
-        <th class="text-center">
-          <ng-container *ngIf="prevMeta">
-            <div>
-              <b>{{ prevMeta.user || prevMeta.author }}</b>
-            </div>
-            <div class="small text-muted">{{ prevMeta.date }}</div>
-          </ng-container>
-        </th>
-        <th class="text-center">
-          <ng-container *ngIf="currentMeta">
-            <div>
-              <b>{{ currentMeta.user || currentMeta.author }}</b>
-            </div>
-            <div class="small text-muted">{{ currentMeta.date }}</div>
-          </ng-container>
-        </th>
-        <th></th>
-      </tr>
-      <tr>
-        <th></th>
-        <th class="text-center">
-          <ng-container *ngIf="prevMeta">
-            <span class="badge bg-secondary">{{ prevMeta.saveType }}</span>
-          </ng-container>
-        </th>
-        <th class="text-center">
-          <ng-container *ngIf="currentMeta">
-            <span class="badge bg-secondary">{{ currentMeta.saveType }}</span>
-          </ng-container>
-        </th>
-        <th></th>
-      </tr>
-      <tr>
-        <th>Field</th>
-        <th>Previous</th>
-        <th>Current</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <ng-container *ngFor="let row of compareRows">
-        <tr *ngIf="row.status === 'group'" class="group-row">
-          <td colspan="4">
-            <b>{{ row.label }}</b>
-          </td>
-        </tr>
-        <ng-container *ngIf="row.status === 'group' && row.children">
-          <tr *ngFor="let child of row.children" [ngClass]="child.status">
-            <td>{{ child.label }}</td>
-            <td>{{ child.prevValue === undefined ? "—" : child.prevValue }}</td>
-            <td>
-              {{ child.currentValue === undefined ? "—" : child.currentValue }}
-            </td>
-            <td>{{ child.status }}</td>
-          </tr>
-        </ng-container>
-        <tr *ngIf="row.status !== 'group'" [ngClass]="row.status">
-          <td>{{ row.label }}</td>
-          <td>{{ row.prevValue === undefined ? "—" : row.prevValue }}</td>
-          <td>{{ row.currentValue === undefined ? "—" : row.currentValue }}</td>
-          <td>{{ row.status }}</td>
-        </tr>
+<div class="d-flex flex-column zw-100 h-100">
+  <div class="mb-2 d-flex justify-content-center align-items-center gap-3">
+    <div class="flex-grow-1 d-flex justify-content-end align-items-center">
+      <ng-container *ngIf="prevMeta">
+        <b>{{ prevMeta.user || prevMeta.author }}</b>
+        <span class="badge bg-info ms-2">{{ prevMeta.saveType }}</span>
+        <span class="small text-muted ms-2">{{ prevMeta.date }}</span>
       </ng-container>
-    </tbody>
-  </table>
+    </div>
+    <span class="mx-2">vs</span>
+    <div class="flex-grow-1 d-flex justify-content-start align-items-center">
+      <ng-container *ngIf="currentMeta">
+        <b>{{ currentMeta.user || currentMeta.author }}</b>
+        <span class="badge bg-info ms-2">{{ currentMeta.saveType }}</span>
+        <span class="small text-muted ms-2">{{ currentMeta.date }}</span>
+      </ng-container>
+    </div>
+  </div>
+  <ag-grid-angular
+    style="width: 100%"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [gridOptions]="gridOptions"
+    [treeData]="true"
+    [animateRows]="true"
+    [getDataPath]="gridOptions.getDataPath"
+    [autoGroupColumnDef]="gridOptions.autoGroupColumnDef"
+    [defaultColDef]="gridOptions.defaultColDef"
+    [domLayout]="gridOptions.domLayout"
+  >
+  </ag-grid-angular>
 </div>
