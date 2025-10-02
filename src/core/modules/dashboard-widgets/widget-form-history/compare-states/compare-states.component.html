@@ -62,27 +62,17 @@
             </button>
           </div>
         </div>
-        <div class="col-6">
-          <div class="border border-info">
-            <div
-              class="btn-group mb-2 w-100 d-flex justify-content-between"
-            ></div>
-            <ng-container *ngIf="modalPrev; else showNextEntry">
+        <ng-container *ngIf="modalPrev; else showNextEntry">
+          <div class="col-6">
+            <div class="border">
               <b>Previous Entry:</b><br />
               <b>Date:</b> {{ modalPrev.date }}<br />
               <b>User:</b> {{ modalPrev.user }}<br />
               <b>Save Type:</b> {{ modalPrev.saveType }}<br />
               <pre>{{ modalPrev.entry?.data | json }}</pre>
-            </ng-container>
-            <ng-template #showNextEntry>
-              <b>Next Entry:</b><br />
-              <b>Date:</b> {{ modalNext.date }}<br />
-              <b>User:</b> {{ modalNext.user }}<br />
-              <b>Save Type:</b> {{ modalNext.saveType }}<br />
-              <pre>{{ modalNext.entry?.data | json }}</pre>
-            </ng-template>
+            </div>
           </div>
-        </div>
+        </ng-container>
         <div class="col-6">
           <div class="border border-success">
             <div *ngIf="modalCurrent; else noCurrent">
@@ -97,6 +87,17 @@
             </ng-template>
           </div>
         </div>
+        <ng-template #showNextEntry>
+          <div class="col-6">
+            <div class="border">
+              <b>Next Entry:</b><br />
+              <b>Date:</b> {{ modalNext.date }}<br />
+              <b>User:</b> {{ modalNext.user }}<br />
+              <b>Save Type:</b> {{ modalNext.saveType }}<br />
+              <pre>{{ modalNext.entry?.data | json }}</pre>
+            </div>
+          </div>
+        </ng-template>
       </div>
     </div>
   </div>
