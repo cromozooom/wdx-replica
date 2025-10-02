@@ -23,33 +23,43 @@ export class CompareGridComponent {
 
   get rowData(): any[] {
     // Flat array, set group: 'root' for top-level fields, group: group name for grouped fields
+    // Add sortIndex to preserve schema order
     function toFlatRows(
       rows: CompareGridRow[],
-      parentGroup: string | null = null
+      parentGroup: string | null = null,
+      parentIndex: number = 0
     ): any[] {
       const result: any[] = [];
+      let idx = parentIndex;
       for (const row of rows) {
         if (row.status === "group" && row.children) {
+          let childIdx = 0;
           for (const child of row.children) {
             if (child.status !== "group") {
               result.push({
                 ...child,
                 group: row.label,
                 field: child.label,
+                sortIndex: idx + childIdx / 1000, // keep group fields together
               });
+              childIdx++;
             }
           }
+          idx++;
         } else if (!parentGroup) {
           result.push({
             ...row,
             group: "root",
             field: row.label,
+            sortIndex: idx,
           });
+          idx++;
         }
       }
       return result;
     }
-    return toFlatRows(buildCompareRows(this.prev, this.current, this.schema));
+    const rows = toFlatRows(buildCompareRows(this.prev, this.current, this.schema));
+    return rows.sort((a, b) => a.sortIndex - b.sortIndex);
   }
 
   columnDefs: ColDef[] = [
