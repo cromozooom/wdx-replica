@@ -100,6 +100,13 @@ export class CompareStatesComponent implements OnChanges {
     { headerName: "User", field: "user", sortable: true, filter: true },
   ];
 
+  gridOptions: GridOptions = {
+    rowSelection: {
+      mode: "multiRow",
+      selectAll: "filtered",
+    },
+  };
+
   // Allow multiple selection
   selectedRows: any[] = [];
   historyRows: any[] = [];

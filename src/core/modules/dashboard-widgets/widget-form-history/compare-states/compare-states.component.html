@@ -12,10 +12,10 @@
       style="width: 100%; height: 100%"
       class="ag-theme-alpine"
       [rowData]="historyRows"
+      [gridOptions]="gridOptions"
       [columnDefs]="columnDefs"
       [domLayout]="'autoHeight'"
       [animateRows]="true"
-      [rowSelection]="{ mode: 'multiRow' }"
       (selectionChanged)="onSelectionChanged($event)"
     ></ag-grid-angular>
     <div class="mt-2 bg-light p-2 border">
