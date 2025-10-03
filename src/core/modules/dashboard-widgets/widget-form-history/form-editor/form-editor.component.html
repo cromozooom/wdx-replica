@@ -34,25 +34,9 @@
   </form>
 
   <div *ngIf="selectedForm?.schema" (focusout)="onFormFocusOut($event)">
-    <div class="d-flex justify-content-end mb-2 gap-2">
-      <button
-        class="btn btn-outline-primary btn-sm"
-        (click)="onManualSave()"
-        [disabled]="!selectedUserIdLocal"
-      >
-        Save
-      </button>
-      <button
-        class="btn btn-outline-secondary btn-sm"
-        (click)="onRevert()"
-        [disabled]="!canRevert() || !selectedUserIdLocal"
-      >
-        Revert to Previous State
-      </button>
-    </div>
     <ng-container *ngIf="selectedUserIdLocal; else selectUserWarning">
       <div class="d-flex">
-        <div
+        <!-- <div
           class="alert alert-info mb-2"
           style="white-space: pre-wrap; font-size: 12px"
         >
@@ -60,7 +44,7 @@
           <b>jsonformsData:</b> {{ jsonformsData | json }}<br />
           <b>schema:</b> {{ selectedForm?.schema | json }}<br />
           <b>uischema:</b> {{ selectedForm?.uischema | json }}
-        </div>
+        </div> -->
         <div>
           <jsonforms
             [data]="jsonformsData"
@@ -72,6 +56,26 @@
         </div>
       </div>
     </ng-container>
+    <div class="d-flex justify-content-between mt-2 gap-2">
+      <div>
+        <button
+          class="btn btn-outline-secondary"
+          (click)="onRevert()"
+          [disabled]="!canRevert() || !selectedUserIdLocal"
+        >
+          Revert to Previous State
+        </button>
+      </div>
+      <div>
+        <button
+          class="btn btn-primary"
+          (click)="onManualSave()"
+          [disabled]="!selectedUserIdLocal"
+        >
+          Save
+        </button>
+      </div>
+    </div>
     <ng-template #selectUserWarning>
       <div class="alert alert-warning mt-2">
         Please select a user to edit the form.

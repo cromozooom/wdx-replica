@@ -1,29 +1,30 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { AgGridAngular } from "ag-grid-angular";
 import { ColDef, GridOptions, ModuleRegistry } from "ag-grid-community";
 import { RowGroupingModule } from "ag-grid-enterprise";
 import { buildCompareRows, CompareGridRow } from "./compare-grid.utils";
+import { StatusValueCellRendererComponent } from "./status-value-cell-renderer.component";
 
 ModuleRegistry.registerModules([RowGroupingModule]);
 
 @Component({
   selector: "app-compare-grid",
   standalone: true,
-  imports: [CommonModule, AgGridAngular],
+  imports: [CommonModule, AgGridAngular, StatusValueCellRendererComponent],
   templateUrl: "./compare-grid.component.html",
   styleUrls: ["./compare-grid.component.scss"],
 })
-export class CompareGridComponent {
+export class CompareGridComponent implements OnChanges {
   @Input() prev: any = null;
   @Input() current: any = null;
   @Input() schema: any = null;
   @Input() prevMeta: any = null;
   @Input() currentMeta: any = null;
 
-  get rowData(): any[] {
-    // Flat array, set group: 'root' for top-level fields, group: group name for grouped fields
-    // Add sortIndex to preserve schema order
+  rowData: any[] = [];
+
+  ngOnChanges(changes: SimpleChanges): void {
     function toFlatRows(
       rows: CompareGridRow[],
       parentGroup: string | null = null,
@@ -61,15 +62,16 @@ export class CompareGridComponent {
     const rows = toFlatRows(
       buildCompareRows(this.prev, this.current, this.schema)
     );
-    return rows.sort((a, b) => a.sortIndex - b.sortIndex);
+    this.rowData = rows.sort((a, b) => a.sortIndex - b.sortIndex);
   }
 
   columnDefs: ColDef[] = [
     { field: "group", headerName: "Group", rowGroup: true, hide: true },
-    { field: "field", headerName: "Field" },
+    { field: "field", headerName: "Field", filter: "agTextColumnFilter" },
     {
       field: "prevValue",
       headerName: "Previous",
+      filter: "agTextColumnFilter",
       flex: 1,
       valueFormatter: (params: { value: any }) =>
         params.value === undefined ? "—" : params.value,
@@ -78,26 +80,35 @@ export class CompareGridComponent {
       field: "currentValue",
       headerName: "Current",
       flex: 1,
+      filter: "agTextColumnFilter",
       valueFormatter: (params: { value: any }) =>
         params.value === undefined ? "—" : params.value,
     },
-    { field: "status", headerName: "Status", flex: 0 },
+    {
+      field: "status",
+      headerName: "Status",
+      flex: 0,
+      width: 120,
+      cellRenderer: "statusValueCellRenderer",
+    },
   ];
   gridOptions: GridOptions = {
+    domLayout: "autoHeight",
+    groupHideParentOfSingleChild: "leafGroupsOnly",
     animateRows: true,
     defaultColDef: {
+      floatingFilter: true,
       resizable: true,
       sortable: true,
       filter: true,
       flex: 1,
       minWidth: 100,
     },
-    // autoGroupColumnDef: {
-    //   minWidth: 200,
-    // },
     groupDisplayType: "singleColumn",
     groupDefaultExpanded: 1,
-    domLayout: "autoHeight",
+    components: {
+      statusValueCellRenderer: StatusValueCellRendererComponent,
+    },
   };
 
   // No longer needed: flattenRows removed. Tree structure is now provided directly.

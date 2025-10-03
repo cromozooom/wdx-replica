@@ -1,31 +1,48 @@
-<div class="d-flex flex-column zw-100 h-100">
-  <div class="mb-2 d-flex justify-content-center align-items-center gap-3">
-    <div class="flex-grow-1 d-flex justify-content-end align-items-center">
-      <ng-container *ngIf="prevMeta">
-        <b>{{ prevMeta.user || prevMeta.author }}</b>
-        <span class="badge bg-info ms-2">{{ prevMeta.saveType }}</span>
-        <span class="small text-muted ms-2">{{ prevMeta.date }}</span>
-      </ng-container>
-    </div>
-    <span class="mx-2">vs</span>
-    <div class="flex-grow-1 d-flex justify-content-start align-items-center">
-      <ng-container *ngIf="currentMeta">
-        <b>{{ currentMeta.user || currentMeta.author }}</b>
-        <span class="badge bg-info ms-2">{{ currentMeta.saveType }}</span>
-        <span class="small text-muted ms-2">{{ currentMeta.date }}</span>
-      </ng-container>
-    </div>
+<div class="d-flex justify-content-center align-items-center gap-3">
+  <div class="flex-grow-1 d-flex justify-content-end align-items-center py-3">
+    <ng-container *ngIf="prevMeta">
+      <b>{{ prevMeta.user || prevMeta.author }}</b>
+      <span
+        class="badge ms-2"
+        [ngClass]="{
+          'bg-light text-dark': prevMeta.saveType === 'automatic',
+          'bg-success': prevMeta.saveType === 'button',
+          'bg-info':
+            prevMeta.saveType !== 'automatic' && prevMeta.saveType !== 'button',
+        }"
+        >{{ prevMeta.saveType }}</span
+      >
+      <span class="small text-muted ms-2">{{ prevMeta.date }}</span>
+    </ng-container>
   </div>
+  <span class="mx-2">vs</span>
+  <div class="flex-grow-1 d-flex justify-content-start align-items-center">
+    <ng-container *ngIf="currentMeta">
+      <b>{{ currentMeta.user || currentMeta.author }}</b>
+      <span
+        class="badge ms-2"
+        [ngClass]="{
+          'bg-light text-dark': currentMeta.saveType === 'automatic',
+          'bg-success': currentMeta.saveType === 'button',
+          'bg-info':
+            currentMeta.saveType !== 'automatic' &&
+            currentMeta.saveType !== 'button',
+        }"
+        >{{ currentMeta.saveType }}</span
+      >
+      <span class="small text-muted ms-2">{{ currentMeta.date }}</span>
+    </ng-container>
+  </div>
+</div>
+<div class="flex-grow-1 d-flex h-100 w-100 -info">
   <ag-grid-angular
-    style="width: 100%"
-    class="ag-theme-alpine"
+    class="ag-theme-alpine w-100 h-100"
     [rowData]="rowData"
     [columnDefs]="columnDefs"
     [gridOptions]="gridOptions"
     [animateRows]="true"
     [autoGroupColumnDef]="gridOptions.autoGroupColumnDef"
     [defaultColDef]="gridOptions.defaultColDef"
-    [domLayout]="gridOptions.domLayout"
   >
   </ag-grid-angular>
 </div>
