@@ -1,0 +1,85 @@
+<div class="form-editor">
+  <h4>Form Editor</h4>
+  <form class="row g-2 align-items-end mb-4">
+    <div class="col-md-4">
+      <label class="form-label">Select Form</label>
+      <select
+        class="form-select"
+        [(ngModel)]="selectedFormIdLocal"
+        name="selectedFormIdLocal"
+        (change)="onFormChange($event)"
+      >
+        <option *ngFor="let form of forms" [value]="form.id">
+          {{ form.name }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Current User</label>
+      <ng-select
+        [items]="users"
+        bindLabel="name"
+        bindValue="id"
+        [(ngModel)]="selectedUserIdLocal"
+        name="selectedUserIdLocal"
+        placeholder="Select user"
+        [clearable]="false"
+        class="w-100"
+      >
+        <ng-template ng-option-tmp let-item="item">
+          {{ item.name }} <span *ngIf="item.role">({{ item.role }})</span>
+        </ng-template>
+      </ng-select>
+    </div>
+  </form>
+
+  <div *ngIf="selectedForm?.schema" (focusout)="onFormFocusOut($event)">
+    <ng-container *ngIf="selectedUserIdLocal; else selectUserWarning">
+      <div class="d-flex">
+        <!-- <div
+          class="alert alert-info mb-2"
+          style="white-space: pre-wrap; font-size: 12px"
+        >
+          <b>id:</b> {{ selectedForm?.id }}<br />
+          <b>jsonformsData:</b> {{ jsonformsData | json }}<br />
+          <b>schema:</b> {{ selectedForm?.schema | json }}<br />
+          <b>uischema:</b> {{ selectedForm?.uischema | json }}
+        </div> -->
+        <div>
+          <jsonforms
+            [data]="jsonformsData"
+            [schema]="selectedForm?.schema"
+            [uischema]="selectedForm?.uischema"
+            [renderers]="renderers"
+            (dataChange)="onJsonFormsChange($event)"
+          ></jsonforms>
+        </div>
+      </div>
+    </ng-container>
+    <div class="d-flex justify-content-between mt-2 gap-2">
+      <div>
+        <button
+          class="btn btn-outline-secondary"
+          (click)="onRevert()"
+          [disabled]="!canRevert() || !selectedUserIdLocal"
+        >
+          Revert to Previous State
+        </button>
+      </div>
+      <div>
+        <button
+          class="btn btn-primary"
+          (click)="onManualSave()"
+          [disabled]="!selectedUserIdLocal"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+    <ng-template #selectUserWarning>
+      <div class="alert alert-warning mt-2">
+        Please select a user to edit the form.
+      </div>
+    </ng-template>
+  </div>
+</div>

@@ -8,6 +8,11 @@
     class="flex-grow-1"
   ></app-widget-data-history>
 
+  <app-widget-form-history
+    *ngSwitchCase="'widget-form-history'"
+    class="flex-grow-1"
+  ></app-widget-form-history>
+
   <!-- from this component I would like to receive the template that should be used -->
   <app-widget-default-content
     *ngSwitchDefault

@@ -13,6 +13,11 @@ export const routes: Routes = [
         path: ":type",
         component: DashboardComponent,
       },
+      {
+        path: "widget-form-history",
+        component: DashboardComponent,
+        data: { type: "widget-form-history" },
+      },
     ],
   },
   {
