@@ -10,27 +10,29 @@ import { CompareStatus } from "./compare-status.enum";
     <ng-container [ngSwitch]="value">
       <span
         *ngSwitchCase="CompareStatus.Untouched"
-        class="badge rounded-pill text-body bg-light"
+        class="badge fw-normal rounded-pill text-body bg-light"
         >Untouched</span
       >
       <span
         *ngSwitchCase="CompareStatus.Removed"
-        class="badge rounded-pill bg-danger"
+        class="badge fw-normal rounded-pill bg-danger"
         >Removed</span
       >
       <span
         *ngSwitchCase="CompareStatus.New"
-        class="badge rounded-pill bg-success"
+        class="badge fw-normal rounded-pill bg-success"
         >New</span
       >
       <span
         *ngSwitchCase="CompareStatus.Changed"
-        class="badge rounded-pill bg-warning text-dark"
+        class="badge fw-normal rounded-pill bg-warning text-dark"
         >Changed</span
       >
-      <span *ngSwitchDefault class="badge rounded-pill bg-light text-dark">{{
-        value
-      }}</span>
+      <span
+        *ngSwitchDefault
+        class="badge fw-normal rounded-pill bg-light text-dark"
+        >{{ value }}</span
+      >
     </ng-container>
   `,
 })
