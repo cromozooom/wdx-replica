@@ -1,0 +1,96 @@
+// Default JSON Forms configuration for a user form
+export const userFormConfig = {
+  schema: {
+    type: "object",
+    required: ["age"],
+    properties: {
+      firstName: { type: "string", minLength: 2, maxLength: 20 },
+      lastName: { type: "string", minLength: 5, maxLength: 15 },
+      age: { type: "integer", minimum: 18, maximum: 100 },
+      gender: { type: "string", enum: ["Male", "Female", "Undisclosed"] },
+      height: { type: "number" },
+      dateOfBirth: { type: "string", format: "date" },
+      rating: { type: "integer" },
+      committer: { type: "boolean" },
+      address: {
+        type: "object",
+        properties: {
+          street: { type: "string" },
+          streetnumber: { type: "string" },
+          postalCode: { type: "string" },
+          city: { type: "string" },
+        },
+      },
+    },
+  },
+  uischema: {
+    type: "VerticalLayout",
+    elements: [
+      {
+        type: "HorizontalLayout",
+        elements: [
+          { type: "Control", scope: "#/properties/firstName" },
+          { type: "Control", scope: "#/properties/lastName" },
+        ],
+      },
+      {
+        type: "HorizontalLayout",
+        elements: [
+          { type: "Control", scope: "#/properties/age" },
+          { type: "Control", scope: "#/properties/dateOfBirth" },
+        ],
+      },
+      {
+        type: "HorizontalLayout",
+        elements: [
+          { type: "Control", scope: "#/properties/height" },
+          { type: "Control", scope: "#/properties/gender" },
+          { type: "Control", scope: "#/properties/committer" },
+        ],
+      },
+      {
+        type: "Group",
+        label: "Address for Shipping T-Shirt",
+        elements: [
+          {
+            type: "HorizontalLayout",
+            elements: [
+              {
+                type: "Control",
+                scope: "#/properties/address/properties/street",
+              },
+              {
+                type: "Control",
+                scope: "#/properties/address/properties/streetnumber",
+              },
+            ],
+          },
+          {
+            type: "HorizontalLayout",
+            elements: [
+              {
+                type: "Control",
+                scope: "#/properties/address/properties/postalCode",
+              },
+              {
+                type: "Control",
+                scope: "#/properties/address/properties/city",
+              },
+            ],
+          },
+        ],
+        rule: {
+          effect: "ENABLE",
+          condition: {
+            scope: "#/properties/committer",
+            schema: { const: true },
+          },
+        },
+      },
+    ],
+  },
+  data: {
+    firstName: "Max",
+    lastName: "Power",
+  },
+};

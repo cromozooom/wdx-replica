@@ -69,13 +69,30 @@
                             "src/styles.scss",
                             "node_modules/ag-grid-community/styles/ag-theme-alpine.css"
                         ]
-                    }
+                    },
+                    "configurations": {
+                        "production": {
+                            "sourceMap": false
+                        },
+                        "development": {
+                            "sourceMap": true,
+                            "optimization": false,
+                            "extractLicenses": false
+                        }
+                    },
+                    "defaultConfiguration": "development"
                 },
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
-                    "options": {
-                        "buildTarget": "automation-app:build"
-                    }
+                    "configurations": {
+                        "production": {
+                            "buildTarget": "automation-app:build:production"
+                        },
+                        "development": {
+                            "buildTarget": "automation-app:build:development"
+                        }
+                    },
+                    "defaultConfiguration": "development"
                 }
             }
         }

@@ -1,0 +1,60 @@
+<div class="widget-form-history">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <button ngbNavLink>Compare states</button>
+      <ng-template ngbNavContent>
+        <app-compare-states
+          [forms]="state().forms"
+          [formHistory]="state().formHistory"
+          [users]="state().users"
+          [selectedFormId]="state().selectedFormId || ''"
+          [selectedForm]="selectedForm"
+          [historyA]="null"
+          [historyB]="null"
+        ></app-compare-states>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <button ngbNavLink>Form Editor</button>
+      <ng-template ngbNavContent>
+        <!-- Form Editor Tab Placeholder -->
+        <app-form-editor
+          [users]="state().users"
+          [forms]="state().forms"
+          [formHistory]="state().formHistory"
+          [currentUserId]="state().currentUserId"
+          [selectedFormId]="state().selectedFormId"
+          [schema]="selectedFormSchema"
+          [uischema]="selectedFormUiSchema"
+          [saveFormHistory]="handleSaveFormHistory"
+        ></app-form-editor>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <button ngbNavLink>Form Creator</button>
+      <ng-template ngbNavContent>
+        <!-- Form Creator Tab Placeholder -->
+        <app-form-creator
+          [forms]="state().forms"
+          (addForm)="handleAddForm($event)"
+          (removeForm)="handleRemoveForm($event)"
+        ></app-form-creator>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="4">
+      <button ngbNavLink>User Editors</button>
+      <ng-template ngbNavContent>
+        <!-- User Editors Tab Placeholder -->
+        <app-user-editors
+          [users]="state().users"
+          (addUser)="handleAddUser($event)"
+          (editUser)="handleEditUser($event)"
+          (setCurrentUser)="handleSetCurrentUser($event)"
+          (removeUser)="handleRemoveUser($event)"
+        ></app-user-editors>
+      </ng-template>
+    </li>
+  </ul>
+
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
