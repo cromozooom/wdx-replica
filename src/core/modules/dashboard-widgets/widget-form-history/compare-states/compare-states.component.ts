@@ -1,3 +1,4 @@
+// ...imports remain unchanged...
 import {
   Component,
   inject,
@@ -89,6 +90,14 @@ export class CompareStatesComponent implements OnChanges {
   modalCompareIndex: number = 0;
 
   ngOnChanges(changes: SimpleChanges) {
+    console.debug("[CompareStatesComponent] ngOnChanges", {
+      selectedFormId: this.selectedFormId,
+      formHistory: this.formHistory,
+      formHistoryForSelected: this.formHistory?.[this.selectedFormId],
+      users: this.users,
+      forms: this.forms,
+      changes,
+    });
     if (
       this.selectedFormId &&
       this.formHistory &&
@@ -104,8 +113,53 @@ export class CompareStatesComponent implements OnChanges {
           entry,
         })
       );
+      console.debug(
+        "[CompareStatesComponent] historyRows populated",
+        this.historyRows
+      );
     } else {
       this.historyRows = [];
+      console.debug("[CompareStatesComponent] historyRows cleared");
+    }
+
+    // Debug: log after ngOnChanges
+    setTimeout(() => {
+      console.debug(
+        "[CompareStatesComponent] selectedFormId after ngOnChanges",
+        this.selectedFormId
+      );
+      console.debug(
+        "[CompareStatesComponent] historyRows after ngOnChanges",
+        this.historyRows
+      );
+    });
+  }
+
+  onFormSelectChange(newId: string) {
+    console.debug("[CompareStatesComponent] onFormSelectChange", newId);
+    this.selectedFormId = newId;
+    if (
+      this.selectedFormId &&
+      this.formHistory &&
+      this.formHistory[this.selectedFormId]
+    ) {
+      this.historyRows = this.formHistory[this.selectedFormId].map(
+        (entry: any) => ({
+          date: new Date(entry.timestamp).toLocaleString(),
+          saveType: entry.saveType,
+          user:
+            this.users.find((u: any) => u.id === entry.userId)?.name ||
+            entry.userId,
+          entry,
+        })
+      );
+      console.debug(
+        "[CompareStatesComponent] historyRows populated (manual)",
+        this.historyRows
+      );
+    } else {
+      this.historyRows = [];
+      console.debug("[CompareStatesComponent] historyRows cleared (manual)");
     }
   }
 
@@ -155,5 +209,21 @@ export class CompareStatesComponent implements OnChanges {
     this.selectedRows = event.api.getSelectedRows();
     this.modalCompareIndex = 0;
     console.log("Selected Rows:", this.selectedRows);
+  }
+
+  onRowDataChanged(event: any) {
+    console.debug(
+      "[CompareStatesComponent] ag-Grid rowDataChanged",
+      this.historyRows,
+      event
+    );
+  }
+
+  onGridReady(event: any) {
+    console.debug(
+      "[CompareStatesComponent] ag-Grid gridReady",
+      this.historyRows,
+      event
+    );
   }
 }

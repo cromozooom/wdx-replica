@@ -1,8 +1,16 @@
 <div class="w-100 d-flex flex-column">
   <div class="d-flex gap-3">
     <div class="mb-3 flex-grow-1">
-      <label for="formSelect" class="form-label">Select Form</label>
-      <select id="formSelect" class="form-select" [(ngModel)]="selectedFormId">
+      <label for="formSelect" class="form-label">
+        Select Form
+        <span>{{ selectedFormId }}</span>
+      </label>
+      <select
+        id="formSelect"
+        class="form-select"
+        [(ngModel)]="selectedFormId"
+        (ngModelChange)="onFormSelectChange($event)"
+      >
         <option *ngFor="let form of forms" [value]="form.id">
           {{ form.name }}
         </option>
@@ -30,6 +38,8 @@
       [gridOptions]="gridOptions"
       [animateRows]="true"
       (selectionChanged)="onSelectionChanged($event)"
+      (rowDataChanged)="onRowDataChanged($event)"
+      (gridReady)="onGridReady($event)"
     ></ag-grid-angular>
   </div>
 </div>
