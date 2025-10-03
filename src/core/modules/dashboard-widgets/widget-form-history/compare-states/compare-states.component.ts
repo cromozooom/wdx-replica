@@ -21,6 +21,7 @@ import {
   RowSelectionModule,
   ValidationModule,
   createGrid,
+  themeAlpine,
 } from "ag-grid-community";
 import {
   ColumnMenuModule,
@@ -73,6 +74,7 @@ export class CompareStatesComponent implements OnChanges {
       selectAll: "filtered",
     },
   };
+  theme = themeAlpine;
 
   selectedRows: any[] = [];
   historyRows: any[] = [];

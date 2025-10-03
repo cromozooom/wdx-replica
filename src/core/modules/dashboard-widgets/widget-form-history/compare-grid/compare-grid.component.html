@@ -1,5 +1,5 @@
-<div class="d-flex justify-content-center align-items-center gap-3">
-  <div class="flex-grow-1 d-flex justify-content-end align-items-center py-3">
+<div class="d-flex justify-content-center align-items-center gap-3 pt-2">
+  <div class="flex-grow-1 d-flex justify-content-end align-items-center">
     <ng-container *ngIf="prevMeta">
       <b>{{ prevMeta.user || prevMeta.author }}</b>
       <span
@@ -12,7 +12,7 @@
         }"
         >{{ prevMeta.saveType }}</span
       >
-      <span class="small text-muted ms-2">{{ prevMeta.date }}</span>
+      <span class="small text-muted">{{ prevMeta.date }}</span>
     </ng-container>
   </div>
   <span class="mx-2">vs</span>
@@ -34,15 +34,19 @@
     </ng-container>
   </div>
 </div>
-<div class="flex-grow-1 d-flex h-100 w-100 -info">
-  <ag-grid-angular
-    class="ag-theme-alpine w-100 h-100"
-    [rowData]="rowData"
-    [columnDefs]="columnDefs"
-    [gridOptions]="gridOptions"
-    [animateRows]="true"
-    [autoGroupColumnDef]="gridOptions.autoGroupColumnDef"
-    [defaultColDef]="gridOptions.defaultColDef"
-  >
-  </ag-grid-angular>
+<div class="flex-grow-1 d-flex h-100 w-100">
+  <div class="p-2 w-100 h-100 flex-grow-1">
+    <ag-grid-angular
+      [theme]="theme"
+      style="width: 100%; height: 100%"
+      [rowData]="rowData"
+      class="flex-grow-1"
+      [columnDefs]="columnDefs"
+      [gridOptions]="gridOptions"
+      [animateRows]="true"
+      [autoGroupColumnDef]="gridOptions.autoGroupColumnDef"
+      [defaultColDef]="gridOptions.defaultColDef"
+    >
+    </ag-grid-angular>
+  </div>
 </div>

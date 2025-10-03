@@ -1,7 +1,12 @@
 import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { AgGridAngular } from "ag-grid-angular";
-import { ColDef, GridOptions, ModuleRegistry } from "ag-grid-community";
+import {
+  ColDef,
+  GridOptions,
+  ModuleRegistry,
+  themeAlpine,
+} from "ag-grid-community";
 import { RowGroupingModule } from "ag-grid-enterprise";
 import { buildCompareRows, CompareGridRow } from "./compare-grid.utils";
 import { StatusValueCellRendererComponent } from "./status-value-cell-renderer.component";
@@ -21,7 +26,7 @@ export class CompareGridComponent implements OnChanges {
   @Input() schema: any = null;
   @Input() prevMeta: any = null;
   @Input() currentMeta: any = null;
-
+  theme = themeAlpine;
   rowData: any[] = [];
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -69,6 +74,14 @@ export class CompareGridComponent implements OnChanges {
     { field: "group", headerName: "Group", rowGroup: true, hide: true },
     { field: "field", headerName: "Field", filter: "agTextColumnFilter" },
     {
+      field: "status",
+      headerName: "Status",
+      filter: "agTextColumnFilter",
+      flex: 0,
+      width: 120,
+      cellRenderer: "statusValueCellRenderer",
+    },
+    {
       field: "prevValue",
       headerName: "Previous",
       filter: "agTextColumnFilter",
@@ -84,16 +97,8 @@ export class CompareGridComponent implements OnChanges {
       valueFormatter: (params: { value: any }) =>
         params.value === undefined ? "—" : params.value,
     },
-    {
-      field: "status",
-      headerName: "Status",
-      flex: 0,
-      width: 120,
-      cellRenderer: "statusValueCellRenderer",
-    },
   ];
   gridOptions: GridOptions = {
-    domLayout: "autoHeight",
     groupHideParentOfSingleChild: "leafGroupsOnly",
     animateRows: true,
     defaultColDef: {
