@@ -64,6 +64,13 @@ export class CompareStatesComponent implements OnChanges {
       field: "saveType",
       sortable: true,
       filter: true,
+      cellRenderer: (params: any) => {
+        const value = params.value;
+        let badgeClass = "bg-secondary text-dark";
+        if (value === "automatic") badgeClass = "bg-light text-dark";
+        else if (value === "button") badgeClass = "bg-success text-white";
+        return `<span class="badge ${badgeClass}" style="font-size: 90%;">${value}</span>`;
+      },
     },
     { headerName: "User", field: "user", sortable: true, filter: true },
   ];
