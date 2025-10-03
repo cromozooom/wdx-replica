@@ -1,8 +1,16 @@
 <div class="w-100 d-flex flex-column">
   <div class="d-flex gap-3">
     <div class="mb-3 flex-grow-1">
-      <label for="formSelect" class="form-label">Select Form</label>
-      <select id="formSelect" class="form-select" [(ngModel)]="selectedFormId">
+      <label for="formSelect" class="form-label">
+        Select Form
+        <span>{{ selectedFormId }}</span>
+      </label>
+      <select
+        id="formSelect"
+        class="form-select"
+        [(ngModel)]="selectedFormId"
+        (ngModelChange)="onFormSelectChange($event)"
+      >
         <option *ngFor="let form of forms" [value]="form.id">
           {{ form.name }}
         </option>
@@ -16,20 +24,22 @@
         class="btn btn-outline-primary mb-2 me-2"
         (click)="openFullscreen(content)"
       >
-        Fullscreen modal
+        Compare selected
       </button>
     </div>
   </div>
-  <div class="w-100" *ngIf="selectedFormId">
+  <div class="w-100 d-flex flex-grow-1" *ngIf="selectedFormId">
     <ag-grid-angular
+      [theme]="theme"
       style="width: 100%; height: 100%"
-      class="ag-theme-alpine"
       [rowData]="historyRows"
-      [gridOptions]="gridOptions"
+      class="flex-grow-1"
       [columnDefs]="columnDefs"
-      [domLayout]="'autoHeight'"
+      [gridOptions]="gridOptions"
       [animateRows]="true"
       (selectionChanged)="onSelectionChanged($event)"
+      (rowDataChanged)="onRowDataChanged($event)"
+      (gridReady)="onGridReady($event)"
     ></ag-grid-angular>
   </div>
 </div>
@@ -44,7 +54,7 @@
       (click)="modal.dismiss('Cross click')"
     ></button>
   </div>
-  <div class="modal-body p-0 m-0 d-flex flex-column w-100 overflow-hidden">
+  <div class="modal-body p-0 m-0 d-flex flex-column w-100">
     <div>
       <div
         *ngIf="selectedRows.length >= 3"

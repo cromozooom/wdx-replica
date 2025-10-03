@@ -6,7 +6,7 @@ import { FormEditorComponent } from "./form-editor/form-editor.component";
 import { FormCreatorComponent } from "./form-creator/form-creator.component";
 import { UserEditorsComponent } from "./user-editors/user-editors.component";
 import { CompareStatesComponent } from "./compare-states/compare-states.component";
-
+import { WidgetLayoutComponent } from "../../../../app/widget-layout/widget-layout.component";
 import {
   User,
   FormConfig,
@@ -22,6 +22,7 @@ type FormHistoryMap = { [formId: string]: FormHistoryEntry[] };
   standalone: true,
   imports: [
     NgbNavModule,
+    WidgetLayoutComponent,
     FormEditorComponent,
     FormCreatorComponent,
     UserEditorsComponent,

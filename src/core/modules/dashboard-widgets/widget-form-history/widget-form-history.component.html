@@ -1,17 +1,26 @@
-<div class="widget-form-history">
-  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+<app-widget-layout class="w-100 h-100 d-flex flex-column">
+  <ul
+    slot="title"
+    ngbNav
+    #nav="ngbNav"
+    [(activeId)]="active"
+    class="nav-tabs mt-2 px-2 mb-1"
+  >
     <li [ngbNavItem]="1">
       <button ngbNavLink>Compare states</button>
       <ng-template ngbNavContent>
-        <app-compare-states
-          [forms]="state().forms"
-          [formHistory]="state().formHistory"
-          [users]="state().users"
-          [selectedFormId]="state().selectedFormId || ''"
-          [selectedForm]="selectedForm"
-          [historyA]="null"
-          [historyB]="null"
-        ></app-compare-states>
+        <div class="w-100 flex-grow-1 d-flex p-2">
+          <app-compare-states
+            class="flex-grow-1 w-100"
+            [forms]="state().forms"
+            [formHistory]="state().formHistory"
+            [users]="state().users"
+            [selectedFormId]="state().selectedFormId || ''"
+            [selectedForm]="selectedForm"
+            [historyA]="null"
+            [historyB]="null"
+          ></app-compare-states>
+        </div>
       </ng-template>
     </li>
     <li [ngbNavItem]="2">
@@ -56,5 +65,5 @@
     </li>
   </ul>
 
-  <div [ngbNavOutlet]="nav" class="mt-2"></div>
-</div>
+  <div [ngbNavOutlet]="nav" class="w-100 flex-grow-1"></div>
+</app-widget-layout>
