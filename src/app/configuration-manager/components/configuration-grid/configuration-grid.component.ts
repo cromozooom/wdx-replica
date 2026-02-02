@@ -117,6 +117,17 @@ export class ConfigurationGridComponent {
 
   columnDefs: ColDef<ConfigurationUpdateRow>[] = [
     {
+      headerName: "",
+      checkboxSelection: true,
+      headerCheckboxSelection: true,
+      width: 50,
+      pinned: "left",
+      lockPosition: true,
+      sortable: false,
+      filter: false,
+      resizable: false,
+    },
+    {
       headerName: "Configuration Name",
       field: "configName",
       filter: "agTextColumnFilter",
@@ -195,6 +206,10 @@ export class ConfigurationGridComponent {
     columnDefs: this.columnDefs,
     rowSelection: "multiple",
     suppressRowClickSelection: true,
+    isRowSelectable: (params) => {
+      // Only allow selection of configuration rows, not update rows
+      return params.data?.isConfigRow === true;
+    },
     animateRows: true,
     enableCellTextSelection: true,
     rowBuffer: 10,
