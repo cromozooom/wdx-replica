@@ -36,6 +36,16 @@
       </div>
 
       <div class="d-flex gap-2">
+        <!-- Import Action -->
+        <button
+          class="btn btn-sm btn-outline-success"
+          (click)="onImport()"
+          title="Import configurations from ZIP"
+        >
+          <i class="fas fa-file-import me-1"></i>
+          Import
+        </button>
+
         <!-- Export Actions -->
         @if (store.selectedConfigurations().length > 0) {
           <button

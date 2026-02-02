@@ -1,0 +1,141 @@
+<div class="conflict-comparison">
+  <div class="conflict-header mb-3">
+    <h5>{{ conflict.importedConfig.name }}</h5>
+    <div class="text-muted small">ID: {{ conflict.configId }}</div>
+  </div>
+
+  <!-- Metadata Changes -->
+  @if (getMetadataChanges().length > 0) {
+    <div class="metadata-section mb-4">
+      <h6 class="section-title">
+        <i class="bi bi-info-circle me-2"></i>
+        Metadata Changes
+      </h6>
+      <div class="table-responsive">
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Existing</th>
+              <th>Imported</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (change of getMetadataChanges(); track change.field) {
+              <tr>
+                <td>
+                  <strong>{{ change.field }}</strong>
+                </td>
+                <td class="existing-value">{{ change.existing }}</td>
+                <td class="imported-value">{{ change.imported }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  }
+
+  <!-- Content Changes -->
+  @if (conflict.differences.content.hasChanges) {
+    <div class="content-section mb-4">
+      <h6 class="section-title">
+        <i class="bi bi-file-earmark-code me-2"></i>
+        Content Changes
+      </h6>
+      <div class="row">
+        <div class="col-6">
+          <div class="content-panel">
+            <div class="content-label bg-danger text-white">
+              <i class="bi bi-arrow-left me-2"></i>
+              Existing
+            </div>
+            <pre class="content-preview">{{
+              truncateContent(
+                getFormattedContent(conflict.differences.content.existing || "")
+              )
+            }}</pre>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="content-panel">
+            <div class="content-label bg-success text-white">
+              <i class="bi bi-arrow-right me-2"></i>
+              Imported
+            </div>
+            <pre class="content-preview">{{
+              truncateContent(
+                getFormattedContent(conflict.differences.content.imported)
+              )
+            }}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- Basket Changes -->
+  @if (conflict.differences.basket.hasChanges) {
+    <div class="basket-section mb-4">
+      <h6 class="section-title">
+        <i class="bi bi-basket me-2"></i>
+        Basket Assignment
+      </h6>
+      <div class="alert alert-info">
+        <div class="d-flex justify-content-between">
+          <div>
+            <strong>Existing Basket:</strong>
+            {{ conflict.differences.basket.existing || "None" }}
+          </div>
+          <div>
+            <i class="bi bi-arrow-right mx-3"></i>
+          </div>
+          <div>
+            <strong>Target Basket:</strong>
+            {{ conflict.differences.basket.imported || "None" }}
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- Resolution Actions -->
+  <div class="resolution-actions">
+    <h6 class="section-title">
+      <i class="bi bi-check-circle me-2"></i>
+      Resolution Options
+    </h6>
+    <div class="btn-group w-100" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        (click)="onResolve('overwrite')"
+        title="Replace existing configuration with imported version"
+      >
+        <i class="bi bi-arrow-clockwise me-2"></i>
+        Overwrite
+        <small class="d-block text-muted">Use imported version</small>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="onResolve('keep')"
+        title="Keep existing configuration, skip import"
+      >
+        <i class="bi bi-shield-check me-2"></i>
+        Keep Existing
+        <small class="d-block text-muted">Skip this import</small>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-success"
+        (click)="onResolve('import-as-new')"
+        title="Import with a new ID"
+      >
+        <i class="bi bi-plus-circle me-2"></i>
+        Import as New
+        <small class="d-block text-muted">Create duplicate</small>
+      </button>
+    </div>
+  </div>
+</div>

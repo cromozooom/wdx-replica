@@ -384,81 +384,81 @@ and confirms basket assignment.
 
 ### Import Service
 
-- [ ] T082 [P] [US6] Create import service in
+- [x] T082 [P] [US6] Create import service in
       src/app/configuration-manager/services/configuration-import.service.ts
-- [ ] T083 [US6] Implement ZIP file parsing using jszip in
+- [x] T083 [US6] Implement ZIP file parsing using jszip in
       configuration-import.service.ts
-- [ ] T084 [US6] Implement configuration deserialization from ZIP structure in
+- [x] T084 [US6] Implement configuration deserialization from ZIP structure in
       configuration-import.service.ts
-- [ ] T084a [US6] Implement basket manifest parsing from ZIP in
+- [x] T084a [US6] Implement basket manifest parsing from ZIP in
       configuration-import.service.ts
-- [ ] T085 [US6] Implement conflict detection by ID in
+- [x] T085 [US6] Implement conflict detection by ID in
       configuration-import.service.ts
-- [ ] T086 [US6] Implement difference finder (metadata + content + basket) in
+- [x] T086 [US6] Implement difference finder (metadata + content + basket) in
       configuration-import.service.ts
 
 ### Import Wizard Component
 
-- [ ] T087 [P] [US6] Create import wizard component in
+- [x] T087 [P] [US6] Create import wizard component in
       src/app/configuration-manager/components/import-wizard/import-wizard.component.ts
       (smart)
-- [ ] T088 [P] [US6] Create import wizard template in
+- [x] T088 [P] [US6] Create import wizard template in
       src/app/configuration-manager/components/import-wizard/import-wizard.component.html
-- [ ] T089 [P] [US6] Style import wizard in
+- [x] T089 [P] [US6] Style import wizard in
       src/app/configuration-manager/components/import-wizard/import-wizard.component.scss
 
 ### Import Wizard State
 
-- [ ] T090 [US6] Create import wizard store in
+- [x] T090 [US6] Create import wizard store in
       src/app/configuration-manager/store/import-wizard.store.ts
-- [ ] T091 [US6] Add target basket selection step to wizard in
+- [x] T091 [US6] Add target basket selection step to wizard in
       import-wizard.component.html
-- [ ] T092 [US6] Add file upload step to wizard in import-wizard.component.html
-- [ ] T093 [US6] Add conflict review step to wizard in
+- [x] T092 [US6] Add file upload step to wizard in import-wizard.component.html
+- [x] T093 [US6] Add conflict review step to wizard in
       import-wizard.component.html
-- [ ] T094 [US6] Add completion step to wizard in import-wizard.component.html
+- [x] T094 [US6] Add completion step to wizard in import-wizard.component.html
 
 ### Conflict Comparison Component
 
-- [ ] T095 [P] [US6] Create conflict comparison component in
+- [x] T095 [P] [US6] Create conflict comparison component in
       src/app/configuration-manager/components/conflict-comparison/conflict-comparison.component.ts
       (dumb)
-- [ ] T096 [P] [US6] Create side-by-side comparison template in
+- [x] T096 [P] [US6] Create side-by-side comparison template in
       src/app/configuration-manager/components/conflict-comparison/conflict-comparison.component.html
-- [ ] T097 [P] [US6] Style comparison component in
+- [x] T097 [P] [US6] Style comparison component in
       src/app/configuration-manager/components/conflict-comparison/conflict-comparison.component.scss
 
 ### Diff Highlighting
 
-- [ ] T098 [US6] Implement metadata diff highlighting (including basket
+- [x] T098 [US6] Implement metadata diff highlighting (including basket
       assignment) in conflict-comparison.component.ts
-- [ ] T099 [US6] Implement content diff highlighting in
+- [x] T099 [US6] Implement content diff highlighting in
       conflict-comparison.component.ts
-- [ ] T100 [US6] Add resolution buttons (Overwrite, Keep, Import as New) to
+- [x] T100 [US6] Add resolution buttons (Overwrite, Keep, Import as New) to
       comparison template
 
 ### Import Logic
 
-- [ ] T101 [US6] Implement ZIP validation (structure, file size limits) in
+- [x] T101 [US6] Implement ZIP validation (structure, file size limits) in
       configuration-import.service.ts
-- [ ] T102 [US6] Implement resolution application logic (with basket assignment)
+- [x] T102 [US6] Implement resolution application logic (with basket assignment)
       in configuration-import.service.ts
-- [ ] T103 [US6] Implement "Import as New" with new ID generation and basket
+- [x] T103 [US6] Implement "Import as New" with new ID generation and basket
       assignment in configuration-import.service.ts
-- [ ] T104 [US6] Add error handling for invalid ZIP structure in
+- [x] T104 [US6] Add error handling for invalid ZIP structure in
       import-wizard.component.ts
-- [ ] T105 [US6] Implement basket assignment logic (use manifest or user
+- [x] T105 [US6] Implement basket assignment logic (use manifest or user
       selection) in import-wizard.component.ts
 
 ### Import UI Integration
 
-- [ ] T106 [US6] Add "Import" button to main container in
+- [x] T106 [US6] Add "Import" button to main container in
       configuration-manager.component.html
-- [ ] T107 [US6] Implement import modal launch using ng-bootstrap in
+- [x] T107 [US6] Implement import modal launch using ng-bootstrap in
       configuration-manager.component.ts
-- [ ] T108 [US6] Implement drag-and-drop file upload in
+- [x] T108 [US6] Implement drag-and-drop file upload in
       import-wizard.component.ts
-- [ ] T109 [US6] Add import success/error notifications using
+- [x] T109 [US6] Add import success/error notifications using
       notification.service.ts in import-wizard.component.ts
 
 **Checkpoint**: User Story 6 complete - full import workflow with basket

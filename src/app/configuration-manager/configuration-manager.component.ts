@@ -1,8 +1,10 @@
 import { Component, OnInit, inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { ConfigurationEditorComponent } from "./components/configuration-editor/configuration-editor.component";
 import { ConfigurationGridComponent } from "./components/configuration-grid/configuration-grid.component";
+import { ImportWizardComponent } from "./components/import-wizard/import-wizard.component";
 import { ConfigurationStore } from "./store/configuration.store";
 import { ConfigurationService } from "./services/configuration.service";
 import { NotificationService } from "./services/notification.service";
@@ -34,6 +36,7 @@ export class ConfigurationManagerComponent implements OnInit {
   private readonly basketService = inject(BasketService);
   private readonly basketStorageService = inject(BasketStorageService);
   private readonly exportService = inject(ConfigurationExportService);
+  private readonly modalService = inject(NgbModal);
 
   showEditor = false;
   showBasketModal = false;
@@ -497,5 +500,29 @@ export class ConfigurationManagerComponent implements OnInit {
     } finally {
       this.exporting = false;
     }
+  }
+
+  /**
+   * Open import wizard modal
+   */
+  onImport(): void {
+    const modalRef = this.modalService.open(ImportWizardComponent, {
+      size: "xl",
+      backdrop: "static",
+      keyboard: false,
+    });
+
+    modalRef.result.then(
+      (result) => {
+        if (result === "completed") {
+          // Reload configurations after successful import
+          this.loadConfigurations();
+          this.notificationService.success("Import completed successfully");
+        }
+      },
+      () => {
+        // Modal dismissed/cancelled
+      },
+    );
   }
 }
