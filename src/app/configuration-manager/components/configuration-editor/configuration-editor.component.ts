@@ -123,8 +123,6 @@ export class ConfigurationEditorComponent {
       this.saving = false;
     }
   }
-    }
-  }
 
   onCancel(): void {
     this.cancelled.emit();

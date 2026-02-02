@@ -27,7 +27,7 @@ export class JsonEditorComponent implements AfterViewInit, OnDestroy {
   editorContainer!: ElementRef;
 
   private editor: any;
-  private editorLoaded = false;
+  protected editorLoaded = false;
 
   async ngAfterViewInit(): Promise<void> {
     await this.loadEditor();

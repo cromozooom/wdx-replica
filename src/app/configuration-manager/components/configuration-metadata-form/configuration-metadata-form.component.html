@@ -87,7 +87,7 @@
         @if (updateEntryForm.errors?.['atLeastOne']) {
           <div class="alert alert-warning">
             <i class="fas fa-exclamation-triangle me-2"></i>
-            {{ updateEntryForm.errors['atLeastOne'] }}
+            {{ updateEntryForm.errors?.['atLeastOne'] }}
           </div>
         }
       </form>
@@ -95,9 +95,9 @@
   }
 
   <!-- Update History Display -->
-  @if (configuration?.updates && configuration.updates.length > 0) {
+  @if (configuration?.updates?.length) {
     <div class="update-history-section mt-4 pt-4 border-top">
-      <app-update-history [updates]="configuration.updates"></app-update-history>
+      <app-update-history [updates]="configuration!.updates!"></app-update-history>
     </div>
   }
 </div>

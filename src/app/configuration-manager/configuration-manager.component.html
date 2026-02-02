@@ -1,31 +1,41 @@
 <div class="configuration-manager">
-  <div class="header">
-    <h2>Configuration Manager</h2>
-    <button class="btn btn-primary" (click)="onNewConfiguration()">
-      <i class="fas fa-plus me-2"></i>
-      New Configuration
-    </button>
-  </div>
+  @if (!showEditor) {
+    <div class="header">
+      <h2>Configuration Manager</h2>
+      <button class="btn btn-primary" (click)="onNewConfiguration()">
+        <i class="fas fa-plus me-2"></i>
+        New Configuration
+      </button>
+    </div>
 
-  @if (store.loading()) {
-    <div class="text-center py-5">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+    @if (store.loading()) {
+      <div class="text-center py-5">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
       </div>
+    }
+
+    @if (store.error()) {
+      <div class="alert alert-danger">
+        {{ store.error() }}
+      </div>
+    }
+
+    <div class="content">
+      <p class="text-muted">
+        Manage your configurations here. {{ store.configurations().length }}
+        configuration(s) loaded.
+      </p>
+      <!-- Grid will be added in Phase 5 -->
     </div>
   }
 
-  @if (store.error()) {
-    <div class="alert alert-danger">
-      {{ store.error() }}
-    </div>
+  @if (showEditor) {
+    <app-configuration-editor
+      [configuration]="editingConfiguration ?? undefined"
+      (saved)="onSaveConfiguration($event)"
+      (cancelled)="onCancelEditor()"
+    ></app-configuration-editor>
   }
-
-  <div class="content">
-    <p class="text-muted">
-      Manage your configurations here. {{ store.configurations().length }}
-      configuration(s) loaded.
-    </p>
-    <!-- Grid will be added in Phase 5 -->
-  </div>
 </div>

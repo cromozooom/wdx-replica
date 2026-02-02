@@ -3,7 +3,7 @@ export enum ConfigurationType {
   FormConfig = "Form config (JSON)",
   FetchXMLQuery = "Fetch XML queries (FetchXML)",
   DashboardQuery = "Dashboard queries (FetchXML)",
-  Process = "Processes (JSON)",
+  Process = "Processes (JavaScript)",
   SystemSetting = "System Settings (JSON)",
 }
 
@@ -13,12 +13,13 @@ export function getConfigurationFormat(
   switch (type) {
     case ConfigurationType.DashboardConfig:
     case ConfigurationType.FormConfig:
-    case ConfigurationType.Process:
     case ConfigurationType.SystemSetting:
       return "json";
     case ConfigurationType.FetchXMLQuery:
     case ConfigurationType.DashboardQuery:
       return "xml";
+    case ConfigurationType.Process:
+      return "text";
     default:
       return "text";
   }
