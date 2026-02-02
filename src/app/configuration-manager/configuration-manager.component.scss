@@ -9,3 +9,18 @@
   flex-direction: column;
   overflow: hidden;
 }
+
+.basket-selector {
+  .btn-group {
+    .badge {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.35rem;
+    }
+  }
+}
+
+.modal {
+  &.show {
+    display: block;
+  }
+}

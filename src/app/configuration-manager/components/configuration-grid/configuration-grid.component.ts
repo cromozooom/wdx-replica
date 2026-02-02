@@ -6,11 +6,17 @@ import {
   GridOptions,
   GridReadyEvent,
   RowDoubleClickedEvent,
+  ModuleRegistry,
 } from "ag-grid-community";
+import { CellStyleModule } from "ag-grid-community";
+import { RowGroupingPanelModule } from "ag-grid-enterprise";
 import { Configuration } from "../../models/configuration.model";
 import { ConfigurationType } from "../../models/configuration-type.enum";
 import { UpdateEntry } from "../../models/update-entry.model";
 import { compareSemanticVersions } from "../../utils/semantic-version-comparator";
+
+// Register AG Grid Enterprise modules
+ModuleRegistry.registerModules([CellStyleModule, RowGroupingPanelModule]);
 
 interface ConfigurationUpdateRow {
   // Configuration fields

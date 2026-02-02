@@ -2,8 +2,9 @@ import { Injectable } from "@angular/core";
 import { Configuration } from "../models/configuration.model";
 
 const DB_NAME = "ConfigurationManagerDB";
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 const STORE_NAME = "configurations";
+const BASKETS_STORE_NAME = "baskets";
 
 @Injectable({
   providedIn: "root",
@@ -28,6 +29,7 @@ export class ConfigurationStorageService {
       request.onupgradeneeded = (event) => {
         const db = (event.target as IDBOpenDBRequest).result;
 
+        // Create configurations store
         if (!db.objectStoreNames.contains(STORE_NAME)) {
           const objectStore = db.createObjectStore(STORE_NAME, {
             keyPath: "id",
@@ -35,6 +37,14 @@ export class ConfigurationStorageService {
           objectStore.createIndex("name", "name", { unique: false });
           objectStore.createIndex("type", "type", { unique: false });
           objectStore.createIndex("version", "version", { unique: false });
+        }
+
+        // Create baskets store (shared with BasketStorageService)
+        if (!db.objectStoreNames.contains(BASKETS_STORE_NAME)) {
+          const basketStore = db.createObjectStore(BASKETS_STORE_NAME, {
+            keyPath: "id",
+          });
+          basketStore.createIndex("name", "name", { unique: true });
         }
       };
     });
