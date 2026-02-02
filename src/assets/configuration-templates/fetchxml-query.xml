@@ -1,0 +1,7 @@
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+  <entity name="entity_name">
+    <attribute name="id" />
+    <attribute name="name" />
+    <order attribute="name" descending="false" />
+  </entity>
+</fetch>

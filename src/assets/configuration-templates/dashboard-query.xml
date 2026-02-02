@@ -1,0 +1,8 @@
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+  <entity name="dashboard_entity">
+    <attribute name="id" />
+    <attribute name="title" />
+    <attribute name="data" />
+    <order attribute="title" descending="false" />
+  </entity>
+</fetch>

@@ -21,6 +21,13 @@ export const routes: Routes = [
     ],
   },
   {
+    path: "configuration-manager",
+    loadChildren: () =>
+      import("./configuration-manager/configuration-manager.routes").then(
+        (m) => m.CONFIGURATION_MANAGER_ROUTES,
+      ),
+  },
+  {
     path: "",
     redirectTo: "dashboard",
     pathMatch: "full",
