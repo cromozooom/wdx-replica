@@ -8,9 +8,23 @@
 
 ```
 ┌─────────────────────────────────┐
-│      Configuration              │
+│         Basket                  │
 │─────────────────────────────────│
 │ + id: number (PK)               │
+│ + name: string (unique)         │
+│ + configurationIds: number[]    │───┐
+│ + createdDate: Date             │   │
+│ + createdBy: string             │   │
+│ + lastModifiedDate: Date        │   │
+│ + lastModifiedBy: string        │   │
+└─────────────────────────────────┘   │
+                                      │
+                                      │ N..M
+                                      │
+┌─────────────────────────────────┐   │
+│      Configuration              │   │
+│─────────────────────────────────│   │
+│ + id: number (PK)               │◄──┘
 │ + name: string                  │
 │ + type: ConfigurationType       │◄──┐
 │ + version: string               │   │
@@ -46,6 +60,61 @@
 ```
 
 ## Entity Definitions
+
+### Basket
+
+**Purpose**: Represents a collection of configurations for a specific
+environment or use case (e.g., "Product (core)", "UAT", "Staging").
+
+**TypeScript Interface**:
+
+```typescript
+interface Basket {
+  /** Unique numeric identifier (auto-generated) */
+  id: number;
+
+  /** User-friendly name for the basket (unique across all baskets) */
+  name: string;
+
+  /** Array of configuration IDs belonging to this basket */
+  configurationIds: number[];
+
+  /** Timestamp when basket was created */
+  createdDate: Date;
+
+  /** Full name of user who created the basket */
+  createdBy: string;
+
+  /** Timestamp of last modification */
+  lastModifiedDate: Date;
+
+  /** Full name of user who last modified the basket */
+  lastModifiedBy: string;
+}
+```
+
+**Validation Rules**:
+
+- `id`: Auto-generated, unique, positive integer
+- `name`: Required, 1-50 characters, must be unique across all baskets
+- `configurationIds`: Array can be empty, all IDs must reference existing
+  configurations
+- `createdDate`: Auto-generated on creation
+- `createdBy`: Required, from authenticated user context
+- `lastModifiedDate`: Auto-updated on any modification
+- `lastModifiedBy`: Updated from authenticated user context
+
+**Business Rules**:
+
+- Default basket "Product (core)" is auto-created on first use
+- Basket names must be unique (case-insensitive comparison)
+- A configuration can belong to multiple baskets
+- Deleting a basket with configurations requires either:
+  - Moving configurations to another basket, or
+  - Force delete flag (with user confirmation)
+- Basket modifications update `lastModifiedDate` and `lastModifiedBy`
+
+---
 
 ### Configuration
 

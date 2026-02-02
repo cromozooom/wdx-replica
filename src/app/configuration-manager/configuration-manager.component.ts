@@ -9,6 +9,7 @@ import { NotificationService } from "./services/notification.service";
 import { SeedDataService } from "./services/seed-data.service";
 import { BasketService } from "./services/basket.service";
 import { BasketStorageService } from "./services/basket-storage.service";
+import { ConfigurationExportService } from "./services/configuration-export.service";
 import { Configuration } from "./models/configuration.model";
 import { ConfigurationType } from "./models/configuration-type.enum";
 import { Basket } from "./models/basket.model";
@@ -32,10 +33,12 @@ export class ConfigurationManagerComponent implements OnInit {
   private readonly seedDataService: SeedDataService = inject(SeedDataService);
   private readonly basketService = inject(BasketService);
   private readonly basketStorageService = inject(BasketStorageService);
+  private readonly exportService = inject(ConfigurationExportService);
 
   showEditor = false;
   showBasketModal = false;
   saving = false;
+  exporting = false;
   editingConfiguration: Configuration | null = null;
   selectedConfigurations: Configuration[] = [];
   newBasketName = "";
@@ -435,6 +438,64 @@ export class ConfigurationManagerComponent implements OnInit {
       this.notificationService.error(
         `Failed to remove from basket: ${(error as Error).message}`,
       );
+    }
+  }
+
+  async onExportSelected(): Promise<void> {
+    const selected = this.store.selectedConfigurations();
+
+    if (selected.length === 0) {
+      this.notificationService.error("No configurations selected for export");
+      return;
+    }
+
+    try {
+      this.exporting = true;
+      const currentBasket = this.store.currentBasket();
+      await this.exportService.exportConfigurations(
+        selected,
+        currentBasket?.name,
+        currentBasket?.id,
+      );
+      this.notificationService.success(
+        `Exported ${selected.length} configuration(s) successfully`,
+      );
+    } catch (error) {
+      this.notificationService.error(
+        `Failed to export: ${(error as Error).message}`,
+      );
+    } finally {
+      this.exporting = false;
+    }
+  }
+
+  async onExportBasket(): Promise<void> {
+    const currentBasket = this.store.currentBasket();
+
+    if (!currentBasket) {
+      this.notificationService.error("No basket selected");
+      return;
+    }
+
+    const basketConfigs = this.store.basketConfigurations();
+
+    if (basketConfigs.length === 0) {
+      this.notificationService.error("Current basket is empty");
+      return;
+    }
+
+    try {
+      this.exporting = true;
+      await this.exportService.exportBasket(currentBasket, basketConfigs);
+      this.notificationService.success(
+        `Exported basket "${currentBasket.name}" with ${basketConfigs.length} configuration(s)`,
+      );
+    } catch (error) {
+      this.notificationService.error(
+        `Failed to export basket: ${(error as Error).message}`,
+      );
+    } finally {
+      this.exporting = false;
     }
   }
 }

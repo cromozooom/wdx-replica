@@ -6,13 +6,15 @@
 
 ## Summary
 
-Multi-format configuration management system with CRUD operations, version
-tracking, export/import via ZIP, and conflict detection. Users can create/edit
-six types of configurations (JSON, FetchXML, text) using specialized editors
-(JSON editor, Ace editor), track changes with update history (Jira integration,
-markdown comments), view/filter configurations in AG-Grid Enterprise, and
-export/import as ZIP archives with side-by-side comparison for conflict
-resolution.
+Multi-format configuration management system with basket organization, CRUD
+operations, version tracking, selective export/import via ZIP, and conflict
+detection. Users can organize configurations into baskets (environments like
+"Product (core)", "UAT", "Staging"), create/edit six types of configurations
+(JSON, FetchXML, text) using specialized editors (JSON editor, Ace editor),
+track changes with update history (Jira integration, markdown comments),
+view/filter configurations in AG-Grid Enterprise with checkbox selection, and
+export/import as ZIP archives with basket metadata and side-by-side comparison
+for conflict resolution.
 
 **Technical Approach**: Leverage existing dependencies (ag-grid-enterprise,
 jsoneditor, ace-builds, jszip, ng-bootstrap) to build standalone Angular
@@ -97,17 +99,18 @@ bloat from new dependencies.
 
 **Component Breakdown**:
 
-- ConfigurationManagerComponent (smart) - <250 lines
-- ConfigurationGridComponent (dumb) - <200 lines
+- ConfigurationManagerComponent (smart) - <300 lines
+- ConfigurationGridComponent (dumb) - <250 lines
 - ConfigurationEditorComponent (smart) - <300 lines
 - JsonEditorComponent (dumb) - <150 lines
 - AceEditorComponent (dumb) - <150 lines
 - ConfigurationMetadataFormComponent (dumb) - <200 lines
 - UpdateHistoryComponent (dumb) - <150 lines
+- BasketManagerComponent (dumb) - <150 lines
 - ImportWizardComponent (smart) - <300 lines
 - ConflictComparisonComponent (dumb) - <250 lines
 
-Total: 9 components, all within constitutional limits
+Total: 10 components, all within constitutional limits
 
 ### Principle III: Component Architecture ✅ PASS
 
@@ -115,13 +118,15 @@ Total: 9 components, all within constitutional limits
 
 - **Smart Components** (3): ConfigurationManagerComponent,
   ConfigurationEditorComponent, ImportWizardComponent
+
   - Handle data fetching, state management, business logic
-  - Use @ngrx/signals for reactive state
-- **Dumb Components** (6): All editor, form, grid, and comparison components
+  - Use @ngrx/signals f7): All editor, form, grid, basket, and comparison
+    components
   - Input/Output only
   - No direct state management
   - Pure presentation logic
 
+- **Standalone First**: All 10
 - **Standalone First**: All 9 components will be standalone (Angular 19+)
 - **Single Concern**: Each component has one clear responsibility
 - **Reactive Patterns**: RxJS for async operations, signals for state
@@ -216,12 +221,15 @@ src/app/
 │   │       └── conflict-comparison.component.scss
 │   │
 │   ├── models/                                   # TypeScript interfaces
+│   │   ├── basket.model.ts                      # Basket entity
 │   │   ├── configuration.model.ts               # Configuration entity
 │   │   ├── configuration-type.enum.ts           # Type enumeration
 │   │   ├── update-entry.model.ts                # Update history entry
 │   │   └── export-package.model.ts              # ZIP structure
 │   │
 │   ├── services/                                 # Business logic services
+│   │   ├── basket.service.ts                    # Basket CRUD operations
+│   │   ├── basket-storage.service.ts            # Basket IndexedDB persistence
 │   │   ├── configuration.service.ts             # CRUD operations
 │   │   ├── configuration-storage.service.ts     # LocalStorage/IndexedDB
 │   │   ├── configuration-export.service.ts      # ZIP export logic
@@ -288,13 +296,13 @@ patterns documented.
 - [data-model.md](data-model.md) - Entity definitions, relationships, state
   management
 - [quickstart.md](quickstart.md) - Developer onboarding guide
-- `.github/agents/copilot-instructions.md` - Updated agent context
-
-**Key Deliverables**:
-
-- 5 entity definitions (Configuration, ConfigurationType, UpdateEntry,
-  ExportPackage, ImportConflict)
-- IndexedDB schema with indexes
+- `.github/agents/copilot-instructions.md` - Updated agent context 7 entity
+  definitions (Basket, Configuration, ConfigurationType, UpdateEntry,
+  ExportPackage, ImportConflict, BasketManifest)
+- IndexedDB schema with indexes (baskets + configurations stores)
+- @ngrx/signals store architecture with basket state
+- Data flow diagrams for CRUD, export, import, basket management
+- Component architecture (10 components, 3 smart/7
 - @ngrx/signals store architecture
 - Data flow diagrams for CRUD, export, import
 - Component architecture (9 components, 3 smart/6 dumb)

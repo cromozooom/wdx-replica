@@ -36,6 +36,37 @@
       </div>
 
       <div class="d-flex gap-2">
+        <!-- Export Actions -->
+        @if (store.selectedConfigurations().length > 0) {
+          <button
+            class="btn btn-sm btn-outline-info"
+            (click)="onExportSelected()"
+            [disabled]="exporting"
+            title="Export selected configurations as ZIP"
+          >
+            <i class="fas fa-file-export me-1"></i>
+            @if (exporting) {
+              <span class="spinner-border spinner-border-sm me-1"></span>
+            }
+            Export Selected ({{ store.selectedConfigurations().length }})
+          </button>
+        }
+
+        @if (store.currentBasket() && store.basketConfigurations().length > 0) {
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="onExportBasket()"
+            [disabled]="exporting"
+            title="Export entire basket as ZIP"
+          >
+            <i class="fas fa-download me-1"></i>
+            @if (exporting) {
+              <span class="spinner-border spinner-border-sm me-1"></span>
+            }
+            Export Basket
+          </button>
+        }
+
         <!-- Basket Actions -->
         @if (store.currentBasketId() && selectedConfigurations.length > 0) {
           <div class="dropdown">

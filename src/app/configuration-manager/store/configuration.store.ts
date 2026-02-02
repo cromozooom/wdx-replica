@@ -36,7 +36,14 @@ export const ConfigurationStore = signalStore(
   { providedIn: "root" },
   withState(initialState),
   withComputed(
-    ({ configurations, filterType, searchTerm, currentBasketId, baskets }) => ({
+    ({
+      configurations,
+      filterType,
+      searchTerm,
+      currentBasketId,
+      baskets,
+      selectedIds,
+    }) => ({
       currentBasket: computed(() => {
         const basketId = currentBasketId();
         if (!basketId) return null;
@@ -48,6 +55,10 @@ export const ConfigurationStore = signalStore(
         return configurations().filter((c) =>
           basket.configurationIds.includes(c.id),
         );
+      }),
+      selectedConfigurations: computed(() => {
+        const ids = selectedIds();
+        return configurations().filter((c) => ids.includes(c.id));
       }),
       filteredConfigurations: computed(() => {
         let filtered = configurations();
