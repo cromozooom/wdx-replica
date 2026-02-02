@@ -1,0 +1,33 @@
+.configuration-manager {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #dee2e6;
+
+    h2 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #212529;
+    }
+
+    .btn-primary {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .content {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+}

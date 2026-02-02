@@ -95,66 +95,66 @@ saves, and sees configuration in grid after browser refresh.
 
 ### Components for User Story 1
 
-- [ ] T017 [P] [US1] Create main container component in
+- [X] T017 [P] [US1] Create main container component in
       src/app/configuration-manager/configuration-manager.component.ts (smart
       component with routing)
-- [ ] T018 [P] [US1] Create configuration metadata form component in
+- [X] T018 [P] [US1] Create configuration metadata form component in
       src/app/configuration-manager/components/configuration-metadata-form/configuration-metadata-form.component.ts
       (dumb)
-- [ ] T019 [P] [US1] Create JSON editor wrapper component in
+- [X] T019 [P] [US1] Create JSON editor wrapper component in
       src/app/configuration-manager/components/json-editor/json-editor.component.ts
       (dumb)
-- [ ] T020 [P] [US1] Create Ace editor wrapper component in
+- [X] T020 [P] [US1] Create Ace editor wrapper component in
       src/app/configuration-manager/components/ace-editor/ace-editor.component.ts
       (dumb)
 
 ### Editor Orchestration
 
-- [ ] T021 [US1] Create configuration editor component in
+- [X] T021 [US1] Create configuration editor component in
       src/app/configuration-manager/components/configuration-editor/configuration-editor.component.ts
       (smart - orchestrates editors and form)
-- [ ] T022 [US1] Implement editor modal integration using ng-bootstrap in
+- [X] T022 [US1] Implement editor modal integration using ng-bootstrap in
       configuration-editor.component.ts
-- [ ] T023 [US1] Add editor type switching logic (JSON vs FetchXML vs text) in
+- [X] T023 [US1] Add editor type switching logic (JSON vs FetchXML vs text) in
       configuration-editor.component.ts
 
 ### Templates & Styling
 
-- [ ] T024 [P] [US1] Create metadata form template in
+- [X] T024 [P] [US1] Create metadata form template in
       src/app/configuration-manager/components/configuration-metadata-form/configuration-metadata-form.component.html
-- [ ] T025 [P] [US1] Create JSON editor template in
+- [X] T025 [P] [US1] Create JSON editor template in
       src/app/configuration-manager/components/json-editor/json-editor.component.html
-- [ ] T026 [P] [US1] Create Ace editor template in
+- [X] T026 [P] [US1] Create Ace editor template in
       src/app/configuration-manager/components/ace-editor/ace-editor.component.html
-- [ ] T027 [P] [US1] Create editor component template in
+- [X] T027 [P] [US1] Create editor component template in
       src/app/configuration-manager/components/configuration-editor/configuration-editor.component.html
-- [ ] T028 [P] [US1] Style metadata form component in
+- [X] T028 [P] [US1] Style metadata form component in
       src/app/configuration-manager/components/configuration-metadata-form/configuration-metadata-form.component.scss
-- [ ] T029 [P] [US1] Style JSON editor component in
+- [X] T029 [P] [US1] Style JSON editor component in
       src/app/configuration-manager/components/json-editor/json-editor.component.scss
-- [ ] T030 [P] [US1] Style Ace editor component in
+- [X] T030 [P] [US1] Style Ace editor component in
       src/app/configuration-manager/components/ace-editor/ace-editor.component.scss
-- [ ] T031 [P] [US1] Style editor component in
+- [X] T031 [P] [US1] Style editor component in
       src/app/configuration-manager/components/configuration-editor/configuration-editor.component.scss
 
 ### Integration & Validation
 
-- [ ] T032 [US1] Implement configuration creation workflow in
+- [X] T032 [US1] Implement configuration creation workflow in
       configuration-manager.component.ts
-- [ ] T033 [US1] Implement configuration save logic with validation in
+- [X] T033 [US1] Implement configuration save logic with validation in
       configuration.service.ts
-- [ ] T034 [US1] Add ID auto-generation in configuration.service.ts
-- [ ] T035 [US1] Add timestamp management (createdDate, lastModifiedDate) in
+- [X] T034 [US1] Add ID auto-generation in configuration.service.ts
+- [X] T035 [US1] Add timestamp management (createdDate, lastModifiedDate) in
       configuration.service.ts
-- [ ] T036 [US1] Implement JSON validation in configuration-validator.service.ts
-- [ ] T037 [US1] Implement FetchXML validation using DOMParser in
+- [X] T036 [US1] Implement JSON validation in configuration-validator.service.ts
+- [X] T037 [US1] Implement FetchXML validation using DOMParser in
       configuration-validator.service.ts
 
 ### Main Container
 
-- [ ] T038 [US1] Create main container template in
+- [X] T038 [US1] Create main container template in
       src/app/configuration-manager/configuration-manager.component.html
-- [ ] T039 [US1] Style main container in
+- [X] T039 [US1] Style main container in
       src/app/configuration-manager/configuration-manager.component.scss
 
 **Checkpoint**: User Story 1 complete - users can create, edit, and save

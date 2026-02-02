@@ -1,0 +1,36 @@
+.configuration-editor {
+  padding: 1.5rem;
+
+  .editor-header {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1rem;
+
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+
+  .editor-body {
+    .metadata-section,
+    .value-section {
+      h5 {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .editor-footer {
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .btn {
+      min-width: 100px;
+    }
+  }
+}
