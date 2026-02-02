@@ -1,36 +1,55 @@
-.configuration-editor {
-  padding: 1.5rem;
+// .configuration-editor {
+//   padding: 1.5rem;
 
-  .editor-header {
-    border-bottom: 1px solid #dee2e6;
-    padding-bottom: 1rem;
+//   .editor-header {
+//     border-bottom: 1px solid #dee2e6;
+//     padding-bottom: 1rem;
 
-    h3 {
-      margin: 0;
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
-  }
+//     h3 {
+//       margin: 0;
+//       font-size: 1.5rem;
+//       font-weight: 600;
+//     }
+//   }
 
-  .editor-body {
-    .metadata-section,
-    .value-section {
-      h5 {
-        font-size: 1.125rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-      }
-    }
-  }
+//   .editor-body {
+//     .metadata-section,
+//     .value-section {
+//       h5 {
+//         font-size: 1.125rem;
+//         font-weight: 500;
+//         margin-bottom: 1rem;
+//       }
+//     }
+//   }
 
-  .editor-footer {
-    border-top: 1px solid #dee2e6;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: flex-end;
+//   .editor-footer {
+//     border-top: 1px solid #dee2e6;
+//     padding-top: 1rem;
+//     display: flex;
+//     justify-content: flex-end;
 
-    .btn {
-      min-width: 100px;
-    }
+//     .btn {
+//       min-width: 100px;
+//     }
+//   }
+// }
+
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.tab-content-wrapper {
+  min-height: 300px;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+
+.editor-footer {
+  .btn {
+    min-width: 100px;
   }
 }

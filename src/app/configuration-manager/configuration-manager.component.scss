@@ -1,33 +1,11 @@
-.configuration-manager {
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+// .configuration-manager {  padding: 2rem;  height: calc(100vh - 60px);  overflow: hidden;  display: flex;  flex-direction: column;  .header {    flex-shrink: 0;    margin-bottom: 0;    padding-bottom: 1rem;    border-bottom: 2px solid #dee2e6;    h2 {      margin: 0;      font-size: 2rem;      font-weight: 600;      color: #212529;    }    .btn-primary {      display: flex;      align-items: center;    }  }  app-configuration-grid,  app-configuration-editor {    flex: 1;    overflow: auto;    margin-top: 1rem;  }}
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #dee2e6;
-
-    h2 {
-      margin: 0;
-      font-size: 2rem;
-      font-weight: 600;
-      color: #212529;
-    }
-
-    .btn-primary {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  .content {
-    background: #ffffff;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  }
+:host {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }

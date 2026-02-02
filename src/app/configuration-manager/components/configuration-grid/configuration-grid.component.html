@@ -1,0 +1,58 @@
+<div class="configuration-grid-container">
+  <!-- Toolbar -->
+  <div class="grid-toolbar mb-3">
+    <div class="row g-3 align-items-center">
+      <div class="col-md-4">
+        <div class="input-group">
+          <span class="input-group-text">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search by name..."
+            [value]="searchTerm"
+            (input)="onSearchChange($event)"
+          />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <select
+          class="form-select"
+          (change)="onTypeFilterChange($event)"
+          [value]="selectedType || ''"
+        >
+          <option value="">All Types</option>
+          @for (type of configurationTypes; track type) {
+            <option [value]="type">{{ type }}</option>
+          }
+        </select>
+      </div>
+      <div class="col-md-5 text-end">
+        <span class="text-muted">
+          {{ configurations.length }} configuration(s)
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  @if (loading) {
+    <div class="text-center py-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading configurations...</span>
+      </div>
+      <p class="mt-2 text-muted">Loading configurations...</p>
+    </div>
+  } @else {
+    <div class="grid-wrapper">
+      <ag-grid-angular
+        class="ag-theme-alpine"
+        [rowData]="rowData"
+        [gridOptions]="gridOptions"
+        [columnDefs]="columnDefs"
+        (gridReady)="onGridReady($event)"
+      ></ag-grid-angular>
+    </div>
+  }
+</div>

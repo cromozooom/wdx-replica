@@ -1,11 +1,57 @@
 import { Injectable } from '@angular/core';
 import { Configuration } from '../models/configuration.model';
 import { ConfigurationType } from '../models/configuration-type.enum';
+import { UpdateEntry } from '../models/update-entry.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SeedDataService {
+  private readonly teamMembers = [
+    'John Smith',
+    'Sarah Johnson',
+    'Michael Chen',
+    'Emily Rodriguez',
+    'David Kim',
+  ];
+
+  private readonly jiraTickets = [
+    'WPO-10001', 'WPO-10023', 'WPO-10045', 'WPO-10067', 'WPO-10089',
+    'WPO-10112', 'WPO-10134', 'WPO-10156', 'WPO-10178', 'WPO-10201',
+  ];
+
+  private readonly comments = [
+    'Initial configuration setup for **wealth management** dashboard',
+    'Updated to support new compliance requirements',
+    '## Performance Optimization\n\nReduced query complexity by 40%',
+    'Added support for *ESG screening* filters',
+    'Fixed bug with `null` values in calculation',
+    'Refactored for better **maintainability**',
+    '### Security Update\n\nImplemented additional validation checks',
+    'Enhanced user experience based on feedback',
+    'Optimized for mobile responsiveness',
+    'Added multi-currency support',
+  ];
+
+  private generateUpdateEntries(configIndex: number, count: number): UpdateEntry[] {
+    const entries: UpdateEntry[] = [];
+    const baseDate = new Date(2025, 10, 1); // November 2025
+
+    for (let i = 0; i < count; i++) {
+      const hasJira = i % 3 !== 0; // 2 out of 3 have Jira tickets
+      const hasComment = i % 2 === 0 || !hasJira; // All without Jira must have comment
+
+      entries.push({
+        jiraTicket: hasJira ? this.jiraTickets[(configIndex + i) % this.jiraTickets.length] : undefined,
+        comment: hasComment ? this.comments[(configIndex + i) % this.comments.length] : undefined,
+        date: new Date(baseDate.getTime() + (i * 7 * 24 * 60 * 60 * 1000)), // Weekly updates
+        madeBy: this.teamMembers[(configIndex + i) % this.teamMembers.length],
+      });
+    }
+
+    return entries;
+  }
+
   generateSeedData(): Configuration[] {
     const configurations: Configuration[] = [];
     let id = 1;
@@ -30,7 +76,7 @@ export class SeedDataService {
         lastModifiedDate: new Date(2026, 0, i),
         createdBy: 'system',
         lastModifiedBy: 'system',
-        updates: [],
+        updates: this.generateUpdateEntries(i - 1, i % 2 === 0 ? 3 : 4),
       });
     }
 
@@ -54,7 +100,7 @@ export class SeedDataService {
         lastModifiedDate: new Date(2026, 0, 15 + i),
         createdBy: 'system',
         lastModifiedBy: 'system',
-        updates: [],
+        updates: this.generateUpdateEntries(15 + i - 1, i % 3 === 0 ? 3 : 4),
       });
     }
 
@@ -78,7 +124,7 @@ export class SeedDataService {
         lastModifiedDate: new Date(2026, 0, 30 + i),
         createdBy: 'system',
         lastModifiedBy: 'system',
-        updates: [],
+        updates: this.generateUpdateEntries(30 + i - 1, i % 4 === 0 ? 5 : 3),
       });
     }
 
@@ -101,7 +147,7 @@ export class SeedDataService {
         lastModifiedDate: new Date(2026, 1, i),
         createdBy: 'system',
         lastModifiedBy: 'system',
-        updates: [],
+        updates: this.generateUpdateEntries(45 + i - 1, 3 + (i % 2)),
       });
     }
 
@@ -124,7 +170,7 @@ execute();`,
         lastModifiedDate: new Date(2026, 1, 15 + i),
         createdBy: 'system',
         lastModifiedBy: 'system',
-        updates: [],
+        updates: this.generateUpdateEntries(60 + i - 1, i % 5 === 0 ? 5 : 3),
       });
     }
 
@@ -154,7 +200,7 @@ execute();`,
       lastModifiedDate: new Date(2026, 1, 1),
       createdBy: 'admin',
       lastModifiedBy: 'admin',
-      updates: [],
+      updates: this.generateUpdateEntries(75, 6),
     });
 
     return configurations;

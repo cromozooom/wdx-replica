@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { ConfigurationMetadataFormComponent } from '../configuration-metadata-form/configuration-metadata-form.component';
 import { JsonEditorComponent } from '../json-editor/json-editor.component';
 import { AceEditorComponent } from '../ace-editor/ace-editor.component';
@@ -17,6 +18,7 @@ import { NotificationService } from '../../services/notification.service';
   standalone: true,
   imports: [
     CommonModule,
+    NgbNavModule,
     ConfigurationMetadataFormComponent,
     JsonEditorComponent,
     AceEditorComponent,
@@ -34,7 +36,7 @@ export class ConfigurationEditorComponent {
 
   metadata: Partial<Configuration> = {};
   value: string = '';
-  updateEntry: UpdateEntry | null = null;
+  updateEntries: UpdateEntry[] = [];
   editorFormat: 'json' | 'xml' | 'text' = 'json';
   saving = false;
 
@@ -64,8 +66,14 @@ export class ConfigurationEditorComponent {
     this.value = value;
   }
 
-  onUpdateEntryChange(updateEntry: UpdateEntry | null): void {
-    this.updateEntry = updateEntry;
+  onUpdateEntriesChange(entries: UpdateEntry[]): void {
+    this.updateEntries = entries;
+  }
+
+  getTotalUpdateCount(): number {
+    const existingCount = this.configuration?.updates?.length || 0;
+    const newCount = this.updateEntries.length;
+    return existingCount + newCount;
   }
 
   private updateEditorFormat(type: ConfigurationType): void {
@@ -80,10 +88,10 @@ export class ConfigurationEditorComponent {
       return;
     }
 
-    // If editing, require update entry
-    if (this.configuration && !this.updateEntry) {
+    // If editing, require at least one valid update entry
+    if (this.configuration && this.updateEntries.length === 0) {
       this.notificationService.error(
-        'Please add an update entry to document this change'
+        'Please add at least one update entry to document this change'
       );
       return;
     }
@@ -93,14 +101,14 @@ export class ConfigurationEditorComponent {
 
       let savedConfig: Configuration;
       if (this.configuration) {
-        // Update existing with update entry
-        savedConfig = await this.configService.update(
+        // Update existing with multiple update entries
+        savedConfig = await this.configService.updateWithMultipleEntries(
           this.configuration.id,
           {
             ...this.metadata,
             value: this.value,
           },
-          this.updateEntry!
+          this.updateEntries
         );
         this.notificationService.success('Configuration updated successfully');
       } else {

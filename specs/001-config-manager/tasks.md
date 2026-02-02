@@ -223,47 +223,47 @@ editor.
 
 ### Grid Component
 
-- [ ] T052 [P] [US3] Create configuration grid component in
+- [X] T052 [P] [US3] Create configuration grid component in
       src/app/configuration-manager/components/configuration-grid/configuration-grid.component.ts
       (dumb)
-- [ ] T053 [P] [US3] Create grid template in
+- [X] T053 [P] [US3] Create grid template in
       src/app/configuration-manager/components/configuration-grid/configuration-grid.component.html
-- [ ] T054 [P] [US3] Style grid component in
+- [X] T054 [P] [US3] Style grid component in
       src/app/configuration-manager/components/configuration-grid/configuration-grid.component.scss
 
 ### AG-Grid Configuration
 
-- [ ] T055 [US3] Define column definitions with proper types in
+- [X] T055 [US3] Define column definitions with proper types in
       configuration-grid.component.ts
-- [ ] T056 [US3] Implement semantic version comparator for version column in
+- [X] T056 [US3] Implement semantic version comparator for version column in
       configuration-grid.component.ts
-- [ ] T057 [US3] Configure AG-Grid options (row selection, virtual scrolling,
+- [X] T057 [US3] Configure AG-Grid options (row selection, virtual scrolling,
       row buffer) in configuration-grid.component.ts
-- [ ] T058 [US3] Implement getRowId for stable row identity in
+- [X] T058 [US3] Implement getRowId for stable row identity in
       configuration-grid.component.ts
 
 ### Filtering & Search
 
-- [ ] T059 [US3] Add type filter dropdown to grid in
+- [X] T059 [US3] Add type filter dropdown to grid in
       configuration-grid.component.html
-- [ ] T060 [US3] Add search input box to grid in
+- [X] T060 [US3] Add search input box to grid in
       configuration-grid.component.html
-- [ ] T061 [US3] Implement filter logic in configuration.store.ts (filterType
+- [X] T061 [US3] Implement filter logic in configuration.store.ts (filterType
       computed signal)
-- [ ] T062 [US3] Implement search logic in configuration.store.ts (searchTerm
+- [X] T062 [US3] Implement search logic in configuration.store.ts (searchTerm
       computed signal)
-- [ ] T063 [US3] Wire filter/search to store actions in
+- [X] T063 [US3] Wire filter/search to store actions in
       configuration-manager.component.ts
 
 ### Grid Integration
 
-- [ ] T064 [US3] Integrate grid component into main container template in
+- [X] T064 [US3] Integrate grid component into main container template in
       configuration-manager.component.html
-- [ ] T065 [US3] Implement row double-click handler to open editor in
+- [X] T065 [US3] Implement row double-click handler to open editor in
       configuration-manager.component.ts
-- [ ] T066 [US3] Add loading state indicator to grid in
+- [X] T066 [US3] Add loading state indicator to grid in
       configuration-grid.component.html
-- [ ] T067 [US3] Implement error handling for grid data loading in
+- [X] T067 [US3] Implement error handling for grid data loading in
       configuration-manager.component.ts
 
 **Checkpoint**: User Story 3 complete - grid display with full

@@ -102,6 +102,18 @@ export class ConfigurationStorageService {
     });
   }
 
+  async clearAll(): Promise<void> {
+    const db = await this.ensureDB();
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction([STORE_NAME], "readwrite");
+      const objectStore = transaction.objectStore(STORE_NAME);
+      const request = objectStore.clear();
+
+      request.onsuccess = () => resolve();
+      request.onerror = () => reject(request.error);
+    });
+  }
+
   async getNextId(): Promise<number> {
     const all = await this.getAll();
     if (all.length === 0) {

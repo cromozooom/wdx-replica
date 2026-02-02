@@ -121,7 +121,84 @@ export class ConfigurationService {
     return updated;
   }
 
+  async updateWithMultipleEntries(
+    id: number,
+    updates: Partial<Configuration>,
+    updateEntries: UpdateEntry[],
+  ): Promise<Configuration> {
+    const existing = await this.storage.getById(id);
+    if (!existing) {
+      throw new Error(`Configuration with ID ${id} not found`);
+    }
+
+    // Validate version if changed
+    if (updates.version) {
+      const versionValidation = this.validator.validateVersion(updates.version);
+      if (!versionValidation.valid) {
+        throw new Error(versionValidation.errors.join(", "));
+      }
+    }
+
+    // Validate value if changed
+    if (updates.value && updates.type) {
+      const valueValidation = this.validator.validateConfigurationValue(
+        updates.value,
+        updates.type,
+      );
+      if (!valueValidation.valid) {
+        throw new Error(valueValidation.errors.join(", "));
+      }
+    }
+
+    // Validate all update entries
+    for (const entry of updateEntries) {
+      const entryValidation = this.validator.validateUpdateEntry(entry);
+      if (!entryValidation.valid) {
+        throw new Error(entryValidation.errors.join(", "));
+      }
+    }
+
+    const currentUser = this.teamMemberService.getCurrentUser();
+    const now = new Date();
+
+    const updated: Configuration = {
+      ...existing,
+      ...updates,
+      id, // Ensure ID doesn't change
+      lastModifiedDate: now,
+      lastModifiedBy: currentUser,
+      updates: [...existing.updates, ...updateEntries],
+    };
+
+    await this.storage.save(updated);
+    return updated;
+  }
+
   async delete(id: number): Promise<void> {
     return this.storage.delete(id);
+  }
+
+  async clearAll(): Promise<void> {
+    return this.storage.clearAll();
+  }
+
+  async saveWithUpdates(configuration: Configuration): Promise<Configuration> {
+    // Validate version format
+    const versionValidation = this.validator.validateVersion(configuration.version);
+    if (!versionValidation.valid) {
+      throw new Error(versionValidation.errors.join(", "));
+    }
+
+    // Validate configuration value
+    const valueValidation = this.validator.validateConfigurationValue(
+      configuration.value,
+      configuration.type,
+    );
+    if (!valueValidation.valid) {
+      throw new Error(valueValidation.errors.join(", "));
+    }
+
+    await this.storage.save(configuration);
+    return configuration;
   }
 }

@@ -1,61 +1,98 @@
-<div class="configuration-editor">
-  <div class="editor-header mb-4">
-    <h3>{{ configuration ? 'Edit Configuration' : 'New Configuration' }}</h3>
-  </div>
+<header class="editor-header border-bottom p-2">
+  <h3 class="h6 mb-0">{{ configuration ? 'Edit Configuration' : 'New Configuration' }}</h3>
+</header>
 
-  <div class="editor-body">
-    <!-- Metadata Form -->
-    <div class="metadata-section mb-4">
-      <h5>Configuration Details</h5>
-      <app-configuration-metadata-form
-        [configuration]="configuration"
-        [showUpdateEntry]="!!configuration"
-        (formChange)="onMetadataChange($event)"
-        (updateEntryChange)="onUpdateEntryChange($event)"
-      ></app-configuration-metadata-form>
-    </div>
-
-    <!-- Value Editor -->
-    <div class="value-section">
-      <h5>Configuration Value</h5>
-      @if (editorFormat === 'json') {
-        <app-json-editor
-          [value]="value"
-          (valueChange)="onValueChange($event)"
-        ></app-json-editor>
-      } @else if (editorFormat === 'xml') {
-        <app-ace-editor
-          [value]="value"
-          [mode]="'xml'"
-          (valueChange)="onValueChange($event)"
-        ></app-ace-editor>
-      } @else {
-        <app-ace-editor
-          [value]="value"
-          [mode]="'text'"
-          (valueChange)="onValueChange($event)"
-        ></app-ace-editor>
-      }
-    </div>
-  </div>
-
-  <div class="editor-footer mt-4">
-    <button
-      class="btn btn-secondary me-2"
-      (click)="onCancel()"
-      [disabled]="saving"
-    >
-      Cancel
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <!-- General Tab -->
+  <li [ngbNavItem]="1">
+    <button ngbNavLink>
+      <i class="fas fa-info-circle me-2"></i>
+      General
     </button>
-    <button
-      class="btn btn-primary"
-      (click)="onSave()"
-      [disabled]="saving"
-    >
-      @if (saving) {
-        <span class="spinner-border spinner-border-sm me-2"></span>
-      }
-      {{ configuration ? 'Update' : 'Create' }}
+    <ng-template ngbNavContent>
+      <div class="tab-content-wrapper p-3">
+        <app-configuration-metadata-form
+          [configuration]="configuration"
+          [showUpdateEntry]="false"
+          [showGeneralOnly]="true"
+          (formChange)="onMetadataChange($event)"
+        ></app-configuration-metadata-form>
+      </div>
+    </ng-template>
+  </li>
+
+  <!-- Changes Tab (only when editing) -->
+  @if (configuration) {
+    <li [ngbNavItem]="2">
+      <button ngbNavLink>
+        <i class="fas fa-history me-2"></i>
+        Changes
+        @if (getTotalUpdateCount() > 0) {
+          <span class="badge bg-primary ms-2">{{ getTotalUpdateCount() }}</span>
+        }
+      </button>
+      <ng-template ngbNavContent>
+        <!-- <div class="tab-content-wrapper w-100 d-flex flex-column">
+        </div> -->
+        <app-configuration-metadata-form
+          class="w-100 d-flex flex-column"
+          [configuration]="configuration"
+          [showUpdateEntry]="true"
+          [showGeneralOnly]="false"
+          (updateEntriesChange)="onUpdateEntriesChange($event)"
+        ></app-configuration-metadata-form>
+      </ng-template>
+    </li>
+  }
+
+  <!-- Values Tab -->
+  <li [ngbNavItem]="3">
+    <button ngbNavLink>
+      <i class="fas fa-code me-2"></i>
+      Values
     </button>
-  </div>
-</div>
+    <ng-template ngbNavContent>
+      <div class="tab-content-wrapper p-3">
+        @if (editorFormat === 'json') {
+          <app-json-editor
+            [value]="value"
+            (valueChange)="onValueChange($event)"
+          ></app-json-editor>
+        } @else if (editorFormat === 'xml') {
+          <app-ace-editor
+            [value]="value"
+            [mode]="'xml'"
+            (valueChange)="onValueChange($event)"
+          ></app-ace-editor>
+        } @else {
+          <app-ace-editor
+            [value]="value"
+            [mode]="'text'"
+            (valueChange)="onValueChange($event)"
+          ></app-ace-editor>
+        }
+      </div>
+    </ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav" class="flex-grow-1 overflow-auto"></div>
+
+<footer class="editor-footer border-top p-2">
+  <button
+    class="btn btn-secondary me-2"
+    (click)="onCancel()"
+    [disabled]="saving"
+  >
+    Cancel
+  </button>
+  <button
+    class="btn btn-primary"
+    (click)="onSave()"
+    [disabled]="saving"
+  >
+    @if (saving) {
+      <span class="spinner-border spinner-border-sm me-2"></span>
+    }
+    {{ configuration ? 'Update' : 'Create' }}
+  </button>
+</footer>

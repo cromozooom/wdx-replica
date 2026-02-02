@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 import {
   FormBuilder,
   FormGroup,
+  FormArray,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
@@ -29,14 +30,15 @@ import { UpdateHistoryComponent } from '../update-history/update-history.compone
 export class ConfigurationMetadataFormComponent implements OnInit {
   @Input() configuration?: Configuration;
   @Input() showUpdateEntry = false;
+  @Input() showGeneralOnly = false;
   @Output() formChange = new EventEmitter<Partial<Configuration>>();
-  @Output() updateEntryChange = new EventEmitter<UpdateEntry | null>();
+  @Output() updateEntriesChange = new EventEmitter<UpdateEntry[]>();
 
   private fb = inject(FormBuilder);
   private teamMemberService = inject(TeamMemberService);
 
   form!: FormGroup;
-  updateEntryForm!: FormGroup;
+  updateEntriesFormArray!: FormArray;
   configurationTypes = Object.values(ConfigurationType);
   teamMembers: string[] = [];
 
@@ -44,7 +46,8 @@ export class ConfigurationMetadataFormComponent implements OnInit {
     this.teamMembers = this.teamMemberService.getTeamMembers();
     this.initForm();
     if (this.showUpdateEntry) {
-      this.initUpdateEntryForm();
+      this.initUpdateEntriesFormArray();
+      this.addUpdateEntry(); // Start with one entry
     }
   }
 
@@ -68,9 +71,17 @@ export class ConfigurationMetadataFormComponent implements OnInit {
     });
   }
 
-  private initUpdateEntryForm(): void {
+  private initUpdateEntriesFormArray(): void {
+    this.updateEntriesFormArray = this.fb.array([]);
+
+    this.updateEntriesFormArray.valueChanges.subscribe(() => {
+      this.emitUpdateEntries();
+    });
+  }
+
+  private createUpdateEntryFormGroup(): FormGroup {
     const currentUser = this.teamMemberService.getCurrentUser();
-    this.updateEntryForm = this.fb.group(
+    return this.fb.group(
       {
         jiraTicket: ['', [Validators.pattern(/^WPO-\d{5}$/)]],
         comment: [''],
@@ -78,20 +89,37 @@ export class ConfigurationMetadataFormComponent implements OnInit {
       },
       { validators: this.atLeastOneValidator }
     );
+  }
 
-    this.updateEntryForm.valueChanges.subscribe((value) => {
-      if (this.updateEntryForm.valid) {
-        const updateEntry: UpdateEntry = {
+  addUpdateEntry(): void {
+    this.updateEntriesFormArray.push(this.createUpdateEntryFormGroup());
+  }
+
+  removeUpdateEntry(index: number): void {
+    this.updateEntriesFormArray.removeAt(index);
+  }
+
+  private emitUpdateEntries(): void {
+    const validEntries: UpdateEntry[] = [];
+    
+    for (let i = 0; i < this.updateEntriesFormArray.length; i++) {
+      const group = this.updateEntriesFormArray.at(i) as FormGroup;
+      if (group.valid) {
+        const value = group.value;
+        validEntries.push({
           ...value,
           jiraTicket: value.jiraTicket || undefined,
           comment: value.comment || undefined,
           date: new Date(),
-        };
-        this.updateEntryChange.emit(updateEntry);
-      } else {
-        this.updateEntryChange.emit(null);
+        });
       }
-    });
+    }
+
+    this.updateEntriesChange.emit(validEntries);
+  }
+
+  get updateEntries(): FormGroup[] {
+    return this.updateEntriesFormArray.controls as FormGroup[];
   }
 
   private atLeastOneValidator(group: FormGroup): { [key: string]: any } | null {
@@ -116,15 +144,19 @@ export class ConfigurationMetadataFormComponent implements OnInit {
     return this.form.get('version');
   }
 
-  get jiraTicketControl() {
-    return this.updateEntryForm?.get('jiraTicket');
+  getJiraTicketControl(index: number) {
+    return this.updateEntriesFormArray?.at(index)?.get('jiraTicket');
   }
 
-  get commentControl() {
-    return this.updateEntryForm?.get('comment');
+  getCommentControl(index: number) {
+    return this.updateEntriesFormArray?.at(index)?.get('comment');
   }
 
-  get madeByControl() {
-    return this.updateEntryForm?.get('madeBy');
+  getMadeByControl(index: number) {
+    return this.updateEntriesFormArray?.at(index)?.get('madeBy');
+  }
+
+  get hasValidEntries(): boolean {
+    return this.updateEntriesFormArray?.controls.some(control => control.valid) ?? false;
   }
 }

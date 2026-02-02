@@ -1,103 +1,150 @@
-<div class="metadata-form">
-  <form [formGroup]="form">
-    <div class="form-group mb-3">
-      <label for="name" class="form-label">Name *</label>
-      <input
-        type="text"
-        class="form-control"
-        id="name"
-        formControlName="name"
-        placeholder="Enter configuration name"
-      />
-      @if (nameControl?.invalid && nameControl?.touched) {
-        <div class="text-danger mt-1">Name is required</div>
-      }
-    </div>
-
-    <div class="form-group mb-3">
-      <label for="type" class="form-label">Type *</label>
-      <select class="form-select" id="type" formControlName="type">
-        @for (type of configurationTypes; track type) {
-          <option [value]="type">{{ type }}</option>
-        }
-      </select>
-    </div>
-
-    <div class="form-group mb-3">
-      <label for="version" class="form-label">Version *</label>
-      <input
-        type="text"
-        class="form-control"
-        id="version"
-        formControlName="version"
-        placeholder="V1.0.0"
-      />
-      @if (versionControl?.invalid && versionControl?.touched) {
-        <div class="text-danger mt-1">
-          Version must match format V#.#.# (e.g., V1.0.0)
-        </div>
-      }
-    </div>
-  </form>
-
-  <!-- Update Entry Form (shown only when editing) -->
-  @if (showUpdateEntry && updateEntryForm) {
-    <div class="update-entry-section mt-4 pt-4 border-top">
-      <h6 class="mb-3">Document This Change</h6>
-      <form [formGroup]="updateEntryForm">
-        <div class="form-group mb-3">
-          <label for="jiraTicket" class="form-label">Jira Ticket</label>
-          <input
-            type="text"
-            class="form-control"
-            id="jiraTicket"
-            formControlName="jiraTicket"
-            placeholder="WPO-12345"
-          />
-          @if (jiraTicketControl?.invalid && jiraTicketControl?.touched) {
-            <div class="text-danger mt-1">
-              Must match format WPO-##### (e.g., WPO-12345)
-            </div>
-          }
-        </div>
-
-        <div class="form-group mb-3">
-          <label for="comment" class="form-label">Comment (Markdown)</label>
-          <textarea
-            class="form-control"
-            id="comment"
-            formControlName="comment"
-            rows="3"
-            placeholder="Describe what changed and why (supports Markdown)"
-          ></textarea>
-          <small class="form-text text-muted">
-            You can use **bold**, *italic*, `code`, and other Markdown formatting
-          </small>
-        </div>
-
-        <div class="form-group mb-3">
-          <label for="madeBy" class="form-label">Made By *</label>
-          <select class="form-select" id="madeBy" formControlName="madeBy">
-            @for (member of teamMembers; track member) {
-              <option [value]="member">{{ member }}</option>
+<div class="metadata-form-wrapper">
+  <!-- General Section (Name, Type, Version) -->
+  @if (showGeneralOnly || !showUpdateEntry) {
+    <form class="container" [formGroup]="form">
+      <div class="row">
+        <div class="col">
+          <div class="form-group mb-3">
+            <label for="name" class="form-label">Name *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              formControlName="name"
+              placeholder="Enter configuration name"
+            />
+            @if (nameControl?.invalid && nameControl?.touched) {
+              <div class="text-danger mt-1">Name is required</div>
             }
-          </select>
-        </div>
-
-        @if (updateEntryForm.errors?.['atLeastOne']) {
-          <div class="alert alert-warning">
-            <i class="fas fa-exclamation-triangle me-2"></i>
-            {{ updateEntryForm.errors?.['atLeastOne'] }}
           </div>
-        }
-      </form>
-    </div>
+        </div>
+        <div class="col">
+          <div class="form-group mb-3">
+            <label for="type" class="form-label">Type *</label>
+            <select class="form-select" id="type" formControlName="type">
+              @for (type of configurationTypes; track type) {
+                <option [value]="type">{{ type }}</option>
+              }
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group mb-3">
+            <label for="version" class="form-label">Version *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="version"
+              formControlName="version"
+              placeholder="V1.0.0"
+            />
+            @if (versionControl?.invalid && versionControl?.touched) {
+              <div class="text-danger mt-1">
+                Version must match format V#.#.# (e.g., V1.0.0)
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </form>
   }
 
-  <!-- Update History Display -->
-  @if (configuration?.updates?.length) {
-    <div class="update-history-section mt-4 pt-4 border-top">
-      <app-update-history [updates]="configuration!.updates!"></app-update-history>
+  <!-- Update Entries Section -->
+  @if (showUpdateEntry && !showGeneralOnly && updateEntriesFormArray) {
+    <div class="update-entry-section container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h6 class="mb-0">Document Changes</h6>
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-primary"
+          (click)="addUpdateEntry()"
+        >
+          <i class="fas fa-plus me-1"></i>
+          Add Another Change
+        </button>
+      </div>
+
+      @for (entryForm of updateEntries; track $index; let i = $index) {
+        <div class="update-entry-card card mb-3">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="mb-0 text-muted">Change #{{ i + 1 }}</h6>
+              @if (updateEntries.length > 1) {
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-danger"
+                  (click)="removeUpdateEntry(i)"
+                >
+                  <i class="fas fa-trash"></i>
+                </button>
+              }
+            </div>
+
+            <form [formGroup]="entryForm">
+              <div class="form-group mb-3">
+                <label [attr.for]="'jiraTicket-' + i" class="form-label">Jira Ticket</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  [id]="'jiraTicket-' + i"
+                  formControlName="jiraTicket"
+                  placeholder="WPO-12345"
+                />
+                @if (getJiraTicketControl(i)?.invalid && getJiraTicketControl(i)?.touched) {
+                  <div class="text-danger mt-1">
+                    Must match format WPO-##### (e.g., WPO-12345)
+                  </div>
+                }
+              </div>
+
+              <div class="form-group mb-3">
+                <label [attr.for]="'comment-' + i" class="form-label">Comment (Markdown)</label>
+                <textarea
+                  class="form-control"
+                  [id]="'comment-' + i"
+                  formControlName="comment"
+                  rows="3"
+                  placeholder="Describe what changed and why (supports Markdown)"
+                ></textarea>
+                <small class="form-text text-muted">
+                  You can use **bold**, *italic*, `code`, and other Markdown formatting
+                </small>
+              </div>
+
+              <div class="form-group mb-3">
+                <label [attr.for]="'madeBy-' + i" class="form-label">Made By *</label>
+                <select class="form-select" [id]="'madeBy-' + i" formControlName="madeBy">
+                  @for (member of teamMembers; track member) {
+                    <option [value]="member">{{ member }}</option>
+                  }
+                </select>
+              </div>
+
+              @if (entryForm.errors?.['atLeastOne']) {
+                <div class="alert alert-warning">
+                  <i class="fas fa-exclamation-triangle me-2"></i>
+                  {{ entryForm.errors?.['atLeastOne'] }}
+                </div>
+              }
+            </form>
+          </div>
+        </div>
+      }
+
+      @if (!hasValidEntries) {
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle me-2"></i>
+          Each change must have either a Jira ticket or a comment
+        </div>
+      }
+
+      <!-- Update History Display -->
+      @if (configuration?.updates?.length) {
+        <div class="update-history-section mt-4 pt-4 border-top">
+          <h6 class="mb-3">Previous Changes</h6>
+          <app-update-history [updates]="configuration!.updates!"></app-update-history>
+        </div>
+      }
     </div>
   }
 </div>

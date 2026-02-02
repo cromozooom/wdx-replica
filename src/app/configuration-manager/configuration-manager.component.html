@@ -1,41 +1,46 @@
-<div class="configuration-manager">
-  @if (!showEditor) {
-    <div class="header">
-      <h2>Configuration Manager</h2>
-      <button class="btn btn-primary" (click)="onNewConfiguration()">
-        <i class="fas fa-plus me-2"></i>
-        New Configuration
-      </button>
+@if (!showEditor) {
+  <header class="header border-bottom">
+    <div class="d-flex justify-content-between align-items-center p-2">
+      <div>
+        <h2 class="h6 mb-0">Configuration Manager</h2>
+      </div>
+      <div class="d-flex gap-2">
+        <button class="btn btn-sm btn-outline-secondary" (click)="onResetDatabase()">
+          <i class="fas fa-sync me-2"></i>
+          Reset Database
+        </button>
+        <button class="btn btn-sm btn-outline-primary" (click)="onNewConfiguration()">
+          <i class="fas fa-plus me-2"></i>
+          New Configuration
+        </button>
+      </div>
     </div>
+  </header>
 
-    @if (store.loading()) {
-      <div class="text-center py-5">
-        <div class="spinner-border" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-      </div>
-    }
-
-    @if (store.error()) {
-      <div class="alert alert-danger">
-        {{ store.error() }}
-      </div>
-    }
-
-    <div class="content">
-      <p class="text-muted">
-        Manage your configurations here. {{ store.configurations().length }}
-        configuration(s) loaded.
-      </p>
-      <!-- Grid will be added in Phase 5 -->
+  @if (store.error()) {
+    <div class="alert alert-danger alert-dismissible">
+      <i class="fas fa-exclamation-triangle me-2"></i>
+      {{ store.error() }}
     </div>
   }
 
-  @if (showEditor) {
-    <app-configuration-editor
-      [configuration]="editingConfiguration ?? undefined"
-      (saved)="onSaveConfiguration($event)"
-      (cancelled)="onCancelEditor()"
-    ></app-configuration-editor>
-  }
-</div>
+  <app-configuration-grid
+    class="flex-grow-1 p-2"
+    [configurations]="store.filteredConfigurations()"
+    [loading]="store.loading()"
+    [selectedType]="store.filterType()"
+    [searchTerm]="store.searchTerm()"
+    (rowDoubleClicked)="onRowDoubleClicked($event)"
+    (selectionChanged)="onSelectionChanged($event)"
+    (typeFilterChanged)="onTypeFilterChanged($event)"
+    (searchTermChanged)="onSearchTermChanged($event)"
+  ></app-configuration-grid>
+}
+
+@if (showEditor) {
+  <app-configuration-editor
+    [configuration]="editingConfiguration ?? undefined"
+    (saved)="onSaveConfiguration($event)"
+    (cancelled)="onCancelEditor()"
+  ></app-configuration-editor>
+}

@@ -1,18 +1,42 @@
-.metadata-form {
-  .form-label {
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-  }
+// .metadata-form {
+//   .form-label {
+//     font-weight: 500;
+//     margin-bottom: 0.5rem;
+//   }
 
-  .form-control,
-  .form-select {
-    &:focus {
-      border-color: #0d6efd;
-      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    }
-  }
+//   .form-control,
+//   .form-select {
+//     &:focus {
+//       border-color: #0d6efd;
+//       box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+//     }
+//   }
 
-  .text-danger {
-    font-size: 0.875rem;
-  }
-}
+//   .text-danger {
+//     font-size: 0.875rem;
+//   }
+
+//   .update-entry-card {
+//     background-color: #f8f9fa;
+//     border: 1px solid #dee2e6;
+
+//     .card-body {
+//       padding: 1rem;
+//     }
+
+//     h6.text-muted {
+//       font-size: 0.875rem;
+//       text-transform: uppercase;
+//       letter-spacing: 0.05em;
+//     }
+//   }
+
+//   .update-entry-section {
+//     .btn-outline-primary {
+//       &:hover {
+//         transform: translateY(-1px);
+//         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//       }
+//     }
+//   }
+// }
