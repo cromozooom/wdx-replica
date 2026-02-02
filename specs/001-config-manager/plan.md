@@ -28,12 +28,17 @@ reactive state management using signals.
 - jsoneditor 9.10.5 (JSON editing)
 - ace-builds 1.33.1 (FetchXML/text editing)
 - jszip 3.10.1 (ZIP archive creation/extraction)
-- @ng-bootstrap/ng-bootstrap 18.0.0 (modals, dropdowns)
+- @ng-bootstrap/ng-bootstrap 18.0.0 (modals, dropdowns, toast notifications)
 - file-saver 2.0.2 (file downloads)
 - ngx-markdown 19.1.1 (markdown rendering for comments)
 
 **Storage**: Browser LocalStorage or IndexedDB for persistence (no backend
-required for MVP)  
+required for MVP)
+
+**Concurrent Editing**: Last-write-wins strategy for browser-level coordination
+only. Users editing the same configuration in different browser tabs will have
+the last save win. No cross-browser synchronization or conflict detection for
+simultaneous edits (conflicts only detected during import operations).  
 **Testing**: Karma + Jasmine (existing project setup)  
 **Target Platform**: Modern browsers (Chrome 100+, Firefox 100+, Edge 100+,
 Safari 15+)  
@@ -222,7 +227,8 @@ src/app/
 │   │   ├── configuration-export.service.ts      # ZIP export logic
 │   │   ├── configuration-import.service.ts      # ZIP import + conflict detection
 │   │   ├── configuration-validator.service.ts   # Validation (JSON, FetchXML, version)
-│   │   └── team-member.service.ts               # Team member list provider
+│   │   ├── team-member.service.ts               # Team member list provider
+│   │   └── notification.service.ts              # Toast notifications (ng-bootstrap)
 │   │
 │   ├── store/                                    # State management (@ngrx/signals)
 │   │   ├── configuration.store.ts               # Configuration state

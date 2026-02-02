@@ -6,6 +6,16 @@
 **Input**: User description: "Multi-format configuration management system with
 import/export, versioning, and comparison capabilities"
 
+## Clarifications
+
+### Session 2026-02-02
+
+- Q: Storage backend and data persistence strategy → A: LocalStorage/IndexedDB
+  with future API migration path
+- Q: Concurrent editing conflict resolution → A: Last-write-wins with
+  browser-level only (no server coordination)
+- Q: Error and loading state UX patterns → A: ng-bootstrap Toast
+
 ## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Create and Edit Configuration (Priority: P1)
@@ -60,7 +70,8 @@ displays in chronological order.
    provides a markdown comment, **Then** update is saved successfully (comment
    is mandatory when Jira is missing)
 3. **Given** user tries to save update without Jira or comment, **When** user
-   clicks save, **Then** validation error appears requiring at least one field
+   clicks save, **Then** validation error appears via ng-bootstrap toast
+   requiring at least one field
 4. **Given** configuration has multiple updates, **When** user views update
    history, **Then** updates display in chronological order with all details
    (Jira, comment, date, author)
@@ -122,7 +133,8 @@ all selected configurations with their metadata in a structured format.
    each configuration has a JSON file with metadata and a separate file for the
    value (JSON/FetchXML/text)
 4. **Given** no configurations are selected, **When** user clicks "Export",
-   **Then** error message prompts user to select at least one configuration
+   **Then** error message prompts user to select at least one configuration (via
+   ng-bootstrap toast)
 5. **Given** user clicks "Export All", **When** button is clicked, **Then** all
    configurations in current filtered view are exported
 
@@ -160,7 +172,8 @@ or rename conflicting configurations.
 6. **Given** user is viewing conflicts, **When** user chooses "Import as New",
    **Then** imported configuration is saved with a new auto-generated ID
 7. **Given** ZIP contains invalid files, **When** import is attempted, **Then**
-   validation errors are displayed listing specific issues
+   validation errors are displayed via ng-bootstrap toast listing specific
+   issues
 
 ---
 
@@ -169,7 +182,9 @@ or rename conflicting configurations.
 - What happens when a user tries to import a ZIP file with corrupted or invalid
   JSON/FetchXML content?
 - How does the system handle configurations with very large content (>10MB)?
-- What happens if two users edit the same configuration simultaneously?
+- If user edits same configuration in multiple browser tabs simultaneously, last
+  save wins (browser-level storage coordination only; no cross-browser conflict
+  detection)
 - How does the system handle invalid version strings (not matching V#.#.#
   format)?
 - What happens when Ace editor or JSON editor libraries fail to load?
@@ -231,9 +246,18 @@ or rename conflicting configurations.
   specific validation failures
 - **FR-023**: System MUST auto-generate unique numeric IDs for new
   configurations
-- **FR-024**: System MUST persist all configurations and metadata to storage
+- **FR-024**: System MUST persist all configurations and metadata to browser
+  storage (IndexedDB preferred for large datasets, localStorage as fallback)
 - **FR-025**: System MUST support version string format validation (V#.#.#
   where # is numeric)
+- **FR-026**: System MUST implement storage abstraction layer to enable future
+  migration to REST API backend without UI changes
+- **FR-027**: System MUST use last-write-wins strategy for concurrent edits
+  within same browser (across tabs); no cross-browser coordination required
+- **FR-028**: System MUST display error messages and notifications using
+  ng-bootstrap Toast component
+- **FR-029**: System MUST show loading indicators during async operations (save,
+  export, import) to prevent unintended user actions
 
 ### Key Entities
 
@@ -289,13 +313,15 @@ or rename conflicting configurations.
 - Ace editor library (ace-builds from package.json) is available for FetchXML
   editing
 - Browser supports modern File API for ZIP creation/extraction
+- Browser supports IndexedDB (with localStorage fallback for older browsers)
 - Team member names list is maintained elsewhere and provided via API or
   configuration
 - ZIP file size limits are reasonable (<100MB per export) for browser handling
 - FetchXML validation rules are defined (or simple XML validation is sufficient)
 - System has authentication/authorization (user identity for "Created By", "Made
   By" fields)
-- Storage mechanism exists (API backend or local storage for persistence)
+- Storage is client-side (browser-based) in initial implementation; future
+  migration to REST API backend is planned but out of current scope
 - Existing project infrastructure supports file downloads and uploads
 
 ## Out of Scope
