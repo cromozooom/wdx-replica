@@ -9,7 +9,9 @@
       <h5>Configuration Details</h5>
       <app-configuration-metadata-form
         [configuration]="configuration"
+        [showUpdateEntry]="!!configuration"
         (formChange)="onMetadataChange($event)"
+        (updateEntryChange)="onUpdateEntryChange($event)"
       ></app-configuration-metadata-form>
     </div>
 

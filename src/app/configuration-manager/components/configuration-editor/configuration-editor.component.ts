@@ -3,9 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ConfigurationMetadataFormComponent } from '../configuration-metadata-form/configuration-metadata-form.component';
 import { JsonEditorComponent } from '../json-editor/json-editor.component';
 import { AceEditorComponent } from '../ace-editor/ace-editor.component';
-import {
-  Configuration,
-} from '../../models/configuration.model';
+import { Configuration } from '../../models/configuration.model';
+import { UpdateEntry } from '../../models/update-entry.model';
 import {
   ConfigurationType,
   getConfigurationFormat,
@@ -35,6 +34,7 @@ export class ConfigurationEditorComponent {
 
   metadata: Partial<Configuration> = {};
   value: string = '';
+  updateEntry: UpdateEntry | null = null;
   editorFormat: 'json' | 'xml' | 'text' = 'json';
   saving = false;
 
@@ -64,6 +64,10 @@ export class ConfigurationEditorComponent {
     this.value = value;
   }
 
+  onUpdateEntryChange(updateEntry: UpdateEntry | null): void {
+    this.updateEntry = updateEntry;
+  }
+
   private updateEditorFormat(type: ConfigurationType): void {
     this.editorFormat = getConfigurationFormat(type);
   }
@@ -76,18 +80,27 @@ export class ConfigurationEditorComponent {
       return;
     }
 
+    // If editing, require update entry
+    if (this.configuration && !this.updateEntry) {
+      this.notificationService.error(
+        'Please add an update entry to document this change'
+      );
+      return;
+    }
+
     try {
       this.saving = true;
 
       let savedConfig: Configuration;
       if (this.configuration) {
-        // Update existing
+        // Update existing with update entry
         savedConfig = await this.configService.update(
           this.configuration.id,
           {
             ...this.metadata,
             value: this.value,
-          }
+          },
+          this.updateEntry!
         );
         this.notificationService.success('Configuration updated successfully');
       } else {
@@ -108,6 +121,8 @@ export class ConfigurationEditorComponent {
       );
     } finally {
       this.saving = false;
+    }
+  }
     }
   }
 

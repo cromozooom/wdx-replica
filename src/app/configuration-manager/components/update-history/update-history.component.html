@@ -1,0 +1,41 @@
+<div class="update-history">
+  <h6 class="mb-3">Update History ({{ updates.length }})</h6>
+
+  @if (sortedUpdates.length === 0) {
+    <div class="alert alert-info">
+      <i class="fas fa-info-circle me-2"></i>
+      No update history yet. Changes will be tracked here.
+    </div>
+  } @else {
+    <div class="update-list">
+      @for (update of sortedUpdates; track $index) {
+        <div class="update-entry">
+          <div class="update-header">
+            <div class="update-meta">
+              <span class="update-author">
+                <i class="fas fa-user me-1"></i>
+                {{ update.madeBy }}
+              </span>
+              <span class="update-date">
+                <i class="fas fa-clock me-1"></i>
+                {{ formatDate(update.date) }}
+              </span>
+              @if (update.jiraTicket) {
+                <span class="update-jira badge bg-primary">
+                  <i class="fas fa-ticket-alt me-1"></i>
+                  {{ update.jiraTicket }}
+                </span>
+              }
+            </div>
+          </div>
+
+          @if (update.comment) {
+            <div class="update-comment">
+              <markdown [data]="update.comment"></markdown>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>

@@ -173,38 +173,38 @@ saves and displays chronologically.
 
 ### Components for User Story 2
 
-- [ ] T040 [P] [US2] Create update history component in
+- [X] T040 [P] [US2] Create update history component in
       src/app/configuration-manager/components/update-history/update-history.component.ts
       (dumb - displays update list)
-- [ ] T041 [P] [US2] Create update history template in
+- [X] T041 [P] [US2] Create update history template in
       src/app/configuration-manager/components/update-history/update-history.component.html
-- [ ] T042 [P] [US2] Style update history component in
+- [X] T042 [P] [US2] Style update history component in
       src/app/configuration-manager/components/update-history/update-history.component.scss
 
 ### Update Entry Management
 
-- [ ] T043 [US2] Add update entry form to metadata form component in
+- [X] T043 [US2] Add update entry form to metadata form component in
       configuration-metadata-form.component.ts
-- [ ] T044 [US2] Implement update entry validation (Jira OR comment required) in
+- [X] T044 [US2] Implement update entry validation (Jira OR comment required) in
       configuration-validator.service.ts
-- [ ] T045 [US2] Add update entry to metadata form template in
+- [X] T045 [US2] Add update entry to metadata form template in
       configuration-metadata-form.component.html
-- [ ] T046 [US2] Integrate team member dropdown in update entry form using
+- [X] T046 [US2] Integrate team member dropdown in update entry form using
       team-member.service.ts
 
 ### Markdown Support
 
-- [ ] T047 [P] [US2] Add ngx-markdown rendering for comments in
+- [X] T047 [P] [US2] Add ngx-markdown rendering for comments in
       update-history.component.html
-- [ ] T048 [P] [US2] Configure markdown sanitization in
+- [X] T048 [P] [US2] Configure markdown sanitization in
       update-history.component.ts
 
 ### Update Logic
 
-- [ ] T049 [US2] Implement update array management in configuration.service.ts
-- [ ] T050 [US2] Add update sorting (most recent first) in
+- [X] T049 [US2] Implement update array management in configuration.service.ts
+- [X] T050 [US2] Add update sorting (most recent first) in
       update-history.component.ts
-- [ ] T051 [US2] Update save logic to append new UpdateEntry on edit in
+- [X] T051 [US2] Update save logic to append new UpdateEntry on edit in
       configuration.service.ts
 
 **Checkpoint**: User Story 2 complete - configuration change tracking is fully
