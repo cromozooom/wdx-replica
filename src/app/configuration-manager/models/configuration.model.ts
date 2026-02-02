@@ -2,7 +2,8 @@ import { ConfigurationType } from "./configuration-type.enum";
 import { UpdateEntry } from "./update-entry.model";
 
 export interface Configuration {
-  id: number; // Unique numeric ID
+  id: number; // Logical configuration ID (same across baskets for tracking)
+  basketId: number; // Which basket this configuration belongs to
   name: string;
   type: ConfigurationType;
   version: string; // Format: V#.#.#

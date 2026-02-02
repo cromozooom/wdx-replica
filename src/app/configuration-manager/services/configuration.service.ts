@@ -20,11 +20,15 @@ export class ConfigurationService {
     return this.storage.getAll();
   }
 
-  async getById(id: number): Promise<Configuration | undefined> {
-    return this.storage.getById(id);
+  async getById(
+    basketId: number,
+    id: number,
+  ): Promise<Configuration | undefined> {
+    return this.storage.getById(basketId, id);
   }
 
   async create(
+    basketId: number,
     name: string,
     type: ConfigurationType,
     version: string,
@@ -51,6 +55,7 @@ export class ConfigurationService {
 
     const configuration: Configuration = {
       id,
+      basketId,
       name,
       type,
       version,
@@ -67,13 +72,16 @@ export class ConfigurationService {
   }
 
   async update(
+    basketId: number,
     id: number,
     updates: Partial<Configuration>,
     updateEntry?: UpdateEntry,
   ): Promise<Configuration> {
-    const existing = await this.storage.getById(id);
+    const existing = await this.storage.getById(basketId, id);
     if (!existing) {
-      throw new Error(`Configuration with ID ${id} not found`);
+      throw new Error(
+        `Configuration with ID ${id} in basket ${basketId} not found`,
+      );
     }
 
     // Validate version if changed
@@ -122,13 +130,16 @@ export class ConfigurationService {
   }
 
   async updateWithMultipleEntries(
+    basketId: number,
     id: number,
     updates: Partial<Configuration>,
     updateEntries: UpdateEntry[],
   ): Promise<Configuration> {
-    const existing = await this.storage.getById(id);
+    const existing = await this.storage.getById(basketId, id);
     if (!existing) {
-      throw new Error(`Configuration with ID ${id} not found`);
+      throw new Error(
+        `Configuration with ID ${id} in basket ${basketId} not found`,
+      );
     }
 
     // Validate version if changed
@@ -174,8 +185,8 @@ export class ConfigurationService {
     return updated;
   }
 
-  async delete(id: number): Promise<void> {
-    return this.storage.delete(id);
+  async delete(basketId: number, id: number): Promise<void> {
+    return this.storage.delete(basketId, id);
   }
 
   async clearAll(): Promise<void> {
@@ -184,7 +195,9 @@ export class ConfigurationService {
 
   async saveWithUpdates(configuration: Configuration): Promise<Configuration> {
     // Validate version format
-    const versionValidation = this.validator.validateVersion(configuration.version);
+    const versionValidation = this.validator.validateVersion(
+      configuration.version,
+    );
     if (!versionValidation.valid) {
       throw new Error(versionValidation.errors.join(", "));
     }

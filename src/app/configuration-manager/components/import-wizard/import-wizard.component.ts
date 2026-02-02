@@ -1,14 +1,18 @@
 import { Component, inject, OnInit } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
-import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
+import { NgbActiveModal, NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { ImportWizardStore } from "../../store/import-wizard.store";
-import { ConfigurationImportService } from "../../services/configuration-import.service";
+import {
+  ConfigurationImportService,
+  ConflictDetection,
+} from "../../services/configuration-import.service";
 import { ConfigurationStore } from "../../store/configuration.store";
 import { ConfigurationService } from "../../services/configuration.service";
 import { BasketService } from "../../services/basket.service";
 import { NotificationService } from "../../services/notification.service";
 import { Configuration } from "../../models/configuration.model";
+import { ConflictComparisonComponent } from "../conflict-comparison/conflict-comparison.component";
 
 @Component({
   selector: "app-import-wizard",
@@ -19,6 +23,7 @@ import { Configuration } from "../../models/configuration.model";
 })
 export class ImportWizardComponent implements OnInit {
   modal = inject(NgbActiveModal);
+  modalService = inject(NgbModal);
   wizardStore = inject(ImportWizardStore);
   configStore = inject(ConfigurationStore);
   importService = inject(ConfigurationImportService);
@@ -28,9 +33,42 @@ export class ImportWizardComponent implements OnInit {
 
   isDragOver = false;
 
+  /**
+   * Get basket name by ID
+   */
+  getBasketName(basketId: number | null): string {
+    if (!basketId) return "";
+    return (
+      this.configStore.baskets().find((b) => b.id === basketId)?.name || ""
+    );
+  }
+
   ngOnInit() {
     // Reset wizard state on init
     this.wizardStore.reset();
+
+    // Auto-select the currently active basket
+    const currentBasketId = this.configStore.currentBasketId();
+    if (currentBasketId) {
+      this.wizardStore.setTargetBasket(currentBasketId);
+    }
+
+    // Trigger file browser on init
+    setTimeout(() => {
+      const fileInput = document.getElementById(
+        "file-input",
+      ) as HTMLInputElement;
+      if (fileInput) {
+        fileInput.click();
+      }
+    }, 100);
+  }
+
+  /**
+   * Close modal
+   */
+  onClose() {
+    this.modal.close();
   }
 
   /**
@@ -145,6 +183,28 @@ export class ImportWizardComponent implements OnInit {
   }
 
   /**
+   * View conflict details in modal
+   */
+  onViewConflict(conflict: ConflictDetection) {
+    const modalRef = this.modalService.open(ConflictComparisonComponent, {
+      size: "xl",
+      backdrop: "static",
+      scrollable: true,
+    });
+
+    // Pass the conflict to the component
+    modalRef.componentInstance.conflict = conflict;
+
+    // Handle resolution from the modal
+    modalRef.componentInstance.resolveConflict.subscribe(
+      (strategy: "overwrite" | "keep" | "import-as-new") => {
+        this.onSetResolution(conflict.configId, strategy);
+        modalRef.close();
+      },
+    );
+  }
+
+  /**
    * Apply same resolution to all conflicts
    */
   onResolveAll(strategy: "overwrite" | "keep" | "import-as-new") {
@@ -176,13 +236,20 @@ export class ImportWizardComponent implements OnInit {
           if (!conflict) continue;
 
           if (!conflict.hasConflict) {
-            // No conflict, just import
-            await this.configService.create(
-              imported.configuration.name,
-              imported.configuration.type,
-              imported.configuration.version,
-              imported.configuration.value,
-            );
+            // No conflict, import with full update history
+            const configToImport: Configuration = {
+              ...imported.configuration,
+              basketId: targetBasketId!,
+              createdDate: new Date(imported.configuration.createdDate),
+              lastModifiedDate: new Date(
+                imported.configuration.lastModifiedDate,
+              ),
+              updates: imported.configuration.updates.map((u) => ({
+                ...u,
+                date: new Date(u.date),
+              })),
+            };
+            await this.configService.saveWithUpdates(configToImport);
 
             // Update basket membership if targetBasketId is set
             if (targetBasketId) {
@@ -206,13 +273,20 @@ export class ImportWizardComponent implements OnInit {
 
             switch (resolution.strategy) {
               case "overwrite":
-                // Overwrite existing with imported
-                await this.configService.create(
-                  imported.configuration.name,
-                  imported.configuration.type,
-                  imported.configuration.version,
-                  imported.configuration.value,
-                );
+                // Overwrite existing with imported (including update history)
+                const configToOverwrite: Configuration = {
+                  ...imported.configuration,
+                  basketId: targetBasketId!,
+                  createdDate: new Date(imported.configuration.createdDate),
+                  lastModifiedDate: new Date(
+                    imported.configuration.lastModifiedDate,
+                  ),
+                  updates: imported.configuration.updates.map((u) => ({
+                    ...u,
+                    date: new Date(u.date),
+                  })),
+                };
+                await this.configService.saveWithUpdates(configToOverwrite);
 
                 // Update basket membership if targetBasketId is set
                 if (targetBasketId) {
@@ -233,6 +307,7 @@ export class ImportWizardComponent implements OnInit {
               case "import-as-new":
                 // Generate new ID and import
                 const newConfig = await this.configService.create(
+                  targetBasketId!,
                   `${imported.configuration.name} (imported)`,
                   imported.configuration.type,
                   imported.configuration.version,
@@ -261,12 +336,13 @@ export class ImportWizardComponent implements OnInit {
       }
 
       this.wizardStore.updateCompletionStats(completed, failed);
-      this.wizardStore.goToStep("completion");
 
       if (failed === 0) {
         this.notificationService.success(
           `Successfully imported ${completed} configuration(s)`,
         );
+        // Close modal on successful import
+        this.modal.close("completed");
       } else {
         this.notificationService.warning(
           `Imported ${completed} configuration(s), ${failed} failed`,
@@ -280,32 +356,5 @@ export class ImportWizardComponent implements OnInit {
     } finally {
       this.wizardStore.setProcessing(false);
     }
-  }
-
-  /**
-   * Navigate wizard steps
-   */
-  onNext() {
-    if (this.wizardStore.canProceed()) {
-      this.wizardStore.nextStep();
-    }
-  }
-
-  onPrevious() {
-    this.wizardStore.previousStep();
-  }
-
-  /**
-   * Close wizard
-   */
-  onClose() {
-    this.modal.close();
-  }
-
-  /**
-   * Finish and close
-   */
-  onFinish() {
-    this.modal.close("completed");
   }
 }

@@ -1,20 +1,20 @@
-import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-import { ConfigurationMetadataFormComponent } from '../configuration-metadata-form/configuration-metadata-form.component';
-import { JsonEditorComponent } from '../json-editor/json-editor.component';
-import { AceEditorComponent } from '../ace-editor/ace-editor.component';
-import { Configuration } from '../../models/configuration.model';
-import { UpdateEntry } from '../../models/update-entry.model';
+import { Component, Input, Output, EventEmitter, inject } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
+import { ConfigurationMetadataFormComponent } from "../configuration-metadata-form/configuration-metadata-form.component";
+import { JsonEditorComponent } from "../json-editor/json-editor.component";
+import { AceEditorComponent } from "../ace-editor/ace-editor.component";
+import { Configuration } from "../../models/configuration.model";
+import { UpdateEntry } from "../../models/update-entry.model";
 import {
   ConfigurationType,
   getConfigurationFormat,
-} from '../../models/configuration-type.enum';
-import { ConfigurationService } from '../../services/configuration.service';
-import { NotificationService } from '../../services/notification.service';
+} from "../../models/configuration-type.enum";
+import { ConfigurationService } from "../../services/configuration.service";
+import { NotificationService } from "../../services/notification.service";
 
 @Component({
-  selector: 'app-configuration-editor',
+  selector: "app-configuration-editor",
   standalone: true,
   imports: [
     CommonModule,
@@ -23,11 +23,12 @@ import { NotificationService } from '../../services/notification.service';
     JsonEditorComponent,
     AceEditorComponent,
   ],
-  templateUrl: './configuration-editor.component.html',
-  styleUrls: ['./configuration-editor.component.scss'],
+  templateUrl: "./configuration-editor.component.html",
+  styleUrls: ["./configuration-editor.component.scss"],
 })
 export class ConfigurationEditorComponent {
   @Input() configuration?: Configuration;
+  @Input() basketId!: number; // Required for creating new configurations
   @Output() saved = new EventEmitter<Configuration>();
   @Output() cancelled = new EventEmitter<void>();
 
@@ -35,9 +36,9 @@ export class ConfigurationEditorComponent {
   private notificationService = inject(NotificationService);
 
   metadata: Partial<Configuration> = {};
-  value: string = '';
+  value: string = "";
   updateEntries: UpdateEntry[] = [];
-  editorFormat: 'json' | 'xml' | 'text' = 'json';
+  editorFormat: "json" | "xml" | "text" = "json";
   saving = false;
 
   ngOnInit(): void {
@@ -50,8 +51,8 @@ export class ConfigurationEditorComponent {
       this.value = this.configuration.value;
       this.updateEditorFormat(this.configuration.type);
     } else {
-      this.value = '{}';
-      this.editorFormat = 'json';
+      this.value = "{}";
+      this.editorFormat = "json";
     }
   }
 
@@ -83,7 +84,7 @@ export class ConfigurationEditorComponent {
   async onSave(): Promise<void> {
     if (!this.metadata.name || !this.metadata.type || !this.metadata.version) {
       this.notificationService.error(
-        'Please fill in all required metadata fields'
+        "Please fill in all required metadata fields",
       );
       return;
     }
@@ -91,7 +92,7 @@ export class ConfigurationEditorComponent {
     // If editing, require at least one valid update entry
     if (this.configuration && this.updateEntries.length === 0) {
       this.notificationService.error(
-        'Please add at least one update entry to document this change'
+        "Please add at least one update entry to document this change",
       );
       return;
     }
@@ -103,29 +104,31 @@ export class ConfigurationEditorComponent {
       if (this.configuration) {
         // Update existing with multiple update entries
         savedConfig = await this.configService.updateWithMultipleEntries(
+          this.configuration.basketId,
           this.configuration.id,
           {
             ...this.metadata,
             value: this.value,
           },
-          this.updateEntries
+          this.updateEntries,
         );
-        this.notificationService.success('Configuration updated successfully');
+        this.notificationService.success("Configuration updated successfully");
       } else {
         // Create new
         savedConfig = await this.configService.create(
+          this.basketId,
           this.metadata.name,
           this.metadata.type,
           this.metadata.version,
-          this.value
+          this.value,
         );
-        this.notificationService.success('Configuration created successfully');
+        this.notificationService.success("Configuration created successfully");
       }
 
       this.saved.emit(savedConfig);
     } catch (error) {
       this.notificationService.error(
-        `Failed to save configuration: ${(error as Error).message}`
+        `Failed to save configuration: ${(error as Error).message}`,
       );
     } finally {
       this.saving = false;

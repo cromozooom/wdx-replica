@@ -50,25 +50,24 @@ export const ConfigurationStore = signalStore(
         return baskets().find((b) => b.id === basketId) || null;
       }),
       basketConfigurations: computed(() => {
-        const basket = baskets().find((b) => b.id === currentBasketId());
-        if (!basket) return [];
-        return configurations().filter((c) =>
-          basket.configurationIds.includes(c.id),
-        );
+        const basketId = currentBasketId();
+        if (!basketId) return [];
+        return configurations().filter((c) => c.basketId === basketId);
       }),
       selectedConfigurations: computed(() => {
         const ids = selectedIds();
-        return configurations().filter((c) => ids.includes(c.id));
+        const basketId = currentBasketId();
+        return configurations().filter(
+          (c) => ids.includes(c.id) && c.basketId === basketId,
+        );
       }),
       filteredConfigurations: computed(() => {
         let filtered = configurations();
 
         // Filter by current basket if one is selected
-        const basket = baskets().find((b) => b.id === currentBasketId());
-        if (basket) {
-          filtered = filtered.filter((c) =>
-            basket.configurationIds.includes(c.id),
-          );
+        const basketId = currentBasketId();
+        if (basketId) {
+          filtered = filtered.filter((c) => c.basketId === basketId);
         }
 
         // Apply type filter

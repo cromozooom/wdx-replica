@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Basket } from "../models/basket.model";
 
 const DB_NAME = "ConfigurationManagerDB";
-const DB_VERSION = 2; // Incremented version
+const DB_VERSION = 3; // Match ConfigurationStorageService version
 const BASKETS_STORE_NAME = "baskets";
 const CONFIGURATIONS_STORE_NAME = "configurations";
 

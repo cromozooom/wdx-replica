@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { Component, EventEmitter, Output, inject, effect } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { AgGridAngular } from "ag-grid-angular";
 import {
@@ -8,15 +8,20 @@ import {
   RowDoubleClickedEvent,
   ModuleRegistry,
 } from "ag-grid-community";
-import { CellStyleModule } from "ag-grid-community";
+import { CellStyleModule, ColumnApiModule } from "ag-grid-community";
 import { RowGroupingPanelModule } from "ag-grid-enterprise";
 import { Configuration } from "../../models/configuration.model";
 import { ConfigurationType } from "../../models/configuration-type.enum";
 import { UpdateEntry } from "../../models/update-entry.model";
 import { compareSemanticVersions } from "../../utils/semantic-version-comparator";
+import { ConfigurationStore } from "../../store/configuration.store";
 
 // Register AG Grid Enterprise modules
-ModuleRegistry.registerModules([CellStyleModule, RowGroupingPanelModule]);
+ModuleRegistry.registerModules([
+  CellStyleModule,
+  RowGroupingPanelModule,
+  ColumnApiModule,
+]);
 
 interface ConfigurationUpdateRow {
   // Configuration fields
@@ -47,18 +52,7 @@ interface ConfigurationUpdateRow {
   styleUrls: ["./configuration-grid.component.scss"],
 })
 export class ConfigurationGridComponent {
-  @Input() set configurations(configs: Configuration[]) {
-    this._configurations = configs;
-    this.rowData = this.flattenConfigurations(configs);
-  }
-  get configurations(): Configuration[] {
-    return this._configurations;
-  }
-  private _configurations: Configuration[] = [];
-
-  @Input() loading = false;
-  @Input() selectedType: ConfigurationType | null = null;
-  @Input() searchTerm = "";
+  store = inject(ConfigurationStore);
 
   @Output() rowDoubleClicked = new EventEmitter<Configuration>();
   @Output() selectionChanged = new EventEmitter<Configuration[]>();
@@ -66,6 +60,44 @@ export class ConfigurationGridComponent {
   @Output() searchTermChanged = new EventEmitter<string>();
 
   rowData: ConfigurationUpdateRow[] = [];
+  groupByName = false;
+  private gridApi: any;
+
+  constructor() {
+    // Update grid data whenever filtered configurations change
+    effect(() => {
+      console.log("🔄 [ConfigurationGrid] Effect triggered");
+      const configs = this.store.filteredConfigurations();
+      console.log(
+        "📊 [ConfigurationGrid] Filtered configurations:",
+        configs.length,
+        "configs",
+      );
+      console.log(
+        "🔍 [ConfigurationGrid] Config IDs being shown:",
+        configs.map((c) => c.id),
+      );
+      console.log(
+        "🎯 [ConfigurationGrid] Current basket ID:",
+        this.store.currentBasketId(),
+      );
+      console.log("📦 [ConfigurationGrid] All baskets:", this.store.baskets());
+
+      this.rowData = this.flattenConfigurations(configs);
+      console.log(
+        "📝 [ConfigurationGrid] Flattened rows:",
+        this.rowData.length,
+        "rows",
+      );
+
+      if (this.gridApi) {
+        console.log("✅ [ConfigurationGrid] Updating grid data");
+        this.gridApi.setGridOption("rowData", this.rowData);
+      } else {
+        console.log("⚠️ [ConfigurationGrid] Grid API not ready yet");
+      }
+    });
+  }
 
   private flattenConfigurations(
     configs: Configuration[],
@@ -246,6 +278,7 @@ export class ConfigurationGridComponent {
       if (event.data && event.data.isConfigRow) {
         const config: Configuration = {
           id: event.data.configId,
+          basketId: this.store.currentBasketId()!,
           name: event.data.configName,
           type: event.data.configType,
           version: event.data.configVersion,
@@ -279,8 +312,6 @@ export class ConfigurationGridComponent {
     },
   };
 
-  private gridApi: any;
-
   onGridReady(event: GridReadyEvent<ConfigurationUpdateRow>): void {
     this.gridApi = event.api;
   }
@@ -294,6 +325,36 @@ export class ConfigurationGridComponent {
   onSearchChange(event: Event): void {
     const term = (event.target as HTMLInputElement).value;
     this.searchTermChanged.emit(term);
+  }
+
+  toggleGroupByName(): void {
+    this.groupByName = !this.groupByName;
+    if (this.gridApi) {
+      if (this.groupByName) {
+        // Enable row grouping for configName column
+        this.gridApi.applyColumnState({
+          state: [
+            {
+              colId: "configName",
+              rowGroup: true,
+              hide: true,
+            },
+          ],
+          defaultState: { rowGroup: false },
+        });
+      } else {
+        // Disable row grouping for configName column
+        this.gridApi.applyColumnState({
+          state: [
+            {
+              colId: "configName",
+              rowGroup: false,
+              hide: false,
+            },
+          ],
+        });
+      }
+    }
   }
 
   get configurationTypes(): ConfigurationType[] {

@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Configuration } from "../models/configuration.model";
 
 const DB_NAME = "ConfigurationManagerDB";
-const DB_VERSION = 2;
+const DB_VERSION = 3; // Incremented for basketId support
 const STORE_NAME = "configurations";
 const BASKETS_STORE_NAME = "baskets";
 
@@ -29,15 +29,19 @@ export class ConfigurationStorageService {
       request.onupgradeneeded = (event) => {
         const db = (event.target as IDBOpenDBRequest).result;
 
-        // Create configurations store
-        if (!db.objectStoreNames.contains(STORE_NAME)) {
-          const objectStore = db.createObjectStore(STORE_NAME, {
-            keyPath: "id",
-          });
-          objectStore.createIndex("name", "name", { unique: false });
-          objectStore.createIndex("type", "type", { unique: false });
-          objectStore.createIndex("version", "version", { unique: false });
+        // Delete old configurations store if it exists (schema changed to composite key)
+        if (db.objectStoreNames.contains(STORE_NAME)) {
+          db.deleteObjectStore(STORE_NAME);
         }
+
+        // Create configurations store with new schema
+        const objectStore = db.createObjectStore(STORE_NAME, {
+          keyPath: ["basketId", "id"], // Composite key
+        });
+        objectStore.createIndex("basketId", "basketId", { unique: false });
+        objectStore.createIndex("name", "name", { unique: false });
+        objectStore.createIndex("type", "type", { unique: false });
+        objectStore.createIndex("version", "version", { unique: false });
 
         // Create baskets store (shared with BasketStorageService)
         if (!db.objectStoreNames.contains(BASKETS_STORE_NAME)) {
@@ -70,12 +74,29 @@ export class ConfigurationStorageService {
     });
   }
 
-  async getById(id: number): Promise<Configuration | undefined> {
+  async getByBasketId(basketId: number): Promise<Configuration[]> {
     const db = await this.ensureDB();
     return new Promise((resolve, reject) => {
       const transaction = db.transaction([STORE_NAME], "readonly");
       const objectStore = transaction.objectStore(STORE_NAME);
-      const request = objectStore.get(id);
+      const index = objectStore.index("basketId");
+      const request = index.getAll(basketId);
+
+      request.onsuccess = () =>
+        resolve(this.deserializeConfigurations(request.result));
+      request.onerror = () => reject(request.error);
+    });
+  }
+
+  async getById(
+    basketId: number,
+    id: number,
+  ): Promise<Configuration | undefined> {
+    const db = await this.ensureDB();
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction([STORE_NAME], "readonly");
+      const objectStore = transaction.objectStore(STORE_NAME);
+      const request = objectStore.get([basketId, id]);
 
       request.onsuccess = () =>
         resolve(
@@ -100,12 +121,12 @@ export class ConfigurationStorageService {
     });
   }
 
-  async delete(id: number): Promise<void> {
+  async delete(basketId: number, id: number): Promise<void> {
     const db = await this.ensureDB();
     return new Promise((resolve, reject) => {
       const transaction = db.transaction([STORE_NAME], "readwrite");
       const objectStore = transaction.objectStore(STORE_NAME);
-      const request = objectStore.delete(id);
+      const request = objectStore.delete([basketId, id]);
 
       request.onsuccess = () => resolve();
       request.onerror = () => reject(request.error);

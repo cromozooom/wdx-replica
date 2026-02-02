@@ -1,7 +1,14 @@
 <div class="import-wizard-modal">
   <!-- Header -->
   <div class="modal-header">
-    <h4 class="modal-title">Import Configurations</h4>
+    <h4 class="modal-title">
+      Import Configurations
+      @if (wizardStore.targetBasketId()) {
+        <span class="text-muted small ms-2">
+          → {{ getBasketName(wizardStore.targetBasketId()) }}
+        </span>
+      }
+    </h4>
     <button
       type="button"
       class="btn-close"
@@ -12,47 +19,6 @@
 
   <!-- Body -->
   <div class="modal-body">
-    <!-- Step Indicator -->
-    <div class="wizard-steps mb-4">
-      <div
-        class="wizard-step"
-        [class.active]="wizardStore.currentStep() === 'basket-selection'"
-        [class.completed]="wizardStore.currentStep() !== 'basket-selection'"
-      >
-        <div class="step-number">1</div>
-        <div class="step-label">Select Basket</div>
-      </div>
-      <div class="wizard-divider"></div>
-      <div
-        class="wizard-step"
-        [class.active]="wizardStore.currentStep() === 'file-upload'"
-        [class.completed]="
-          wizardStore.currentStep() === 'conflict-review' ||
-          wizardStore.currentStep() === 'completion'
-        "
-      >
-        <div class="step-number">2</div>
-        <div class="step-label">Upload File</div>
-      </div>
-      <div class="wizard-divider"></div>
-      <div
-        class="wizard-step"
-        [class.active]="wizardStore.currentStep() === 'conflict-review'"
-        [class.completed]="wizardStore.currentStep() === 'completion'"
-      >
-        <div class="step-number">3</div>
-        <div class="step-label">Review Conflicts</div>
-      </div>
-      <div class="wizard-divider"></div>
-      <div
-        class="wizard-step"
-        [class.active]="wizardStore.currentStep() === 'completion'"
-      >
-        <div class="step-number">4</div>
-        <div class="step-label">Complete</div>
-      </div>
-    </div>
-
     <!-- Error Display -->
     @if (wizardStore.error()) {
       <div class="alert alert-danger" role="alert">
@@ -61,48 +27,9 @@
       </div>
     }
 
-    <!-- Step 1: Basket Selection -->
-    @if (wizardStore.currentStep() === "basket-selection") {
+    <!-- File Upload (always visible when no conflicts) -->
+    @if (!wizardStore.uploadedFile() || wizardStore.isProcessing()) {
       <div class="wizard-content">
-        <h5>Select Target Basket</h5>
-        <p class="text-muted">
-          Choose the basket where configurations will be imported.
-        </p>
-
-        <div class="basket-selection">
-          @for (basket of configStore.baskets(); track basket.id) {
-            <div
-              class="basket-option"
-              [class.selected]="wizardStore.targetBasketId() === basket.id"
-              (click)="onBasketSelect(basket.id)"
-            >
-              <input
-                type="radio"
-                [id]="'basket-' + basket.id"
-                name="targetBasket"
-                [value]="basket.id"
-                [checked]="wizardStore.targetBasketId() === basket.id"
-              />
-              <label [for]="'basket-' + basket.id">
-                <strong>{{ basket.name }}</strong>
-                <div class="text-muted small">
-                  {{ basket.configurationIds.length }} configuration(s)
-                </div>
-              </label>
-            </div>
-          }
-        </div>
-      </div>
-    }
-
-    <!-- Step 2: File Upload -->
-    @if (wizardStore.currentStep() === "file-upload") {
-      <div class="wizard-content">
-        <h5>Upload ZIP File</h5>
-        <p class="text-muted">
-          Upload a ZIP archive containing configuration exports.
-        </p>
-
         <div
           class="drop-zone"
           [class.drag-over]="isDragOver"
@@ -110,13 +37,20 @@
           (dragleave)="onDragLeave($event)"
           (drop)="onDrop($event)"
         >
-          <i class="bi bi-cloud-upload fs-1 text-primary mb-3"></i>
-          <p>Drag and drop ZIP file here</p>
-          <p class="text-muted">or</p>
-          <label for="file-input" class="btn btn-primary">
-            <i class="bi bi-folder2-open me-2"></i>
-            Browse Files
-          </label>
+          @if (wizardStore.isProcessing()) {
+            <div class="spinner-border text-primary mb-3" role="status">
+              <span class="visually-hidden">Processing...</span>
+            </div>
+            <p>Processing ZIP file...</p>
+          } @else {
+            <i class="bi bi-cloud-upload fs-1 text-primary mb-3"></i>
+            <p>Drag and drop ZIP file here</p>
+            <p class="text-muted">or</p>
+            <label for="file-input" class="btn btn-primary">
+              <i class="bi bi-folder2-open me-2"></i>
+              Browse Files
+            </label>
+          }
           <input
             type="file"
             id="file-input"
@@ -125,117 +59,102 @@
             (change)="onFileSelect($event)"
           />
         </div>
+      </div>
+    }
 
-        @if (wizardStore.uploadedFile()) {
-          <div class="uploaded-file-info mt-3">
-            <div class="card">
-              <div class="card-body">
-                <h6>
-                  <i class="bi bi-file-earmark-zip me-2"></i>
-                  {{ wizardStore.uploadedFile()!.name }}
-                </h6>
-                <div class="file-details text-muted small">
-                  <div>
-                    Size:
-                    {{
-                      (wizardStore.uploadedFile()!.size / 1024 / 1024).toFixed(
-                        2
-                      )
-                    }}
-                    MB
-                  </div>
-                  <div>
-                    Configurations:
-                    {{ wizardStore.importedConfigurations().length }}
-                  </div>
-                  @if (wizardStore.manifest()) {
-                    <div>
-                      Source Basket: {{ wizardStore.manifest()!.basketName }}
-                    </div>
-                    <div>
-                      Export Date:
-                      {{ wizardStore.manifest()!.exportDate | date }}
-                    </div>
-                  }
+    <!-- Conflict Review / Import Summary -->
+    @if (wizardStore.uploadedFile() && !wizardStore.isProcessing()) {
+      <div class="wizard-content">
+        <!-- File Info -->
+        <div class="uploaded-file-info mb-3">
+          <div class="alert alert-info">
+            <i class="bi bi-file-earmark-zip me-2"></i>
+            <strong>{{ wizardStore.uploadedFile()!.name }}</strong>
+            <span class="text-muted ms-2">
+              ({{ (wizardStore.uploadedFile()!.size / 1024 / 1024).toFixed(2) }}
+              MB,
+              {{ wizardStore.importedConfigurations().length }} configurations)
+            </span>
+          </div>
+        </div>
+        @if (wizardStore.manifest()) {
+          <div>Source Basket: {{ wizardStore.manifest()!.basketName }}</div>
+          <div>
+            Export Date:
+            {{ wizardStore.manifest()!.exportDate | date }}
+          </div>
+        }
+        <!-- Summary Stats -->
+        <div class="import-summary mb-3">
+          <div class="row text-center">
+            <div class="col-4">
+              <div class="stat-card">
+                <div class="stat-label">Total</div>
+                <div class="stat-value">
+                  {{ wizardStore.importSummary().total }}
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card text-success">
+                <div class="stat-label">Ready</div>
+                <div class="stat-value">
+                  {{ wizardStore.importSummary().noConflicts }}
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card text-warning">
+                <div class="stat-label">Conflicts</div>
+                <div class="stat-value">
+                  {{ wizardStore.importSummary().conflicts }}
                 </div>
               </div>
             </div>
           </div>
-        }
-      </div>
-    }
-
-    <!-- Step 3: Conflict Review -->
-    @if (wizardStore.currentStep() === "conflict-review") {
-      <div class="wizard-content">
-        <h5>Review Conflicts</h5>
+        </div>
 
         @if (wizardStore.importSummary().conflicts === 0) {
           <div class="alert alert-success">
             <i class="bi bi-check-circle-fill me-2"></i>
-            No conflicts detected! All
-            {{ wizardStore.importSummary().noConflicts }} configuration(s) are
-            ready to import.
+            All {{ wizardStore.importSummary().noConflicts }} configuration(s)
+            are ready to import with no conflicts.
           </div>
         } @else {
-          <div class="conflict-summary mb-3">
-            <div class="row">
-              <div class="col-4">
-                <div class="stat-card">
-                  <div class="stat-label">Total</div>
-                  <div class="stat-value">
-                    {{ wizardStore.importSummary().total }}
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="stat-card text-success">
-                  <div class="stat-label">No Conflicts</div>
-                  <div class="stat-value">
-                    {{ wizardStore.importSummary().noConflicts }}
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="stat-card text-warning">
-                  <div class="stat-label">Conflicts</div>
-                  <div class="stat-value">
-                    {{ wizardStore.importSummary().conflicts }}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Conflict List -->
+          <h6 class="mb-3">Configurations to Update:</h6>
 
-          <div class="resolution-actions mb-3">
-            <label class="form-label">Apply to all conflicts:</label>
-            <div class="btn-group" role="group">
-              <button
-                type="button"
-                class="btn btn-outline-primary btn-sm"
-                (click)="onResolveAll('overwrite')"
-              >
-                <i class="bi bi-arrow-clockwise me-1"></i>
-                Overwrite All
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-sm"
-                (click)="onResolveAll('keep')"
-              >
-                <i class="bi bi-shield-check me-1"></i>
-                Keep All
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-success btn-sm"
-                (click)="onResolveAll('import-as-new')"
-              >
-                <i class="bi bi-plus-circle me-1"></i>
-                Import All as New
-              </button>
+          @if (wizardStore.importSummary().conflicts > 0) {
+            <div class="mb-3">
+              <label class="form-label small text-muted">Quick actions:</label>
+              <div class="btn-group btn-group-sm" role="group">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  (click)="onResolveAll('overwrite')"
+                >
+                  <i class="bi bi-arrow-clockwise me-1"></i>
+                  Overwrite All
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  (click)="onResolveAll('keep')"
+                >
+                  <i class="bi bi-shield-check me-1"></i>
+                  Keep All
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  (click)="onResolveAll('import-as-new')"
+                >
+                  <i class="bi bi-plus-circle me-1"></i>
+                  Import All as New
+                </button>
+              </div>
             </div>
-          </div>
+          }
 
           <div class="conflict-list">
             @for (
@@ -246,20 +165,22 @@
                 <div class="conflict-item card mb-2">
                   <div class="card-body">
                     <div
-                      class="d-flex justify-content-between align-items-start"
+                      class="d-flex justify-content-between align-items-start mb-2"
                     >
                       <div>
-                        <h6>{{ conflict.importedConfig.name }}</h6>
+                        <h6 class="mb-1">{{ conflict.importedConfig.name }}</h6>
                         <div class="text-muted small">
-                          ID: {{ conflict.configId }}
+                          ID: {{ conflict.configId }} • Type:
+                          {{ conflict.importedConfig.type }}
                         </div>
                       </div>
-                      <span class="badge bg-warning">Conflict</span>
+                      <span class="badge bg-warning">Will Update</span>
                     </div>
 
-                    <div class="conflict-details mt-2 small">
+                    <div class="conflict-details mb-2 small">
                       @if (conflict.differences.metadata.version) {
                         <div class="text-muted">
+                          <i class="bi bi-tag me-1"></i>
                           Version:
                           {{ conflict.differences.metadata.version.existing }} →
                           {{ conflict.differences.metadata.version.imported }}
@@ -273,35 +194,14 @@
                       }
                     </div>
 
-                    <div class="resolution-buttons mt-3">
-                      <div class="btn-group btn-group-sm" role="group">
-                        <button
-                          type="button"
-                          class="btn btn-outline-primary"
-                          (click)="
-                            onSetResolution(conflict.configId, 'overwrite')
-                          "
-                        >
-                          Overwrite
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-outline-secondary"
-                          (click)="onSetResolution(conflict.configId, 'keep')"
-                        >
-                          Keep Existing
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-outline-success"
-                          (click)="
-                            onSetResolution(conflict.configId, 'import-as-new')
-                          "
-                        >
-                          Import as New
-                        </button>
-                      </div>
-                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-info w-100"
+                      (click)="onViewConflict(conflict)"
+                    >
+                      <i class="bi bi-eye me-1"></i>
+                      View Differences
+                    </button>
                   </div>
                 </div>
               }
@@ -310,96 +210,33 @@
         }
       </div>
     }
-
-    <!-- Step 4: Completion -->
-    @if (wizardStore.currentStep() === "completion") {
-      <div class="wizard-content text-center">
-        <i class="bi bi-check-circle-fill text-success fs-1 mb-3"></i>
-        <h5>Import Complete</h5>
-
-        <div class="completion-stats mt-4">
-          <div class="row">
-            <div class="col-6">
-              <div class="stat-card text-success">
-                <div class="stat-label">Successful</div>
-                <div class="stat-value">
-                  {{ wizardStore.importSummary().completed }}
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="stat-card text-danger">
-                <div class="stat-label">Failed</div>
-                <div class="stat-value">
-                  {{ wizardStore.importSummary().failed }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        @if (wizardStore.importSummary().failed > 0) {
-          <div class="alert alert-warning mt-3">
-            <i class="bi bi-exclamation-triangle me-2"></i>
-            Some configurations could not be imported. Check the console for
-            details.
-          </div>
-        }
-      </div>
-    }
   </div>
 
   <!-- Footer -->
   <div class="modal-footer">
-    @if (wizardStore.currentStep() !== "completion") {
+    <button
+      type="button"
+      class="btn btn-secondary"
+      (click)="onClose()"
+      [disabled]="wizardStore.isProcessing()"
+    >
+      Cancel
+    </button>
+
+    @if (wizardStore.uploadedFile() && !wizardStore.isProcessing()) {
       <button
         type="button"
-        class="btn btn-secondary"
-        [disabled]="
-          wizardStore.currentStep() === 'basket-selection' ||
-          wizardStore.isProcessing()
-        "
-        (click)="onPrevious()"
+        class="btn btn-primary"
+        (click)="onExecuteImport()"
+        [disabled]="wizardStore.isProcessing()"
       >
-        <i class="bi bi-arrow-left me-2"></i>
-        Previous
-      </button>
-
-      @if (wizardStore.currentStep() === "conflict-review") {
-        <button
-          type="button"
-          class="btn btn-primary"
-          [disabled]="!wizardStore.canProceed() || wizardStore.isProcessing()"
-          (click)="onExecuteImport()"
-        >
-          @if (wizardStore.isProcessing()) {
-            <span class="spinner-border spinner-border-sm me-2"></span>
-            Importing...
-          } @else {
-            <i class="bi bi-download me-2"></i>
-            Import
-          }
-        </button>
-      } @else {
-        <button
-          type="button"
-          class="btn btn-primary"
-          [disabled]="!wizardStore.canProceed() || wizardStore.isProcessing()"
-          (click)="onNext()"
-        >
-          @if (wizardStore.isProcessing()) {
-            <span class="spinner-border spinner-border-sm me-2"></span>
-            Processing...
-          } @else {
-            Next
-            <i class="bi bi-arrow-right ms-2"></i>
-          }
-        </button>
-      }
-    } @else {
-      <button type="button" class="btn btn-primary" (click)="onFinish()">
-        <i class="bi bi-check-lg me-2"></i>
-        Finish
+        @if (wizardStore.isProcessing()) {
+          <span class="spinner-border spinner-border-sm me-2"></span>
+          Importing...
+        } @else {
+          <i class="bi bi-check-circle me-2"></i>
+          Confirm Import
+        }
       </button>
     }
   </div>

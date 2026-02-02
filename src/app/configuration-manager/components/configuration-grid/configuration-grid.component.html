@@ -11,16 +11,27 @@
             type="text"
             class="form-control"
             placeholder="Search by name..."
-            [value]="searchTerm"
+            [value]="store.searchTerm()"
             (input)="onSearchChange($event)"
           />
+          <button
+            type="button"
+            class="btn"
+            [class.btn-primary]="groupByName"
+            [class.btn-outline-secondary]="!groupByName"
+            (click)="toggleGroupByName()"
+            title="{{ groupByName ? 'Ungroup' : 'Group by Name' }}"
+          >
+            <i class="fas fa-layer-group me-1"></i>
+            {{ groupByName ? "Ungroup" : "Group" }}
+          </button>
         </div>
       </div>
       <div class="col-md-3">
         <select
           class="form-select"
           (change)="onTypeFilterChange($event)"
-          [value]="selectedType || ''"
+          [value]="store.filterType() || ''"
         >
           <option value="">All Types</option>
           @for (type of configurationTypes; track type) {
@@ -30,14 +41,14 @@
       </div>
       <div class="col-md-5 text-end">
         <span class="text-muted">
-          {{ configurations.length }} configuration(s)
+          {{ store.filteredConfigurations().length }} configuration(s)
         </span>
       </div>
     </div>
   </div>
 
   <!-- Grid -->
-  @if (loading) {
+  @if (store.loading()) {
     <div class="text-center py-5">
       <div class="spinner-border text-primary" role="status">
         <span class="visually-hidden">Loading configurations...</span>

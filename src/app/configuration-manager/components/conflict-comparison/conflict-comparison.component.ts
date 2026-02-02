@@ -1,11 +1,12 @@
 import { Component, Input, Output, EventEmitter } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ConflictDetection } from "../../services/configuration-import.service";
+import { AceEditorComponent } from "../ace-editor/ace-editor.component";
 
 @Component({
   selector: "app-conflict-comparison",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AceEditorComponent],
   templateUrl: "./conflict-comparison.component.html",
   styleUrl: "./conflict-comparison.component.scss",
 })
@@ -14,6 +15,7 @@ export class ConflictComparisonComponent {
   @Output() resolveConflict = new EventEmitter<
     "overwrite" | "keep" | "import-as-new"
   >();
+  @Output() closeModal = new EventEmitter<void>();
 
   /**
    * Get list of metadata changes
@@ -71,19 +73,16 @@ export class ConflictComparisonComponent {
   }
 
   /**
-   * Truncate long content for preview
-   */
-  truncateContent(content: string, maxLength: number = 500): string {
-    if (content.length <= maxLength) {
-      return content;
-    }
-    return content.substring(0, maxLength) + "\n...(truncated)";
-  }
-
-  /**
    * Emit resolution decision
    */
   onResolve(strategy: "overwrite" | "keep" | "import-as-new") {
     this.resolveConflict.emit(strategy);
+  }
+
+  /**
+   * Close the modal
+   */
+  onClose() {
+    this.closeModal.emit();
   }
 }
