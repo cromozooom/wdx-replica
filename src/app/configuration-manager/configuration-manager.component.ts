@@ -54,15 +54,19 @@ export class ConfigurationManagerComponent implements OnInit {
       // If no configurations exist, offer to seed data
       if (this.store.configurations().length === 0) {
         setTimeout(() => {
-          if (confirm('No configurations found. Would you like to load sample data?')) {
+          if (
+            confirm(
+              "No configurations found. Would you like to load sample data?",
+            )
+          ) {
             this.onSeedSampleData();
           }
         }, 500);
       }
     } catch (error) {
-      console.error('Failed to initialize application:', error);
+      console.error("Failed to initialize application:", error);
       this.notificationService.error(
-        'Failed to initialize application. Please refresh the page.'
+        "Failed to initialize application. Please refresh the page.",
       );
       this.store.setLoading(false);
     }
@@ -98,13 +102,13 @@ export class ConfigurationManagerComponent implements OnInit {
     } catch (error) {
       console.error("Failed to load configurations:", error);
       this.notificationService.error(
+        `Failed to load configurations: ${(error as Error).message}`,
+      );
+      this.store.setError((error as Error).message);
       // Set empty array to allow app to continue
       this.store.setConfigurations([]);
     } finally {
-      // Always clear loading state to load configurations: ${(error as Error).message}`,
-      );
-      this.store.setError((error as Error).message);
-    } finally {
+      // Always clear loading state
       this.store.setLoading(false);
     }
   }
