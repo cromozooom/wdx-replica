@@ -73,7 +73,13 @@
                         "styles": [
                             "src/styles.scss",
                             "node_modules/ag-grid-community/styles/ag-theme-alpine.css"
-                        ]
+                        ],
+                        "loader": {
+                            ".ttf": "file",
+                            ".woff": "file",
+                            ".woff2": "file",
+                            ".eot": "file"
+                        }
                     },
                     "configurations": {
                         "production": {
