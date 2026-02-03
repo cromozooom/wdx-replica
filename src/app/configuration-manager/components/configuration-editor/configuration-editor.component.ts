@@ -4,6 +4,7 @@ import { NgbNavModule, NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
 import { ConfigurationMetadataFormComponent } from "../configuration-metadata-form/configuration-metadata-form.component";
 import { JsonEditorComponent } from "../json-editor/json-editor.component";
 import { AceEditorComponent } from "../ace-editor/ace-editor.component";
+import { UpdateHistoryComponent } from "../update-history/update-history.component";
 import { Configuration } from "../../models/configuration.model";
 import { UpdateEntry } from "../../models/update-entry.model";
 import {
@@ -22,6 +23,7 @@ import { NotificationService } from "../../services/notification.service";
     ConfigurationMetadataFormComponent,
     JsonEditorComponent,
     AceEditorComponent,
+    UpdateHistoryComponent,
   ],
   templateUrl: "./configuration-editor.component.html",
   styleUrls: ["./configuration-editor.component.scss"],
