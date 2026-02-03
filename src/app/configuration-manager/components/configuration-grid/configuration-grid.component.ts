@@ -8,7 +8,11 @@ import {
   RowDoubleClickedEvent,
   ModuleRegistry,
 } from "ag-grid-community";
-import { CellStyleModule, ColumnApiModule } from "ag-grid-community";
+import {
+  CellStyleModule,
+  ColumnApiModule,
+  RowStyleModule,
+} from "ag-grid-community";
 import { RowGroupingPanelModule } from "ag-grid-enterprise";
 import { Configuration } from "../../models/configuration.model";
 import { ConfigurationType } from "../../models/configuration-type.enum";
@@ -19,6 +23,7 @@ import { ConfigurationStore } from "../../store/configuration.store";
 // Register AG Grid Enterprise modules
 ModuleRegistry.registerModules([
   CellStyleModule,
+  RowStyleModule,
   RowGroupingPanelModule,
   ColumnApiModule,
 ]);
@@ -222,6 +227,12 @@ export class ConfigurationGridComponent {
     isRowSelectable: (params) => {
       // Only allow selection of configuration rows, not update rows
       return params.data?.isConfigRow === true;
+    },
+    getRowStyle: (params) => {
+      if (params.data?.isConfigRow === true) {
+        return { background: "var(--bs-info-bg-subtle)" };
+      }
+      return undefined;
     },
     animateRows: true,
     enableCellTextSelection: true,
