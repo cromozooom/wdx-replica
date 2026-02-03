@@ -1,0 +1,63 @@
+<div class="update-history py-2">
+  <h6 class="mb-3">Update History ({{ updates.length }})</h6>
+
+  @if (sortedUpdates.length === 0) {
+    <div class="alert alert-info">
+      <i class="fas fa-info-circle me-2"></i>
+      No update history yet. Changes will be tracked here.
+    </div>
+  } @else {
+    <div ngbAccordion>
+      @for (update of sortedUpdates; track $index; let i = $index) {
+        <div ngbAccordionItem>
+          <h2 ngbAccordionHeader>
+            <button ngbAccordionButton class="w-100">
+              <div
+                class="d-flex justify-content-between align-items-center w-100"
+              >
+                <div class="update-meta d-flex gap-3">
+                  <span class="update-author">
+                    <i class="fas fa-user me-1"></i>
+                    {{ update.madeBy }}
+                  </span>
+                  <span class="update-date">
+                    <i class="fas fa-clock me-1"></i>
+                    {{ formatDate(update.date) }}
+                  </span>
+                  @if (update.jiraTicket) {
+                    <span class="update-jira badge bg-primary">
+                      <i class="fas fa-ticket-alt me-1"></i>
+                      {{ update.jiraTicket }}
+                    </span>
+                  }
+                </div>
+              </div>
+            </button>
+          </h2>
+          <div ngbAccordionCollapse>
+            <div ngbAccordionBody>
+              <ng-template>
+                @if (update.comment) {
+                  <div class="update-comment mb-3">
+                    <markdown [data]="update.comment"></markdown>
+                  </div>
+                }
+
+                @if (update.previousValue) {
+                  <div class="diff-section">
+                    <h6 class="mb-2">Changes Made:</h6>
+                    <app-monaco-diff-viewer
+                      [leftValue]="update.previousValue"
+                      [rightValue]="getNextValue(i)"
+                      [language]="getMonacoLanguage(configurationType)"
+                    ></app-monaco-diff-viewer>
+                  </div>
+                }
+              </ng-template>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  }
+</div>

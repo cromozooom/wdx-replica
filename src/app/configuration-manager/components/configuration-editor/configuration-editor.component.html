@@ -1,0 +1,141 @@
+<div class="modal-header">
+  <h3 class="modal-title h5">
+    {{ configuration ? "Edit Configuration" : "New Configuration" }}
+  </h3>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="onCancel()"
+  ></button>
+</div>
+
+<div class="modal-body p-0 d-flex flex-column">
+  <ul ngbNav #nav="ngbNav" class="nav-tabs mt-2 px-2">
+    <!-- History Tab (only when editing) -->
+    @if (configuration) {
+      <li [ngbNavItem]="0">
+        <button ngbNavLink>
+          <i class="fas fa-history me-2"></i>
+          History
+          @if (configuration?.updates?.length) {
+            <span class="badge bg-primary ms-2">{{
+              configuration.updates.length
+            }}</span>
+          }
+        </button>
+        <ng-template ngbNavContent>
+          @if (configuration?.updates?.length) {
+            <app-update-history
+              class="w-100 d-flex flex-column px-2"
+              [updates]="configuration!.updates!"
+              [configurationType]="configuration!.type"
+              [currentValue]="configuration!.value"
+            ></app-update-history>
+          } @else {
+            <div class="alert alert-info">
+              <i class="fas fa-info-circle me-2"></i>
+              No update history yet. Changes will be tracked here.
+            </div>
+          }
+          <!-- <div class="tab-content-wrapper p-3">
+          </div> -->
+        </ng-template>
+      </li>
+    }
+
+    <!-- General Tab -->
+    <li [ngbNavItem]="1">
+      <button ngbNavLink>
+        <i class="fas fa-info-circle me-2"></i>
+        General
+      </button>
+      <ng-template ngbNavContent>
+        <div class="tab-content-wrapper p-3">
+          <app-configuration-metadata-form
+            [configuration]="configuration"
+            [showUpdateEntry]="false"
+            [showGeneralOnly]="true"
+            (formChange)="onMetadataChange($event)"
+          ></app-configuration-metadata-form>
+        </div>
+      </ng-template>
+    </li>
+
+    <!-- Changes Tab (only when editing) -->
+    @if (configuration) {
+      <li [ngbNavItem]="2">
+        <button ngbNavLink>
+          <i class="fas fa-history me-2"></i>
+          Changes
+          @if (getTotalUpdateCount() > 0) {
+            <span class="badge bg-primary ms-2">{{
+              getTotalUpdateCount()
+            }}</span>
+          }
+        </button>
+        <ng-template ngbNavContent>
+          <!-- <div class="tab-content-wrapper w-100 d-flex flex-column">
+        </div> -->
+          <app-configuration-metadata-form
+            class="w-100 d-flex flex-column"
+            [configuration]="configuration"
+            [showUpdateEntry]="true"
+            [showGeneralOnly]="false"
+            (updateEntriesChange)="onUpdateEntriesChange($event)"
+          ></app-configuration-metadata-form>
+        </ng-template>
+      </li>
+    }
+
+    <!-- Values Tab -->
+    <li [ngbNavItem]="3">
+      <button ngbNavLink>
+        <i class="fas fa-code me-2"></i>
+        Values
+      </button>
+      <ng-template ngbNavContent>
+        @if (editorFormat === "json") {
+          <app-json-editor
+            class="w-100 d-flex flex-column"
+            [value]="value"
+            (valueChange)="onValueChange($event)"
+          ></app-json-editor>
+        } @else if (editorFormat === "xml") {
+          <app-ace-editor
+            class="w-100 d-flex flex-column"
+            [value]="value"
+            [mode]="'xml'"
+            (valueChange)="onValueChange($event)"
+          ></app-ace-editor>
+        } @else {
+          <app-ace-editor
+            class="w-100 d-flex flex-column"
+            [value]="value"
+            [mode]="'text'"
+            (valueChange)="onValueChange($event)"
+          ></app-ace-editor>
+        }
+        <!-- <div class="tab-content-wrapper p-3 w-100 d-flex flex-column">
+        </div> -->
+      </ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav" class="flex-grow-1 overflow-auto"></div>
+</div>
+
+<div class="border-top py-1 px-2 m-0 d-flex justify-content-between">
+  <div>
+    <button class="btn btn-secondary" (click)="onCancel()" [disabled]="saving">
+      Cancel
+    </button>
+  </div>
+  <div>
+    <button class="btn btn-primary" (click)="onSave()" [disabled]="saving">
+      @if (saving) {
+        <span class="spinner-border spinner-border-sm me-2"></span>
+      }
+      {{ configuration ? "Update" : "Create" }}
+    </button>
+  </div>
+</div>

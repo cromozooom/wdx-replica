@@ -10,12 +10,7 @@ import { BreachListOffcanvasComponent } from "./breach-list-offcanvas.component"
   standalone: true,
   templateUrl: "./widget-automation-content.component.html",
   styleUrls: ["./widget-automation-content.component.scss"],
-  imports: [
-    JobsGridComponent,
-    NgbNavModule,
-    BreachListOffcanvasComponent,
-    JobEditorComponent,
-  ],
+  imports: [JobsGridComponent, NgbNavModule, JobEditorComponent],
 })
 export class WidgetAutomationContentComponent {
   jobs = widgetDemoAutomations;

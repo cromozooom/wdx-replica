@@ -1,0 +1,14 @@
+<div class="json-editor-container flex-grow-1 d-flex flex-column">
+  <div #editorContainer class="editor-content"></div>
+
+  <!-- Fallback textarea if JSONEditor fails to load -->
+  @if (!editorLoaded) {
+    <textarea
+      class="form-control editor-fallback"
+      [value]="value"
+      (input)="valueChange.emit($any($event.target).value)"
+      rows="20"
+      placeholder="Enter JSON content..."
+    ></textarea>
+  }
+</div>

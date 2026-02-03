@@ -1,0 +1,14 @@
+<div class="ace-editor-container">
+  <div #editorContainer class="editor-content"></div>
+  
+  <!-- Fallback textarea if Ace Editor fails to load -->
+  @if (!editorLoaded) {
+    <textarea
+      class="form-control editor-fallback"
+      [value]="value"
+      (input)="valueChange.emit($any($event.target).value)"
+      rows="20"
+      placeholder="Enter XML or text content..."
+    ></textarea>
+  }
+</div>

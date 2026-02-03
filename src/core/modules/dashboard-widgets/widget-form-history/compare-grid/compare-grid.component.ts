@@ -16,7 +16,7 @@ ModuleRegistry.registerModules([RowGroupingModule]);
 @Component({
   selector: "app-compare-grid",
   standalone: true,
-  imports: [CommonModule, AgGridAngular, StatusValueCellRendererComponent],
+  imports: [CommonModule, AgGridAngular],
   templateUrl: "./compare-grid.component.html",
   styleUrls: ["./compare-grid.component.scss"],
 })
@@ -33,7 +33,7 @@ export class CompareGridComponent implements OnChanges {
     function toFlatRows(
       rows: CompareGridRow[],
       parentGroup: string | null = null,
-      parentIndex: number = 0
+      parentIndex: number = 0,
     ): any[] {
       const result: any[] = [];
       let idx = parentIndex;
@@ -65,7 +65,7 @@ export class CompareGridComponent implements OnChanges {
       return result;
     }
     const rows = toFlatRows(
-      buildCompareRows(this.prev, this.current, this.schema)
+      buildCompareRows(this.prev, this.current, this.schema),
     );
     this.rowData = rows.sort((a, b) => a.sortIndex - b.sortIndex);
   }

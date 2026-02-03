@@ -17,10 +17,10 @@
       </select>
     </div>
     <div class="d-flex flex-column">
-      <span class="mb-2"> Selected rows: {{ selectedRows?.length }} </span>
+      <span class="mb-2"> Selected rows: {{ selectedRows.length }} </span>
 
       <button
-        [disabled]="!selectedRows?.length"
+        [disabled]="!selectedRows.length"
         class="btn btn-outline-primary mb-2 me-2"
         (click)="openFullscreen(content)"
       >

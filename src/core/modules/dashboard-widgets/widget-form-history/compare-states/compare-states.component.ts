@@ -111,11 +111,11 @@ export class CompareStatesComponent implements OnChanges {
             this.users.find((u: any) => u.id === entry.userId)?.name ||
             entry.userId,
           entry,
-        })
+        }),
       );
       console.debug(
         "[CompareStatesComponent] historyRows populated",
-        this.historyRows
+        this.historyRows,
       );
     } else {
       this.historyRows = [];
@@ -126,11 +126,11 @@ export class CompareStatesComponent implements OnChanges {
     setTimeout(() => {
       console.debug(
         "[CompareStatesComponent] selectedFormId after ngOnChanges",
-        this.selectedFormId
+        this.selectedFormId,
       );
       console.debug(
         "[CompareStatesComponent] historyRows after ngOnChanges",
-        this.historyRows
+        this.historyRows,
       );
     });
   }
@@ -151,11 +151,11 @@ export class CompareStatesComponent implements OnChanges {
             this.users.find((u: any) => u.id === entry.userId)?.name ||
             entry.userId,
           entry,
-        })
+        }),
       );
       console.debug(
         "[CompareStatesComponent] historyRows populated (manual)",
-        this.historyRows
+        this.historyRows,
       );
     } else {
       this.historyRows = [];
@@ -208,14 +208,13 @@ export class CompareStatesComponent implements OnChanges {
   onSelectionChanged(event: any) {
     this.selectedRows = event.api.getSelectedRows();
     this.modalCompareIndex = 0;
-    console.log("Selected Rows:", this.selectedRows);
   }
 
   onRowDataChanged(event: any) {
     console.debug(
       "[CompareStatesComponent] ag-Grid rowDataChanged",
       this.historyRows,
-      event
+      event,
     );
   }
 
@@ -223,7 +222,7 @@ export class CompareStatesComponent implements OnChanges {
     console.debug(
       "[CompareStatesComponent] ag-Grid gridReady",
       this.historyRows,
-      event
+      event,
     );
   }
 }

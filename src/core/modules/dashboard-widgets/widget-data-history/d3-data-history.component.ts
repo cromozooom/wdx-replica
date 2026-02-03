@@ -37,7 +37,7 @@ export class D3DataHistoryComponent {
   diffView: "side-by-side" | "unified" = "side-by-side";
   constructor(
     private offcanvasService: NgbOffcanvas,
-    private zIndexService: ZIndexService
+    private zIndexService: ZIndexService,
   ) {}
   @Output() filterChanged = new EventEmitter<{
     fields: string[];
@@ -62,14 +62,14 @@ export class D3DataHistoryComponent {
     // After the panel and backdrop are attached, set their z-index
     setTimeout(() => {
       const panel = document.querySelector(
-        ".offcanvas.custom-offcanvas-z"
+        ".offcanvas.custom-offcanvas-z",
       ) as HTMLElement;
       if (panel) {
         panel.style.zIndex = zIndex.toString();
       }
       // Set backdrop z-index just below the panel
       const backdrop = document.querySelector(
-        ".offcanvas-backdrop"
+        ".offcanvas-backdrop",
       ) as HTMLElement;
       if (backdrop) {
         backdrop.style.zIndex = (zIndex - 1).toString();
@@ -93,7 +93,7 @@ export class D3DataHistoryComponent {
    */
   showTooltip(element: HTMLElement, content: string) {
     let tooltip = document.getElementById(
-      this.tooltipContainerId
+      this.tooltipContainerId,
     ) as HTMLDivElement;
     if (!tooltip) {
       tooltip = document.createElement("div");
@@ -192,7 +192,7 @@ export class D3DataHistoryComponent {
     let hours: string[] = [];
     if (this.data.length > 0) {
       const timestamps = Array.from(
-        new Set(this.data.map((d) => d.timestamp))
+        new Set(this.data.map((d) => d.timestamp)),
       ).sort();
       const minDate = new Date(Math.min(...timestamps));
       const maxDate = new Date(Math.max(...timestamps));
@@ -292,7 +292,7 @@ export class D3DataHistoryComponent {
     }
     // Step 1: Extract all unique fieldDisplayName values from the data
     const allFields = Array.from(
-      new Set(this.data.map((d: any) => d.fieldDisplayName).filter(Boolean))
+      new Set(this.data.map((d: any) => d.fieldDisplayName).filter(Boolean)),
     );
     // allFields now contains all unique fieldDisplayName values
 
@@ -390,7 +390,7 @@ export class D3DataHistoryComponent {
 
     // 1. Get unique authors and dates
     const authors = Array.from(
-      new Set(this.data.map((d) => d.actor?.displayName))
+      new Set(this.data.map((d) => d.actor?.displayName)),
     ).filter(Boolean);
     // const timestamps and dates removed (now declared above)
 
@@ -440,7 +440,7 @@ export class D3DataHistoryComponent {
       }
       // Find this event's offset
       const thisIdx = flat.findIndex(
-        (f) => f.event.timestamp === date.getTime()
+        (f) => f.event.timestamp === date.getTime(),
       );
       if (thisIdx === -1) return hourStart + 20;
       return hourStart + 20 + flat[thisIdx].offset * minDotGap;
@@ -457,7 +457,7 @@ export class D3DataHistoryComponent {
       .attr("x1", 0)
       .attr(
         "x2",
-        hourX[hourX.length - 1] + hourWidths[hourWidths.length - 1] + 8 // leave a gap before label
+        hourX[hourX.length - 1] + hourWidths[hourWidths.length - 1] + 8, // leave a gap before label
       )
       .attr("y1", (d) => yScale(d) as number)
       .attr("y2", (d) => yScale(d) as number)
@@ -473,7 +473,7 @@ export class D3DataHistoryComponent {
       .attr(
         "transform",
         (d) =>
-          `translate(${hourX[hourX.length - 1] + hourWidths[hourWidths.length - 1] + 16},${yScale(d)})`
+          `translate(${hourX[hourX.length - 1] + hourWidths[hourWidths.length - 1] + 16},${yScale(d)})`,
       );
 
     // Add author image (left of name)
@@ -544,7 +544,7 @@ export class D3DataHistoryComponent {
       .attr("class", (h, i) =>
         hourWidths[i] > minHourWidth
           ? "hour-label-group extended-hour-label-group"
-          : "hour-label-group"
+          : "hour-label-group",
       )
       // Move label group slightly right of the marker line (e.g. +4px)
       .attr("transform", (h, i) => `translate(${hourX[i] + 4},22)`)
@@ -622,14 +622,14 @@ export class D3DataHistoryComponent {
           (ev) => {
             const actor = ev.actor?.displayName || "";
             const pos = eventDotPositions.get(
-              field + "|" + ev.timestamp + "|" + actor
+              field + "|" + ev.timestamp + "|" + actor,
             );
             if (!pos) {
               // fallback, should not happen
               return { x: firstHourX, y: startY, ts: ev.timestamp };
             }
             return { x: pos.x, y: pos.y, ts: ev.timestamp };
-          }
+          },
         );
         // Do NOT sort by x; keep points in timestamp order so the line snakes through all dots
         const pointsNoTs = points.map(({ x, y }) => ({ x, y }));
@@ -696,7 +696,7 @@ export class D3DataHistoryComponent {
             .attr("opacity", 0.5)
             .attr(
               "class",
-              `field-snake-line field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+              `field-snake-line field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`,
             )
             .attr("d", sCurvePath(points));
           // Transparent duplicate for interaction and tooltip
@@ -707,7 +707,7 @@ export class D3DataHistoryComponent {
             .attr("stroke-width", 16)
             .attr(
               "class",
-              `field-snake-line-hit field-snake-line-hit-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+              `field-snake-line-hit field-snake-line-hit-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`,
             )
             .attr("d", sCurvePath(points))
             .style("cursor", "pointer");
@@ -715,7 +715,7 @@ export class D3DataHistoryComponent {
             .on("mouseenter", () => {
               d3.selectAll(".field-snake-line").attr("opacity", 0.2);
               d3.selectAll(
-                `.field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+                `.field-snake-line-${field.replace(/[^a-zA-Z0-9_-]/g, "_")}`,
               )
                 .attr("opacity", 1)
                 .raise();
@@ -769,7 +769,7 @@ export class D3DataHistoryComponent {
                       options: { boundary: "viewport" },
                     },
                   ],
-                }
+                },
               );
               // Click outside handler
               function outsideClickHandler(e: MouseEvent) {
@@ -782,7 +782,7 @@ export class D3DataHistoryComponent {
                   document.removeEventListener(
                     "mousedown",
                     outsideClickHandler,
-                    true
+                    true,
                   );
                 }
               }
@@ -790,7 +790,7 @@ export class D3DataHistoryComponent {
                 document.addEventListener(
                   "mousedown",
                   outsideClickHandler,
-                  true
+                  true,
                 );
               }, 0);
             });
@@ -820,7 +820,7 @@ export class D3DataHistoryComponent {
         if (!(field in fieldEventMap)) {
           // Count total events for this field
           const total = this.data.filter(
-            (d) => d.fieldDisplayName === field
+            (d) => d.fieldDisplayName === field,
           ).length;
           fieldEventMap[field] = { idx: 0, total };
         }
@@ -830,7 +830,7 @@ export class D3DataHistoryComponent {
         const isLast = idx === total - 1;
         const actor = events[j].actor?.displayName || "";
         const pos = eventDotPositions.get(
-          field + "|" + events[j].timestamp + "|" + actor
+          field + "|" + events[j].timestamp + "|" + actor,
         );
         eventDots.push({
           event: events[j],
@@ -877,7 +877,7 @@ export class D3DataHistoryComponent {
       .on("mouseenter", function (event, d) {
         d3.selectAll(".field-snake-line").attr("opacity", 0.2);
         d3.selectAll(
-          `.field-snake-line-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+          `.field-snake-line-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`,
         )
           .attr("opacity", 1)
           .raise();
@@ -890,7 +890,7 @@ export class D3DataHistoryComponent {
         d3.selectAll(
           ".event-dot:not(.event-dot-" +
             d.field.replace(/[^a-zA-Z0-9_-]/g, "_") +
-            ")"
+            ")",
         ).attr("opacity", 0.2);
       })
       .on("mouseleave", function (event, d) {
@@ -939,8 +939,6 @@ export class D3DataHistoryComponent {
       const to = d.event.to;
       const btnId = `open-end-btn-${Math.random().toString(36).substr(2, 9)}`;
       let btnHtml = "";
-      // Debug: log the 'to' value for every tooltip
-      console.log("[D3DataHistory] Tooltip render, to value:", to);
       btnHtml = `<button id='${btnId}' class="btn btn-sm btn-primary mt-2 mb-2 me-2">See Changes</button>`;
       tooltipEl.innerHTML =
         `<div class='position-relative'>` +
@@ -963,7 +961,7 @@ export class D3DataHistoryComponent {
             { name: "offset", options: { offset: [0, 8] } },
             { name: "preventOverflow", options: { boundary: "viewport" } },
           ],
-        }
+        },
       );
       (tooltipEl as any)._popperInstance = popperInstance;
       stickyMap.set(event.currentTarget as SVGCircleElement, true);
@@ -990,11 +988,6 @@ export class D3DataHistoryComponent {
         const btn = document.getElementById(btnId);
         if (btn) {
           btn.addEventListener("click", () => {
-            // Debug: log the 'to' value
-            console.log(
-              "[D3DataHistory] Tooltip button clicked, to value:",
-              to
-            );
             // Use the component reference stored on the tooltip
             const ngComponent = (tooltipEl as any)._ngComponent;
             if (ngComponent && typeof ngComponent.openEnd === "function") {
@@ -1061,7 +1054,7 @@ export class D3DataHistoryComponent {
         .on("mouseenter", function (event, d) {
           d3.selectAll(".field-snake-line").attr("opacity", 0.2);
           d3.selectAll(
-            `.field-snake-line-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`
+            `.field-snake-line-${d.field.replace(/[^a-zA-Z0-9_-]/g, "_")}`,
           )
             .attr("opacity", 1)
             .raise();
@@ -1074,7 +1067,7 @@ export class D3DataHistoryComponent {
           d3.selectAll(
             ".event-dot:not(.event-dot-" +
               d.field.replace(/[^a-zA-Z0-9_-]/g, "_") +
-              ")"
+              ")",
           ).attr("opacity", 0.2);
         })
         .on("mouseleave", function (event, d) {

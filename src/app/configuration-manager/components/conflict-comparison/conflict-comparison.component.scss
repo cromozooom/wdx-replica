@@ -1,0 +1,82 @@
+.conflict-comparison {
+  .section-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--bs-gray-700);
+    border-bottom: 2px solid var(--bs-gray-200);
+    padding-bottom: 8px;
+  }
+
+  .metadata-section {
+    .table {
+      margin-bottom: 0;
+
+      th {
+        background-color: var(--bs-gray-100);
+        font-weight: 600;
+      }
+
+      .existing-value {
+        background-color: rgba(var(--bs-danger-rgb), 0.1);
+        color: var(--bs-danger);
+        font-family: monospace;
+      }
+
+      .imported-value {
+        background-color: rgba(var(--bs-success-rgb), 0.1);
+        color: var(--bs-success);
+        font-family: monospace;
+      }
+    }
+  }
+
+  .content-section {
+    .content-panel {
+      border: 1px solid var(--bs-gray-300);
+      border-radius: 4px;
+      overflow: hidden;
+
+      .content-label {
+        padding: 8px 12px;
+        font-weight: 600;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .basket-section {
+    .alert {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal-footer {
+  .btn-group {
+    button {
+      padding: 16px 12px;
+      text-align: center;
+
+      i {
+        font-size: 1.25rem;
+      }
+
+      strong {
+        display: block;
+        margin-top: 8px;
+      }
+
+      small {
+        font-size: 0.75rem;
+        margin-top: 4px;
+        opacity: 0.8;
+      }
+
+      &:hover small {
+        opacity: 1;
+      }
+    }
+  }
+}

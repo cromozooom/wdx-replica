@@ -1,0 +1,71 @@
+<div class="configuration-grid-container">
+  <!-- Toolbar -->
+  <div class="grid-toolbar mb-2">
+    <div class="d-flex align-items-center">
+      <div class="d-flex flex-grow-1 gap-2">
+        <div>
+          <button
+            type="button"
+            class="btn btn-sm d-flex align-items-center"
+            [class.btn-primary]="groupByName"
+            [class.btn-outline-secondary]="!groupByName"
+            (click)="toggleGroupByName()"
+            title="{{ groupByName ? 'Ungroup' : 'Group by Name' }}"
+          >
+            <i class="fas fa-layer-group me-1"></i>
+            {{ groupByName ? "Ungroup" : "Group" }}
+          </button>
+        </div>
+        <div class="input-group input-group-sm">
+          <span class="input-group-text">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search by name..."
+            [value]="store.searchTerm()"
+            (input)="onSearchChange($event)"
+          />
+        </div>
+        <select
+          class="form-select form-select-sm"
+          (change)="onTypeFilterChange($event)"
+          [value]="store.filterType() || ''"
+        >
+          <option value="">All Types</option>
+          @for (type of configurationTypes; track type) {
+            <option [value]="type">{{ type }}</option>
+          }
+        </select>
+      </div>
+      <div
+        class="d-flex flex-grow-1 align-items-center gap-2 justify-content-end"
+      >
+        <span class="text-muted">
+          {{ store.filteredConfigurations().length }} configuration(s)
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  @if (store.loading()) {
+    <div class="text-center py-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading configurations...</span>
+      </div>
+      <p class="mt-2 text-muted">Loading configurations...</p>
+    </div>
+  } @else {
+    <div class="grid-wrapper">
+      <ag-grid-angular
+        class="ag-theme-alpine"
+        [rowData]="rowData"
+        [gridOptions]="gridOptions"
+        [columnDefs]="columnDefs"
+        (gridReady)="onGridReady($event)"
+      ></ag-grid-angular>
+    </div>
+  }
+</div>

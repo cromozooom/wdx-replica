@@ -8,7 +8,6 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
-import { FilterByIdPipe } from "./filter-by-id.pipe";
 import { NgSelectModule } from "@ng-select/ng-select";
 import { JsonFormsAngularMaterialModule } from "@jsonforms/angular-material";
 import { angularMaterialRenderers } from "@jsonforms/angular-material";
@@ -28,7 +27,6 @@ import { v4 as uuidv4 } from "uuid";
   imports: [
     CommonModule,
     FormsModule,
-    FilterByIdPipe,
     NgSelectModule,
     JsonFormsAngularMaterialModule,
   ],
@@ -70,7 +68,7 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
     const history = historyArr
       .filter((h: FormHistoryEntry) => h.userId === userId)
       .sort(
-        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp
+        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp,
       );
     return history.length > 1;
   }
@@ -84,7 +82,7 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
     const history = historyArr
       .filter((h: FormHistoryEntry) => h.userId === userId)
       .sort(
-        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp
+        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp,
       );
     if (history.length > 1) {
       const prev = history[1];
@@ -118,7 +116,7 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
     const history = historyArr
       .filter((h: FormHistoryEntry) => h.userId === userId)
       .sort(
-        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp
+        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp,
       );
     return history[0]?.data || {};
   }
@@ -150,7 +148,7 @@ export class FormEditorComponent implements AfterViewInit, OnInit, OnChanges {
     const history = historyArr
       .filter((h: FormHistoryEntry) => h.userId === userId)
       .sort(
-        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp
+        (a: FormHistoryEntry, b: FormHistoryEntry) => b.timestamp - a.timestamp,
       );
     const lastData = history[0]?.data || {};
     const isEqual = deepEqual(this.jsonformsData, lastData);

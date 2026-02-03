@@ -1,0 +1,433 @@
+<!-- Header -->
+<div class="modal-header px-2">
+  <h4 class="modal-title h6 mb-0 d-flex gap-3 align-items-center">
+    <div class="d-flex align-items-center">
+      Import Configurations
+      @if (wizardStore.targetBasketId()) {
+        <span class="text-muted small ms-2">
+          → {{ getBasketName(wizardStore.targetBasketId()) }}
+        </span>
+      }
+    </div>
+
+    @if (wizardStore.uploadedFile() && !wizardStore.isProcessing()) {
+      <div class="badge bg-info-subtle text-info-emphasis">
+        <i class="bi bi-file-earmark-zip"></i>
+        <strong>{{ wizardStore.uploadedFile()!.name }}</strong>
+        <span class="text-muted ms-2">
+          ({{ (wizardStore.uploadedFile()!.size / 1024 / 1024).toFixed(2) }}
+          MB,
+          {{ wizardStore.importedConfigurations().length }} configurations)
+        </span>
+      </div>
+    }
+  </h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="onClose()"
+  ></button>
+</div>
+
+<!-- Body -->
+<div class="modal-body p-0 flex-grow-1 overflow-hidden d-flex flex-column">
+  <!-- Error Display -->
+  @if (wizardStore.error()) {
+    <div class="alert alert-danger" role="alert">
+      <i class="bi bi-exclamation-triangle-fill me-2"></i>
+      {{ wizardStore.error() }}
+    </div>
+  }
+
+  <!-- File Upload (always visible when no conflicts) -->
+  @if (!wizardStore.uploadedFile() || wizardStore.isProcessing()) {
+    <div class="wizard-content">
+      <div
+        class="drop-zone"
+        [class.drag-over]="isDragOver"
+        (dragover)="onDragOver($event)"
+        (dragleave)="onDragLeave($event)"
+        (drop)="onDrop($event)"
+      >
+        @if (wizardStore.isProcessing()) {
+          <div class="spinner-border text-primary mb-3" role="status">
+            <span class="visually-hidden">Processing...</span>
+          </div>
+          <p>Processing ZIP file...</p>
+        } @else {
+          <i class="bi bi-cloud-upload fs-1 text-primary mb-3"></i>
+          <p>Drag and drop ZIP file here</p>
+          <p class="text-muted">or</p>
+          <label for="file-input" class="btn btn-primary">
+            <i class="bi bi-folder2-open me-2"></i>
+            Browse Files
+          </label>
+        }
+        <input
+          type="file"
+          id="file-input"
+          accept=".zip"
+          class="d-none"
+          (change)="onFileSelect($event)"
+        />
+      </div>
+    </div>
+  }
+
+  <!-- Conflict Review / Import Summary -->
+  @if (wizardStore.uploadedFile() && !wizardStore.isProcessing()) {
+    <div class="wizard-content overflow-y-auto flex-grow-1 d-flex flex-column">
+      <!-- File Info -->
+
+      <div
+        class="d-flex align-items-center justify-content-start gap-3 sticky-top border-bottom bg-body shadow shadow-sm p-0 m-0"
+      >
+        <div class="d-flex align-items-center gap-4 flex-grow-1 ps-2">
+          @if (wizardStore.manifest()) {
+            <div class="d-flex gap-2">
+              <span> Source Basket: </span>
+              <strong>{{ wizardStore.manifest()!.basketName }}</strong>
+            </div>
+            <div>
+              Export Date:
+              {{ wizardStore.manifest()!.exportDate | date }}
+            </div>
+          }
+          <!-- Summary Stats -->
+          <div class="d-flex rounded border my-1">
+            <div class="d-flex align-items-center gap-2 p-1 text-success">
+              <div class="stat-label">Total</div>
+              <div class="stat-value">
+                {{ wizardStore.importSummary().total }}
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 p-1 text-success">
+              <div class="stat-label">Ready</div>
+              <div class="stat-value">
+                {{ wizardStore.importSummary().noConflicts }}
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 p-1 text-warning">
+              <div class="stat-label">Conflicts</div>
+              <div class="stat-value">
+                {{ wizardStore.importSummary().conflicts }}
+              </div>
+            </div>
+          </div>
+        </div>
+        @if (wizardStore.importSummary().conflicts === 0) {
+          @if (wizardStore.importSummary().noConflicts > 0) {
+            <div
+              class="d-flex align-items-center gap-2 flex-grow-1 justify-content-end"
+            >
+              <h6 class="h6 mb-0">Configurations to Import:</h6>
+              <div>
+                <div class="list-group">
+                  @for (
+                    conflict of wizardStore.conflicts();
+                    track conflict.configId
+                  ) {
+                    @if (!conflict.hasConflict) {
+                      <div class="list-group-item">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div>
+                            <h6 class="h6 mb-0">
+                              {{ conflict.importedConfig.name }}
+                            </h6>
+                            <small class="text-muted">
+                              ID: {{ conflict.configId }} • Type:
+                              {{ conflict.importedConfig.type }} • Version:
+                              {{ conflict.importedConfig.version }}
+                            </small>
+                          </div>
+                          <span class="badge bg-success">New</span>
+                        </div>
+                      </div>
+                    }
+                  }
+                </div>
+              </div>
+            </div>
+          } @else {}
+        } @else {
+          <div
+            class="d-flex align-items-center border-start d-flexjustify-content-end gap-2 px-2 h-100"
+          >
+            <!-- <h6 class="h6 mb-0">Configurations to Update:</h6> -->
+
+            @if (wizardStore.importSummary().conflicts > 0) {
+              <div class="d-flex align-items-center gap-2">
+                <label class="form-label small text-muted mb-0"
+                  >Quick actions:</label
+                >
+                <div class="btn-group btn-group-sm" role="group">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    (click)="onResolveAll('overwrite')"
+                  >
+                    <i class="bi bi-arrow-clockwise me-1"></i>
+                    Overwrite All
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    (click)="onResolveAll('keep')"
+                  >
+                    <i class="bi bi-shield-check me-1"></i>
+                    Keep All
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success"
+                    (click)="onResolveAll('import-as-new')"
+                  >
+                    <i class="bi bi-plus-circle me-1"></i>
+                    Import All as New
+                  </button>
+                </div>
+              </div>
+            }
+          </div>
+        }
+      </div>
+
+      @if (wizardStore.importSummary().conflicts === 0) {
+        <div class="alert alert-success">
+          <i class="bi bi-check-circle-fill me-2"></i>
+          All {{ wizardStore.importSummary().noConflicts }} configuration(s) are
+          ready to import with no conflicts.
+        </div>
+
+        <!-- Show list of configurations without conflicts -->
+        @if (wizardStore.importSummary().noConflicts > 0) {}
+      } @else {
+        <!-- Conflict List -->
+
+        <div class="conflict-list p-2">
+          <div ngbAccordion>
+            @for (
+              conflict of wizardStore.conflicts();
+              track conflict.configId;
+              let i = $index
+            ) {
+              @if (conflict.hasConflict) {
+                <div ngbAccordionItem>
+                  <h2 ngbAccordionHeader>
+                    <button ngbAccordionButton class="w-100">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div>
+                          <strong>{{ conflict.importedConfig.name }}</strong>
+                          <span class="text-muted small ms-2">
+                            ID: {{ conflict.configId }} • Type:
+                            {{ conflict.importedConfig.type }}
+                          </span>
+                        </div>
+                        <span class="badge bg-warning">Will Update</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div ngbAccordionCollapse>
+                    <div ngbAccordionBody class="m-0 p-0">
+                      <!-- Metadata Changes -->
+                      @if (hasMetadataChanges(conflict)) {
+                        <div class="mb-3 py-2">
+                          <h6 class="text-muted mb-2 px-2">
+                            <i class="bi bi-info-circle me-1"></i>
+                            Metadata Changes
+                          </h6>
+                          <div class="table-responsive mx-2">
+                            <table class="table table-sm table-bordered">
+                              <thead class="table-light">
+                                <tr>
+                                  <th>Field</th>
+                                  <th class="bg-danger bg-opacity-10">
+                                    Existing
+                                  </th>
+                                  <th class="bg-success bg-opacity-10">
+                                    Imported
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                @if (conflict.differences.metadata.version) {
+                                  <tr>
+                                    <td><strong>Version</strong></td>
+                                    <td>
+                                      {{
+                                        conflict.differences.metadata.version
+                                          .existing
+                                      }}
+                                    </td>
+                                    <td>
+                                      {{
+                                        conflict.differences.metadata.version
+                                          .imported
+                                      }}
+                                    </td>
+                                  </tr>
+                                }
+                                @if (conflict.differences.metadata.name) {
+                                  <tr>
+                                    <td><strong>Name</strong></td>
+                                    <td>
+                                      {{
+                                        conflict.differences.metadata.name
+                                          .existing
+                                      }}
+                                    </td>
+                                    <td>
+                                      {{
+                                        conflict.differences.metadata.name
+                                          .imported
+                                      }}
+                                    </td>
+                                  </tr>
+                                }
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      }
+
+                      <!-- Content Diff -->
+                      @if (conflict.differences.content.hasChanges) {
+                        <div class="mb-3">
+                          <h6 class="text-muted mb-2">
+                            <i class="bi bi-file-earmark-code me-1"></i>
+                            Content Differences
+                          </h6>
+
+                          <!-- Monaco Diff Viewer for all types -->
+                          <app-monaco-diff-viewer
+                            [leftValue]="
+                              formatContent(
+                                conflict.differences.content.existing || '',
+                                conflict.importedConfig.type
+                              )
+                            "
+                            [rightValue]="
+                              formatContent(
+                                conflict.importedConfig.value,
+                                conflict.importedConfig.type
+                              )
+                            "
+                            [language]="
+                              getMonacoLanguage(conflict.importedConfig.type)
+                            "
+                          ></app-monaco-diff-viewer>
+                        </div>
+                      }
+
+                      <!-- Resolution Buttons -->
+                      <div class="resolution-actions border-top pt-3">
+                        <label class="form-label small text-muted"
+                          >Choose action:</label
+                        >
+                        <div class="btn-group w-100" role="group">
+                          <button
+                            type="button"
+                            class="btn btn-sm"
+                            [class.btn-primary]="
+                              getResolution(conflict.configId)?.strategy ===
+                              'overwrite'
+                            "
+                            [class.btn-outline-primary]="
+                              getResolution(conflict.configId)?.strategy !==
+                              'overwrite'
+                            "
+                            (click)="
+                              onResolveConflict(conflict.configId, 'overwrite')
+                            "
+                          >
+                            <i class="bi bi-arrow-clockwise me-1"></i>
+                            Overwrite
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-sm"
+                            [class.btn-secondary]="
+                              getResolution(conflict.configId)?.strategy ===
+                              'keep'
+                            "
+                            [class.btn-outline-secondary]="
+                              getResolution(conflict.configId)?.strategy !==
+                              'keep'
+                            "
+                            (click)="
+                              onResolveConflict(conflict.configId, 'keep')
+                            "
+                          >
+                            <i class="bi bi-shield-check me-1"></i>
+                            Keep Existing
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-sm"
+                            [class.btn-success]="
+                              getResolution(conflict.configId)?.strategy ===
+                              'import-as-new'
+                            "
+                            [class.btn-outline-success]="
+                              getResolution(conflict.configId)?.strategy !==
+                              'import-as-new'
+                            "
+                            (click)="
+                              onResolveConflict(
+                                conflict.configId,
+                                'import-as-new'
+                              )
+                            "
+                          >
+                            <i class="bi bi-plus-circle me-1"></i>
+                            Import as New
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              }
+            }
+          </div>
+        </div>
+      }
+    </div>
+  }
+</div>
+
+<!-- Footer -->
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-secondary"
+    (click)="onClose()"
+    [disabled]="wizardStore.isProcessing()"
+  >
+    Cancel
+  </button>
+
+  @if (wizardStore.uploadedFile() && !wizardStore.isProcessing()) {
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="onExecuteImport()"
+      [disabled]="wizardStore.isProcessing()"
+    >
+      @if (wizardStore.isProcessing()) {
+        <span class="spinner-border spinner-border-sm me-2"></span>
+        Importing...
+      } @else {
+        <i class="bi bi-check-circle me-2"></i>
+        Confirm Import
+      }
+    </button>
+  }
+</div>
+<!-- <div class="import-wizard-modal ">
+</div> -->
