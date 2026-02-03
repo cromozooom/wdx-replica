@@ -618,7 +618,7 @@ export class ConfigurationManagerComponent implements OnInit {
    */
   onImport(): void {
     const modalRef = this.modalService.open(ImportWizardComponent, {
-      size: "xl",
+      fullscreen: true,
       backdrop: "static",
       keyboard: false,
     });

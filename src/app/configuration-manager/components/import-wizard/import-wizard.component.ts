@@ -1,7 +1,11 @@
 import { Component, inject, OnInit } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
-import { NgbActiveModal, NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import {
+  NgbActiveModal,
+  NgbModal,
+  NgbAccordionModule,
+} from "@ng-bootstrap/ng-bootstrap";
 import { ImportWizardStore } from "../../store/import-wizard.store";
 import {
   ConfigurationImportService,
@@ -12,12 +16,19 @@ import { ConfigurationService } from "../../services/configuration.service";
 import { BasketService } from "../../services/basket.service";
 import { NotificationService } from "../../services/notification.service";
 import { Configuration } from "../../models/configuration.model";
+import { ConfigurationType } from "../../models/configuration-type.enum";
 import { ConflictComparisonComponent } from "../conflict-comparison/conflict-comparison.component";
+import { MonacoDiffViewerComponent } from "../monaco-diff-viewer/monaco-diff-viewer.component";
 
 @Component({
   selector: "app-import-wizard",
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    NgbAccordionModule,
+    MonacoDiffViewerComponent,
+  ],
   templateUrl: "./import-wizard.component.html",
   styleUrl: "./import-wizard.component.scss",
 })
@@ -142,10 +153,10 @@ export class ImportWizardComponent implements OnInit {
       // Store parsed data
       this.wizardStore.setUploadedData(file, configurations, manifest);
 
-      // Detect conflicts
+      // Detect conflicts - use basketConfigurations to only check against target basket
       const conflicts = this.importService.detectConflicts(
         configurations,
-        this.configStore.configurations(),
+        this.configStore.basketConfigurations(),
         this.wizardStore.targetBasketId() || undefined,
       );
 
@@ -356,5 +367,124 @@ export class ImportWizardComponent implements OnInit {
     } finally {
       this.wizardStore.setProcessing(false);
     }
+  }
+
+  /**
+   * Check if conflict has metadata changes
+   */
+  hasMetadataChanges(conflict: ConflictDetection): boolean {
+    return !!(
+      conflict.differences.metadata.version ||
+      conflict.differences.metadata.name
+    );
+  }
+
+  /**
+   * Get resolution for a specific conflict
+   */
+  getResolution(configId: number) {
+    return this.wizardStore.resolutions().find((r) => r.configId === configId);
+  }
+
+  /**
+   * Resolve a specific conflict
+   */
+  onResolveConflict(
+    configId: number,
+    strategy: "overwrite" | "keep" | "import-as-new",
+  ) {
+    this.wizardStore.setResolution(configId, strategy);
+  }
+
+  /**
+   * Format content for display in ace editor
+   */
+  formatContent(content: string, type: ConfigurationType): string {
+    if (!content) return "";
+
+    // Try to pretty-print JSON
+    if (
+      type.includes("JSON") ||
+      type === ConfigurationType.DashboardConfig ||
+      type === ConfigurationType.FormConfig
+    ) {
+      try {
+        return JSON.stringify(JSON.parse(content), null, 2);
+      } catch {
+        return content;
+      }
+    }
+
+    // XML formatting (basic)
+    if (
+      type === ConfigurationType.FetchXMLQuery ||
+      type === ConfigurationType.DashboardQuery
+    ) {
+      try {
+        // Basic XML formatting
+        return content
+          .replace(/></g, ">\n<")
+          .split("\n")
+          .map((line) => line.trim())
+          .filter((line) => line.length > 0)
+          .join("\n");
+      } catch {
+        return content;
+      }
+    }
+
+    return content;
+  }
+
+  /**
+   * Get editor mode based on configuration type
+   */
+  getEditorMode(type: ConfigurationType): "xml" | "text" {
+    if (
+      type === ConfigurationType.FetchXMLQuery ||
+      type === ConfigurationType.DashboardQuery
+    ) {
+      return "xml";
+    }
+
+    return "text";
+  }
+
+  /**
+   * Check if configuration type is JSON-based
+   */
+  isJsonType(type: ConfigurationType): boolean {
+    return (
+      type === ConfigurationType.DashboardConfig ||
+      type === ConfigurationType.FormConfig ||
+      type === ConfigurationType.SystemSetting ||
+      type === ConfigurationType.Process
+    );
+  }
+
+  /**
+   * Get Monaco editor language based on configuration type
+   */
+  getMonacoLanguage(type: ConfigurationType): string {
+    if (
+      type === ConfigurationType.DashboardConfig ||
+      type === ConfigurationType.FormConfig ||
+      type === ConfigurationType.SystemSetting
+    ) {
+      return "json";
+    }
+
+    if (
+      type === ConfigurationType.FetchXMLQuery ||
+      type === ConfigurationType.DashboardQuery
+    ) {
+      return "xml";
+    }
+
+    if (type === ConfigurationType.Process) {
+      return "javascript";
+    }
+
+    return "plaintext";
   }
 }

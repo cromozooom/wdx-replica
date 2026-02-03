@@ -1,5 +1,7 @@
 <header class="editor-header border-bottom p-2">
-  <h3 class="h6 mb-0">{{ configuration ? 'Edit Configuration' : 'New Configuration' }}</h3>
+  <h3 class="h6 mb-0">
+    {{ configuration ? "Edit Configuration" : "New Configuration" }}
+  </h3>
 </header>
 
 <ul ngbNav #nav="ngbNav" class="nav-tabs">
@@ -53,12 +55,12 @@
     </button>
     <ng-template ngbNavContent>
       <div class="tab-content-wrapper p-3">
-        @if (editorFormat === 'json') {
+        @if (editorFormat === "json") {
           <app-json-editor
             [value]="value"
             (valueChange)="onValueChange($event)"
           ></app-json-editor>
-        } @else if (editorFormat === 'xml') {
+        } @else if (editorFormat === "xml") {
           <app-ace-editor
             [value]="value"
             [mode]="'xml'"
@@ -75,7 +77,7 @@
     </ng-template>
   </li>
 </ul>
-<div [ngbNavOutlet]="nav" class="flex-grow-1 overflow-auto"></div>
+<div [ngbNavOutlet]="nav" class="grow overflow-auto"></div>
 
 <footer class="editor-footer border-top p-2">
   <button
@@ -85,14 +87,10 @@
   >
     Cancel
   </button>
-  <button
-    class="btn btn-primary"
-    (click)="onSave()"
-    [disabled]="saving"
-  >
+  <button class="btn btn-primary" (click)="onSave()" [disabled]="saving">
     @if (saving) {
       <span class="spinner-border spinner-border-sm me-2"></span>
     }
-    {{ configuration ? 'Update' : 'Create' }}
+    {{ configuration ? "Update" : "Create" }}
   </button>
 </footer>
