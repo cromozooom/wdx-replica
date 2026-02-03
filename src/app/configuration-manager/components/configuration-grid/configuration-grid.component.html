@@ -1,9 +1,22 @@
 <div class="configuration-grid-container">
   <!-- Toolbar -->
-  <div class="grid-toolbar mb-3">
-    <div class="row g-3 align-items-center">
-      <div class="col-md-4">
-        <div class="input-group">
+  <div class="grid-toolbar mb-2">
+    <div class="d-flex align-items-center">
+      <div class="d-flex flex-grow-1 gap-2">
+        <div>
+          <button
+            type="button"
+            class="btn btn-sm d-flex align-items-center"
+            [class.btn-primary]="groupByName"
+            [class.btn-outline-secondary]="!groupByName"
+            (click)="toggleGroupByName()"
+            title="{{ groupByName ? 'Ungroup' : 'Group by Name' }}"
+          >
+            <i class="fas fa-layer-group me-1"></i>
+            {{ groupByName ? "Ungroup" : "Group" }}
+          </button>
+        </div>
+        <div class="input-group input-group-sm">
           <span class="input-group-text">
             <i class="fas fa-search"></i>
           </span>
@@ -14,22 +27,9 @@
             [value]="store.searchTerm()"
             (input)="onSearchChange($event)"
           />
-          <button
-            type="button"
-            class="btn"
-            [class.btn-primary]="groupByName"
-            [class.btn-outline-secondary]="!groupByName"
-            (click)="toggleGroupByName()"
-            title="{{ groupByName ? 'Ungroup' : 'Group by Name' }}"
-          >
-            <i class="fas fa-layer-group me-1"></i>
-            {{ groupByName ? "Ungroup" : "Group" }}
-          </button>
         </div>
-      </div>
-      <div class="col-md-3">
         <select
-          class="form-select"
+          class="form-select form-select-sm"
           (change)="onTypeFilterChange($event)"
           [value]="store.filterType() || ''"
         >
@@ -39,7 +39,9 @@
           }
         </select>
       </div>
-      <div class="col-md-5 text-end">
+      <div
+        class="d-flex flex-grow-1 align-items-center gap-2 justify-content-end"
+      >
         <span class="text-muted">
           {{ store.filteredConfigurations().length }} configuration(s)
         </span>

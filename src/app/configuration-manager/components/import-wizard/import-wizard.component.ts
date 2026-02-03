@@ -153,6 +153,11 @@ export class ImportWizardComponent implements OnInit {
       // Store parsed data
       this.wizardStore.setUploadedData(file, configurations, manifest);
 
+      console.log(
+        "[WIZARD] Manifest after setUploadedData:",
+        this.wizardStore.manifest(),
+      );
+
       // Detect conflicts - use basketConfigurations to only check against target basket
       const conflicts = this.importService.detectConflicts(
         configurations,

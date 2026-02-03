@@ -83,11 +83,12 @@
       <div
         class="d-flex align-items-center justify-content-start gap-3 sticky-top border-bottom bg-body shadow shadow-sm p-0 m-0"
       >
-        <div class="d-flex align-items-center gap-2 flex-grow-1">
+        <div class="d-flex align-items-center gap-4 flex-grow-1 ps-2">
           @if (wizardStore.manifest()) {
-            <strong
-              >Source Basket: {{ wizardStore.manifest()!.basketName }}</strong
-            >
+            <div class="d-flex gap-2">
+              <span> Source Basket: </span>
+              <strong>{{ wizardStore.manifest()!.basketName }}</strong>
+            </div>
             <div>
               Export Date:
               {{ wizardStore.manifest()!.exportDate | date }}
@@ -235,12 +236,12 @@
                     <div ngbAccordionBody class="m-0 p-0">
                       <!-- Metadata Changes -->
                       @if (hasMetadataChanges(conflict)) {
-                        <div class="mb-3">
-                          <h6 class="text-muted mb-2">
+                        <div class="mb-3 py-2">
+                          <h6 class="text-muted mb-2 px-2">
                             <i class="bi bi-info-circle me-1"></i>
                             Metadata Changes
                           </h6>
-                          <div class="table-responsive">
+                          <div class="table-responsive mx-2">
                             <table class="table table-sm table-bordered">
                               <thead class="table-light">
                                 <tr>

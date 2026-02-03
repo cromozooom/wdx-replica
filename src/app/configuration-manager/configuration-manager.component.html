@@ -1,150 +1,151 @@
 @if (!showEditor) {
   <header class="header border-bottom d-flex flex-column">
-    <div class="w-100 d-flex p-2">
-      <div class="btn-group">
-        <button
-          class="btn btn-sm btn-outline-secondary"
-          (click)="onResetDatabase()"
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="flex-grow-1 d-flex">
+        <div
+          class="d-flex justify-content-between align-items-center gap-2 p-2"
         >
-          <i class="fas fa-sync me-2"></i>
-          Reset Database
-        </button>
-        <button
-          class="btn btn-sm btn-outline-warning"
-          (click)="onForceDeleteDatabase()"
-        >
-          <i class="fas fa-trash me-2"></i>
-          Force Delete DB
-        </button>
-        <button
-          class="btn btn-sm btn-outline-success"
-          (click)="onSeedSampleData()"
-        >
-          <i class="fas fa-seedling me-2"></i>
-          Seed Sample Data
-        </button>
-        <button
-          class="btn btn-sm btn-outline-primary"
-          (click)="onNewConfiguration()"
-        >
-          <i class="fas fa-plus me-2"></i>
-          New Configuration
-        </button>
-      </div>
-    </div>
-    <div class="d-flex gap-2">
-      <div class="d-flex justify-content-between align-items-center gap-2 p-2">
-        <div class="d-flex align-items-center gap-3">
-          <div class="basket-selector d-flex gap-2">
-            <div class="btn-group">
-              @for (basket of store.baskets(); track basket.id) {
+          <div class="d-flex align-items-center gap-3">
+            <div class="basket-selector d-flex gap-2">
+              <div class="btn-group">
+                @for (basket of store.baskets(); track basket.id) {
+                  <button
+                    type="button"
+                    class="btn btn-sm"
+                    [class.btn-primary]="store.currentBasketId() === basket.id"
+                    [class.btn-outline-secondary]="
+                      store.currentBasketId() !== basket.id
+                    "
+                    (click)="selectBasket(basket.id)"
+                  >
+                    {{ basket.name }}
+                    <span class="badge bg-light text-dark ms-1">{{
+                      basket.configurationIds.length
+                    }}</span>
+                  </button>
+                }
                 <button
                   type="button"
-                  class="btn btn-sm"
-                  [class.btn-primary]="store.currentBasketId() === basket.id"
-                  [class.btn-outline-secondary]="
-                    store.currentBasketId() !== basket.id
-                  "
-                  (click)="selectBasket(basket.id)"
+                  class="btn btn-sm btn-outline-success"
+                  (click)="openBasketModal()"
+                  title="Create new basket"
                 >
-                  {{ basket.name }}
-                  <span class="badge bg-light text-dark ms-1">{{
-                    basket.configurationIds.length
-                  }}</span>
+                  <i class="fas fa-plus"></i>
                 </button>
-              }
-              <button
-                type="button"
-                class="btn btn-sm btn-outline-success"
-                (click)="openBasketModal()"
-                title="Create new basket"
-              >
-                <i class="fas fa-plus"></i>
-              </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="btn-group">
-          <!-- Import Action -->
-          <button
-            class="btn btn-sm btn-outline-success"
-            (click)="onImport()"
-            title="Import configurations from ZIP"
-          >
-            <i class="fas fa-file-import me-1"></i>
-            Import
-          </button>
-
-          <!-- Export Actions -->
-          @if (store.selectedConfigurations().length > 0) {
+          <div class="btn-group">
+            <!-- Import Action -->
             <button
-              class="btn btn-sm btn-outline-info"
-              (click)="onExportSelected()"
-              [disabled]="exporting"
-              title="Export selected configurations as ZIP"
+              class="btn btn-sm btn-outline-success"
+              (click)="onImport()"
+              title="Import configurations from ZIP"
             >
-              <i class="fas fa-file-export me-1"></i>
-              @if (exporting) {
-                <span class="spinner-border spinner-border-sm me-1"></span>
-              }
-              Export Selected ({{ store.selectedConfigurations().length }})
+              <i class="fas fa-file-import me-1"></i>
+              Import
             </button>
-          }
 
-          @if (
-            store.currentBasket() && store.basketConfigurations().length > 0
-          ) {
-            <button
-              class="btn btn-sm btn-outline-primary"
-              (click)="onExportBasket()"
-              [disabled]="exporting"
-              title="Export entire basket as ZIP"
-            >
-              <i class="fas fa-download me-1"></i>
-              @if (exporting) {
-                <span class="spinner-border spinner-border-sm me-1"></span>
-              }
-              Export Basket
-            </button>
-          }
-
-          <!-- Basket Actions -->
-          @if (store.currentBasketId() && selectedConfigurations.length > 0) {
-            <div class="dropdown">
+            <!-- Export Actions -->
+            @if (store.selectedConfigurations().length > 0) {
               <button
-                class="btn btn-sm btn-outline-primary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
+                class="btn btn-sm btn-outline-primary"
+                (click)="onExportSelected()"
+                [disabled]="exporting"
+                title="Export selected configurations as ZIP"
               >
-                <i class="fas fa-shopping-basket me-1"></i>
-                Add to Basket
-              </button>
-              <ul class="dropdown-menu">
-                @for (basket of store.baskets(); track basket.id) {
-                  @if (basket.id !== store.currentBasketId()) {
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        (click)="addSelectedToBasket(basket.id)"
-                      >
-                        {{ basket.name }}
-                      </a>
-                    </li>
-                  }
+                <i class="fas fa-file-export me-1"></i>
+                @if (exporting) {
+                  <span class="spinner-border spinner-border-sm me-1"></span>
                 }
-              </ul>
-            </div>
+                Export Selected ({{ store.selectedConfigurations().length }})
+              </button>
+            }
 
-            <button
-              class="btn btn-sm btn-outline-danger"
-              (click)="removeSelectedFromBasket()"
-              title="Remove selected from current basket"
-            >
-              <i class="fas fa-minus-circle me-1"></i>
-              Remove from Basket
-            </button>
-          }
+            @if (
+              store.currentBasket() && store.basketConfigurations().length > 0
+            ) {
+              <button
+                class="btn btn-sm btn-outline-primary"
+                (click)="onExportBasket()"
+                [disabled]="exporting"
+                title="Export entire basket as ZIP"
+              >
+                <i class="fas fa-download me-1"></i>
+                @if (exporting) {
+                  <span class="spinner-border spinner-border-sm me-1"></span>
+                }
+                Export Basket
+              </button>
+            }
+
+            <!-- Basket Actions -->
+            @if (store.currentBasketId() && selectedConfigurations.length > 0) {
+              <div class="dropdown">
+                <button
+                  class="btn btn-sm btn-outline-primary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fas fa-shopping-basket me-1"></i>
+                  Add to Basket
+                </button>
+                <ul class="dropdown-menu">
+                  @for (basket of store.baskets(); track basket.id) {
+                    @if (basket.id !== store.currentBasketId()) {
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          (click)="addSelectedToBasket(basket.id)"
+                        >
+                          {{ basket.name }}
+                        </a>
+                      </li>
+                    }
+                  }
+                </ul>
+              </div>
+
+              <button
+                class="btn btn-sm btn-outline-primary"
+                (click)="removeSelectedFromBasket()"
+                title="Remove selected from current basket"
+              >
+                <i class="fas fa-minus-circle me-1"></i>
+                Remove from Basket
+              </button>
+            }
+          </div>
+        </div>
+      </div>
+      <div class="d-flex pe-2">
+        <div class="btn-group">
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="onResetDatabase()"
+          >
+            Reset DB
+          </button>
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="onForceDeleteDatabase()"
+          >
+            Force Delete DB
+          </button>
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="onSeedSampleData()"
+          >
+            Seed Data
+          </button>
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="onNewConfiguration()"
+          >
+            <i class="fas fa-plus me-2"></i>
+            Config.
+          </button>
         </div>
       </div>
     </div>

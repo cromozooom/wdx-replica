@@ -47,6 +47,13 @@ export class ConfigurationExportService {
       })),
     };
 
+    console.log(
+      "[EXPORT] Creating manifest with basketName:",
+      basketName,
+      "manifest:",
+      manifest,
+    );
+
     // Add manifest to ZIP root
     zip.file("manifest.json", JSON.stringify(manifest, null, 2));
 

@@ -68,7 +68,21 @@ export class ConfigurationImportService {
       const manifestFile = zipContent.file("manifest.json");
       if (manifestFile) {
         const manifestContent = await manifestFile.async("string");
-        manifest = JSON.parse(manifestContent);
+        const rawManifest = JSON.parse(manifestContent);
+        console.log("[IMPORT] Raw manifest from ZIP:", rawManifest);
+
+        // Map the manifest structure to BasketManifest interface
+        if (rawManifest.basket) {
+          manifest = {
+            basketName: rawManifest.basket.name || "",
+            basketId: rawManifest.basket.id?.toString() || "",
+            exportDate: rawManifest.exportDate || "",
+            exportVersion: rawManifest.version || "",
+            configurations: rawManifest.basket.configurationIds || [],
+          };
+        }
+
+        console.log("[IMPORT] Mapped manifest:", manifest);
       }
 
       // Extract configurations from 'configurations/' directory

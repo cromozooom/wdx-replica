@@ -256,7 +256,7 @@ export class ConfigurationGridComponent {
           toolPanel: "agColumnsToolPanel",
         },
       ],
-      defaultToolPanel: "columns",
+      defaultToolPanel: "",
     },
     groupDefaultExpanded: 0,
     autoGroupColumnDef: {
