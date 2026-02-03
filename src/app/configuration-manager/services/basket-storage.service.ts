@@ -28,7 +28,6 @@ export class BasketStorageService {
       const deleteRequest = indexedDB.deleteDatabase(DB_NAME);
 
       deleteRequest.onsuccess = async () => {
-        console.log("Database deleted successfully");
         // Reinitialize the database
         await this.initDB();
         resolve();
@@ -48,7 +47,6 @@ export class BasketStorageService {
 
   private async initDB(): Promise<void> {
     return new Promise((resolve, reject) => {
-      console.log(`Opening IndexedDB: ${DB_NAME} v${DB_VERSION}`);
       const request = indexedDB.open(DB_NAME, DB_VERSION);
 
       request.onerror = () => {
@@ -58,21 +56,14 @@ export class BasketStorageService {
 
       request.onsuccess = () => {
         this.db = request.result;
-        console.log("IndexedDB opened successfully");
-        console.log("Available stores:", Array.from(this.db.objectStoreNames));
         resolve();
       };
 
       request.onupgradeneeded = (event) => {
-        console.log("IndexedDB upgrade triggered", {
-          oldVersion: event.oldVersion,
-          newVersion: event.newVersion,
-        });
         const db = (event.target as IDBOpenDBRequest).result;
 
         // Create configurations store if it doesn't exist
         if (!db.objectStoreNames.contains(CONFIGURATIONS_STORE_NAME)) {
-          console.log("Creating configurations store");
           const configStore = db.createObjectStore(CONFIGURATIONS_STORE_NAME, {
             keyPath: "id",
           });
@@ -83,14 +74,11 @@ export class BasketStorageService {
 
         // Create baskets store
         if (!db.objectStoreNames.contains(BASKETS_STORE_NAME)) {
-          console.log("Creating baskets store");
           const basketStore = db.createObjectStore(BASKETS_STORE_NAME, {
             keyPath: "id",
           });
           basketStore.createIndex("name", "name", { unique: true });
         }
-
-        console.log("IndexedDB upgrade completed");
       };
     });
   }

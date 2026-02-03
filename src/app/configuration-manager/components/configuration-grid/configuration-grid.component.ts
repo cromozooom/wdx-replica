@@ -66,35 +66,11 @@ export class ConfigurationGridComponent {
   constructor() {
     // Update grid data whenever filtered configurations change
     effect(() => {
-      console.log("🔄 [ConfigurationGrid] Effect triggered");
       const configs = this.store.filteredConfigurations();
-      console.log(
-        "📊 [ConfigurationGrid] Filtered configurations:",
-        configs.length,
-        "configs",
-      );
-      console.log(
-        "🔍 [ConfigurationGrid] Config IDs being shown:",
-        configs.map((c) => c.id),
-      );
-      console.log(
-        "🎯 [ConfigurationGrid] Current basket ID:",
-        this.store.currentBasketId(),
-      );
-      console.log("📦 [ConfigurationGrid] All baskets:", this.store.baskets());
-
       this.rowData = this.flattenConfigurations(configs);
-      console.log(
-        "📝 [ConfigurationGrid] Flattened rows:",
-        this.rowData.length,
-        "rows",
-      );
 
       if (this.gridApi) {
-        console.log("✅ [ConfigurationGrid] Updating grid data");
         this.gridApi.setGridOption("rowData", this.rowData);
-      } else {
-        console.log("⚠️ [ConfigurationGrid] Grid API not ready yet");
       }
     });
   }

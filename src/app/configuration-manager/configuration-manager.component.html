@@ -36,17 +36,16 @@
             </div>
           </div>
 
+          <!-- Import Action -->
+          <button
+            class="btn btn-sm btn-outline-success"
+            (click)="onImport()"
+            title="Import configurations from ZIP"
+          >
+            <i class="fas fa-file-import me-1"></i>
+            Import
+          </button>
           <div class="btn-group">
-            <!-- Import Action -->
-            <button
-              class="btn btn-sm btn-outline-success"
-              (click)="onImport()"
-              title="Import configurations from ZIP"
-            >
-              <i class="fas fa-file-import me-1"></i>
-              Import
-            </button>
-
             <!-- Export Actions -->
             @if (store.selectedConfigurations().length > 0) {
               <button
@@ -76,17 +75,17 @@
                 @if (exporting) {
                   <span class="spinner-border spinner-border-sm me-1"></span>
                 }
-                Export Basket
+                Export All
               </button>
             }
 
             <!-- Basket Actions -->
-            @if (store.currentBasketId() && selectedConfigurations.length > 0) {
+            <!-- @if (store.currentBasketId() && selectedConfigurations.length > 0) {
               <div class="dropdown">
                 <button
-                  class="btn btn-sm btn-outline-primary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
+                class="btn btn-sm btn-outline-primary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
                 >
                   <i class="fas fa-shopping-basket me-1"></i>
                   Add to Basket
@@ -99,27 +98,35 @@
                           class="dropdown-item"
                           (click)="addSelectedToBasket(basket.id)"
                         >
-                          {{ basket.name }}
+                        {{ basket.name }}
                         </a>
                       </li>
-                    }
-                  }
-                </ul>
-              </div>
-
-              <button
-                class="btn btn-sm btn-outline-primary"
-                (click)="removeSelectedFromBasket()"
-                title="Remove selected from current basket"
-              >
-                <i class="fas fa-minus-circle me-1"></i>
-                Remove from Basket
-              </button>
-            }
+                      }
+                      }
+                    </ul>
+                  </div>
+                  } -->
           </div>
+          @if (store.currentBasketId() && selectedConfigurations.length > 0) {
+            <button
+              class="btn btn-sm btn-outline-primary"
+              (click)="removeSelectedFromBasket()"
+              title="Remove selected from current basket"
+            >
+              <i class="fas fa-times me-1"></i>
+              Remove from Basket
+            </button>
+          }
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="onNewConfiguration()"
+          >
+            <i class="fas fa-plus me-2"></i>
+            Config.
+          </button>
         </div>
       </div>
-      <div class="d-flex pe-2">
+      <div class="d-flex gap-2 pe-2">
         <div class="btn-group">
           <button
             class="btn btn-sm btn-outline-primary"
@@ -138,13 +145,6 @@
             (click)="onSeedSampleData()"
           >
             Seed Data
-          </button>
-          <button
-            class="btn btn-sm btn-outline-primary"
-            (click)="onNewConfiguration()"
-          >
-            <i class="fas fa-plus me-2"></i>
-            Config.
           </button>
         </div>
       </div>

@@ -194,7 +194,6 @@ export class SeedDataService {
         version: "V1.0.0",
         value: `// Automated process ${i}
 async function execute() {
-  console.log('Starting process ${i}');
   // Process logic here
   return { success: true };
 }

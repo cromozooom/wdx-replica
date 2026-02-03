@@ -51,32 +51,23 @@ export class ConfigurationManagerComponent implements OnInit {
   newBasketName = "";
 
   async ngOnInit(): Promise<void> {
-    console.log("Initializing Configuration Manager...");
-
     // Load baskets first to ensure Product basket exists
     await this.loadBaskets();
 
     // Then load configurations (will seed into Product basket if needed)
     await this.loadConfigurations();
-
-    console.log("Configuration Manager initialized successfully");
   }
 
   private async loadBaskets(): Promise<void> {
     try {
       // Always ensure the Product basket exists first
-      console.log("Ensuring Product (core) basket exists...");
       const productBasket = await this.basketService.initializeDefaultBasket();
-      console.log("Product basket initialized:", productBasket);
 
       // Get all baskets (should include the Product basket now)
       const baskets = await this.basketService.getAll();
-      console.log("All baskets:", baskets);
 
       this.store.setBaskets(baskets);
       this.store.setCurrentBasketId(productBasket.id);
-
-      console.log("Baskets loaded successfully");
     } catch (error) {
       console.error("Failed to load baskets:", error);
       this.notificationService.error(
@@ -87,17 +78,10 @@ export class ConfigurationManagerComponent implements OnInit {
 
   private async loadConfigurations(): Promise<void> {
     try {
-      console.log("⏳ [ConfigManager] loadConfigurations() started");
       this.store.setLoading(true);
       const configurations = await this.configService.getAll();
 
-      console.log(`📚 Loaded ${configurations.length} existing configurations`);
-      console.log(
-        "🔍 [ConfigManager] Config IDs:",
-        configurations.map((c) => `${c.id}:${c.name}`),
-      );
       this.store.setConfigurations(configurations);
-      console.log("✅ [ConfigManager] Configurations set in store");
     } catch (error) {
       console.error("Failed to load configurations:", error);
       this.notificationService.error(
@@ -237,7 +221,6 @@ export class ConfigurationManagerComponent implements OnInit {
       // Force delete the database
       const deleteRequest = indexedDB.deleteDatabase("ConfigurationManagerDB");
       deleteRequest.onsuccess = async () => {
-        console.log("Database force deleted successfully");
         // Wait a bit to ensure deletion is fully processed
         await new Promise((resolve) => setTimeout(resolve, 200));
         // Refresh the page to reinitialize everything
@@ -280,8 +263,6 @@ export class ConfigurationManagerComponent implements OnInit {
   }
 
   async createBasket(): Promise<void> {
-    console.log("createBasket called with name:", this.newBasketName);
-
     if (!this.newBasketName.trim()) {
       this.notificationService.error("Please enter a basket name");
       return;
@@ -303,9 +284,7 @@ export class ConfigurationManagerComponent implements OnInit {
         return;
       }
 
-      console.log("Creating basket with name:", this.newBasketName.trim());
       const basket = await this.basketService.create(this.newBasketName.trim());
-      console.log("Basket created:", basket);
 
       this.store.addBasket(basket);
       this.notificationService.success(
@@ -343,8 +322,6 @@ export class ConfigurationManagerComponent implements OnInit {
     try {
       this.store.setLoading(true);
 
-      console.log("Manual seeding: Starting sample data creation...");
-
       // Ensure baskets are loaded
       await this.loadBaskets();
 
@@ -361,24 +338,14 @@ export class ConfigurationManagerComponent implements OnInit {
 
       const seedData = this.seedDataService.generateSeedData(productBasket.id);
 
-      console.log(
-        `Seeding ${seedData.length} configurations into Product basket...`,
-      );
-
       // Save all seed data with their update entries and add to Product basket
       const savedConfigIds: number[] = [];
       for (const config of seedData) {
         const savedConfig = await this.configService.saveWithUpdates(config);
         savedConfigIds.push(savedConfig.id);
-        console.log(
-          `Saved configuration: ${savedConfig.name} (ID: ${savedConfig.id})`,
-        );
       }
 
       // Add all seeded configurations to the Product basket
-      console.log(
-        `Adding ${savedConfigIds.length} configurations to Product basket...`,
-      );
       await this.basketService.addMultipleConfigurations(
         productBasket.id,
         savedConfigIds,
@@ -388,9 +355,6 @@ export class ConfigurationManagerComponent implements OnInit {
       const updatedBasket = await this.basketService.getById(productBasket.id);
       if (updatedBasket) {
         this.store.updateBasket(updatedBasket);
-        console.log(
-          `Product basket now contains ${updatedBasket.configurationIds.length} configurations`,
-        );
       }
 
       // Reload configurations to refresh the grid
@@ -411,34 +375,13 @@ export class ConfigurationManagerComponent implements OnInit {
   }
 
   async selectBasket(basketId: number): Promise<void> {
-    console.log("🏀 [ConfigManager] Selecting basket ID:", basketId);
-    const basket = this.store.baskets().find((b) => b.id === basketId);
-    console.log("📦 [ConfigManager] Basket details:", basket);
     this.store.setCurrentBasketId(basketId);
 
     // Reload configurations to refresh update entries for the new basket
     this.store.setLoading(true);
-    console.log(
-      "📥 [ConfigManager] Reloading configurations for basket switch...",
-    );
     try {
       const configurations = await this.configService.getAll();
-      console.log(
-        "📚 [ConfigManager] Loaded configurations from DB:",
-        configurations.length,
-      );
-      console.log(
-        "🔍 [ConfigManager] Config IDs:",
-        configurations.map((c) => c.id),
-      );
-      if (basket) {
-        console.log(
-          "🎯 [ConfigManager] Basket contains config IDs:",
-          basket.configurationIds,
-        );
-      }
       this.store.setConfigurations(configurations);
-      console.log("✅ [ConfigManager] Basket switch complete");
     } catch (error) {
       console.error("Failed to reload configurations:", error);
     } finally {
@@ -452,13 +395,6 @@ export class ConfigurationManagerComponent implements OnInit {
       return;
     }
 
-    console.log(
-      "📋 [ConfigManager] Adding to basket:",
-      basketId,
-      "Configs:",
-      this.selectedConfigurations.map((c) => c.id),
-    );
-
     try {
       // Create independent copies of configurations for the target basket
       const newConfigIds: number[] = [];
@@ -466,12 +402,6 @@ export class ConfigurationManagerComponent implements OnInit {
       for (const config of this.selectedConfigurations) {
         // Get next ID for the new configuration copy
         const newId = await this.configStorageService.getNextId();
-        console.log(
-          "🆕 [ConfigManager] Creating copy: Original ID",
-          config.id,
-          "→ New ID",
-          newId,
-        );
         const currentUser = this.teamMemberService.getCurrentUser();
         const now = new Date();
 
