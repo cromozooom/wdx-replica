@@ -44,11 +44,28 @@ export class ConfigurationManagerComponent implements OnInit {
   newBasketName = "";
 
   async ngOnInit(): Promise<void> {
-    // Load baskets first to ensure Product basket exists
-    await this.loadBaskets();
+    try {
+      // Load baskets first to ensure Product basket exists
+      await this.loadBaskets();
 
-    // Then load configurations (will seed into Product basket if needed)
-    await this.loadConfigurations();
+      // Then load configurations (will seed into Product basket if needed)
+      await this.loadConfigurations();
+
+      // If no configurations exist, offer to seed data
+      if (this.store.configurations().length === 0) {
+        setTimeout(() => {
+          if (confirm('No configurations found. Would you like to load sample data?')) {
+            this.onSeedSampleData();
+          }
+        }, 500);
+      }
+    } catch (error) {
+      console.error('Failed to initialize application:', error);
+      this.notificationService.error(
+        'Failed to initialize application. Please refresh the page.'
+      );
+      this.store.setLoading(false);
+    }
   }
 
   private async loadBaskets(): Promise<void> {
@@ -66,6 +83,9 @@ export class ConfigurationManagerComponent implements OnInit {
       this.notificationService.error(
         `Failed to initialize baskets: ${(error as Error).message}`,
       );
+      // Don't let basket errors block the app - set a default empty state
+      this.store.setBaskets([]);
+      throw error; // Re-throw to be caught by ngOnInit
     }
   }
 
@@ -78,7 +98,10 @@ export class ConfigurationManagerComponent implements OnInit {
     } catch (error) {
       console.error("Failed to load configurations:", error);
       this.notificationService.error(
-        `Failed to load configurations: ${(error as Error).message}`,
+      // Set empty array to allow app to continue
+      this.store.setConfigurations([]);
+    } finally {
+      // Always clear loading state to load configurations: ${(error as Error).message}`,
       );
       this.store.setError((error as Error).message);
     } finally {
