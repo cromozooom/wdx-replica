@@ -82,7 +82,9 @@
 
             <form [formGroup]="entryForm">
               <div class="form-group mb-3">
-                <label [attr.for]="'jiraTicket-' + i" class="form-label">Jira Ticket</label>
+                <label [attr.for]="'jiraTicket-' + i" class="form-label"
+                  >Jira Ticket</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -90,7 +92,10 @@
                   formControlName="jiraTicket"
                   placeholder="WPO-12345"
                 />
-                @if (getJiraTicketControl(i)?.invalid && getJiraTicketControl(i)?.touched) {
+                @if (
+                  getJiraTicketControl(i)?.invalid &&
+                  getJiraTicketControl(i)?.touched
+                ) {
                   <div class="text-danger mt-1">
                     Must match format WPO-##### (e.g., WPO-12345)
                   </div>
@@ -98,7 +103,9 @@
               </div>
 
               <div class="form-group mb-3">
-                <label [attr.for]="'comment-' + i" class="form-label">Comment (Markdown)</label>
+                <label [attr.for]="'comment-' + i" class="form-label"
+                  >Comment (Markdown)</label
+                >
                 <textarea
                   class="form-control"
                   [id]="'comment-' + i"
@@ -107,23 +114,30 @@
                   placeholder="Describe what changed and why (supports Markdown)"
                 ></textarea>
                 <small class="form-text text-muted">
-                  You can use **bold**, *italic*, `code`, and other Markdown formatting
+                  You can use **bold**, *italic*, `code`, and other Markdown
+                  formatting
                 </small>
               </div>
 
               <div class="form-group mb-3">
-                <label [attr.for]="'madeBy-' + i" class="form-label">Made By *</label>
-                <select class="form-select" [id]="'madeBy-' + i" formControlName="madeBy">
+                <label [attr.for]="'madeBy-' + i" class="form-label"
+                  >Made By *</label
+                >
+                <select
+                  class="form-select"
+                  [id]="'madeBy-' + i"
+                  formControlName="madeBy"
+                >
                   @for (member of teamMembers; track member) {
                     <option [value]="member">{{ member }}</option>
                   }
                 </select>
               </div>
 
-              @if (entryForm.errors?.['atLeastOne']) {
+              @if (entryForm.errors?.["atLeastOne"]) {
                 <div class="alert alert-warning">
                   <i class="fas fa-exclamation-triangle me-2"></i>
-                  {{ entryForm.errors?.['atLeastOne'] }}
+                  {{ entryForm.errors?.["atLeastOne"] }}
                 </div>
               }
             </form>
@@ -142,7 +156,11 @@
       @if (configuration?.updates?.length) {
         <div class="update-history-section mt-4 pt-4 border-top">
           <h6 class="mb-3">Previous Changes</h6>
-          <app-update-history [updates]="configuration!.updates!"></app-update-history>
+          <app-update-history
+            [updates]="configuration!.updates!"
+            [configurationType]="configuration!.type"
+            [currentValue]="configuration!.value"
+          ></app-update-history>
         </div>
       }
     </div>
