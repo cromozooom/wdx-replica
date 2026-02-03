@@ -1,85 +1,98 @@
-<header class="editor-header border-bottom p-2">
-  <h3 class="h6 mb-0">
+<div class="modal-header">
+  <h3 class="modal-title h5">
     {{ configuration ? "Edit Configuration" : "New Configuration" }}
   </h3>
-</header>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="onCancel()"
+  ></button>
+</div>
 
-<ul ngbNav #nav="ngbNav" class="nav-tabs">
-  <!-- General Tab -->
-  <li [ngbNavItem]="1">
-    <button ngbNavLink>
-      <i class="fas fa-info-circle me-2"></i>
-      General
-    </button>
-    <ng-template ngbNavContent>
-      <div class="tab-content-wrapper p-3">
-        <app-configuration-metadata-form
-          [configuration]="configuration"
-          [showUpdateEntry]="false"
-          [showGeneralOnly]="true"
-          (formChange)="onMetadataChange($event)"
-        ></app-configuration-metadata-form>
-      </div>
-    </ng-template>
-  </li>
-
-  <!-- Changes Tab (only when editing) -->
-  @if (configuration) {
-    <li [ngbNavItem]="2">
+<div
+  class="modal-body p-0 d-flex flex-column"
+  style="height: calc(100vh - 120px)"
+>
+  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <!-- General Tab -->
+    <li [ngbNavItem]="1">
       <button ngbNavLink>
-        <i class="fas fa-history me-2"></i>
-        Changes
-        @if (getTotalUpdateCount() > 0) {
-          <span class="badge bg-primary ms-2">{{ getTotalUpdateCount() }}</span>
-        }
+        <i class="fas fa-info-circle me-2"></i>
+        General
       </button>
       <ng-template ngbNavContent>
-        <!-- <div class="tab-content-wrapper w-100 d-flex flex-column">
-        </div> -->
-        <app-configuration-metadata-form
-          class="w-100 d-flex flex-column"
-          [configuration]="configuration"
-          [showUpdateEntry]="true"
-          [showGeneralOnly]="false"
-          (updateEntriesChange)="onUpdateEntriesChange($event)"
-        ></app-configuration-metadata-form>
+        <div class="tab-content-wrapper p-3">
+          <app-configuration-metadata-form
+            [configuration]="configuration"
+            [showUpdateEntry]="false"
+            [showGeneralOnly]="true"
+            (formChange)="onMetadataChange($event)"
+          ></app-configuration-metadata-form>
+        </div>
       </ng-template>
     </li>
-  }
 
-  <!-- Values Tab -->
-  <li [ngbNavItem]="3">
-    <button ngbNavLink>
-      <i class="fas fa-code me-2"></i>
-      Values
-    </button>
-    <ng-template ngbNavContent>
-      <div class="tab-content-wrapper p-3">
-        @if (editorFormat === "json") {
-          <app-json-editor
-            [value]="value"
-            (valueChange)="onValueChange($event)"
-          ></app-json-editor>
-        } @else if (editorFormat === "xml") {
-          <app-ace-editor
-            [value]="value"
-            [mode]="'xml'"
-            (valueChange)="onValueChange($event)"
-          ></app-ace-editor>
-        } @else {
-          <app-ace-editor
-            [value]="value"
-            [mode]="'text'"
-            (valueChange)="onValueChange($event)"
-          ></app-ace-editor>
-        }
-      </div>
-    </ng-template>
-  </li>
-</ul>
-<div [ngbNavOutlet]="nav" class="grow overflow-auto"></div>
+    <!-- Changes Tab (only when editing) -->
+    @if (configuration) {
+      <li [ngbNavItem]="2">
+        <button ngbNavLink>
+          <i class="fas fa-history me-2"></i>
+          Changes
+          @if (getTotalUpdateCount() > 0) {
+            <span class="badge bg-primary ms-2">{{
+              getTotalUpdateCount()
+            }}</span>
+          }
+        </button>
+        <ng-template ngbNavContent>
+          <!-- <div class="tab-content-wrapper w-100 d-flex flex-column">
+        </div> -->
+          <app-configuration-metadata-form
+            class="w-100 d-flex flex-column"
+            [configuration]="configuration"
+            [showUpdateEntry]="true"
+            [showGeneralOnly]="false"
+            (updateEntriesChange)="onUpdateEntriesChange($event)"
+          ></app-configuration-metadata-form>
+        </ng-template>
+      </li>
+    }
 
-<footer class="editor-footer border-top p-2">
+    <!-- Values Tab -->
+    <li [ngbNavItem]="3">
+      <button ngbNavLink>
+        <i class="fas fa-code me-2"></i>
+        Values
+      </button>
+      <ng-template ngbNavContent>
+        <div class="tab-content-wrapper p-3">
+          @if (editorFormat === "json") {
+            <app-json-editor
+              [value]="value"
+              (valueChange)="onValueChange($event)"
+            ></app-json-editor>
+          } @else if (editorFormat === "xml") {
+            <app-ace-editor
+              [value]="value"
+              [mode]="'xml'"
+              (valueChange)="onValueChange($event)"
+            ></app-ace-editor>
+          } @else {
+            <app-ace-editor
+              [value]="value"
+              [mode]="'text'"
+              (valueChange)="onValueChange($event)"
+            ></app-ace-editor>
+          }
+        </div>
+      </ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav" class="flex-grow-1 overflow-auto"></div>
+</div>
+
+<div class="modal-footer">
   <button
     class="btn btn-secondary me-2"
     (click)="onCancel()"
@@ -93,4 +106,4 @@
     }
     {{ configuration ? "Update" : "Create" }}
   </button>
-</footer>
+</div>

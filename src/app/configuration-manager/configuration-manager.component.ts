@@ -21,12 +21,7 @@ import { Basket } from "./models/basket.model";
 @Component({
   selector: "app-configuration-manager",
   standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    ConfigurationEditorComponent,
-    ConfigurationGridComponent,
-  ],
+  imports: [CommonModule, FormsModule, ConfigurationGridComponent],
   templateUrl: "./configuration-manager.component.html",
   styleUrls: ["./configuration-manager.component.scss"],
 })
@@ -42,11 +37,9 @@ export class ConfigurationManagerComponent implements OnInit {
   private readonly teamMemberService = inject(TeamMemberService);
   private readonly modalService = inject(NgbModal);
 
-  showEditor = false;
   showBasketModal = false;
   saving = false;
   exporting = false;
-  editingConfiguration: Configuration | null = null;
   selectedConfigurations: Configuration[] = [];
   newBasketName = "";
 
@@ -94,8 +87,25 @@ export class ConfigurationManagerComponent implements OnInit {
   }
 
   async onNewConfiguration(): Promise<void> {
-    this.editingConfiguration = null;
-    this.showEditor = true;
+    const modalRef = this.modalService.open(ConfigurationEditorComponent, {
+      fullscreen: true,
+      backdrop: "static",
+      keyboard: false,
+    });
+
+    // Set the basket ID for new configuration
+    modalRef.componentInstance.basketId = this.store.currentBasketId();
+
+    modalRef.result.then(
+      async (configuration: Configuration) => {
+        if (configuration) {
+          await this.onSaveConfiguration(configuration);
+        }
+      },
+      () => {
+        // Modal dismissed/cancelled
+      },
+    );
   }
 
   async onSaveConfiguration(configuration: Configuration): Promise<void> {
@@ -118,18 +128,30 @@ export class ConfigurationManagerComponent implements OnInit {
       }
     }
 
-    this.showEditor = false;
     this.notificationService.success("Configuration saved successfully");
   }
 
-  onCancelEditor(): void {
-    this.showEditor = false;
-    this.editingConfiguration = null;
-  }
-
   onRowDoubleClicked(configuration: Configuration): void {
-    this.editingConfiguration = configuration;
-    this.showEditor = true;
+    const modalRef = this.modalService.open(ConfigurationEditorComponent, {
+      fullscreen: true,
+      backdrop: "static",
+      keyboard: false,
+    });
+
+    // Set the configuration to edit and basket ID
+    modalRef.componentInstance.configuration = configuration;
+    modalRef.componentInstance.basketId = this.store.currentBasketId();
+
+    modalRef.result.then(
+      async (updatedConfiguration: Configuration) => {
+        if (updatedConfiguration) {
+          await this.onSaveConfiguration(updatedConfiguration);
+        }
+      },
+      () => {
+        // Modal dismissed/cancelled
+      },
+    );
   }
 
   onSelectionChanged(configurations: Configuration[]): void {

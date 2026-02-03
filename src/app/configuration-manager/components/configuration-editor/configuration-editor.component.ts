@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
+import { NgbNavModule, NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
 import { ConfigurationMetadataFormComponent } from "../configuration-metadata-form/configuration-metadata-form.component";
 import { JsonEditorComponent } from "../json-editor/json-editor.component";
 import { AceEditorComponent } from "../ace-editor/ace-editor.component";
@@ -32,6 +32,7 @@ export class ConfigurationEditorComponent {
   @Output() saved = new EventEmitter<Configuration>();
   @Output() cancelled = new EventEmitter<void>();
 
+  modal = inject(NgbActiveModal);
   private configService = inject(ConfigurationService);
   private notificationService = inject(NotificationService);
 
@@ -126,6 +127,7 @@ export class ConfigurationEditorComponent {
       }
 
       this.saved.emit(savedConfig);
+      this.modal.close(savedConfig);
     } catch (error) {
       this.notificationService.error(
         `Failed to save configuration: ${(error as Error).message}`,
@@ -137,5 +139,6 @@ export class ConfigurationEditorComponent {
 
   onCancel(): void {
     this.cancelled.emit();
+    this.modal.dismiss();
   }
 }
