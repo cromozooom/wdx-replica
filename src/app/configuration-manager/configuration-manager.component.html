@@ -9,7 +9,7 @@
                 <button
                   type="button"
                   class="btn btn-sm"
-                  [class.btn-primary]="store.currentBasketId() === basket.id"
+                  [class.btn-secondary]="store.currentBasketId() === basket.id"
                   [class.btn-outline-secondary]="
                     store.currentBasketId() !== basket.id
                   "
@@ -23,7 +23,7 @@
               }
               <button
                 type="button"
-                class="btn btn-sm btn-outline-success"
+                class="btn btn-sm btn-outline-secondary"
                 (click)="openBasketModal()"
                 title="Create new basket"
               >
@@ -35,7 +35,7 @@
 
         <!-- Import Action -->
         <button
-          class="btn btn-sm btn-outline-success"
+          class="btn btn-sm btn-outline-primary"
           (click)="onImport()"
           title="Import configurations from ZIP"
         >
@@ -115,7 +115,7 @@
           </button>
         }
         <button
-          class="btn btn-sm btn-outline-primary"
+          class="btn btn-sm btn-outline-secondary"
           (click)="onNewConfiguration()"
         >
           <i class="fas fa-plus me-2"></i>
@@ -126,19 +126,19 @@
     <div class="d-flex gap-2 pe-2">
       <div class="btn-group">
         <button
-          class="btn btn-sm btn-outline-primary"
+          class="btn btn-sm btn-outline-secondary"
           (click)="onResetDatabase()"
         >
           Reset DB
         </button>
         <button
-          class="btn btn-sm btn-outline-primary"
+          class="btn btn-sm btn-outline-secondary"
           (click)="onForceDeleteDatabase()"
         >
           Force Delete DB
         </button>
         <button
-          class="btn btn-sm btn-outline-primary"
+          class="btn btn-sm btn-outline-secondary"
           (click)="onSeedSampleData()"
         >
           Seed Data

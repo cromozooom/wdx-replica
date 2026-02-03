@@ -10,11 +10,8 @@
   ></button>
 </div>
 
-<div
-  class="modal-body p-0 d-flex flex-column"
-  style="height: calc(100vh - 120px)"
->
-  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+<div class="modal-body p-0 d-flex flex-column">
+  <ul ngbNav #nav="ngbNav" class="nav-tabs mt-2">
     <!-- General Tab -->
     <li [ngbNavItem]="1">
       <button ngbNavLink>
@@ -66,44 +63,47 @@
         Values
       </button>
       <ng-template ngbNavContent>
-        <div class="tab-content-wrapper p-3">
-          @if (editorFormat === "json") {
-            <app-json-editor
-              [value]="value"
-              (valueChange)="onValueChange($event)"
-            ></app-json-editor>
-          } @else if (editorFormat === "xml") {
-            <app-ace-editor
-              [value]="value"
-              [mode]="'xml'"
-              (valueChange)="onValueChange($event)"
-            ></app-ace-editor>
-          } @else {
-            <app-ace-editor
-              [value]="value"
-              [mode]="'text'"
-              (valueChange)="onValueChange($event)"
-            ></app-ace-editor>
-          }
-        </div>
+        @if (editorFormat === "json") {
+          <app-json-editor
+            class="w-100 d-flex flex-column"
+            [value]="value"
+            (valueChange)="onValueChange($event)"
+          ></app-json-editor>
+        } @else if (editorFormat === "xml") {
+          <app-ace-editor
+            class="w-100 d-flex flex-column"
+            [value]="value"
+            [mode]="'xml'"
+            (valueChange)="onValueChange($event)"
+          ></app-ace-editor>
+        } @else {
+          <app-ace-editor
+            class="w-100 d-flex flex-column"
+            [value]="value"
+            [mode]="'text'"
+            (valueChange)="onValueChange($event)"
+          ></app-ace-editor>
+        }
+        <!-- <div class="tab-content-wrapper p-3 w-100 d-flex flex-column">
+        </div> -->
       </ng-template>
     </li>
   </ul>
   <div [ngbNavOutlet]="nav" class="flex-grow-1 overflow-auto"></div>
 </div>
 
-<div class="modal-footer">
-  <button
-    class="btn btn-secondary me-2"
-    (click)="onCancel()"
-    [disabled]="saving"
-  >
-    Cancel
-  </button>
-  <button class="btn btn-primary" (click)="onSave()" [disabled]="saving">
-    @if (saving) {
-      <span class="spinner-border spinner-border-sm me-2"></span>
-    }
-    {{ configuration ? "Update" : "Create" }}
-  </button>
+<div class="border-top py-1 px-2 m-0 d-flex justify-content-between">
+  <div>
+    <button class="btn btn-secondary" (click)="onCancel()" [disabled]="saving">
+      Cancel
+    </button>
+  </div>
+  <div>
+    <button class="btn btn-primary" (click)="onSave()" [disabled]="saving">
+      @if (saving) {
+        <span class="spinner-border spinner-border-sm me-2"></span>
+      }
+      {{ configuration ? "Update" : "Create" }}
+    </button>
+  </div>
 </div>
