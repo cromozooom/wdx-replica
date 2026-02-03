@@ -44,6 +44,7 @@ export class ConfigurationManagerComponent implements OnInit {
   newBasketName = "";
 
   async ngOnInit(): Promise<void> {
+    this.store.setLoading(true);
     try {
       // Load baskets first to ensure Product basket exists
       await this.loadBaskets();
@@ -68,6 +69,7 @@ export class ConfigurationManagerComponent implements OnInit {
       this.notificationService.error(
         "Failed to initialize application. Please refresh the page.",
       );
+    } finally {
       this.store.setLoading(false);
     }
   }
@@ -95,9 +97,7 @@ export class ConfigurationManagerComponent implements OnInit {
 
   private async loadConfigurations(): Promise<void> {
     try {
-      this.store.setLoading(true);
       const configurations = await this.configService.getAll();
-
       this.store.setConfigurations(configurations);
     } catch (error) {
       console.error("Failed to load configurations:", error);
@@ -107,9 +107,6 @@ export class ConfigurationManagerComponent implements OnInit {
       this.store.setError((error as Error).message);
       // Set empty array to allow app to continue
       this.store.setConfigurations([]);
-    } finally {
-      // Always clear loading state
-      this.store.setLoading(false);
     }
   }
 
