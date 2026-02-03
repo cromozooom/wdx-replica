@@ -1,6 +1,7 @@
 import { ValidationModule } from "ag-grid-enterprise";
 import { ModuleRegistry } from "ag-grid-community";
 import { ClientSideRowModelModule } from "ag-grid-community";
+import { PaginationModule } from "ag-grid-community";
 import { RowGroupingModule } from "ag-grid-enterprise";
 import { SetFilterModule } from "ag-grid-enterprise";
 import { MenuModule } from "ag-grid-enterprise";
@@ -11,6 +12,7 @@ import { AgGridModule } from "ag-grid-angular";
 // Register required ag-Grid modules
 ModuleRegistry.registerModules([
   ClientSideRowModelModule,
+  PaginationModule,
   RowGroupingModule,
   SetFilterModule,
   MenuModule,
