@@ -72,7 +72,8 @@
                         ],
                         "styles": [
                             "src/styles.scss",
-                            "node_modules/ag-grid-community/styles/ag-theme-alpine.css"
+                            "node_modules/ag-grid-community/styles/ag-theme-alpine.css",
+                            "node_modules/monaco-editor/min/vs/editor/editor.main.css"
                         ],
                         "loader": {
                             ".ttf": "file",
