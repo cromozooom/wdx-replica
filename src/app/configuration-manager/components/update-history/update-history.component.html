@@ -1,5 +1,5 @@
 <div class="update-history py-2">
-  <h6 class="mb-3">Update History ({{ updates.length }})</h6>
+  <!-- <h6 class="mb-2">Update History ({{ updates.length }})</h6> -->
 
   @if (sortedUpdates.length === 0) {
     <div class="alert alert-info">
@@ -11,40 +11,58 @@
       @for (update of sortedUpdates; track $index; let i = $index) {
         <div ngbAccordionItem>
           <h2 ngbAccordionHeader>
-            <button ngbAccordionButton class="w-100">
+            <button ngbAccordionButton class="w-100 d-flex">
               <div
                 class="d-flex justify-content-between align-items-center w-100"
               >
                 <div class="update-meta d-flex gap-3">
+                  <span class="update-date" style="min-width: 12rem">
+                    <i class="text-muted opacity-50 fas fa-clock me-1"></i>
+                    <small>
+                      {{ formatDate(update.date) }}
+                    </small>
+                  </span>
                   <span class="update-author">
-                    <i class="fas fa-user me-1"></i>
-                    {{ update.madeBy }}
+                    <i class="text-muted opacity-50 fas fa-user me-1"></i>
+                    <small>
+                      {{ update.madeBy }}
+                    </small>
                   </span>
-                  <span class="update-date">
-                    <i class="fas fa-clock me-1"></i>
-                    {{ formatDate(update.date) }}
-                  </span>
-                  @if (update.jiraTicket) {
-                    <span class="update-jira badge bg-primary">
-                      <i class="fas fa-ticket-alt me-1"></i>
-                      {{ update.jiraTicket }}
-                    </span>
-                  }
                 </div>
+              </div>
+              <div class="d-flex align-items-center me-3">
+                @if (update.jiraTicket) {
+                  <span
+                    class="update-jira badge bg-info-subtle text-info-emphasis"
+                  >
+                    <i class="fas fa-ticket-alt me-1"></i>
+                    {{ update.jiraTicket }}
+                  </span>
+                }
               </div>
             </button>
           </h2>
           <div ngbAccordionCollapse>
-            <div ngbAccordionBody>
+            <div ngbAccordionBody class="p-0">
               <ng-template>
                 @if (update.comment) {
-                  <div class="update-comment mb-3">
+                  <div
+                    class="update-comment bg-info-subtle p-2"
+                    style="font-size: 90%"
+                  >
                     <markdown [data]="update.comment"></markdown>
+                  </div>
+                } @else {
+                  <div
+                    class="update-comment bg-warning-subtle p-2"
+                    style="font-size: 90%"
+                  >
+                    <small> No Comment added </small>
                   </div>
                 }
 
                 @if (update.previousValue) {
-                  <div class="diff-section">
+                  <div class="diff-section px-2 py-2">
                     <h6 class="mb-2">Changes Made:</h6>
                     <app-monaco-diff-viewer
                       [leftValue]="update.previousValue"
