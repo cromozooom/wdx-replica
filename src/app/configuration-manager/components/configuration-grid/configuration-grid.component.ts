@@ -142,6 +142,11 @@ export class ConfigurationGridComponent {
       sortable: true,
       enableRowGroup: true,
       minWidth: 250,
+      cellClass: (params) => {
+        return params.data?.isConfigRow
+          ? "fw-bold text-primary text-decoration-underline"
+          : "";
+      },
     },
     {
       headerName: "Type",
