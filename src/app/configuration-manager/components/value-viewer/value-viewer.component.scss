@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+// Override diff viewer styles for fullscreen
+::ng-deep app-monaco-diff-viewer {
+  .monaco-diff-container {
+    height: 100% !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+}

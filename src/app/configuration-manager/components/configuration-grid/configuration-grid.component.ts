@@ -68,6 +68,8 @@ export class ConfigurationGridComponent {
   @Output() viewValue = new EventEmitter<{
     value: string;
     type: ConfigurationType;
+    previousValue?: string;
+    nextValue?: string;
   }>();
 
   rowData: ConfigurationUpdateRow[] = [];
@@ -159,13 +161,13 @@ export class ConfigurationGridComponent {
 
         if (params.data.isConfigRow) {
           // For config rows, show view current value button
-          return `<button class="btn btn-sm btn-outline-primary view-value-btn" data-action="view-current" title="View current value">
-            <i class="fas fa-eye"></i>
+          return `<button class="btn btn-sm btn-link text-decoration-none view-value-btn" data-action="view-current" title="View current value">
+            <i class="fas fa-code"></i>
           </button>`;
         } else {
           // For update rows, show view historical value button
-          return `<button class="btn btn-sm btn-outline-secondary view-value-btn" data-action="view-historical" title="View value at this point">
-            <i class="fas fa-history"></i>
+          return `<button class="btn btn-sm btn-link text-decoration-none view-value-btn" data-action="view-historical" title="View value at this point">
+            <i class="fas fa-code"></i>
           </button>`;
         }
       },
@@ -373,65 +375,105 @@ export class ConfigurationGridComponent {
     setTimeout(() => {
       const gridElement = document.querySelector(".ag-root");
       if (gridElement) {
+        console.log("[Grid] Click listener attached to grid");
         gridElement.addEventListener("click", (e: Event) => {
           const target = e.target as HTMLElement;
           const button = target.closest(".view-value-btn") as HTMLElement;
 
           if (button) {
+            console.log("[Grid] View value button clicked");
             e.stopPropagation();
+            e.preventDefault();
             const action = button.getAttribute("data-action");
-            const rowNode = this.gridApi.getRowNode(
-              this.gridApi.getFocusedCell()?.rowIndex?.toString() || "",
+            console.log("[Grid] Action:", action);
+
+            // Find the row element from the button
+            const rowElement = target.closest("[row-index]") as HTMLElement;
+            if (!rowElement) {
+              console.log("[Grid] No row element found");
+              return;
+            }
+
+            const rowIndex = rowElement.getAttribute("row-index");
+            if (!rowIndex) {
+              console.log("[Grid] No row index found");
+              return;
+            }
+
+            console.log("[Grid] Row index:", rowIndex);
+            const rowNode = this.gridApi.getDisplayedRowAtIndex(
+              parseInt(rowIndex),
             );
 
             if (rowNode?.data) {
               const data = rowNode.data as ConfigurationUpdateRow;
+              console.log("[Grid] Row data:", data);
 
               if (action === "view-current" && data.isConfigRow) {
-                // View current value
+                console.log("[Grid] Emitting view current value");
+                // View current value - find previous version from updates
+                const updates = data.configUpdates || [];
+                const sortedUpdates = [...updates].sort(
+                  (a, b) =>
+                    new Date(b.date).getTime() - new Date(a.date).getTime(),
+                );
+
                 this.viewValue.emit({
                   value: data.configValue,
                   type: data.configType,
+                  previousValue: sortedUpdates[0]?.previousValue || "",
+                  nextValue: "", // Current value has no next
                 });
               } else if (action === "view-historical" && !data.isConfigRow) {
-                // Find the previous value for this update
-                const allRows = this.rowData.filter(
-                  (r) => r.configId === data.configId,
-                );
-                const updateRows = allRows
-                  .filter((r) => !r.isConfigRow)
-                  .sort(
-                    (a, b) =>
-                      new Date(b.updateDate!).getTime() -
-                      new Date(a.updateDate!).getTime(),
-                  );
-
-                const updateIndex = updateRows.findIndex(
-                  (r) => r.updateDate?.getTime() === data.updateDate?.getTime(),
+                console.log("[Grid] Emitting view historical value");
+                // Find the previous and next values for this update
+                const updates = data.configUpdates || [];
+                const sortedUpdates = [...updates].sort(
+                  (a, b) =>
+                    new Date(b.date).getTime() - new Date(a.date).getTime(),
                 );
 
-                // Get the value after this update (or current if it's the latest)
+                const updateIndex = sortedUpdates.findIndex(
+                  (u) => u.date.getTime() === data.updateDate?.getTime(),
+                );
+
+                // Get the value at this point (after this update)
                 let valueToShow = "";
+                let previousValue = "";
+                let nextValue = "";
+
                 if (updateIndex === 0) {
-                  // Latest update, show current value
-                  const configRow = allRows.find((r) => r.isConfigRow);
-                  valueToShow = configRow?.configValue || "";
-                } else {
-                  // Show the previousValue from the update
-                  const updates =
-                    allRows.find((r) => r.isConfigRow)?.configUpdates || [];
-                  const sortedUpdates = [...updates].sort(
-                    (a, b) =>
-                      new Date(b.date).getTime() - new Date(a.date).getTime(),
+                  // Latest update - show current value
+                  const configRow = this.rowData.find(
+                    (r) => r.configId === data.configId && r.isConfigRow,
                   );
-                  const update = sortedUpdates[updateIndex];
+                  valueToShow = configRow?.configValue || "";
+                  previousValue = sortedUpdates[0]?.previousValue || "";
+                  nextValue = ""; // Latest has no next
+                } else {
+                  // Historical update - value after this update is previousValue of the next update
                   valueToShow =
                     sortedUpdates[updateIndex - 1]?.previousValue || "";
+                  previousValue =
+                    sortedUpdates[updateIndex]?.previousValue || "";
+
+                  // Next value is the current value if this is second-to-last, otherwise previous of next update
+                  if (updateIndex === 1) {
+                    const configRow = this.rowData.find(
+                      (r) => r.configId === data.configId && r.isConfigRow,
+                    );
+                    nextValue = configRow?.configValue || "";
+                  } else {
+                    nextValue =
+                      sortedUpdates[updateIndex - 2]?.previousValue || "";
+                  }
                 }
 
                 this.viewValue.emit({
                   value: valueToShow,
                   type: data.configType,
+                  previousValue: previousValue,
+                  nextValue: nextValue,
                 });
               }
             }
