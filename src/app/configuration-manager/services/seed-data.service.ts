@@ -41,6 +41,16 @@ export class SeedDataService {
     "Added multi-currency support",
   ];
 
+  /**
+   * Generates a random version number between V1.0.0 and V1.9.9
+   * @returns Version string in format V1.x.y where x and y are between 0-9
+   */
+  private generateRandomVersion(): string {
+    const minor = Math.floor(Math.random() * 10); // 0-9
+    const patch = Math.floor(Math.random() * 10); // 0-9
+    return `V1.${minor}.${patch}`;
+  }
+
   private generateUpdateEntries(
     configIndex: number,
     count: number,
@@ -188,7 +198,7 @@ export class SeedDataService {
         basketId,
         name: `Dashboard Config ${i}`,
         type: ConfigurationType.DashboardConfig,
-        version: "V1.0.0",
+        version: this.generateRandomVersion(),
         value: finalValue,
         createdDate: new Date(2026, 0, i),
         lastModifiedDate: new Date(2026, 0, i),
@@ -227,7 +237,7 @@ export class SeedDataService {
         basketId,
         name: `Form Config ${i}`,
         type: ConfigurationType.FormConfig,
-        version: "V1.0.0",
+        version: this.generateRandomVersion(),
         value: finalValue,
         createdDate: new Date(2026, 0, 15 + i),
         lastModifiedDate: new Date(2026, 0, 15 + i),
@@ -262,7 +272,7 @@ export class SeedDataService {
         basketId,
         name: `FetchXML Query ${i}`,
         type: ConfigurationType.FetchXMLQuery,
-        version: "V1.0.0",
+        version: this.generateRandomVersion(),
         value: finalValue,
         createdDate: new Date(2026, 0, 30 + i),
         lastModifiedDate: new Date(2026, 0, 30 + i),
@@ -296,7 +306,7 @@ export class SeedDataService {
         basketId,
         name: `Dashboard Query ${i}`,
         type: ConfigurationType.DashboardQuery,
-        version: "V1.0.0",
+        version: this.generateRandomVersion(),
         value: finalValue,
         createdDate: new Date(2026, 1, i),
         lastModifiedDate: new Date(2026, 1, i),
@@ -329,7 +339,7 @@ execute();`;
         basketId,
         name: `Process ${i}`,
         type: ConfigurationType.Process,
-        version: "V1.0.0",
+        version: this.generateRandomVersion(),
         value: finalValue,
         createdDate: new Date(2026, 1, 15 + i),
         lastModifiedDate: new Date(2026, 1, 15 + i),
@@ -374,7 +384,7 @@ execute();`;
       basketId,
       name: "Global System Settings",
       type: ConfigurationType.SystemSetting,
-      version: "V1.0.0",
+      version: this.generateRandomVersion(),
       value: sysFinalValue,
       createdDate: new Date(2026, 1, 1),
       lastModifiedDate: new Date(2026, 1, 1),
