@@ -85,32 +85,40 @@
       >
         <div class="d-flex align-items-center gap-4 flex-grow-1 ps-2">
           @if (wizardStore.manifest()) {
-            <div class="d-flex gap-2">
-              <span> Source Basket: </span>
+            <small class="d-flex gap-2">
+              <span> From: </span>
               <strong>{{ wizardStore.manifest()!.basketName }}</strong>
-            </div>
+              <span> to </span>
+              <strong>{{ getBasketName(wizardStore.targetBasketId()) }}</strong>
+            </small>
             <div>
               Export Date:
               {{ wizardStore.manifest()!.exportDate | date }}
             </div>
           }
           <!-- Summary Stats -->
-          <div class="d-flex rounded border my-1">
-            <div class="d-flex align-items-center gap-2 p-1 text-success">
+          <div class="d-flex rounded overflow-hidden my-1">
+            <div
+              class="d-flex align-items-center gap-2 py-1 px-2 bg-info-subtle text-info-emphasis"
+            >
               <div class="stat-label">Total</div>
-              <div class="stat-value">
+              <div class="stat-value fw-bold">
                 {{ wizardStore.importSummary().total }}
               </div>
             </div>
-            <div class="d-flex align-items-center gap-2 p-1 text-success">
+            <div
+              class="d-flex align-items-center gap-2 py-1 px-2 text-success bg-success-subtle text-success-emphasis"
+            >
               <div class="stat-label">Ready</div>
-              <div class="stat-value">
+              <div class="stat-value fw-bold">
                 {{ wizardStore.importSummary().noConflicts }}
               </div>
             </div>
-            <div class="d-flex align-items-center gap-2 p-1 text-warning">
+            <div
+              class="d-flex align-items-center gap-2 py-1 px-2 text-warning bg-warning-subtle text-warning-emphasis"
+            >
               <div class="stat-label">Conflicts</div>
-              <div class="stat-value">
+              <div class="stat-value fw-bold">
                 {{ wizardStore.importSummary().conflicts }}
               </div>
             </div>
@@ -118,7 +126,7 @@
         </div>
         @if (wizardStore.importSummary().conflicts !== 0) {
           <div
-            class="d-flex align-items-center border-start d-flexjustify-content-end gap-2 px-2 h-100"
+            class="d-flex align-items-center border-start d-flexjustify-content-end gap-2 px-2 py-2 h-100"
           >
             <!-- <h6 class="h6 mb-0">Configurations to Update:</h6> -->
 
@@ -138,7 +146,7 @@
                   </button>
                   <button
                     type="button"
-                    class="btn btn-outline-secondary"
+                    class="btn btn-outline-primary"
                     (click)="onResolveAll('keep')"
                   >
                     <i class="bi bi-shield-check me-1"></i>
@@ -146,7 +154,7 @@
                   </button>
                   <button
                     type="button"
-                    class="btn btn-outline-success"
+                    class="btn btn-outline-primary"
                     (click)="onResolveAll('import-as-new')"
                   >
                     <i class="bi bi-plus-circle me-1"></i>
@@ -230,73 +238,69 @@
                   <div ngbAccordionCollapse class="p-0 m-0">
                     <div ngbAccordionBody class="p-0 m-0">
                       <ng-template>
-                        <div class="m-0 p-0">
+                        <div class="px-3 py-3">
                           <!-- Metadata Changes -->
                           @if (hasMetadataChanges(conflict)) {
-                            <div class="mb-3 py-2">
-                              <h6 class="text-muted mb-2 px-2">
-                                <i class="bi bi-info-circle me-1"></i>
-                                Metadata Changes
-                              </h6>
-                              <div class="table-responsive mx-2">
-                                <table class="table table-sm table-bordered">
-                                  <thead class="table-light">
+                            <h6 class="text-muted mb-2">
+                              <i class="bi bi-info-circle me-1"></i>
+                              Metadata Changes
+                            </h6>
+                            <div class="table-responsive">
+                              <table class="table table-sm table-bordered">
+                                <thead class="table-light">
+                                  <tr>
+                                    <th>Field</th>
+                                    <th class="bg-danger bg-opacity-10">
+                                      Existing
+                                    </th>
+                                    <th class="bg-success bg-opacity-10">
+                                      Imported
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  @if (conflict.differences.metadata.version) {
                                     <tr>
-                                      <th>Field</th>
-                                      <th class="bg-danger bg-opacity-10">
-                                        Existing
-                                      </th>
-                                      <th class="bg-success bg-opacity-10">
-                                        Imported
-                                      </th>
+                                      <td><strong>Version</strong></td>
+                                      <td>
+                                        {{
+                                          conflict.differences.metadata.version
+                                            .existing
+                                        }}
+                                      </td>
+                                      <td>
+                                        {{
+                                          conflict.differences.metadata.version
+                                            .imported
+                                        }}
+                                      </td>
                                     </tr>
-                                  </thead>
-                                  <tbody>
-                                    @if (
-                                      conflict.differences.metadata.version
-                                    ) {
-                                      <tr>
-                                        <td><strong>Version</strong></td>
-                                        <td>
-                                          {{
-                                            conflict.differences.metadata
-                                              .version.existing
-                                          }}
-                                        </td>
-                                        <td>
-                                          {{
-                                            conflict.differences.metadata
-                                              .version.imported
-                                          }}
-                                        </td>
-                                      </tr>
-                                    }
-                                    @if (conflict.differences.metadata.name) {
-                                      <tr>
-                                        <td><strong>Name</strong></td>
-                                        <td>
-                                          {{
-                                            conflict.differences.metadata.name
-                                              .existing
-                                          }}
-                                        </td>
-                                        <td>
-                                          {{
-                                            conflict.differences.metadata.name
-                                              .imported
-                                          }}
-                                        </td>
-                                      </tr>
-                                    }
-                                  </tbody>
-                                </table>
-                              </div>
+                                  }
+                                  @if (conflict.differences.metadata.name) {
+                                    <tr>
+                                      <td><strong>Name</strong></td>
+                                      <td>
+                                        {{
+                                          conflict.differences.metadata.name
+                                            .existing
+                                        }}
+                                      </td>
+                                      <td>
+                                        {{
+                                          conflict.differences.metadata.name
+                                            .imported
+                                        }}
+                                      </td>
+                                    </tr>
+                                  }
+                                </tbody>
+                              </table>
                             </div>
                           }
 
                           <!-- Content Diff -->
                           @if (conflict.differences.content.hasChanges) {
-                            <div class="px-3">
+                            <div class="pb-3">
                               <h6 class="text-muted">
                                 <i class="bi bi-file-earmark-code me-1"></i>
                                 Content Differences
@@ -355,11 +359,11 @@
                               <button
                                 type="button"
                                 class="btn btn-sm"
-                                [class.btn-secondary]="
+                                [class.btn-primary]="
                                   getResolution(conflict.configId)?.strategy ===
                                   'keep'
                                 "
-                                [class.btn-outline-secondary]="
+                                [class.btn-outline-primary]="
                                   getResolution(conflict.configId)?.strategy !==
                                   'keep'
                                 "
@@ -373,11 +377,11 @@
                               <button
                                 type="button"
                                 class="btn btn-sm"
-                                [class.btn-success]="
+                                [class.btn-primary]="
                                   getResolution(conflict.configId)?.strategy ===
                                   'import-as-new'
                                 "
-                                [class.btn-outline-success]="
+                                [class.btn-outline-primary]="
                                   getResolution(conflict.configId)?.strategy !==
                                   'import-as-new'
                                 "

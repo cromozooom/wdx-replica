@@ -29,8 +29,8 @@
               <app-update-history
                 class="w-100 d-flex flex-column px-3"
                 [updates]="configuration!.updates!"
-                [configurationType]="configuration!.type"
-                [currentValue]="configuration!.value"
+                [configurationType]="metadata.type || configuration!.type"
+                [currentValue]="value"
               ></app-update-history>
             } @else {
               <div class="alert alert-info">
@@ -50,7 +50,7 @@
         <ng-template ngbNavContent>
           <div class="tab-content-wrapper p-3">
             <app-configuration-metadata-form
-              [configuration]="configuration"
+              [configuration]="currentConfiguration"
               [showUpdateEntry]="false"
               [showGeneralOnly]="true"
               (formChange)="onMetadataChange($event)"
@@ -75,7 +75,8 @@
           </div> -->
             <app-configuration-metadata-form
               class="w-100 d-flex flex-column"
-              [configuration]="configuration"
+              [configuration]="currentConfiguration"
+              [initialUpdateEntries]="updateEntries"
               [showUpdateEntry]="true"
               [showGeneralOnly]="false"
               (updateEntriesChange)="onUpdateEntriesChange($event)"

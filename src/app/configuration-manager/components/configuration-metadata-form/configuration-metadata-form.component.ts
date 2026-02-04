@@ -5,32 +5,33 @@ import {
   EventEmitter,
   OnInit,
   inject,
-} from '@angular/core';
-import { CommonModule } from '@angular/common';
+} from "@angular/core";
+import { CommonModule } from "@angular/common";
 import {
   FormBuilder,
   FormGroup,
   FormArray,
   ReactiveFormsModule,
   Validators,
-} from '@angular/forms';
-import { ConfigurationType } from '../../models/configuration-type.enum';
-import { Configuration } from '../../models/configuration.model';
-import { UpdateEntry } from '../../models/update-entry.model';
-import { TeamMemberService } from '../../services/team-member.service';
-import { UpdateHistoryComponent } from '../update-history/update-history.component';
+} from "@angular/forms";
+import { ConfigurationType } from "../../models/configuration-type.enum";
+import { Configuration } from "../../models/configuration.model";
+import { UpdateEntry } from "../../models/update-entry.model";
+import { TeamMemberService } from "../../services/team-member.service";
+import { UpdateHistoryComponent } from "../update-history/update-history.component";
 
 @Component({
-  selector: 'app-configuration-metadata-form',
+  selector: "app-configuration-metadata-form",
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, UpdateHistoryComponent],
-  templateUrl: './configuration-metadata-form.component.html',
-  styleUrls: ['./configuration-metadata-form.component.scss'],
+  templateUrl: "./configuration-metadata-form.component.html",
+  styleUrls: ["./configuration-metadata-form.component.scss"],
 })
 export class ConfigurationMetadataFormComponent implements OnInit {
   @Input() configuration?: Configuration;
   @Input() showUpdateEntry = false;
   @Input() showGeneralOnly = false;
+  @Input() initialUpdateEntries: UpdateEntry[] = [];
   @Output() formChange = new EventEmitter<Partial<Configuration>>();
   @Output() updateEntriesChange = new EventEmitter<UpdateEntry[]>();
 
@@ -47,19 +48,39 @@ export class ConfigurationMetadataFormComponent implements OnInit {
     this.initForm();
     if (this.showUpdateEntry) {
       this.initUpdateEntriesFormArray();
-      this.addUpdateEntry(); // Start with one entry
+
+      // Restore existing update entries or add one empty entry
+      if (this.initialUpdateEntries.length > 0) {
+        this.initialUpdateEntries.forEach((entry) => {
+          this.updateEntriesFormArray.push(
+            this.fb.group(
+              {
+                jiraTicket: [
+                  entry.jiraTicket || "",
+                  [Validators.pattern(/^WPO-\d{5}$/)],
+                ],
+                comment: [entry.comment || ""],
+                madeBy: [entry.madeBy, Validators.required],
+              },
+              { validators: this.atLeastOneValidator },
+            ),
+          );
+        });
+      } else {
+        this.addUpdateEntry(); // Start with one entry
+      }
     }
   }
 
   private initForm(): void {
     this.form = this.fb.group({
-      name: [this.configuration?.name || '', Validators.required],
+      name: [this.configuration?.name || "", Validators.required],
       type: [
         this.configuration?.type || ConfigurationType.DashboardConfig,
         Validators.required,
       ],
       version: [
-        this.configuration?.version || 'V1.0.0',
+        this.configuration?.version || "V1.0.0",
         [Validators.required, Validators.pattern(/^V\d+\.\d+\.\d+$/)],
       ],
     });
@@ -83,11 +104,11 @@ export class ConfigurationMetadataFormComponent implements OnInit {
     const currentUser = this.teamMemberService.getCurrentUser();
     return this.fb.group(
       {
-        jiraTicket: ['', [Validators.pattern(/^WPO-\d{5}$/)]],
-        comment: [''],
+        jiraTicket: ["", [Validators.pattern(/^WPO-\d{5}$/)]],
+        comment: [""],
         madeBy: [currentUser, Validators.required],
       },
-      { validators: this.atLeastOneValidator }
+      { validators: this.atLeastOneValidator },
     );
   }
 
@@ -101,7 +122,7 @@ export class ConfigurationMetadataFormComponent implements OnInit {
 
   private emitUpdateEntries(): void {
     const validEntries: UpdateEntry[] = [];
-    
+
     for (let i = 0; i < this.updateEntriesFormArray.length; i++) {
       const group = this.updateEntriesFormArray.at(i) as FormGroup;
       if (group.valid) {
@@ -123,40 +144,43 @@ export class ConfigurationMetadataFormComponent implements OnInit {
   }
 
   private atLeastOneValidator(group: FormGroup): { [key: string]: any } | null {
-    const jira = group.get('jiraTicket')?.value;
-    const comment = group.get('comment')?.value;
+    const jira = group.get("jiraTicket")?.value;
+    const comment = group.get("comment")?.value;
 
     if (!jira && !comment) {
-      return { atLeastOne: 'Either Jira ticket or comment is required' };
+      return { atLeastOne: "Either Jira ticket or comment is required" };
     }
     return null;
   }
 
   get nameControl() {
-    return this.form.get('name');
+    return this.form.get("name");
   }
 
   get typeControl() {
-    return this.form.get('type');
+    return this.form.get("type");
   }
 
   get versionControl() {
-    return this.form.get('version');
+    return this.form.get("version");
   }
 
   getJiraTicketControl(index: number) {
-    return this.updateEntriesFormArray?.at(index)?.get('jiraTicket');
+    return this.updateEntriesFormArray?.at(index)?.get("jiraTicket");
   }
 
   getCommentControl(index: number) {
-    return this.updateEntriesFormArray?.at(index)?.get('comment');
+    return this.updateEntriesFormArray?.at(index)?.get("comment");
   }
 
   getMadeByControl(index: number) {
-    return this.updateEntriesFormArray?.at(index)?.get('madeBy');
+    return this.updateEntriesFormArray?.at(index)?.get("madeBy");
   }
 
   get hasValidEntries(): boolean {
-    return this.updateEntriesFormArray?.controls.some(control => control.valid) ?? false;
+    return (
+      this.updateEntriesFormArray?.controls.some((control) => control.valid) ??
+      false
+    );
   }
 }

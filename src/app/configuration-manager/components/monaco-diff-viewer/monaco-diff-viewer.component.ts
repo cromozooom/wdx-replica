@@ -16,7 +16,7 @@ import * as monaco from "monaco-editor";
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="monaco-diff-container">
+    <div class="monaco-diff-container p-2">
       <div #diffEditor class="diff-editor"></div>
     </div>
   `,
@@ -26,7 +26,7 @@ import * as monaco from "monaco-editor";
         border: 1px solid #dee2e6;
         border-radius: 4px;
         overflow: hidden;
-        height: 500px;
+        height: 50vh;
         background: white;
       }
 

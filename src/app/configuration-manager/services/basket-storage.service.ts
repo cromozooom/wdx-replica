@@ -1,5 +1,9 @@
 import { Injectable } from "@angular/core";
-import { Basket } from "../models/basket.model";
+import {
+  Basket,
+  BASKET_COLORS,
+  CORE_BASKET_COLOR,
+} from "../models/basket.model";
 
 const DB_NAME = "ConfigurationManagerDB";
 const DB_VERSION = 3; // Match ConfigurationStorageService version
@@ -292,8 +296,16 @@ export class BasketStorageService {
   }
 
   private deserializeBasket(data: any): Basket {
+    // Migration: Add color property to existing baskets without it
+    let color = data.color;
+    if (!color) {
+      color =
+        data.name === "Product (core)" ? CORE_BASKET_COLOR : BASKET_COLORS[0];
+    }
+
     return {
       ...data,
+      color,
       createdDate: new Date(data.createdDate),
       lastModifiedDate: new Date(data.lastModifiedDate),
     };

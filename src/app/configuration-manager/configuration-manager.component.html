@@ -1,18 +1,33 @@
-<header class="header border-bottom d-flex flex-column">
+<header
+  class="header border-bottom d-flex flex-column"
+  [style.background]="
+    store.currentBasket()
+      ? 'linear-gradient(to bottom, ' +
+        hexToRgba(store.currentBasket()!.color, 0.7) +
+        ', transparent)'
+      : 'none'
+  "
+>
   <div class="d-flex justify-content-between align-items-center">
     <div class="flex-grow-1 d-flex">
       <div class="d-flex justify-content-between align-items-center gap-2 p-2">
         <div class="d-flex align-items-center gap-3">
           <div class="basket-selector d-flex gap-2">
             <div class="btn-group">
-              @for (basket of store.baskets(); track basket.id) {
+              @for (
+                basket of store.baskets();
+                track basket.id;
+                let first = $first
+              ) {
                 <button
                   type="button"
                   class="btn btn-sm"
+                  [class.rounded-start]="first"
                   [class.btn-secondary]="store.currentBasketId() === basket.id"
                   [class.btn-outline-secondary]="
                     store.currentBasketId() !== basket.id
                   "
+                  [style.border-top]="'4px solid ' + basket.color"
                   (click)="selectBasket(basket.id)"
                 >
                   {{ basket.name }}
@@ -23,7 +38,7 @@
               }
               <button
                 type="button"
-                class="btn btn-sm btn-outline-secondary"
+                class="btn btn-sm rounded-end btn-outline-secondary"
                 (click)="openBasketModal()"
                 title="Create new basket"
               >

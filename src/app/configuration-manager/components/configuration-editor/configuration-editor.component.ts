@@ -44,6 +44,16 @@ export class ConfigurationEditorComponent {
   editorFormat: "json" | "xml" | "text" = "json";
   saving = false;
 
+  // Get current working configuration with merged changes
+  get currentConfiguration(): Configuration | undefined {
+    if (!this.configuration) return undefined;
+    return {
+      ...this.configuration,
+      ...this.metadata,
+      value: this.value,
+    };
+  }
+
   ngOnInit(): void {
     if (this.configuration) {
       this.metadata = {
