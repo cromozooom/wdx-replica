@@ -5,6 +5,7 @@ import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { ConfigurationEditorComponent } from "./components/configuration-editor/configuration-editor.component";
 import { ConfigurationGridComponent } from "./components/configuration-grid/configuration-grid.component";
 import { ImportWizardComponent } from "./components/import-wizard/import-wizard.component";
+import { BulkEditorComponent } from "./components/bulk-editor/bulk-editor.component";
 import { ConfigurationStore } from "./store/configuration.store";
 import { ConfigurationService } from "./services/configuration.service";
 import { NotificationService } from "./services/notification.service";
@@ -730,6 +731,61 @@ export class ConfigurationManagerComponent implements OnInit {
       );
     } finally {
       this.exporting = false;
+    }
+  }
+
+  async onBulkEdit(): Promise<void> {
+    const selectedConfigs = this.store.selectedConfigurations();
+    if (selectedConfigs.length === 0) return;
+
+    const modalRef = this.modalService.open(BulkEditorComponent, {
+      fullscreen: true,
+    });
+
+    modalRef.componentInstance.configurations = selectedConfigs;
+
+    try {
+      const result = await modalRef.result;
+      if (!result) return;
+
+      const { version, updateEntries } = result;
+
+      // Apply changes to all selected configurations
+      this.saving = true;
+      const currentUser = this.teamMemberService.getCurrentUser();
+      const updateDate = new Date();
+
+      for (const config of selectedConfigs) {
+        // Apply each update entry separately to maintain proper history
+        for (const entry of updateEntries) {
+          await this.configService.update(
+            config.basketId,
+            config.id,
+            { version },
+            {
+              ...entry,
+              previousValue: config.value,
+            },
+          );
+        }
+      }
+
+      // Reload configurations
+      const configurations = await this.configService.getAll();
+      this.store.setConfigurations(configurations);
+
+      this.notificationService.success(
+        `Successfully updated ${selectedConfigs.length} configuration(s)`,
+      );
+    } catch (error: any) {
+      if (error !== undefined && error !== "backdrop click") {
+        console.error("Bulk edit failed:", error);
+        this.notificationService.error(
+          `Bulk edit failed: ${(error as Error).message}`,
+        );
+      }
+    } finally {
+      this.saving = false;
     }
   }
 
