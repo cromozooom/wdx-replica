@@ -1,5 +1,9 @@
 import { Injectable, inject } from "@angular/core";
-import { Basket } from "../models/basket.model";
+import {
+  Basket,
+  BASKET_COLORS,
+  CORE_BASKET_COLOR,
+} from "../models/basket.model";
 import { BasketStorageService } from "./basket-storage.service";
 import { TeamMemberService } from "./team-member.service";
 
@@ -23,9 +27,25 @@ export class BasketService {
     const currentUser = this.teamMemberService.getCurrentUser();
     const now = new Date();
 
+    // Assign color based on basket name or available colors
+    let color: string;
+    if (name === "Product (core)") {
+      color = CORE_BASKET_COLOR;
+    } else {
+      const existingBaskets = await this.getAll();
+      const usedColors = new Set(
+        existingBaskets
+          .map((b) => b.color)
+          .filter((c) => c !== CORE_BASKET_COLOR),
+      );
+      // Find first available color from palette
+      color = BASKET_COLORS.find((c) => !usedColors.has(c)) || BASKET_COLORS[0];
+    }
+
     const basket: Basket = {
       id,
       name,
+      color,
       configurationIds: [],
       createdDate: now,
       createdBy: currentUser,

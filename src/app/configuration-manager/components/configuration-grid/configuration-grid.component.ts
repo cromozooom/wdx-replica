@@ -289,8 +289,17 @@ export class ConfigurationGridComponent {
     },
     onSelectionChanged: () => {
       const selectedRows = this.gridApi?.getSelectedRows() || [];
+
+      // Filter for config rows only and deduplicate by configId
+      const uniqueConfigIds = new Set<number>();
       const configs = selectedRows
-        .filter((row: ConfigurationUpdateRow) => row.isConfigRow)
+        .filter((row: ConfigurationUpdateRow) => {
+          if (!row.isConfigRow || uniqueConfigIds.has(row.configId)) {
+            return false;
+          }
+          uniqueConfigIds.add(row.configId);
+          return true;
+        })
         .map((row: ConfigurationUpdateRow) => ({
           id: row.configId,
           name: row.configName,

@@ -256,3 +256,8 @@ body {
 p:last-child {
   margin-bottom: 0;
 }
+
+.btn-outline-primary,
+.btn-outline-secondary {
+  background: var(--bs-body-bg);
+}
