@@ -6,6 +6,7 @@ import { ConfigurationEditorComponent } from "./components/configuration-editor/
 import { ConfigurationGridComponent } from "./components/configuration-grid/configuration-grid.component";
 import { ImportWizardComponent } from "./components/import-wizard/import-wizard.component";
 import { BulkEditorComponent } from "./components/bulk-editor/bulk-editor.component";
+import { ValueViewerComponent } from "./components/value-viewer/value-viewer.component";
 import { ConfigurationStore } from "./store/configuration.store";
 import { ConfigurationService } from "./services/configuration.service";
 import { NotificationService } from "./services/notification.service";
@@ -284,30 +285,23 @@ export class ConfigurationManagerComponent implements OnInit {
     this.store.setSearchTerm(term);
   }
 
-  onViewValue(event: { value: string; type: ConfigurationType }): void {
-    // Open full-screen modal to display the value
-    const modalRef = this.modalService.open(ConfigurationEditorComponent, {
+  onViewValue(event: {
+    value: string;
+    type: ConfigurationType;
+    previousValue?: string;
+    nextValue?: string;
+  }): void {
+    console.log("[Manager] onViewValue called with:", event);
+    // Open full-screen modal to display only the value
+    const modalRef = this.modalService.open(ValueViewerComponent, {
       fullscreen: true,
       backdrop: "static",
     });
 
-    // Create a temporary configuration object for viewing
-    const viewConfig: Configuration = {
-      id: 0,
-      basketId: this.store.currentBasketId()!,
-      name: "Historical Value - View Only",
-      type: event.type,
-      version: "View Only",
-      value: event.value,
-      createdDate: new Date(),
-      createdBy: "System",
-      lastModifiedDate: new Date(),
-      lastModifiedBy: "System",
-      updates: [],
-    };
-
-    modalRef.componentInstance.configuration = viewConfig;
-    modalRef.componentInstance.viewOnly = true;
+    modalRef.componentInstance.value = event.value;
+    modalRef.componentInstance.configurationType = event.type;
+    modalRef.componentInstance.previousValue = event.previousValue || "";
+    modalRef.componentInstance.nextValue = event.nextValue || "";
   }
 
   async onResetDatabase(): Promise<void> {

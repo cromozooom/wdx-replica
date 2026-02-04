@@ -1,0 +1,111 @@
+<div class="modal-header">
+  <h5 class="modal-title">
+    <i class="fas fa-eye me-2"></i>
+    View Value - {{ configurationType }}
+  </h5>
+  <div class="d-flex align-items-center gap-3 ms-auto me-3">
+    <div class="btn-group" role="group">
+      <input
+        type="radio"
+        class="btn-check"
+        name="viewMode"
+        id="viewSingle"
+        [(ngModel)]="viewMode"
+        value="single"
+        autocomplete="off"
+      />
+      <label class="btn btn-outline-primary btn-sm" for="viewSingle">
+        Single
+      </label>
+
+      <input
+        type="radio"
+        class="btn-check"
+        name="viewMode"
+        id="viewPrevious"
+        [(ngModel)]="viewMode"
+        value="previous"
+        autocomplete="off"
+        [disabled]="!hasPrevious"
+      />
+      <label
+        class="btn btn-outline-primary btn-sm"
+        for="viewPrevious"
+        [class.disabled]="!hasPrevious"
+      >
+        Vs Previous
+      </label>
+
+      <input
+        type="radio"
+        class="btn-check"
+        name="viewMode"
+        id="viewNext"
+        [(ngModel)]="viewMode"
+        value="next"
+        autocomplete="off"
+        [disabled]="!hasNext"
+      />
+      <label
+        class="btn btn-outline-primary btn-sm"
+        for="viewNext"
+        [class.disabled]="!hasNext"
+      >
+        Vs Next
+      </label>
+    </div>
+  </div>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss()"
+  ></button>
+</div>
+<div class="modal-body p-0">
+  @if (viewMode === "single") {
+    <div class="d-flex flex-column h-100">
+      <div class="bg-light border-bottom px-3 py-2">
+        <span class="badge bg-primary"> Current Version </span>
+      </div>
+      <app-monaco-editor
+        [value]="value"
+        [language]="language"
+        [readOnly]="true"
+        style="height: calc(100vh - 110px); display: block"
+      ></app-monaco-editor>
+    </div>
+  } @else if (viewMode === "previous" && hasPrevious) {
+    <div class="d-flex flex-column h-100">
+      <div
+        class="bg-light border-bottom px-3 py-2 d-flex justify-content-between"
+      >
+        <span class="badge bg-light text-muted"> Previous Version </span>
+        <span class="badge bg-info-subtle text-info-emphasis"
+          >Current Version
+        </span>
+      </div>
+      <app-monaco-diff-viewer
+        [leftValue]="previousValue"
+        [rightValue]="value"
+        [language]="language"
+        style="height: calc(100vh - 110px); display: block"
+      ></app-monaco-diff-viewer>
+    </div>
+  } @else if (viewMode === "next" && hasNext) {
+    <div class="d-flex flex-column h-100">
+      <div class="border-bottom px-3 py-2 d-flex justify-content-between">
+        <span class="badge bg-info-subtle text-info-emphasis">
+          Current Version
+        </span>
+        <span class="badge bg-light text-muted"> Next Version </span>
+      </div>
+      <app-monaco-diff-viewer
+        [leftValue]="value"
+        [rightValue]="nextValue"
+        [language]="language"
+        style="height: calc(100vh - 110px); display: block"
+      ></app-monaco-diff-viewer>
+    </div>
+  }
+</div>
