@@ -12,6 +12,7 @@ import {
   CellStyleModule,
   ColumnApiModule,
   RowStyleModule,
+  RowApiModule,
 } from "ag-grid-community";
 import { RowGroupingPanelModule } from "ag-grid-enterprise";
 import { Configuration } from "../../models/configuration.model";
@@ -26,6 +27,7 @@ ModuleRegistry.registerModules([
   RowStyleModule,
   RowGroupingPanelModule,
   ColumnApiModule,
+  RowApiModule,
 ]);
 
 interface ConfigurationUpdateRow {
@@ -40,7 +42,7 @@ interface ConfigurationUpdateRow {
   configLastModifiedDate: Date;
   configLastModifiedBy: string;
   configUpdates: UpdateEntry[];
-  // Update entry fields (null if this is the config row)
+  configSourceMetadata?: string; // Update entry fields (null if this is the config row)
   updateJiraTicket?: string;
   updateComment?: string;
   updateDate?: Date;
@@ -63,6 +65,10 @@ export class ConfigurationGridComponent {
   @Output() selectionChanged = new EventEmitter<Configuration[]>();
   @Output() typeFilterChanged = new EventEmitter<ConfigurationType | null>();
   @Output() searchTermChanged = new EventEmitter<string>();
+  @Output() viewValue = new EventEmitter<{
+    value: string;
+    type: ConfigurationType;
+  }>();
 
   rowData: ConfigurationUpdateRow[] = [];
   groupBy: "none" | "name" | "version" = "none";
@@ -98,6 +104,7 @@ export class ConfigurationGridComponent {
         configLastModifiedDate: config.lastModifiedDate,
         configLastModifiedBy: config.lastModifiedBy,
         configUpdates: config.updates,
+        configSourceMetadata: config.configSourceMetadata,
         isConfigRow: true,
       });
 
@@ -115,6 +122,7 @@ export class ConfigurationGridComponent {
             configLastModifiedDate: config.lastModifiedDate,
             configLastModifiedBy: config.lastModifiedBy,
             configUpdates: config.updates,
+            configSourceMetadata: config.configSourceMetadata,
             updateJiraTicket: update.jiraTicket,
             updateComment: update.comment,
             updateDate: update.date,
@@ -139,6 +147,28 @@ export class ConfigurationGridComponent {
       sortable: false,
       filter: false,
       resizable: false,
+    },
+    {
+      headerName: "Actions",
+      pinned: "left",
+      width: 80,
+      sortable: false,
+      filter: false,
+      cellRenderer: (params: any) => {
+        if (!params.data) return "";
+
+        if (params.data.isConfigRow) {
+          // For config rows, show view current value button
+          return `<button class="btn btn-sm btn-outline-primary view-value-btn" data-action="view-current" title="View current value">
+            <i class="fas fa-eye"></i>
+          </button>`;
+        } else {
+          // For update rows, show view historical value button
+          return `<button class="btn btn-sm btn-outline-secondary view-value-btn" data-action="view-historical" title="View value at this point">
+            <i class="fas fa-history"></i>
+          </button>`;
+        }
+      },
     },
     {
       headerName: "Configuration Name",
@@ -338,6 +368,77 @@ export class ConfigurationGridComponent {
 
   onGridReady(event: GridReadyEvent<ConfigurationUpdateRow>): void {
     this.gridApi = event.api;
+
+    // Add click listener for action buttons
+    setTimeout(() => {
+      const gridElement = document.querySelector(".ag-root");
+      if (gridElement) {
+        gridElement.addEventListener("click", (e: Event) => {
+          const target = e.target as HTMLElement;
+          const button = target.closest(".view-value-btn") as HTMLElement;
+
+          if (button) {
+            e.stopPropagation();
+            const action = button.getAttribute("data-action");
+            const rowNode = this.gridApi.getRowNode(
+              this.gridApi.getFocusedCell()?.rowIndex?.toString() || "",
+            );
+
+            if (rowNode?.data) {
+              const data = rowNode.data as ConfigurationUpdateRow;
+
+              if (action === "view-current" && data.isConfigRow) {
+                // View current value
+                this.viewValue.emit({
+                  value: data.configValue,
+                  type: data.configType,
+                });
+              } else if (action === "view-historical" && !data.isConfigRow) {
+                // Find the previous value for this update
+                const allRows = this.rowData.filter(
+                  (r) => r.configId === data.configId,
+                );
+                const updateRows = allRows
+                  .filter((r) => !r.isConfigRow)
+                  .sort(
+                    (a, b) =>
+                      new Date(b.updateDate!).getTime() -
+                      new Date(a.updateDate!).getTime(),
+                  );
+
+                const updateIndex = updateRows.findIndex(
+                  (r) => r.updateDate?.getTime() === data.updateDate?.getTime(),
+                );
+
+                // Get the value after this update (or current if it's the latest)
+                let valueToShow = "";
+                if (updateIndex === 0) {
+                  // Latest update, show current value
+                  const configRow = allRows.find((r) => r.isConfigRow);
+                  valueToShow = configRow?.configValue || "";
+                } else {
+                  // Show the previousValue from the update
+                  const updates =
+                    allRows.find((r) => r.isConfigRow)?.configUpdates || [];
+                  const sortedUpdates = [...updates].sort(
+                    (a, b) =>
+                      new Date(b.date).getTime() - new Date(a.date).getTime(),
+                  );
+                  const update = sortedUpdates[updateIndex];
+                  valueToShow =
+                    sortedUpdates[updateIndex - 1]?.previousValue || "";
+                }
+
+                this.viewValue.emit({
+                  value: valueToShow,
+                  type: data.configType,
+                });
+              }
+            }
+          }
+        });
+      }
+    }, 100);
   }
 
   onTypeFilterChange(event: Event): void {

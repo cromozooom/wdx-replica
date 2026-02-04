@@ -14,11 +14,13 @@ import {
   ReactiveFormsModule,
   Validators,
 } from "@angular/forms";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { ConfigurationType } from "../../models/configuration-type.enum";
 import { Configuration } from "../../models/configuration.model";
 import { UpdateEntry } from "../../models/update-entry.model";
 import { TeamMemberService } from "../../services/team-member.service";
 import { UpdateHistoryComponent } from "../update-history/update-history.component";
+import { ConfigurationEditorComponent } from "../configuration-editor/configuration-editor.component";
 
 @Component({
   selector: "app-configuration-metadata-form",
@@ -37,6 +39,7 @@ export class ConfigurationMetadataFormComponent implements OnInit {
 
   private fb = inject(FormBuilder);
   private teamMemberService = inject(TeamMemberService);
+  private modalService = inject(NgbModal);
 
   form!: FormGroup;
   updateEntriesFormArray!: FormArray;
@@ -182,5 +185,53 @@ export class ConfigurationMetadataFormComponent implements OnInit {
       this.updateEntriesFormArray?.controls.some((control) => control.valid) ??
       false
     );
+  }
+
+  onEdit(): void {
+    console.log("[ConfigurationMetadataForm] Edit event received");
+    // Emit event to parent to switch to edit mode or navigate to editor
+    // This is typically handled by the parent component
+    console.log(
+      "[ConfigurationMetadataForm] Edit action - no implementation yet",
+    );
+  }
+
+  onViewHistoricalValue(value: string): void {
+    console.log(
+      "[ConfigurationMetadataForm] ViewValue event received, value length:",
+      value?.length,
+    );
+    if (!this.configuration) {
+      console.warn("[ConfigurationMetadataForm] No configuration available");
+      return;
+    }
+
+    console.log(
+      "[ConfigurationMetadataForm] Opening full-screen modal for historical value",
+    );
+    // Open full-screen modal to display the historical value
+    const modalRef = this.modalService.open(ConfigurationEditorComponent, {
+      fullscreen: true,
+      backdrop: "static",
+    });
+
+    // Create a temporary configuration object for viewing
+    const viewConfig: Configuration = {
+      id: 0,
+      basketId: this.configuration.basketId,
+      name: "Historical Value - View Only",
+      type: this.configuration.type,
+      version: "View Only",
+      value: value,
+      createdDate: new Date(),
+      createdBy: "System",
+      lastModifiedDate: new Date(),
+      lastModifiedBy: "System",
+      updates: [],
+    };
+
+    modalRef.componentInstance.configuration = viewConfig;
+    modalRef.componentInstance.viewOnly = true;
+    console.log("[ConfigurationMetadataForm] Modal opened with view config");
   }
 }

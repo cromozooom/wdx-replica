@@ -31,6 +31,8 @@
                 [updates]="configuration!.updates!"
                 [configurationType]="metadata.type || configuration!.type"
                 [currentValue]="value"
+                (edit)="onEdit()"
+                (viewValue)="onViewHistoricalValue($event)"
               ></app-update-history>
             } @else {
               <div class="alert alert-info">
@@ -103,6 +105,21 @@
           ></app-monaco-editor>
         </ng-template>
       </li>
+
+      <!-- Source Metadata Tab (only if metadata exists) -->
+      @if (configuration?.configSourceMetadata) {
+        <li [ngbNavItem]="4">
+          <button ngbNavLink>Source Metadata</button>
+          <ng-template ngbNavContent>
+            <app-monaco-editor
+              class="w-100 d-flex flex-column"
+              [value]="configuration!.configSourceMetadata!"
+              [language]="'json'"
+              [readOnly]="true"
+            ></app-monaco-editor>
+          </ng-template>
+        </li>
+      }
     </ul>
     <div class="p-1 bg-body"></div>
   </div>

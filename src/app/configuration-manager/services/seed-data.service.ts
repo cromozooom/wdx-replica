@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { Configuration } from "../models/configuration.model";
 import { ConfigurationType } from "../models/configuration-type.enum";
 import { UpdateEntry } from "../models/update-entry.model";
+import processesData from "./Processes.json";
 
 @Injectable({
   providedIn: "root",
@@ -193,6 +194,13 @@ export class SeedDataService {
         initialValue,
       );
 
+      const dashboardMetadata = {
+        configId: `dashboard-${i}`,
+        category: "dashboard",
+        environment: "production",
+        tags: ["wealth-management", "analytics"],
+      };
+
       configurations.push({
         id: id++,
         basketId,
@@ -200,6 +208,7 @@ export class SeedDataService {
         type: ConfigurationType.DashboardConfig,
         version: this.generateRandomVersion(),
         value: finalValue,
+        configSourceMetadata: JSON.stringify(dashboardMetadata, null, 2),
         createdDate: new Date(2026, 0, i),
         lastModifiedDate: new Date(2026, 0, i),
         createdBy: "system",
@@ -232,6 +241,13 @@ export class SeedDataService {
         initialValue,
       );
 
+      const formMetadata = {
+        configId: `form-${i}`,
+        category: "form",
+        formType: "jsonSchema",
+        validationEnabled: true,
+      };
+
       configurations.push({
         id: id++,
         basketId,
@@ -239,6 +255,7 @@ export class SeedDataService {
         type: ConfigurationType.FormConfig,
         version: this.generateRandomVersion(),
         value: finalValue,
+        configSourceMetadata: JSON.stringify(formMetadata, null, 2),
         createdDate: new Date(2026, 0, 15 + i),
         lastModifiedDate: new Date(2026, 0, 15 + i),
         createdBy: "system",
@@ -267,6 +284,13 @@ export class SeedDataService {
         initialValue,
       );
 
+      const fetchXmlMetadata = {
+        configId: `fetchxml-${i}`,
+        category: "query",
+        queryType: "fetchxml",
+        entityTarget: "contact",
+      };
+
       configurations.push({
         id: id++,
         basketId,
@@ -274,6 +298,7 @@ export class SeedDataService {
         type: ConfigurationType.FetchXMLQuery,
         version: this.generateRandomVersion(),
         value: finalValue,
+        configSourceMetadata: JSON.stringify(fetchXmlMetadata, null, 2),
         createdDate: new Date(2026, 0, 30 + i),
         lastModifiedDate: new Date(2026, 0, 30 + i),
         createdBy: "system",
@@ -301,6 +326,13 @@ export class SeedDataService {
         initialValue,
       );
 
+      const dashboardQueryMetadata = {
+        configId: `dashboard-query-${i}`,
+        category: "query",
+        queryType: "aggregate",
+        entityTarget: "opportunity",
+      };
+
       configurations.push({
         id: id++,
         basketId,
@@ -308,6 +340,7 @@ export class SeedDataService {
         type: ConfigurationType.DashboardQuery,
         version: this.generateRandomVersion(),
         value: finalValue,
+        configSourceMetadata: JSON.stringify(dashboardQueryMetadata, null, 2),
         createdDate: new Date(2026, 1, i),
         lastModifiedDate: new Date(2026, 1, i),
         createdBy: "system",
@@ -316,38 +349,75 @@ export class SeedDataService {
       });
     }
 
-    // 5. Processes (15)
-    for (let i = 1; i <= 15; i++) {
-      const initialValue = `// Automated process ${i}
-async function execute() {
-  // Process logic here
-  return { success: true };
-}
+    // 5. Processes (from Processes.json)
+    const processesFromFile = processesData as any[];
+    console.log(
+      `[SeedData] Loading ${processesFromFile.length} processes from Processes.json`,
+    );
 
-execute();`;
+    for (let i = 0; i < processesFromFile.length; i++) {
+      const processData = processesFromFile[i];
+
+      // Use Configuration field as the main value (or default if null)
+      const initialValue =
+        processData.Configuration ||
+        `// Process: ${processData.Name}\nasync function execute() {\n  // Process logic here\n  return { success: true };\n}\n\nexecute();`;
+
+      // Create metadata object from all other fields
+      const metadata = {
+        sourceId: processData.Id,
+        key: processData.Key,
+        lockedBy: processData.LockedBy,
+        firstStep: processData.FirstStep,
+        formName: processData.FormName,
+        allowReOpenIfCancelled: processData.AllowReOpenIfCancelled,
+        entityType: processData.EntityType,
+        allowReOpenIfCompleted: processData.AllowReOpenIfCompleted,
+        parentProcessTypeId: processData.ParentProcessTypeId,
+        userSelectable: processData.UserSelectable,
+        evidenceRequired: processData.EvidenceRequired,
+      };
+
+      const metadataJson = JSON.stringify(metadata, null, 2);
 
       const updateCount = i % 5 === 0 ? 5 : 3;
       const { entries, finalValue } = this.generateUpdateEntries(
-        60 + i - 1,
+        60 + i,
         updateCount,
         ConfigurationType.Process,
         initialValue,
       );
 
-      configurations.push({
+      const config = {
         id: id++,
         basketId,
-        name: `Process ${i}`,
+        name: processData.Name,
         type: ConfigurationType.Process,
-        version: this.generateRandomVersion(),
+        version: "V1.0.0",
         value: finalValue,
+        configSourceMetadata: metadataJson,
         createdDate: new Date(2026, 1, 15 + i),
         lastModifiedDate: new Date(2026, 1, 15 + i),
         createdBy: "system",
         lastModifiedBy: "system",
         updates: entries,
-      });
+      };
+
+      if (i === 0) {
+        console.log("[SeedData] First process example:", {
+          name: config.name,
+          hasMetadata: !!config.configSourceMetadata,
+          metadataLength: config.configSourceMetadata?.length,
+          metadataPreview: config.configSourceMetadata?.substring(0, 100),
+        });
+      }
+
+      configurations.push(config);
     }
+
+    console.log(
+      `[SeedData] Generated ${configurations.length} total configurations`,
+    );
 
     // 6. System Settings (1)
     const sysSettingInitial = JSON.stringify(
@@ -379,6 +449,14 @@ execute();`;
         sysSettingInitial,
       );
 
+    const systemSettingsMetadata = {
+      configId: "global-system-settings",
+      category: "system",
+      scope: "global",
+      critical: true,
+      requiresApproval: true,
+    };
+
     configurations.push({
       id: id++,
       basketId,
@@ -386,6 +464,7 @@ execute();`;
       type: ConfigurationType.SystemSetting,
       version: this.generateRandomVersion(),
       value: sysFinalValue,
+      configSourceMetadata: JSON.stringify(systemSettingsMetadata, null, 2),
       createdDate: new Date(2026, 1, 1),
       lastModifiedDate: new Date(2026, 1, 1),
       createdBy: "admin",

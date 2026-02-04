@@ -54,6 +54,19 @@ export class ConfigurationEditorComponent {
 
   ngOnInit(): void {
     if (this.configuration) {
+      console.log("[ConfigurationEditor] Configuration loaded:", {
+        name: this.configuration.name,
+        type: this.configuration.type,
+        hasMetadata: !!this.configuration.configSourceMetadata,
+        metadata: this.configuration.configSourceMetadata?.substring(0, 100),
+        fullConfig: this.configuration,
+      });
+      console.log("[ConfigurationEditor] Tab condition check:", {
+        "configuration exists": !!this.configuration,
+        "configSourceMetadata exists":
+          !!this.configuration?.configSourceMetadata,
+        "will show tab": !!this.configuration?.configSourceMetadata,
+      });
       this.metadata = {
         name: this.configuration.name,
         type: this.configuration.type,
@@ -150,5 +163,25 @@ export class ConfigurationEditorComponent {
   onCancel(): void {
     this.cancelled.emit();
     this.modal.dismiss();
+  }
+
+  onEdit(): void {
+    console.log("[ConfigurationEditor] Edit event received");
+    // Switch to the value editor tab
+    const valueTab = 2; // Assuming Value tab is at index 2
+    // The tab will be automatically focused when user clicks edit
+    console.log("[ConfigurationEditor] Should switch to value tab");
+  }
+
+  onViewHistoricalValue(value: string): void {
+    console.log(
+      "[ConfigurationEditor] ViewValue event received, value length:",
+      value?.length,
+    );
+    // Open a modal to view the historical value
+    // For now, just switch to the Value tab and show the historical value
+    // You could also open a separate modal if needed
+    this.value = value;
+    console.log("[ConfigurationEditor] Value updated in editor");
   }
 }
