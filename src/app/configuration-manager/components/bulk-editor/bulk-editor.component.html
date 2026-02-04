@@ -1,0 +1,143 @@
+<div class="modal-header">
+  <h3 class="modal-title h5">
+    Bulk Edit Configurations ({{ configurations.length }} selected)
+  </h3>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="onCancel()"
+  ></button>
+</div>
+
+<div class="modal-body p-4">
+  <div class="alert alert-info mb-4">
+    <i class="fas fa-info-circle me-2"></i>
+    Changes will be applied to all
+    <strong>{{ configurations.length }}</strong> selected configurations.
+  </div>
+
+  <form [formGroup]="form">
+    <!-- Version Section -->
+    <div class="card mb-4">
+      <div class="card-header bg-light">
+        <h6 class="mb-0">
+          <i class="fas fa-code-branch me-2"></i>
+          Version
+        </h6>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="version" class="form-label">New Version *</label>
+          <input
+            type="text"
+            class="form-control"
+            id="version"
+            formControlName="version"
+            placeholder="V1.0.0"
+          />
+          @if (versionControl?.invalid && versionControl?.touched) {
+            <div class="text-danger mt-1">
+              Version must match format V#.#.# (e.g., V1.0.0)
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Update Entries Section -->
+    <div class="card">
+      <div class="card-header bg-light">
+        <div class="d-flex justify-content-between align-items-center">
+          <h6 class="mb-0">
+            <i class="fas fa-edit me-2"></i>
+            Document Changes
+          </h6>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-primary"
+            (click)="addUpdateEntry()"
+          >
+            <i class="fas fa-plus me-1"></i>
+            Add Change
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div formArrayName="updateEntries">
+          @for (entryForm of updateEntries; track $index; let i = $index) {
+            <div class="update-entry-card card mb-3" [formGroupName]="i">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h6 class="mb-0 text-muted">Change #{{ i + 1 }}</h6>
+                  @if (updateEntries.length > 1) {
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-danger"
+                      (click)="removeUpdateEntry(i)"
+                    >
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  }
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Jira Ticket</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="jiraTicket"
+                      placeholder="e.g., WPO-10001"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Made By</label>
+                    <select class="form-select" formControlName="madeBy">
+                      @for (member of teamMembers; track member) {
+                        <option [value]="member">{{ member }}</option>
+                      }
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Comment</label>
+                  <textarea
+                    class="form-control"
+                    formControlName="comment"
+                    rows="3"
+                    placeholder="Describe the changes made..."
+                  ></textarea>
+                  <small class="text-muted">Markdown supported</small>
+                </div>
+
+                <div class="alert alert-warning py-2 mb-0">
+                  <small>
+                    <i class="fas fa-exclamation-triangle me-1"></i>
+                    At least one of <strong>Jira Ticket</strong> or
+                    <strong>Comment</strong> must be provided
+                  </small>
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-secondary" (click)="onCancel()" [disabled]="saving">
+    Cancel
+  </button>
+  <button class="btn btn-primary" (click)="onSave()" [disabled]="saving">
+    @if (saving) {
+      <span class="spinner-border spinner-border-sm me-2"></span>
+    }
+    Apply to {{ configurations.length }} Configuration(s)
+  </button>
+</div>

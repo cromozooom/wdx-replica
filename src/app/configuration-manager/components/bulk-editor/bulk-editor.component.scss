@@ -1,0 +1,9 @@
+.update-entry-card {
+  border-left: 3px solid var(--bs-primary);
+  background-color: var(--bs-light);
+}
+
+.modal-body {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
