@@ -3,6 +3,7 @@ import { Configuration } from "../models/configuration.model";
 import { ConfigurationType } from "../models/configuration-type.enum";
 import { UpdateEntry } from "../models/update-entry.model";
 import processesData from "./Processes.json";
+import dashboardsData from "./dasboards.json";
 
 @Injectable({
   providedIn: "root",
@@ -164,53 +165,60 @@ export class SeedDataService {
     const configurations: Configuration[] = [];
     let id = 1;
 
-    // 1. Dashboard Configs (15)
-    for (let i = 1; i <= 15; i++) {
-      const initialValue = JSON.stringify(
-        {
-          layout: "grid",
-          columns: 12,
-          widgets: [
-            {
-              type: "chart",
-              position: { row: 0, col: 0, width: 6, height: 4 },
-            },
-            {
-              type: "metrics",
-              position: { row: 0, col: 6, width: 6, height: 4 },
-            },
-          ],
-          theme: "professional",
-        },
-        null,
-        2,
-      );
+    // 1. Dashboard Configs (20 from dasboards.json)
+    const dashboardsToUse = dashboardsData.slice(0, 20);
+    console.log(
+      `[SeedData] Generating ${dashboardsToUse.length} dashboards from JSON`,
+    );
+
+    for (let i = 0; i < dashboardsToUse.length; i++) {
+      const dashboardData = dashboardsToUse[i];
+      const dashboardValue = JSON.stringify(dashboardData, null, 2);
 
       const updateCount = i % 2 === 0 ? 3 : 4;
       const { entries, finalValue } = this.generateUpdateEntries(
-        i - 1,
+        i,
         updateCount,
         ConfigurationType.DashboardConfig,
-        initialValue,
+        dashboardValue,
       );
 
+      // Extract metadata from dashboard (all fields except the ones we use for Configuration)
+      const {
+        DashboardId,
+        Name,
+        DisplayName,
+        EntityName,
+        ApiPath,
+        ApiMethod,
+        DashboardDataSource,
+        LayoutComponentName,
+        AllowAnonymous,
+        IsTranslatable,
+        ...restMetadata
+      } = dashboardData as any;
       const dashboardMetadata = {
-        configId: `dashboard-${i}`,
-        category: "dashboard",
-        environment: "production",
-        tags: ["wealth-management", "analytics"],
+        dashboardId: DashboardId,
+        displayName: DisplayName,
+        entityName: EntityName,
+        apiPath: ApiPath,
+        apiMethod: ApiMethod,
+        dashboardDataSource: DashboardDataSource,
+        layoutComponentName: LayoutComponentName,
+        allowAnonymous: AllowAnonymous,
+        isTranslatable: IsTranslatable,
       };
 
       configurations.push({
         id: id++,
         basketId,
-        name: `Dashboard Config ${i}`,
+        name: (Name || `Dashboard ${i + 1}`).trim(),
         type: ConfigurationType.DashboardConfig,
-        version: this.generateRandomVersion(),
+        version: "V1.0.0",
         value: finalValue,
         configSourceMetadata: JSON.stringify(dashboardMetadata, null, 2),
-        createdDate: new Date(2026, 0, i),
-        lastModifiedDate: new Date(2026, 0, i),
+        createdDate: new Date(2026, 0, i + 1),
+        lastModifiedDate: new Date(2026, 0, i + 1),
         createdBy: "system",
         lastModifiedBy: "system",
         updates: entries,
