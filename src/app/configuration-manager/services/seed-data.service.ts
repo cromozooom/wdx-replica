@@ -3,7 +3,10 @@ import { Configuration } from "../models/configuration.model";
 import { ConfigurationType } from "../models/configuration-type.enum";
 import { UpdateEntry } from "../models/update-entry.model";
 import processesData from "./Processes.json";
-import dashboardsData from "./dasboards.json";
+
+// Instead of importing large dasboards.json, define the dashboards inline
+// This avoids build issues with large JSON files in Netlify
+const SAMPLE_DASHBOARDS = 20; // Number of dashboards to generate
 
 @Injectable({
   providedIn: "root",
@@ -165,14 +168,73 @@ export class SeedDataService {
     const configurations: Configuration[] = [];
     let id = 1;
 
-    // 1. Dashboard Configs (20 from dasboards.json)
-    const dashboardsToUse = dashboardsData.slice(0, 20);
-    console.log(
-      `[SeedData] Generating ${dashboardsToUse.length} dashboards from JSON`,
-    );
+    // 1. Dashboard Configs (20 representative dashboards)
+    // Generate sample dashboards without requiring large JSON import
+    console.log(`[SeedData] Generating ${SAMPLE_DASHBOARDS} sample dashboards`);
 
-    for (let i = 0; i < dashboardsToUse.length; i++) {
-      const dashboardData = dashboardsToUse[i];
+    const dashboardTemplates = [
+      {
+        entityName: "contact",
+        apiPath: "Contacts/{entityId}",
+        name: "Contact Review Dashboard",
+      },
+      {
+        entityName: "account",
+        apiPath: "Accounts/{entityId}",
+        name: "Account Overview",
+      },
+      {
+        entityName: "opportunity",
+        apiPath: "Opportunities/{entityId}",
+        name: "Opportunity Pipeline",
+      },
+      {
+        entityName: "case",
+        apiPath: "Cases/{entityId}",
+        name: "Case Management",
+      },
+      {
+        entityName: "lead",
+        apiPath: "Leads/{entityId}",
+        name: "Lead Tracking",
+      },
+    ];
+
+    for (let i = 0; i < SAMPLE_DASHBOARDS; i++) {
+      const template = dashboardTemplates[i % dashboardTemplates.length];
+
+      // Create a representative dashboard structure
+      const dashboardData = {
+        DashboardId: `${Math.random().toString(36).substring(2, 15)}-${Math.random().toString(36).substring(2, 15)}`,
+        Name: `${template.name} ${Math.floor(i / dashboardTemplates.length) + 1}`,
+        DisplayName: null,
+        EntityName: template.entityName,
+        ApiPath: template.apiPath,
+        ApiMethod: "GET",
+        DashboardDataSource: null,
+        LayoutComponentName: "DashboardLayoutPlainComponent",
+        AllowAnonymous: false,
+        IsTranslatable: false,
+        Pages: [
+          {
+            PageId: `page-${i}`,
+            Name: "Main Page",
+            Dashboards: [
+              {
+                Widgets: [
+                  {
+                    WidgetId: `widget-${i}-1`,
+                    Type: "html",
+                    Config: { Html: "<h3>Sample Widget</h3>" },
+                    Position: { Column: "12", Order: 0 },
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      };
+
       const dashboardValue = JSON.stringify(dashboardData, null, 2);
 
       const updateCount = i % 2 === 0 ? 3 : 4;
@@ -183,7 +245,7 @@ export class SeedDataService {
         dashboardValue,
       );
 
-      // Extract metadata from dashboard (all fields except the ones we use for Configuration)
+      // Extract metadata from dashboard
       const {
         DashboardId,
         Name,
@@ -195,8 +257,8 @@ export class SeedDataService {
         LayoutComponentName,
         AllowAnonymous,
         IsTranslatable,
-        ...restMetadata
-      } = dashboardData as any;
+      } = dashboardData;
+
       const dashboardMetadata = {
         dashboardId: DashboardId,
         displayName: DisplayName,
@@ -212,7 +274,7 @@ export class SeedDataService {
       configurations.push({
         id: id++,
         basketId,
-        name: (Name || `Dashboard ${i + 1}`).trim(),
+        name: Name.trim(),
         type: ConfigurationType.DashboardConfig,
         version: "V1.0.0",
         value: finalValue,
