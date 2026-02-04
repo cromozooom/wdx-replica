@@ -103,13 +103,25 @@ export const ImportWizardStore = signalStore(
      */
     importSummary: computed(() => {
       const total = store.importedConfigurations().length;
-      const conflicts = store.conflicts().filter((c) => c.hasConflict).length;
-      const noConflicts = total - conflicts;
+      const totalConflicts = store
+        .conflicts()
+        .filter((c) => c.hasConflict).length;
+      const resolvedConflicts = store
+        .conflicts()
+        .filter((c) => c.hasConflict)
+        .filter((c) =>
+          store.resolutions().some((r) => r.configId === c.configId),
+        ).length;
+      const unresolvedConflicts = totalConflicts - resolvedConflicts;
+      const noConflicts = total - totalConflicts;
+      const ready = noConflicts + resolvedConflicts;
 
       return {
         total,
-        conflicts,
+        conflicts: unresolvedConflicts,
+        resolved: resolvedConflicts,
         noConflicts,
+        ready,
         completed: store.completedCount(),
         failed: store.failedCount(),
       };

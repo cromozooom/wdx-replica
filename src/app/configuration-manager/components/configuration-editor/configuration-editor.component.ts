@@ -2,8 +2,7 @@ import { Component, Input, Output, EventEmitter, inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { NgbNavModule, NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
 import { ConfigurationMetadataFormComponent } from "../configuration-metadata-form/configuration-metadata-form.component";
-import { JsonEditorComponent } from "../json-editor/json-editor.component";
-import { AceEditorComponent } from "../ace-editor/ace-editor.component";
+import { MonacoEditorComponent } from "../monaco-editor/monaco-editor.component";
 import { UpdateHistoryComponent } from "../update-history/update-history.component";
 import { Configuration } from "../../models/configuration.model";
 import { UpdateEntry } from "../../models/update-entry.model";
@@ -21,8 +20,7 @@ import { NotificationService } from "../../services/notification.service";
     CommonModule,
     NgbNavModule,
     ConfigurationMetadataFormComponent,
-    JsonEditorComponent,
-    AceEditorComponent,
+    MonacoEditorComponent,
     UpdateHistoryComponent,
   ],
   templateUrl: "./configuration-editor.component.html",

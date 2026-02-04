@@ -567,6 +567,7 @@ export class ConfigurationManagerComponent implements OnInit {
 
   async selectBasket(basketId: number): Promise<void> {
     this.store.setCurrentBasketId(basketId);
+    this.store.setSelectedIds([]);
 
     // Reload configurations to refresh update entries for the new basket
     this.store.setLoading(true);

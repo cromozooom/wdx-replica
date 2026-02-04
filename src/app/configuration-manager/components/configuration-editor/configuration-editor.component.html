@@ -18,14 +18,14 @@
         <li [ngbNavItem]="0">
           <button ngbNavLink>
             History
-            @if (configuration?.updates?.length) {
+            @if (configuration.updates.length) {
               <span class="badge bg-primary ms-2">{{
                 configuration.updates.length
               }}</span>
             }
           </button>
           <ng-template ngbNavContent>
-            @if (configuration?.updates?.length) {
+            @if (configuration.updates.length) {
               <app-update-history
                 class="w-100 d-flex flex-column px-3"
                 [updates]="configuration!.updates!"
@@ -89,29 +89,18 @@
       <li [ngbNavItem]="3">
         <button ngbNavLink>Values</button>
         <ng-template ngbNavContent>
-          @if (editorFormat === "json") {
-            <app-json-editor
-              class="w-100 d-flex flex-column"
-              [value]="value"
-              (valueChange)="onValueChange($event)"
-            ></app-json-editor>
-          } @else if (editorFormat === "xml") {
-            <app-ace-editor
-              class="w-100 d-flex flex-column"
-              [value]="value"
-              [mode]="'xml'"
-              (valueChange)="onValueChange($event)"
-            ></app-ace-editor>
-          } @else {
-            <app-ace-editor
-              class="w-100 d-flex flex-column"
-              [value]="value"
-              [mode]="'text'"
-              (valueChange)="onValueChange($event)"
-            ></app-ace-editor>
-          }
-          <!-- <div class="tab-content-wrapper p-3 w-100 d-flex flex-column">
-          </div> -->
+          <app-monaco-editor
+            class="w-100 d-flex flex-column"
+            [value]="value"
+            [language]="
+              editorFormat === 'json'
+                ? 'json'
+                : editorFormat === 'xml'
+                  ? 'xml'
+                  : 'plaintext'
+            "
+            (valueChange)="onValueChange($event)"
+          ></app-monaco-editor>
         </ng-template>
       </li>
     </ul>
