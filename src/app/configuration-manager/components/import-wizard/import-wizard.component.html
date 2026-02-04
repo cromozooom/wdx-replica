@@ -116,43 +116,7 @@
             </div>
           </div>
         </div>
-        @if (wizardStore.importSummary().conflicts === 0) {
-          @if (wizardStore.importSummary().noConflicts > 0) {
-            <div
-              class="d-flex align-items-center gap-2 flex-grow-1 justify-content-end"
-            >
-              <h6 class="h6 mb-0">Configurations to Import:</h6>
-              <div>
-                <div class="list-group">
-                  @for (
-                    conflict of wizardStore.conflicts();
-                    track conflict.configId
-                  ) {
-                    @if (!conflict.hasConflict) {
-                      <div class="list-group-item">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div>
-                            <h6 class="h6 mb-0">
-                              {{ conflict.importedConfig.name }}
-                            </h6>
-                            <small class="text-muted">
-                              ID: {{ conflict.configId }} • Type:
-                              {{ conflict.importedConfig.type }} • Version:
-                              {{ conflict.importedConfig.version }}
-                            </small>
-                          </div>
-                          <span class="badge bg-success">New</span>
-                        </div>
-                      </div>
-                    }
-                  }
-                </div>
-              </div>
-            </div>
-          } @else {}
-        } @else {
+        @if (wizardStore.importSummary().conflicts !== 0) {
           <div
             class="d-flex align-items-center border-start d-flexjustify-content-end gap-2 px-2 h-100"
           >
@@ -201,12 +165,43 @@
           All {{ wizardStore.importSummary().noConflicts }} configuration(s) are
           ready to import with no conflicts.
         </div>
-
-        <!-- Show list of configurations without conflicts -->
-        @if (wizardStore.importSummary().noConflicts > 0) {}
+        <div class="d-flex flex-column">
+          <h6 class="h6 mb-0 px-3">Configurations to Import:</h6>
+          <div class="conflict-list p-2">
+            <div
+              class="d-flex align-items-center gap-2 flex-grow-1 justify-content-end"
+            >
+              <div class="list-group w-100">
+                @for (
+                  conflict of wizardStore.conflicts();
+                  track conflict.configId
+                ) {
+                  @if (!conflict.hasConflict) {
+                    <div class="list-group-item">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div>
+                          <h6 class="h6 mb-0">
+                            {{ conflict.importedConfig.name }}
+                          </h6>
+                          <small class="text-muted">
+                            ID: {{ conflict.configId }} • Type:
+                            {{ conflict.importedConfig.type }} • Version:
+                            {{ conflict.importedConfig.version }}
+                          </small>
+                        </div>
+                        <span class="badge bg-success">New</span>
+                      </div>
+                    </div>
+                  }
+                }
+              </div>
+            </div>
+          </div>
+        </div>
       } @else {
         <!-- Conflict List -->
-
         <div class="conflict-list p-2">
           <div ngbAccordion>
             @for (
@@ -219,7 +214,7 @@
                   <h2 ngbAccordionHeader>
                     <button ngbAccordionButton class="w-100">
                       <div
-                        class="d-flex justify-content-between align-items-center"
+                        class="d-flex justify-content-between align-items-center gap-2"
                       >
                         <div>
                           <strong>{{ conflict.importedConfig.name }}</strong>
@@ -232,163 +227,174 @@
                       </div>
                     </button>
                   </h2>
-                  <div ngbAccordionCollapse>
-                    <div ngbAccordionBody class="m-0 p-0">
-                      <!-- Metadata Changes -->
-                      @if (hasMetadataChanges(conflict)) {
-                        <div class="mb-3 py-2">
-                          <h6 class="text-muted mb-2 px-2">
-                            <i class="bi bi-info-circle me-1"></i>
-                            Metadata Changes
-                          </h6>
-                          <div class="table-responsive mx-2">
-                            <table class="table table-sm table-bordered">
-                              <thead class="table-light">
-                                <tr>
-                                  <th>Field</th>
-                                  <th class="bg-danger bg-opacity-10">
-                                    Existing
-                                  </th>
-                                  <th class="bg-success bg-opacity-10">
-                                    Imported
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                @if (conflict.differences.metadata.version) {
-                                  <tr>
-                                    <td><strong>Version</strong></td>
-                                    <td>
-                                      {{
-                                        conflict.differences.metadata.version
-                                          .existing
-                                      }}
-                                    </td>
-                                    <td>
-                                      {{
-                                        conflict.differences.metadata.version
-                                          .imported
-                                      }}
-                                    </td>
-                                  </tr>
-                                }
-                                @if (conflict.differences.metadata.name) {
-                                  <tr>
-                                    <td><strong>Name</strong></td>
-                                    <td>
-                                      {{
-                                        conflict.differences.metadata.name
-                                          .existing
-                                      }}
-                                    </td>
-                                    <td>
-                                      {{
-                                        conflict.differences.metadata.name
-                                          .imported
-                                      }}
-                                    </td>
-                                  </tr>
-                                }
-                              </tbody>
-                            </table>
+                  <div ngbAccordionCollapse class="p-0 m-0">
+                    <div ngbAccordionBody class="p-0 m-0">
+                      <ng-template>
+                        <div class="m-0 p-0">
+                          <!-- Metadata Changes -->
+                          @if (hasMetadataChanges(conflict)) {
+                            <div class="mb-3 py-2">
+                              <h6 class="text-muted mb-2 px-2">
+                                <i class="bi bi-info-circle me-1"></i>
+                                Metadata Changes
+                              </h6>
+                              <div class="table-responsive mx-2">
+                                <table class="table table-sm table-bordered">
+                                  <thead class="table-light">
+                                    <tr>
+                                      <th>Field</th>
+                                      <th class="bg-danger bg-opacity-10">
+                                        Existing
+                                      </th>
+                                      <th class="bg-success bg-opacity-10">
+                                        Imported
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    @if (
+                                      conflict.differences.metadata.version
+                                    ) {
+                                      <tr>
+                                        <td><strong>Version</strong></td>
+                                        <td>
+                                          {{
+                                            conflict.differences.metadata
+                                              .version.existing
+                                          }}
+                                        </td>
+                                        <td>
+                                          {{
+                                            conflict.differences.metadata
+                                              .version.imported
+                                          }}
+                                        </td>
+                                      </tr>
+                                    }
+                                    @if (conflict.differences.metadata.name) {
+                                      <tr>
+                                        <td><strong>Name</strong></td>
+                                        <td>
+                                          {{
+                                            conflict.differences.metadata.name
+                                              .existing
+                                          }}
+                                        </td>
+                                        <td>
+                                          {{
+                                            conflict.differences.metadata.name
+                                              .imported
+                                          }}
+                                        </td>
+                                      </tr>
+                                    }
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          }
+
+                          <!-- Content Diff -->
+                          @if (conflict.differences.content.hasChanges) {
+                            <div class="px-3">
+                              <h6 class="text-muted">
+                                <i class="bi bi-file-earmark-code me-1"></i>
+                                Content Differences
+                              </h6>
+
+                              <!-- Monaco Diff Viewer for all types -->
+                              <app-monaco-diff-viewer
+                                [leftValue]="
+                                  formatContent(
+                                    conflict.differences.content.existing || '',
+                                    conflict.importedConfig.type
+                                  )
+                                "
+                                [rightValue]="
+                                  formatContent(
+                                    conflict.importedConfig.value,
+                                    conflict.importedConfig.type
+                                  )
+                                "
+                                [language]="
+                                  getMonacoLanguage(
+                                    conflict.importedConfig.type
+                                  )
+                                "
+                              ></app-monaco-diff-viewer>
+                            </div>
+                          }
+
+                          <!-- Resolution Buttons -->
+                          <div class="resolution-actions border-top pt-3">
+                            <label class="form-label small text-muted"
+                              >Choose action:</label
+                            >
+                            <div class="btn-group" role="group">
+                              <button
+                                type="button"
+                                class="btn btn-sm"
+                                [class.btn-primary]="
+                                  getResolution(conflict.configId)?.strategy ===
+                                  'overwrite'
+                                "
+                                [class.btn-outline-primary]="
+                                  getResolution(conflict.configId)?.strategy !==
+                                  'overwrite'
+                                "
+                                (click)="
+                                  onResolveConflict(
+                                    conflict.configId,
+                                    'overwrite'
+                                  )
+                                "
+                              >
+                                <i class="bi bi-arrow-clockwise me-1"></i>
+                                Overwrite
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-sm"
+                                [class.btn-secondary]="
+                                  getResolution(conflict.configId)?.strategy ===
+                                  'keep'
+                                "
+                                [class.btn-outline-secondary]="
+                                  getResolution(conflict.configId)?.strategy !==
+                                  'keep'
+                                "
+                                (click)="
+                                  onResolveConflict(conflict.configId, 'keep')
+                                "
+                              >
+                                <i class="bi bi-shield-check me-1"></i>
+                                Keep Existing
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-sm"
+                                [class.btn-success]="
+                                  getResolution(conflict.configId)?.strategy ===
+                                  'import-as-new'
+                                "
+                                [class.btn-outline-success]="
+                                  getResolution(conflict.configId)?.strategy !==
+                                  'import-as-new'
+                                "
+                                (click)="
+                                  onResolveConflict(
+                                    conflict.configId,
+                                    'import-as-new'
+                                  )
+                                "
+                              >
+                                <i class="bi bi-plus-circle me-1"></i>
+                                Import as New
+                              </button>
+                            </div>
                           </div>
                         </div>
-                      }
-
-                      <!-- Content Diff -->
-                      @if (conflict.differences.content.hasChanges) {
-                        <div class="mb-3">
-                          <h6 class="text-muted mb-2">
-                            <i class="bi bi-file-earmark-code me-1"></i>
-                            Content Differences
-                          </h6>
-
-                          <!-- Monaco Diff Viewer for all types -->
-                          <app-monaco-diff-viewer
-                            [leftValue]="
-                              formatContent(
-                                conflict.differences.content.existing || '',
-                                conflict.importedConfig.type
-                              )
-                            "
-                            [rightValue]="
-                              formatContent(
-                                conflict.importedConfig.value,
-                                conflict.importedConfig.type
-                              )
-                            "
-                            [language]="
-                              getMonacoLanguage(conflict.importedConfig.type)
-                            "
-                          ></app-monaco-diff-viewer>
-                        </div>
-                      }
-
-                      <!-- Resolution Buttons -->
-                      <div class="resolution-actions border-top pt-3">
-                        <label class="form-label small text-muted"
-                          >Choose action:</label
-                        >
-                        <div class="btn-group w-100" role="group">
-                          <button
-                            type="button"
-                            class="btn btn-sm"
-                            [class.btn-primary]="
-                              getResolution(conflict.configId)?.strategy ===
-                              'overwrite'
-                            "
-                            [class.btn-outline-primary]="
-                              getResolution(conflict.configId)?.strategy !==
-                              'overwrite'
-                            "
-                            (click)="
-                              onResolveConflict(conflict.configId, 'overwrite')
-                            "
-                          >
-                            <i class="bi bi-arrow-clockwise me-1"></i>
-                            Overwrite
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-sm"
-                            [class.btn-secondary]="
-                              getResolution(conflict.configId)?.strategy ===
-                              'keep'
-                            "
-                            [class.btn-outline-secondary]="
-                              getResolution(conflict.configId)?.strategy !==
-                              'keep'
-                            "
-                            (click)="
-                              onResolveConflict(conflict.configId, 'keep')
-                            "
-                          >
-                            <i class="bi bi-shield-check me-1"></i>
-                            Keep Existing
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-sm"
-                            [class.btn-success]="
-                              getResolution(conflict.configId)?.strategy ===
-                              'import-as-new'
-                            "
-                            [class.btn-outline-success]="
-                              getResolution(conflict.configId)?.strategy !==
-                              'import-as-new'
-                            "
-                            (click)="
-                              onResolveConflict(
-                                conflict.configId,
-                                'import-as-new'
-                              )
-                            "
-                          >
-                            <i class="bi bi-plus-circle me-1"></i>
-                            Import as New
-                          </button>
-                        </div>
-                      </div>
+                      </ng-template>
                     </div>
                   </div>
                 </div>
