@@ -3,20 +3,16 @@
   <div class="grid-toolbar mb-2">
     <div class="d-flex align-items-center">
       <div class="d-flex flex-grow-1 gap-2">
-        <div>
-          <button
-            type="button"
-            class="btn btn-sm d-flex align-items-center"
-            [class.btn-primary]="groupByName"
-            [class.btn-outline-secondary]="!groupByName"
-            (click)="toggleGroupByName()"
-            style="min-width: 5rem"
-            title="{{ groupByName ? 'Ungroup' : 'Group by Name' }}"
-          >
-            <i class="fas fa-layer-group me-1"></i>
-            {{ groupByName ? "Ungroup" : "Group" }}
-          </button>
-        </div>
+        <select
+          class="form-select form-select-sm"
+          (change)="onGroupByChange($event)"
+          [value]="groupBy"
+          style="width: auto"
+        >
+          <option value="none">No Grouping</option>
+          <option value="name">Group by Name</option>
+          <option value="version">Group by Version</option>
+        </select>
         <div class="input-group input-group-sm">
           <span class="input-group-text">
             <i class="fas fa-search"></i>

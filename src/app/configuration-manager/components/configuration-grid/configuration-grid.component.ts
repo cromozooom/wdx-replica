@@ -65,7 +65,7 @@ export class ConfigurationGridComponent {
   @Output() searchTermChanged = new EventEmitter<string>();
 
   rowData: ConfigurationUpdateRow[] = [];
-  groupByName = false;
+  groupBy: "none" | "name" | "version" = "none";
   private gridApi: any;
 
   constructor() {
@@ -314,6 +314,26 @@ export class ConfigurationGridComponent {
         }));
       this.selectionChanged.emit(configs);
     },
+    onColumnRowGroupChanged: () => {
+      // Sync dropdown state when user changes grouping via AG Grid UI
+      if (this.gridApi) {
+        const columnState = this.gridApi.getColumnState();
+        const nameGrouped = columnState.find(
+          (col: any) => col.colId === "configName" && col.rowGroup,
+        );
+        const versionGrouped = columnState.find(
+          (col: any) => col.colId === "configVersion" && col.rowGroup,
+        );
+
+        if (nameGrouped) {
+          this.groupBy = "name";
+        } else if (versionGrouped) {
+          this.groupBy = "version";
+        } else {
+          this.groupBy = "none";
+        }
+      }
+    },
   };
 
   onGridReady(event: GridReadyEvent<ConfigurationUpdateRow>): void {
@@ -331,31 +351,32 @@ export class ConfigurationGridComponent {
     this.searchTermChanged.emit(term);
   }
 
-  toggleGroupByName(): void {
-    this.groupByName = !this.groupByName;
+  onGroupByChange(event: Event): void {
+    const mode = (event.target as HTMLSelectElement).value as
+      | "none"
+      | "name"
+      | "version";
+    this.groupBy = mode;
+
     if (this.gridApi) {
-      if (this.groupByName) {
-        // Enable row grouping for configName column
+      // Clear all grouping first
+      this.gridApi.applyColumnState({
+        state: [
+          { colId: "configName", rowGroup: false, hide: false },
+          { colId: "configVersion", rowGroup: false, hide: false },
+        ],
+      });
+
+      // Apply selected grouping
+      if (mode === "name") {
         this.gridApi.applyColumnState({
-          state: [
-            {
-              colId: "configName",
-              rowGroup: true,
-              hide: true,
-            },
-          ],
+          state: [{ colId: "configName", rowGroup: true, hide: true }],
           defaultState: { rowGroup: false },
         });
-      } else {
-        // Disable row grouping for configName column
+      } else if (mode === "version") {
         this.gridApi.applyColumnState({
-          state: [
-            {
-              colId: "configName",
-              rowGroup: false,
-              hide: false,
-            },
-          ],
+          state: [{ colId: "configVersion", rowGroup: true, hide: true }],
+          defaultState: { rowGroup: false },
         });
       }
     }
