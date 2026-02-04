@@ -13,4 +13,5 @@ export interface Configuration {
   createdBy: string;
   lastModifiedDate: Date;
   lastModifiedBy: string;
+  configSourceMetadata?: string; // JSON string containing source system metadata
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, Output, EventEmitter } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { MarkdownModule } from "ngx-markdown";
 import { NgbAccordionModule } from "@ng-bootstrap/ng-bootstrap";
@@ -22,6 +22,8 @@ export class UpdateHistoryComponent {
   @Input() updates: UpdateEntry[] = [];
   @Input() configurationType?: ConfigurationType;
   @Input() currentValue?: string;
+  @Output() edit = new EventEmitter<void>();
+  @Output() viewValue = new EventEmitter<string>();
 
   get sortedUpdates(): UpdateEntry[] {
     return [...this.updates].sort(
@@ -62,5 +64,44 @@ export class UpdateHistoryComponent {
     }
     const nextUpdate = this.sortedUpdates[index - 1];
     return nextUpdate?.previousValue || "";
+  }
+
+  onEdit(): void {
+    console.log("[UpdateHistory] Edit button clicked");
+    this.edit.emit();
+    console.log("[UpdateHistory] Edit event emitted");
+  }
+
+  onViewCurrentValue(): void {
+    console.log(
+      "[UpdateHistory] View current value clicked",
+      this.currentValue,
+    );
+    if (this.currentValue) {
+      this.viewValue.emit(this.currentValue);
+      console.log("[UpdateHistory] ViewValue event emitted with current value");
+    } else {
+      console.warn("[UpdateHistory] No current value to view");
+    }
+  }
+
+  onViewHistoricalValue(index: number): void {
+    console.log("[UpdateHistory] View historical value clicked, index:", index);
+    const value = this.getNextValue(index);
+    console.log(
+      "[UpdateHistory] Historical value retrieved:",
+      value?.substring(0, 100),
+    );
+    if (value) {
+      this.viewValue.emit(value);
+      console.log(
+        "[UpdateHistory] ViewValue event emitted with historical value",
+      );
+    } else {
+      console.warn(
+        "[UpdateHistory] No historical value found for index:",
+        index,
+      );
+    }
   }
 }

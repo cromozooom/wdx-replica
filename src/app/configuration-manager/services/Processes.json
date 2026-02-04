@@ -1,0 +1,1122 @@
+[
+  {
+    "Id": "2d2786af-9286-e811-8121-0cc47a480e0c",
+    "Name": "Additional Accounts",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"wdx_portfolio\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"wdx_name\",\"FilterByType\":\"contact\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"contact\",\"Mapping\":\"\"}],\"RegardingMapping\":\"connection{record2id}<SELECTrecord1idSELECT><FILTstatecode#==#ActiveFILT>[0].wdx_portfolio{wdx_clientid}\",\"RegardingDisplayName\":\"Portfolio\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false}}",
+    "Key": "Amendment_AdditionalAccounts",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "907c28c0-539a-e811-8125-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "4e88cc9b-561a-e911-8164-0025907cb836",
+    "Name": "Additional Address",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_AdditionalAddress",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "6886b362-e11f-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "b33d7e71-4c0e-e911-8164-0025907cb836",
+    "Name": "Adviser Journey",
+    "Configuration": null,
+    "Key": "AdviserJourney",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "92f2a1fa-4c0e-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Not Engaged",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "contact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "827a65fa-2c54-e811-811f-0cc47a480e0c",
+    "Name": "AML",
+    "Configuration": "{}",
+    "Key": "AML",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "5ad3a35a-d252-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "AML Assessment",
+      "AdditionalFields": null
+    },
+    "FormName": "AML",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewcontact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": {
+      "Id": "b33d7e71-4c0e-e911-8164-0025907cb836",
+      "LogicalName": "wdx_clientamendmenttype",
+      "Name": "Adviser Journey",
+      "AdditionalFields": null
+    },
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "df163d32-2400-f111-a115-6045bdfc3b5c",
+    "Name": "Bulk Edit",
+    "Configuration": "{\"AmendmentTypeConfig\":null,\"ActionLogicConfiguration\":null,\"PortalActionLogicConfiguration\":null,\"AdditionalReviewType\":null,\"BulkEditConfig\":{\"ProcessOutcomeKeyAfterApplied\":\"bulkedit_applied\",\"ProcessOutcomeKeyAfterPartiallyApplied\":\"bulkedit_partiallyapplied\",\"ProcessOutcomeKeyAfterFailed\":\"bulkedit_failed\", \"ProcessStepKeyForProcessing\":\"bulkedit_processing\"}}",
+    "Key": "bulkedit",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "e1163d32-2400-f111-a115-6045bdfc3b5c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Bulk Edit - Configure",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": true,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": true,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "9eee9445-dd91-e911-9119-005056010a49",
+    "Name": "Capture Complaint",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_CaptureComplaint",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "52efb667-dd91-e911-9119-005056010a49",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "18d6a6c6-c114-e911-8164-0025907cb836",
+    "Name": "Change of Address",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"wdx_addresslink\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"wdx_name\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"wdx_addresslink{wdx_addresscontact}\",\n    \"RegardingDisplayName\": \"Address\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_AddressLink",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "174a50d5-e82d-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_AddressLink",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "d47c8720-4e1a-e911-8164-0025907cb836",
+    "Name": "Change of Bank Details",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"wdx_subportfolio\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_BankDetails",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "76b6c900-071f-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "ba561e0c-044b-e911-8165-0025907cb836",
+    "Name": "Change of Client Structure",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"account\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"fullname\",\"FilterByType\":\"account\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"account\",\"Mapping\":\"\"}],\"RegardingMapping\":\"\",\"RegardingDisplayName\":\"Client\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false,\"BlockIfDuplicate\":true}}",
+    "Key": "AddContactAmendment",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "39f4bdf9-15df-f011-a113-6045bdfc3b5c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "ClientAmendment",
+    "AllowReOpenIfCancelled": true,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "1ad3c00e-3423-eb11-9111-0050560110d9",
+    "Name": "Change of Clothes",
+    "Configuration": "null",
+    "Key": "change_of_clothes",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "f8cc55ed-3723-eb11-9111-0050560110d9",
+      "LogicalName": "wdx_processstep",
+      "Name": "Left Leg",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "contact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "15e73fd8-551a-e911-8164-0025907cb836",
+    "Name": "Change of Contact Detail",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_ContactDetail",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "775b071e-261f-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ContactDetail",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "18f3a0cd-501a-e911-8164-0025907cb836",
+    "Name": "Change of Financial Details",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_FinancialDetails",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "9aac905c-551a-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_FinancialDetails",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "ef48e792-d014-e911-8164-0025907cb836",
+    "Name": "Change of Name",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"contact\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"fullname\",\"FilterByType\":\"contact\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"contact\",\"Mapping\":\"\"}],\"RegardingMapping\":\"\",\"RegardingDisplayName\":\"Contact\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false}}",
+    "Key": "Amendment_Name",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "cbb062c2-191f-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ChangeName",
+    "AllowReOpenIfCancelled": true,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "be93ef03-863f-eb11-9112-0050560110d9",
+    "Name": "Change of Pet",
+    "Configuration": "null",
+    "Key": "change_of_pet",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "4753331a-863f-eb11-9112-0050560110d9",
+      "LogicalName": "wdx_processstep",
+      "Name": "Update Name",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": null,
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "6f81c2ac-531a-e911-8164-0025907cb836",
+    "Name": "Change of Tax Status",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_TaxStatus",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "f860fdfd-1c1f-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_TaxStatus",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "b3dffdbc-601a-e911-8164-0025907cb836",
+    "Name": "Change Product Provider",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"wdx_portfolio\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"wdx_name\",\"FilterByType\":\"contact\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"contact\",\"Mapping\":\"\"}],\"RegardingMapping\":\"connection{record2id}<SELECTrecord1idSELECT><FILTstatecode#==#ActiveFILT>[0].wdx_portfolio{wdx_clientid}\",\"RegardingDisplayName\":\"Portfolio\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false}}",
+    "Key": "Amendment_ProductProvider",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "944c1402-671a-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ProductProvider",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "471ce2ce-1b23-ea11-911b-005056010a49",
+    "Name": "Client Journey",
+    "Configuration": "null",
+    "Key": "CJS",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "6d783b21-1c23-ea11-911b-005056010a49",
+      "LogicalName": "wdx_processstep",
+      "Name": "1. Lead - Waiting",
+      "AdditionalFields": null
+    },
+    "FormName": "ProspectEdit_v3",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "contact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "7c93a42d-d064-ec11-b824-00505601139e",
+    "Name": "ClientProspecting",
+    "Configuration": "null",
+    "Key": "ClientProspecting",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "c1920f5d-d064-ec11-b824-00505601139e",
+      "LogicalName": "wdx_processstep",
+      "Name": "Prospect Creation",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "account",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "8564bc41-0f1b-e911-8164-0025907cb836",
+    "Name": "Copy Correspondence",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_CopyCorrespondence",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "74a01859-0f1b-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "e7002b45-ff1e-e911-8164-0025907cb836",
+    "Name": "Correspondence Details Address",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_CorrespondenceDetailsAddress",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "4fd9d15b-ff1e-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "120e6a9a-0e3a-eb11-9112-0050560110d9",
+    "Name": "Create New Address",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n\t\"HideRegardingRecordsDropDown\":true,\n\t\"HideFilterRecordsDropDown\":true,\n        \"IsCreateRecordAmendment\":true,\n\t\"RegardingType\": \"wdx_addresslink\"\n}\n}",
+    "Key": "Amendment_CreateAddressLink",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "efd940c6-0e3a-eb11-9112-0050560110d9",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_CreateAddressLink_ApprovalProcess",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": true,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "10e716c0-6439-eb11-9112-0050560110d9",
+    "Name": "Create New User",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n\t\"HideRegardingRecordsDropDown\":true,\n\t\"HideFilterRecordsDropDown\":true,\n\t\"RegardingType\": \"systemuser\"\n}\n}",
+    "Key": "Amendment_CreateUser",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "745a25e0-6439-eb11-9112-0050560110d9",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_CreateUser_ApprovalProcess",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": true,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "872291ea-0b1f-e911-8164-0025907cb836",
+    "Name": "Deactivate Address",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"wdx_addresslink\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"wdx_name\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"wdx_addresslink{wdx_addresscontact}\",\n    \"RegardingDisplayName\": \"Address\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_DeactivateAddress",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "c8a4d415-0c1f-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_DeactivateAddress",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "cf5360fa-e091-eb11-9113-0050560110d9",
+    "Name": "duplicate type2",
+    "Configuration": "{\"test\":\"save2\"}",
+    "Key": "duplicatetype2",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "8b548c00-e191-eb11-9113-0050560110d9",
+      "LogicalName": "wdx_processstep",
+      "Name": "SecondStep",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "mailbox",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "35fe849b-741a-e911-8164-0025907cb836",
+    "Name": "Family Group",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_FamilyGroup",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "74127597-e71f-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "f695d43a-7078-e811-8121-0cc47a480e0c",
+    "Name": "FATCA",
+    "Configuration": null,
+    "Key": "FATCA_REVIEW",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "1613a810-7178-e811-8121-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "FATCA Review",
+      "AdditionalFields": null
+    },
+    "FormName": "KYC_Individual",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewcontact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "4ed03e63-721a-e911-8164-0025907cb836",
+    "Name": "Fee Group",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_FeeGroup",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "b94d7475-721a-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "5f2533eb-0c1b-e911-8164-0025907cb836",
+    "Name": "Fees & Commissions",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"wdx_portfolio\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"wdx_name\",\"FilterByType\":\"contact\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"contact\",\"Mapping\":\"\"}],\"RegardingMapping\":\"connection{record2id}<SELECTrecord1idSELECT><FILTstatecode#==#ActiveFILT>[0].wdx_portfolio{wdx_clientid}\",\"RegardingDisplayName\":\"Portfolio\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false}}",
+    "Key": "Amendment_FeeCommissions",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "ad670b80-fc1e-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_FeeCommissions",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "c6056847-ea6e-e811-8120-0cc47a480e0c",
+    "Name": "IM Approval Process",
+    "Configuration": null,
+    "Key": "IMApproval",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "e9c3eb7c-ea6e-e811-8120-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Data Collection",
+      "AdditionalFields": null
+    },
+    "FormName": "Src_Form_External",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewcontact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "b13d7e71-4c0e-e911-8164-0025907cb836",
+    "Name": "Intermediary Journey",
+    "Configuration": null,
+    "Key": "IntermediaryJourney",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "a2f2a1fa-4c0e-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Not Engaged",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "account",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "e909a077-44e1-ea11-9122-005056010a49",
+    "Name": "Intermediary Submission",
+    "Configuration": null,
+    "Key": "Intermediary_Submission",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "04d5c48e-44e1-ea11-9122-005056010a49",
+      "LogicalName": "wdx_processstep",
+      "Name": "Drafted Intermediary",
+      "AdditionalFields": null
+    },
+    "FormName": "Intermediary_Details",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "account",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "810d9804-a25a-e811-8120-0cc47a480e0c",
+    "Name": "K&E",
+    "Configuration": null,
+    "Key": "K&E",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "c00c6f6c-a25a-e811-8120-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "K&E Collection",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewcontact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "42cdc3f3-2c54-e811-811f-0cc47a480e0c",
+    "Name": "KYC",
+    "Configuration": null,
+    "Key": "KYC",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "00ce1c25-d252-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "KYC Collection",
+      "AdditionalFields": null
+    },
+    "FormName": "KYC_Individual",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewcontact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "ca6f7ff0-671a-e911-8164-0025907cb836",
+    "Name": "Move Portfolio To New Client",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"wdx_portfolio\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"wdx_name\",\"FilterByType\":\"contact\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"contact\",\"Mapping\":\"\"}],\"RegardingMapping\":\"connection{record2id}<SELECTrecord1idSELECT><FILTstatecode#==#ActiveFILT>[0].wdx_portfolio{wdx_clientid}\",\"RegardingDisplayName\":\"Portfolio\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false}}",
+    "Key": "Amendment_MovePortfolioToNewClient",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "5f2b8601-681a-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "3b6d4254-19fc-ea11-9122-005056010a49",
+    "Name": "NewProcessType",
+    "Configuration": "null",
+    "Key": "newProcessTypeKey",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "ae78e739-22fc-ea11-9122-005056010a49",
+      "LogicalName": "wdx_processstep",
+      "Name": "Step1",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": null,
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "9e4b3658-636e-ee11-b833-0050560115a8",
+    "Name": "No Change Review",
+    "Configuration": "null",
+    "Key": "NoChangeReview",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "f99a9640-646e-ee11-b833-0050560115a8",
+      "LogicalName": "wdx_processstep",
+      "Name": "Review",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreview",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "8644bdd2-052e-ea11-911b-005056010a49",
+    "Name": "OnBoardingTop",
+    "Configuration": null,
+    "Key": "OBT",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "7bc1ebf3-052e-ea11-911b-005056010a49",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Client Structure",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreview",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "f491b8ea-2c54-e811-811f-0cc47a480e0c",
+    "Name": "Opportunity",
+    "Configuration": null,
+    "Key": "Opportunity",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "825e8f90-c952-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Log Business",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "opportunity",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "9ab6a576-0d1b-e911-8164-0025907cb836",
+    "Name": "Portfolio Constraints",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"wdx_portfolio\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"wdx_name\",\"FilterByType\":\"contact\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"contact\",\"Mapping\":\"\"}],\"RegardingMapping\":\"connection{record2id}<SELECTrecord1idSELECT><FILTstatecode#==#ActiveFILT>[0].wdx_portfolio{wdx_clientid}\",\"RegardingDisplayName\":\"Portfolio\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false}}",
+    "Key": "Amendment_PortfolioConstraints",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "95fe908e-0d1b-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "b53d7e71-4c0e-e911-8164-0025907cb836",
+    "Name": "Product Interest Score Journey",
+    "Configuration": null,
+    "Key": "ProductInterestScoreJourney",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "b2f2a1fa-4c0e-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Not Engaged",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_score",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "58d5b6ed-a9b2-e911-9119-005056010a49",
+    "Name": "Prospect Journey",
+    "Configuration": null,
+    "Key": "ProspectJourney",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "8b0c2aa0-aab2-e911-9119-005056010a49",
+      "LogicalName": "wdx_processstep",
+      "Name": "Unqualified",
+      "AdditionalFields": null
+    },
+    "FormName": "ProspectEdit",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "contact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "9e22e7a2-1885-e811-8121-0cc47a480e0c",
+    "Name": "Regular Review",
+    "Configuration": "{\n  \"ActionLogicConfiguration\": [\n    {\n      \"Name\": \"Trigger KYC Processes for Individual (No minors)\",\n      \"Conditions\": [\n        {\n          \"Method\": \"SatisfiedEntityEvaluation\",\n          \"Parameters\": [\n            {\n              \"Name\": \"EntityEvaluation\",\n              \"Value\": \"regardingobjectid.wdx_clientcategory#==#Individual#and#regardingobjectid.connection{record1id}<FILTstatuscode#==#Active#and#wdx_roletype#==#OwnerFILT>[0].record2id.wdx_age#>=#18\"\n            }\n          ]\n        }\n      ],\n      \"Actions\": [\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"KYC\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Owner\"\n              ]\n            }\n          ]\n        },\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"AML\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Owner\",\n                \"Beneficiary\",\n                \"Controller\"\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"Name\": \"Trigger KYC Processes for Individual (Minors: < 18 years old)\",\n      \"Conditions\": [\n        {\n          \"Method\": \"SatisfiedEntityEvaluation\",\n          \"Parameters\": [\n            {\n              \"Name\": \"EntityEvaluation\",\n              \"Value\": \"regardingobjectid.wdx_clientcategory#==#Individual#and#regardingobjectid.connection{record1id}<FILTstatuscode#==#Active#and#wdx_roletype#==#OwnerFILT>[0].record2id.wdx_age#<#18\"\n            }\n          ]\n        }\n      ],\n      \"Actions\": [\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"KYC\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Owner\",\n                \"Power of Attorney\"\n              ]\n            }\n          ]\n        },\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"AML\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Owner\",\n                \"Power of Attorney\"\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"Name\": \"Trigger KYC Processes for Joints\",\n      \"Conditions\": [\n        {\n          \"Method\": \"SatisfiedEntityEvaluation\",\n          \"Parameters\": [\n            {\n              \"Name\": \"EntityEvaluation\",\n              \"Value\": \"regardingobjectid.wdx_clientcategory#==#Joint\"\n            }\n          ]\n        }\n      ],\n      \"Actions\": [\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"KYC\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Owner\"\n              ]\n            }\n          ]\n        },\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"AML\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Owner\",\n                \"Beneficiary\",\n                \"Controller\"\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"Name\": \"Trigger KYC Processes for Trust\",\n      \"Conditions\": [\n        {\n          \"Method\": \"SatisfiedEntityEvaluation\",\n          \"Parameters\": [\n            {\n              \"Name\": \"EntityEvaluation\",\n              \"Value\": \"regardingobjectid.wdx_clientcategory#==#Trust\"\n            }\n          ]\n        }\n      ],\n      \"Actions\": [\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"KYC\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Organisation\",\n                \"Trustee\",\n                \"Signatory\"\n              ]\n            }\n          ]\n        },\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"AML\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Organisation\",\n                \"Trustee\",\n                \"Signatory\"\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"Name\": \"Trigger KYC Processes for Charity\",\n      \"Conditions\": [\n        {\n          \"Method\": \"SatisfiedEntityEvaluation\",\n          \"Parameters\": [\n            {\n              \"Name\": \"EntityEvaluation\",\n              \"Value\": \"regardingobjectid.wdx_clientcategory#==#Charity\"\n            }\n          ]\n        }\n      ],\n      \"Actions\": [\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"KYC\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Organisation\",\n                \"Trustee\",\n                \"Signatory\"\n              ]\n            }\n          ]\n        },\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"AML\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Organisation\",\n                \"Trustee\",\n                \"Signatory\"\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"Name\": \"Trigger KYC Processes for Corporation\",\n      \"Conditions\": [\n        {\n          \"Method\": \"SatisfiedEntityEvaluation\",\n          \"Parameters\": [\n            {\n              \"Name\": \"EntityEvaluation\",\n              \"Value\": \"regardingobjectid.wdx_clientcategory#==#Corporation\"\n            }\n          ]\n        }\n      ],\n      \"Actions\": [\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"KYC\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Organisation\",\n                \"Signatory\",\n                \"Director\"\n              ]\n            }\n          ]\n        },\n        {\n          \"Method\": \"StartSrcProcessForRolesIfNotStartedOrCompletedYet\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"AML\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessField\",\n              \"Value\": \"wdx_detailsupdated\"\n            },\n            {\n              \"Name\": \"SRCCompleteProcessValue\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": \"true\"\n            },\n            {\n              \"Name\": \"Roles\",\n              \"Value\": [\n                \"Organisation\",\n                \"Signatory\",\n                \"Director\"\n              ]\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"Name\": \"Start No Change Review only if the last review date was before 01/01/2022\",\n      \"Conditions\": [\n        {\n          \"Parameters\": [\n            {\n              \"Name\": \"EntityEvaluation\",\n              \"Value\": \"statuscode#==#Not Reviewed#and#(wdx_process_type#==#Regular Review#or#wdx_process_type#==#Transition)#and#wdx_startedbyid#!=#\"\n            },\n            {\n              \"Name\": \"UseTarget\",\n              \"Value\": true\n            }\n          ],\n          \"Method\": \"SatisfiedEntityEvaluation\"\n        }\n      ],\n      \"Actions\": [\n        {\n          \"Method\": \"StartProcess\",\n          \"Parameters\": [\n            {\n              \"Name\": \"ProcessOwnerIsRegardingObjectOwner\",\n              \"Value\": true\n            },\n            {\n              \"Name\": \"ProcessTypeKey\",\n              \"Value\": \"NoChangeReview\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+    "Key": "RegularReview",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "7fb80c23-085d-e811-8120-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Client Suitability",
+      "AdditionalFields": null
+    },
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreview",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "7f299e51-2c54-e811-811f-0cc47a480e0c",
+    "Name": "SRP:  New Business - New Portfolio - Suitability Not Required",
+    "Configuration": null,
+    "Key": "SRP892750000",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "8cb56f73-d552-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Portfolio",
+      "AdditionalFields": null
+    },
+    "FormName": "SRP",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewportfolio",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "9edfb5cf-2c54-e811-811f-0cc47a480e0c",
+    "Name": "SRP: Existing Portfolio - Review",
+    "Configuration": null,
+    "Key": "SRP892750006",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "8ecddfad-d652-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Suitability Assessment",
+      "AdditionalFields": null
+    },
+    "FormName": "SRP",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewportfolio",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "4cb8aec1-2463-e811-8120-0cc47a480e0c",
+    "Name": "SRP: Existing Portfolio - Suitability Not Required",
+    "Configuration": null,
+    "Key": "SRP892750004",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "565c8954-d652-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Portfolio",
+      "AdditionalFields": null
+    },
+    "FormName": "SRP",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewportfolio",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "ecb343c1-2c54-e811-811f-0cc47a480e0c",
+    "Name": "SRP: Existing Portfolio - Transition",
+    "Configuration": null,
+    "Key": "SRP892750005",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "20c9ae82-d652-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Suitability Assessment",
+      "AdditionalFields": null
+    },
+    "FormName": "SRP",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewportfolio",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "69ab0871-2c54-e811-811f-0cc47a480e0c",
+    "Name": "SRP: New Business - Existing Portfolio - Suitability Not Required",
+    "Configuration": null,
+    "Key": "SRP892750003",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "660e0687-d552-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Portfolio",
+      "AdditionalFields": null
+    },
+    "FormName": "SRP",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewportfolio",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "c98ea996-2c54-e811-811f-0cc47a480e0c",
+    "Name": "SRP: New Business - Existing Portfolio - Suitability Required",
+    "Configuration": null,
+    "Key": "SRP892750002",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "f3682913-d652-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Suitability Assessment",
+      "AdditionalFields": null
+    },
+    "FormName": "SRP",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewportfolio",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "7cdf3a84-2c54-e811-811f-0cc47a480e0c",
+    "Name": "SRP: New Business - New Portfolio - Suitability Required",
+    "Configuration": null,
+    "Key": "SRP892750001",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "b1d96dbf-d552-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Suitability Assessment",
+      "AdditionalFields": null
+    },
+    "FormName": "SRP",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewportfolio",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "e5fc5add-2c54-e811-811f-0cc47a480e0c",
+    "Name": "SRP: New Portfolio - Suitability Required",
+    "Configuration": null,
+    "Key": "SRP892750007",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "81a219ce-d652-e811-811f-0cc47a480e0c",
+      "LogicalName": "wdx_processstep",
+      "Name": "Confirm Suitability Assessment",
+      "AdditionalFields": null
+    },
+    "FormName": "SRP",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreviewportfolio",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "4b665775-681a-e911-8164-0025907cb836",
+    "Name": "Standing Orders",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"wdx_portfolio\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"wdx_name\",\"FilterByType\":\"contact\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"contact\",\"Mapping\":\"\"}],\"RegardingMapping\":\"connection{record2id}<SELECTrecord1idSELECT><FILTstatecode#==#ActiveFILT>[0].wdx_portfolio{wdx_clientid}\",\"RegardingDisplayName\":\"Portfolio\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false}}",
+    "Key": "Amendment_StandingOrders",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "c57d0995-681a-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "2c0b2f40-a25a-e811-8120-0cc47a480e0c",
+    "Name": "Suitability Review",
+    "Configuration": null,
+    "Key": "SuitabilityReview",
+    "LockedBy": null,
+    "FirstStep": null,
+    "FormName": null,
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_suitabilityreview",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "05c6879c-7835-e911-8164-0025907cb836",
+    "Name": "Suspect Verification",
+    "Configuration": null,
+    "Key": "SUSPECT_VERI",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "fa1f8db4-7835-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Perform Verification",
+      "AdditionalFields": null
+    },
+    "FormName": "AML_SUSPECT",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "contact",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": false,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "ee14967a-671a-e911-8164-0025907cb836",
+    "Name": "Suspension Client Deceased",
+    "Configuration": "{\n  \"AmendmentTypeConfig\": {\n    \"RegardingType\": \"contact\",\n    \"displayOn\": [\n      \"contact\"\n    ],\n    \"PrimaryAttributeName\": \"fullname\",\n    \"FilterByType\": \"contact\",\n    \"FilterByDisplayName\": \"Client\",\n    \"FilterByMapping\": [\n      {\n        \"EntityType\": \"contact\",\n        \"Mapping\": \"\"\n      }\n    ],\n    \"RegardingMapping\": \"\",\n    \"RegardingDisplayName\": \"Contact\",\n    \"AssociatedRecordsPreSelected\": false,\n    \"AutoComplete\": false\n  }\n}",
+    "Key": "Amendment_Deceased",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "fd65fbb8-e31f-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_Deceased",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "07eab9fe-0d1b-e911-8164-0025907cb836",
+    "Name": "Valuation Frequency",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"wdx_portfolio\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"wdx_name\",\"FilterByType\":\"contact\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"contact\",\"Mapping\":\"\"}],\"RegardingMapping\":\"connection{record2id}<SELECTrecord1idSELECT><FILTstatecode#==#ActiveFILT>[0].wdx_portfolio{wdx_clientid}\",\"RegardingDisplayName\":\"Portfolio\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false}}",
+    "Key": "Amendment_ValuationFrequency",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "78bed828-0e1b-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  },
+  {
+    "Id": "0acecfb8-0e1b-e911-8164-0025907cb836",
+    "Name": "Valuation Group",
+    "Configuration": "{\"AmendmentTypeConfig\":{\"RegardingType\":\"wdx_portfolio\",\"displayOn\":[\"contact\"],\"PrimaryAttributeName\":\"wdx_name\",\"FilterByType\":\"contact\",\"FilterByDisplayName\":\"Client\",\"FilterByMapping\":[{\"EntityType\":\"contact\",\"Mapping\":\"\"}],\"RegardingMapping\":\"connection{record2id}<SELECTrecord1idSELECT><FILTstatecode#==#ActiveFILT>[0].wdx_portfolio{wdx_clientid}\",\"RegardingDisplayName\":\"Portfolio\",\"AssociatedRecordsPreSelected\":false,\"AutoComplete\":false}}",
+    "Key": "Amendment_ValuationGroup",
+    "LockedBy": null,
+    "FirstStep": {
+      "Id": "fcbc03db-0e1b-e911-8164-0025907cb836",
+      "LogicalName": "wdx_processstep",
+      "Name": "Draft",
+      "AdditionalFields": null
+    },
+    "FormName": "Amendment_ServiceRequest1",
+    "AllowReOpenIfCancelled": false,
+    "EntityType": "wdx_accountamendment",
+    "AllowReOpenIfCompleted": false,
+    "ParentProcessTypeId": null,
+    "UserSelectable": true,
+    "EvidenceRequired": null
+  }
+]

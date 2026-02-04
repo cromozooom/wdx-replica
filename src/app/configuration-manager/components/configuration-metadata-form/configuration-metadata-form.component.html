@@ -160,6 +160,8 @@
             [updates]="configuration!.updates!"
             [configurationType]="configuration!.type"
             [currentValue]="configuration!.value"
+            (edit)="onEdit()"
+            (viewValue)="onViewHistoricalValue($event)"
           ></app-update-history>
         </div>
       }

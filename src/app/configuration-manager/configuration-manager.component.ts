@@ -242,6 +242,12 @@ export class ConfigurationManagerComponent implements OnInit {
   }
 
   onRowDoubleClicked(configuration: Configuration): void {
+    // IMPORTANT: The configuration parameter comes from AG Grid row data which may not have all fields
+    // Retrieve the full configuration from the store to ensure all data (including configSourceMetadata) is present
+    const fullConfiguration = this.store
+      .configurations()
+      .find((c) => c.id === configuration.id);
+
     const modalRef = this.modalService.open(ConfigurationEditorComponent, {
       fullscreen: true,
       backdrop: "static",
@@ -249,7 +255,8 @@ export class ConfigurationManagerComponent implements OnInit {
     });
 
     // Set the configuration to edit and basket ID
-    modalRef.componentInstance.configuration = configuration;
+    modalRef.componentInstance.configuration =
+      fullConfiguration || configuration;
     modalRef.componentInstance.basketId = this.store.currentBasketId();
 
     modalRef.result.then(
@@ -277,6 +284,32 @@ export class ConfigurationManagerComponent implements OnInit {
     this.store.setSearchTerm(term);
   }
 
+  onViewValue(event: { value: string; type: ConfigurationType }): void {
+    // Open full-screen modal to display the value
+    const modalRef = this.modalService.open(ConfigurationEditorComponent, {
+      fullscreen: true,
+      backdrop: "static",
+    });
+
+    // Create a temporary configuration object for viewing
+    const viewConfig: Configuration = {
+      id: 0,
+      basketId: this.store.currentBasketId()!,
+      name: "Historical Value - View Only",
+      type: event.type,
+      version: "View Only",
+      value: event.value,
+      createdDate: new Date(),
+      createdBy: "System",
+      lastModifiedDate: new Date(),
+      lastModifiedBy: "System",
+      updates: [],
+    };
+
+    modalRef.componentInstance.configuration = viewConfig;
+    modalRef.componentInstance.viewOnly = true;
+  }
+
   async onResetDatabase(): Promise<void> {
     if (
       !confirm(
@@ -289,7 +322,15 @@ export class ConfigurationManagerComponent implements OnInit {
     try {
       this.store.setLoading(true);
 
+      // CRITICAL: Close all database connections BEFORE attempting to delete
+      console.log("[onResetDatabase] Closing all database connections...");
+      (this.configService as any).storageService.closeConnection();
+
+      // Wait a moment for connections to fully close
+      await new Promise((resolve) => setTimeout(resolve, 100));
+
       // Reset the entire database (deletes and recreates with new schema)
+      console.log("[onResetDatabase] Deleting and recreating database...");
       await this.basketStorageService.resetDatabase();
 
       // Clear all existing configuration data
@@ -302,12 +343,28 @@ export class ConfigurationManagerComponent implements OnInit {
 
       // Generate and save new seed data with update entries
       const seedData = this.seedDataService.generateSeedData(productBasket.id);
+      console.log("[onResetDatabase] First seed config BEFORE save:", {
+        name: seedData[0]?.name,
+        hasMetadata: !!seedData[0]?.configSourceMetadata,
+        metadataPreview: seedData[0]?.configSourceMetadata?.substring(0, 100),
+      });
       for (const config of seedData) {
         await this.configService.saveWithUpdates(config);
       }
 
       // Reload configurations
       const configurations = await this.configService.getAll();
+      console.log("[onResetDatabase] Loaded configurations from storage:", {
+        total: configurations.length,
+        firstConfig: configurations[0],
+        firstHasMetadata: !!configurations[0]?.configSourceMetadata,
+        processConfigs: configurations.filter(
+          (c) => c.type === "Processes (JavaScript)",
+        ).length,
+        processWithMetadata: configurations.filter(
+          (c) => c.type === "Processes (JavaScript)" && c.configSourceMetadata,
+        ).length,
+      });
       this.store.setConfigurations(configurations);
 
       // Add all to Product basket
@@ -567,6 +624,7 @@ export class ConfigurationManagerComponent implements OnInit {
 
   async selectBasket(basketId: number): Promise<void> {
     this.store.setCurrentBasketId(basketId);
+    this.store.setSelectedIds([]);
 
     // Reload configurations to refresh update entries for the new basket
     this.store.setLoading(true);

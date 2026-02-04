@@ -61,6 +61,13 @@ export class ConfigurationStorageService {
     return this.db!;
   }
 
+  closeConnection(): void {
+    if (this.db) {
+      this.db.close();
+      this.db = null;
+    }
+  }
+
   async getAll(): Promise<Configuration[]> {
     const db = await this.ensureDB();
     return new Promise((resolve, reject) => {
@@ -114,6 +121,19 @@ export class ConfigurationStorageService {
       const transaction = db.transaction([STORE_NAME], "readwrite");
       const objectStore = transaction.objectStore(STORE_NAME);
       const serialized = this.serializeConfiguration(configuration);
+
+      // Debug: Log if this is a Process with metadata
+      if (
+        configuration.type === "Processes (JavaScript)" &&
+        serialized.configSourceMetadata
+      ) {
+        console.log("[Storage] Saving Process with metadata:", {
+          name: configuration.name,
+          hasMetadata: !!serialized.configSourceMetadata,
+          metadataLength: serialized.configSourceMetadata?.length,
+        });
+      }
+
       const request = objectStore.put(serialized);
 
       request.onsuccess = () => resolve();
@@ -166,7 +186,7 @@ export class ConfigurationStorageService {
   }
 
   private deserializeConfiguration(data: any): Configuration {
-    return {
+    const result = {
       ...data,
       createdDate: new Date(data.createdDate),
       lastModifiedDate: new Date(data.lastModifiedDate),
@@ -175,6 +195,18 @@ export class ConfigurationStorageService {
         date: new Date(u.date),
       })),
     };
+
+    // Debug: Log if this is a Process being loaded
+    if (result.type === "Processes (JavaScript)" && data.configSourceMetadata) {
+      console.log("[Storage] Deserializing Process with metadata:", {
+        name: result.name,
+        hasMetadataInData: !!data.configSourceMetadata,
+        hasMetadataInResult: !!result.configSourceMetadata,
+        metadataLength: result.configSourceMetadata?.length,
+      });
+    }
+
+    return result;
   }
 
   private deserializeConfigurations(data: any[]): Configuration[] {

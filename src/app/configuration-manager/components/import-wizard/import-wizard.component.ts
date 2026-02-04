@@ -43,6 +43,8 @@ export class ImportWizardComponent implements OnInit {
   notificationService = inject(NotificationService);
 
   isDragOver = false;
+  activeFilter: "all" | "ready" | "resolved" | "conflicts" = "all";
+  allExpanded = false;
 
   /**
    * Get basket name by ID
@@ -486,5 +488,75 @@ export class ImportWizardComponent implements OnInit {
     }
 
     return "plaintext";
+  }
+
+  /**
+   * Check if there are any conflicts (with hasConflict flag)
+   */
+  hasAnyConflicts(): boolean {
+    return this.wizardStore.conflicts().some((c) => c.hasConflict);
+  }
+
+  /**
+   * Check if there are new configurations (without conflicts)
+   */
+  hasNewConfigurations(): boolean {
+    return this.wizardStore.conflicts().some((c) => !c.hasConflict);
+  }
+
+  /**
+   * Check if there are conflicts to resolve
+   */
+  hasConflictsToResolve(): boolean {
+    return this.wizardStore.conflicts().some((c) => c.hasConflict);
+  }
+
+  /**
+   * Set active filter
+   */
+  setFilter(filter: "all" | "ready" | "resolved" | "conflicts"): void {
+    this.activeFilter = filter;
+  }
+
+  /**
+   * Check if conflict should be visible based on active filter
+   */
+  shouldShowConflict(conflict: ConflictDetection): boolean {
+    const resolution = this.wizardStore
+      .resolutions()
+      .find((r) => r.configId === conflict.configId);
+
+    switch (this.activeFilter) {
+      case "all":
+        return true;
+      case "ready":
+        return !conflict.hasConflict || !!resolution;
+      case "resolved":
+        return conflict.hasConflict && !!resolution;
+      case "conflicts":
+        return conflict.hasConflict && !resolution;
+      default:
+        return true;
+    }
+  }
+
+  /**
+   * Toggle expand/collapse all accordion items
+   */
+  toggleAllAccordions(): void {
+    const accordionButtons = document.querySelectorAll(
+      ".conflict-list button[ngbaccordionbutton]",
+    ) as NodeListOf<HTMLElement>;
+
+    accordionButtons.forEach((button) => {
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+      if (this.allExpanded && isExpanded) {
+        button.click();
+      } else if (!this.allExpanded && !isExpanded) {
+        button.click();
+      }
+    });
+
+    this.allExpanded = !this.allExpanded;
   }
 }
