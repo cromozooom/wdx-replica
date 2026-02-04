@@ -57,6 +57,24 @@
         <span class="visually-hidden">Loading configurations...</span>
       </div>
       <p class="mt-2 text-muted">Loading configurations...</p>
+      @if (store.dbBlockedWarning()) {
+        <div
+          class="alert alert-warning mt-3 mx-auto"
+          style="max-width: 600px"
+          role="alert"
+        >
+          <i class="fas fa-exclamation-triangle me-2"></i>
+          <strong>Database Connection Blocked</strong>
+          <p class="mb-2 mt-2">
+            The application cannot initialize because the database is being used
+            by another browser tab or window.
+          </p>
+          <p class="mb-0">
+            <strong>Please:</strong> Close all other tabs/windows with this
+            application open, then refresh this page.
+          </p>
+        </div>
+      }
     </div>
   } @else {
     <div class="grid-wrapper">

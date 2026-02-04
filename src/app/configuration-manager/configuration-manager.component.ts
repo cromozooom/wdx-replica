@@ -42,70 +42,155 @@ export class ConfigurationManagerComponent implements OnInit {
   exporting = false;
   selectedConfigurations: Configuration[] = [];
   newBasketName = "";
+  dbBlockedWarning = false;
 
   async ngOnInit(): Promise<void> {
+    console.log("[ngOnInit] Starting application initialization...");
     this.store.setLoading(true);
+    this.store.setDbBlockedWarning(false);
+    console.log("[ngOnInit] Loading state set to true");
+
     try {
       // Load baskets first to ensure Product basket exists
+      console.log("[ngOnInit] Step 1: Loading baskets...");
       await this.loadBaskets();
+      console.log(
+        "[ngOnInit] ✓ Baskets loaded. Current baskets:",
+        this.store.baskets(),
+      );
+      console.log(
+        "[ngOnInit] Current basket ID:",
+        this.store.currentBasketId(),
+      );
 
       // Then load configurations (will seed into Product basket if needed)
+      console.log("[ngOnInit] Step 2: Loading configurations...");
       await this.loadConfigurations();
+      console.log(
+        "[ngOnInit] ✓ Configurations loaded. Count:",
+        this.store.configurations().length,
+      );
 
       // If no configurations exist, offer to seed data
       if (this.store.configurations().length === 0) {
+        console.log(
+          "[ngOnInit] No configurations found, will prompt for sample data after 500ms",
+        );
         setTimeout(() => {
           if (
             confirm(
               "No configurations found. Would you like to load sample data?",
             )
           ) {
+            console.log("[ngOnInit] User chose to load sample data");
             this.onSeedSampleData();
+          } else {
+            console.log("[ngOnInit] User declined to load sample data");
           }
         }, 500);
+      } else {
+        console.log(
+          "[ngOnInit] Configurations exist, skipping sample data prompt",
+        );
       }
     } catch (error) {
-      console.error("Failed to initialize application:", error);
+      console.error("[ngOnInit] ✗ Failed to initialize application:", error);
+      console.error("[ngOnInit] Error stack:", (error as Error)?.stack);
+
+      // Check if the error is database blocked
+      const errorMsg = (error as Error)?.message || "";
+      if (errorMsg.includes("blocked") || errorMsg.includes("other tabs")) {
+        console.log("[ngOnInit] Database blocked by other tabs detected");
+        this.store.setDbBlockedWarning(true);
+      }
+
       this.notificationService.error(
         "Failed to initialize application. Please refresh the page.",
       );
     } finally {
+      console.log("[ngOnInit] Setting loading state to false");
       this.store.setLoading(false);
+      console.log("[ngOnInit] Initialization complete. Final state:");
+      console.log("  - Baskets:", this.store.baskets().length);
+      console.log("  - Configurations:", this.store.configurations().length);
+      console.log("  - Current basket ID:", this.store.currentBasketId());
     }
   }
 
   private async loadBaskets(): Promise<void> {
+    console.log("[loadBaskets] Starting basket initialization...");
     try {
       // Always ensure the Product basket exists first
+      console.log(
+        "[loadBaskets] Calling basketService.initializeDefaultBasket()...",
+      );
       const productBasket = await this.basketService.initializeDefaultBasket();
+      console.log("[loadBaskets] ✓ Product basket initialized:", productBasket);
 
       // Get all baskets (should include the Product basket now)
+      console.log("[loadBaskets] Fetching all baskets...");
       const baskets = await this.basketService.getAll();
+      console.log("[loadBaskets] ✓ Retrieved baskets:", baskets);
 
+      console.log("[loadBaskets] Updating store with baskets...");
       this.store.setBaskets(baskets);
+      console.log(
+        "[loadBaskets] Setting current basket ID to:",
+        productBasket.id,
+      );
       this.store.setCurrentBasketId(productBasket.id);
+      console.log("[loadBaskets] ✓ Basket initialization complete");
     } catch (error) {
-      console.error("Failed to load baskets:", error);
+      console.error("[loadBaskets] ✗ Failed to load baskets:", error);
+      console.error("[loadBaskets] Error details:", (error as Error)?.message);
+      console.error("[loadBaskets] Error stack:", (error as Error)?.stack);
       this.notificationService.error(
         `Failed to initialize baskets: ${(error as Error).message}`,
       );
       // Don't let basket errors block the app - set a default empty state
+      console.log("[loadBaskets] Setting empty baskets array as fallback");
       this.store.setBaskets([]);
       throw error; // Re-throw to be caught by ngOnInit
     }
   }
 
   private async loadConfigurations(): Promise<void> {
+    console.log("[loadConfigurations] Starting configuration load...");
     try {
+      console.log("[loadConfigurations] Calling configService.getAll()...");
       const configurations = await this.configService.getAll();
+      console.log(
+        "[loadConfigurations] ✓ Retrieved configurations:",
+        configurations.length,
+        "items",
+      );
+      if (configurations.length > 0) {
+        console.log("[loadConfigurations] First config:", configurations[0]);
+      }
+      console.log("[loadConfigurations] Updating store...");
       this.store.setConfigurations(configurations);
+      console.log("[loadConfigurations] ✓ Configuration load complete");
     } catch (error) {
-      console.error("Failed to load configurations:", error);
+      console.error(
+        "[loadConfigurations] ✗ Failed to load configurations:",
+        error,
+      );
+      console.error(
+        "[loadConfigurations] Error details:",
+        (error as Error)?.message,
+      );
+      console.error(
+        "[loadConfigurations] Error stack:",
+        (error as Error)?.stack,
+      );
       this.notificationService.error(
         `Failed to load configurations: ${(error as Error).message}`,
       );
       this.store.setError((error as Error).message);
       // Set empty array to allow app to continue
+      console.log(
+        "[loadConfigurations] Setting empty configurations array as fallback",
+      );
       this.store.setConfigurations([]);
     }
   }
@@ -246,54 +331,100 @@ export class ConfigurationManagerComponent implements OnInit {
   }
 
   async onForceDeleteDatabase(): Promise<void> {
+    console.log("[Force Delete DB] Starting force delete process...");
+
     if (
       !confirm(
         "This will force delete the entire database and refresh the page. Continue?",
       )
     ) {
+      console.log("[Force Delete DB] User cancelled operation");
       return;
     }
 
+    console.log("[Force Delete DB] User confirmed, proceeding with deletion");
+
     try {
       // Close any existing connections
+      console.log(
+        "[Force Delete DB] Checking for existing database connections...",
+      );
       if ((this.basketStorageService as any).db) {
+        console.log("[Force Delete DB] Found existing connection, closing...");
         (this.basketStorageService as any).db.close();
         (this.basketStorageService as any).db = null;
+        console.log("[Force Delete DB] Connection closed successfully");
+      } else {
+        console.log("[Force Delete DB] No existing connection found");
       }
 
       // Give browser time to close connections
+      console.log(
+        "[Force Delete DB] Waiting 100ms for connections to close...",
+      );
       await new Promise((resolve) => setTimeout(resolve, 100));
+      console.log(
+        "[Force Delete DB] Wait complete, initiating database deletion...",
+      );
 
       // Force delete the database
       const deleteRequest = indexedDB.deleteDatabase("ConfigurationManagerDB");
+      console.log(
+        "[Force Delete DB] Delete request created for ConfigurationManagerDB",
+      );
+
       deleteRequest.onsuccess = async () => {
+        console.log("[Force Delete DB] ✓ Database deletion successful!");
         // Wait a bit to ensure deletion is fully processed
+        console.log("[Force Delete DB] Waiting 200ms before reload...");
         await new Promise((resolve) => setTimeout(resolve, 200));
+        console.log("[Force Delete DB] Reloading page...");
         // Refresh the page to reinitialize everything
         window.location.reload();
       };
-      deleteRequest.onerror = () => {
-        console.error("Failed to delete database");
+
+      deleteRequest.onerror = (event) => {
+        console.error("[Force Delete DB] ✗ Delete request failed:", event);
+        console.error(
+          "[Force Delete DB] Error details:",
+          (event.target as any)?.error,
+        );
+        console.log("[Force Delete DB] Attempting page reload anyway...");
         // Refresh anyway
         window.location.reload();
       };
+
       deleteRequest.onblocked = () => {
+        console.warn(
+          "[Force Delete DB] ⚠ Database deletion blocked by other connections",
+        );
         // More user-friendly approach when blocked
         if (
           confirm(
             "Database deletion is blocked by other browser tabs. Would you like to:\n\n- Click OK to refresh this page anyway (recommended)\n- Click Cancel to manually close other tabs first",
           )
         ) {
+          console.log(
+            "[Force Delete DB] User chose to force refresh despite block",
+          );
           // Force refresh even if blocked
           window.location.reload();
         } else {
+          console.log(
+            "[Force Delete DB] User chose to manually close tabs first",
+          );
           alert(
             'Please close all other tabs/windows using this application, then try "Force Delete DB" again.',
           );
         }
       };
     } catch (error) {
-      console.error("Force delete error:", error);
+      console.error(
+        "[Force Delete DB] ✗ Exception caught during force delete:",
+        error,
+      );
+      console.error("[Force Delete DB] Stack trace:", (error as Error)?.stack);
+      console.log("[Force Delete DB] Attempting page reload after error...");
       window.location.reload();
     }
   }

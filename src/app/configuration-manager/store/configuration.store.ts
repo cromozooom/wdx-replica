@@ -19,6 +19,7 @@ export interface ConfigurationState {
   error: string | null;
   baskets: Basket[];
   currentBasketId: number | null;
+  dbBlockedWarning: boolean;
 }
 
 const initialState: ConfigurationState = {
@@ -30,6 +31,7 @@ const initialState: ConfigurationState = {
   error: null,
   baskets: [],
   currentBasketId: null,
+  dbBlockedWarning: false,
 };
 
 export const ConfigurationStore = signalStore(
@@ -139,6 +141,10 @@ export const ConfigurationStore = signalStore(
 
     setError(error: string | null): void {
       patchState(store, { error });
+    },
+
+    setDbBlockedWarning(blocked: boolean): void {
+      patchState(store, { dbBlockedWarning: blocked });
     },
 
     setBaskets(baskets: Basket[]): void {
