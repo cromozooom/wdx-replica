@@ -21,6 +21,7 @@ import { ConfigurationType } from "../../models/configuration-type.enum";
 export class ValueViewerComponent implements OnInit {
   @Input() value: string = "";
   @Input() configurationType: ConfigurationType = ConfigurationType.Process;
+  @Input() configName: string = "";
   @Input() previousValue: string = "";
   @Input() nextValue: string = "";
 

@@ -127,11 +127,11 @@ export class ConfigurationStorageService {
         configuration.type === "Processes (JavaScript)" &&
         serialized.configSourceMetadata
       ) {
-        console.log("[Storage] Saving Process with metadata:", {
-          name: configuration.name,
-          hasMetadata: !!serialized.configSourceMetadata,
-          metadataLength: serialized.configSourceMetadata?.length,
-        });
+        // console.log("[Storage] Saving Process with metadata:", {
+        //   name: configuration.name,
+        //   hasMetadata: !!serialized.configSourceMetadata,
+        //   metadataLength: serialized.configSourceMetadata?.length,
+        // });
       }
 
       const request = objectStore.put(serialized);
@@ -142,14 +142,33 @@ export class ConfigurationStorageService {
   }
 
   async delete(basketId: number, id: number): Promise<void> {
+    console.log(`[Storage.delete] Attempting to delete config with key:`, {
+      basketId,
+      id,
+      key: [basketId, id],
+      basketIdType: typeof basketId,
+      idType: typeof id,
+    });
+
     const db = await this.ensureDB();
     return new Promise((resolve, reject) => {
       const transaction = db.transaction([STORE_NAME], "readwrite");
       const objectStore = transaction.objectStore(STORE_NAME);
       const request = objectStore.delete([basketId, id]);
 
-      request.onsuccess = () => resolve();
-      request.onerror = () => reject(request.error);
+      request.onsuccess = () => {
+        console.log(
+          `[Storage.delete] ✓ Successfully deleted [${basketId}, ${id}]`,
+        );
+        resolve();
+      };
+      request.onerror = () => {
+        console.error(
+          `[Storage.delete] ✗ Error deleting [${basketId}, ${id}]:`,
+          request.error,
+        );
+        reject(request.error);
+      };
     });
   }
 
@@ -198,12 +217,12 @@ export class ConfigurationStorageService {
 
     // Debug: Log if this is a Process being loaded
     if (result.type === "Processes (JavaScript)" && data.configSourceMetadata) {
-      console.log("[Storage] Deserializing Process with metadata:", {
-        name: result.name,
-        hasMetadataInData: !!data.configSourceMetadata,
-        hasMetadataInResult: !!result.configSourceMetadata,
-        metadataLength: result.configSourceMetadata?.length,
-      });
+      // console.log("[Storage] Deserializing Process with metadata:", {
+      //   name: result.name,
+      //   hasMetadataInData: !!data.configSourceMetadata,
+      //   hasMetadataInResult: !!result.configSourceMetadata,
+      //   metadataLength: result.configSourceMetadata?.length,
+      // });
     }
 
     return result;

@@ -12,6 +12,8 @@
           <option value="none">No Grouping</option>
           <option value="name">Group by Name</option>
           <option value="version">Group by Version</option>
+          <option value="version-name">Group by Version → Name</option>
+          <option value="name-version">Group by Name → Version</option>
         </select>
         <div class="input-group input-group-sm">
           <span class="input-group-text">
@@ -40,7 +42,10 @@
         class="d-flex flex-grow-1 align-items-center gap-2 justify-content-end"
       >
         <span class="text-muted">
-          {{ store.filteredConfigurations().length }} configuration(s)
+          {{
+            logCounter(store.filteredConfigurations().length)
+          }}
+          configuration(s)
         </span>
       </div>
     </div>

@@ -159,8 +159,27 @@ export class ConfigurationManagerComponent implements OnInit {
   private async loadConfigurations(): Promise<void> {
     console.log("[loadConfigurations] Starting configuration load...");
     try {
-      console.log("[loadConfigurations] Calling configService.getAll()...");
-      const configurations = await this.configService.getAll();
+      const currentBasketId = this.store.currentBasketId();
+      if (!currentBasketId) {
+        console.log(
+          "[loadConfigurations] No basket selected, loading all configurations",
+        );
+        const configurations = await this.configService.getAll();
+        console.log(
+          "[loadConfigurations] ✓ Retrieved configurations:",
+          configurations.length,
+          "items",
+        );
+        this.store.setConfigurations(configurations);
+        return;
+      }
+
+      console.log(
+        "[loadConfigurations] Loading configurations for basket:",
+        currentBasketId,
+      );
+      const configurations =
+        await this.configService.getByBasketId(currentBasketId);
       console.log(
         "[loadConfigurations] ✓ Retrieved configurations:",
         configurations.length,
@@ -173,26 +192,11 @@ export class ConfigurationManagerComponent implements OnInit {
       this.store.setConfigurations(configurations);
       console.log("[loadConfigurations] ✓ Configuration load complete");
     } catch (error) {
-      console.error(
-        "[loadConfigurations] ✗ Failed to load configurations:",
-        error,
-      );
-      console.error(
-        "[loadConfigurations] Error details:",
-        (error as Error)?.message,
-      );
-      console.error(
-        "[loadConfigurations] Error stack:",
-        (error as Error)?.stack,
-      );
+      console.error("[LoadConfig] Error:", (error as Error)?.message);
       this.notificationService.error(
         `Failed to load configurations: ${(error as Error).message}`,
       );
       this.store.setError((error as Error).message);
-      // Set empty array to allow app to continue
-      console.log(
-        "[loadConfigurations] Setting empty configurations array as fallback",
-      );
       this.store.setConfigurations([]);
     }
   }
@@ -288,10 +292,10 @@ export class ConfigurationManagerComponent implements OnInit {
   onViewValue(event: {
     value: string;
     type: ConfigurationType;
+    name: string;
     previousValue?: string;
     nextValue?: string;
   }): void {
-    console.log("[Manager] onViewValue called with:", event);
     // Open full-screen modal to display only the value
     const modalRef = this.modalService.open(ValueViewerComponent, {
       fullscreen: true,
@@ -300,6 +304,7 @@ export class ConfigurationManagerComponent implements OnInit {
 
     modalRef.componentInstance.value = event.value;
     modalRef.componentInstance.configurationType = event.type;
+    modalRef.componentInstance.configName = event.name;
     modalRef.componentInstance.previousValue = event.previousValue || "";
     modalRef.componentInstance.nextValue = event.nextValue || "";
   }
@@ -707,16 +712,66 @@ export class ConfigurationManagerComponent implements OnInit {
       const basket = this.store.baskets().find((b) => b.id === currentBasketId);
       if (!basket) return;
 
+      console.log(
+        `[RemoveFromBasket] Removing ${this.selectedConfigurations.length} configs from basket ${currentBasketId}`,
+      );
+
       for (const config of this.selectedConfigurations) {
-        await this.basketService.removeConfiguration(
-          currentBasketId,
-          config.id,
+        console.log(
+          `[RemoveFromBasket] Processing config ${config.id} from basket ${currentBasketId}`,
         );
+
+        // Delete the actual configuration from database
+        try {
+          await this.configService.delete(currentBasketId, config.id);
+          console.log(
+            `[RemoveFromBasket] ✓ Deleted config ${config.id} from database`,
+          );
+        } catch (deleteError) {
+          console.error(
+            `[RemoveFromBasket] ✗ Failed to delete config ${config.id}:`,
+            deleteError,
+          );
+        }
+
+        // Remove from basket metadata
+        try {
+          await this.basketService.removeConfiguration(
+            currentBasketId,
+            config.id,
+          );
+          console.log(
+            `[RemoveFromBasket] ✓ Removed config ${config.id} from basket metadata`,
+          );
+        } catch (removeError) {
+          console.error(
+            `[RemoveFromBasket] ✗ Failed to remove from basket:`,
+            removeError,
+          );
+        }
       }
+
+      console.log(`[RemoveFromBasket] Finished processing all configs`);
 
       const updatedBasket = await this.basketService.getById(currentBasketId);
       if (updatedBasket) {
+        console.log("[RemoveFromBasket] Updated basket:", {
+          id: updatedBasket.id,
+          name: updatedBasket.name,
+          configCount: updatedBasket.configurationIds.length,
+          configIds: updatedBasket.configurationIds,
+        });
         this.store.updateBasket(updatedBasket);
+
+        // Reload configurations to reflect the removal
+        await this.loadConfigurations();
+
+        console.log(
+          "[RemoveFromBasket] After reload - store has:",
+          this.store.configurations().length,
+          "configs",
+        );
+
         this.notificationService.success(
           `Removed ${this.selectedConfigurations.length} configuration(s) from "${basket.name}"`,
         );
