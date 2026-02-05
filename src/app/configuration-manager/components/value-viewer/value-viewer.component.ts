@@ -29,11 +29,11 @@ export class ValueViewerComponent implements OnInit {
   viewMode: "single" | "previous" | "next" = "single";
 
   get hasPrevious(): boolean {
-    return !!this.previousValue;
+    return !!this.previousValue && this.previousValue.length > 0;
   }
 
   get hasNext(): boolean {
-    return !!this.nextValue;
+    return !!this.nextValue && this.nextValue.length > 0;
   }
 
   constructor(public activeModal: NgbActiveModal) {}
@@ -41,6 +41,20 @@ export class ValueViewerComponent implements OnInit {
   ngOnInit(): void {
     // Set language based on configuration type
     this.language = this.getLanguageForType(this.configurationType);
+
+    // Log what values were passed to the modal
+    console.log("[ValueViewer] Component initialized with:", {
+      configName: this.configName,
+      configurationType: this.configurationType,
+      valueLength: this.value?.length || 0,
+      previousValueLength: this.previousValue?.length || 0,
+      nextValueLength: this.nextValue?.length || 0,
+      hasPrevious: this.hasPrevious,
+      hasNext: this.hasNext,
+      previousValuePreview: this.previousValue
+        ? this.previousValue.substring(0, 100) + "..."
+        : "(empty)",
+    });
   }
 
   private getLanguageForType(type: ConfigurationType): string {

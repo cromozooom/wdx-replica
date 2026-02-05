@@ -97,7 +97,7 @@ export class ConfigurationGridComponent {
   }
 
   logCounter(count: number): number {
-    console.log("[Grid] Header counter:", count);
+    // console.log("[Grid] Header counter:", count);
     return count;
   }
 
@@ -393,6 +393,7 @@ export class ConfigurationGridComponent {
           const button = target.closest(".view-value-btn") as HTMLElement;
 
           if (button) {
+            console.log("[Grid.click] View value button clicked");
             e.stopPropagation();
             e.preventDefault();
             const action = button.getAttribute("data-action");
@@ -410,7 +411,15 @@ export class ConfigurationGridComponent {
             if (rowNode?.data) {
               const data = rowNode.data as ConfigurationUpdateRow;
 
+              console.log("[Grid.click] Processing action:", {
+                action,
+                isConfigRow: data.isConfigRow,
+                configName: data.configName,
+                updateDate: data.updateDate,
+              });
+
               if (action === "view-current" && data.isConfigRow) {
+                console.log("[Grid.click] Entering VIEW-CURRENT branch");
                 // View current value - find previous version from updates
                 const updates = data.configUpdates || [];
                 const sortedUpdates = [...updates].sort(
@@ -418,14 +427,49 @@ export class ConfigurationGridComponent {
                     new Date(b.date).getTime() - new Date(a.date).getTime(),
                 );
 
+                console.log(
+                  "[ViewCurrent] Full history for:",
+                  data.configName,
+                  {
+                    totalUpdates: sortedUpdates.length,
+                    currentValue: data.configValue.substring(0, 100) + "...",
+                    updates: sortedUpdates.map((u, idx) => ({
+                      index: idx,
+                      date: u.date,
+                      jiraTicket: u.jiraTicket,
+                      comment: u.comment,
+                      madeBy: u.madeBy,
+                      previousValuePreview: u.previousValue
+                        ? u.previousValue.substring(0, 100) + "..."
+                        : "(no previous value)",
+                      previousValueLength: u.previousValue?.length || 0,
+                    })),
+                  },
+                );
+
+                const previousValueForComparison =
+                  sortedUpdates[0]?.previousValue || "";
+
+                console.log("[ViewCurrent] Comparison values:", {
+                  configName: data.configName,
+                  hasPreviousValue: !!previousValueForComparison,
+                  previousValueLength: previousValueForComparison.length,
+                  latestUpdateDate: sortedUpdates[0]?.date,
+                  latestUpdateJira: sortedUpdates[0]?.jiraTicket,
+                  latestUpdatePreviousValue: sortedUpdates[0]?.previousValue
+                    ? "EXISTS"
+                    : "MISSING",
+                });
+
                 this.viewValue.emit({
                   value: data.configValue,
                   type: data.configType,
                   name: data.configName,
-                  previousValue: sortedUpdates[0]?.previousValue || "",
+                  previousValue: previousValueForComparison,
                   nextValue: "", // Current value has no next
                 });
               } else if (action === "view-historical" && !data.isConfigRow) {
+                console.log("[Grid.click] Entering VIEW-HISTORICAL branch");
                 // Find the previous and next values for this update
                 const updates = data.configUpdates || [];
                 const sortedUpdates = [...updates].sort(
@@ -433,9 +477,40 @@ export class ConfigurationGridComponent {
                     new Date(b.date).getTime() - new Date(a.date).getTime(),
                 );
 
+                console.log(
+                  "[ViewHistorical] Full history for:",
+                  data.configName,
+                  {
+                    totalUpdates: sortedUpdates.length,
+                    clickedUpdateDate: data.updateDate,
+                    updates: sortedUpdates.map((u, idx) => ({
+                      index: idx,
+                      date: u.date,
+                      jiraTicket: u.jiraTicket,
+                      comment: u.comment,
+                      madeBy: u.madeBy,
+                      previousValuePreview: u.previousValue
+                        ? u.previousValue.substring(0, 100) + "..."
+                        : "(no previous value)",
+                      previousValueLength: u.previousValue?.length || 0,
+                    })),
+                  },
+                );
+
                 const updateIndex = sortedUpdates.findIndex(
                   (u) => u.date.getTime() === data.updateDate?.getTime(),
                 );
+
+                console.log("[Grid.click] Found update index:", {
+                  updateIndex,
+                  clickedDate: data.updateDate,
+                  sortedUpdates: sortedUpdates.map((u, idx) => ({
+                    idx,
+                    date: u.date,
+                    hasPreviousValue: !!u.previousValue,
+                    previousValueLength: u.previousValue?.length || 0,
+                  })),
+                });
 
                 // Get the value at this point (after this update)
                 let valueToShow = "";
@@ -450,6 +525,13 @@ export class ConfigurationGridComponent {
                   valueToShow = configRow?.configValue || "";
                   previousValue = sortedUpdates[0]?.previousValue || "";
                   nextValue = ""; // Latest has no next
+
+                  console.log("[Grid.click] Latest update case:", {
+                    valueToShowLength: valueToShow.length,
+                    previousValueFromUpdate:
+                      sortedUpdates[0]?.previousValue?.length || 0,
+                    previousValueAssigned: previousValue.length,
+                  });
                 } else {
                   // Historical update - value after this update is previousValue of the next update
                   valueToShow =
@@ -475,6 +557,20 @@ export class ConfigurationGridComponent {
                   name: data.configName,
                   previousValue: previousValue,
                   nextValue: nextValue,
+                });
+
+                console.log("[ViewValue] JUST EMITTED historical update:", {
+                  updateIndex,
+                  valueToShow: valueToShow.substring(0, 50) + "...",
+                  previousValue: previousValue
+                    ? previousValue.substring(0, 50) + "..."
+                    : "(EMPTY)",
+                  previousValueLength: previousValue.length,
+                  nextValue: nextValue
+                    ? nextValue.substring(0, 50) + "..."
+                    : "(EMPTY)",
+                  nextValueLength: nextValue.length,
+                  totalUpdates: sortedUpdates.length,
                 });
               }
             }
