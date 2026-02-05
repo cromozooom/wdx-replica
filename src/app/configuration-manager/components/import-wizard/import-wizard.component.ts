@@ -541,6 +541,107 @@ export class ImportWizardComponent implements OnInit {
   }
 
   /**
+   * Open modal to review all conflicts starting with the first unresolved one
+   */
+  reviewAllConflicts(): void {
+    console.log("[ReviewAllConflicts] Called");
+
+    // Get all conflicts with hasConflict flag
+    const allConflicts = this.wizardStore
+      .conflicts()
+      .filter((c) => c.hasConflict);
+
+    // Find the first unresolved conflict
+    const firstUnresolvedIndex = allConflicts.findIndex(
+      (c) => !this.getResolution(c.configId),
+    );
+
+    console.log(
+      "[ReviewAllConflicts] First unresolved index:",
+      firstUnresolvedIndex,
+    );
+
+    if (firstUnresolvedIndex === -1) {
+      this.notificationService.info("All conflicts have been resolved");
+      return;
+    }
+
+    console.log("[ReviewAllConflicts] Opening modal");
+
+    this.openConflictModal(allConflicts, firstUnresolvedIndex);
+  }
+
+  /**
+   * Open conflict comparison modal with navigation
+   */
+  private openConflictModal(
+    allConflicts: ConflictDetection[],
+    currentIndex: number,
+  ): void {
+    const modalRef = this.modalService.open(ConflictComparisonComponent, {
+      size: "xl",
+      scrollable: true,
+      backdrop: "static",
+    });
+
+    modalRef.componentInstance.conflict = allConflicts[currentIndex];
+    modalRef.componentInstance.allConflicts = allConflicts;
+    modalRef.componentInstance.currentIndex = currentIndex;
+    modalRef.componentInstance.selectedStrategy = this.getResolution(
+      allConflicts[currentIndex].configId,
+    )?.strategy;
+
+    // Handle navigation to different conflict - update same modal
+    modalRef.componentInstance.navigateToConflict.subscribe(
+      (newIndex: number) => {
+        modalRef.componentInstance.conflict = allConflicts[newIndex];
+        modalRef.componentInstance.currentIndex = newIndex;
+        modalRef.componentInstance.selectedStrategy = this.getResolution(
+          allConflicts[newIndex].configId,
+        )?.strategy;
+      },
+    );
+
+    // Handle resolution from modal
+    modalRef.componentInstance.resolveConflict.subscribe(
+      (strategy: "overwrite" | "keep" | "import-as-new") => {
+        // Get the current conflict from the component instance (not from closure)
+        const currentConflict = modalRef.componentInstance.conflict;
+        const currentIdx = modalRef.componentInstance.currentIndex;
+
+        this.onResolveConflict(currentConflict.configId, strategy);
+
+        // Update the selected strategy in the modal
+        modalRef.componentInstance.selectedStrategy = strategy;
+
+        // Check if there are more unresolved conflicts
+        const nextUnresolvedIndex = allConflicts.findIndex(
+          (c, idx) => idx > currentIdx && !this.getResolution(c.configId),
+        );
+
+        if (nextUnresolvedIndex !== -1) {
+          // Navigate to next unresolved conflict in the same modal
+          modalRef.componentInstance.conflict =
+            allConflicts[nextUnresolvedIndex];
+          modalRef.componentInstance.currentIndex = nextUnresolvedIndex;
+          modalRef.componentInstance.selectedStrategy = this.getResolution(
+            allConflicts[nextUnresolvedIndex].configId,
+          )?.strategy;
+        } else {
+          // All resolved, close modal
+          modalRef.close();
+          this.notificationService.success("All conflicts have been resolved!");
+        }
+      },
+    );
+
+    // Handle modal close
+    modalRef.componentInstance.closeModal.subscribe(() => {
+      modalRef.close();
+    });
+  }
+
+  /**
    * Toggle expand/collapse all accordion items
    */
   toggleAllAccordions(): void {
