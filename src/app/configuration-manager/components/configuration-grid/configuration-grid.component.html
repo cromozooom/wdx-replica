@@ -42,7 +42,10 @@
         class="d-flex flex-grow-1 align-items-center gap-2 justify-content-end"
       >
         <span class="text-muted">
-          {{ store.filteredConfigurations().length }} configuration(s)
+          {{
+            logCounter(store.filteredConfigurations().length)
+          }}
+          configuration(s)
         </span>
       </div>
     </div>

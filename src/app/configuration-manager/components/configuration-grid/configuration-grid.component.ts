@@ -83,11 +83,22 @@ export class ConfigurationGridComponent {
     effect(() => {
       const configs = this.store.filteredConfigurations();
       this.rowData = this.flattenConfigurations(configs);
+      console.log("[Grid] Row data updated:", {
+        totalConfigs: configs.length,
+        totalRows: this.rowData.length,
+        configRows: this.rowData.filter((r) => r.isConfigRow).length,
+        updateRows: this.rowData.filter((r) => !r.isConfigRow).length,
+      });
 
       if (this.gridApi) {
         this.gridApi.setGridOption("rowData", this.rowData);
       }
     });
+  }
+
+  logCounter(count: number): number {
+    console.log("[Grid] Header counter:", count);
+    return count;
   }
 
   private flattenConfigurations(
@@ -377,42 +388,29 @@ export class ConfigurationGridComponent {
     setTimeout(() => {
       const gridElement = document.querySelector(".ag-root");
       if (gridElement) {
-        console.log("[Grid] Click listener attached to grid");
         gridElement.addEventListener("click", (e: Event) => {
           const target = e.target as HTMLElement;
           const button = target.closest(".view-value-btn") as HTMLElement;
 
           if (button) {
-            console.log("[Grid] View value button clicked");
             e.stopPropagation();
             e.preventDefault();
             const action = button.getAttribute("data-action");
-            console.log("[Grid] Action:", action);
 
             // Find the row element from the button
             const rowElement = target.closest("[row-index]") as HTMLElement;
-            if (!rowElement) {
-              console.log("[Grid] No row element found");
-              return;
-            }
+            if (!rowElement) return;
 
             const rowIndex = rowElement.getAttribute("row-index");
-            if (!rowIndex) {
-              console.log("[Grid] No row index found");
-              return;
-            }
-
-            console.log("[Grid] Row index:", rowIndex);
+            if (!rowIndex) return;
             const rowNode = this.gridApi.getDisplayedRowAtIndex(
               parseInt(rowIndex),
             );
 
             if (rowNode?.data) {
               const data = rowNode.data as ConfigurationUpdateRow;
-              console.log("[Grid] Row data:", data);
 
               if (action === "view-current" && data.isConfigRow) {
-                console.log("[Grid] Emitting view current value");
                 // View current value - find previous version from updates
                 const updates = data.configUpdates || [];
                 const sortedUpdates = [...updates].sort(
@@ -428,7 +426,6 @@ export class ConfigurationGridComponent {
                   nextValue: "", // Current value has no next
                 });
               } else if (action === "view-historical" && !data.isConfigRow) {
-                console.log("[Grid] Emitting view historical value");
                 // Find the previous and next values for this update
                 const updates = data.configUpdates || [];
                 const sortedUpdates = [...updates].sort(
