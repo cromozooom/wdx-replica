@@ -163,6 +163,16 @@
           class="d-flex align-items-center border-start d-flexjustify-content-end gap-2 px-2 py-2 h-100"
         >
           <div class="d-flex align-items-center gap-2">
+            <!-- Open scrollable content modal with first conflict unsolved -->
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-secondary"
+              (click)="reviewAllConflicts()"
+              title="Review all conflicts"
+            >
+              <i class="fas fa-eye me-1"></i>
+              Review
+            </button>
             <button
               type="button"
               class="btn btn-sm btn-outline-secondary"
@@ -170,9 +180,9 @@
               title="{{ allExpanded ? 'Collapse' : 'Expand' }} all conflicts"
             >
               <i
-                class="bi"
-                [class.bi-chevron-expand]="!allExpanded"
-                [class.bi-chevron-contract]="allExpanded"
+                class="fas"
+                [class.fa-chevron-down]="!allExpanded"
+                [class.fa-chevron-up]="allExpanded"
               ></i>
               {{ allExpanded ? "Collapse All" : "Expand All" }}
             </button>
