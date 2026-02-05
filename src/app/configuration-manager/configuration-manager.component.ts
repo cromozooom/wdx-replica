@@ -159,8 +159,27 @@ export class ConfigurationManagerComponent implements OnInit {
   private async loadConfigurations(): Promise<void> {
     console.log("[loadConfigurations] Starting configuration load...");
     try {
-      console.log("[loadConfigurations] Calling configService.getAll()...");
-      const configurations = await this.configService.getAll();
+      const currentBasketId = this.store.currentBasketId();
+      if (!currentBasketId) {
+        console.log(
+          "[loadConfigurations] No basket selected, loading all configurations",
+        );
+        const configurations = await this.configService.getAll();
+        console.log(
+          "[loadConfigurations] ✓ Retrieved configurations:",
+          configurations.length,
+          "items",
+        );
+        this.store.setConfigurations(configurations);
+        return;
+      }
+
+      console.log(
+        "[loadConfigurations] Loading configurations for basket:",
+        currentBasketId,
+      );
+      const configurations =
+        await this.configService.getByBasketId(currentBasketId);
       console.log(
         "[loadConfigurations] ✓ Retrieved configurations:",
         configurations.length,
@@ -288,6 +307,7 @@ export class ConfigurationManagerComponent implements OnInit {
   onViewValue(event: {
     value: string;
     type: ConfigurationType;
+    name: string;
     previousValue?: string;
     nextValue?: string;
   }): void {
@@ -300,6 +320,7 @@ export class ConfigurationManagerComponent implements OnInit {
 
     modalRef.componentInstance.value = event.value;
     modalRef.componentInstance.configurationType = event.type;
+    modalRef.componentInstance.configName = event.name;
     modalRef.componentInstance.previousValue = event.previousValue || "";
     modalRef.componentInstance.nextValue = event.nextValue || "";
   }
@@ -717,6 +738,10 @@ export class ConfigurationManagerComponent implements OnInit {
       const updatedBasket = await this.basketService.getById(currentBasketId);
       if (updatedBasket) {
         this.store.updateBasket(updatedBasket);
+
+        // Reload configurations to reflect the removal
+        await this.loadConfigurations();
+
         this.notificationService.success(
           `Removed ${this.selectedConfigurations.length} configuration(s) from "${basket.name}"`,
         );

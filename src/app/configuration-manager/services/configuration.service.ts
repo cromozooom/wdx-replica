@@ -20,6 +20,10 @@ export class ConfigurationService {
     return this.storage.getAll();
   }
 
+  async getByBasketId(basketId: number): Promise<Configuration[]> {
+    return this.storage.getByBasketId(basketId);
+  }
+
   async getById(
     basketId: number,
     id: number,

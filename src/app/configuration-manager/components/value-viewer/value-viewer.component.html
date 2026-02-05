@@ -1,63 +1,68 @@
-<div class="modal-header">
-  <h5 class="modal-title">
-    <i class="fas fa-eye me-2"></i>
-    View Value - {{ configurationType }}
-  </h5>
-  <div class="d-flex align-items-center gap-3 ms-auto me-3">
-    <div class="btn-group" role="group">
-      <input
-        type="radio"
-        class="btn-check"
-        name="viewMode"
-        id="viewSingle"
-        [(ngModel)]="viewMode"
-        value="single"
-        autocomplete="off"
-      />
-      <label class="btn btn-outline-primary btn-sm" for="viewSingle">
-        Single
-      </label>
+<div class="modal-header py-2">
+  <div class="d-flex align-items-center gap-3">
+    <h5 class="modal-title">
+      <i class="fas fa-code me-2"></i>
+      <span class="fw-bold">{{ configName }}</span>
+      <small class="text-muted ms-2">({{ configurationType }})</small>
+    </h5>
+    <div class="d-flex align-items-center gap-3 ms-auto me-3">
+      <div class="btn-group" role="group">
+        <input
+          type="radio"
+          class="btn-check"
+          name="viewMode"
+          id="viewSingle"
+          [(ngModel)]="viewMode"
+          value="single"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary btn-sm" for="viewSingle">
+          Single
+        </label>
 
-      <input
-        type="radio"
-        class="btn-check"
-        name="viewMode"
-        id="viewPrevious"
-        [(ngModel)]="viewMode"
-        value="previous"
-        autocomplete="off"
-        [disabled]="!hasPrevious"
-      />
-      <label
-        class="btn btn-outline-primary btn-sm"
-        for="viewPrevious"
-        [class.disabled]="!hasPrevious"
-      >
-        Vs Previous
-      </label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="viewMode"
+          id="viewPrevious"
+          [(ngModel)]="viewMode"
+          value="previous"
+          autocomplete="off"
+          [disabled]="!hasPrevious"
+        />
+        <label
+          class="btn btn-outline-primary btn-sm"
+          for="viewPrevious"
+          [class.opacity-25]="!hasPrevious"
+          [class.disabled]="!hasPrevious"
+        >
+          Vs Previous
+        </label>
 
-      <input
-        type="radio"
-        class="btn-check"
-        name="viewMode"
-        id="viewNext"
-        [(ngModel)]="viewMode"
-        value="next"
-        autocomplete="off"
-        [disabled]="!hasNext"
-      />
-      <label
-        class="btn btn-outline-primary btn-sm"
-        for="viewNext"
-        [class.disabled]="!hasNext"
-      >
-        Vs Next
-      </label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="viewMode"
+          id="viewNext"
+          [(ngModel)]="viewMode"
+          value="next"
+          autocomplete="off"
+          [disabled]="!hasNext"
+        />
+        <label
+          class="btn btn-outline-primary btn-sm"
+          for="viewNext"
+          [class.opacity-25]="!hasNext"
+          [class.disabled]="!hasNext"
+        >
+          Vs Next
+        </label>
+      </div>
     </div>
   </div>
   <button
     type="button"
-    class="btn-close"
+    class="btn-close me-1"
     aria-label="Close"
     (click)="activeModal.dismiss()"
   ></button>
@@ -66,7 +71,9 @@
   @if (viewMode === "single") {
     <div class="d-flex flex-column h-100">
       <div class="bg-light border-bottom px-3 py-2">
-        <span class="badge bg-primary"> Current Version </span>
+        <span class="badge bg-success-subtle text-success-emphasis">
+          Current Version
+        </span>
       </div>
       <app-monaco-editor
         [value]="value"
@@ -78,10 +85,13 @@
   } @else if (viewMode === "previous" && hasPrevious) {
     <div class="d-flex flex-column h-100">
       <div
-        class="bg-light border-bottom px-3 py-2 d-flex justify-content-between"
+        class="bg-light border-bottom py-2 d-flex justify-content-center gap-2"
       >
-        <span class="badge bg-light text-muted"> Previous Version </span>
-        <span class="badge bg-info-subtle text-info-emphasis"
+        <span class="badge bg-warning-subtle text-warning-emphasis">
+          Previous Version
+        </span>
+        <small>Vs.</small>
+        <span class="badge bg-success-subtle text-success-emphasis"
           >Current Version
         </span>
       </div>
@@ -94,11 +104,16 @@
     </div>
   } @else if (viewMode === "next" && hasNext) {
     <div class="d-flex flex-column h-100">
-      <div class="border-bottom px-3 py-2 d-flex justify-content-between">
-        <span class="badge bg-info-subtle text-info-emphasis">
+      <div
+        class="bg-light border-bottom py-2 d-flex justify-content-center gap-2"
+      >
+        <span class="badge bg-success-subtle text-success-emphasis">
           Current Version
         </span>
-        <span class="badge bg-light text-muted"> Next Version </span>
+        <small>Vs.</small>
+        <span class="badge bg-warning-subtle text-warning-emphasis">
+          Next Version
+        </span>
       </div>
       <app-monaco-diff-viewer
         [leftValue]="value"

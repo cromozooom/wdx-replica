@@ -68,12 +68,14 @@ export class ConfigurationGridComponent {
   @Output() viewValue = new EventEmitter<{
     value: string;
     type: ConfigurationType;
+    name: string;
     previousValue?: string;
     nextValue?: string;
   }>();
 
   rowData: ConfigurationUpdateRow[] = [];
-  groupBy: "none" | "name" | "version" = "none";
+  groupBy: "none" | "name" | "version" | "version-name" | "name-version" =
+    "none";
   private gridApi: any;
 
   constructor() {
@@ -421,6 +423,7 @@ export class ConfigurationGridComponent {
                 this.viewValue.emit({
                   value: data.configValue,
                   type: data.configType,
+                  name: data.configName,
                   previousValue: sortedUpdates[0]?.previousValue || "",
                   nextValue: "", // Current value has no next
                 });
@@ -472,6 +475,7 @@ export class ConfigurationGridComponent {
                 this.viewValue.emit({
                   value: valueToShow,
                   type: data.configType,
+                  name: data.configName,
                   previousValue: previousValue,
                   nextValue: nextValue,
                 });
@@ -498,7 +502,9 @@ export class ConfigurationGridComponent {
     const mode = (event.target as HTMLSelectElement).value as
       | "none"
       | "name"
-      | "version";
+      | "version"
+      | "version-name"
+      | "name-version";
     this.groupBy = mode;
 
     if (this.gridApi) {
@@ -519,6 +525,44 @@ export class ConfigurationGridComponent {
       } else if (mode === "version") {
         this.gridApi.applyColumnState({
           state: [{ colId: "configVersion", rowGroup: true, hide: true }],
+          defaultState: { rowGroup: false },
+        });
+      } else if (mode === "version-name") {
+        // Apply hierarchical grouping: Version first, then Name
+        this.gridApi.applyColumnState({
+          state: [
+            {
+              colId: "configVersion",
+              rowGroup: true,
+              rowGroupIndex: 0,
+              hide: true,
+            },
+            {
+              colId: "configName",
+              rowGroup: true,
+              rowGroupIndex: 1,
+              hide: true,
+            },
+          ],
+          defaultState: { rowGroup: false },
+        });
+      } else if (mode === "name-version") {
+        // Apply hierarchical grouping: Name first, then Version
+        this.gridApi.applyColumnState({
+          state: [
+            {
+              colId: "configName",
+              rowGroup: true,
+              rowGroupIndex: 0,
+              hide: true,
+            },
+            {
+              colId: "configVersion",
+              rowGroup: true,
+              rowGroupIndex: 1,
+              hide: true,
+            },
+          ],
           defaultState: { rowGroup: false },
         });
       }
