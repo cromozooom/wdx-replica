@@ -225,6 +225,31 @@ export class ConfigurationManagerComponent implements OnInit {
   }
 
   async onSaveConfiguration(configuration: Configuration): Promise<void> {
+    // Check if this is an update (configuration already exists in store)
+    const existingConfig = this.store
+      .configurations()
+      .find(
+        (c) =>
+          c.id === configuration.id && c.basketId === configuration.basketId,
+      );
+
+    if (existingConfig && configuration.updates.length > 0) {
+      // This is an update - capture the previous value
+      const latestUpdate =
+        configuration.updates[configuration.updates.length - 1];
+
+      // If the latest update doesn't have a previousValue, set it to the existing configuration's value
+      if (!latestUpdate.previousValue) {
+        latestUpdate.previousValue = existingConfig.value;
+        console.log("[SaveConfig] Captured previous value for update:", {
+          configName: configuration.name,
+          updateDate: latestUpdate.date,
+          previousValueLength: latestUpdate.previousValue.length,
+          newValueLength: configuration.value.length,
+        });
+      }
+    }
+
     this.store.addConfiguration(configuration);
 
     // Add the configuration to the current basket
@@ -297,6 +322,21 @@ export class ConfigurationManagerComponent implements OnInit {
     previousValue?: string;
     nextValue?: string;
   }): void {
+    console.log("[ConfigManager.onViewValue] Received event:", {
+      name: event.name,
+      valueLength: event.value?.length || 0,
+      previousValueLength: event.previousValue?.length || 0,
+      nextValueLength: event.nextValue?.length || 0,
+      hasPreviousValue: !!event.previousValue,
+      hasNextValue: !!event.nextValue,
+      previousValuePreview: event.previousValue
+        ? event.previousValue.substring(0, 100) + "..."
+        : "(empty)",
+      nextValuePreview: event.nextValue
+        ? event.nextValue.substring(0, 100) + "..."
+        : "(empty)",
+    });
+
     // Open full-screen modal to display only the value
     const modalRef = this.modalService.open(ValueViewerComponent, {
       fullscreen: true,
@@ -308,6 +348,11 @@ export class ConfigurationManagerComponent implements OnInit {
     modalRef.componentInstance.configName = event.name;
     modalRef.componentInstance.previousValue = event.previousValue || "";
     modalRef.componentInstance.nextValue = event.nextValue || "";
+
+    console.log("[ConfigManager.onViewValue] Set modal inputs:", {
+      previousValue: modalRef.componentInstance.previousValue?.length || 0,
+      nextValue: modalRef.componentInstance.nextValue?.length || 0,
+    });
   }
 
   async onResetDatabase(): Promise<void> {

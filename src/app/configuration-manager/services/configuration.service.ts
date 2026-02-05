@@ -176,13 +176,19 @@ export class ConfigurationService {
     const currentUser = this.teamMemberService.getCurrentUser();
     const now = new Date();
 
+    // Add previousValue to all update entries (capture the value before this update)
+    const updatedEntries = updateEntries.map((entry) => ({
+      ...entry,
+      previousValue: entry.previousValue || existing.value,
+    }));
+
     const updated: Configuration = {
       ...existing,
       ...updates,
       id, // Ensure ID doesn't change
       lastModifiedDate: now,
       lastModifiedBy: currentUser,
-      updates: [...existing.updates, ...updateEntries],
+      updates: [...existing.updates, ...updatedEntries],
     };
 
     await this.storage.save(updated);
