@@ -1,177 +1,98 @@
 <header
   class="header border-bottom d-flex flex-column"
   [style.background]="
-    store.currentBasket()
+    store.currentBasket() && devMode
       ? 'linear-gradient(to bottom, ' +
         hexToRgba(store.currentBasket()!.color, 0.7) +
         ', transparent)'
       : 'none'
   "
 >
-  <div class="d-flex justify-content-between align-items-center">
-    <div class="d-flex align-items-center gap-3 px-2">
-      <div class="basket-selector d-flex gap-2">
-        <div class="btn-group">
-          @for (
-            basket of store.baskets();
-            track basket.id;
-            let first = $first
-          ) {
+  @if (devMode) {
+    <div class="d-flex justify-content-between align-items-center py-2">
+      <div class="d-flex align-items-center gap-3 px-2">
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="devModeToggle"
+            [(ngModel)]="devMode"
+          />
+          <label class="form-check-label" for="devModeToggle"> DevMode </label>
+        </div>
+        <div class="basket-selector d-flex gap-2">
+          <div class="btn-group">
+            @for (
+              basket of store.baskets();
+              track basket.id;
+              let first = $first
+            ) {
+              <button
+                type="button"
+                class="btn btn-sm"
+                [class.rounded-start]="first"
+                [class.btn-secondary]="store.currentBasketId() === basket.id"
+                [class.btn-outline-secondary]="
+                  store.currentBasketId() !== basket.id
+                "
+                [style.border-top]="'4px solid ' + basket.color"
+                (click)="selectBasket(basket.id)"
+              >
+                {{ basket.name }}
+                <span class="badge bg-light text-dark ms-1">{{
+                  basket.configurationIds.length
+                }}</span>
+              </button>
+            }
             <button
               type="button"
-              class="btn btn-sm"
-              [class.rounded-start]="first"
-              [class.btn-secondary]="store.currentBasketId() === basket.id"
-              [class.btn-outline-secondary]="
-                store.currentBasketId() !== basket.id
-              "
-              [style.border-top]="'4px solid ' + basket.color"
-              (click)="selectBasket(basket.id)"
+              class="btn btn-sm rounded-end btn-outline-secondary"
+              (click)="openBasketModal()"
+              title="Create new basket"
             >
-              {{ basket.name }}
-              <span class="badge bg-light text-dark ms-1">{{
-                basket.configurationIds.length
-              }}</span>
+              <i class="fas fa-plus"></i>
             </button>
-          }
-          <button
-            type="button"
-            class="btn btn-sm rounded-end btn-outline-secondary"
-            (click)="openBasketModal()"
-            title="Create new basket"
-          >
-            <i class="fas fa-plus"></i>
-          </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="d-flex">
-      <div class="d-flex justify-content-between align-items-center gap-2 p-2">
-        <!-- Import Action -->
-        <button
-          class="btn btn-sm btn-outline-primary"
-          (click)="onImport()"
-          title="Import configurations from ZIP"
-        >
-          <i class="fas fa-file-import me-1"></i>
-          Import
-        </button>
+      <ng-container *ngTemplateOutlet="actionButtons"></ng-container>
+      <div class="d-flex gap-2 pe-2">
         <div class="btn-group">
-          <!-- Bulk Edit Action -->
-          @if (store.selectedConfigurations().length > 0) {
-            <button
-              class="btn btn-sm btn-outline-primary"
-              (click)="onBulkEdit()"
-              title="Bulk edit selected configurations"
-            >
-              <i class="fas fa-edit me-1"></i>
-              Bulk Edit ({{ store.selectedConfigurations().length }})
-            </button>
-          }
-
-          <!-- Export Actions -->
-          @if (store.selectedConfigurations().length > 0) {
-            <button
-              class="btn btn-sm btn-outline-primary"
-              (click)="onExportSelected()"
-              [disabled]="exporting"
-              title="Export selected configurations as ZIP"
-            >
-              <i class="fas fa-file-export me-1"></i>
-              @if (exporting) {
-                <span class="spinner-border spinner-border-sm me-1"></span>
-              }
-              Export Selected ({{ store.selectedConfigurations().length }})
-            </button>
-          }
-
-          @if (
-            store.currentBasket() && store.basketConfigurations().length > 0
-          ) {
-            <button
-              class="btn btn-sm btn-outline-primary"
-              (click)="onExportBasket()"
-              [disabled]="exporting"
-              title="Export entire basket as ZIP"
-            >
-              <i class="fas fa-download me-1"></i>
-              @if (exporting) {
-                <span class="spinner-border spinner-border-sm me-1"></span>
-              }
-              Export All
-            </button>
-          }
-
-          <!-- Basket Actions -->
-          <!-- @if (store.currentBasketId() && selectedConfigurations.length > 0) {
-              <div class="dropdown">
-                <button
-                class="btn btn-sm btn-outline-primary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                >
-                  <i class="fas fa-shopping-basket me-1"></i>
-                  Add to Basket
-                </button>
-                <ul class="dropdown-menu">
-                  @for (basket of store.baskets(); track basket.id) {
-                    @if (basket.id !== store.currentBasketId()) {
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          (click)="addSelectedToBasket(basket.id)"
-                        >
-                        {{ basket.name }}
-                        </a>
-                      </li>
-                      }
-                      }
-                    </ul>
-                  </div>
-                  } -->
-        </div>
-        @if (store.currentBasketId() && selectedConfigurations.length > 0) {
           <button
-            class="btn btn-sm btn-outline-primary"
-            (click)="removeSelectedFromBasket()"
-            title="Remove selected from current basket"
+            class="btn btn-sm btn-outline-secondary"
+            (click)="onResetDatabase()"
           >
-            <i class="fas fa-times me-1"></i>
-            Remove from Basket
+            Reset DB
           </button>
-        }
-        <button
-          class="btn btn-sm btn-outline-secondary"
-          (click)="onNewConfiguration()"
-        >
-          <i class="fas fa-plus me-2"></i>
-          Config.
-        </button>
+          <button
+            class="btn btn-sm btn-outline-secondary"
+            (click)="onForceDeleteDatabase()"
+          >
+            Force Delete DB
+          </button>
+          <button
+            class="btn btn-sm btn-outline-secondary"
+            (click)="onSeedSampleData()"
+          >
+            Seed Data
+          </button>
+        </div>
       </div>
     </div>
-    <div class="d-flex gap-2 pe-2">
-      <div class="btn-group">
-        <button
-          class="btn btn-sm btn-outline-secondary"
-          (click)="onResetDatabase()"
-        >
-          Reset DB
-        </button>
-        <button
-          class="btn btn-sm btn-outline-secondary"
-          (click)="onForceDeleteDatabase()"
-        >
-          Force Delete DB
-        </button>
-        <button
-          class="btn btn-sm btn-outline-secondary"
-          (click)="onSeedSampleData()"
-        >
-          Seed Data
-        </button>
+  } @else {
+    <div class="d-flex justify-content-between align-items-center p-2">
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="devModeToggle"
+          [(ngModel)]="devMode"
+        />
+        <label class="form-check-label" for="devModeToggle"> DevMode </label>
       </div>
+      <ng-container *ngTemplateOutlet="actionButtons"></ng-container>
     </div>
-  </div>
+  }
 </header>
 
 @if (store.error()) {
@@ -247,3 +168,81 @@
     </div>
   </div>
 }
+
+<!-- Reusable Action Buttons Template -->
+<ng-template #actionButtons>
+  <div class="d-flex">
+    <div class="d-flex justify-content-between align-items-center gap-2 p-2">
+      <!-- Import Action -->
+      <button
+        class="btn btn-sm btn-outline-primary"
+        (click)="onImport()"
+        title="Import configurations from ZIP"
+      >
+        <i class="fas fa-file-import me-1"></i>
+        Import
+      </button>
+      <div class="btn-group">
+        <!-- Bulk Edit Action -->
+        @if (store.selectedConfigurations().length > 0) {
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="onBulkEdit()"
+            title="Bulk edit selected configurations"
+          >
+            <i class="fas fa-edit me-1"></i>
+            Bulk Edit ({{ store.selectedConfigurations().length }})
+          </button>
+        }
+
+        <!-- Export Actions -->
+        @if (store.selectedConfigurations().length > 0) {
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="onExportSelected()"
+            [disabled]="exporting"
+            title="Export selected configurations as ZIP"
+          >
+            <i class="fas fa-file-export me-1"></i>
+            @if (exporting) {
+              <span class="spinner-border spinner-border-sm me-1"></span>
+            }
+            Export Selected ({{ store.selectedConfigurations().length }})
+          </button>
+        }
+
+        @if (store.currentBasket() && store.basketConfigurations().length > 0) {
+          <button
+            class="btn btn-sm btn-outline-primary"
+            (click)="onExportBasket()"
+            [disabled]="exporting"
+            title="Export entire basket as ZIP"
+          >
+            <i class="fas fa-download me-1"></i>
+            @if (exporting) {
+              <span class="spinner-border spinner-border-sm me-1"></span>
+            }
+            Export All
+          </button>
+        }
+      </div>
+      @if (store.currentBasketId() && selectedConfigurations.length > 0) {
+        <button
+          class="btn btn-sm btn-outline-primary"
+          (click)="removeSelectedFromBasket()"
+          title="Remove selected from current basket"
+        >
+          <i class="fas fa-times me-1"></i>
+          Remove from Basket
+        </button>
+      }
+      <button
+        class="btn btn-sm btn-outline-secondary"
+        (click)="onNewConfiguration()"
+      >
+        <i class="fas fa-plus me-2"></i>
+        Config.
+      </button>
+    </div>
+  </div>
+</ng-template>
