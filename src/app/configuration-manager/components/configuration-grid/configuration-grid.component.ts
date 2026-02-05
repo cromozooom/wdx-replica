@@ -164,28 +164,6 @@ export class ConfigurationGridComponent {
       resizable: false,
     },
     {
-      headerName: "Actions",
-      pinned: "left",
-      width: 80,
-      sortable: false,
-      filter: false,
-      cellRenderer: (params: any) => {
-        if (!params.data) return "";
-
-        if (params.data.isConfigRow) {
-          // For config rows, show view current value button
-          return `<button class="btn btn-sm btn-link text-decoration-none view-value-btn" data-action="view-current" title="View current value">
-            <i class="fas fa-code"></i>
-          </button>`;
-        } else {
-          // For update rows, show view historical value button
-          return `<button class="btn btn-sm btn-link text-decoration-none view-value-btn" data-action="view-historical" title="View value at this point">
-            <i class="fas fa-code"></i>
-          </button>`;
-        }
-      },
-    },
-    {
       headerName: "Configuration Name",
       field: "configName",
       filter: "agTextColumnFilter",
@@ -263,6 +241,27 @@ export class ConfigurationGridComponent {
       sortable: true,
       width: 140,
     },
+    {
+      headerName: "Actions",
+      width: 80,
+      sortable: false,
+      filter: false,
+      cellRenderer: (params: any) => {
+        if (!params.data) return "";
+
+        if (params.data.isConfigRow) {
+          // For config rows, show view current value button
+          return `<button class="btn btn-sm btn-link text-decoration-none view-value-btn" data-action="view-current" title="View current value">
+            <i class="fas fa-code"></i>
+          </button>`;
+        } else {
+          // For update rows, show view historical value button
+          return `<button class="btn btn-sm btn-link text-decoration-none view-value-btn" data-action="view-historical" title="View value at this point">
+            <i class="fas fa-code"></i>
+          </button>`;
+        }
+      },
+    },
   ];
 
   gridOptions: GridOptions<ConfigurationUpdateRow> = {
@@ -282,7 +281,7 @@ export class ConfigurationGridComponent {
     animateRows: true,
     enableCellTextSelection: true,
     rowBuffer: 10,
-    rowGroupPanelShow: "always",
+    // rowGroupPanelShow: "always",
     pagination: true,
     paginationPageSize: 50,
     paginationPageSizeSelector: [25, 50, 100, 200],
