@@ -118,35 +118,35 @@ verify stud positions, plate deductions, and noggin sizing/staggering.
 
 ### Implementation for User Story 2
 
-- [ ] T024 [P] [US2] Create wall-manager component at
+- [x] T024 [P] [US2] Create wall-manager component at
       src/app/garden-room/components/wall-manager/ with template, styles, and
       TypeScript
-- [ ] T025 [US2] Implement placeStandardStuds method in
+- [x] T025 [US2] Implement placeStandardStuds method in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T026 [US2] Implement placeDecorativeStuds method in
+- [x] T026 [US2] Implement placeDecorativeStuds method in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T027 [US2] Implement resolveStudClashes method (decorative priority) in
+- [x] T027 [US2] Implement resolveStudClashes method (decorative priority) in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T028 [US2] Implement adjustStudHeightsForPlates method in
+- [x] T028 [US2] Implement adjustStudHeightsForPlates method in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T029 [US2] Implement calculateNogginLayout with staggering logic in
+- [x] T029 [US2] Implement calculateNogginLayout with staggering logic in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T030 [US2] Implement calculateSideWallTopPlateLength (hypotenuse) in
+- [x] T030 [US2] Implement calculateSideWallTopPlateLength (hypotenuse) in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T031 [US2] Create @ngrx/signals store for wall member state in
+- [x] T031 [US2] Create @ngrx/signals store for wall member state in
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T032 [US2] Wire wall-manager component to display member positions and
+- [x] T032 [US2] Wire wall-manager component to display member positions and
       types reactively
-- [ ] T033 [P] [US2] Create wall-visualizer component at
+- [x] T033 [P] [US2] Create wall-visualizer component at
       src/app/garden-room/components/wall-visualizer/ with SVG-based wall
       preview
-- [ ] T034 [US2] Bind wall-visualizer to signals for real-time member position
+- [x] T034 [US2] Bind wall-visualizer to signals for real-time member position
       updates
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work

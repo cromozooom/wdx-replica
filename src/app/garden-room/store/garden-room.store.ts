@@ -142,6 +142,66 @@ export const GardenRoomStore = signalStore(
         env.floorSystemMm;
       return maxFrameHeight > 0;
     }),
+
+    /**
+     * Computed: Stud layout for selected wall
+     * Calculates standard, decorative, and resolved stud positions
+     */
+    studLayoutForWall: computed(() => (wallId: string) => {
+      const wallList = walls();
+      const wall = wallList.find((w) => w.id === wallId);
+      if (!wall) return null;
+
+      // Calculate standard stud positions
+      const standardPositions: number[] = [];
+      standardPositions.push(0);
+      let position = wall.studGapMm;
+      while (position < wall.lengthMm) {
+        standardPositions.push(position);
+        position += wall.studGapMm;
+      }
+      if (standardPositions[standardPositions.length - 1] !== wall.lengthMm) {
+        standardPositions.push(wall.lengthMm);
+      }
+
+      // Calculate decorative stud positions
+      const decorativePositions: number[] = [];
+      if (wall.decorativeOffsetMm > 0) {
+        if (wall.decorativeOffsetMm < wall.lengthMm / 2) {
+          decorativePositions.push(wall.decorativeOffsetMm);
+        }
+        if (wall.lengthMm - wall.decorativeOffsetMm > wall.lengthMm / 2) {
+          decorativePositions.push(wall.lengthMm - wall.decorativeOffsetMm);
+        }
+      }
+
+      // Resolve clashes
+      const resolved: number[] = [...decorativePositions];
+      const clashThreshold = 50;
+      for (const stdPos of standardPositions) {
+        const hasClash = decorativePositions.some(
+          (decPos) => Math.abs(decPos - stdPos) <= clashThreshold,
+        );
+        if (!hasClash) {
+          resolved.push(stdPos);
+        }
+      }
+
+      return {
+        standardStudPositionsMm: standardPositions,
+        decorativeStudPositionsMm: decorativePositions,
+        resolvedStudPositionsMm: resolved.sort((a, b) => a - b),
+        clashThresholdMm: clashThreshold,
+      };
+    }),
+
+    /**
+     * Computed: Total member count across all walls
+     */
+    totalMemberCount: computed(() => {
+      const wallList = walls();
+      return wallList.reduce((sum, wall) => sum + wall.members.length, 0);
+    }),
   })),
 );
 

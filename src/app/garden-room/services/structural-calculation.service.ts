@@ -88,16 +88,106 @@ export class StructuralCalculationService {
    * @returns StudLayout with resolved positions
    */
   generateStudLayout(wall: Wall): StudLayout {
-    // TODO: Implement stud layout generation
-    // - Calculate standard stud positions based on studGapMm
-    // - Calculate decorative stud positions based on decorativeOffsetMm
-    // - Resolve clashes (keep decorative studs)
+    const standardPositions = this.placeStandardStuds(
+      wall.lengthMm,
+      wall.studGapMm,
+    );
+    const decorativePositions = this.placeDecorativeStuds(
+      wall.lengthMm,
+      wall.decorativeOffsetMm,
+    );
+    const resolvedPositions = this.resolveStudClashes(
+      standardPositions,
+      decorativePositions,
+      50,
+    );
+
     return {
-      standardStudPositionsMm: [],
-      decorativeStudPositionsMm: [],
-      resolvedStudPositionsMm: [],
+      standardStudPositionsMm: standardPositions,
+      decorativeStudPositionsMm: decorativePositions,
+      resolvedStudPositionsMm: resolvedPositions,
       clashThresholdMm: 50,
     };
+  }
+
+  /**
+   * Place standard structural studs at regular intervals
+   * @param wallLengthMm Wall length in mm
+   * @param studGapMm Gap between studs in mm
+   * @returns Array of stud positions in mm
+   */
+  placeStandardStuds(wallLengthMm: number, studGapMm: number): number[] {
+    const positions: number[] = [];
+    // Start with studs at 0 and end
+    positions.push(0);
+
+    // Place intermediate studs
+    let position = studGapMm;
+    while (position < wallLengthMm) {
+      positions.push(position);
+      position += studGapMm;
+    }
+
+    // End stud
+    if (positions[positions.length - 1] !== wallLengthMm) {
+      positions.push(wallLengthMm);
+    }
+
+    return positions;
+  }
+
+  /**
+   * Place decorative studs at offset positions from wall ends
+   * @param wallLengthMm Wall length in mm
+   * @param decorativeOffsetMm Offset from ends in mm
+   * @returns Array of decorative stud positions in mm
+   */
+  placeDecorativeStuds(
+    wallLengthMm: number,
+    decorativeOffsetMm: number,
+  ): number[] {
+    if (decorativeOffsetMm <= 0) {
+      return [];
+    }
+
+    const positions: number[] = [];
+    // Left end decorative stud
+    if (decorativeOffsetMm < wallLengthMm / 2) {
+      positions.push(decorativeOffsetMm);
+    }
+    // Right end decorative stud
+    if (wallLengthMm - decorativeOffsetMm > wallLengthMm / 2) {
+      positions.push(wallLengthMm - decorativeOffsetMm);
+    }
+
+    return positions;
+  }
+
+  /**
+   * Resolve stud clashes - keep decorative studs, remove clashing standard studs
+   * @param standardPositions Standard stud positions in mm
+   * @param decorativePositions Decorative stud positions in mm
+   * @param clashThresholdMm Clash threshold in mm (default 50mm)
+   * @returns Resolved stud positions in mm
+   */
+  resolveStudClashes(
+    standardPositions: number[],
+    decorativePositions: number[],
+    clashThresholdMm: number,
+  ): number[] {
+    const resolved: number[] = [...decorativePositions];
+
+    for (const stdPos of standardPositions) {
+      const hasClash = decorativePositions.some(
+        (decPos) => Math.abs(decPos - stdPos) <= clashThresholdMm,
+      );
+
+      if (!hasClash) {
+        resolved.push(stdPos);
+      }
+    }
+
+    return resolved.sort((a, b) => a - b);
   }
 
   /**
@@ -107,14 +197,68 @@ export class StructuralCalculationService {
    * @returns NogginLayout with row positions
    */
   generateNogginLayout(wall: Wall, studPositions: number[]): NogginLayout {
-    // TODO: Implement noggin layout generation
-    // - Calculate noggin length from stud gap
-    // - Determine row positions based on wall height
-    // - Generate noggin positions between studs
+    const nogginLengthMm = wall.studGapMm;
+    const rows: any[] = [];
+
+    // Calculate row positions (e.g., every 600mm vertically)
+    const rowSpacingMm = 600;
+    const numberOfRows = Math.floor(wall.heightMm / rowSpacingMm);
+
+    for (let i = 1; i <= numberOfRows; i++) {
+      const offsetMm = i * rowSpacingMm;
+      const positionsMm: number[] = [];
+
+      // Stagger rows: even rows offset by half gap
+      const staggerOffset = i % 2 === 0 ? wall.studGapMm / 2 : 0;
+
+      // Place noggins between studs
+      for (let j = 0; j < studPositions.length - 1; j++) {
+        const nogginPosition = studPositions[j] + staggerOffset;
+        if (nogginPosition < studPositions[j + 1]) {
+          positionsMm.push(nogginPosition);
+        }
+      }
+
+      rows.push({ offsetMm, positionsMm });
+    }
+
     return {
-      nogginLengthMm: 0,
-      rows: [],
+      nogginLengthMm,
+      rows,
     };
+  }
+
+  /**
+   * Adjust stud heights by subtracting plate thicknesses
+   * @param studHeightMm Original stud height in mm
+   * @param plateThicknessTopMm Top plate thickness in mm
+   * @param plateThicknessBottomMm Bottom plate thickness in mm
+   * @returns Adjusted stud height in mm
+   */
+  adjustStudHeightsForPlates(
+    studHeightMm: number,
+    plateThicknessTopMm: number,
+    plateThicknessBottomMm: number,
+  ): number {
+    return studHeightMm - plateThicknessTopMm - plateThicknessBottomMm;
+  }
+
+  /**
+   * Calculate top plate length for side walls (hypotenuse)
+   * @param wallLengthMm Side wall length in mm
+   * @param frontHeightMm Front wall height in mm
+   * @param backHeightMm Back wall height in mm
+   * @returns Top plate length in mm
+   */
+  calculateSideWallTopPlateLength(
+    wallLengthMm: number,
+    frontHeightMm: number,
+    backHeightMm: number,
+  ): number {
+    const heightDifferenceMm = Math.abs(frontHeightMm - backHeightMm);
+    return Math.sqrt(
+      Math.pow(wallLengthMm, 2) + Math.pow(heightDifferenceMm, 2),
+    );
   }
 
   /**

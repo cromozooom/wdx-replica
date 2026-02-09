@@ -1,0 +1,161 @@
+<div class="wall-manager-container">
+  <h2>Wall Configuration</h2>
+
+  <!-- Wall Selector -->
+  <div class="wall-selector">
+    <button
+      *ngFor="let wall of walls"
+      class="wall-button"
+      [class.active]="wall.id === selectedWallId"
+      (click)="selectWall(wall.id)"
+    >
+      {{ wall.name }}
+    </button>
+  </div>
+
+  <!-- Wall Configuration Form -->
+  <form [formGroup]="wallForm" class="wall-form">
+    <div class="form-group">
+      <label for="lengthMm">Wall Length (mm)</label>
+      <input
+        type="number"
+        id="lengthMm"
+        formControlName="lengthMm"
+        class="form-control"
+        placeholder="e.g., 3000"
+      />
+      <div
+        class="error-message"
+        *ngIf="
+          wallForm.get('lengthMm')?.invalid && wallForm.get('lengthMm')?.touched
+        "
+      >
+        Wall length must be at least 500 mm
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="studGapMm">Stud Gap (mm)</label>
+      <input
+        type="number"
+        id="studGapMm"
+        formControlName="studGapMm"
+        class="form-control"
+        placeholder="e.g., 600"
+      />
+      <div
+        class="error-message"
+        *ngIf="
+          wallForm.get('studGapMm')?.invalid &&
+          wallForm.get('studGapMm')?.touched
+        "
+      >
+        Stud gap must be at least 300 mm
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="decorativeOffsetMm">Decorative Offset (mm)</label>
+      <input
+        type="number"
+        id="decorativeOffsetMm"
+        formControlName="decorativeOffsetMm"
+        class="form-control"
+        placeholder="e.g., 0"
+      />
+      <div
+        class="error-message"
+        *ngIf="
+          wallForm.get('decorativeOffsetMm')?.invalid &&
+          wallForm.get('decorativeOffsetMm')?.touched
+        "
+      >
+        Decorative offset must be 0 or greater
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="plateThicknessTopMm">Top Plate Thickness (mm)</label>
+        <input
+          type="number"
+          id="plateThicknessTopMm"
+          formControlName="plateThicknessTopMm"
+          class="form-control"
+          placeholder="e.g., 45"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="plateThicknessBottomMm">Bottom Plate Thickness (mm)</label>
+        <input
+          type="number"
+          id="plateThicknessBottomMm"
+          formControlName="plateThicknessBottomMm"
+          class="form-control"
+          placeholder="e.g., 45"
+        />
+      </div>
+    </div>
+  </form>
+
+  <!-- Wall Summary -->
+  <div class="wall-summary" *ngIf="selectedWall">
+    <h3>{{ selectedWall.name }} Wall Summary</h3>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <span class="label">Length:</span>
+        <span class="value">{{ selectedWall.lengthMm }} mm</span>
+      </div>
+      <div class="summary-item">
+        <span class="label">Height:</span>
+        <span class="value">{{ selectedWall.heightMm }} mm</span>
+      </div>
+      <div class="summary-item">
+        <span class="label">Stud Gap:</span>
+        <span class="value">{{ selectedWall.studGapMm }} mm</span>
+      </div>
+      <div class="summary-item">
+        <span class="label">Members:</span>
+        <span class="value">{{ selectedWall.members.length }}</span>
+      </div>
+    </div>
+
+    <!-- Stud Layout Details -->
+    <div class="layout-details" *ngIf="studLayout">
+      <h4>Stud Layout</h4>
+      <div class="layout-info">
+        <div class="info-item">
+          <span class="label">Standard Studs:</span>
+          <span class="value">{{
+            studLayout.standardStudPositionsMm.length
+          }}</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Decorative Studs:</span>
+          <span class="value">{{
+            studLayout.decorativeStudPositionsMm.length
+          }}</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Total Studs (after clash resolution):</span>
+          <span class="value">{{
+            studLayout.resolvedStudPositionsMm.length
+          }}</span>
+        </div>
+      </div>
+
+      <div class="positions-list">
+        <h5>Resolved Stud Positions</h5>
+        <div class="positions">
+          <span
+            *ngFor="let pos of studLayout.resolvedStudPositionsMm"
+            class="position-badge"
+          >
+            {{ pos }} mm
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
