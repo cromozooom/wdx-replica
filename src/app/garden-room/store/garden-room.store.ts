@@ -127,6 +127,26 @@ const initialState: BuildEnvelopeState = {
         currency: "GBP",
         available: true,
       },
+      {
+        id: "osb3-2400x590x18",
+        name: "Norbord OSB3 Zero Tongue & Groove",
+        widthMm: 2400,
+        heightMm: 590,
+        thicknessMm: 18,
+        pricePerSheet: 27.62,
+        currency: "GBP",
+        available: true,
+      },
+      {
+        id: "osb3-2400x600x22",
+        name: "Cabershield Plus Tongue & Groove Chipboard 2400mm x 600mm x 22mm",
+        widthMm: 2400,
+        heightMm: 600,
+        thicknessMm: 22,
+        pricePerSheet: 27.53,
+        currency: "GBP",
+        available: true,
+      },
     ],
     timberSections: [
       {
