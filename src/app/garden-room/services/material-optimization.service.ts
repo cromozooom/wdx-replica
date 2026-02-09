@@ -207,6 +207,9 @@ export class MaterialOptimizationService {
       } else if (wall.name === "Back") {
         // Use backWallHeightMm if available from store context
         wallHeightMm = wall.heightMm || 2100;
+      } else if (wall.name === "Base") {
+        // Base wall uses heightMm as the width (left wall dimension)
+        wallHeightMm = wall.heightMm || 3000;
       } else {
         // Side walls - use front wall height as default
         wallHeightMm = wall.heightMm || 2200;
@@ -221,6 +224,7 @@ export class MaterialOptimizationService {
         totalWallArea: totalWallArea.toFixed(4) + "m²",
         sheetMaterialId: wall.sheetMaterialId,
         pirBoardId: wall.pirBoardId,
+        isBase: wall.name === "Base",
       });
 
       // Add to sheet requirements if sheet material is selected
@@ -242,63 +246,100 @@ export class MaterialOptimizationService {
           totalWallArea: totalWallArea.toFixed(2) + "m²",
           pirBoardId: wall.pirBoardId,
           memberCount: wall.members.length,
+          isBase: wall.name === "Base",
         });
 
         // Calculate structural member areas for insulation (net area)
         let structuralArea = 0;
 
-        // Calculate stud areas (vertical members) - ALL studs, not just "structural" ones
-        const studs = wall.members.filter((m: any) => m.type === "stud");
-        console.log(`  🏗️ Found ${studs.length} studs for PIR calculation`);
+        if (wall.name === "Base") {
+          // Base wall: Calculate perimeter framing area only
+          const perimeterLength = 2 * (wall.lengthMm + wallHeightMm); // Total perimeter
+          const frameWidth = wall.studWidthMm || 47; // Use stud width as frame width
+          structuralArea = (perimeterLength / 1000) * (frameWidth / 1000); // m²
 
-        studs.forEach((stud: any) => {
-          // Use stud width from wall configuration
-          const studWidthMm = wall.studWidthMm || 47;
-          const studArea = (studWidthMm / 1000) * (stud.heightMm / 1000);
-          structuralArea += studArea;
-        });
+          console.log(`  🟢 Base wall perimeter calculation:`, {
+            perimeterLength: perimeterLength.toFixed(0) + "mm",
+            frameWidth: frameWidth + "mm",
+            structuralArea: structuralArea.toFixed(4) + "m²",
+          });
+        } else {
+          // Regular wall: Calculate stud areas (vertical members) - ALL studs, not just "structural" ones
+          const studs = wall.members.filter((m: any) => m.type === "stud");
+          console.log(`  🏗️ Found ${studs.length} studs for PIR calculation`);
 
-        // Calculate plate areas (horizontal top and bottom)
-        const topPlates = wall.members.filter(
-          (m: any) => m.type === "plate" && m.metadata?.["position"] === "top",
-        );
-        const bottomPlates = wall.members.filter(
-          (m: any) =>
-            m.type === "plate" && m.metadata?.["position"] === "bottom",
-        );
+          studs.forEach((stud: any) => {
+            // Use stud width from wall configuration
+            const studWidthMm = wall.studWidthMm || 47;
+            const studArea = (studWidthMm / 1000) * (stud.heightMm / 1000);
+            structuralArea += studArea;
+          });
 
-        topPlates.forEach((plate: any) => {
-          const plateArea =
-            (plate.lengthMm / 1000) * (wall.plateThicknessTopMm / 1000);
-          structuralArea += plateArea;
-        });
+          // Calculate plate areas (horizontal top and bottom)
+          const topPlates = wall.members.filter(
+            (m: any) =>
+              m.type === "plate" && m.metadata?.["position"] === "top",
+          );
+          const bottomPlates = wall.members.filter(
+            (m: any) =>
+              m.type === "plate" && m.metadata?.["position"] === "bottom",
+          );
 
-        bottomPlates.forEach((plate: any) => {
-          const plateArea =
-            (plate.lengthMm / 1000) * (wall.plateThicknessBottomMm / 1000);
-          structuralArea += plateArea;
-        });
+          topPlates.forEach((plate: any) => {
+            const plateArea =
+              (plate.lengthMm / 1000) * (wall.plateThicknessTopMm / 1000);
+            structuralArea += plateArea;
+          });
 
-        // Calculate noggin areas (horizontal bracing)
-        const noggins = wall.members.filter((m: any) => m.type === "noggin");
-        noggins.forEach((noggin: any) => {
-          // Use stud width for noggin width (same material)
-          const nogginWidthMm = wall.studWidthMm || 47;
-          const nogginArea = (noggin.lengthMm / 1000) * (nogginWidthMm / 1000);
-          structuralArea += nogginArea;
-        });
+          bottomPlates.forEach((plate: any) => {
+            const plateArea =
+              (plate.lengthMm / 1000) * (wall.plateThicknessBottomMm / 1000);
+            structuralArea += plateArea;
+          });
+
+          // Calculate noggin areas (horizontal bracing)
+          const noggins = wall.members.filter((m: any) => m.type === "noggin");
+          noggins.forEach((noggin: any) => {
+            // Use stud width for noggin width (same material)
+            const nogginWidthMm = wall.studWidthMm || 47;
+            const nogginArea =
+              (noggin.lengthMm / 1000) * (nogginWidthMm / 1000);
+            structuralArea += nogginArea;
+          });
+        }
 
         // Calculate net insulation area (total wall area minus structural areas)
         const insulationArea = Math.max(0, totalWallArea - structuralArea);
 
-        console.log(`  📊 PIR calculation results:`, {
-          totalWallArea: totalWallArea.toFixed(4) + "m²",
-          structuralArea: structuralArea.toFixed(4) + "m²",
-          insulationArea: insulationArea.toFixed(4) + "m²",
-          studCount: studs.length,
-          plateCount: topPlates.length + bottomPlates.length,
-          nogginCount: noggins.length,
-        });
+        if (wall.name === "Base") {
+          console.log(`  📊 Base PIR calculation results:`, {
+            totalWallArea: totalWallArea.toFixed(4) + "m²",
+            structuralArea: structuralArea.toFixed(4) + "m²",
+            insulationArea: insulationArea.toFixed(4) + "m²",
+            type: "perimeter frame",
+          });
+        } else {
+          // Log results for regular walls with member counts
+          const studs = wall.members.filter((m: any) => m.type === "stud");
+          const topPlates = wall.members.filter(
+            (m: any) =>
+              m.type === "plate" && m.metadata?.["position"] === "top",
+          );
+          const bottomPlates = wall.members.filter(
+            (m: any) =>
+              m.type === "plate" && m.metadata?.["position"] === "bottom",
+          );
+          const noggins = wall.members.filter((m: any) => m.type === "noggin");
+
+          console.log(`  📊 PIR calculation results:`, {
+            totalWallArea: totalWallArea.toFixed(4) + "m²",
+            structuralArea: structuralArea.toFixed(4) + "m²",
+            insulationArea: insulationArea.toFixed(4) + "m²",
+            studCount: studs.length,
+            plateCount: topPlates.length + bottomPlates.length,
+            nogginCount: noggins.length,
+          });
+        }
 
         if (insulationArea > 0) {
           const existingArea = pirRequirements.get(wall.pirBoardId) || 0;

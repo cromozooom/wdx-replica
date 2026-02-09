@@ -86,6 +86,19 @@ const initialState: BuildEnvelopeState = {
       hasNoggins: true,
       members: [],
     },
+    {
+      id: "base",
+      name: "Base",
+      lengthMm: 5000, // Front width - will be computed dynamically
+      heightMm: 3000, // Left width - will be computed dynamically
+      isMasterHeight: false,
+      decorativeOffsetMm: 0,
+      studGapMm: 400,
+      plateThicknessTopMm: 47,
+      plateThicknessBottomMm: 47,
+      hasNoggins: false, // Base typically doesn't need noggins
+      members: [],
+    },
   ],
   materialLibrary: {
     sheetMaterials: [
@@ -284,7 +297,44 @@ export const GardenRoomStore = signalStore(
           env.floorSystemMm;
         return maxFrameHeight > 0;
       }),
+      /**
+       * Computed: Base wall with dynamic dimensions (front width x left width)
+       */
+      baseWallDimensions: computed(() => {
+        const wallList = walls();
+        const frontWall = wallList.find((w) => w.name === "Front");
+        const leftWall = wallList.find((w) => w.name === "Left");
+        return {
+          lengthMm: frontWall?.lengthMm || 5000, // Front width
+          heightMm: leftWall?.lengthMm || 3000, // Left width (depth)
+        };
+      }),
 
+      /**
+       * Computed: Walls with updated base dimensions
+       */
+      wallsWithBaseSync: computed(() => {
+        const wallList = walls();
+        const baseDimensions = computed(() => {
+          const frontWall = wallList.find((w) => w.name === "Front");
+          const leftWall = wallList.find((w) => w.name === "Left");
+          return {
+            lengthMm: frontWall?.lengthMm || 5000,
+            heightMm: leftWall?.lengthMm || 3000,
+          };
+        })();
+
+        return wallList.map((wall) => {
+          if (wall.id === "base") {
+            return {
+              ...wall,
+              lengthMm: baseDimensions.lengthMm,
+              heightMm: baseDimensions.heightMm,
+            };
+          }
+          return wall;
+        });
+      }),
       /**
        * Computed: Stud layout for selected wall
        * Calculates standard, decorative, and resolved stud positions
