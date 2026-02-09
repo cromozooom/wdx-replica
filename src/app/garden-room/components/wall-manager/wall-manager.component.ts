@@ -35,6 +35,11 @@ export class WallManagerComponent {
       hasDoorOpening: [false],
       pillarWidthMm: [100, [Validators.required, Validators.min(50)]],
       leftSectionWidthMm: [1000, [Validators.required, Validators.min(300)]],
+      studWidthMm: [
+        45,
+        [Validators.required, Validators.min(20), Validators.max(100)],
+      ],
+      includeIrregularLastStud: [true],
     });
 
     // Load initial wall data
@@ -63,6 +68,8 @@ export class WallManagerComponent {
         hasDoorOpening: wall.hasDoorOpening || false,
         pillarWidthMm: wall.pillarWidthMm || 100,
         leftSectionWidthMm: wall.leftSectionWidthMm || 1000,
+        studWidthMm: wall.studWidthMm || 45,
+        includeIrregularLastStud: wall.includeIrregularLastStud ?? true,
       });
     }
   }
@@ -92,6 +99,9 @@ export class WallManagerComponent {
           hasDoorOpening: this.wallForm.value.hasDoorOpening,
           pillarWidthMm: this.wallForm.value.pillarWidthMm,
           leftSectionWidthMm: this.wallForm.value.leftSectionWidthMm,
+          studWidthMm: this.wallForm.value.studWidthMm,
+          includeIrregularLastStud:
+            this.wallForm.value.includeIrregularLastStud,
         };
 
         // Generate members from stud layout
@@ -377,5 +387,45 @@ export class WallManagerComponent {
    */
   get studLayout() {
     return this.store.studLayoutForWall()(this.selectedWallId);
+  }
+
+  // SVG Preview dimensions and calculations
+  readonly svgWidth = 800;
+  readonly svgHeight = 600;
+  readonly wallPadding = 50;
+
+  get wallX(): number {
+    return this.wallPadding;
+  }
+
+  get wallY(): number {
+    return this.wallPadding;
+  }
+
+  get wallSvgWidth(): number {
+    return this.svgWidth - 2 * this.wallPadding;
+  }
+
+  get wallSvgHeight(): number {
+    return this.svgHeight - 2 * this.wallPadding;
+  }
+
+  get plateTopSvgHeight(): number {
+    if (!this.selectedWall) return 0;
+    const scale = this.wallSvgHeight / this.selectedWallHeight;
+    return this.selectedWall.plateThicknessTopMm * scale;
+  }
+
+  get plateBottomSvgHeight(): number {
+    if (!this.selectedWall) return 0;
+    const scale = this.wallSvgHeight / this.selectedWallHeight;
+    return this.selectedWall.plateThicknessBottomMm * scale;
+  }
+
+  get studSvgWidth(): number {
+    if (!this.selectedWall) return 0;
+    const studWidthMm = this.wallForm.value.studWidthMm || 45;
+    const scale = this.wallSvgWidth / this.selectedWall.lengthMm;
+    return studWidthMm * scale;
   }
 }

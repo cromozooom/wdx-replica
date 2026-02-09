@@ -41,6 +41,12 @@ export interface Wall {
   /** Left full-height section width in mm */
   leftSectionWidthMm?: number;
 
+  /** Stud width in mm (default 45mm) */
+  studWidthMm?: number;
+
+  /** Include last stud even if it creates irregular gap */
+  includeIrregularLastStud?: boolean;
+
   /** List of structural members (studs, plates, noggins) */
   members: Member[];
 }
