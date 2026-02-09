@@ -32,6 +32,8 @@ const initialState: BuildEnvelopeState = {
     roofSystemMm: 200,
     floorSystemMm: 150,
     fallRatio: { rise: 1, run: 40 },
+    roofFrontExtensionMm: 100,
+    roofBackExtensionMm: 100,
   },
   walls: [
     {
@@ -97,6 +99,19 @@ const initialState: BuildEnvelopeState = {
       plateThicknessTopMm: 47,
       plateThicknessBottomMm: 47,
       hasNoggins: false, // Base typically doesn't need noggins
+      members: [],
+    },
+    {
+      id: "roof",
+      name: "Roof",
+      lengthMm: 5200, // Front width + front extension + back extension - will be computed dynamically
+      heightMm: 3200, // Left width + (2 × decorative offset) - will be computed dynamically
+      isMasterHeight: false,
+      decorativeOffsetMm: 0,
+      studGapMm: 400,
+      plateThicknessTopMm: 47,
+      plateThicknessBottomMm: 47,
+      hasNoggins: false, // Roof has different framing pattern
       members: [],
     },
   ],
@@ -311,7 +326,35 @@ export const GardenRoomStore = signalStore(
       }),
 
       /**
-       * Computed: Walls with updated base dimensions
+       * Computed: Roof dimensions with custom front/back extensions
+       */
+      roofDimensions: computed(() => {
+        const wallList = walls();
+        const envelope = buildEnvelope();
+        const frontWall = wallList.find((w) => w.name === "Front");
+        const leftWall = wallList.find((w) => w.name === "Left");
+
+        // Roof length = front wall width + custom front extension + custom back extension
+        const roofLength =
+          (frontWall?.lengthMm || 5000) +
+          envelope.roofFrontExtensionMm +
+          envelope.roofBackExtensionMm;
+
+        // Roof width = left wall width + (2 × decorative offset from front wall)
+        const decorativeOffset = frontWall?.decorativeOffsetMm || 100;
+        const roofWidth = (leftWall?.lengthMm || 3000) + 2 * decorativeOffset;
+
+        return {
+          lengthMm: roofLength,
+          heightMm: roofWidth, // Using heightMm as width for consistency
+          frontExtensionMm: envelope.roofFrontExtensionMm,
+          backExtensionMm: envelope.roofBackExtensionMm,
+          sideExtensionMm: decorativeOffset,
+        };
+      }),
+
+      /**
+       * Computed: Walls with updated base and roof dimensions
        */
       wallsWithBaseSync: computed(() => {
         const wallList = walls();
@@ -324,12 +367,36 @@ export const GardenRoomStore = signalStore(
           };
         })();
 
+        const roofDimensions = computed(() => {
+          const envelope = buildEnvelope();
+          const frontWall = wallList.find((w) => w.name === "Front");
+          const leftWall = wallList.find((w) => w.name === "Left");
+
+          const roofLength =
+            (frontWall?.lengthMm || 5000) +
+            envelope.roofFrontExtensionMm +
+            envelope.roofBackExtensionMm;
+          const decorativeOffset = frontWall?.decorativeOffsetMm || 100;
+          const roofWidth = (leftWall?.lengthMm || 3000) + 2 * decorativeOffset;
+
+          return {
+            lengthMm: roofLength,
+            heightMm: roofWidth,
+          };
+        })();
+
         return wallList.map((wall) => {
           if (wall.id === "base") {
             return {
               ...wall,
               lengthMm: baseDimensions.lengthMm,
               heightMm: baseDimensions.heightMm,
+            };
+          } else if (wall.id === "roof") {
+            return {
+              ...wall,
+              lengthMm: roofDimensions.lengthMm,
+              heightMm: roofDimensions.heightMm,
             };
           }
           return wall;

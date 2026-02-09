@@ -124,6 +124,68 @@
         Fall ratio values must be greater than 0
       </div>
     </div>
+
+    <!-- Roof Extensions Section -->
+    <h6 class="mt-4 mb-3 text-secondary">Roof Extensions</h6>
+
+    <!-- Front Roof Extension -->
+    <div class="form-group mb-2">
+      <label for="roofFrontExtensionMm" class="form-label"
+        >Front Roof Extension (mm)</label
+      >
+      <input
+        type="number"
+        id="roofFrontExtensionMm"
+        formControlName="roofFrontExtensionMm"
+        class="form-control"
+        placeholder="e.g., 100"
+      />
+      <small class="form-text text-muted">
+        Custom overhang beyond front wall
+      </small>
+      <div
+        class="error-message"
+        *ngIf="
+          buildEnvelopeForm.get('roofFrontExtensionMm')?.invalid &&
+          buildEnvelopeForm.get('roofFrontExtensionMm')?.touched
+        "
+      >
+        Front extension must be 0 or greater
+      </div>
+    </div>
+
+    <!-- Back Roof Extension -->
+    <div class="form-group mb-2">
+      <label for="roofBackExtensionMm" class="form-label"
+        >Back Roof Extension (mm)</label
+      >
+      <input
+        type="number"
+        id="roofBackExtensionMm"
+        formControlName="roofBackExtensionMm"
+        class="form-control"
+        placeholder="e.g., 100"
+      />
+      <small class="form-text text-muted">
+        Custom overhang beyond back wall
+      </small>
+      <div
+        class="error-message"
+        *ngIf="
+          buildEnvelopeForm.get('roofBackExtensionMm')?.invalid &&
+          buildEnvelopeForm.get('roofBackExtensionMm')?.touched
+        "
+      >
+        Back extension must be 0 or greater
+      </div>
+    </div>
+
+    <div class="alert alert-info">
+      <small>
+        <strong>Note:</strong> Side extensions are automatically calculated
+        using the decorative offset from the front wall.
+      </small>
+    </div>
   </form>
 
   <!-- Computed Wall Heights -->
@@ -141,6 +203,31 @@
       <div class="height-item">
         <span class="label">Back Wall Height:</span>
         <strong class="ms-2">{{ backWallHeightMm }} mm</strong>
+      </div>
+    </div>
+
+    <!-- Computed Roof Dimensions -->
+    <h4 class="mt-4">Computed Roof Dimensions</h4>
+    <div class="height-display">
+      <div class="height-item">
+        <span class="label">Total Roof Length:</span>
+        <strong class="ms-2">{{ roofDimensions.lengthMm }} mm</strong>
+      </div>
+      <div class="height-item">
+        <span class="label">Total Roof Width:</span>
+        <strong class="ms-2">{{ roofDimensions.heightMm }} mm</strong>
+      </div>
+      <div class="height-item">
+        <span class="label">Front Extension:</span>
+        <strong class="ms-2">{{ roofDimensions.frontExtensionMm }} mm</strong>
+      </div>
+      <div class="height-item">
+        <span class="label">Back Extension:</span>
+        <strong class="ms-2">{{ roofDimensions.backExtensionMm }} mm</strong>
+      </div>
+      <div class="height-item">
+        <span class="label">Side Extensions (each):</span>
+        <strong class="ms-2">{{ roofDimensions.sideExtensionMm }} mm</strong>
       </div>
     </div>
   </div>
