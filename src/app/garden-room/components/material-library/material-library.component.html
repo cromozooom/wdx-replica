@@ -1,0 +1,118 @@
+<div class="material-library-container">
+  <h2>Material Library</h2>
+
+  <div class="library-content">
+    <!-- Timber Sections Section -->
+    <div class="section">
+      <h3>Timber Sections</h3>
+      <p class="description">
+        Available timber sections with dimensions and pricing
+      </p>
+
+      <div class="timber-sections-display">
+        <div *ngFor="let section of timberSections" class="timber-section-card">
+          <div class="section-header">
+            <h4>{{ section.name }}</h4>
+            <div class="dimensions">
+              {{ section.widthMm }}mm × {{ section.heightMm }}mm
+            </div>
+            <div class="grade" *ngIf="section.grade">
+              Grade: {{ section.grade }}
+            </div>
+          </div>
+
+          <div class="length-options">
+            <h5>Available Lengths & Pricing</h5>
+            <div class="length-grid">
+              <div
+                *ngFor="let option of section.lengthOptions"
+                class="length-option"
+                [class.unavailable]="!option.available"
+              >
+                <div class="length">{{ option.lengthMm }}mm</div>
+                <div class="price">£{{ option.pricePerPiece.toFixed(2) }}</div>
+                <div class="availability" *ngIf="!option.available">
+                  Out of Stock
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sheet Materials Section -->
+    <div class="section">
+      <h3>Sheet Materials</h3>
+      <p class="description">
+        Available sheet materials with dimensions and pricing
+      </p>
+
+      <div class="sheet-materials-display">
+        <div *ngFor="let sheet of sheetMaterials" class="sheet-material-card">
+          <div class="sheet-header">
+            <h4>{{ sheet.name }}</h4>
+            <div class="dimensions">
+              {{ sheet.widthMm }}mm × {{ sheet.heightMm }}mm ×
+              {{ sheet.thicknessMm }}mm
+            </div>
+            <div class="price">
+              £{{ sheet.pricePerSheet.toFixed(2) }} per sheet
+            </div>
+            <div class="availability" [class.unavailable]="!sheet.available">
+              {{ sheet.available ? "In Stock" : "Out of Stock" }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIR Insulation Boards Section -->
+    <div class="section">
+      <h3>PIR Insulation Boards</h3>
+      <p class="description">
+        Available PIR boards with thermal performance and pricing
+      </p>
+
+      <div class="pir-boards-display">
+        <div *ngFor="let board of pirBoards" class="pir-board-card">
+          <div class="board-header">
+            <h4>{{ board.name }}</h4>
+            <div class="dimensions">
+              {{ board.widthMm }}mm × {{ board.heightMm }}mm ×
+              {{ board.thicknessMm }}mm
+            </div>
+            <div class="thermal-info">
+              Thermal Conductivity: {{ board.thermalConductivity }} W/m·K
+            </div>
+            <div class="price">
+              £{{ board.pricePerBoard.toFixed(2) }} per board
+            </div>
+            <div class="availability" [class.unavailable]="!board.available">
+              {{ board.available ? "In Stock" : "Out of Stock" }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="library-summary">
+    <h3>Library Summary</h3>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <span class="label">Sheet Materials Available:</span>
+        <span class="value">{{ sheetMaterials.length }}</span>
+      </div>
+      <div class="summary-item">
+        <span class="label">Timber Sections Available:</span>
+        <span class="value">{{ timberSections.length }}</span>
+      </div>
+      <div class="summary-item">
+        <span class="label">PIR Boards Available:</span>
+        <span class="value">{{ pirBoards.length }}</span>
+      </div>
+    </div>
+  </div>
+</div>

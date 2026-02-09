@@ -1,0 +1,120 @@
+<div class="visualizer-container" *ngIf="wall && studLayout">
+  <h3>Wall Visualization: {{ wall.name }}</h3>
+
+  <svg
+    [attr.viewBox]="'0 0 ' + viewBoxWidth + ' ' + viewBoxHeight"
+    class="wall-svg"
+  >
+    <!-- Wall outline -->
+    <rect
+      [attr.x]="padding"
+      [attr.y]="scaleY(wall.heightMm)"
+      [attr.width]="scaleWidth(wall.lengthMm)"
+      [attr.height]="scaleHeight(wall.heightMm)"
+      class="wall-outline"
+    />
+
+    <!-- Bottom plate -->
+    <rect
+      [attr.x]="padding"
+      [attr.y]="
+        viewBoxHeight - padding - scaleHeight(wall.plateThicknessBottomMm)
+      "
+      [attr.width]="scaleWidth(wall.lengthMm)"
+      [attr.height]="scaleHeight(wall.plateThicknessBottomMm)"
+      class="plate bottom-plate"
+    />
+
+    <!-- Top plate -->
+    <rect
+      [attr.x]="padding"
+      [attr.y]="scaleY(wall.heightMm)"
+      [attr.width]="scaleWidth(wall.lengthMm)"
+      [attr.height]="scaleHeight(wall.plateThicknessTopMm)"
+      class="plate top-plate"
+    />
+
+    <!-- Studs -->
+    <g *ngFor="let pos of studLayout.resolvedStudPositionsMm">
+      <rect
+        [attr.x]="scaleX(pos) - 2"
+        [attr.y]="scaleY(wall.heightMm) + scaleHeight(wall.plateThicknessTopMm)"
+        [attr.width]="4"
+        [attr.height]="
+          scaleHeight(
+            wall.heightMm -
+              wall.plateThicknessTopMm -
+              wall.plateThicknessBottomMm
+          )
+        "
+        [class.stud]="!isDecorativeStud(pos)"
+        [class.decorative-stud]="isDecorativeStud(pos)"
+      />
+      <!-- Position label -->
+      <text
+        [attr.x]="scaleX(pos)"
+        [attr.y]="viewBoxHeight - padding + 15"
+        class="position-label"
+        text-anchor="middle"
+      >
+        {{ pos }}
+      </text>
+    </g>
+
+    <!-- Dimensions -->
+    <g class="dimensions">
+      <!-- Length dimension -->
+      <line
+        [attr.x1]="padding"
+        [attr.y1]="viewBoxHeight - padding + 30"
+        [attr.x2]="padding + scaleWidth(wall.lengthMm)"
+        [attr.y2]="viewBoxHeight - padding + 30"
+        class="dimension-line"
+      />
+      <text
+        [attr.x]="padding + scaleWidth(wall.lengthMm) / 2"
+        [attr.y]="viewBoxHeight - padding + 45"
+        class="dimension-label"
+        text-anchor="middle"
+      >
+        {{ wall.lengthMm }} mm
+      </text>
+
+      <!-- Height dimension -->
+      <line
+        [attr.x1]="padding - 30"
+        [attr.y1]="scaleY(wall.heightMm)"
+        [attr.x2]="padding - 30"
+        [attr.y2]="viewBoxHeight - padding"
+        class="dimension-line"
+      />
+      <text
+        [attr.x]="padding - 40"
+        [attr.y]="scaleY(wall.heightMm / 2)"
+        class="dimension-label"
+        text-anchor="middle"
+        transform="rotate(-90, {{ padding - 40 }}, {{
+          scaleY(wall.heightMm / 2)
+        }})"
+      >
+        {{ wall.heightMm }} mm
+      </text>
+    </g>
+  </svg>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-color stud-color"></div>
+      <span>Standard Stud</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color decorative-color"></div>
+      <span>Decorative Stud</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color plate-color"></div>
+      <span>Plate</span>
+    </div>
+  </div>
+</div>

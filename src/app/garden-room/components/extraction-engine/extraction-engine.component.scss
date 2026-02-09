@@ -1,0 +1,203 @@
+.extraction-container {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .description {
+      font-size: 0.875rem;
+      color: #6c757d;
+      margin: 0;
+    }
+
+    .btn-print {
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .placeholder {
+    padding: 2rem;
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px dashed #dee2e6;
+  }
+}
+
+.buy-list,
+.cut-list,
+.hardware-list {
+  min-height: 100px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-top: 0.5rem;
+
+  thead {
+    background-color: #e9ecef;
+
+    th {
+      padding: 0.75rem;
+      text-align: left;
+      font-weight: 600;
+      color: #495057;
+      border-bottom: 2px solid #dee2e6;
+      font-size: 0.875rem;
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: #f8f9fa;
+      }
+
+      td {
+        padding: 0.75rem;
+        border-bottom: 1px solid #dee2e6;
+        color: #495057;
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  tfoot {
+    .table-total {
+      background-color: #e9ecef;
+      border-top: 2px solid #dee2e6;
+
+      td {
+        padding: 1rem 0.75rem;
+        font-size: 0.95rem;
+        color: #333;
+
+        &:last-child {
+          font-size: 1.1rem;
+          color: #28a745;
+        }
+      }
+    }
+  }
+}
+
+.cut-plan {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+
+  h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.summary-section {
+  padding: 1.5rem;
+  background-color: #e7f5ff;
+  border-radius: 4px;
+  border: 1px solid #007bff;
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+
+    .summary-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.75rem;
+      background-color: #fff;
+      border-radius: 4px;
+      border: 1px solid #dee2e6;
+
+      .label {
+        font-weight: 500;
+        color: #555;
+      }
+
+      .value {
+        font-weight: 600;
+        color: #007bff;
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+
+/* Print Styles */
+@media print {
+  .extraction-container {
+    box-shadow: none;
+
+    .btn-print {
+      display: none;
+    }
+
+    .buy-list-section,
+    .hardware-list-section,
+    .summary-section {
+      display: none;
+    }
+
+    .cut-list-section {
+      page-break-inside: avoid;
+
+      .section-header {
+        border-bottom: 2px solid #000;
+        padding-bottom: 0.5rem;
+      }
+
+      .placeholder {
+        display: none;
+      }
+    }
+  }
+}

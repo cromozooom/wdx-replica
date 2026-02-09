@@ -1,0 +1,321 @@
+openapi: 3.0.3
+info:
+  title: Garden Room Structural Logic API
+  version: 1.0.0
+  description:
+    Client-side calculation contract for structural logic, exposed as service
+    interfaces.
+servers:
+  - url: https://localhost/structural-logic
+paths:
+  /build-envelope:
+    post:
+      summary: Calculate build envelope
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BuildEnvelopeRequest"
+      responses:
+        "200":
+          description: Build envelope result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BuildEnvelopeResult"
+  /walls/derive-heights:
+    post:
+      summary: Derive wall heights and slope
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WallHeightsRequest"
+      responses:
+        "200":
+          description: Wall heights result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WallHeightsResult"
+  /walls/members:
+    post:
+      summary: Generate wall members (studs, plates, noggins)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MemberLayoutRequest"
+      responses:
+        "200":
+          description: Member layout result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MemberLayoutResult"
+  /materials/cut-plan:
+    post:
+      summary: Generate optimized cut plan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CutPlanRequest"
+      responses:
+        "200":
+          description: Cut plan result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CutPlanResult"
+  /materials/sheet-counts:
+    post:
+      summary: Calculate sheet counts
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SheetCountRequest"
+      responses:
+        "200":
+          description: Sheet count result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SheetCountResult"
+  /materials/hardware:
+    post:
+      summary: Calculate hardware list
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/HardwareRequest"
+      responses:
+        "200":
+          description: Hardware list result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HardwareResult"
+components:
+  schemas:
+    BuildEnvelopeRequest:
+      type: object
+      required:
+        [
+          maxLegalHeightMm,
+          concreteOffsetMm,
+          roofSystemMm,
+          floorSystemMm,
+          fallRatio,
+        ]
+      properties:
+        maxLegalHeightMm:
+          type: number
+        concreteOffsetMm:
+          type: number
+        roofSystemMm:
+          type: number
+        floorSystemMm:
+          type: number
+        fallRatio:
+          $ref: "#/components/schemas/FallRatio"
+    BuildEnvelopeResult:
+      type: object
+      properties:
+        maxWallFrameHeightMm:
+          type: number
+    WallHeightsRequest:
+      type: object
+      required: [buildEnvelope, spanMm, frontWallHeightMm]
+      properties:
+        buildEnvelope:
+          $ref: "#/components/schemas/BuildEnvelopeRequest"
+        spanMm:
+          type: number
+        frontWallHeightMm:
+          type: number
+    WallHeightsResult:
+      type: object
+      properties:
+        frontWallHeightMm:
+          type: number
+        backWallHeightMm:
+          type: number
+        sideWallHeightsMm:
+          type: array
+          items:
+            type: number
+    MemberLayoutRequest:
+      type: object
+      required: [wall, clashThresholdMm]
+      properties:
+        wall:
+          $ref: "#/components/schemas/WallConfig"
+        clashThresholdMm:
+          type: number
+    MemberLayoutResult:
+      type: object
+      properties:
+        members:
+          type: array
+          items:
+            $ref: "#/components/schemas/Member"
+    CutPlanRequest:
+      type: object
+      required: [cuts, stockLengthsMm]
+      properties:
+        cuts:
+          type: array
+          items:
+            $ref: "#/components/schemas/CutRequirement"
+        stockLengthsMm:
+          type: array
+          items:
+            type: number
+    CutPlanResult:
+      type: object
+      properties:
+        plans:
+          type: array
+          items:
+            $ref: "#/components/schemas/CutPlan"
+        buyList:
+          type: array
+          items:
+            $ref: "#/components/schemas/BuyListItem"
+    SheetCountRequest:
+      type: object
+      required: [requiredAreaMm2, sheetWidthMm, sheetHeightMm]
+      properties:
+        requiredAreaMm2:
+          type: number
+        sheetWidthMm:
+          type: number
+        sheetHeightMm:
+          type: number
+    SheetCountResult:
+      type: object
+      properties:
+        sheetCount:
+          type: number
+    HardwareRequest:
+      type: object
+      required: [totalTimberMm, totalSheetAreaMm2, rules]
+      properties:
+        totalTimberMm:
+          type: number
+        totalSheetAreaMm2:
+          type: number
+        rules:
+          $ref: "#/components/schemas/HardwareRuleSet"
+    HardwareResult:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/HardwareItem"
+    WallConfig:
+      type: object
+      required:
+        [
+          lengthMm,
+          heightMm,
+          decorativeOffsetMm,
+          studGapMm,
+          plateThicknessTopMm,
+          plateThicknessBottomMm,
+        ]
+      properties:
+        lengthMm:
+          type: number
+        heightMm:
+          type: number
+        decorativeOffsetMm:
+          type: number
+        studGapMm:
+          type: number
+        plateThicknessTopMm:
+          type: number
+        plateThicknessBottomMm:
+          type: number
+    Member:
+      type: object
+      required: [type, positionMm, lengthMm]
+      properties:
+        type:
+          type: string
+          enum: [stud, plate, noggin]
+        positionMm:
+          type: number
+        lengthMm:
+          type: number
+        heightMm:
+          type: number
+    CutRequirement:
+      type: object
+      required: [lengthMm, quantity]
+      properties:
+        lengthMm:
+          type: number
+        quantity:
+          type: number
+    CutPlan:
+      type: object
+      properties:
+        stockLengthMm:
+          type: number
+        cuts:
+          type: array
+          items:
+            $ref: "#/components/schemas/CutRequirement"
+        wasteMm:
+          type: number
+    BuyListItem:
+      type: object
+      properties:
+        itemType:
+          type: string
+          enum: [timber, sheet]
+        description:
+          type: string
+        quantity:
+          type: number
+        unit:
+          type: string
+    HardwareRuleSet:
+      type: object
+      required:
+        [screwsPerLinearMeter, tapePerSquareMeter, membranePerSquareMeter]
+      properties:
+        screwsPerLinearMeter:
+          type: number
+        tapePerSquareMeter:
+          type: number
+        membranePerSquareMeter:
+          type: number
+    HardwareItem:
+      type: object
+      properties:
+        description:
+          type: string
+        quantity:
+          type: number
+        unit:
+          type: string
+    FallRatio:
+      type: object
+      required: [rise, run]
+      properties:
+        rise:
+          type: number
+        run:
+          type: number

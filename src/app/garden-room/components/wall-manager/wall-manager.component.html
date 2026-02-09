@@ -1,0 +1,1084 @@
+<div class="d-flex w-100 h-100 overflow-hidden">
+  <div class="overflow-auto" style="min-width: 600px">
+    <div
+      class="sticky-top d-flex flex-column gap-2 border-bottom bg-body shadow px-2"
+    >
+      <!-- Wall Selector -->
+      <div>
+        <div class="mt-2 btn-group">
+          <button
+            *ngFor="let wall of walls"
+            class="btn gap-2 d-flex justify-content-between align-items-center"
+            [class.active]="wall.id === selectedWallId"
+            [class.btn-success]="isWallValid(wall)"
+            [class.btn-outline-warning]="!isWallValid(wall)"
+            (click)="selectWall(wall.id)"
+          >
+            <span>{{ wall.name }}</span>
+            <span class="validation-badge">
+              @if (isWallValid(wall)) {
+                <i class="fas fa-check text-success"></i>
+              } @else {
+                <i class="fas fa-exclamation-triangle text-warning"></i>
+              }
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- Current Wall Validation Status -->
+      @if (selectedWall) {
+        <div class="validation-status-panel pb-2">
+          @if (currentWallStatus.isValid) {
+            <div class="mb-0 alert alert-success">
+              <i class="fas fa-check-circle"></i>
+              <strong>{{ selectedWall.name }} Wall Ready</strong> - All fields
+              configured
+            </div>
+          } @else {
+            <div class="mb-0 alert alert-warning">
+              <i class="fas fa-exclamation-triangle me-2"></i>
+              <strong>{{ selectedWall.name }} Wall Issues:</strong>
+              <ul class="mb-0 mt-2">
+                @for (error of currentWallStatus.errors; track $index) {
+                  <li>{{ error }}</li>
+                }
+              </ul>
+            </div>
+          }
+        </div>
+      }
+    </div>
+
+    <div class="wall-manager-container p-3">
+      <!-- Wall Configuration Form -->
+      <form [formGroup]="wallForm" class="wall-form">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="lengthMm">Wall Length (mm)</label>
+              <input
+                type="number"
+                id="lengthMm"
+                formControlName="lengthMm"
+                class="form-control"
+                placeholder="e.g., 3000"
+              />
+              <div
+                class="error-message"
+                *ngIf="
+                  wallForm.get('lengthMm')?.invalid &&
+                  wallForm.get('lengthMm')?.touched
+                "
+              >
+                Wall length must be at least 500 mm
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="studGapMm">Stud Gap (mm) - Edge to Edge</label>
+              <input
+                type="number"
+                id="studGapMm"
+                formControlName="studGapMm"
+                class="form-control"
+                placeholder="e.g., 600"
+              />
+              <small class="form-text text-muted">
+                The actual space between stud edges (not center-to-center)
+              </small>
+              <div
+                class="error-message"
+                *ngIf="
+                  wallForm.get('studGapMm')?.invalid &&
+                  wallForm.get('studGapMm')?.touched
+                "
+              >
+                Stud gap must be at least 300 mm
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="decorativeOffsetMm">Decorative Offset (mm)</label>
+              <input
+                type="number"
+                id="decorativeOffsetMm"
+                formControlName="decorativeOffsetMm"
+                class="form-control"
+                placeholder="e.g., 0"
+              />
+              <div
+                class="error-message"
+                *ngIf="
+                  wallForm.get('decorativeOffsetMm')?.invalid &&
+                  wallForm.get('decorativeOffsetMm')?.touched
+                "
+              >
+                Decorative offset must be 0 or greater
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="decorativeSide">Decorative Stud Placement</label>
+              <select
+                id="decorativeSide"
+                formControlName="decorativeSide"
+                class="form-select"
+              >
+                <option value="both">Both Sides</option>
+                <option value="left">Left Side Only</option>
+                <option value="right">Right Side Only</option>
+                <option value="none">None</option>
+              </select>
+              <small class="form-text text-muted">
+                Choose which side(s) to place decorative studs. For door opening
+                walls, left/right walls automatically use one-sided placement.
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input
+              type="checkbox"
+              formControlName="includeIrregularLastStud"
+              class="form-check-input"
+            />
+            Include last stud even if it creates irregular gap
+          </label>
+          <small class="form-text text-muted">
+            Uncheck if you want to exclude the last stud when it doesn't fit the
+            regular spacing pattern
+          </small>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="topPlateSection">Top Plate Section</label>
+                <select
+                  id="topPlateSection"
+                  formControlName="topPlateSection"
+                  class="form-select"
+                >
+                  @for (section of timberSections; track section.id) {
+                    <option [value]="section.id">
+                      {{ section.widthMm }}x{{ section.heightMm }}mm ({{
+                        section.grade
+                      }})
+                    </option>
+                  }
+                </select>
+                <small class="form-text text-muted">
+                  Calculated thickness:
+                  {{
+                    getThicknessFromSection(wallForm.value.topPlateSection)
+                  }}mm
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="bottomPlateSection">Bottom Plate Section</label>
+              <select
+                id="bottomPlateSection"
+                formControlName="bottomPlateSection"
+                class="form-select"
+              >
+                @for (section of timberSections; track section.id) {
+                  <option [value]="section.id">
+                    {{ section.widthMm }}x{{ section.heightMm }}mm ({{
+                      section.grade
+                    }})
+                  </option>
+                }
+              </select>
+              <small class="form-text text-muted">
+                Calculated thickness:
+                {{
+                  getThicknessFromSection(wallForm.value.bottomPlateSection)
+                }}mm
+              </small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="studSection">Stud Section</label>
+              <select
+                id="studSection"
+                formControlName="studSection"
+                class="form-select"
+              >
+                @for (section of timberSections; track section.id) {
+                  <option [value]="section.id">
+                    {{ section.widthMm }}x{{ section.heightMm }}mm ({{
+                      section.grade
+                    }})
+                  </option>
+                }
+              </select>
+              <small class="form-text text-muted">
+                Calculated width:
+                {{ getThicknessFromSection(wallForm.value.studSection) }}mm
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group py-3">
+          <label class="checkbox-label">
+            <input
+              type="checkbox"
+              formControlName="hasNoggins"
+              class="form-check-input"
+            />
+            Include noggins (horizontal bracing between studs)
+          </label>
+          <small class="form-text text-muted">
+            Noggins are placed at mid-height to provide lateral stability
+          </small>
+        </div>
+
+        <div class="row pb-3">
+          <div class="col">
+            <!-- Insulation Selection -->
+            <div class="form-group">
+              <label for="pirBoardId">Insulation (PIR Board)</label>
+              <select
+                id="pirBoardId"
+                formControlName="pirBoardId"
+                class="form-select"
+              >
+                <option value="">No insulation</option>
+                @for (pirBoard of pirBoards; track pirBoard.id) {
+                  <option [value]="pirBoard.id">
+                    {{ pirBoard.name }} - {{ pirBoard.thicknessMm }}mm (£{{
+                      pirBoard.pricePerBoard
+                    }})
+                  </option>
+                }
+              </select>
+              <small class="form-text text-muted">
+                @if (wallForm.value.pirBoardId) {
+                  Insulation area needed: {{ insulationAreaM2.toFixed(2) }}m²
+                }
+              </small>
+            </div>
+          </div>
+          <div class="col">
+            <!-- Sheet Material Selection -->
+            <div class="form-group">
+              <label for="sheetMaterialId">Sheet Material</label>
+              <select
+                id="sheetMaterialId"
+                formControlName="sheetMaterialId"
+                class="form-select"
+              >
+                <option value="">No sheet material</option>
+                @for (sheetMaterial of sheetMaterials; track sheetMaterial.id) {
+                  <option [value]="sheetMaterial.id">
+                    {{ sheetMaterial.name }} - {{ sheetMaterial.thicknessMm }}mm
+                    (£{{ sheetMaterial.pricePerSheet }})
+                  </option>
+                }
+              </select>
+              <small class="form-text text-muted">
+                @if (wallForm.value.sheetMaterialId) {
+                  Sheet area needed:
+                  {{
+                    (((selectedWall?.lengthMm || 0) / 1000) *
+                      (selectedWall?.heightMm || 0)) /
+                      1000 | number: "1.2-2"
+                  }}m²
+                }
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Door Opening Configuration (Front Wall Only) -->
+        <div
+          class="door-opening-section"
+          *ngIf="selectedWall?.name === 'Front'"
+        >
+          <h4>Door Opening Configuration</h4>
+
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input
+                type="checkbox"
+                formControlName="hasDoorOpening"
+                class="form-check-input"
+              />
+              Enable Door Opening (splits wall into 5 sections)
+            </label>
+            <small class="form-text text-muted">
+              5 sections: Left Wall | Left Pillar | Door Space | Right Pillar |
+              Right Wall
+            </small>
+          </div>
+
+          <div
+            *ngIf="wallForm.value.hasDoorOpening"
+            class="door-opening-details"
+          >
+            <div class="form-group">
+              <label for="pillarWidthMm"
+                >Pillar Width (mm) - applies to both pillars</label
+              >
+              <input
+                type="number"
+                id="pillarWidthMm"
+                formControlName="pillarWidthMm"
+                class="form-control"
+                placeholder="e.g., 400"
+              />
+              <div
+                class="error-message"
+                *ngIf="
+                  wallForm.get('pillarWidthMm')?.invalid &&
+                  wallForm.get('pillarWidthMm')?.touched
+                "
+              >
+                Pillar width must be at least 50 mm
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="leftWallWidthMm">Left Wall Width (mm)</label>
+              <input
+                type="number"
+                id="leftWallWidthMm"
+                formControlName="leftWallWidthMm"
+                class="form-control"
+                placeholder="e.g., 800"
+              />
+              <small class="form-text text-muted">
+                Left wall has decorative stud on LEFT side only
+              </small>
+              <div
+                class="error-message"
+                *ngIf="
+                  wallForm.get('leftWallWidthMm')?.invalid &&
+                  wallForm.get('leftWallWidthMm')?.touched
+                "
+              >
+                Left wall width must be at least 300 mm
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="doorSpaceWidthMm">Door Space Width (mm)</label>
+              <input
+                type="number"
+                id="doorSpaceWidthMm"
+                formControlName="doorSpaceWidthMm"
+                class="form-control"
+                placeholder="e.g., 1000"
+              />
+              <small class="form-text text-muted">
+                Opening between the two pillars
+              </small>
+              <div
+                class="error-message"
+                *ngIf="
+                  wallForm.get('doorSpaceWidthMm')?.invalid &&
+                  wallForm.get('doorSpaceWidthMm')?.touched
+                "
+              >
+                Door space width must be at least 500 mm
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="rightWallWidthMm"
+                >Right Wall Width (calculated)</label
+              >
+              <input
+                type="number"
+                id="rightWallWidthMm"
+                [value]="rightWallWidthMm"
+                class="form-control"
+                readonly
+                disabled
+              />
+              <small class="form-text text-muted">
+                Right wall has decorative stud on RIGHT side only. Calculated
+                as: Wall Length - Left Wall - (2 × Pillar Width) - Door Space
+              </small>
+              <small class="form-text text-muted">
+                Calculated as: Total Length - (2 × Pillar Width) - Left Section
+                Width
+              </small>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- Wall Summary -->
+      <div class="m-2 rounded bg-info-subtle p-3" *ngIf="selectedWall">
+        <h3>{{ selectedWall.name }} Wall Summary</h3>
+        <div class="summary-grid">
+          <div class="summary-item">
+            <span class="label">Length:</span>
+            <span class="value">{{ selectedWall.lengthMm }} mm</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Height:</span>
+            <span class="value">{{ selectedWallHeight }} mm</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Stud Gap:</span>
+            <span class="value">{{ selectedWall.studGapMm }} mm</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Members:</span>
+            <span class="value">{{ selectedWall.members.length }}</span>
+          </div>
+        </div>
+
+        <!-- Stud Layout Details -->
+        <div class="layout-details" *ngIf="studLayout">
+          <h4>Stud Layout</h4>
+          <div class="layout-info">
+            <div class="info-item">
+              <span class="label">Standard Studs:</span>
+              <span class="value">{{
+                studLayout.standardStudPositionsMm.length
+              }}</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Decorative Studs:</span>
+              <span class="value">{{
+                studLayout.decorativeStudPositionsMm.length
+              }}</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Total Studs (after clash resolution):</span>
+              <span class="value">{{
+                studLayout.resolvedStudPositionsMm.length
+              }}</span>
+            </div>
+          </div>
+
+          <div class="positions-list">
+            <h5>Resolved Stud Positions</h5>
+            <div class="positions">
+              <span
+                *ngFor="let pos of studLayout.resolvedStudPositionsMm"
+                class="position-badge"
+              >
+                {{ pos }} mm
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-grow-1 d-flex w-100">
+    <div class="w-100 h-100 d-flex" *ngIf="selectedWall && studLayout">
+      <svg
+        [attr.viewBox]="'0 0 ' + svgWidth + ' ' + svgHeight"
+        class="wall-preview-svg"
+      >
+        <!-- Background -->
+        <rect
+          [attr.width]="svgWidth"
+          [attr.height]="svgHeight"
+          fill="#f8f9fa"
+          stroke="#dee2e6"
+          stroke-width="2"
+        />
+
+        <!-- Wall outline -->
+        <rect
+          [attr.x]="wallX"
+          [attr.y]="wallY"
+          [attr.width]="wallSvgWidth"
+          [attr.height]="wallSvgHeight"
+          fill="#fff"
+          stroke="#495057"
+          stroke-width="3"
+        />
+
+        <!-- Plates and studs for wall WITHOUT door opening -->
+        <g *ngIf="!selectedWall.hasDoorOpening">
+          <!-- Bottom plate -->
+          <rect
+            [attr.x]="wallX"
+            [attr.y]="wallY + wallSvgHeight - plateBottomSvgHeight"
+            [attr.width]="wallSvgWidth"
+            [attr.height]="plateBottomSvgHeight"
+            [attr.fill]="colors.plates.fill"
+            [attr.stroke]="colors.plates.stroke"
+            stroke-width="1"
+          />
+
+          <!-- Top plate -->
+          <rect
+            [attr.x]="wallX"
+            [attr.y]="wallY"
+            [attr.width]="wallSvgWidth"
+            [attr.height]="plateTopSvgHeight"
+            [attr.fill]="colors.plates.fill"
+            [attr.stroke]="colors.plates.stroke"
+            stroke-width="1"
+          />
+
+          <!-- Studs -->
+          <rect
+            *ngFor="let pos of studLayout.resolvedStudPositionsMm"
+            [attr.x]="wallX + (pos / selectedWall.lengthMm) * wallSvgWidth"
+            [attr.y]="wallY + plateTopSvgHeight"
+            [attr.width]="studSvgWidth"
+            [attr.height]="
+              wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
+            "
+            [attr.fill]="colors.studs.fill"
+            [attr.stroke]="colors.studs.stroke"
+            stroke-width="1"
+          />
+
+          <!-- Noggins - horizontal bracing at mid-height -->
+          @for (member of selectedWall.members; track member.id) {
+            @if (member.type === "noggin" && member.metadata?.["between"]) {
+              <rect
+                [attr.x]="
+                  wallX +
+                  (member.positionMm / selectedWall.lengthMm) * wallSvgWidth
+                "
+                [attr.y]="
+                  wallY +
+                  plateTopSvgHeight +
+                  (wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight) /
+                    2 -
+                  10
+                "
+                [attr.width]="
+                  (member.lengthMm / selectedWall.lengthMm) * wallSvgWidth
+                "
+                [attr.height]="20"
+                [attr.fill]="colors.noggins.fill"
+                [attr.stroke]="colors.noggins.stroke"
+                stroke-width="0.5"
+                opacity="0.7"
+              />
+            }
+          }
+
+          <!-- Stud spacing dimensions - shows all gaps between studs -->
+          <g
+            *ngFor="
+              let pos of studLayout.resolvedStudPositionsMm;
+              let i = index
+            "
+          >
+            <line
+              *ngIf="i < studLayout.resolvedStudPositionsMm.length - 1"
+              [attr.x1]="
+                wallX +
+                (pos / selectedWall.lengthMm) * wallSvgWidth +
+                studSvgWidth
+              "
+              [attr.y1]="wallY + wallSvgHeight + 15"
+              [attr.x2]="
+                wallX +
+                (studLayout.resolvedStudPositionsMm[i + 1] /
+                  selectedWall.lengthMm) *
+                  wallSvgWidth
+              "
+              [attr.y2]="wallY + wallSvgHeight + 15"
+              stroke="#0d6efd"
+              stroke-width="1.5"
+              marker-start="url(#arrowStartSmall)"
+              marker-end="url(#arrowEndSmall)"
+            />
+            <text
+              *ngIf="i < studLayout.resolvedStudPositionsMm.length - 1"
+              [attr.x]="
+                wallX +
+                (pos / selectedWall.lengthMm) * wallSvgWidth +
+                studSvgWidth +
+                (((studLayout.resolvedStudPositionsMm[i + 1] - pos) /
+                  selectedWall.lengthMm) *
+                  wallSvgWidth) /
+                  2
+              "
+              [attr.y]="wallY + wallSvgHeight + 13"
+              fill="#0d6efd"
+              font-size="11"
+              font-weight="bold"
+              text-anchor="middle"
+            >
+              {{
+                studLayout.resolvedStudPositionsMm[i + 1] -
+                  pos -
+                  (selectedWall.studWidthMm || 45)
+              }}
+              mm
+            </text>
+          </g>
+
+          <!-- Stud visual indicators below dimensions -->
+          <g *ngFor="let pos of studLayout.resolvedStudPositionsMm">
+            <rect
+              [attr.x]="wallX + (pos / selectedWall.lengthMm) * wallSvgWidth"
+              [attr.y]="wallY + wallSvgHeight + 25"
+              [attr.width]="studSvgWidth"
+              [attr.height]="8"
+              fill="#daa520"
+              stroke="#b8860b"
+              stroke-width="1"
+            />
+          </g>
+        </g>
+
+        <!-- Door Opening: 5-section visualization -->
+        <g *ngIf="selectedWall.hasDoorOpening && selectedWall.name === 'Front'">
+          <!-- Calculate section boundaries -->
+          @let leftWallWidth = selectedWall.leftWallWidthMm || 800;
+          @let pillarWidth = selectedWall.pillarWidthMm || 400;
+          @let doorSpaceWidth = selectedWall.doorSpaceWidthMm || 1000;
+          @let leftWallEndMm = leftWallWidth;
+          @let leftPillarEndMm = leftWallEndMm + pillarWidth;
+          @let doorSpaceEndMm = leftPillarEndMm + doorSpaceWidth;
+          @let rightPillarEndMm = doorSpaceEndMm + pillarWidth;
+
+          <!-- Convert to SVG coordinates -->
+          @let leftWallEndSvg =
+            wallX + (leftWallEndMm / selectedWall.lengthMm) * wallSvgWidth;
+          @let leftPillarEndSvg =
+            wallX + (leftPillarEndMm / selectedWall.lengthMm) * wallSvgWidth;
+          @let doorSpaceEndSvg =
+            wallX + (doorSpaceEndMm / selectedWall.lengthMm) * wallSvgWidth;
+          @let rightPillarEndSvg =
+            wallX + (rightPillarEndMm / selectedWall.lengthMm) * wallSvgWidth;
+
+          <!-- Left Wall Plates -->
+          <rect
+            [attr.x]="wallX"
+            [attr.y]="wallY + wallSvgHeight - plateBottomSvgHeight"
+            [attr.width]="leftWallEndSvg - wallX"
+            [attr.height]="plateBottomSvgHeight"
+            fill="#8b4513"
+            stroke="#654321"
+            stroke-width="1"
+          />
+          <rect
+            [attr.x]="wallX"
+            [attr.y]="wallY"
+            [attr.width]="leftWallEndSvg - wallX"
+            [attr.height]="plateTopSvgHeight"
+            fill="#8b4513"
+            stroke="#654321"
+            stroke-width="1"
+          />
+
+          <!-- Right Wall Plates -->
+          <rect
+            [attr.x]="rightPillarEndSvg"
+            [attr.y]="wallY + wallSvgHeight - plateBottomSvgHeight"
+            [attr.width]="wallX + wallSvgWidth - rightPillarEndSvg"
+            [attr.height]="plateBottomSvgHeight"
+            fill="#8b4513"
+            stroke="#654321"
+            stroke-width="1"
+          />
+          <rect
+            [attr.x]="rightPillarEndSvg"
+            [attr.y]="wallY"
+            [attr.width]="wallX + wallSvgWidth - rightPillarEndSvg"
+            [attr.height]="plateTopSvgHeight"
+            fill="#8b4513"
+            stroke="#654321"
+            stroke-width="1"
+          />
+
+          <!-- Section boundary lines -->
+          <!-- Left wall end / Left pillar start -->
+          <line
+            [attr.x1]="leftWallEndSvg"
+            [attr.y1]="wallY"
+            [attr.x2]="leftWallEndSvg"
+            [attr.y2]="wallY + wallSvgHeight"
+            stroke="#dc3545"
+            stroke-width="2"
+            stroke-dasharray="5,5"
+          />
+
+          <!-- Left pillar end / Door space start -->
+          <line
+            [attr.x1]="leftPillarEndSvg"
+            [attr.y1]="wallY"
+            [attr.x2]="leftPillarEndSvg"
+            [attr.y2]="wallY + wallSvgHeight"
+            stroke="#28a745"
+            stroke-width="3"
+            stroke-dasharray="8,4"
+          />
+
+          <!-- Door space end / Right pillar start -->
+          <line
+            [attr.x1]="doorSpaceEndSvg"
+            [attr.y1]="wallY"
+            [attr.x2]="doorSpaceEndSvg"
+            [attr.y2]="wallY + wallSvgHeight"
+            stroke="#28a745"
+            stroke-width="3"
+            stroke-dasharray="8,4"
+          />
+
+          <!-- Right pillar end / Right wall start -->
+          <line
+            [attr.x1]="rightPillarEndSvg"
+            [attr.y1]="wallY"
+            [attr.x2]="rightPillarEndSvg"
+            [attr.y2]="wallY + wallSvgHeight"
+            stroke="#dc3545"
+            stroke-width="2"
+            stroke-dasharray="5,5"
+          />
+
+          <!-- Left Pillar (solid block) -->
+          <rect
+            [attr.x]="leftWallEndSvg"
+            [attr.y]="wallY + plateTopSvgHeight"
+            [attr.width]="leftPillarEndSvg - leftWallEndSvg"
+            [attr.height]="
+              wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
+            "
+            [attr.fill]="colors.pillars.fill"
+            [attr.stroke]="colors.pillars.stroke"
+            stroke-width="1.5"
+          />
+
+          <!-- Right Pillar (solid block) -->
+          <rect
+            [attr.x]="doorSpaceEndSvg"
+            [attr.y]="wallY + plateTopSvgHeight"
+            [attr.width]="rightPillarEndSvg - doorSpaceEndSvg"
+            [attr.height]="
+              wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
+            "
+            [attr.fill]="colors.pillars.fill"
+            [attr.stroke]="colors.pillars.stroke"
+            stroke-width="1.5"
+          />
+
+          <!-- Door Space (empty opening) - visual indicator -->
+          <rect
+            [attr.x]="leftPillarEndSvg"
+            [attr.y]="wallY + plateTopSvgHeight"
+            [attr.width]="doorSpaceEndSvg - leftPillarEndSvg"
+            [attr.height]="
+              wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
+            "
+            fill="none"
+            stroke="#007bff"
+            stroke-width="2"
+            stroke-dasharray="3,3"
+            opacity="0.5"
+          />
+
+          <!-- Wall Studs - render from members array -->
+          @for (member of selectedWall.members || []; track member.id) {
+            @if (
+              member.type === "stud" &&
+              member.metadata?.["section"] !== "left-pillar" &&
+              member.metadata?.["section"] !== "right-pillar"
+            ) {
+              <rect
+                [attr.x]="
+                  wallX +
+                  (member.positionMm / selectedWall.lengthMm) * wallSvgWidth
+                "
+                [attr.y]="wallY + plateTopSvgHeight"
+                [attr.width]="studSvgWidth"
+                [attr.height]="
+                  wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
+                "
+                [attr.fill]="colors.studs.fill"
+                [attr.stroke]="colors.studs.stroke"
+                stroke-width="0.5"
+              />
+            }
+          }
+
+          <!-- Noggins - horizontal bracing between studs at mid-height -->
+          @for (member of selectedWall.members || []; track member.id) {
+            @if (member.type === "noggin") {
+              <rect
+                [attr.x]="
+                  wallX +
+                  (member.positionMm / selectedWall.lengthMm) * wallSvgWidth
+                "
+                [attr.y]="
+                  wallY +
+                  plateTopSvgHeight +
+                  (wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight) /
+                    2 -
+                  10
+                "
+                [attr.width]="
+                  (member.lengthMm / selectedWall.lengthMm) * wallSvgWidth
+                "
+                [attr.height]="20"
+                [attr.fill]="colors.noggins.fill"
+                [attr.stroke]="colors.noggins.stroke"
+                stroke-width="0.5"
+                opacity="0.7"
+              />
+            }
+          }
+
+          <!-- Section labels -->
+          <text
+            [attr.x]="wallX + (leftWallEndSvg - wallX) / 2"
+            [attr.y]="wallY + wallSvgHeight / 2"
+            fill="#495057"
+            font-size="11"
+            font-weight="600"
+            text-anchor="middle"
+          >
+            Left Wall
+          </text>
+          <text
+            [attr.x]="leftWallEndSvg + (leftPillarEndSvg - leftWallEndSvg) / 2"
+            [attr.y]="wallY + wallSvgHeight / 2"
+            fill="#654321"
+            font-size="11"
+            font-weight="600"
+            text-anchor="middle"
+          >
+            Pillar
+          </text>
+          <text
+            [attr.x]="
+              leftPillarEndSvg + (doorSpaceEndSvg - leftPillarEndSvg) / 2
+            "
+            [attr.y]="wallY + wallSvgHeight / 2"
+            fill="#007bff"
+            font-size="12"
+            font-weight="700"
+            text-anchor="middle"
+          >
+            DOOR
+          </text>
+          <text
+            [attr.x]="
+              doorSpaceEndSvg + (rightPillarEndSvg - doorSpaceEndSvg) / 2
+            "
+            [attr.y]="wallY + wallSvgHeight / 2"
+            fill="#654321"
+            font-size="11"
+            font-weight="600"
+            text-anchor="middle"
+          >
+            Pillar
+          </text>
+          <text
+            [attr.x]="
+              rightPillarEndSvg + (wallX + wallSvgWidth - rightPillarEndSvg) / 2
+            "
+            [attr.y]="wallY + wallSvgHeight / 2"
+            fill="#495057"
+            font-size="11"
+            font-weight="600"
+            text-anchor="middle"
+          >
+            Right Wall
+          </text>
+
+          <!-- Dimension annotations for sections -->
+          <g>
+            <!-- Left wall dimension -->
+            <line
+              [attr.x1]="wallX"
+              [attr.y1]="wallY + wallSvgHeight + 15"
+              [attr.x2]="leftWallEndSvg"
+              [attr.y2]="wallY + wallSvgHeight + 15"
+              stroke="#6c757d"
+              stroke-width="1"
+            />
+            <text
+              [attr.x]="wallX + (leftWallEndSvg - wallX) / 2"
+              [attr.y]="wallY + wallSvgHeight + 12"
+              fill="#495057"
+              font-size="10"
+              text-anchor="middle"
+            >
+              {{ leftWallWidth }}mm
+            </text>
+
+            <!-- Pillar + Door + Pillar combined -->
+            <line
+              [attr.x1]="leftWallEndSvg"
+              [attr.y1]="wallY + wallSvgHeight + 30"
+              [attr.x2]="rightPillarEndSvg"
+              [attr.y2]="wallY + wallSvgHeight + 30"
+              stroke="#28a745"
+              stroke-width="1.5"
+            />
+            <text
+              [attr.x]="
+                leftWallEndSvg + (rightPillarEndSvg - leftWallEndSvg) / 2
+              "
+              [attr.y]="wallY + wallSvgHeight + 27"
+              fill="#28a745"
+              font-size="10"
+              font-weight="600"
+              text-anchor="middle"
+            >
+              Opening: {{ pillarWidth }}+{{ doorSpaceWidth }}+{{
+                pillarWidth
+              }}mm
+            </text>
+
+            <!-- Right wall dimension -->
+            <line
+              [attr.x1]="rightPillarEndSvg"
+              [attr.y1]="wallY + wallSvgHeight + 15"
+              [attr.x2]="wallX + wallSvgWidth"
+              [attr.y2]="wallY + wallSvgHeight + 15"
+              stroke="#6c757d"
+              stroke-width="1"
+            />
+            <text
+              [attr.x]="
+                rightPillarEndSvg +
+                (wallX + wallSvgWidth - rightPillarEndSvg) / 2
+              "
+              [attr.y]="wallY + wallSvgHeight + 12"
+              fill="#495057"
+              font-size="10"
+              text-anchor="middle"
+            >
+              {{ rightWallWidthMm }}mm
+            </text>
+          </g>
+        </g>
+
+        <!-- Length dimension line (top) -->
+        <g>
+          <line
+            [attr.x1]="wallX"
+            [attr.y1]="20"
+            [attr.x2]="wallX + wallSvgWidth"
+            [attr.y2]="20"
+            stroke="#0d6efd"
+            stroke-width="2"
+            marker-start="url(#arrowStart)"
+            marker-end="url(#arrowEnd)"
+          />
+          <text
+            [attr.x]="wallX + wallSvgWidth / 2"
+            [attr.y]="15"
+            fill="#0d6efd"
+            font-size="14"
+            font-weight="bold"
+            text-anchor="middle"
+          >
+            {{ selectedWall.lengthMm }} mm
+          </text>
+        </g>
+
+        <!-- Height dimension line (left) -->
+        <g>
+          <line
+            [attr.x1]="20"
+            [attr.y1]="wallY"
+            [attr.x2]="20"
+            [attr.y2]="wallY + wallSvgHeight"
+            stroke="#0d6efd"
+            stroke-width="2"
+            marker-start="url(#arrowStart)"
+            marker-end="url(#arrowEnd)"
+          />
+          <text
+            [attr.x]="10"
+            [attr.y]="wallY + wallSvgHeight / 2"
+            fill="#0d6efd"
+            font-size="14"
+            font-weight="bold"
+            text-anchor="middle"
+            [attr.transform]="
+              'rotate(-90, 10, ' + (wallY + wallSvgHeight / 2) + ')'
+            "
+          >
+            {{ selectedWallHeight }} mm
+          </text>
+        </g>
+
+        <!-- Arrow markers -->
+        <defs>
+          <marker
+            id="arrowStart"
+            markerWidth="10"
+            markerHeight="10"
+            refX="5"
+            refY="5"
+            orient="auto"
+          >
+            <polygon points="0,5 10,0 10,10" fill="#0d6efd" />
+          </marker>
+          <marker
+            id="arrowEnd"
+            markerWidth="10"
+            markerHeight="10"
+            refX="5"
+            refY="5"
+            orient="auto"
+          >
+            <polygon points="10,5 0,0 0,10" fill="#0d6efd" />
+          </marker>
+          <marker
+            id="arrowStartSmall"
+            markerWidth="6"
+            markerHeight="6"
+            refX="3"
+            refY="3"
+            orient="auto"
+          >
+            <polygon points="0,3 6,0 6,6" fill="#6c757d" />
+          </marker>
+          <marker
+            id="arrowEndSmall"
+            markerWidth="6"
+            markerHeight="6"
+            refX="3"
+            refY="3"
+            orient="auto"
+          >
+            <polygon points="6,3 0,0 0,6" fill="#6c757d" />
+          </marker>
+        </defs>
+      </svg>
+
+      <!-- Legend -->
+      <div class="preview-legend">
+        <h5>Legend</h5>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #8b4513"></div>
+          <span>Plates</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #daa520"></div>
+          <span>Studs</span>
+        </div>
+        <div class="legend-item" *ngIf="selectedWall.hasDoorOpening">
+          <div
+            class="legend-color"
+            style="background: transparent; border: 2px dashed #dc3545"
+          ></div>
+          <span>Section Boundaries</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
