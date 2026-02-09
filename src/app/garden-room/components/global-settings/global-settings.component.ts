@@ -29,9 +29,9 @@ export class GlobalSettingsComponent {
   constructor(private fb: FormBuilder) {
     this.buildEnvelopeForm = this.fb.group({
       maxLegalHeightMm: [2500, [Validators.required, Validators.min(1)]],
-      concreteOffsetMm: [100, [Validators.required, Validators.min(0)]],
-      roofSystemMm: [200, [Validators.required, Validators.min(0)]],
-      floorSystemMm: [150, [Validators.required, Validators.min(0)]],
+      concreteOffsetMm: [50, [Validators.required, Validators.min(0)]],
+      roofSystemMm: [173.5, [Validators.required, Validators.min(0)]],
+      floorSystemMm: [100, [Validators.required, Validators.min(0)]],
       fallRatioRise: [1, [Validators.required, Validators.min(1)]],
       fallRatioRun: [40, [Validators.required, Validators.min(1)]],
     });
