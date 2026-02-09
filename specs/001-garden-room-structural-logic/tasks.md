@@ -165,30 +165,30 @@ list, optimized cutting plan, sheet counts, and hardware totals.
 
 ### Implementation for User Story 3
 
-- [ ] T035 [P] [US3] Create material-library component at
+- [x] T035 [P] [US3] Create material-library component at
       src/app/garden-room/components/material-library/ with template, styles,
       and TypeScript
-- [ ] T036 [P] [US3] Create extraction-engine component at
+- [x] T036 [P] [US3] Create extraction-engine component at
       src/app/garden-room/components/extraction-engine/ with template, styles,
       and TypeScript
-- [ ] T037 [US3] Implement First-Fit Decreasing bin packing in
+- [x] T037 [US3] Implement First-Fit Decreasing bin packing in
       MaterialOptimizationService at
       src/app/garden-room/services/material-optimization.service.ts
-- [ ] T038 [US3] Implement generateCutPlan method in MaterialOptimizationService
+- [x] T038 [US3] Implement generateCutPlan method in MaterialOptimizationService
       at src/app/garden-room/services/material-optimization.service.ts
-- [ ] T039 [US3] Implement calculateSheetCounts method in
+- [x] T039 [US3] Implement calculateSheetCounts method in
       MaterialOptimizationService at
       src/app/garden-room/services/material-optimization.service.ts
-- [ ] T040 [US3] Implement generateBuyList method in MaterialOptimizationService
+- [x] T040 [US3] Implement generateBuyList method in MaterialOptimizationService
       at src/app/garden-room/services/material-optimization.service.ts
-- [ ] T041 [US3] Implement calculateHardwareList method in
+- [x] T041 [US3] Implement calculateHardwareList method in
       MaterialOptimizationService at
       src/app/garden-room/services/material-optimization.service.ts
-- [ ] T042 [US3] Create @ngrx/signals store for output bundle state in
+- [x] T042 [US3] Create @ngrx/signals store for output bundle state in
       src/app/garden-room/services/material-optimization.service.ts
-- [ ] T043 [US3] Wire extraction-engine component to display buy, cut, and
+- [x] T043 [US3] Wire extraction-engine component to display buy, cut, and
       hardware lists reactively
-- [ ] T044 [US3] Add print styles in src/styles.scss for cut list printout with
+- [x] T044 [US3] Add print styles in src/styles.scss for cut list printout with
       @media print
 
 **Checkpoint**: All user stories should now be independently functional - users
