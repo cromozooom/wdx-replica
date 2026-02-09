@@ -19,7 +19,7 @@ export interface OutputBundle {
  */
 export interface BuyListItem {
   /** Type of item */
-  itemType: "timber" | "sheet";
+  itemType: "timber" | "sheet" | "insulation";
 
   /** Description of item */
   description: string;
@@ -29,6 +29,15 @@ export interface BuyListItem {
 
   /** Unit of measurement */
   unit: string;
+
+  /** Price per unit (optional) */
+  pricePerUnit?: number;
+
+  /** Total price for this item (optional) */
+  totalPrice?: number;
+
+  /** Currency code (optional) */
+  currency?: string;
 }
 
 /**

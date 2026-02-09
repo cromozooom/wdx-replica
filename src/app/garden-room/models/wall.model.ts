@@ -53,6 +53,15 @@ export interface Wall {
   /** Include last stud even if it creates irregular gap */
   includeIrregularLastStud?: boolean;
 
+  /** Include noggins (horizontal bracing between studs) */
+  hasNoggins?: boolean;
+
+  /** Selected PIR board ID for insulation */
+  pirBoardId?: string;
+
+  /** Selected sheet material ID for sheathing */
+  sheetMaterialId?: string;
+
   /** List of structural members (studs, plates, noggins) */
   members: Member[];
 }

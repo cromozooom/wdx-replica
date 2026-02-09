@@ -50,7 +50,7 @@ export class MaterialOptimizationService {
   /**
    * Optimize cut plans using First-Fit Decreasing algorithm
    * @param requirements List of cut requirements
-   * @param materials Material library with stock lengths
+   * @param materials Material library with timber sections
    * @returns Optimized cut plans minimizing waste
    */
   optimizeCutPlans(
@@ -59,7 +59,17 @@ export class MaterialOptimizationService {
   ): CutPlan[] {
     // FFD: Requirements already sorted descending by generateCutRequirements
     const cutPlans: CutPlan[] = [];
-    const stockLengths = [...materials.stockLengthsMm].sort((a, b) => a - b); // Sort ascending
+
+    // Extract available lengths from timber sections
+    const availableLengths = new Set<number>();
+    materials.timberSections.forEach((section) => {
+      section.lengthOptions.forEach((option) => {
+        if (option.available) {
+          availableLengths.add(option.lengthMm);
+        }
+      });
+    });
+    const stockLengths = Array.from(availableLengths).sort((a, b) => a - b); // Sort ascending
 
     // Process each requirement
     requirements.forEach((requirement) => {
@@ -133,11 +143,13 @@ export class MaterialOptimizationService {
    * Generate buy list from cut plans
    * @param cutPlans Optimized cut plans
    * @param materials Material library
-   * @returns Buy list with timber quantities
+   * @param walls Wall configuration for insulation calculations
+   * @returns Buy list with timber quantities and pricing
    */
   generateBuyList(
     cutPlans: CutPlan[],
     materials: MaterialLibrary,
+    walls: any[] = [],
   ): BuyListItem[] {
     const buyList: BuyListItem[] = [];
 
@@ -149,26 +161,253 @@ export class MaterialOptimizationService {
       stockCounts.set(plan.stockLengthMm, count + 1);
     });
 
-    // Format as buy list items
+    // Format as buy list items with pricing
     stockCounts.forEach((quantity, stockLength) => {
+      // Find the timber section and length option for this stock length
+      let price = 0;
+      let currency = "GBP";
+      let description = `${stockLength}mm Timber`;
+
+      // Look through all timber sections to find matching length option
+      for (const section of materials.timberSections) {
+        const lengthOption = section.lengthOptions.find(
+          (option) => option.lengthMm === stockLength && option.available,
+        );
+        if (lengthOption) {
+          price = lengthOption.pricePerPiece;
+          currency = lengthOption.currency;
+          description = `${stockLength}mm ${section.name}`;
+          break; // Use first matching section
+        }
+      }
+
       buyList.push({
         itemType: "timber",
-        description: `${stockLength}mm Timber`,
+        description,
         quantity,
         unit: "pieces",
+        pricePerUnit: price,
+        totalPrice: price * quantity,
+        currency,
       });
     });
 
-    // Add sheet materials if present
-    materials.sheetMaterials.forEach((sheet) => {
-      // NOTE: Sheet count calculation is simplified here
-      // In real implementation, would need actual area requirements
-      buyList.push({
-        itemType: "sheet",
-        description: sheet.name,
-        quantity: 0, // Placeholder - calculated separately
-        unit: "sheets",
+    // Add sheet materials based on wall selections
+    const sheetRequirements = new Map<string, number>(); // sheetMaterialId -> total area (m²)
+
+    // Add PIR insulation boards based on wall selections
+    const pirRequirements = new Map<string, number>(); // pirBoardId -> total area (m²)
+
+    walls.forEach((wall) => {
+      // Calculate wall height based on wall name
+      let wallHeightMm = 2200; // Default height
+      if (wall.name === "Front") {
+        // Use frontWallHeightMm if available from store context
+        wallHeightMm = wall.heightMm || 2200;
+      } else if (wall.name === "Back") {
+        // Use backWallHeightMm if available from store context
+        wallHeightMm = wall.heightMm || 2100;
+      } else {
+        // Side walls - use front wall height as default
+        wallHeightMm = wall.heightMm || 2200;
+      }
+
+      const totalWallArea = (wall.lengthMm / 1000) * (wallHeightMm / 1000); // Convert to m²
+
+      console.log(`📋 Processing wall ${wall.id} for materials:`, {
+        name: wall.name,
+        lengthMm: wall.lengthMm,
+        heightMm: wallHeightMm,
+        totalWallArea: totalWallArea.toFixed(4) + "m²",
+        sheetMaterialId: wall.sheetMaterialId,
+        pirBoardId: wall.pirBoardId,
       });
+
+      // Add to sheet requirements if sheet material is selected
+      if (wall.sheetMaterialId) {
+        const existingSheetArea =
+          sheetRequirements.get(wall.sheetMaterialId) || 0;
+        sheetRequirements.set(
+          wall.sheetMaterialId,
+          existingSheetArea + totalWallArea,
+        );
+        console.log(
+          `  📋 Added ${totalWallArea.toFixed(4)}m² sheet area for ${wall.sheetMaterialId}`,
+        );
+      }
+
+      // Add to PIR requirements if PIR board is selected
+      if (wall.pirBoardId) {
+        console.log(`📐 Calculating PIR area for wall ${wall.id}:`, {
+          totalWallArea: totalWallArea.toFixed(2) + "m²",
+          pirBoardId: wall.pirBoardId,
+          memberCount: wall.members.length,
+        });
+
+        // Calculate structural member areas for insulation (net area)
+        let structuralArea = 0;
+
+        // Calculate stud areas (vertical members) - ALL studs, not just "structural" ones
+        const studs = wall.members.filter((m: any) => m.type === "stud");
+        console.log(`  🏗️ Found ${studs.length} studs for PIR calculation`);
+
+        studs.forEach((stud: any) => {
+          // Use stud width from wall configuration
+          const studWidthMm = wall.studWidthMm || 47;
+          const studArea = (studWidthMm / 1000) * (stud.heightMm / 1000);
+          structuralArea += studArea;
+        });
+
+        // Calculate plate areas (horizontal top and bottom)
+        const topPlates = wall.members.filter(
+          (m: any) => m.type === "plate" && m.metadata?.["position"] === "top",
+        );
+        const bottomPlates = wall.members.filter(
+          (m: any) =>
+            m.type === "plate" && m.metadata?.["position"] === "bottom",
+        );
+
+        topPlates.forEach((plate: any) => {
+          const plateArea =
+            (plate.lengthMm / 1000) * (wall.plateThicknessTopMm / 1000);
+          structuralArea += plateArea;
+        });
+
+        bottomPlates.forEach((plate: any) => {
+          const plateArea =
+            (plate.lengthMm / 1000) * (wall.plateThicknessBottomMm / 1000);
+          structuralArea += plateArea;
+        });
+
+        // Calculate noggin areas (horizontal bracing)
+        const noggins = wall.members.filter((m: any) => m.type === "noggin");
+        noggins.forEach((noggin: any) => {
+          // Use stud width for noggin width (same material)
+          const nogginWidthMm = wall.studWidthMm || 47;
+          const nogginArea = (noggin.lengthMm / 1000) * (nogginWidthMm / 1000);
+          structuralArea += nogginArea;
+        });
+
+        // Calculate net insulation area (total wall area minus structural areas)
+        const insulationArea = Math.max(0, totalWallArea - structuralArea);
+
+        console.log(`  📊 PIR calculation results:`, {
+          totalWallArea: totalWallArea.toFixed(4) + "m²",
+          structuralArea: structuralArea.toFixed(4) + "m²",
+          insulationArea: insulationArea.toFixed(4) + "m²",
+          studCount: studs.length,
+          plateCount: topPlates.length + bottomPlates.length,
+          nogginCount: noggins.length,
+        });
+
+        if (insulationArea > 0) {
+          const existingArea = pirRequirements.get(wall.pirBoardId) || 0;
+          pirRequirements.set(wall.pirBoardId, existingArea + insulationArea);
+          console.log(
+            `  ✅ Added ${insulationArea.toFixed(4)}m² PIR area for ${wall.pirBoardId}`,
+          );
+        } else {
+          console.log(
+            `  ⚠️ No PIR area calculated (insulationArea = ${insulationArea})`,
+          );
+        }
+      }
+    });
+
+    // Convert sheet area requirements to sheet quantities
+    console.log(
+      `\n🔍 Converting sheet requirements to buy list:`,
+      sheetRequirements,
+    );
+    sheetRequirements.forEach((totalAreaM2, sheetMaterialId) => {
+      const sheetMaterial = materials.sheetMaterials.find(
+        (sheet) => sheet.id === sheetMaterialId,
+      );
+      console.log(`  📋 Processing sheet ${sheetMaterialId}:`, {
+        totalAreaM2: totalAreaM2.toFixed(4),
+        sheetMaterialFound: !!sheetMaterial,
+        sheetMaterial: sheetMaterial
+          ? {
+              name: sheetMaterial.name,
+              dimensions: `${sheetMaterial.widthMm}x${sheetMaterial.heightMm}x${sheetMaterial.thicknessMm}mm`,
+              pricePerSheet: sheetMaterial.pricePerSheet,
+            }
+          : null,
+      });
+
+      if (sheetMaterial) {
+        // Calculate sheet area in m²
+        const sheetAreaM2 =
+          (sheetMaterial.widthMm / 1000) * (sheetMaterial.heightMm / 1000);
+
+        // Calculate number of sheets needed (round up)
+        const sheetsNeeded = Math.ceil(totalAreaM2 / sheetAreaM2);
+
+        console.log(`    📊 Sheet calculation:`, {
+          sheetAreaM2: sheetAreaM2.toFixed(4),
+          sheetsNeeded: sheetsNeeded,
+        });
+
+        buyList.push({
+          itemType: "sheet",
+          description: `${sheetMaterial.name} (${sheetMaterial.widthMm}x${sheetMaterial.heightMm}x${sheetMaterial.thicknessMm}mm)`,
+          quantity: sheetsNeeded,
+          unit: "sheets",
+          pricePerUnit: sheetMaterial.pricePerSheet,
+          totalPrice: sheetMaterial.pricePerSheet * sheetsNeeded,
+          currency: sheetMaterial.currency,
+        });
+
+        console.log(`    ✅ Added ${sheetsNeeded} sheets to buy list`);
+      }
+    });
+
+    // Convert PIR area requirements to board quantities
+    console.log(
+      `\n🔍 Converting PIR requirements to buy list:`,
+      pirRequirements,
+    );
+    pirRequirements.forEach((totalAreaM2, pirBoardId) => {
+      const pirBoard = materials.pirBoards.find(
+        (board) => board.id === pirBoardId,
+      );
+      console.log(`  🧊 Processing PIR ${pirBoardId}:`, {
+        totalAreaM2: totalAreaM2.toFixed(4),
+        pirBoardFound: !!pirBoard,
+        pirBoard: pirBoard
+          ? {
+              name: pirBoard.name,
+              dimensions: `${pirBoard.widthMm}x${pirBoard.heightMm}x${pirBoard.thicknessMm}mm`,
+              pricePerBoard: pirBoard.pricePerBoard,
+            }
+          : null,
+      });
+
+      if (pirBoard) {
+        // Calculate board area in m²
+        const boardAreaM2 =
+          (pirBoard.widthMm / 1000) * (pirBoard.heightMm / 1000);
+
+        // Calculate number of boards needed (round up)
+        const boardsNeeded = Math.ceil(totalAreaM2 / boardAreaM2);
+
+        console.log(`    📊 PIR calculation:`, {
+          boardAreaM2: boardAreaM2.toFixed(4),
+          boardsNeeded: boardsNeeded,
+        });
+
+        buyList.push({
+          itemType: "insulation",
+          description: `${pirBoard.name} - ${pirBoard.thicknessMm}mm (${pirBoard.widthMm}x${pirBoard.heightMm}mm)`,
+          quantity: boardsNeeded,
+          unit: "boards",
+          pricePerUnit: pirBoard.pricePerBoard,
+          totalPrice: pirBoard.pricePerBoard * boardsNeeded,
+          currency: pirBoard.currency,
+        });
+
+        console.log(`    ✅ Added ${boardsNeeded} boards to buy list`);
+      }
     });
 
     return buyList.sort((a, b) => a.description.localeCompare(b.description));

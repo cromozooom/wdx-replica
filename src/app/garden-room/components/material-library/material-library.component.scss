@@ -38,6 +38,96 @@
   }
 }
 
+// Timber Sections Styling
+.timber-sections-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+
+  .timber-section-card {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    .section-header {
+      margin-bottom: 1rem;
+
+      h4 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.125rem;
+        color: #333;
+      }
+
+      .dimensions {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #007bff;
+        margin-bottom: 0.25rem;
+      }
+
+      .grade {
+        font-size: 0.875rem;
+        color: #6c757d;
+      }
+    }
+
+    .length-options {
+      h5 {
+        margin: 0 0 0.75rem 0;
+        font-size: 0.875rem;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .length-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.75rem;
+
+        .length-option {
+          background: #f8f9fa;
+          border-radius: 6px;
+          padding: 0.75rem;
+          text-align: center;
+          border: 1px solid #e9ecef;
+          transition: all 0.2s ease;
+
+          &:hover {
+            border-color: #007bff;
+            transform: translateY(-1px);
+          }
+
+          &.unavailable {
+            opacity: 0.6;
+            background: #f5f5f5;
+
+            .availability {
+              font-size: 0.75rem;
+              color: #dc3545;
+              margin-top: 0.25rem;
+            }
+          }
+
+          .length {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+          }
+
+          .price {
+            font-size: 1.125rem;
+            color: #28a745;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
 .stock-lengths-list {
   display: flex;
   flex-direction: column;
@@ -161,6 +251,119 @@
   }
 }
 
+// Sheet Materials Styling
+.sheet-materials-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+
+  .sheet-material-card {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .sheet-header {
+      padding: 1rem;
+
+      h4 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .dimensions {
+        font-size: 0.875rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+      }
+
+      .price {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #28a745;
+        margin-bottom: 0.5rem;
+      }
+
+      .availability {
+        font-size: 0.875rem;
+        color: #28a745;
+        font-weight: 500;
+
+        &.unavailable {
+          color: #dc3545;
+        }
+      }
+    }
+  }
+}
+
+// PIR Boards Styling
+.pir-boards-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+
+  .pir-board-card {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .board-header {
+      padding: 1rem;
+
+      h4 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .dimensions {
+        font-size: 0.875rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+      }
+
+      .thermal-info {
+        font-size: 0.875rem;
+        color: #007bff;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      .price {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #28a745;
+        margin-bottom: 0.5rem;
+      }
+
+      .availability {
+        font-size: 0.875rem;
+        color: #28a745;
+        font-weight: 500;
+
+        &.unavailable {
+          color: #dc3545;
+        }
+      }
+    }
+  }
+}
+
 .library-summary {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -170,7 +373,7 @@
 
   .summary-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
 
     .summary-item {

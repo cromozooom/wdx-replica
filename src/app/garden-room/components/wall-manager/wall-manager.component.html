@@ -8,13 +8,45 @@
         <div class="wall-selector">
           <button
             *ngFor="let wall of walls"
-            class="wall-button"
+            class="wall-button d-flex justify-content-between align-items-center"
             [class.active]="wall.id === selectedWallId"
+            [class.valid]="isWallValid(wall)"
+            [class.invalid]="!isWallValid(wall)"
             (click)="selectWall(wall.id)"
           >
-            {{ wall.name }}
+            <span>{{ wall.name }}</span>
+            <span class="validation-badge">
+              @if (isWallValid(wall)) {
+                <i class="fas fa-check text-success"></i>
+              } @else {
+                <i class="fas fa-exclamation-triangle text-warning"></i>
+              }
+            </span>
           </button>
         </div>
+
+        <!-- Current Wall Validation Status -->
+        @if (selectedWall) {
+          <div class="validation-status-panel mb-3">
+            @if (currentWallStatus.isValid) {
+              <div class="alert alert-success">
+                <i class="fas fa-check-circle"></i>
+                <strong>{{ selectedWall.name }} Wall Ready</strong> - All fields
+                configured
+              </div>
+            } @else {
+              <div class="alert alert-warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <strong>{{ selectedWall.name }} Wall Issues:</strong>
+                <ul class="mb-0 mt-2">
+                  @for (error of currentWallStatus.errors; track $index) {
+                    <li>{{ error }}</li>
+                  }
+                </ul>
+              </div>
+            }
+          </div>
+        }
 
         <!-- Wall Configuration Form -->
         <form [formGroup]="wallForm" class="wall-form">
@@ -101,48 +133,69 @@
 
           <div class="form-row">
             <div class="form-group">
-              <label for="plateThicknessTopMm">Top Plate Thickness (mm)</label>
-              <input
-                type="number"
-                id="plateThicknessTopMm"
-                formControlName="plateThicknessTopMm"
+              <label for="topPlateSection">Top Plate Section</label>
+              <select
+                id="topPlateSection"
+                formControlName="topPlateSection"
                 class="form-control"
-                placeholder="e.g., 45"
-              />
+              >
+                @for (section of timberSections; track section.id) {
+                  <option [value]="section.id">
+                    {{ section.widthMm }}x{{ section.heightMm }}mm ({{
+                      section.grade
+                    }})
+                  </option>
+                }
+              </select>
+              <small class="form-text text-muted">
+                Calculated thickness:
+                {{ getThicknessFromSection(wallForm.value.topPlateSection) }}mm
+              </small>
             </div>
 
             <div class="form-group">
-              <label for="plateThicknessBottomMm"
-                >Bottom Plate Thickness (mm)</label
-              >
-              <input
-                type="number"
-                id="plateThicknessBottomMm"
-                formControlName="plateThicknessBottomMm"
+              <label for="bottomPlateSection">Bottom Plate Section</label>
+              <select
+                id="bottomPlateSection"
+                formControlName="bottomPlateSection"
                 class="form-control"
-                placeholder="e.g., 45"
-              />
+              >
+                @for (section of timberSections; track section.id) {
+                  <option [value]="section.id">
+                    {{ section.widthMm }}x{{ section.heightMm }}mm ({{
+                      section.grade
+                    }})
+                  </option>
+                }
+              </select>
+              <small class="form-text text-muted">
+                Calculated thickness:
+                {{
+                  getThicknessFromSection(wallForm.value.bottomPlateSection)
+                }}mm
+              </small>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="studWidthMm">Stud Width (mm)</label>
-            <input
-              type="number"
-              id="studWidthMm"
-              formControlName="studWidthMm"
+            <label for="studSection">Stud Section</label>
+            <select
+              id="studSection"
+              formControlName="studSection"
               class="form-control"
-              placeholder="e.g., 45"
-            />
-            <div
-              class="error-message"
-              *ngIf="
-                wallForm.get('studWidthMm')?.invalid &&
-                wallForm.get('studWidthMm')?.touched
-              "
             >
-              Stud width must be between 20 and 100 mm
-            </div>
+              @for (section of timberSections; track section.id) {
+                <option [value]="section.id">
+                  {{ section.widthMm }}x{{ section.heightMm }}mm ({{
+                    section.grade
+                  }})
+                </option>
+              }
+            </select>
+            <small class="form-text text-muted">
+              Calculated width:
+              {{ getThicknessFromSection(wallForm.value.studSection) }}mm
+            </small>
           </div>
 
           <div class="form-group">
@@ -157,6 +210,72 @@
             <small class="form-text text-muted">
               Uncheck if you want to exclude the last stud when it doesn't fit
               the regular spacing pattern
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label">
+              <input
+                type="checkbox"
+                formControlName="hasNoggins"
+                class="form-check-input"
+              />
+              Include noggins (horizontal bracing between studs)
+            </label>
+            <small class="form-text text-muted">
+              Noggins are placed at mid-height to provide lateral stability
+            </small>
+          </div>
+
+          <!-- Insulation Selection -->
+          <div class="form-group">
+            <label for="pirBoardId">Insulation (PIR Board)</label>
+            <select
+              id="pirBoardId"
+              formControlName="pirBoardId"
+              class="form-control"
+            >
+              <option value="">No insulation</option>
+              @for (pirBoard of pirBoards; track pirBoard.id) {
+                <option [value]="pirBoard.id">
+                  {{ pirBoard.name }} - {{ pirBoard.thicknessMm }}mm (£{{
+                    pirBoard.pricePerBoard
+                  }})
+                </option>
+              }
+            </select>
+            <small class="form-text text-muted">
+              @if (wallForm.value.pirBoardId) {
+                Insulation area needed: {{ insulationAreaM2.toFixed(2) }}m²
+              }
+            </small>
+          </div>
+
+          <!-- Sheet Material Selection -->
+          <div class="form-group">
+            <label for="sheetMaterialId">Sheet Material</label>
+            <select
+              id="sheetMaterialId"
+              formControlName="sheetMaterialId"
+              class="form-control"
+            >
+              <option value="">No sheet material</option>
+              @for (sheetMaterial of sheetMaterials; track sheetMaterial.id) {
+                <option [value]="sheetMaterial.id">
+                  {{ sheetMaterial.name }} - {{ sheetMaterial.thicknessMm }}mm
+                  (£{{ sheetMaterial.pricePerSheet }})
+                </option>
+              }
+            </select>
+            <small class="form-text text-muted">
+              @if (wallForm.value.sheetMaterialId) {
+                Sheet area needed:
+                {{
+                  (((selectedWall?.lengthMm || 0) / 1000) *
+                    (selectedWall?.heightMm || 0)) /
+                    1000 | number: "1.2-2"
+                }}m²
+              }
             </small>
           </div>
 
@@ -375,8 +494,8 @@
               [attr.y]="wallY + wallSvgHeight - plateBottomSvgHeight"
               [attr.width]="wallSvgWidth"
               [attr.height]="plateBottomSvgHeight"
-              fill="#8b4513"
-              stroke="#654321"
+              [attr.fill]="colors.plates.fill"
+              [attr.stroke]="colors.plates.stroke"
               stroke-width="1"
             />
 
@@ -386,8 +505,8 @@
               [attr.y]="wallY"
               [attr.width]="wallSvgWidth"
               [attr.height]="plateTopSvgHeight"
-              fill="#8b4513"
-              stroke="#654321"
+              [attr.fill]="colors.plates.fill"
+              [attr.stroke]="colors.plates.stroke"
               stroke-width="1"
             />
 
@@ -400,10 +519,37 @@
               [attr.height]="
                 wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
               "
-              fill="#daa520"
-              stroke="#b8860b"
+              [attr.fill]="colors.studs.fill"
+              [attr.stroke]="colors.studs.stroke"
               stroke-width="1"
             />
+
+            <!-- Noggins - horizontal bracing at mid-height -->
+            @for (member of selectedWall.members; track member.id) {
+              @if (member.type === "noggin" && member.metadata?.["between"]) {
+                <rect
+                  [attr.x]="
+                    wallX +
+                    (member.positionMm / selectedWall.lengthMm) * wallSvgWidth
+                  "
+                  [attr.y]="
+                    wallY +
+                    plateTopSvgHeight +
+                    (wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight) /
+                      2 -
+                    10
+                  "
+                  [attr.width]="
+                    (member.lengthMm / selectedWall.lengthMm) * wallSvgWidth
+                  "
+                  [attr.height]="20"
+                  [attr.fill]="colors.noggins.fill"
+                  [attr.stroke]="colors.noggins.stroke"
+                  stroke-width="0.5"
+                  opacity="0.7"
+                />
+              }
+            }
 
             <!-- Stud spacing dimensions - shows all gaps between studs -->
             <g
@@ -588,8 +734,8 @@
               [attr.height]="
                 wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
               "
-              fill="#d4a574"
-              stroke="#654321"
+              [attr.fill]="colors.pillars.fill"
+              [attr.stroke]="colors.pillars.stroke"
               stroke-width="1.5"
             />
 
@@ -601,8 +747,8 @@
               [attr.height]="
                 wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
               "
-              fill="#d4a574"
-              stroke="#654321"
+              [attr.fill]="colors.pillars.fill"
+              [attr.stroke]="colors.pillars.stroke"
               stroke-width="1.5"
             />
 
@@ -638,9 +784,36 @@
                   [attr.height]="
                     wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
                   "
-                  fill="#d4a574"
-                  stroke="#654321"
+                  [attr.fill]="colors.studs.fill"
+                  [attr.stroke]="colors.studs.stroke"
                   stroke-width="0.5"
+                />
+              }
+            }
+
+            <!-- Noggins - horizontal bracing between studs at mid-height -->
+            @for (member of selectedWall.members || []; track member.id) {
+              @if (member.type === "noggin") {
+                <rect
+                  [attr.x]="
+                    wallX +
+                    (member.positionMm / selectedWall.lengthMm) * wallSvgWidth
+                  "
+                  [attr.y]="
+                    wallY +
+                    plateTopSvgHeight +
+                    (wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight) /
+                      2 -
+                    10
+                  "
+                  [attr.width]="
+                    (member.lengthMm / selectedWall.lengthMm) * wallSvgWidth
+                  "
+                  [attr.height]="20"
+                  [attr.fill]="colors.noggins.fill"
+                  [attr.stroke]="colors.noggins.stroke"
+                  stroke-width="0.5"
+                  opacity="0.7"
                 />
               }
             }
