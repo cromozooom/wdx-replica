@@ -59,6 +59,17 @@
               </tr>
             }
           </tbody>
+          <tfoot>
+            <tr class="table-total">
+              <td colspan="5"><strong>Total Cost:</strong></td>
+              <td>
+                <strong
+                  >{{ totalCost.currency }}
+                  {{ totalCost.amount | number: "1.2-2" }}</strong
+                >
+              </td>
+            </tr>
+          </tfoot>
         </table>
       }
     </div>

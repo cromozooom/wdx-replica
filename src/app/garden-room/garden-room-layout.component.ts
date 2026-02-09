@@ -11,26 +11,13 @@ import { GardenRoomNavComponent } from "./components/garden-room-nav/garden-room
   standalone: true,
   imports: [CommonModule, RouterModule, GardenRoomNavComponent],
   template: `
-    <div class="garden-room-layout">
+    <div class="d-flex w-100 h-100 d-flex overflow-hidden">
       <app-garden-room-nav></app-garden-room-nav>
-      <div class="content-area">
+      <div class="flex-grow-1 w-100 overflow-hidden d-flex">
         <router-outlet></router-outlet>
       </div>
     </div>
   `,
-  styles: [
-    `
-      .garden-room-layout {
-        min-height: 100vh;
-        background: #f5f7fa;
-      }
-
-      .content-area {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 1.5rem 2rem;
-      }
-    `,
-  ],
+  styles: [],
 })
 export class GardenRoomLayoutComponent {}

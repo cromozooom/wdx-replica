@@ -1,10 +1,10 @@
-<div class="global-settings-container">
-  <h2>Build Envelope Settings</h2>
-
+<div class="border p-3 rounded">
   <form [formGroup]="buildEnvelopeForm" class="settings-form">
     <!-- Legal Height Limit -->
-    <div class="form-group">
-      <label for="maxLegalHeightMm">Maximum Legal Height (mm)</label>
+    <div class="form-group mb-2">
+      <label for="maxLegalHeightMm" class="form-label"
+        >Maximum Legal Height (mm)</label
+      >
       <input
         type="number"
         id="maxLegalHeightMm"
@@ -24,8 +24,10 @@
     </div>
 
     <!-- Concrete Offset -->
-    <div class="form-group">
-      <label for="concreteOffsetMm">Concrete Foundation Offset (mm)</label>
+    <div class="form-group mb-2">
+      <label for="concreteOffsetMm" class="form-label"
+        >Concrete Foundation Offset (mm)</label
+      >
       <input
         type="number"
         id="concreteOffsetMm"
@@ -45,8 +47,10 @@
     </div>
 
     <!-- Roof System -->
-    <div class="form-group">
-      <label for="roofSystemMm">Roof System Thickness (mm)</label>
+    <div class="form-group mb-2">
+      <label for="roofSystemMm" class="form-label"
+        >Roof System Thickness (mm)</label
+      >
       <input
         type="number"
         id="roofSystemMm"
@@ -66,8 +70,10 @@
     </div>
 
     <!-- Floor System -->
-    <div class="form-group">
-      <label for="floorSystemMm">Floor System Thickness (mm)</label>
+    <div class="form-group mb-2">
+      <label for="floorSystemMm" class="form-label"
+        >Floor System Thickness (mm)</label
+      >
       <input
         type="number"
         id="floorSystemMm"
@@ -87,8 +93,8 @@
     </div>
 
     <!-- Fall Ratio -->
-    <div class="form-group fall-ratio">
-      <label>Fall Ratio (Rise : Run)</label>
+    <div class="form-group fall-ratio mb-2">
+      <label class="form-label">Fall Ratio (Rise : Run)</label>
       <div class="ratio-inputs">
         <input
           type="number"
@@ -126,15 +132,15 @@
     <div class="height-display">
       <div class="height-item">
         <span class="label">Max Wall Frame Height:</span>
-        <span class="value">{{ maxWallFrameHeightMm }} mm</span>
+        <strong class="ms-2">{{ maxWallFrameHeightMm }} mm</strong>
       </div>
       <div class="height-item">
         <span class="label">Front Wall Height:</span>
-        <span class="value">{{ frontWallHeightMm }} mm</span>
+        <strong class="ms-2">{{ frontWallHeightMm }} mm</strong>
       </div>
       <div class="height-item">
         <span class="label">Back Wall Height:</span>
-        <span class="value">{{ backWallHeightMm }} mm</span>
+        <strong class="ms-2">{{ backWallHeightMm }} mm</strong>
       </div>
     </div>
   </div>

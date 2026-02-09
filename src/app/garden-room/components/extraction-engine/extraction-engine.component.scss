@@ -104,6 +104,24 @@
       }
     }
   }
+
+  tfoot {
+    .table-total {
+      background-color: #e9ecef;
+      border-top: 2px solid #dee2e6;
+
+      td {
+        padding: 1rem 0.75rem;
+        font-size: 0.95rem;
+        color: #333;
+
+        &:last-child {
+          font-size: 1.1rem;
+          color: #28a745;
+        }
+      }
+    }
+  }
 }
 
 .cut-plan {

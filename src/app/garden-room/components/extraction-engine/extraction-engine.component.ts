@@ -24,6 +24,29 @@ export class ExtractionEngineComponent {
   readonly totalMemberCount = this.store.totalMemberCount;
 
   /**
+   * Calculate total cost of all items in buy list
+   */
+  get totalCost(): { amount: number; currency: string } {
+    const buyList = this.buyList();
+    if (buyList.length === 0) {
+      return { amount: 0, currency: "GBP" };
+    }
+
+    // Group by currency and sum totals
+    const totals = new Map<string, number>();
+    buyList.forEach((item) => {
+      if (item.totalPrice && item.currency) {
+        const current = totals.get(item.currency) || 0;
+        totals.set(item.currency, current + item.totalPrice);
+      }
+    });
+
+    // Return the first currency total (assuming single currency)
+    const [currency, amount] = totals.entries().next().value || ["GBP", 0];
+    return { amount, currency };
+  }
+
+  /**
    * Trigger print dialog
    */
   printCutList() {
