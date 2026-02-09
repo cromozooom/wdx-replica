@@ -80,26 +80,26 @@ formula.
 
 ### Implementation for User Story 1
 
-- [ ] T016 [P] [US1] Create global-settings component at
+- [x] T016 [P] [US1] Create global-settings component at
       src/app/garden-room/components/global-settings/ with template, styles, and
       TypeScript
-- [ ] T017 [US1] Implement calculateMaxWallFrameHeight method in
+- [x] T017 [US1] Implement calculateMaxWallFrameHeight method in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T018 [US1] Add validation for positive wall frame height in
+- [x] T018 [US1] Add validation for positive wall frame height in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T019 [US1] Implement calculateBackWallHeight method with 1:40 fall in
+- [x] T019 [US1] Implement calculateBackWallHeight method with 1:40 fall in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T020 [US1] Implement calculateSideWallStudHeights method in
+- [x] T020 [US1] Implement calculateSideWallStudHeights method in
       StructuralCalculationService at
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T021 [US1] Create @ngrx/signals store for build envelope state in
+- [x] T021 [US1] Create @ngrx/signals store for build envelope state in
       src/app/garden-room/services/structural-calculation.service.ts
-- [ ] T022 [US1] Wire global-settings component to use signals for reactive wall
+- [x] T022 [US1] Wire global-settings component to use signals for reactive wall
       height derivation
-- [ ] T023 [US1] Add form validation and error display to global-settings
+- [x] T023 [US1] Add form validation and error display to global-settings
       component for zero/negative height scenarios
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and

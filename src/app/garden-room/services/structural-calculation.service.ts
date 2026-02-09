@@ -23,11 +23,63 @@ export class StructuralCalculationService {
    * @returns Updated walls with calculated heights
    */
   calculateWallHeights(envelope: BuildEnvelope, walls: Wall[]): Wall[] {
-    // TODO: Implement wall height calculation logic
-    // - Front/back walls use master height
-    // - Side walls apply fall ratio
-    // - Validate against maxWallFrameHeight
-    return walls;
+    const maxFrameHeight = calculateMaxWallFrameHeight(envelope);
+
+    return walls.map((wall) => {
+      if (wall.name === "Front" && wall.isMasterHeight) {
+        return { ...wall, heightMm: maxFrameHeight };
+      } else if (wall.name === "Back") {
+        const frontWall = walls.find((w) => w.name === "Front");
+        const spanMm = frontWall?.lengthMm || 0;
+        return {
+          ...wall,
+          heightMm: this.calculateBackWallHeight(
+            maxFrameHeight,
+            spanMm,
+            envelope.fallRatio,
+          ),
+        };
+      }
+      return wall;
+    });
+  }
+
+  /**
+   * Calculate back wall height using fall ratio
+   * @param frontHeightMm Front wall height in mm
+   * @param spanMm Span between front and back walls in mm
+   * @param fallRatio Fall ratio { rise, run }
+   * @returns Back wall height in mm
+   */
+  calculateBackWallHeight(
+    frontHeightMm: number,
+    spanMm: number,
+    fallRatio: { rise: number; run: number },
+  ): number {
+    const fallMm = (spanMm * fallRatio.rise) / fallRatio.run;
+    return frontHeightMm - fallMm;
+  }
+
+  /**
+   * Calculate individual stud heights for side walls based on fall ratio
+   * @param frontHeightMm Front wall height in mm
+   * @param backHeightMm Back wall height in mm
+   * @param wallLengthMm Side wall length in mm
+   * @param studPositionsMm Array of stud positions along wall in mm
+   * @returns Array of stud heights in mm
+   */
+  calculateSideWallStudHeights(
+    frontHeightMm: number,
+    backHeightMm: number,
+    wallLengthMm: number,
+    studPositionsMm: number[],
+  ): number[] {
+    const heightDifferenceMm = frontHeightMm - backHeightMm;
+
+    return studPositionsMm.map((position) => {
+      const ratio = position / wallLengthMm;
+      return frontHeightMm - heightDifferenceMm * ratio;
+    });
   }
 
   /**

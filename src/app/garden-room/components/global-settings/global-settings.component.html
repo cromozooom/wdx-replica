@@ -1,0 +1,147 @@
+<div class="global-settings-container">
+  <h2>Build Envelope Settings</h2>
+
+  <form [formGroup]="buildEnvelopeForm" class="settings-form">
+    <!-- Legal Height Limit -->
+    <div class="form-group">
+      <label for="maxLegalHeightMm">Maximum Legal Height (mm)</label>
+      <input
+        type="number"
+        id="maxLegalHeightMm"
+        formControlName="maxLegalHeightMm"
+        class="form-control"
+        placeholder="e.g., 2500"
+      />
+      <div
+        class="error-message"
+        *ngIf="
+          buildEnvelopeForm.get('maxLegalHeightMm')?.invalid &&
+          buildEnvelopeForm.get('maxLegalHeightMm')?.touched
+        "
+      >
+        Maximum legal height must be greater than 0 mm
+      </div>
+    </div>
+
+    <!-- Concrete Offset -->
+    <div class="form-group">
+      <label for="concreteOffsetMm">Concrete Foundation Offset (mm)</label>
+      <input
+        type="number"
+        id="concreteOffsetMm"
+        formControlName="concreteOffsetMm"
+        class="form-control"
+        placeholder="e.g., 100"
+      />
+      <div
+        class="error-message"
+        *ngIf="
+          buildEnvelopeForm.get('concreteOffsetMm')?.invalid &&
+          buildEnvelopeForm.get('concreteOffsetMm')?.touched
+        "
+      >
+        Concrete offset must be 0 or greater
+      </div>
+    </div>
+
+    <!-- Roof System -->
+    <div class="form-group">
+      <label for="roofSystemMm">Roof System Thickness (mm)</label>
+      <input
+        type="number"
+        id="roofSystemMm"
+        formControlName="roofSystemMm"
+        class="form-control"
+        placeholder="e.g., 200"
+      />
+      <div
+        class="error-message"
+        *ngIf="
+          buildEnvelopeForm.get('roofSystemMm')?.invalid &&
+          buildEnvelopeForm.get('roofSystemMm')?.touched
+        "
+      >
+        Roof system thickness must be 0 or greater
+      </div>
+    </div>
+
+    <!-- Floor System -->
+    <div class="form-group">
+      <label for="floorSystemMm">Floor System Thickness (mm)</label>
+      <input
+        type="number"
+        id="floorSystemMm"
+        formControlName="floorSystemMm"
+        class="form-control"
+        placeholder="e.g., 150"
+      />
+      <div
+        class="error-message"
+        *ngIf="
+          buildEnvelopeForm.get('floorSystemMm')?.invalid &&
+          buildEnvelopeForm.get('floorSystemMm')?.touched
+        "
+      >
+        Floor system thickness must be 0 or greater
+      </div>
+    </div>
+
+    <!-- Fall Ratio -->
+    <div class="form-group fall-ratio">
+      <label>Fall Ratio (Rise : Run)</label>
+      <div class="ratio-inputs">
+        <input
+          type="number"
+          formControlName="fallRatioRise"
+          class="form-control ratio-input"
+          placeholder="1"
+          aria-label="Fall ratio rise"
+        />
+        <span class="ratio-separator">:</span>
+        <input
+          type="number"
+          formControlName="fallRatioRun"
+          class="form-control ratio-input"
+          placeholder="40"
+          aria-label="Fall ratio run"
+        />
+      </div>
+      <div
+        class="error-message"
+        *ngIf="
+          (buildEnvelopeForm.get('fallRatioRise')?.invalid ||
+            buildEnvelopeForm.get('fallRatioRun')?.invalid) &&
+          (buildEnvelopeForm.get('fallRatioRise')?.touched ||
+            buildEnvelopeForm.get('fallRatioRun')?.touched)
+        "
+      >
+        Fall ratio values must be greater than 0
+      </div>
+    </div>
+  </form>
+
+  <!-- Computed Wall Heights -->
+  <div class="computed-values" *ngIf="isHeightValid">
+    <h3>Derived Wall Heights</h3>
+    <div class="height-display">
+      <div class="height-item">
+        <span class="label">Max Wall Frame Height:</span>
+        <span class="value">{{ maxWallFrameHeightMm }} mm</span>
+      </div>
+      <div class="height-item">
+        <span class="label">Front Wall Height:</span>
+        <span class="value">{{ frontWallHeightMm }} mm</span>
+      </div>
+      <div class="height-item">
+        <span class="label">Back Wall Height:</span>
+        <span class="value">{{ backWallHeightMm }} mm</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Height Validation Error -->
+  <div class="height-validation-error" *ngIf="!isHeightValid">
+    <strong>Error:</strong> The maximum wall frame height is zero or negative.
+    Please adjust the legal height limit or reduce the system offsets.
+  </div>
+</div>
