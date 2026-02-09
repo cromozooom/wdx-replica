@@ -76,7 +76,7 @@ export class WallManagerComponent {
     const walls = this.store.walls();
     const updatedWalls = walls.map((wall) => {
       if (wall.id === this.selectedWallId) {
-        return {
+        const updatedWall = {
           ...wall,
           lengthMm: this.wallForm.value.lengthMm,
           studGapMm: this.wallForm.value.studGapMm,
@@ -84,10 +84,81 @@ export class WallManagerComponent {
           plateThicknessTopMm: this.wallForm.value.plateThicknessTopMm,
           plateThicknessBottomMm: this.wallForm.value.plateThicknessBottomMm,
         };
+
+        // Generate members from stud layout
+        updatedWall.members = this.generateMembers(updatedWall);
+        return updatedWall;
       }
       return wall;
     });
     updateWalls(this.store, updatedWalls);
+  }
+
+  /**
+   * Generate Member objects from wall configuration
+   */
+  generateMembers(wall: any) {
+    const members: any[] = [];
+
+    // Get stud layout for this wall
+    const layout = this.store.studLayoutForWall()(wall.id);
+    if (!layout) return members;
+
+    // Get wall height based on wall name
+    let wallHeight = this.store.frontWallHeightMm();
+    if (wall.name === "Back") {
+      wallHeight = this.store.backWallHeightMm();
+    }
+
+    // Generate studs at resolved positions
+    layout.resolvedStudPositionsMm.forEach((positionMm, index) => {
+      members.push({
+        id: `${wall.id}-stud-${index}`,
+        type: "stud",
+        positionMm,
+        lengthMm:
+          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+        heightMm:
+          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+        metadata: {},
+      });
+    });
+
+    // Add bottom plate
+    members.push({
+      id: `${wall.id}-plate-bottom`,
+      type: "plate",
+      positionMm: 0,
+      lengthMm: wall.lengthMm,
+      heightMm: wall.plateThicknessBottomMm,
+      metadata: { position: "bottom" },
+    });
+
+    // Add top plate
+    members.push({
+      id: `${wall.id}-plate-top`,
+      type: "plate",
+      positionMm: 0,
+      lengthMm: wall.lengthMm,
+      heightMm: wall.plateThicknessTopMm,
+      metadata: { position: "top" },
+    });
+
+    // Add noggins between studs (simplified - one noggin per stud gap at mid-height)
+    const studPositions = layout.resolvedStudPositionsMm.sort((a, b) => a - b);
+    for (let i = 0; i < studPositions.length - 1; i++) {
+      const gapLength = studPositions[i + 1] - studPositions[i];
+      members.push({
+        id: `${wall.id}-noggin-${i}`,
+        type: "noggin",
+        positionMm: studPositions[i],
+        lengthMm: gapLength,
+        heightMm: 45, // Standard noggin thickness
+        metadata: { between: [studPositions[i], studPositions[i + 1]] },
+      });
+    }
+
+    return members;
   }
 
   /**
@@ -102,6 +173,28 @@ export class WallManagerComponent {
    */
   get selectedWall(): Wall | undefined {
     return this.walls.find((w) => w.id === this.selectedWallId);
+  }
+
+  /**
+   * Get calculated height for selected wall
+   */
+  get selectedWallHeight(): number {
+    const wall = this.selectedWall;
+    if (!wall) return 0;
+
+    // Front wall uses frontWallHeightMm
+    if (wall.name === "Front") {
+      return this.store.frontWallHeightMm();
+    }
+
+    // Back wall uses backWallHeightMm
+    if (wall.name === "Back") {
+      return this.store.backWallHeightMm();
+    }
+
+    // Side walls need interpolated heights (simplified - use front height for now)
+    // TODO: Implement side wall height interpolation from StructuralCalculationService
+    return this.store.frontWallHeightMm();
   }
 
   /**
