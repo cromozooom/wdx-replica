@@ -2,6 +2,7 @@ import { Routes } from "@angular/router";
 import { GardenRoomLayoutComponent } from "./garden-room-layout.component";
 import { GlobalSettingsComponent } from "./components/global-settings/global-settings.component";
 import { WallManagerComponent } from "./components/wall-manager/wall-manager.component";
+import { MaterialLibraryComponent } from "./components/material-library/material-library.component";
 import { ExtractionEngineComponent } from "./components/extraction-engine/extraction-engine.component";
 
 export const gardenRoomRoutes: Routes = [
@@ -16,6 +17,10 @@ export const gardenRoomRoutes: Routes = [
       {
         path: "walls",
         component: WallManagerComponent,
+      },
+      {
+        path: "library",
+        component: MaterialLibraryComponent,
       },
       {
         path: "materials",

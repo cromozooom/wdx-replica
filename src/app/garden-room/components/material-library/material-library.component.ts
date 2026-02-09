@@ -7,7 +7,10 @@ import {
   ReactiveFormsModule,
   Validators,
 } from "@angular/forms";
-import { GardenRoomStore } from "../../store/garden-room.store";
+import {
+  GardenRoomStore,
+  updateMaterialLibrary,
+} from "../../store/garden-room.store";
 import { MaterialLibrary } from "../../models/material-library.model";
 
 /**
@@ -26,16 +29,40 @@ export class MaterialLibraryComponent {
   readonly store = inject(GardenRoomStore);
 
   constructor(private fb: FormBuilder) {
+    // Load current material library from store
+    const currentLibrary = this.store.materialLibrary();
+
     this.materialForm = this.fb.group({
-      stockLengths: this.fb.array([
-        this.fb.control(2400, [Validators.required, Validators.min(500)]),
-        this.fb.control(3600, [Validators.required, Validators.min(500)]),
-        this.fb.control(4800, [Validators.required, Validators.min(500)]),
-      ]),
-      sheetMaterials: this.fb.array([
-        this.createSheetMaterial("18mm Plywood", 2400, 1200),
-        this.createSheetMaterial("12mm OSB", 2400, 1200),
-      ]),
+      stockLengths: this.fb.array(
+        currentLibrary.stockLengthsMm.map((length) =>
+          this.fb.control(length, [Validators.required, Validators.min(500)]),
+        ),
+      ),
+      sheetMaterials: this.fb.array(
+        currentLibrary.sheetMaterials.length > 0
+          ? currentLibrary.sheetMaterials.map((sheet) =>
+              this.fb.group({
+                id: [sheet.id],
+                name: [sheet.name, Validators.required],
+                widthMm: [
+                  sheet.widthMm,
+                  [Validators.required, Validators.min(100)],
+                ],
+                heightMm: [
+                  sheet.heightMm,
+                  [Validators.required, Validators.min(100)],
+                ],
+              }),
+            )
+          : [],
+      ),
+    });
+
+    // Sync form changes to store
+    this.materialForm.valueChanges.subscribe(() => {
+      if (this.materialForm.valid) {
+        updateMaterialLibrary(this.store, this.getMaterialLibrary());
+      }
     });
   }
 
