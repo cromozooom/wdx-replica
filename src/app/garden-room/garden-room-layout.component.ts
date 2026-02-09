@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
-import { GardenRoomNavComponent } from "../components/garden-room-nav/garden-room-nav.component";
+import { GardenRoomNavComponent } from "./components/garden-room-nav/garden-room-nav.component";
 
 /**
  * GardenRoomLayoutComponent - Layout wrapper with navigation

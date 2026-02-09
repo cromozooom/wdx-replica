@@ -28,7 +28,7 @@ export class WallManagerComponent {
   constructor(private fb: FormBuilder) {
     this.wallForm = this.fb.group({
       lengthMm: [3000, [Validators.required, Validators.min(500)]],
-      studGapMm: [600, [Validators.required, Validators.min(300)]],
+      studGapMm: [400, [Validators.required, Validators.min(300)]],
       decorativeOffsetMm: [0, [Validators.required, Validators.min(0)]],
       plateThicknessTopMm: [45, [Validators.required, Validators.min(20)]],
       plateThicknessBottomMm: [45, [Validators.required, Validators.min(20)]],
