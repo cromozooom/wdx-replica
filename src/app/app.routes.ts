@@ -28,6 +28,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: "garden-room",
+    loadChildren: () =>
+      import("./garden-room/garden-room.routes").then(
+        (m) => m.gardenRoomRoutes,
+      ),
+  },
+  {
     path: "",
     redirectTo: "dashboard",
     pathMatch: "full",
