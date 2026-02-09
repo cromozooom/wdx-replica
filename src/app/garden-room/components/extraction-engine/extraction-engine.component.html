@@ -1,0 +1,141 @@
+<div class="extraction-container">
+  <h2>Material Extraction & Ordering</h2>
+
+  <!-- Buy List Section -->
+  <div class="section buy-list-section">
+    <div class="section-header">
+      <h3>Buy List</h3>
+      <p class="description">Materials to purchase</p>
+    </div>
+
+    <div class="buy-list">
+      @if (buyList().length === 0) {
+        <div class="placeholder">
+          No buy list available. Configure walls to see materials.
+        </div>
+      } @else {
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Quantity</th>
+              <th>Unit</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (item of buyList(); track item.description) {
+              <tr>
+                <td>{{ item.itemType }}</td>
+                <td>{{ item.description }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.unit }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      }
+    </div>
+  </div>
+
+  <!-- Cut List Section -->
+  <div class="section cut-list-section">
+    <div class="section-header">
+      <h3>Cut List</h3>
+      <p class="description">Optimized cutting instructions</p>
+      <button class="btn-print" (click)="printCutList()">Print Cut List</button>
+    </div>
+
+    <div class="cut-list">
+      @if (cutList().length === 0) {
+        <div class="placeholder">
+          No cut plans available. Configure walls to see cuts.
+        </div>
+      } @else {
+        @for (plan of cutList(); track $index) {
+          <div class="cut-plan">
+            <h4>
+              Stock {{ plan.stockLengthMm }}mm (Waste: {{ plan.wasteMm }}mm)
+            </h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Member Type</th>
+                  <th>Length (mm)</th>
+                  <th>Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                @for (cut of plan.cuts; track cut.id) {
+                  <tr>
+                    <td>{{ cut.memberType }}</td>
+                    <td>{{ cut.lengthMm }}</td>
+                    <td>{{ cut.quantity }}</td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        }
+      }
+    </div>
+  </div>
+
+  <!-- Hardware List Section -->
+  <div class="section hardware-list-section">
+    <div class="section-header">
+      <h3>Hardware List</h3>
+      <p class="description">Screws, tape, and membrane requirements</p>
+    </div>
+
+    <div class="hardware-list">
+      @if (hardwareList().length === 0) {
+        <div class="placeholder">
+          No hardware requirements. Configure walls to see hardware.
+        </div>
+      } @else {
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Quantity</th>
+              <th>Unit</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (item of hardwareList(); track item.description) {
+              <tr>
+                <td>{{ item.description }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.unit }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      }
+    </div>
+  </div>
+
+  <!-- Summary Statistics -->
+  <div class="summary-section">
+    <h3>Summary</h3>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <span class="label">Total Buy Items:</span>
+        <span class="value">{{ buyList().length }}</span>
+      </div>
+      <div class="summary-item">
+        <span class="label">Total Cut Plans:</span>
+        <span class="value">{{ cutList().length }}</span>
+      </div>
+      <div class="summary-item">
+        <span class="label">Total Hardware Items:</span>
+        <span class="value">{{ hardwareList().length }}</span>
+      </div>
+      <div class="summary-item">
+        <span class="label">Material Waste:</span>
+        <span class="value">{{ totalWasteMm() }} mm</span>
+      </div>
+    </div>
+  </div>
+</div>

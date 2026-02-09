@@ -261,3 +261,48 @@ p:last-child {
 .btn-outline-secondary {
   background: var(--bs-body-bg);
 }
+
+/* Print Styles for Cut Lists */
+@media print {
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
+
+  table {
+    page-break-inside: avoid;
+    border-collapse: collapse;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  /* Hide non-essential elements when printing */
+  nav,
+  .navbar,
+  .sidebar,
+  .btn:not(.btn-print),
+  button:not(.btn-print),
+  .no-print {
+    display: none !important;
+  }
+}

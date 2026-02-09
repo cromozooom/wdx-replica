@@ -19,11 +19,32 @@ export class MaterialOptimizationService {
    * @returns Aggregated cut requirements
    */
   generateCutRequirements(members: Member[]): CutRequirement[] {
-    // TODO: Implement cut requirement generation
-    // - Group members by type and length
-    // - Aggregate quantities for identical cuts
-    // - Sort by length descending (for FFD algorithm)
-    return [];
+    // Group members by type and length
+    const requirementMap = new Map<string, CutRequirement>();
+
+    members.forEach((member) => {
+      // Use lengthMm for all member types (studs, plates, noggins)
+      const key = `${member.type}-${member.lengthMm}`;
+
+      if (requirementMap.has(key)) {
+        // Increment quantity for existing requirement
+        const existing = requirementMap.get(key)!;
+        existing.quantity++;
+      } else {
+        // Create new requirement
+        requirementMap.set(key, {
+          id: key,
+          memberType: member.type,
+          lengthMm: member.lengthMm,
+          quantity: 1,
+        });
+      }
+    });
+
+    // Convert to array and sort by length descending (for FFD algorithm)
+    return Array.from(requirementMap.values()).sort(
+      (a, b) => b.lengthMm - a.lengthMm,
+    );
   }
 
   /**
@@ -36,12 +57,76 @@ export class MaterialOptimizationService {
     requirements: CutRequirement[],
     materials: MaterialLibrary,
   ): CutPlan[] {
-    // TODO: Implement FFD bin packing algorithm
-    // - Sort requirements by length descending
-    // - For each requirement, find first stock that fits
-    // - Calculate waste for each cut plan
-    // - Minimize total waste
-    return [];
+    // FFD: Requirements already sorted descending by generateCutRequirements
+    const cutPlans: CutPlan[] = [];
+    const stockLengths = [...materials.stockLengthsMm].sort((a, b) => a - b); // Sort ascending
+
+    // Process each requirement
+    requirements.forEach((requirement) => {
+      // Process each piece of this requirement
+      for (let i = 0; i < requirement.quantity; i++) {
+        // Try to fit into existing cut plans first
+        let fitted = false;
+
+        for (const plan of cutPlans) {
+          const usedLength = plan.cuts.reduce(
+            (sum, cut) => sum + cut.lengthMm * cut.quantity,
+            0,
+          );
+          const remainingLength = plan.stockLengthMm - usedLength;
+
+          if (remainingLength >= requirement.lengthMm) {
+            // Fit this cut into existing plan
+            const existingCut = plan.cuts.find((c) => c.id === requirement.id);
+
+            if (existingCut) {
+              existingCut.quantity++;
+            } else {
+              plan.cuts.push({
+                id: requirement.id,
+                memberType: requirement.memberType,
+                lengthMm: requirement.lengthMm,
+                quantity: 1,
+              });
+            }
+
+            // Update waste
+            plan.wasteMm = remainingLength - requirement.lengthMm;
+            fitted = true;
+            break;
+          }
+        }
+
+        // If not fitted, create new plan with smallest stock that fits
+        if (!fitted) {
+          const suitableStock = stockLengths.find(
+            (stock) => stock >= requirement.lengthMm,
+          );
+
+          if (!suitableStock) {
+            console.warn(
+              `No stock length available for cut: ${requirement.lengthMm}mm`,
+            );
+            continue;
+          }
+
+          cutPlans.push({
+            stockLengthMm: suitableStock,
+            cuts: [
+              {
+                id: requirement.id,
+                memberType: requirement.memberType,
+                lengthMm: requirement.lengthMm,
+                quantity: 1,
+              },
+            ],
+            wasteMm: suitableStock - requirement.lengthMm,
+          });
+        }
+      }
+    });
+
+    return cutPlans;
   }
 
   /**
@@ -54,11 +139,39 @@ export class MaterialOptimizationService {
     cutPlans: CutPlan[],
     materials: MaterialLibrary,
   ): BuyListItem[] {
-    // TODO: Implement buy list generation
-    // - Count stock lengths needed per cut plan
-    // - Format as buy list items with descriptions
-    // - Include sheet materials if needed
-    return [];
+    const buyList: BuyListItem[] = [];
+
+    // Count stock lengths needed
+    const stockCounts = new Map<number, number>();
+
+    cutPlans.forEach((plan) => {
+      const count = stockCounts.get(plan.stockLengthMm) || 0;
+      stockCounts.set(plan.stockLengthMm, count + 1);
+    });
+
+    // Format as buy list items
+    stockCounts.forEach((quantity, stockLength) => {
+      buyList.push({
+        itemType: "timber",
+        description: `${stockLength}mm Timber`,
+        quantity,
+        unit: "pieces",
+      });
+    });
+
+    // Add sheet materials if present
+    materials.sheetMaterials.forEach((sheet) => {
+      // NOTE: Sheet count calculation is simplified here
+      // In real implementation, would need actual area requirements
+      buyList.push({
+        itemType: "sheet",
+        description: sheet.name,
+        quantity: 0, // Placeholder - calculated separately
+        unit: "sheets",
+      });
+    });
+
+    return buyList.sort((a, b) => a.description.localeCompare(b.description));
   }
 
   /**
@@ -68,11 +181,45 @@ export class MaterialOptimizationService {
    * @returns Hardware items with quantities
    */
   calculateHardware(members: Member[], rules: HardwareRuleSet): HardwareItem[] {
-    // TODO: Implement hardware calculations
-    // - Calculate total linear meters for screws
-    // - Calculate total square meters for tape/membrane
-    // - Apply rules to derive quantities
-    return [];
+    const hardwareList: HardwareItem[] = [];
+
+    // Calculate total linear meters for screws
+    const totalLinearMeters =
+      members.reduce((sum, member) => sum + member.lengthMm, 0) / 1000;
+
+    const screwsNeeded = Math.ceil(
+      totalLinearMeters * rules.screwsPerLinearMeter,
+    );
+
+    hardwareList.push({
+      description: "Wood Screws (50mm)",
+      quantity: screwsNeeded,
+      unit: "pieces",
+    });
+
+    // Calculate total square meters for tape and membrane
+    // Simplified: assume standard wall width of 100mm for studs
+    const totalSquareMeters = totalLinearMeters * 0.1; // 100mm = 0.1m width
+
+    const tapeNeeded = Math.ceil(totalSquareMeters * rules.tapePerSquareMeter);
+
+    hardwareList.push({
+      description: "Breather Tape",
+      quantity: tapeNeeded,
+      unit: "linear meters",
+    });
+
+    const membraneNeeded = Math.ceil(
+      totalSquareMeters * rules.membranePerSquareMeter,
+    );
+
+    hardwareList.push({
+      description: "Breather Membrane",
+      quantity: membraneNeeded,
+      unit: "square meters",
+    });
+
+    return hardwareList;
   }
 
   /**
