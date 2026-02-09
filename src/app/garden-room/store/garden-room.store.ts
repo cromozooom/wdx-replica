@@ -83,7 +83,7 @@ const initialState: BuildEnvelopeState = {
     },
   ],
   materialLibrary: {
-    stockLengthsMm: [2400, 3600, 4800],
+    stockLengthsMm: [2400, 3000, 3600, 4800, 6000],
     sheetMaterials: [],
   },
   hardwareRules: {

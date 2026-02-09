@@ -32,6 +32,9 @@ export class WallManagerComponent {
       decorativeOffsetMm: [0, [Validators.required, Validators.min(0)]],
       plateThicknessTopMm: [45, [Validators.required, Validators.min(20)]],
       plateThicknessBottomMm: [45, [Validators.required, Validators.min(20)]],
+      hasDoorOpening: [false],
+      pillarWidthMm: [100, [Validators.required, Validators.min(50)]],
+      leftSectionWidthMm: [1000, [Validators.required, Validators.min(300)]],
     });
 
     // Load initial wall data
@@ -57,6 +60,9 @@ export class WallManagerComponent {
         decorativeOffsetMm: wall.decorativeOffsetMm,
         plateThicknessTopMm: wall.plateThicknessTopMm,
         plateThicknessBottomMm: wall.plateThicknessBottomMm,
+        hasDoorOpening: wall.hasDoorOpening || false,
+        pillarWidthMm: wall.pillarWidthMm || 100,
+        leftSectionWidthMm: wall.leftSectionWidthMm || 1000,
       });
     }
   }
@@ -83,6 +89,9 @@ export class WallManagerComponent {
           decorativeOffsetMm: this.wallForm.value.decorativeOffsetMm,
           plateThicknessTopMm: this.wallForm.value.plateThicknessTopMm,
           plateThicknessBottomMm: this.wallForm.value.plateThicknessBottomMm,
+          hasDoorOpening: this.wallForm.value.hasDoorOpening,
+          pillarWidthMm: this.wallForm.value.pillarWidthMm,
+          leftSectionWidthMm: this.wallForm.value.leftSectionWidthMm,
         };
 
         // Generate members from stud layout
@@ -108,6 +117,11 @@ export class WallManagerComponent {
     let wallHeight = this.store.frontWallHeightMm();
     if (wall.name === "Back") {
       wallHeight = this.store.backWallHeightMm();
+    }
+
+    // Handle door opening (4 sections for front wall)
+    if (wall.hasDoorOpening && wall.name === "Front") {
+      return this.generateMembersWithDoorOpening(wall, layout, wallHeight);
     }
 
     // Generate studs at resolved positions
@@ -162,6 +176,157 @@ export class WallManagerComponent {
   }
 
   /**
+   * Generate members for wall with door opening (4 sections)
+   */
+  private generateMembersWithDoorOpening(
+    wall: any,
+    layout: any,
+    wallHeight: number,
+  ) {
+    const members: any[] = [];
+    const pillarWidth = wall.pillarWidthMm || 100;
+    const leftSectionWidth = wall.leftSectionWidthMm || 1000;
+    const rightSectionWidth =
+      wall.lengthMm - 2 * pillarWidth - leftSectionWidth;
+
+    // Section 1: Left full-height wall (0 to leftSectionWidth) with ONE decorative offset
+    const leftStuds = layout.resolvedStudPositionsMm.filter(
+      (pos: number) => pos >= wall.decorativeOffsetMm && pos < leftSectionWidth,
+    );
+    leftStuds.forEach((positionMm: number, index: number) => {
+      members.push({
+        id: `${wall.id}-left-stud-${index}`,
+        type: "stud",
+        positionMm,
+        lengthMm:
+          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+        heightMm:
+          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+        metadata: { section: "left-full-height" },
+      });
+    });
+
+    // Section 2: Left pillar (leftSectionWidth to leftSectionWidth + pillarWidth)
+    members.push({
+      id: `${wall.id}-left-pillar`,
+      type: "stud",
+      positionMm: leftSectionWidth,
+      lengthMm:
+        wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+      heightMm:
+        wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+      metadata: { section: "left-pillar", width: pillarWidth },
+    });
+
+    // Section 3: Right pillar (lengthMm - pillarWidth - rightSectionWidth to lengthMm - rightSectionWidth)
+    const rightPillarPos = wall.lengthMm - pillarWidth - rightSectionWidth;
+    members.push({
+      id: `${wall.id}-right-pillar`,
+      type: "stud",
+      positionMm: rightPillarPos,
+      lengthMm:
+        wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+      heightMm:
+        wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+      metadata: { section: "right-pillar", width: pillarWidth },
+    });
+
+    // Section 4: Right full-height wall (lengthMm - rightSectionWidth to lengthMm) with ONE decorative offset
+    const rightSectionStart = wall.lengthMm - rightSectionWidth;
+    const rightStuds = layout.resolvedStudPositionsMm.filter(
+      (pos: number) =>
+        pos >= rightSectionStart + wall.decorativeOffsetMm &&
+        pos <= wall.lengthMm,
+    );
+    rightStuds.forEach((positionMm: number, index: number) => {
+      members.push({
+        id: `${wall.id}-right-stud-${index}`,
+        type: "stud",
+        positionMm,
+        lengthMm:
+          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+        heightMm:
+          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+        metadata: { section: "right-full-height" },
+      });
+    });
+
+    // Add plates for each section
+    members.push(
+      // Left section plates
+      {
+        id: `${wall.id}-left-plate-bottom`,
+        type: "plate",
+        positionMm: 0,
+        lengthMm: leftSectionWidth,
+        heightMm: wall.plateThicknessBottomMm,
+        metadata: { position: "bottom", section: "left" },
+      },
+      {
+        id: `${wall.id}-left-plate-top`,
+        type: "plate",
+        positionMm: 0,
+        lengthMm: leftSectionWidth,
+        heightMm: wall.plateThicknessTopMm,
+        metadata: { position: "top", section: "left" },
+      },
+      // Right section plates
+      {
+        id: `${wall.id}-right-plate-bottom`,
+        type: "plate",
+        positionMm: rightSectionStart,
+        lengthMm: rightSectionWidth,
+        heightMm: wall.plateThicknessBottomMm,
+        metadata: { position: "bottom", section: "right" },
+      },
+      {
+        id: `${wall.id}-right-plate-top`,
+        type: "plate",
+        positionMm: rightSectionStart,
+        lengthMm: rightSectionWidth,
+        heightMm: wall.plateThicknessTopMm,
+        metadata: { position: "top", section: "right" },
+      },
+    );
+
+    // Add noggins for left section
+    const leftStudPositions = leftStuds.sort((a: number, b: number) => a - b);
+    for (let i = 0; i < leftStudPositions.length - 1; i++) {
+      const gapLength = leftStudPositions[i + 1] - leftStudPositions[i];
+      members.push({
+        id: `${wall.id}-left-noggin-${i}`,
+        type: "noggin",
+        positionMm: leftStudPositions[i],
+        lengthMm: gapLength,
+        heightMm: 45,
+        metadata: {
+          section: "left",
+          between: [leftStudPositions[i], leftStudPositions[i + 1]],
+        },
+      });
+    }
+
+    // Add noggins for right section
+    const rightStudPositions = rightStuds.sort((a: number, b: number) => a - b);
+    for (let i = 0; i < rightStudPositions.length - 1; i++) {
+      const gapLength = rightStudPositions[i + 1] - rightStudPositions[i];
+      members.push({
+        id: `${wall.id}-right-noggin-${i}`,
+        type: "noggin",
+        positionMm: rightStudPositions[i],
+        lengthMm: gapLength,
+        heightMm: 45,
+        metadata: {
+          section: "right",
+          between: [rightStudPositions[i], rightStudPositions[i + 1]],
+        },
+      });
+    }
+
+    return members;
+  }
+
+  /**
    * Get current walls from store
    */
   get walls() {
@@ -195,6 +360,16 @@ export class WallManagerComponent {
     // Side walls need interpolated heights (simplified - use front height for now)
     // TODO: Implement side wall height interpolation from StructuralCalculationService
     return this.store.frontWallHeightMm();
+  }
+
+  /**
+   * Get calculated right section width for door opening
+   */
+  get rightSectionWidthMm(): number {
+    const lengthMm = this.wallForm.value.lengthMm || 0;
+    const pillarWidthMm = this.wallForm.value.pillarWidthMm || 0;
+    const leftSectionWidthMm = this.wallForm.value.leftSectionWidthMm || 0;
+    return lengthMm - 2 * pillarWidthMm - leftSectionWidthMm;
   }
 
   /**

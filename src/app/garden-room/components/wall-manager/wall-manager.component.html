@@ -97,6 +97,82 @@
         />
       </div>
     </div>
+
+    <!-- Door Opening Configuration (Front Wall Only) -->
+    <div class="door-opening-section" *ngIf="selectedWall?.name === 'Front'">
+      <h4>Door Opening Configuration</h4>
+
+      <div class="form-group">
+        <label class="checkbox-label">
+          <input
+            type="checkbox"
+            formControlName="hasDoorOpening"
+            class="form-check-input"
+          />
+          Enable Door Opening (splits wall into 4 sections)
+        </label>
+      </div>
+
+      <div *ngIf="wallForm.value.hasDoorOpening" class="door-opening-details">
+        <div class="form-group">
+          <label for="pillarWidthMm">Pillar Width (mm) - both pillars</label>
+          <input
+            type="number"
+            id="pillarWidthMm"
+            formControlName="pillarWidthMm"
+            class="form-control"
+            placeholder="e.g., 100"
+          />
+          <div
+            class="error-message"
+            *ngIf="
+              wallForm.get('pillarWidthMm')?.invalid &&
+              wallForm.get('pillarWidthMm')?.touched
+            "
+          >
+            Pillar width must be at least 45 mm
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="leftSectionWidthMm">Left Section Width (mm)</label>
+          <input
+            type="number"
+            id="leftSectionWidthMm"
+            formControlName="leftSectionWidthMm"
+            class="form-control"
+            placeholder="e.g., 1000"
+          />
+          <div
+            class="error-message"
+            *ngIf="
+              wallForm.get('leftSectionWidthMm')?.invalid &&
+              wallForm.get('leftSectionWidthMm')?.touched
+            "
+          >
+            Left section width must be at least 300 mm
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rightSectionWidthMm"
+            >Right Section Width (calculated)</label
+          >
+          <input
+            type="number"
+            id="rightSectionWidthMm"
+            [value]="rightSectionWidthMm"
+            class="form-control"
+            readonly
+            disabled
+          />
+          <small class="form-text text-muted">
+            Calculated as: Total Length - (2 × Pillar Width) - Left Section
+            Width
+          </small>
+        </div>
+      </div>
+    </div>
   </form>
 
   <!-- Wall Summary -->

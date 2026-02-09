@@ -32,6 +32,15 @@ export interface Wall {
   /** Bottom plate thickness in mm */
   plateThicknessBottomMm: number;
 
+  /** Door opening configuration (front wall only) */
+  hasDoorOpening?: boolean;
+
+  /** Pillar width in mm (left and right are equal) */
+  pillarWidthMm?: number;
+
+  /** Left full-height section width in mm */
+  leftSectionWidthMm?: number;
+
   /** List of structural members (studs, plates, noggins) */
   members: Member[];
 }
