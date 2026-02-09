@@ -472,9 +472,308 @@
             </g>
           </g>
 
-          <!-- TODO: Door opening SVG rendering - Temporarily disabled.
-               Needs complete rewrite for 5-section model: Left Wall | Left Pillar | Door Space | Right Pillar | Right Wall
-               Current properties: leftWallWidthMm, pillarWidthMm, doorSpaceWidthMm, rightWallWidthMm (calculated) -->
+          <!-- Door Opening: 5-section visualization -->
+          <g
+            *ngIf="selectedWall.hasDoorOpening && selectedWall.name === 'Front'"
+          >
+            <!-- Calculate section boundaries -->
+            @let leftWallWidth = selectedWall.leftWallWidthMm || 800;
+            @let pillarWidth = selectedWall.pillarWidthMm || 400;
+            @let doorSpaceWidth = selectedWall.doorSpaceWidthMm || 1000;
+            @let leftWallEndMm = leftWallWidth;
+            @let leftPillarEndMm = leftWallEndMm + pillarWidth;
+            @let doorSpaceEndMm = leftPillarEndMm + doorSpaceWidth;
+            @let rightPillarEndMm = doorSpaceEndMm + pillarWidth;
+
+            <!-- Convert to SVG coordinates -->
+            @let leftWallEndSvg =
+              wallX + (leftWallEndMm / selectedWall.lengthMm) * wallSvgWidth;
+            @let leftPillarEndSvg =
+              wallX + (leftPillarEndMm / selectedWall.lengthMm) * wallSvgWidth;
+            @let doorSpaceEndSvg =
+              wallX + (doorSpaceEndMm / selectedWall.lengthMm) * wallSvgWidth;
+            @let rightPillarEndSvg =
+              wallX + (rightPillarEndMm / selectedWall.lengthMm) * wallSvgWidth;
+
+            <!-- Left Wall Plates -->
+            <rect
+              [attr.x]="wallX"
+              [attr.y]="wallY + wallSvgHeight - plateBottomSvgHeight"
+              [attr.width]="leftWallEndSvg - wallX"
+              [attr.height]="plateBottomSvgHeight"
+              fill="#8b4513"
+              stroke="#654321"
+              stroke-width="1"
+            />
+            <rect
+              [attr.x]="wallX"
+              [attr.y]="wallY"
+              [attr.width]="leftWallEndSvg - wallX"
+              [attr.height]="plateTopSvgHeight"
+              fill="#8b4513"
+              stroke="#654321"
+              stroke-width="1"
+            />
+
+            <!-- Right Wall Plates -->
+            <rect
+              [attr.x]="rightPillarEndSvg"
+              [attr.y]="wallY + wallSvgHeight - plateBottomSvgHeight"
+              [attr.width]="wallX + wallSvgWidth - rightPillarEndSvg"
+              [attr.height]="plateBottomSvgHeight"
+              fill="#8b4513"
+              stroke="#654321"
+              stroke-width="1"
+            />
+            <rect
+              [attr.x]="rightPillarEndSvg"
+              [attr.y]="wallY"
+              [attr.width]="wallX + wallSvgWidth - rightPillarEndSvg"
+              [attr.height]="plateTopSvgHeight"
+              fill="#8b4513"
+              stroke="#654321"
+              stroke-width="1"
+            />
+
+            <!-- Section boundary lines -->
+            <!-- Left wall end / Left pillar start -->
+            <line
+              [attr.x1]="leftWallEndSvg"
+              [attr.y1]="wallY"
+              [attr.x2]="leftWallEndSvg"
+              [attr.y2]="wallY + wallSvgHeight"
+              stroke="#dc3545"
+              stroke-width="2"
+              stroke-dasharray="5,5"
+            />
+
+            <!-- Left pillar end / Door space start -->
+            <line
+              [attr.x1]="leftPillarEndSvg"
+              [attr.y1]="wallY"
+              [attr.x2]="leftPillarEndSvg"
+              [attr.y2]="wallY + wallSvgHeight"
+              stroke="#28a745"
+              stroke-width="3"
+              stroke-dasharray="8,4"
+            />
+
+            <!-- Door space end / Right pillar start -->
+            <line
+              [attr.x1]="doorSpaceEndSvg"
+              [attr.y1]="wallY"
+              [attr.x2]="doorSpaceEndSvg"
+              [attr.y2]="wallY + wallSvgHeight"
+              stroke="#28a745"
+              stroke-width="3"
+              stroke-dasharray="8,4"
+            />
+
+            <!-- Right pillar end / Right wall start -->
+            <line
+              [attr.x1]="rightPillarEndSvg"
+              [attr.y1]="wallY"
+              [attr.x2]="rightPillarEndSvg"
+              [attr.y2]="wallY + wallSvgHeight"
+              stroke="#dc3545"
+              stroke-width="2"
+              stroke-dasharray="5,5"
+            />
+
+            <!-- Left Pillar (solid block) -->
+            <rect
+              [attr.x]="leftWallEndSvg"
+              [attr.y]="wallY + plateTopSvgHeight"
+              [attr.width]="leftPillarEndSvg - leftWallEndSvg"
+              [attr.height]="
+                wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
+              "
+              fill="#d4a574"
+              stroke="#654321"
+              stroke-width="1.5"
+            />
+
+            <!-- Right Pillar (solid block) -->
+            <rect
+              [attr.x]="doorSpaceEndSvg"
+              [attr.y]="wallY + plateTopSvgHeight"
+              [attr.width]="rightPillarEndSvg - doorSpaceEndSvg"
+              [attr.height]="
+                wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
+              "
+              fill="#d4a574"
+              stroke="#654321"
+              stroke-width="1.5"
+            />
+
+            <!-- Door Space (empty opening) - visual indicator -->
+            <rect
+              [attr.x]="leftPillarEndSvg"
+              [attr.y]="wallY + plateTopSvgHeight"
+              [attr.width]="doorSpaceEndSvg - leftPillarEndSvg"
+              [attr.height]="
+                wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
+              "
+              fill="none"
+              stroke="#007bff"
+              stroke-width="2"
+              stroke-dasharray="3,3"
+              opacity="0.5"
+            />
+
+            <!-- Wall Studs - render from members array -->
+            @for (member of selectedWall.members || []; track member.id) {
+              @if (
+                member.type === "stud" &&
+                member.metadata?.["section"] !== "left-pillar" &&
+                member.metadata?.["section"] !== "right-pillar"
+              ) {
+                <rect
+                  [attr.x]="
+                    wallX +
+                    (member.positionMm / selectedWall.lengthMm) * wallSvgWidth
+                  "
+                  [attr.y]="wallY + plateTopSvgHeight"
+                  [attr.width]="studSvgWidth"
+                  [attr.height]="
+                    wallSvgHeight - plateTopSvgHeight - plateBottomSvgHeight
+                  "
+                  fill="#d4a574"
+                  stroke="#654321"
+                  stroke-width="0.5"
+                />
+              }
+            }
+
+            <!-- Section labels -->
+            <text
+              [attr.x]="wallX + (leftWallEndSvg - wallX) / 2"
+              [attr.y]="wallY + wallSvgHeight / 2"
+              fill="#495057"
+              font-size="11"
+              font-weight="600"
+              text-anchor="middle"
+            >
+              Left Wall
+            </text>
+            <text
+              [attr.x]="
+                leftWallEndSvg + (leftPillarEndSvg - leftWallEndSvg) / 2
+              "
+              [attr.y]="wallY + wallSvgHeight / 2"
+              fill="#654321"
+              font-size="11"
+              font-weight="600"
+              text-anchor="middle"
+            >
+              Pillar
+            </text>
+            <text
+              [attr.x]="
+                leftPillarEndSvg + (doorSpaceEndSvg - leftPillarEndSvg) / 2
+              "
+              [attr.y]="wallY + wallSvgHeight / 2"
+              fill="#007bff"
+              font-size="12"
+              font-weight="700"
+              text-anchor="middle"
+            >
+              DOOR
+            </text>
+            <text
+              [attr.x]="
+                doorSpaceEndSvg + (rightPillarEndSvg - doorSpaceEndSvg) / 2
+              "
+              [attr.y]="wallY + wallSvgHeight / 2"
+              fill="#654321"
+              font-size="11"
+              font-weight="600"
+              text-anchor="middle"
+            >
+              Pillar
+            </text>
+            <text
+              [attr.x]="
+                rightPillarEndSvg +
+                (wallX + wallSvgWidth - rightPillarEndSvg) / 2
+              "
+              [attr.y]="wallY + wallSvgHeight / 2"
+              fill="#495057"
+              font-size="11"
+              font-weight="600"
+              text-anchor="middle"
+            >
+              Right Wall
+            </text>
+
+            <!-- Dimension annotations for sections -->
+            <g>
+              <!-- Left wall dimension -->
+              <line
+                [attr.x1]="wallX"
+                [attr.y1]="wallY + wallSvgHeight + 15"
+                [attr.x2]="leftWallEndSvg"
+                [attr.y2]="wallY + wallSvgHeight + 15"
+                stroke="#6c757d"
+                stroke-width="1"
+              />
+              <text
+                [attr.x]="wallX + (leftWallEndSvg - wallX) / 2"
+                [attr.y]="wallY + wallSvgHeight + 12"
+                fill="#495057"
+                font-size="10"
+                text-anchor="middle"
+              >
+                {{ leftWallWidth }}mm
+              </text>
+
+              <!-- Pillar + Door + Pillar combined -->
+              <line
+                [attr.x1]="leftWallEndSvg"
+                [attr.y1]="wallY + wallSvgHeight + 30"
+                [attr.x2]="rightPillarEndSvg"
+                [attr.y2]="wallY + wallSvgHeight + 30"
+                stroke="#28a745"
+                stroke-width="1.5"
+              />
+              <text
+                [attr.x]="
+                  leftWallEndSvg + (rightPillarEndSvg - leftWallEndSvg) / 2
+                "
+                [attr.y]="wallY + wallSvgHeight + 27"
+                fill="#28a745"
+                font-size="10"
+                font-weight="600"
+                text-anchor="middle"
+              >
+                Opening: {{ pillarWidth }}+{{ doorSpaceWidth }}+{{
+                  pillarWidth
+                }}mm
+              </text>
+
+              <!-- Right wall dimension -->
+              <line
+                [attr.x1]="rightPillarEndSvg"
+                [attr.y1]="wallY + wallSvgHeight + 15"
+                [attr.x2]="wallX + wallSvgWidth"
+                [attr.y2]="wallY + wallSvgHeight + 15"
+                stroke="#6c757d"
+                stroke-width="1"
+              />
+              <text
+                [attr.x]="
+                  rightPillarEndSvg +
+                  (wallX + wallSvgWidth - rightPillarEndSvg) / 2
+                "
+                [attr.y]="wallY + wallSvgHeight + 12"
+                fill="#495057"
+                font-size="10"
+                text-anchor="middle"
+              >
+                {{ rightWallWidthMm }}mm
+              </text>
+            </g>
+          </g>
 
           <!-- Length dimension line (top) -->
           <g>

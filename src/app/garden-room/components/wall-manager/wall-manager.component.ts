@@ -8,6 +8,7 @@ import {
 } from "@angular/forms";
 import { GardenRoomStore, updateWalls } from "../../store/garden-room.store";
 import { Wall } from "../../models/wall.model";
+import { StructuralCalculationService } from "../../services/structural-calculation.service";
 
 /**
  * WallManagerComponent - Configure wall dimensions and member layouts
@@ -23,6 +24,7 @@ import { Wall } from "../../models/wall.model";
 export class WallManagerComponent {
   wallForm: FormGroup;
   readonly store = inject(GardenRoomStore);
+  private readonly structuralService = inject(StructuralCalculationService);
   selectedWallId = "front";
 
   constructor(private fb: FormBuilder) {
@@ -204,6 +206,7 @@ export class WallManagerComponent {
     const pillarWidth = wall.pillarWidthMm || 400;
     const leftWallWidth = wall.leftWallWidthMm || 800;
     const doorSpaceWidth = wall.doorSpaceWidthMm || 1000;
+    const studWidthMm = wall.studWidthMm || 45;
     const rightWallWidth =
       wall.lengthMm - leftWallWidth - 2 * pillarWidth - doorSpaceWidth;
 
@@ -214,23 +217,30 @@ export class WallManagerComponent {
     const rightPillarEnd = doorSpaceEnd + pillarWidth;
     // rightWallEnd = wall.lengthMm
 
-    // Section 1: Left Wall (0 to leftWallWidth) - decorative stud only on LEFT
-    // This wall needs its own stud layout with decorativeSide='left'
-    const leftWallStuds = layout.resolvedStudPositionsMm.filter(
-      (pos: number) => pos >= 0 && pos < leftWallEnd,
+    // Section 1: Left Wall (0 to leftWallWidth) - generate proper stud layout
+    // Create a temporary wall object for left section
+    const leftWallSection = {
+      ...wall,
+      lengthMm: leftWallWidth,
+      decorativeSide: "left", // Decorative stud on left (outer) edge only
+    };
+    const leftWallLayout =
+      this.structuralService.generateStudLayout(leftWallSection);
+
+    leftWallLayout.resolvedStudPositionsMm.forEach(
+      (positionMm: number, index: number) => {
+        members.push({
+          id: `${wall.id}-left-wall-stud-${index}`,
+          type: "stud",
+          positionMm, // Position is relative to left wall start (0)
+          lengthMm:
+            wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+          heightMm:
+            wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+          metadata: { section: "left-wall" },
+        });
+      },
     );
-    leftWallStuds.forEach((positionMm: number, index: number) => {
-      members.push({
-        id: `${wall.id}-left-wall-stud-${index}`,
-        type: "stud",
-        positionMm,
-        lengthMm:
-          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-        heightMm:
-          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-        metadata: { section: "left-wall" },
-      });
-    });
 
     // Section 2: Left Pillar (leftWallWidth to leftPillarEnd)
     members.push({
@@ -259,23 +269,33 @@ export class WallManagerComponent {
       metadata: { section: "right-pillar", width: pillarWidth },
     });
 
-    // Section 5: Right Wall (rightPillarEnd to wallLength) - decorative stud only on RIGHT
-    // This wall needs its own stud layout with decorativeSide='right'
-    const rightWallStuds = layout.resolvedStudPositionsMm.filter(
-      (pos: number) => pos >= rightPillarEnd && pos <= wall.lengthMm,
+    // Section 5: Right Wall (rightPillarEnd to wallLength) - generate proper stud layout
+    // Create a temporary wall object for right section
+    // IMPORTANT: Use startFromRight=true so studs start from the right edge (outer wall boundary)
+    const rightWallSection = {
+      ...wall,
+      lengthMm: rightWallWidth,
+      decorativeSide: "right", // Decorative stud on right (outer) edge only
+    };
+    const rightWallLayout = this.structuralService.generateStudLayout(
+      rightWallSection,
+      true, // startFromRight = true
     );
-    rightWallStuds.forEach((positionMm: number, index: number) => {
-      members.push({
-        id: `${wall.id}-right-wall-stud-${index}`,
-        type: "stud",
-        positionMm,
-        lengthMm:
-          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-        heightMm:
-          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-        metadata: { section: "right-wall" },
-      });
-    });
+
+    rightWallLayout.resolvedStudPositionsMm.forEach(
+      (relativePos: number, index: number) => {
+        members.push({
+          id: `${wall.id}-right-wall-stud-${index}`,
+          type: "stud",
+          positionMm: rightPillarEnd + relativePos, // Offset by right pillar end
+          lengthMm:
+            wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+          heightMm:
+            wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+          metadata: { section: "right-wall" },
+        });
+      },
+    );
 
     // Add plates for each section
     members.push(
@@ -316,6 +336,7 @@ export class WallManagerComponent {
     );
 
     // Add noggins for left wall
+    const leftWallStuds = leftWallLayout.resolvedStudPositionsMm;
     const leftWallStudPositions = leftWallStuds.sort(
       (a: number, b: number) => a - b,
     );
@@ -335,6 +356,7 @@ export class WallManagerComponent {
     }
 
     // Add noggins for right wall
+    const rightWallStuds = rightWallLayout.resolvedStudPositionsMm;
     const rightWallStudPositions = rightWallStuds.sort(
       (a: number, b: number) => a - b,
     );

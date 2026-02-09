@@ -85,9 +85,10 @@ export class StructuralCalculationService {
   /**
    * Generate stud layout for a wall
    * @param wall Wall to generate layout for
+   * @param startFromRight If true, calculate positions starting from the right edge (useful for right wall sections)
    * @returns StudLayout with resolved positions
    */
-  generateStudLayout(wall: Wall): StudLayout {
+  generateStudLayout(wall: Wall, startFromRight: boolean = false): StudLayout {
     const studWidthMm = wall.studWidthMm || 45;
     const includeIrregularLast = wall.includeIrregularLastStud ?? true;
     const decorativeSide = wall.decorativeSide || "both";
@@ -98,6 +99,7 @@ export class StructuralCalculationService {
       wall.decorativeOffsetMm,
       studWidthMm,
       decorativeSide,
+      startFromRight,
     );
 
     // Then place standard studs with decorative positions as boundaries
@@ -107,6 +109,7 @@ export class StructuralCalculationService {
       studWidthMm,
       includeIrregularLast,
       decorativePositions,
+      startFromRight,
     );
 
     // Combine all positions and sort
@@ -127,7 +130,7 @@ export class StructuralCalculationService {
    * Place standard structural studs with equal spacing
    * Decorative studs reduce available space - standard studs fill the remaining area
    * Algorithm:
-   * 1. Always place first stud at position 0
+   * 1. Always place first stud at position 0 (or last stud at wall end if startFromRight)
    * 2. If decorative studs exist, calculate available space between them
    * 3. Place studs at equal intervals in the available space
    * 4. Optionally include irregular last stud
@@ -137,6 +140,7 @@ export class StructuralCalculationService {
    * @param studWidthMm Stud width in mm
    * @param includeIrregularLast Include last stud if gap is irregular
    * @param decorativePositions Positions of decorative studs that reduce available space
+   * @param startFromRight If true, start placing studs from the right edge instead of left
    * @returns Array of stud positions in mm (center positions)
    */
   placeStandardStuds(
@@ -145,30 +149,43 @@ export class StructuralCalculationService {
     studWidthMm: number = 45,
     includeIrregularLast: boolean = true,
     decorativePositions: number[] = [],
+    startFromRight: boolean = false,
   ): number[] {
     const positions: number[] = [];
 
     // Calculate on-center spacing from edge-to-edge gap
     const onCenterSpacing = studGapMm + studWidthMm;
 
-    // Always start with a stud at position 0
-    positions.push(0);
+    // Determine start and end stud positions based on direction
+    const startStudPosition = startFromRight ? wallLengthMm - studWidthMm : 0;
+    const endStudPosition = startFromRight ? 0 : wallLengthMm - studWidthMm;
+
+    // Always start with a stud at the starting position
+    positions.push(startStudPosition);
 
     // Determine boundaries based on decorative stud positions
     const sortedDecorative = [...decorativePositions].sort((a, b) => a - b);
 
-    // If there are NO decorative studs, place studs from 0 to end with regular spacing
+    // If there are NO decorative studs, place studs from start to end with regular spacing
     if (sortedDecorative.length === 0) {
-      let currentPosition = 0;
+      let currentPosition = startStudPosition;
 
       while (true) {
-        currentPosition += onCenterSpacing;
-
-        if (currentPosition >= wallLengthMm) {
-          break;
+        if (startFromRight) {
+          currentPosition -= onCenterSpacing;
+          if (currentPosition <= 0) {
+            break;
+          }
+        } else {
+          currentPosition += onCenterSpacing;
+          if (currentPosition >= wallLengthMm) {
+            break;
+          }
         }
 
-        const distanceToEnd = wallLengthMm - currentPosition;
+        const distanceToEnd = startFromRight
+          ? currentPosition
+          : wallLengthMm - currentPosition;
 
         if (distanceToEnd < onCenterSpacing) {
           if (includeIrregularLast) {
@@ -180,10 +197,10 @@ export class StructuralCalculationService {
         positions.push(currentPosition);
       }
 
-      // Always place last stud - its left edge should be at (wallLength - studWidth)
-      // so the stud ends exactly at wallLength
-      if (wallLengthMm > studWidthMm) {
-        positions.push(wallLengthMm - studWidthMm);
+      // Always place end stud - its left edge should be at the boundary
+      const endStud = startFromRight ? 0 : wallLengthMm - studWidthMm;
+      if (wallLengthMm > studWidthMm && !positions.includes(endStud)) {
+        positions.push(endStud);
       }
 
       return positions;
@@ -192,14 +209,10 @@ export class StructuralCalculationService {
     // If there ARE decorative studs, place studs only BETWEEN decorative boundaries
     // Pattern: start stud -> gap -> left decorative -> gap -> standard studs -> gap -> right decorative -> gap -> end stud
 
-    // Find first decorative after start stud (position 0)
-    const leftDecorative = sortedDecorative.find((pos) => pos > studWidthMm);
-    // Find last decorative before end stud position
-    const endStudPosition = wallLengthMm - studWidthMm;
-    const rightDecorative = sortedDecorative
-      .slice()
-      .reverse()
-      .find((pos) => pos < endStudPosition);
+    // Determine which decoratives exist based on their position relative to wall center
+    const wallCenter = wallLengthMm / 2;
+    const leftDecorative = sortedDecorative.find((pos) => pos < wallCenter);
+    const rightDecorative = sortedDecorative.find((pos) => pos >= wallCenter);
 
     // If we have both left and right decoratives, place studs between them
     if (leftDecorative !== undefined && rightDecorative !== undefined) {
@@ -242,7 +255,11 @@ export class StructuralCalculationService {
       }
     } else if (rightDecorative !== undefined) {
       // Only right decorative exists - place studs from start to right decorative
-      let currentPosition = studWidthMm + studGapMm;
+      // When startFromRight: place studs from left edge (0) UP TO right decorative
+      // When NOT startFromRight: place studs from first stud gap UP TO right decorative
+      let currentPosition = startFromRight
+        ? studWidthMm + studGapMm // Start after the first stud (at 0)
+        : studWidthMm + studGapMm;
 
       while (currentPosition < rightDecorative) {
         const distanceToRightDecorative = rightDecorative - currentPosition;
@@ -255,14 +272,22 @@ export class StructuralCalculationService {
         }
 
         positions.push(currentPosition);
-        currentPosition += onCenterSpacing;
+        currentPosition += onCenterSpacing; // Always increment, never decrement
       }
     }
 
     // Always place end stud - its left edge should be at (wallLength - studWidth)
     // so the stud ends exactly at wallLength
     if (wallLengthMm > studWidthMm) {
-      positions.push(wallLengthMm - studWidthMm);
+      const endStud = wallLengthMm - studWidthMm;
+      if (!positions.includes(endStud)) {
+        positions.push(endStud);
+      }
+    }
+
+    // When startFromRight, also ensure we have a stud at position 0 (left edge)
+    if (startFromRight && !positions.includes(0)) {
+      positions.push(0);
     }
 
     return positions;
@@ -276,6 +301,7 @@ export class StructuralCalculationService {
    * @param decorativeOffsetMm Edge-to-edge offset from wall edges in mm
    * @param studWidthMm Stud width in mm (default 45)
    * @param decorativeSide Which side(s) to place decorative studs: 'both', 'left', 'right', or 'none'
+   * @param startFromRight If true, reverse the meaning of left/right decoratives
    * @returns Array of decorative stud LEFT EDGE positions in mm
    */
   placeDecorativeStuds(
@@ -283,6 +309,7 @@ export class StructuralCalculationService {
     decorativeOffsetMm: number,
     studWidthMm: number = 45,
     decorativeSide: "both" | "left" | "right" | "none" = "both",
+    startFromRight: boolean = false,
   ): number[] {
     if (decorativeOffsetMm <= 0 || decorativeSide === "none") {
       return [];
@@ -301,9 +328,21 @@ export class StructuralCalculationService {
     const rightDecorativePosition =
       wallLengthMm - studWidthMm - decorativeOffsetMm - studWidthMm;
 
+    // When startFromRight is true and decorativeSide is 'left' or 'right',
+    // we need to place the decorative on the boundary side
+    // For a right wall section: 'right' decorative should be on the far right (outer edge)
+    // For a left wall section: 'left' decorative should be on the far left (outer edge)
+
+    const effectiveSide =
+      startFromRight && decorativeSide === "right"
+        ? "right" // Place on right edge (outer boundary)
+        : startFromRight && decorativeSide === "left"
+          ? "both" // If left specified but startFromRight, allow both
+          : decorativeSide;
+
     // Add left decorative if requested and doesn't overlap with right
     if (
-      (decorativeSide === "both" || decorativeSide === "left") &&
+      (effectiveSide === "both" || effectiveSide === "left") &&
       leftDecorativePosition + studWidthMm <= wallLengthMm / 2
     ) {
       positions.push(leftDecorativePosition);
@@ -311,7 +350,7 @@ export class StructuralCalculationService {
 
     // Add right decorative if requested and doesn't overlap with left
     if (
-      (decorativeSide === "both" || decorativeSide === "right") &&
+      (effectiveSide === "both" || effectiveSide === "right") &&
       rightDecorativePosition >= wallLengthMm / 2
     ) {
       positions.push(rightDecorativePosition);
