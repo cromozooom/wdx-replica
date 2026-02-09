@@ -23,6 +23,9 @@ export interface Wall {
   /** Decorative offset in mm for aesthetic studs */
   decorativeOffsetMm: number;
 
+  /** Which side(s) to place decorative studs: 'both', 'left', 'right', or 'none' */
+  decorativeSide?: "both" | "left" | "right" | "none";
+
   /** Gap between structural studs in mm */
   studGapMm: number;
 
@@ -35,11 +38,14 @@ export interface Wall {
   /** Door opening configuration (front wall only) */
   hasDoorOpening?: boolean;
 
-  /** Pillar width in mm (left and right are equal) */
+  /** Pillar width in mm (applies to both left and right pillars) */
   pillarWidthMm?: number;
 
-  /** Left full-height section width in mm */
-  leftSectionWidthMm?: number;
+  /** Left wall section width in mm (before left pillar) */
+  leftWallWidthMm?: number;
+
+  /** Door space width in mm (between the two pillars) */
+  doorSpaceWidthMm?: number;
 
   /** Stud width in mm (default 45mm) */
   studWidthMm?: number;

@@ -90,12 +90,14 @@ export class StructuralCalculationService {
   generateStudLayout(wall: Wall): StudLayout {
     const studWidthMm = wall.studWidthMm || 45;
     const includeIrregularLast = wall.includeIrregularLastStud ?? true;
+    const decorativeSide = wall.decorativeSide || "both";
 
     // First, place decorative studs
     const decorativePositions = this.placeDecorativeStuds(
       wall.lengthMm,
       wall.decorativeOffsetMm,
       studWidthMm,
+      decorativeSide,
     );
 
     // Then place standard studs with decorative positions as boundaries
@@ -273,14 +275,16 @@ export class StructuralCalculationService {
    * @param wallLengthMm Wall length in mm
    * @param decorativeOffsetMm Edge-to-edge offset from wall edges in mm
    * @param studWidthMm Stud width in mm (default 45)
+   * @param decorativeSide Which side(s) to place decorative studs: 'both', 'left', 'right', or 'none'
    * @returns Array of decorative stud LEFT EDGE positions in mm
    */
   placeDecorativeStuds(
     wallLengthMm: number,
     decorativeOffsetMm: number,
     studWidthMm: number = 45,
+    decorativeSide: "both" | "left" | "right" | "none" = "both",
   ): number[] {
-    if (decorativeOffsetMm <= 0) {
+    if (decorativeOffsetMm <= 0 || decorativeSide === "none") {
       return [];
     }
 
@@ -297,13 +301,19 @@ export class StructuralCalculationService {
     const rightDecorativePosition =
       wallLengthMm - studWidthMm - decorativeOffsetMm - studWidthMm;
 
-    // Add left decorative if it doesn't overlap with right
-    if (leftDecorativePosition + studWidthMm <= wallLengthMm / 2) {
+    // Add left decorative if requested and doesn't overlap with right
+    if (
+      (decorativeSide === "both" || decorativeSide === "left") &&
+      leftDecorativePosition + studWidthMm <= wallLengthMm / 2
+    ) {
       positions.push(leftDecorativePosition);
     }
 
-    // Add right decorative if it doesn't overlap with left
-    if (rightDecorativePosition >= wallLengthMm / 2) {
+    // Add right decorative if requested and doesn't overlap with left
+    if (
+      (decorativeSide === "both" || decorativeSide === "right") &&
+      rightDecorativePosition >= wallLengthMm / 2
+    ) {
       positions.push(rightDecorativePosition);
     }
 

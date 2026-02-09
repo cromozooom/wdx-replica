@@ -81,6 +81,24 @@
             </div>
           </div>
 
+          <div class="form-group">
+            <label for="decorativeSide">Decorative Stud Placement</label>
+            <select
+              id="decorativeSide"
+              formControlName="decorativeSide"
+              class="form-control"
+            >
+              <option value="both">Both Sides</option>
+              <option value="left">Left Side Only</option>
+              <option value="right">Right Side Only</option>
+              <option value="none">None</option>
+            </select>
+            <small class="form-text text-muted">
+              Choose which side(s) to place decorative studs. For door opening
+              walls, left/right walls automatically use one-sided placement.
+            </small>
+          </div>
+
           <div class="form-row">
             <div class="form-group">
               <label for="plateThicknessTopMm">Top Plate Thickness (mm)</label>
@@ -156,8 +174,12 @@
                   formControlName="hasDoorOpening"
                   class="form-check-input"
                 />
-                Enable Door Opening (splits wall into 4 sections)
+                Enable Door Opening (splits wall into 5 sections)
               </label>
+              <small class="form-text text-muted">
+                5 sections: Left Wall | Left Pillar | Door Space | Right Pillar
+                | Right Wall
+              </small>
             </div>
 
             <div
@@ -166,14 +188,14 @@
             >
               <div class="form-group">
                 <label for="pillarWidthMm"
-                  >Pillar Width (mm) - both pillars</label
+                  >Pillar Width (mm) - applies to both pillars</label
                 >
                 <input
                   type="number"
                   id="pillarWidthMm"
                   formControlName="pillarWidthMm"
                   class="form-control"
-                  placeholder="e.g., 100"
+                  placeholder="e.g., 400"
                 />
                 <div
                   class="error-message"
@@ -182,42 +204,72 @@
                     wallForm.get('pillarWidthMm')?.touched
                   "
                 >
-                  Pillar width must be at least 45 mm
+                  Pillar width must be at least 50 mm
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="leftSectionWidthMm">Left Section Width (mm)</label>
+                <label for="leftWallWidthMm">Left Wall Width (mm)</label>
                 <input
                   type="number"
-                  id="leftSectionWidthMm"
-                  formControlName="leftSectionWidthMm"
+                  id="leftWallWidthMm"
+                  formControlName="leftWallWidthMm"
                   class="form-control"
-                  placeholder="e.g., 1000"
+                  placeholder="e.g., 800"
                 />
+                <small class="form-text text-muted">
+                  Left wall has decorative stud on LEFT side only
+                </small>
                 <div
                   class="error-message"
                   *ngIf="
-                    wallForm.get('leftSectionWidthMm')?.invalid &&
-                    wallForm.get('leftSectionWidthMm')?.touched
+                    wallForm.get('leftWallWidthMm')?.invalid &&
+                    wallForm.get('leftWallWidthMm')?.touched
                   "
                 >
-                  Left section width must be at least 300 mm
+                  Left wall width must be at least 300 mm
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="rightSectionWidthMm"
-                  >Right Section Width (calculated)</label
+                <label for="doorSpaceWidthMm">Door Space Width (mm)</label>
+                <input
+                  type="number"
+                  id="doorSpaceWidthMm"
+                  formControlName="doorSpaceWidthMm"
+                  class="form-control"
+                  placeholder="e.g., 1000"
+                />
+                <small class="form-text text-muted">
+                  Opening between the two pillars
+                </small>
+                <div
+                  class="error-message"
+                  *ngIf="
+                    wallForm.get('doorSpaceWidthMm')?.invalid &&
+                    wallForm.get('doorSpaceWidthMm')?.touched
+                  "
+                >
+                  Door space width must be at least 500 mm
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="rightWallWidthMm"
+                  >Right Wall Width (calculated)</label
                 >
                 <input
                   type="number"
-                  id="rightSectionWidthMm"
-                  [value]="rightSectionWidthMm"
+                  id="rightWallWidthMm"
+                  [value]="rightWallWidthMm"
                   class="form-control"
                   readonly
                   disabled
                 />
+                <small class="form-text text-muted">
+                  Right wall has decorative stud on RIGHT side only. Calculated
+                  as: Wall Length - Left Wall - (2 × Pillar Width) - Door Space
+                </small>
                 <small class="form-text text-muted">
                   Calculated as: Total Length - (2 × Pillar Width) - Left
                   Section Width
@@ -420,157 +472,9 @@
             </g>
           </g>
 
-          <!-- Door opening sections (if enabled) -->
-          <g
-            *ngIf="selectedWall.hasDoorOpening && selectedWall.name === 'Front'"
-          >
-            <!-- Continuous plates across entire wall -->
-            <rect
-              [attr.x]="wallX"
-              [attr.y]="wallY + wallSvgHeight - plateBottomSvgHeight"
-              [attr.width]="wallSvgWidth"
-              [attr.height]="plateBottomSvgHeight"
-              fill="#8b4513"
-              stroke="#654321"
-              stroke-width="1"
-            />
-            <rect
-              [attr.x]="wallX"
-              [attr.y]="wallY"
-              [attr.width]="wallSvgWidth"
-              [attr.height]="plateTopSvgHeight"
-              fill="#8b4513"
-              stroke="#654321"
-              stroke-width="1"
-            />
-
-            <!-- Left section boundary -->
-            <line
-              [attr.x1]="
-                wallX +
-                (selectedWall.leftSectionWidthMm! / selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y1]="wallY"
-              [attr.x2]="
-                wallX +
-                (selectedWall.leftSectionWidthMm! / selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y2]="wallY + wallSvgHeight"
-              stroke="#dc3545"
-              stroke-width="3"
-              stroke-dasharray="5,5"
-            />
-
-            <!-- Left pillar boundary -->
-            <line
-              [attr.x1]="
-                wallX +
-                ((selectedWall.leftSectionWidthMm! +
-                  selectedWall.pillarWidthMm!) /
-                  selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y1]="wallY"
-              [attr.x2]="
-                wallX +
-                ((selectedWall.leftSectionWidthMm! +
-                  selectedWall.pillarWidthMm!) /
-                  selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y2]="wallY + wallSvgHeight"
-              stroke="#dc3545"
-              stroke-width="3"
-              stroke-dasharray="5,5"
-            />
-
-            <!-- Right pillar boundary -->
-            <line
-              [attr.x1]="
-                wallX +
-                ((selectedWall.lengthMm -
-                  selectedWall.pillarWidthMm! -
-                  rightSectionWidthMm) /
-                  selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y1]="wallY"
-              [attr.x2]="
-                wallX +
-                ((selectedWall.lengthMm -
-                  selectedWall.pillarWidthMm! -
-                  rightSectionWidthMm) /
-                  selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y2]="wallY + wallSvgHeight"
-              stroke="#dc3545"
-              stroke-width="3"
-              stroke-dasharray="5,5"
-            />
-
-            <!-- Section labels -->
-            <text
-              [attr.x]="
-                wallX +
-                (selectedWall.leftSectionWidthMm! / 2 / selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y]="wallY + wallSvgHeight / 2"
-              fill="#495057"
-              font-size="12"
-              text-anchor="middle"
-            >
-              Left Wall
-            </text>
-            <text
-              [attr.x]="
-                wallX +
-                ((selectedWall.leftSectionWidthMm! +
-                  selectedWall.pillarWidthMm! / 2) /
-                  selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y]="wallY + wallSvgHeight / 2"
-              fill="#495057"
-              font-size="12"
-              text-anchor="middle"
-            >
-              Pillar
-            </text>
-            <text
-              [attr.x]="
-                wallX +
-                ((selectedWall.lengthMm -
-                  selectedWall.pillarWidthMm! -
-                  rightSectionWidthMm / 2) /
-                  selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y]="wallY + wallSvgHeight / 2"
-              fill="#495057"
-              font-size="12"
-              text-anchor="middle"
-            >
-              Pillar
-            </text>
-            <text
-              [attr.x]="
-                wallX +
-                ((selectedWall.lengthMm - rightSectionWidthMm / 2) /
-                  selectedWall.lengthMm) *
-                  wallSvgWidth
-              "
-              [attr.y]="wallY + wallSvgHeight / 2"
-              fill="#495057"
-              font-size="12"
-              text-anchor="middle"
-            >
-              Right Wall
-            </text>
-          </g>
+          <!-- TODO: Door opening SVG rendering - Temporarily disabled.
+               Needs complete rewrite for 5-section model: Left Wall | Left Pillar | Door Space | Right Pillar | Right Wall
+               Current properties: leftWallWidthMm, pillarWidthMm, doorSpaceWidthMm, rightWallWidthMm (calculated) -->
 
           <!-- Length dimension line (top) -->
           <g>

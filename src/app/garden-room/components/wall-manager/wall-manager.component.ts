@@ -30,11 +30,13 @@ export class WallManagerComponent {
       lengthMm: [3000, [Validators.required, Validators.min(500)]],
       studGapMm: [400, [Validators.required, Validators.min(300)]],
       decorativeOffsetMm: [0, [Validators.required, Validators.min(0)]],
+      decorativeSide: ["both"],
       plateThicknessTopMm: [45, [Validators.required, Validators.min(20)]],
       plateThicknessBottomMm: [45, [Validators.required, Validators.min(20)]],
       hasDoorOpening: [false],
-      pillarWidthMm: [100, [Validators.required, Validators.min(50)]],
-      leftSectionWidthMm: [1000, [Validators.required, Validators.min(300)]],
+      pillarWidthMm: [400, [Validators.required, Validators.min(50)]],
+      leftWallWidthMm: [800, [Validators.required, Validators.min(300)]],
+      doorSpaceWidthMm: [1000, [Validators.required, Validators.min(500)]],
       studWidthMm: [
         45,
         [Validators.required, Validators.min(20), Validators.max(100)],
@@ -63,11 +65,13 @@ export class WallManagerComponent {
         lengthMm: wall.lengthMm,
         studGapMm: wall.studGapMm,
         decorativeOffsetMm: wall.decorativeOffsetMm,
+        decorativeSide: wall.decorativeSide || "both",
         plateThicknessTopMm: wall.plateThicknessTopMm,
         plateThicknessBottomMm: wall.plateThicknessBottomMm,
         hasDoorOpening: wall.hasDoorOpening || false,
-        pillarWidthMm: wall.pillarWidthMm || 100,
-        leftSectionWidthMm: wall.leftSectionWidthMm || 1000,
+        pillarWidthMm: wall.pillarWidthMm || 400,
+        leftWallWidthMm: wall.leftWallWidthMm || 800,
+        doorSpaceWidthMm: wall.doorSpaceWidthMm || 1000,
         studWidthMm: wall.studWidthMm || 45,
         includeIrregularLastStud: wall.includeIrregularLastStud ?? true,
       });
@@ -94,11 +98,13 @@ export class WallManagerComponent {
           lengthMm: this.wallForm.value.lengthMm,
           studGapMm: this.wallForm.value.studGapMm,
           decorativeOffsetMm: this.wallForm.value.decorativeOffsetMm,
+          decorativeSide: this.wallForm.value.decorativeSide,
           plateThicknessTopMm: this.wallForm.value.plateThicknessTopMm,
           plateThicknessBottomMm: this.wallForm.value.plateThicknessBottomMm,
           hasDoorOpening: this.wallForm.value.hasDoorOpening,
           pillarWidthMm: this.wallForm.value.pillarWidthMm,
-          leftSectionWidthMm: this.wallForm.value.leftSectionWidthMm,
+          leftWallWidthMm: this.wallForm.value.leftWallWidthMm,
+          doorSpaceWidthMm: this.wallForm.value.doorSpaceWidthMm,
           studWidthMm: this.wallForm.value.studWidthMm,
           includeIrregularLastStud:
             this.wallForm.value.includeIrregularLastStud,
@@ -186,7 +192,8 @@ export class WallManagerComponent {
   }
 
   /**
-   * Generate members for wall with door opening (4 sections)
+   * Generate members for wall with door opening (5 sections)
+   * Sections: [Left Wall] [Left Pillar] [Door Space] [Right Pillar] [Right Wall]
    */
   private generateMembersWithDoorOpening(
     wall: any,
@@ -194,33 +201,42 @@ export class WallManagerComponent {
     wallHeight: number,
   ) {
     const members: any[] = [];
-    const pillarWidth = wall.pillarWidthMm || 100;
-    const leftSectionWidth = wall.leftSectionWidthMm || 1000;
-    const rightSectionWidth =
-      wall.lengthMm - 2 * pillarWidth - leftSectionWidth;
+    const pillarWidth = wall.pillarWidthMm || 400;
+    const leftWallWidth = wall.leftWallWidthMm || 800;
+    const doorSpaceWidth = wall.doorSpaceWidthMm || 1000;
+    const rightWallWidth =
+      wall.lengthMm - leftWallWidth - 2 * pillarWidth - doorSpaceWidth;
 
-    // Section 1: Left full-height wall (0 to leftSectionWidth) with ONE decorative offset
-    const leftStuds = layout.resolvedStudPositionsMm.filter(
-      (pos: number) => pos >= wall.decorativeOffsetMm && pos < leftSectionWidth,
+    // Calculate section boundaries
+    const leftWallEnd = leftWallWidth;
+    const leftPillarEnd = leftWallEnd + pillarWidth;
+    const doorSpaceEnd = leftPillarEnd + doorSpaceWidth;
+    const rightPillarEnd = doorSpaceEnd + pillarWidth;
+    // rightWallEnd = wall.lengthMm
+
+    // Section 1: Left Wall (0 to leftWallWidth) - decorative stud only on LEFT
+    // This wall needs its own stud layout with decorativeSide='left'
+    const leftWallStuds = layout.resolvedStudPositionsMm.filter(
+      (pos: number) => pos >= 0 && pos < leftWallEnd,
     );
-    leftStuds.forEach((positionMm: number, index: number) => {
+    leftWallStuds.forEach((positionMm: number, index: number) => {
       members.push({
-        id: `${wall.id}-left-stud-${index}`,
+        id: `${wall.id}-left-wall-stud-${index}`,
         type: "stud",
         positionMm,
         lengthMm:
           wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
         heightMm:
           wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-        metadata: { section: "left-full-height" },
+        metadata: { section: "left-wall" },
       });
     });
 
-    // Section 2: Left pillar (leftSectionWidth to leftSectionWidth + pillarWidth)
+    // Section 2: Left Pillar (leftWallWidth to leftPillarEnd)
     members.push({
       id: `${wall.id}-left-pillar`,
       type: "stud",
-      positionMm: leftSectionWidth,
+      positionMm: leftWallEnd,
       lengthMm:
         wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
       heightMm:
@@ -228,12 +244,14 @@ export class WallManagerComponent {
       metadata: { section: "left-pillar", width: pillarWidth },
     });
 
-    // Section 3: Right pillar (lengthMm - pillarWidth - rightSectionWidth to lengthMm - rightSectionWidth)
-    const rightPillarPos = wall.lengthMm - pillarWidth - rightSectionWidth;
+    // Section 3: Door Space (leftPillarEnd to doorSpaceEnd)
+    // No studs in door opening
+
+    // Section 4: Right Pillar (doorSpaceEnd to rightPillarEnd)
     members.push({
       id: `${wall.id}-right-pillar`,
       type: "stud",
-      positionMm: rightPillarPos,
+      positionMm: doorSpaceEnd,
       lengthMm:
         wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
       heightMm:
@@ -241,94 +259,97 @@ export class WallManagerComponent {
       metadata: { section: "right-pillar", width: pillarWidth },
     });
 
-    // Section 4: Right full-height wall (lengthMm - rightSectionWidth to lengthMm) with ONE decorative offset
-    const rightSectionStart = wall.lengthMm - rightSectionWidth;
-    const rightStuds = layout.resolvedStudPositionsMm.filter(
-      (pos: number) =>
-        pos >= rightSectionStart + wall.decorativeOffsetMm &&
-        pos <= wall.lengthMm,
+    // Section 5: Right Wall (rightPillarEnd to wallLength) - decorative stud only on RIGHT
+    // This wall needs its own stud layout with decorativeSide='right'
+    const rightWallStuds = layout.resolvedStudPositionsMm.filter(
+      (pos: number) => pos >= rightPillarEnd && pos <= wall.lengthMm,
     );
-    rightStuds.forEach((positionMm: number, index: number) => {
+    rightWallStuds.forEach((positionMm: number, index: number) => {
       members.push({
-        id: `${wall.id}-right-stud-${index}`,
+        id: `${wall.id}-right-wall-stud-${index}`,
         type: "stud",
         positionMm,
         lengthMm:
           wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
         heightMm:
           wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-        metadata: { section: "right-full-height" },
+        metadata: { section: "right-wall" },
       });
     });
 
     // Add plates for each section
     members.push(
-      // Left section plates
+      // Left wall plates
       {
-        id: `${wall.id}-left-plate-bottom`,
+        id: `${wall.id}-left-wall-plate-bottom`,
         type: "plate",
         positionMm: 0,
-        lengthMm: leftSectionWidth,
+        lengthMm: leftWallWidth,
         heightMm: wall.plateThicknessBottomMm,
-        metadata: { position: "bottom", section: "left" },
+        metadata: { position: "bottom", section: "left-wall" },
       },
       {
-        id: `${wall.id}-left-plate-top`,
+        id: `${wall.id}-left-wall-plate-top`,
         type: "plate",
         positionMm: 0,
-        lengthMm: leftSectionWidth,
+        lengthMm: leftWallWidth,
         heightMm: wall.plateThicknessTopMm,
-        metadata: { position: "top", section: "left" },
+        metadata: { position: "top", section: "left-wall" },
       },
-      // Right section plates
+      // Right wall plates
       {
-        id: `${wall.id}-right-plate-bottom`,
+        id: `${wall.id}-right-wall-plate-bottom`,
         type: "plate",
-        positionMm: rightSectionStart,
-        lengthMm: rightSectionWidth,
+        positionMm: rightPillarEnd,
+        lengthMm: rightWallWidth,
         heightMm: wall.plateThicknessBottomMm,
-        metadata: { position: "bottom", section: "right" },
+        metadata: { position: "bottom", section: "right-wall" },
       },
       {
-        id: `${wall.id}-right-plate-top`,
+        id: `${wall.id}-right-wall-plate-top`,
         type: "plate",
-        positionMm: rightSectionStart,
-        lengthMm: rightSectionWidth,
+        positionMm: rightPillarEnd,
+        lengthMm: rightWallWidth,
         heightMm: wall.plateThicknessTopMm,
-        metadata: { position: "top", section: "right" },
+        metadata: { position: "top", section: "right-wall" },
       },
     );
 
-    // Add noggins for left section
-    const leftStudPositions = leftStuds.sort((a: number, b: number) => a - b);
-    for (let i = 0; i < leftStudPositions.length - 1; i++) {
-      const gapLength = leftStudPositions[i + 1] - leftStudPositions[i];
+    // Add noggins for left wall
+    const leftWallStudPositions = leftWallStuds.sort(
+      (a: number, b: number) => a - b,
+    );
+    for (let i = 0; i < leftWallStudPositions.length - 1; i++) {
+      const gapLength = leftWallStudPositions[i + 1] - leftWallStudPositions[i];
       members.push({
-        id: `${wall.id}-left-noggin-${i}`,
+        id: `${wall.id}-left-wall-noggin-${i}`,
         type: "noggin",
-        positionMm: leftStudPositions[i],
+        positionMm: leftWallStudPositions[i],
         lengthMm: gapLength,
         heightMm: 45,
         metadata: {
-          section: "left",
-          between: [leftStudPositions[i], leftStudPositions[i + 1]],
+          section: "left-wall",
+          between: [leftWallStudPositions[i], leftWallStudPositions[i + 1]],
         },
       });
     }
 
-    // Add noggins for right section
-    const rightStudPositions = rightStuds.sort((a: number, b: number) => a - b);
-    for (let i = 0; i < rightStudPositions.length - 1; i++) {
-      const gapLength = rightStudPositions[i + 1] - rightStudPositions[i];
+    // Add noggins for right wall
+    const rightWallStudPositions = rightWallStuds.sort(
+      (a: number, b: number) => a - b,
+    );
+    for (let i = 0; i < rightWallStudPositions.length - 1; i++) {
+      const gapLength =
+        rightWallStudPositions[i + 1] - rightWallStudPositions[i];
       members.push({
-        id: `${wall.id}-right-noggin-${i}`,
+        id: `${wall.id}-right-wall-noggin-${i}`,
         type: "noggin",
-        positionMm: rightStudPositions[i],
+        positionMm: rightWallStudPositions[i],
         lengthMm: gapLength,
         heightMm: 45,
         metadata: {
-          section: "right",
-          between: [rightStudPositions[i], rightStudPositions[i + 1]],
+          section: "right-wall",
+          between: [rightWallStudPositions[i], rightWallStudPositions[i + 1]],
         },
       });
     }
@@ -373,13 +394,16 @@ export class WallManagerComponent {
   }
 
   /**
-   * Get calculated right section width for door opening
+   * Get calculated right wall width for door opening (5 sections)
+   * wallLength = leftWall + leftPillar + doorSpace + rightPillar + rightWall
+   * rightWall = wallLength - leftWall - (2 * pillarWidth) - doorSpace
    */
-  get rightSectionWidthMm(): number {
+  get rightWallWidthMm(): number {
     const lengthMm = this.wallForm.value.lengthMm || 0;
     const pillarWidthMm = this.wallForm.value.pillarWidthMm || 0;
-    const leftSectionWidthMm = this.wallForm.value.leftSectionWidthMm || 0;
-    return lengthMm - 2 * pillarWidthMm - leftSectionWidthMm;
+    const leftWallWidthMm = this.wallForm.value.leftWallWidthMm || 0;
+    const doorSpaceWidthMm = this.wallForm.value.doorSpaceWidthMm || 0;
+    return lengthMm - leftWallWidthMm - 2 * pillarWidthMm - doorSpaceWidthMm;
   }
 
   /**
