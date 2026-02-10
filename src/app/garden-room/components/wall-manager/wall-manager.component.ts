@@ -1,4 +1,4 @@
-import { Component, inject } from "@angular/core";
+import { Component, inject, effect, signal } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import {
   FormBuilder,
@@ -6,6 +6,8 @@ import {
   ReactiveFormsModule,
   Validators,
 } from "@angular/forms";
+import { takeUntilDestroyed } from "@angular/core/rxjs-interop";
+import { debounceTime, distinctUntilChanged } from "rxjs/operators";
 import { GardenRoomStore, updateWalls } from "../../store/garden-room.store";
 import { Wall } from "../../models/wall.model";
 import { StructuralCalculationService } from "../../services/structural-calculation.service";
@@ -25,11 +27,16 @@ import { STRUCTURAL_COLORS } from "../../constants/colors";
 export class WallManagerComponent {
   wallForm: FormGroup;
 
+  // Door Opening Default Configuration - adjust these values to change defaults
+  private readonly DEFAULT_PILLAR_WIDTH_MM = 400;
+  private readonly DEFAULT_LEFT_WALL_WIDTH_MM = 1000;
+  private readonly DEFAULT_DOOR_SPACE_WIDTH_MM = 2400;
+
   // Structural element colors
   readonly colors = STRUCTURAL_COLORS;
   readonly store = inject(GardenRoomStore);
   private readonly structuralService = inject(StructuralCalculationService);
-  selectedWallId = "front";
+  selectedWallId = signal("front");
 
   // Expose timber sections from store
   get timberSections() {
@@ -47,85 +54,195 @@ export class WallManagerComponent {
   }
 
   /**
-   * Calculate the insulation area needed for the current wall (total wall area minus structural members)
+   * Calculate detailed area breakdown for the current wall
    */
-  get insulationAreaM2(): number {
+  get wallAreaBreakdown(): any {
     const walls = this.store.walls();
-    const currentWall = walls.find((w) => w.id === this.selectedWallId);
-    if (!currentWall) return 0;
+    const currentWall = walls.find((w) => w.id === this.selectedWallId());
+    if (!currentWall) return null;
 
-    const totalWallArea =
-      (currentWall.lengthMm / 1000) * (currentWall.heightMm / 1000); // Convert to m²
+    const wallHeightMm = this.selectedWallHeight;
+    const totalGrossArea =
+      (currentWall.lengthMm / 1000) * (wallHeightMm / 1000);
 
-    // Calculate structural member areas
-    let structuralArea = 0;
+    // Handle door opening walls differently
+    if (currentWall.hasDoorOpening && currentWall.name === "Front") {
+      return this.calculateDoorOpeningAreaBreakdown(
+        currentWall,
+        wallHeightMm,
+        totalGrossArea,
+      );
+    }
 
-    // Calculate stud areas (vertical members)
-    const studs = currentWall.members.filter(
-      (m) => m.type === "stud" && m.metadata?.["subtype"] === "structural",
+    // Regular wall calculation
+    return this.calculateRegularWallAreaBreakdown(
+      currentWall,
+      wallHeightMm,
+      totalGrossArea,
     );
-    studs.forEach((stud) => {
-      // Use stud width from wall configuration (assumes studs use wall stud width)
-      const studWidthMm = currentWall.studWidthMm || 47;
-      const studArea = (studWidthMm / 1000) * (stud.heightMm / 1000);
-      structuralArea += studArea;
-    });
-
-    // Calculate plate areas (horizontal top and bottom)
-    const topPlates = currentWall.members.filter(
-      (m) => m.type === "plate" && m.metadata?.["position"] === "top",
-    );
-    const bottomPlates = currentWall.members.filter(
-      (m) => m.type === "plate" && m.metadata?.["position"] === "bottom",
-    );
-
-    topPlates.forEach((plate) => {
-      const plateArea =
-        (plate.lengthMm / 1000) * (currentWall.plateThicknessTopMm / 1000);
-      structuralArea += plateArea;
-    });
-
-    bottomPlates.forEach((plate) => {
-      const plateArea =
-        (plate.lengthMm / 1000) * (currentWall.plateThicknessBottomMm / 1000);
-      structuralArea += plateArea;
-    });
-
-    // Calculate noggin areas (horizontal bracing)
-    const noggins = currentWall.members.filter((m) => m.type === "noggin");
-    noggins.forEach((noggin) => {
-      // Use stud width for noggin width (same material)
-      const nogginWidthMm = currentWall.studWidthMm || 47;
-      const nogginArea = (noggin.lengthMm / 1000) * (nogginWidthMm / 1000);
-      structuralArea += nogginArea;
-    });
-
-    // Return net insulation area (total wall area minus structural areas)
-    return Math.max(0, totalWallArea - structuralArea);
   }
 
   /**
-   * Get thickness (widthMm) from selected section
+   * Calculate area breakdown for walls with door openings
+   */
+  private calculateDoorOpeningAreaBreakdown(
+    wall: any,
+    wallHeightMm: number,
+    totalGrossArea: number,
+  ): any {
+    const pillarWidthMm = wall.pillarWidthMm || this.DEFAULT_PILLAR_WIDTH_MM;
+    const leftWallWidthMm =
+      wall.leftWallWidthMm || this.DEFAULT_LEFT_WALL_WIDTH_MM;
+    const doorSpaceWidthMm =
+      wall.doorSpaceWidthMm || this.DEFAULT_DOOR_SPACE_WIDTH_MM;
+    const rightWallWidthMm =
+      wall.lengthMm - leftWallWidthMm - 2 * pillarWidthMm - doorSpaceWidthMm;
+
+    // Calculate areas for each section
+    const leftWallArea = (leftWallWidthMm / 1000) * (wallHeightMm / 1000);
+    const leftPillarArea = (pillarWidthMm / 1000) * (wallHeightMm / 1000);
+    const doorOpeningArea = (doorSpaceWidthMm / 1000) * (wallHeightMm / 1000);
+    const rightPillarArea = (pillarWidthMm / 1000) * (wallHeightMm / 1000);
+    const rightWallArea = (rightWallWidthMm / 1000) * (wallHeightMm / 1000);
+
+    // Calculate structural areas
+    const structuralAreaBreakdown = this.calculateStructuralAreas(wall);
+
+    // Net framed area (excludes door opening but includes pillars)
+    const netFramedArea =
+      leftWallArea + leftPillarArea + rightPillarArea + rightWallArea;
+
+    // Insulation area calculation:
+    // Insulation fits BETWEEN studs/noggins, so we only subtract plate heights
+    const plateHeightMm = wall.wallThicknessMm || 100;
+    const netInsulationHeight = wallHeightMm - plateHeightMm;
+    const netInsulationArea =
+      ((wall.lengthMm - doorSpaceWidthMm) / 1000) *
+      (netInsulationHeight / 1000);
+
+    return {
+      type: "door-opening",
+      totalGrossArea,
+      sections: {
+        leftWall: { widthMm: leftWallWidthMm, area: leftWallArea },
+        leftPillar: { widthMm: pillarWidthMm, area: leftPillarArea },
+        doorOpening: { widthMm: doorSpaceWidthMm, area: doorOpeningArea },
+        rightPillar: { widthMm: pillarWidthMm, area: rightPillarArea },
+        rightWall: { widthMm: rightWallWidthMm, area: rightWallArea },
+      },
+      netFramedArea,
+      doorOpeningArea,
+      structuralAreaBreakdown,
+      netInsulationArea,
+      areaReduction: doorOpeningArea,
+    };
+  }
+
+  /**
+   * Calculate area breakdown for regular walls (no door opening)
+   */
+  private calculateRegularWallAreaBreakdown(
+    wall: any,
+    wallHeightMm: number,
+    totalGrossArea: number,
+  ): any {
+    const structuralAreaBreakdown = this.calculateStructuralAreas(wall);
+
+    // Insulation area calculation:
+    // Insulation fits BETWEEN studs and noggins, so we only subtract plate heights
+    const plateHeightMm = wall.wallThicknessMm || 100;
+    const netInsulationHeight = wallHeightMm - plateHeightMm;
+    const netInsulationArea =
+      (wall.lengthMm / 1000) * (netInsulationHeight / 1000);
+
+    return {
+      type: "regular",
+      totalGrossArea,
+      structuralAreaBreakdown,
+      netInsulationArea,
+      plateHeightReduction: plateHeightMm,
+      areaReduction: 0,
+    };
+  }
+
+  /**
+   * Calculate structural member areas (studs, plates, noggins)
+   */
+  private calculateStructuralAreas(wall: any): any {
+    let studArea = 0;
+    let plateArea = 0;
+    let nogginArea = 0;
+
+    // Calculate stud areas
+    const studs = wall.members.filter((m: any) => m.type === "stud");
+    studs.forEach((stud: any) => {
+      const studWidthMm = wall.studWidthMm || 47;
+      studArea += (studWidthMm / 1000) * (stud.heightMm / 1000);
+    });
+
+    // Calculate plate areas
+    const plates = wall.members.filter((m: any) => m.type === "plate");
+    plates.forEach((plate: any) => {
+      const thickness = (wall.wallThicknessMm || 100) / 2; // Each plate is half of wall thickness
+      plateArea += (plate.lengthMm / 1000) * (thickness / 1000);
+    });
+
+    // Calculate noggin areas
+    const noggins = wall.members.filter((m: any) => m.type === "noggin");
+    noggins.forEach((noggin: any) => {
+      const nogginWidthMm = wall.studWidthMm || 47;
+      nogginArea += (noggin.lengthMm / 1000) * (nogginWidthMm / 1000);
+    });
+
+    return {
+      studArea,
+      plateArea,
+      nogginArea,
+      totalStructuralArea: studArea + plateArea + nogginArea,
+    };
+  }
+
+  /**
+   * Calculate the insulation area needed for the current wall (total wall area minus structural members)
+   */
+  get insulationAreaM2(): number {
+    const breakdown = this.wallAreaBreakdown;
+    return breakdown ? breakdown.netInsulationArea : 0;
+  }
+
+  /**
+   * Get thickness (heightMm) from selected section
+   * For timber notation like 47x150, returns the height dimension (150)
+   * Used for plates (horizontal members)
    */
   getThicknessFromSection(sectionId: string): number {
     const section = this.timberSections.find((s) => s.id === sectionId);
-    return section ? section.widthMm : 47; // Default fallback to match 47x100-c24
+    return section ? section.heightMm : 100; // Default fallback to 100mm
+  }
+
+  /**
+   * Get width (widthMm) from selected section
+   * For timber notation like 47x150, returns the width dimension (47)
+   * Used for studs (vertical members) to determine spacing
+   */
+  getWidthFromSection(sectionId: string): number {
+    const section = this.timberSections.find((s) => s.id === sectionId);
+    return section ? section.widthMm : 47; // Default fallback to 47mm
   }
 
   /**
    * Get calculated thickness values for current form state
    */
   get calculatedThicknesses() {
+    const timberSection = this.wallForm.value.timberSection || "47x100-c24";
+    const wallThickness = this.getThicknessFromSection(timberSection);
+
     return {
-      plateThicknessTopMm: this.getThicknessFromSection(
-        this.wallForm.value.topPlateSection,
-      ),
-      plateThicknessBottomMm: this.getThicknessFromSection(
-        this.wallForm.value.bottomPlateSection,
-      ),
-      studWidthMm: this.getThicknessFromSection(
-        this.wallForm.value.studSection,
-      ),
+      wallThicknessMm: wallThickness,
+      studWidthMm: this.getWidthFromSection(timberSection),
+      plateThicknessMm: wallThickness, // Same for all plates
+      roofFrontExtensionMm: this.wallForm.value.roofFrontExtensionMm,
+      roofBackExtensionMm: this.wallForm.value.roofBackExtensionMm,
     };
   }
 
@@ -135,76 +252,56 @@ export class WallManagerComponent {
       studGapMm: [400, [Validators.required, Validators.min(300)]],
       decorativeOffsetMm: [0, [Validators.required, Validators.min(0)]],
       decorativeSide: ["both"],
-      topPlateSection: ["47x100-c24", [Validators.required]],
-      bottomPlateSection: ["47x100-c24", [Validators.required]],
-      studSection: ["47x100-c24", [Validators.required]],
+      timberSection: ["47x100-c24", [Validators.required]], // Single section for ALL structural members
       hasDoorOpening: [false],
-      pillarWidthMm: [400, [Validators.required, Validators.min(50)]],
-      leftWallWidthMm: [800, [Validators.required, Validators.min(300)]],
-      doorSpaceWidthMm: [1000, [Validators.required, Validators.min(500)]],
+      pillarWidthMm: [
+        this.DEFAULT_PILLAR_WIDTH_MM,
+        [Validators.required, Validators.min(50)],
+      ],
+      leftWallWidthMm: [
+        this.DEFAULT_LEFT_WALL_WIDTH_MM,
+        [Validators.required, Validators.min(300)],
+      ],
+      doorSpaceWidthMm: [
+        this.DEFAULT_DOOR_SPACE_WIDTH_MM,
+        [Validators.required, Validators.min(500)],
+      ],
       includeIrregularLastStud: [true],
       hasNoggins: [true],
-      pirBoardId: [""],
-      sheetMaterialId: [""],
-    });
-
-    // Track hasNoggins changes
-    this.wallForm.controls["hasNoggins"].valueChanges.subscribe((value) => {
-      console.log(
-        "🔔 hasNoggins checkbox changed:",
-        value,
-        "for wall:",
-        this.selectedWallId,
-      );
+      pirBoardId: [this.pirBoards[0]?.id || ""],
+      sheetMaterialId: [this.sheetMaterials[0]?.id || ""],
+      roofFrontExtensionMm: [100, [Validators.required, Validators.min(0)]],
+      roofBackExtensionMm: [100, [Validators.required, Validators.min(0)]],
     });
 
     // Load initial wall data
     this.loadWallData();
 
-    // Track stud section changes specifically
-    this.wallForm.controls["studSection"].valueChanges.subscribe((value) => {
-      console.log(
-        "🔧 studSection changed:",
-        value,
-        "calculated thickness:",
-        this.getThicknessFromSection(value),
-        "for wall:",
-        this.selectedWallId,
-      );
-    });
+    // Setup reactive effects for immediate updates
+    this.setupReactiveEffects();
+  }
 
-    // Track PIR board changes
-    this.wallForm.controls["pirBoardId"].valueChanges.subscribe((value) => {
-      console.log(
-        "🏠 pirBoardId changed:",
-        value,
-        "for wall:",
-        this.selectedWallId,
-      );
-    });
-
-    // Track sheet material changes
-    this.wallForm.controls["sheetMaterialId"].valueChanges.subscribe(
-      (value) => {
-        console.log(
-          "📋 sheetMaterialId changed:",
-          value,
-          "for wall:",
-          this.selectedWallId,
-        );
-      },
-    );
-
-    // Sync form changes to store
-    this.wallForm.valueChanges.subscribe(() => {
-      console.log("📝 Form values changed:", {
-        pirBoardId: this.wallForm.value.pirBoardId,
-        sheetMaterialId: this.wallForm.value.sheetMaterialId,
-        formValid: this.wallForm.valid,
-      });
-      if (this.wallForm.valid) {
+  /**
+   * Setup reactive effects for immediate form updates
+   */
+  private setupReactiveEffects() {
+    // Single subscription for all form changes with debouncing
+    this.wallForm.valueChanges
+      .pipe(debounceTime(200), takeUntilDestroyed())
+      .subscribe((formValues) => {
+        console.log("🔄 Form values changed:", {
+          timberSection: formValues.timberSection,
+          studWidthMm: this.getWidthFromSection(formValues.timberSection),
+          wallId: this.selectedWallId(),
+        });
+        // Always update, even if invalid - let validation errors show but still calculate
         this.updateSelectedWall();
-      }
+      });
+
+    // Effect for reactive wall selection changes
+    effect(() => {
+      const wallId = this.selectedWallId();
+      this.loadWallData();
     });
   }
 
@@ -212,42 +309,83 @@ export class WallManagerComponent {
    * Load wall data into form based on selected wall
    */
   loadWallData() {
-    const wall = this.store.walls().find((w) => w.id === this.selectedWallId);
-    if (wall) {
-      // Find section IDs that match the current thickness values, or use defaults
-      const topPlateSection =
-        this.findSectionByThickness(wall.plateThicknessTopMm) || "47x100-c24";
-      const bottomPlateSection =
-        this.findSectionByThickness(wall.plateThicknessBottomMm) ||
+    const walls = this.store.walls();
+    const selectedWall = walls.find((w) => w.id === this.selectedWallId());
+    if (selectedWall) {
+      // Find section that matches current values, or use stored section as fallback
+      const timberSection =
+        selectedWall.timberSection ||
+        selectedWall.studSection || // Legacy fallback
+        this.findSectionByWidth(selectedWall.studWidthMm || 47) ||
         "47x100-c24";
-      const studSection =
-        this.findSectionByThickness(wall.studWidthMm || 47) || "47x100-c24";
 
-      this.wallForm.patchValue({
-        lengthMm: wall.lengthMm,
-        studGapMm: wall.studGapMm,
-        decorativeOffsetMm: wall.decorativeOffsetMm,
-        decorativeSide: wall.decorativeSide || "both",
-        topPlateSection: topPlateSection,
-        bottomPlateSection: bottomPlateSection,
-        studSection: studSection,
-        hasDoorOpening: wall.hasDoorOpening || false,
-        pillarWidthMm: wall.pillarWidthMm || 400,
-        leftWallWidthMm: wall.leftWallWidthMm || 800,
-        doorSpaceWidthMm: wall.doorSpaceWidthMm || 1000,
-        includeIrregularLastStud: wall.includeIrregularLastStud ?? true,
-        hasNoggins: wall.hasNoggins ?? true,
-        pirBoardId: wall.pirBoardId || "",
-        sheetMaterialId: wall.sheetMaterialId || "",
+      console.log("🔃 Loading wall data from store:", {
+        wallId: selectedWall.id,
+        studWidthMm: selectedWall.studWidthMm,
+        storedTimberSection: selectedWall.timberSection,
+        finalTimberSection: timberSection,
       });
+
+      this.wallForm.patchValue(
+        {
+          lengthMm: selectedWall.lengthMm,
+          studGapMm: selectedWall.studGapMm,
+          decorativeOffsetMm: selectedWall.decorativeOffsetMm,
+          decorativeSide: selectedWall.decorativeSide || "both",
+          timberSection: timberSection,
+          hasDoorOpening: selectedWall.hasDoorOpening || false,
+          pillarWidthMm:
+            selectedWall.pillarWidthMm || this.DEFAULT_PILLAR_WIDTH_MM,
+          leftWallWidthMm:
+            selectedWall.leftWallWidthMm || this.DEFAULT_LEFT_WALL_WIDTH_MM,
+          doorSpaceWidthMm:
+            selectedWall.doorSpaceWidthMm || this.DEFAULT_DOOR_SPACE_WIDTH_MM,
+          includeIrregularLastStud:
+            selectedWall.includeIrregularLastStud ?? true,
+          hasNoggins: selectedWall.hasNoggins ?? true,
+          pirBoardId: selectedWall.pirBoardId || this.pirBoards[0]?.id || "",
+          sheetMaterialId:
+            selectedWall.sheetMaterialId || this.sheetMaterials[0]?.id || "",
+          roofFrontExtensionMm: selectedWall.roofFrontExtensionMm || 100,
+          roofBackExtensionMm: selectedWall.roofBackExtensionMm || 100,
+        },
+        { emitEvent: false },
+      );
+
+      // If the wall didn't have materials set, update the store with defaults
+      if (!selectedWall.pirBoardId || !selectedWall.sheetMaterialId) {
+        // Use setTimeout to avoid effect loop - update store after current cycle
+        setTimeout(() => this.updateSelectedWall(), 0);
+      }
     }
   }
 
   /**
    * Find section ID that matches the given thickness value
+   * Note: thickness refers to the height dimension (e.g., 150mm in 47x150)
+   */
+  /**
+   * Find timber section by thickness (heightMm)
+   * Used for plates (horizontal members)
    */
   findSectionByThickness(thicknessMm: number): string | undefined {
-    const section = this.timberSections.find((s) => s.widthMm === thicknessMm);
+    const section = this.timberSections.find((s) => s.heightMm === thicknessMm);
+    return section?.id;
+  }
+
+  /**
+   * Find timber section by width (widthMm)
+   * Used for studs (vertical members)
+   */
+  findSectionByWidth(widthMm: number): string | undefined {
+    const section = this.timberSections.find((s) => s.widthMm === widthMm);
+    console.log("🔍 Finding section by width:", {
+      searchWidthMm: widthMm,
+      foundSection: section?.id,
+      availableSections: this.timberSections.map(
+        (s) => `${s.id}(${s.widthMm}x${s.heightMm})`,
+      ),
+    });
     return section?.id;
   }
 
@@ -255,45 +393,36 @@ export class WallManagerComponent {
    * Switch selected wall and load its data
    */
   selectWall(wallId: string) {
-    this.selectedWallId = wallId;
-    this.loadWallData();
+    this.selectedWallId.set(wallId);
+    // loadWallData will be called automatically via effect
   }
 
   /**
    * Update selected wall in store with form values
    */
   updateSelectedWall() {
-    console.log(
-      "🔄 updateSelectedWall called for wall:",
-      this.selectedWallId,
-      "hasNoggins:",
-      this.wallForm.value.hasNoggins,
-      "PIR:",
-      this.wallForm.value.pirBoardId,
-      "Sheet:",
-      this.wallForm.value.sheetMaterialId,
-    );
-
     // Calculate thickness values from selected sections
     const thicknesses = this.calculatedThicknesses;
-    console.log("📏 Calculated thicknesses from sections:", {
-      topPlateSection: this.wallForm.value.topPlateSection,
-      bottomPlateSection: this.wallForm.value.bottomPlateSection,
-      studSection: this.wallForm.value.studSection,
-      calculatedThicknesses: thicknesses,
+
+    console.log("📝 Updating wall in store:", {
+      wallId: this.selectedWallId(),
+      formTimberSection: this.wallForm.value.timberSection,
+      calculatedStudWidth: thicknesses.studWidthMm,
+      calculatedWallThickness: thicknesses.wallThicknessMm,
+      formValid: this.wallForm.valid,
     });
 
     const walls = this.store.walls();
     const updatedWalls = walls.map((wall) => {
-      if (wall.id === this.selectedWallId) {
+      if (wall.id === this.selectedWallId()) {
         const updatedWall = {
           ...wall,
           lengthMm: this.wallForm.value.lengthMm,
           studGapMm: this.wallForm.value.studGapMm,
           decorativeOffsetMm: this.wallForm.value.decorativeOffsetMm,
           decorativeSide: this.wallForm.value.decorativeSide,
-          plateThicknessTopMm: thicknesses.plateThicknessTopMm,
-          plateThicknessBottomMm: thicknesses.plateThicknessBottomMm,
+          timberSection: this.wallForm.value.timberSection,
+          wallThicknessMm: thicknesses.wallThicknessMm,
           studWidthMm: thicknesses.studWidthMm,
           hasDoorOpening: this.wallForm.value.hasDoorOpening,
           pillarWidthMm: this.wallForm.value.pillarWidthMm,
@@ -304,30 +433,58 @@ export class WallManagerComponent {
           hasNoggins: this.wallForm.value.hasNoggins,
           pirBoardId: this.wallForm.value.pirBoardId || undefined,
           sheetMaterialId: this.wallForm.value.sheetMaterialId || undefined,
+          roofFrontExtensionMm: this.wallForm.value.roofFrontExtensionMm,
+          roofBackExtensionMm: this.wallForm.value.roofBackExtensionMm,
         };
 
         // Generate members from stud layout
         updatedWall.members = this.generateMembers(updatedWall);
+
+        console.log("✅ Wall updated in store:", {
+          wallId: updatedWall.id,
+          timberSection: updatedWall.timberSection,
+          studWidthMm: updatedWall.studWidthMm,
+          wallThicknessMm: updatedWall.wallThicknessMm,
+          memberCount: updatedWall.members.length,
+          sampleMemberSections: updatedWall.members.slice(0, 3).map((m) => ({
+            type: m.type,
+            sectionName: m.sectionName,
+            lengthMm: m.lengthMm,
+          })),
+          allMemberSections: updatedWall.members.map((m) => m.sectionName),
+        });
+
         return updatedWall;
       }
       return wall;
     });
     updateWalls(this.store, updatedWalls);
+
+    // Immediate verification of store update
+    const verifyUpdate = this.store.walls();
+    const updatedWall = verifyUpdate.find(
+      (w) => w.id === this.selectedWallId(),
+    );
+    console.log("🔍 Store update verification:", {
+      wallId: this.selectedWallId(),
+      formTimberSection: this.wallForm.value.timberSection,
+      storeTimberSection: updatedWall?.timberSection,
+      updateSuccessful:
+        this.wallForm.value.timberSection === updatedWall?.timberSection,
+    });
   }
 
   /**
    * Generate Member objects from wall configuration
    */
   generateMembers(wall: any) {
-    console.log(
-      "🏗️ generateMembers called for wall:",
-      wall.id,
-      "hasNoggins:",
-      wall.hasNoggins,
-      "hasDoorOpening:",
-      wall.hasDoorOpening,
-    );
     const members: any[] = [];
+
+    console.log("🔧 Generating members for wall:", {
+      wallId: wall.id,
+      wallTimberSection: wall.timberSection,
+      wallName: wall.name,
+    });
 
     // Get stud layout for this wall
     const layout = this.store.studLayoutForWall()(wall.id);
@@ -346,64 +503,75 @@ export class WallManagerComponent {
 
     // Generate studs at resolved positions
     layout.resolvedStudPositionsMm.forEach((positionMm, index) => {
-      members.push({
+      const studMember = {
         id: `${wall.id}-stud-${index}`,
         type: "stud",
         positionMm,
-        lengthMm:
-          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-        heightMm:
-          wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+        lengthMm: wallHeight - (wall.wallThicknessMm || 100),
+        heightMm: wallHeight - (wall.wallThicknessMm || 100),
+        sectionName: wall.timberSection || "47x100-c24",
         metadata: {},
-      });
+      };
+
+      if (index === 0) {
+        console.log("🪵 Creating first stud with section:", {
+          wallTimberSection: wall.timberSection,
+          assignedSectionName: studMember.sectionName,
+          memberId: studMember.id,
+        });
+      }
+
+      members.push(studMember);
     });
 
     // Add bottom plate
-    members.push({
+    const bottomPlate = {
       id: `${wall.id}-plate-bottom`,
       type: "plate",
       positionMm: 0,
       lengthMm: wall.lengthMm,
-      heightMm: wall.plateThicknessBottomMm,
+      heightMm: (wall.wallThicknessMm || 100) / 2, // Half of total wall thickness
+      sectionName: wall.timberSection || "47x100-c24",
       metadata: { position: "bottom" },
+    };
+
+    console.log("🟫 Creating bottom plate with section:", {
+      wallTimberSection: wall.timberSection,
+      assignedSectionName: bottomPlate.sectionName,
+      plateLength: bottomPlate.lengthMm,
     });
 
+    members.push(bottomPlate);
+
     // Add top plate
-    members.push({
+    const topPlate = {
       id: `${wall.id}-plate-top`,
       type: "plate",
       positionMm: 0,
       lengthMm: wall.lengthMm,
-      heightMm: wall.plateThicknessTopMm,
+      heightMm: (wall.wallThicknessMm || 100) / 2, // Half of total wall thickness
+      sectionName: wall.timberSection || "47x100-c24",
       metadata: { position: "top" },
+    };
+
+    console.log("🔝 Creating top plate with section:", {
+      wallTimberSection: wall.timberSection,
+      assignedSectionName: topPlate.sectionName,
+      plateLength: topPlate.lengthMm,
     });
+
+    members.push(topPlate);
 
     // Add noggins between studs (simplified - one noggin per stud gap at mid-height)
     if (wall.hasNoggins) {
-      console.log("✅ Entering noggin generation for regular wall:", wall.id);
       const studPositions = layout.resolvedStudPositionsMm.sort(
         (a, b) => a - b,
       );
       const studWidthMm = wall.studWidthMm || 45;
-      console.log("🔧 Regular wall noggins generation:", {
-        wallId: wall.id,
-        studGapMm: wall.studGapMm,
-        decorativeOffsetMm: wall.decorativeOffsetMm,
-        studWidthMm: studWidthMm,
-        studPositions: studPositions,
-        wallObjectStudWidthMm: wall.studWidthMm, // Show what's actually in the wall object
-      });
       for (let i = 0; i < studPositions.length - 1; i++) {
         const axisDistance = studPositions[i + 1] - studPositions[i];
-        const actualGapWidth = axisDistance - studWidthMm; // Gap between stud edges, not centers
-        const nogginStartPosition = studPositions[i] + studWidthMm / 2; // Right edge of left stud
-        console.log(`  Noggin ${i}:`, {
-          leftStudCenter: studPositions[i],
-          rightStudCenter: studPositions[i + 1],
-          axisDistance: axisDistance,
-          actualGapWidth: actualGapWidth,
-          nogginStartPosition: nogginStartPosition,
-        });
+        const actualGapWidth = axisDistance - studWidthMm; // Gap between stud edges
+        const nogginStartPosition = studPositions[i] + studWidthMm; // Right edge of left stud
         members.push({
           id: `${wall.id}-noggin-${i}`,
           type: "noggin",
@@ -413,12 +581,6 @@ export class WallManagerComponent {
           metadata: { between: [studPositions[i], studPositions[i + 1]] },
         });
       }
-    } else {
-      console.log(
-        "❌ Skipping noggins for regular wall:",
-        wall.id,
-        "(hasNoggins is false)",
-      );
     }
 
     console.log(
@@ -432,13 +594,6 @@ export class WallManagerComponent {
     console.log(
       `   Noggins: ${members.filter((m) => m.type === "noggin").length}`,
     );
-    members
-      .filter((m) => m.type === "noggin")
-      .forEach((n, i) => {
-        console.log(
-          `   Noggin ${i}: pos=${n.positionMm.toFixed(1)}mm, len=${n.lengthMm.toFixed(1)}mm`,
-        );
-      });
 
     return members;
   }
@@ -453,9 +608,11 @@ export class WallManagerComponent {
     wallHeight: number,
   ) {
     const members: any[] = [];
-    const pillarWidth = wall.pillarWidthMm || 400;
-    const leftWallWidth = wall.leftWallWidthMm || 800;
-    const doorSpaceWidth = wall.doorSpaceWidthMm || 1000;
+    const pillarWidth = wall.pillarWidthMm || this.DEFAULT_PILLAR_WIDTH_MM;
+    const leftWallWidth =
+      wall.leftWallWidthMm || this.DEFAULT_LEFT_WALL_WIDTH_MM;
+    const doorSpaceWidth =
+      wall.doorSpaceWidthMm || this.DEFAULT_DOOR_SPACE_WIDTH_MM;
     const studWidthMm = wall.studWidthMm || 45;
     const rightWallWidth =
       wall.lengthMm - leftWallWidth - 2 * pillarWidth - doorSpaceWidth;
@@ -483,10 +640,9 @@ export class WallManagerComponent {
           id: `${wall.id}-left-wall-stud-${index}`,
           type: "stud",
           positionMm, // Position is relative to left wall start (0)
-          lengthMm:
-            wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-          heightMm:
-            wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+          lengthMm: wallHeight - (wall.wallThicknessMm || 100),
+          heightMm: wallHeight - (wall.wallThicknessMm || 100),
+          sectionName: wall.timberSection || "47x100-c24",
           metadata: { section: "left-wall" },
         });
       },
@@ -497,10 +653,9 @@ export class WallManagerComponent {
       id: `${wall.id}-left-pillar`,
       type: "stud",
       positionMm: leftWallEnd,
-      lengthMm:
-        wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-      heightMm:
-        wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+      lengthMm: wallHeight - (wall.wallThicknessMm || 100),
+      heightMm: wallHeight - (wall.wallThicknessMm || 100),
+      sectionName: wall.timberSection || "47x100-c24",
       metadata: { section: "left-pillar", width: pillarWidth },
     });
 
@@ -512,10 +667,9 @@ export class WallManagerComponent {
       id: `${wall.id}-right-pillar`,
       type: "stud",
       positionMm: doorSpaceEnd,
-      lengthMm:
-        wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-      heightMm:
-        wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+      lengthMm: wallHeight - (wall.wallThicknessMm || 100),
+      heightMm: wallHeight - (wall.wallThicknessMm || 100),
+      sectionName: wall.timberSection || "47x100-c24",
       metadata: { section: "right-pillar", width: pillarWidth },
     });
 
@@ -538,10 +692,9 @@ export class WallManagerComponent {
           id: `${wall.id}-right-wall-stud-${index}`,
           type: "stud",
           positionMm: rightPillarEnd + relativePos, // Offset by right pillar end
-          lengthMm:
-            wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
-          heightMm:
-            wallHeight - wall.plateThicknessTopMm - wall.plateThicknessBottomMm,
+          lengthMm: wallHeight - (wall.wallThicknessMm || 100),
+          heightMm: wallHeight - (wall.wallThicknessMm || 100),
+          sectionName: wall.timberSection || "47x100-c24",
           metadata: { section: "right-wall" },
         });
       },
@@ -555,7 +708,8 @@ export class WallManagerComponent {
         type: "plate",
         positionMm: 0,
         lengthMm: leftWallWidth,
-        heightMm: wall.plateThicknessBottomMm,
+        heightMm: (wall.wallThicknessMm || 100) / 2,
+        sectionName: wall.timberSection || "47x100-c24",
         metadata: { position: "bottom", section: "left-wall" },
       },
       {
@@ -563,7 +717,8 @@ export class WallManagerComponent {
         type: "plate",
         positionMm: 0,
         lengthMm: leftWallWidth,
-        heightMm: wall.plateThicknessTopMm,
+        heightMm: (wall.wallThicknessMm || 100) / 2,
+        sectionName: wall.timberSection || "47x100-c24",
         metadata: { position: "top", section: "left-wall" },
       },
       // Right wall plates
@@ -572,7 +727,8 @@ export class WallManagerComponent {
         type: "plate",
         positionMm: rightPillarEnd,
         lengthMm: rightWallWidth,
-        heightMm: wall.plateThicknessBottomMm,
+        heightMm: (wall.wallThicknessMm || 100) / 2,
+        sectionName: wall.timberSection || "47x100-c24",
         metadata: { position: "bottom", section: "right-wall" },
       },
       {
@@ -580,7 +736,8 @@ export class WallManagerComponent {
         type: "plate",
         positionMm: rightPillarEnd,
         lengthMm: rightWallWidth,
-        heightMm: wall.plateThicknessTopMm,
+        heightMm: (wall.wallThicknessMm || 100) / 2,
+        sectionName: wall.timberSection || "47x100-c24",
         metadata: { position: "top", section: "right-wall" },
       },
     );
@@ -597,7 +754,7 @@ export class WallManagerComponent {
         const axisDistance =
           leftWallStudPositions[i + 1] - leftWallStudPositions[i];
         const actualGapWidth = axisDistance - studWidthMm;
-        const nogginStartPosition = leftWallStudPositions[i] + studWidthMm / 2;
+        const nogginStartPosition = leftWallStudPositions[i] + studWidthMm;
         members.push({
           id: `${wall.id}-left-wall-noggin-${i}`,
           type: "noggin",
@@ -620,7 +777,7 @@ export class WallManagerComponent {
         const axisDistance =
           rightWallStudPositions[i + 1] - rightWallStudPositions[i];
         const actualGapWidth = axisDistance - studWidthMm;
-        const nogginStartPosition = rightWallStudPositions[i] + studWidthMm / 2;
+        const nogginStartPosition = rightWallStudPositions[i] + studWidthMm;
         const absolutePosition = rightPillarEnd + nogginStartPosition;
         members.push({
           id: `${wall.id}-right-wall-noggin-${i}`,
@@ -681,7 +838,7 @@ export class WallManagerComponent {
    * Get selected wall
    */
   get selectedWall(): Wall | undefined {
-    return this.walls.find((w) => w.id === this.selectedWallId);
+    return this.walls.find((w) => w.id === this.selectedWallId());
   }
 
   /**
@@ -723,7 +880,40 @@ export class WallManagerComponent {
    * Get stud layout for selected wall
    */
   get studLayout() {
-    return this.store.studLayoutForWall()(this.selectedWallId);
+    return this.store.studLayoutForWall()(this.selectedWallId());
+  }
+
+  // Helper getters for all walls (for overview diagram)
+  get frontWall() {
+    return this.walls.find((w) => w.name === "Front");
+  }
+
+  get backWall() {
+    return this.walls.find((w) => w.name === "Back");
+  }
+
+  get leftWall() {
+    return this.walls.find((w) => w.name === "Left");
+  }
+
+  get rightWall() {
+    return this.walls.find((w) => w.name === "Right");
+  }
+
+  get roofWall() {
+    return this.walls.find((w) => w.name === "Roof");
+  }
+
+  get baseWall() {
+    return this.walls.find((w) => w.name === "Base");
+  }
+
+  get frontWallHeight() {
+    return this.store.frontWallHeightMm();
+  }
+
+  get backWallHeight() {
+    return this.store.backWallHeightMm();
   }
 
   // SVG Preview dimensions and calculations
@@ -750,18 +940,18 @@ export class WallManagerComponent {
   get plateTopSvgHeight(): number {
     if (!this.selectedWall) return 0;
     const scale = this.wallSvgHeight / this.selectedWallHeight;
-    return this.selectedWall.plateThicknessTopMm * scale;
+    return ((this.selectedWall.wallThicknessMm || 100) / 2) * scale;
   }
 
   get plateBottomSvgHeight(): number {
     if (!this.selectedWall) return 0;
     const scale = this.wallSvgHeight / this.selectedWallHeight;
-    return this.selectedWall.plateThicknessBottomMm * scale;
+    return ((this.selectedWall.wallThicknessMm || 100) / 2) * scale;
   }
 
   get studSvgWidth(): number {
     if (!this.selectedWall) return 0;
-    const studWidthMm = this.wallForm.value.studWidthMm || 45;
+    const studWidthMm = this.selectedWall.studWidthMm || 47;
     const scale = this.wallSvgWidth / this.selectedWall.lengthMm;
     return studWidthMm * scale;
   }
@@ -836,6 +1026,24 @@ export class WallManagerComponent {
       }
       if (!wall.doorSpaceWidthMm || wall.doorSpaceWidthMm < 500) {
         errors.push("Door space width required (min 500mm)");
+      }
+
+      // Validate wall is large enough for door opening sections
+      const pillarWidthMm = wall.pillarWidthMm || this.DEFAULT_PILLAR_WIDTH_MM;
+      const leftWallWidthMm =
+        wall.leftWallWidthMm || this.DEFAULT_LEFT_WALL_WIDTH_MM;
+      const doorSpaceWidthMm =
+        wall.doorSpaceWidthMm || this.DEFAULT_DOOR_SPACE_WIDTH_MM;
+      const requiredLength =
+        leftWallWidthMm + 2 * pillarWidthMm + doorSpaceWidthMm;
+      const rightWallWidth = wall.lengthMm - requiredLength;
+
+      if (rightWallWidth < 300) {
+        const minRequired =
+          leftWallWidthMm + 2 * pillarWidthMm + doorSpaceWidthMm + 300;
+        errors.push(
+          `Wall too short for door opening. Current: ${wall.lengthMm}mm, Minimum required: ${minRequired}mm (left ${leftWallWidthMm}mm + pillars ${2 * pillarWidthMm}mm + door ${doorSpaceWidthMm}mm + right wall min 300mm)`,
+        );
       }
     }
 

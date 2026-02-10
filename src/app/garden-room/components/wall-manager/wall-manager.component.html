@@ -1,4 +1,4 @@
-<div class="d-flex w-100 h-100 overflow-hidden">
+<div class="d-flex w-100 flex-grow-1 overflow-hidden">
   <div class="overflow-auto" style="min-width: 600px">
     <div
       class="sticky-top d-flex flex-column gap-2 border-bottom bg-body shadow px-2"
@@ -9,7 +9,7 @@
           <button
             *ngFor="let wall of walls"
             class="btn gap-2 d-flex justify-content-between align-items-center"
-            [class.active]="wall.id === selectedWallId"
+            [class.active]="wall.id === selectedWallId()"
             [class.btn-success]="isWallValid(wall)"
             [class.btn-outline-warning]="!isWallValid(wall)"
             (click)="selectWall(wall.id)"
@@ -141,6 +141,61 @@
             </div>
           </div>
         </div>
+
+        <!-- Roof-specific fields -->
+        @if (selectedWall && selectedWall.name === "Roof") {
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="roofFrontExtensionMm">Front Extension (mm)</label>
+                <input
+                  type="number"
+                  id="roofFrontExtensionMm"
+                  formControlName="roofFrontExtensionMm"
+                  class="form-control"
+                  placeholder="e.g., 100"
+                />
+                <small class="form-text text-muted">
+                  Roof overhang beyond front wall
+                </small>
+                <div
+                  class="error-message"
+                  *ngIf="
+                    wallForm.get('roofFrontExtensionMm')?.invalid &&
+                    wallForm.get('roofFrontExtensionMm')?.touched
+                  "
+                >
+                  Front extension must be 0 or greater
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="roofBackExtensionMm">Back Extension (mm)</label>
+                <input
+                  type="number"
+                  id="roofBackExtensionMm"
+                  formControlName="roofBackExtensionMm"
+                  class="form-control"
+                  placeholder="e.g., 100"
+                />
+                <small class="form-text text-muted">
+                  Roof overhang beyond back wall
+                </small>
+                <div
+                  class="error-message"
+                  *ngIf="
+                    wallForm.get('roofBackExtensionMm')?.invalid &&
+                    wallForm.get('roofBackExtensionMm')?.touched
+                  "
+                >
+                  Back extension must be 0 or greater
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+
         <div class="form-group">
           <label class="checkbox-label">
             <input
@@ -156,38 +211,13 @@
           </small>
         </div>
         <div class="row">
-          <div class="col">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="topPlateSection">Top Plate Section</label>
-                <select
-                  id="topPlateSection"
-                  formControlName="topPlateSection"
-                  class="form-select"
-                >
-                  @for (section of timberSections; track section.id) {
-                    <option [value]="section.id">
-                      {{ section.widthMm }}x{{ section.heightMm }}mm ({{
-                        section.grade
-                      }})
-                    </option>
-                  }
-                </select>
-                <small class="form-text text-muted">
-                  Calculated thickness:
-                  {{
-                    getThicknessFromSection(wallForm.value.topPlateSection)
-                  }}mm
-                </small>
-              </div>
-            </div>
-          </div>
+          <!-- Single Timber Section for ALL structural members -->
           <div class="col">
             <div class="form-group">
-              <label for="bottomPlateSection">Bottom Plate Section</label>
+              <label for="timberSection">Timber Section (All Members)</label>
               <select
-                id="bottomPlateSection"
-                formControlName="bottomPlateSection"
+                id="timberSection"
+                formControlName="timberSection"
                 class="form-select"
               >
                 @for (section of timberSections; track section.id) {
@@ -199,32 +229,10 @@
                 }
               </select>
               <small class="form-text text-muted">
-                Calculated thickness:
-                {{
-                  getThicknessFromSection(wallForm.value.bottomPlateSection)
-                }}mm
-              </small>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-group">
-              <label for="studSection">Stud Section</label>
-              <select
-                id="studSection"
-                formControlName="studSection"
-                class="form-select"
-              >
-                @for (section of timberSections; track section.id) {
-                  <option [value]="section.id">
-                    {{ section.widthMm }}x{{ section.heightMm }}mm ({{
-                      section.grade
-                    }})
-                  </option>
-                }
-              </select>
-              <small class="form-text text-muted">
-                Calculated width:
-                {{ getThicknessFromSection(wallForm.value.studSection) }}mm
+                Wall thickness:
+                {{ getThicknessFromSection(wallForm.value.timberSection) }}mm
+                <br />Stud width:
+                {{ getWidthFromSection(wallForm.value.timberSection) }}mm
               </small>
             </div>
           </div>
@@ -290,11 +298,20 @@
               <small class="form-text text-muted">
                 @if (wallForm.value.sheetMaterialId) {
                   Sheet area needed:
-                  {{
-                    (((selectedWall?.lengthMm || 0) / 1000) *
-                      (selectedWall?.heightMm || 0)) /
-                      1000 | number: "1.2-2"
-                  }}m²
+                  @if (
+                    selectedWall?.hasDoorOpening &&
+                    selectedWall?.name === "Front"
+                  ) {
+                    {{
+                      wallAreaBreakdown.netFramedArea || 0 | number: "1.2-2"
+                    }}m² (excludes door opening)
+                  } @else {
+                    {{
+                      (((selectedWall?.lengthMm || 0) / 1000) *
+                        selectedWallHeight) /
+                        1000 | number: "1.2-2"
+                    }}m²
+                  }
                 }
               </small>
             </div>
@@ -321,6 +338,11 @@
               5 sections: Left Wall | Left Pillar | Door Space | Right Pillar |
               Right Wall
             </small>
+            <div class="alert alert-info mt-2" style="font-size: 11px">
+              <strong>Debug:</strong> Form value =
+              {{ wallForm.value.hasDoorOpening }}, Store value =
+              {{ selectedWall?.hasDoorOpening }}
+            </div>
           </div>
 
           <div
@@ -440,6 +462,21 @@
             <span class="label">Members:</span>
             <span class="value">{{ selectedWall.members.length }}</span>
           </div>
+          <div class="summary-item area-summary" *ngIf="wallAreaBreakdown">
+            <span class="label">Net Area:</span>
+            <span class="value"
+              >{{ wallAreaBreakdown.netInsulationArea.toFixed(2) }} m²</span
+            >
+          </div>
+          <div
+            class="summary-item area-summary"
+            *ngIf="wallAreaBreakdown?.doorOpeningArea > 0"
+          >
+            <span class="label">Door Deduction:</span>
+            <span class="value"
+              >-{{ wallAreaBreakdown.doorOpeningArea.toFixed(2) }} m²</span
+            >
+          </div>
         </div>
 
         <!-- Stud Layout Details -->
@@ -478,14 +515,745 @@
             </div>
           </div>
         </div>
+
+        <!-- Area Breakdown -->
+        <div class="area-breakdown" *ngIf="wallAreaBreakdown">
+          <h4>Area Breakdown</h4>
+
+          <!-- Door Opening Wall -->
+          <div
+            *ngIf="wallAreaBreakdown.type === 'door-opening'"
+            class="door-opening-breakdown"
+          >
+            <div class="breakdown-grid">
+              <div class="breakdown-item total">
+                <span class="label">Total Gross Area:</span>
+                <span class="value"
+                  >{{ wallAreaBreakdown.totalGrossArea.toFixed(2) }} m²</span
+                >
+              </div>
+              <div class="breakdown-item reduction">
+                <span class="label">Door Opening:</span>
+                <span class="value"
+                  >-{{ wallAreaBreakdown.doorOpeningArea.toFixed(2) }} m²</span
+                >
+              </div>
+              <div class="breakdown-item net">
+                <span class="label">Net Framed Area:</span>
+                <span class="value"
+                  >{{ wallAreaBreakdown.netFramedArea.toFixed(2) }} m²</span
+                >
+              </div>
+            </div>
+
+            <h5>Section Details</h5>
+            <div class="sections-grid">
+              <div class="section-item">
+                <span class="label"
+                  >Left Wall ({{
+                    wallAreaBreakdown.sections.leftWall.widthMm
+                  }}mm):</span
+                >
+                <span class="value"
+                  >{{
+                    wallAreaBreakdown.sections.leftWall.area.toFixed(2)
+                  }}
+                  m²</span
+                >
+              </div>
+              <div class="section-item">
+                <span class="label"
+                  >Left Pillar ({{
+                    wallAreaBreakdown.sections.leftPillar.widthMm
+                  }}mm):</span
+                >
+                <span class="value"
+                  >{{
+                    wallAreaBreakdown.sections.leftPillar.area.toFixed(2)
+                  }}
+                  m²</span
+                >
+              </div>
+              <div class="section-item opening">
+                <span class="label"
+                  >Door Opening ({{
+                    wallAreaBreakdown.sections.doorOpening.widthMm
+                  }}mm):</span
+                >
+                <span class="value"
+                  >{{
+                    wallAreaBreakdown.sections.doorOpening.area.toFixed(2)
+                  }}
+                  m² (removed)</span
+                >
+              </div>
+              <div class="section-item">
+                <span class="label"
+                  >Right Pillar ({{
+                    wallAreaBreakdown.sections.rightPillar.widthMm
+                  }}mm):</span
+                >
+                <span class="value"
+                  >{{
+                    wallAreaBreakdown.sections.rightPillar.area.toFixed(2)
+                  }}
+                  m²</span
+                >
+              </div>
+              <div class="section-item">
+                <span class="label"
+                  >Right Wall ({{
+                    wallAreaBreakdown.sections.rightWall.widthMm
+                  }}mm):</span
+                >
+                <span class="value"
+                  >{{
+                    wallAreaBreakdown.sections.rightWall.area.toFixed(2)
+                  }}
+                  m²</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Regular Wall -->
+          <div
+            *ngIf="wallAreaBreakdown.type === 'regular'"
+            class="regular-breakdown"
+          >
+            <div class="breakdown-grid">
+              <div class="breakdown-item total">
+                <span class="label">Total Wall Area:</span>
+                <span class="value"
+                  >{{ wallAreaBreakdown.totalGrossArea.toFixed(2) }} m²</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Structural Areas (both types) -->
+          <h5>Structural Members</h5>
+          <div class="structural-grid">
+            <div class="structural-item">
+              <span class="label">Stud Area:</span>
+              <span class="value"
+                >{{
+                  wallAreaBreakdown.structuralAreaBreakdown.studArea.toFixed(3)
+                }}
+                m²</span
+              >
+            </div>
+            <div class="structural-item">
+              <span class="label">Plate Area:</span>
+              <span class="value"
+                >{{
+                  wallAreaBreakdown.structuralAreaBreakdown.plateArea.toFixed(3)
+                }}
+                m²</span
+              >
+            </div>
+            <div class="structural-item">
+              <span class="label">Noggin Area:</span>
+              <span class="value"
+                >{{
+                  wallAreaBreakdown.structuralAreaBreakdown.nogginArea.toFixed(
+                    3
+                  )
+                }}
+                m²</span
+              >
+            </div>
+            <div class="structural-item total">
+              <span class="label">Total Structural:</span>
+              <span class="value"
+                >{{
+                  wallAreaBreakdown.structuralAreaBreakdown.totalStructuralArea.toFixed(
+                    3
+                  )
+                }}
+                m²</span
+              >
+            </div>
+          </div>
+
+          <!-- Final Net Area -->
+          <div class="final-area">
+            <div class="net-insulation">
+              <span class="label">Net Insulation Area:</span>
+              <span class="value"
+                >{{ wallAreaBreakdown.netInsulationArea.toFixed(2) }} m²</span
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="flex-grow-1 d-flex w-100">
-    <div class="w-100 h-100 d-flex" *ngIf="selectedWall && studLayout">
+  <div
+    class="flex-grow-1 d-flex flex-column gap-2 p-2"
+    *ngIf="selectedWall && studLayout"
+  >
+    <!-- Comprehensive 2D Overview: All Walls, Roof, and Base -->
+    <div class="d-none" style="min-height: 400px">
+      <svg viewBox="0 0 1400 900" class="w-100 h-100">
+        @let scale = 0.15;
+        @let offsetX = (leftWall?.lengthMm || 3000) * scale + 500 * scale;
+        @let offsetY = 80;
+
+        <!-- Roof (at top) -->
+        @if (roofWall && frontWall && leftWall) {
+          @let roofFrontExt = roofWall.roofFrontExtensionMm || 100;
+          @let roofBackExt = roofWall.roofBackExtensionMm || 100;
+          @let roofLength = roofWall.lengthMm || 5000;
+          @let roofWidth = roofWall.heightMm || 3000;
+          @let roofX = offsetX;
+          @let roofY = 20;
+          <g>
+            <rect
+              [attr.x]="roofX"
+              [attr.y]="roofY"
+              [attr.width]="roofLength * scale"
+              [attr.height]="roofWidth * scale * 0.3"
+              fill="#654321"
+              stroke="#3e2723"
+              stroke-width="2"
+              opacity="0.8"
+            />
+            <text
+              [attr.x]="roofX + (roofLength * scale) / 2"
+              [attr.y]="roofY + (roofWidth * scale * 0.3) / 2"
+              fill="white"
+              font-size="12"
+              font-weight="bold"
+              text-anchor="middle"
+              dominant-baseline="middle"
+            >
+              Roof: {{ roofLength }}mm × {{ roofWidth }}mm ({{
+                roofWall.members.length
+              }}
+              members)
+            </text>
+            <!-- Roof dimension lines -->
+            <line
+              [attr.x1]="roofX"
+              [attr.y1]="roofY - 10"
+              [attr.x2]="roofX + roofLength * scale"
+              [attr.y2]="roofY - 10"
+              stroke="#ffa500"
+              stroke-width="1.5"
+            />
+            <text
+              [attr.x]="roofX + (roofLength * scale) / 2"
+              [attr.y]="roofY - 13"
+              fill="#ffa500"
+              font-size="10"
+              font-weight="bold"
+              text-anchor="middle"
+            >
+              {{ roofLength }}mm
+            </text>
+          </g>
+        }
+
+        <!-- Front Wall -->
+        @if (frontWall) {
+          @let frontX = offsetX;
+          @let frontY = offsetY + 50;
+          <g>
+            <rect
+              [attr.x]="frontX"
+              [attr.y]="frontY"
+              [attr.width]="(frontWall.lengthMm || 5000) * scale"
+              [attr.height]="frontWallHeight * scale"
+              fill="#daa520"
+              stroke="#b8860b"
+              stroke-width="2"
+            />
+            <!-- Studs representation -->
+            @for (member of frontWall.members; track member.id) {
+              @if (member.type === "stud") {
+                <line
+                  [attr.x1]="
+                    frontX +
+                    (member.positionMm / frontWall.lengthMm) *
+                      ((frontWall.lengthMm || 5000) * scale)
+                  "
+                  [attr.y1]="frontY"
+                  [attr.x2]="
+                    frontX +
+                    (member.positionMm / frontWall.lengthMm) *
+                      ((frontWall.lengthMm || 5000) * scale)
+                  "
+                  [attr.y2]="frontY + frontWallHeight * scale"
+                  stroke="#8b4513"
+                  stroke-width="1"
+                  opacity="0.6"
+                />
+              }
+            }
+            <text
+              [attr.x]="frontX + ((frontWall.lengthMm || 5000) * scale) / 2"
+              [attr.y]="frontY + (frontWallHeight * scale) / 2"
+              fill="#000"
+              font-size="14"
+              font-weight="bold"
+              text-anchor="middle"
+            >
+              Front: {{ frontWall.lengthMm }}mm × {{ frontWallHeight }}mm ({{
+                frontWall.members.length
+              }}
+              members)
+            </text>
+            <!-- Dimension lines -->
+            <line
+              [attr.x1]="frontX"
+              [attr.y1]="frontY - 15"
+              [attr.x2]="frontX + (frontWall.lengthMm || 5000) * scale"
+              [attr.y2]="frontY - 15"
+              stroke="#0d6efd"
+              stroke-width="1.5"
+            />
+            <text
+              [attr.x]="frontX + ((frontWall.lengthMm || 5000) * scale) / 2"
+              [attr.y]="frontY - 18"
+              fill="#0d6efd"
+              font-size="10"
+              font-weight="bold"
+              text-anchor="middle"
+            >
+              {{ frontWall.lengthMm }}mm
+            </text>
+            <line
+              [attr.x1]="frontX - 15"
+              [attr.y1]="frontY"
+              [attr.x2]="frontX - 15"
+              [attr.y2]="frontY + frontWallHeight * scale"
+              stroke="#0d6efd"
+              stroke-width="1.5"
+            />
+            <text
+              [attr.x]="frontX - 18"
+              [attr.y]="frontY + (frontWallHeight * scale) / 2"
+              fill="#0d6efd"
+              font-size="10"
+              font-weight="bold"
+              text-anchor="middle"
+              [attr.transform]="
+                'rotate(-90, ' +
+                (frontX - 18) +
+                ', ' +
+                (frontY + (frontWallHeight * scale) / 2) +
+                ')'
+              "
+            >
+              {{ frontWallHeight }}mm
+            </text>
+          </g>
+        }
+
+        <!-- Base (below front wall) -->
+        @if (baseWall && frontWall) {
+          @let baseX = offsetX;
+          @let baseY = offsetY + 50 + frontWallHeight * scale + 15;
+          <g>
+            <rect
+              [attr.x]="baseX"
+              [attr.y]="baseY"
+              [attr.width]="(baseWall.lengthMm || 5000) * scale"
+              [attr.height]="(baseWall.heightMm || 3000) * scale * 0.25"
+              fill="#708090"
+              stroke="#2f4f4f"
+              stroke-width="2"
+            />
+            <text
+              [attr.x]="baseX + ((baseWall.lengthMm || 5000) * scale) / 2"
+              [attr.y]="
+                baseY + ((baseWall.heightMm || 3000) * scale * 0.25) / 2
+              "
+              fill="white"
+              font-size="12"
+              font-weight="bold"
+              text-anchor="middle"
+              dominant-baseline="middle"
+            >
+              Base: {{ baseWall.lengthMm }}mm × {{ baseWall.heightMm }}mm ({{
+                baseWall.members.length
+              }}
+              members)
+            </text>
+            <!-- Base dimensions -->
+            <line
+              [attr.x1]="baseX"
+              [attr.y1]="
+                baseY + (baseWall.heightMm || 3000) * scale * 0.25 + 10
+              "
+              [attr.x2]="baseX + (baseWall.lengthMm || 5000) * scale"
+              [attr.y2]="
+                baseY + (baseWall.heightMm || 3000) * scale * 0.25 + 10
+              "
+              stroke="#6c757d"
+              stroke-width="1.5"
+            />
+            <text
+              [attr.x]="baseX + ((baseWall.lengthMm || 5000) * scale) / 2"
+              [attr.y]="baseY + (baseWall.heightMm || 3000) * scale * 0.25 + 8"
+              fill="#6c757d"
+              font-size="10"
+              font-weight="bold"
+              text-anchor="middle"
+            >
+              {{ baseWall.lengthMm }}mm
+            </text>
+          </g>
+        }
+
+        <!-- Left Wall (left side) -->
+        @if (leftWall && frontWall && backWall) {
+          @let leftX = 30;
+          @let leftY = offsetY + 50;
+          <g>
+            <rect
+              [attr.x]="leftX"
+              [attr.y]="leftY"
+              [attr.width]="(leftWall.lengthMm || 3000) * scale"
+              [attr.height]="backWallHeight * scale"
+              fill="#cd853f"
+              stroke="#8b4513"
+              stroke-width="2"
+            />
+            <!-- Studs -->
+            @for (member of leftWall.members; track member.id) {
+              @if (member.type === "stud") {
+                <line
+                  [attr.x1]="
+                    leftX +
+                    (member.positionMm / leftWall.lengthMm) *
+                      ((leftWall.lengthMm || 3000) * scale)
+                  "
+                  [attr.y1]="leftY"
+                  [attr.x2]="
+                    leftX +
+                    (member.positionMm / leftWall.lengthMm) *
+                      ((leftWall.lengthMm || 3000) * scale)
+                  "
+                  [attr.y2]="leftY + backWallHeight * scale"
+                  stroke="#654321"
+                  stroke-width="0.8"
+                  opacity="0.6"
+                />
+              }
+            }
+            <text
+              [attr.x]="leftX + ((leftWall.lengthMm || 3000) * scale) / 2"
+              [attr.y]="leftY + (backWallHeight * scale) / 2"
+              fill="#000"
+              font-size="12"
+              font-weight="bold"
+              text-anchor="middle"
+              [attr.transform]="
+                'rotate(-90 ' +
+                (leftX + ((leftWall.lengthMm || 3000) * scale) / 2) +
+                ' ' +
+                (leftY + (backWallHeight * scale) / 2) +
+                ')'
+              "
+            >
+              Left: {{ leftWall.lengthMm }}mm ({{ leftWall.members.length }}
+              members)
+            </text>
+            <!-- Dimension lines -->
+            <line
+              [attr.x1]="leftX"
+              [attr.y1]="leftY - 15"
+              [attr.x2]="leftX + (leftWall.lengthMm || 3000) * scale"
+              [attr.y2]="leftY - 15"
+              stroke="#0d6efd"
+              stroke-width="1.5"
+            />
+            <text
+              [attr.x]="leftX + ((leftWall.lengthMm || 3000) * scale) / 2"
+              [attr.y]="leftY - 18"
+              fill="#0d6efd"
+              font-size="10"
+              font-weight="bold"
+              text-anchor="middle"
+            >
+              {{ leftWall.lengthMm }}mm
+            </text>
+          </g>
+        }
+
+        <!-- Right Wall (right side) -->
+        @if (rightWall && frontWall && backWall) {
+          @let rightX = offsetX + (frontWall.lengthMm || 5000) * scale + 15;
+          @let rightY = offsetY + 50;
+          <g>
+            <rect
+              [attr.x]="rightX"
+              [attr.y]="rightY"
+              [attr.width]="(rightWall.lengthMm || 3000) * scale"
+              [attr.height]="backWallHeight * scale"
+              fill="#cd853f"
+              stroke="#8b4513"
+              stroke-width="2"
+            />
+            <!-- Studs -->
+            @for (member of rightWall.members; track member.id) {
+              @if (member.type === "stud") {
+                <line
+                  [attr.x1]="
+                    rightX +
+                    (member.positionMm / rightWall.lengthMm) *
+                      ((rightWall.lengthMm || 3000) * scale)
+                  "
+                  [attr.y1]="rightY"
+                  [attr.x2]="
+                    rightX +
+                    (member.positionMm / rightWall.lengthMm) *
+                      ((rightWall.lengthMm || 3000) * scale)
+                  "
+                  [attr.y2]="rightY + backWallHeight * scale"
+                  stroke="#654321"
+                  stroke-width="0.8"
+                  opacity="0.6"
+                />
+              }
+            }
+            <text
+              [attr.x]="rightX + ((rightWall.lengthMm || 3000) * scale) / 2"
+              [attr.y]="rightY + (backWallHeight * scale) / 2"
+              fill="#000"
+              font-size="12"
+              font-weight="bold"
+              text-anchor="middle"
+              [attr.transform]="
+                'rotate(90 ' +
+                (rightX + ((rightWall.lengthMm || 3000) * scale) / 2) +
+                ' ' +
+                (rightY + (backWallHeight * scale) / 2) +
+                ')'
+              "
+            >
+              Right: {{ rightWall.lengthMm }}mm ({{ rightWall.members.length }}
+              members)
+            </text>
+            <!-- Dimension lines -->
+            <line
+              [attr.x1]="rightX"
+              [attr.y1]="rightY - 15"
+              [attr.x2]="rightX + (rightWall.lengthMm || 3000) * scale"
+              [attr.y2]="rightY - 15"
+              stroke="#0d6efd"
+              stroke-width="1.5"
+            />
+            <text
+              [attr.x]="rightX + ((rightWall.lengthMm || 3000) * scale) / 2"
+              [attr.y]="rightY - 18"
+              fill="#0d6efd"
+              font-size="10"
+              font-weight="bold"
+              text-anchor="middle"
+            >
+              {{ rightWall.lengthMm }}mm
+            </text>
+          </g>
+        }
+
+        <!-- Back Wall (next to right wall, bottom-aligned) -->
+        @if (backWall && frontWall && rightWall) {
+          @let frontY = offsetY + 50;
+          @let backX =
+            offsetX +
+            (frontWall.lengthMm || 5000) * scale +
+            15 +
+            (rightWall.lengthMm || 3000) * scale +
+            15;
+          @let backY = frontY;
+          <g opacity="0.7">
+            <rect
+              [attr.x]="backX"
+              [attr.y]="backY"
+              [attr.width]="(backWall.lengthMm || 5000) * scale"
+              [attr.height]="backWallHeight * scale"
+              fill="#d2691e"
+              stroke="#8b4513"
+              stroke-width="2"
+              stroke-dasharray="5,5"
+            />
+            <!-- Studs -->
+            @for (member of backWall.members; track member.id) {
+              @if (member.type === "stud") {
+                <line
+                  [attr.x1]="
+                    backX +
+                    (member.positionMm / backWall.lengthMm) *
+                      ((backWall.lengthMm || 5000) * scale)
+                  "
+                  [attr.y1]="backY"
+                  [attr.x2]="
+                    backX +
+                    (member.positionMm / backWall.lengthMm) *
+                      ((backWall.lengthMm || 5000) * scale)
+                  "
+                  [attr.y2]="backY + backWallHeight * scale"
+                  stroke="#654321"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+              }
+            }
+            <text
+              [attr.x]="backX + ((backWall.lengthMm || 5000) * scale) / 2"
+              [attr.y]="backY + (backWallHeight * scale) / 2"
+              fill="#000"
+              font-size="14"
+              font-weight="bold"
+              text-anchor="middle"
+            >
+              Back: {{ backWall.lengthMm }}mm × {{ backWallHeight }}mm ({{
+                backWall.members.length
+              }}
+              members)
+            </text>
+            <!-- Dimension lines -->
+            <line
+              [attr.x1]="backX"
+              [attr.y1]="backY + backWallHeight * scale + 15"
+              [attr.x2]="backX + (backWall.lengthMm || 5000) * scale"
+              [attr.y2]="backY + backWallHeight * scale + 15"
+              stroke="#0d6efd"
+              stroke-width="1.5"
+              opacity="0.7"
+            />
+            <text
+              [attr.x]="backX + ((backWall.lengthMm || 5000) * scale) / 2"
+              [attr.y]="backY + backWallHeight * scale + 13"
+              fill="#0d6efd"
+              font-size="10"
+              font-weight="bold"
+              text-anchor="middle"
+            >
+              {{ backWall.lengthMm }}mm
+            </text>
+            <line
+              [attr.x1]="backX + (backWall.lengthMm || 5000) * scale + 15"
+              [attr.y1]="backY"
+              [attr.x2]="backX + (backWall.lengthMm || 5000) * scale + 15"
+              [attr.y2]="backY + backWallHeight * scale"
+              stroke="#0d6efd"
+              stroke-width="1.5"
+              opacity="0.7"
+            />
+            <text
+              [attr.x]="backX + (backWall.lengthMm || 5000) * scale + 18"
+              [attr.y]="backY + (backWallHeight * scale) / 2"
+              fill="#0d6efd"
+              font-size="10"
+              font-weight="bold"
+              text-anchor="middle"
+              [attr.transform]="
+                'rotate(90, ' +
+                (backX + (backWall.lengthMm || 5000) * scale + 18) +
+                ', ' +
+                (backY + (backWallHeight * scale) / 2) +
+                ')'
+              "
+            >
+              {{ backWallHeight }}mm
+            </text>
+          </g>
+        }
+
+        <!-- Legend -->
+        <g transform="translate(20, 700)">
+          <text x="0" y="0" font-size="14" font-weight="bold">Legend:</text>
+          <rect
+            x="0"
+            y="10"
+            width="30"
+            height="15"
+            fill="#daa520"
+            stroke="#000"
+          />
+          <text x="35" y="22" font-size="12">Front/Back Walls</text>
+          <rect
+            x="150"
+            y="10"
+            width="30"
+            height="15"
+            fill="#cd853f"
+            stroke="#000"
+          />
+          <text x="185" y="22" font-size="12">Side Walls</text>
+          <rect
+            x="280"
+            y="10"
+            width="30"
+            height="15"
+            fill="#654321"
+            stroke="#000"
+          />
+          <text x="315" y="22" font-size="12">Roof</text>
+          <rect
+            x="370"
+            y="10"
+            width="30"
+            height="15"
+            fill="#708090"
+            stroke="#000"
+          />
+          <text x="405" y="22" font-size="12">Base</text>
+          <line
+            x1="480"
+            y1="17"
+            x2="510"
+            y2="17"
+            stroke="#8b4513"
+            stroke-width="1.5"
+          />
+          <text x="515" y="22" font-size="12">Studs</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Detailed View (existing) -->
+    <div style="flex: 1; min-height: 400px">
+      <h5 class="text-center mb-2">
+        Detailed View - {{ selectedWall?.name }} Wall
+      </h5>
+
+      <!-- Warning for invalid door opening configuration -->
+      @if (
+        selectedWall?.hasDoorOpening &&
+        selectedWall?.name === "Front" &&
+        rightWallWidthMm < 0
+      ) {
+        <div class="alert alert-danger mx-3 mb-3">
+          <i class="fas fa-exclamation-circle me-2"></i>
+          <strong>Invalid Door Opening Configuration:</strong> Wall length ({{
+            selectedWall.lengthMm
+          }}mm) is too small for the door opening sections.
+          <br />
+          <small>
+            Required: Left Wall ({{ selectedWall.leftWallWidthMm || 1000 }}mm) +
+            2× Pillar ({{ 2 * (selectedWall.pillarWidthMm || 400) }}mm) + Door
+            Space ({{ selectedWall.doorSpaceWidthMm || 2400 }}mm) + Right Wall
+            (min 300mm) =
+            <strong
+              >{{
+                (selectedWall.leftWallWidthMm || 1000) +
+                  2 * (selectedWall.pillarWidthMm || 400) +
+                  (selectedWall.doorSpaceWidthMm || 2400) +
+                  300
+              }}mm minimum</strong
+            >
+          </small>
+        </div>
+      }
+
       <svg
         [attr.viewBox]="'0 0 ' + svgWidth + ' ' + svgHeight"
-        class="wall-preview-svg"
+        class="wall-preview-svg w-100 h-100"
       >
         <!-- Background -->
         <rect
@@ -509,6 +1277,23 @@
 
         <!-- Plates and studs for wall WITHOUT door opening -->
         <g *ngIf="!selectedWall.hasDoorOpening">
+          <!-- Debug: Show stud positions -->
+          <text x="50" y="30" fill="red" font-size="9" font-weight="bold">
+            Wall: {{ selectedWall.lengthMm }}mm | Gap:
+            {{ selectedWall.studGapMm }}mm | Stud:
+            {{ selectedWall.studWidthMm || 45 }}mm | DecOffset:
+            {{ selectedWall.decorativeOffsetMm }}mm
+          </text>
+          <text x="50" y="50" fill="red" font-size="9" font-weight="bold">
+            Studs: {{ studLayout?.resolvedStudPositionsMm?.length || 0 }} at:
+            {{ studLayout?.resolvedStudPositionsMm?.join(", ") || "none" }}
+          </text>
+          <text x="50" y="70" fill="red" font-size="9" font-weight="bold">
+            Decorative:
+            {{ studLayout?.decorativeStudPositionsMm?.length || 0 }} at:
+            {{ studLayout?.decorativeStudPositionsMm?.join(", ") || "none" }}
+          </text>
+
           <!-- Bottom plate -->
           <rect
             [attr.x]="wallX"
@@ -640,11 +1425,17 @@
         </g>
 
         <!-- Door Opening: 5-section visualization -->
-        <g *ngIf="selectedWall.hasDoorOpening && selectedWall.name === 'Front'">
+        <g
+          *ngIf="
+            selectedWall.hasDoorOpening &&
+            selectedWall.name === 'Front' &&
+            rightWallWidthMm >= 0
+          "
+        >
           <!-- Calculate section boundaries -->
-          @let leftWallWidth = selectedWall.leftWallWidthMm || 800;
+          @let leftWallWidth = selectedWall.leftWallWidthMm || 1000;
           @let pillarWidth = selectedWall.pillarWidthMm || 400;
-          @let doorSpaceWidth = selectedWall.doorSpaceWidthMm || 1000;
+          @let doorSpaceWidth = selectedWall.doorSpaceWidthMm || 2400;
           @let leftWallEndMm = leftWallWidth;
           @let leftPillarEndMm = leftWallEndMm + pillarWidth;
           @let doorSpaceEndMm = leftPillarEndMm + doorSpaceWidth;
@@ -1059,26 +1850,6 @@
           </marker>
         </defs>
       </svg>
-
-      <!-- Legend -->
-      <div class="preview-legend">
-        <h5>Legend</h5>
-        <div class="legend-item">
-          <div class="legend-color" style="background: #8b4513"></div>
-          <span>Plates</span>
-        </div>
-        <div class="legend-item">
-          <div class="legend-color" style="background: #daa520"></div>
-          <span>Studs</span>
-        </div>
-        <div class="legend-item" *ngIf="selectedWall.hasDoorOpening">
-          <div
-            class="legend-color"
-            style="background: transparent; border: 2px dashed #dc3545"
-          ></div>
-          <span>Section Boundaries</span>
-        </div>
-      </div>
     </div>
   </div>
 </div>

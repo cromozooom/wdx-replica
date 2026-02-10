@@ -24,6 +24,37 @@ export class ExtractionEngineComponent {
   readonly totalMemberCount = this.store.totalMemberCount;
 
   /**
+   * Organize timber by wall and member type for construction planning
+   */
+  get timberOrganization(): any[] {
+    const walls = this.store.walls();
+    return walls.map((wall) => {
+      const members = wall.members || [];
+
+      // Group members by type
+      const memberGroups = {
+        topPlate: members.filter(
+          (m) => m.type === "plate" && m.metadata?.["position"] === "top",
+        ),
+        bottomPlate: members.filter(
+          (m) => m.type === "plate" && m.metadata?.["position"] === "bottom",
+        ),
+        studs: members.filter((m) => m.type === "stud"),
+        noggins: members.filter((m) => m.type === "noggin"),
+      };
+
+      return {
+        wallName: wall.name || wall.id,
+        wallId: wall.id,
+        timberSection: wall.timberSection || "47x100-c24",
+        lengthMm: wall.lengthMm,
+        memberGroups,
+        totalMembers: members.length,
+      };
+    });
+  }
+
+  /**
    * Calculate total cost of all items in buy list
    */
   get totalCost(): { amount: number; currency: string } {
@@ -44,6 +75,102 @@ export class ExtractionEngineComponent {
     // Return the first currency total (assuming single currency)
     const [currency, amount] = totals.entries().next().value || ["GBP", 0];
     return { amount, currency };
+  }
+
+  /**
+   * Analyze waste patterns and suggest reuse opportunities
+   */
+  get wasteAnalysis(): {
+    totalWasteMm: number;
+    wasteByLength: Map<number, number>;
+    reusableWaste: Array<{
+      lengthMm: number;
+      quantity: number;
+      possibleUses: string[];
+    }>;
+    totalWasteValue: number;
+  } {
+    const cutPlans = this.cutList();
+    const wasteByLength = new Map<number, number>();
+    let totalWasteMm = 0;
+    let totalWasteValue = 0;
+
+    // Analyze waste patterns
+    cutPlans.forEach((plan) => {
+      if (plan.wasteMm > 0) {
+        totalWasteMm += plan.wasteMm;
+        const count = wasteByLength.get(plan.wasteMm) || 0;
+        wasteByLength.set(plan.wasteMm, count + 1);
+
+        // Estimate waste value (rough calculation)
+        const stockLengthCostPerMm = this.estimateStockCostPerMm(
+          plan.stockLengthMm,
+        );
+        totalWasteValue += plan.wasteMm * stockLengthCostPerMm;
+      }
+    });
+
+    // Identify reusable waste pieces
+    const reusableWaste = Array.from(wasteByLength.entries())
+      .map(([lengthMm, quantity]) => ({
+        lengthMm,
+        quantity,
+        possibleUses: this.suggestWasteUses(lengthMm),
+      }))
+      .filter((item) => item.possibleUses.length > 0)
+      .sort((a, b) => b.lengthMm - a.lengthMm);
+
+    return {
+      totalWasteMm,
+      wasteByLength,
+      reusableWaste,
+      totalWasteValue,
+    };
+  }
+
+  /**
+   * Suggest possible uses for waste pieces
+   */
+  private suggestWasteUses(lengthMm: number): string[] {
+    const uses: string[] = [];
+
+    if (lengthMm >= 600) {
+      uses.push("Blocking/Packers");
+    }
+    if (lengthMm >= 400) {
+      uses.push("Short noggins");
+      uses.push("Bracing pieces");
+    }
+    if (lengthMm >= 300) {
+      uses.push("Cleats/Battens");
+    }
+    if (lengthMm >= 200) {
+      uses.push("Wedges/Shims");
+    }
+    if (lengthMm >= 100) {
+      uses.push("Fire blocks");
+    }
+
+    return uses;
+  }
+
+  /**
+   * Estimate cost per mm for stock length
+   */
+  private estimateStockCostPerMm(stockLengthMm: number): number {
+    const buyList = this.buyList();
+    const timberItem = buyList.find(
+      (item) =>
+        item.itemType === "timber" &&
+        item.description.includes(`${stockLengthMm}mm`),
+    );
+
+    if (timberItem?.pricePerUnit) {
+      return timberItem.pricePerUnit / stockLengthMm;
+    }
+
+    // Fallback estimate
+    return 0.002; // £0.002 per mm
   }
 
   /**
@@ -77,8 +204,8 @@ export class ExtractionEngineComponent {
       console.log("  🔧 Structure:", {
         studGapMm: wall.studGapMm,
         studWidthMm: wall.studWidthMm,
-        plateThicknessTopMm: wall.plateThicknessTopMm,
-        plateThicknessBottomMm: wall.plateThicknessBottomMm,
+        wallThicknessMm: wall.wallThicknessMm,
+        timberSection: wall.timberSection,
         hasNoggins: wall.hasNoggins,
       });
       console.log("  🚪 Door config:", {
@@ -142,5 +269,122 @@ export class ExtractionEngineComponent {
     });
 
     console.log("\n🔍 === END ANALYSIS ===");
+  }
+
+  /**
+   * Parse cut ID to extract wall and member information
+   * Actual format: "memberType-sectionName-lengthMm" (e.g., "plate-47x100-c24-5000")
+   */
+  parseCutId(cutId: string): {
+    wallId: string;
+    wallName: string;
+    memberDescription: string;
+  } {
+    const parts = cutId.split("-");
+
+    if (parts.length >= 1) {
+      const memberType = parts[0]; // "plate", "stud", "noggin"
+      const lengthMm = parts[parts.length - 1]; // Last part is length
+
+      // Find the wall that has this member type and length
+      const walls = this.store.walls();
+      let wallInfo = { wallId: "unknown", wallName: "Unknown Wall" };
+
+      for (const wall of walls) {
+        const members = wall.members || [];
+        const matchingMember = members.find(
+          (m) => m.type === memberType && m.lengthMm.toString() === lengthMm,
+        );
+
+        if (matchingMember) {
+          wallInfo = {
+            wallId: wall.id,
+            wallName: this.getWallDisplayName(wall.id),
+          };
+          break;
+        }
+      }
+
+      // Parse member description
+      let memberDescription = "Unknown";
+
+      switch (memberType) {
+        case "plate":
+          // Check if we can determine plate position from wall data
+          const wall = walls.find((w) => w.id === wallInfo.wallId);
+          if (wall?.members) {
+            const plateMembers = wall.members.filter(
+              (m) => m.type === "plate" && m.lengthMm.toString() === lengthMm,
+            );
+            if (plateMembers.length > 0) {
+              const plateMember = plateMembers[0];
+              if (plateMember.metadata && plateMember.metadata["position"]) {
+                memberDescription =
+                  plateMember.metadata["position"] === "top"
+                    ? "Top Plate"
+                    : "Bottom Plate";
+              } else {
+                memberDescription = "Plate";
+              }
+            } else {
+              memberDescription = "Plate";
+            }
+          } else {
+            memberDescription = "Plate";
+          }
+          break;
+        case "stud":
+          memberDescription = "Stud";
+          break;
+        case "noggin":
+          memberDescription = "Noggin";
+          break;
+        default:
+          memberDescription =
+            memberType.charAt(0).toUpperCase() + memberType.slice(1);
+      }
+
+      return {
+        wallId: wallInfo.wallId,
+        wallName: wallInfo.wallName,
+        memberDescription,
+      };
+    }
+
+    return {
+      wallId: "unknown",
+      wallName: "Unknown Wall",
+      memberDescription: "Unknown Member",
+    };
+  }
+
+  /**
+   * Get display name for wall ID
+   */
+  getWallDisplayName(wallId: string): string {
+    const displayNames: Record<string, string> = {
+      front: "Front Wall",
+      back: "Back Wall",
+      left: "Left Wall",
+      right: "Right Wall",
+      base: "Base Wall",
+      roof: "Roof Wall",
+    };
+
+    return displayNames[wallId.toLowerCase()] || `${wallId} Wall`;
+  }
+
+  /**
+   * Get enhanced cut information with wall details
+   */
+  getEnhancedCutInfo(cut: any): any {
+    const parsedInfo = this.parseCutId(cut.id);
+    return {
+      ...cut,
+      wallId: parsedInfo.wallId,
+      wallName: parsedInfo.wallName,
+      memberDescription: parsedInfo.memberDescription,
+      fullDescription: `${parsedInfo.wallName} - ${parsedInfo.memberDescription}`,
+    };
   }
 }

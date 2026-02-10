@@ -16,15 +16,38 @@ export class MaterialOptimizationService {
   /**
    * Generate cut requirements from wall members
    * @param members List of all members across all walls
-   * @returns Aggregated cut requirements
+   * @returns Aggregated cut requirements grouped by type, section, and length
    */
   generateCutRequirements(members: Member[]): CutRequirement[] {
-    // Group members by type and length
+    console.log("🎨 Generating cut requirements from members:", {
+      memberCount: members.length,
+      sampleMembers: members.slice(0, 3).map((m) => ({
+        id: m.id,
+        type: m.type,
+        sectionName: m.sectionName,
+        lengthMm: m.lengthMm,
+      })),
+      allSectionNames: [...new Set(members.map((m) => m.sectionName))],
+    });
+
+    // Group members by type, section, and length
     const requirementMap = new Map<string, CutRequirement>();
 
     members.forEach((member) => {
-      // Use lengthMm for all member types (studs, plates, noggins)
-      const key = `${member.type}-${member.lengthMm}`;
+      // Use type, sectionName, and lengthMm for the key
+      const sectionName = member.sectionName || "47x100-c24";
+      const key = `${member.type}-${sectionName}-${member.lengthMm}`;
+
+      if (member.type === "plate" || member.id?.includes("stud-0")) {
+        console.log("🔍 Processing key member:", {
+          memberId: member.id,
+          memberType: member.type,
+          originalSectionName: member.sectionName,
+          finalSectionName: sectionName,
+          lengthMm: member.lengthMm,
+          generatedKey: key,
+        });
+      }
 
       if (requirementMap.has(key)) {
         // Increment quantity for existing requirement
@@ -36,6 +59,7 @@ export class MaterialOptimizationService {
           id: key,
           memberType: member.type,
           lengthMm: member.lengthMm,
+          sectionName: sectionName,
           quantity: 1,
         });
       }
@@ -96,6 +120,7 @@ export class MaterialOptimizationService {
                 id: requirement.id,
                 memberType: requirement.memberType,
                 lengthMm: requirement.lengthMm,
+                sectionName: requirement.sectionName,
                 quantity: 1,
               });
             }
@@ -127,6 +152,7 @@ export class MaterialOptimizationService {
                 id: requirement.id,
                 memberType: requirement.memberType,
                 lengthMm: requirement.lengthMm,
+                sectionName: requirement.sectionName,
                 quantity: 1,
               },
             ],
@@ -153,6 +179,12 @@ export class MaterialOptimizationService {
   ): BuyListItem[] {
     const buyList: BuyListItem[] = [];
 
+    console.log("🌲 Starting timber calculations:", {
+      cutPlansCount: cutPlans.length,
+      wallsCount: walls.length,
+      sampleCutPlan: cutPlans[0],
+    });
+
     // Count stock lengths needed
     const stockCounts = new Map<number, number>();
 
@@ -161,25 +193,73 @@ export class MaterialOptimizationService {
       stockCounts.set(plan.stockLengthMm, count + 1);
     });
 
+    console.log("📊 Stock counts for timber:", {
+      stockCountsMap: Array.from(stockCounts.entries()),
+      totalPlans: cutPlans.length,
+    });
+
     // Format as buy list items with pricing
+    console.log("💰 Processing timber buy list items...");
     stockCounts.forEach((quantity, stockLength) => {
-      // Find the timber section and length option for this stock length
+      console.log("📏 Processing stock length:", { stockLength, quantity });
+      // Extract section name from first cut requirement for this stock length
+      const cutPlansForThisLength = cutPlans.filter(
+        (plan) => plan.stockLengthMm === stockLength,
+      );
+      const sectionName =
+        cutPlansForThisLength[0]?.cuts[0]?.sectionName || "47x100-c24";
+
+      console.log("🔍 Timber section lookup:", {
+        stockLength,
+        sectionName,
+        cutPlansForLength: cutPlansForThisLength.length,
+        sampleCuts: cutPlansForThisLength[0]?.cuts.slice(0, 3),
+      });
+
+      // Find the specific timber section and length option for this stock length
       let price = 0;
       let currency = "GBP";
       let description = `${stockLength}mm Timber`;
 
-      // Look through all timber sections to find matching length option
-      for (const section of materials.timberSections) {
-        const lengthOption = section.lengthOptions.find(
+      // Look for the specific section that matches the requirement
+      const targetSection = materials.timberSections.find(
+        (section) => section.id === sectionName,
+      );
+      if (targetSection) {
+        const lengthOption = targetSection.lengthOptions.find(
           (option) => option.lengthMm === stockLength && option.available,
         );
         if (lengthOption) {
           price = lengthOption.pricePerPiece;
           currency = lengthOption.currency;
-          description = `${stockLength}mm ${section.name}`;
-          break; // Use first matching section
+          description = `${stockLength}mm ${targetSection.name}`;
         }
       }
+
+      // Fallback: if specific section not found, use first available section
+      if (price === 0) {
+        for (const section of materials.timberSections) {
+          const lengthOption = section.lengthOptions.find(
+            (option) => option.lengthMm === stockLength && option.available,
+          );
+          if (lengthOption) {
+            price = lengthOption.pricePerPiece;
+            currency = lengthOption.currency;
+            description = `${stockLength}mm ${section.name} (fallback)`;
+            break;
+          }
+        }
+      }
+
+      console.log("✅ Adding timber to buy list:", {
+        stockLength,
+        sectionName,
+        description,
+        quantity,
+        pricePerUnit: price,
+        totalPrice: price * quantity,
+        currency,
+      });
 
       buyList.push({
         itemType: "timber",
@@ -190,6 +270,14 @@ export class MaterialOptimizationService {
         totalPrice: price * quantity,
         currency,
       });
+    });
+
+    console.log("🌲 Timber calculations complete:", {
+      timberItemsAdded: buyList.length,
+      totalTimberCost: buyList.reduce(
+        (sum, item) => sum + (item.totalPrice || 0),
+        0,
+      ),
     });
 
     // Add sheet materials based on wall selections
@@ -229,14 +317,30 @@ export class MaterialOptimizationService {
 
       // Add to sheet requirements if sheet material is selected
       if (wall.sheetMaterialId) {
+        let sheetArea = totalWallArea;
+
+        // For walls with door openings, calculate net sheet area (subtract door opening)
+        if (wall.hasDoorOpening && wall.name === "Front") {
+          const doorSpaceWidthMm = wall.doorSpaceWidthMm || 2400;
+          const doorOpeningArea =
+            (doorSpaceWidthMm / 1000) * (wallHeightMm / 1000);
+          sheetArea = totalWallArea - doorOpeningArea;
+
+          console.log(`  📋 Door opening detected - adjusting sheet area:`, {
+            totalWallArea: totalWallArea.toFixed(4) + "m²",
+            doorOpeningArea: doorOpeningArea.toFixed(4) + "m²",
+            netSheetArea: sheetArea.toFixed(4) + "m²",
+          });
+        }
+
         const existingSheetArea =
           sheetRequirements.get(wall.sheetMaterialId) || 0;
         sheetRequirements.set(
           wall.sheetMaterialId,
-          existingSheetArea + totalWallArea,
+          existingSheetArea + sheetArea,
         );
         console.log(
-          `  📋 Added ${totalWallArea.toFixed(4)}m² sheet area for ${wall.sheetMaterialId}`,
+          `  📋 Added ${sheetArea.toFixed(4)}m² sheet area for ${wall.sheetMaterialId}`,
         );
       }
 
@@ -287,13 +391,15 @@ export class MaterialOptimizationService {
 
           topPlates.forEach((plate: any) => {
             const plateArea =
-              (plate.lengthMm / 1000) * (wall.plateThicknessTopMm / 1000);
+              (plate.lengthMm / 1000) *
+              ((wall.wallThicknessMm || 100) / 2 / 1000);
             structuralArea += plateArea;
           });
 
           bottomPlates.forEach((plate: any) => {
             const plateArea =
-              (plate.lengthMm / 1000) * (wall.plateThicknessBottomMm / 1000);
+              (plate.lengthMm / 1000) *
+              ((wall.wallThicknessMm || 100) / 2 / 1000);
             structuralArea += plateArea;
           });
 

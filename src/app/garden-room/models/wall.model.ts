@@ -29,11 +29,11 @@ export interface Wall {
   /** Gap between structural studs in mm */
   studGapMm: number;
 
-  /** Top plate thickness in mm */
-  plateThicknessTopMm: number;
+  /** Selected timber section ID for ALL structural members (e.g., "47x150-c24") */
+  timberSection?: string;
 
-  /** Bottom plate thickness in mm */
-  plateThicknessBottomMm: number;
+  /** Wall thickness in mm (derived from timber section height) */
+  wallThicknessMm?: number;
 
   /** Door opening configuration (front wall only) */
   hasDoorOpening?: boolean;
@@ -50,6 +50,15 @@ export interface Wall {
   /** Stud width in mm (default 45mm) */
   studWidthMm?: number;
 
+  /** Selected stud section ID (e.g., "47x150-c24") - DEPRECATED: Use timberSection */
+  studSection?: string;
+
+  /** Selected top plate section ID - DEPRECATED: Use timberSection */
+  topPlateSection?: string;
+
+  /** Selected bottom plate section ID - DEPRECATED: Use timberSection */
+  bottomPlateSection?: string;
+
   /** Include last stud even if it creates irregular gap */
   includeIrregularLastStud?: boolean;
 
@@ -61,6 +70,12 @@ export interface Wall {
 
   /** Selected sheet material ID for sheathing */
   sheetMaterialId?: string;
+
+  /** Custom roof extension beyond front wall (mm) - roof only */
+  roofFrontExtensionMm?: number;
+
+  /** Custom roof extension beyond back wall (mm) - roof only */
+  roofBackExtensionMm?: number;
 
   /** List of structural members (studs, plates, noggins) */
   members: Member[];

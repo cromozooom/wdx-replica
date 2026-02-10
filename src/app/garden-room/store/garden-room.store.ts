@@ -32,8 +32,6 @@ const initialState: BuildEnvelopeState = {
     roofSystemMm: 200,
     floorSystemMm: 150,
     fallRatio: { rise: 1, run: 40 },
-    roofFrontExtensionMm: 100,
-    roofBackExtensionMm: 100,
   },
   walls: [
     {
@@ -44,8 +42,8 @@ const initialState: BuildEnvelopeState = {
       isMasterHeight: true,
       decorativeOffsetMm: 100,
       studGapMm: 400,
-      plateThicknessTopMm: 47,
-      plateThicknessBottomMm: 47,
+      timberSection: "47x100-c24",
+      wallThicknessMm: 100,
       hasNoggins: true,
       members: [],
     },
@@ -57,8 +55,8 @@ const initialState: BuildEnvelopeState = {
       isMasterHeight: false,
       decorativeOffsetMm: 100,
       studGapMm: 400,
-      plateThicknessTopMm: 47,
-      plateThicknessBottomMm: 47,
+      timberSection: "47x100-c24",
+      wallThicknessMm: 100,
       hasNoggins: true,
       members: [],
     },
@@ -70,8 +68,8 @@ const initialState: BuildEnvelopeState = {
       isMasterHeight: false,
       decorativeOffsetMm: 0,
       studGapMm: 400,
-      plateThicknessTopMm: 47,
-      plateThicknessBottomMm: 47,
+      timberSection: "47x100-c24",
+      wallThicknessMm: 100,
       hasNoggins: true,
       members: [],
     },
@@ -83,8 +81,8 @@ const initialState: BuildEnvelopeState = {
       isMasterHeight: false,
       decorativeOffsetMm: 0,
       studGapMm: 400,
-      plateThicknessTopMm: 47,
-      plateThicknessBottomMm: 47,
+      timberSection: "47x100-c24",
+      wallThicknessMm: 100,
       hasNoggins: true,
       members: [],
     },
@@ -96,8 +94,8 @@ const initialState: BuildEnvelopeState = {
       isMasterHeight: false,
       decorativeOffsetMm: 0,
       studGapMm: 400,
-      plateThicknessTopMm: 47,
-      plateThicknessBottomMm: 47,
+      timberSection: "47x100-c24",
+      wallThicknessMm: 100,
       hasNoggins: false, // Base typically doesn't need noggins
       members: [],
     },
@@ -109,9 +107,11 @@ const initialState: BuildEnvelopeState = {
       isMasterHeight: false,
       decorativeOffsetMm: 0,
       studGapMm: 400,
-      plateThicknessTopMm: 47,
-      plateThicknessBottomMm: 47,
+      timberSection: "47x100-c24",
+      wallThicknessMm: 100,
       hasNoggins: false, // Roof has different framing pattern
+      roofFrontExtensionMm: 100,
+      roofBackExtensionMm: 100,
       members: [],
     },
   ],
@@ -150,6 +150,39 @@ const initialState: BuildEnvelopeState = {
     ],
     timberSections: [
       {
+        id: "47x50-c16",
+        name: "47x50 C16 Timber",
+        widthMm: 47,
+        heightMm: 50,
+        grade: "C16",
+        lengthOptions: [
+          {
+            lengthMm: 2400,
+            pricePerPiece: 4.68,
+            currency: "GBP",
+            available: true,
+          },
+          {
+            lengthMm: 3000,
+            pricePerPiece: 5.84,
+            currency: "GBP",
+            available: true,
+          },
+          {
+            lengthMm: 3600,
+            pricePerPiece: 7.03,
+            currency: "GBP",
+            available: true,
+          },
+          {
+            lengthMm: 4800,
+            pricePerPiece: 9.37,
+            currency: "GBP",
+            available: true,
+          },
+        ],
+      },
+      {
         id: "47x100-c24",
         name: "47x100 C24 Timber",
         widthMm: 47,
@@ -186,6 +219,12 @@ const initialState: BuildEnvelopeState = {
             currency: "GBP",
             available: true,
           },
+          {
+            lengthMm: 6000,
+            pricePerPiece: 19.1,
+            currency: "GBP",
+            available: true,
+          },
         ],
       },
       {
@@ -216,6 +255,12 @@ const initialState: BuildEnvelopeState = {
           {
             lengthMm: 4800,
             pricePerPiece: 22.94,
+            currency: "GBP",
+            available: true,
+          },
+          {
+            lengthMm: 6000,
+            pricePerPiece: 35.75,
             currency: "GBP",
             available: true,
           },
@@ -350,15 +395,17 @@ export const GardenRoomStore = signalStore(
        */
       roofDimensions: computed(() => {
         const wallList = walls();
-        const envelope = buildEnvelope();
         const frontWall = wallList.find((w) => w.name === "Front");
         const leftWall = wallList.find((w) => w.name === "Left");
+        const roofWall = wallList.find((w) => w.name === "Roof");
+
+        // Get roof extensions from roof wall
+        const frontExtension = roofWall?.roofFrontExtensionMm || 100;
+        const backExtension = roofWall?.roofBackExtensionMm || 100;
 
         // Roof length = front wall width + custom front extension + custom back extension
         const roofLength =
-          (frontWall?.lengthMm || 5000) +
-          envelope.roofFrontExtensionMm +
-          envelope.roofBackExtensionMm;
+          (frontWall?.lengthMm || 5000) + frontExtension + backExtension;
 
         // Roof width = left wall width + (2 × decorative offset from front wall)
         const decorativeOffset = frontWall?.decorativeOffsetMm || 100;
@@ -367,8 +414,8 @@ export const GardenRoomStore = signalStore(
         return {
           lengthMm: roofLength,
           heightMm: roofWidth, // Using heightMm as width for consistency
-          frontExtensionMm: envelope.roofFrontExtensionMm,
-          backExtensionMm: envelope.roofBackExtensionMm,
+          frontExtensionMm: frontExtension,
+          backExtensionMm: backExtension,
           sideExtensionMm: decorativeOffset,
         };
       }),
@@ -388,14 +435,15 @@ export const GardenRoomStore = signalStore(
         })();
 
         const roofDimensions = computed(() => {
-          const envelope = buildEnvelope();
           const frontWall = wallList.find((w) => w.name === "Front");
           const leftWall = wallList.find((w) => w.name === "Left");
+          const roofWall = wallList.find((w) => w.name === "Roof");
+
+          const frontExtension = roofWall?.roofFrontExtensionMm || 100;
+          const backExtension = roofWall?.roofBackExtensionMm || 100;
 
           const roofLength =
-            (frontWall?.lengthMm || 5000) +
-            envelope.roofFrontExtensionMm +
-            envelope.roofBackExtensionMm;
+            (frontWall?.lengthMm || 5000) + frontExtension + backExtension;
           const decorativeOffset = frontWall?.decorativeOffsetMm || 100;
           const roofWidth = (leftWall?.lengthMm || 3000) + 2 * decorativeOffset;
 
@@ -425,11 +473,66 @@ export const GardenRoomStore = signalStore(
       /**
        * Computed: Stud layout for selected wall
        * Calculates standard, decorative, and resolved stud positions
+       * Handles door openings by excluding studs in the opening area
        */
       studLayoutForWall: computed(() => (wallId: string) => {
         const wallList = walls();
         const wall = wallList.find((w) => w.id === wallId);
         if (!wall) return null;
+
+        // Handle door opening (front wall only) - exclude studs in the opening area
+        if (wall.hasDoorOpening && wall.name === "Front") {
+          // Calculate door opening boundaries
+          const pillarWidthMm = wall.pillarWidthMm || 45; // default pillar width
+          const leftWallWidthMm = wall.leftWallWidthMm || 1500; // default left wall width
+          const doorSpaceWidthMm = wall.doorSpaceWidthMm || 900; // default door space width
+
+          // Calculate section boundaries
+          const leftWallEnd = leftWallWidthMm;
+          const doorSpaceStart = leftWallEnd + pillarWidthMm;
+          const doorSpaceEnd = doorSpaceStart + doorSpaceWidthMm;
+          const rightWallStart = doorSpaceEnd + pillarWidthMm;
+
+          // Get the full wall layout first
+          const fullLayout = structuralService.generateStudLayout(wall);
+
+          // Filter out studs that would be in the door opening area
+          // Keep studs that are outside the door opening zone
+          const filteredStudPositions =
+            fullLayout.resolvedStudPositionsMm.filter((position) => {
+              // Keep studs that are completely before the door opening or after it
+              const studWidthMm = wall.studWidthMm || 45;
+              const studStart = position - studWidthMm / 2;
+              const studEnd = position + studWidthMm / 2;
+
+              // Keep if stud is completely outside the door opening area
+              return studEnd <= doorSpaceStart || studStart >= rightWallStart;
+            });
+
+          // Calculate how many standard and decorative studs remain
+          const standardStudsRemaining =
+            fullLayout.standardStudPositionsMm.filter((position) => {
+              const studWidthMm = wall.studWidthMm || 45;
+              const studStart = position - studWidthMm / 2;
+              const studEnd = position + studWidthMm / 2;
+              return studEnd <= doorSpaceStart || studStart >= rightWallStart;
+            });
+
+          const decorativeStudsRemaining =
+            fullLayout.decorativeStudPositionsMm.filter((position) => {
+              const studWidthMm = wall.studWidthMm || 45;
+              const studStart = position - studWidthMm / 2;
+              const studEnd = position + studWidthMm / 2;
+              return studEnd <= doorSpaceStart || studStart >= rightWallStart;
+            });
+
+          return {
+            ...fullLayout,
+            standardStudPositionsMm: standardStudsRemaining,
+            decorativeStudPositionsMm: decorativeStudsRemaining,
+            resolvedStudPositionsMm: filteredStudPositions,
+          };
+        }
 
         // Use the structural calculation service for consistent stud placement
         return structuralService.generateStudLayout(wall);

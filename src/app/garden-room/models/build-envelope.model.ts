@@ -20,12 +20,6 @@ export interface BuildEnvelope {
     rise: number;
     run: number;
   };
-
-  /** Custom roof extension beyond front wall (mm) */
-  roofFrontExtensionMm: number;
-
-  /** Custom roof extension beyond back wall (mm) */
-  roofBackExtensionMm: number;
 }
 
 /**

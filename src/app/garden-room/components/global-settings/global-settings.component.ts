@@ -34,8 +34,6 @@ export class GlobalSettingsComponent {
       floorSystemMm: [100, [Validators.required, Validators.min(0)]],
       fallRatioRise: [1, [Validators.required, Validators.min(1)]],
       fallRatioRun: [40, [Validators.required, Validators.min(1)]],
-      roofFrontExtensionMm: [100, [Validators.required, Validators.min(0)]],
-      roofBackExtensionMm: [100, [Validators.required, Validators.min(0)]],
     });
 
     // Sync form changes to store
@@ -62,8 +60,6 @@ export class GlobalSettingsComponent {
         rise: this.buildEnvelopeForm.value.fallRatioRise,
         run: this.buildEnvelopeForm.value.fallRatioRun,
       },
-      roofFrontExtensionMm: this.buildEnvelopeForm.value.roofFrontExtensionMm,
-      roofBackExtensionMm: this.buildEnvelopeForm.value.roofBackExtensionMm,
     };
   }
 
