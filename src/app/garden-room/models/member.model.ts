@@ -18,6 +18,9 @@ export interface Member {
   /** Height of member in mm (applicable to studs) */
   heightMm: number;
 
+  /** Timber section name (e.g., "47x100-c24") - used for pricing lookup */
+  sectionName?: string;
+
   /** Additional metadata for extensibility */
   metadata: Record<string, unknown>;
 }

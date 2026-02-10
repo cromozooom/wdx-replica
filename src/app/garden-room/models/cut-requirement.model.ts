@@ -12,6 +12,9 @@ export interface CutRequirement {
   /** Required length in mm */
   lengthMm: number;
 
+  /** Timber section name (e.g., "47x100-c24") */
+  sectionName?: string;
+
   /** Number of pieces required */
   quantity: number;
 }

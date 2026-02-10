@@ -1,3 +1,11 @@
+:host {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
 .extraction-container {
   padding: 1.5rem;
   background-color: #fff;
@@ -139,6 +147,129 @@
   }
 }
 
+/* Timber Organization Section */
+.timber-organization-section {
+  .timber-organization {
+    .wall-section {
+      margin-bottom: 1.5rem;
+      padding: 1.25rem;
+      background-color: #fff;
+      border-radius: 6px;
+      border: 1px solid #dee2e6;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+      .wall-header {
+        margin: 0 0 1rem 0;
+        padding: 0.75rem 1rem;
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: #fff;
+        border-radius: 4px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .wall-details {
+          font-weight: 400;
+          font-size: 0.9rem;
+          opacity: 0.9;
+        }
+      }
+
+      .member-groups {
+        .member-group {
+          margin-bottom: 1rem;
+          padding: 1rem;
+          border-radius: 4px;
+
+          &.top-plate {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+          }
+
+          &.bottom-plate {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+          }
+
+          &.studs {
+            background-color: #cce5ff;
+            border-left: 4px solid #007bff;
+          }
+
+          &.noggins {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+          }
+
+          h5 {
+            margin: 0 0 0.75rem 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+          }
+
+          .member-details {
+            .member-item {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              padding: 0.5rem 0;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+              &:last-child {
+                border-bottom: none;
+              }
+
+              &.more-indicator {
+                font-style: italic;
+                opacity: 0.7;
+                justify-content: center;
+              }
+
+              .length {
+                font-weight: 600;
+                color: #007bff;
+                min-width: 80px;
+              }
+
+              .section {
+                background-color: #f8f9fa;
+                padding: 0.25rem 0.5rem;
+                border-radius: 3px;
+                font-family: "Courier New", monospace;
+                font-size: 0.9rem;
+                font-weight: 500;
+                min-width: 100px;
+                text-align: center;
+              }
+
+              .note {
+                color: #6c757d;
+                font-size: 0.875rem;
+                font-style: italic;
+              }
+            }
+          }
+        }
+      }
+
+      .wall-summary {
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        background-color: #e9ecef;
+        border-radius: 4px;
+        text-align: center;
+        color: #495057;
+      }
+    }
+  }
+}
+
 .summary-section {
   padding: 1.5rem;
   background-color: #e7f5ff;
@@ -168,6 +299,240 @@
         color: #007bff;
         font-size: 1.125rem;
       }
+    }
+  }
+}
+
+/* Waste Analysis Section */
+.waste-analysis-section {
+  .waste-analysis {
+    .waste-summary {
+      margin-bottom: 1.5rem;
+
+      .waste-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+
+        .stat-item {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 1rem;
+          border-radius: 6px;
+          border-left: 4px solid;
+
+          &.critical {
+            background-color: #fff5f5;
+            border-left-color: #e53e3e;
+            color: #c53030;
+          }
+
+          &.warning {
+            background-color: #fffbeb;
+            border-left-color: #f6ad55;
+            color: #c05621;
+          }
+
+          i {
+            font-size: 1.5rem;
+          }
+
+          .stat-details {
+            display: flex;
+            flex-direction: column;
+
+            .label {
+              font-size: 0.875rem;
+              font-weight: 500;
+              opacity: 0.8;
+            }
+
+            .value {
+              font-size: 1.25rem;
+              font-weight: 700;
+            }
+
+            .note {
+              font-size: 0.75rem;
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+
+    .reusable-waste {
+      margin-bottom: 1.5rem;
+      padding: 1.25rem;
+      background-color: #f0fff4;
+      border: 2px solid #68d391;
+      border-radius: 6px;
+
+      h4 {
+        margin: 0 0 0.5rem 0;
+        color: #276749;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .subtitle {
+        margin: 0 0 1rem 0;
+        color: #2d7243;
+        font-style: italic;
+      }
+
+      .waste-pieces {
+        display: grid;
+        gap: 1rem;
+
+        .waste-piece {
+          padding: 1rem;
+          background-color: #fff;
+          border-radius: 4px;
+          border: 1px solid #c6f6d5;
+
+          .piece-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+
+            .length {
+              font-weight: 700;
+              font-size: 1.1rem;
+              color: #2d7243;
+            }
+
+            .quantity {
+              background-color: #68d391;
+              color: #fff;
+              padding: 0.25rem 0.5rem;
+              border-radius: 3px;
+              font-size: 0.875rem;
+              font-weight: 600;
+            }
+          }
+
+          .possible-uses {
+            .use-tags {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0.5rem;
+              margin-top: 0.5rem;
+
+              .use-tag {
+                background-color: #edf2f7;
+                color: #2d3748;
+                padding: 0.25rem 0.5rem;
+                border-radius: 3px;
+                font-size: 0.875rem;
+                border: 1px solid #e2e8f0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .waste-explanation {
+      padding: 1.25rem;
+      background-color: #f7fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+
+      h4 {
+        margin: 0 0 1rem 0;
+        color: #2d3748;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .explanation-content {
+        color: #4a5568;
+        line-height: 1.6;
+
+        p {
+          margin-bottom: 0.75rem;
+        }
+
+        ul {
+          margin: 0.5rem 0 1rem 1.5rem;
+
+          li {
+            margin-bottom: 0.25rem;
+          }
+        }
+
+        .fa-lightbulb {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* Enhanced Cut List Styling */
+.cut-list-section {
+  .data-table {
+    .wall-badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: #fff;
+      border-radius: 3px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .member-type {
+      font-weight: 600;
+      color: #495057;
+    }
+
+    .quantity-badge {
+      display: inline-block;
+      padding: 0.2rem 0.4rem;
+      background-color: #28a745;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.875rem;
+      font-weight: 600;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    .section-badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 3px;
+      font-family: "Courier New", monospace;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #495057;
+    }
+
+    th {
+      background-color: #f1f3f4;
+      font-weight: 600;
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 2px solid #dee2e6;
+    }
+
+    td {
+      padding: 0.75rem;
+      border-bottom: 1px solid #e9ecef;
+      vertical-align: middle;
+    }
+
+    tr:hover {
+      background-color: #f8f9fa;
     }
   }
 }

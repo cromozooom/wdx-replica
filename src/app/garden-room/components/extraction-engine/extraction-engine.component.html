@@ -1,4 +1,4 @@
-<div class="extraction-container">
+<div class="extraction-container d-flex flex-column h-100 overflow-auto">
   <div class="d-flex justify-content-between align-items-center mb-3">
     <h2>Material Extraction & Ordering</h2>
     <button
@@ -75,6 +75,139 @@
     </div>
   </div>
 
+  <!-- Timber Organization Section -->
+  <div class="section timber-organization-section">
+    <div class="section-header">
+      <h3>Timber Organization by Wall</h3>
+      <p class="description">
+        Organize your timber by wall and member type for construction
+      </p>
+    </div>
+
+    <div class="timber-organization">
+      @if (timberOrganization.length === 0) {
+        <div class="placeholder">
+          No walls configured. Add walls to see timber organization.
+        </div>
+      } @else {
+        @for (wall of timberOrganization; track wall.wallId) {
+          <div class="wall-section">
+            <h4 class="wall-header">
+              <i class="fas fa-home"></i>
+              {{ wall.wallName }} Wall
+              <span class="wall-details"
+                >({{ wall.lengthMm }}mm, {{ wall.timberSection }})</span
+              >
+            </h4>
+
+            <div class="member-groups">
+              <!-- Top Plate -->
+              @if (wall.memberGroups.topPlate.length > 0) {
+                <div class="member-group top-plate">
+                  <h5><i class="fas fa-minus"></i> Top Plate</h5>
+                  <div class="member-details">
+                    @for (
+                      member of wall.memberGroups.topPlate;
+                      track member.id
+                    ) {
+                      <div class="member-item">
+                        <span class="length">{{ member.lengthMm }}mm</span>
+                        <span class="section">{{ member.sectionName }}</span>
+                        <span class="note">(horizontal, full wall length)</span>
+                      </div>
+                    }
+                  </div>
+                </div>
+              }
+
+              <!-- Bottom Plate -->
+              @if (wall.memberGroups.bottomPlate.length > 0) {
+                <div class="member-group bottom-plate">
+                  <h5><i class="fas fa-minus"></i> Bottom Plate</h5>
+                  <div class="member-details">
+                    @for (
+                      member of wall.memberGroups.bottomPlate;
+                      track member.id
+                    ) {
+                      <div class="member-item">
+                        <span class="length">{{ member.lengthMm }}mm</span>
+                        <span class="section">{{ member.sectionName }}</span>
+                        <span class="note">(horizontal, full wall length)</span>
+                      </div>
+                    }
+                  </div>
+                </div>
+              }
+
+              <!-- Studs -->
+              @if (wall.memberGroups.studs.length > 0) {
+                <div class="member-group studs">
+                  <h5>
+                    <i class="fas fa-grip-lines-vertical"></i> Studs ({{
+                      wall.memberGroups.studs.length
+                    }}
+                    pieces)
+                  </h5>
+                  <div class="member-details">
+                    <div class="member-item">
+                      <span class="length"
+                        >{{ wall.memberGroups.studs[0]?.lengthMm }}mm</span
+                      >
+                      <span class="section">{{
+                        wall.memberGroups.studs[0]?.sectionName
+                      }}</span>
+                      <span class="note"
+                        >(vertical supports, quantity:
+                        {{ wall.memberGroups.studs.length }})</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              }
+
+              <!-- Noggins -->
+              @if (wall.memberGroups.noggins.length > 0) {
+                <div class="member-group noggins">
+                  <h5>
+                    <i class="fas fa-grip-horizontal"></i> Noggins ({{
+                      wall.memberGroups.noggins.length
+                    }}
+                    pieces)
+                  </h5>
+                  <div class="member-details">
+                    @for (
+                      noggin of wall.memberGroups.noggins.slice(0, 3);
+                      track noggin.id
+                    ) {
+                      <div class="member-item">
+                        <span class="length">{{ noggin.lengthMm }}mm</span>
+                        <span class="section">{{ noggin.sectionName }}</span>
+                        <span class="note">(horizontal bracing)</span>
+                      </div>
+                    }
+                    @if (wall.memberGroups.noggins.length > 3) {
+                      <div class="member-item more-indicator">
+                        <span class="note"
+                          >... and
+                          {{ wall.memberGroups.noggins.length - 3 }} more
+                          noggins</span
+                        >
+                      </div>
+                    }
+                  </div>
+                </div>
+              }
+            </div>
+
+            <div class="wall-summary">
+              <strong>Wall Total: {{ wall.totalMembers }} timber pieces</strong>
+            </div>
+          </div>
+        }
+      }
+    </div>
+  </div>
+
   <!-- Cut List Section -->
   <div class="section cut-list-section">
     <div class="section-header">
@@ -97,23 +230,149 @@
             <table class="data-table">
               <thead>
                 <tr>
-                  <th>Member Type</th>
+                  <th>Wall</th>
+                  <th>Member Description</th>
                   <th>Length (mm)</th>
                   <th>Quantity</th>
+                  <th>Timber Section</th>
                 </tr>
               </thead>
               <tbody>
                 @for (cut of plan.cuts; track cut.id) {
+                  @let cutInfo = getEnhancedCutInfo(cut);
                   <tr>
-                    <td>{{ cut.memberType }}</td>
-                    <td>{{ cut.lengthMm }}</td>
-                    <td>{{ cut.quantity }}</td>
+                    <td>
+                      <span class="wall-badge">{{ cutInfo.wallName }}</span>
+                    </td>
+                    <td>
+                      <span class="member-type">{{
+                        cutInfo.memberDescription
+                      }}</span>
+                    </td>
+                    <td>
+                      <strong>{{ cut.lengthMm }}mm</strong>
+                    </td>
+                    <td>
+                      <span class="quantity-badge">{{ cut.quantity }}</span>
+                    </td>
+                    <td>
+                      <span class="section-badge">{{
+                        cut.sectionName || "47x100-c24"
+                      }}</span>
+                    </td>
                   </tr>
                 }
               </tbody>
             </table>
           </div>
         }
+      }
+    </div>
+  </div>
+
+  <!-- Waste Analysis Section -->
+  <div class="section waste-analysis-section">
+    <div class="section-header">
+      <h3>Waste Analysis</h3>
+      <p class="description">Understanding and reusing waste timber</p>
+    </div>
+
+    <div class="waste-analysis">
+      @if (wasteAnalysis.totalWasteMm === 0) {
+        <div class="placeholder">
+          <i class="fas fa-leaf text-success"></i>
+          <span>Perfect optimization! No waste generated.</span>
+        </div>
+      } @else {
+        <div class="waste-summary">
+          <div class="waste-stats">
+            <div class="stat-item critical">
+              <i class="fas fa-exclamation-triangle"></i>
+              <div class="stat-details">
+                <span class="label">Total Waste</span>
+                <span class="value"
+                  >{{ wasteAnalysis.totalWasteMm | number: "1.0-1" }}mm</span
+                >
+                <small class="note"
+                  >≈
+                  {{
+                    wasteAnalysis.totalWasteMm / 1000 | number: "1.1-1"
+                  }}m</small
+                >
+              </div>
+            </div>
+
+            <div class="stat-item warning">
+              <i class="fas fa-pound-sign"></i>
+              <div class="stat-details">
+                <span class="label">Waste Value</span>
+                <span class="value"
+                  >£{{ wasteAnalysis.totalWasteValue | number: "1.2-2" }}</span
+                >
+                <small class="note">Approx. cost of wasted material</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        @if (wasteAnalysis.reusableWaste.length > 0) {
+          <div class="reusable-waste">
+            <h4>
+              <i class="fas fa-recycle"></i>
+              Reusable Waste Pieces
+            </h4>
+            <p class="subtitle">
+              Don't throw these away! Here's how you can use them:
+            </p>
+
+            <div class="waste-pieces">
+              @for (waste of wasteAnalysis.reusableWaste; track $index) {
+                <div class="waste-piece">
+                  <div class="piece-info">
+                    <span class="length">{{ waste.lengthMm }}mm</span>
+                    <span class="quantity">× {{ waste.quantity }} pieces</span>
+                  </div>
+                  <div class="possible-uses">
+                    <strong>Possible uses:</strong>
+                    <div class="use-tags">
+                      @for (use of waste.possibleUses; track use) {
+                        <span class="use-tag">{{ use }}</span>
+                      }
+                    </div>
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+        }
+
+        <div class="waste-explanation">
+          <h4>
+            <i class="fas fa-info-circle"></i>
+            Why You See Multiple Identical Waste Amounts
+          </h4>
+          <div class="explanation-content">
+            <p>
+              <strong>Each waste amount represents one timber piece.</strong>
+              If you see "323.5mm waste" multiple times, it means several stock
+              pieces each produce 323.5mm of leftover timber.
+            </p>
+            <p>
+              <strong>Example:</strong> If you need 8 studs at 2200mm each from
+              6000mm stock:
+            </p>
+            <ul>
+              <li>4 stock pieces of 6000mm timber</li>
+              <li>Each piece: 2 studs (4400mm used) + 1600mm waste</li>
+              <li>Result: 4 identical waste pieces of 1600mm each</li>
+            </ul>
+            <p>
+              <i class="fas fa-lightbulb text-warning"></i>
+              <strong>Tip:</strong> Save waste pieces for future projects or the
+              uses suggested above!
+            </p>
+          </div>
+        </div>
       }
     </div>
   </div>

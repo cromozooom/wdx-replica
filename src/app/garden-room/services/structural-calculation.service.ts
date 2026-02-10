@@ -92,15 +92,19 @@ export class StructuralCalculationService {
     const studWidthMm = wall.studWidthMm || 45;
     const includeIrregularLast = wall.includeIrregularLastStud ?? true;
     const decorativeSide = wall.decorativeSide || "both";
+    const decorativeOffsetMm = wall.decorativeOffsetMm || 0;
 
-    // First, place decorative studs
-    const decorativePositions = this.placeDecorativeStuds(
-      wall.lengthMm,
-      wall.decorativeOffsetMm,
-      studWidthMm,
-      decorativeSide,
-      startFromRight,
-    );
+    // First, place decorative studs (only if offset > 0 AND side is not 'none')
+    const decorativePositions =
+      decorativeOffsetMm > 0 && decorativeSide !== "none"
+        ? this.placeDecorativeStuds(
+            wall.lengthMm,
+            decorativeOffsetMm,
+            studWidthMm,
+            decorativeSide,
+            startFromRight,
+          )
+        : [];
 
     // Then place standard studs with decorative positions as boundaries
     const standardPositions = this.placeStandardStuds(
@@ -166,44 +170,33 @@ export class StructuralCalculationService {
     // Determine boundaries based on decorative stud positions
     const sortedDecorative = [...decorativePositions].sort((a, b) => a - b);
 
-    // If there are NO decorative studs, place studs from start to end with regular spacing
+    // If there are NO decorative studs, place studs with FIXED spacing
     if (sortedDecorative.length === 0) {
+      // ALWAYS place end stud flush with wall edge
+      const endStud = startFromRight ? 0 : wallLengthMm - studWidthMm;
+      positions.push(endStud);
+
+      // Place intermediate studs with FIXED on-center spacing
       let currentPosition = startStudPosition;
 
       while (true) {
+        // Calculate next position
+        const nextPosition = startFromRight
+          ? currentPosition - onCenterSpacing
+          : currentPosition + onCenterSpacing;
+
+        // Check if next position would exceed the end stud
         if (startFromRight) {
-          currentPosition -= onCenterSpacing;
-          if (currentPosition <= 0) {
-            break;
-          }
+          if (nextPosition <= endStud + studWidthMm) break; // Would overlap with end stud
         } else {
-          currentPosition += onCenterSpacing;
-          if (currentPosition >= wallLengthMm) {
-            break;
-          }
+          if (nextPosition >= endStud) break; // Would overlap with end stud
         }
 
-        const distanceToEnd = startFromRight
-          ? currentPosition
-          : wallLengthMm - currentPosition;
-
-        if (distanceToEnd < onCenterSpacing) {
-          if (includeIrregularLast) {
-            positions.push(currentPosition);
-          }
-          break;
-        }
-
+        currentPosition = nextPosition;
         positions.push(currentPosition);
       }
 
-      // Always place end stud - its left edge should be at the boundary
-      const endStud = startFromRight ? 0 : wallLengthMm - studWidthMm;
-      if (wallLengthMm > studWidthMm && !positions.includes(endStud)) {
-        positions.push(endStud);
-      }
-
-      return positions;
+      return positions.sort((a, b) => a - b);
     }
 
     // If there ARE decorative studs, place studs only BETWEEN decorative boundaries
@@ -214,65 +207,30 @@ export class StructuralCalculationService {
     const leftDecorative = sortedDecorative.find((pos) => pos < wallCenter);
     const rightDecorative = sortedDecorative.find((pos) => pos >= wallCenter);
 
-    // If we have both left and right decoratives, place studs between them
+    // If we have both left and right decoratives, place studs between them with FIXED spacing
     if (leftDecorative !== undefined && rightDecorative !== undefined) {
-      // Start placing studs after the left decorative (its right edge)
+      // Place studs between the two decoratives with fixed spacing
       let currentPosition = leftDecorative + studWidthMm + studGapMm;
 
-      while (currentPosition < rightDecorative) {
-        const distanceToRightDecorative = rightDecorative - currentPosition;
-
-        // If this is the last possible position with irregular gap
-        if (distanceToRightDecorative < onCenterSpacing) {
-          if (includeIrregularLast) {
-            positions.push(currentPosition);
-          }
-          break;
-        }
-
-        // Regular stud placement
+      while (currentPosition + studWidthMm <= rightDecorative) {
         positions.push(currentPosition);
-
-        // Move to next position
         currentPosition += onCenterSpacing;
       }
     } else if (leftDecorative !== undefined) {
-      // Only left decorative exists - place studs from left decorative to end
+      // Only left decorative - place studs from left decorative to end with FIXED spacing
       let currentPosition = leftDecorative + studWidthMm + studGapMm;
 
       while (currentPosition < endStudPosition) {
-        const distanceToEnd = endStudPosition - currentPosition;
-
-        if (distanceToEnd < onCenterSpacing) {
-          if (includeIrregularLast) {
-            positions.push(currentPosition);
-          }
-          break;
-        }
-
         positions.push(currentPosition);
         currentPosition += onCenterSpacing;
       }
     } else if (rightDecorative !== undefined) {
-      // Only right decorative exists - place studs from start to right decorative
-      // When startFromRight: place studs from left edge (0) UP TO right decorative
-      // When NOT startFromRight: place studs from first stud gap UP TO right decorative
-      let currentPosition = startFromRight
-        ? studWidthMm + studGapMm // Start after the first stud (at 0)
-        : studWidthMm + studGapMm;
+      // Only right decorative - place studs from start to right decorative with FIXED spacing
+      let currentPosition = studWidthMm + studGapMm; // After first stud
 
-      while (currentPosition < rightDecorative) {
-        const distanceToRightDecorative = rightDecorative - currentPosition;
-
-        if (distanceToRightDecorative < onCenterSpacing) {
-          if (includeIrregularLast) {
-            positions.push(currentPosition);
-          }
-          break;
-        }
-
+      while (currentPosition + studWidthMm <= rightDecorative) {
         positions.push(currentPosition);
-        currentPosition += onCenterSpacing; // Always increment, never decrement
+        currentPosition += onCenterSpacing;
       }
     }
 
@@ -311,7 +269,12 @@ export class StructuralCalculationService {
     decorativeSide: "both" | "left" | "right" | "none" = "both",
     startFromRight: boolean = false,
   ): number[] {
-    if (decorativeOffsetMm <= 0 || decorativeSide === "none") {
+    // Explicitly check: no decorative studs if offset is 0 or less, OR if side is 'none'
+    if (
+      !decorativeOffsetMm ||
+      decorativeOffsetMm <= 0 ||
+      decorativeSide === "none"
+    ) {
       return [];
     }
 
@@ -425,18 +388,16 @@ export class StructuralCalculationService {
   }
 
   /**
-   * Adjust stud heights by subtracting plate thicknesses
+   * Adjust stud heights by subtracting wall thickness (which accounts for plates)
    * @param studHeightMm Original stud height in mm
-   * @param plateThicknessTopMm Top plate thickness in mm
-   * @param plateThicknessBottomMm Bottom plate thickness in mm
+   * @param wallThicknessMm Wall thickness in mm (height of timber section)
    * @returns Adjusted stud height in mm
    */
   adjustStudHeightsForPlates(
     studHeightMm: number,
-    plateThicknessTopMm: number,
-    plateThicknessBottomMm: number,
+    wallThicknessMm: number,
   ): number {
-    return studHeightMm - plateThicknessTopMm - plateThicknessBottomMm;
+    return studHeightMm - wallThicknessMm;
   }
 
   /**
