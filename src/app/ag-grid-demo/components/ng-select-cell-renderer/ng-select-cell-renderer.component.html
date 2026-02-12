@@ -1,0 +1,12 @@
+<ng-select
+  [(ngModel)]="value"
+  [items]="statusOptions"
+  bindLabel="label"
+  bindValue="label"
+  [clearable]="false"
+  [searchable]="false"
+  appendTo="body"
+  (change)="onSelectionChange(value)"
+  placeholder="Select status"
+>
+</ng-select>

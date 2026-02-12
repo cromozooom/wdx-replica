@@ -35,6 +35,10 @@ export const routes: Routes = [
       ),
   },
   {
+    path: "ag-grid-demo",
+    loadChildren: () => import("./ag-grid-demo/ag-grid-demo.routes"),
+  },
+  {
     path: "",
     redirectTo: "dashboard",
     pathMatch: "full",

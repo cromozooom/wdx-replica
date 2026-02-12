@@ -1,0 +1,20 @@
+<div class="ag-grid-demo-container">
+  <div class="bg-info-subtle">
+    <h1>ag-Grid with ng-select Cell Demo</h1>
+    <p class="description">
+      Demonstration of ng-select dropdown components within ag-Grid cells under
+      constrained horizontal space. Grid displays 15 columns × 100 rows with the
+      Status column using a dropdown selector.
+    </p>
+  </div>
+  <ag-grid-angular
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [gridOptions]="gridOptions"
+    [domLayout]="'normal'"
+    style="width: 100%; height: 600px"
+  >
+  </ag-grid-angular>
+</div>
