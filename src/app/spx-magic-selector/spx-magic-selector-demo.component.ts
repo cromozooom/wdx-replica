@@ -47,7 +47,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
   columnDefs: ColDef[] = [
     {
       field: "name",
-      headerName: "Selection Name",
+      headerName: "Bulk Name",
       width: 250,
       sortable: true,
       filter: true,
@@ -118,8 +118,8 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
       pinned: "right",
       cellRenderer: (params: any) => {
         return `
-          <button class="btn btn-sm btn-danger delete-btn" data-id="${params.data.id}">
-            <i class="fa fa-trash"></i>
+          <button class="btn btn-link text-decoration-none" data-id="${params.data.id}">
+            <i class="fas fa-trash"></i>
           </button>
         `;
       },
@@ -231,7 +231,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
 
     // Register with stack service
     this.offcanvasStackService.registerOffcanvas(
-      "Add New Selection",
+      "Add New Bulk Edit",
       offcanvasRef,
     );
 

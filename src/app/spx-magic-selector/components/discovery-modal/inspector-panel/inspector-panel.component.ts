@@ -11,7 +11,7 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
-import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
+import { NgbOffcanvas, NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { AgGridAngular } from "ag-grid-angular";
 import { ColDef, GridOptions, ModuleRegistry } from "ag-grid-community";
 import { RowGroupingPanelModule } from "ag-grid-enterprise";
@@ -72,6 +72,7 @@ export interface ParameterChangeEvent {
 export class InspectorPanelComponent implements OnChanges {
   private offcanvasService = inject(NgbOffcanvas);
   private offcanvasStackService = inject(OffcanvasStackService);
+  private modalService = inject(NgbModal);
   // ========================================
   // Input Properties
   // ========================================
@@ -252,6 +253,42 @@ export class InspectorPanelComponent implements OnChanges {
     if (this.previewGridApi) {
       this.previewGridApi.setQuickFilter("");
     }
+  }
+
+  /**
+   * Open query editor in full-screen modal
+   */
+  openQueryEditor(content: TemplateRef<any>): void {
+    const { zIndex, backdropZIndex } =
+      this.offcanvasStackService.getNextZIndexes();
+
+    const modalRef = this.modalService.open(content, {
+      size: "xl",
+      fullscreen: true,
+      centered: true,
+    });
+
+    // Set the z-index using the offcanvas stack service
+    setTimeout(() => {
+      const modalElements = document.querySelectorAll(".modal.show");
+      const modalElement = modalElements[
+        modalElements.length - 1
+      ] as HTMLElement;
+
+      // Find the corresponding backdrop
+      const backdropElements = document.querySelectorAll(".modal-backdrop");
+      const backdropElement = backdropElements[
+        backdropElements.length - 1
+      ] as HTMLElement;
+
+      if (modalElement) {
+        modalElement.style.zIndex = zIndex.toString();
+      }
+
+      if (backdropElement) {
+        backdropElement.style.zIndex = backdropZIndex.toString();
+      }
+    }, 0);
   }
 
   /**

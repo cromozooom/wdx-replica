@@ -10,7 +10,10 @@ import { SpxMagicSelectorComponent } from "../spx-magic-selector.component";
 import { OffcanvasBreadcrumbComponent } from "../offcanvas-breadcrumb/offcanvas-breadcrumb.component";
 import { SelectionChangeEvent } from "../../models/selection-change-event.interface";
 import { SavedSelection } from "../../models/saved-selection.interface";
-import { DOMAIN_TYPES } from "../../models/domain-types.constants";
+import {
+  DOMAIN_TYPES,
+  getDomainTypeLabel,
+} from "../../models/domain-types.constants";
 
 /**
  * Offcanvas for adding a new selection
@@ -41,6 +44,13 @@ export class AddSelectionModalComponent {
     public activeOffcanvas: NgbActiveOffcanvas,
     private cdr: ChangeDetectorRef,
   ) {}
+
+  /**
+   * Get the domain type label (Form/Document) for the selected domain
+   */
+  get itemTypeLabel(): string {
+    return getDomainTypeLabel(this.selectedDomain);
+  }
 
   onDomainChange(): void {
     // Reset selection when domain changes

@@ -5,11 +5,11 @@
         class="h6 gap-2 offcanvas-title p-0 mb-0 d-flex gap-1 align-items-center"
       >
         <i class="fa fa-plus-circle"></i>
-        Add New Selection
+        Add New Bulk Edit
       </h5>
       <button
         type="button"
-        class="btn-close me-2"
+        class="btn-close"
         aria-label="Close"
         (click)="cancel()"
       ></button>
@@ -25,55 +25,58 @@
     <div
       class="d-flex flex-grow-1 flex-column gap-2 overflow-x-hidden overflow-y-scroll px-2 py-2"
     >
-      <div class="row gap-0">
-        <div class="col-6">
-          <!-- Selection Name -->
-          <div>
-            <label class="form-label fw-bold">Selection Name *</label>
-            <input
-              type="text"
-              class="form-control"
-              [(ngModel)]="selectionName"
-              placeholder="e.g., My Quarterly Report Selection"
-              maxlength="100"
-            />
-            <div class="form-text">
-              Give this selection a memorable name for future reference
+      <div class="container" style="max-width: 60rem">
+        <div class="row gap-0 pt-4">
+          <div class="col-6">
+            <!-- Selection Name -->
+            <div>
+              <label class="form-label fw-bold">Bulk Edit Name *</label>
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="selectionName"
+                placeholder="e.g., My Quarterly Report Selection"
+                maxlength="100"
+              />
+              <div class="form-text">
+                Give this selection a memorable name for future reference
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-6">
-          <!-- Domain Selection -->
-          <div>
-            <label class="form-label fw-bold">Bulk Edit type</label>
-            <select
-              class="form-select"
-              [(ngModel)]="selectedDomain"
-              (ngModelChange)="onDomainChange()"
-            >
-              <option
-                *ngFor="let key of domainTypeKeys"
-                [value]="domainTypes[key].id"
+          <div class="col-6">
+            <!-- Domain Selection -->
+            <div>
+              <label class="form-label fw-bold">Bulk Edit type</label>
+              <select
+                class="form-select"
+                [(ngModel)]="selectedDomain"
+                (ngModelChange)="onDomainChange()"
               >
-                {{ domainTypes[key].label }}
-              </option>
-            </select>
+                <option
+                  *ngFor="let key of domainTypeKeys"
+                  [value]="domainTypes[key].id"
+                >
+                  {{ domainTypes[key].label }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <!-- SPX Magic Selector -->
+          <div class="col-12 pt-4">
+            <label class="form-label fw-bold"
+              >Select {{ itemTypeLabel }} *</label
+            >
+            <app-spx-magic-selector
+              [domainId]="selectedDomain"
+              [placeholder]="'Choose a ' + itemTypeLabel.toLowerCase() + '...'"
+              (selectionChange)="onSelectionChange($event)"
+            ></app-spx-magic-selector>
           </div>
         </div>
-      </div>
-
-      <!-- SPX Magic Selector -->
-      <div>
-        <label class="form-label fw-bold">Select Form or Document *</label>
-        <app-spx-magic-selector
-          [domainId]="selectedDomain"
-          [placeholder]="'Choose a form or document...'"
-          (selectionChange)="onSelectionChange($event)"
-        ></app-spx-magic-selector>
       </div>
 
       <!-- Selection Preview -->
-      <div *ngIf="lastEvent" class="alert alert-success">
+      <!-- <div *ngIf="lastEvent" class="alert alert-success">
         <h6 class="alert-heading">
           <i class="fa fa-check-circle me-1"></i>
           Selection Preview
@@ -92,23 +95,26 @@
             <strong>Type:</strong> {{ lastEvent.selectedItem?.type }}
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- Footer Buttons -->
-  <div class="d-flex justify-content-end gap-2 p-2 border-top">
-    <button type="button" class="btn btn-secondary" (click)="cancel()">
-      <i class="fa fa-times me-1"></i>
-      Cancel
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      (click)="save()"
-      [disabled]="!canSave()"
-    >
-      <i class="fa fa-save me-1"></i>
-      Save Selection
-    </button>
+  <div class="d-flex justify-content-between gap-2 p-2 border-top">
+    <div>
+      <button type="button" class="btn btn-outline-primary" (click)="cancel()">
+        Cancel
+      </button>
+    </div>
+    <div>
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="save()"
+        [disabled]="!canSave()"
+      >
+        <i class="fa fa-save me-1"></i>
+        Save
+      </button>
+    </div>
   </div>
 </div>

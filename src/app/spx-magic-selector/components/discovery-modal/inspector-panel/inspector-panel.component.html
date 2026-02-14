@@ -133,7 +133,13 @@
         class="border-top p-2 d-flex justify-content-between align-items-center"
       >
         <div>
-          <button class="btn btn-sm btn-link">Query editor</button>
+          <button
+            type="button"
+            class="btn btn-sm btn-link"
+            (click)="openQueryEditor(queryEditorModal)"
+          >
+            Query editor
+          </button>
         </div>
         <div>
           <button
@@ -153,6 +159,53 @@
     </div>
   </div>
 </div>
+
+<!-- Query Editor Modal Template -->
+<ng-template #queryEditorModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">Query Editor</h5>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss()"
+    ></button>
+  </div>
+  <div class="modal-body p-0 d-flex flex-column overflow-hidden">
+    @if (inspectedRow) {
+      <!-- <div class="mb-3">
+        <h6>Query Information</h6>
+        <dl class="row">
+          <dt class="col-sm-3">Source:</dt>
+          <dd class="col-sm-9">{{ inspectedRow.sourceName }}</dd>
+
+          <dt class="col-sm-3">Entity:</dt>
+          <dd class="col-sm-9">{{ inspectedRow.entityName }}</dd>
+
+          <dt class="col-sm-3">Query:</dt>
+          <dd class="col-sm-9">{{ inspectedRow.queryName }}</dd>
+
+          <dt class="col-sm-3">Description:</dt>
+          <dd class="col-sm-9">{{ inspectedRow.queryDescription }}</dd>
+        </dl>
+      </div> -->
+      <div class="w-100 flex-grow-1 d-flex flex-column p-0 overflow-hidden">
+        <iframe
+          src="https://spx-fetchxml.netlify.app/fetchxml-editor"
+          frameborder="0"
+        ></iframe>
+      </div>
+    }
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">
+      Cancel
+    </button>
+    <button type="button" class="btn btn-primary" (click)="modal.close('Save')">
+      Save Changes
+    </button>
+  </div>
+</ng-template>
 
 <!-- Data Preview Offcanvas Template -->
 <ng-template #dataPreviewOffcanvas let-offcanvas>
