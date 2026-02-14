@@ -1,0 +1,149 @@
+<div class="container-fluid py-4">
+  <!-- Header -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="mb-2">Selection History</h1>
+          <p class="text-muted mb-0">
+            Track and manage your SPX Magic Selector selections
+          </p>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg me-2"
+            (click)="openAddSelectionModal()"
+          >
+            <i class="fa fa-plus-circle me-2"></i>
+            Add New Selection
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            (click)="clearAllSelections()"
+            [disabled]="rowData.length === 0"
+          >
+            <i class="fa fa-trash me-1"></i>
+            Clear All
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Summary -->
+  <div class="row mb-4">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">Total Selections</h6>
+          <h3 class="mb-0">{{ rowData.length }}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">CRM & Scheduling</h6>
+          <h3 class="mb-0">{{ crmCount }}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">Document Management</h6>
+          <h3 class="mb-0">{{ documentCount }}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">Latest Selection</h6>
+          <h3 class="mb-0 text-truncate" style="font-size: 1rem">
+            {{ rowData[0]?.name || "None" }}
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selections Grid -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h5 class="mb-0">
+            <i class="fa fa-table me-2"></i>
+            Saved Selections
+          </h5>
+        </div>
+        <div class="card-body p-0">
+          <div *ngIf="rowData.length === 0" class="text-center py-5">
+            <i class="fa fa-inbox fa-3x text-muted mb-3"></i>
+            <h5 class="text-muted">No selections yet</h5>
+            <p class="text-muted mb-3">
+              Click "Add New Selection" to create your first selection
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              (click)="openAddSelectionModal()"
+            >
+              <i class="fa fa-plus-circle me-2"></i>
+              Add New Selection
+            </button>
+          </div>
+
+          <ag-grid-angular
+            *ngIf="rowData.length > 0"
+            class="ag-theme-alpine w-100"
+            style="height: 600px"
+            [rowData]="rowData"
+            [columnDefs]="columnDefs"
+            [defaultColDef]="defaultColDef"
+            [gridOptions]="gridOptions"
+            [getRowId]="getRowId"
+            (gridReady)="onGridReady($event)"
+          >
+          </ag-grid-angular>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Instructions Card -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card bg-light">
+        <div class="card-body">
+          <h6 class="mb-2">
+            <i class="fa fa-info-circle me-1"></i>
+            How to use:
+          </h6>
+          <ul class="mb-0">
+            <li>
+              Click <strong>"Add New Selection"</strong> to open the selector
+              modal
+            </li>
+            <li>
+              Give your selection a name, choose a domain, and select a
+              form/document
+            </li>
+            <li>
+              Your selections are automatically saved to IndexedDB (local
+              storage)
+            </li>
+            <li>
+              Click the <i class="fa fa-trash text-danger"></i> button to delete
+              individual selections
+            </li>
+            <li>Use filters and sorting to organize your selections</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

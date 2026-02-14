@@ -15,9 +15,7 @@ import {
   FormsModule,
 } from "@angular/forms";
 import { NgSelectModule } from "@ng-select/ng-select";
-import { MatDialog } from "@angular/material/dialog";
-import { MatButtonModule } from "@angular/material/button";
-import { MatIconModule } from "@angular/material/icon";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { BehaviorSubject, Subject, Observable } from "rxjs";
 import {
   takeUntil,
@@ -48,8 +46,6 @@ import { DomainSchema } from "../models/domain-schema.interface";
     CommonModule,
     FormsModule,
     NgSelectModule,
-    MatButtonModule,
-    MatIconModule,
     PreviewContainerComponent,
   ],
   templateUrl: "./spx-magic-selector.component.html",
@@ -133,7 +129,7 @@ export class SpxMagicSelectorComponent
 
   constructor(
     private selectionDataService: SelectionDataService,
-    private dialog: MatDialog,
+    private modalService: NgbModal,
   ) {}
 
   // ========================================
@@ -273,25 +269,22 @@ export class SpxMagicSelectorComponent
           return;
         }
 
-        const dialogData: DiscoveryModalDialogData = {
+        const modalRef = this.modalService.open(DiscoveryModalComponent, {
+          size: "xl",
+          backdrop: "static",
+          scrollable: true,
+        });
+
+        // Pass data to modal via component instance
+        modalRef.componentInstance.data = {
           availableItems: this.availableItems$.value,
           currentSelection: this.selectedItem$.value || undefined,
           domainSchema,
           modalTitle: "Advanced Lookup",
         };
 
-        const dialogRef = this.dialog.open(DiscoveryModalComponent, {
-          width: "90vw",
-          maxWidth: "1200px",
-          height: "80vh",
-          data: dialogData,
-          panelClass: "discovery-modal-container",
-        });
-
-        dialogRef
-          .afterClosed()
-          .pipe(takeUntil(this.destroy$))
-          .subscribe((result: DiscoveryModalResult | undefined) => {
+        modalRef.result
+          .then((result: DiscoveryModalResult) => {
             if (result && result.confirmed && result.selectedRow) {
               // Update selection from modal result
               this.setSelection(
@@ -300,6 +293,9 @@ export class SpxMagicSelectorComponent
                 "modal",
               );
             }
+          })
+          .catch(() => {
+            // Modal dismissed without selection
           });
       });
   }

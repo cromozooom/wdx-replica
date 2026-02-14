@@ -1,0 +1,103 @@
+<div class="modal-header">
+  <h5 class="modal-title">
+    <i class="fa fa-plus-circle me-2"></i>
+    Add New Selection
+  </h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="cancel()"
+  ></button>
+</div>
+
+<div class="modal-body">
+  <!-- Selection Name -->
+  <div class="mb-3">
+    <label class="form-label fw-bold">Selection Name *</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="selectionName"
+      placeholder="e.g., My Quarterly Report Selection"
+      maxlength="100"
+    />
+    <div class="form-text">
+      Give this selection a memorable name for future reference
+    </div>
+  </div>
+
+  <!-- Domain Selection -->
+  <div class="mb-3">
+    <label class="form-label fw-bold">Domain</label>
+    <select
+      class="form-select"
+      [(ngModel)]="selectedDomain"
+      (ngModelChange)="onDomainChange()"
+    >
+      <option value="crm-scheduling">CRM & Scheduling</option>
+      <option value="document-management">Document Management</option>
+    </select>
+  </div>
+
+  <!-- SPX Magic Selector -->
+  <div class="mb-3">
+    <label class="form-label fw-bold">Select Form or Document *</label>
+    <app-spx-magic-selector
+      [domainId]="selectedDomain"
+      [placeholder]="'Choose a form or document...'"
+      (selectionChange)="onSelectionChange($event)"
+    ></app-spx-magic-selector>
+  </div>
+
+  <!-- Selection Preview -->
+  <div *ngIf="lastEvent" class="alert alert-success">
+    <h6 class="alert-heading">
+      <i class="fa fa-check-circle me-1"></i>
+      Selection Preview
+    </h6>
+    <div class="row g-2 small">
+      <div class="col-md-6">
+        <strong>Item:</strong> {{ lastEvent.selectedItem?.name }}
+      </div>
+      <div class="col-md-6">
+        <strong>Entity:</strong> {{ lastEvent.selectedItem?.entityName }}
+      </div>
+      <div class="col-md-6">
+        <strong>Query:</strong> {{ lastEvent.selectedQuery?.name }}
+      </div>
+      <div class="col-md-6">
+        <strong>Type:</strong> {{ lastEvent.selectedItem?.type }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Instructions -->
+  <div class="alert alert-info">
+    <small>
+      <strong><i class="fa fa-info-circle me-1"></i>Instructions:</strong>
+      <ol class="mb-0 ps-3 mt-1">
+        <li>Enter a name for this selection</li>
+        <li>Choose a domain</li>
+        <li>Select a form or document using the dropdown or Advanced button</li>
+        <li>Click Save to add to your history</li>
+      </ol>
+    </small>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="cancel()">
+    <i class="fa fa-times me-1"></i>
+    Cancel
+  </button>
+  <button
+    type="button"
+    class="btn btn-primary"
+    (click)="save()"
+    [disabled]="!canSave()"
+  >
+    <i class="fa fa-save me-1"></i>
+    Save Selection
+  </button>
+</div>

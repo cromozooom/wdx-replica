@@ -1,146 +1,284 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
+import {
+  Component,
+  ChangeDetectionStrategy,
+  OnInit,
+  OnDestroy,
+  ChangeDetectorRef,
+} from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { AgGridAngular } from "ag-grid-angular";
+import {
+  ColDef,
+  GridOptions,
+  GridReadyEvent,
+  GetRowIdParams,
+} from "ag-grid-community";
+import { Subject } from "rxjs";
+import { takeUntil } from "rxjs/operators";
 import { SpxMagicSelectorComponent } from "./components/spx-magic-selector.component";
+import { AddSelectionModalComponent } from "./components/add-selection-modal/add-selection-modal.component";
 import { SelectionChangeEvent } from "./models/selection-change-event.interface";
+import { SavedSelection } from "./models/saved-selection.interface";
+import { SelectionHistoryService } from "./services/selection-history.service";
 
 /**
  * Demo page for testing SPX Magic Selector component
+ * Shows selection history in ag-grid with IndexedDB persistence
  */
 @Component({
   selector: "app-spx-magic-selector-demo",
   standalone: true,
-  imports: [CommonModule, FormsModule, SpxMagicSelectorComponent],
-  template: `
-    <div class="container-fluid py-4">
-      <div class="row mb-4">
-        <div class="col-12">
-          <h1 class="mb-3">SPX Magic Selector Demo</h1>
-          <p class="lead text-muted">
-            Advanced lookup component with ng-select dropdown and ag-grid
-            discovery modal
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-header bg-primary text-white">
-              <h5 class="mb-0">SPX Magic Selector</h5>
-            </div>
-            <div class="card-body">
-              <div class="mb-3">
-                <label class="form-label">Domain</label>
-                <select
-                  class="form-select"
-                  [(ngModel)]="selectedDomain"
-                  (ngModelChange)="onDomainChange()"
-                >
-                  <option value="crm-scheduling">CRM & Scheduling</option>
-                  <option value="document-management">
-                    Document Management
-                  </option>
-                </select>
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label">Select Form or Document</label>
-                <app-spx-magic-selector
-                  [domainId]="selectedDomain"
-                  [placeholder]="'Choose a form or document...'"
-                  (selectionChange)="onSelectionChange($event)"
-                ></app-spx-magic-selector>
-              </div>
-
-              <div class="alert alert-info" role="alert">
-                <strong>Try it out:</strong>
-                <ul class="mb-0 mt-2">
-                  <li>Search in the dropdown</li>
-                  <li>Click "Advanced" for full grid view</li>
-                  <li>View preview details after selection</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-header bg-secondary text-white">
-              <h5 class="mb-0">Selection Events</h5>
-            </div>
-            <div class="card-body">
-              <div *ngIf="lastEvent; else noSelection">
-                <h6 class="text-muted">Last Selection Event:</h6>
-                <pre
-                  class="bg-light p-3 rounded"
-                ><code>{{ formatEvent(lastEvent) }}</code></pre>
-              </div>
-              <ng-template #noSelection>
-                <p class="text-muted">Make a selection to see event details</p>
-              </ng-template>
-            </div>
-          </div>
-
-          <div class="card mt-3">
-            <div class="card-header bg-info text-white">
-              <h5 class="mb-0">Features</h5>
-            </div>
-            <div class="card-body">
-              <ul class="list-unstyled">
-                <li class="mb-2">
-                  <strong>User Story 1:</strong> Searchable dropdown selection
-                </li>
-                <li class="mb-2">
-                  <strong>User Story 2:</strong> Live preview with record counts
-                </li>
-                <li class="mb-2">
-                  <strong>User Story 3:</strong> Advanced ag-grid discovery
-                  modal
-                </li>
-                <li class="mb-2">
-                  <strong>User Story 4:</strong> Inspector panel (future
-                  enhancement)
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  `,
-  styles: [
-    `
-      pre {
-        max-height: 400px;
-        overflow-y: auto;
-      }
-    `,
+  imports: [
+    CommonModule,
+    FormsModule,
+    SpxMagicSelectorComponent,
+    AgGridAngular,
   ],
+  templateUrl: "./spx-magic-selector-demo.component.html",
+  styleUrls: ["./spx-magic-selector-demo.component.scss"],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SpxMagicSelectorDemoComponent {
-  selectedDomain = "crm-scheduling";
-  lastEvent: SelectionChangeEvent | null = null;
-
-  onDomainChange(): void {
-    // Domain changed - component will re-initialize with new domain
-  }
-
-  onSelectionChange(event: SelectionChangeEvent): void {
-    this.lastEvent = event;
-  }
-
-  formatEvent(event: SelectionChangeEvent): string {
-    return JSON.stringify(
-      {
-        selectedItem: event.selectedItem?.name || null,
-        selectedQuery: event.selectedQuery?.name || null,
-        source: event.source,
-        timestamp: event.timestamp,
+export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
+  // Grid configuration
+  rowData: SavedSelection[] = [];
+  columnDefs: ColDef[] = [
+    {
+      field: "name",
+      headerName: "Selection Name",
+      width: 250,
+      sortable: true,
+      filter: true,
+      pinned: "left",
+    },
+    {
+      field: "domainName",
+      headerName: "Domain",
+      width: 180,
+      sortable: true,
+      filter: true,
+    },
+    {
+      field: "itemName",
+      headerName: "Form/Document",
+      width: 200,
+      sortable: true,
+      filter: true,
+    },
+    {
+      field: "itemType",
+      headerName: "Type",
+      width: 120,
+      sortable: true,
+      filter: true,
+    },
+    {
+      field: "entityName",
+      headerName: "Entity",
+      width: 150,
+      sortable: true,
+      filter: true,
+    },
+    {
+      field: "queryName",
+      headerName: "Query",
+      width: 180,
+      sortable: true,
+      filter: true,
+    },
+    {
+      field: "estimatedRecords",
+      headerName: "Records",
+      width: 120,
+      sortable: true,
+      filter: "agNumberColumnFilter",
+      valueFormatter: (params) => {
+        if (params.value === null || params.value === undefined) {
+          return "0";
+        }
+        return params.value.toLocaleString();
       },
-      null,
-      2,
-    );
+    },
+    {
+      field: "createdAt",
+      headerName: "Created",
+      width: 180,
+      sortable: true,
+      filter: "agDateColumnFilter",
+      valueFormatter: (params) => {
+        if (!params.value) return "";
+        return new Date(params.value).toLocaleString();
+      },
+    },
+    {
+      headerName: "Actions",
+      width: 120,
+      pinned: "right",
+      cellRenderer: (params: any) => {
+        return `
+          <button class="btn btn-sm btn-danger delete-btn" data-id="${params.data.id}">
+            <i class="fa fa-trash"></i>
+          </button>
+        `;
+      },
+    },
+  ];
+
+  defaultColDef: ColDef = {
+    resizable: true,
+    sortable: true,
+    filter: true,
+  };
+
+  gridOptions: GridOptions = {
+    animateRows: true,
+    rowSelection: "single",
+    suppressRowClickSelection: true,
+    suppressCellFocus: true,
+    headerHeight: 48,
+    rowHeight: 48,
+    onCellClicked: (event) => {
+      if (event.event?.target) {
+        const target = event.event.target as HTMLElement;
+        if (
+          target.classList.contains("delete-btn") ||
+          target.closest(".delete-btn")
+        ) {
+          const button = target.closest(".delete-btn") as HTMLElement;
+          const id = button?.getAttribute("data-id");
+          if (id) {
+            this.deleteSelection(id);
+          }
+        }
+      }
+    },
+  };
+
+  private destroy$ = new Subject<void>();
+
+  constructor(
+    private selectionHistoryService: SelectionHistoryService,
+    private modalService: NgbModal,
+    private cdr: ChangeDetectorRef,
+  ) {}
+
+  ngOnInit(): void {
+    // Subscribe to selection history updates
+    this.selectionHistoryService
+      .getSelections()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((selections) => {
+        this.rowData = selections;
+        this.cdr.markForCheck();
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
+
+  /**
+   * Open modal to add new selection
+   */
+  openAddSelectionModal(): void {
+    const modalRef = this.modalService.open(AddSelectionModalComponent, {
+      size: "lg",
+      backdrop: "static",
+      scrollable: true,
+    });
+
+    modalRef.result
+      .then((selection: SavedSelection) => {
+        if (selection) {
+          this.selectionHistoryService
+            .addSelection(selection)
+            .pipe(takeUntil(this.destroy$))
+            .subscribe({
+              next: () => {
+                // Selection added successfully
+              },
+              error: (error) => {
+                console.error("Failed to save selection:", error);
+                alert("Failed to save selection. Please try again.");
+              },
+            });
+        }
+      })
+      .catch(() => {
+        // Modal dismissed
+      });
+  }
+
+  /**
+   * Delete a selection
+   */
+  deleteSelection(id: string): void {
+    if (confirm("Are you sure you want to delete this selection?")) {
+      this.selectionHistoryService
+        .deleteSelection(id)
+        .pipe(takeUntil(this.destroy$))
+        .subscribe({
+          next: () => {
+            // Selection deleted successfully
+          },
+          error: (error) => {
+            console.error("Failed to delete selection:", error);
+            alert("Failed to delete selection. Please try again.");
+          },
+        });
+    }
+  }
+
+  /**
+   * Clear all selections
+   */
+  clearAllSelections(): void {
+    if (
+      confirm(
+        "Are you sure you want to delete ALL selections? This cannot be undone.",
+      )
+    ) {
+      this.selectionHistoryService
+        .clearAll()
+        .pipe(takeUntil(this.destroy$))
+        .subscribe({
+          next: () => {
+            // All selections cleared
+          },
+          error: (error) => {
+            console.error("Failed to clear selections:", error);
+            alert("Failed to clear selections. Please try again.");
+          },
+        });
+    }
+  }
+
+  /**
+   * Grid ready event
+   */
+  onGridReady(params: GridReadyEvent): void {
+    params.api.sizeColumnsToFit();
+  }
+
+  /**
+   * Get row ID for ag-grid
+   */
+  getRowId = (params: GetRowIdParams<SavedSelection>) => params.data.id;
+
+  /**
+   * Get count of CRM selections
+   */
+  get crmCount(): number {
+    return this.rowData.filter((r) => r.domainId === "crm-scheduling").length;
+  }
+
+  /**
+   * Get count of Document Management selections
+   */
+  get documentCount(): number {
+    return this.rowData.filter((r) => r.domainId === "document-management")
+      .length;
   }
 }

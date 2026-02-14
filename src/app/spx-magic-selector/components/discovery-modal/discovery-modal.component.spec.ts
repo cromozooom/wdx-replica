@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
+import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
 import { DiscoveryModalComponent } from "./discovery-modal.component";
 import { SelectionDataService } from "../../services/selection-data.service";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
@@ -7,7 +7,7 @@ import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 describe("DiscoveryModalComponent", () => {
   let component: DiscoveryModalComponent;
   let fixture: ComponentFixture<DiscoveryModalComponent>;
-  let mockDialogRef: jasmine.SpyObj<MatDialogRef<DiscoveryModalComponent>>;
+  let mockActiveModal: jasmine.SpyObj<NgbActiveModal>;
   let mockSelectionDataService: jasmine.SpyObj<SelectionDataService>;
 
   const mockDialogData = {
@@ -39,7 +39,10 @@ describe("DiscoveryModalComponent", () => {
   };
 
   beforeEach(async () => {
-    mockDialogRef = jasmine.createSpyObj("MatDialogRef", ["close"]);
+    mockActiveModal = jasmine.createSpyObj("NgbActiveModal", [
+      "close",
+      "dismiss",
+    ]);
     mockSelectionDataService = jasmine.createSpyObj("SelectionDataService", [
       "flattenToGridRows",
     ]);
@@ -62,14 +65,14 @@ describe("DiscoveryModalComponent", () => {
     await TestBed.configureTestingModule({
       imports: [DiscoveryModalComponent, NoopAnimationsModule],
       providers: [
-        { provide: MatDialogRef, useValue: mockDialogRef },
-        { provide: MAT_DIALOG_DATA, useValue: mockDialogData },
+        { provide: NgbActiveModal, useValue: mockActiveModal },
         { provide: SelectionDataService, useValue: mockSelectionDataService },
       ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(DiscoveryModalComponent);
     component = fixture.componentInstance;
+    component.data = mockDialogData;
     fixture.detectChanges();
   });
 
@@ -88,18 +91,16 @@ describe("DiscoveryModalComponent", () => {
     component.selectedRow = component.rowData[0];
     component.confirmSelection();
 
-    expect(mockDialogRef.close).toHaveBeenCalledWith({
+    expect(mockActiveModal.close).toHaveBeenCalledWith({
       selectedRow: component.rowData[0],
       confirmed: true,
     });
   });
 
-  it("should close dialog without result on cancel", () => {
+  it("should dismiss dialog on cancel", () => {
     component.cancel();
 
-    expect(mockDialogRef.close).toHaveBeenCalledWith({
-      confirmed: false,
-    });
+    expect(mockActiveModal.dismiss).toHaveBeenCalled();
   });
 
   it("should handle row click event", () => {
@@ -120,13 +121,13 @@ describe("DiscoveryModalComponent", () => {
     component.onRowDoubleClicked(mockEvent);
 
     expect(component.selectedRow).toEqual(component.rowData[0]);
-    expect(mockDialogRef.close).toHaveBeenCalled();
+    expect(mockActiveModal.close).toHaveBeenCalled();
   });
 
   it("should not confirm if no row is selected", () => {
     component.selectedRow = null;
     component.confirmSelection();
 
-    expect(mockDialogRef.close).not.toHaveBeenCalled();
+    expect(mockActiveModal.close).not.toHaveBeenCalled();
   });
 });

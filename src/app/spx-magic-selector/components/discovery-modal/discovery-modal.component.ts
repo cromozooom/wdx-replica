@@ -1,19 +1,13 @@
 import {
   Component,
-  Inject,
+  Input,
   OnInit,
   OnDestroy,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import {
-  MAT_DIALOG_DATA,
-  MatDialogRef,
-  MatDialogModule,
-} from "@angular/material/dialog";
-import { MatButtonModule } from "@angular/material/button";
-import { MatIconModule } from "@angular/material/icon";
+import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
 import { AgGridAngular } from "ag-grid-angular";
 import {
   ColDef,
@@ -44,19 +38,19 @@ import { takeUntil } from "rxjs/operators";
 @Component({
   selector: "app-discovery-modal",
   standalone: true,
-  imports: [
-    CommonModule,
-    MatDialogModule,
-    MatButtonModule,
-    MatIconModule,
-    AgGridAngular,
-    InspectorPanelComponent,
-  ],
+  imports: [CommonModule, AgGridAngular, InspectorPanelComponent],
   templateUrl: "./discovery-modal.component.html",
   styleUrls: ["./discovery-modal.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DiscoveryModalComponent implements OnInit, OnDestroy {
+  // ========================================
+  // Input Properties
+  // ========================================
+
+  /** Data passed to the modal */
+  @Input() data!: DiscoveryModalDialogData;
+
   // ========================================
   // Grid Configuration
   // ========================================
@@ -153,9 +147,7 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
   // ========================================
 
   constructor(
-    public dialogRef: MatDialogRef<DiscoveryModalComponent>,
-    @Inject(MAT_DIALOG_DATA)
-    public data: DiscoveryModalDialogData,
+    public activeModal: NgbActiveModal,
     private selectionDataService: SelectionDataService,
     private queryExecutorService: QueryExecutorService,
     private cdr: ChangeDetectorRef,
@@ -282,7 +274,7 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
    */
   confirmSelection(): void {
     if (this.selectedRow) {
-      this.dialogRef.close({
+      this.activeModal.close({
         selectedRow: this.selectedRow,
         confirmed: true,
       });
@@ -293,9 +285,7 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
    * Cancel selection and close modal
    */
   cancel(): void {
-    this.dialogRef.close({
-      confirmed: false,
-    });
+    this.activeModal.dismiss();
   }
 
   /**
