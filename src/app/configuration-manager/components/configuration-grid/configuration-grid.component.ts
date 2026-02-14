@@ -266,8 +266,10 @@ export class ConfigurationGridComponent {
 
   gridOptions: GridOptions<ConfigurationUpdateRow> = {
     columnDefs: this.columnDefs,
-    rowSelection: "multiple",
-    suppressRowClickSelection: true,
+    rowSelection: {
+      mode: "multiRow",
+      enableClickSelection: false,
+    },
     isRowSelectable: (params) => {
       // Only allow selection of configuration rows, not update rows
       return params.data?.isConfigRow === true;

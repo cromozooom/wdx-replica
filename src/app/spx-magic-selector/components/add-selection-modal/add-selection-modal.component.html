@@ -1,17 +1,22 @@
-<div class="modal-header">
-  <h5 class="modal-title">
-    <i class="fa fa-plus-circle me-2"></i>
-    Add New Selection
-  </h5>
-  <button
-    type="button"
-    class="btn-close"
-    aria-label="Close"
-    (click)="cancel()"
-  ></button>
+<div class="offcanvas-header">
+  <div class="d-flex flex-column flex-grow-1">
+    <div class="d-flex justify-content-between align-items-center">
+      <h5 class="offcanvas-title mb-0">
+        <i class="fa fa-plus-circle me-2"></i>
+        Add New Selection
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="cancel()"
+      ></button>
+    </div>
+    <app-offcanvas-breadcrumb class="mt-2"></app-offcanvas-breadcrumb>
+  </div>
 </div>
 
-<div class="modal-body">
+<div class="offcanvas-body">
   <!-- Selection Name -->
   <div class="mb-3">
     <label class="form-label fw-bold">Selection Name *</label>
@@ -84,20 +89,21 @@
       </ol>
     </small>
   </div>
-</div>
 
-<div class="modal-footer">
-  <button type="button" class="btn btn-secondary" (click)="cancel()">
-    <i class="fa fa-times me-1"></i>
-    Cancel
-  </button>
-  <button
-    type="button"
-    class="btn btn-primary"
-    (click)="save()"
-    [disabled]="!canSave()"
-  >
-    <i class="fa fa-save me-1"></i>
-    Save Selection
-  </button>
+  <!-- Footer Buttons -->
+  <div class="d-flex justify-content-end gap-2 mt-4 pt-3 border-top">
+    <button type="button" class="btn btn-secondary" (click)="cancel()">
+      <i class="fa fa-times me-1"></i>
+      Cancel
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="save()"
+      [disabled]="!canSave()"
+    >
+      <i class="fa fa-save me-1"></i>
+      Save Selection
+    </button>
+  </div>
 </div>

@@ -1,0 +1,8 @@
+/* Dynamic z-index management for stacked offcanvas */
+.offcanvas-backdrop {
+  z-index: 1040;
+}
+
+.offcanvas {
+  z-index: var(--bs-offcanvas-zindex, 1050);
+}

@@ -1,0 +1,5023 @@
+[
+  {
+    "id": "85ddc5f6-143d-4dbb-92eb-eae3af68ecaa",
+    "name": "Networked motivating benchmark Contract.docx",
+    "type": "Document",
+    "entityId": "370ef78a-df43-42ae-9781-0d171a551424",
+    "entityName": "Invoice_002",
+    "displayName": "Gutierrez Inc Invoice",
+    "description": "But too cup believe true.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2026-05-25T12:40:29.267843",
+    "queries": [
+      {
+        "id": "2b6eea48-33ca-410b-a432-14d659520101",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2634,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "24ceb444-858e-4b0b-a9d2-6f34860c4e3c",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4922,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "e0e648a7-1c2a-43f1-a1a7-0fbfa023a684",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2434,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "b2cb28d3-29d5-4d7c-8bf5-0155d34b3436",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 4021,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-11-06T05:12:15"
+  },
+  {
+    "id": "ab5edc75-a56c-4f30-8b4c-c6546bfe3170",
+    "name": "Right-sized mission-critical pricing structure Invoice.xlsx",
+    "type": "Document",
+    "entityId": "996b7161-b478-4d4a-a0d9-2bb77e047132",
+    "entityName": "Task_035",
+    "displayName": "Perez Inc Task",
+    "description": "Professional hear sister method sport old those policy region.",
+    "fileType": "XLSX",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "5fbcf011-9652-4099-b064-b148b07cf8c2",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1252,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "76f2f9cd-55ae-42e8-90a9-561953fa8fa5",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 925,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-06-08T12:03:15"
+  },
+  {
+    "id": "8969cb2f-9edb-4267-b6b9-fd2d38e359de",
+    "name": "Enterprise-wide uniform focus group Contract.docx",
+    "type": "Document",
+    "entityId": "ec8f327e-a1c2-4250-8209-8794040cc54d",
+    "entityName": "Account_091",
+    "displayName": "Beltran, Anderson and Hamilton Account",
+    "description": "Wind phone science cover improve parent several.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2026-10-20T12:40:29.267917",
+    "queries": [
+      {
+        "id": "4427973f-592c-4f57-b576-7d3886f3a1b2",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 259,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "b981f572-6d31-444c-9a7a-a63b9c597331",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1485,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3d9e1bc5-8120-4ee9-b6b3-69e371881ac6",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 4168,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2026-01-22T16:00:03"
+  },
+  {
+    "id": "2966df4a-e170-430b-bee5-ab89c597a7cb",
+    "name": "Public-key encompassing secured line Contract.docx",
+    "type": "Document",
+    "entityId": "996b7161-b478-4d4a-a0d9-2bb77e047132",
+    "entityName": "Task_035",
+    "displayName": "Perez Inc Task",
+    "description": "Front debate generation mind threat parent raise mention try.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2026-11-18T12:40:29.267951",
+    "queries": [
+      {
+        "id": "a5aac305-f41a-4569-8400-00d909b48759",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4032,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "3e053f3a-cddc-43d9-967e-edeb32af6537",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3380,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "96b80c43-260f-43b9-a3fd-08742f1bb66c",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 143,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "00ba3b54-8393-48c7-8e7a-fc18a889a882",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1614,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-05-21T05:34:23"
+  },
+  {
+    "id": "91701e8c-9e47-4ee2-a81e-8c81683a1c6f",
+    "name": "Virtual intermediate circuit Agreement.docx",
+    "type": "Document",
+    "entityId": "28ee25f6-c739-4ce6-b64a-04b623a44551",
+    "entityName": "Contact_001",
+    "displayName": "Bautista Inc Contact",
+    "description": "West special marriage marriage performance.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "199eaabf-8bac-4981-92cf-bc079f6bb2fd",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3235,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "3e4e6c74-d3a4-416f-9319-95ed3d68ff99",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1154,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "f43262b0-054e-4f12-a33f-c4353d91146d",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4222,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-17T17:36:27"
+  },
+  {
+    "id": "cd85d62e-bf81-4675-9688-9e3b92e4f4d5",
+    "name": "Upgradable content-based standardization Proposal.xlsx",
+    "type": "Document",
+    "entityId": "7016dd9c-72e9-47bf-bd03-887ba1348f4c",
+    "entityName": "Invoice_085",
+    "displayName": "Gray LLC Invoice",
+    "description": "Their campaign threat him the owner.",
+    "fileType": "XLSX",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "5adf7433-0166-4ff1-bbcb-32d55e6367cd",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 4804,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "4e793145-4587-4eff-8a08-bf153420d45f",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 276,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "bc9e10a0-eb02-401e-8bbb-0666977bd099",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2947,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "1b79ef6a-a3fd-4774-aab0-82835e79487d",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2399,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-30T13:50:47"
+  },
+  {
+    "id": "66a130e3-13ba-4fe9-93a7-9310d2ad26db",
+    "name": "Multi-channeled human-resource functionalities Proposal.docx",
+    "type": "Document",
+    "entityId": "ccf434c4-ba5d-46c6-bc1e-023bb5a6e1a4",
+    "entityName": "Asset_086",
+    "displayName": "Foster, Smith and Hendrix Asset",
+    "description": "Long quality computer hotel minute.",
+    "fileType": "DOCX",
+    "securityLevel": "Internal",
+    "expiryDate": "2026-06-24T12:40:29.268051",
+    "queries": [
+      {
+        "id": "eaf0bff1-8c2b-4375-9a14-c0fa26d8bfe0",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 3003,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "afc3dd5b-d82e-427b-9149-13634a3bb514",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 545,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-09T11:15:29"
+  },
+  {
+    "id": "0820f390-a49b-47e3-b421-f6411ced759a",
+    "name": "Function-based user-facing benchmark Invoice.pdf",
+    "type": "Document",
+    "entityId": "5fcdbae3-3ceb-415a-a2c4-a1fa2b28e3bc",
+    "entityName": "Patient_026",
+    "displayName": "Mckinney, Price and Smith Patient",
+    "description": "Wind authority government fire simply eight other.",
+    "fileType": "PDF",
+    "securityLevel": "Confidential",
+    "expiryDate": "2028-01-13T12:40:29.268080",
+    "queries": [
+      {
+        "id": "9dfd3c8e-f604-4bea-a71a-e3d6f9fd82d6",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 155,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "01d8c3f8-47c4-45d1-b601-d743b1e0b12e",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4287,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "fa1f6faf-2aa9-495b-aeee-b221d57a132b",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1046,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "a32de2c9-5de9-4aa5-91b5-f77ed98e5cba",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3478,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-19T01:35:42"
+  },
+  {
+    "id": "3f826d99-dedf-468f-950a-9b3378fb9cff",
+    "name": "Phased analyzing help-desk Certificate.xlsx",
+    "type": "Document",
+    "entityId": "7294caa2-85a8-4a08-90d8-183308ebe926",
+    "entityName": "Contact_036",
+    "displayName": "Moore-Banks Contact",
+    "description": "Hundred wind bank ago leader about PM cell hand.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "b0f901c4-bb98-4b3c-aac7-c51e75d46f40",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 805,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "ed1b7fd2-3ec2-49b3-81fc-c8198b0e2942",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1725,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "abf2a678-1bd0-49d3-9840-d3a5efa8dba2",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1485,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "051713a7-5955-4bbe-81e4-3aeeee9ea055",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2650,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-08-13T22:21:48"
+  },
+  {
+    "id": "0e7e7a57-2cb0-42fb-992c-79cbf7a5697b",
+    "name": "Team-oriented non-volatile collaboration Proposal.csv",
+    "type": "Document",
+    "entityId": "ddd997b7-898d-441f-b94b-54a00e2919fe",
+    "entityName": "Opportunity_000",
+    "displayName": "Fisher-Evans Opportunity",
+    "description": "Significant start accept analysis room expert store.",
+    "fileType": "CSV",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "d77e9af3-d342-4b13-b261-ca381baea0b6",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3954,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "4248ccc7-a7f6-41c3-aac6-5ebcc35e70de",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1128,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-04T20:22:35"
+  },
+  {
+    "id": "7ee01e79-bf13-4acf-be09-f79ef9452390",
+    "name": "Fully-configurable scalable collaboration Contract.docx",
+    "type": "Document",
+    "entityId": "4f55a843-7079-48fe-83d3-7c6a50664acf",
+    "entityName": "LeaseAgreement_076",
+    "displayName": "Trevino Group LeaseAgreement",
+    "description": "Oil here great whole carry thing choose six others bar.",
+    "fileType": "DOCX",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "539f7cc8-14f6-44ad-a1b9-c82bc2badef7",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2992,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3e6bdfcc-95cc-4416-a6bd-13e2656aeb4e",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4374,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "49e24050-3aeb-423f-b593-198ca71d065a",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 426,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "2bd54225-487d-4740-b1bb-030ac9e9381d",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2810,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2026-02-02T14:12:29"
+  },
+  {
+    "id": "258cb20b-b175-4d0e-85c1-ce45e12f32d1",
+    "name": "Face-to-face intermediate model Summary.docx",
+    "type": "Document",
+    "entityId": "460630c8-7f8a-4cfc-8a45-ae446623e54a",
+    "entityName": "Invoice_063",
+    "displayName": "Jordan Group Invoice",
+    "description": "Light read quite other campaign indicate animal social surface theory.",
+    "fileType": "DOCX",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "9b247f2c-227e-4e1e-8f0a-42bdd25653da",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4820,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "bf650d2c-d8c5-4942-a7f3-5a3e6b40dd93",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1779,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "1dbed50a-213d-4c8c-9db6-1390703d5a0e",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1087,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-05T16:41:23"
+  },
+  {
+    "id": "44b0830a-f0c4-4e8b-bf67-a97b1098ad49",
+    "name": "Synergized secondary emulation Invoice.docx",
+    "type": "Document",
+    "entityId": "af2320af-534b-40f8-838a-75a66e91a5ac",
+    "entityName": "MaintenanceRequest_082",
+    "displayName": "Kim PLC MaintenanceRequest",
+    "description": "My life book sit report try find agreement each suddenly.",
+    "fileType": "DOCX",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "2a5bd0c7-935e-4317-a99f-a6bca204012d",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4249,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "4dd177ac-37e3-448f-b1b3-0c448abe5a8b",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1721,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "8f71de9a-84ca-4c93-b43b-7941cb8e63b4",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 1465,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "4ecbbdb1-43cd-4cd7-b090-7b2eb8bc5bd4",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2979,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-22T16:34:20"
+  },
+  {
+    "id": "3f7d80f1-8dab-4362-a212-01e3c28c79d4",
+    "name": "Pre-emptive intangible standardization Proposal.pdf",
+    "type": "Document",
+    "entityId": "1eff09d9-08f3-4b0a-9c84-109a2fb976a5",
+    "entityName": "Opportunity_017",
+    "displayName": "Davis-Riley Opportunity",
+    "description": "Stock major son medical kid design must difficult bad standard.",
+    "fileType": "PDF",
+    "securityLevel": "Confidential",
+    "expiryDate": "2026-09-12T12:40:29.268270",
+    "queries": [
+      {
+        "id": "40380649-ac9f-4028-85d2-8f5309610e9f",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3279,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "6ac77a5f-cd73-43b0-b571-56f667009daf",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 3859,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "47881164-7648-462b-931a-dd3f5140f8fb",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 58,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-22T14:07:28"
+  },
+  {
+    "id": "e246dd2e-83b2-48a4-bd3e-fbc06dfb75a5",
+    "name": "Team-oriented uniform Internet solution Contract.xlsx",
+    "type": "Document",
+    "entityId": "a03158e5-e6d0-49da-b2a9-fbd72d480374",
+    "entityName": "Asset_074",
+    "displayName": "Tran, Anderson and Turner Asset",
+    "description": "Piece better seven affect bit attack hour moment away.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "d2db635c-74cd-4dd0-a73f-2e219931e034",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 117,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3f612cac-dc78-4697-8101-32a775ba5ead",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 301,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-11T12:05:12"
+  },
+  {
+    "id": "f152fca2-9c67-4b03-8a15-5974b1fdc3d0",
+    "name": "Organized demand-driven utilization Contract.pdf",
+    "type": "Document",
+    "entityId": "fb7f6546-2c6c-416c-9035-865e93e2111e",
+    "entityName": "Lead_015",
+    "displayName": "Clark LLC Lead",
+    "description": "Quickly enough stop family people suddenly form Mrs.",
+    "fileType": "PDF",
+    "securityLevel": "Restricted",
+    "expiryDate": "2026-11-09T12:40:29.268331",
+    "queries": [
+      {
+        "id": "40b90984-d56b-4a9d-9474-e6b5d30e43c3",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 760,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "9fd67e93-2541-4597-9478-409add2d43d0",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 1611,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "752be9b1-f830-4a26-854d-55cb74d2db9b",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3122,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "21301817-0fec-41d7-816e-e4d9133c91a4",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2953,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-02-02T11:42:58"
+  },
+  {
+    "id": "7d1e605e-c39a-41a2-8d35-94de3c28883c",
+    "name": "Universal tertiary policy Report.xlsx",
+    "type": "Document",
+    "entityId": "36c63a2f-1e1a-4684-9628-cc14fef407e6",
+    "entityName": "Case_016",
+    "displayName": "Banks, Hill and Moore Case",
+    "description": "Explain through best both treat lay history public.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2027-09-22T12:40:29.268369",
+    "queries": [
+      {
+        "id": "cb753ef4-c562-4143-8352-267bfefad99c",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 763,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "335207f1-fbf1-41c1-870e-8f56ccf5f4ea",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 601,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "794ba12c-3235-4da1-add6-93569f60c431",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2476,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-06T03:47:30"
+  },
+  {
+    "id": "72ec29b9-18aa-4e45-9dc4-ba078dde2770",
+    "name": "De-engineered zero tolerance focus group Proposal.xlsx",
+    "type": "Document",
+    "entityId": "4f55a843-7079-48fe-83d3-7c6a50664acf",
+    "entityName": "LeaseAgreement_076",
+    "displayName": "Trevino Group LeaseAgreement",
+    "description": "Size action state author red focus speech want.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2027-11-27T12:40:29.268469",
+    "queries": [
+      {
+        "id": "2b524f45-ef3f-4d5c-b2dc-d73689d5004e",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3183,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "2b6f3035-7826-4e91-b10a-7ab80f127554",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 3274,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "a9892596-8f60-4eba-9ffb-d8591fc7c623",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 699,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-29T09:35:55"
+  },
+  {
+    "id": "06b7cd2a-df56-4e58-83bf-a517e88da562",
+    "name": "Visionary heuristic system engine Invoice.csv",
+    "type": "Document",
+    "entityId": "93a7e8af-7793-44d7-b3e9-513f0a84cfc5",
+    "entityName": "Property_029",
+    "displayName": "Walker, Powell and Bell Property",
+    "description": "None piece along institution consumer staff natural art.",
+    "fileType": "CSV",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "07ffc1ee-2e72-4b59-972b-9b61504ef059",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2808,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5075c073-4036-44ff-bc12-2ad679280aae",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3960,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "87fb8067-a16d-48b9-bf3b-0afbad6883a4",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 244,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-10-25T22:31:35"
+  },
+  {
+    "id": "7617c79a-d688-44a0-94ad-6b832a979b66",
+    "name": "Reactive high-level interface Report.csv",
+    "type": "Document",
+    "entityId": "5fcdbae3-3ceb-415a-a2c4-a1fa2b28e3bc",
+    "entityName": "Patient_026",
+    "displayName": "Mckinney, Price and Smith Patient",
+    "description": "Personal tax still Congress of.",
+    "fileType": "CSV",
+    "securityLevel": "Restricted",
+    "expiryDate": "2027-05-06T12:40:29.268553",
+    "queries": [
+      {
+        "id": "61ced555-37c7-46d7-9e90-91738b5c292c",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3373,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "6ed925fc-acb6-449a-a14d-cb1f0d3428cb",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2748,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "d17712b2-af14-4dea-99cb-6056b98aefdf",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1578,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-11-04T01:40:27"
+  },
+  {
+    "id": "47a6e077-555f-4c23-87ac-b9b6ae335491",
+    "name": "Focused real-time throughput Invoice.xlsx",
+    "type": "Document",
+    "entityId": "7016dd9c-72e9-47bf-bd03-887ba1348f4c",
+    "entityName": "Invoice_085",
+    "displayName": "Gray LLC Invoice",
+    "description": "News nice behavior child local man effort step watch daughter.",
+    "fileType": "XLSX",
+    "securityLevel": "Internal",
+    "expiryDate": "2027-04-26T12:40:29.268589",
+    "queries": [
+      {
+        "id": "1c7e9633-397b-4aaf-900f-e40b40c5b5f6",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1002,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "97b4321b-0320-42d1-9b80-de78dac783c9",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1353,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "385a383d-375b-4172-a7eb-607b0784cfb5",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3997,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-09-07T10:48:30"
+  },
+  {
+    "id": "55f13bb8-3471-48ba-a28e-9f88800308aa",
+    "name": "Re-contextualized didactic artificial intelligence Agreement.docx",
+    "type": "Document",
+    "entityId": "5ff98893-952b-4726-9eb4-8934a69a1eaf",
+    "entityName": "Contract_028",
+    "displayName": "Matthews-Stewart Contract",
+    "description": "Artist positive center power popular together study.",
+    "fileType": "DOCX",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "b20c21cd-4ebb-4f26-9b8d-759fe73e8286",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 4625,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "f92259d7-a1bc-4cb3-ae31-a9b01d458d76",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 392,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-21T13:47:27"
+  },
+  {
+    "id": "5ab8bff6-d5c0-4560-a494-c2d0dbc55ac2",
+    "name": "Fundamental high-level knowledge user Analysis.csv",
+    "type": "Document",
+    "entityId": "81302654-bdb9-4b3c-8c48-e6288e084cf0",
+    "entityName": "MaintenanceRequest_075",
+    "displayName": "Hall, Martinez and Guerrero MaintenanceRequest",
+    "description": "Almost official whom whatever military where.",
+    "fileType": "CSV",
+    "securityLevel": "Restricted",
+    "expiryDate": "2028-01-05T12:40:29.268653",
+    "queries": [
+      {
+        "id": "c720032c-28a8-4924-bf99-453a45540225",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 4895,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "db040443-cfa8-4aab-a6a8-c50ae72e915f",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 1964,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "b56796f3-843a-4c19-93d4-a9e2be362fcd",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1824,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-02-04T10:33:11"
+  },
+  {
+    "id": "4426ecba-489a-4b11-a729-b89f95471ad6",
+    "name": "Visionary regional initiative Invoice.docx",
+    "type": "Document",
+    "entityId": "c89001a9-e4d8-4465-9ee5-ec9123350f7b",
+    "entityName": "Appointment_010",
+    "displayName": "Stewart, French and Wilson Appointment",
+    "description": "Resource reveal take purpose parent mouth.",
+    "fileType": "DOCX",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "c5271e6d-108f-48b1-b3d8-310df42ace0d",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4598,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "8fcfcb12-a9e9-4bb2-9a1f-118311e93ffc",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 379,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "5365b226-3eb8-48a8-8659-d676011d4dd0",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1239,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "b0bb9082-4066-4c85-a477-2f6f50cc21ac",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4317,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-01T17:21:43"
+  },
+  {
+    "id": "725b6511-25aa-4464-a7d4-88203a27e746",
+    "name": "Organic 24hour standardization Agreement.pdf",
+    "type": "Document",
+    "entityId": "7294caa2-85a8-4a08-90d8-183308ebe926",
+    "entityName": "Contact_036",
+    "displayName": "Moore-Banks Contact",
+    "description": "Less life rich increase mouth whole pass.",
+    "fileType": "PDF",
+    "securityLevel": "Restricted",
+    "expiryDate": "2027-05-21T12:40:29.268718",
+    "queries": [
+      {
+        "id": "8db71480-fdb2-4416-9fd5-ff01f003c9a6",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 205,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "e052a672-bae2-4d27-ab48-1ea2a6daa00b",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2114,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "8a12150b-0482-4c72-9429-dc6442eb5bc8",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3463,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-06-18T19:33:44"
+  },
+  {
+    "id": "22fbb7df-97f2-4e38-bab5-98569c858f89",
+    "name": "Open-source eco-centric knowledge user Report.pdf",
+    "type": "Document",
+    "entityId": "391e9b8b-a668-4f16-ae2c-b6b286fe9c1a",
+    "entityName": "Case_047",
+    "displayName": "Jones, Macias and Brewer Case",
+    "description": "Carry drive season blood boy control once customer.",
+    "fileType": "PDF",
+    "securityLevel": "Public",
+    "expiryDate": "2027-12-30T12:40:29.268751",
+    "queries": [
+      {
+        "id": "841b1d5d-2cd4-451f-b09d-3183d9c373b5",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 4794,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "95ea9598-fdc2-4c00-b7f9-92d974df648f",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1376,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-02-14T11:18:51"
+  },
+  {
+    "id": "f66d5468-ffc2-4dfa-856f-7d402070f601",
+    "name": "Visionary actuating moratorium Proposal.csv",
+    "type": "Document",
+    "entityId": "ace9fb51-e4bf-41c3-8bfb-967274314cd6",
+    "entityName": "LeaseAgreement_023",
+    "displayName": "Perez Ltd LeaseAgreement",
+    "description": "Total dream hope suddenly increase investment until challenge when physical.",
+    "fileType": "CSV",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "d29de5fd-8a86-4ae0-9fd7-dcaef1a496b5",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 469,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5fc605fe-4418-429d-ae90-4ec10ba81ef0",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3547,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-18T11:57:40"
+  },
+  {
+    "id": "de53ba65-f990-45f2-a650-4e5d99f66a7b",
+    "name": "Intuitive multi-state architecture Contract.csv",
+    "type": "Document",
+    "entityId": "ec8f327e-a1c2-4250-8209-8794040cc54d",
+    "entityName": "Account_091",
+    "displayName": "Beltran, Anderson and Hamilton Account",
+    "description": "Without change arm indicate evidence kid something strategy notice.",
+    "fileType": "CSV",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "db4bfa0a-422e-418e-b4eb-3814f3e854cc",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3540,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5c9e2bac-655b-4709-b5e6-733802ff18bf",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3023,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "76313047-b3e2-43d6-a671-4bfa261307d4",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 727,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-28T20:14:46"
+  },
+  {
+    "id": "e22b7fb7-cdec-4c53-9355-ef6fa77efb57",
+    "name": "Public-key analyzing matrices Invoice.docx",
+    "type": "Document",
+    "entityId": "0935f645-ad48-445f-9c9b-395c5911f17a",
+    "entityName": "Case_065",
+    "displayName": "Jefferson, Holland and Maddox Case",
+    "description": "Response continue drop method machine song point nor hundred.",
+    "fileType": "DOCX",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "392b73b3-59f1-4c73-b55e-eda04f4a7d97",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2407,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "6bea40fd-eabf-490f-b7d9-1c08e2d500fd",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2146,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-07T14:24:22"
+  },
+  {
+    "id": "f01ca826-3326-4cbb-857f-729566b5519d",
+    "name": "Open-source modular benchmark Contract.pdf",
+    "type": "Document",
+    "entityId": "17f8c05b-9f1e-4f86-92be-22f661f7a000",
+    "entityName": "Lead_049",
+    "displayName": "Rose-Lewis Lead",
+    "description": "Always building training act attack system her dinner control necessary.",
+    "fileType": "PDF",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "4473189d-52a9-4cac-b90e-3bfdf61e9169",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 519,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "549f4f07-c966-4b1e-b397-9f6e25088424",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3190,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "4a362776-b4db-40c2-b149-dfe1f3ff8fe7",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2471,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "2a5725bb-90c2-40be-820b-9909eca7b1b7",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 3905,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-10T01:51:02"
+  },
+  {
+    "id": "70316fa0-0336-425e-8a63-55e1e5697bed",
+    "name": "Distributed composite encryption Certificate.docx",
+    "type": "Document",
+    "entityId": "af2320af-534b-40f8-838a-75a66e91a5ac",
+    "entityName": "MaintenanceRequest_082",
+    "displayName": "Kim PLC MaintenanceRequest",
+    "description": "Service pick possible goal same home evidence unit.",
+    "fileType": "DOCX",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "830e564f-0ca5-47b3-997e-1815e1bb6094",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2939,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "177f543a-8f16-4058-8cbd-8722d2f11b05",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3835,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3e2dd107-09ac-42cb-9e79-e96e706b5122",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 810,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "055acdcc-4256-4c5e-b83f-5c1e22636f15",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2939,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-09-28T04:40:28"
+  },
+  {
+    "id": "3d6c2b77-325a-4570-8d2b-2e5aea4c1f6b",
+    "name": "Enhanced scalable frame Summary.docx",
+    "type": "Document",
+    "entityId": "b9fe66ca-bff5-416e-9d64-cdcee4dd6d84",
+    "entityName": "Tenant_078",
+    "displayName": "Morgan, Berg and Carney Tenant",
+    "description": "Peace my condition recently between.",
+    "fileType": "DOCX",
+    "securityLevel": "Confidential",
+    "expiryDate": "2026-12-08T12:40:29.268929",
+    "queries": [
+      {
+        "id": "5077369c-d178-4d87-83ee-f59150cc27b5",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 904,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3d35c868-8578-447e-b180-d9e200f960b8",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4225,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-02-03T20:27:13"
+  },
+  {
+    "id": "b46d2afb-70e0-4657-81aa-7904b4766f30",
+    "name": "Compatible 24/7 instruction set Report.csv",
+    "type": "Document",
+    "entityId": "8efcac36-f688-4f68-9066-6f75e02dc8bc",
+    "entityName": "Contract_083",
+    "displayName": "Carney-Evans Contract",
+    "description": "Good amount Republican his oil history game stop very local.",
+    "fileType": "CSV",
+    "securityLevel": "Internal",
+    "expiryDate": "2026-07-18T12:40:29.268958",
+    "queries": [
+      {
+        "id": "c099b2cf-e78b-438a-a727-0126d4524670",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2543,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "e07a2052-53fb-47ea-bca4-3bb765a2261a",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1059,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-09T15:06:26"
+  },
+  {
+    "id": "1ec261e5-e4ab-45dc-9e95-6718746b0bc0",
+    "name": "Virtual exuding open system Agreement.pdf",
+    "type": "Document",
+    "entityId": "e2d02e35-8b96-4788-8933-27b66baaff04",
+    "entityName": "Patient_064",
+    "displayName": "Bailey, Scott and Livingston Patient",
+    "description": "Other bring billion garden some end.",
+    "fileType": "PDF",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "63d9ffe2-f492-4388-a456-9eb8e120bd67",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1774,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "88d2db3e-3813-4b90-8782-ed37a348c355",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2205,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "c7752b64-90a0-44f4-999b-dcad6ad4be36",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1689,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "4356926b-1961-4d45-bd86-da51068c5bb0",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 3987,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-26T01:16:31"
+  },
+  {
+    "id": "2355caf4-aed8-41cc-9be8-047e088de4cd",
+    "name": "Streamlined system-worthy moratorium Contract.xlsx",
+    "type": "Document",
+    "entityId": "8dd0ab14-769d-48c0-b73a-414af1849a63",
+    "entityName": "Project_019",
+    "displayName": "Baker, Zimmerman and Green Project",
+    "description": "There keep quite article move.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "070efd33-3737-49c1-a3b7-43ac0e208af0",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3972,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "3f364e80-4bd4-45b2-91ce-bd42a844ebdc",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3246,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "a4adbf5c-a91f-48d1-b6dd-21d28db4dd65",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 343,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "f0155280-8e47-4b34-944a-69372711b266",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3288,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-14T16:50:48"
+  },
+  {
+    "id": "fc849d72-c9ab-4549-9abe-9072420f2e04",
+    "name": "Customer-focused regional toolset Agreement.pdf",
+    "type": "Document",
+    "entityId": "50cd64dd-8b31-4360-ad77-f841ae7ef972",
+    "entityName": "Task_039",
+    "displayName": "Adams, Taylor and Skinner Task",
+    "description": "Language power opportunity issue watch nature water need Mr medical.",
+    "fileType": "PDF",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "bed04513-ce0d-459a-81ab-c6b22eab1520",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1884,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "a7e4e527-9d70-494a-add6-4975cf807c34",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1435,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "c9d92b4e-2207-4382-ad12-06732c64614e",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4523,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-05-23T12:45:47"
+  },
+  {
+    "id": "6cf5b8f2-ca60-4db5-b007-c33758f5cb4b",
+    "name": "Multi-layered actuating groupware Report.docx",
+    "type": "Document",
+    "entityId": "01606fa0-040b-430b-8a86-037cff457ef3",
+    "entityName": "Case_003",
+    "displayName": "Estrada Ltd Case",
+    "description": "Skill involve why heart himself.",
+    "fileType": "DOCX",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "b6b7e57b-b56a-4a1c-8012-61741e92dd35",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1124,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7c5c17bd-0977-4e21-a348-9dbf07d02363",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4163,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "b2e660c9-fc9c-4b8a-9ec3-726c3e8cb571",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4087,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "009b02e0-a6a9-48ae-9179-6c5015b8b481",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2514,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-02T08:49:57"
+  },
+  {
+    "id": "b0b6b65f-7bc6-4bbe-8ac4-a8c69cb1c48d",
+    "name": "Distributed disintermediate interface Summary.docx",
+    "type": "Document",
+    "entityId": "4f55a843-7079-48fe-83d3-7c6a50664acf",
+    "entityName": "LeaseAgreement_076",
+    "displayName": "Trevino Group LeaseAgreement",
+    "description": "Toward receive should product from inside wear measure.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "a267e976-56d5-4b6e-90e3-badd3f0cb37f",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 384,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "9fcce050-863b-435c-be20-dc41a1e2a345",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 991,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "9a456967-0e48-482d-860b-5ab14940e08d",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4853,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "4e088913-ab83-452d-96aa-9a33004affcc",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 720,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-12-20T20:47:11"
+  },
+  {
+    "id": "4a1978d1-ec0e-481b-a995-873244989a7e",
+    "name": "Robust holistic model Analysis.csv",
+    "type": "Document",
+    "entityId": "81302654-bdb9-4b3c-8c48-e6288e084cf0",
+    "entityName": "MaintenanceRequest_075",
+    "displayName": "Hall, Martinez and Guerrero MaintenanceRequest",
+    "description": "Could next determine yard reveal everybody little physical.",
+    "fileType": "CSV",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "f0e1c8e8-50b2-480a-b9f6-be121a700697",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2656,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "bce4ed94-ebc6-47f8-9a18-d12275ee7329",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 4349,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-07T19:45:23"
+  },
+  {
+    "id": "d3c6e64c-2f85-40e5-a9af-bc0b445af3e5",
+    "name": "Cross-platform maximized customer loyalty Invoice.xlsx",
+    "type": "Document",
+    "entityId": "ace9fb51-e4bf-41c3-8bfb-967274314cd6",
+    "entityName": "LeaseAgreement_023",
+    "displayName": "Perez Ltd LeaseAgreement",
+    "description": "Receive official start contain.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2026-11-15T12:40:29.269173",
+    "queries": [
+      {
+        "id": "235de3cc-487d-4100-a15e-d96c549ac09c",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2542,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "4c912426-d724-402f-92d0-80cd0f3690f1",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4481,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "cba9be20-17b9-431b-b926-db1479a7774a",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2768,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-16T23:12:30"
+  },
+  {
+    "id": "c515c89f-0567-41fd-bf48-fd772c0c89b0",
+    "name": "Digitized optimizing emulation Contract.pdf",
+    "type": "Document",
+    "entityId": "b54c462e-d73a-4c8c-bcda-fdad9e1d1def",
+    "entityName": "Asset_027",
+    "displayName": "Mcclain and Sons Asset",
+    "description": "Sell because TV into course note officer.",
+    "fileType": "PDF",
+    "securityLevel": "Restricted",
+    "expiryDate": "2026-08-23T12:40:29.269203",
+    "queries": [
+      {
+        "id": "1e2f6f0c-048c-42cc-9b1b-183fbeb1a595",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2516,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "eb488514-18c2-4685-aa51-7ca5312a83d0",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2274,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "93716c71-5123-446e-9fcf-295a8ec67bd7",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3980,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-06-16T02:02:06"
+  },
+  {
+    "id": "4f093beb-1278-476d-ad93-63042f76d3e3",
+    "name": "Down-sized explicit core Agreement.pdf",
+    "type": "Document",
+    "entityId": "96c02b96-1aff-43da-9fd5-9560abd45c44",
+    "entityName": "Appointment_007",
+    "displayName": "Sandoval-Walker Appointment",
+    "description": "Lead do animal participant trouble write that.",
+    "fileType": "PDF",
+    "securityLevel": "Public",
+    "expiryDate": "2027-05-18T12:40:29.269233",
+    "queries": [
+      {
+        "id": "783e7dab-c490-4408-b930-68f87db7a83d",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4574,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "cbd9df9b-3c83-46ab-8c30-608f142bb934",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4695,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7934ece9-995c-481f-8f8c-aba4d6a0dc03",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3764,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-08T04:32:15"
+  },
+  {
+    "id": "67dbd3c6-7025-4775-9d87-75ff18aee6a7",
+    "name": "Automated high-level knowledgebase Agreement.xlsx",
+    "type": "Document",
+    "entityId": "ace9fb51-e4bf-41c3-8bfb-967274314cd6",
+    "entityName": "LeaseAgreement_023",
+    "displayName": "Perez Ltd LeaseAgreement",
+    "description": "Between these public positive wait star red few most.",
+    "fileType": "XLSX",
+    "securityLevel": "Internal",
+    "expiryDate": "2028-01-27T12:40:29.269263",
+    "queries": [
+      {
+        "id": "1a1c2666-beff-49ec-98ef-3b65d81068ee",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 718,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "6c076052-1cc4-4f28-a056-b5bb41785d92",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3341,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "aa45e928-d668-45af-868b-0c0eb2028fb4",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1444,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-15T15:36:14"
+  },
+  {
+    "id": "427fc68b-395c-4c7a-b78a-4e3ed89051f2",
+    "name": "Polarized bottom-line knowledgebase Summary.xlsx",
+    "type": "Document",
+    "entityId": "51048ede-c902-4eee-923c-1491a73de5e4",
+    "entityName": "Tenant_048",
+    "displayName": "Zhang Inc Tenant",
+    "description": "Another however without indeed computer might or security character.",
+    "fileType": "XLSX",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "29bc0446-6d7f-4105-8374-fcda42955d36",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2412,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5aa6bbf9-59f4-4d45-809a-da9e0953ec3d",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1227,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "6b5fca8f-0b56-4573-b0f3-2f309e786342",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1256,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-03T05:48:07"
+  },
+  {
+    "id": "346d7cef-0f95-472b-8d6d-6debdf09f24d",
+    "name": "Triple-buffered zero administration alliance Analysis.csv",
+    "type": "Document",
+    "entityId": "a9ba519e-b61d-45e4-974e-04605becc205",
+    "entityName": "Tenant_053",
+    "displayName": "Thompson LLC Tenant",
+    "description": "Month senior draw foreign ball.",
+    "fileType": "CSV",
+    "securityLevel": "Public",
+    "expiryDate": "2026-04-29T12:40:29.269324",
+    "queries": [
+      {
+        "id": "d637ea18-c18d-4cf5-a4bc-911ac3b10486",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3824,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "321f16f6-5981-4403-bd35-2601e957661c",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1946,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "aef14ef3-6123-4126-92a8-478f15e86c62",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4857,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "1bc2bc27-f263-476c-b51d-f2a520fa3969",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 821,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-26T09:23:22"
+  },
+  {
+    "id": "00a9cfd7-8454-4eb7-bf87-741c547d76b3",
+    "name": "Profound 6thgeneration service-desk Proposal.docx",
+    "type": "Document",
+    "entityId": "2292c6c0-cafa-41c0-a29a-a90b692be2b5",
+    "entityName": "MaintenanceRequest_079",
+    "displayName": "Salas Inc MaintenanceRequest",
+    "description": "Economy speech really always management our standard agent hair three.",
+    "fileType": "DOCX",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "9ca21280-de7e-4d33-aaf2-949cf2a68694",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2502,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "dcd9a165-02a5-405b-933f-d84f6c270c0e",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4191,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e15757b8-5650-4ebe-bd79-a4c11c911ee1",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2348,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "547c0f13-4f0c-48d8-864e-082e4f33f5f4",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4178,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-10-18T07:40:41"
+  },
+  {
+    "id": "aa234109-7c9d-464b-9656-026d46d330de",
+    "name": "Extended uniform success Summary.pdf",
+    "type": "Document",
+    "entityId": "b594c0cc-a7c1-4b2c-98d8-465d60dddbd9",
+    "entityName": "Appointment_052",
+    "displayName": "Montgomery and Sons Appointment",
+    "description": "Quality compare else seem reach laugh hospital we fire.",
+    "fileType": "PDF",
+    "securityLevel": "Internal",
+    "expiryDate": "2027-06-11T12:40:29.269389",
+    "queries": [
+      {
+        "id": "007551eb-5584-4b6b-a56a-991a71f98642",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3239,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "33025e65-709d-4831-9d47-0a4e70f7b2c7",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2747,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-24T15:10:11"
+  },
+  {
+    "id": "300cf7ae-1e16-4525-a7b2-fa461b0439da",
+    "name": "Customizable 5thgeneration open system Proposal.docx",
+    "type": "Document",
+    "entityId": "d5e9c5d5-acc5-4273-8499-aec8bae0dc8b",
+    "entityName": "MedicalRecord_087",
+    "displayName": "Johnson, Hernandez and Sanford MedicalRecord",
+    "description": "Baby family consumer lose perhaps argue candidate whole.",
+    "fileType": "DOCX",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "0a3d0761-2cd2-4e80-b700-0c0781a9099c",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2483,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "1dfc9cb9-a138-4125-b7b5-2f458b169dac",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 3383,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-09-17T11:23:09"
+  },
+  {
+    "id": "420007ef-1910-4a51-b08a-1a55dcbd3e62",
+    "name": "Managed solution-oriented array Contract.csv",
+    "type": "Document",
+    "entityId": "24e8ea50-bf47-4357-8ef1-493f75936780",
+    "entityName": "Opportunity_043",
+    "displayName": "Carter-Burke Opportunity",
+    "description": "Foreign paper become dark bank.",
+    "fileType": "CSV",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "b590f8c4-cf3d-4670-8ab3-3c94dec8860a",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 138,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "27e9f874-699f-4e77-9db8-b4f1a7d0130a",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2528,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "2373533f-2628-4233-98d8-ff3aaf6b1998",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 521,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "2cbc0bda-46d4-4f38-9e82-fe42cc00df9e",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2307,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-06-28T03:46:58"
+  },
+  {
+    "id": "96782016-28b7-4946-b28c-676ed4510468",
+    "name": "Automated optimal matrices Certificate.csv",
+    "type": "Document",
+    "entityId": "103d0f1f-6e36-4015-8d6d-3a6e57f85e1f",
+    "entityName": "Invoice_032",
+    "displayName": "Ferguson Ltd Invoice",
+    "description": "Drug bad give score.",
+    "fileType": "CSV",
+    "securityLevel": "Internal",
+    "expiryDate": "2026-07-04T12:40:29.269479",
+    "queries": [
+      {
+        "id": "3a995a6a-a3b8-45cb-8805-a1cfd49143e5",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1159,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "8e896b07-7143-49b9-92c6-ce15975a1fdf",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2943,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "2e7d6bf6-46a4-4c24-915c-b6d1bb069f56",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1059,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "d242e941-7cea-4ab1-8884-93f565a2c493",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4388,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-29T11:59:00"
+  },
+  {
+    "id": "8ea91e50-8eb6-45ad-9326-4f495e0f5930",
+    "name": "Operative high-level moderator Summary.docx",
+    "type": "Document",
+    "entityId": "b4c6a796-70da-47f8-b1a9-aefb22873eab",
+    "entityName": "Task_093",
+    "displayName": "Strong Group Task",
+    "description": "Forward or partner yeah cause.",
+    "fileType": "DOCX",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "35bf5509-f469-48a3-96fe-099f18952a99",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1852,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "58f1a559-8213-4938-a7c0-92e690254c34",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4122,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "1d09c81b-ad49-4666-9d9d-68cde41b009e",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 693,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-19T19:58:25"
+  },
+  {
+    "id": "5f25afe1-30b7-4c49-9112-2615d96fd844",
+    "name": "Centralized global superstructure Report.csv",
+    "type": "Document",
+    "entityId": "24e8ea50-bf47-4357-8ef1-493f75936780",
+    "entityName": "Opportunity_043",
+    "displayName": "Carter-Burke Opportunity",
+    "description": "Wife bring night part message year natural understand foreign color.",
+    "fileType": "CSV",
+    "securityLevel": "Public",
+    "expiryDate": "2028-02-09T12:40:29.269541",
+    "queries": [
+      {
+        "id": "1878152f-87af-4022-9ce6-9d16523d99f6",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2096,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "98fad814-63e8-4ed7-a71c-f4f9e013c6ac",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3376,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "6ec8bb1e-d58d-43b2-b386-56f4de035887",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 81,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "cc0d258a-e561-4c7c-be6d-ce83e3b47fb5",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4006,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-20T00:41:22"
+  },
+  {
+    "id": "4b85c963-3d0d-4a2d-8b68-5835a15c82d5",
+    "name": "Horizontal web-enabled open architecture Report.docx",
+    "type": "Document",
+    "entityId": "364d7fa9-5682-476d-ae86-924c8415fad1",
+    "entityName": "Prescription_005",
+    "displayName": "Wolfe-Gordon Prescription",
+    "description": "Time wear from yes our then throw.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2027-04-18T12:40:29.269696",
+    "queries": [
+      {
+        "id": "96c76944-545c-4585-815a-e7b4db748b72",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1054,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "2e7ac06a-8123-4c5a-a05a-d9d6965192ca",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4620,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "97e0c5f9-adfe-4dba-8ead-c0268460014a",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4101,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "11195f7c-5f14-49b8-bac9-09baef0070d1",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1173,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-23T01:02:49"
+  },
+  {
+    "id": "827c97a2-8a5c-4670-82dd-9679ba20f25a",
+    "name": "Multi-tiered secondary matrix Contract.csv",
+    "type": "Document",
+    "entityId": "a3a7229d-594d-42ef-a08b-d6ca2b27563f",
+    "entityName": "Invoice_071",
+    "displayName": "Rodriguez LLC Invoice",
+    "description": "Right matter similar help maybe author pull financial.",
+    "fileType": "CSV",
+    "securityLevel": "Confidential",
+    "expiryDate": "2027-06-14T12:40:29.269734",
+    "queries": [
+      {
+        "id": "64e6ab72-1f6c-4b7d-b3d3-88cd4678edd3",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4624,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "5ccea564-3037-45e4-aeff-bd95ffb4010c",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4048,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "44356966-daa2-448d-a77b-6c7c0eb7a1b5",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4137,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "231b682f-6d70-426a-af35-6edf5f90dcd4",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1914,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-10-22T08:49:06"
+  },
+  {
+    "id": "075cb320-76fa-46e2-bf06-bb6354faafa5",
+    "name": "Front-line stable extranet Proposal.docx",
+    "type": "Document",
+    "entityId": "a27daeab-e62e-49a3-aee6-26fd4f61d92c",
+    "entityName": "Prescription_088",
+    "displayName": "Joseph and Sons Prescription",
+    "description": "Figure poor remember everything often film body quite natural.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2027-11-15T12:40:29.269770",
+    "queries": [
+      {
+        "id": "a7758cd7-3afd-4d41-8d20-481f377be95d",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2560,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "6415dfce-a393-4e1c-a7b5-cb4ac32f1723",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 811,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "5042279c-5af2-4605-b6ea-5f3b2dfb56dc",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3192,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "8b65e28e-978e-4ab6-b68b-7e665e17e84e",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1814,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-11T04:52:33"
+  },
+  {
+    "id": "f6e18fcf-e60a-436c-999f-e15c8f455d16",
+    "name": "Mandatory real-time open architecture Summary.xlsx",
+    "type": "Document",
+    "entityId": "28b795cc-598e-44ea-a692-9b6fb6bc3208",
+    "entityName": "MedicalRecord_084",
+    "displayName": "Tyler Ltd MedicalRecord",
+    "description": "Player read serve southern production perform range.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "402d832b-1a51-4f91-808e-f1f22c15a991",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4810,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7c6237aa-4469-4d4c-a1fe-edd6b685ac47",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1223,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-11T19:11:30"
+  },
+  {
+    "id": "595cecfa-1d0f-45ba-840e-0fc4030f062c",
+    "name": "Mandatory zero administration portal Report.xlsx",
+    "type": "Document",
+    "entityId": "8efcac36-f688-4f68-9066-6f75e02dc8bc",
+    "entityName": "Contract_083",
+    "displayName": "Carney-Evans Contract",
+    "description": "Throughout turn conference economy party majority blood with else real.",
+    "fileType": "XLSX",
+    "securityLevel": "Confidential",
+    "expiryDate": "2027-01-05T12:40:29.269836",
+    "queries": [
+      {
+        "id": "7edfaf5d-b4fa-4dbc-bead-1d0f0818227e",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1257,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "a3d0e2c9-652a-4aa4-af0a-082a1e04ab13",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4655,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "de95ce8c-a769-4dc3-9521-2cd23533629b",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2608,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-30T13:17:53"
+  },
+  {
+    "id": "d15ee4b3-d0cf-4525-8de2-b8ca9ded10a9",
+    "name": "Digitized coherent application Invoice.docx",
+    "type": "Document",
+    "entityId": "1745f4e2-2cb1-48ce-a85f-e3e29b482228",
+    "entityName": "Asset_059",
+    "displayName": "Lyons, Hernandez and Fuentes Asset",
+    "description": "Program machine miss campaign government fear.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "69776370-75fe-4af5-97fe-e0d1199f022b",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3542,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "75ecd194-a28e-47a6-890f-8b1685abf0ea",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2454,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "13d9c8b0-8d1c-4238-8500-0dc63263b7e9",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3961,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-10-16T22:15:16"
+  },
+  {
+    "id": "2512a45e-d00f-449c-bb4e-c302299f0299",
+    "name": "Automated 4thgeneration time-frame Invoice.pdf",
+    "type": "Document",
+    "entityId": "852a7f3e-e859-46a1-9790-a78109036c88",
+    "entityName": "Lead_069",
+    "displayName": "Allen-Jarvis Lead",
+    "description": "Challenge coach interesting require PM and let minute use leg.",
+    "fileType": "PDF",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "910052e1-1337-4979-9371-d84e7f9d6265",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3695,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e72f2d82-9a63-47a7-ab4b-103f4e96a8f2",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2895,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "690013d3-8e8a-45d6-aac8-c409453fc61c",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1279,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "e94c9fde-cc7f-455c-8b52-13f5eccfa6c3",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 278,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-26T03:57:01"
+  },
+  {
+    "id": "01f002f1-e50a-4dd6-9b3e-940c6fa4ac80",
+    "name": "Decentralized stable projection Summary.xlsx",
+    "type": "Document",
+    "entityId": "8048911f-4f97-47ab-aa7d-8f645aaea34c",
+    "entityName": "Task_090",
+    "displayName": "Norton, Spencer and Stanley Task",
+    "description": "Box never house try ok structure beat.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2027-08-31T12:40:29.269934",
+    "queries": [
+      {
+        "id": "56581528-da53-43e6-a541-ee8699165f8e",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1188,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "2b51f315-3632-4e5e-932c-b585891f071a",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2452,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-02-22T01:39:43"
+  },
+  {
+    "id": "d17fbee4-297c-461a-9cd9-10e7be86ce3c",
+    "name": "Seamless fresh-thinking challenge Certificate.xlsx",
+    "type": "Document",
+    "entityId": "93f8a9be-4e69-4dba-93c6-90c78c42f4b5",
+    "entityName": "Task_014",
+    "displayName": "Wilson-Mcbride Task",
+    "description": "War hear although against guess they.",
+    "fileType": "XLSX",
+    "securityLevel": "Confidential",
+    "expiryDate": "2026-04-21T12:40:29.269964",
+    "queries": [
+      {
+        "id": "df65d651-f4f8-45c4-a6c2-686b182431e5",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2402,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "170f7d92-68ba-4e99-9912-ac1de7d9baed",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3298,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-02-05T07:31:51"
+  },
+  {
+    "id": "0e47caa7-512e-4713-b54e-8dd1cc0acb8d",
+    "name": "Down-sized executive encoding Summary.xlsx",
+    "type": "Document",
+    "entityId": "d0571d95-45a2-441c-a643-7e315333c486",
+    "entityName": "Account_012",
+    "displayName": "Kelly and Sons Account",
+    "description": "Name pick college television cultural item month discover.",
+    "fileType": "XLSX",
+    "securityLevel": "Public",
+    "expiryDate": "2026-06-27T12:40:29.269993",
+    "queries": [
+      {
+        "id": "a78df48e-ac01-4483-930b-658784f50899",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 133,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3f666091-b00c-41d1-8552-e20b2317ae33",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2125,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-02-11T20:50:27"
+  },
+  {
+    "id": "ec305fda-f850-4871-83f8-e8ef16535a3b",
+    "name": "Self-enabling multimedia attitude Certificate.csv",
+    "type": "Document",
+    "entityId": "197c0eed-c7d0-426b-9ad9-c681efd0e4fa",
+    "entityName": "LeaseAgreement_033",
+    "displayName": "Scott, Huffman and Martin LeaseAgreement",
+    "description": "Vote apply offer crime yard bit quickly.",
+    "fileType": "CSV",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "42849ca7-cfb3-42c7-afd0-b893eb4d9fea",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1792,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "2b1dcb7b-6f73-401a-ae47-fbe490431a42",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3403,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "73e152b5-b523-4abe-abbe-86527009c97c",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 54,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-13T14:26:16"
+  },
+  {
+    "id": "ac001109-e3a0-485a-a9ae-35280466cbc4",
+    "name": "Total mission-critical initiative Certificate.csv",
+    "type": "Document",
+    "entityId": "d181bd9f-810b-4bc9-af99-54fabd444885",
+    "entityName": "Prescription_055",
+    "displayName": "Wheeler Ltd Prescription",
+    "description": "Somebody those turn if executive sing.",
+    "fileType": "CSV",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "fe50e6d0-6b9c-455b-9df8-a0d5f647b359",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3505,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "fa600556-dbad-4c68-a49a-d3b50b7f62ff",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2172,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-09T18:27:18"
+  },
+  {
+    "id": "46be561e-3710-4ee5-b771-6cd490ba2a51",
+    "name": "Cross-group maximized Graphic Interface Report.csv",
+    "type": "Document",
+    "entityId": "d0571d95-45a2-441c-a643-7e315333c486",
+    "entityName": "Account_012",
+    "displayName": "Kelly and Sons Account",
+    "description": "Wish determine value staff force former political.",
+    "fileType": "CSV",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "7b0e46ca-547f-4c26-9316-0a02f17e6526",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1929,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5addcb71-61f8-48b7-b6ff-04cda7478b32",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 656,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-10-29T08:25:59"
+  },
+  {
+    "id": "591e9c89-44cc-4842-9337-6210a25527cc",
+    "name": "Visionary maximized task-force Certificate.pdf",
+    "type": "Document",
+    "entityId": "460630c8-7f8a-4cfc-8a45-ae446623e54a",
+    "entityName": "Invoice_063",
+    "displayName": "Jordan Group Invoice",
+    "description": "Happy head offer five attention Democrat term.",
+    "fileType": "PDF",
+    "securityLevel": "Confidential",
+    "expiryDate": "2026-10-02T12:40:29.270113",
+    "queries": [
+      {
+        "id": "ba83da91-a3d7-4d4c-ba27-ec9a5554d1e9",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2423,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "cd15371e-17dc-4e41-8a1f-8a0d82b9b1f6",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2498,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-14T08:10:29"
+  },
+  {
+    "id": "c4c62d61-91d5-4a8f-a61e-9e2a25cd03d1",
+    "name": "Cloned mission-critical project Agreement.pdf",
+    "type": "Document",
+    "entityId": "ec8f327e-a1c2-4250-8209-8794040cc54d",
+    "entityName": "Account_091",
+    "displayName": "Beltran, Anderson and Hamilton Account",
+    "description": "Right night body west with model.",
+    "fileType": "PDF",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "0956db10-9fc2-4ca7-9f28-1bb54704cf4c",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 254,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "860eef14-55d5-4284-b0b9-eb2f68ea2487",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2370,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "798efd48-4f68-4304-8c3e-1899824b25ca",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2119,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "3fc95627-3686-48bd-8fea-5c1f8e75c096",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2792,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-02T00:31:22"
+  },
+  {
+    "id": "150f46d8-6b10-4166-914a-60556da0f602",
+    "name": "Devolved context-sensitive concept Invoice.csv",
+    "type": "Document",
+    "entityId": "d181bd9f-810b-4bc9-af99-54fabd444885",
+    "entityName": "Prescription_055",
+    "displayName": "Wheeler Ltd Prescription",
+    "description": "Yes admit analysis bad establish place pressure.",
+    "fileType": "CSV",
+    "securityLevel": "Restricted",
+    "expiryDate": "2027-12-14T12:40:29.270253",
+    "queries": [
+      {
+        "id": "e58a50bd-934d-473f-8454-954ecf65aecb",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4338,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "c2944110-7dec-4e68-936d-e97d65dbf17a",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 781,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "4d181147-e740-463f-b692-907377ab23fa",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1650,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "6025ca95-7692-4143-9266-3001ab10a211",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1030,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-05-15T03:52:13"
+  },
+  {
+    "id": "f4bce6c2-cf49-46d8-bc3a-8bf2f432b981",
+    "name": "Polarized fresh-thinking knowledgebase Invoice.docx",
+    "type": "Document",
+    "entityId": "2eadb4f9-c612-47c7-82c6-54b3fcf77380",
+    "entityName": "Patient_011",
+    "displayName": "Banks Group Patient",
+    "description": "Street enough address now action necessary day film blood cold.",
+    "fileType": "DOCX",
+    "securityLevel": "Confidential",
+    "expiryDate": "2027-09-01T12:40:29.270300",
+    "queries": [
+      {
+        "id": "34e69602-9a60-4a72-8923-061faef3d347",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4323,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "312cb82b-153a-44e8-8fdf-d60cd9f2cf8b",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 4277,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "d3059cd6-c3e8-45ab-9363-0ec0327c9886",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1645,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5c8fbcd4-5144-4f08-b519-2fe82fa4c272",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 484,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-18T09:55:37"
+  },
+  {
+    "id": "a4a7aa59-f2da-44ef-b68b-25b4f09277a6",
+    "name": "Front-line bi-directional throughput Certificate.docx",
+    "type": "Document",
+    "entityId": "24e8ea50-bf47-4357-8ef1-493f75936780",
+    "entityName": "Opportunity_043",
+    "displayName": "Carter-Burke Opportunity",
+    "description": "Here more moment mind look hand nor.",
+    "fileType": "DOCX",
+    "securityLevel": "Internal",
+    "expiryDate": "2026-04-02T12:40:29.270339",
+    "queries": [
+      {
+        "id": "085fbd71-bdea-4574-83d2-0b460d14d14e",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 482,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "21d39439-1be4-4aa3-8db8-ad451c14dfdc",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2636,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "980d10be-05a1-42fb-b673-8fb98562a4c9",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 4822,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "47d8bb18-a8a8-43ec-95e9-26c6d55f40c4",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2246,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-11-26T10:57:26"
+  },
+  {
+    "id": "95255b2a-6fcf-43d9-aec2-380a2139e658",
+    "name": "Pre-emptive reciprocal analyzer Invoice.xlsx",
+    "type": "Document",
+    "entityId": "80718602-24e8-41b4-8f3e-b30281e93822",
+    "entityName": "Opportunity_045",
+    "displayName": "Marsh, Mayer and Holland Opportunity",
+    "description": "South manage loss hospital note vote free.",
+    "fileType": "XLSX",
+    "securityLevel": "Confidential",
+    "expiryDate": "2027-11-12T12:40:29.270375",
+    "queries": [
+      {
+        "id": "97030120-82c1-413a-b815-176bc7b7252b",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2937,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "8a5ecfa8-287f-4952-98ab-2ef476d03325",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3354,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "a33976ff-c9b6-436c-abdd-919637a605fe",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4660,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-03T06:41:41"
+  },
+  {
+    "id": "95add88a-ea3f-496a-8cf2-ec6083368116",
+    "name": "Fully-configurable holistic open system Invoice.docx",
+    "type": "Document",
+    "entityId": "dbed3596-4c51-434c-8c99-809754ab5d21",
+    "entityName": "MaintenanceRequest_057",
+    "displayName": "Gutierrez-Smith MaintenanceRequest",
+    "description": "So quality produce animal sell surface treatment under.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "5413e8b0-6eae-4e77-a0bb-56fc0baf0f01",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4985,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e1de2167-de07-4fc5-aec9-ade4491c4a32",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1754,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "18b5286a-9fdc-40bd-877d-61c852fd7f82",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2281,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-15T09:59:47"
+  },
+  {
+    "id": "54c586b6-3acf-4886-9d45-48b87e9e7066",
+    "name": "Virtual needs-based benchmark Report.docx",
+    "type": "Document",
+    "entityId": "17f8c05b-9f1e-4f86-92be-22f661f7a000",
+    "entityName": "Lead_049",
+    "displayName": "Rose-Lewis Lead",
+    "description": "Raise fine why social yard father back.",
+    "fileType": "DOCX",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "6a93d2fa-9c89-427e-b6b6-09da1e3bb44e",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 3263,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "80cb6443-ce6c-40ed-9d46-ad7de1e2eb4a",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2189,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "9060139f-9f0e-4220-b08b-c94ed1d763af",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4347,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "96b1678f-e888-4c32-bfa9-c8b78e5c4635",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3279,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-17T21:10:25"
+  },
+  {
+    "id": "73c1862c-f8c3-4c82-a0b3-960d7442e239",
+    "name": "Universal intangible challenge Summary.pdf",
+    "type": "Document",
+    "entityId": "8efcac36-f688-4f68-9066-6f75e02dc8bc",
+    "entityName": "Contract_083",
+    "displayName": "Carney-Evans Contract",
+    "description": "Reduce name themselves seat tree partner former.",
+    "fileType": "PDF",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "340e6de5-d504-472c-95d6-a344a4567c78",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2689,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "1a4701b5-fedf-4c40-8ef8-13d56a30198e",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2027,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "0e2498de-9d0f-4491-abc1-5558df53e099",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1391,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-09-09T21:53:48"
+  },
+  {
+    "id": "37f03b05-9247-4ddb-a2ec-3ed494a835da",
+    "name": "Polarized fault-tolerant archive Agreement.xlsx",
+    "type": "Document",
+    "entityId": "28b795cc-598e-44ea-a692-9b6fb6bc3208",
+    "entityName": "MedicalRecord_084",
+    "displayName": "Tyler Ltd MedicalRecord",
+    "description": "Seven book state seven capital its quickly get agreement.",
+    "fileType": "XLSX",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "b7020aec-71e2-4c99-8755-8bdf3b2a68af",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3259,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "bbd73896-0385-424f-8d73-c2aa2b895c69",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1241,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "0e191fcf-42f4-484a-b7b4-a534170cbe3d",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 801,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2026-02-13T23:46:15"
+  },
+  {
+    "id": "a3d36796-5541-40e7-8a6e-5e5f65aac9ce",
+    "name": "Fully-configurable next generation service-desk Agreement.csv",
+    "type": "Document",
+    "entityId": "e2d02e35-8b96-4788-8933-27b66baaff04",
+    "entityName": "Patient_064",
+    "displayName": "Bailey, Scott and Livingston Patient",
+    "description": "Human bag pay central administration smile staff never professor scene.",
+    "fileType": "CSV",
+    "securityLevel": "Internal",
+    "expiryDate": "2027-08-18T12:40:29.270541",
+    "queries": [
+      {
+        "id": "35a72cc7-d780-4374-b587-082c9e260b82",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2960,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "9d1ad98f-16a9-4cc0-92c3-b838d77da8c0",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2131,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-09-04T20:21:40"
+  },
+  {
+    "id": "9a773fd7-8cd2-45c0-96e2-4f2089eab4f2",
+    "name": "Balanced non-volatile moratorium Proposal.docx",
+    "type": "Document",
+    "entityId": "996b7161-b478-4d4a-a0d9-2bb77e047132",
+    "entityName": "Task_035",
+    "displayName": "Perez Inc Task",
+    "description": "Measure create over entire one decision.",
+    "fileType": "DOCX",
+    "securityLevel": "Restricted",
+    "expiryDate": "2027-05-23T12:40:29.270570",
+    "queries": [
+      {
+        "id": "f218bf08-ba3d-4eba-9806-6e5365523d71",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2315,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "68849b31-e80c-4c25-8742-2097b39bc5d5",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1596,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "06def189-994f-4199-be1f-936a2f1aaefe",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1197,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-04T19:45:26"
+  },
+  {
+    "id": "f8b16d67-b473-450d-97a4-a3b0ddbfc3b1",
+    "name": "Future-proofed attitude-oriented capability Analysis.docx",
+    "type": "Document",
+    "entityId": "50cd64dd-8b31-4360-ad77-f841ae7ef972",
+    "entityName": "Task_039",
+    "displayName": "Adams, Taylor and Skinner Task",
+    "description": "Mean coach discussion get black which.",
+    "fileType": "DOCX",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "b3d2dbaf-65ee-4783-9f1f-22e20eb1f6d4",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1858,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "49138838-b98e-4053-9e49-6b79ec87b61b",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1301,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "c0121f14-681f-4a8e-ba7a-2e8ab9bd70a6",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4626,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "c6a23187-5b33-4e7e-b127-08630b2c7da6",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2725,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-19T05:19:11"
+  },
+  {
+    "id": "8be2013b-9bb2-43e4-8701-9cbd840e25f5",
+    "name": "Decentralized disintermediate database Summary.csv",
+    "type": "Document",
+    "entityId": "cfee1b0f-4bec-4fd1-8750-c9ea3e8fdcbf",
+    "entityName": "Opportunity_030",
+    "displayName": "Cooper PLC Opportunity",
+    "description": "Environmental partner focus production development.",
+    "fileType": "CSV",
+    "securityLevel": "Confidential",
+    "expiryDate": "2026-11-12T12:40:29.270639",
+    "queries": [
+      {
+        "id": "4be4fa5c-d201-4544-b0f4-7f8d7e8be33e",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 4846,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "3ac1a65b-cd4a-4d4d-867e-7f9439b2c3bf",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3889,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "9afe1897-0573-41e5-8ef6-52a10fbbbefa",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2688,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7ab249ae-043a-4c62-bf7a-e77eb3d033ad",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1250,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-07-30T15:05:25"
+  },
+  {
+    "id": "eb04b781-070b-4db0-a064-205b2f678512",
+    "name": "Distributed scalable structure Contract.pdf",
+    "type": "Document",
+    "entityId": "4f55a843-7079-48fe-83d3-7c6a50664acf",
+    "entityName": "LeaseAgreement_076",
+    "displayName": "Trevino Group LeaseAgreement",
+    "description": "Population agent final camera treatment rule painting beat.",
+    "fileType": "PDF",
+    "securityLevel": "Public",
+    "expiryDate": "2026-08-28T12:40:29.270673",
+    "queries": [
+      {
+        "id": "2472ad2e-cce9-4f58-b6e8-3923864aa5fe",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 4195,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7c7dacce-d79b-4534-adb1-db2d48a45930",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 3315,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-29T21:56:41"
+  },
+  {
+    "id": "78f61e68-10c6-4aa2-9ef0-38cf8b29c76d",
+    "name": "Fully-configurable intangible instruction set Invoice.docx",
+    "type": "Document",
+    "entityId": "2eadb4f9-c612-47c7-82c6-54b3fcf77380",
+    "entityName": "Patient_011",
+    "displayName": "Banks Group Patient",
+    "description": "Expect serious edge organization back.",
+    "fileType": "DOCX",
+    "securityLevel": "Public",
+    "expiryDate": "2027-05-20T12:40:29.270702",
+    "queries": [
+      {
+        "id": "c5c7dd49-6e41-4b7b-8631-1dee38f7ba85",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2746,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "1931cc34-1a02-4e1b-a49b-aded5df530f1",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1617,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "2df654ad-2ff4-4a9a-8b31-c892d7138ab0",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4205,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-09T14:53:58"
+  },
+  {
+    "id": "74b95e94-6c8b-4527-9eaf-c29a3553e308",
+    "name": "Organized cohesive challenge Proposal.csv",
+    "type": "Document",
+    "entityId": "318b2082-e846-4356-b748-7c865fb2998d",
+    "entityName": "Appointment_051",
+    "displayName": "Carr, Deleon and Porter Appointment",
+    "description": "High through issue per nor each.",
+    "fileType": "CSV",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "3d701a4a-d980-4746-bdbf-dc97184fb016",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4089,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "23e6f3ed-102c-42f0-b42c-6f7623548eec",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 404,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-25T14:26:25"
+  },
+  {
+    "id": "94649d8a-3beb-48b2-b458-19cc3820e3c4",
+    "name": "Optional full-range moratorium Report.xlsx",
+    "type": "Document",
+    "entityId": "24e8ea50-bf47-4357-8ef1-493f75936780",
+    "entityName": "Opportunity_043",
+    "displayName": "Carter-Burke Opportunity",
+    "description": "Local nearly rich medical so per learn ever why.",
+    "fileType": "XLSX",
+    "securityLevel": "Public",
+    "expiryDate": "2027-04-05T12:40:29.270759",
+    "queries": [
+      {
+        "id": "00517ab7-e565-4581-a345-a93340a6bff1",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 4557,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "5d1b2a6d-e93d-483c-9fc7-1d9657789b09",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2371,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-07-02T11:50:40"
+  },
+  {
+    "id": "051a8c40-343b-4a15-8762-decf07200152",
+    "name": "Ameliorated clear-thinking contingency Report.csv",
+    "type": "Document",
+    "entityId": "81ce6946-7e18-4e09-a365-48a1137c0a08",
+    "entityName": "Patient_081",
+    "displayName": "Golden, Butler and Nichols Patient",
+    "description": "Gun whether between nothing campaign court as appear threat serve.",
+    "fileType": "CSV",
+    "securityLevel": "Internal",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "8f97ea3a-4361-40f5-858d-d2b1c3d3be6b",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4691,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7a36a85d-36c1-4809-9879-1885aa27db8a",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3147,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "f195d560-c904-4ad6-9dd4-e6b15efac3d3",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1215,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5d09228d-55a8-4cff-8a18-cc1f784f6fb6",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4195,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-28T00:57:44"
+  },
+  {
+    "id": "ecde9700-a3b8-4fc7-82c3-ffda71173a8c",
+    "name": "Function-based mobile ability Proposal.docx",
+    "type": "Document",
+    "entityId": "370ef78a-df43-42ae-9781-0d171a551424",
+    "entityName": "Invoice_002",
+    "displayName": "Gutierrez Inc Invoice",
+    "description": "Peace Mr recognize stock town.",
+    "fileType": "DOCX",
+    "securityLevel": "Internal",
+    "expiryDate": "2027-11-22T12:40:29.270820",
+    "queries": [
+      {
+        "id": "18b927f3-3aa5-4249-842a-9462482fb721",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3729,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "ad5a323d-ab91-4646-9e2e-57a4b7a0acfa",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1125,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "f69796c5-759d-4c5a-9a04-6055a83c4b6d",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4149,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3cd47f79-bae7-4d7f-8062-89ea24b1e3d0",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1324,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-03T15:03:19"
+  },
+  {
+    "id": "facd359f-2a30-49fd-b015-40920512bb7f",
+    "name": "Configurable interactive standardization Analysis.pdf",
+    "type": "Document",
+    "entityId": "28b795cc-598e-44ea-a692-9b6fb6bc3208",
+    "entityName": "MedicalRecord_084",
+    "displayName": "Tyler Ltd MedicalRecord",
+    "description": "Boy great night author behavior other.",
+    "fileType": "PDF",
+    "securityLevel": "Internal",
+    "expiryDate": "2026-11-10T12:40:29.270853",
+    "queries": [
+      {
+        "id": "8e2b283e-0eee-44f0-86c6-b6fb0e7b72c4",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4081,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "db85ed98-dcd3-4a31-93dd-4621ac5861d7",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4229,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-17T08:25:41"
+  },
+  {
+    "id": "a739bba8-6b5e-4638-b9f4-33727a4a6c03",
+    "name": "Monitored next generation concept Contract.pdf",
+    "type": "Document",
+    "entityId": "ec8f327e-a1c2-4250-8209-8794040cc54d",
+    "entityName": "Account_091",
+    "displayName": "Beltran, Anderson and Hamilton Account",
+    "description": "Eye off writer poor stage career ask.",
+    "fileType": "PDF",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "bd3bbb01-ee22-460f-ba7f-4cbcd3975afd",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4013,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "97d67f1e-8ebb-48f2-9817-f6b72edb329c",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3352,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "cd024a6a-d1aa-418c-a884-9451e5ea6dbf",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4780,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-07T03:50:27"
+  },
+  {
+    "id": "458b7397-0fe7-4cc6-ba66-bc2a8258aa6c",
+    "name": "Cross-group context-sensitive orchestration Invoice.docx",
+    "type": "Document",
+    "entityId": "b4c6a796-70da-47f8-b1a9-aefb22873eab",
+    "entityName": "Task_093",
+    "displayName": "Strong Group Task",
+    "description": "National art sing present both choose although matter fall.",
+    "fileType": "DOCX",
+    "securityLevel": "Confidential",
+    "expiryDate": "2027-02-16T12:40:29.270909",
+    "queries": [
+      {
+        "id": "9b83cb25-7a79-493a-9b26-a4a3c4b3d533",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 613,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e2f26876-004b-4950-a04c-6b052c8858d0",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1786,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-08T18:34:47"
+  },
+  {
+    "id": "7a9991dc-df97-421f-aec7-6eb35f69c0ac",
+    "name": "Optimized high-level help-desk Certificate.pdf",
+    "type": "Document",
+    "entityId": "029d39b5-ee4f-421b-b683-e1c5d75ecb4e",
+    "entityName": "Tenant_004",
+    "displayName": "Waters and Sons Tenant",
+    "description": "Cell somebody receive Democrat much game theory.",
+    "fileType": "PDF",
+    "securityLevel": "Confidential",
+    "expiryDate": "2026-09-28T12:40:29.270940",
+    "queries": [
+      {
+        "id": "7d8218a7-3568-4c3f-ac66-9dd9b42993be",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 222,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "81838ca9-420e-408c-a40b-118660334e30",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3134,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e83b25b3-8eed-4eb1-b10e-600c72f6d3d7",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 107,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-16T15:35:40"
+  },
+  {
+    "id": "1f45b967-daae-4809-a4d9-c6f4c7fe27ba",
+    "name": "Realigned foreground flexibility Report.xlsx",
+    "type": "Document",
+    "entityId": "51048ede-c902-4eee-923c-1491a73de5e4",
+    "entityName": "Tenant_048",
+    "displayName": "Zhang Inc Tenant",
+    "description": "Throw skill you trial plant rise memory successful understand.",
+    "fileType": "XLSX",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "6bd3758e-f3f1-45bf-80fb-3682d6b8032a",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2758,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7ef80b80-c7dd-45d0-8b7e-efb6e8347b2c",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3759,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "c20aa3b7-bc00-400c-8f4e-56a4859e3e4d",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2733,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "292b09a9-6bfd-40f1-b87a-3661f6c745ce",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 684,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-23T03:16:24"
+  },
+  {
+    "id": "aca17227-9759-4c40-94f4-76a176107e39",
+    "name": "Progressive tertiary orchestration Invoice.pdf",
+    "type": "Document",
+    "entityId": "5ff98893-952b-4726-9eb4-8934a69a1eaf",
+    "entityName": "Contract_028",
+    "displayName": "Matthews-Stewart Contract",
+    "description": "Size early law force bad part pass matter agree throughout.",
+    "fileType": "PDF",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "d49eee34-56a6-4b1b-8bf8-fc7e918929ae",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4122,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "f6c55715-6de4-479c-a6ff-c330c87db3e0",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4205,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "bb1f96c6-47e8-4bc9-ba17-463b5e5ba064",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1338,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "cb21f359-6caf-46fb-8677-26996899d149",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4926,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-22T06:57:56"
+  },
+  {
+    "id": "30ce8b22-42b1-48bc-8ef2-055e100e40de",
+    "name": "Streamlined executive benchmark Proposal.csv",
+    "type": "Document",
+    "entityId": "8efcac36-f688-4f68-9066-6f75e02dc8bc",
+    "entityName": "Contract_083",
+    "displayName": "Carney-Evans Contract",
+    "description": "Not with region what would rate talk push less him.",
+    "fileType": "CSV",
+    "securityLevel": "Confidential",
+    "expiryDate": "2027-08-23T12:40:29.271029",
+    "queries": [
+      {
+        "id": "67702392-8067-4f4b-8be3-479e125d286b",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 4655,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "6426144e-052c-44b3-9328-9f2a616221ff",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3878,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "db30253c-f9c5-4416-9a02-0c72f18b9ab8",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4891,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-20T22:13:44"
+  },
+  {
+    "id": "6748c874-d7ec-4901-9853-5d6994464e16",
+    "name": "Synchronized global workforce Contract.docx",
+    "type": "Document",
+    "entityId": "f30e9cca-adf0-4551-a036-4adc9f55cf77",
+    "entityName": "Contact_006",
+    "displayName": "Cole-Singh Contact",
+    "description": "Many out research theory few keep draw.",
+    "fileType": "DOCX",
+    "securityLevel": "Public",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "aad97306-5a50-47a5-b1a8-c8683bdb2f30",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4395,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3c12f1a1-101a-4bb9-86fd-91cacfe6abd6",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 3203,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "29bab081-804b-4048-b1cd-2e47989b6ae5",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2298,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "795888dd-b1d5-4911-b3d9-8e68fb5fb992",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1698,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-04-19T06:32:55"
+  },
+  {
+    "id": "6c0bad88-a966-4445-81b2-f082d6d86010",
+    "name": "Face-to-face composite task-force Report.xlsx",
+    "type": "Document",
+    "entityId": "103d0f1f-6e36-4015-8d6d-3a6e57f85e1f",
+    "entityName": "Invoice_032",
+    "displayName": "Ferguson Ltd Invoice",
+    "description": "Often sing turn receive loss size total firm six similar.",
+    "fileType": "XLSX",
+    "securityLevel": "Public",
+    "expiryDate": "2026-05-22T12:40:29.271091",
+    "queries": [
+      {
+        "id": "2855699d-0f1e-4cbb-a82c-c8e0f1690df6",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 799,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "b8c07f81-dc85-46bc-8b26-efec538c8f57",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1927,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e97429e0-2eac-4df7-b9d9-8c5907bcb68e",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3285,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "49096af4-a66b-45c1-a55e-f3218833d29a",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2622,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-17T10:23:05"
+  },
+  {
+    "id": "c4e359eb-2bfb-420a-91d5-558aa3c97774",
+    "name": "Proactive neutral workforce Agreement.csv",
+    "type": "Document",
+    "entityId": "cfee1b0f-4bec-4fd1-8750-c9ea3e8fdcbf",
+    "entityName": "Opportunity_030",
+    "displayName": "Cooper PLC Opportunity",
+    "description": "Situation history history move character degree.",
+    "fileType": "CSV",
+    "securityLevel": "Confidential",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "b8dbfd5f-2861-452c-a462-91567975fdad",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1115,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "1be378f6-a685-4845-bfd8-4455dd579758",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3937,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "dac1838b-10b3-49ce-9b76-33c72c855304",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4103,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-19T01:21:38"
+  },
+  {
+    "id": "1c08026d-3e7d-4461-95ad-c81e427396f0",
+    "name": "Multi-layered leadingedge standardization Analysis.csv",
+    "type": "Document",
+    "entityId": "996b7161-b478-4d4a-a0d9-2bb77e047132",
+    "entityName": "Task_035",
+    "displayName": "Perez Inc Task",
+    "description": "Behavior support serve season treatment time trip team look water.",
+    "fileType": "CSV",
+    "securityLevel": "Public",
+    "expiryDate": "2027-06-05T12:40:29.271152",
+    "queries": [
+      {
+        "id": "37d2f4ff-d786-4792-8596-46d525fbdfe7",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1482,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "75d4d85d-5dfa-41f7-a604-0a5d5f947cfe",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3954,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "66d7c9b8-90be-4079-8f03-02c48d184bdf",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4060,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-23T08:12:00"
+  },
+  {
+    "id": "ea2088c0-d462-4460-a422-10e1420cd35c",
+    "name": "Phased contextually-based approach Analysis.xlsx",
+    "type": "Document",
+    "entityId": "029d39b5-ee4f-421b-b683-e1c5d75ecb4e",
+    "entityName": "Tenant_004",
+    "displayName": "Waters and Sons Tenant",
+    "description": "Could politics bank play century seat help picture.",
+    "fileType": "XLSX",
+    "securityLevel": "Public",
+    "expiryDate": "2026-05-25T12:40:29.271181",
+    "queries": [
+      {
+        "id": "0e85ab40-a68b-45b2-ae62-8ee08214e04e",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 3784,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "f1b4d046-cc6c-454a-b638-586bcf78f35d",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1841,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-14T11:22:14"
+  },
+  {
+    "id": "2142e4c6-e712-4c4d-ba9c-b4883da59dcc",
+    "name": "Multi-lateral incremental complexity Report.pdf",
+    "type": "Document",
+    "entityId": "a3a7229d-594d-42ef-a08b-d6ca2b27563f",
+    "entityName": "Invoice_071",
+    "displayName": "Rodriguez LLC Invoice",
+    "description": "Growth modern he bring eat campaign environmental ten staff.",
+    "fileType": "PDF",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "85f0da18-f595-407c-b116-1cd2794be46b",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3093,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5b45cead-c4db-4486-9c8f-578a32069286",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 806,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e298a12e-2a95-434e-a7ab-77c3d57b367e",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1026,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "75bb901d-f180-44c6-821d-794cb1c33c76",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2402,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2026-01-25T11:33:33"
+  },
+  {
+    "id": "a9660e25-6e24-4fd9-8b4a-f69d68f3116c",
+    "name": "Realigned asynchronous application Agreement.xlsx",
+    "type": "Document",
+    "entityId": "51048ede-c902-4eee-923c-1491a73de5e4",
+    "entityName": "Tenant_048",
+    "displayName": "Zhang Inc Tenant",
+    "description": "Since leg trip these election success mission stop stop teacher.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "4afbdadd-886a-49f8-92c6-3c0986296394",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 3168,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "c2485106-45cc-44d7-8060-dd7ce5f8a24b",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2021,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "407481d8-89c2-43ac-8e1c-e017b05e60d0",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1863,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "72b5c331-14f3-486a-83f8-068f5daa877a",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1539,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-15T00:58:10"
+  },
+  {
+    "id": "8e9a9fa6-18a4-48ab-91fd-68f9aea50424",
+    "name": "Multi-channeled intangible forecast Proposal.xlsx",
+    "type": "Document",
+    "entityId": "51048ede-c902-4eee-923c-1491a73de5e4",
+    "entityName": "Tenant_048",
+    "displayName": "Zhang Inc Tenant",
+    "description": "Fill improve teacher prevent professor rich television approach question class.",
+    "fileType": "XLSX",
+    "securityLevel": "Restricted",
+    "expiryDate": null,
+    "queries": [
+      {
+        "id": "3a40cb02-0717-4945-b936-2e5de04543ab",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4855,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "379ae293-5820-4849-a713-44c923700290",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2512,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-10-07T09:49:47"
+  }
+]

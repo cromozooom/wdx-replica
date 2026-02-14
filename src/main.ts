@@ -7,6 +7,11 @@ import { SetFilterModule } from "ag-grid-enterprise";
 import { MenuModule } from "ag-grid-enterprise";
 import { ColumnsToolPanelModule } from "ag-grid-enterprise";
 import { MultiFilterModule } from "ag-grid-enterprise";
+import { NumberFilterModule } from "ag-grid-community";
+import { DateFilterModule } from "ag-grid-community";
+import { TextFilterModule } from "ag-grid-community";
+import { ColumnAutoSizeModule } from "ag-grid-community";
+import { ColumnApiModule } from "ag-grid-community";
 import { AgGridModule } from "ag-grid-angular";
 
 // Register required ag-Grid modules
@@ -19,6 +24,11 @@ ModuleRegistry.registerModules([
   ColumnsToolPanelModule,
   MultiFilterModule,
   ValidationModule,
+  NumberFilterModule,
+  DateFilterModule,
+  TextFilterModule,
+  ColumnAutoSizeModule,
+  ColumnApiModule,
 ]);
 import { bootstrapApplication } from "@angular/platform-browser";
 import { appConfig } from "./app/app.config";

@@ -5,16 +5,20 @@ This directory contains utility scripts for the WDX Replica project.
 ## Mock Data Generator
 
 ### Overview
-The `generate-mock-data.py` script generates realistic mock data with referential integrity for the SPX Magic Selector feature.
+
+The `generate-mock-data.py` script generates realistic mock data with
+referential integrity for the SPX Magic Selector feature.
 
 ### Data Layers
 
 1. **Layer 1: Entities (100 records)**
+
    - Foundation layer with unique entity schemas
    - Properties: id, schemaName, displayName, category, description
    - Example: Contact_001, Account_042, MedicalRecord_089
 
 2. **Layer 2: Forms & Documents (200 records)**
+
    - 100 Forms + 100 Documents
    - Each linked to a valid Entity ID
    - Properties: name, type, queries, version, security level
@@ -43,6 +47,7 @@ python scripts/generate-mock-data.py
 ### Output
 
 Creates `mock_api_data/` directory with:
+
 - `entities.json` - 100 entity definitions
 - `forms.json` - 100 form records
 - `documents.json` - 100 document records
@@ -80,6 +85,7 @@ this.http.get('/assets/mock_api_data/selection_items.json').subscribe(...);
 ### Customization
 
 Edit the script to customize:
+
 - `entity_types` - Add new entity schemas
 - `query_templates` - Modify query definitions
 - `entries_per_entity` - Change data entry count per entity
@@ -88,6 +94,7 @@ Edit the script to customize:
 ### Referential Integrity
 
 The script maintains referential integrity:
+
 - ✅ All Forms/Documents reference valid Entity IDs
 - ✅ All Data Entries belong to existing Entities
 - ✅ Queries have realistic parameters and counts

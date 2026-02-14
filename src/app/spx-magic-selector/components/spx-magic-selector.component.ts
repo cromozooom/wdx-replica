@@ -15,7 +15,7 @@ import {
   FormsModule,
 } from "@angular/forms";
 import { NgSelectModule } from "@ng-select/ng-select";
-import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
 import { BehaviorSubject, Subject, Observable } from "rxjs";
 import {
   takeUntil,
@@ -34,6 +34,7 @@ import {
   DiscoveryModalResult,
 } from "./discovery-modal/discovery-modal.component";
 import { DomainSchema } from "../models/domain-schema.interface";
+import { OffcanvasStackService } from "../services/offcanvas-stack.service";
 
 /**
  * SPX Magic Selector - Smart component providing searchable dropdown for form/document selection
@@ -129,7 +130,8 @@ export class SpxMagicSelectorComponent
 
   constructor(
     private selectionDataService: SelectionDataService,
-    private modalService: NgbModal,
+    private offcanvasService: NgbOffcanvas,
+    private offcanvasStackService: OffcanvasStackService,
   ) {}
 
   // ========================================
@@ -256,7 +258,7 @@ export class SpxMagicSelectorComponent
   }
 
   /**
-   * Open advanced discovery modal
+   * Open advanced discovery offcanvas
    */
   openDiscoveryModal(): void {
     // Get current domain schema
@@ -269,24 +271,65 @@ export class SpxMagicSelectorComponent
           return;
         }
 
-        const modalRef = this.modalService.open(DiscoveryModalComponent, {
-          size: "xl",
-          backdrop: "static",
-          scrollable: true,
-        });
+        const nextWidth = this.offcanvasStackService.getNextOffcanvasWidth();
+        const { zIndex, backdropZIndex } =
+          this.offcanvasStackService.getNextZIndexes();
+        const offcanvasRef = this.offcanvasService.open(
+          DiscoveryModalComponent,
+          {
+            position: "end",
+            backdrop: "static",
+            scroll: true,
+            panelClass: "offcanvas-dynamic-width",
+          },
+        );
 
-        // Pass data to modal via component instance
-        modalRef.componentInstance.data = {
+        // Set the dynamic width and z-index using CSS custom properties
+        setTimeout(() => {
+          const offcanvasElement = document.querySelectorAll(".offcanvas.show")[
+            document.querySelectorAll(".offcanvas.show").length - 1
+          ] as HTMLElement;
+
+          // Find the corresponding backdrop
+          const backdropElements = Array.from(
+            document.querySelectorAll(".offcanvas-backdrop"),
+          );
+          const latestBackdrop = backdropElements[
+            backdropElements.length - 1
+          ] as HTMLElement;
+
+          if (offcanvasElement) {
+            offcanvasElement.style.setProperty(
+              "--bs-offcanvas-width",
+              nextWidth,
+            );
+            offcanvasElement.style.width = nextWidth;
+            offcanvasElement.style.zIndex = zIndex.toString();
+          }
+
+          if (latestBackdrop) {
+            latestBackdrop.style.zIndex = backdropZIndex.toString();
+          }
+        }, 0);
+
+        // Register with stack service
+        this.offcanvasStackService.registerOffcanvas(
+          "Advanced Lookup",
+          offcanvasRef,
+        );
+
+        // Pass data to offcanvas via component instance
+        offcanvasRef.componentInstance.data = {
           availableItems: this.availableItems$.value,
           currentSelection: this.selectedItem$.value || undefined,
           domainSchema,
           modalTitle: "Advanced Lookup",
         };
 
-        modalRef.result
+        offcanvasRef.result
           .then((result: DiscoveryModalResult) => {
             if (result && result.confirmed && result.selectedRow) {
-              // Update selection from modal result
+              // Update selection from offcanvas result
               this.setSelection(
                 result.selectedRow.originalItem,
                 result.selectedRow.queryRef,
@@ -295,7 +338,7 @@ export class SpxMagicSelectorComponent
             }
           })
           .catch(() => {
-            // Modal dismissed without selection
+            // Offcanvas dismissed without selection
           });
       });
   }

@@ -7,7 +7,7 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
-import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
 import { AgGridAngular } from "ag-grid-angular";
 import {
   ColDef,
@@ -21,6 +21,7 @@ import { SpxMagicSelectorComponent } from "./components/spx-magic-selector.compo
 import { AddSelectionModalComponent } from "./components/add-selection-modal/add-selection-modal.component";
 import { SelectionChangeEvent } from "./models/selection-change-event.interface";
 import { SavedSelection } from "./models/saved-selection.interface";
+import { OffcanvasStackService } from "./services/offcanvas-stack.service";
 import { SelectionHistoryService } from "./services/selection-history.service";
 
 /**
@@ -133,8 +134,10 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
 
   gridOptions: GridOptions = {
     animateRows: true,
-    rowSelection: "single",
-    suppressRowClickSelection: true,
+    rowSelection: {
+      mode: "singleRow",
+      enableClickSelection: false,
+    },
     suppressCellFocus: true,
     headerHeight: 48,
     rowHeight: 48,
@@ -159,7 +162,8 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
 
   constructor(
     private selectionHistoryService: SelectionHistoryService,
-    private modalService: NgbModal,
+    private offcanvasService: NgbOffcanvas,
+    private offcanvasStackService: OffcanvasStackService,
     private cdr: ChangeDetectorRef,
   ) {}
 
@@ -168,7 +172,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
     this.selectionHistoryService
       .getSelections()
       .pipe(takeUntil(this.destroy$))
-      .subscribe((selections) => {
+      .subscribe((selections: SavedSelection[]) => {
         this.rowData = selections;
         this.cdr.markForCheck();
       });
@@ -180,16 +184,58 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Open modal to add new selection
+   * Open offcanvas to add new selection
    */
   openAddSelectionModal(): void {
-    const modalRef = this.modalService.open(AddSelectionModalComponent, {
-      size: "lg",
-      backdrop: "static",
-      scrollable: true,
-    });
+    const nextWidth = this.offcanvasStackService.getNextOffcanvasWidth();
+    const { zIndex, backdropZIndex } =
+      this.offcanvasStackService.getNextZIndexes();
+    const offcanvasRef = this.offcanvasService.open(
+      AddSelectionModalComponent,
+      {
+        position: "end",
+        backdrop: "static",
+        scroll: true,
+        panelClass: "offcanvas-dynamic-width",
+      },
+    );
 
-    modalRef.result
+    // Set the dynamic width and z-index using CSS custom properties
+    setTimeout(() => {
+      // Find the most recently opened offcanvas (the one with the highest z-index)
+      const offcanvasElements = Array.from(
+        document.querySelectorAll(".offcanvas.show"),
+      );
+      const latestOffcanvas = offcanvasElements[
+        offcanvasElements.length - 1
+      ] as HTMLElement;
+
+      // Find the corresponding backdrop
+      const backdropElements = Array.from(
+        document.querySelectorAll(".offcanvas-backdrop"),
+      );
+      const latestBackdrop = backdropElements[
+        backdropElements.length - 1
+      ] as HTMLElement;
+
+      if (latestOffcanvas) {
+        latestOffcanvas.style.setProperty("--bs-offcanvas-width", nextWidth);
+        latestOffcanvas.style.width = nextWidth;
+        latestOffcanvas.style.zIndex = zIndex.toString();
+      }
+
+      if (latestBackdrop) {
+        latestBackdrop.style.zIndex = backdropZIndex.toString();
+      }
+    }, 0);
+
+    // Register with stack service
+    this.offcanvasStackService.registerOffcanvas(
+      "Add New Selection",
+      offcanvasRef,
+    );
+
+    offcanvasRef.result
       .then((selection: SavedSelection) => {
         if (selection) {
           this.selectionHistoryService
@@ -199,7 +245,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
               next: () => {
                 // Selection added successfully
               },
-              error: (error) => {
+              error: (error: any) => {
                 console.error("Failed to save selection:", error);
                 alert("Failed to save selection. Please try again.");
               },
@@ -223,7 +269,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
           next: () => {
             // Selection deleted successfully
           },
-          error: (error) => {
+          error: (error: any) => {
             console.error("Failed to delete selection:", error);
             alert("Failed to delete selection. Please try again.");
           },
@@ -247,7 +293,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
           next: () => {
             // All selections cleared
           },
-          error: (error) => {
+          error: (error: any) => {
             console.error("Failed to clear selections:", error);
             alert("Failed to clear selections. Please try again.");
           },

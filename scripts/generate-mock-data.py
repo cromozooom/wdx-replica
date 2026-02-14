@@ -21,7 +21,7 @@ from faker import Faker
 fake = Faker()
 
 # Configuration
-BASE_DIR = "mock_api_data"
+BASE_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "src", "assets", "magic-selector-data")
 os.makedirs(BASE_DIR, exist_ok=True)
 
 def save_json(filename, data):
@@ -263,7 +263,7 @@ def generate_mock_data():
     
     # Summary
     print("\n" + "=" * 60)
-    print("✅ SUCCESS! Mock data generated in /{BASE_DIR}")
+    print(f"✅ SUCCESS! Mock data generated in {BASE_DIR}")
     print("\nSummary:")
     print(f"  • Entities: {len(entities)}")
     print(f"  • Forms: {len(forms)}")
@@ -279,9 +279,9 @@ def generate_mock_data():
     print(f"  ├── data_entries.json")
     print(f"  └── domains.json")
     print("\n💡 Next steps:")
-    print("  1. Install json-server: npm install -g json-server")
-    print("  2. Run API: json-server --watch mock_api_data/selection_items.json --port 3000")
-    print("  3. Access at: http://localhost:3000")
+    print("  1. Files are ready in src/assets/magic-selector-data/")
+    print("  2. Use HttpClient in Angular to load: assets/magic-selector-data/selection_items.json")
+    print("  3. OR run json-server: json-server --watch src/assets/magic-selector-data/selection_items.json --port 3000")
     print("\n")
 
 if __name__ == "__main__":

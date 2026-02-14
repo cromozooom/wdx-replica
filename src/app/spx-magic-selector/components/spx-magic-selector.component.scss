@@ -1,2 +1,8 @@
 // Empty SCSS file - all styling uses Bootstrap utility classes
 // This file exists for Angular CLI tooling compatibility only
+
+// Dynamic offcanvas width for Advanced Lookup
+:host ::ng-deep .offcanvas-dynamic-width {
+  --bs-offcanvas-width: 95vw; /* Default fallback */
+  width: var(--bs-offcanvas-width) !important;
+}

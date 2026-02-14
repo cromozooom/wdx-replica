@@ -5,3 +5,9 @@ pre {
   max-height: 400px;
   overflow-y: auto;
 }
+
+// Dynamic offcanvas width for Add Selection
+:host ::ng-deep .offcanvas-dynamic-width {
+  --bs-offcanvas-width: 95vw; /* Default fallback */
+  width: var(--bs-offcanvas-width) !important;
+}

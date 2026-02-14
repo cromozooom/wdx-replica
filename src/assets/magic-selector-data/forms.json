@@ -1,0 +1,4625 @@
+[
+  {
+    "id": "4b845480-b503-4a34-85a6-031b30934983",
+    "name": "Designer, television/film set Application Form",
+    "type": "Form",
+    "entityId": "7294caa2-85a8-4a08-90d8-183308ebe926",
+    "entityName": "Contact_036",
+    "displayName": "Moore-Banks Contact",
+    "description": "Occur will become rest mind dog simply second.",
+    "version": "4.8",
+    "queries": [
+      {
+        "id": "b7afd855-0f36-4853-913b-b9b1b62c23e2",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2695,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "9214a31f-a570-4034-bb9d-982c52ce6601",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1109,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "124307cc-2fd0-4c2d-abf9-8206f7d267a0",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1476,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5b6e09e1-f708-4d6c-9650-fd8880b65824",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 577,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-10-03T00:26:12"
+  },
+  {
+    "id": "d03c1587-9efe-485c-b0db-a58a1eeecd33",
+    "name": "Chief of Staff Submission Form",
+    "type": "Form",
+    "entityId": "8efcac36-f688-4f68-9066-6f75e02dc8bc",
+    "entityName": "Contract_083",
+    "displayName": "Carney-Evans Contract",
+    "description": "Else wide level TV again tonight protect recent.",
+    "version": "2.2",
+    "queries": [
+      {
+        "id": "e062b3d1-f3cb-4abc-b9b6-3c214ca8642f",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4026,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7acdf15a-8461-432f-8d70-c53dc0c3a377",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3437,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "3df0d179-ff12-4574-9bb1-7e68463684d9",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1009,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-09-09T12:27:58"
+  },
+  {
+    "id": "3b5c7918-4ad8-4a0c-a1e8-6ba174536bb6",
+    "name": "Paramedic Request Form",
+    "type": "Form",
+    "entityId": "d0571d95-45a2-441c-a643-7e315333c486",
+    "entityName": "Account_012",
+    "displayName": "Kelly and Sons Account",
+    "description": "Speech eat reach sing create this.",
+    "version": "1.9",
+    "queries": [
+      {
+        "id": "bfd07aca-4295-48ac-9a53-fbbfe99d14c4",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 470,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "2ddf50a3-4307-4604-8421-4b1fc8c55409",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3164,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "862759e9-237a-4b05-acf5-294375b11cc9",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2557,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-11T15:48:01"
+  },
+  {
+    "id": "79a5f45d-b7dd-4c98-8b8a-0699702276b9",
+    "name": "Trading standards officer Intake Form",
+    "type": "Form",
+    "entityId": "8efcac36-f688-4f68-9066-6f75e02dc8bc",
+    "entityName": "Contract_083",
+    "displayName": "Carney-Evans Contract",
+    "description": "Bank within think green allow attorney.",
+    "version": "5.2",
+    "queries": [
+      {
+        "id": "50627400-5def-43e6-b5d7-e8ce9a8b2983",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2492,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "d4b68611-ef25-46fc-9f2c-095fb0eaf8da",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 761,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-09-16T05:23:56"
+  },
+  {
+    "id": "57ff3759-b078-4034-8c12-ad8e3cc894d0",
+    "name": "Radiation protection practitioner Assessment Form",
+    "type": "Form",
+    "entityId": "b594c0cc-a7c1-4b2c-98d8-465d60dddbd9",
+    "entityName": "Appointment_052",
+    "displayName": "Montgomery and Sons Appointment",
+    "description": "Each quite television see consumer compare hand build attention school people save.",
+    "version": "4.9",
+    "queries": [
+      {
+        "id": "bb45aa65-ca76-463a-8e5f-26874aec8808",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 3144,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "83332b0a-27c0-4945-8fbf-fdc675335f9a",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1971,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "b450f09f-c442-4c43-944b-d6e3bbd29bc5",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4994,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-09T19:55:43"
+  },
+  {
+    "id": "cfa4a25f-31a7-4db0-af4a-8d7e9d2dd602",
+    "name": "Publishing rights manager Submission Form",
+    "type": "Form",
+    "entityId": "fb7f6546-2c6c-416c-9035-865e93e2111e",
+    "entityName": "Lead_015",
+    "displayName": "Clark LLC Lead",
+    "description": "Thus break community thousand very long stand rest site city ready several.",
+    "version": "5.9",
+    "queries": [
+      {
+        "id": "4747df1b-d643-45e5-acf4-166d06345dc2",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1417,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "324d3afb-7e43-4e6f-aaac-deb335816470",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4493,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-06-13T21:58:21"
+  },
+  {
+    "id": "790247cf-047e-4f4a-abdc-c11e163a1dcd",
+    "name": "Exercise physiologist Application Form",
+    "type": "Form",
+    "entityId": "b4c6a796-70da-47f8-b1a9-aefb22873eab",
+    "entityName": "Task_093",
+    "displayName": "Strong Group Task",
+    "description": "Born meeting leg top bag window receive.",
+    "version": "4.8",
+    "queries": [
+      {
+        "id": "aaf061f9-2524-498e-b0c8-fc2210a31f6f",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3187,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "4e2cf6e6-0973-4de1-a39c-68f75479a38f",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2792,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e236be48-91c1-4261-b199-e72c98a06cbc",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 718,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-05T17:27:15"
+  },
+  {
+    "id": "ecc6c45d-a232-49ad-ba86-a8efc93145e1",
+    "name": "Holiday representative Application Form",
+    "type": "Form",
+    "entityId": "ddd997b7-898d-441f-b94b-54a00e2919fe",
+    "entityName": "Opportunity_000",
+    "displayName": "Fisher-Evans Opportunity",
+    "description": "Trouble practice join candidate well art.",
+    "version": "1.1",
+    "queries": [
+      {
+        "id": "683f3ede-2a72-4bcf-9b82-d6b5bead0d12",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3184,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "833ab7b7-0413-4145-8cbd-14ad5870e025",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 303,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "da03703b-942f-4cb4-804c-811f41a9606a",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4970,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-27T21:51:25"
+  },
+  {
+    "id": "8c350f55-06f0-43a1-b19a-4d70d87908d0",
+    "name": "Insurance account manager Application Form",
+    "type": "Form",
+    "entityId": "ec8f327e-a1c2-4250-8209-8794040cc54d",
+    "entityName": "Account_091",
+    "displayName": "Beltran, Anderson and Hamilton Account",
+    "description": "Imagine bag traditional discover agreement write usually people however put quality thus general response.",
+    "version": "1.1",
+    "queries": [
+      {
+        "id": "ddbf40ef-9b95-4f76-bac1-a9ff1cb82027",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2611,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "720de6a3-1a98-4d7a-a5ff-4d650371111e",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4207,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "12c94f95-8995-4863-8d21-cc6c3b0b5777",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3961,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-13T00:20:31"
+  },
+  {
+    "id": "b97dbb60-1118-4063-b0b3-e8b2094b7052",
+    "name": "Clothing/textile technologist Selection Form",
+    "type": "Form",
+    "entityId": "7e734670-9fdf-45e4-9ac9-b0e7abdf69f0",
+    "entityName": "Tenant_018",
+    "displayName": "Gonzalez PLC Tenant",
+    "description": "Save reduce produce director involve kitchen central often message.",
+    "version": "4.4",
+    "queries": [
+      {
+        "id": "aeb0be0a-4f0b-4600-800d-5be5cbbe2662",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4941,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "b7e406fc-aee0-4a4e-a624-6578ef26bd86",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2580,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-25T06:43:46"
+  },
+  {
+    "id": "d15262cf-a666-4e3e-851a-eaff17b162aa",
+    "name": "Dance movement psychotherapist Selection Form",
+    "type": "Form",
+    "entityId": "ea239ed0-af18-4940-8528-6d04e762d614",
+    "entityName": "LeaseAgreement_034",
+    "displayName": "Watkins LLC LeaseAgreement",
+    "description": "May fast college yet eye whole oil picture represent effort best.",
+    "version": "1.6",
+    "queries": [
+      {
+        "id": "efead2eb-173d-49d5-882a-7900d83e28a2",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2147,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "ff86e0ea-c790-4448-9ab3-0c02fae1fdba",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4006,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "7dcdb4c2-31f5-4e3a-b885-9a6e4b43dc50",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 217,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7d0a6202-a5aa-4014-a69c-375ee22062e1",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1861,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-11T02:22:54"
+  },
+  {
+    "id": "0003a661-5afe-4f16-bff6-8e931b401e3d",
+    "name": "Microbiologist Application Form",
+    "type": "Form",
+    "entityId": "2ebf0c41-48a5-4387-8142-78bb6fd2fc2f",
+    "entityName": "Contract_096",
+    "displayName": "Gordon-Andrews Contract",
+    "description": "Politics economy cut hour collection yet themselves election four hair.",
+    "version": "2.0",
+    "queries": [
+      {
+        "id": "c8c3d6a5-bccc-4340-867f-834a08bc2749",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4654,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "32f35041-a18d-4934-ade9-2362303884cb",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4000,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "cc0048ba-7408-4dda-a9aa-6280176f1aa7",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1676,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "362ba4a2-4aaa-49f0-b13f-fe99fdc52094",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1609,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-06-28T10:09:52"
+  },
+  {
+    "id": "75073b05-51e8-414d-bfeb-b368c4ec1a56",
+    "name": "Advertising account executive Selection Form",
+    "type": "Form",
+    "entityId": "81ce6946-7e18-4e09-a365-48a1137c0a08",
+    "entityName": "Patient_081",
+    "displayName": "Golden, Butler and Nichols Patient",
+    "description": "Thing audience he send interest west.",
+    "version": "2.5",
+    "queries": [
+      {
+        "id": "93c5f682-0e91-4e8d-9975-a4d8cdc0dcaf",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4945,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "61c8bc70-d2dd-4e65-b41b-6bab72e2e03d",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4265,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-09-20T03:57:09"
+  },
+  {
+    "id": "0afdd2eb-f222-4ca2-9ac8-2759e22fb7b3",
+    "name": "Town planner Selection Form",
+    "type": "Form",
+    "entityId": "fd73146a-5b34-4f41-8b47-8982a1a264ba",
+    "entityName": "Lead_062",
+    "displayName": "Taylor, Martinez and Gibson Lead",
+    "description": "Trip work join outside chance next eat computer discover represent help especially.",
+    "version": "1.7",
+    "queries": [
+      {
+        "id": "75d387db-5c99-49a2-b2f1-550e0ff45b17",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4597,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "74e6570f-44e9-40b6-9e45-842223bf1d25",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2662,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-02-18T05:57:11"
+  },
+  {
+    "id": "ca3942ac-9816-4e76-a701-26fc32431128",
+    "name": "Industrial/product designer Submission Form",
+    "type": "Form",
+    "entityId": "ccf434c4-ba5d-46c6-bc1e-023bb5a6e1a4",
+    "entityName": "Asset_086",
+    "displayName": "Foster, Smith and Hendrix Asset",
+    "description": "Politics raise institution he none information employee inside up collection.",
+    "version": "1.8",
+    "queries": [
+      {
+        "id": "faa6bc5c-e4cb-426e-add9-96c8792ca3ab",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1454,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "41c7d53d-2a8f-4a6a-b137-d53062b3a6ce",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4274,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "d87fe177-47e7-4513-815d-32cf21f4afd9",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2377,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "ef43ca65-5e02-4576-ae7a-def2054b4f42",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2408,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-05-28T04:57:22"
+  },
+  {
+    "id": "262c9678-a783-4e4c-803a-bc8b29ac19fc",
+    "name": "Engineer, communications Selection Form",
+    "type": "Form",
+    "entityId": "e9de5ab7-77fe-4150-9a59-57c1bc5fecbe",
+    "entityName": "Appointment_021",
+    "displayName": "Cantu, Fisher and Doyle Appointment",
+    "description": "Number choose family politics major senior put full actually last small natural sort.",
+    "version": "5.6",
+    "queries": [
+      {
+        "id": "35fc3337-2c32-49d8-aa9f-b7763fddec5c",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4673,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "30af01e5-8ddd-4e30-a724-6f0a77b3d31d",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3960,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "2f74839c-a8fc-4755-a284-afa59b56e133",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2219,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-11T07:40:27"
+  },
+  {
+    "id": "b81a2107-7143-44e2-81c6-49c09e5ee279",
+    "name": "Designer, multimedia Assessment Form",
+    "type": "Form",
+    "entityId": "5ff98893-952b-4726-9eb4-8934a69a1eaf",
+    "entityName": "Contract_028",
+    "displayName": "Matthews-Stewart Contract",
+    "description": "Finally south popular individual wide today.",
+    "version": "2.5",
+    "queries": [
+      {
+        "id": "607d7307-9890-48e2-86b4-c455c9f4f2cc",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3233,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "faee69bc-1e3c-4aa1-b7ca-484ceb29a1bb",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1472,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7f6dc478-1ea8-49c1-a7cc-e303437d03df",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 466,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3a95269c-c8c7-4795-90ac-b6fdcd0255ac",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2769,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-07T11:31:22"
+  },
+  {
+    "id": "e1b73356-3d5d-40ae-870e-5fb33987eb88",
+    "name": "Theatre director Selection Form",
+    "type": "Form",
+    "entityId": "996b7161-b478-4d4a-a0d9-2bb77e047132",
+    "entityName": "Task_035",
+    "displayName": "Perez Inc Task",
+    "description": "Five remain know build minute sound ever well home.",
+    "version": "4.7",
+    "queries": [
+      {
+        "id": "6107a7b8-ae30-4210-ac2e-a34d2ff09eca",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2056,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "d3dea88b-edf4-43e4-9c08-362136c963b9",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3851,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-12T21:45:14"
+  },
+  {
+    "id": "2e4dde4b-a12e-4007-8478-cbdfa9f59175",
+    "name": "Midwife Application Form",
+    "type": "Form",
+    "entityId": "33b1a962-db18-497e-8328-4545ad23b9b5",
+    "entityName": "Property_038",
+    "displayName": "Gallagher, Williams and Velasquez Property",
+    "description": "Section how design wish run require position deep service.",
+    "version": "4.2",
+    "queries": [
+      {
+        "id": "bb82b4b0-f491-4c30-b03b-1917a8b9b739",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3000,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "c24f44a1-f0fb-4548-bfc2-b40be2e10abb",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2726,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "44891bce-b42e-44c0-96f0-a8e60d5b97ee",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3905,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "b80213ab-7acf-48e8-9ffb-e69a16618dc5",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 773,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-18T14:11:34"
+  },
+  {
+    "id": "13e5b6bd-1662-4575-bef2-e63ba19d60ce",
+    "name": "Chiropodist Selection Form",
+    "type": "Form",
+    "entityId": "cfee1b0f-4bec-4fd1-8750-c9ea3e8fdcbf",
+    "entityName": "Opportunity_030",
+    "displayName": "Cooper PLC Opportunity",
+    "description": "Performance move pretty born food reason may gas than production within.",
+    "version": "4.6",
+    "queries": [
+      {
+        "id": "b6caade7-d1cd-466d-b598-680bb16fceed",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 4100,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "b461ef4e-3502-4df4-9eb3-f918a136b36c",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3341,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "35cf714c-f52e-463d-92cd-cf4f5a9592c9",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2273,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "d54046f6-f394-41ea-b796-a77a35240598",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2566,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-04-25T06:32:53"
+  },
+  {
+    "id": "c21f2d6e-f806-4d9a-bd82-6c881710ee6f",
+    "name": "Designer, jewellery Assessment Form",
+    "type": "Form",
+    "entityId": "d181bd9f-810b-4bc9-af99-54fabd444885",
+    "entityName": "Prescription_055",
+    "displayName": "Wheeler Ltd Prescription",
+    "description": "Worker suddenly opportunity evening plan easy kitchen.",
+    "version": "3.8",
+    "queries": [
+      {
+        "id": "41e8fe6e-391b-45f3-95b9-763c5faab6e0",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2375,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "c357ddc5-e30c-41ec-b048-700eb7140e9b",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2213,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-31T02:38:16"
+  },
+  {
+    "id": "34e51edb-54bb-4d00-a4a4-d77b287d9e7c",
+    "name": "Statistician Submission Form",
+    "type": "Form",
+    "entityId": "33b1a962-db18-497e-8328-4545ad23b9b5",
+    "entityName": "Property_038",
+    "displayName": "Gallagher, Williams and Velasquez Property",
+    "description": "Shoulder until paper care just many scene challenge stay moment.",
+    "version": "4.0",
+    "queries": [
+      {
+        "id": "2e17e8fb-7c26-4ff9-a0b8-de1d2c290a53",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 811,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "b5deb9db-7d79-4f59-90a5-d7283fb9d72c",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 746,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "af6d385d-8a25-40ca-b34a-e263884acac0",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4389,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-07T12:12:44"
+  },
+  {
+    "id": "6c7ac5eb-dd10-4078-8efe-e859e262809e",
+    "name": "Clinical biochemist Intake Form",
+    "type": "Form",
+    "entityId": "5327caef-e9a9-420f-ab7f-3ed108bb5aea",
+    "entityName": "Case_037",
+    "displayName": "Guzman-Meyer Case",
+    "description": "Current move Republican weight someone seem others carry.",
+    "version": "1.4",
+    "queries": [
+      {
+        "id": "c73c0d29-980b-4fd8-9958-41e909285e92",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1802,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "a2fbcadc-34e2-4491-888a-f0b11550a854",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2276,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-28T16:28:51"
+  },
+  {
+    "id": "77944f77-5e84-4c15-b224-66e940d14c1f",
+    "name": "Mechanical engineer Assessment Form",
+    "type": "Form",
+    "entityId": "28ee25f6-c739-4ce6-b64a-04b623a44551",
+    "entityName": "Contact_001",
+    "displayName": "Bautista Inc Contact",
+    "description": "Network east wrong month your young notice determine wall little industry sense.",
+    "version": "4.8",
+    "queries": [
+      {
+        "id": "0bed70ad-1c0c-4a82-b04a-55d6abb0a9c3",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3472,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "229b0e41-274c-4ac8-8424-02c8bacebfa2",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 3222,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-03T21:32:06"
+  },
+  {
+    "id": "242d8cdd-e6bb-4b22-bd90-b91aa251e57f",
+    "name": "Immigration officer Registration Form",
+    "type": "Form",
+    "entityId": "029d39b5-ee4f-421b-b683-e1c5d75ecb4e",
+    "entityName": "Tenant_004",
+    "displayName": "Waters and Sons Tenant",
+    "description": "Pick note person finish them ability court represent interview economic election fly become.",
+    "version": "1.4",
+    "queries": [
+      {
+        "id": "64cf2d87-a7f8-4860-839e-ef418d46ad66",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4295,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "4db116cf-2872-4d7a-91da-3a5d8cde12ea",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 621,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "89bd58f4-fc74-4d94-b54b-5c9cdc8d727b",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2926,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "aa33b706-2991-4162-bcc0-439592ec4cef",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 326,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-02-15T20:31:53"
+  },
+  {
+    "id": "699c79f0-179a-4bf5-97d5-5fb970ba6544",
+    "name": "Engineer, petroleum Intake Form",
+    "type": "Form",
+    "entityId": "ddd997b7-898d-441f-b94b-54a00e2919fe",
+    "entityName": "Opportunity_000",
+    "displayName": "Fisher-Evans Opportunity",
+    "description": "Medical produce put war become create positive Mr structure.",
+    "version": "5.8",
+    "queries": [
+      {
+        "id": "83d9734c-d82e-4897-b1fc-2297c0ec460c",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 678,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "0bad4c30-029b-4d22-9e19-5f89b1669621",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 3759,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "0a45b0b5-c8ad-4bab-bfb7-5934cd275a31",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2433,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-13T10:39:33"
+  },
+  {
+    "id": "7c03f7a3-13cc-4162-bc8a-aa2c03daddbf",
+    "name": "Financial trader Selection Form",
+    "type": "Form",
+    "entityId": "1745f4e2-2cb1-48ce-a85f-e3e29b482228",
+    "entityName": "Asset_059",
+    "displayName": "Lyons, Hernandez and Fuentes Asset",
+    "description": "Player set speech single water development.",
+    "version": "5.4",
+    "queries": [
+      {
+        "id": "d96d6952-15d6-4bcf-8d1c-4cdee8c6d616",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3075,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "61d7df8e-ef5a-42db-b2ff-da5ce3f8e7e7",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 350,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "f193c802-b8db-4f03-977c-bb2ecf4b6df0",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2977,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "0eaf9f74-4993-4e22-9228-be39e6bf5ebf",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3658,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-10T19:50:55"
+  },
+  {
+    "id": "dd9716b4-fe0d-49d6-be2d-c8aa3d35ef71",
+    "name": "Financial planner Request Form",
+    "type": "Form",
+    "entityId": "81ce6946-7e18-4e09-a365-48a1137c0a08",
+    "entityName": "Patient_081",
+    "displayName": "Golden, Butler and Nichols Patient",
+    "description": "Myself yourself fear however chance walk smile yeah.",
+    "version": "1.6",
+    "queries": [
+      {
+        "id": "9e22f89b-806e-4075-98b9-4135a33e0a67",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2455,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "6f4cc6b6-29fc-4edd-9f68-1fa9f1a9dd21",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 1178,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "51aee2c5-d2a8-4291-a741-3d2a38c9f78b",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 241,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-23T21:11:44"
+  },
+  {
+    "id": "5f5e24f6-172e-4bce-bff0-8c180ba4e506",
+    "name": "Designer, furniture Intake Form",
+    "type": "Form",
+    "entityId": "180f15b2-e384-44e0-b3a1-c6647089d513",
+    "entityName": "MedicalRecord_009",
+    "displayName": "Rivera-Lester MedicalRecord",
+    "description": "Up address than sea performance politics single speak.",
+    "version": "1.0",
+    "queries": [
+      {
+        "id": "8838b575-ba53-48b1-a5f8-d0edcc19fbe6",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 4870,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "aa55fdc7-9f04-44ef-ba92-5266844c1c1c",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3551,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-02-18T17:36:44"
+  },
+  {
+    "id": "cef95784-803b-4ac7-9198-d7da42d5ce91",
+    "name": "Designer, exhibition/display Selection Form",
+    "type": "Form",
+    "entityId": "7101b9a6-10cb-4e62-a4d0-9eddb2585b7d",
+    "entityName": "Patient_072",
+    "displayName": "Lewis, Fuller and Harris Patient",
+    "description": "Hand gun respond maybe risk four still them.",
+    "version": "3.9",
+    "queries": [
+      {
+        "id": "edb37a55-b7a2-4ab5-aa57-f14b42e288cb",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2531,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "a49daeac-d49b-425b-be38-eeaa15e3d643",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 4319,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-03-09T08:19:37"
+  },
+  {
+    "id": "5063e03b-d62c-4b5d-a4d8-8da0dd0fbb42",
+    "name": "Health and safety adviser Submission Form",
+    "type": "Form",
+    "entityId": "3ff315db-b6cf-4f8a-bc0e-49c54f822d98",
+    "entityName": "Invoice_097",
+    "displayName": "Robertson Group Invoice",
+    "description": "Republican business early compare during involve may morning mission much fish.",
+    "version": "5.7",
+    "queries": [
+      {
+        "id": "fd535377-7559-47b7-a2ce-a1e17d4d4c77",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3350,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "a928d3e0-6dde-4380-8e71-7bf744213bd2",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4084,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-02-19T01:18:18"
+  },
+  {
+    "id": "2e7cdca0-9747-4ffb-a989-505e4d066f1e",
+    "name": "Rural practice surveyor Registration Form",
+    "type": "Form",
+    "entityId": "d5e9c5d5-acc5-4273-8499-aec8bae0dc8b",
+    "entityName": "MedicalRecord_087",
+    "displayName": "Johnson, Hernandez and Sanford MedicalRecord",
+    "description": "Pay listen magazine per health grow heart who huge.",
+    "version": "3.3",
+    "queries": [
+      {
+        "id": "489bec0f-dc52-4487-91da-a2772184b99c",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2277,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "a4508f99-3463-42ed-a049-5fb7338a3130",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2379,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-15T14:15:09"
+  },
+  {
+    "id": "5d0fcceb-7ea8-4ac7-8e22-acbe806c8c34",
+    "name": "Engineer, technical sales Request Form",
+    "type": "Form",
+    "entityId": "02dbcad4-367e-4ff8-bc6f-f5e6227e4763",
+    "entityName": "Prescription_056",
+    "displayName": "Martin-Dean Prescription",
+    "description": "Radio upon newspaper drop sister commercial worker significant there green thing career myself.",
+    "version": "5.9",
+    "queries": [
+      {
+        "id": "c32ec7f0-06cc-41b4-89c3-24fa638d716b",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2965,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e1e5c7a2-818e-4c1b-a302-fb7d8a873484",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1111,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "dfc9bb3d-993d-4170-b17c-91e50fa3794a",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 715,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-06T01:52:08"
+  },
+  {
+    "id": "c88a11fe-4e2c-4a43-913c-5d89ed934539",
+    "name": "Financial risk analyst Application Form",
+    "type": "Form",
+    "entityId": "80718602-24e8-41b4-8f3e-b30281e93822",
+    "entityName": "Opportunity_045",
+    "displayName": "Marsh, Mayer and Holland Opportunity",
+    "description": "Lot allow miss though manage capital.",
+    "version": "3.1",
+    "queries": [
+      {
+        "id": "ab5e7088-3ef9-471e-a5e2-dcd8aae58c27",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 4556,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "547e5c7d-936d-4984-bcd8-844c644e96f4",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2849,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "b39c2581-5ddb-45ba-8356-0a31ec23b366",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1383,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "2b6e9b88-066a-4353-b4b2-532f0c84384d",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2034,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-07-13T02:47:23"
+  },
+  {
+    "id": "b6814bb1-05c0-401a-a2eb-34bdc07aa880",
+    "name": "Software engineer Selection Form",
+    "type": "Form",
+    "entityId": "81ce6946-7e18-4e09-a365-48a1137c0a08",
+    "entityName": "Patient_081",
+    "displayName": "Golden, Butler and Nichols Patient",
+    "description": "East among program fact administration must check true good ever.",
+    "version": "1.8",
+    "queries": [
+      {
+        "id": "cbb3cbf5-5d54-4c41-814b-a01d01747b9d",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1821,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "fe0dc5ed-cb94-4500-8791-195f81c4959b",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3000,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "bc97718c-cc7a-4184-8ffe-c7763d6f6a0a",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2158,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "57fc62b0-6e7a-487e-b013-b18312b64f77",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 1918,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-11-22T23:26:00"
+  },
+  {
+    "id": "cc1d1cae-5211-4739-ae58-60e977b7d3d7",
+    "name": "Petroleum engineer Evaluation Form",
+    "type": "Form",
+    "entityId": "68a454a3-d516-4471-8f44-566097548704",
+    "entityName": "Appointment_054",
+    "displayName": "Yoder-Williams Appointment",
+    "description": "Blue enjoy want full specific then third thousand.",
+    "version": "2.9",
+    "queries": [
+      {
+        "id": "fbcc98d3-a9ff-41a3-9745-eba0cd1217b0",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 3411,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "02c1a9d5-f84f-4d31-8447-eaf8839eccb3",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2792,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "b982c79b-91ee-4a20-a1fa-51532f8ff443",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 380,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-10T17:34:59"
+  },
+  {
+    "id": "347b7295-900c-47a8-b943-740c3e838148",
+    "name": "Exhibition designer Evaluation Form",
+    "type": "Form",
+    "entityId": "f64e8a1d-f6f2-4f4a-b697-5be56b8d40b4",
+    "entityName": "Patient_070",
+    "displayName": "Allen Ltd Patient",
+    "description": "Need father future it lot wrong sometimes.",
+    "version": "1.4",
+    "queries": [
+      {
+        "id": "852c884e-72ec-4d7b-b9f3-ed08f4f3495b",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4315,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "41b2122d-dd7c-45d9-9e00-8adf22bfb4bd",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1462,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-02-02T06:38:38"
+  },
+  {
+    "id": "63a0fa4d-450e-4968-a2c4-1e392aee043f",
+    "name": "Mental health nurse Selection Form",
+    "type": "Form",
+    "entityId": "2e8a22a5-c070-434c-98e6-ab9cff586fae",
+    "entityName": "MaintenanceRequest_031",
+    "displayName": "Martin-Becker MaintenanceRequest",
+    "description": "Radio feel from million mission executive late purpose recently kid say condition suggest.",
+    "version": "1.8",
+    "queries": [
+      {
+        "id": "9e5c78a7-da06-4b7d-9731-e67abb8714cf",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3675,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "33c5f14f-425a-4e43-b54b-87325b7ae2e1",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2041,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-09T17:50:08"
+  },
+  {
+    "id": "375a2177-07e7-42f1-9feb-68c9b91d2def",
+    "name": "Therapist, nutritional Intake Form",
+    "type": "Form",
+    "entityId": "d5e9c5d5-acc5-4273-8499-aec8bae0dc8b",
+    "entityName": "MedicalRecord_087",
+    "displayName": "Johnson, Hernandez and Sanford MedicalRecord",
+    "description": "People structure newspaper network western term down fine try across candidate he like.",
+    "version": "1.7",
+    "queries": [
+      {
+        "id": "30983bf3-3c8f-40a0-879f-40009a7a82be",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1674,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "c4610055-0154-4742-ab39-ffc1d7e22def",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2802,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-11T19:26:53"
+  },
+  {
+    "id": "5df3e35d-bb1a-41dd-bdb7-180f85373857",
+    "name": "Lexicographer Intake Form",
+    "type": "Form",
+    "entityId": "8efcac36-f688-4f68-9066-6f75e02dc8bc",
+    "entityName": "Contract_083",
+    "displayName": "Carney-Evans Contract",
+    "description": "Meet the including walk its attack president friend those join where.",
+    "version": "1.7",
+    "queries": [
+      {
+        "id": "8aed00c2-01a7-4159-a2ae-9b8abb79a8ee",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 755,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "0d7a1e80-7ff4-4ad9-a564-b25934324169",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 160,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "ca6938a0-9386-43d5-a4a2-218d29cb5fe5",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2479,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "9adfa75d-f1f2-4dd8-839c-9e975b4c4ded",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3428,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-12T14:28:19"
+  },
+  {
+    "id": "5fc4141e-af98-469a-985d-a6373796cc78",
+    "name": "Scientist, research (medical) Selection Form",
+    "type": "Form",
+    "entityId": "8efcac36-f688-4f68-9066-6f75e02dc8bc",
+    "entityName": "Contract_083",
+    "displayName": "Carney-Evans Contract",
+    "description": "Capital your our member against near move top choose film investment writer.",
+    "version": "1.7",
+    "queries": [
+      {
+        "id": "d912f86d-fb37-4bd9-b697-7b17da0d6c08",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 352,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "35da9cbd-89ff-48a4-823f-aaa586ddeb83",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3351,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "99e19828-9a2f-4b1b-8efe-ef2c2d138736",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2784,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-21T12:42:10"
+  },
+  {
+    "id": "d30eb655-a1bf-4e2a-80a9-7b1096adf192",
+    "name": "Engineer, electronics Application Form",
+    "type": "Form",
+    "entityId": "4f55a843-7079-48fe-83d3-7c6a50664acf",
+    "entityName": "LeaseAgreement_076",
+    "displayName": "Trevino Group LeaseAgreement",
+    "description": "Its seek rather hold collection result send.",
+    "version": "3.3",
+    "queries": [
+      {
+        "id": "f0211d77-4ffa-470f-b49e-3376bb5d3fdf",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3549,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "cfb7de65-c4e0-41e0-ad1c-7bf7d7c2f27c",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1511,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-10-03T10:38:34"
+  },
+  {
+    "id": "755ecf83-e51b-4111-a10c-ade62cace5cf",
+    "name": "Designer, industrial/product Intake Form",
+    "type": "Form",
+    "entityId": "2ebf0c41-48a5-4387-8142-78bb6fd2fc2f",
+    "entityName": "Contract_096",
+    "displayName": "Gordon-Andrews Contract",
+    "description": "Product candidate try discover movement field yeah decision nor family upon.",
+    "version": "4.8",
+    "queries": [
+      {
+        "id": "6b384176-f28b-4536-9211-9097d53baf5d",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 844,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "98d104ba-988b-46ae-b3a3-dd2753b286b9",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2085,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "ce2633d6-a421-4b35-ab7a-91f686a09aac",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2370,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "565c564a-892e-4d1d-abdc-32acad47f778",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 383,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-10T00:28:45"
+  },
+  {
+    "id": "67d7f5b4-b728-40fa-bc14-869cc7696032",
+    "name": "Commercial horticulturist Selection Form",
+    "type": "Form",
+    "entityId": "180f15b2-e384-44e0-b3a1-c6647089d513",
+    "entityName": "MedicalRecord_009",
+    "displayName": "Rivera-Lester MedicalRecord",
+    "description": "Finish job explain school official there best myself miss add.",
+    "version": "5.8",
+    "queries": [
+      {
+        "id": "988a4fca-ea51-48b8-b753-48678934b188",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3690,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "9e83568a-b442-401e-9960-d4352ab847b5",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4432,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "59f5a4e8-134d-4ef0-a840-26cf705e8603",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4101,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-04T07:00:36"
+  },
+  {
+    "id": "b866200f-9d74-45a0-bcef-1ba6d02a6e35",
+    "name": "Bonds trader Registration Form",
+    "type": "Form",
+    "entityId": "3ff315db-b6cf-4f8a-bc0e-49c54f822d98",
+    "entityName": "Invoice_097",
+    "displayName": "Robertson Group Invoice",
+    "description": "Guess say sport way article several summer international.",
+    "version": "5.1",
+    "queries": [
+      {
+        "id": "6f5d7878-bf95-4fae-8023-6023f419683c",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4077,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "a696e3ff-9b3f-44dd-a3ea-07e2647388c2",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2613,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-09T06:24:46"
+  },
+  {
+    "id": "9a276bb1-ac1f-462a-9b5c-0650a6ad6fac",
+    "name": "Set designer Intake Form",
+    "type": "Form",
+    "entityId": "a03158e5-e6d0-49da-b2a9-fbd72d480374",
+    "entityName": "Asset_074",
+    "displayName": "Tran, Anderson and Turner Asset",
+    "description": "Should safe only cup set model usually material could for court gas.",
+    "version": "1.5",
+    "queries": [
+      {
+        "id": "f2166c94-71f8-4859-a102-a430c99acea4",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 1734,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "66e11e20-6276-4aa3-884c-d9f8cd2bb5ae",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 4390,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-23T21:37:09"
+  },
+  {
+    "id": "0f93dccf-d023-484e-886c-656241d0d2ae",
+    "name": "Probation officer Application Form",
+    "type": "Form",
+    "entityId": "a3a7229d-594d-42ef-a08b-d6ca2b27563f",
+    "entityName": "Invoice_071",
+    "displayName": "Rodriguez LLC Invoice",
+    "description": "Physical thus night social painting fill company deep task source degree.",
+    "version": "4.3",
+    "queries": [
+      {
+        "id": "8de35a6d-26fa-490e-8ea0-36f3abc2a880",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 400,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "e17e95a5-85e0-4e31-baea-ca89182df91d",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 4364,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "81d95137-2bef-4acc-a9e5-8ecc2eb5996f",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3391,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-19T08:18:24"
+  },
+  {
+    "id": "0683f270-238c-47e8-a8b9-0363fc5040f7",
+    "name": "Dietitian Application Form",
+    "type": "Form",
+    "entityId": "ace9fb51-e4bf-41c3-8bfb-967274314cd6",
+    "entityName": "LeaseAgreement_023",
+    "displayName": "Perez Ltd LeaseAgreement",
+    "description": "Drop radio according far bill there I describe nature exist.",
+    "version": "4.1",
+    "queries": [
+      {
+        "id": "be5a07f5-eccf-4d1c-a894-a61b393541d5",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 723,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "53f2027b-b852-4d39-985c-dec5392a9c1d",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 100,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-27T00:29:50"
+  },
+  {
+    "id": "9efa1759-1f59-4bb9-a856-4dbea4418104",
+    "name": "Journalist, newspaper Selection Form",
+    "type": "Form",
+    "entityId": "44ead1e8-eb53-4783-8319-237ff1a21fce",
+    "entityName": "Patient_060",
+    "displayName": "Moore LLC Patient",
+    "description": "Care senior rule charge capital note there significant general month treatment forward.",
+    "version": "3.8",
+    "queries": [
+      {
+        "id": "489764bc-8813-4fb4-bf4a-ca59cbe93063",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2989,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "edd64f81-5d58-4a99-9310-ee7512923bb1",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4960,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-17T14:05:27"
+  },
+  {
+    "id": "0213b44b-710f-47a1-a9c4-2d08f7cc2fcb",
+    "name": "Garment/textile technologist Registration Form",
+    "type": "Form",
+    "entityId": "93f8a9be-4e69-4dba-93c6-90c78c42f4b5",
+    "entityName": "Task_014",
+    "displayName": "Wilson-Mcbride Task",
+    "description": "Yet management learn media single right administration foreign body tell born such.",
+    "version": "1.3",
+    "queries": [
+      {
+        "id": "258f96b8-c50c-4b5f-a8ba-40d8accc5187",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 3223,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "b7e9eb85-2346-41cd-b73a-cec9a448b3ef",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2965,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-04T23:01:40"
+  },
+  {
+    "id": "3b82e716-e6d1-4402-b56d-f146c64532d6",
+    "name": "Geographical information systems officer Request Form",
+    "type": "Form",
+    "entityId": "711d361d-7292-4572-a640-73ce3b968eda",
+    "entityName": "LeaseAgreement_061",
+    "displayName": "Martinez-Tran LeaseAgreement",
+    "description": "Plant hour thing area bed kid.",
+    "version": "3.8",
+    "queries": [
+      {
+        "id": "1b96a385-0474-4ba9-8066-3ca005b04e45",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 848,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "d226509a-a182-408b-9385-cc0f3e0ab1d6",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 4777,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-17T01:32:42"
+  },
+  {
+    "id": "fb4d3356-7930-47a3-8c41-e0dfcf390876",
+    "name": "Television camera operator Evaluation Form",
+    "type": "Form",
+    "entityId": "50cd64dd-8b31-4360-ad77-f841ae7ef972",
+    "entityName": "Task_039",
+    "displayName": "Adams, Taylor and Skinner Task",
+    "description": "Design cultural like assume appear week newspaper turn start learn only.",
+    "version": "3.6",
+    "queries": [
+      {
+        "id": "27c0a891-2e4a-4522-9426-e144bbba059c",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4960,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5760d58b-2273-4170-a554-b78a3d8502ec",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 985,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "26c6059e-6cf4-46ad-81ad-16553954cfbb",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 326,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-02-23T07:21:05"
+  },
+  {
+    "id": "5f8cf41b-a123-48c4-9129-a3c69ac417ed",
+    "name": "Building surveyor Submission Form",
+    "type": "Form",
+    "entityId": "17f1e955-b4e3-4b3d-9269-796b40193b33",
+    "entityName": "Patient_024",
+    "displayName": "Hooper, Edwards and Good Patient",
+    "description": "Woman article possible beyond area growth civil plan chance else result bank education carry.",
+    "version": "2.7",
+    "queries": [
+      {
+        "id": "e145c7d7-afbf-41a2-a395-bc028740b605",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1045,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "b0e0e82a-1d4a-4ac8-b32b-0a6e9915e346",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 449,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "922f0f40-7046-45f8-b8db-2a74cf377178",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2589,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-20T19:09:24"
+  },
+  {
+    "id": "a3676846-d3d0-43e4-b563-7736edb03060",
+    "name": "Haematologist Request Form",
+    "type": "Form",
+    "entityId": "a03158e5-e6d0-49da-b2a9-fbd72d480374",
+    "entityName": "Asset_074",
+    "displayName": "Tran, Anderson and Turner Asset",
+    "description": "Popular else hospital debate hundred try those tell.",
+    "version": "5.3",
+    "queries": [
+      {
+        "id": "4e73967c-f25c-43b4-b631-8f1323bc707e",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4008,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "83708b53-eb62-43f7-a7c0-4bc0eee020d8",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2285,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "ad11acd1-610d-4496-90b5-421b76f21548",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4360,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-30T01:16:28"
+  },
+  {
+    "id": "97d81619-5981-4494-b8ad-98409d618ba0",
+    "name": "Set designer Request Form",
+    "type": "Form",
+    "entityId": "1745f4e2-2cb1-48ce-a85f-e3e29b482228",
+    "entityName": "Asset_059",
+    "displayName": "Lyons, Hernandez and Fuentes Asset",
+    "description": "Hour clearly onto close very these point building pressure recognize citizen writer.",
+    "version": "5.2",
+    "queries": [
+      {
+        "id": "e9a2da62-0a7b-4ead-909d-2046c02859df",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 616,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "02296530-27bf-428d-874f-19dc2cd418e1",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 2875,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-04T13:38:44"
+  },
+  {
+    "id": "4ad65886-7c67-4173-b695-aad8b3c53acc",
+    "name": "Nature conservation officer Submission Form",
+    "type": "Form",
+    "entityId": "d5e9c5d5-acc5-4273-8499-aec8bae0dc8b",
+    "entityName": "MedicalRecord_087",
+    "displayName": "Johnson, Hernandez and Sanford MedicalRecord",
+    "description": "Relate full day simply can American film what exactly during.",
+    "version": "3.9",
+    "queries": [
+      {
+        "id": "b93d89d9-6085-48da-b417-7c7adb337cf5",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 3936,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "22e77328-7936-45b8-ae81-3a41b3df3acc",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4752,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "38ccde70-84d3-4bcf-8949-568a2de21a32",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3375,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-23T22:56:54"
+  },
+  {
+    "id": "70a4b7dc-4617-4459-8fc8-9e7309028431",
+    "name": "Geneticist, molecular Intake Form",
+    "type": "Form",
+    "entityId": "e30c7fee-4e86-4d8e-b97c-edb8a76beb7b",
+    "entityName": "Account_013",
+    "displayName": "Jackson, Bell and Krueger Account",
+    "description": "Help understand guy style save future.",
+    "version": "3.6",
+    "queries": [
+      {
+        "id": "5093b219-86a7-4baf-a282-fea17038944a",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 346,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "45d69cf3-5818-4813-8886-51a812f3591b",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1245,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "bb57386d-bad4-468a-b79d-a99c3d44b79b",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4492,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-15T03:33:17"
+  },
+  {
+    "id": "42cfb06f-99ca-45bb-8484-715bf2aa73fd",
+    "name": "Physicist, medical Selection Form",
+    "type": "Form",
+    "entityId": "852a7f3e-e859-46a1-9790-a78109036c88",
+    "entityName": "Lead_069",
+    "displayName": "Allen-Jarvis Lead",
+    "description": "Minute red our usually audience term discuss.",
+    "version": "2.4",
+    "queries": [
+      {
+        "id": "3aa0edc9-7115-4589-8f2c-2f2abce6d30a",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 295,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "42555256-0238-41d4-83f6-3db645e3da66",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3075,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-15T08:33:11"
+  },
+  {
+    "id": "3898e481-a6a2-462c-b21c-1c4217c80bd0",
+    "name": "Theatre manager Selection Form",
+    "type": "Form",
+    "entityId": "b594c0cc-a7c1-4b2c-98d8-465d60dddbd9",
+    "entityName": "Appointment_052",
+    "displayName": "Montgomery and Sons Appointment",
+    "description": "Character support their however above traditional hospital realize.",
+    "version": "3.6",
+    "queries": [
+      {
+        "id": "9d2f3599-19d4-4710-9bce-6493eb208543",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1097,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5b5c4ee9-4b03-42c3-b2e2-823836a37218",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3468,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "735d4c23-d2fa-47eb-b0bb-8fb55bc3be61",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 3388,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-16T07:03:09"
+  },
+  {
+    "id": "c51c2b80-667a-49f6-94f9-1aa390312c10",
+    "name": "Geologist, wellsite Assessment Form",
+    "type": "Form",
+    "entityId": "5327caef-e9a9-420f-ab7f-3ed108bb5aea",
+    "entityName": "Case_037",
+    "displayName": "Guzman-Meyer Case",
+    "description": "Mr include pay rock health many newspaper write hear third physical side road.",
+    "version": "4.2",
+    "queries": [
+      {
+        "id": "5020fdc3-ce5e-4b0b-a3c2-6b27a74a8b90",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3993,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "fb15fcde-a1b3-4505-a8d1-8d13407a41d5",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1325,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "a5bc34dc-09da-4b22-ad5d-b39c29d45e88",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2633,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "a5960e30-ae23-420d-a7f4-8a81d33292fe",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4978,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-05T17:15:01"
+  },
+  {
+    "id": "3f8b0142-fd44-4948-b060-d39199d57644",
+    "name": "Radiographer, diagnostic Selection Form",
+    "type": "Form",
+    "entityId": "180f15b2-e384-44e0-b3a1-c6647089d513",
+    "entityName": "MedicalRecord_009",
+    "displayName": "Rivera-Lester MedicalRecord",
+    "description": "Federal huge identify thing off sign tend major until which pass sort.",
+    "version": "5.1",
+    "queries": [
+      {
+        "id": "d93fa668-ce19-4eca-98cd-6eafb657f9a1",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1202,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "aa3e9983-58e1-4ea2-ace4-03247fb65cd9",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1949,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "104f8b7a-8daf-4bbf-a421-6a0a7bd84087",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2925,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "7099bdb6-d692-4acc-bcaa-63a24a2fbe61",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1954,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-29T03:00:40"
+  },
+  {
+    "id": "61fe034a-af7e-46c0-8da6-2042ae8381e2",
+    "name": "Pilot, airline Submission Form",
+    "type": "Form",
+    "entityId": "d181bd9f-810b-4bc9-af99-54fabd444885",
+    "entityName": "Prescription_055",
+    "displayName": "Wheeler Ltd Prescription",
+    "description": "Practice study phone seem she color support now level.",
+    "version": "2.0",
+    "queries": [
+      {
+        "id": "c20db9d6-3737-4a51-9492-150e319aa1a3",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1494,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "b802cd2d-8105-4e4f-8b30-2e469b1a60c8",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1424,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "c8c8c813-46ce-4474-adc7-74f5870f494f",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 4061,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "df099953-febb-45ad-b385-08caeb41bcfb",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1577,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-05-03T22:52:34"
+  },
+  {
+    "id": "e0bd20ee-e152-4fee-9d65-404ab1ff3150",
+    "name": "Proofreader Application Form",
+    "type": "Form",
+    "entityId": "460630c8-7f8a-4cfc-8a45-ae446623e54a",
+    "entityName": "Invoice_063",
+    "displayName": "Jordan Group Invoice",
+    "description": "Interest to fine drug sell here threat term everything expect thing fund.",
+    "version": "5.8",
+    "queries": [
+      {
+        "id": "6f4a4f08-daaa-4b46-ab1d-369ca4ec6b5a",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1638,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "9f67be7d-bddd-45a4-82f0-d01dffa25a31",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2312,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-03-28T02:23:11"
+  },
+  {
+    "id": "9148c5d3-bdea-4f4a-b99b-898a89052e97",
+    "name": "Dancer Submission Form",
+    "type": "Form",
+    "entityId": "44ead1e8-eb53-4783-8319-237ff1a21fce",
+    "entityName": "Patient_060",
+    "displayName": "Moore LLC Patient",
+    "description": "Most significant people laugh indeed picture always go sound week chair player.",
+    "version": "1.3",
+    "queries": [
+      {
+        "id": "57bcd583-06c8-43c8-9855-aae850bd709a",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2453,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "aa997fba-1cee-49ed-96d0-e8cb1bfd70ae",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3135,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "ea8cb8c6-6d67-47cb-9936-aa77e07bb52f",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1598,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "58d1f777-4fb3-4830-8756-271fbf633d56",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2216,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-10T10:03:07"
+  },
+  {
+    "id": "8e747b69-5da1-492d-be5d-dafd66b2a497",
+    "name": "Colour technologist Assessment Form",
+    "type": "Form",
+    "entityId": "d2158d0f-06f8-4dc3-8957-4b169f5f2f67",
+    "entityName": "Task_094",
+    "displayName": "Thompson-Wilson Task",
+    "description": "He central law because ahead beautiful evidence fear.",
+    "version": "2.8",
+    "queries": [
+      {
+        "id": "7012483a-0878-4c5c-9b60-0e2253bb4915",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 557,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "d91bad0a-5d83-484e-95c6-7811a3c4ae5d",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2178,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "9195b5bc-3082-40ff-bd30-ebe2d415402e",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 1348,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-11T17:07:15"
+  },
+  {
+    "id": "0c3feaea-338e-465b-82d7-0e8d494e4430",
+    "name": "Interpreter Intake Form",
+    "type": "Form",
+    "entityId": "3753efd0-42d1-4f0f-91d9-d4a233a3862c",
+    "entityName": "Property_092",
+    "displayName": "Farley-Miller Property",
+    "description": "Couple eat score exactly debate system.",
+    "version": "2.2",
+    "queries": [
+      {
+        "id": "19d8c480-d7c3-4306-b748-d408810c3a12",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 2656,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3b0f37d8-3859-4a6e-8ee4-3a4922df075b",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 384,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "f54f7801-507d-4dad-b50f-67652ff65969",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3235,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-18T12:29:09"
+  },
+  {
+    "id": "ed25f39c-436e-4cbf-9ef4-34493d1b968e",
+    "name": "Marketing executive Request Form",
+    "type": "Form",
+    "entityId": "81ce6946-7e18-4e09-a365-48a1137c0a08",
+    "entityName": "Patient_081",
+    "displayName": "Golden, Butler and Nichols Patient",
+    "description": "Recent officer its kind arrive energy agent she one industry whose.",
+    "version": "2.9",
+    "queries": [
+      {
+        "id": "3090105c-1e75-4a53-858e-ff396f2d3ca6",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3161,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7365485f-aea6-41a8-b94f-414a6fc2d5be",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 3866,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-25T09:40:01"
+  },
+  {
+    "id": "797f612c-3ceb-4b5f-bbc2-57aa059f42b5",
+    "name": "Arts development officer Intake Form",
+    "type": "Form",
+    "entityId": "391e9b8b-a668-4f16-ae2c-b6b286fe9c1a",
+    "entityName": "Case_047",
+    "displayName": "Jones, Macias and Brewer Case",
+    "description": "Season audience also accept while close until these they.",
+    "version": "3.6",
+    "queries": [
+      {
+        "id": "8c2c3f43-b0c3-4ac4-9206-f289de25f2b9",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1156,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "cbbc5b97-2e44-44e2-b2f1-6514cbbfe854",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 4479,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-20T17:57:11"
+  },
+  {
+    "id": "aea415f0-e32f-457d-be4a-563a86247f07",
+    "name": "Radiographer, therapeutic Request Form",
+    "type": "Form",
+    "entityId": "d5e9c5d5-acc5-4273-8499-aec8bae0dc8b",
+    "entityName": "MedicalRecord_087",
+    "displayName": "Johnson, Hernandez and Sanford MedicalRecord",
+    "description": "Themselves spring treat art she population camera model expect.",
+    "version": "1.1",
+    "queries": [
+      {
+        "id": "6aff7a40-10e9-413b-a883-3ebd010e057d",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1453,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7a2f9a9e-de9b-4237-a7c8-073f2d578c9c",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3722,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "44566257-2767-4fbc-a11a-61aa11409a92",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 661,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "1f302224-241c-41bb-bab5-6440769630fc",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2669,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-25T13:27:37"
+  },
+  {
+    "id": "25cae10f-5b17-4491-aed8-4ea5c64e89a1",
+    "name": "Exhibitions officer, museum/gallery Application Form",
+    "type": "Form",
+    "entityId": "80718602-24e8-41b4-8f3e-b30281e93822",
+    "entityName": "Opportunity_045",
+    "displayName": "Marsh, Mayer and Holland Opportunity",
+    "description": "Tax he near easy team try industry option ball miss main us company.",
+    "version": "3.8",
+    "queries": [
+      {
+        "id": "37d4f10b-81ac-4c9c-b984-b9229f45ebab",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4253,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7960ff02-8a0c-42b2-aa66-f58f85a028b8",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3567,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-14T14:09:05"
+  },
+  {
+    "id": "8c2bb290-fd29-4b37-a6f5-5a7833c4c9b7",
+    "name": "Editor, magazine features Intake Form",
+    "type": "Form",
+    "entityId": "93f8a9be-4e69-4dba-93c6-90c78c42f4b5",
+    "entityName": "Task_014",
+    "displayName": "Wilson-Mcbride Task",
+    "description": "Cause in kid visit impact sometimes apply sister born themselves.",
+    "version": "3.5",
+    "queries": [
+      {
+        "id": "46250675-6124-44e5-aeae-20113d422d9f",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2505,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "100fac93-4cb5-4937-add4-5d06f7d051c8",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 62,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "3805cce3-1b73-469e-8672-855d2a4f453a",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4033,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "ceb03b35-86d0-4526-9389-a24e4eb9f235",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4830,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-17T01:18:55"
+  },
+  {
+    "id": "c9fecee0-bad2-4fc4-a48b-a5eaf63791dd",
+    "name": "Doctor, hospital Request Form",
+    "type": "Form",
+    "entityId": "93a7e8af-7793-44d7-b3e9-513f0a84cfc5",
+    "entityName": "Property_029",
+    "displayName": "Walker, Powell and Bell Property",
+    "description": "People side base people raise enter true western.",
+    "version": "3.0",
+    "queries": [
+      {
+        "id": "b59d6076-a23d-4520-82e2-9cbfd8787e09",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2441,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7e7cbe33-66c9-4a35-a131-edbaee4e5e35",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1804,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "71539dcb-28c1-4f4a-b322-f15ad086c87b",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3469,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "8aabb6d5-7525-4349-8ccd-f438818175ac",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3198,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-01T11:42:52"
+  },
+  {
+    "id": "a6ebb330-123b-4efc-a011-094a416005c7",
+    "name": "Arboriculturist Selection Form",
+    "type": "Form",
+    "entityId": "fd73146a-5b34-4f41-8b47-8982a1a264ba",
+    "entityName": "Lead_062",
+    "displayName": "Taylor, Martinez and Gibson Lead",
+    "description": "Each issue before include never my spring as feel person.",
+    "version": "2.1",
+    "queries": [
+      {
+        "id": "d3ba12ca-ea98-4791-8176-cf4294985921",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1217,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "aced12ad-b950-4b79-b2b0-8ca336c13d66",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 2444,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "3749e148-ed13-4c95-b752-35054f44564c",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1675,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "78bb42dd-48d6-4206-abda-cc8a6e29d22d",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 3995,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-08-19T20:49:08"
+  },
+  {
+    "id": "2f5bfeba-8f1a-4934-959c-05f2535a0cc9",
+    "name": "English as a second language teacher Registration Form",
+    "type": "Form",
+    "entityId": "52fd664d-a06b-4736-851f-7c1f052c1197",
+    "entityName": "Asset_077",
+    "displayName": "Webb, Mitchell and Ferguson Asset",
+    "description": "Final TV item anything old scientist education soldier environmental himself campaign edge.",
+    "version": "5.1",
+    "queries": [
+      {
+        "id": "b51b432d-09bb-4985-9678-79e0718450ec",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1795,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "403ab12a-473a-46ce-9b72-6183f24aebce",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 2807,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "1bf40ff3-3005-4e90-a54c-1552583fc4bc",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3318,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-07-12T17:01:35"
+  },
+  {
+    "id": "428a94b7-36f0-41e2-8ff2-f631e1e79b3b",
+    "name": "Textile designer Request Form",
+    "type": "Form",
+    "entityId": "93f8a9be-4e69-4dba-93c6-90c78c42f4b5",
+    "entityName": "Task_014",
+    "displayName": "Wilson-Mcbride Task",
+    "description": "Various war yourself not reveal let kind open.",
+    "version": "3.7",
+    "queries": [
+      {
+        "id": "b6fc9884-7b9c-42f8-9c98-17caa954e1fa",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2294,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "ffee3845-072e-49bc-ba01-c71c9500aaee",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 3093,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "adcd05e6-308d-4fb5-8069-71c5bd9484e7",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2129,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2026-01-13T23:06:57"
+  },
+  {
+    "id": "1f2b78c6-5e0b-4610-afcf-0cda26bbd2e1",
+    "name": "Engineer, energy Registration Form",
+    "type": "Form",
+    "entityId": "28b795cc-598e-44ea-a692-9b6fb6bc3208",
+    "entityName": "MedicalRecord_084",
+    "displayName": "Tyler Ltd MedicalRecord",
+    "description": "Project music quality then its blue.",
+    "version": "4.1",
+    "queries": [
+      {
+        "id": "55a5ef6a-0cd1-416e-a8db-021835396b91",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 3360,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "5fda9685-de46-4410-92d3-e80683539edc",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4478,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-10T06:50:20"
+  },
+  {
+    "id": "11845cd1-a033-4eee-8fff-41796da5e704",
+    "name": "Presenter, broadcasting Evaluation Form",
+    "type": "Form",
+    "entityId": "30fcd484-299e-48eb-8621-9e0376ab3c5d",
+    "entityName": "Case_008",
+    "displayName": "Hernandez, Martinez and Smith Case",
+    "description": "Major operation occur store need laugh.",
+    "version": "4.7",
+    "queries": [
+      {
+        "id": "7066e224-c022-4ac9-b6bf-1dd430363f83",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 3053,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "758609c6-23e2-47c4-89fb-f09a92605289",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 4033,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "111642a5-12d7-4307-b866-a967db6b666f",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2993,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "14db5657-aecf-4dba-a10e-f57c89d17f42",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3332,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-03-31T03:43:57"
+  },
+  {
+    "id": "429836ab-a256-455d-b829-f4f12cdffda5",
+    "name": "Charity officer Submission Form",
+    "type": "Form",
+    "entityId": "b4c6a796-70da-47f8-b1a9-aefb22873eab",
+    "entityName": "Task_093",
+    "displayName": "Strong Group Task",
+    "description": "Economic myself ahead act offer cost hard.",
+    "version": "3.3",
+    "queries": [
+      {
+        "id": "5e89444c-77e1-45c0-a3f1-60ebe434042f",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 100,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "c260d529-e50c-49cf-b579-5b4d5d8f887f",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1014,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "72ad0ed7-a051-4949-9e53-ecb89bd48942",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 1116,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "493c57b7-0369-4d0c-91df-a99101da65f9",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 3224,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-08-17T13:33:44"
+  },
+  {
+    "id": "c9be69d0-24cf-4617-855d-4c3e630b10d2",
+    "name": "Administrator, education Submission Form",
+    "type": "Form",
+    "entityId": "2ebf0c41-48a5-4387-8142-78bb6fd2fc2f",
+    "entityName": "Contract_096",
+    "displayName": "Gordon-Andrews Contract",
+    "description": "Evening investment happy sure difference benefit least.",
+    "version": "5.7",
+    "queries": [
+      {
+        "id": "c0a444d6-8cdd-48c2-be20-8bea4399c3fc",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3872,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "7b88aca2-4bc4-4539-b984-a87b903697c4",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1651,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "bc0b6375-bc75-4f70-a1c0-9ec3f2c781eb",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 3570,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-11-29T22:54:31"
+  },
+  {
+    "id": "0b27f235-460e-4676-8117-5c486bf22e9c",
+    "name": "Petroleum engineer Selection Form",
+    "type": "Form",
+    "entityId": "f5e2e60d-3177-4f90-a995-477113b56d64",
+    "entityName": "Patient_042",
+    "displayName": "Mason, Rojas and Miller Patient",
+    "description": "Edge lay standard you start enough between material man add artist control home yet.",
+    "version": "4.9",
+    "queries": [
+      {
+        "id": "f188c07c-cc0f-48b5-a0b1-af53fe8c867e",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4773,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7f833a21-2517-4122-b5f1-e459eaa70a52",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2513,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "21ee9be8-92c3-413d-8837-f464f20c9b8b",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 213,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "340f91fa-5059-4764-b24e-c7c0d99d0ee3",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4150,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-18T10:16:38"
+  },
+  {
+    "id": "530142a7-6d44-4d04-b0f4-4f0cf89ead75",
+    "name": "Designer, television/film set Evaluation Form",
+    "type": "Form",
+    "entityId": "dbed3596-4c51-434c-8c99-809754ab5d21",
+    "entityName": "MaintenanceRequest_057",
+    "displayName": "Gutierrez-Smith MaintenanceRequest",
+    "description": "Little husband live half raise activity science ahead professional book.",
+    "version": "1.1",
+    "queries": [
+      {
+        "id": "cc5f432d-49b3-4bb9-bc4f-97597bbe2289",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 3661,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "fb0ed29e-92c3-4829-83c8-6d2c929806b6",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 4462,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "9464ec1a-a773-4ba1-b8c4-f9a8b24bb6fe",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 838,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "e9a64a5e-c78e-4006-aa3f-9b128dcad65b",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 373,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-11-23T17:28:38"
+  },
+  {
+    "id": "972897ad-8045-47a7-9085-263e29367f12",
+    "name": "Music tutor Registration Form",
+    "type": "Form",
+    "entityId": "8048911f-4f97-47ab-aa7d-8f645aaea34c",
+    "entityName": "Task_090",
+    "displayName": "Norton, Spencer and Stanley Task",
+    "description": "It nature study realize stuff despite example him some development.",
+    "version": "2.0",
+    "queries": [
+      {
+        "id": "ace55d01-f125-4502-98c7-85db0d5062b2",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 1892,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5bcff348-31ff-4305-9521-468c195f481b",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2514,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "664938d7-7cc9-473a-a26e-c1bc7e0629e0",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4194,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "8e3c08a1-d850-4d39-9326-aac3fafe9df2",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 4159,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-16T05:23:21"
+  },
+  {
+    "id": "dc1f4a96-9115-4352-a8bb-97271c7e690b",
+    "name": "Programmer, systems Assessment Form",
+    "type": "Form",
+    "entityId": "3ff315db-b6cf-4f8a-bc0e-49c54f822d98",
+    "entityName": "Invoice_097",
+    "displayName": "Robertson Group Invoice",
+    "description": "Choice suggest until good country over plant case.",
+    "version": "1.0",
+    "queries": [
+      {
+        "id": "6f1bdcde-2b5c-4d34-865b-13648b11f0b6",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4650,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "6b9a9cfb-27ed-435d-b099-9d7ab9c2202b",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3614,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "925f27e8-60d8-4fd6-80b4-30ee15c1c29f",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 937,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-10-04T06:18:33"
+  },
+  {
+    "id": "8d0720cb-f7f5-4c7c-830b-d091f110bf6d",
+    "name": "Special effects artist Submission Form",
+    "type": "Form",
+    "entityId": "3de021a5-0ffc-4070-9ea6-d5e337e65595",
+    "entityName": "Tenant_098",
+    "displayName": "Welch, Perez and Taylor Tenant",
+    "description": "Major attention newspaper oil image on room design move receive nature.",
+    "version": "3.0",
+    "queries": [
+      {
+        "id": "516d0e38-280a-42f0-9b68-ea5b2ea553ce",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1247,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "23c6bb19-90da-49dc-9da1-638dcba95006",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2690,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5bb613c3-5948-4a67-978d-2a776a11059e",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 4133,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "72f32b47-d670-44ca-8a4f-e4a0d215003a",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1638,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-04-24T16:30:31"
+  },
+  {
+    "id": "c3c721b3-ac0d-48c7-8c9a-32ad37abcde7",
+    "name": "Control and instrumentation engineer Intake Form",
+    "type": "Form",
+    "entityId": "85142549-e0e2-4f69-b7aa-15bdefbfa1bb",
+    "entityName": "Appointment_066",
+    "displayName": "Rose, Fernandez and Fisher Appointment",
+    "description": "Cut power including wall boy keep play threat firm us call white.",
+    "version": "4.7",
+    "queries": [
+      {
+        "id": "35d89154-c9b5-45c8-8712-6d229c9cdd82",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4089,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "7cd40775-1cb2-4839-9646-4b34970eda10",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3564,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-12-13T02:25:36"
+  },
+  {
+    "id": "378855a0-7eb7-40c9-9ffa-3a907acf57a7",
+    "name": "TEFL teacher Assessment Form",
+    "type": "Form",
+    "entityId": "7016dd9c-72e9-47bf-bd03-887ba1348f4c",
+    "entityName": "Invoice_085",
+    "displayName": "Gray LLC Invoice",
+    "description": "Several tonight clearly school exactly amount wonder fine teacher month true.",
+    "version": "5.8",
+    "queries": [
+      {
+        "id": "850ae24a-313d-451f-adaa-554ebb3b5dd3",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 960,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5e92263b-d936-4c2a-9fdf-568ea2ed6a21",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 979,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5c3f295e-7d2c-401f-8de9-f1d95973a82d",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1890,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-24T20:54:12"
+  },
+  {
+    "id": "b3b6cfb9-ff66-456c-9fdd-9b58c5eca890",
+    "name": "Journalist, broadcasting Application Form",
+    "type": "Form",
+    "entityId": "3de021a5-0ffc-4070-9ea6-d5e337e65595",
+    "entityName": "Tenant_098",
+    "displayName": "Welch, Perez and Taylor Tenant",
+    "description": "Claim station station similar personal attack real deep company section likely.",
+    "version": "1.4",
+    "queries": [
+      {
+        "id": "132385b3-f88e-4796-a22c-1111564a86bc",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1626,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "65f5b90e-985d-423c-83f1-c6bcee9d8da8",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1493,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-21T13:37:49"
+  },
+  {
+    "id": "2d5ed923-d8f5-4d24-a223-3c07ed14cd19",
+    "name": "Physicist, medical Selection Form",
+    "type": "Form",
+    "entityId": "36c63a2f-1e1a-4684-9628-cc14fef407e6",
+    "entityName": "Case_016",
+    "displayName": "Banks, Hill and Moore Case",
+    "description": "Base product apply candidate nation sound Mr career space.",
+    "version": "4.1",
+    "queries": [
+      {
+        "id": "f65f0064-6c35-4517-98c2-948222a74a75",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1274,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "8624efd3-7b1e-473c-b4d0-79b8a77e8c39",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 4917,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "7dbe5b6f-aedb-431e-897c-58474d93c7ea",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 495,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-02-24T13:01:52"
+  },
+  {
+    "id": "15075041-e0ae-499e-be7b-553b9e56526d",
+    "name": "Corporate investment banker Request Form",
+    "type": "Form",
+    "entityId": "af2320af-534b-40f8-838a-75a66e91a5ac",
+    "entityName": "MaintenanceRequest_082",
+    "displayName": "Kim PLC MaintenanceRequest",
+    "description": "Science state five professional night drug door compare identify rest collection.",
+    "version": "3.5",
+    "queries": [
+      {
+        "id": "b930b082-17de-4aba-9619-68186ee101a9",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3920,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "c0fc9d71-ae5e-4b37-899b-e22fc630601a",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 81,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-16T18:06:37"
+  },
+  {
+    "id": "2e1c9cff-1513-4333-b434-b5f888eb0def",
+    "name": "Electronics engineer Evaluation Form",
+    "type": "Form",
+    "entityId": "b54c462e-d73a-4c8c-bcda-fdad9e1d1def",
+    "entityName": "Asset_027",
+    "displayName": "Mcclain and Sons Asset",
+    "description": "Top soldier laugh herself ask like down public sign expert simply individual so.",
+    "version": "3.1",
+    "queries": [
+      {
+        "id": "d4fec546-d2e4-49fa-a6d2-d939b802f24e",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 1460,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "5a7bb3a1-e48b-4058-9716-8b000acb0c92",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 516,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "f7ccc076-7571-4a79-adbb-d3d555fd25ce",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3651,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-06-03T10:49:17"
+  },
+  {
+    "id": "159df94c-f904-479e-bade-48094d1b58f0",
+    "name": "Trade mark attorney Assessment Form",
+    "type": "Form",
+    "entityId": "2eadb4f9-c612-47c7-82c6-54b3fcf77380",
+    "entityName": "Patient_011",
+    "displayName": "Banks Group Patient",
+    "description": "Throughout movement that age century report religious night in improve.",
+    "version": "4.4",
+    "queries": [
+      {
+        "id": "c0a12630-4ffd-4c23-818d-bf68d3e5d6ef",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 1171,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "d069717c-6a52-43d6-afa2-7cab8a79973c",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 1096,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2026-01-01T22:10:00"
+  },
+  {
+    "id": "5811e9c8-295d-4f6f-b2e8-82cf43d892d5",
+    "name": "Metallurgist Intake Form",
+    "type": "Form",
+    "entityId": "24e8ea50-bf47-4357-8ef1-493f75936780",
+    "entityName": "Opportunity_043",
+    "displayName": "Carter-Burke Opportunity",
+    "description": "Mind decide particular special personal the.",
+    "version": "2.7",
+    "queries": [
+      {
+        "id": "bbaf82aa-c1d9-446f-b7ad-c4130780055b",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 979,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "680a00e4-4763-4b2d-868e-2e61b7f63d42",
+        "name": "Overdue Items",
+        "description": "Due date < today",
+        "estimatedCount": 1687,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "a51e3990-5d9a-4ab2-a82f-cccd8ecbc154",
+        "name": "Archived",
+        "description": "Historical data",
+        "estimatedCount": 2740,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "d64d89bc-96d4-435b-a9e9-31e05dbb1397",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 551,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-09T19:56:22"
+  },
+  {
+    "id": "e3bfd42e-ad0c-4285-9efb-6e72f476b51c",
+    "name": "Engineer, manufacturing Assessment Form",
+    "type": "Form",
+    "entityId": "2292c6c0-cafa-41c0-a29a-a90b692be2b5",
+    "entityName": "MaintenanceRequest_079",
+    "displayName": "Salas Inc MaintenanceRequest",
+    "description": "Rise reflect drop ability add part number according final artist west.",
+    "version": "1.4",
+    "queries": [
+      {
+        "id": "4623220d-56bc-4b15-b891-7a866069fdbe",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 1307,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "a2030176-e485-494e-ae1d-6657a1747776",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 2709,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-04-26T23:21:47"
+  },
+  {
+    "id": "210b517c-1c06-47a3-bad2-ca2071138ef8",
+    "name": "Ranger/warden Assessment Form",
+    "type": "Form",
+    "entityId": "81ce6946-7e18-4e09-a365-48a1137c0a08",
+    "entityName": "Patient_081",
+    "displayName": "Golden, Butler and Nichols Patient",
+    "description": "Early force hard color itself seat century money involve.",
+    "version": "1.5",
+    "queries": [
+      {
+        "id": "dc4bab84-55f2-4eab-af2b-2a3357d87a65",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4081,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "232a70b5-2b91-4fc9-b2ce-2049f8eb5387",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 3450,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "fc38a39b-f313-445a-8a32-049b8ad86571",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2999,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "4624ef41-7b12-4dbb-ab0c-d4f8138757e1",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 1206,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-11-10T03:45:31"
+  },
+  {
+    "id": "b2231524-9298-45cf-b977-528342f66734",
+    "name": "Scientist, audiological Evaluation Form",
+    "type": "Form",
+    "entityId": "029d39b5-ee4f-421b-b683-e1c5d75ecb4e",
+    "entityName": "Tenant_004",
+    "displayName": "Waters and Sons Tenant",
+    "description": "Much site force brother reduce only last job give meet arm.",
+    "version": "3.3",
+    "queries": [
+      {
+        "id": "135e0c90-3db4-429b-bec4-445ddbb4812e",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 839,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "40563457-9003-4041-8762-cf116dea6999",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 700,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": false,
+    "createdAt": "2025-12-06T00:50:10"
+  },
+  {
+    "id": "7b4934e4-893f-4f5a-97ca-c6a5cce977c3",
+    "name": "Rural practice surveyor Registration Form",
+    "type": "Form",
+    "entityId": "51048ede-c902-4eee-923c-1491a73de5e4",
+    "entityName": "Tenant_048",
+    "displayName": "Zhang Inc Tenant",
+    "description": "Space leave than between employee everything.",
+    "version": "4.8",
+    "queries": [
+      {
+        "id": "4e8f7bcd-ec08-430f-9992-303330823e7c",
+        "name": "All Records",
+        "description": "No filters applied",
+        "estimatedCount": 1181,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "42fcab0a-5d58-410e-90bc-5b57841d3938",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 2925,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "8b536f7e-5d24-41fa-ad3a-ff73bbbf2d41",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 2365,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-26T09:18:14"
+  },
+  {
+    "id": "a8721cde-b3e0-4539-95c3-37903e4eeb75",
+    "name": "Chief Executive Officer Application Form",
+    "type": "Form",
+    "entityId": "0935f645-ad48-445f-9c9b-395c5911f17a",
+    "entityName": "Case_065",
+    "displayName": "Jefferson, Holland and Maddox Case",
+    "description": "Line stand station still apply behavior movie.",
+    "version": "3.5",
+    "queries": [
+      {
+        "id": "5c1774b5-9874-4db4-adef-bb483bde6920",
+        "name": "Flagged for Review",
+        "description": "Requires admin approval",
+        "estimatedCount": 4479,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "65fc6b36-9bcd-420d-bd91-104ada56ca1d",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 3138,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-05-13T08:10:56"
+  },
+  {
+    "id": "0b5f4def-dcae-4dea-9a5f-c7e7f51fb527",
+    "name": "Financial risk analyst Registration Form",
+    "type": "Form",
+    "entityId": "93f8a9be-4e69-4dba-93c6-90c78c42f4b5",
+    "entityName": "Task_014",
+    "displayName": "Wilson-Mcbride Task",
+    "description": "Big indeed nice condition production catch fall court another character look.",
+    "version": "1.6",
+    "queries": [
+      {
+        "id": "827886e2-0afa-4ecb-8e41-1f5e857f4123",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4540,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "bff40eff-e4aa-4238-84ce-084b0492f3d7",
+        "name": "Pending Approval",
+        "description": "Awaiting confirmation",
+        "estimatedCount": 4413,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "c8ffb18a-87a0-41dd-8cce-e443ffe1d242",
+        "name": "Recently Updated",
+        "description": "Modified in last 30 days",
+        "estimatedCount": 706,
+        "parameters": {
+          "filters": [],
+          "sortBy": "createdAt",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-23T20:37:31"
+  },
+  {
+    "id": "a4ee7441-efcc-4540-a623-d04698c9758c",
+    "name": "Comptroller Evaluation Form",
+    "type": "Form",
+    "entityId": "8048911f-4f97-47ab-aa7d-8f645aaea34c",
+    "entityName": "Task_090",
+    "displayName": "Norton, Spencer and Stanley Task",
+    "description": "Whose official democratic morning yourself despite family staff work.",
+    "version": "4.8",
+    "queries": [
+      {
+        "id": "361b3fab-4cbe-488c-a135-907f9b9bc1fb",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 3166,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "d549c1b9-ee71-453e-9b0a-660b72cb4a1b",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 2233,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "730bd307-35c6-4371-8ef6-ccde9ed6e111",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 2646,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-21T17:07:07"
+  },
+  {
+    "id": "fc6066ce-84c5-43dd-a3a3-a8e45d47da1f",
+    "name": "Speech and language therapist Application Form",
+    "type": "Form",
+    "entityId": "ec8f327e-a1c2-4250-8209-8794040cc54d",
+    "entityName": "Account_091",
+    "displayName": "Beltran, Anderson and Hamilton Account",
+    "description": "Thus him put industry likely actually might phone special.",
+    "version": "1.9",
+    "queries": [
+      {
+        "id": "7601f5a0-df3c-4d21-8dcc-827110105006",
+        "name": "Completed",
+        "description": "Status = completed",
+        "estimatedCount": 776,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "3cf1342f-71ca-4263-a7b9-697d1e9f7623",
+        "name": "Active Records",
+        "description": "Filter by status = active",
+        "estimatedCount": 475,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "desc"
+        }
+      },
+      {
+        "id": "0ef7e075-adb3-4a76-b26a-d53364a31b59",
+        "name": "Recent Uploads",
+        "description": "Last 7 days",
+        "estimatedCount": 302,
+        "parameters": {
+          "filters": [],
+          "sortBy": "updatedAt",
+          "sortOrder": "asc"
+        }
+      },
+      {
+        "id": "051882ba-aa0a-4168-8684-d1106d16de7c",
+        "name": "High Priority",
+        "description": "Priority level > 7",
+        "estimatedCount": 4063,
+        "parameters": {
+          "filters": [],
+          "sortBy": "name",
+          "sortOrder": "desc"
+        }
+      }
+    ],
+    "isActive": true,
+    "createdAt": "2025-09-08T07:17:23"
+  }
+]

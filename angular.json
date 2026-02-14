@@ -55,14 +55,14 @@
                                 "input": "public"
                             },
                             {
+                                "glob": "**/*",
+                                "input": "src/assets",
+                                "output": "assets"
+                            },
+                            {
                                 "glob": "_redirects",
                                 "input": "src/assets",
                                 "output": "."
-                            },
-                            {
-                                "glob": "**/*",
-                                "input": "src/assets/images",
-                                "output": "assets/images"
                             },
                             {
                                 "glob": "**/*",

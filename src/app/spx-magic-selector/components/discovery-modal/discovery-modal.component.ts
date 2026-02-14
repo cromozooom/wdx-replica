@@ -7,7 +7,7 @@ import {
   ChangeDetectorRef,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
+import { NgbActiveOffcanvas } from "@ng-bootstrap/ng-bootstrap";
 import { AgGridAngular } from "ag-grid-angular";
 import {
   ColDef,
@@ -28,17 +28,23 @@ import {
   InspectorPanelComponent,
   PreviewRefreshEvent,
 } from "./inspector-panel/inspector-panel.component";
+import { OffcanvasBreadcrumbComponent } from "../offcanvas-breadcrumb/offcanvas-breadcrumb.component";
 import { Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
 
 /**
- * Discovery Modal - Full-screen dialog for browsing all form-entity-query combinations
+ * Discovery Offcanvas - Full-screen panel for browsing all form-entity-query combinations
  * Uses ag-grid with radio-button selection for advanced lookup
  */
 @Component({
   selector: "app-discovery-modal",
   standalone: true,
-  imports: [CommonModule, AgGridAngular, InspectorPanelComponent],
+  imports: [
+    CommonModule,
+    AgGridAngular,
+    InspectorPanelComponent,
+    OffcanvasBreadcrumbComponent,
+  ],
   templateUrl: "./discovery-modal.component.html",
   styleUrls: ["./discovery-modal.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -113,8 +119,10 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
   /** ag-Grid options */
   gridOptions: GridOptions = {
     animateRows: true,
-    rowSelection: "single",
-    suppressRowClickSelection: false,
+    rowSelection: {
+      mode: "singleRow",
+      enableClickSelection: true,
+    },
     suppressCellFocus: true,
     headerHeight: 48,
     rowHeight: 48,
@@ -147,7 +155,7 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
   // ========================================
 
   constructor(
-    public activeModal: NgbActiveModal,
+    public activeOffcanvas: NgbActiveOffcanvas,
     private selectionDataService: SelectionDataService,
     private queryExecutorService: QueryExecutorService,
     private cdr: ChangeDetectorRef,
@@ -274,7 +282,7 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
    */
   confirmSelection(): void {
     if (this.selectedRow) {
-      this.activeModal.close({
+      this.activeOffcanvas.close({
         selectedRow: this.selectedRow,
         confirmed: true,
       });
@@ -282,10 +290,10 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Cancel selection and close modal
+   * Cancel selection and close offcanvas
    */
   cancel(): void {
-    this.activeModal.dismiss();
+    this.activeOffcanvas.dismiss();
   }
 
   /**

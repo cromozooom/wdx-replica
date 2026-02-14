@@ -1,17 +1,22 @@
-<div class="modal-header">
-  <h5 class="modal-title">
-    <i class="fa fa-search me-2"></i>
-    {{ data.modalTitle || "Advanced Lookup" }}
-  </h5>
-  <button
-    type="button"
-    class="btn-close"
-    aria-label="Close"
-    (click)="cancel()"
-  ></button>
+<div class="offcanvas-header">
+  <div class="d-flex flex-column flex-grow-1">
+    <div class="d-flex justify-content-between align-items-center">
+      <h5 class="offcanvas-title mb-0">
+        <i class="fa fa-search me-2"></i>
+        {{ data.modalTitle || "Advanced Lookup" }}
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="cancel()"
+      ></button>
+    </div>
+    <app-offcanvas-breadcrumb class="mt-2"></app-offcanvas-breadcrumb>
+  </div>
 </div>
 
-<div class="modal-body">
+<div class="offcanvas-body">
   <div class="mb-3 text-muted">
     <i class="fa fa-info-circle me-1"></i>
     Browse all available form-entity-query combinations. Click a row to inspect
@@ -71,20 +76,21 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal-footer">
-  <button type="button" class="btn btn-secondary" (click)="cancel()">
-    <i class="fa fa-times me-1"></i>
-    Cancel
-  </button>
-  <button
-    type="button"
-    class="btn btn-primary"
-    (click)="confirmSelection()"
-    [disabled]="!selectedRow"
-  >
-    <i class="fa fa-check me-1"></i>
-    Select
-  </button>
+  <!-- Footer Buttons -->
+  <div class="d-flex justify-content-end gap-2 mt-4 pt-3 border-top">
+    <button type="button" class="btn btn-secondary" (click)="cancel()">
+      <i class="fa fa-times me-1"></i>
+      Cancel
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="confirmSelection()"
+      [disabled]="!selectedRow"
+    >
+      <i class="fa fa-check me-1"></i>
+      Select
+    </button>
+  </div>
 </div>

@@ -5,18 +5,24 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
-import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
+import { NgbActiveOffcanvas } from "@ng-bootstrap/ng-bootstrap";
 import { SpxMagicSelectorComponent } from "../spx-magic-selector.component";
+import { OffcanvasBreadcrumbComponent } from "../offcanvas-breadcrumb/offcanvas-breadcrumb.component";
 import { SelectionChangeEvent } from "../../models/selection-change-event.interface";
 import { SavedSelection } from "../../models/saved-selection.interface";
 
 /**
- * Modal for adding a new selection
+ * Offcanvas for adding a new selection
  */
 @Component({
   selector: "app-add-selection-modal",
   standalone: true,
-  imports: [CommonModule, FormsModule, SpxMagicSelectorComponent],
+  imports: [
+    CommonModule,
+    FormsModule,
+    SpxMagicSelectorComponent,
+    OffcanvasBreadcrumbComponent,
+  ],
   templateUrl: "./add-selection-modal.component.html",
   styleUrls: ["./add-selection-modal.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -27,7 +33,7 @@ export class AddSelectionModalComponent {
   lastEvent: SelectionChangeEvent | null = null;
 
   constructor(
-    public activeModal: NgbActiveModal,
+    public activeOffcanvas: NgbActiveOffcanvas,
     private cdr: ChangeDetectorRef,
   ) {}
 
@@ -74,11 +80,11 @@ export class AddSelectionModalComponent {
       },
     };
 
-    this.activeModal.close(selection);
+    this.activeOffcanvas.close(selection);
   }
 
   cancel(): void {
-    this.activeModal.dismiss();
+    this.activeOffcanvas.dismiss();
   }
 
   private generateId(): string {
