@@ -39,6 +39,13 @@ export const routes: Routes = [
     loadChildren: () => import("./ag-grid-demo/ag-grid-demo.routes"),
   },
   {
+    path: "magic-selector",
+    loadChildren: () =>
+      import("./spx-magic-selector/spx-magic-selector.routes").then(
+        (m) => m.SPX_MAGIC_SELECTOR_ROUTES,
+      ),
+  },
+  {
     path: "",
     redirectTo: "dashboard",
     pathMatch: "full",

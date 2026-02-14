@@ -1,0 +1,11 @@
+// Add Selection Modal Component Styles
+// Note: Most styling uses Bootstrap utility classes
+:host {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // * {
+  //   outline: 1px solid red;
+  // }
+}

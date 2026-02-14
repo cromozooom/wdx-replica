@@ -48,7 +48,9 @@ export class AgGridDemoComponent implements OnInit {
   /** ag-Grid options */
   gridOptions: GridOptions = {
     animateRows: true,
-    rowSelection: "single",
+    rowSelection: {
+      mode: "singleRow",
+    },
   };
 
   constructor(private mockDataService: MockDataService) {}

@@ -106,7 +106,9 @@ describe("AgGridDemoComponent", () => {
     it("should have grid options configured", () => {
       expect(component.gridOptions).toBeDefined();
       expect(component.gridOptions.animateRows).toBe(true);
-      expect(component.gridOptions.rowSelection).toBe("single");
+      expect(component.gridOptions.rowSelection).toEqual({
+        mode: "singleRow",
+      });
     });
   });
 });

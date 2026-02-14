@@ -1,0 +1,16 @@
+[
+  {
+    "domainId": "crm-scheduling",
+    "name": "CRM & Scheduling",
+    "description": "Customer relationship management and appointment scheduling system",
+    "isActive": true,
+    "entities": []
+  },
+  {
+    "domainId": "document-management",
+    "name": "Document Management",
+    "description": "Document storage, versioning, and compliance tracking",
+    "isActive": true,
+    "entities": []
+  }
+]

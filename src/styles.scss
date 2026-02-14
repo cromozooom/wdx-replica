@@ -64,6 +64,7 @@
 // scss-docs-end import-stack
 @import "ngx-diff.scss";
 @import "../node_modules/@ng-select/ng-select/themes/default.theme.css";
+@import "offcanvas-z-index.scss";
 body,
 html {
   width: 100%;
@@ -77,10 +78,10 @@ html {
   width: 100%;
 }
 
-.offcanvas-end {
-  width: 90vw !important;
-  max-width: 90vw !important;
-}
+// .offcanvas-end {
+//   width: 90vw !important;
+//   max-width: 90vw !important;
+// }
 
 .separator {
   background-color: var(--bs-gray-400);

@@ -1,0 +1,104 @@
+<div class="spx-magic-selector">
+  <!-- Selector Row with Dropdown and Advanced Lookup Button -->
+  <div class="row g-2 align-items-start">
+    <div class="col">
+      <ng-select
+        [items]="availableRows$ | async"
+        bindLabel="sourceName"
+        [placeholder]="placeholder"
+        [disabled]="disabled || readonly"
+        [clearable]="!readonly"
+        [searchable]="true"
+        [(ngModel)]="selectedRow"
+        (ngModelChange)="onSelectionChange($event)"
+        (search)="onSearch($event.term)"
+        notFoundText="No results found"
+        class="w-100"
+      >
+        <ng-template ng-label-tmp let-item="item">
+          <div class="d-flex align-items-center">
+            <span
+              class="badge me-2"
+              [ngClass]="
+                item.originalItem.type === 'Form' ? 'bg-primary' : 'bg-success'
+              "
+            >
+              {{ item.originalItem.type }}
+            </span>
+            <span
+              >{{ item.sourceName }} – <em>{{ item.queryName }}</em></span
+            >
+          </div>
+        </ng-template>
+
+        <ng-template ng-option-tmp let-item="item" let-index="index">
+          <div class="d-flex flex-column py-1">
+            <div class="d-flex align-items-center mb-1">
+              <span
+                class="badge me-2"
+                [ngClass]="
+                  item.originalItem.type === 'Form'
+                    ? 'bg-primary'
+                    : 'bg-success'
+                "
+              >
+                {{ item.originalItem.type }}
+              </span>
+              <strong>{{ item.sourceName }}</strong>
+              <span class="ms-2 text-muted"
+                >/ <em>{{ item.queryName }}</em></span
+              >
+            </div>
+            <div class="text-muted small ms-2">
+              <span class="me-2">
+                <i class="fa fa-database"></i> {{ item.entityName }}
+              </span>
+              <span>
+                <i class="fa fa-chart-bar"></i> ~{{
+                  item.estimatedRecords
+                }}
+                records
+              </span>
+            </div>
+            <div
+              *ngIf="item.queryDescription"
+              class="text-muted small ms-2 mt-1"
+            >
+              {{ item.queryDescription }}
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template ng-notfound-tmp let-searchTerm="searchTerm">
+          <div class="text-center text-muted p-3">
+            <i class="fa fa-search mb-2"></i>
+            <p class="mb-0">No results found for "{{ searchTerm }}"</p>
+            <small>Try searching with different terms</small>
+          </div>
+        </ng-template>
+      </ng-select>
+    </div>
+
+    <!-- Advanced Lookup Button -->
+    <div class="col-auto">
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        (click)="openDiscoveryModal()"
+        [disabled]="disabled"
+        title="Open advanced lookup"
+      >
+        <i class="fa fa-th-list me-1"></i>
+        Advanced
+      </button>
+    </div>
+  </div>
+
+  <!-- Preview Container -->
+  <app-preview-container
+    [selectedItem]="(selectedRow$ | async)?.originalItem || null"
+    [selectedQuery]="(selectedRow$ | async)?.queryRef || null"
+    [showRecordCount]="true"
+  >
+  </app-preview-container>
+</div>
