@@ -1,0 +1,231 @@
+<div class="inspector-panel h-100">
+  <!-- Empty State -->
+  <div *ngIf="!inspectedRow" class="card h-100">
+    <div
+      class="card-body d-flex align-items-center justify-content-center text-muted"
+    >
+      <div class="text-center">
+        <p class="mb-0">Click a row to inspect query details</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inspected Row Data -->
+  <div *ngIf="inspectedRow" class="card h-100">
+    <!-- Header -->
+    <div
+      class="card-header bg-info text-white d-flex justify-content-between align-items-center"
+    >
+      <h6 class="mb-0">Query Inspector</h6>
+      <button
+        type="button"
+        class="btn btn-sm btn-outline-light"
+        (click)="clearInspection()"
+        title="Clear inspection"
+      >
+        ×
+      </button>
+    </div>
+
+    <!-- Body with scrollable content -->
+    <div class="card-body overflow-auto">
+      <!-- Query Metadata -->
+      <div class="mb-3">
+        <h6 class="text-primary">Query Information</h6>
+        <dl class="row mb-0">
+          <dt class="col-sm-4">Source:</dt>
+          <dd class="col-sm-8">{{ inspectedRow.sourceName }}</dd>
+
+          <dt class="col-sm-4">Entity:</dt>
+          <dd class="col-sm-8">{{ inspectedRow.entityName }}</dd>
+
+          <dt class="col-sm-4">Query:</dt>
+          <dd class="col-sm-8">{{ inspectedRow.queryName }}</dd>
+
+          <dt class="col-sm-4">Description:</dt>
+          <dd class="col-sm-8">{{ inspectedRow.queryDescription }}</dd>
+        </dl>
+      </div>
+
+      <hr />
+
+      <!-- Query Parameters -->
+      <div class="mb-3" *ngIf="queryParameters">
+        <h6 class="text-primary">Query Parameters</h6>
+
+        <!-- Filters -->
+        <div
+          *ngIf="queryParameters.filters && queryParameters.filters.length > 0"
+          class="mb-2"
+        >
+          <strong>Filters:</strong>
+          <ul class="list-unstyled ms-3 mb-0">
+            <li *ngFor="let filter of queryParameters.filters" class="mb-1">
+              <span class="badge bg-secondary me-1">{{ filter.field }}</span>
+              <span class="text-muted">{{ filter.operator }}</span>
+              <span class="fw-bold ms-1">{{ formatValue(filter.value) }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Date Range -->
+        <div *ngIf="queryParameters.dateRange" class="mb-2">
+          <strong>Date Range:</strong>
+          <div class="ms-3">
+            <span class="text-muted">From:</span>
+            {{ formatValue(queryParameters.dateRange.start) }}
+            <span class="text-muted ms-2">To:</span>
+            {{ formatValue(queryParameters.dateRange.end) }}
+          </div>
+        </div>
+
+        <!-- Status Filters -->
+        <div
+          *ngIf="
+            queryParameters.statusFilters &&
+            queryParameters.statusFilters.length > 0
+          "
+          class="mb-2"
+        >
+          <strong>Status:</strong>
+          <span
+            *ngFor="let status of queryParameters.statusFilters"
+            class="badge bg-primary ms-1"
+          >
+            {{ status }}
+          </span>
+        </div>
+
+        <!-- Sort By -->
+        <div *ngIf="queryParameters.sortBy" class="mb-2">
+          <strong>Sort By:</strong>
+          <span class="ms-1">{{ queryParameters.sortBy.field }}</span>
+          <span class="text-muted ms-1"
+            >({{ queryParameters.sortBy.direction }})</span
+          >
+        </div>
+      </div>
+
+      <!-- No Parameters Message -->
+      <div
+        *ngIf="
+          !queryParameters ||
+          (!queryParameters.filters?.length &&
+            !queryParameters.dateRange &&
+            !queryParameters.statusFilters?.length &&
+            !queryParameters.sortBy)
+        "
+        class="mb-3"
+      >
+        <p class="text-muted fst-italic">
+          No additional query parameters defined
+        </p>
+      </div>
+
+      <hr />
+
+      <!-- Data Preview Section -->
+      <div class="mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h6 class="text-primary mb-0">Data Preview</h6>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-primary"
+            (click)="refreshPreview()"
+            [disabled]="loading"
+          >
+            <span *ngIf="!loading">Refresh</span>
+            <span
+              *ngIf="loading"
+              class="spinner-border spinner-border-sm"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- Record Count Badge -->
+        <div class="mb-2">
+          <span
+            class="badge"
+            [ngClass]="
+              inspectedRow.estimatedRecords === 0 ? 'bg-warning' : 'bg-success'
+            "
+          >
+            {{ getRecordCountMessage() }}
+          </span>
+        </div>
+
+        <!-- Loading State -->
+        <div *ngIf="loading" class="text-center py-3">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading preview data...</span>
+          </div>
+          <p class="text-muted mt-2">Loading preview data...</p>
+        </div>
+
+        <!-- Error State -->
+        <div *ngIf="error && !loading" class="alert alert-danger" role="alert">
+          <strong>Error:</strong> {{ error }}
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-danger ms-2"
+            (click)="refreshPreview()"
+          >
+            Retry
+          </button>
+        </div>
+
+        <!-- No Results -->
+        <div
+          *ngIf="
+            !loading &&
+            !error &&
+            previewData.length === 0 &&
+            inspectedRow.estimatedRecords === 0
+          "
+          class="alert alert-warning"
+          role="alert"
+        >
+          No records match this query
+        </div>
+
+        <!-- Preview Data Table -->
+        <div
+          *ngIf="!loading && !error && previewData.length > 0"
+          class="table-responsive"
+        >
+          <table class="table table-sm table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th *ngFor="let key of getPreviewRecordKeys(previewData[0])">
+                  {{ key }}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let record of previewData">
+                <td *ngFor="let key of getPreviewRecordKeys(record)">
+                  {{ formatValue(record.displayData[key]) }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Large Dataset Notification -->
+        <div
+          *ngIf="!loading && !error && inspectedRow.estimatedRecords > 10000"
+          class="alert alert-info mt-2"
+          role="alert"
+        >
+          <small>
+            This query returns a large dataset. Only the first 5 records are
+            shown for preview purposes.
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

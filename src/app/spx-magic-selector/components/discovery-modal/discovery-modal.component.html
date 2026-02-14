@@ -1,0 +1,84 @@
+<div class="discovery-modal">
+  <h2 mat-dialog-title>
+    <i class="fa fa-search me-2"></i>
+    {{ data.modalTitle || "Advanced Lookup" }}
+  </h2>
+
+  <mat-dialog-content class="mat-typography">
+    <div class="mb-3 text-muted">
+      <i class="fa fa-info-circle me-1"></i>
+      Browse all available form-entity-query combinations. Click a row to
+      inspect data preview, or double-click to confirm selection.
+    </div>
+
+    <!-- Main Content: Grid + Inspector Panel -->
+    <div class="row">
+      <!-- Left Side: ag-Grid -->
+      <div class="col-md-7">
+        <div class="grid-container">
+          <ag-grid-angular
+            class="ag-theme-alpine w-100"
+            style="height: 60vh"
+            [rowData]="rowData"
+            [columnDefs]="columnDefs"
+            [defaultColDef]="defaultColDef"
+            [gridOptions]="gridOptions"
+            [getRowId]="getRowId"
+            (gridReady)="onGridReady($event)"
+            (rowClicked)="onRowClicked($event)"
+            (rowDoubleClicked)="onRowDoubleClicked($event)"
+          >
+          </ag-grid-angular>
+        </div>
+      </div>
+
+      <!-- Right Side: Inspector Panel -->
+      <div class="col-md-5">
+        <app-inspector-panel
+          [inspectedRow]="selectedRow"
+          [previewData]="previewData"
+          [queryParameters]="queryParameters"
+          [loading]="previewLoading"
+          [error]="previewError"
+          (previewRefresh)="onPreviewRefresh($event)"
+        ></app-inspector-panel>
+      </div>
+    </div>
+
+    <!-- Selection Info -->
+    <div class="mt-3 p-3 bg-light rounded" *ngIf="selectedRow">
+      <div class="row">
+        <div class="col-md-4">
+          <label class="text-muted small mb-1">Selected Item</label>
+          <div>
+            <strong>{{ selectedRow.sourceName }}</strong>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label class="text-muted small mb-1">Entity</label>
+          <div>{{ selectedRow.entityName }}</div>
+        </div>
+        <div class="col-md-4">
+          <label class="text-muted small mb-1">Query</label>
+          <div>{{ selectedRow.queryName }}</div>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end" class="p-3">
+    <button mat-button (click)="cancel()" class="btn btn-secondary me-2">
+      <i class="fa fa-times me-1"></i>
+      Cancel
+    </button>
+    <button
+      mat-button
+      (click)="confirmSelection()"
+      [disabled]="!selectedRow"
+      class="btn btn-primary"
+    >
+      <i class="fa fa-check me-1"></i>
+      Select
+    </button>
+  </mat-dialog-actions>
+</div>
