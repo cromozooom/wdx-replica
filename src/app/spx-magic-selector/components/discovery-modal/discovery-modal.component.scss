@@ -1,2 +1,27 @@
 // Empty SCSS file - all styling uses Bootstrap utility classes
 // This file exists for Angular CLI tooling compatibility only
+:host {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // * {
+  //   outline: 1px solid red;
+  // }
+}
+
+// Hide selection checkbox on AG Grid group rows
+::ng-deep .ag-row-group .ag-selection-checkbox {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+// Ensure group rows don't show selection styling
+::ng-deep .ag-row-group.ag-row-selected {
+  background-color: transparent !important;
+}
+
+// Keep normal selection styling for leaf rows
+::ng-deep .ag-row:not(.ag-row-group).ag-row-selected {
+  background-color: var(--ag-selected-row-background-color, #b7e4ff) !important;
+}

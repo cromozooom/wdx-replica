@@ -11,3 +11,10 @@ pre {
   --bs-offcanvas-width: 95vw; /* Default fallback */
   width: var(--bs-offcanvas-width) !important;
 }
+
+:host {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

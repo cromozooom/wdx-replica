@@ -6,10 +6,31 @@ import {
   OnChanges,
   SimpleChanges,
   ChangeDetectionStrategy,
+  TemplateRef,
+  inject,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
+import { AgGridAngular } from "ag-grid-angular";
+import { ColDef, GridOptions, ModuleRegistry } from "ag-grid-community";
+import { RowGroupingPanelModule } from "ag-grid-enterprise";
+import { ColumnsToolPanelModule } from "ag-grid-enterprise";
+import { FiltersToolPanelModule } from "ag-grid-enterprise";
+import { SetFilterModule } from "ag-grid-enterprise";
+import { OffcanvasStackService } from "../../../services/offcanvas-stack.service";
+
+// Register AG Grid modules for preview grid
+ModuleRegistry.registerModules([
+  RowGroupingPanelModule,
+  ColumnsToolPanelModule,
+  FiltersToolPanelModule,
+  SetFilterModule,
+]);
+
+import { OffcanvasBreadcrumbComponent } from "../../offcanvas-breadcrumb/offcanvas-breadcrumb.component";
 import { FlatSelectionRow } from "../../../models/flat-selection-row.interface";
-import { PreviewRecord } from "../../../models/preview-record.interface";
+import { PreviewRecord } from "../../../models/three-call-api.interface";
 import { QueryParameters } from "../../../models/query-parameters.interface";
 
 /**
@@ -38,12 +59,19 @@ export interface ParameterChangeEvent {
 @Component({
   selector: "app-inspector-panel",
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    AgGridAngular,
+    OffcanvasBreadcrumbComponent,
+  ],
   templateUrl: "./inspector-panel.component.html",
   styleUrls: ["./inspector-panel.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InspectorPanelComponent implements OnChanges {
+  private offcanvasService = inject(NgbOffcanvas);
+  private offcanvasStackService = inject(OffcanvasStackService);
   // ========================================
   // Input Properties
   // ========================================
@@ -62,6 +90,65 @@ export class InspectorPanelComponent implements OnChanges {
 
   /** Error message if data fetch fails */
   @Input() error?: string;
+
+  // ========================================
+  // AG Grid Configuration
+  // ========================================
+
+  /** Column definitions for preview grid */
+  previewColumnDefs: ColDef[] = [];
+
+  /** Grid options for preview data */
+  previewGridOptions: GridOptions = {
+    suppressCellFocus: true,
+    suppressRowClickSelection: true,
+    enableCellTextSelection: true,
+    ensureDomOrder: true,
+    rowGroupPanelShow: "always",
+    groupDisplayType: "multipleColumns",
+    sideBar: {
+      toolPanels: [
+        {
+          id: "columns",
+          labelDefault: "Columns",
+          labelKey: "columns",
+          iconKey: "columns",
+          toolPanel: "agColumnsToolPanel",
+          toolPanelParams: {
+            suppressRowGroups: false,
+            suppressValues: false,
+            suppressPivots: true,
+            suppressPivotMode: true,
+          },
+        },
+        {
+          id: "filters",
+          labelDefault: "Filters",
+          labelKey: "filters",
+          iconKey: "filter",
+          toolPanel: "agFiltersToolPanel",
+        },
+      ],
+      defaultToolPanel: "",
+    },
+  };
+
+  /** Default column definition */
+  defaultColDef: ColDef = {
+    sortable: true,
+    filter: true,
+    floatingFilter: true,
+    resizable: true,
+    autoHeight: true,
+    wrapText: true,
+    enableRowGroup: true,
+  };
+
+  /** Quick filter text for preview grid search */
+  previewQuickFilterText = "";
+
+  /** Preview grid API reference */
+  private previewGridApi: any;
 
   // ========================================
   // Output Events
@@ -86,6 +173,31 @@ export class InspectorPanelComponent implements OnChanges {
         timestamp: new Date(),
       });
     }
+
+    // Update column definitions when preview data changes
+    if (changes["previewData"] && this.previewData.length > 0) {
+      this.generatePreviewColumns();
+    }
+  }
+
+  /**
+   * Generate AG Grid column definitions from preview data
+   */
+  private generatePreviewColumns(): void {
+    if (this.previewData.length === 0) {
+      this.previewColumnDefs = [];
+      return;
+    }
+
+    const firstRecord = this.previewData[0];
+    const keys = Object.keys(firstRecord);
+
+    this.previewColumnDefs = keys.map((key) => ({
+      field: key,
+      headerName: key,
+      filter: "agTextColumnFilter",
+      valueFormatter: (params: any) => this.formatValue(params.value),
+    }));
   }
 
   // ========================================
@@ -115,10 +227,81 @@ export class InspectorPanelComponent implements OnChanges {
   }
 
   /**
+   * Handle preview grid ready event
+   */
+  onPreviewGridReady(params: any): void {
+    this.previewGridApi = params.api;
+  }
+
+  /**
+   * Handle quick filter change for preview grid
+   */
+  onPreviewQuickFilterChanged(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    this.previewQuickFilterText = target.value;
+    if (this.previewGridApi) {
+      this.previewGridApi.setQuickFilter(this.previewQuickFilterText);
+    }
+  }
+
+  /**
+   * Clear preview quick filter
+   */
+  clearPreviewQuickFilter(): void {
+    this.previewQuickFilterText = "";
+    if (this.previewGridApi) {
+      this.previewGridApi.setQuickFilter("");
+    }
+  }
+
+  /**
+   * Open data preview in separate offcanvas
+   */
+  openDataPreview(content: TemplateRef<any>): void {
+    const nextWidth = this.offcanvasStackService.getNextOffcanvasWidth();
+    const { zIndex, backdropZIndex } =
+      this.offcanvasStackService.getNextZIndexes();
+
+    const offcanvasRef = this.offcanvasService.open(content, {
+      position: "end",
+      backdrop: true,
+      scroll: true,
+      panelClass: "offcanvas-dynamic-width",
+    });
+
+    // Set the dynamic width and z-index using CSS custom properties
+    setTimeout(() => {
+      const offcanvasElements = document.querySelectorAll(".offcanvas.show");
+      const offcanvasElement = offcanvasElements[
+        offcanvasElements.length - 1
+      ] as HTMLElement;
+
+      // Find the corresponding backdrop
+      const backdropElements = document.querySelectorAll(".offcanvas-backdrop");
+      const backdropElement = backdropElements[
+        backdropElements.length - 1
+      ] as HTMLElement;
+
+      if (offcanvasElement) {
+        offcanvasElement.style.setProperty("--bs-offcanvas-width", nextWidth);
+        offcanvasElement.style.zIndex = zIndex.toString();
+      }
+
+      if (backdropElement) {
+        backdropElement.style.zIndex = backdropZIndex.toString();
+      }
+    }, 0);
+
+    // Register this offcanvas in the stack
+    this.offcanvasStackService.registerOffcanvas("Data Preview", offcanvasRef);
+  }
+
+  /**
    * Get display keys for preview record
    */
   getPreviewRecordKeys(record: PreviewRecord): string[] {
-    return Object.keys(record.displayData || {});
+    // three-call-api PreviewRecord has fields directly on the object
+    return Object.keys(record || {});
   }
 
   /**

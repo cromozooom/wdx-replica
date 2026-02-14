@@ -1,7 +1,13 @@
-import { Injectable } from "@angular/core";
-import { Observable, of, delay, throwError } from "rxjs";
+import { Injectable, inject } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Observable, of, delay, throwError, catchError, map } from "rxjs";
 import { Query } from "../models/query.interface";
-import { PreviewRecord } from "../models/preview-record.interface";
+import {
+  PreviewDataResponse,
+  PreviewRecord,
+} from "../models/three-call-api.interface";
+import { FlatSelectionRow } from "../models/flat-selection-row.interface";
+import { SelectionDataService } from "./selection-data.service";
 
 /**
  * Service for executing queries and calculating record counts
@@ -11,6 +17,8 @@ import { PreviewRecord } from "../models/preview-record.interface";
   providedIn: "root",
 })
 export class QueryExecutorService {
+  private http = inject(HttpClient);
+  private selectionDataService = inject(SelectionDataService);
   /**
    * Get record count for a query
    * Returns exact count for <1000 records, approximate (±10%) for larger datasets
@@ -38,17 +46,36 @@ export class QueryExecutorService {
 
   /**
    * Get preview data for a query (first 5 records)
-   * @param query Query to execute
+   * Loads from API using entityId and queryId
+   * @param row FlatSelectionRow containing query and entity info
    * @returns Observable of preview records
    */
-  getPreviewData(query: Query): Observable<PreviewRecord[]> {
-    // Return existing preview data or empty array
-    const previewData = query.previewData || [];
+  getPreviewData(row: FlatSelectionRow): Observable<PreviewRecord[]> {
+    const entityId = row.originalItem.entityId;
+    const queryId = row.queryRef.id;
 
-    // Simulate network latency (150-250ms)
-    const latency = Math.random() * 100 + 150;
+    console.log(
+      `🔍 [QueryExecutor] Loading preview data for ${entityId} / ${queryId}`,
+    );
 
-    return of(previewData).pipe(delay(latency));
+    return this.selectionDataService.getPreviewData(entityId, queryId).pipe(
+      map((response) => {
+        if (!response || !response.records) {
+          console.warn(
+            `⚠️ [QueryExecutor] No preview data for ${entityId} / ${queryId}`,
+          );
+          return [];
+        }
+        console.log(
+          `✅ [QueryExecutor] Loaded ${response.records.length} preview records`,
+        );
+        return response.records;
+      }),
+      catchError((error) => {
+        console.error(`❌ [QueryExecutor] Failed to load preview data:`, error);
+        return of([]);
+      }),
+    );
   }
 
   /**

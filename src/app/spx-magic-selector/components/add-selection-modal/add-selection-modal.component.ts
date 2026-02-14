@@ -10,6 +10,7 @@ import { SpxMagicSelectorComponent } from "../spx-magic-selector.component";
 import { OffcanvasBreadcrumbComponent } from "../offcanvas-breadcrumb/offcanvas-breadcrumb.component";
 import { SelectionChangeEvent } from "../../models/selection-change-event.interface";
 import { SavedSelection } from "../../models/saved-selection.interface";
+import { DOMAIN_TYPES } from "../../models/domain-types.constants";
 
 /**
  * Offcanvas for adding a new selection
@@ -31,6 +32,10 @@ export class AddSelectionModalComponent {
   selectedDomain = "crm-scheduling";
   selectionName = "";
   lastEvent: SelectionChangeEvent | null = null;
+
+  // Expose domain types for template
+  readonly domainTypes = DOMAIN_TYPES;
+  readonly domainTypeKeys = Object.keys(DOMAIN_TYPES);
 
   constructor(
     public activeOffcanvas: NgbActiveOffcanvas,

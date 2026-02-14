@@ -3,13 +3,13 @@
   <div class="row g-2 align-items-start">
     <div class="col">
       <ng-select
-        [items]="availableItems$ | async"
-        bindLabel="name"
+        [items]="availableRows$ | async"
+        bindLabel="sourceName"
         [placeholder]="placeholder"
         [disabled]="disabled || readonly"
         [clearable]="!readonly"
         [searchable]="true"
-        [(ngModel)]="selectedItem"
+        [(ngModel)]="selectedRow"
         (ngModelChange)="onSelectionChange($event)"
         (search)="onSearch($event.term)"
         notFoundText="No results found"
@@ -19,11 +19,15 @@
           <div class="d-flex align-items-center">
             <span
               class="badge me-2"
-              [ngClass]="item.type === 'Form' ? 'bg-primary' : 'bg-success'"
+              [ngClass]="
+                item.originalItem.type === 'Form' ? 'bg-primary' : 'bg-success'
+              "
             >
-              {{ item.type }}
+              {{ item.originalItem.type }}
             </span>
-            <span>{{ item.name }}</span>
+            <span
+              >{{ item.sourceName }} – <em>{{ item.queryName }}</em></span
+            >
           </div>
         </ng-template>
 
@@ -32,23 +36,35 @@
             <div class="d-flex align-items-center mb-1">
               <span
                 class="badge me-2"
-                [ngClass]="item.type === 'Form' ? 'bg-primary' : 'bg-success'"
+                [ngClass]="
+                  item.originalItem.type === 'Form'
+                    ? 'bg-primary'
+                    : 'bg-success'
+                "
               >
-                {{ item.type }}
+                {{ item.originalItem.type }}
               </span>
-              <strong>{{ item.name }}</strong>
+              <strong>{{ item.sourceName }}</strong>
+              <span class="ms-2 text-muted"
+                >/ <em>{{ item.queryName }}</em></span
+              >
             </div>
             <div class="text-muted small ms-2">
               <span class="me-2">
                 <i class="fa fa-database"></i> {{ item.entityName }}
               </span>
-              <span *ngIf="item.queries?.length">
-                <i class="fa fa-filter"></i> {{ item.queries.length }}
-                {{ item.queries.length === 1 ? "query" : "queries" }}
+              <span>
+                <i class="fa fa-chart-bar"></i> ~{{
+                  item.estimatedRecords
+                }}
+                records
               </span>
             </div>
-            <div *ngIf="item.description" class="text-muted small ms-2 mt-1">
-              {{ item.description }}
+            <div
+              *ngIf="item.queryDescription"
+              class="text-muted small ms-2 mt-1"
+            >
+              {{ item.queryDescription }}
             </div>
           </div>
         </ng-template>
@@ -80,8 +96,8 @@
 
   <!-- Preview Container -->
   <app-preview-container
-    [selectedItem]="selectedItem$ | async"
-    [selectedQuery]="selectedQuery$ | async"
+    [selectedItem]="(selectedRow$ | async)?.originalItem || null"
+    [selectedQuery]="(selectedRow$ | async)?.queryRef || null"
     [showRecordCount]="true"
   >
   </app-preview-container>

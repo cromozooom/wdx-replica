@@ -10,22 +10,35 @@ describe("DiscoveryModalComponent", () => {
   let mockActiveModal: jasmine.SpyObj<NgbActiveModal>;
   let mockSelectionDataService: jasmine.SpyObj<SelectionDataService>;
 
+  const mockSelectionItem = {
+    id: "test-item-1",
+    type: "Form" as const,
+    name: "Test Form",
+    entityName: "TestEntity",
+    entityId: "entity-testentity",
+    queries: [
+      {
+        id: "query-1",
+        name: "Test Query",
+        description: "Test description",
+        parameters: { filters: [] },
+        estimatedCount: 100,
+      },
+    ],
+  };
+
   const mockDialogData = {
     availableItems: [
       {
-        id: "test-item-1",
-        type: "Form" as const,
-        name: "Test Form",
+        uniqueId: "test-item-1_query-1",
+        sourceName: "Test Form",
         entityName: "TestEntity",
-        queries: [
-          {
-            id: "query-1",
-            name: "Test Query",
-            description: "Test description",
-            parameters: { filters: [] },
-            estimatedCount: 100,
-          },
-        ],
+        queryName: "Test Query",
+        queryDescription: "Test description",
+        estimatedRecords: 100,
+        queryRef: mockSelectionItem.queries[0],
+        originalItem: mockSelectionItem,
+        isSelected: false,
       },
     ],
     domainSchema: {
@@ -47,21 +60,6 @@ describe("DiscoveryModalComponent", () => {
       "flattenToGridRows",
     ]);
 
-    // Mock flattened rows
-    mockSelectionDataService.flattenToGridRows.and.returnValue([
-      {
-        uniqueId: "test-item-1-query-1",
-        sourceName: "Test Form",
-        entityName: "TestEntity",
-        queryName: "Test Query",
-        queryDescription: "Test description",
-        estimatedRecords: 100,
-        queryRef: mockDialogData.availableItems[0].queries[0],
-        originalItem: mockDialogData.availableItems[0],
-        isSelected: false,
-      },
-    ]);
-
     await TestBed.configureTestingModule({
       imports: [DiscoveryModalComponent, NoopAnimationsModule],
       providers: [
@@ -80,11 +78,9 @@ describe("DiscoveryModalComponent", () => {
     expect(component).toBeTruthy();
   });
 
-  it("should flatten items into grid rows on init", () => {
-    expect(mockSelectionDataService.flattenToGridRows).toHaveBeenCalledWith(
-      mockDialogData.availableItems,
-    );
+  it("should use already-flattened items as grid rows on init", () => {
     expect(component.rowData.length).toBe(1);
+    expect(component.rowData[0].uniqueId).toBe("test-item-1_query-1");
   });
 
   it("should close dialog with result on confirmSelection", () => {

@@ -50,6 +50,7 @@ Thumbs.db
 
 # Mock API Data (generated files)
 mock_api_data/
+src/assets/magic-selector-data/*.json
 
 # Python
 *.pyc

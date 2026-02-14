@@ -17,64 +17,8 @@ import { takeUntil } from "rxjs/operators";
   selector: "app-offcanvas-breadcrumb",
   standalone: true,
   imports: [CommonModule],
-  template: `
-    <nav aria-label="Offcanvas breadcrumb" *ngIf="breadcrumbs.length > 1">
-      <ol class="breadcrumb mb-0">
-        <li
-          *ngFor="let crumb of breadcrumbs; let last = last"
-          class="breadcrumb-item"
-          [class.active]="crumb.isActive"
-        >
-          <button
-            *ngIf="!crumb.isActive"
-            type="button"
-            class="btn btn-link p-0 text-decoration-none breadcrumb-btn"
-            (click)="navigateToLevel(crumb.level)"
-            [attr.aria-label]="'Navigate to ' + crumb.title"
-          >
-            {{ crumb.title }}
-          </button>
-          <span *ngIf="crumb.isActive" aria-current="page">
-            {{ crumb.title }}
-          </span>
-        </li>
-      </ol>
-    </nav>
-  `,
-  styles: [
-    `
-      .breadcrumb {
-        font-size: 0.875rem;
-        background: transparent;
-        padding: 0;
-      }
-
-      .breadcrumb-item {
-        color: var(--bs-secondary);
-      }
-
-      .breadcrumb-item.active {
-        color: var(--bs-body-color);
-        font-weight: 500;
-      }
-
-      .breadcrumb-btn {
-        color: inherit !important;
-        font-size: inherit;
-        line-height: inherit;
-      }
-
-      .breadcrumb-btn:hover {
-        color: var(--bs-primary) !important;
-        text-decoration: underline !important;
-      }
-
-      .breadcrumb-item + .breadcrumb-item::before {
-        content: var(--bs-breadcrumb-divider, "/");
-        color: var(--bs-secondary);
-      }
-    `,
-  ],
+  templateUrl: "./offcanvas-breadcrumb.component.html",
+  styleUrls: ["./offcanvas-breadcrumb.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OffcanvasBreadcrumbComponent implements OnInit, OnDestroy {

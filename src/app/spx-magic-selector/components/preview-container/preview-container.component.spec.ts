@@ -96,6 +96,7 @@ describe("PreviewContainerComponent", () => {
       type: "Form",
       name: "Test Form",
       entityName: "TestEntity",
+      entityId: "entity-testentity",
       queries: [],
     };
 

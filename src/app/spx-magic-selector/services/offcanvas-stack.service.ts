@@ -23,7 +23,7 @@ export class OffcanvasStackService {
   private readonly BASE_WIDTH = 95; // Starting width in vw
   private readonly WIDTH_DECREMENT = 2; // Decrease by 2vw for each level
   private readonly MIN_WIDTH = 50; // Minimum width in vw
-  private readonly BASE_Z_INDEX = 1050; // Base z-index for offcanvas
+  private readonly BASE_Z_INDEX = 1100; // Base z-index for offcanvas (above ng-select)
   private readonly Z_INDEX_INCREMENT = 10; // Increment z-index by 10 for each level
 
   private stack: OffcanvasStackItem[] = [];

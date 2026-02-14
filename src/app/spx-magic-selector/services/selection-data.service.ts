@@ -1,23 +1,38 @@
 import { Injectable, inject } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { Observable, of, delay, map, catchError, shareReplay } from "rxjs";
+import {
+  Observable,
+  of,
+  delay,
+  map,
+  catchError,
+  shareReplay,
+  BehaviorSubject,
+  combineLatest,
+  switchMap,
+  throwError,
+} from "rxjs";
 import { SelectionItem } from "../models/selection-item.interface";
 import { DomainSchema } from "../models/domain-schema.interface";
 import { Query } from "../models/query.interface";
+import { QueryParameters } from "../models/query-parameters.interface";
 import { FlatSelectionRow } from "../models/flat-selection-row.interface";
 import {
-  ALL_DOMAINS,
-  ALL_SELECTION_ITEMS_BY_DOMAIN,
-} from "./mock-data.constants";
+  FormSummary,
+  FormMetadata,
+  PreviewDataResponse,
+  QuerySummary,
+} from "../models/three-call-api.interface";
 
 /**
- * Service providing access to selection items and domain schemas
+ * Service providing access to selection items using Three-Call API Strategy
  *
- * Data Source Options:
- * 1. USE_GENERATED_JSON_DATA = true: Loads from /assets/magic-selector-data/ (200 items, realistic data)
- * 2. USE_GENERATED_JSON_DATA = false: Uses in-memory mock data constants (legacy)
+ * Data Loading Strategy:
+ * 1. Call A: Load form-summaries.json for dropdown population (lightweight)
+ * 2. Call B: Load form-metadata.json when form is selected (with queries)
+ * 3. Call C: Load preview-data-*.json when query is selected (actual data)
  *
- * Toggle the USE_GENERATED_JSON_DATA flag below to switch between data sources.
+ * This approach mimics production APIs for better scalability and performance.
  */
 @Injectable({
   providedIn: "root",
@@ -26,277 +41,415 @@ export class SelectionDataService {
   private http = inject(HttpClient);
 
   /**
-   * FEATURE TOGGLE: Set to true to use generated JSON data from assets/magic-selector-data/
-   * Set to false to use legacy mock data constants (backward compatibility)
+   * FEATURE TOGGLE: Set to true to use new Three-Call API pattern
+   * Set to false to use legacy monolithic approach (backward compatibility)
    */
-  private readonly USE_GENERATED_JSON_DATA = true;
+  private readonly USE_THREE_CALL_API = true;
 
   /**
-   * Cached observable of all selection items loaded from JSON
-   * Only used when USE_GENERATED_JSON_DATA = true
+   * Domain to category mapping for filtering forms by domain
+   * Maps domain IDs to their associated form categories
    */
+  private readonly DOMAIN_CATEGORY_MAP: Record<string, string[]> = {
+    "crm-scheduling": ["crm", "sales", "scheduling", "support", "project"],
+    "document-management": [
+      "financial",
+      "legal",
+      "inventory",
+      "procurement",
+      "hr",
+      "healthcare",
+      "real-estate",
+    ],
+  };
+
+  // Three-Call API Cache observables
+  private formSummaries$: Observable<FormSummary[]> | null = null;
+  private allFormMetadata$: Observable<Record<string, FormMetadata>> | null =
+    null;
+  private formMetadataCache = new Map<
+    string,
+    Observable<FormMetadata | null>
+  >();
+
+  // Legacy cache observables (for backward compatibility)
   private allItems$: Observable<SelectionItem[]> | null = null;
-
-  /**
-   * Cached observable of all domains loaded from JSON
-   * Only used when USE_GENERATED_JSON_DATA = true
-   */
   private allDomains$: Observable<DomainSchema[]> | null = null;
 
   /**
-   * Load all selection items from JSON file (cached)
-   * @returns Observable of all selection items
+   * Call A: Load form summaries for dropdown population (cached)
+   * @returns Observable of lightweight form summaries
    */
-  private loadAllItemsFromJson(): Observable<SelectionItem[]> {
-    if (!this.allItems$) {
-      this.allItems$ = this.http
-        .get<
-          SelectionItem[]
-        >("/assets/magic-selector-data/selection_items.json")
+  getFormSummaries(): Observable<FormSummary[]> {
+    if (!this.formSummaries$) {
+      console.log("🌐 [HTTP] Loading form-summaries.json (FIRST TIME)");
+      this.formSummaries$ = this.http
+        .get<FormSummary[]>("/assets/magic-selector-data/form-summaries.json")
         .pipe(
           catchError((error) => {
-            console.error("Failed to load selection items from JSON:", error);
-            console.warn("Falling back to mock data constants");
-            return of(Object.values(ALL_SELECTION_ITEMS_BY_DOMAIN).flat());
+            console.error(
+              "❌ CRITICAL: Failed to load form-summaries.json:",
+              error,
+            );
+            console.error(
+              "🔍 Check if the file exists and the server is running",
+            );
+            console.error(
+              "📁 Expected location: /assets/magic-selector-data/form-summaries.json",
+            );
+            // Show user-friendly error instead of fallback
+            throw new Error(
+              `Failed to load form summaries. Please check if the mock data files are generated and accessible.`,
+            );
           }),
           shareReplay(1), // Cache the result
+          delay(Math.random() * 100 + 50), // Simulate network latency
         );
+    } else {
+      console.log("💾 [CACHE] Returning cached form-summaries (no HTTP call)");
     }
-    return this.allItems$;
+    return this.formSummaries$;
   }
 
   /**
-   * Load all domains from JSON file (cached)
-   * @returns Observable of all domain schemas
+   * Load all form metadata (cached) - single HTTP request for all forms
+   * @returns Observable of all form metadata
    */
-  private loadAllDomainsFromJson(): Observable<DomainSchema[]> {
-    if (!this.allDomains$) {
-      this.allDomains$ = this.http
-        .get<DomainSchema[]>("/assets/magic-selector-data/domains.json")
+  private loadAllFormMetadata(): Observable<Record<string, FormMetadata>> {
+    if (!this.allFormMetadata$) {
+      this.allFormMetadata$ = this.http
+        .get<
+          Record<string, FormMetadata>
+        >("/assets/magic-selector-data/form-metadata.json")
         .pipe(
           catchError((error) => {
-            console.error("Failed to load domains from JSON:", error);
-            console.warn("Falling back to mock data constants");
-            return of(ALL_DOMAINS);
+            console.error(
+              `❌ CRITICAL: Failed to load form-metadata.json:`,
+              error,
+            );
+            console.error(
+              "🔍 Check if the file exists and was generated properly",
+            );
+            console.error(
+              "📁 Expected location: /assets/magic-selector-data/form-metadata.json",
+            );
+            throw new Error(
+              `Failed to load form metadata. Please regenerate mock data files.`,
+            );
           }),
-          shareReplay(1), // Cache the result
+          shareReplay(1), // Cache the entire metadata object
         );
     }
-    return this.allDomains$;
+    return this.allFormMetadata$;
   }
+
   /**
-   * Get all available selection items for a specific domain
+   * Call B: Load form metadata when form is selected (per-form caching)
+   * @param formId Form identifier
+   * @returns Observable of detailed form metadata with queries
+   */
+  getFormMetadata(formId: string): Observable<FormMetadata | null> {
+    if (!this.formMetadataCache.has(formId)) {
+      const metadata$ = this.loadAllFormMetadata().pipe(
+        map((allMetadata) => allMetadata[formId] || null),
+        catchError((error) => {
+          console.error(
+            `❌ CRITICAL: Failed to load metadata for form ${formId}:`,
+            error,
+          );
+          console.error(
+            "📁 Expected location: /assets/magic-selector-data/form-metadata.json",
+          );
+          return throwError(
+            () =>
+              new Error(
+                `Failed to load metadata for form ${formId}: ${error.message}`,
+              ),
+          );
+        }),
+        delay(Math.random() * 150 + 75), // Simulate network latency
+      );
+
+      this.formMetadataCache.set(formId, metadata$);
+    }
+
+    return this.formMetadataCache.get(formId)!;
+  }
+
+  /**
+   * Call C: Load preview data when query is selected
+   * @param entityId Entity identifier (e.g., "entity-contact")
+   * @param queryId Query identifier (e.g., "query-all-records")
+   * @returns Observable of preview data response
+   */
+  getPreviewData(
+    entityId: string,
+    queryId: string,
+  ): Observable<PreviewDataResponse | null> {
+    const filename = `preview-data-${entityId}-${queryId}.json`;
+    const path = `/assets/magic-selector-data/${filename}`;
+
+    return this.http.get<PreviewDataResponse>(path).pipe(
+      catchError((error) => {
+        console.error(`Failed to load preview data from ${filename}:`, error);
+        console.warn("Returning null - no preview data available");
+        return of(null);
+      }),
+      delay(Math.random() * 200 + 100), // Simulate network latency for data loading
+    );
+  }
+
+  /**
+   * Get all available selection items for a specific domain (legacy method)
    * @param domainId Domain identifier (e.g., 'crm-scheduling')
    * @returns Observable of SelectionItem array
    */
   getAvailableItems(domainId: string): Observable<SelectionItem[]> {
-    if (this.USE_GENERATED_JSON_DATA) {
-      return this.loadAllItemsFromJson().pipe(
-        map((items) =>
-          items.filter((item) => {
-            // For JSON data, we need to extract domain from entityName
-            // Assuming entityName format like "Contact_001", "Appointment_042"
-            // We'll match based on entity categories or just return all for now
-            // TODO: Adjust filtering logic based on actual domain structure in JSON
-            return true; // Return all items for now, can be refined
-          }),
-        ),
-        delay(Math.random() * 100 + 50), // Simulate network latency
-      );
-    } else {
-      // Legacy: use mock data constants
-      const items = ALL_SELECTION_ITEMS_BY_DOMAIN[domainId] || [];
-      return of(items).pipe(delay(Math.random() * 100 + 50));
-    }
+    // Always use three-call API (legacy constants removed)
+    return this.convertThreeCallToLegacy(domainId).pipe(
+      delay(Math.random() * 100 + 50),
+    );
   }
 
   /**
-   * Get all available domain schemas
-   * @returns Observable of DomainSchema array
-   */
-  getDomainSchemas(): Observable<DomainSchema[]> {
-    if (this.USE_GENERATED_JSON_DATA) {
-      return this.loadAllDomainsFromJson().pipe(delay(50));
-    } else {
-      // Legacy: use mock data constants
-      return of(ALL_DOMAINS).pipe(delay(50));
-    }
-  }
-
-  /**
-   * Get a specific selection item by ID
-   * @param itemId Item identifier
-   * @returns Observable of SelectionItem or null if not found
-   */
-  getItemById(itemId: string): Observable<SelectionItem | null> {
-    if (this.USE_GENERATED_JSON_DATA) {
-      return this.loadAllItemsFromJson().pipe(
-        map((items) => items.find((i) => i.id === itemId) || null),
-        delay(30),
-      );
-    } else {
-      // Legacy: search through mock data constants
-      for (const items of Object.values(ALL_SELECTION_ITEMS_BY_DOMAIN)) {
-        const item = items.find((i) => i.id === itemId);
-        if (item) {
-          return of(item).pipe(delay(30));
-        }
-      }
-      return of(null).pipe(delay(30));
-    }
-  }
-
-  /**
-   * Get a specific query by item ID and query ID
-   * @param itemId Parent item identifier
-   * @param queryId Query identifier
-   * @returns Observable of Query or null if not found
-   */
-  getQueryById(itemId: string, queryId: string): Observable<Query | null> {
-    if (this.USE_GENERATED_JSON_DATA) {
-      return this.loadAllItemsFromJson().pipe(
-        map((items) => {
-          const item = items.find((i) => i.id === itemId);
-          if (item) {
-            return item.queries.find((q) => q.id === queryId) || null;
-          }
-          return null;
-        }),
-        delay(30),
-      );
-    } else {
-      // Legacy: search through mock data constants
-      for (const items of Object.values(ALL_SELECTION_ITEMS_BY_DOMAIN)) {
-        const item = items.find((i) => i.id === itemId);
-        if (item) {
-          const query = item.queries.find((q) => q.id === queryId);
-          return of(query || null).pipe(delay(30));
-        }
-      }
-      return of(null).pipe(delay(30));
-    }
-  }
-
-  /**
-   * Search for selection items by name or description
+   * Search for forms by name, description, or entity
    * @param searchTerm Search string (case-insensitive)
-   * @param domainId Optional domain filter
-   * @returns Observable of matching SelectionItem array
+   * @param category Optional category filter
+   * @returns Observable of matching FormSummary array
    */
+  searchForms(
+    searchTerm: string,
+    category?: string,
+  ): Observable<FormSummary[]> {
+    const term = searchTerm.toLowerCase();
+
+    return this.getFormSummaries().pipe(
+      map((forms) => {
+        // Apply category filter if provided
+        let filtered = category
+          ? forms.filter((form) => form.category === category)
+          : forms;
+
+        // Apply search filter
+        return filtered.filter(
+          (form) =>
+            form.name.toLowerCase().includes(term) ||
+            form.description?.toLowerCase().includes(term) ||
+            form.entityName.toLowerCase().includes(term),
+        );
+      }),
+      delay(80),
+    );
+  }
+
+  /**
+   * Get form summary by ID
+   * @param formId Form identifier
+   * @returns Observable of FormSummary or null if not found
+   */
+  getFormSummaryById(formId: string): Observable<FormSummary | null> {
+    return this.getFormSummaries().pipe(
+      map((forms) => forms.find((form) => form.id === formId) || null),
+      delay(30),
+    );
+  }
+
+  /**
+   * Get available categories from form summaries
+   * @returns Observable of unique category strings
+   */
+  getAvailableCategories(): Observable<string[]> {
+    return this.getFormSummaries().pipe(
+      map((forms) => {
+        const categories = new Set(forms.map((form) => form.category));
+        return Array.from(categories).sort();
+      }),
+      delay(30),
+    );
+  }
+
+  /**
+   * Convert three-call API data to legacy SelectionItem format for backward compatibility
+   * This method now makes REAL API calls to form-metadata.json for each form
+   * @param domainId Optional domain ID to filter forms by category
+   * @returns Observable of SelectionItem array
+   */
+  private convertThreeCallToLegacy(
+    domainId?: string,
+  ): Observable<SelectionItem[]> {
+    return this.getFormSummaries().pipe(
+      map((summaries) => {
+        console.log(
+          `🔍 [SelectionDataService] Converting for domain: ${domainId}`,
+        );
+        console.log(`📊 Total summaries loaded: ${summaries.length}`);
+
+        // Filter summaries by domain if provided
+        if (domainId && this.DOMAIN_CATEGORY_MAP[domainId]) {
+          const allowedCategories = this.DOMAIN_CATEGORY_MAP[domainId];
+          const filtered = summaries.filter((summary) =>
+            allowedCategories.includes(summary.category),
+          );
+          console.log(
+            `✅ Filtered to ${filtered.length} items for domain "${domainId}"`,
+          );
+          console.log(`📋 Categories: ${allowedCategories.join(", ")}`);
+          console.log(
+            `🏷️ Item types:`,
+            filtered.map((f) => `${f.name} (${f.type})`),
+          );
+          return filtered;
+        }
+        return summaries;
+      }),
+      switchMap((summaries) => {
+        if (summaries.length === 0) {
+          // No forms for this domain
+          return of([]);
+        }
+
+        // For each form summary, fetch its metadata (Call B)
+        const metadataRequests = summaries.map((summary) =>
+          this.getFormMetadata(summary.id).pipe(
+            map((metadata) => {
+              if (!metadata) {
+                // Fallback if metadata not found
+                return {
+                  id: summary.id,
+                  type: summary.type || "Form",
+                  name: summary.name,
+                  entityName: summary.entityName,
+                  entityId: summary.id, // Fallback: use form ID as entityId
+                  description: summary.description || "",
+                  queries: [] as Query[],
+                };
+              }
+
+              // Convert FormMetadata + QuerySummary to SelectionItem + Query
+              return {
+                id: metadata.id,
+                type: metadata.type || "Form",
+                name: metadata.name,
+                entityName: metadata.entityName,
+                entityId: metadata.entityId,
+                description: metadata.description || "",
+                queries: metadata.queries.map(
+                  (querySummary): Query => ({
+                    id: querySummary.id,
+                    name: querySummary.name,
+                    description: querySummary.description || "",
+                    estimatedCount: querySummary.estimatedResults,
+                    parameters: {
+                      filters: [],
+                    } as any,
+                  }),
+                ),
+              } as SelectionItem;
+            }),
+          ),
+        );
+
+        // Wait for all metadata requests to complete
+        return combineLatest(metadataRequests);
+      }),
+    );
+  }
+
+  getItemById(itemId: string): Observable<SelectionItem | null> {
+    // Use three-call API instead of legacy JSON
+    return this.convertThreeCallToLegacy().pipe(
+      map((items) => items.find((i) => i.id === itemId) || null),
+      delay(30),
+    );
+  }
+
+  getQueryById(itemId: string, queryId: string): Observable<Query | null> {
+    // Use three-call API instead of legacy JSON
+    return this.convertThreeCallToLegacy().pipe(
+      map((items) => {
+        const item = items.find((i) => i.id === itemId);
+        if (item) {
+          return item.queries.find((q) => q.id === queryId) || null;
+        }
+        return null;
+      }),
+      delay(30),
+    );
+  }
+
   searchItems(
     searchTerm: string,
     domainId?: string,
   ): Observable<SelectionItem[]> {
-    const term = searchTerm.toLowerCase();
-
-    if (this.USE_GENERATED_JSON_DATA) {
-      return this.loadAllItemsFromJson().pipe(
-        map((allItems) => {
-          // Apply domain filter if provided (currently returns all)
-          let filtered = domainId ? allItems : allItems;
-
-          // Apply search filter
-          return filtered.filter(
-            (item) =>
-              item.name.toLowerCase().includes(term) ||
-              item.description?.toLowerCase().includes(term) ||
-              item.entityName.toLowerCase().includes(term),
-          );
+    // Use three-call API with domain filtering
+    if (this.USE_THREE_CALL_API) {
+      return this.searchForms(searchTerm).pipe(
+        map((forms) => {
+          // Filter by domain if provided
+          let filtered = forms;
+          if (domainId && this.DOMAIN_CATEGORY_MAP[domainId]) {
+            const allowedCategories = this.DOMAIN_CATEGORY_MAP[domainId];
+            filtered = forms.filter((form) =>
+              allowedCategories.includes(form.category),
+            );
+          }
+          return this.convertFormSummariesToSelectionItems(filtered);
         }),
-        delay(80),
       );
     } else {
-      // Legacy: use mock data constants
-      let allItems: SelectionItem[] = [];
-
-      if (domainId) {
-        allItems = ALL_SELECTION_ITEMS_BY_DOMAIN[domainId] || [];
-      } else {
-        allItems = Object.values(ALL_SELECTION_ITEMS_BY_DOMAIN).flat();
-      }
-
-      const results = allItems.filter(
-        (item) =>
-          item.name.toLowerCase().includes(term) ||
-          item.description?.toLowerCase().includes(term) ||
-          item.entityName.toLowerCase().includes(term),
+      // Legacy fallback
+      return this.searchForms(searchTerm).pipe(
+        map((forms) => this.convertFormSummariesToSelectionItems(forms)),
       );
-
-      return of(results).pipe(delay(80));
     }
   }
 
-  /**
-   * Filter selection items by entity name
-   * @param entityName Entity name to filter by
-   * @param domainId Optional domain filter
-   * @returns Observable of matching SelectionItem array
-   */
   filterByEntity(
     entityName: string,
     domainId?: string,
   ): Observable<SelectionItem[]> {
-    if (this.USE_GENERATED_JSON_DATA) {
-      return this.loadAllItemsFromJson().pipe(
-        map((allItems) => {
-          // Apply domain filter if provided (currently returns all)
-          let filtered = domainId ? allItems : allItems;
+    return this.getFormSummaries().pipe(
+      map((forms) => forms.filter((form) => form.entityName === entityName)),
+      map((forms) => this.convertFormSummariesToSelectionItems(forms)),
+      delay(50),
+    );
+  }
 
-          // Apply entity filter
-          return filtered.filter((item) => item.entityName === entityName);
+  getDomainById(domainId: string): Observable<DomainSchema | null> {
+    // Load from domains.json
+    return this.http
+      .get<DomainSchema[]>("/assets/magic-selector-data/domains.json")
+      .pipe(
+        map((domains) => domains.find((d) => d.domainId === domainId) || null),
+        catchError((error) => {
+          console.error("❌ Failed to load domains.json:", error);
+          return of(null);
+        }),
+        delay(30),
+      );
+  }
+
+  getDomainSchemas(): Observable<DomainSchema[]> {
+    // Load from domains.json
+    return this.http
+      .get<DomainSchema[]>("/assets/magic-selector-data/domains.json")
+      .pipe(
+        catchError((error) => {
+          console.error("❌ CRITICAL: Failed to load domains.json:", error);
+          console.error(
+            "📁 Expected location: /assets/magic-selector-data/domains.json",
+          );
+          return of([]);
         }),
         delay(50),
       );
-    } else {
-      // Legacy: use mock data constants
-      let allItems: SelectionItem[] = [];
-
-      if (domainId) {
-        allItems = ALL_SELECTION_ITEMS_BY_DOMAIN[domainId] || [];
-      } else {
-        allItems = Object.values(ALL_SELECTION_ITEMS_BY_DOMAIN).flat();
-      }
-
-      const results = allItems.filter((item) => item.entityName === entityName);
-
-      return of(results).pipe(delay(50));
-    }
   }
 
-  /**
-   * Get domain schema by domain ID
-   * @param domainId Domain identifier
-   * @returns Observable of DomainSchema or null if not found
-   */
-  getDomainById(domainId: string): Observable<DomainSchema | null> {
-    if (this.USE_GENERATED_JSON_DATA) {
-      return this.loadAllDomainsFromJson().pipe(
-        map((domains) => domains.find((d) => d.domainId === domainId) || null),
-        delay(30),
-      );
-    } else {
-      // Legacy: use mock data constants
-      const domain = ALL_DOMAINS.find((d) => d.domainId === domainId);
-      return of(domain || null).pipe(delay(30));
-    }
-  }
-
-  /**
-   * Estimate record count for a query (returns query.estimatedCount)
-   * @param query Query to estimate
-   * @returns Observable of estimated count
-   */
   estimateRecordCount(query: Query): Observable<number> {
     const count = query.estimatedCount || 0;
     return of(count).pipe(delay(100));
   }
 
-  /**
-   * Flatten selection items into grid rows (one row per query)
-   * Converts SelectionItem[] to FlatSelectionRow[] for ag-grid display
-   * @param items Selection items to flatten
-   * @returns Array of flattened rows
-   */
   flattenToGridRows(items: SelectionItem[]): FlatSelectionRow[] {
     const rows: FlatSelectionRow[] = [];
 
@@ -317,5 +470,21 @@ export class SelectionDataService {
     });
 
     return rows;
+  }
+
+  private convertFormSummariesToSelectionItems(
+    forms: FormSummary[],
+  ): SelectionItem[] {
+    return forms.map(
+      (form): SelectionItem => ({
+        id: form.id,
+        type: form.type || "Form",
+        name: form.name,
+        entityName: form.entityName,
+        entityId: `entity-${form.entityName.toLowerCase().replace(/\s+/g, "-")}`, // Generate entityId from entityName
+        description: form.description || "",
+        queries: [] as Query[], // Empty queries for summary conversion
+      }),
+    );
   }
 }

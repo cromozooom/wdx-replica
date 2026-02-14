@@ -17,6 +17,9 @@ export interface SelectionItem {
   /** Associated business entity (e.g., "Contact") */
   entityName: string;
 
+  /** Entity identifier for API calls (e.g., "entity-contact") */
+  entityId: string;
+
   /** Optional detailed description */
   description?: string;
 

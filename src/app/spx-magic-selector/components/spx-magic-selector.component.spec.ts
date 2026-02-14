@@ -43,34 +43,47 @@ describe("SpxMagicSelectorComponent", () => {
   });
 
   it("should emit selectionChange event when item is selected", (done) => {
-    const mockItem = {
+    const mockSelectionItem = {
       id: "test-item",
       type: "Form" as const,
       name: "Test Form",
       entityName: "TestEntity",
+      entityId: "entity-testentity",
       queries: [
         {
           id: "test-query",
           name: "Test Query",
           description: "Test description",
           parameters: { filters: [] },
+          estimatedCount: 100,
         },
       ],
     };
 
+    const mockRow = {
+      uniqueId: "test-item_test-query",
+      sourceName: "Test Form",
+      entityName: "TestEntity",
+      queryName: "Test Query",
+      queryDescription: "Test description",
+      estimatedRecords: 100,
+      queryRef: mockSelectionItem.queries[0],
+      originalItem: mockSelectionItem,
+      isSelected: false,
+    };
+
     component.selectionChange.subscribe((event) => {
-      expect(event.selectedItem).toEqual(mockItem);
+      expect(event.selectedItem).toEqual(mockRow);
       expect(event.source).toBe("dropdown");
       done();
     });
 
-    component.onSelectionChange(mockItem);
+    component.onSelectionChange(mockRow);
   });
 
   it("should clear selection when clearSelection is called", () => {
     component.clearSelection();
-    expect(component.selectedItem$.value).toBeNull();
-    expect(component.selectedQuery$.value).toBeNull();
+    expect(component.selectedRow$.value).toBeNull();
   });
 
   it("should update domain when setDomain is called", () => {
@@ -85,23 +98,37 @@ describe("SpxMagicSelectorComponent", () => {
     const onChangeSpy = jasmine.createSpy("onChange");
     component.registerOnChange(onChangeSpy);
 
-    const mockItem = {
+    const mockSelectionItem = {
       id: "test-item",
       type: "Form" as const,
       name: "Test Form",
       entityName: "TestEntity",
+      entityId: "entity-testentity",
       queries: [
         {
           id: "test-query",
           name: "Test Query",
           description: "Test description",
           parameters: { filters: [] },
+          estimatedCount: 100,
         },
       ],
     };
 
-    component.onSelectionChange(mockItem);
-    expect(onChangeSpy).toHaveBeenCalledWith(mockItem);
+    const mockRow = {
+      uniqueId: "test-item_test-query",
+      sourceName: "Test Form",
+      entityName: "TestEntity",
+      queryName: "Test Query",
+      queryDescription: "Test description",
+      estimatedRecords: 100,
+      queryRef: mockSelectionItem.queries[0],
+      originalItem: mockSelectionItem,
+      isSelected: false,
+    };
+
+    component.onSelectionChange(mockRow);
+    expect(onChangeSpy).toHaveBeenCalledWith(mockRow);
   });
 
   it("should handle disabled state", () => {

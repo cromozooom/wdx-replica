@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { InspectorPanelComponent } from "./inspector-panel.component";
 import { FlatSelectionRow } from "../../../models/flat-selection-row.interface";
-import { PreviewRecord } from "../../../models/preview-record.interface";
+import { PreviewRecord } from "../../../models/three-call-api.interface";
 import { QueryParameters } from "../../../models/query-parameters.interface";
 import { Query } from "../../../models/query.interface";
 import { SelectionItem } from "../../../models/selection-item.interface";
@@ -32,6 +32,7 @@ describe("InspectorPanelComponent", () => {
     type: "Form",
     name: "Appointment Form",
     entityName: "Contact",
+    entityId: "entity-contact",
     queries: [mockQuery],
   };
 
@@ -48,20 +49,16 @@ describe("InspectorPanelComponent", () => {
 
   const mockPreviewRecords: PreviewRecord[] = [
     {
-      id: 1,
-      displayData: {
-        name: "John Doe",
-        email: "john@example.com",
-        status: "active",
-      },
+      id: "1",
+      name: "John Doe",
+      email: "john@example.com",
+      status: "active",
     },
     {
-      id: 2,
-      displayData: {
-        name: "Jane Smith",
-        email: "jane@example.com",
-        status: "active",
-      },
+      id: "2",
+      name: "Jane Smith",
+      email: "jane@example.com",
+      status: "active",
     },
   ];
 

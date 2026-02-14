@@ -1,0 +1,30 @@
+<nav
+  class="border-top p-2"
+  aria-label="Offcanvas breadcrumb"
+  *ngIf="breadcrumbs.length > 1"
+>
+  <ol class="breadcrumb mb-0">
+    <li
+      *ngFor="let crumb of breadcrumbs; let last = last"
+      class="breadcrumb-item"
+      [class.active]="crumb.isActive"
+    >
+      <button
+        *ngIf="!crumb.isActive"
+        type="button"
+        class="btn btn-link p-0 breadcrumb-btn"
+        (click)="navigateToLevel(crumb.level)"
+        [attr.aria-label]="'Navigate to ' + crumb.title"
+      >
+        {{ crumb.title }}
+      </button>
+      <span
+        class="btn btn-link text-dark p-0 text-decoration-none"
+        *ngIf="crumb.isActive"
+        aria-current="page"
+      >
+        {{ crumb.title }}
+      </span>
+    </li>
+  </ol>
+</nav>

@@ -4,6 +4,8 @@ import {
   Output,
   EventEmitter,
   OnInit,
+  OnChanges,
+  SimpleChanges,
   OnDestroy,
   ChangeDetectionStrategy,
   forwardRef,
@@ -25,6 +27,7 @@ import {
 } from "rxjs/operators";
 import { SelectionItem } from "../models/selection-item.interface";
 import { Query } from "../models/query.interface";
+import { FlatSelectionRow } from "../models/flat-selection-row.interface";
 import { SelectionChangeEvent } from "../models/selection-change-event.interface";
 import { SelectionDataService } from "../services/selection-data.service";
 import { PreviewContainerComponent } from "./preview-container/preview-container.component";
@@ -61,7 +64,7 @@ import { OffcanvasStackService } from "../services/offcanvas-stack.service";
   ],
 })
 export class SpxMagicSelectorComponent
-  implements OnInit, OnDestroy, ControlValueAccessor
+  implements OnInit, OnChanges, OnDestroy, ControlValueAccessor
 {
   // ========================================
   // Input Properties
@@ -93,23 +96,20 @@ export class SpxMagicSelectorComponent
   // Component State
   // ========================================
 
-  /** Available items for selection */
-  availableItems$ = new BehaviorSubject<SelectionItem[]>([]);
+  /** Available (item, query) combinations for selection */
+  public availableRows$ = new BehaviorSubject<FlatSelectionRow[]>([]);
 
-  /** Currently selected item */
-  selectedItem$ = new BehaviorSubject<SelectionItem | null>(null);
+  /** Currently selected row (item+query) */
+  public selectedRow$ = new BehaviorSubject<FlatSelectionRow | null>(null);
 
-  /** Currently selected query (default to first query of selected item) */
-  selectedQuery$ = new BehaviorSubject<Query | null>(null);
-
-  /** Getter for selectedItem to support ngModel two-way binding */
-  get selectedItem(): SelectionItem | null {
-    return this.selectedItem$.value;
+  /** Getter for selectedRow to support ngModel two-way binding */
+  public get selectedRow(): FlatSelectionRow | null {
+    return this.selectedRow$.value;
   }
 
-  /** Setter for selectedItem to support ngModel two-way binding */
-  set selectedItem(value: SelectionItem | null) {
-    this.selectedItem$.next(value);
+  /** Setter for selectedRow to support ngModel two-way binding */
+  public set selectedRow(value: FlatSelectionRow | null) {
+    this.selectedRow$.next(value);
   }
 
   /** Search term subject for debounced filtering */
@@ -142,13 +142,18 @@ export class SpxMagicSelectorComponent
     this.loadAvailableItems();
     this.setupSearchDebounce();
 
-    // Set initial selection if provided
-    if (this.initialSelection) {
-      this.setSelection(
-        this.initialSelection,
-        this.initialSelection.queries[0],
-        "api",
+    // Optionally set initial selection if provided (not implemented for flat rows)
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    // Reload items when domainId changes (skip first change as ngOnInit handles it)
+    if (changes["domainId"] && !changes["domainId"].firstChange) {
+      console.log(
+        `🔄 [Component] Domain changed from "${changes["domainId"].previousValue}" to "${changes["domainId"].currentValue}"`,
       );
+      this.loadAvailableItems();
+      // Clear selection when domain changes to prevent showing items from wrong domain
+      this.clearSelection();
     }
   }
 
@@ -163,18 +168,15 @@ export class SpxMagicSelectorComponent
 
   writeValue(value: any): void {
     if (value) {
-      // Value should be SelectionItem or item ID
+      // Value should be a FlatSelectionRow or uniqueId
       if (typeof value === "string") {
-        this.selectionDataService
-          .getItemById(value)
-          .pipe(takeUntil(this.destroy$))
-          .subscribe((item) => {
-            if (item) {
-              this.setSelection(item, item.queries[0], "api");
-            }
-          });
-      } else if (value && typeof value === "object" && "id" in value) {
-        this.setSelection(value, value.queries[0], "api");
+        // Try to find the row by uniqueId
+        const row = this.availableRows$.value.find((r) => r.uniqueId === value);
+        if (row) {
+          this.setSelection(row, "api");
+        }
+      } else if (value && typeof value === "object" && "uniqueId" in value) {
+        this.setSelection(value, "api");
       }
     } else {
       this.clearSelection();
@@ -201,19 +203,13 @@ export class SpxMagicSelectorComponent
    * Clear the current selection
    */
   clearSelection(): void {
-    const previousItem = this.selectedItem$.value;
-
-    this.selectedItem$.next(null);
-    this.selectedQuery$.next(null);
-
-    // Notify form control
+    const previousRow = this.selectedRow$.value;
+    this.selectedRow$.next(null);
     this.onChange(null);
-
-    // Emit selection change event
     this.selectionChange.emit({
       selectedItem: null,
       selectedQuery: null,
-      previousSelection: previousItem || undefined,
+      previousSelection: previousRow?.originalItem || undefined,
       timestamp: new Date(),
       source: "dropdown",
     });
@@ -237,16 +233,12 @@ export class SpxMagicSelectorComponent
   /**
    * Handle selection change from ng-select
    */
-  onSelectionChange(item: SelectionItem | null): void {
-    if (item) {
-      // Default to first query
-      const defaultQuery = item.queries[0];
-      this.setSelection(item, defaultQuery, "dropdown");
+  onSelectionChange(row: FlatSelectionRow | null): void {
+    if (row) {
+      this.setSelection(row, "dropdown");
     } else {
       this.clearSelection();
     }
-
-    // Mark as touched for form validation
     this.onTouched();
   }
 
@@ -320,8 +312,8 @@ export class SpxMagicSelectorComponent
 
         // Pass data to offcanvas via component instance
         offcanvasRef.componentInstance.data = {
-          availableItems: this.availableItems$.value,
-          currentSelection: this.selectedItem$.value || undefined,
+          availableItems: this.availableRows$.value,
+          currentSelection: this.selectedRow$.value || undefined,
           domainSchema,
           modalTitle: "Advanced Lookup",
         };
@@ -330,11 +322,7 @@ export class SpxMagicSelectorComponent
           .then((result: DiscoveryModalResult) => {
             if (result && result.confirmed && result.selectedRow) {
               // Update selection from offcanvas result
-              this.setSelection(
-                result.selectedRow.originalItem,
-                result.selectedRow.queryRef,
-                "modal",
-              );
+              this.setSelection(result.selectedRow, "modal");
             }
           })
           .catch(() => {
@@ -351,23 +339,18 @@ export class SpxMagicSelectorComponent
    * Set the current selection
    */
   private setSelection(
-    item: SelectionItem,
-    query: Query,
+    row: FlatSelectionRow,
     source: "dropdown" | "modal" | "api",
   ): void {
-    const previousItem = this.selectedItem$.value;
-
-    this.selectedItem$.next(item);
-    this.selectedQuery$.next(query);
-
+    const previousRow = this.selectedRow$.value;
+    this.selectedRow$.next(row);
     // Notify form control
-    this.onChange(item);
-
-    // Emit selection change event
+    this.onChange(row);
+    // Emit selection change event (preserve legacy shape for now)
     this.selectionChange.emit({
-      selectedItem: item,
-      selectedQuery: query,
-      previousSelection: previousItem || undefined,
+      selectedItem: row.originalItem,
+      selectedQuery: row.queryRef,
+      previousSelection: previousRow?.originalItem || undefined,
       timestamp: new Date(),
       source,
     });
@@ -377,11 +360,16 @@ export class SpxMagicSelectorComponent
    * Load available items from the service based on current domain
    */
   private loadAvailableItems(): void {
+    console.log(`📥 [Selector] Loading items for domain: "${this.domainId}"`);
     this.selectionDataService
       .getAvailableItems(this.domainId)
       .pipe(takeUntil(this.destroy$))
       .subscribe((items) => {
-        this.availableItems$.next(items);
+        const rows = this.selectionDataService.flattenToGridRows(items);
+        console.log(
+          `📊 [Selector] Flattened to ${rows.length} (item, query) combinations for dropdown`,
+        );
+        this.availableRows$.next(rows);
       });
   }
 
@@ -404,7 +392,8 @@ export class SpxMagicSelectorComponent
         takeUntil(this.destroy$),
       )
       .subscribe((items) => {
-        this.availableItems$.next(items);
+        const rows = this.selectionDataService.flattenToGridRows(items);
+        this.availableRows$.next(rows);
       });
   }
 }

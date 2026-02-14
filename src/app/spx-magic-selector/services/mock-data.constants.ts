@@ -58,6 +58,7 @@ export const CRM_SELECTION_ITEMS: SelectionItem[] = [
     type: "Form",
     name: "Appointment Form",
     entityName: "Contact",
+    entityId: "entity-contact",
     description: "Schedule appointments with customers",
     queries: [
       {
@@ -164,6 +165,7 @@ export const CRM_SELECTION_ITEMS: SelectionItem[] = [
     type: "Form",
     name: "Task Assignment Form",
     entityName: "Task",
+    entityId: "entity-task",
     description: "Assign tasks to team members",
     queries: [
       {
@@ -220,6 +222,7 @@ export const CRM_SELECTION_ITEMS: SelectionItem[] = [
     type: "Document",
     name: "Contact Report",
     entityName: "Contact",
+    entityId: "entity-contact",
     description: "Generate contact activity reports",
     queries: [
       {
@@ -300,6 +303,7 @@ export const DOCUMENT_SELECTION_ITEMS: SelectionItem[] = [
     type: "Document",
     name: "Invoice Template",
     entityName: "Invoice",
+    entityId: "entity-invoice",
     description: "Standard invoice document template",
     queries: [
       {
@@ -375,6 +379,7 @@ export const DOCUMENT_SELECTION_ITEMS: SelectionItem[] = [
     type: "Document",
     name: "Contract Template",
     entityName: "Contract",
+    entityId: "entity-contract",
     description: "Standard service contract template",
     queries: [
       {
@@ -437,6 +442,7 @@ export const DOCUMENT_SELECTION_ITEMS: SelectionItem[] = [
     type: "Form",
     name: "Contract Review Form",
     entityName: "Contract",
+    entityId: "entity-contract",
     description: "Internal contract review workflow",
     queries: [
       {
