@@ -47,3 +47,14 @@ Thumbs.db
 .env
 .env.*
 *.log
+
+# Mock API Data (generated files)
+mock_api_data/
+
+# Python
+*.pyc
+__pycache__/
+venv/
+env/
+.venv/
+.env/
