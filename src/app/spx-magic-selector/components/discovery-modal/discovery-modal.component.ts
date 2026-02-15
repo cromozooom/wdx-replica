@@ -21,6 +21,7 @@ import {
 } from "ag-grid-community";
 import { RowApiModule } from "ag-grid-community";
 import { ScrollApiModule } from "ag-grid-community";
+import { QuickFilterModule } from "ag-grid-community";
 import { RowGroupingPanelModule } from "ag-grid-enterprise";
 import { ColumnsToolPanelModule } from "ag-grid-enterprise";
 import { FiltersToolPanelModule } from "ag-grid-enterprise";
@@ -30,6 +31,7 @@ import { SetFilterModule } from "ag-grid-enterprise";
 ModuleRegistry.registerModules([
   RowApiModule,
   ScrollApiModule,
+  QuickFilterModule,
   RowGroupingPanelModule,
   ColumnsToolPanelModule,
   FiltersToolPanelModule,
@@ -163,6 +165,7 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
     rowHeight: 48,
     rowGroupPanelShow: "always",
     groupDisplayType: "multipleColumns",
+    suppressDragLeaveHidesColumns: true,
     suppressRowClickSelection: false, // Allow row click selection
     sideBar: {
       toolPanels: [
@@ -317,7 +320,7 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
     const target = event.target as HTMLInputElement;
     this.quickFilterText = target.value;
     if (this.gridApi) {
-      this.gridApi.setQuickFilter(this.quickFilterText);
+      this.gridApi.setGridOption("quickFilterText", this.quickFilterText);
     }
   }
 
@@ -327,7 +330,7 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
   clearQuickFilter(): void {
     this.quickFilterText = "";
     if (this.gridApi) {
-      this.gridApi.setQuickFilter("");
+      this.gridApi.setGridOption("quickFilterText", "");
     }
   }
 

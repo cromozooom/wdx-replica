@@ -11,16 +11,22 @@
   <div ngbDropdownMenu aria-labelledby="toolsDropdown">
     <button ngbDropdownItem (click)="openInspectorModal(inspectorModal)">
       <i class="fa fa-search me-3"></i>
-      Data Inspector
+      Dependency Inspector
     </button>
     <button ngbDropdownItem (click)="openImportExportModal(importExportModal)">
       <i class="fa fa-exchange-alt me-3"></i>
       Import/Export
     </button>
-    <button ngbDropdownItem (click)="openQueryBuilderModal(queryBuilderModal)">
+    <a
+      ngbDropdownItem
+      href="https://spx-fetchxml.netlify.app/fetchxml-editor"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <i class="fa fa-code me-3"></i>
       Query Builder
-    </button>
+      <i class="fa fa-external-link-alt ms-2 small"></i>
+    </a>
     <!-- <button ngbDropdownItem (click)="openFormBuilderModal(formBuilderModal)">
       <i class="fa fa-wpforms me-2"></i>
       Form Builder
@@ -37,13 +43,18 @@
 
 <!-- Inspector Modal -->
 <ng-template #inspectorModal let-modal>
-  <div class="modal-header border-bottom">
-    <h5 class="modal-title">
-      <i class="fa fa-project-diagram me-2"></i>
+  <div class="modal-header p-0 d-flex align-items-center border-bottom py-2">
+    <h5 class="modal-title m-0 ps-2 d-flex align-items-center gap-2">
+      <i class="fas fa-project-diagram me-2"></i>
       Dependency Inspector
     </h5>
-    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+    <button
+      type="button"
+      class="btn-close me-2"
+      (click)="modal.dismiss()"
+    ></button>
   </div>
+
   <div class="modal-body d-flex overflow-hidden p-0">
     <!-- Left Sidebar - Filters -->
     <div
@@ -146,6 +157,16 @@
           "
         >
           <i class="fa fa-times me-1"></i>Clear Filters
+        </button>
+        <button
+          type="button"
+          class="btn btn-sm"
+          [class.btn-primary]="!useColumnLayout"
+          [class.btn-outline-primary]="useColumnLayout"
+          (click)="toggleColumnLayout()"
+          [disabled]="!hasActiveFilters()"
+        >
+          <i class="fa fa-project-diagram me-1"></i>Cluster View
         </button>
         <button
           type="button"
@@ -446,31 +467,37 @@
 
 <!-- Import/Export Modal -->
 <ng-template #importExportModal let-modal>
-  <div class="modal-header">
-    <h5 class="modal-title">Import/Export</h5>
-    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  <div class="modal-header p-0 d-flex align-items-center border-bottom py-2">
+    <h5 class="modal-title m-0 ps-2">Import/Export</h5>
+    <button
+      type="button"
+      class="btn-close me-2"
+      (click)="modal.dismiss()"
+    ></button>
   </div>
   <div class="modal-body p-0 d-flex flex-column overflow-hidden">
     <div class="w-100 flex-grow-1 d-flex flex-column p-0 overflow-hidden">
-      <iframe
-        class="w-100 flex-grow-1"
-        src="https://spx-wm.netlify.app/configuration-manager"
-        frameborder="0"
-      ></iframe>
+      <app-configuration-manager
+        class="w-100 flex-grow-1 d-flex flex-column"
+      ></app-configuration-manager>
     </div>
   </div>
-  <div class="modal-footer">
+  <!-- <div class="modal-footer">
     <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">
       Close
     </button>
-  </div>
+  </div> -->
 </ng-template>
 
 <!-- Query Builder Modal -->
 <ng-template #queryBuilderModal let-modal>
-  <div class="modal-header">
-    <h5 class="modal-title">Query Builder</h5>
-    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  <div class="modal-header p-0 d-flex align-items-center border-bottom py-2">
+    <h5 class="modal-title m-0 ps-2">Query Builder</h5>
+    <button
+      type="button"
+      class="btn-close me-2"
+      (click)="modal.dismiss()"
+    ></button>
   </div>
   <div class="modal-body p-0 d-flex flex-column overflow-hidden">
     <div class="w-100 flex-grow-1 d-flex flex-column p-0 overflow-hidden">

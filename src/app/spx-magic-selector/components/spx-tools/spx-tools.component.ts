@@ -31,6 +31,7 @@ import {
   DependencyGraph,
 } from "./models/dependency-graph.models";
 import { FilterPipe } from "./pipes/filter.pipe";
+import { ConfigurationManagerComponent } from "../../../configuration-manager/configuration-manager.component";
 
 /**
  * SPX Tools - Reusable tools dropdown with modals
@@ -46,6 +47,7 @@ import { FilterPipe } from "./pipes/filter.pipe";
     NgSelectModule,
     DragDropModule,
     FilterPipe,
+    ConfigurationManagerComponent,
   ],
   templateUrl: "./spx-tools.component.html",
   styleUrls: ["./spx-tools.component.scss"],
@@ -87,6 +89,10 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
 
   // Selected node for highlighting
   selectedNodeId: string | null = null;
+
+  // Graph visualization settings
+  readonly circleRadius = 15;
+  useColumnLayout = true;
 
   // D3 simulation
   private simulation: any;
@@ -356,6 +362,17 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
       .domain(["entity", "form", "document", "process", "dashboard"])
       .range(["#3b82f6", "#10b981", "#f59e0b", "#8b5cf6", "#ef4444"]);
 
+    // Apply column layout positioning if enabled
+    if (this.useColumnLayout) {
+      const types = ["entity", "form", "document", "process", "dashboard"];
+      const columnWidth = width / types.length;
+
+      nodes.forEach((node: any) => {
+        const typeIndex = types.indexOf(node.type);
+        node.fx = (typeIndex + 0.5) * columnWidth;
+      });
+    }
+
     // Create force simulation
     this.simulation = d3
       .forceSimulation(nodes as any)
@@ -367,19 +384,45 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
           .distance(100)
           .strength((d: any) => d.strength || 0.5),
       )
-      .force("charge", d3.forceManyBody().strength(-300))
+      .force(
+        "charge",
+        d3.forceManyBody().strength(this.useColumnLayout ? -100 : -300),
+      )
       .force("center", d3.forceCenter(width / 2, height / 2))
-      .force("collision", d3.forceCollide().radius(40));
+      .force("collision", d3.forceCollide().radius(this.circleRadius * 2))
+      .force(
+        "x",
+        this.useColumnLayout
+          ? d3
+              .forceX((d: any) => {
+                const types = [
+                  "entity",
+                  "form",
+                  "document",
+                  "process",
+                  "dashboard",
+                ];
+                const typeIndex = types.indexOf(d.type);
+                return (typeIndex + 0.5) * (width / types.length);
+              })
+              .strength(0.8)
+          : null,
+      )
+      .force(
+        "y",
+        this.useColumnLayout ? d3.forceY(height / 2).strength(0.05) : null,
+      );
 
-    // Create links
+    // Create links with curved paths
     const link = g
       .append("g")
-      .selectAll("line")
+      .selectAll("path")
       .data(links)
-      .join("line")
+      .join("path")
       .attr("stroke", "#999")
       .attr("stroke-opacity", 0.6)
-      .attr("stroke-width", (d: any) => Math.sqrt((d.strength || 0.5) * 3));
+      .attr("stroke-width", (d: any) => Math.sqrt((d.strength || 0.5) * 3))
+      .attr("fill", "none");
 
     // Create link labels
     const linkLabel = g
@@ -392,16 +435,27 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
       .attr("text-anchor", "middle")
       .text((d: any) => d.relationship);
 
+    // Set of selected node IDs (those picked from ng-select dropdowns)
+    const selectedIds = new Set([
+      ...this.selectedEntities,
+      ...this.selectedForms,
+      ...this.selectedDocuments,
+      ...this.selectedProcesses,
+      ...this.selectedDashboards,
+    ]);
+
     // Create nodes
     const node = g
       .append("g")
       .selectAll("circle")
       .data(nodes)
       .join("circle")
-      .attr("r", 20)
-      .attr("fill", (d: any) => colorScale(d.type))
-      .attr("stroke", "#fff")
-      .attr("stroke-width", 2)
+      .attr("r", this.circleRadius)
+      .attr("fill", (d: any) =>
+        selectedIds.has(d.id) ? colorScale(d.type) : "white",
+      )
+      .attr("stroke", (d: any) => colorScale(d.type))
+      .attr("stroke-width", (d: any) => (selectedIds.has(d.id) ? 2 : 2))
       .attr("cursor", "pointer")
       .on("click", (event, d: any) => {
         this.selectedNodeId = d.id;
@@ -443,11 +497,25 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
 
     // Update positions on each tick
     this.simulation.on("tick", () => {
-      link
-        .attr("x1", (d: any) => d.source.x)
-        .attr("y1", (d: any) => d.source.y)
-        .attr("x2", (d: any) => d.target.x)
-        .attr("y2", (d: any) => d.target.y);
+      link.attr("d", (d: any) => {
+        if (this.useColumnLayout) {
+          // S-curve with horizontal exits for column layout
+          const dx = d.target.x - d.source.x;
+          const curveOffset = Math.abs(dx) * 0.5;
+
+          // Determine direction: exit right if target is right, exit left if target is left
+          if (dx > 0) {
+            // Target is to the right - exit right, enter left
+            return `M${d.source.x},${d.source.y} C${d.source.x + curveOffset},${d.source.y} ${d.target.x - curveOffset},${d.target.y} ${d.target.x},${d.target.y}`;
+          } else {
+            // Target is to the left - exit left, enter right
+            return `M${d.source.x},${d.source.y} C${d.source.x - curveOffset},${d.source.y} ${d.target.x + curveOffset},${d.target.y} ${d.target.x},${d.target.y}`;
+          }
+        } else {
+          // Straight line for free-form layout
+          return `M${d.source.x},${d.source.y} L${d.target.x},${d.target.y}`;
+        }
+      });
 
       linkLabel
         .attr("x", (d: any) => (d.source.x + d.target.x) / 2)
@@ -486,11 +554,20 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
       .selectAll("circle")
       .attr("opacity", (d: any) => (connectedIds.has(d.id) ? 1 : 0.2));
 
-    svg.selectAll("line").attr("opacity", (d: any) => {
+    svg.selectAll("path").attr("opacity", (d: any) => {
       const sourceId = typeof d.source === "string" ? d.source : d.source.id;
       const targetId = typeof d.target === "string" ? d.target : d.target.id;
       return sourceId === nodeId || targetId === nodeId ? 1 : 0.1;
     });
+  }
+
+  /**
+   * Toggle column layout mode
+   */
+  toggleColumnLayout(): void {
+    this.useColumnLayout = !this.useColumnLayout;
+    this.renderGraph();
+    this.cdr.markForCheck();
   }
 
   /**
@@ -503,7 +580,7 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
 
     const svg = d3.select(container).select("svg");
     svg.selectAll("circle").attr("opacity", 1);
-    svg.selectAll("line").attr("opacity", 0.6);
+    svg.selectAll("path").attr("opacity", 0.6);
     this.cdr.markForCheck();
   }
 
