@@ -1,10 +1,11 @@
 """
-SPX Magic Selector - Three-Call API Mock Data Generator
+SPX Magic Selector - Four-Call API Mock Data Generator
 
-Generates realistic mock data following the production-ready "Three-Call" pattern:
+Generates realistic mock data following the production-ready "Four-Call" pattern:
 - Call A: form-summaries.json (lightweight dropdown data)
 - Call B: form-metadata.json (metadata with queries per form)  
 - Call C: preview-data-{entityId}-{queryId}.json (actual records per query)
+- Call D: dependency-graph.json (entity/form/document relationships for visualization)
 
 This simulates how a real API would work: incremental data loading for performance.
 
@@ -16,7 +17,7 @@ Usage:
   
 Modes:
   --light: Generates 24 forms with ~114 preview files (fast, for CI/CD)
-  default: Generates all forms (currently 24, can be expanded for local testing)
+  default: Generates 408 forms (24 base × 17 variations) for local testing
 """
 
 import json
@@ -98,6 +99,14 @@ def generate_realistic_forms(limit=None):
         ("self-directed", "Self-Directed"),
         ("401k", "401(k)"),
         ("ira", "IRA"),
+        ("roth", "Roth"),
+        ("traditional", "Traditional"),
+        ("taxable", "Taxable"),
+        ("trust", "Trust"),
+        ("corporate", "Corporate"),
+        ("nonprofit", "Non-Profit"),
+        ("pension", "Pension"),
+        ("sep", "SEP"),
     ]
     
     form_definitions = []
@@ -397,30 +406,274 @@ def generate_preview_data_for_query(entity_name, query_id, estimated_results):
         "schema": schema
     }
 
-def generate_three_call_mock_data(mode='full'):
-    """Main function to generate Three-Call API mock data
+def generate_dependency_graph(form_summaries, target_entities=400, target_dashboards=250, target_processes=60, target_documents=50):
+    """Generate dependency graph showing relationships between entities, forms, documents, processes, and dashboards
     
     Args:
-        mode: 'light' for Netlify (24 forms), 'full' for local development (all forms)
+        form_summaries: List of form/document summaries generated earlier
+        target_entities: Target number of unique entities (default: 400)
+        target_dashboards: Target number of dashboards (default: 250)
+        target_processes: Target number of processes (default: 60)
+        target_documents: Target number of standalone documents (default: 50)
+    
+    Returns:
+        Dictionary with nodes and links for dependency visualization
+    """
+    nodes = []
+    links = []
+    
+    # Extract unique base entities from forms and create variations
+    base_entities = {}
+    for form in form_summaries:
+        entity_name = form["entityName"]
+        category = form["category"]
+        if entity_name not in base_entities:
+            base_entities[entity_name] = category
+    
+    # Entity variations/suffixes to reach target count
+    entity_variations = [
+        "", " - Primary", " - Secondary", " - Archive", " - Draft", " - Published",
+        " - Active", " - Inactive", " - Pending", " - Approved", " - Rejected",
+        " - US", " - EU", " - APAC", " - Global", " - Regional", " - Local",
+        " - Legacy", " - Modern", " - V1", " - V2", " - V3", " - Beta", " - Production"
+    ]
+    
+    # Create entity nodes with variations to reach target
+    entity_id_map = {}
+    entity_count = 0
+    variations_needed = max(1, (target_entities // len(base_entities)) + 1)
+    
+    for base_name, category in base_entities.items():
+        for i, variation in enumerate(entity_variations[:variations_needed]):
+            if entity_count >= target_entities:
+                break
+            entity_count += 1
+            entity_id = f"e{entity_count}"
+            full_name = f"{base_name}{variation}" if variation else base_name
+            entity_id_map[full_name] = entity_id
+            # Also map base name for lookups
+            if not variation:
+                entity_id_map[base_name] = entity_id
+            
+            nodes.append({
+                "id": entity_id,
+                "name": full_name,
+                "type": "entity",
+                "category": category.capitalize()
+            })
+        if entity_count >= target_entities:
+            break
+    
+    # Create form/document nodes from summaries and link them to entities
+    form_nodes = []
+    doc_nodes = []
+    
+    for idx, form in enumerate(form_summaries, 1):
+        item_type = form["type"]
+        entity_name = form["entityName"]
+        entity_id = entity_id_map.get(entity_name)
+        
+        if item_type == "Form":
+            node_id = f"f{len(form_nodes) + 1}"
+            form_nodes.append({
+                "id": node_id,
+                "name": form["name"],
+                "type": "form",
+                "category": form["category"].capitalize()
+            })
+            
+            # Link form to entity (form creates entity)
+            if entity_id:
+                links.append({
+                    "source": node_id,
+                    "target": entity_id,
+                    "relationship": "creates",
+                    "strength": 1.0
+                })
+                
+                # Randomly link to 1-2 additional related entities
+                if len(entity_id_map) > 10 and random.random() > 0.7:
+                    related_entity_id = random.choice(list(entity_id_map.values()))
+                    if related_entity_id != entity_id:
+                        links.append({
+                            "source": node_id,
+                            "target": related_entity_id,
+                            "relationship": random.choice(["requires", "references", "updates"]),
+                            "strength": random.uniform(0.5, 0.8)
+                        })
+        else:  # Document
+            node_id = f"d{len(doc_nodes) + 1}"
+            doc_nodes.append({
+                "id": node_id,
+                "name": form["name"],
+                "type": "document",
+                "category": form["category"].capitalize()
+            })
+            
+            # Link document to entity (document displays/reports entity)
+            if entity_id:
+                links.append({
+                    "source": node_id,
+                    "target": entity_id,
+                    "relationship": "displays",
+                    "strength": 0.9
+                })
+    
+    nodes.extend(form_nodes)
+    nodes.extend(doc_nodes)
+    
+    # Generate additional standalone documents to reach target
+    doc_templates = [
+        ("Compliance Report", "compliance"), ("Audit Trail", "compliance"),
+        ("Risk Assessment", "compliance"), ("Policy Document", "compliance"),
+        ("User Manual", "research"), ("Technical Specification", "research"),
+        ("Analysis Report", "research"), ("White Paper", "research"),
+        ("Monthly Statement", "reporting"), ("Quarterly Review", "reporting"),
+        ("Annual Report", "reporting"), ("Performance Summary", "reporting")
+    ]
+    
+    additional_docs_needed = max(0, target_documents - len(doc_nodes))
+    for i in range(additional_docs_needed):
+        doc_template, doc_category = random.choice(doc_templates)
+        doc_id = f"d{len(doc_nodes) + 1}"
+        doc_nodes.append({
+            "id": doc_id,
+            "name": f"{doc_template} #{i+1}",
+            "type": "document",
+            "category": doc_category.capitalize()
+        })
+        
+        # Link to 1-3 random entities
+        num_links = random.randint(1, 3)
+        linked_entities = random.sample(list(entity_id_map.values()), min(num_links, len(entity_id_map)))
+        for entity_id in linked_entities:
+            links.append({
+                "source": doc_id,
+                "target": entity_id,
+                "relationship": random.choice(["documents", "reports", "analyzes"]),
+                "strength": random.uniform(0.7, 0.95)
+            })
+    
+    # Generate process nodes to reach target
+    process_templates = [
+        ("Onboarding", "client"), ("Account Setup", "investment"),
+        ("Trade Execution", "trading"), ("Order Processing", "trading"),
+        ("Risk Assessment", "compliance"), ("Compliance Check", "compliance"),
+        ("Performance Calculation", "reporting"), ("Report Generation", "reporting"),
+        ("Plan Review", "planning"), ("Goal Setting", "planning"),
+        ("Data Validation", "research"), ("Analysis Pipeline", "research")
+    ]
+    
+    for i in range(target_processes):
+        proc_id = f"p{i+1}"
+        proc_template, proc_category = random.choice(process_templates)
+        proc_name = f"{proc_template} Process #{i+1}"
+        
+        nodes.append({
+            "id": proc_id,
+            "name": proc_name,
+            "type": "process",
+            "category": proc_category.capitalize()
+        })
+        
+        # Link processes to 2-5 related entities
+        num_links = random.randint(2, 5)
+        linked_entities = random.sample(list(entity_id_map.values()), min(num_links, len(entity_id_map)))
+        for entity_id in linked_entities:
+            links.append({
+                "source": proc_id,
+                "target": entity_id,
+                "relationship": random.choice(["manages", "processes", "validates", "transforms"]),
+                "strength": random.uniform(0.7, 0.95)
+            })
+    
+    # Generate dashboard nodes to reach target
+    dashboard_templates = [
+        ("Executive", "investment"), ("Operations", "client"),
+        ("Trading", "trading"), ("Risk", "compliance"),
+        ("Performance", "reporting"), ("Analytics", "research"),
+        ("Planning", "planning"), ("Monitoring", "compliance")
+    ]
+    
+    for i in range(target_dashboards):
+        dash_id = f"dash{i+1}"
+        dash_template, dash_category = random.choice(dashboard_templates)
+        dash_name = f"{dash_template} Dashboard #{i+1}"
+        
+        nodes.append({
+            "id": dash_id,
+            "name": dash_name,
+            "type": "dashboard",
+            "category": dash_category.capitalize()
+        })
+        
+        # Link dashboards to 3-8 entities they display
+        num_links = random.randint(3, 8)
+        linked_entities = random.sample(list(entity_id_map.values()), min(num_links, len(entity_id_map)))
+        for entity_id in linked_entities:
+            links.append({
+                "source": dash_id,
+                "target": entity_id,
+                "relationship": random.choice(["queries", "displays", "monitors", "aggregates"]),
+                "strength": random.uniform(0.85, 1.0)
+            })
+        
+        # Link dashboards to some documents
+        if doc_nodes and random.random() > 0.6:
+            num_doc_links = random.randint(1, 3)
+            linked_docs = random.sample([d["id"] for d in doc_nodes], min(num_doc_links, len(doc_nodes)))
+            for doc_id in linked_docs:
+                links.append({
+                    "source": dash_id,
+                    "target": doc_id,
+                    "relationship": "generates",
+                    "strength": random.uniform(0.6, 0.85)
+                })
+    
+    # Add entity-to-entity relationships (10-20% of entities)
+    entity_ids = list(entity_id_map.values())
+    relationship_types = ["contains", "belongs_to", "relates_to", "depends_on", "aggregates", "derives_from"]
+    num_entity_relationships = int(len(entity_ids) * 0.15)
+    
+    for _ in range(num_entity_relationships):
+        if len(entity_ids) >= 2:
+            source_id, target_id = random.sample(entity_ids, 2)
+            links.append({
+                "source": source_id,
+                "target": target_id,
+                "relationship": random.choice(relationship_types),
+                "strength": random.uniform(0.6, 0.95)
+            })
+    
+    return {
+        "nodes": nodes,
+        "links": links
+    }
+
+def generate_three_call_mock_data(mode='full'):
+    """Main function to generate Four-Call API mock data
+    
+    Args:
+        mode: 'light' for Netlify (24 forms), 'full' for local development (408 forms)
     """
     form_limit = 24 if mode == 'light' else None
     mode_label = "LIGHT (Netlify)" if mode == 'light' else "FULL (Local Development)"
     
-    print(f"\n*** SPX Magic Selector - Three-Call API Mock Data Generator [{mode_label}] ***")
+    print(f"\n*** SPX Magic Selector - Four-Call API Mock Data Generator [{mode_label}] ***")
     print("=" * 70)
     
     # Call A: Generate form summaries (lightweight dropdown data)
-    print("\n[1/3] Call A: Generating Form Summaries...")
+    print("\n[1/4] Call A: Generating Form Summaries...")
     form_summaries = generate_realistic_forms(limit=form_limit)
     save_json("form-summaries.json", form_summaries)
     
     # Call B: Generate form metadata (queries and details per form)
-    print("\n[2/3] Call B: Generating Form Metadata...")
+    print("\n[2/4] Call B: Generating Form Metadata...")
     form_metadata = generate_form_metadata(form_summaries)
     save_json("form-metadata.json", form_metadata)
     
     # Call C: Generate preview data for each query
-    print("\n[3/3] Call C: Generating Preview Data Files...")
+    print("\n[3/4] Call C: Generating Preview Data Files...")
     preview_files_created = 0
     
     for form_id, metadata in form_metadata.items():
@@ -439,29 +692,74 @@ def generate_three_call_mock_data(mode='full'):
             save_json(filename, preview_data)
             preview_files_created += 1
     
+    # Generate dependency graph with realistic enterprise scale
+    print("\n[4/4] Generating Dependency Graph...")
+    # Use scaled numbers for full mode, minimal for light mode
+    if mode == 'light':
+        dependency_graph = generate_dependency_graph(
+            form_summaries,
+            target_entities=24,
+            target_dashboards=10,
+            target_processes=8,
+            target_documents=20
+        )
+    else:
+        dependency_graph = generate_dependency_graph(
+            form_summaries,
+            target_entities=400,
+            target_dashboards=250,
+            target_processes=60,
+            target_documents=50
+        )
+    save_json("dependency-graph.json", dependency_graph)
+    
+    # Count node types
+    node_counts = {
+        "entity": 0,
+        "form": 0,
+        "document": 0,
+        "process": 0,
+        "dashboard": 0
+    }
+    for node in dependency_graph['nodes']:
+        node_type = node['type']
+        if node_type in node_counts:
+            node_counts[node_type] += 1
+    
     # Summary
     print("\n" + "=" * 70)
-    print(f"[SUCCESS] Three-Call API mock data generated in {BASE_DIR}")
+    print(f"[SUCCESS] Four-Call API mock data generated in {BASE_DIR}")
     print("\n>> Production-Ready API Pattern:")
     print(f"  Call A (Dropdown):     form-summaries.json ({len(form_summaries)} forms)")
     print(f"  Call B (Metadata):     form-metadata.json ({len(form_metadata)} forms)")
     print(f"  Call C (Preview):      {preview_files_created} preview-data-*.json files")
+    print(f"  Call D (Dependencies): dependency-graph.json ({len(dependency_graph['nodes'])} nodes, {len(dependency_graph['links'])} links)")
     
     total_queries = sum(len(metadata["queries"]) for metadata in form_metadata.values())
     print(f"\n>> Data Breakdown:")
     print(f"  * Business Forms:      {len(form_summaries)}")
     print(f"  * Query Definitions:   {total_queries}")
     print(f"  * Preview Data Files:  {preview_files_created}")
+    print(f"\n>> Dependency Graph Breakdown:")
+    print(f"  * Total Nodes:         {len(dependency_graph['nodes'])}")
+    print(f"    - Entities:          {node_counts['entity']}")
+    print(f"    - Forms:             {node_counts['form']}")
+    print(f"    - Documents:         {node_counts['document']}")
+    print(f"    - Processes:         {node_counts['process']}")
+    print(f"    - Dashboards:        {node_counts['dashboard']}")
+    print(f"  * Total Links:         {len(dependency_graph['links'])}")
     
     print(f"\n>> Three-Call Integration Pattern:")
     print(f"  1. Load form-summaries.json -> populate ng-select dropdown")
     print(f"  2. User selects form -> load form-metadata.json[formId] -> show queries")
     print(f"  3. User clicks query -> load preview-data-{{entityId}}-{{queryId}}.json")
+    print(f"  4. Dependency Inspector -> load dependency-graph.json -> visualize relationships")
     
     print(f"\n>> This simulates production API calls:")
     print(f"  GET /api/forms/summary")
     print(f"  GET /api/forms/{{id}}/metadata") 
     print(f"  GET /api/entities/{{entityId}}/records?queryId={{queryId}}")
+    print(f"  GET /api/dependencies/graph")
     print("\n")
 
 if __name__ == "__main__":
@@ -471,7 +769,7 @@ if __name__ == "__main__":
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python scripts/generate-mock-data.py              # Full dataset (all forms)
+  python scripts/generate-mock-data.py              # Full dataset (408 forms)
   python scripts/generate-mock-data.py --light      # Light dataset (24 forms for Netlify)
         """
     )

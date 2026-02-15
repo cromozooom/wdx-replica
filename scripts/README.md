@@ -42,6 +42,7 @@ pip install faker
 ```bash
 # Run from project root
 python scripts/generate-mock-data.py
+python scripts/generate-mock-data.py --light
 ```
 
 ### Output
