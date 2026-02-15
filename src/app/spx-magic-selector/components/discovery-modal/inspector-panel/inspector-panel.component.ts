@@ -296,6 +296,7 @@ export class InspectorPanelComponent implements OnChanges {
    */
   openDataPreview(content: TemplateRef<any>): void {
     const nextWidth = this.offcanvasStackService.getNextOffcanvasWidth();
+    const currentLevel = this.offcanvasStackService.getStackDepth();
     const { zIndex, backdropZIndex } =
       this.offcanvasStackService.getNextZIndexes();
 
@@ -322,6 +323,13 @@ export class InspectorPanelComponent implements OnChanges {
       if (offcanvasElement) {
         offcanvasElement.style.setProperty("--bs-offcanvas-width", nextWidth);
         offcanvasElement.style.zIndex = zIndex.toString();
+
+        // For stacked offcanvas (not the first one), reduce height and align to bottom
+        if (currentLevel > 0) {
+          const heightReduction = currentLevel * 3; // 3rem per level
+          offcanvasElement.style.height = `calc(100% - ${heightReduction}rem)`;
+          offcanvasElement.style.marginTop = "auto";
+        }
       }
 
       if (backdropElement) {

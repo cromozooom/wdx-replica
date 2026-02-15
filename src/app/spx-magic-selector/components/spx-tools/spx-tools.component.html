@@ -181,7 +181,7 @@
 
     <!-- Middle Sidebar - Sortable Lists -->
     <div
-      class="inspector-sidebar border-end p-3 bg-light"
+      class="inspector-sidebar border-end p-3 bg-body"
       style="width: 250px; overflow-y: auto"
     >
       <h6 class="text-muted mb-3">
@@ -199,7 +199,7 @@
           <div
             *ngFor="let item of sortedEntities"
             cdkDrag
-            class="sortable-item"
+            class="sortable-item border rounded"
           >
             <i class="fa fa-grip-vertical me-2 text-muted"></i>
             <span class="badge bg-primary me-2">E</span>
@@ -216,7 +216,11 @@
           (cdkDropListDropped)="dropForm($event)"
           class="sortable-list"
         >
-          <div *ngFor="let item of sortedForms" cdkDrag class="sortable-item">
+          <div
+            *ngFor="let item of sortedForms"
+            cdkDrag
+            class="sortable-item border rounded"
+          >
             <i class="fa fa-grip-vertical me-2 text-muted"></i>
             <span class="badge bg-success me-2">F</span>
             {{ item.label }}
@@ -235,7 +239,7 @@
           <div
             *ngFor="let item of sortedDocuments"
             cdkDrag
-            class="sortable-item"
+            class="sortable-item border rounded"
           >
             <i class="fa fa-grip-vertical me-2 text-muted"></i>
             <span class="badge bg-warning me-2">D</span>
@@ -255,7 +259,7 @@
           <div
             *ngFor="let item of sortedProcesses"
             cdkDrag
-            class="sortable-item"
+            class="sortable-item border rounded"
           >
             <i class="fa fa-grip-vertical me-2 text-muted"></i>
             <span class="badge bg-info me-2">P</span>
@@ -275,7 +279,7 @@
           <div
             *ngFor="let item of sortedDashboards"
             cdkDrag
-            class="sortable-item"
+            class="sortable-item border rounded"
           >
             <i class="fa fa-grip-vertical me-2 text-muted"></i>
             <span class="badge bg-danger me-2">DB</span>
@@ -356,13 +360,13 @@
       <div
         *ngIf="!isLoading && !loadError && hasActiveFilters()"
         #graphContainer
-        class="flex-grow-1 position-relative bg-white"
+        class="flex-grow-1 position-relative bg-body"
       ></div>
 
       <!-- Legend -->
       <div
         *ngIf="!isLoading && !loadError && hasActiveFilters()"
-        class="position-absolute top-0 end-0 m-3 bg-white border rounded p-3 shadow-sm"
+        class="position-absolute top-0 end-0 m-3 bg-body border rounded p-3 shadow-sm"
       >
         <h6 class="small fw-bold mb-2">Legend</h6>
         <div class="d-flex flex-column gap-2" style="font-size: 0.875rem">

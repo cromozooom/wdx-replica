@@ -162,6 +162,8 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
   };
 
   private destroy$ = new Subject<void>();
+  currentTheme: "light" | "dark" | "system" = "system";
+  agGridThemeClass = "ag-theme-alpine"; // Always use alpine, mode controlled by data-ag-theme-mode
 
   constructor(
     private selectionHistoryService: SelectionHistoryService,
@@ -171,6 +173,9 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
+    // Initialize theme before subscribing to data
+    this.initializeTheme();
+
     // Subscribe to selection history updates
     this.selectionHistoryService
       .getSelections()
@@ -179,6 +184,16 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
         this.rowData = selections;
         this.cdr.markForCheck();
       });
+
+    // Listen for system theme changes
+    if (window.matchMedia) {
+      const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+      darkModeQuery.addEventListener("change", () => {
+        if (this.currentTheme === "system") {
+          this.applyTheme("system");
+        }
+      });
+    }
   }
 
   ngOnDestroy(): void {
@@ -191,6 +206,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
    */
   openAddSelectionModal(): void {
     const nextWidth = this.offcanvasStackService.getNextOffcanvasWidth();
+    const currentLevel = this.offcanvasStackService.getStackDepth();
     const { zIndex, backdropZIndex } =
       this.offcanvasStackService.getNextZIndexes();
     const offcanvasRef = this.offcanvasService.open(
@@ -225,6 +241,13 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
         latestOffcanvas.style.setProperty("--bs-offcanvas-width", nextWidth);
         latestOffcanvas.style.width = nextWidth;
         latestOffcanvas.style.zIndex = zIndex.toString();
+
+        // For stacked offcanvas (not the first one), reduce height and align to bottom
+        if (currentLevel > 0) {
+          const heightReduction = currentLevel * 3; // 3rem per level
+          latestOffcanvas.style.height = `calc(100% - ${heightReduction}rem)`;
+          latestOffcanvas.style.marginTop = "auto";
+        }
       }
 
       if (latestBackdrop) {
@@ -250,7 +273,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
               },
               error: (error: any) => {
                 console.error("Failed to save selection:", error);
-                alert("Failed to save selection. Please try again.");
+                window.alert("Failed to save selection. Please try again.");
               },
             });
         }
@@ -264,7 +287,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
    * Delete a selection
    */
   deleteSelection(id: string): void {
-    if (confirm("Are you sure you want to delete this selection?")) {
+    if (window.confirm("Are you sure you want to delete this selection?")) {
       this.selectionHistoryService
         .deleteSelection(id)
         .pipe(takeUntil(this.destroy$))
@@ -274,7 +297,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
           },
           error: (error: any) => {
             console.error("Failed to delete selection:", error);
-            alert("Failed to delete selection. Please try again.");
+            window.alert("Failed to delete selection. Please try again.");
           },
         });
     }
@@ -329,5 +352,51 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
   get documentCount(): number {
     return this.rowData.filter((r) => r.domainId === "document-management")
       .length;
+  }
+
+  /**
+   * Initialize theme on component load
+   */
+  private initializeTheme(): void {
+    const savedTheme = localStorage.getItem("bootstrap-theme") as
+      | "light"
+      | "dark"
+      | "system"
+      | null;
+    this.currentTheme = savedTheme || "system";
+    this.applyTheme(this.currentTheme);
+  }
+
+  /**
+   * Handle theme change from dropdown
+   */
+  onThemeChange(event: Event): void {
+    // currentTheme is already updated by [(ngModel)]
+    localStorage.setItem("bootstrap-theme", this.currentTheme);
+    this.applyTheme(this.currentTheme);
+  }
+
+  /**
+   * Apply the selected theme to the document
+   */
+  private applyTheme(theme: "light" | "dark" | "system"): void {
+    const htmlElement = document.documentElement;
+    let isDark = false;
+
+    if (theme === "system") {
+      // Use system preference
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      isDark = prefersDark;
+      htmlElement.setAttribute("data-bs-theme", prefersDark ? "dark" : "light");
+    } else {
+      isDark = theme === "dark";
+      htmlElement.setAttribute("data-bs-theme", theme);
+    }
+
+    // Update AG-Grid theme mode using data-ag-theme-mode attribute
+    const themeMode = isDark ? "dark" : "light";
+    htmlElement.setAttribute("data-ag-theme-mode", themeMode);
   }
 }

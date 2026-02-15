@@ -16,13 +16,13 @@
         class="w-100"
       >
         <ng-template ng-label-tmp let-item="item">
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center bg-body">
             <span
               class="badge me-2"
               [ngClass]="
                 item.originalItem.type === 'Form'
-                  ? 'bg-info-subtle text-info-emphasis'
-                  : 'bg-success-subtle text-success-emphasis'
+                  ? 'border border-info bg-info-emphasis text-info-emphasis'
+                  : 'border border-subtle bg-success-emphasis text-success-emphasis'
               "
             >
               {{ item.originalItem.type }}
@@ -41,8 +41,8 @@
                 class="badge me-2"
                 [ngClass]="
                   item.originalItem.type === 'Form'
-                    ? 'bg-primary'
-                    : 'bg-success'
+                    ? 'border border-info bg-info-emphasis text-info-emphasis'
+                    : 'border border-subtle bg-success-emphasis text-success-emphasis'
                 "
               >
                 {{ item.originalItem.type }}
