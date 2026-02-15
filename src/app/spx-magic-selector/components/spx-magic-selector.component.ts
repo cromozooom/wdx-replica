@@ -264,6 +264,7 @@ export class SpxMagicSelectorComponent
         }
 
         const nextWidth = this.offcanvasStackService.getNextOffcanvasWidth();
+        const currentLevel = this.offcanvasStackService.getStackDepth();
         const { zIndex, backdropZIndex } =
           this.offcanvasStackService.getNextZIndexes();
         const offcanvasRef = this.offcanvasService.open(
@@ -297,6 +298,13 @@ export class SpxMagicSelectorComponent
             );
             offcanvasElement.style.width = nextWidth;
             offcanvasElement.style.zIndex = zIndex.toString();
+
+            // For stacked offcanvas (not the first one), reduce height and align to bottom
+            if (currentLevel > 0) {
+              const heightReduction = currentLevel * 3; // 3rem per level
+              offcanvasElement.style.height = `calc(100% - ${heightReduction}rem)`;
+              offcanvasElement.style.marginTop = "auto";
+            }
           }
 
           if (latestBackdrop) {

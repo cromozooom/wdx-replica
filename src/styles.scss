@@ -9,9 +9,25 @@
 @import "../node_modules/bootstrap/scss/mixins/banner";
 @include bsBanner("");
 
+// AG Grid theme
 @import "../node_modules/ag-grid-community/styles/ag-theme-alpine.css";
-// AG Grid styles
-@import "../node_modules/ag-grid-community/styles/ag-theme-alpine.css";
+
+// AG Grid dark theme using CSS variables
+.ag-theme-alpine-dark {
+  --ag-background-color: #1e1e1e;
+  --ag-foreground-color: #e0e0e0;
+  --ag-border-color: #424242;
+  --ag-secondary-border-color: #616161;
+  --ag-header-background-color: #2a2a2a;
+  --ag-header-foreground-color: #ffffff;
+  --ag-odd-row-background-color: #242424;
+  --ag-row-hover-color: #2e2e2e;
+  --ag-selected-row-background-color: #0d47a1;
+  --ag-range-selection-background-color: rgba(13, 71, 161, 0.2);
+  --ag-input-border-color: #424242;
+  --ag-input-focus-border-color: #2196f3;
+  --ag-disabled-foreground-color: #888888;
+}
 
 // scss-docs-start import-stack
 // Configuration
@@ -65,6 +81,118 @@
 @import "ngx-diff.scss";
 @import "../node_modules/@ng-select/ng-select/themes/default.theme.css";
 @import "offcanvas-z-index.scss";
+
+// ng-select dark theme - responds to Bootstrap's data-bs-theme
+[data-bs-theme="dark"] {
+  .ng-select {
+    &.ng-select-opened > .ng-select-container {
+      background: #2a2a2a;
+      border-color: #616161;
+    }
+
+    .ng-select-container {
+      background-color: #1e1e1e;
+      border-color: #424242;
+      color: #e0e0e0;
+
+      .ng-value-container .ng-placeholder {
+        color: #888888;
+      }
+
+      .ng-value {
+        color: #e0e0e0 !important;
+        background-color: #424242 !important;
+        border-color: #616161 !important;
+
+        .ng-value-label {
+          color: #e0e0e0 !important;
+        }
+
+        .ng-value-icon {
+          border-right-color: #616161 !important;
+          color: #e0e0e0 !important;
+
+          &:hover {
+            background-color: #2e2e2e !important;
+            color: #ffffff !important;
+          }
+        }
+      }
+
+      .ng-input > input {
+        color: #e0e0e0;
+        &::placeholder {
+          color: #888888;
+        }
+      }
+
+      .ng-clear-wrapper {
+        color: #888888;
+        &:hover .ng-clear {
+          color: #e0e0e0;
+        }
+      }
+
+      .ng-arrow-wrapper .ng-arrow {
+        border-color: #888888 transparent transparent;
+      }
+    }
+
+    &.ng-select-focused .ng-select-container {
+      border-color: #2196f3;
+      box-shadow:
+        inset 0 1px 1px rgba(0, 0, 0, 0.075),
+        0 0 0 3px rgba(33, 150, 243, 0.1);
+    }
+
+    &.ng-select-disabled .ng-select-container {
+      background-color: #242424;
+      .ng-value {
+        background-color: #2e2e2e;
+      }
+    }
+
+    .ng-dropdown-panel {
+      background-color: #2a2a2a;
+      border-color: #616161;
+
+      .ng-dropdown-panel-items .ng-option {
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+
+        &.ng-option-marked {
+          background-color: #2e2e2e;
+        }
+
+        &.ng-option-selected {
+          background-color: #0d47a1;
+          color: #ffffff;
+
+          &.ng-option-marked {
+            background-color: #1565c0;
+          }
+        }
+
+        &.ng-option-disabled {
+          color: #888888;
+        }
+      }
+
+      .ng-dropdown-header {
+        background-color: #2a2a2a;
+        border-bottom-color: #616161;
+        color: #e0e0e0;
+      }
+
+      .ng-dropdown-footer {
+        background-color: #2a2a2a;
+        border-top-color: #616161;
+        color: #e0e0e0;
+      }
+    }
+  }
+}
+
 body,
 html {
   width: 100%;
@@ -307,6 +435,22 @@ p:last-child {
     display: none !important;
   }
 }
+
+// .ng-dropdown-panel .ng-dropdown-panel-items .ng-option,
+// .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+//   background: var(--bs-body-bg) !important;
+//   color: var(--bs-body-color) !important;
+// }
+
+// .ng-dropdown-panel.ng-select-bottom {
+//   border-top-color: var(--bs-body-bg) !important;
+// }
+
+// .ng-dropdown-panel {
+//   background-color: var(--bs-body-bg) !important;
+//   border: 1px solid var(--bs-secondary-border-color) !important;
+//   // box-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+// }
 
 // body * {
 //   outline: 1px solid red;

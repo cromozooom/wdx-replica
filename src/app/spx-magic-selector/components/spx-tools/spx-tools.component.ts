@@ -331,6 +331,12 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
     const width = container.clientWidth;
     const height = container.clientHeight;
 
+    // Get Bootstrap body color for text (adapts to light/dark theme)
+    const bodyColor =
+      getComputedStyle(document.documentElement)
+        .getPropertyValue("--bs-body-color")
+        .trim() || "#333";
+
     // Clear existing SVG
     d3.select(container).select("svg").remove();
 
@@ -431,7 +437,7 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
       .data(links)
       .join("text")
       .attr("font-size", 10)
-      .attr("fill", "#666")
+      .attr("fill", bodyColor)
       .attr("text-anchor", "middle")
       .text((d: any) => d.relationship);
 
@@ -489,7 +495,7 @@ export class SpxToolsComponent implements OnInit, AfterViewChecked {
       .join("text")
       .attr("font-size", 12)
       .attr("font-weight", "bold")
-      .attr("fill", "#333")
+      .attr("fill", bodyColor)
       .attr("text-anchor", "middle")
       .attr("dy", 35)
       .attr("pointer-events", "none")
