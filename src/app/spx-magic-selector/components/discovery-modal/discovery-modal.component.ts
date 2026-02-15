@@ -147,6 +147,9 @@ export class DiscoveryModalComponent implements OnInit, OnDestroy {
   /** ag-Grid options */
   gridOptions: GridOptions = {
     animateRows: true,
+    pagination: true,
+    paginationPageSize: 200,
+    paginationPageSizeSelector: [50, 100, 200, 500],
     rowSelection: {
       mode: "singleRow",
       enableClickSelection: true,
