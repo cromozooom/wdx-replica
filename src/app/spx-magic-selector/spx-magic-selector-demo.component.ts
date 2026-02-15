@@ -7,7 +7,7 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
-import { NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
+import { NgbOffcanvas, NgbDropdownModule } from "@ng-bootstrap/ng-bootstrap";
 import { AgGridAngular } from "ag-grid-angular";
 import {
   ColDef,
@@ -18,6 +18,7 @@ import {
 import { Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
 import { SpxMagicSelectorComponent } from "./components/spx-magic-selector.component";
+import { SpxToolsComponent } from "./components/spx-tools/spx-tools.component";
 import { AddSelectionModalComponent } from "./components/add-selection-modal/add-selection-modal.component";
 import { SelectionChangeEvent } from "./models/selection-change-event.interface";
 import { SavedSelection } from "./models/saved-selection.interface";
@@ -35,7 +36,9 @@ import { SelectionHistoryService } from "./services/selection-history.service";
     CommonModule,
     FormsModule,
     SpxMagicSelectorComponent,
+    SpxToolsComponent,
     AgGridAngular,
+    NgbDropdownModule,
   ],
   templateUrl: "./spx-magic-selector-demo.component.html",
   styleUrls: ["./spx-magic-selector-demo.component.scss"],
@@ -47,7 +50,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
   columnDefs: ColDef[] = [
     {
       field: "name",
-      headerName: "Selection Name",
+      headerName: "Bulk Name",
       width: 250,
       sortable: true,
       filter: true,
@@ -118,8 +121,8 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
       pinned: "right",
       cellRenderer: (params: any) => {
         return `
-          <button class="btn btn-sm btn-danger delete-btn" data-id="${params.data.id}">
-            <i class="fa fa-trash"></i>
+          <button class="btn btn-link text-decoration-none" data-id="${params.data.id}">
+            <i class="fas fa-trash"></i>
           </button>
         `;
       },
@@ -231,7 +234,7 @@ export class SpxMagicSelectorDemoComponent implements OnInit, OnDestroy {
 
     // Register with stack service
     this.offcanvasStackService.registerOffcanvas(
-      "Add New Selection",
+      "Add New Bulk Edit",
       offcanvasRef,
     );
 

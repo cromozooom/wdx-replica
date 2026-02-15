@@ -51,16 +51,14 @@ export class SelectionDataService {
    * Maps domain IDs to their associated form categories
    */
   private readonly DOMAIN_CATEGORY_MAP: Record<string, string[]> = {
-    "crm-scheduling": ["crm", "sales", "scheduling", "support", "project"],
-    "document-management": [
-      "financial",
-      "legal",
-      "inventory",
-      "procurement",
-      "hr",
-      "healthcare",
-      "real-estate",
+    "crm-scheduling": [
+      "portfolio",
+      "client",
+      "investment",
+      "trading",
+      "planning",
     ],
+    "document-management": ["reporting", "compliance", "research"],
   };
 
   // Three-Call API Cache observables

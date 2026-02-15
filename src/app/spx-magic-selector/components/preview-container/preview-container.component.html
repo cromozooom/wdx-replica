@@ -42,7 +42,11 @@
       <div class="mb-3">
         <span
           class="badge me-2"
-          [ngClass]="selectedItem.type === 'Form' ? 'bg-primary' : 'bg-success'"
+          [ngClass]="
+            selectedItem.type === 'Form'
+              ? 'bg-info-subtle text-info-emphasis'
+              : 'bg-success-subtle text-success-emphasis'
+          "
         >
           {{ selectedItem.type }}
         </span>

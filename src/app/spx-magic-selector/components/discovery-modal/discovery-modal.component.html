@@ -74,20 +74,23 @@
       ></app-inspector-panel>
     </div>
   </div>
-  <div class="d-flex justify-content-end gap-2 p-2 border-top">
-    <button type="button" class="btn btn-secondary" (click)="cancel()">
-      <i class="fa fa-times me-1"></i>
-      Cancel
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      (click)="confirmSelection()"
-      [disabled]="!selectedRow"
-    >
-      <i class="fa fa-check me-1"></i>
-      Select
-    </button>
+  <div class="d-flex justify-content-between gap-2 p-2 border-top">
+    <div>
+      <button type="button" class="btn btn-outline-primary" (click)="cancel()">
+        Cancel
+      </button>
+    </div>
+    <div>
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="confirmSelection()"
+        [disabled]="!selectedRow"
+      >
+        <i class="fa fa-check me-1"></i>
+        Select
+      </button>
+    </div>
   </div>
 </div>
 <!-- <div

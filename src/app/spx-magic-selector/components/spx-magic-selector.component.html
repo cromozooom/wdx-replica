@@ -1,6 +1,6 @@
 <div class="spx-magic-selector">
   <!-- Selector Row with Dropdown and Advanced Lookup Button -->
-  <div class="row g-2 align-items-start">
+  <div class="d-flex gap-2 align-items-center">
     <div class="col">
       <ng-select
         [items]="availableRows$ | async"
@@ -20,13 +20,16 @@
             <span
               class="badge me-2"
               [ngClass]="
-                item.originalItem.type === 'Form' ? 'bg-primary' : 'bg-success'
+                item.originalItem.type === 'Form'
+                  ? 'bg-info-subtle text-info-emphasis'
+                  : 'bg-success-subtle text-success-emphasis'
               "
             >
               {{ item.originalItem.type }}
             </span>
             <span
-              >{{ item.sourceName }} – <em>{{ item.queryName }}</em></span
+              >{{ item.sourceName }} | {{ item.entityName }} |
+              <em>{{ item.queryName }}</em></span
             >
           </div>
         </ng-template>
@@ -46,6 +49,9 @@
               </span>
               <strong>{{ item.sourceName }}</strong>
               <span class="ms-2 text-muted"
+                >/ <em>{{ item.entityName }}</em></span
+              >
+              <span class="ms-2 text-muted"
                 >/ <em>{{ item.queryName }}</em></span
               >
             </div>
@@ -54,9 +60,7 @@
                 <i class="fa fa-database"></i> {{ item.entityName }}
               </span>
               <span>
-                <i class="fa fa-chart-bar"></i> ~{{
-                  item.estimatedRecords
-                }}
+                <i class="fa fa-chart-bar"></i> ~{{ item.estimatedRecords }}
                 records
               </span>
             </div>
@@ -80,18 +84,16 @@
     </div>
 
     <!-- Advanced Lookup Button -->
-    <div class="col-auto">
-      <button
-        type="button"
-        class="btn btn-outline-primary"
-        (click)="openDiscoveryModal()"
-        [disabled]="disabled"
-        title="Open advanced lookup"
-      >
-        <i class="fa fa-th-list me-1"></i>
-        Advanced
-      </button>
-    </div>
+    <button
+      type="button"
+      class="btn rounded-1 btn-link d-flex align-items-center gap-2 py-1 text-decoration-none"
+      (click)="openDiscoveryModal()"
+      [disabled]="disabled"
+      title="Open advanced lookup"
+    >
+      <i class="fa fa-wand-magic-sparkles"></i>
+      Magic
+    </button>
   </div>
 
   <!-- Preview Container -->
