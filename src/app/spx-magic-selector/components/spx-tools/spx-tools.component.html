@@ -1,0 +1,128 @@
+<div ngbDropdown class="d-inline-block">
+  <button
+    type="button"
+    class="btn btn-outline-primary btn-sm"
+    id="toolsDropdown"
+    ngbDropdownToggle
+  >
+    <i class="fa fa-tools me-1"></i>
+    Tools
+  </button>
+  <div ngbDropdownMenu aria-labelledby="toolsDropdown">
+    <button ngbDropdownItem (click)="openInspectorModal(inspectorModal)">
+      <i class="fa fa-search me-2"></i>
+      Data Inspector
+    </button>
+    <button ngbDropdownItem (click)="openImportExportModal(importExportModal)">
+      <i class="fa fa-exchange-alt me-2"></i>
+      Import/Export
+    </button>
+    <button ngbDropdownItem (click)="openQueryBuilderModal(queryBuilderModal)">
+      <i class="fa fa-code me-2"></i>
+      Query Builder
+    </button>
+    <button ngbDropdownItem (click)="openFormBuilderModal(formBuilderModal)">
+      <i class="fa fa-wpforms me-2"></i>
+      Form Builder
+    </button>
+    <button
+      ngbDropdownItem
+      (click)="openDashboardBuilderModal(dashboardBuilderModal)"
+    >
+      <i class="fa fa-chart-line me-2"></i>
+      Dashboard Builder
+    </button>
+  </div>
+</div>
+
+<!-- Inspector Modal -->
+<ng-template #inspectorModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">Inspector</h5>
+    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body">
+    <p>Inspector tool interface will be implemented here.</p>
+
+    <!-- TODO: Add inspector interface -->
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">
+      Close
+    </button>
+  </div>
+</ng-template>
+
+<!-- Import/Export Modal -->
+<ng-template #importExportModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">Import/Export</h5>
+    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body">
+    <p>Import/Export interface will be implemented here.</p>
+    <!-- TODO: Add import/export interface -->
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">
+      Close
+    </button>
+  </div>
+</ng-template>
+
+<!-- Query Builder Modal -->
+<ng-template #queryBuilderModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">Query Builder</h5>
+    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body d-flex flex-column overflow-hidden">
+    <div class="w-100 flex-grow-1 d-flex flex-column p-0 overflow-hidden">
+      <iframe
+        class="w-100 flex-grow-1 border"
+        src="https://spx-fetchxml.netlify.app/fetchxml-editor"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <!-- TODO: Add query builder interface -->
+  </div>
+  <!-- <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">
+      Close
+    </button>
+  </div> -->
+</ng-template>
+
+<!-- Form Builder Modal -->
+<ng-template #formBuilderModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">Form Builder</h5>
+    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body">
+    <p>Form builder interface will be implemented here.</p>
+    <!-- TODO: Add form builder interface -->
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">
+      Close
+    </button>
+  </div>
+</ng-template>
+
+<!-- Dashboard Builder Modal -->
+<ng-template #dashboardBuilderModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">Dashboard Builder</h5>
+    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body">
+    <p>Dashboard builder interface will be implemented here.</p>
+    <!-- TODO: Add dashboard builder interface -->
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">
+      Close
+    </button>
+  </div>
+</ng-template>
