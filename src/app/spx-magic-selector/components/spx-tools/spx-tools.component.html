@@ -55,416 +55,448 @@
     ></button>
   </div>
 
-  <div class="modal-body d-flex overflow-hidden p-0">
-    <!-- Left Sidebar - Filters -->
-    <div
-      class="inspector-sidebar border-end p-3"
-      style="width: 280px; overflow-y: auto"
-    >
-      <h6 class="text-muted mb-3"><i class="fa fa-filter me-2"></i>Filters</h6>
+  <div class="modal-body d-flex flex-column overflow-hidden p-0">
+    <div class="d-flex flex-grow-1">
+      <!-- Left Sidebar - Filters -->
+      <div
+        class="inspector-sidebar border-end p-3"
+        style="width: 280px; overflow-y: auto"
+      >
+        <h6 class="text-muted mb-3">
+          <i class="fa fa-filter me-2"></i>Filters
+        </h6>
 
-      <!-- Entity Filter -->
-      <div class="mb-3">
-        <label class="form-label small fw-bold">Entities</label>
-        <ng-select
-          [items]="entityOptions"
-          bindLabel="label"
-          bindValue="id"
-          [(ngModel)]="selectedEntities"
-          [multiple]="true"
-          [closeOnSelect]="false"
-          placeholder="Select entities..."
-          (change)="applyFilters()"
-        >
-        </ng-select>
+        <!-- Entity Filter -->
+        <div class="mb-3">
+          <label class="form-label small fw-bold">Entities</label>
+          <ng-select
+            [items]="entityOptions"
+            bindLabel="label"
+            bindValue="id"
+            [(ngModel)]="selectedEntities"
+            [multiple]="true"
+            [closeOnSelect]="false"
+            placeholder="Select entities..."
+            (change)="applyFilters()"
+          >
+          </ng-select>
+        </div>
+
+        <!-- Form Filter -->
+        <div class="mb-3">
+          <label class="form-label small fw-bold">Forms</label>
+          <ng-select
+            [items]="formOptions"
+            bindLabel="label"
+            bindValue="id"
+            [(ngModel)]="selectedForms"
+            [multiple]="true"
+            [closeOnSelect]="false"
+            placeholder="Select forms..."
+            (change)="applyFilters()"
+          >
+          </ng-select>
+        </div>
+
+        <!-- Document Filter -->
+        <div class="mb-3">
+          <label class="form-label small fw-bold">Documents</label>
+          <ng-select
+            [items]="documentOptions"
+            bindLabel="label"
+            bindValue="id"
+            [(ngModel)]="selectedDocuments"
+            [multiple]="true"
+            [closeOnSelect]="false"
+            placeholder="Select documents..."
+            (change)="applyFilters()"
+          >
+          </ng-select>
+        </div>
+
+        <!-- Process Filter -->
+        <div class="mb-3">
+          <label class="form-label small fw-bold">Processes</label>
+          <ng-select
+            [items]="processOptions"
+            bindLabel="label"
+            bindValue="id"
+            [(ngModel)]="selectedProcesses"
+            [multiple]="true"
+            [closeOnSelect]="false"
+            placeholder="Select processes..."
+            (change)="applyFilters()"
+          >
+          </ng-select>
+        </div>
+
+        <!-- Dashboard Filter -->
+        <div class="mb-3">
+          <label class="form-label small fw-bold">Dashboards</label>
+          <ng-select
+            [items]="dashboardOptions"
+            bindLabel="label"
+            bindValue="id"
+            [(ngModel)]="selectedDashboards"
+            [multiple]="true"
+            [closeOnSelect]="false"
+            placeholder="Select dashboards..."
+            (change)="applyFilters()"
+          >
+          </ng-select>
+        </div>
+
+        <div class="d-grid gap-2 mt-4">
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-secondary"
+            (click)="
+              selectedEntities = [];
+              selectedForms = [];
+              selectedDocuments = [];
+              selectedProcesses = [];
+              selectedDashboards = [];
+              applyFilters()
+            "
+          >
+            <i class="fa fa-times me-1"></i>Clear Filters
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm"
+            [class.btn-primary]="!useColumnLayout"
+            [class.btn-outline-primary]="useColumnLayout"
+            (click)="toggleColumnLayout()"
+            [disabled]="!hasActiveFilters()"
+          >
+            <i class="fa fa-project-diagram me-1"></i>Cluster View
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-primary"
+            (click)="resetHighlight()"
+            [disabled]="!selectedNodeId"
+          >
+            <i class="fa fa-eye me-1"></i>Reset Highlight
+          </button>
+        </div>
       </div>
 
-      <!-- Form Filter -->
-      <div class="mb-3">
-        <label class="form-label small fw-bold">Forms</label>
-        <ng-select
-          [items]="formOptions"
-          bindLabel="label"
-          bindValue="id"
-          [(ngModel)]="selectedForms"
-          [multiple]="true"
-          [closeOnSelect]="false"
-          placeholder="Select forms..."
-          (change)="applyFilters()"
-        >
-        </ng-select>
-      </div>
+      <!-- Middle Sidebar - Sortable Lists -->
+      <div
+        class="inspector-sidebar border-end p-3 bg-body"
+        style="width: 250px; overflow-y: auto"
+      >
+        <h6 class="text-muted mb-3">
+          <i class="fa fa-sort me-2"></i>Display Order
+        </h6>
 
-      <!-- Document Filter -->
-      <div class="mb-3">
-        <label class="form-label small fw-bold">Documents</label>
-        <ng-select
-          [items]="documentOptions"
-          bindLabel="label"
-          bindValue="id"
-          [(ngModel)]="selectedDocuments"
-          [multiple]="true"
-          [closeOnSelect]="false"
-          placeholder="Select documents..."
-          (change)="applyFilters()"
-        >
-        </ng-select>
-      </div>
+        <!-- Entities List -->
+        <div class="mb-3" *ngIf="sortedEntities.length > 0">
+          <label class="form-label small fw-bold">Entities</label>
+          <div
+            cdkDropList
+            (cdkDropListDropped)="dropEntity($event)"
+            class="sortable-list"
+          >
+            <div
+              *ngFor="let item of sortedEntities"
+              cdkDrag
+              class="sortable-item border rounded"
+            >
+              <i class="fa fa-grip-vertical me-2 text-muted"></i>
+              <span class="badge bg-primary me-2">E</span>
+              {{ item.label }}
+            </div>
+          </div>
+        </div>
 
-      <!-- Process Filter -->
-      <div class="mb-3">
-        <label class="form-label small fw-bold">Processes</label>
-        <ng-select
-          [items]="processOptions"
-          bindLabel="label"
-          bindValue="id"
-          [(ngModel)]="selectedProcesses"
-          [multiple]="true"
-          [closeOnSelect]="false"
-          placeholder="Select processes..."
-          (change)="applyFilters()"
-        >
-        </ng-select>
-      </div>
+        <!-- Forms List -->
+        <div class="mb-3" *ngIf="sortedForms.length > 0">
+          <label class="form-label small fw-bold">Forms</label>
+          <div
+            cdkDropList
+            (cdkDropListDropped)="dropForm($event)"
+            class="sortable-list"
+          >
+            <div
+              *ngFor="let item of sortedForms"
+              cdkDrag
+              class="sortable-item border rounded"
+            >
+              <i class="fa fa-grip-vertical me-2 text-muted"></i>
+              <span class="badge bg-success me-2">F</span>
+              {{ item.label }}
+            </div>
+          </div>
+        </div>
 
-      <!-- Dashboard Filter -->
-      <div class="mb-3">
-        <label class="form-label small fw-bold">Dashboards</label>
-        <ng-select
-          [items]="dashboardOptions"
-          bindLabel="label"
-          bindValue="id"
-          [(ngModel)]="selectedDashboards"
-          [multiple]="true"
-          [closeOnSelect]="false"
-          placeholder="Select dashboards..."
-          (change)="applyFilters()"
-        >
-        </ng-select>
-      </div>
+        <!-- Documents List -->
+        <div class="mb-3" *ngIf="sortedDocuments.length > 0">
+          <label class="form-label small fw-bold">Documents</label>
+          <div
+            cdkDropList
+            (cdkDropListDropped)="dropDocument($event)"
+            class="sortable-list"
+          >
+            <div
+              *ngFor="let item of sortedDocuments"
+              cdkDrag
+              class="sortable-item border rounded"
+            >
+              <i class="fa fa-grip-vertical me-2 text-muted"></i>
+              <span class="badge bg-warning me-2">D</span>
+              {{ item.label }}
+            </div>
+          </div>
+        </div>
 
-      <div class="d-grid gap-2 mt-4">
-        <button
-          type="button"
-          class="btn btn-sm btn-outline-secondary"
-          (click)="
-            selectedEntities = [];
-            selectedForms = [];
-            selectedDocuments = [];
-            selectedProcesses = [];
-            selectedDashboards = [];
-            applyFilters()
+        <!-- Processes List -->
+        <div class="mb-3" *ngIf="sortedProcesses.length > 0">
+          <label class="form-label small fw-bold">Processes</label>
+          <div
+            cdkDropList
+            (cdkDropListDropped)="dropProcess($event)"
+            class="sortable-list"
+          >
+            <div
+              *ngFor="let item of sortedProcesses"
+              cdkDrag
+              class="sortable-item border rounded"
+            >
+              <i class="fa fa-grip-vertical me-2 text-muted"></i>
+              <span class="badge bg-info me-2">P</span>
+              {{ item.label }}
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboards List -->
+        <div class="mb-3" *ngIf="sortedDashboards.length > 0">
+          <label class="form-label small fw-bold">Dashboards</label>
+          <div
+            cdkDropList
+            (cdkDropListDropped)="dropDashboard($event)"
+            class="sortable-list"
+          >
+            <div
+              *ngFor="let item of sortedDashboards"
+              cdkDrag
+              class="sortable-item border rounded"
+            >
+              <i class="fa fa-grip-vertical me-2 text-muted"></i>
+              <span class="badge bg-danger me-2">DB</span>
+              {{ item.label }}
+            </div>
+          </div>
+        </div>
+
+        <div
+          *ngIf="
+            sortedEntities.length === 0 &&
+            sortedForms.length === 0 &&
+            sortedDocuments.length === 0 &&
+            sortedProcesses.length === 0 &&
+            sortedDashboards.length === 0
           "
+          class="text-muted small text-center py-4"
         >
-          <i class="fa fa-times me-1"></i>Clear Filters
-        </button>
-        <button
-          type="button"
-          class="btn btn-sm"
-          [class.btn-primary]="!useColumnLayout"
-          [class.btn-outline-primary]="useColumnLayout"
-          (click)="toggleColumnLayout()"
-          [disabled]="!hasActiveFilters()"
+          <i class="fa fa-info-circle mb-2 d-block"></i>
+          Select items to sort them
+        </div>
+      </div>
+
+      <!-- Main Area - D3 Graph -->
+      <div class="flex-grow-1 d-flex flex-column position-relative">
+        <!-- Loading State -->
+        <div
+          *ngIf="isLoading"
+          class="d-flex justify-content-center align-items-center h-100"
         >
-          <i class="fa fa-project-diagram me-1"></i>Cluster View
-        </button>
-        <button
-          type="button"
-          class="btn btn-sm btn-outline-primary"
-          (click)="resetHighlight()"
-          [disabled]="!selectedNodeId"
+          <div class="text-center">
+            <div class="spinner-border text-primary mb-3" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="text-muted">Loading dependency graph...</p>
+          </div>
+        </div>
+
+        <!-- Error State -->
+        <div
+          *ngIf="!isLoading && loadError"
+          class="d-flex justify-content-center align-items-center h-100"
         >
-          <i class="fa fa-eye me-1"></i>Reset Highlight
-        </button>
+          <div class="text-center text-danger">
+            <i class="fa fa-exclamation-triangle fa-3x mb-3"></i>
+            <p>{{ loadError }}</p>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-primary"
+              (click)="ngOnInit()"
+            >
+              <i class="fa fa-redo me-1"></i>Retry
+            </button>
+          </div>
+        </div>
+
+        <!-- Empty State - No Filters Selected -->
+        <div
+          *ngIf="!isLoading && !loadError && !hasActiveFilters()"
+          class="d-flex justify-content-center align-items-center h-100"
+        >
+          <div class="text-center text-muted p-5">
+            <i class="fa fa-filter fa-4x mb-3 opacity-25"></i>
+            <h5 class="mb-3">No Dependencies Selected</h5>
+            <p class="mb-0">
+              Start by selecting entities, forms, documents, processes, or
+              dashboards from the filters on the left to visualize their
+              dependencies.
+            </p>
+            <p class="small mt-2 opacity-75">
+              <i class="fa fa-lightbulb me-1"></i>
+              Tip: Select items to see their impact analysis
+            </p>
+          </div>
+        </div>
+
+        <!-- Graph Container -->
+        <div
+          *ngIf="!isLoading && !loadError && hasActiveFilters()"
+          #graphContainer
+          class="flex-grow-1 position-relative bg-body"
+        ></div>
+
+        <!-- Legend -->
+        <div
+          *ngIf="!isLoading && !loadError && hasActiveFilters()"
+          class="position-absolute top-0 end-0 m-3 bg-body border rounded p-3 shadow-sm"
+        >
+          <h6 class="small fw-bold mb-2">Legend</h6>
+          <div class="d-flex flex-column gap-2" style="font-size: 0.875rem">
+            <div class="d-flex align-items-center gap-2">
+              <div
+                style="
+                  width: 16px;
+                  height: 16px;
+                  background: #3b82f6;
+                  border-radius: 50%;
+                "
+              ></div>
+              <span>Entity</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div
+                style="
+                  width: 16px;
+                  height: 16px;
+                  background: #10b981;
+                  border-radius: 50%;
+                "
+              ></div>
+              <span>Form</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div
+                style="
+                  width: 16px;
+                  height: 16px;
+                  background: #f59e0b;
+                  border-radius: 50%;
+                "
+              ></div>
+              <span>Document</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div
+                style="
+                  width: 16px;
+                  height: 16px;
+                  background: #8b5cf6;
+                  border-radius: 50%;
+                "
+              ></div>
+              <span>Process</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div
+                style="
+                  width: 16px;
+                  height: 16px;
+                  background: #ef4444;
+                  border-radius: 50%;
+                "
+              ></div>
+              <span>Dashboard</span>
+            </div>
+          </div>
+          <hr class="my-2" />
+          <div class="small text-muted">
+            <i class="fa fa-mouse-pointer me-1"></i>Click nodes for impact
+            analysis<br />
+            <i class="fa fa-search-plus me-1"></i>Scroll to zoom<br />
+            <i class="fa fa-hand-paper me-1"></i>Drag to pan/reposition
+          </div>
+        </div>
+
+        <!-- Selected Node Info -->
+        <div
+          *ngIf="selectedNodeId"
+          class="position-absolute bottom-0 start-0 m-3 bg-primary text-white rounded p-3 shadow"
+          style="max-width: 300px"
+        >
+          <h6 class="small fw-bold mb-2">
+            <i class="fa fa-info-circle me-2"></i>Impact Analysis
+          </h6>
+          <p class="mb-0 small">
+            Selected:
+            <strong>{{
+              (allNodes | filter: "id" : selectedNodeId)?.[0]?.name
+            }}</strong>
+            <br />
+            Showing all connected dependencies
+          </p>
+        </div>
+
+        <!-- Empty State -->
+        <div
+          *ngIf="filteredGraph.nodes.length === 0"
+          class="position-absolute top-50 start-50 translate-middle text-center"
+        >
+          <i class="fa fa-project-diagram fa-3x text-muted mb-3"></i>
+          <h5 class="text-muted">No Data to Display</h5>
+          <p class="text-muted">
+            Select items from the filters to visualize dependencies
+          </p>
+        </div>
       </div>
     </div>
-
-    <!-- Middle Sidebar - Sortable Lists -->
-    <div
-      class="inspector-sidebar border-end p-3 bg-body"
-      style="width: 250px; overflow-y: auto"
-    >
-      <h6 class="text-muted mb-3">
-        <i class="fa fa-sort me-2"></i>Display Order
-      </h6>
-
-      <!-- Entities List -->
-      <div class="mb-3" *ngIf="sortedEntities.length > 0">
-        <label class="form-label small fw-bold">Entities</label>
-        <div
-          cdkDropList
-          (cdkDropListDropped)="dropEntity($event)"
-          class="sortable-list"
-        >
-          <div
-            *ngFor="let item of sortedEntities"
-            cdkDrag
-            class="sortable-item border rounded"
-          >
-            <i class="fa fa-grip-vertical me-2 text-muted"></i>
-            <span class="badge bg-primary me-2">E</span>
-            {{ item.label }}
-          </div>
-        </div>
-      </div>
-
-      <!-- Forms List -->
-      <div class="mb-3" *ngIf="sortedForms.length > 0">
-        <label class="form-label small fw-bold">Forms</label>
-        <div
-          cdkDropList
-          (cdkDropListDropped)="dropForm($event)"
-          class="sortable-list"
-        >
-          <div
-            *ngFor="let item of sortedForms"
-            cdkDrag
-            class="sortable-item border rounded"
-          >
-            <i class="fa fa-grip-vertical me-2 text-muted"></i>
-            <span class="badge bg-success me-2">F</span>
-            {{ item.label }}
-          </div>
-        </div>
-      </div>
-
-      <!-- Documents List -->
-      <div class="mb-3" *ngIf="sortedDocuments.length > 0">
-        <label class="form-label small fw-bold">Documents</label>
-        <div
-          cdkDropList
-          (cdkDropListDropped)="dropDocument($event)"
-          class="sortable-list"
-        >
-          <div
-            *ngFor="let item of sortedDocuments"
-            cdkDrag
-            class="sortable-item border rounded"
-          >
-            <i class="fa fa-grip-vertical me-2 text-muted"></i>
-            <span class="badge bg-warning me-2">D</span>
-            {{ item.label }}
-          </div>
-        </div>
-      </div>
-
-      <!-- Processes List -->
-      <div class="mb-3" *ngIf="sortedProcesses.length > 0">
-        <label class="form-label small fw-bold">Processes</label>
-        <div
-          cdkDropList
-          (cdkDropListDropped)="dropProcess($event)"
-          class="sortable-list"
-        >
-          <div
-            *ngFor="let item of sortedProcesses"
-            cdkDrag
-            class="sortable-item border rounded"
-          >
-            <i class="fa fa-grip-vertical me-2 text-muted"></i>
-            <span class="badge bg-info me-2">P</span>
-            {{ item.label }}
-          </div>
-        </div>
-      </div>
-
-      <!-- Dashboards List -->
-      <div class="mb-3" *ngIf="sortedDashboards.length > 0">
-        <label class="form-label small fw-bold">Dashboards</label>
-        <div
-          cdkDropList
-          (cdkDropListDropped)="dropDashboard($event)"
-          class="sortable-list"
-        >
-          <div
-            *ngFor="let item of sortedDashboards"
-            cdkDrag
-            class="sortable-item border rounded"
-          >
-            <i class="fa fa-grip-vertical me-2 text-muted"></i>
-            <span class="badge bg-danger me-2">DB</span>
-            {{ item.label }}
-          </div>
-        </div>
-      </div>
-
-      <div
-        *ngIf="
+    <div class="d-flex border-top p-2 justify-content-end">
+      <button
+        class="btn"
+        [class.btn-primary]="
+          sortedEntities.length > 0 ||
+          sortedForms.length > 0 ||
+          sortedDocuments.length > 0 ||
+          sortedProcesses.length > 0 ||
+          sortedDashboards.length > 0
+        "
+        [class.btn-outline-primary]="
           sortedEntities.length === 0 &&
           sortedForms.length === 0 &&
           sortedDocuments.length === 0 &&
           sortedProcesses.length === 0 &&
           sortedDashboards.length === 0
         "
-        class="text-muted small text-center py-4"
+        [disabled]="
+          sortedEntities.length === 0 &&
+          sortedForms.length === 0 &&
+          sortedDocuments.length === 0 &&
+          sortedProcesses.length === 0 &&
+          sortedDashboards.length === 0
+        "
       >
-        <i class="fa fa-info-circle mb-2 d-block"></i>
-        Select items to sort them
-      </div>
-    </div>
-
-    <!-- Main Area - D3 Graph -->
-    <div class="flex-grow-1 d-flex flex-column position-relative">
-      <!-- Loading State -->
-      <div
-        *ngIf="isLoading"
-        class="d-flex justify-content-center align-items-center h-100"
-      >
-        <div class="text-center">
-          <div class="spinner-border text-primary mb-3" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <p class="text-muted">Loading dependency graph...</p>
-        </div>
-      </div>
-
-      <!-- Error State -->
-      <div
-        *ngIf="!isLoading && loadError"
-        class="d-flex justify-content-center align-items-center h-100"
-      >
-        <div class="text-center text-danger">
-          <i class="fa fa-exclamation-triangle fa-3x mb-3"></i>
-          <p>{{ loadError }}</p>
-          <button
-            type="button"
-            class="btn btn-sm btn-outline-primary"
-            (click)="ngOnInit()"
-          >
-            <i class="fa fa-redo me-1"></i>Retry
-          </button>
-        </div>
-      </div>
-
-      <!-- Empty State - No Filters Selected -->
-      <div
-        *ngIf="!isLoading && !loadError && !hasActiveFilters()"
-        class="d-flex justify-content-center align-items-center h-100"
-      >
-        <div class="text-center text-muted p-5">
-          <i class="fa fa-filter fa-4x mb-3 opacity-25"></i>
-          <h5 class="mb-3">No Dependencies Selected</h5>
-          <p class="mb-0">
-            Start by selecting entities, forms, documents, processes, or
-            dashboards from the filters on the left to visualize their
-            dependencies.
-          </p>
-          <p class="small mt-2 opacity-75">
-            <i class="fa fa-lightbulb me-1"></i>
-            Tip: Select items to see their impact analysis
-          </p>
-        </div>
-      </div>
-
-      <!-- Graph Container -->
-      <div
-        *ngIf="!isLoading && !loadError && hasActiveFilters()"
-        #graphContainer
-        class="flex-grow-1 position-relative bg-body"
-      ></div>
-
-      <!-- Legend -->
-      <div
-        *ngIf="!isLoading && !loadError && hasActiveFilters()"
-        class="position-absolute top-0 end-0 m-3 bg-body border rounded p-3 shadow-sm"
-      >
-        <h6 class="small fw-bold mb-2">Legend</h6>
-        <div class="d-flex flex-column gap-2" style="font-size: 0.875rem">
-          <div class="d-flex align-items-center gap-2">
-            <div
-              style="
-                width: 16px;
-                height: 16px;
-                background: #3b82f6;
-                border-radius: 50%;
-              "
-            ></div>
-            <span>Entity</span>
-          </div>
-          <div class="d-flex align-items-center gap-2">
-            <div
-              style="
-                width: 16px;
-                height: 16px;
-                background: #10b981;
-                border-radius: 50%;
-              "
-            ></div>
-            <span>Form</span>
-          </div>
-          <div class="d-flex align-items-center gap-2">
-            <div
-              style="
-                width: 16px;
-                height: 16px;
-                background: #f59e0b;
-                border-radius: 50%;
-              "
-            ></div>
-            <span>Document</span>
-          </div>
-          <div class="d-flex align-items-center gap-2">
-            <div
-              style="
-                width: 16px;
-                height: 16px;
-                background: #8b5cf6;
-                border-radius: 50%;
-              "
-            ></div>
-            <span>Process</span>
-          </div>
-          <div class="d-flex align-items-center gap-2">
-            <div
-              style="
-                width: 16px;
-                height: 16px;
-                background: #ef4444;
-                border-radius: 50%;
-              "
-            ></div>
-            <span>Dashboard</span>
-          </div>
-        </div>
-        <hr class="my-2" />
-        <div class="small text-muted">
-          <i class="fa fa-mouse-pointer me-1"></i>Click nodes for impact
-          analysis<br />
-          <i class="fa fa-search-plus me-1"></i>Scroll to zoom<br />
-          <i class="fa fa-hand-paper me-1"></i>Drag to pan/reposition
-        </div>
-      </div>
-
-      <!-- Selected Node Info -->
-      <div
-        *ngIf="selectedNodeId"
-        class="position-absolute bottom-0 start-0 m-3 bg-primary text-white rounded p-3 shadow"
-        style="max-width: 300px"
-      >
-        <h6 class="small fw-bold mb-2">
-          <i class="fa fa-info-circle me-2"></i>Impact Analysis
-        </h6>
-        <p class="mb-0 small">
-          Selected:
-          <strong>{{
-            (allNodes | filter: "id" : selectedNodeId)?.[0]?.name
-          }}</strong>
-          <br />
-          Showing all connected dependencies
-        </p>
-      </div>
-
-      <!-- Empty State -->
-      <div
-        *ngIf="filteredGraph.nodes.length === 0"
-        class="position-absolute top-50 start-50 translate-middle text-center"
-      >
-        <i class="fa fa-project-diagram fa-3x text-muted mb-3"></i>
-        <h5 class="text-muted">No Data to Display</h5>
-        <p class="text-muted">
-          Select items from the filters to visualize dependencies
-        </p>
-      </div>
+        Export all dependencies selected
+      </button>
     </div>
   </div>
 </ng-template>
