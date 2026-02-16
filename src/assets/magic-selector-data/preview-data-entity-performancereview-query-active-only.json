@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-performancereview",
+  "queryId": "query-active-only",
+  "totalCount": 199,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ba3ed6c9-943d-4b18-a742-bef398bcd304",
+      "name": "Grass-roots asynchronous database 1",
+      "status": "Active",
+      "createdDate": "2025-02-20T21:08:09",
+      "updatedDate": "2026-02-06T16:59:06",
+      "owner": "Jim George",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4777.54,
+      "description": "Stand old open modern magazine bit cell Mr."
+    },
+    {
+      "id": "96aab010-9af5-406a-9123-c0886dd91582",
+      "name": "Secured intermediate service-desk 2",
+      "status": "Pending",
+      "createdDate": "2025-12-14T18:38:22",
+      "updatedDate": "2026-01-17T20:36:15",
+      "owner": "Mary Allen",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7852.41,
+      "description": "Plan themselves many structure everything build."
+    },
+    {
+      "id": "87884623-3c5f-4141-a697-2888a27ca86b",
+      "name": "Grass-roots logistical firmware 3",
+      "status": "Pending",
+      "createdDate": "2025-03-18T10:43:34",
+      "updatedDate": "2026-01-26T14:35:33",
+      "owner": "Rachel Clark",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9094.32,
+      "description": "Window low affect serve lawyer serve give."
+    },
+    {
+      "id": "45ad3ae9-0736-46ea-8614-9c5e2de11b08",
+      "name": "Object-based systemic synergy 4",
+      "status": "Inactive",
+      "createdDate": "2025-11-01T20:15:37",
+      "updatedDate": "2026-01-25T12:24:19",
+      "owner": "Carrie Esparza",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2478.13,
+      "description": "Study miss although large rest hear season."
+    },
+    {
+      "id": "f0adacc2-383c-43b3-841d-fdcdf5d96afd",
+      "name": "Business-focused background workforce 5",
+      "status": "Active",
+      "createdDate": "2025-08-17T05:20:24",
+      "updatedDate": "2026-02-07T02:54:41",
+      "owner": "Cory Middleton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4361.9,
+      "description": "Picture tax position national leave move couple role."
+    },
+    {
+      "id": "e82a48d3-4a63-4f98-b0eb-c30cc59c44e3",
+      "name": "Vision-oriented zero administration toolset 6",
+      "status": "Completed",
+      "createdDate": "2025-05-07T06:32:43",
+      "updatedDate": "2026-01-16T20:23:12",
+      "owner": "Heather Wang PhD",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1685.32,
+      "description": "Throughout former record anyone fight last same."
+    },
+    {
+      "id": "d2375ec2-39cf-4e48-9d62-de96a9600b77",
+      "name": "Vision-oriented analyzing product 7",
+      "status": "Pending",
+      "createdDate": "2025-06-28T08:53:11",
+      "updatedDate": "2026-01-24T12:30:10",
+      "owner": "Diamond Cole",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5545.55,
+      "description": "Degree various kitchen poor."
+    },
+    {
+      "id": "97591c57-8fac-4480-9c9e-931a1b737b59",
+      "name": "Pre-emptive 24/7 ability 8",
+      "status": "Active",
+      "createdDate": "2025-05-22T11:52:43",
+      "updatedDate": "2026-01-26T22:32:08",
+      "owner": "Catherine Cole",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1913.68,
+      "description": "Find establish like end firm but."
+    },
+    {
+      "id": "a0ace5d1-1f84-4a7e-b82f-9aedd9c51fe6",
+      "name": "Object-based coherent core 9",
+      "status": "Pending",
+      "createdDate": "2025-11-13T16:30:08",
+      "updatedDate": "2026-01-17T13:26:18",
+      "owner": "Lori Cruz",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2755.23,
+      "description": "Return among question effect Mrs those."
+    },
+    {
+      "id": "7d21407e-a93d-4501-8473-bc1417d0d0ad",
+      "name": "Synchronized methodical interface 10",
+      "status": "Completed",
+      "createdDate": "2025-08-20T22:27:10",
+      "updatedDate": "2026-02-06T03:29:31",
+      "owner": "Jason Mccarthy",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1594.88,
+      "description": "Process enjoy throw want word will operation particular."
+    },
+    {
+      "id": "5bb7a790-2184-41b0-a517-0e431a8f9b42",
+      "name": "Cross-group dedicated firmware 11",
+      "status": "Completed",
+      "createdDate": "2025-02-24T11:53:30",
+      "updatedDate": "2026-01-18T04:14:06",
+      "owner": "Kevin Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4781.71,
+      "description": "Treat shake company edge money return marriage."
+    },
+    {
+      "id": "c3b8e6e6-1444-4dd4-b869-3d950e76d84c",
+      "name": "Team-oriented bottom-line structure 12",
+      "status": "Pending",
+      "createdDate": "2025-05-25T23:38:12",
+      "updatedDate": "2026-01-31T08:21:49",
+      "owner": "Eric Wright",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4837.19,
+      "description": "Decision news prove public benefit market."
+    },
+    {
+      "id": "78aba1d5-1333-40e5-829e-f46417eee2cc",
+      "name": "Progressive responsive project 13",
+      "status": "Pending",
+      "createdDate": "2025-09-21T13:00:39",
+      "updatedDate": "2026-02-06T20:24:24",
+      "owner": "Tracey Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9180.55,
+      "description": "Certain discover take possible everything."
+    },
+    {
+      "id": "e2afe416-3e6c-412a-b73c-7442e7c6cba8",
+      "name": "De-engineered secondary help-desk 14",
+      "status": "Active",
+      "createdDate": "2025-12-02T00:41:32",
+      "updatedDate": "2026-02-09T12:45:05",
+      "owner": "Martin Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3131.47,
+      "description": "Visit drop least memory down skin each item."
+    },
+    {
+      "id": "f14a3d41-69a4-4beb-9ca4-61be083205fc",
+      "name": "Proactive intangible challenge 15",
+      "status": "Inactive",
+      "createdDate": "2026-01-27T02:18:28",
+      "updatedDate": "2026-01-31T04:09:05",
+      "owner": "Kimberly Gibbs",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1212.53,
+      "description": "True only receive nation."
+    },
+    {
+      "id": "2da9d63e-3ed8-4ccb-9d7f-ff21d0a6084b",
+      "name": "Customer-focused heuristic methodology 16",
+      "status": "Active",
+      "createdDate": "2025-09-24T13:26:50",
+      "updatedDate": "2026-02-06T02:32:24",
+      "owner": "Angela Payne",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6379.02,
+      "description": "Job none one into actually position explain."
+    },
+    {
+      "id": "217b40c0-f68c-4644-8e55-748f8050905c",
+      "name": "Cross-group needs-based definition 17",
+      "status": "Completed",
+      "createdDate": "2025-12-19T21:28:42",
+      "updatedDate": "2026-02-12T11:22:26",
+      "owner": "Michael Atkinson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2839.89,
+      "description": "Tend clearly character because sister."
+    },
+    {
+      "id": "cf71ca20-f61a-442d-bf4a-297df1601e0e",
+      "name": "Horizontal stable flexibility 18",
+      "status": "Active",
+      "createdDate": "2025-03-20T14:04:34",
+      "updatedDate": "2026-01-25T10:31:29",
+      "owner": "Carlos Mcneil",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4208.25,
+      "description": "Concern really different similar analysis talk term service."
+    },
+    {
+      "id": "754e3ab0-1045-4715-a5f5-94c75d99b5c3",
+      "name": "Switchable full-range encryption 19",
+      "status": "Active",
+      "createdDate": "2025-08-15T21:28:40",
+      "updatedDate": "2026-01-21T21:50:14",
+      "owner": "Julie Luna",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8383.69,
+      "description": "Fire detail program plan."
+    },
+    {
+      "id": "e8a3f084-1430-4b42-8253-b68c223db07e",
+      "name": "Upgradable heuristic policy 20",
+      "status": "Pending",
+      "createdDate": "2025-11-24T02:40:15",
+      "updatedDate": "2026-02-10T22:32:54",
+      "owner": "Diana Orozco",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6546.82,
+      "description": "Word inside hard base."
+    },
+    {
+      "id": "0bcd80a3-e160-4b1b-ab0c-8a4d31851d00",
+      "name": "Synergized zero-defect approach 21",
+      "status": "Pending",
+      "createdDate": "2025-05-02T15:42:46",
+      "updatedDate": "2026-01-29T10:49:50",
+      "owner": "Shelley Ochoa",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6572.73,
+      "description": "Carry including seven firm stand computer likely."
+    },
+    {
+      "id": "d0afd8cf-8f56-4b71-aa00-da8299e6f34d",
+      "name": "Down-sized systemic challenge 22",
+      "status": "Active",
+      "createdDate": "2025-09-27T08:00:28",
+      "updatedDate": "2026-01-24T12:54:12",
+      "owner": "John Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6496.54,
+      "description": "Most fight mean hair charge provide realize."
+    },
+    {
+      "id": "cac921d2-1523-412a-bb51-4f93690b7650",
+      "name": "Diverse encompassing website 23",
+      "status": "Completed",
+      "createdDate": "2025-04-25T10:47:41",
+      "updatedDate": "2026-02-05T21:45:15",
+      "owner": "Edward Boyle",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6646.79,
+      "description": "Central more card ago wrong."
+    },
+    {
+      "id": "b24a8453-a7ba-4641-bba0-eea158db5df2",
+      "name": "Business-focused optimal budgetary management 24",
+      "status": "Completed",
+      "createdDate": "2025-05-26T05:24:36",
+      "updatedDate": "2026-02-11T20:57:30",
+      "owner": "Steven Alexander",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7063.91,
+      "description": "Behavior television possible sea teach would."
+    },
+    {
+      "id": "2091ca54-cfa0-48a1-bdbc-019c75e93599",
+      "name": "User-centric leadingedge application 25",
+      "status": "Completed",
+      "createdDate": "2025-07-02T05:18:25",
+      "updatedDate": "2026-02-06T05:31:28",
+      "owner": "Victor Washington",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8872.27,
+      "description": "Time pass need provide."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

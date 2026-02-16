@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-expense",
+  "queryId": "query-created-this-month",
+  "totalCount": 965,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ede417ba-31f8-4cef-82dd-2b3e653687c1",
+      "name": "Sharable solution-oriented support 1",
+      "status": "Completed",
+      "createdDate": "2025-04-29T16:43:48",
+      "updatedDate": "2026-02-09T12:11:16",
+      "owner": "Shelly Ryan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4675.77,
+      "description": "Seek drive blue together you appear history."
+    },
+    {
+      "id": "596aa0e6-9f7c-4e4b-a5e8-6f4a2b65d859",
+      "name": "Multi-lateral web-enabled customer loyalty 2",
+      "status": "Completed",
+      "createdDate": "2026-02-03T19:55:08",
+      "updatedDate": "2026-01-30T21:01:29",
+      "owner": "Laura Reyes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6447.74,
+      "description": "Right fight or."
+    },
+    {
+      "id": "151e27b4-c713-45dd-8449-9e4c0b2ee527",
+      "name": "Networked bifurcated challenge 3",
+      "status": "Completed",
+      "createdDate": "2025-11-28T14:08:15",
+      "updatedDate": "2026-01-17T09:19:36",
+      "owner": "John Williams",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9461.99,
+      "description": "According bad manager Mr college."
+    },
+    {
+      "id": "4b253198-7543-4c89-a545-85fc757fde43",
+      "name": "Organized dedicated firmware 4",
+      "status": "Inactive",
+      "createdDate": "2025-08-14T12:02:52",
+      "updatedDate": "2026-01-16T04:44:13",
+      "owner": "Anna Lynch",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6726.31,
+      "description": "Me wonder action."
+    },
+    {
+      "id": "22386b1b-162e-4374-8356-3503dccd3ec1",
+      "name": "Profit-focused mission-critical hierarchy 5",
+      "status": "Completed",
+      "createdDate": "2025-07-19T20:06:04",
+      "updatedDate": "2026-01-31T12:24:14",
+      "owner": "Deborah Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5688.87,
+      "description": "Administration treat strong inside but peace."
+    },
+    {
+      "id": "e54684cf-7b06-4f86-8a82-3a30da861f8c",
+      "name": "Networked reciprocal customer loyalty 6",
+      "status": "Completed",
+      "createdDate": "2025-05-17T19:28:26",
+      "updatedDate": "2026-01-30T06:30:37",
+      "owner": "Anthony Abbott",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4349.92,
+      "description": "Short low focus car."
+    },
+    {
+      "id": "99840308-b201-4db4-a743-2422c00440c8",
+      "name": "Future-proofed bifurcated conglomeration 7",
+      "status": "Pending",
+      "createdDate": "2025-05-29T16:53:21",
+      "updatedDate": "2026-01-18T03:40:54",
+      "owner": "Heather Thompson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2097.28,
+      "description": "He late forward budget food wonder material."
+    },
+    {
+      "id": "6dd4253a-c6a9-4819-8feb-5005e451bfa1",
+      "name": "Pre-emptive bandwidth-monitored open system 8",
+      "status": "Completed",
+      "createdDate": "2025-02-28T22:58:13",
+      "updatedDate": "2026-02-13T07:40:58",
+      "owner": "Diane Terry",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1235.62,
+      "description": "Local game concern suddenly I."
+    },
+    {
+      "id": "b1097c54-c9d2-4c7d-849c-310c19e5c679",
+      "name": "Synergized full-range projection 9",
+      "status": "Completed",
+      "createdDate": "2025-10-20T04:16:39",
+      "updatedDate": "2026-01-25T23:29:04",
+      "owner": "Chloe Reynolds MD",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1830.19,
+      "description": "Expert sing well sea care wear discover."
+    },
+    {
+      "id": "e8604b8c-68df-4c80-9112-f9873fb1ed61",
+      "name": "Grass-roots neutral service-desk 10",
+      "status": "Active",
+      "createdDate": "2025-10-07T05:03:09",
+      "updatedDate": "2026-01-21T15:57:29",
+      "owner": "Mariah Travis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1573.39,
+      "description": "Their chance page door."
+    },
+    {
+      "id": "a139b389-9984-40d6-b239-f55658ddbcec",
+      "name": "Self-enabling multi-tasking moderator 11",
+      "status": "Inactive",
+      "createdDate": "2025-04-27T13:58:38",
+      "updatedDate": "2026-01-20T12:50:58",
+      "owner": "Sarah Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2794.47,
+      "description": "Enter turn member notice."
+    },
+    {
+      "id": "4751cfc6-4aa4-4022-b3b8-2d229274b5d3",
+      "name": "Sharable bottom-line product 12",
+      "status": "Active",
+      "createdDate": "2025-12-01T13:02:37",
+      "updatedDate": "2026-01-21T08:48:28",
+      "owner": "Dr. Matthew Taylor",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4795.15,
+      "description": "Impact special nor father teach suggest list suffer."
+    },
+    {
+      "id": "9fdb323e-7ee0-4381-a17b-ffc6a54f946e",
+      "name": "Open-architected uniform core 13",
+      "status": "Pending",
+      "createdDate": "2025-07-12T08:44:50",
+      "updatedDate": "2026-01-26T13:28:59",
+      "owner": "Bethany Vasquez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6078.47,
+      "description": "Fly indicate candidate."
+    },
+    {
+      "id": "0b313d43-7baf-4d8f-8406-18ac27a89123",
+      "name": "Self-enabling high-level open system 14",
+      "status": "Inactive",
+      "createdDate": "2025-09-27T07:37:56",
+      "updatedDate": "2026-01-20T08:57:33",
+      "owner": "Roy Walters",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5309.33,
+      "description": "Act some fly pass whether short."
+    },
+    {
+      "id": "d9afebd6-ebf1-487d-bbb4-c58668f297d7",
+      "name": "Object-based homogeneous support 15",
+      "status": "Active",
+      "createdDate": "2025-07-17T18:32:30",
+      "updatedDate": "2026-01-15T16:28:37",
+      "owner": "Virginia Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7069.06,
+      "description": "Election clear blood card after."
+    },
+    {
+      "id": "faaeafbe-b52c-4a86-bea2-5044eaa220f3",
+      "name": "Customizable responsive emulation 16",
+      "status": "Inactive",
+      "createdDate": "2025-04-24T10:25:37",
+      "updatedDate": "2026-01-26T17:53:46",
+      "owner": "Lance Harris",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2857.64,
+      "description": "Large financial work parent newspaper people."
+    },
+    {
+      "id": "e4558cad-53a8-45cb-b214-15a0c45e2d63",
+      "name": "Networked bandwidth-monitored methodology 17",
+      "status": "Active",
+      "createdDate": "2025-03-16T12:52:47",
+      "updatedDate": "2026-02-02T16:13:40",
+      "owner": "Richard Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3963.9,
+      "description": "Realize pass upon stay government he often."
+    },
+    {
+      "id": "fb05e228-d0ed-4a08-ba78-a59b1c3494b1",
+      "name": "Adaptive bandwidth-monitored installation 18",
+      "status": "Inactive",
+      "createdDate": "2025-04-26T11:28:12",
+      "updatedDate": "2026-01-16T16:02:41",
+      "owner": "Nicole Ball",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8854.83,
+      "description": "Yard although field help kitchen memory."
+    },
+    {
+      "id": "b7c0c157-9ad6-41ad-aa47-cc4bcc17164d",
+      "name": "Persistent modular time-frame 19",
+      "status": "Pending",
+      "createdDate": "2025-05-25T00:30:10",
+      "updatedDate": "2026-02-04T22:45:37",
+      "owner": "Anna Mckenzie",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4518.29,
+      "description": "List know offer community point officer."
+    },
+    {
+      "id": "3d120b5d-9f91-41a6-adf0-544daede78b2",
+      "name": "Inverse executive archive 20",
+      "status": "Inactive",
+      "createdDate": "2025-05-08T01:43:39",
+      "updatedDate": "2026-01-24T01:14:44",
+      "owner": "Stanley Edwards",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8670.97,
+      "description": "Him you audience successful world opportunity relate."
+    },
+    {
+      "id": "c4cfdc7e-48e6-40eb-9411-201f17d29ec8",
+      "name": "Implemented real-time capability 21",
+      "status": "Pending",
+      "createdDate": "2025-04-22T21:11:10",
+      "updatedDate": "2026-01-16T19:50:23",
+      "owner": "Janice Snyder",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9879.72,
+      "description": "Open follow moment perform."
+    },
+    {
+      "id": "495b3e2b-b727-49bb-82cf-96e1999bd166",
+      "name": "Persevering demand-driven process improvement 22",
+      "status": "Active",
+      "createdDate": "2025-12-19T22:27:43",
+      "updatedDate": "2026-01-30T14:24:36",
+      "owner": "Rebecca Ellis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7178.14,
+      "description": "Parent decision chair according PM phone official."
+    },
+    {
+      "id": "c96e03bd-d7c5-4f3c-aa05-3a7dcc3e25c5",
+      "name": "Cross-platform uniform conglomeration 23",
+      "status": "Inactive",
+      "createdDate": "2026-02-09T21:20:53",
+      "updatedDate": "2026-02-12T08:41:14",
+      "owner": "Kimberly Gonzales",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7541.96,
+      "description": "Share system those stand evidence strategy serve."
+    },
+    {
+      "id": "c8e713d4-376b-4e77-8f8b-08d443a2d51a",
+      "name": "Upgradable incremental data-warehouse 24",
+      "status": "Completed",
+      "createdDate": "2025-05-28T19:12:10",
+      "updatedDate": "2026-02-10T17:17:32",
+      "owner": "Megan Jones",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3321.0,
+      "description": "Certainly parent ever."
+    },
+    {
+      "id": "3ab7ef46-aba5-430d-a26f-d58b9ac25fc6",
+      "name": "Self-enabling asymmetric info-mediaries 25",
+      "status": "Completed",
+      "createdDate": "2025-02-25T09:52:13",
+      "updatedDate": "2026-02-03T17:31:51",
+      "owner": "Kelly Gardner",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1890.35,
+      "description": "Expect be campaign."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

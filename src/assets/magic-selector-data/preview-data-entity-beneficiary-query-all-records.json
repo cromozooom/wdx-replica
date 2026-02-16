@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-all-records",
+  "totalCount": 692,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "30d67a18-1f87-469b-9c83-a106659c340f",
+      "name": "Virtual global matrices 1",
+      "status": "Pending",
+      "createdDate": "2026-02-07T03:53:39",
+      "updatedDate": "2026-02-02T03:44:19",
+      "owner": "Rodney Goodman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7666.98,
+      "description": "Wrong magazine wide answer."
+    },
+    {
+      "id": "628a2dcb-d5ad-4fbe-bf74-38c538b3bfc2",
+      "name": "Exclusive bi-directional algorithm 2",
+      "status": "Completed",
+      "createdDate": "2025-03-31T15:00:50",
+      "updatedDate": "2026-02-01T03:32:17",
+      "owner": "Evelyn Armstrong",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3667.29,
+      "description": "Style size central state."
+    },
+    {
+      "id": "33575ee6-3bc6-4450-9e88-28add83e1bec",
+      "name": "Optional multi-state software 3",
+      "status": "Inactive",
+      "createdDate": "2025-03-28T14:53:55",
+      "updatedDate": "2026-02-03T01:47:03",
+      "owner": "Emily Robinson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6040.8,
+      "description": "Little worker goal rest."
+    },
+    {
+      "id": "8c4eabb4-7f70-4b74-91eb-957f03c2a700",
+      "name": "Reactive impactful monitoring 4",
+      "status": "Pending",
+      "createdDate": "2025-03-04T12:25:03",
+      "updatedDate": "2026-01-24T13:04:21",
+      "owner": "Mary Kim",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7094.07,
+      "description": "Me right worker south while through."
+    },
+    {
+      "id": "465d317a-0aad-4d0d-b6fa-c39f354667ec",
+      "name": "Function-based asymmetric array 5",
+      "status": "Inactive",
+      "createdDate": "2025-09-12T11:47:56",
+      "updatedDate": "2026-02-02T12:25:58",
+      "owner": "Stephanie Griffin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9988.02,
+      "description": "Call rest weight take somebody base."
+    },
+    {
+      "id": "fe1292b8-5ce5-4a5f-aae2-a68940a59e2c",
+      "name": "Future-proofed fault-tolerant workforce 6",
+      "status": "Active",
+      "createdDate": "2025-06-23T15:24:24",
+      "updatedDate": "2026-02-01T10:10:31",
+      "owner": "Carly Dunlap",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5905.12,
+      "description": "Explain with material."
+    },
+    {
+      "id": "016127f3-b9d5-4003-b460-11e71f5c220a",
+      "name": "Balanced disintermediate hub 7",
+      "status": "Pending",
+      "createdDate": "2025-09-15T21:55:55",
+      "updatedDate": "2026-01-24T12:09:13",
+      "owner": "Lindsay Hernandez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3507.12,
+      "description": "May again imagine everyone product week."
+    },
+    {
+      "id": "af80b128-3cd7-4c17-b3b7-dbc47c14c3a4",
+      "name": "Multi-layered fault-tolerant functionalities 8",
+      "status": "Completed",
+      "createdDate": "2025-09-05T17:36:00",
+      "updatedDate": "2026-01-29T07:04:26",
+      "owner": "Angel Terrell",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2036.19,
+      "description": "Board necessary seek position player."
+    },
+    {
+      "id": "15bc98de-b8e0-4db3-b682-8c6f4c8fd0da",
+      "name": "Secured well-modulated open system 9",
+      "status": "Pending",
+      "createdDate": "2025-10-10T11:35:01",
+      "updatedDate": "2026-01-19T12:22:32",
+      "owner": "Dr. Marissa Payne",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4457.58,
+      "description": "Space doctor heart sure."
+    },
+    {
+      "id": "a7b4b926-687e-4e07-8865-33a5783f83ad",
+      "name": "Team-oriented homogeneous analyzer 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-05T22:39:53",
+      "updatedDate": "2026-01-22T19:43:32",
+      "owner": "Joshua Pierce",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3035.03,
+      "description": "Whether big that view."
+    },
+    {
+      "id": "3a2f85e6-b3a0-4d85-b15c-1e9cc8718458",
+      "name": "Ameliorated attitude-oriented instruction set 11",
+      "status": "Completed",
+      "createdDate": "2025-08-12T05:03:28",
+      "updatedDate": "2026-01-25T22:19:57",
+      "owner": "Cristina Oneill",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8278.98,
+      "description": "Material room kind protect decide right year."
+    },
+    {
+      "id": "a296a557-b3b8-4ec3-94bd-920cb8dd2e95",
+      "name": "Pre-emptive attitude-oriented focus group 12",
+      "status": "Inactive",
+      "createdDate": "2025-09-18T07:00:29",
+      "updatedDate": "2026-01-31T20:46:11",
+      "owner": "Susan Blanchard",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3761.79,
+      "description": "Quickly world campaign type fly music."
+    },
+    {
+      "id": "aef17057-3786-4923-9020-9b4b4a107aa3",
+      "name": "Cross-group web-enabled firmware 13",
+      "status": "Inactive",
+      "createdDate": "2025-12-10T06:50:51",
+      "updatedDate": "2026-02-10T00:11:19",
+      "owner": "Jennifer Chavez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8720.8,
+      "description": "Sound them body others trouble me so sound."
+    },
+    {
+      "id": "c8b90ead-2d71-4e29-841a-0b468493b56f",
+      "name": "Triple-buffered national artificial intelligence 14",
+      "status": "Inactive",
+      "createdDate": "2025-10-11T07:57:16",
+      "updatedDate": "2026-02-14T14:03:52",
+      "owner": "Dylan Fischer",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9509.15,
+      "description": "Authority cell former picture happy such daughter person."
+    },
+    {
+      "id": "68beee1b-4cb0-4134-ae0a-2266ffc550da",
+      "name": "Automated tertiary flexibility 15",
+      "status": "Completed",
+      "createdDate": "2025-09-12T06:39:23",
+      "updatedDate": "2026-01-21T09:34:49",
+      "owner": "Daniel Sanford",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9395.26,
+      "description": "Bag we range pick."
+    },
+    {
+      "id": "1ee38e46-17a1-44cf-ac44-e090b7ae62da",
+      "name": "Reduced systemic standardization 16",
+      "status": "Completed",
+      "createdDate": "2025-10-26T08:14:08",
+      "updatedDate": "2026-02-13T08:38:08",
+      "owner": "Patricia Riggs",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 715.85,
+      "description": "These soldier certainly."
+    },
+    {
+      "id": "14cc5b9f-b482-4674-a093-0f87cce19c09",
+      "name": "Profound explicit product 17",
+      "status": "Inactive",
+      "createdDate": "2026-01-14T16:59:47",
+      "updatedDate": "2026-02-04T11:13:12",
+      "owner": "Mrs. Melissa Valdez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 764.16,
+      "description": "Less result arrive."
+    },
+    {
+      "id": "40ab2326-99ec-4ba2-ab71-6df5ea1dbf10",
+      "name": "Compatible dedicated focus group 18",
+      "status": "Inactive",
+      "createdDate": "2025-06-02T11:34:51",
+      "updatedDate": "2026-02-07T13:51:22",
+      "owner": "Jason Snyder",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6297.46,
+      "description": "Rise entire whether stay time."
+    },
+    {
+      "id": "cd960111-ab44-4898-a517-e271fa895fdc",
+      "name": "Expanded zero-defect support 19",
+      "status": "Inactive",
+      "createdDate": "2025-07-12T05:29:16",
+      "updatedDate": "2026-01-20T21:49:59",
+      "owner": "Jonathan Kelly",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5454.97,
+      "description": "Spend person four."
+    },
+    {
+      "id": "a15cde5d-f0aa-40a5-b5ec-53f0ab5b566e",
+      "name": "Integrated user-facing database 20",
+      "status": "Inactive",
+      "createdDate": "2025-04-07T19:46:14",
+      "updatedDate": "2026-01-18T14:41:12",
+      "owner": "Linda Powell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5033.76,
+      "description": "Long card public huge against language."
+    },
+    {
+      "id": "6503ddd3-45fe-41a9-991f-263393edfe50",
+      "name": "Visionary modular groupware 21",
+      "status": "Completed",
+      "createdDate": "2025-10-13T06:09:36",
+      "updatedDate": "2026-01-24T21:11:32",
+      "owner": "Hannah Davis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2829.17,
+      "description": "Involve history that against wait once."
+    },
+    {
+      "id": "db58f02e-1cdc-47fd-a80c-46fe603469a2",
+      "name": "Vision-oriented even-keeled framework 22",
+      "status": "Active",
+      "createdDate": "2025-07-07T09:32:13",
+      "updatedDate": "2026-01-16T14:15:13",
+      "owner": "Nicole Flores",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7700.63,
+      "description": "Society who deep agency world live grow."
+    },
+    {
+      "id": "6b43fa13-fa81-41df-b731-3df985884f66",
+      "name": "Profit-focused cohesive installation 23",
+      "status": "Inactive",
+      "createdDate": "2025-09-05T02:53:15",
+      "updatedDate": "2026-02-08T16:24:49",
+      "owner": "Alexis Howard",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2196.95,
+      "description": "Energy between just question clear my worker mother."
+    },
+    {
+      "id": "7572ec94-c7e9-443e-80d3-1f885db3ea36",
+      "name": "Profit-focused reciprocal model 24",
+      "status": "Completed",
+      "createdDate": "2025-10-26T05:33:29",
+      "updatedDate": "2026-01-29T12:42:41",
+      "owner": "Linda Mccall",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7080.97,
+      "description": "Game think according history."
+    },
+    {
+      "id": "4a03e70c-c12d-4433-bab1-1401e60dfdb5",
+      "name": "Business-focused mobile implementation 25",
+      "status": "Inactive",
+      "createdDate": "2025-03-24T22:15:43",
+      "updatedDate": "2026-01-23T10:33:50",
+      "owner": "Nicole King",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8136.69,
+      "description": "Recently become old."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

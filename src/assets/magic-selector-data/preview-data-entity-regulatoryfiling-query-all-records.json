@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-regulatoryfiling",
+  "queryId": "query-all-records",
+  "totalCount": 887,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "336457df-6f2f-4324-b985-330348d855d5",
+      "name": "Quality-focused clear-thinking orchestration 1",
+      "status": "Inactive",
+      "createdDate": "2025-04-24T18:01:03",
+      "updatedDate": "2026-02-12T03:14:09",
+      "owner": "Elizabeth Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8764.62,
+      "description": "Use night add."
+    },
+    {
+      "id": "6349afb9-2af7-45d4-8522-c58e764293a8",
+      "name": "Horizontal interactive challenge 2",
+      "status": "Completed",
+      "createdDate": "2025-04-02T13:57:38",
+      "updatedDate": "2026-02-12T16:53:09",
+      "owner": "Daniel Greene",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1946.4,
+      "description": "Adult protect summer together."
+    },
+    {
+      "id": "8184d99a-d4ff-473b-9a84-3eb76be2a526",
+      "name": "Devolved mission-critical moderator 3",
+      "status": "Inactive",
+      "createdDate": "2025-12-17T08:02:41",
+      "updatedDate": "2026-01-31T15:50:58",
+      "owner": "Eric Martin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6726.35,
+      "description": "Kitchen amount popular information garden risk doctor."
+    },
+    {
+      "id": "2e9d4bdc-16f4-475e-91f3-704175b49222",
+      "name": "Visionary modular open system 4",
+      "status": "Completed",
+      "createdDate": "2025-11-11T03:11:57",
+      "updatedDate": "2026-01-30T06:15:16",
+      "owner": "Wendy Huff",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1747.26,
+      "description": "Too key good garden research."
+    },
+    {
+      "id": "aaa32d77-ecdc-4a46-8e05-603937863b04",
+      "name": "Organized leadingedge benchmark 5",
+      "status": "Inactive",
+      "createdDate": "2026-02-04T21:59:45",
+      "updatedDate": "2026-01-23T15:57:15",
+      "owner": "Monica Silva",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4091.36,
+      "description": "Specific save trip."
+    },
+    {
+      "id": "192278c8-25b8-40c5-8199-83607f3ff171",
+      "name": "Multi-lateral actuating hub 6",
+      "status": "Completed",
+      "createdDate": "2025-05-27T08:10:41",
+      "updatedDate": "2026-02-03T02:25:54",
+      "owner": "James Robinson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8782.78,
+      "description": "Soldier along only family also."
+    },
+    {
+      "id": "eca84cd1-c466-443b-85ce-7a7e397df6d9",
+      "name": "Diverse real-time implementation 7",
+      "status": "Pending",
+      "createdDate": "2025-08-17T13:19:53",
+      "updatedDate": "2026-01-29T23:32:57",
+      "owner": "Lisa Stein",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3303.96,
+      "description": "Increase development daughter although."
+    },
+    {
+      "id": "032d34e9-86e2-4064-acf7-4ce73a674ff6",
+      "name": "Seamless bandwidth-monitored service-desk 8",
+      "status": "Inactive",
+      "createdDate": "2025-09-24T04:44:20",
+      "updatedDate": "2026-01-24T08:52:20",
+      "owner": "Wendy Williams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5993.71,
+      "description": "Maintain rate evening blood."
+    },
+    {
+      "id": "d46b4e52-ad89-4294-b386-e951319789d6",
+      "name": "Business-focused human-resource Internet solution 9",
+      "status": "Pending",
+      "createdDate": "2025-09-17T20:26:54",
+      "updatedDate": "2026-02-12T14:16:52",
+      "owner": "Melissa Casey",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 116.46,
+      "description": "Outside let exactly nearly foreign American wait."
+    },
+    {
+      "id": "e072396e-4e0c-4c88-b1c3-0deb0a246564",
+      "name": "Streamlined global interface 10",
+      "status": "Active",
+      "createdDate": "2025-12-06T01:37:21",
+      "updatedDate": "2026-01-27T19:03:01",
+      "owner": "Nathan Gilbert",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8946.27,
+      "description": "Member test manage stand system."
+    },
+    {
+      "id": "75cdee43-2407-44b1-9fcf-13f42295e0cf",
+      "name": "Monitored stable workforce 11",
+      "status": "Inactive",
+      "createdDate": "2026-01-14T14:42:34",
+      "updatedDate": "2026-01-27T10:30:30",
+      "owner": "Carol Perez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3556.88,
+      "description": "Quality task picture reach."
+    },
+    {
+      "id": "4ad7e704-4860-46e8-b86b-fe76b0af64d8",
+      "name": "Future-proofed tertiary challenge 12",
+      "status": "Pending",
+      "createdDate": "2025-06-06T18:12:49",
+      "updatedDate": "2026-02-09T02:27:37",
+      "owner": "Dylan Goodwin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 367.09,
+      "description": "Bar at different argue building leg."
+    },
+    {
+      "id": "143f4f4a-9428-4f0a-9a74-f4194421972a",
+      "name": "Focused background focus group 13",
+      "status": "Pending",
+      "createdDate": "2025-06-08T05:09:20",
+      "updatedDate": "2026-02-12T14:43:26",
+      "owner": "Tracie King",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3461.81,
+      "description": "Green air walk new record its way just."
+    },
+    {
+      "id": "32975389-c0e0-4c16-bdaf-4bf71e9a1a17",
+      "name": "Exclusive bandwidth-monitored orchestration 14",
+      "status": "Pending",
+      "createdDate": "2025-06-10T01:30:58",
+      "updatedDate": "2026-01-21T07:59:10",
+      "owner": "Debbie Brooks",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2043.23,
+      "description": "Soon generation last civil."
+    },
+    {
+      "id": "9573d14e-06f6-4197-9926-7c052cdf2d37",
+      "name": "User-friendly background analyzer 15",
+      "status": "Pending",
+      "createdDate": "2025-06-25T04:24:55",
+      "updatedDate": "2026-01-19T20:53:10",
+      "owner": "Megan Pearson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2618.71,
+      "description": "Short design century appear around own less glass."
+    },
+    {
+      "id": "92a2f113-d013-4366-a70b-6a139a9baf2f",
+      "name": "Optional eco-centric policy 16",
+      "status": "Inactive",
+      "createdDate": "2025-12-25T12:59:03",
+      "updatedDate": "2026-02-09T06:21:05",
+      "owner": "Sarah Roberts",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2327.84,
+      "description": "Network level to yourself."
+    },
+    {
+      "id": "570b20e8-3a4a-4153-b40c-36ad71660ba1",
+      "name": "Managed neutral moratorium 17",
+      "status": "Completed",
+      "createdDate": "2025-05-13T15:32:26",
+      "updatedDate": "2026-01-27T08:41:16",
+      "owner": "Katrina Stokes",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4775.57,
+      "description": "Task important national pass minute."
+    },
+    {
+      "id": "33c06622-42cc-4c0f-b370-55dc95329b39",
+      "name": "Ergonomic intangible analyzer 18",
+      "status": "Active",
+      "createdDate": "2025-12-06T19:26:17",
+      "updatedDate": "2026-01-19T03:48:25",
+      "owner": "Jeremy Brooks",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3927.28,
+      "description": "Low move everyone full president drive."
+    },
+    {
+      "id": "2b0657d6-a5ce-4d70-ab3e-240bde214a5c",
+      "name": "Distributed clear-thinking analyzer 19",
+      "status": "Inactive",
+      "createdDate": "2025-04-16T00:32:13",
+      "updatedDate": "2026-01-25T05:40:33",
+      "owner": "Sarah Hill",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4425.8,
+      "description": "Amount author point without speech concern good."
+    },
+    {
+      "id": "30ef149b-3714-49d8-8ac5-00ba70f10230",
+      "name": "Balanced content-based application 20",
+      "status": "Pending",
+      "createdDate": "2025-08-07T06:31:18",
+      "updatedDate": "2026-02-09T15:53:04",
+      "owner": "Elaine Fuller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2601.17,
+      "description": "Remain necessary positive citizen involve trouble."
+    },
+    {
+      "id": "f33a53bd-6f14-48d3-8938-a6af3bf3be2b",
+      "name": "Streamlined systemic hub 21",
+      "status": "Active",
+      "createdDate": "2026-01-17T08:48:15",
+      "updatedDate": "2026-02-10T13:15:59",
+      "owner": "Kellie Davis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4452.29,
+      "description": "Decide close defense amount artist service drop."
+    },
+    {
+      "id": "e0fd86f5-9b07-4eff-bac0-8f487623e6df",
+      "name": "Upgradable homogeneous benchmark 22",
+      "status": "Active",
+      "createdDate": "2025-11-07T10:11:55",
+      "updatedDate": "2026-01-31T06:47:13",
+      "owner": "Lisa May",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8826.01,
+      "description": "Study leg society order."
+    },
+    {
+      "id": "22e23657-e9e3-409a-b07b-1449c9bb72b8",
+      "name": "Team-oriented fresh-thinking initiative 23",
+      "status": "Pending",
+      "createdDate": "2026-02-02T16:36:27",
+      "updatedDate": "2026-02-04T03:05:38",
+      "owner": "Martha Vang",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6187.87,
+      "description": "Meet second worry sea wrong."
+    },
+    {
+      "id": "13e97a01-8f1b-4d94-8477-46b34a4fb70d",
+      "name": "Grass-roots zero tolerance projection 24",
+      "status": "Pending",
+      "createdDate": "2025-12-08T17:42:55",
+      "updatedDate": "2026-02-14T00:42:55",
+      "owner": "Caitlin Edwards",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9935.58,
+      "description": "Card news child."
+    },
+    {
+      "id": "ad54195b-9b4c-4ceb-bf35-d274450070dd",
+      "name": "Extended global moderator 25",
+      "status": "Inactive",
+      "createdDate": "2025-11-23T21:45:35",
+      "updatedDate": "2026-01-18T08:38:30",
+      "owner": "Jeffrey Michael",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 988.0,
+      "description": "Law yet agreement catch."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

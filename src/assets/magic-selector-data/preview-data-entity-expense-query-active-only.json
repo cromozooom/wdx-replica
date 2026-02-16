@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-expense",
+  "queryId": "query-active-only",
+  "totalCount": 143,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a040a710-083a-4f8e-9734-4afbe32f1771",
+      "name": "Focused holistic attitude 1",
+      "status": "Inactive",
+      "createdDate": "2025-02-14T17:46:53",
+      "updatedDate": "2026-01-26T23:01:13",
+      "owner": "Luis Gomez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4716.98,
+      "description": "How hit we leave."
+    },
+    {
+      "id": "4846ad3b-5f60-4d31-85cb-07d430d4582c",
+      "name": "Multi-lateral background hierarchy 2",
+      "status": "Active",
+      "createdDate": "2025-11-02T05:58:24",
+      "updatedDate": "2026-01-28T10:49:23",
+      "owner": "Darlene Wallace",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7824.04,
+      "description": "Boy analysis evidence trouble."
+    },
+    {
+      "id": "77042b3d-2373-4113-83b2-f98158fd88d0",
+      "name": "De-engineered analyzing analyzer 3",
+      "status": "Active",
+      "createdDate": "2025-05-23T15:13:18",
+      "updatedDate": "2026-02-04T20:42:46",
+      "owner": "Mrs. Mary Shepherd",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9188.99,
+      "description": "Trial enter appear entire oil structure animal."
+    },
+    {
+      "id": "40002757-4e36-4158-86de-950a11744e56",
+      "name": "Automated national hub 4",
+      "status": "Inactive",
+      "createdDate": "2025-10-21T20:21:48",
+      "updatedDate": "2026-02-07T13:10:33",
+      "owner": "Patty Norton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2429.71,
+      "description": "Wall within opportunity personal."
+    },
+    {
+      "id": "7339d59d-044e-4034-a801-d825e222e030",
+      "name": "Vision-oriented bottom-line intranet 5",
+      "status": "Inactive",
+      "createdDate": "2026-01-27T15:32:26",
+      "updatedDate": "2026-02-01T17:07:59",
+      "owner": "Shawn Pitts",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4014.12,
+      "description": "Author where move always enter."
+    },
+    {
+      "id": "a6bbf22e-6466-4af7-bc01-efcfce2ec6cf",
+      "name": "Fully-configurable discrete moderator 6",
+      "status": "Inactive",
+      "createdDate": "2025-03-30T20:09:53",
+      "updatedDate": "2026-02-01T17:29:21",
+      "owner": "Theresa Mason",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7042.66,
+      "description": "Writer quality middle build color newspaper."
+    },
+    {
+      "id": "c2a042ed-ba7a-4fd1-834d-bda85da3a8e4",
+      "name": "Fully-configurable zero-defect knowledge user 7",
+      "status": "Completed",
+      "createdDate": "2025-10-09T21:21:12",
+      "updatedDate": "2026-01-24T21:01:50",
+      "owner": "Michael Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 740.57,
+      "description": "Allow wall fly firm fast model computer."
+    },
+    {
+      "id": "a536693a-f7d6-4e97-9a93-0418a1469a68",
+      "name": "Multi-lateral bi-directional architecture 8",
+      "status": "Completed",
+      "createdDate": "2025-03-25T03:21:20",
+      "updatedDate": "2026-02-04T19:08:33",
+      "owner": "Donald Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 716.38,
+      "description": "Letter project oil gun."
+    },
+    {
+      "id": "00e9bb42-1153-4bbd-a6a3-caebb4459fab",
+      "name": "Quality-focused bottom-line flexibility 9",
+      "status": "Completed",
+      "createdDate": "2025-05-03T14:08:24",
+      "updatedDate": "2026-01-29T11:42:47",
+      "owner": "Amanda Griffin",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9785.49,
+      "description": "I hard success build media."
+    },
+    {
+      "id": "7deb7d96-e022-4a83-845a-de82eafdc282",
+      "name": "Versatile local definition 10",
+      "status": "Pending",
+      "createdDate": "2026-02-07T16:03:56",
+      "updatedDate": "2026-02-12T14:35:54",
+      "owner": "Elizabeth Proctor",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8286.56,
+      "description": "Include work ground four difference professor."
+    },
+    {
+      "id": "db10e9e0-08fc-4bbb-84a8-e40bb34c6509",
+      "name": "Sharable zero administration data-warehouse 11",
+      "status": "Completed",
+      "createdDate": "2025-08-23T14:29:50",
+      "updatedDate": "2026-01-26T20:19:41",
+      "owner": "Amy Marshall",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7790.37,
+      "description": "Population campaign commercial performance impact attorney also."
+    },
+    {
+      "id": "4e61885a-8cdb-4234-b417-9c9c4f2e670f",
+      "name": "Operative homogeneous strategy 12",
+      "status": "Active",
+      "createdDate": "2025-11-24T12:45:05",
+      "updatedDate": "2026-01-29T10:45:42",
+      "owner": "John Ramirez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7895.09,
+      "description": "Interest hospital consumer."
+    },
+    {
+      "id": "bc80f61c-9650-4672-ae33-7042572f2a41",
+      "name": "Mandatory even-keeled frame 13",
+      "status": "Inactive",
+      "createdDate": "2025-08-07T19:48:17",
+      "updatedDate": "2026-01-19T09:46:35",
+      "owner": "Danielle Pena",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8127.46,
+      "description": "Couple production professional hard hard school even."
+    },
+    {
+      "id": "1e478ea4-cdbf-4ac7-a1be-00e530867f8f",
+      "name": "Quality-focused actuating website 14",
+      "status": "Completed",
+      "createdDate": "2025-07-13T19:39:16",
+      "updatedDate": "2026-01-19T14:58:02",
+      "owner": "Edward Barnes",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2850.69,
+      "description": "Huge concern nice fall car center do."
+    },
+    {
+      "id": "061a01c5-7a4c-4af1-ac7e-a6f28f481f97",
+      "name": "Multi-tiered actuating attitude 15",
+      "status": "Inactive",
+      "createdDate": "2025-02-20T22:03:03",
+      "updatedDate": "2026-01-26T22:28:04",
+      "owner": "Philip Conway",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1749.39,
+      "description": "Director manager it her little."
+    },
+    {
+      "id": "d571a49e-0beb-48ff-99dc-3a520748f05b",
+      "name": "Assimilated executive model 16",
+      "status": "Active",
+      "createdDate": "2025-08-06T11:41:21",
+      "updatedDate": "2026-02-05T21:37:08",
+      "owner": "Albert Collier",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9287.44,
+      "description": "Might personal power recent that last."
+    },
+    {
+      "id": "1316d775-82bc-4e13-98b6-67a1c4f7a633",
+      "name": "Down-sized directional moderator 17",
+      "status": "Inactive",
+      "createdDate": "2025-02-18T09:11:40",
+      "updatedDate": "2026-02-03T06:47:01",
+      "owner": "Autumn Krueger",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8717.83,
+      "description": "Decide as another mind window to."
+    },
+    {
+      "id": "3d0e18e9-851f-44aa-9a8b-da50bb9074ac",
+      "name": "Cloned regional intranet 18",
+      "status": "Pending",
+      "createdDate": "2025-12-11T22:17:23",
+      "updatedDate": "2026-02-11T16:05:00",
+      "owner": "Michelle Gomez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4550.82,
+      "description": "Least among represent anyone."
+    },
+    {
+      "id": "b65cbcc4-4a54-4d14-ab1f-95854b58efe3",
+      "name": "Cross-group composite customer loyalty 19",
+      "status": "Pending",
+      "createdDate": "2025-11-17T05:28:08",
+      "updatedDate": "2026-01-20T17:31:16",
+      "owner": "James Morgan",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8494.9,
+      "description": "Short toward box worry money language crime line."
+    },
+    {
+      "id": "f8dc22e0-9853-404d-b106-e2625f2b6e18",
+      "name": "Profit-focused motivating algorithm 20",
+      "status": "Active",
+      "createdDate": "2025-03-26T23:46:09",
+      "updatedDate": "2026-01-18T17:10:41",
+      "owner": "Robert Ferguson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 297.83,
+      "description": "Between continue dream black already chair."
+    },
+    {
+      "id": "e4dc0e59-881f-41af-aada-628d8f52b443",
+      "name": "Expanded methodical ability 21",
+      "status": "Pending",
+      "createdDate": "2025-06-27T19:24:46",
+      "updatedDate": "2026-02-03T19:59:30",
+      "owner": "Leslie Swanson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9250.53,
+      "description": "Carry ever too administration."
+    },
+    {
+      "id": "8a41acc3-c8e0-4b62-bc8b-d84caac27613",
+      "name": "Enhanced next generation workforce 22",
+      "status": "Active",
+      "createdDate": "2025-05-17T11:24:52",
+      "updatedDate": "2026-01-27T01:53:39",
+      "owner": "Pamela Williams",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1260.76,
+      "description": "Feel religious citizen still sister heart west."
+    },
+    {
+      "id": "46655249-a5eb-4086-95ed-f661269519f4",
+      "name": "Balanced directional implementation 23",
+      "status": "Inactive",
+      "createdDate": "2025-09-27T13:51:56",
+      "updatedDate": "2026-01-26T20:15:11",
+      "owner": "Cole Murphy",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4380.71,
+      "description": "Structure any tell natural mention husband."
+    },
+    {
+      "id": "3eff0d4d-5f6d-48a5-8000-e0083ac42193",
+      "name": "Seamless even-keeled help-desk 24",
+      "status": "Pending",
+      "createdDate": "2025-03-24T20:52:30",
+      "updatedDate": "2026-02-08T03:13:35",
+      "owner": "Shaun Lee",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8069.58,
+      "description": "Fish remain mother sure."
+    },
+    {
+      "id": "5e34d47a-0667-4dfa-9488-4a0e6b7147b8",
+      "name": "Business-focused client-server emulation 25",
+      "status": "Inactive",
+      "createdDate": "2026-01-10T22:17:27",
+      "updatedDate": "2026-01-31T18:12:52",
+      "owner": "Laurie Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 356.05,
+      "description": "Test concern perform worry student."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}
