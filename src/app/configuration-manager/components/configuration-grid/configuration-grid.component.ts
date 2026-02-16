@@ -154,7 +154,7 @@ export class ConfigurationGridComponent {
   columnDefs: ColDef<ConfigurationUpdateRow>[] = [
     {
       headerName: "",
-      checkboxSelection: true,
+      checkboxSelection: (params) => params.data?.isConfigRow === true,
       headerCheckboxSelection: true,
       width: 50,
       pinned: "left",
@@ -265,11 +265,8 @@ export class ConfigurationGridComponent {
   ];
 
   gridOptions: GridOptions<ConfigurationUpdateRow> = {
-    columnDefs: this.columnDefs,
-    rowSelection: {
-      mode: "multiRow",
-      enableClickSelection: false,
-    },
+    rowSelection: "multiple" as any,
+    suppressRowClickSelection: true,
     isRowSelectable: (params) => {
       // Only allow selection of configuration rows, not update rows
       return params.data?.isConfigRow === true;
@@ -333,6 +330,65 @@ export class ConfigurationGridComponent {
         this.rowDoubleClicked.emit(config);
       }
     },
+    onCellClicked: (event: any) => {
+      if (event.event?.target) {
+        const target = event.event.target as HTMLElement;
+        const button = target.closest(".view-value-btn") as HTMLElement;
+
+        if (button) {
+          event.event.stopPropagation();
+          event.event.preventDefault();
+          const action = button.getAttribute("data-action");
+          const data = event.data as ConfigurationUpdateRow;
+
+          if (!data) return;
+
+          if (action === "view-current" && data.isConfigRow) {
+            // View current value - find previous version from updates
+            const updates = data.configUpdates || [];
+            const sortedUpdates = [...updates].sort(
+              (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+            );
+
+            const previousValue =
+              sortedUpdates.length > 0
+                ? sortedUpdates[0].previousValue
+                : undefined;
+
+            this.viewValue.emit({
+              value: data.configValue,
+              type: data.configType,
+              name: data.configName,
+              previousValue: previousValue,
+            });
+          } else if (action === "view-historical" && !data.isConfigRow) {
+            // View historical value at this update point
+            const nextUpdateIndex = data.configUpdates?.findIndex(
+              (u) => u.date.getTime() === data.updateDate?.getTime(),
+            );
+
+            let nextValue: string | undefined;
+            if (nextUpdateIndex !== undefined && nextUpdateIndex > 0) {
+              nextValue =
+                data.configUpdates![nextUpdateIndex - 1].previousValue;
+            } else if (nextUpdateIndex === 0) {
+              nextValue = data.configValue;
+            }
+
+            this.viewValue.emit({
+              value: data.updateDate
+                ? data.configUpdates?.find(
+                    (u) => u.date.getTime() === data.updateDate!.getTime(),
+                  )?.previousValue || data.configValue
+                : data.configValue,
+              type: data.configType,
+              name: data.configName,
+              nextValue: nextValue,
+            });
+          }
+        }
+      }
+    },
     onSelectionChanged: () => {
       const selectedRows = this.gridApi?.getSelectedRows() || [];
 
@@ -340,7 +396,7 @@ export class ConfigurationGridComponent {
       const uniqueConfigIds = new Set<number>();
       const configs = selectedRows
         .filter((row: ConfigurationUpdateRow) => {
-          if (!row.isConfigRow || uniqueConfigIds.has(row.configId)) {
+          if (!row || !row.isConfigRow || uniqueConfigIds.has(row.configId)) {
             return false;
           }
           uniqueConfigIds.add(row.configId);

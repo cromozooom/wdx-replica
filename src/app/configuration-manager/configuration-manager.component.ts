@@ -39,7 +39,7 @@ export class ConfigurationManagerComponent implements OnInit {
   private readonly teamMemberService = inject(TeamMemberService);
   private readonly modalService = inject(NgbModal);
 
-  devMode = true;
+  devMode = false;
   showBasketModal = false;
   saving = false;
   exporting = false;
