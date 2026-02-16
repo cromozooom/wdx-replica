@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-property",
+  "queryId": "query-created-this-month",
+  "totalCount": 611,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "c1d04703-b90a-4227-8b99-df721cf10d1e",
+      "name": "Phased tertiary groupware 1",
+      "status": "Pending",
+      "createdDate": "2025-06-16T05:20:13",
+      "updatedDate": "2026-01-19T11:57:10",
+      "owner": "Micheal Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8393.59,
+      "description": "Both cut become tough statement."
+    },
+    {
+      "id": "f651cd69-1e3f-420b-8a71-a13d2e0bc175",
+      "name": "Visionary intangible Graphic Interface 2",
+      "status": "Inactive",
+      "createdDate": "2025-12-13T15:33:52",
+      "updatedDate": "2026-01-28T17:26:31",
+      "owner": "Nicholas Herrera",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9127.5,
+      "description": "Current cause once small."
+    },
+    {
+      "id": "6934642a-c4b1-4e35-b4a3-0811dffa7920",
+      "name": "Ergonomic full-range middleware 3",
+      "status": "Inactive",
+      "createdDate": "2025-08-14T06:34:45",
+      "updatedDate": "2026-01-15T23:35:17",
+      "owner": "Kyle Swanson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5861.57,
+      "description": "Financial series specific."
+    },
+    {
+      "id": "cca67a21-dfad-4b62-af0a-d26a534e8dbe",
+      "name": "Innovative user-facing productivity 4",
+      "status": "Active",
+      "createdDate": "2025-07-31T13:45:29",
+      "updatedDate": "2026-01-24T00:00:12",
+      "owner": "Amy Ferguson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8304.01,
+      "description": "Dinner management mouth spring such."
+    },
+    {
+      "id": "e01df3f0-deac-44f2-a592-33bf15cdf99f",
+      "name": "Stand-alone asymmetric circuit 5",
+      "status": "Pending",
+      "createdDate": "2025-10-27T08:10:02",
+      "updatedDate": "2026-01-17T12:31:11",
+      "owner": "Lucas Patterson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7907.65,
+      "description": "Low officer clearly audience concern."
+    },
+    {
+      "id": "6ce8d134-c5b0-495f-af6b-20bda1855175",
+      "name": "User-centric value-added functionalities 6",
+      "status": "Pending",
+      "createdDate": "2025-10-19T03:54:48",
+      "updatedDate": "2026-02-02T13:08:59",
+      "owner": "Sherry Pierce",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2007.53,
+      "description": "Race husband ever western peace ability send."
+    },
+    {
+      "id": "a9ab2698-8099-45b1-9ced-74ba865ee778",
+      "name": "Optimized even-keeled analyzer 7",
+      "status": "Active",
+      "createdDate": "2025-05-02T09:57:49",
+      "updatedDate": "2026-02-09T04:48:01",
+      "owner": "Steven Nelson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9860.73,
+      "description": "Pressure top notice society player nature its."
+    },
+    {
+      "id": "02826230-9766-489b-8f36-b20390e9691d",
+      "name": "Seamless systematic hardware 8",
+      "status": "Pending",
+      "createdDate": "2025-04-18T16:19:58",
+      "updatedDate": "2026-01-27T07:43:46",
+      "owner": "Corey Warner",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9017.35,
+      "description": "Situation wind candidate television house nothing toward cover."
+    },
+    {
+      "id": "32c8a751-af3a-4f5b-b48a-d1dda211b216",
+      "name": "Open-source clear-thinking emulation 9",
+      "status": "Inactive",
+      "createdDate": "2026-01-26T07:44:02",
+      "updatedDate": "2026-01-20T01:11:58",
+      "owner": "Jacob Mcdonald",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1113.2,
+      "description": "Past explain clear world."
+    },
+    {
+      "id": "ac79fb70-6f83-4778-8c15-4aba94967438",
+      "name": "Robust secondary implementation 10",
+      "status": "Inactive",
+      "createdDate": "2025-08-01T01:17:40",
+      "updatedDate": "2026-01-21T00:38:13",
+      "owner": "Matthew Blevins",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6588.28,
+      "description": "Use whole contain business prepare worker."
+    },
+    {
+      "id": "a7b91ea3-8c69-42c4-a78b-d17d6f38aece",
+      "name": "Business-focused solution-oriented archive 11",
+      "status": "Completed",
+      "createdDate": "2025-04-23T14:04:17",
+      "updatedDate": "2026-01-24T23:08:05",
+      "owner": "Michael Watkins",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7322.0,
+      "description": "That big example analysis describe."
+    },
+    {
+      "id": "c78c7524-bd53-4552-9163-a04090617012",
+      "name": "Synchronized global approach 12",
+      "status": "Completed",
+      "createdDate": "2025-09-26T22:55:51",
+      "updatedDate": "2026-01-16T13:22:58",
+      "owner": "Christopher Richard",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8386.66,
+      "description": "Analysis past class away wear decide."
+    },
+    {
+      "id": "2749e03a-2308-4962-b16a-6b2320912ee0",
+      "name": "Integrated systematic Graphic Interface 13",
+      "status": "Inactive",
+      "createdDate": "2025-11-08T04:12:23",
+      "updatedDate": "2026-01-21T15:38:24",
+      "owner": "Timothy Walls",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3143.19,
+      "description": "Design sell product standard choose speech major indeed."
+    },
+    {
+      "id": "40fc23da-6ff6-4f3f-ad2c-41d475698b2f",
+      "name": "Quality-focused discrete standardization 14",
+      "status": "Pending",
+      "createdDate": "2025-12-20T16:29:00",
+      "updatedDate": "2026-02-02T16:12:04",
+      "owner": "Joanna Williams",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2998.52,
+      "description": "Hard author product another."
+    },
+    {
+      "id": "47f5d9b3-ffc4-4253-8885-f04133d81e66",
+      "name": "De-engineered bifurcated system engine 15",
+      "status": "Inactive",
+      "createdDate": "2025-07-05T10:36:04",
+      "updatedDate": "2026-02-05T22:11:47",
+      "owner": "Cody Ford",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9551.98,
+      "description": "Air magazine identify onto must respond pick nice."
+    },
+    {
+      "id": "170d9420-bf96-40f2-9108-0cc6f572c615",
+      "name": "Configurable bandwidth-monitored complexity 16",
+      "status": "Pending",
+      "createdDate": "2025-03-12T03:59:37",
+      "updatedDate": "2026-02-09T16:21:45",
+      "owner": "Sara Maldonado",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3616.04,
+      "description": "The teach let too player."
+    },
+    {
+      "id": "b58d90e3-ab39-445c-a7d1-5014397b244b",
+      "name": "User-centric next generation encryption 17",
+      "status": "Active",
+      "createdDate": "2025-08-15T06:02:18",
+      "updatedDate": "2026-02-11T07:18:29",
+      "owner": "Lawrence Page",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 886.2,
+      "description": "Food mention sure attorney move health situation however."
+    },
+    {
+      "id": "01dc9014-d202-4d64-bfbe-5fc25ea81b07",
+      "name": "Fully-configurable tertiary orchestration 18",
+      "status": "Inactive",
+      "createdDate": "2025-05-25T23:33:29",
+      "updatedDate": "2026-01-29T08:12:50",
+      "owner": "Amanda Freeman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8548.31,
+      "description": "Risk create pass family morning color control."
+    },
+    {
+      "id": "de312978-5b81-4318-b94b-5690d2e8c17f",
+      "name": "Synergized coherent application 19",
+      "status": "Completed",
+      "createdDate": "2025-04-14T00:12:41",
+      "updatedDate": "2026-02-13T01:41:17",
+      "owner": "April Cannon",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7311.97,
+      "description": "Personal there this this kind."
+    },
+    {
+      "id": "4995bfb1-f270-40e2-b6bf-8a3a54c9bfef",
+      "name": "Open-source contextually-based capability 20",
+      "status": "Inactive",
+      "createdDate": "2025-11-19T13:13:47",
+      "updatedDate": "2026-01-21T20:26:14",
+      "owner": "Kendra Williams",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5462.82,
+      "description": "Real admit again high popular."
+    },
+    {
+      "id": "8eb11f22-23a1-43d5-93e6-ee8fa306d2d8",
+      "name": "Pre-emptive background core 21",
+      "status": "Active",
+      "createdDate": "2025-10-15T12:25:13",
+      "updatedDate": "2026-02-10T01:04:16",
+      "owner": "Evelyn Wilson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8203.01,
+      "description": "Test but per operation."
+    },
+    {
+      "id": "484c0978-747b-4631-8798-f501e855faec",
+      "name": "Synergized bandwidth-monitored Graphical User Interface 22",
+      "status": "Pending",
+      "createdDate": "2025-10-21T00:02:13",
+      "updatedDate": "2026-01-20T12:10:25",
+      "owner": "Eric Gentry",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4148.54,
+      "description": "Official important before give create."
+    },
+    {
+      "id": "ead79cbb-36ea-47e0-90cf-50b4445ccb76",
+      "name": "Synergized web-enabled circuit 23",
+      "status": "Inactive",
+      "createdDate": "2025-10-23T04:50:11",
+      "updatedDate": "2026-01-22T21:09:47",
+      "owner": "Patrick Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6014.76,
+      "description": "No already beyond garden possible product plan."
+    },
+    {
+      "id": "59b49124-983c-448d-a570-daa7704c299e",
+      "name": "Universal solution-oriented policy 24",
+      "status": "Inactive",
+      "createdDate": "2025-06-26T09:35:49",
+      "updatedDate": "2026-01-23T17:17:15",
+      "owner": "Courtney Diaz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4280.61,
+      "description": "I serve hand since company."
+    },
+    {
+      "id": "9eb692f3-4bc5-4bec-a167-83135572ddba",
+      "name": "Function-based composite matrices 25",
+      "status": "Inactive",
+      "createdDate": "2025-05-05T09:40:50",
+      "updatedDate": "2026-01-19T21:45:21",
+      "owner": "Erin Bullock",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6341.32,
+      "description": "Wish increase place finally little design similar on."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

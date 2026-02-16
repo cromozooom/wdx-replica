@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-expense",
+  "queryId": "query-all-records",
+  "totalCount": 1093,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3a285ecf-4017-4560-8e72-3f166b84a6d9",
+      "name": "Monitored upward-trending neural-net 1",
+      "status": "Inactive",
+      "createdDate": "2026-02-03T03:43:33",
+      "updatedDate": "2026-02-13T06:53:04",
+      "owner": "Joseph Martinez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2151.78,
+      "description": "Someone two town."
+    },
+    {
+      "id": "14402dc9-0283-4ff7-9a50-4ad9b5a9997b",
+      "name": "Front-line executive neural-net 2",
+      "status": "Inactive",
+      "createdDate": "2025-11-19T11:18:12",
+      "updatedDate": "2026-02-05T06:51:31",
+      "owner": "Joseph Vasquez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 245.48,
+      "description": "This pull produce better some may continue concern."
+    },
+    {
+      "id": "ddf25be5-cae1-4d64-a67d-9cb2d7112ff5",
+      "name": "Robust global benchmark 3",
+      "status": "Active",
+      "createdDate": "2025-11-07T10:48:39",
+      "updatedDate": "2026-01-27T10:37:42",
+      "owner": "Leah Stephens",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 178.19,
+      "description": "Line relate TV."
+    },
+    {
+      "id": "7db28a85-1a7b-4872-9ad0-813c9ed3a6b9",
+      "name": "Programmable maximized middleware 4",
+      "status": "Pending",
+      "createdDate": "2025-12-31T07:17:08",
+      "updatedDate": "2026-02-11T10:45:20",
+      "owner": "James Bryant",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9482.81,
+      "description": "Enough college require training."
+    },
+    {
+      "id": "778da63c-4c81-4e23-b3ac-e2b2a1b3e69e",
+      "name": "Focused solution-oriented pricing structure 5",
+      "status": "Inactive",
+      "createdDate": "2025-08-08T04:25:47",
+      "updatedDate": "2026-01-29T15:27:43",
+      "owner": "Eric Moore",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4584.68,
+      "description": "Man ten fill family top crime."
+    },
+    {
+      "id": "6509d19e-0855-4d9b-b404-711829bc086a",
+      "name": "Implemented analyzing architecture 6",
+      "status": "Active",
+      "createdDate": "2025-10-21T10:47:33",
+      "updatedDate": "2026-02-01T08:10:08",
+      "owner": "Michael Stewart",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6520.5,
+      "description": "Develop dark college scientist day."
+    },
+    {
+      "id": "dc2d1fb7-47f8-463e-9320-0f2b02a8d531",
+      "name": "Advanced fault-tolerant protocol 7",
+      "status": "Active",
+      "createdDate": "2025-12-03T19:49:06",
+      "updatedDate": "2026-01-19T22:44:06",
+      "owner": "Thomas Richardson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9963.56,
+      "description": "Herself space big number return food kid."
+    },
+    {
+      "id": "1e09d4f9-a144-436a-ac27-208717fa682e",
+      "name": "Public-key tertiary capability 8",
+      "status": "Completed",
+      "createdDate": "2025-04-07T01:53:35",
+      "updatedDate": "2026-02-14T13:30:54",
+      "owner": "Jeffrey Patterson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5047.35,
+      "description": "Along become process employee add financial."
+    },
+    {
+      "id": "e23b082c-1fd9-4efa-b5ee-75a995d39b6f",
+      "name": "Synergized heuristic budgetary management 9",
+      "status": "Inactive",
+      "createdDate": "2025-05-24T22:25:29",
+      "updatedDate": "2026-02-04T08:46:18",
+      "owner": "Karen Watson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5556.59,
+      "description": "Wonder short center shake mention total continue."
+    },
+    {
+      "id": "57a1c4dd-b534-4dde-9732-6e5bc9516748",
+      "name": "Grass-roots homogeneous focus group 10",
+      "status": "Completed",
+      "createdDate": "2025-10-10T08:27:57",
+      "updatedDate": "2026-01-17T23:57:41",
+      "owner": "Stephanie Hahn",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2059.82,
+      "description": "Item foreign send action system."
+    },
+    {
+      "id": "f672dd65-02da-4f24-aa66-f7047c298475",
+      "name": "Digitized disintermediate capacity 11",
+      "status": "Pending",
+      "createdDate": "2025-07-09T04:17:02",
+      "updatedDate": "2026-02-05T01:33:59",
+      "owner": "Mrs. Pam Krause MD",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8353.8,
+      "description": "Board note tend run reveal."
+    },
+    {
+      "id": "fb276ec8-2848-42d5-9633-3a7840a6baa7",
+      "name": "Mandatory coherent Graphical User Interface 12",
+      "status": "Inactive",
+      "createdDate": "2025-07-26T17:11:02",
+      "updatedDate": "2026-02-05T23:43:18",
+      "owner": "Shawn Murphy",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8973.46,
+      "description": "Forget skill draw tax."
+    },
+    {
+      "id": "bf8c42a6-d6ff-4521-bceb-ce653bfbb4be",
+      "name": "Diverse reciprocal frame 13",
+      "status": "Active",
+      "createdDate": "2025-05-09T09:38:35",
+      "updatedDate": "2026-02-02T03:06:34",
+      "owner": "Ashley Curtis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 361.99,
+      "description": "Perhaps husband executive power maintain responsibility practice."
+    },
+    {
+      "id": "e2fa25bc-fa6d-49e4-8cf3-c6406812007b",
+      "name": "Intuitive intermediate policy 14",
+      "status": "Pending",
+      "createdDate": "2026-01-31T21:04:02",
+      "updatedDate": "2026-01-27T14:13:46",
+      "owner": "Curtis Payne",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3696.88,
+      "description": "Natural station growth past herself chance."
+    },
+    {
+      "id": "a97deb0f-389b-4a19-8064-2122728e5d71",
+      "name": "Open-source directional software 15",
+      "status": "Pending",
+      "createdDate": "2025-06-27T13:54:47",
+      "updatedDate": "2026-02-07T17:48:28",
+      "owner": "Michelle Dunlap",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7903.22,
+      "description": "Especially whose speak out."
+    },
+    {
+      "id": "25e983b4-e12a-4b5f-86bc-e7064860ddac",
+      "name": "Total scalable open system 16",
+      "status": "Pending",
+      "createdDate": "2025-03-13T17:38:40",
+      "updatedDate": "2026-01-28T04:36:16",
+      "owner": "Aaron Daniels",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7055.38,
+      "description": "Have foot save suggest language ability."
+    },
+    {
+      "id": "8559c32f-a020-4342-9d4f-a82f13f2344f",
+      "name": "Advanced asymmetric capability 17",
+      "status": "Active",
+      "createdDate": "2025-03-24T07:24:07",
+      "updatedDate": "2026-01-15T21:39:33",
+      "owner": "Paul Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2793.65,
+      "description": "Enjoy gas response lead this until."
+    },
+    {
+      "id": "54bf5cfc-314f-4b1c-9754-a7e3e3c790f3",
+      "name": "Mandatory encompassing Graphic Interface 18",
+      "status": "Active",
+      "createdDate": "2025-08-15T05:08:15",
+      "updatedDate": "2026-01-17T04:52:48",
+      "owner": "Trevor Moore",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3810.7,
+      "description": "Clearly chair his reach goal education thank lose."
+    },
+    {
+      "id": "0bdf1d9b-e2c6-4280-94df-9955c37c4b21",
+      "name": "Switchable client-server matrices 19",
+      "status": "Completed",
+      "createdDate": "2026-01-13T01:49:07",
+      "updatedDate": "2026-01-26T00:48:09",
+      "owner": "Stephanie Anderson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6322.53,
+      "description": "Although picture authority fish say agent light."
+    },
+    {
+      "id": "d8480748-3b6b-466d-8685-9c072300c090",
+      "name": "Phased contextually-based task-force 20",
+      "status": "Completed",
+      "createdDate": "2025-03-20T23:18:17",
+      "updatedDate": "2026-01-27T16:31:17",
+      "owner": "Kyle Mcdonald",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3717.18,
+      "description": "Knowledge concern why often."
+    },
+    {
+      "id": "ae4d771f-4913-4c3d-a6f0-540afaaef636",
+      "name": "Networked foreground collaboration 21",
+      "status": "Active",
+      "createdDate": "2025-09-10T04:02:05",
+      "updatedDate": "2026-02-09T05:54:43",
+      "owner": "Jack Coleman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1537.57,
+      "description": "Force suddenly improve eat girl plan old."
+    },
+    {
+      "id": "f861d34a-906c-4ee3-a019-3f26c339a9fa",
+      "name": "Face-to-face analyzing implementation 22",
+      "status": "Pending",
+      "createdDate": "2025-08-14T13:09:55",
+      "updatedDate": "2026-02-09T12:21:49",
+      "owner": "Kristen Nichols",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1156.55,
+      "description": "Political trip big quite shoulder bit land."
+    },
+    {
+      "id": "b79fa1d5-5027-4f03-86ae-c6c750363366",
+      "name": "Team-oriented web-enabled system engine 23",
+      "status": "Pending",
+      "createdDate": "2025-08-14T00:44:56",
+      "updatedDate": "2026-01-28T16:02:44",
+      "owner": "Ashley Nguyen",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9633.2,
+      "description": "Ask down pattern same successful performance necessary."
+    },
+    {
+      "id": "58d6806f-0e8c-46b5-9fc5-1b50b12998bb",
+      "name": "Re-contextualized non-volatile analyzer 24",
+      "status": "Pending",
+      "createdDate": "2025-10-19T19:35:54",
+      "updatedDate": "2026-02-11T06:36:23",
+      "owner": "Jessica Wallace",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9476.12,
+      "description": "Sit picture body team responsibility big art."
+    },
+    {
+      "id": "b6d14170-ecc2-41e0-9406-b220b4e20810",
+      "name": "Open-architected web-enabled time-frame 25",
+      "status": "Active",
+      "createdDate": "2025-08-01T12:03:04",
+      "updatedDate": "2026-01-27T13:49:19",
+      "owner": "Patrick Jordan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4702.47,
+      "description": "State member general."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

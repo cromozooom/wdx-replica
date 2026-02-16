@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-lead",
+  "queryId": "query-created-this-month",
+  "totalCount": 681,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "e9ea3ce6-22c4-4a9f-bcff-7ea80a6565c0",
+      "name": "Future-proofed 24/7 function 1",
+      "status": "Active",
+      "createdDate": "2025-06-04T17:04:29",
+      "updatedDate": "2026-01-24T01:35:30",
+      "owner": "Rachel Phillips",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 938.29,
+      "description": "Short ask worker reduce."
+    },
+    {
+      "id": "a5d950ab-b5fa-4843-8c5c-3a103caf62a9",
+      "name": "User-centric eco-centric customer loyalty 2",
+      "status": "Inactive",
+      "createdDate": "2025-03-23T05:30:14",
+      "updatedDate": "2026-01-24T01:12:35",
+      "owner": "Seth Williams",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6209.46,
+      "description": "Study work law agency oil military."
+    },
+    {
+      "id": "f9e7a12c-651c-4a86-bdce-b49d677aee15",
+      "name": "Multi-channeled system-worthy structure 3",
+      "status": "Pending",
+      "createdDate": "2025-08-01T12:57:45",
+      "updatedDate": "2026-02-02T17:19:47",
+      "owner": "Amanda Mitchell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1010.47,
+      "description": "Section enjoy south same."
+    },
+    {
+      "id": "50c625aa-ea15-45e3-a5ec-760e40eda985",
+      "name": "Adaptive reciprocal methodology 4",
+      "status": "Inactive",
+      "createdDate": "2025-12-31T15:50:17",
+      "updatedDate": "2026-02-11T05:48:08",
+      "owner": "Anthony Walker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3268.66,
+      "description": "Middle yet wonder suddenly."
+    },
+    {
+      "id": "5541ae54-8ff1-4c52-9b55-c65f8c987634",
+      "name": "Multi-tiered exuding process improvement 5",
+      "status": "Completed",
+      "createdDate": "2025-05-24T11:33:35",
+      "updatedDate": "2026-01-18T13:30:36",
+      "owner": "Jason Kline",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3812.02,
+      "description": "Bar degree determine up pick energy rather."
+    },
+    {
+      "id": "d1ebeb91-53d6-40af-b77c-162b8fa9762f",
+      "name": "Devolved maximized software 6",
+      "status": "Inactive",
+      "createdDate": "2025-02-28T11:50:28",
+      "updatedDate": "2026-01-28T21:13:07",
+      "owner": "Courtney Wood",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3823.38,
+      "description": "President raise skin at."
+    },
+    {
+      "id": "9f43c0d5-af98-4385-a0b6-76277ad882fa",
+      "name": "Mandatory secondary function 7",
+      "status": "Completed",
+      "createdDate": "2025-05-07T10:43:59",
+      "updatedDate": "2026-01-26T00:36:59",
+      "owner": "Mrs. Margaret Mccarty MD",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4489.07,
+      "description": "Too while forget down keep behind west."
+    },
+    {
+      "id": "357038c4-86d4-4695-a59e-c9344865e63a",
+      "name": "Vision-oriented static algorithm 8",
+      "status": "Inactive",
+      "createdDate": "2026-02-07T06:28:25",
+      "updatedDate": "2026-02-04T05:07:47",
+      "owner": "David Brown",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3647.08,
+      "description": "Trouble once hour ahead yeah ten."
+    },
+    {
+      "id": "ffe694a2-66bd-4551-b7cf-57c7df4f4e88",
+      "name": "Centralized needs-based core 9",
+      "status": "Active",
+      "createdDate": "2025-08-02T07:13:10",
+      "updatedDate": "2026-01-25T03:44:29",
+      "owner": "Mark Liu",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1790.94,
+      "description": "Carry so choose mind skill."
+    },
+    {
+      "id": "4fb90d58-fe1f-4d27-b85f-ce7e50e71904",
+      "name": "Customizable even-keeled intranet 10",
+      "status": "Completed",
+      "createdDate": "2025-06-17T18:14:42",
+      "updatedDate": "2026-02-06T08:04:26",
+      "owner": "Miss Diana Anderson MD",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7057.92,
+      "description": "Green challenge hospital offer area growth."
+    },
+    {
+      "id": "cc89dcbc-c4ab-4c00-a976-10134e7741d3",
+      "name": "Enterprise-wide zero-defect product 11",
+      "status": "Pending",
+      "createdDate": "2026-01-08T02:49:18",
+      "updatedDate": "2026-01-18T19:17:07",
+      "owner": "Adrienne Hancock",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 197.51,
+      "description": "Reveal unit score partner."
+    },
+    {
+      "id": "11b45ee8-573d-487d-a427-42f1d0780446",
+      "name": "Multi-layered modular artificial intelligence 12",
+      "status": "Pending",
+      "createdDate": "2025-09-11T18:17:45",
+      "updatedDate": "2026-02-08T15:52:11",
+      "owner": "Keith Burke",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7479.02,
+      "description": "Worker upon response able pay over."
+    },
+    {
+      "id": "350388ca-76a6-4121-8aa1-c19fc754d8e4",
+      "name": "Optional methodical interface 13",
+      "status": "Active",
+      "createdDate": "2025-06-12T16:08:40",
+      "updatedDate": "2026-01-24T16:35:11",
+      "owner": "Michael Thomas",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4808.04,
+      "description": "Child reduce society."
+    },
+    {
+      "id": "a3f682fe-3e7e-4beb-8db2-201828b8826a",
+      "name": "Progressive optimizing strategy 14",
+      "status": "Completed",
+      "createdDate": "2026-01-09T08:03:26",
+      "updatedDate": "2026-01-24T12:25:58",
+      "owner": "Austin Castro",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9685.66,
+      "description": "History challenge piece enough."
+    },
+    {
+      "id": "478c1b3e-8a1a-49b7-b975-2117b1e3d841",
+      "name": "Multi-lateral logistical complexity 15",
+      "status": "Active",
+      "createdDate": "2025-09-16T21:08:18",
+      "updatedDate": "2026-02-09T01:08:42",
+      "owner": "Christina Cole",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5117.78,
+      "description": "Find hold manage key movie."
+    },
+    {
+      "id": "19bd9d94-787f-422c-a672-23d5f1f86e11",
+      "name": "Focused stable neural-net 16",
+      "status": "Completed",
+      "createdDate": "2025-03-27T01:34:03",
+      "updatedDate": "2026-02-05T19:21:30",
+      "owner": "Timothy Ramirez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9998.13,
+      "description": "Job help trip."
+    },
+    {
+      "id": "5ce9f34f-cf35-4f53-be7c-98577b86ee02",
+      "name": "Virtual dedicated initiative 17",
+      "status": "Active",
+      "createdDate": "2025-10-19T15:11:04",
+      "updatedDate": "2026-01-29T00:44:09",
+      "owner": "Carol Lewis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1857.27,
+      "description": "Compare culture catch state meet cell."
+    },
+    {
+      "id": "bb264162-1794-4fab-8409-53a5a229369a",
+      "name": "Enterprise-wide bandwidth-monitored superstructure 18",
+      "status": "Pending",
+      "createdDate": "2025-09-20T18:47:48",
+      "updatedDate": "2026-01-28T06:40:01",
+      "owner": "Nathan Johnson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5333.55,
+      "description": "Seem as then lose."
+    },
+    {
+      "id": "39052579-2cf3-4128-a68c-14b4348865d9",
+      "name": "Adaptive needs-based conglomeration 19",
+      "status": "Pending",
+      "createdDate": "2025-06-02T11:56:21",
+      "updatedDate": "2026-01-16T11:28:22",
+      "owner": "Jessica Lee",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1342.36,
+      "description": "Later value others learn him mean increase institution."
+    },
+    {
+      "id": "25e31444-b5f8-4aad-b481-fa6db083df01",
+      "name": "Re-engineered scalable strategy 20",
+      "status": "Active",
+      "createdDate": "2025-07-13T21:16:59",
+      "updatedDate": "2026-02-04T01:10:55",
+      "owner": "Casey Lucas",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1059.62,
+      "description": "Enter structure purpose sometimes."
+    },
+    {
+      "id": "4870f14b-7f1a-4a52-abd6-f4aa6923cd79",
+      "name": "Secured explicit initiative 21",
+      "status": "Pending",
+      "createdDate": "2025-06-30T09:29:23",
+      "updatedDate": "2026-02-09T04:59:39",
+      "owner": "Christopher Lee",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1956.27,
+      "description": "Attack standard a stay."
+    },
+    {
+      "id": "32cf0bb5-4b09-47d6-9942-2fbff9c000a5",
+      "name": "Profound needs-based artificial intelligence 22",
+      "status": "Inactive",
+      "createdDate": "2025-09-09T02:32:39",
+      "updatedDate": "2026-02-11T11:29:42",
+      "owner": "Christina Murphy",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1162.45,
+      "description": "Sing cultural throw enough us exactly throw."
+    },
+    {
+      "id": "367890d4-04ae-4b8a-9254-770441100344",
+      "name": "Team-oriented web-enabled workforce 23",
+      "status": "Active",
+      "createdDate": "2025-08-14T07:53:40",
+      "updatedDate": "2026-02-04T01:56:34",
+      "owner": "Laura Stewart",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9640.73,
+      "description": "Across decide range attorney impact model consider."
+    },
+    {
+      "id": "f613569d-c1f3-4117-bf8c-30819c10a2c8",
+      "name": "Total user-facing parallelism 24",
+      "status": "Active",
+      "createdDate": "2025-12-01T20:20:17",
+      "updatedDate": "2026-01-18T20:30:50",
+      "owner": "Tara Rodriguez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5325.11,
+      "description": "Sound far program ever."
+    },
+    {
+      "id": "48be68a5-0c5d-473b-bfbd-1bcebd029e70",
+      "name": "Pre-emptive local leverage 25",
+      "status": "Active",
+      "createdDate": "2026-01-02T09:10:54",
+      "updatedDate": "2026-01-27T04:51:00",
+      "owner": "Natalie Johnson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4335.93,
+      "description": "Language how himself hot language kind level report."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

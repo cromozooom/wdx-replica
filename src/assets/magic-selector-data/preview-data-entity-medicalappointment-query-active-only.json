@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-medicalappointment",
+  "queryId": "query-active-only",
+  "totalCount": 291,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ff13639f-0b77-4c86-b707-773249743f5f",
+      "name": "Universal 24hour open system 1",
+      "status": "Pending",
+      "createdDate": "2025-04-03T08:04:09",
+      "updatedDate": "2026-02-13T18:21:08",
+      "owner": "Anna Walker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7462.01,
+      "description": "East identify dream ready direction us response office."
+    },
+    {
+      "id": "04743418-bf5b-4c27-a576-a41e86e902a8",
+      "name": "Synchronized human-resource toolset 2",
+      "status": "Inactive",
+      "createdDate": "2025-10-26T21:53:18",
+      "updatedDate": "2026-01-25T15:25:08",
+      "owner": "Samantha Glenn",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4355.13,
+      "description": "That brother daughter north concern."
+    },
+    {
+      "id": "f8b8fba4-3848-46b3-8090-33bbf394860d",
+      "name": "Re-engineered neutral Graphic Interface 3",
+      "status": "Inactive",
+      "createdDate": "2025-08-01T18:43:20",
+      "updatedDate": "2026-01-26T19:36:13",
+      "owner": "Randy Logan",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5519.04,
+      "description": "None yet process per machine brother consider."
+    },
+    {
+      "id": "4f56e587-a8e8-4b10-aa1b-03e93b65fdf6",
+      "name": "User-centric interactive artificial intelligence 4",
+      "status": "Active",
+      "createdDate": "2025-04-06T03:31:53",
+      "updatedDate": "2026-02-03T21:34:32",
+      "owner": "Amy Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9303.78,
+      "description": "Live reason popular several song than."
+    },
+    {
+      "id": "5eb4cdfb-354a-4353-845b-d5bad723de1b",
+      "name": "Polarized hybrid architecture 5",
+      "status": "Inactive",
+      "createdDate": "2025-04-11T14:24:40",
+      "updatedDate": "2026-02-04T11:37:10",
+      "owner": "Michael Booth",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2942.1,
+      "description": "Standard relationship card official reveal."
+    },
+    {
+      "id": "74c0615a-232e-45ee-802a-5a4c6de1a3eb",
+      "name": "Organic hybrid infrastructure 6",
+      "status": "Active",
+      "createdDate": "2025-12-02T19:58:11",
+      "updatedDate": "2026-02-14T01:16:39",
+      "owner": "Courtney Larsen",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7053.41,
+      "description": "Part sense reason."
+    },
+    {
+      "id": "73b29d85-9edc-4892-aa5b-64a3da583bea",
+      "name": "Pre-emptive tangible project 7",
+      "status": "Pending",
+      "createdDate": "2025-09-01T18:57:33",
+      "updatedDate": "2026-01-20T09:07:17",
+      "owner": "Brittany Hart",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8250.41,
+      "description": "Gun become high specific man political debate."
+    },
+    {
+      "id": "1c83bfc4-fe77-487b-a26a-e9afef8d056b",
+      "name": "Balanced neutral project 8",
+      "status": "Inactive",
+      "createdDate": "2025-12-06T09:10:34",
+      "updatedDate": "2026-01-24T16:42:19",
+      "owner": "Joseph Orr",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5886.58,
+      "description": "Training fund free should center last."
+    },
+    {
+      "id": "423de11c-e0be-41ca-a7a7-81687aec2e5a",
+      "name": "Assimilated local leverage 9",
+      "status": "Pending",
+      "createdDate": "2025-07-19T19:22:36",
+      "updatedDate": "2026-02-03T23:53:12",
+      "owner": "Jessica Gallagher",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9231.95,
+      "description": "Now teacher culture model energy order conference."
+    },
+    {
+      "id": "fdc0db47-be55-4cd8-bf1e-8411c0d50fcb",
+      "name": "Monitored bifurcated core 10",
+      "status": "Inactive",
+      "createdDate": "2025-02-18T00:54:40",
+      "updatedDate": "2026-02-03T05:01:18",
+      "owner": "Eric Hopkins",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5568.79,
+      "description": "Gun indicate fight her hour senior agent."
+    },
+    {
+      "id": "dcd6ae8c-1673-40ed-9e60-d0c4be3499f0",
+      "name": "Synergized real-time intranet 11",
+      "status": "Pending",
+      "createdDate": "2025-06-11T02:17:29",
+      "updatedDate": "2026-02-12T11:17:31",
+      "owner": "Rebecca Carroll",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7162.68,
+      "description": "Call financial national security."
+    },
+    {
+      "id": "93e3ab08-db41-4742-8110-18fc61669242",
+      "name": "Function-based fresh-thinking portal 12",
+      "status": "Completed",
+      "createdDate": "2025-05-02T21:38:50",
+      "updatedDate": "2026-01-30T04:12:16",
+      "owner": "Michelle Blackwell",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2493.62,
+      "description": "Any common sport what head official their next."
+    },
+    {
+      "id": "e227f1a6-0027-49cd-b765-6c88f5ed9b70",
+      "name": "Centralized zero tolerance knowledgebase 13",
+      "status": "Pending",
+      "createdDate": "2025-06-08T17:41:55",
+      "updatedDate": "2026-01-29T03:46:31",
+      "owner": "Mary Bennett",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5552.83,
+      "description": "Two fire security capital begin investment culture road."
+    },
+    {
+      "id": "579710fe-7474-4558-8eaa-c56ee9bfae07",
+      "name": "Synchronized fault-tolerant array 14",
+      "status": "Active",
+      "createdDate": "2025-11-27T05:52:11",
+      "updatedDate": "2026-01-29T03:00:50",
+      "owner": "Mr. Nathan Davis MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2899.72,
+      "description": "Individual leave morning together yard."
+    },
+    {
+      "id": "0d18b05e-ef11-497f-a1bd-8cddc50d862f",
+      "name": "Persevering reciprocal website 15",
+      "status": "Pending",
+      "createdDate": "2025-11-02T05:15:11",
+      "updatedDate": "2026-01-31T15:16:54",
+      "owner": "Autumn Montoya",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3165.12,
+      "description": "North test ask."
+    },
+    {
+      "id": "aa9877ef-9fc4-41ab-b8ba-1bb8fd8f4bf0",
+      "name": "Optional asymmetric function 16",
+      "status": "Inactive",
+      "createdDate": "2025-12-12T21:15:53",
+      "updatedDate": "2026-01-23T09:57:38",
+      "owner": "Stephanie Nelson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 538.64,
+      "description": "Sure this nation."
+    },
+    {
+      "id": "f79a8fd1-2306-42fe-bfe2-8b549a779f72",
+      "name": "Persevering local Graphic Interface 17",
+      "status": "Pending",
+      "createdDate": "2025-12-31T05:35:11",
+      "updatedDate": "2026-02-01T00:05:20",
+      "owner": "Jonathan Lawrence",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7201.84,
+      "description": "Street fly popular morning attention western."
+    },
+    {
+      "id": "4074e318-0e08-41e6-8fda-9b409c9a529a",
+      "name": "Grass-roots real-time task-force 18",
+      "status": "Active",
+      "createdDate": "2025-12-27T05:58:56",
+      "updatedDate": "2026-01-30T05:02:04",
+      "owner": "Melissa Valentine",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4074.95,
+      "description": "Military conference major certainly black sign ago organization."
+    },
+    {
+      "id": "3c857c03-6708-4180-8015-b8fd0bd5eeeb",
+      "name": "Devolved composite leverage 19",
+      "status": "Active",
+      "createdDate": "2025-11-29T02:10:03",
+      "updatedDate": "2026-01-15T17:41:43",
+      "owner": "Aaron Maddox",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8910.86,
+      "description": "Morning per protect offer tell after half."
+    },
+    {
+      "id": "ef5a823b-85b8-4dbe-97eb-33d986aebba2",
+      "name": "Proactive coherent service-desk 20",
+      "status": "Active",
+      "createdDate": "2025-05-29T01:39:25",
+      "updatedDate": "2026-02-06T09:16:48",
+      "owner": "Melissa Rangel",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4906.98,
+      "description": "Rise question key deal central activity discussion grow."
+    },
+    {
+      "id": "fdc9a9bf-d8e7-4ba2-a2dd-9a196b1d899f",
+      "name": "Multi-tiered user-facing info-mediaries 21",
+      "status": "Pending",
+      "createdDate": "2025-09-30T06:41:19",
+      "updatedDate": "2026-01-29T14:02:57",
+      "owner": "Mary Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2844.93,
+      "description": "Where old might few suddenly case personal reflect."
+    },
+    {
+      "id": "5ae5d2ff-785c-4641-aadd-8f53e1409889",
+      "name": "Upgradable bi-directional circuit 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-04T06:35:40",
+      "updatedDate": "2026-01-25T06:51:29",
+      "owner": "Jonathan Williams",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1474.92,
+      "description": "Network exist key report they partner thank pass."
+    },
+    {
+      "id": "0314cbd5-e821-4e2a-ac38-227cc4543d44",
+      "name": "Assimilated intangible moderator 23",
+      "status": "Completed",
+      "createdDate": "2025-02-16T14:51:47",
+      "updatedDate": "2026-01-27T23:08:49",
+      "owner": "Nathan Lee",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3367.15,
+      "description": "Year bad company science."
+    },
+    {
+      "id": "e9c4364a-e729-457b-bb3f-a24a6c76b774",
+      "name": "Open-source well-modulated adapter 24",
+      "status": "Completed",
+      "createdDate": "2025-11-28T11:21:21",
+      "updatedDate": "2026-01-31T05:26:45",
+      "owner": "Danielle Mcdonald",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3863.55,
+      "description": "Join style themselves tell."
+    },
+    {
+      "id": "0ddb6a23-8702-4361-a4d1-23857ae260b7",
+      "name": "User-friendly secondary capacity 25",
+      "status": "Pending",
+      "createdDate": "2025-12-06T10:14:25",
+      "updatedDate": "2026-01-24T04:47:24",
+      "owner": "Michelle Morrison",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2992.3,
+      "description": "Early against card evening population."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

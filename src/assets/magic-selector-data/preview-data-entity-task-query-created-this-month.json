@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-task",
+  "queryId": "query-created-this-month",
+  "totalCount": 98,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "0bbf4213-b65c-48ad-8080-ec2e078209f0",
+      "name": "Right-sized eco-centric framework 1",
+      "status": "Completed",
+      "createdDate": "2025-05-23T04:28:26",
+      "updatedDate": "2026-02-11T21:03:44",
+      "owner": "Kimberly Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4520.65,
+      "description": "Bring new special beyond identify compare."
+    },
+    {
+      "id": "6c56c127-7c28-4d78-9d1d-f0046d169de1",
+      "name": "Total bandwidth-monitored success 2",
+      "status": "Completed",
+      "createdDate": "2025-05-04T08:09:10",
+      "updatedDate": "2026-02-05T04:27:51",
+      "owner": "Casey Casey",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3335.69,
+      "description": "Need strong military source firm."
+    },
+    {
+      "id": "97347dc5-b296-4e30-b72c-8381399e1396",
+      "name": "Stand-alone didactic projection 3",
+      "status": "Active",
+      "createdDate": "2025-10-11T05:34:20",
+      "updatedDate": "2026-02-02T09:15:47",
+      "owner": "Miss Anna Roberson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2221.09,
+      "description": "Compare each tonight member."
+    },
+    {
+      "id": "f53cf6d3-37a6-4901-8ab9-4bb67b396f53",
+      "name": "Streamlined reciprocal software 4",
+      "status": "Pending",
+      "createdDate": "2025-05-06T00:08:21",
+      "updatedDate": "2026-01-22T13:06:46",
+      "owner": "Jeremiah Chen",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2227.01,
+      "description": "Success black war specific month."
+    },
+    {
+      "id": "ac430dbf-0595-4fe6-ab52-9e501497967e",
+      "name": "Operative global middleware 5",
+      "status": "Inactive",
+      "createdDate": "2025-12-29T08:08:50",
+      "updatedDate": "2026-02-09T07:11:21",
+      "owner": "Timothy Flores",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5643.7,
+      "description": "National group will themselves rise."
+    },
+    {
+      "id": "48fa9745-3b4d-4b71-ac21-9c83e1f022fc",
+      "name": "Innovative real-time challenge 6",
+      "status": "Completed",
+      "createdDate": "2025-12-16T02:37:31",
+      "updatedDate": "2026-02-05T17:39:05",
+      "owner": "Dylan Flores",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4082.1,
+      "description": "With better newspaper customer seem must seven situation."
+    },
+    {
+      "id": "3f357256-2100-48da-95c8-02e19e8a2515",
+      "name": "Programmable empowering firmware 7",
+      "status": "Inactive",
+      "createdDate": "2025-05-28T17:48:28",
+      "updatedDate": "2026-02-03T23:36:50",
+      "owner": "Angela Phillips",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1602.12,
+      "description": "North front while start."
+    },
+    {
+      "id": "503089cf-da0c-4624-b9ae-befdfa9b1519",
+      "name": "Re-contextualized 24/7 collaboration 8",
+      "status": "Inactive",
+      "createdDate": "2025-11-22T17:20:28",
+      "updatedDate": "2026-01-22T08:07:33",
+      "owner": "Ann Hamilton",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3352.58,
+      "description": "Certain meeting performance education reduce themselves."
+    },
+    {
+      "id": "bd2e239c-3192-4602-9359-0e72fce78b55",
+      "name": "Organic fresh-thinking forecast 9",
+      "status": "Active",
+      "createdDate": "2025-08-05T14:44:01",
+      "updatedDate": "2026-01-24T15:42:11",
+      "owner": "Charles Washington",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7835.71,
+      "description": "Nothing opportunity analysis itself."
+    },
+    {
+      "id": "856340cf-6628-4683-ae6d-b268dd41d779",
+      "name": "Configurable global flexibility 10",
+      "status": "Pending",
+      "createdDate": "2026-01-02T19:33:32",
+      "updatedDate": "2026-02-11T18:04:47",
+      "owner": "Charles Rodriguez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2268.1,
+      "description": "Here school member experience cold suffer."
+    },
+    {
+      "id": "f1202721-03be-45a0-aa47-b2934004dba6",
+      "name": "Cross-platform next generation analyzer 11",
+      "status": "Active",
+      "createdDate": "2026-02-01T02:09:44",
+      "updatedDate": "2026-01-28T23:00:34",
+      "owner": "Amy Shannon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4194.77,
+      "description": "Think whether identify indeed fine enter almost force."
+    },
+    {
+      "id": "2c437515-59c3-4566-a32e-0c76de9713a8",
+      "name": "Re-engineered uniform knowledge user 12",
+      "status": "Completed",
+      "createdDate": "2025-03-05T18:17:02",
+      "updatedDate": "2026-02-02T13:52:46",
+      "owner": "Olivia Jackson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1668.59,
+      "description": "Play move wind traditional notice good."
+    },
+    {
+      "id": "65788a42-c134-4d14-8a1e-aa54e36af0c6",
+      "name": "Profound zero-defect architecture 13",
+      "status": "Active",
+      "createdDate": "2025-09-13T21:53:04",
+      "updatedDate": "2026-01-17T22:52:42",
+      "owner": "Mary Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1645.85,
+      "description": "Discuss figure shoulder everyone pretty."
+    },
+    {
+      "id": "e98ea279-e95c-41f3-b46b-a26766fc14a7",
+      "name": "Operative client-driven data-warehouse 14",
+      "status": "Pending",
+      "createdDate": "2025-10-18T00:07:44",
+      "updatedDate": "2026-01-18T18:08:10",
+      "owner": "Alice Mcconnell",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7455.67,
+      "description": "Deal speak already too child."
+    },
+    {
+      "id": "95f41f32-8601-4c38-9da5-683b3060e879",
+      "name": "Organic solution-oriented software 15",
+      "status": "Pending",
+      "createdDate": "2025-06-23T16:36:10",
+      "updatedDate": "2026-01-17T19:16:32",
+      "owner": "Kelly Ward",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 375.99,
+      "description": "Economy loss job daughter term often rate."
+    },
+    {
+      "id": "d4d180c8-e4f2-4d5f-a8cb-ec19608b9db1",
+      "name": "Team-oriented multi-state help-desk 16",
+      "status": "Pending",
+      "createdDate": "2025-08-22T17:57:20",
+      "updatedDate": "2026-01-30T20:54:30",
+      "owner": "Miss Debra Harris MD",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 431.99,
+      "description": "Accept happen sit level mother."
+    },
+    {
+      "id": "2aabb26a-05f2-490c-8729-212fd496572d",
+      "name": "Business-focused content-based methodology 17",
+      "status": "Pending",
+      "createdDate": "2025-07-13T08:11:01",
+      "updatedDate": "2026-01-21T22:09:08",
+      "owner": "Tina Torres",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7487.28,
+      "description": "Republican reveal forward floor on most."
+    },
+    {
+      "id": "05e5d661-18aa-45dd-b00a-1aca200e469e",
+      "name": "Multi-layered analyzing initiative 18",
+      "status": "Completed",
+      "createdDate": "2025-06-13T07:45:22",
+      "updatedDate": "2026-01-22T07:04:15",
+      "owner": "Zachary Cole",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1668.53,
+      "description": "A Mr data film."
+    },
+    {
+      "id": "4b42a4e4-c3e6-4078-b151-6c635572460c",
+      "name": "Configurable client-driven workforce 19",
+      "status": "Completed",
+      "createdDate": "2025-12-03T00:59:05",
+      "updatedDate": "2026-02-01T06:36:13",
+      "owner": "Albert Harris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9945.82,
+      "description": "Week late personal them before pattern away."
+    },
+    {
+      "id": "6a16b2d9-0432-4175-a0a0-217d469a219b",
+      "name": "Down-sized methodical support 20",
+      "status": "Inactive",
+      "createdDate": "2025-07-28T05:00:09",
+      "updatedDate": "2026-02-01T19:33:27",
+      "owner": "William Fernandez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8788.58,
+      "description": "Life check husband full minute once themselves."
+    },
+    {
+      "id": "2d98302d-cb9d-4fc3-9304-ea91b0666839",
+      "name": "Organic radical Internet solution 21",
+      "status": "Completed",
+      "createdDate": "2025-06-09T13:10:00",
+      "updatedDate": "2026-01-22T09:51:18",
+      "owner": "Steven Woods",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7524.93,
+      "description": "White get machine production occur at."
+    },
+    {
+      "id": "28dd6581-1391-4526-a479-43b5d6a1eda9",
+      "name": "Intuitive transitional forecast 22",
+      "status": "Active",
+      "createdDate": "2025-06-20T11:45:12",
+      "updatedDate": "2026-02-02T03:51:00",
+      "owner": "Jeffrey Rodriguez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 563.64,
+      "description": "Walk our remain environmental ok argue save truth."
+    },
+    {
+      "id": "52f524c8-32fc-46d1-81f9-8785eacb8e3d",
+      "name": "Virtual neutral process improvement 23",
+      "status": "Active",
+      "createdDate": "2026-02-09T06:46:49",
+      "updatedDate": "2026-01-17T10:55:11",
+      "owner": "John Clark",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5861.94,
+      "description": "Eight future once land letter apply week."
+    },
+    {
+      "id": "f2587ef6-a213-4fa4-adf5-2789e8b91705",
+      "name": "Future-proofed 6thgeneration matrix 24",
+      "status": "Pending",
+      "createdDate": "2025-08-13T11:58:47",
+      "updatedDate": "2026-02-14T05:48:46",
+      "owner": "Theresa Guerrero",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3676.87,
+      "description": "Remember only image member method."
+    },
+    {
+      "id": "c10b87d2-72d0-47e5-b0cd-1247ba8d4d1e",
+      "name": "Assimilated responsive approach 25",
+      "status": "Inactive",
+      "createdDate": "2025-12-31T17:14:10",
+      "updatedDate": "2026-02-03T11:03:10",
+      "owner": "Patrick Henderson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 759.01,
+      "description": "Behavior factor model election."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

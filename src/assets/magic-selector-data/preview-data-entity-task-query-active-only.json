@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-task",
+  "queryId": "query-active-only",
+  "totalCount": 1175,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "9443cff7-ff89-4777-ad69-033b8cb5c3e9",
+      "name": "Centralized incremental concept 1",
+      "status": "Inactive",
+      "createdDate": "2025-10-14T00:16:52",
+      "updatedDate": "2026-02-02T00:42:16",
+      "owner": "Carla Todd",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5841.47,
+      "description": "World everybody know mission agreement specific."
+    },
+    {
+      "id": "f14e2172-eef9-437f-bf83-5b7ff422b30d",
+      "name": "Synchronized methodical success 2",
+      "status": "Completed",
+      "createdDate": "2026-02-08T02:48:04",
+      "updatedDate": "2026-01-23T17:03:48",
+      "owner": "Lori Sanders",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2231.41,
+      "description": "Crime fish we method."
+    },
+    {
+      "id": "7ccc5376-217c-400b-9d98-385147eb1600",
+      "name": "Extended attitude-oriented circuit 3",
+      "status": "Active",
+      "createdDate": "2025-02-25T08:10:18",
+      "updatedDate": "2026-02-10T22:53:43",
+      "owner": "Rebecca Munoz",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7749.86,
+      "description": "Hundred themselves environmental himself."
+    },
+    {
+      "id": "f9a61d46-078c-4b4e-a011-dd0a9a47f777",
+      "name": "Organic 4thgeneration throughput 4",
+      "status": "Inactive",
+      "createdDate": "2025-09-14T01:09:32",
+      "updatedDate": "2026-02-12T21:52:54",
+      "owner": "Gary Knapp",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2499.62,
+      "description": "Great your lose month."
+    },
+    {
+      "id": "49815109-14d1-4fe2-a0f1-cb3f54db69c1",
+      "name": "Virtual global encoding 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T21:05:43",
+      "updatedDate": "2026-01-28T00:36:48",
+      "owner": "Brian Robinson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 360.83,
+      "description": "Front up drive hair."
+    },
+    {
+      "id": "8d3f9127-6af3-4f43-9f92-aa17e81355c0",
+      "name": "Multi-channeled static hardware 6",
+      "status": "Inactive",
+      "createdDate": "2025-06-23T20:23:47",
+      "updatedDate": "2026-01-29T03:06:42",
+      "owner": "Allison Williams",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7476.5,
+      "description": "Find enter indicate decade."
+    },
+    {
+      "id": "6d3e5c5e-b90e-4f84-a91d-bac34223af32",
+      "name": "Enhanced leadingedge initiative 7",
+      "status": "Inactive",
+      "createdDate": "2025-10-05T18:52:25",
+      "updatedDate": "2026-02-05T16:27:16",
+      "owner": "Sarah Soto",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4478.21,
+      "description": "Enjoy lay by ability forward ability yourself cultural."
+    },
+    {
+      "id": "1fd6a8ea-bdd6-4a79-b07d-a250776ff3d8",
+      "name": "Innovative hybrid portal 8",
+      "status": "Active",
+      "createdDate": "2026-01-03T16:47:02",
+      "updatedDate": "2026-02-10T13:23:40",
+      "owner": "Bobby Walker",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8594.35,
+      "description": "Culture learn truth it pressure worry."
+    },
+    {
+      "id": "f30e1e8d-aae2-4ccc-8c07-e7c6f88da4be",
+      "name": "Configurable zero tolerance monitoring 9",
+      "status": "Inactive",
+      "createdDate": "2025-03-14T12:49:59",
+      "updatedDate": "2026-02-11T00:34:14",
+      "owner": "David Henry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 641.94,
+      "description": "Speech fight girl bit."
+    },
+    {
+      "id": "4e290a12-f4a5-4bc0-99b8-83f755dc91ea",
+      "name": "Proactive mobile forecast 10",
+      "status": "Active",
+      "createdDate": "2025-08-25T18:06:23",
+      "updatedDate": "2026-02-08T20:23:15",
+      "owner": "Charles Allen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9800.0,
+      "description": "Hand or box shake section feel."
+    },
+    {
+      "id": "3260a434-d350-4dda-94d0-fb9b8ce2d7ec",
+      "name": "Upgradable discrete synergy 11",
+      "status": "Inactive",
+      "createdDate": "2025-05-09T11:54:57",
+      "updatedDate": "2026-01-25T11:17:49",
+      "owner": "Eric Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4032.93,
+      "description": "Language class with agree."
+    },
+    {
+      "id": "bbc45682-3b70-4cbc-a111-70d4828d647f",
+      "name": "Intuitive mobile challenge 12",
+      "status": "Active",
+      "createdDate": "2025-03-04T07:59:17",
+      "updatedDate": "2026-01-31T00:38:49",
+      "owner": "Kelsey Ortega",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7216.49,
+      "description": "Study under although."
+    },
+    {
+      "id": "1fc5c972-7902-4c64-8553-cbc07bb41db5",
+      "name": "Triple-buffered executive matrix 13",
+      "status": "Active",
+      "createdDate": "2026-01-21T20:40:47",
+      "updatedDate": "2026-02-03T12:23:36",
+      "owner": "Ryan Grant",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8979.15,
+      "description": "Fund far dinner she."
+    },
+    {
+      "id": "0408af18-76a0-4f50-81ea-dc4dc86bc930",
+      "name": "Reduced maximized standardization 14",
+      "status": "Active",
+      "createdDate": "2025-02-22T07:42:38",
+      "updatedDate": "2026-01-20T03:58:54",
+      "owner": "Jim Moore",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4965.04,
+      "description": "Dog significant media whatever surface."
+    },
+    {
+      "id": "302d2be5-939d-4c4c-8c8a-5a5a2dda7e6c",
+      "name": "Enterprise-wide asynchronous toolset 15",
+      "status": "Pending",
+      "createdDate": "2025-06-06T09:24:29",
+      "updatedDate": "2026-01-20T16:27:19",
+      "owner": "Jose Harris",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4883.52,
+      "description": "Single whose sell."
+    },
+    {
+      "id": "ee543333-ccf7-4e37-af0d-47c2360d302f",
+      "name": "User-centric interactive monitoring 16",
+      "status": "Active",
+      "createdDate": "2025-05-14T14:59:52",
+      "updatedDate": "2026-01-29T18:16:28",
+      "owner": "David Yang",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6513.1,
+      "description": "High cause their notice."
+    },
+    {
+      "id": "1f4b7960-7711-49b5-98cf-854e49d3218e",
+      "name": "User-centric global capacity 17",
+      "status": "Pending",
+      "createdDate": "2025-02-16T19:47:50",
+      "updatedDate": "2026-02-12T04:43:03",
+      "owner": "Anna Roman",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5095.96,
+      "description": "After state any detail just teach policy."
+    },
+    {
+      "id": "4c1868e0-80b4-43e5-8e16-1bfc9faa57b3",
+      "name": "Reduced eco-centric capacity 18",
+      "status": "Completed",
+      "createdDate": "2025-04-08T14:01:06",
+      "updatedDate": "2026-02-08T02:27:18",
+      "owner": "Carolyn Davis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6841.48,
+      "description": "Yet structure themselves option."
+    },
+    {
+      "id": "3c8fc536-0fec-44d3-804a-c7171b0fd014",
+      "name": "Down-sized heuristic open architecture 19",
+      "status": "Completed",
+      "createdDate": "2025-05-15T02:41:45",
+      "updatedDate": "2026-01-20T19:26:00",
+      "owner": "Thomas Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6275.49,
+      "description": "Firm into visit PM investment mean thousand theory."
+    },
+    {
+      "id": "b18ad7f2-5cb2-4f65-ab10-ece84c4478ac",
+      "name": "Integrated actuating website 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-19T11:35:15",
+      "updatedDate": "2026-01-20T01:43:06",
+      "owner": "Peter Cherry",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1295.34,
+      "description": "Picture building force when."
+    },
+    {
+      "id": "f8e411f9-e887-4403-bc7d-b7b3edaef831",
+      "name": "Cloned radical firmware 21",
+      "status": "Active",
+      "createdDate": "2025-09-08T12:42:02",
+      "updatedDate": "2026-02-08T19:34:50",
+      "owner": "Jennifer Strickland",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9393.97,
+      "description": "Check increase above hope base large."
+    },
+    {
+      "id": "dd1e2a8f-e30f-4946-a67a-34c1652f2f81",
+      "name": "Reduced multimedia hierarchy 22",
+      "status": "Inactive",
+      "createdDate": "2025-04-17T13:36:51",
+      "updatedDate": "2026-02-01T00:49:22",
+      "owner": "Jeffrey Gordon",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1873.87,
+      "description": "Quickly scientist change risk inside himself author every."
+    },
+    {
+      "id": "1144d70f-5509-49b8-a301-b138f797ba5b",
+      "name": "Multi-channeled bi-directional system engine 23",
+      "status": "Active",
+      "createdDate": "2025-04-18T03:13:33",
+      "updatedDate": "2026-02-08T04:03:34",
+      "owner": "Jordan Hughes",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9135.26,
+      "description": "Remain than establish produce often lose summer."
+    },
+    {
+      "id": "7d8e8cb3-b857-4e15-a894-7016bfa679fa",
+      "name": "Operative didactic throughput 24",
+      "status": "Active",
+      "createdDate": "2025-04-05T14:58:02",
+      "updatedDate": "2026-01-27T08:05:14",
+      "owner": "Connie Lewis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3298.35,
+      "description": "Hope everything hair reason."
+    },
+    {
+      "id": "8bdb174d-fe64-433d-ad15-d91f731caf03",
+      "name": "Managed bi-directional info-mediaries 25",
+      "status": "Inactive",
+      "createdDate": "2025-07-16T06:58:58",
+      "updatedDate": "2026-01-18T21:27:25",
+      "owner": "Nicole Maldonado",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4748.72,
+      "description": "Thought get himself at memory public beyond."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

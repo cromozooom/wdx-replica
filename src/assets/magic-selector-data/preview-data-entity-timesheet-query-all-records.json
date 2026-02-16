@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-timesheet",
+  "queryId": "query-all-records",
+  "totalCount": 224,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ed9e842c-d6e6-4e69-aed2-88d8cc4a6ed4",
+      "name": "Object-based mission-critical software 1",
+      "status": "Inactive",
+      "createdDate": "2025-04-01T22:14:46",
+      "updatedDate": "2026-01-26T01:37:58",
+      "owner": "Wendy Wilson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5022.96,
+      "description": "Down after test."
+    },
+    {
+      "id": "87545b8e-ec28-45f3-be71-cf3b50a0f8cd",
+      "name": "Open-source real-time process improvement 2",
+      "status": "Completed",
+      "createdDate": "2025-06-22T15:45:53",
+      "updatedDate": "2026-01-28T23:41:41",
+      "owner": "Madison Shields",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7462.55,
+      "description": "Big paper assume probably bank choose song."
+    },
+    {
+      "id": "c1f5486b-9eb4-4b66-a3d6-288a44596a45",
+      "name": "Optional high-level moderator 3",
+      "status": "Completed",
+      "createdDate": "2025-06-10T19:40:36",
+      "updatedDate": "2026-02-10T08:45:08",
+      "owner": "Pamela Ruiz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 864.71,
+      "description": "Computer century around."
+    },
+    {
+      "id": "131b5ff1-3186-42dd-81e5-b7a05abb5466",
+      "name": "Virtual didactic workforce 4",
+      "status": "Pending",
+      "createdDate": "2025-12-21T05:21:07",
+      "updatedDate": "2026-01-15T22:22:48",
+      "owner": "Melissa Cantu",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6918.94,
+      "description": "Land will live base yeah election."
+    },
+    {
+      "id": "e7cbce4f-3a58-4c01-b03c-31c009b89232",
+      "name": "Total coherent flexibility 5",
+      "status": "Active",
+      "createdDate": "2025-10-07T13:38:05",
+      "updatedDate": "2026-01-20T02:15:41",
+      "owner": "Matthew Roberson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2719.88,
+      "description": "Reality visit fear can."
+    },
+    {
+      "id": "805f225c-160b-45f8-849a-cb3d9d57608f",
+      "name": "Face-to-face discrete encoding 6",
+      "status": "Pending",
+      "createdDate": "2025-08-30T14:09:27",
+      "updatedDate": "2026-02-07T05:27:44",
+      "owner": "Cindy Carter",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 262.63,
+      "description": "Under if at institution."
+    },
+    {
+      "id": "6f28510c-5553-46c4-969f-2aea09400892",
+      "name": "Public-key tangible process improvement 7",
+      "status": "Inactive",
+      "createdDate": "2025-04-18T21:34:07",
+      "updatedDate": "2026-01-22T18:25:52",
+      "owner": "Dr. James Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9937.68,
+      "description": "Well blue require analysis."
+    },
+    {
+      "id": "7c9e9196-89d1-4b2f-b83d-50bfc00b9b0c",
+      "name": "Phased local projection 8",
+      "status": "Completed",
+      "createdDate": "2025-04-27T22:48:17",
+      "updatedDate": "2026-01-29T02:10:49",
+      "owner": "Harry Robertson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 283.1,
+      "description": "Rest general point often office here."
+    },
+    {
+      "id": "b2d317b4-093c-43bb-9dbd-17558839ed20",
+      "name": "Organized upward-trending circuit 9",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T19:45:18",
+      "updatedDate": "2026-02-08T14:24:13",
+      "owner": "Jon Medina",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2667.71,
+      "description": "Education that military base laugh north structure."
+    },
+    {
+      "id": "6b3a8cea-9349-424c-bef0-d6fb124534a5",
+      "name": "Multi-lateral optimal framework 10",
+      "status": "Inactive",
+      "createdDate": "2026-01-08T06:50:22",
+      "updatedDate": "2026-02-01T11:44:31",
+      "owner": "Melissa Young",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 416.81,
+      "description": "Ten north successful free."
+    },
+    {
+      "id": "30fd6a8f-0db1-4419-82fd-0935eb093cf8",
+      "name": "Universal directional algorithm 11",
+      "status": "Inactive",
+      "createdDate": "2025-03-03T22:07:06",
+      "updatedDate": "2026-02-05T01:18:31",
+      "owner": "Tina Reyes",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 931.92,
+      "description": "Heavy song big test."
+    },
+    {
+      "id": "61cf21d6-294f-4db0-a188-b6ca7aef51f7",
+      "name": "Multi-channeled content-based workforce 12",
+      "status": "Inactive",
+      "createdDate": "2025-04-26T10:47:28",
+      "updatedDate": "2026-01-23T07:34:04",
+      "owner": "Tom Hernandez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9809.54,
+      "description": "Economy west across measure represent street."
+    },
+    {
+      "id": "66c8501e-fa6c-4525-931c-6d973c64ac45",
+      "name": "Persistent non-volatile approach 13",
+      "status": "Pending",
+      "createdDate": "2025-08-09T09:57:28",
+      "updatedDate": "2026-02-08T04:57:45",
+      "owner": "Elizabeth Clark",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7359.02,
+      "description": "Admit society star bed certain cover."
+    },
+    {
+      "id": "164f23e5-b8a9-4d17-aa7a-256c31c9d5db",
+      "name": "Assimilated demand-driven policy 14",
+      "status": "Pending",
+      "createdDate": "2025-08-16T17:18:29",
+      "updatedDate": "2026-01-20T14:35:24",
+      "owner": "Kimberly Diaz",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6853.88,
+      "description": "Value science spend next everybody industry."
+    },
+    {
+      "id": "34a0bba3-1d4a-46c7-b3fc-9398952c0eb8",
+      "name": "Automated value-added open architecture 15",
+      "status": "Inactive",
+      "createdDate": "2025-07-13T15:24:30",
+      "updatedDate": "2026-01-20T22:53:25",
+      "owner": "Joseph Hernandez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5190.34,
+      "description": "Cup writer human citizen."
+    },
+    {
+      "id": "8743baff-9016-42fa-9dc2-016026171071",
+      "name": "Team-oriented modular frame 16",
+      "status": "Pending",
+      "createdDate": "2025-05-07T01:18:50",
+      "updatedDate": "2026-01-22T12:50:44",
+      "owner": "Felicia Gray",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7282.1,
+      "description": "Develop close hand school brother throughout authority write."
+    },
+    {
+      "id": "413da8ad-c617-49e1-beca-b311c65259d5",
+      "name": "Focused disintermediate model 17",
+      "status": "Inactive",
+      "createdDate": "2025-03-29T15:40:28",
+      "updatedDate": "2026-02-02T22:57:17",
+      "owner": "Nancy Medina",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3672.99,
+      "description": "Behind local whole treatment world officer."
+    },
+    {
+      "id": "41adfb6d-155b-4d1c-8bef-121e348b0d87",
+      "name": "Digitized neutral functionalities 18",
+      "status": "Pending",
+      "createdDate": "2025-08-08T10:37:19",
+      "updatedDate": "2026-02-07T12:15:18",
+      "owner": "Tyler Garcia",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6519.86,
+      "description": "Until reflect huge exist."
+    },
+    {
+      "id": "6308c202-d83c-49d9-a57e-d05bfa3f75e6",
+      "name": "Multi-channeled real-time productivity 19",
+      "status": "Active",
+      "createdDate": "2026-01-03T21:23:33",
+      "updatedDate": "2026-01-24T23:25:43",
+      "owner": "Dylan Beasley",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2097.71,
+      "description": "Trouble decade man structure."
+    },
+    {
+      "id": "dee41a0b-2002-4048-b53e-f8df270d6022",
+      "name": "Polarized systemic paradigm 20",
+      "status": "Active",
+      "createdDate": "2025-07-26T10:45:43",
+      "updatedDate": "2026-01-17T16:06:10",
+      "owner": "Laura Campbell MD",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1888.24,
+      "description": "Little number scene organization fire away."
+    },
+    {
+      "id": "74d802c1-010c-4551-b5eb-697eb33b928f",
+      "name": "Advanced client-server focus group 21",
+      "status": "Inactive",
+      "createdDate": "2025-10-14T14:46:17",
+      "updatedDate": "2026-02-12T22:33:49",
+      "owner": "Kari Alvarez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9293.42,
+      "description": "Pressure drive boy prepare."
+    },
+    {
+      "id": "6c958596-4e05-4343-af91-0a05d97c1599",
+      "name": "Implemented fault-tolerant extranet 22",
+      "status": "Inactive",
+      "createdDate": "2025-02-24T02:25:18",
+      "updatedDate": "2026-02-05T11:46:54",
+      "owner": "Lisa Gordon MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2842.21,
+      "description": "Father tough action draw try all."
+    },
+    {
+      "id": "93873764-1eec-4c4e-9aff-30956cbeca1c",
+      "name": "Networked logistical interface 23",
+      "status": "Completed",
+      "createdDate": "2025-03-18T05:33:11",
+      "updatedDate": "2026-02-07T04:07:15",
+      "owner": "Karen Mccoy",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2025.33,
+      "description": "Body color seven so."
+    },
+    {
+      "id": "b6f04704-f163-4ee1-804e-3bb5c561fd81",
+      "name": "Persistent next generation conglomeration 24",
+      "status": "Inactive",
+      "createdDate": "2025-04-11T11:25:56",
+      "updatedDate": "2026-01-29T10:40:48",
+      "owner": "Cynthia Frye",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1544.22,
+      "description": "Nor attorney professor hope."
+    },
+    {
+      "id": "d5d221ef-1692-4621-97a5-7e8f83efec60",
+      "name": "Reverse-engineered national intranet 25",
+      "status": "Completed",
+      "createdDate": "2025-03-21T02:20:07",
+      "updatedDate": "2026-01-31T01:02:44",
+      "owner": "Danny Campbell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4952.22,
+      "description": "Indeed article recently friend."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "number",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

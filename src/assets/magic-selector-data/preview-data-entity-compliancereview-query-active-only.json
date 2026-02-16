@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-active-only",
+  "totalCount": 653,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "15fd28a6-5a96-4733-9153-4313fe09fc37",
+      "name": "Balanced uniform framework 1",
+      "status": "Active",
+      "createdDate": "2025-10-22T16:13:47",
+      "updatedDate": "2026-01-27T06:59:58",
+      "owner": "Howard Chavez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 401.99,
+      "description": "Human how water show month."
+    },
+    {
+      "id": "1ea4bcc6-977d-45e1-8ca1-3e43c2aad3a1",
+      "name": "Open-source secondary challenge 2",
+      "status": "Inactive",
+      "createdDate": "2025-11-18T18:10:38",
+      "updatedDate": "2026-02-06T19:04:16",
+      "owner": "Annette Santiago",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4122.18,
+      "description": "Girl spend meet identify."
+    },
+    {
+      "id": "f33574e7-801e-49c3-9ffd-4d75a5b4f682",
+      "name": "Devolved value-added strategy 3",
+      "status": "Completed",
+      "createdDate": "2025-03-03T18:33:53",
+      "updatedDate": "2026-02-14T02:33:10",
+      "owner": "Rose Chambers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9095.31,
+      "description": "At also song who."
+    },
+    {
+      "id": "6d0e3b0c-5088-467d-a5d9-a98cd11b04db",
+      "name": "Fully-configurable multimedia service-desk 4",
+      "status": "Pending",
+      "createdDate": "2025-04-11T03:00:08",
+      "updatedDate": "2026-02-05T11:34:33",
+      "owner": "Kimberly Butler",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3237.41,
+      "description": "What receive rich democratic human off."
+    },
+    {
+      "id": "d33b0814-6065-4af4-bd08-ec04cf983383",
+      "name": "Reverse-engineered uniform product 5",
+      "status": "Pending",
+      "createdDate": "2025-04-01T09:41:38",
+      "updatedDate": "2026-01-31T09:09:20",
+      "owner": "Thomas Davenport",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6707.06,
+      "description": "Science professional leave case teacher."
+    },
+    {
+      "id": "f0b31ce5-8693-476f-bd11-c1efe0fb15bb",
+      "name": "Vision-oriented intangible budgetary management 6",
+      "status": "Active",
+      "createdDate": "2025-12-25T11:06:39",
+      "updatedDate": "2026-02-09T19:00:26",
+      "owner": "Susan Moore",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5535.98,
+      "description": "Glass all common local recent."
+    },
+    {
+      "id": "95a99fc3-b175-4915-9205-7cf99a1c6b91",
+      "name": "Implemented hybrid time-frame 7",
+      "status": "Pending",
+      "createdDate": "2025-05-09T11:18:47",
+      "updatedDate": "2026-01-26T04:56:29",
+      "owner": "Barbara Fisher",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 794.85,
+      "description": "Once while site Republican near third."
+    },
+    {
+      "id": "ba2af76f-8c0c-479d-8c12-d35e0592362e",
+      "name": "Centralized logistical methodology 8",
+      "status": "Completed",
+      "createdDate": "2025-03-26T04:35:39",
+      "updatedDate": "2026-01-28T11:50:27",
+      "owner": "Howard Vasquez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6537.29,
+      "description": "Line allow his notice old subject."
+    },
+    {
+      "id": "c197499b-0aad-4de7-88cb-49c4684a9885",
+      "name": "Secured methodical archive 9",
+      "status": "Pending",
+      "createdDate": "2025-04-11T16:44:35",
+      "updatedDate": "2026-02-05T09:17:35",
+      "owner": "Jennifer Powers",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2404.6,
+      "description": "Lay data someone stage much."
+    },
+    {
+      "id": "c6cc06a5-64fd-43b1-8cb6-4d72433a66dd",
+      "name": "Cross-platform zero-defect capability 10",
+      "status": "Active",
+      "createdDate": "2025-04-08T22:32:49",
+      "updatedDate": "2026-02-08T19:10:47",
+      "owner": "Angela Hill",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1292.93,
+      "description": "Rate city able live cause."
+    },
+    {
+      "id": "14b7e17f-7488-44da-9200-29fc52291078",
+      "name": "Reduced human-resource circuit 11",
+      "status": "Pending",
+      "createdDate": "2026-01-05T13:54:33",
+      "updatedDate": "2026-01-30T10:04:39",
+      "owner": "Henry Reed",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6194.29,
+      "description": "If identify better price according of car."
+    },
+    {
+      "id": "63ca6153-3814-4983-a592-63dc8a8c1385",
+      "name": "Team-oriented dynamic product 12",
+      "status": "Inactive",
+      "createdDate": "2025-07-21T03:32:45",
+      "updatedDate": "2026-01-31T02:07:02",
+      "owner": "Michelle Griffin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3826.0,
+      "description": "Need raise project speak improve another."
+    },
+    {
+      "id": "62ce9815-0d98-4edb-adb6-3cedb69a3ba5",
+      "name": "Secured composite workforce 13",
+      "status": "Active",
+      "createdDate": "2025-03-18T04:04:54",
+      "updatedDate": "2026-02-13T10:07:10",
+      "owner": "Ronald Hart",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9247.12,
+      "description": "Effect technology attention level itself pretty care."
+    },
+    {
+      "id": "9a9ffb13-b94c-4541-aac4-6a1436c72d99",
+      "name": "Monitored holistic architecture 14",
+      "status": "Pending",
+      "createdDate": "2025-04-11T23:01:29",
+      "updatedDate": "2026-02-15T00:03:56",
+      "owner": "Ann Davidson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3399.94,
+      "description": "Family dinner four agent."
+    },
+    {
+      "id": "dfc02fdb-037f-4534-a4e4-fcdbdd8e1442",
+      "name": "Integrated 24hour definition 15",
+      "status": "Active",
+      "createdDate": "2025-11-05T20:35:36",
+      "updatedDate": "2026-01-17T23:51:30",
+      "owner": "Joyce Peterson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5858.66,
+      "description": "Eat population through production marriage provide."
+    },
+    {
+      "id": "8f120791-20b3-41fa-a58e-9e23f65da205",
+      "name": "Extended even-keeled customer loyalty 16",
+      "status": "Inactive",
+      "createdDate": "2025-06-12T01:35:58",
+      "updatedDate": "2026-02-09T10:05:08",
+      "owner": "Michael Williams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5143.43,
+      "description": "Indeed put American together keep."
+    },
+    {
+      "id": "d5853d46-5d09-46cf-859a-fefc9c0c1007",
+      "name": "Secured tangible synergy 17",
+      "status": "Pending",
+      "createdDate": "2025-08-06T03:26:04",
+      "updatedDate": "2026-01-22T16:41:26",
+      "owner": "Kenneth Gomez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9569.43,
+      "description": "Few none live outside rise."
+    },
+    {
+      "id": "903895f1-61b4-4cd7-b72f-83eb8c9923b6",
+      "name": "Total local frame 18",
+      "status": "Active",
+      "createdDate": "2025-06-06T09:17:04",
+      "updatedDate": "2026-02-02T07:28:54",
+      "owner": "Michael Bray",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8019.51,
+      "description": "Today condition movie red itself."
+    },
+    {
+      "id": "785021fb-9609-45eb-9c53-4723126302ac",
+      "name": "Cross-platform value-added database 19",
+      "status": "Active",
+      "createdDate": "2025-12-17T04:41:59",
+      "updatedDate": "2026-01-19T19:45:33",
+      "owner": "Jessica Miller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2220.48,
+      "description": "Represent dark leader recently impact."
+    },
+    {
+      "id": "6f8720cd-fb4a-4060-beb0-b5e207d35298",
+      "name": "Object-based local time-frame 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-16T01:47:03",
+      "updatedDate": "2026-01-30T15:43:27",
+      "owner": "Regina Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2464.87,
+      "description": "Article nature state especially."
+    },
+    {
+      "id": "7d35cbf2-2bb9-4574-b34e-474e40b882f0",
+      "name": "Vision-oriented value-added concept 21",
+      "status": "Completed",
+      "createdDate": "2025-08-23T12:18:39",
+      "updatedDate": "2026-01-23T08:37:32",
+      "owner": "Zachary King",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5631.11,
+      "description": "Country professional drug."
+    },
+    {
+      "id": "152d6e42-ac3a-47aa-ab37-39680cf69f16",
+      "name": "Upgradable context-sensitive intranet 22",
+      "status": "Inactive",
+      "createdDate": "2025-03-27T08:13:08",
+      "updatedDate": "2026-01-30T15:16:04",
+      "owner": "Jenny Rogers",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6079.42,
+      "description": "Animal direction toward game enough."
+    },
+    {
+      "id": "53b9e6fe-ff3f-44a5-bbff-6c8d8244cd0b",
+      "name": "Re-contextualized local approach 23",
+      "status": "Pending",
+      "createdDate": "2025-12-17T21:46:31",
+      "updatedDate": "2026-02-15T06:20:23",
+      "owner": "Sabrina Gamble",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2275.68,
+      "description": "Notice dog decide small."
+    },
+    {
+      "id": "9a9441a2-2996-4b6b-b859-1b4855be72a2",
+      "name": "Implemented bandwidth-monitored implementation 24",
+      "status": "Completed",
+      "createdDate": "2025-06-18T19:36:35",
+      "updatedDate": "2026-02-08T01:21:21",
+      "owner": "Steven Green",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4783.6,
+      "description": "Investment parent gas stay."
+    },
+    {
+      "id": "db8a6bed-4a89-44c4-ac3c-ec2f58abdb2c",
+      "name": "Persevering 6thgeneration intranet 25",
+      "status": "Active",
+      "createdDate": "2026-02-06T13:16:48",
+      "updatedDate": "2026-01-18T06:09:57",
+      "owner": "Deborah Frazier",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 680.39,
+      "description": "Simply concern determine year price actually."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

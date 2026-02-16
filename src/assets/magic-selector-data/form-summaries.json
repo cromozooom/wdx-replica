@@ -1,0 +1,3266 @@
+[
+  {
+    "id": "client-portfolio-form",
+    "type": "Form",
+    "name": "Client Portfolio Management",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-high-net-worth-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - High Net Worth",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-retail-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Retail",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-institutional-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Institutional",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-family-office-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Family Office",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-advisor-managed-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Advisor Managed",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-self-directed-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Self-Directed",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-401k-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - 401(k)",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-ira-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - IRA",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-roth-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Roth",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-traditional-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Traditional",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-taxable-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Taxable",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-trust-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Trust",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-corporate-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Corporate",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-nonprofit-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Non-Profit",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-pension-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - Pension",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-portfolio-sep-form",
+    "type": "Form",
+    "name": "Client Portfolio Management - SEP",
+    "description": "Manage client investment portfolios and holdings",
+    "category": "portfolio",
+    "entityName": "Portfolio"
+  },
+  {
+    "id": "client-profiles-form",
+    "type": "Form",
+    "name": "Client Profile Management",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-high-net-worth-form",
+    "type": "Form",
+    "name": "Client Profile Management - High Net Worth",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-retail-form",
+    "type": "Form",
+    "name": "Client Profile Management - Retail",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-institutional-form",
+    "type": "Form",
+    "name": "Client Profile Management - Institutional",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-family-office-form",
+    "type": "Form",
+    "name": "Client Profile Management - Family Office",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-advisor-managed-form",
+    "type": "Form",
+    "name": "Client Profile Management - Advisor Managed",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-self-directed-form",
+    "type": "Form",
+    "name": "Client Profile Management - Self-Directed",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-401k-form",
+    "type": "Form",
+    "name": "Client Profile Management - 401(k)",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-ira-form",
+    "type": "Form",
+    "name": "Client Profile Management - IRA",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-roth-form",
+    "type": "Form",
+    "name": "Client Profile Management - Roth",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-traditional-form",
+    "type": "Form",
+    "name": "Client Profile Management - Traditional",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-taxable-form",
+    "type": "Form",
+    "name": "Client Profile Management - Taxable",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-trust-form",
+    "type": "Form",
+    "name": "Client Profile Management - Trust",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-corporate-form",
+    "type": "Form",
+    "name": "Client Profile Management - Corporate",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-nonprofit-form",
+    "type": "Form",
+    "name": "Client Profile Management - Non-Profit",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-pension-form",
+    "type": "Form",
+    "name": "Client Profile Management - Pension",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "client-profiles-sep-form",
+    "type": "Form",
+    "name": "Client Profile Management - SEP",
+    "description": "Client personal and financial information",
+    "category": "client",
+    "entityName": "Client"
+  },
+  {
+    "id": "household-accounts-form",
+    "type": "Form",
+    "name": "Household Accounts",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-high-net-worth-form",
+    "type": "Form",
+    "name": "Household Accounts - High Net Worth",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-retail-form",
+    "type": "Form",
+    "name": "Household Accounts - Retail",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-institutional-form",
+    "type": "Form",
+    "name": "Household Accounts - Institutional",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-family-office-form",
+    "type": "Form",
+    "name": "Household Accounts - Family Office",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-advisor-managed-form",
+    "type": "Form",
+    "name": "Household Accounts - Advisor Managed",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-self-directed-form",
+    "type": "Form",
+    "name": "Household Accounts - Self-Directed",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-401k-form",
+    "type": "Form",
+    "name": "Household Accounts - 401(k)",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-ira-form",
+    "type": "Form",
+    "name": "Household Accounts - IRA",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-roth-form",
+    "type": "Form",
+    "name": "Household Accounts - Roth",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-traditional-form",
+    "type": "Form",
+    "name": "Household Accounts - Traditional",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-taxable-form",
+    "type": "Form",
+    "name": "Household Accounts - Taxable",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-trust-form",
+    "type": "Form",
+    "name": "Household Accounts - Trust",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-corporate-form",
+    "type": "Form",
+    "name": "Household Accounts - Corporate",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-nonprofit-form",
+    "type": "Form",
+    "name": "Household Accounts - Non-Profit",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-pension-form",
+    "type": "Form",
+    "name": "Household Accounts - Pension",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "household-accounts-sep-form",
+    "type": "Form",
+    "name": "Household Accounts - SEP",
+    "description": "Family and household account aggregation",
+    "category": "client",
+    "entityName": "Household"
+  },
+  {
+    "id": "beneficiary-management-form",
+    "type": "Form",
+    "name": "Beneficiary Management",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-high-net-worth-form",
+    "type": "Form",
+    "name": "Beneficiary Management - High Net Worth",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-retail-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Retail",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-institutional-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Institutional",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-family-office-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Family Office",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-advisor-managed-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Advisor Managed",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-self-directed-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Self-Directed",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-401k-form",
+    "type": "Form",
+    "name": "Beneficiary Management - 401(k)",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-ira-form",
+    "type": "Form",
+    "name": "Beneficiary Management - IRA",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-roth-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Roth",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-traditional-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Traditional",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-taxable-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Taxable",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-trust-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Trust",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-corporate-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Corporate",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-nonprofit-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Non-Profit",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-pension-form",
+    "type": "Form",
+    "name": "Beneficiary Management - Pension",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "beneficiary-management-sep-form",
+    "type": "Form",
+    "name": "Beneficiary Management - SEP",
+    "description": "Manage account beneficiaries and designations",
+    "category": "client",
+    "entityName": "Beneficiary"
+  },
+  {
+    "id": "investment-accounts-form",
+    "type": "Form",
+    "name": "Investment Account Management",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-high-net-worth-form",
+    "type": "Form",
+    "name": "Investment Account Management - High Net Worth",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-retail-form",
+    "type": "Form",
+    "name": "Investment Account Management - Retail",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-institutional-form",
+    "type": "Form",
+    "name": "Investment Account Management - Institutional",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-family-office-form",
+    "type": "Form",
+    "name": "Investment Account Management - Family Office",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-advisor-managed-form",
+    "type": "Form",
+    "name": "Investment Account Management - Advisor Managed",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-self-directed-form",
+    "type": "Form",
+    "name": "Investment Account Management - Self-Directed",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-401k-form",
+    "type": "Form",
+    "name": "Investment Account Management - 401(k)",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-ira-form",
+    "type": "Form",
+    "name": "Investment Account Management - IRA",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-roth-form",
+    "type": "Form",
+    "name": "Investment Account Management - Roth",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-traditional-form",
+    "type": "Form",
+    "name": "Investment Account Management - Traditional",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-taxable-form",
+    "type": "Form",
+    "name": "Investment Account Management - Taxable",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-trust-form",
+    "type": "Form",
+    "name": "Investment Account Management - Trust",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-corporate-form",
+    "type": "Form",
+    "name": "Investment Account Management - Corporate",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-nonprofit-form",
+    "type": "Form",
+    "name": "Investment Account Management - Non-Profit",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-pension-form",
+    "type": "Form",
+    "name": "Investment Account Management - Pension",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "investment-accounts-sep-form",
+    "type": "Form",
+    "name": "Investment Account Management - SEP",
+    "description": "Track investment accounts and positions",
+    "category": "investment",
+    "entityName": "Account"
+  },
+  {
+    "id": "trade-execution-form",
+    "type": "Form",
+    "name": "Trade Execution",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-high-net-worth-form",
+    "type": "Form",
+    "name": "Trade Execution - High Net Worth",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-retail-form",
+    "type": "Form",
+    "name": "Trade Execution - Retail",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-institutional-form",
+    "type": "Form",
+    "name": "Trade Execution - Institutional",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-family-office-form",
+    "type": "Form",
+    "name": "Trade Execution - Family Office",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-advisor-managed-form",
+    "type": "Form",
+    "name": "Trade Execution - Advisor Managed",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-self-directed-form",
+    "type": "Form",
+    "name": "Trade Execution - Self-Directed",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-401k-form",
+    "type": "Form",
+    "name": "Trade Execution - 401(k)",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-ira-form",
+    "type": "Form",
+    "name": "Trade Execution - IRA",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-roth-form",
+    "type": "Form",
+    "name": "Trade Execution - Roth",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-traditional-form",
+    "type": "Form",
+    "name": "Trade Execution - Traditional",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-taxable-form",
+    "type": "Form",
+    "name": "Trade Execution - Taxable",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-trust-form",
+    "type": "Form",
+    "name": "Trade Execution - Trust",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-corporate-form",
+    "type": "Form",
+    "name": "Trade Execution - Corporate",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-nonprofit-form",
+    "type": "Form",
+    "name": "Trade Execution - Non-Profit",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-pension-form",
+    "type": "Form",
+    "name": "Trade Execution - Pension",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "trade-execution-sep-form",
+    "type": "Form",
+    "name": "Trade Execution - SEP",
+    "description": "Buy and sell orders for securities",
+    "category": "trading",
+    "entityName": "Trade"
+  },
+  {
+    "id": "asset-allocation-form",
+    "type": "Form",
+    "name": "Asset Allocation",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-high-net-worth-form",
+    "type": "Form",
+    "name": "Asset Allocation - High Net Worth",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-retail-form",
+    "type": "Form",
+    "name": "Asset Allocation - Retail",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-institutional-form",
+    "type": "Form",
+    "name": "Asset Allocation - Institutional",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-family-office-form",
+    "type": "Form",
+    "name": "Asset Allocation - Family Office",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-advisor-managed-form",
+    "type": "Form",
+    "name": "Asset Allocation - Advisor Managed",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-self-directed-form",
+    "type": "Form",
+    "name": "Asset Allocation - Self-Directed",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-401k-form",
+    "type": "Form",
+    "name": "Asset Allocation - 401(k)",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-ira-form",
+    "type": "Form",
+    "name": "Asset Allocation - IRA",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-roth-form",
+    "type": "Form",
+    "name": "Asset Allocation - Roth",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-traditional-form",
+    "type": "Form",
+    "name": "Asset Allocation - Traditional",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-taxable-form",
+    "type": "Form",
+    "name": "Asset Allocation - Taxable",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-trust-form",
+    "type": "Form",
+    "name": "Asset Allocation - Trust",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-corporate-form",
+    "type": "Form",
+    "name": "Asset Allocation - Corporate",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-nonprofit-form",
+    "type": "Form",
+    "name": "Asset Allocation - Non-Profit",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-pension-form",
+    "type": "Form",
+    "name": "Asset Allocation - Pension",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "asset-allocation-sep-form",
+    "type": "Form",
+    "name": "Asset Allocation - SEP",
+    "description": "Portfolio asset class distribution",
+    "category": "investment",
+    "entityName": "AssetAllocation"
+  },
+  {
+    "id": "securities-holdings-form",
+    "type": "Form",
+    "name": "Securities Holdings",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-high-net-worth-form",
+    "type": "Form",
+    "name": "Securities Holdings - High Net Worth",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-retail-form",
+    "type": "Form",
+    "name": "Securities Holdings - Retail",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-institutional-form",
+    "type": "Form",
+    "name": "Securities Holdings - Institutional",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-family-office-form",
+    "type": "Form",
+    "name": "Securities Holdings - Family Office",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-advisor-managed-form",
+    "type": "Form",
+    "name": "Securities Holdings - Advisor Managed",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-self-directed-form",
+    "type": "Form",
+    "name": "Securities Holdings - Self-Directed",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-401k-form",
+    "type": "Form",
+    "name": "Securities Holdings - 401(k)",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-ira-form",
+    "type": "Form",
+    "name": "Securities Holdings - IRA",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-roth-form",
+    "type": "Form",
+    "name": "Securities Holdings - Roth",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-traditional-form",
+    "type": "Form",
+    "name": "Securities Holdings - Traditional",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-taxable-form",
+    "type": "Form",
+    "name": "Securities Holdings - Taxable",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-trust-form",
+    "type": "Form",
+    "name": "Securities Holdings - Trust",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-corporate-form",
+    "type": "Form",
+    "name": "Securities Holdings - Corporate",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-nonprofit-form",
+    "type": "Form",
+    "name": "Securities Holdings - Non-Profit",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-pension-form",
+    "type": "Form",
+    "name": "Securities Holdings - Pension",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "securities-holdings-sep-form",
+    "type": "Form",
+    "name": "Securities Holdings - SEP",
+    "description": "Individual security positions and performance",
+    "category": "investment",
+    "entityName": "Security"
+  },
+  {
+    "id": "financial-plans-form",
+    "type": "Form",
+    "name": "Financial Planning",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-high-net-worth-form",
+    "type": "Form",
+    "name": "Financial Planning - High Net Worth",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-retail-form",
+    "type": "Form",
+    "name": "Financial Planning - Retail",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-institutional-form",
+    "type": "Form",
+    "name": "Financial Planning - Institutional",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-family-office-form",
+    "type": "Form",
+    "name": "Financial Planning - Family Office",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-advisor-managed-form",
+    "type": "Form",
+    "name": "Financial Planning - Advisor Managed",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-self-directed-form",
+    "type": "Form",
+    "name": "Financial Planning - Self-Directed",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-401k-form",
+    "type": "Form",
+    "name": "Financial Planning - 401(k)",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-ira-form",
+    "type": "Form",
+    "name": "Financial Planning - IRA",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-roth-form",
+    "type": "Form",
+    "name": "Financial Planning - Roth",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-traditional-form",
+    "type": "Form",
+    "name": "Financial Planning - Traditional",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-taxable-form",
+    "type": "Form",
+    "name": "Financial Planning - Taxable",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-trust-form",
+    "type": "Form",
+    "name": "Financial Planning - Trust",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-corporate-form",
+    "type": "Form",
+    "name": "Financial Planning - Corporate",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-nonprofit-form",
+    "type": "Form",
+    "name": "Financial Planning - Non-Profit",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-pension-form",
+    "type": "Form",
+    "name": "Financial Planning - Pension",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "financial-plans-sep-form",
+    "type": "Form",
+    "name": "Financial Planning - SEP",
+    "description": "Comprehensive client financial plans",
+    "category": "planning",
+    "entityName": "FinancialPlan"
+  },
+  {
+    "id": "retirement-planning-form",
+    "type": "Form",
+    "name": "Retirement Planning",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-high-net-worth-form",
+    "type": "Form",
+    "name": "Retirement Planning - High Net Worth",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-retail-form",
+    "type": "Form",
+    "name": "Retirement Planning - Retail",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-institutional-form",
+    "type": "Form",
+    "name": "Retirement Planning - Institutional",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-family-office-form",
+    "type": "Form",
+    "name": "Retirement Planning - Family Office",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-advisor-managed-form",
+    "type": "Form",
+    "name": "Retirement Planning - Advisor Managed",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-self-directed-form",
+    "type": "Form",
+    "name": "Retirement Planning - Self-Directed",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-401k-form",
+    "type": "Form",
+    "name": "Retirement Planning - 401(k)",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-ira-form",
+    "type": "Form",
+    "name": "Retirement Planning - IRA",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-roth-form",
+    "type": "Form",
+    "name": "Retirement Planning - Roth",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-traditional-form",
+    "type": "Form",
+    "name": "Retirement Planning - Traditional",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-taxable-form",
+    "type": "Form",
+    "name": "Retirement Planning - Taxable",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-trust-form",
+    "type": "Form",
+    "name": "Retirement Planning - Trust",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-corporate-form",
+    "type": "Form",
+    "name": "Retirement Planning - Corporate",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-nonprofit-form",
+    "type": "Form",
+    "name": "Retirement Planning - Non-Profit",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-pension-form",
+    "type": "Form",
+    "name": "Retirement Planning - Pension",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "retirement-planning-sep-form",
+    "type": "Form",
+    "name": "Retirement Planning - SEP",
+    "description": "Retirement income and savings strategies",
+    "category": "planning",
+    "entityName": "RetirementPlan"
+  },
+  {
+    "id": "tax-planning-form",
+    "type": "Form",
+    "name": "Tax Planning",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-high-net-worth-form",
+    "type": "Form",
+    "name": "Tax Planning - High Net Worth",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-retail-form",
+    "type": "Form",
+    "name": "Tax Planning - Retail",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-institutional-form",
+    "type": "Form",
+    "name": "Tax Planning - Institutional",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-family-office-form",
+    "type": "Form",
+    "name": "Tax Planning - Family Office",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-advisor-managed-form",
+    "type": "Form",
+    "name": "Tax Planning - Advisor Managed",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-self-directed-form",
+    "type": "Form",
+    "name": "Tax Planning - Self-Directed",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-401k-form",
+    "type": "Form",
+    "name": "Tax Planning - 401(k)",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-ira-form",
+    "type": "Form",
+    "name": "Tax Planning - IRA",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-roth-form",
+    "type": "Form",
+    "name": "Tax Planning - Roth",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-traditional-form",
+    "type": "Form",
+    "name": "Tax Planning - Traditional",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-taxable-form",
+    "type": "Form",
+    "name": "Tax Planning - Taxable",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-trust-form",
+    "type": "Form",
+    "name": "Tax Planning - Trust",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-corporate-form",
+    "type": "Form",
+    "name": "Tax Planning - Corporate",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-nonprofit-form",
+    "type": "Form",
+    "name": "Tax Planning - Non-Profit",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-pension-form",
+    "type": "Form",
+    "name": "Tax Planning - Pension",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "tax-planning-sep-form",
+    "type": "Form",
+    "name": "Tax Planning - SEP",
+    "description": "Tax optimization and strategies",
+    "category": "planning",
+    "entityName": "TaxPlan"
+  },
+  {
+    "id": "estate-planning-form",
+    "type": "Form",
+    "name": "Estate Planning",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-high-net-worth-form",
+    "type": "Form",
+    "name": "Estate Planning - High Net Worth",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-retail-form",
+    "type": "Form",
+    "name": "Estate Planning - Retail",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-institutional-form",
+    "type": "Form",
+    "name": "Estate Planning - Institutional",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-family-office-form",
+    "type": "Form",
+    "name": "Estate Planning - Family Office",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-advisor-managed-form",
+    "type": "Form",
+    "name": "Estate Planning - Advisor Managed",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-self-directed-form",
+    "type": "Form",
+    "name": "Estate Planning - Self-Directed",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-401k-form",
+    "type": "Form",
+    "name": "Estate Planning - 401(k)",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-ira-form",
+    "type": "Form",
+    "name": "Estate Planning - IRA",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-roth-form",
+    "type": "Form",
+    "name": "Estate Planning - Roth",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-traditional-form",
+    "type": "Form",
+    "name": "Estate Planning - Traditional",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-taxable-form",
+    "type": "Form",
+    "name": "Estate Planning - Taxable",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-trust-form",
+    "type": "Form",
+    "name": "Estate Planning - Trust",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-corporate-form",
+    "type": "Form",
+    "name": "Estate Planning - Corporate",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-nonprofit-form",
+    "type": "Form",
+    "name": "Estate Planning - Non-Profit",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-pension-form",
+    "type": "Form",
+    "name": "Estate Planning - Pension",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "estate-planning-sep-form",
+    "type": "Form",
+    "name": "Estate Planning - SEP",
+    "description": "Estate and wealth transfer planning",
+    "category": "planning",
+    "entityName": "EstatePlan"
+  },
+  {
+    "id": "performance-reports-form",
+    "type": "Document",
+    "name": "Performance Reports",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-high-net-worth-form",
+    "type": "Document",
+    "name": "Performance Reports - High Net Worth",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-retail-form",
+    "type": "Document",
+    "name": "Performance Reports - Retail",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-institutional-form",
+    "type": "Document",
+    "name": "Performance Reports - Institutional",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-family-office-form",
+    "type": "Document",
+    "name": "Performance Reports - Family Office",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-advisor-managed-form",
+    "type": "Document",
+    "name": "Performance Reports - Advisor Managed",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-self-directed-form",
+    "type": "Document",
+    "name": "Performance Reports - Self-Directed",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-401k-form",
+    "type": "Document",
+    "name": "Performance Reports - 401(k)",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-ira-form",
+    "type": "Document",
+    "name": "Performance Reports - IRA",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-roth-form",
+    "type": "Document",
+    "name": "Performance Reports - Roth",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-traditional-form",
+    "type": "Document",
+    "name": "Performance Reports - Traditional",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-taxable-form",
+    "type": "Document",
+    "name": "Performance Reports - Taxable",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-trust-form",
+    "type": "Document",
+    "name": "Performance Reports - Trust",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-corporate-form",
+    "type": "Document",
+    "name": "Performance Reports - Corporate",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-nonprofit-form",
+    "type": "Document",
+    "name": "Performance Reports - Non-Profit",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-pension-form",
+    "type": "Document",
+    "name": "Performance Reports - Pension",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "performance-reports-sep-form",
+    "type": "Document",
+    "name": "Performance Reports - SEP",
+    "description": "Investment performance and attribution",
+    "category": "reporting",
+    "entityName": "PerformanceReport"
+  },
+  {
+    "id": "transaction-history-form",
+    "type": "Document",
+    "name": "Transaction History",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-high-net-worth-form",
+    "type": "Document",
+    "name": "Transaction History - High Net Worth",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-retail-form",
+    "type": "Document",
+    "name": "Transaction History - Retail",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-institutional-form",
+    "type": "Document",
+    "name": "Transaction History - Institutional",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-family-office-form",
+    "type": "Document",
+    "name": "Transaction History - Family Office",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-advisor-managed-form",
+    "type": "Document",
+    "name": "Transaction History - Advisor Managed",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-self-directed-form",
+    "type": "Document",
+    "name": "Transaction History - Self-Directed",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-401k-form",
+    "type": "Document",
+    "name": "Transaction History - 401(k)",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-ira-form",
+    "type": "Document",
+    "name": "Transaction History - IRA",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-roth-form",
+    "type": "Document",
+    "name": "Transaction History - Roth",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-traditional-form",
+    "type": "Document",
+    "name": "Transaction History - Traditional",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-taxable-form",
+    "type": "Document",
+    "name": "Transaction History - Taxable",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-trust-form",
+    "type": "Document",
+    "name": "Transaction History - Trust",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-corporate-form",
+    "type": "Document",
+    "name": "Transaction History - Corporate",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-nonprofit-form",
+    "type": "Document",
+    "name": "Transaction History - Non-Profit",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-pension-form",
+    "type": "Document",
+    "name": "Transaction History - Pension",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "transaction-history-sep-form",
+    "type": "Document",
+    "name": "Transaction History - SEP",
+    "description": "Account transaction records and history",
+    "category": "reporting",
+    "entityName": "Transaction"
+  },
+  {
+    "id": "fee-billing-form",
+    "type": "Document",
+    "name": "Fee & Billing",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-high-net-worth-form",
+    "type": "Document",
+    "name": "Fee & Billing - High Net Worth",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-retail-form",
+    "type": "Document",
+    "name": "Fee & Billing - Retail",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-institutional-form",
+    "type": "Document",
+    "name": "Fee & Billing - Institutional",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-family-office-form",
+    "type": "Document",
+    "name": "Fee & Billing - Family Office",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-advisor-managed-form",
+    "type": "Document",
+    "name": "Fee & Billing - Advisor Managed",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-self-directed-form",
+    "type": "Document",
+    "name": "Fee & Billing - Self-Directed",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-401k-form",
+    "type": "Document",
+    "name": "Fee & Billing - 401(k)",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-ira-form",
+    "type": "Document",
+    "name": "Fee & Billing - IRA",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-roth-form",
+    "type": "Document",
+    "name": "Fee & Billing - Roth",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-traditional-form",
+    "type": "Document",
+    "name": "Fee & Billing - Traditional",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-taxable-form",
+    "type": "Document",
+    "name": "Fee & Billing - Taxable",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-trust-form",
+    "type": "Document",
+    "name": "Fee & Billing - Trust",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-corporate-form",
+    "type": "Document",
+    "name": "Fee & Billing - Corporate",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-nonprofit-form",
+    "type": "Document",
+    "name": "Fee & Billing - Non-Profit",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-pension-form",
+    "type": "Document",
+    "name": "Fee & Billing - Pension",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "fee-billing-sep-form",
+    "type": "Document",
+    "name": "Fee & Billing - SEP",
+    "description": "Advisory fees and billing statements",
+    "category": "reporting",
+    "entityName": "FeeStatement"
+  },
+  {
+    "id": "consolidated-statements-form",
+    "type": "Document",
+    "name": "Consolidated Statements",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-high-net-worth-form",
+    "type": "Document",
+    "name": "Consolidated Statements - High Net Worth",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-retail-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Retail",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-institutional-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Institutional",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-family-office-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Family Office",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-advisor-managed-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Advisor Managed",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-self-directed-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Self-Directed",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-401k-form",
+    "type": "Document",
+    "name": "Consolidated Statements - 401(k)",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-ira-form",
+    "type": "Document",
+    "name": "Consolidated Statements - IRA",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-roth-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Roth",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-traditional-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Traditional",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-taxable-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Taxable",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-trust-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Trust",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-corporate-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Corporate",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-nonprofit-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Non-Profit",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-pension-form",
+    "type": "Document",
+    "name": "Consolidated Statements - Pension",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "consolidated-statements-sep-form",
+    "type": "Document",
+    "name": "Consolidated Statements - SEP",
+    "description": "Multi-account summary statements",
+    "category": "reporting",
+    "entityName": "Statement"
+  },
+  {
+    "id": "risk-assessment-form",
+    "type": "Document",
+    "name": "Risk Assessment",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-high-net-worth-form",
+    "type": "Document",
+    "name": "Risk Assessment - High Net Worth",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-retail-form",
+    "type": "Document",
+    "name": "Risk Assessment - Retail",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-institutional-form",
+    "type": "Document",
+    "name": "Risk Assessment - Institutional",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-family-office-form",
+    "type": "Document",
+    "name": "Risk Assessment - Family Office",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-advisor-managed-form",
+    "type": "Document",
+    "name": "Risk Assessment - Advisor Managed",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-self-directed-form",
+    "type": "Document",
+    "name": "Risk Assessment - Self-Directed",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-401k-form",
+    "type": "Document",
+    "name": "Risk Assessment - 401(k)",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-ira-form",
+    "type": "Document",
+    "name": "Risk Assessment - IRA",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-roth-form",
+    "type": "Document",
+    "name": "Risk Assessment - Roth",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-traditional-form",
+    "type": "Document",
+    "name": "Risk Assessment - Traditional",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-taxable-form",
+    "type": "Document",
+    "name": "Risk Assessment - Taxable",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-trust-form",
+    "type": "Document",
+    "name": "Risk Assessment - Trust",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-corporate-form",
+    "type": "Document",
+    "name": "Risk Assessment - Corporate",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-nonprofit-form",
+    "type": "Document",
+    "name": "Risk Assessment - Non-Profit",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-pension-form",
+    "type": "Document",
+    "name": "Risk Assessment - Pension",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "risk-assessment-sep-form",
+    "type": "Document",
+    "name": "Risk Assessment - SEP",
+    "description": "Client risk tolerance and suitability",
+    "category": "compliance",
+    "entityName": "RiskProfile"
+  },
+  {
+    "id": "compliance-reviews-form",
+    "type": "Document",
+    "name": "Compliance Reviews",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-high-net-worth-form",
+    "type": "Document",
+    "name": "Compliance Reviews - High Net Worth",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-retail-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Retail",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-institutional-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Institutional",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-family-office-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Family Office",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-advisor-managed-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Advisor Managed",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-self-directed-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Self-Directed",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-401k-form",
+    "type": "Document",
+    "name": "Compliance Reviews - 401(k)",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-ira-form",
+    "type": "Document",
+    "name": "Compliance Reviews - IRA",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-roth-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Roth",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-traditional-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Traditional",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-taxable-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Taxable",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-trust-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Trust",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-corporate-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Corporate",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-nonprofit-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Non-Profit",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-pension-form",
+    "type": "Document",
+    "name": "Compliance Reviews - Pension",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "compliance-reviews-sep-form",
+    "type": "Document",
+    "name": "Compliance Reviews - SEP",
+    "description": "Regulatory compliance and reviews",
+    "category": "compliance",
+    "entityName": "ComplianceReview"
+  },
+  {
+    "id": "aml-kyc-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-high-net-worth-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - High Net Worth",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-retail-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Retail",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-institutional-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Institutional",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-family-office-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Family Office",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-advisor-managed-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Advisor Managed",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-self-directed-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Self-Directed",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-401k-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - 401(k)",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-ira-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - IRA",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-roth-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Roth",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-traditional-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Traditional",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-taxable-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Taxable",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-trust-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Trust",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-corporate-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Corporate",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-nonprofit-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Non-Profit",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-pension-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - Pension",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "aml-kyc-sep-form",
+    "type": "Document",
+    "name": "AML/KYC Documentation - SEP",
+    "description": "Anti-money laundering and client verification",
+    "category": "compliance",
+    "entityName": "KYCDocument"
+  },
+  {
+    "id": "regulatory-filings-form",
+    "type": "Document",
+    "name": "Regulatory Filings",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-high-net-worth-form",
+    "type": "Document",
+    "name": "Regulatory Filings - High Net Worth",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-retail-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Retail",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-institutional-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Institutional",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-family-office-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Family Office",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-advisor-managed-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Advisor Managed",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-self-directed-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Self-Directed",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-401k-form",
+    "type": "Document",
+    "name": "Regulatory Filings - 401(k)",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-ira-form",
+    "type": "Document",
+    "name": "Regulatory Filings - IRA",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-roth-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Roth",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-traditional-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Traditional",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-taxable-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Taxable",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-trust-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Trust",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-corporate-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Corporate",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-nonprofit-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Non-Profit",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-pension-form",
+    "type": "Document",
+    "name": "Regulatory Filings - Pension",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "regulatory-filings-sep-form",
+    "type": "Document",
+    "name": "Regulatory Filings - SEP",
+    "description": "Required regulatory submissions",
+    "category": "compliance",
+    "entityName": "RegulatoryFiling"
+  },
+  {
+    "id": "market-research-form",
+    "type": "Document",
+    "name": "Market Research",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-high-net-worth-form",
+    "type": "Document",
+    "name": "Market Research - High Net Worth",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-retail-form",
+    "type": "Document",
+    "name": "Market Research - Retail",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-institutional-form",
+    "type": "Document",
+    "name": "Market Research - Institutional",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-family-office-form",
+    "type": "Document",
+    "name": "Market Research - Family Office",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-advisor-managed-form",
+    "type": "Document",
+    "name": "Market Research - Advisor Managed",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-self-directed-form",
+    "type": "Document",
+    "name": "Market Research - Self-Directed",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-401k-form",
+    "type": "Document",
+    "name": "Market Research - 401(k)",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-ira-form",
+    "type": "Document",
+    "name": "Market Research - IRA",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-roth-form",
+    "type": "Document",
+    "name": "Market Research - Roth",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-traditional-form",
+    "type": "Document",
+    "name": "Market Research - Traditional",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-taxable-form",
+    "type": "Document",
+    "name": "Market Research - Taxable",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-trust-form",
+    "type": "Document",
+    "name": "Market Research - Trust",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-corporate-form",
+    "type": "Document",
+    "name": "Market Research - Corporate",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-nonprofit-form",
+    "type": "Document",
+    "name": "Market Research - Non-Profit",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-pension-form",
+    "type": "Document",
+    "name": "Market Research - Pension",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "market-research-sep-form",
+    "type": "Document",
+    "name": "Market Research - SEP",
+    "description": "Investment research and market analysis",
+    "category": "research",
+    "entityName": "Research"
+  },
+  {
+    "id": "portfolio-analysis-form",
+    "type": "Document",
+    "name": "Portfolio Analysis",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-high-net-worth-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - High Net Worth",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-retail-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Retail",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-institutional-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Institutional",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-family-office-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Family Office",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-advisor-managed-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Advisor Managed",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-self-directed-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Self-Directed",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-401k-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - 401(k)",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-ira-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - IRA",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-roth-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Roth",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-traditional-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Traditional",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-taxable-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Taxable",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-trust-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Trust",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-corporate-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Corporate",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-nonprofit-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Non-Profit",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-pension-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - Pension",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "portfolio-analysis-sep-form",
+    "type": "Document",
+    "name": "Portfolio Analysis - SEP",
+    "description": "Deep portfolio analytics and insights",
+    "category": "research",
+    "entityName": "Analysis"
+  },
+  {
+    "id": "investment-products-form",
+    "type": "Document",
+    "name": "Investment Products",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-high-net-worth-form",
+    "type": "Document",
+    "name": "Investment Products - High Net Worth",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-retail-form",
+    "type": "Document",
+    "name": "Investment Products - Retail",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-institutional-form",
+    "type": "Document",
+    "name": "Investment Products - Institutional",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-family-office-form",
+    "type": "Document",
+    "name": "Investment Products - Family Office",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-advisor-managed-form",
+    "type": "Document",
+    "name": "Investment Products - Advisor Managed",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-self-directed-form",
+    "type": "Document",
+    "name": "Investment Products - Self-Directed",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-401k-form",
+    "type": "Document",
+    "name": "Investment Products - 401(k)",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-ira-form",
+    "type": "Document",
+    "name": "Investment Products - IRA",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-roth-form",
+    "type": "Document",
+    "name": "Investment Products - Roth",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-traditional-form",
+    "type": "Document",
+    "name": "Investment Products - Traditional",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-taxable-form",
+    "type": "Document",
+    "name": "Investment Products - Taxable",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-trust-form",
+    "type": "Document",
+    "name": "Investment Products - Trust",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-corporate-form",
+    "type": "Document",
+    "name": "Investment Products - Corporate",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-nonprofit-form",
+    "type": "Document",
+    "name": "Investment Products - Non-Profit",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-pension-form",
+    "type": "Document",
+    "name": "Investment Products - Pension",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "investment-products-sep-form",
+    "type": "Document",
+    "name": "Investment Products - SEP",
+    "description": "Available investment vehicles and funds",
+    "category": "research",
+    "entityName": "Product"
+  },
+  {
+    "id": "model-portfolios-form",
+    "type": "Document",
+    "name": "Model Portfolios",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-high-net-worth-form",
+    "type": "Document",
+    "name": "Model Portfolios - High Net Worth",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-retail-form",
+    "type": "Document",
+    "name": "Model Portfolios - Retail",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-institutional-form",
+    "type": "Document",
+    "name": "Model Portfolios - Institutional",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-family-office-form",
+    "type": "Document",
+    "name": "Model Portfolios - Family Office",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-advisor-managed-form",
+    "type": "Document",
+    "name": "Model Portfolios - Advisor Managed",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-self-directed-form",
+    "type": "Document",
+    "name": "Model Portfolios - Self-Directed",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-401k-form",
+    "type": "Document",
+    "name": "Model Portfolios - 401(k)",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-ira-form",
+    "type": "Document",
+    "name": "Model Portfolios - IRA",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-roth-form",
+    "type": "Document",
+    "name": "Model Portfolios - Roth",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-traditional-form",
+    "type": "Document",
+    "name": "Model Portfolios - Traditional",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-taxable-form",
+    "type": "Document",
+    "name": "Model Portfolios - Taxable",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-trust-form",
+    "type": "Document",
+    "name": "Model Portfolios - Trust",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-corporate-form",
+    "type": "Document",
+    "name": "Model Portfolios - Corporate",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-nonprofit-form",
+    "type": "Document",
+    "name": "Model Portfolios - Non-Profit",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-pension-form",
+    "type": "Document",
+    "name": "Model Portfolios - Pension",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  },
+  {
+    "id": "model-portfolios-sep-form",
+    "type": "Document",
+    "name": "Model Portfolios - SEP",
+    "description": "Strategic model portfolio templates",
+    "category": "research",
+    "entityName": "ModelPortfolio"
+  }
+]

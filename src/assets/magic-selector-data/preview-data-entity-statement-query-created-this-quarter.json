@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-statement",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 460,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "06dc381a-d21f-4f59-ab79-f555329363e0",
+      "name": "Operative discrete website 1",
+      "status": "Active",
+      "createdDate": "2025-08-21T11:19:13",
+      "updatedDate": "2026-02-13T01:46:19",
+      "owner": "Dr. Michael Allen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7446.0,
+      "description": "Morning together development note power product."
+    },
+    {
+      "id": "63e2dca1-aab2-487a-865a-c08412c84848",
+      "name": "Sharable radical moderator 2",
+      "status": "Pending",
+      "createdDate": "2025-06-12T05:41:39",
+      "updatedDate": "2026-02-11T18:38:55",
+      "owner": "Lisa Wong",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7490.59,
+      "description": "Soldier science sell card."
+    },
+    {
+      "id": "cdd228ac-4920-4dea-9718-b767960cdc31",
+      "name": "Future-proofed dynamic encoding 3",
+      "status": "Completed",
+      "createdDate": "2025-12-09T22:09:25",
+      "updatedDate": "2026-01-23T12:04:30",
+      "owner": "John Martinez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9670.95,
+      "description": "Each or under education entire include."
+    },
+    {
+      "id": "10128a9e-9954-46a1-b50d-e4a97dace951",
+      "name": "Open-source systematic instruction set 4",
+      "status": "Active",
+      "createdDate": "2025-11-25T09:44:27",
+      "updatedDate": "2026-01-22T11:38:57",
+      "owner": "Kristina Brown",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8543.28,
+      "description": "Check drug especially actually."
+    },
+    {
+      "id": "2bb5207a-2ddb-4f5d-8f16-da087c81bb10",
+      "name": "Universal hybrid approach 5",
+      "status": "Completed",
+      "createdDate": "2026-01-11T21:33:25",
+      "updatedDate": "2026-02-09T15:56:13",
+      "owner": "Ashley Oneill",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 782.82,
+      "description": "Stock under decision up."
+    },
+    {
+      "id": "68ad8d62-eebc-4f23-a721-4b75ff59cb17",
+      "name": "Persistent national parallelism 6",
+      "status": "Active",
+      "createdDate": "2025-07-04T08:03:25",
+      "updatedDate": "2026-01-22T06:52:21",
+      "owner": "Denise Arellano",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6752.46,
+      "description": "At then say success."
+    },
+    {
+      "id": "39b06d3b-005d-4fee-adf4-8bbf364b6ec6",
+      "name": "Centralized analyzing project 7",
+      "status": "Pending",
+      "createdDate": "2025-10-11T14:22:26",
+      "updatedDate": "2026-01-23T07:01:04",
+      "owner": "Kimberly Garcia",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1688.52,
+      "description": "Move know crime college strategy outside teacher."
+    },
+    {
+      "id": "8df5e1cd-cdb6-437c-a6d9-d5b392856606",
+      "name": "Universal coherent product 8",
+      "status": "Active",
+      "createdDate": "2026-02-13T04:50:16",
+      "updatedDate": "2026-01-22T03:04:23",
+      "owner": "Ronald Travis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 934.62,
+      "description": "Large wife according yet serve tax."
+    },
+    {
+      "id": "ab5285a7-83ff-4942-a8fe-a0e9ada2f538",
+      "name": "Seamless heuristic conglomeration 9",
+      "status": "Completed",
+      "createdDate": "2026-02-07T04:21:34",
+      "updatedDate": "2026-02-04T20:49:55",
+      "owner": "Wendy Snyder",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2353.95,
+      "description": "Power theory worry possible through."
+    },
+    {
+      "id": "bc70a3e6-cbfc-4f1c-89f7-62cb85e2365c",
+      "name": "Multi-lateral static hierarchy 10",
+      "status": "Inactive",
+      "createdDate": "2025-12-07T08:05:19",
+      "updatedDate": "2026-01-31T02:26:09",
+      "owner": "Justin George",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1502.5,
+      "description": "Which near school worker."
+    },
+    {
+      "id": "74232f75-1313-4781-82a6-efe31f1a2e45",
+      "name": "Polarized optimizing adapter 11",
+      "status": "Completed",
+      "createdDate": "2025-03-17T15:06:22",
+      "updatedDate": "2026-01-29T19:23:52",
+      "owner": "Jason Lewis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5711.12,
+      "description": "Clearly task this teacher large simple."
+    },
+    {
+      "id": "29fd31e1-9b05-4b04-b521-c9b64ccf332d",
+      "name": "Ameliorated intermediate access 12",
+      "status": "Active",
+      "createdDate": "2025-08-23T15:15:25",
+      "updatedDate": "2026-02-10T10:46:20",
+      "owner": "Jason Kirby",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8270.41,
+      "description": "Maybe statement term voice."
+    },
+    {
+      "id": "1b8d5553-6089-40c5-a384-fc78d1107603",
+      "name": "Multi-lateral 3rdgeneration help-desk 13",
+      "status": "Active",
+      "createdDate": "2025-08-17T08:06:07",
+      "updatedDate": "2026-01-31T07:11:53",
+      "owner": "Andrew Moody",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7634.72,
+      "description": "Wind happen born worry south."
+    },
+    {
+      "id": "ae4ce645-fe6d-4f81-99c5-84d9c082042f",
+      "name": "Managed maximized pricing structure 14",
+      "status": "Pending",
+      "createdDate": "2025-03-09T07:40:14",
+      "updatedDate": "2026-02-08T09:42:58",
+      "owner": "Samantha Martin",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 724.05,
+      "description": "So civil minute read how account."
+    },
+    {
+      "id": "d6d6f66d-cf67-4352-b197-b531669723df",
+      "name": "Face-to-face homogeneous ability 15",
+      "status": "Active",
+      "createdDate": "2025-07-06T20:06:27",
+      "updatedDate": "2026-01-30T07:18:50",
+      "owner": "Sheila Payne",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7421.29,
+      "description": "Myself general company."
+    },
+    {
+      "id": "2ec2b447-a904-45ff-869d-9cbbff55df6e",
+      "name": "Persistent user-facing throughput 16",
+      "status": "Completed",
+      "createdDate": "2025-12-25T04:13:33",
+      "updatedDate": "2026-01-27T13:29:02",
+      "owner": "Anthony David",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3465.93,
+      "description": "Work approach none sign."
+    },
+    {
+      "id": "6245f218-c7a8-42c9-bb56-02c4c967518f",
+      "name": "Phased holistic artificial intelligence 17",
+      "status": "Completed",
+      "createdDate": "2025-06-28T18:05:14",
+      "updatedDate": "2026-01-21T08:35:05",
+      "owner": "Shawn Herrera",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5435.68,
+      "description": "Reduce a us face much economy."
+    },
+    {
+      "id": "30a69297-3919-4ce0-995d-ec70dfe9eef0",
+      "name": "Programmable coherent concept 18",
+      "status": "Completed",
+      "createdDate": "2025-07-24T13:18:33",
+      "updatedDate": "2026-01-26T00:32:02",
+      "owner": "Duane Brown",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7677.55,
+      "description": "Region water late personal."
+    },
+    {
+      "id": "40d5b0db-bb92-4245-861f-37c1a9d5335e",
+      "name": "Re-engineered object-oriented orchestration 19",
+      "status": "Inactive",
+      "createdDate": "2025-12-13T14:42:29",
+      "updatedDate": "2026-01-30T18:02:28",
+      "owner": "David Salinas",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2368.37,
+      "description": "Go security will."
+    },
+    {
+      "id": "da737caa-6d84-46bf-ab0a-8906d8ee4f2b",
+      "name": "Integrated user-facing orchestration 20",
+      "status": "Completed",
+      "createdDate": "2025-11-23T04:09:38",
+      "updatedDate": "2026-01-22T23:34:41",
+      "owner": "Jessica Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7661.4,
+      "description": "Environment table business against turn never help response."
+    },
+    {
+      "id": "34f9f117-c45e-4db0-b6d8-0b76b9418ebb",
+      "name": "Down-sized didactic structure 21",
+      "status": "Completed",
+      "createdDate": "2025-04-06T14:25:30",
+      "updatedDate": "2026-01-27T19:48:36",
+      "owner": "David Reynolds",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4769.18,
+      "description": "Piece vote national national sure ask tree."
+    },
+    {
+      "id": "16c755b1-1cf0-4fcc-8ba0-611bf526bfe8",
+      "name": "Programmable upward-trending circuit 22",
+      "status": "Pending",
+      "createdDate": "2025-12-05T05:15:08",
+      "updatedDate": "2026-01-20T10:18:07",
+      "owner": "Justin Lambert",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4672.13,
+      "description": "Big network choice front."
+    },
+    {
+      "id": "3ae19384-f772-4fa6-84d6-e35e09cc1647",
+      "name": "Ameliorated bandwidth-monitored Graphic Interface 23",
+      "status": "Completed",
+      "createdDate": "2025-02-17T15:23:29",
+      "updatedDate": "2026-02-06T17:20:40",
+      "owner": "Stephen Franklin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7421.5,
+      "description": "Six hit hope movie camera already."
+    },
+    {
+      "id": "9ad5ba9c-13e4-42d0-87cd-c86d0882dd70",
+      "name": "Robust stable interface 24",
+      "status": "Inactive",
+      "createdDate": "2025-08-13T09:30:07",
+      "updatedDate": "2026-01-29T12:40:16",
+      "owner": "Brenda Thompson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5794.3,
+      "description": "Thing type fact carry name nothing."
+    },
+    {
+      "id": "3879d74c-5384-42aa-a9a9-a64821019bd1",
+      "name": "Networked empowering migration 25",
+      "status": "Active",
+      "createdDate": "2025-10-01T12:39:02",
+      "updatedDate": "2026-01-19T07:36:39",
+      "owner": "Ashley Freeman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7034.82,
+      "description": "Industry next during TV."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}
