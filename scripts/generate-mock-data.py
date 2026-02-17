@@ -12,12 +12,14 @@ This simulates how a real API would work: incremental data loading for performan
 Requirements: pip install faker
 
 Usage:
-  python scripts/generate-mock-data.py          # Full dataset (local development)
+  python scripts/generate-mock-data.py          # Full dataset (local development - 408 forms)
   python scripts/generate-mock-data.py --light  # Light dataset (Netlify builds - 24 forms)
+  python scripts/generate-mock-data.py --scale  # Scale test (1300 forms, 800 entities, 1000+ queries)
   
 Modes:
   --light: Generates 24 forms with ~114 preview files (fast, for CI/CD)
   default: Generates 408 forms (24 base × 17 variations) for local testing
+  --scale: Generates 1300 forms with 800+ entities for performance testing
 """
 
 import json
@@ -654,10 +656,18 @@ def generate_three_call_mock_data(mode='full'):
     """Main function to generate Four-Call API mock data
     
     Args:
-        mode: 'light' for Netlify (24 forms), 'full' for local development (408 forms)
+        mode: 'light' for Netlify (24 forms), 'full' for local (408 forms), 'scale' for performance test (1300 forms)
     """
-    form_limit = 24 if mode == 'light' else None
-    mode_label = "LIGHT (Netlify)" if mode == 'light' else "FULL (Local Development)"
+    if mode == 'light':
+        form_limit = 24
+        mode_label = "LIGHT (Netlify)"
+    elif mode == 'scale':
+        form_limit = 1300
+        mode_label = "SCALE TEST (Performance Testing - 1300 forms, 800+ entities, 1000+ queries)"
+        print(f"\n  >> Generating large dataset for performance testing...")
+    else:
+        form_limit = None
+        mode_label = "FULL (Local Development)"
     
     print(f"\n*** SPX Magic Selector - Four-Call API Mock Data Generator [{mode_label}] ***")
     print("=" * 70)
@@ -696,21 +706,32 @@ def generate_three_call_mock_data(mode='full'):
     print("\n[4/4] Generating Dependency Graph...")
     # Use scaled numbers for full mode, minimal for light mode
     if mode == 'light':
-        dependency_graph = generate_dependency_graph(
-            form_summaries,
-            target_entities=24,
-            target_dashboards=10,
-            target_processes=8,
-            target_documents=20
-        )
-    else:
-        dependency_graph = generate_dependency_graph(
-            form_summaries,
-            target_entities=400,
-            target_dashboards=250,
-            target_processes=60,
-            target_documents=50
-        )
+        target_entities = 24
+        target_forms = 24
+        target_documents = 12
+        target_processes = 6
+        target_dashboards = 6
+    elif mode == 'scale':
+        print("  >> Scale Test Mode: Generating 800 entities, 400 forms, 100 documents...")
+        target_entities = 800
+        target_forms = 400
+        target_documents = 100
+        target_processes = 50
+        target_dashboards = 20
+    else:  # full
+        target_entities = len(set(f["entityName"] for f in form_summaries))
+        target_forms = min(len(form_summaries), 408)
+        target_documents = 100
+        target_processes = 20
+        target_dashboards = 15
+    
+    dependency_graph = generate_dependency_graph(
+        form_summaries,
+        target_entities=target_entities,
+        target_dashboards=target_dashboards,
+        target_processes=target_processes,
+        target_documents=target_documents
+    )
     save_json("dependency-graph.json", dependency_graph)
     
     # Count node types
@@ -771,6 +792,7 @@ if __name__ == "__main__":
 Examples:
   python scripts/generate-mock-data.py              # Full dataset (408 forms)
   python scripts/generate-mock-data.py --light      # Light dataset (24 forms for Netlify)
+  python scripts/generate-mock-data.py --scale      # Scale test (1300 forms, 800 entities, 1000 queries, 400 forms, 100 docs)
         """
     )
     parser.add_argument(
@@ -778,9 +800,20 @@ Examples:
         action='store_true',
         help='Generate light dataset (24 forms) for Netlify builds'
     )
+    parser.add_argument(
+        '--scale',
+        action='store_true',
+        help='Generate scale test dataset (1300 forms total) for performance testing'
+    )
     
     args = parser.parse_args()
-    mode = 'light' if args.light else 'full'
+    
+    if args.scale:
+        mode = 'scale'
+    elif args.light:
+        mode = 'light'
+    else:
+        mode = 'full'
     
     try:
         generate_three_call_mock_data(mode=mode)

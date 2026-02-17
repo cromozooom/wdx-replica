@@ -1,6 +1,6 @@
 
 [build]
-command = "pip install faker && python scripts/generate-mock-data.py --light && npm install --legacy-peer-deps && npm run build"
+command = "npm install --legacy-peer-deps && npm run build"
 publish = "dist/automation-app/browser"
 
 [build.environment]

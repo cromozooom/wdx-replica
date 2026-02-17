@@ -102,6 +102,14 @@ export class SpxMagicSelectorComponent
   /** Currently selected row (item+query) */
   public selectedRow$ = new BehaviorSubject<FlatSelectionRow | null>(null);
 
+  /** Performance tracking */
+  private performanceMetrics = {
+    lastLoadTime: 0,
+    lastFilterTime: 0,
+    totalRows: 0,
+    filteredRows: 0,
+  };
+
   /** Getter for selectedRow to support ngModel two-way binding */
   public get selectedRow(): FlatSelectionRow | null {
     return this.selectedRow$.value;
@@ -368,15 +376,29 @@ export class SpxMagicSelectorComponent
    * Load available items from the service based on current domain
    */
   private loadAvailableItems(): void {
+    const startTime = performance.now();
     console.log(`📥 [Selector] Loading items for domain: "${this.domainId}"`);
+
     this.selectionDataService
       .getAvailableItems(this.domainId)
       .pipe(takeUntil(this.destroy$))
       .subscribe((items) => {
+        const flattenStart = performance.now();
         const rows = this.selectionDataService.flattenToGridRows(items);
+        const flattenTime = performance.now() - flattenStart;
+        const totalTime = performance.now() - startTime;
+
+        this.performanceMetrics.lastLoadTime = totalTime;
+        this.performanceMetrics.totalRows = rows.length;
+        this.performanceMetrics.filteredRows = rows.length;
+
         console.log(
-          `📊 [Selector] Flattened to ${rows.length} (item, query) combinations for dropdown`,
+          `📊 [Selector] Flattened to ${rows.length} (item, query) combinations`,
         );
+        console.log(
+          `⚡ [Performance] Load: ${totalTime.toFixed(2)}ms (Flatten: ${flattenTime.toFixed(2)}ms)`,
+        );
+
         this.availableRows$.next(rows);
       });
   }
@@ -390,17 +412,30 @@ export class SpxMagicSelectorComponent
         debounceTime(300), // 300ms debounce
         distinctUntilChanged(),
         switchMap((term) => {
+          const filterStart = performance.now();
+
           if (!term || term.trim() === "") {
             // Return all items if search is empty
             return this.selectionDataService.getAvailableItems(this.domainId);
           }
           // Search with term
+          console.log(`🔍 [Selector] Searching for: "${term}"`);
           return this.selectionDataService.searchItems(term, this.domainId);
         }),
         takeUntil(this.destroy$),
       )
       .subscribe((items) => {
+        const flattenStart = performance.now();
         const rows = this.selectionDataService.flattenToGridRows(items);
+        const filterTime = performance.now() - flattenStart;
+
+        this.performanceMetrics.lastFilterTime = filterTime;
+        this.performanceMetrics.filteredRows = rows.length;
+
+        console.log(
+          `⚡ [Performance] Filter: ${filterTime.toFixed(2)}ms (${rows.length}/${this.performanceMetrics.totalRows} rows)`,
+        );
+
         this.availableRows$.next(rows);
       });
   }
