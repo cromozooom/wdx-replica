@@ -26,7 +26,79 @@
       class="d-flex flex-grow-1 flex-column gap-2 overflow-x-hidden overflow-y-scroll px-2 py-2"
     >
       <div class="container" style="max-width: 60rem">
-        <div class="row gap-0 pt-4">
+        <div class="row gap-0 pt-2">
+          <div class="col-12 pb-3">
+            <div class="px-0">
+              <div class="p-3 bg-warning-subtle text-warning-emphasis rounded">
+                <!-- <div class="mb-2">
+                  <i class="fa fa-info-circle me-1"></i>
+                  <strong>How it works:</strong> Each form contains multiple
+                  queries. The selector shows all possible
+                  <strong>(form × query) combinations</strong> as selectable
+                  items. Search filters across
+                  <strong
+                    >form names, descriptions, entities, and categories</strong
+                  >
+                  in real-time with sub-millisecond performance.
+                </div>
+                <div class="small text-muted mb-2">
+                  💡 <strong>Tip:</strong> Type any keyword to instantly filter
+                  hundreds of items. The selector handles 1000+ combinations
+                  with <strong>&lt;1ms</strong> search response.
+                </div> -->
+
+                <!-- Performance Metrics -->
+                <div
+                  *ngIf="
+                    selectorComponent &&
+                    selectorComponent.performanceMetrics.lastLoadTime > 0
+                  "
+                  class=""
+                >
+                  <div class="small d-flex gap-3">
+                    <strong>⚡ Performance Metrics:</strong>
+                    <span>
+                      <i class="fa fa-bolt"></i>
+                      Load:
+                      <strong
+                        >{{
+                          selectorComponent.performanceMetrics.lastLoadTime.toFixed(
+                            2
+                          )
+                        }}ms</strong
+                      >
+                    </span>
+                    <span
+                      *ngIf="
+                        selectorComponent.performanceMetrics.lastFilterTime > 0
+                      "
+                    >
+                      <i class="fa fa-search"></i>
+                      Filter:
+                      <strong
+                        >{{
+                          selectorComponent.performanceMetrics.lastFilterTime.toFixed(
+                            2
+                          )
+                        }}ms</strong
+                      >
+                    </span>
+                    <span>
+                      <i class="fa fa-database"></i>
+                      Items:
+                      <strong
+                        >{{
+                          selectorComponent.performanceMetrics.filteredRows
+                        }}/{{
+                          selectorComponent.performanceMetrics.totalRows
+                        }}</strong
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-6">
             <!-- Selection Name -->
             <div>
@@ -64,8 +136,8 @@
           <!-- SPX Magic Selector -->
           <div class="col-12 pt-4">
             <label class="form-label fw-bold"
-              >Select {{ itemTypeLabel }} *</label
-            >
+              >Select {{ itemTypeLabel }} *
+            </label>
             <app-spx-magic-selector
               [domainId]="selectedDomain"
               [placeholder]="'Choose a ' + itemTypeLabel.toLowerCase() + '...'"
@@ -75,21 +147,22 @@
           <div class="col-12 pt-2">
             <div class="px-0">
               <div class="p-3 bg-info-subtle text-info-emphasis rounded">
-                If you don't find the query that you're looking for, click this
-                <a href="" class="text-info-emphasis fw-bold" target="_blank">
-                  link
-                </a>
-                to open the editor. Or use
-                <strong> Tool section </strong>
-                from the root page to add more queries.
+                <div class="">
+                  If you don't find the query you're looking for, click this
+                  <a href="" class="text-info-emphasis fw-bold" target="_blank">
+                    link
+                  </a>
+                  to open the editor. Or use
+                  <strong> Tool section </strong>
+                  from the root page to add more queries.
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Selection Preview -->
-      <!-- <div *ngIf="lastEvent" class="alert alert-success">
+        <!-- Selection Preview -->
+        <!-- <div *ngIf="lastEvent" class="alert alert-success">
         <h6 class="alert-heading">
           <i class="fa fa-check-circle me-1"></i>
           Selection Preview
@@ -109,25 +182,30 @@
           </div>
         </div>
       </div> -->
+      </div>
     </div>
-  </div>
-  <!-- Footer Buttons -->
-  <div class="d-flex justify-content-between gap-2 p-2 border-top">
-    <div>
-      <button type="button" class="btn btn-outline-primary" (click)="cancel()">
-        Cancel
-      </button>
-    </div>
-    <div>
-      <button
-        type="button"
-        class="btn btn-primary"
-        (click)="save()"
-        [disabled]="!canSave()"
-      >
-        <i class="fa fa-save me-1"></i>
-        Save
-      </button>
+    <!-- Footer Buttons -->
+    <div class="d-flex justify-content-between gap-2 p-2 border-top">
+      <div>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          (click)="cancel()"
+        >
+          Cancel
+        </button>
+      </div>
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="save()"
+          [disabled]="!canSave()"
+        >
+          <i class="fa fa-save me-1"></i>
+          Save
+        </button>
+      </div>
     </div>
   </div>
 </div>

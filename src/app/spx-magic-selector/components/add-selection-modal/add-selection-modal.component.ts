@@ -2,6 +2,7 @@ import {
   Component,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
+  ViewChild,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
@@ -39,6 +40,10 @@ export class AddSelectionModalComponent {
   // Expose domain types for template
   readonly domainTypes = DOMAIN_TYPES;
   readonly domainTypeKeys = Object.keys(DOMAIN_TYPES);
+
+  // Reference to the magic selector component
+  @ViewChild(SpxMagicSelectorComponent)
+  selectorComponent?: SpxMagicSelectorComponent;
 
   constructor(
     public activeOffcanvas: NgbActiveOffcanvas,

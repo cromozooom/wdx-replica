@@ -103,7 +103,7 @@ export class SpxMagicSelectorComponent
   public selectedRow$ = new BehaviorSubject<FlatSelectionRow | null>(null);
 
   /** Performance tracking */
-  private performanceMetrics = {
+  public performanceMetrics = {
     lastLoadTime: 0,
     lastFilterTime: 0,
     totalRows: 0,
