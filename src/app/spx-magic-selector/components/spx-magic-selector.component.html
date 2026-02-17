@@ -7,12 +7,14 @@
         bindLabel="sourceName"
         [placeholder]="placeholder"
         [disabled]="disabled || readonly"
+        [loading]="isLoading"
         [clearable]="!readonly"
         [searchable]="true"
         [(ngModel)]="selectedRow"
         (ngModelChange)="onSelectionChange($event)"
         (search)="onSearch($event.term)"
         notFoundText="No results found"
+        loadingText="Loading items..."
         class="w-100"
       >
         <ng-template ng-label-tmp let-item="item">

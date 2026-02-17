@@ -110,6 +110,9 @@ export class SpxMagicSelectorComponent
     filteredRows: 0,
   };
 
+  /** Loading state for displaying spinner/skeleton */
+  public isLoading = false;
+
   /** Getter for selectedRow to support ngModel two-way binding */
   public get selectedRow(): FlatSelectionRow | null {
     return this.selectedRow$.value;
@@ -379,6 +382,9 @@ export class SpxMagicSelectorComponent
     const startTime = performance.now();
     console.log(`📥 [Selector] Loading items for domain: "${this.domainId}"`);
 
+    // Show loading indicator
+    this.isLoading = true;
+
     this.selectionDataService
       .getAvailableItems(this.domainId)
       .pipe(takeUntil(this.destroy$))
@@ -400,6 +406,9 @@ export class SpxMagicSelectorComponent
         );
 
         this.availableRows$.next(rows);
+
+        // Hide loading indicator
+        this.isLoading = false;
       });
   }
 
