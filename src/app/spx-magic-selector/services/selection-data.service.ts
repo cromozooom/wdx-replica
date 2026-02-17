@@ -228,12 +228,13 @@ export class SelectionDataService {
           ? forms.filter((form) => form.category === category)
           : forms;
 
-        // Apply search filter
+        // Apply search filter - search in name, description, entityName, and category
         return filtered.filter(
           (form) =>
             form.name.toLowerCase().includes(term) ||
             form.description?.toLowerCase().includes(term) ||
-            form.entityName.toLowerCase().includes(term),
+            form.entityName.toLowerCase().includes(term) ||
+            form.category.toLowerCase().includes(term),
         );
       }),
       delay(80),
@@ -379,19 +380,67 @@ export class SelectionDataService {
     searchTerm: string,
     domainId?: string,
   ): Observable<SelectionItem[]> {
-    // Use three-call API with domain filtering
+    // Use three-call API with domain filtering and full metadata loading
     if (this.USE_THREE_CALL_API) {
       return this.searchForms(searchTerm).pipe(
         map((forms) => {
           // Filter by domain if provided
-          let filtered = forms;
           if (domainId && this.DOMAIN_CATEGORY_MAP[domainId]) {
             const allowedCategories = this.DOMAIN_CATEGORY_MAP[domainId];
-            filtered = forms.filter((form) =>
+            return forms.filter((form) =>
               allowedCategories.includes(form.category),
             );
           }
-          return this.convertFormSummariesToSelectionItems(filtered);
+          return forms;
+        }),
+        switchMap((filteredForms) => {
+          if (filteredForms.length === 0) {
+            return of([]);
+          }
+
+          // Load metadata with queries for each form (same as convertThreeCallToLegacy)
+          const metadataRequests = filteredForms.map((summary) =>
+            this.getFormMetadata(summary.id).pipe(
+              map((metadata) => {
+                if (!metadata) {
+                  // Fallback if metadata not found
+                  return {
+                    id: summary.id,
+                    type: summary.type || "Form",
+                    name: summary.name,
+                    entityName: summary.entityName,
+                    entityId: `entity-${summary.entityName.toLowerCase()}`,
+                    description: summary.description || "",
+                    queries: [] as Query[],
+                  } as SelectionItem;
+                }
+
+                // Convert metadata queries to SelectionItem queries (same as convertThreeCallToLegacy)
+                const queries: Query[] = metadata.queries.map((q) => ({
+                  id: q.id,
+                  name: q.name,
+                  description: q.description || "",
+                  estimatedCount: q.estimatedResults,
+                  parameters: {
+                    filters: [],
+                  } as any,
+                }));
+
+                return {
+                  id: metadata.id,
+                  type: metadata.type || "Form",
+                  name: metadata.name,
+                  entityName: metadata.entityName,
+                  entityId: metadata.entityId,
+                  description: metadata.description,
+                  queries,
+                } as SelectionItem;
+              }),
+            ),
+          );
+
+          // Combine all metadata requests
+          return combineLatest(metadataRequests);
         }),
       );
     } else {
