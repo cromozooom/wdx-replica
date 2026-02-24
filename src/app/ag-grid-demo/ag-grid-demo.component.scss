@@ -1,22 +1,27 @@
-.ag-grid-demo-container {
-  padding: 20px;
-  height: 100%;
+:host {
   display: flex;
   flex-direction: column;
-
-  h1 {
-    margin: 0 0 10px 0;
-    font-size: 24px;
-    color: #333;
-  }
-
-  .description {
-    margin: 0 0 20px 0;
-    color: #666;
-    font-size: 14px;
-  }
-
-  .ag-theme-alpine {
-    flex: 1;
-  }
+  height: 100%;
 }
+// .ag-grid-demo-container {
+//   padding: 20px;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+
+//   h1 {
+//     margin: 0 0 10px 0;
+//     font-size: 24px;
+//     color: #333;
+//   }
+
+//   .description {
+//     margin: 0 0 20px 0;
+//     color: #666;
+//     font-size: 14px;
+//   }
+
+//   .ag-theme-alpine {
+//     flex: 1;
+//   }
+// }
