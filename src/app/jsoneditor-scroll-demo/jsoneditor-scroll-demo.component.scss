@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  overflow: hidden;
+  // * {
+  //   outline: 1px solid red;
+  //   outline-offset: 3px;
+  // }
+}

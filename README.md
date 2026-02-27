@@ -52,6 +52,21 @@ src/
 └── assets/        # Static assets
 ```
 
+## Demo & Testing Routes
+
+Development and testing routes for internal use:
+
+- **`/jsoneditor-scroll-demo`** - JSON Editor Scroll Behavior Demo
+  - Tests JSONEditor scroll behavior with 6 pre-configured scenarios
+  - Demonstrates vertical, horizontal, and combined scroll cases
+  - Editable content with reset functionality
+  - Spec:
+    [`specs/001-jsoneditor-scroll-demo/`](specs/001-jsoneditor-scroll-demo/)
+- **`/ag-grid-demo`** - ag-Grid with ng-select demonstration
+- **`/magic-selector`** - SPX Magic Selector component testing
+- **`/garden-room`** - Garden Room structural design tool
+- **`/configuration-manager`** - Configuration management interface
+
 ## Spec-Driven Development
 
 This project uses [GitHub Spec Kit](https://github.com/github/spec-kit) for
