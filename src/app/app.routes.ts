@@ -46,6 +46,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: "jsoneditor-scroll-demo",
+    loadChildren: () =>
+      import("./jsoneditor-scroll-demo/jsoneditor-scroll-demo.routes").then(
+        (m) => m.JSONEDITOR_SCROLL_DEMO_ROUTES,
+      ),
+  },
+  {
     path: "",
     redirectTo: "dashboard",
     pathMatch: "full",

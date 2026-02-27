@@ -1,0 +1,157 @@
+@import "jsoneditor/dist/jsoneditor.css";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+.jsoneditor-container {
+  flex-grow: 1;
+  overflow: hidden;
+  // min-height controlled via input property
+}
+
+// Fullscreen modal editor styles
+.modal-body {
+  .jsoneditor-container {
+    height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
+
+    ::ng-deep .jsoneditor {
+      border: none;
+      height: 100%;
+    }
+  }
+}
+
+// .wrapper-container {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+//   gap: 1rem;
+// }
+
+// .controls-bar {
+//   display: flex;
+//   align-items: center;
+//   gap: 1rem;
+//   padding: 1rem;
+//   background-color: #f8f9fa;
+//   border-radius: 4px;
+//   border: 1px solid #dee2e6;
+//   flex-wrap: wrap;
+// }
+
+// .scenario-selector {
+//   display: flex;
+//   align-items: center;
+//   gap: 0.5rem;
+
+//   label {
+//     font-weight: 500;
+//     font-size: 0.875rem;
+//     color: #333;
+//     white-space: nowrap;
+//   }
+
+//   select {
+//     padding: 0.5rem 2rem 0.5rem 0.75rem;
+//     border: 1px solid #ced4da;
+//     border-radius: 4px;
+//     background-color: white;
+//     font-size: 0.875rem;
+//     cursor: pointer;
+//     min-width: 250px;
+
+//     &:focus {
+//       outline: 2px solid #007bff;
+//       outline-offset: 2px;
+//       border-color: #007bff;
+//     }
+//   }
+// }
+
+// .scenario-info {
+//   display: flex;
+//   align-items: center;
+//   gap: 0.5rem;
+//   flex: 1;
+
+//   .info-badge {
+//     padding: 0.25rem 0.5rem;
+//     background-color: #e7f3ff;
+//     color: #0066cc;
+//     border-radius: 3px;
+//     font-size: 0.75rem;
+//     font-weight: 600;
+//     text-transform: uppercase;
+//   }
+
+//   .description {
+//     font-size: 0.875rem;
+//     color: #666;
+//   }
+// }
+
+// .reset-button {
+//   padding: 0.5rem 1rem;
+//   background-color: #dc3545;
+//   color: white;
+//   border: none;
+//   border-radius: 4px;
+//   font-size: 0.875rem;
+//   font-weight: 500;
+//   cursor: pointer;
+//   transition: background-color 0.2s ease;
+//   white-space: nowrap;
+
+//   &:hover {
+//     background-color: #c82333;
+//   }
+
+//   &:active {
+//     background-color: #bd2130;
+//   }
+
+//   &:focus {
+//     outline: 2px solid #dc3545;
+//     outline-offset: 2px;
+//   }
+// }
+
+// .jsoneditor-container {
+//   flex: 1;
+//   border: 1px solid #ddd;
+//   border-radius: 4px;
+//   overflow: hidden;
+//   min-height: 0;
+// }
+
+// // Size variant classes per scenario
+// .editor-small {
+//   height: 400px;
+// }
+
+// .editor-vertical {
+//   height: 300px;
+// }
+
+// .editor-horizontal {
+//   height: 300px;
+// }
+
+// .editor-both {
+//   height: 300px;
+// }
+
+// .editor-nested {
+//   height: 350px;
+// }
+
+// .editor-long-lines {
+//   height: 300px;
+// }
