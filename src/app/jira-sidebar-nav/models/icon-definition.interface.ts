@@ -5,5 +5,32 @@
  * @see specs/001-jira-sidebar-nav/data-model.md for complete specification
  */
 export interface IconDefinition {
-  // Interface will be implemented in Phase 2 (T010)
+  /**
+   * Unique identifier (CSS class string).
+   * Example: "fas fa-home"
+   */
+  id: string;
+
+  /**
+   * Human-readable label.
+   * Example: "Home"
+   */
+  label: string;
+
+  /**
+   * Icon category for grouping in picker.
+   * Example: "Navigation", "Actions", "Status"
+   */
+  category: string;
+
+  /**
+   * Full CSS class for rendering.
+   * Example: "fas fa-home"
+   */
+  cssClass: string;
+
+  /**
+   * Search keywords for filtering (optional).
+   */
+  keywords?: string[];
 }
