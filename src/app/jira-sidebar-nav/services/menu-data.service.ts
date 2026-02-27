@@ -1,4 +1,4 @@
-import { computed, effect, Injectable, signal } from "@angular/core";
+import { computed, effect, Injectable, signal, inject } from "@angular/core";
 import {
   MenuItem,
   MenuStructure,
@@ -24,6 +24,10 @@ import { MenuMockDataService } from "./menu-mock-data.service";
   providedIn: "root",
 })
 export class MenuDataService {
+  // ========== DEPENDENCIES ==========
+
+  private readonly mockDataService = inject(MenuMockDataService);
+
   // ========== SIGNALS (State) ==========
 
   /**
@@ -87,7 +91,7 @@ export class MenuDataService {
    */
   readonly isEditMode = computed(() => this.sidebarState().isEditMode);
 
-  constructor(private mockDataService: MenuMockDataService) {
+  constructor() {
     // Setup localStorage sync effects
     this.setupLocalStorageSyncEffects();
   }
@@ -215,10 +219,83 @@ export class MenuDataService {
       if (!parent.children) {
         parent.children = [];
       }
+
+      // CONTENT CONFIG TRANSFER: If parent is becoming a parent for the first time
+      // and has contentConfig, transfer it to the new child
+      if (parent.children.length === 0 && parent.contentConfig) {
+        item.contentConfig = { ...parent.contentConfig };
+        delete parent.contentConfig;
+        console.log(
+          `[MenuDataService] Transferred contentConfig from parent "${parent.label}" to child "${item.label}"`,
+        );
+      }
+
       parent.children.push(item);
     }
 
     // Update structure
+    this.updateMenuStructure(newRootItems);
+    return true;
+  }
+
+  /**
+   * Add nested submenu hierarchy (T063, FR-022).
+   * Recursively adds a nested structure of menu items.
+   *
+   * @param parentId - ID of parent item (null for root level)
+   * @param nestedStructure - Root of the nested MenuItem tree
+   * @returns true if successful, false otherwise
+   */
+  addSubmenu(parentId: string | null, nestedStructure: MenuItem): boolean {
+    const currentStructure = this.menuStructureSignal();
+    const newRootItems = MenuTreeUtils.cloneItems(currentStructure.rootItems);
+
+    // Helper to recursively add items to itemsById map
+    const addToMap = (item: MenuItem, map: Map<string, MenuItem>): void => {
+      map.set(item.id, item);
+      if (item.children) {
+        item.children.forEach((child) => addToMap(child, map));
+      }
+    };
+
+    if (!parentId) {
+      // Add at root level
+      newRootItems.push(nestedStructure);
+    } else {
+      // Find parent and add as child
+      const parent = this.findItemInTree(parentId, newRootItems);
+      if (!parent) {
+        console.error(`[MenuDataService] Parent item not found: ${parentId}`);
+        return false;
+      }
+
+      // Check if adding would exceed max depth
+      if (
+        MenuTreeUtils.wouldExceedMaxDepth(parent, nestedStructure, newRootItems)
+      ) {
+        console.error(
+          "[MenuDataService] Adding submenu would exceed maximum depth",
+        );
+        return false;
+      }
+
+      if (!parent.children) {
+        parent.children = [];
+      }
+
+      // CONTENT CONFIG CLEANUP: If parent is becoming a parent for the first time
+      // and has contentConfig, remove it (transfer is handled in the form)
+      if (parent.children.length === 0 && parent.contentConfig) {
+        delete parent.contentConfig;
+        console.log(
+          `[MenuDataService] Removed contentConfig from parent "${parent.label}" (transferred via form)`,
+        );
+      }
+
+      parent.children.push(nestedStructure);
+    }
+
+    // Update structure (this will rebuild itemsById map)
     this.updateMenuStructure(newRootItems);
     return true;
   }
@@ -342,8 +419,94 @@ export class MenuDataService {
       if (!newParent.children) {
         newParent.children = [];
       }
+
+      // CONTENT CONFIG TRANSFER: If parent is becoming a parent for the first time
+      // and has contentConfig, transfer it to the first child
+      if (newParent.children.length === 0 && newParent.contentConfig) {
+        item.contentConfig = { ...newParent.contentConfig };
+        delete newParent.contentConfig;
+        console.log(
+          `[MenuDataService] Transferred contentConfig from "${newParent.label}" to "${item.label}" during move`,
+        );
+      }
+
       newParent.children.splice(newIndex, 0, item);
     }
+
+    this.updateMenuStructure(newRootItems);
+    return true;
+  }
+
+  /**
+   * Move item onto another item with special merge logic.
+   * When both items have contentConfig:
+   * - Target becomes parent (loses contentConfig)
+   * - Target's original contentConfig goes to new auto-created child
+   * - Dragged item becomes another child (keeps its contentConfig)
+   *
+   * @param draggedItemId - ID of item being dragged
+   * @param targetItemId - ID of item being dropped onto
+   * @returns true if successful, false otherwise
+   */
+  mergeItemsWithConfig(draggedItemId: string, targetItemId: string): boolean {
+    const currentStructure = this.menuStructureSignal();
+    const newRootItems = MenuTreeUtils.cloneItems(currentStructure.rootItems);
+
+    // Find both items
+    const draggedItem = this.findItemInTree(draggedItemId, newRootItems);
+    const targetItem = this.findItemInTree(targetItemId, newRootItems);
+
+    if (!draggedItem || !targetItem) {
+      console.error("[MenuDataService] Items not found for merge");
+      return false;
+    }
+
+    // Check for circular reference
+    if (MenuTreeUtils.wouldCreateCircularReference(draggedItem, targetItem)) {
+      console.error("[MenuDataService] Merge would create circular reference");
+      return false;
+    }
+
+    // Both must have contentConfig for this operation
+    if (!draggedItem.contentConfig || !targetItem.contentConfig) {
+      console.error(
+        "[MenuDataService] Both items must have contentConfig for merge",
+      );
+      return false;
+    }
+
+    // Target must not already have children
+    if (targetItem.children && targetItem.children.length > 0) {
+      console.error(
+        "[MenuDataService] Target already has children, cannot merge",
+      );
+      return false;
+    }
+
+    // Create new child with target's original label + " Content"
+    const newChildId = `item-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    const originalContentChild: MenuItem = {
+      id: newChildId,
+      label: `${targetItem.label} Content`,
+      icon: targetItem.icon,
+      order: 0,
+      expanded: false,
+      contentConfig: { ...targetItem.contentConfig },
+    };
+
+    // Remove dragged item from its current location
+    if (!this.removeItemFromTree(draggedItemId, newRootItems)) {
+      return false;
+    }
+
+    // Update target: remove contentConfig, add children
+    delete targetItem.contentConfig;
+    targetItem.children = [originalContentChild, draggedItem];
+    targetItem.expanded = true; // Auto-expand to show new structure
+
+    console.log(
+      `[MenuDataService] Merged "${draggedItem.label}" into "${targetItem.label}" with original content preserved`,
+    );
 
     this.updateMenuStructure(newRootItems);
     return true;

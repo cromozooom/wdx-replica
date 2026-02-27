@@ -10,8 +10,22 @@ export const JIRA_SIDEBAR_NAV_ROUTES: Routes = [
   {
     path: "",
     loadComponent: () =>
-      import("./jira-sidebar-nav.component").then(
+      import("./jira-sidebar-nav.component.js").then(
         (m) => m.JiraSidebarNavComponent,
       ),
+    children: [
+      {
+        path: "item/:id",
+        loadComponent: () =>
+          import("./pages/menu-content/menu-content.component.js").then(
+            (m) => m.MenuContentComponent,
+          ),
+      },
+      {
+        path: "",
+        redirectTo: "item/1",
+        pathMatch: "full",
+      },
+    ],
   },
 ];

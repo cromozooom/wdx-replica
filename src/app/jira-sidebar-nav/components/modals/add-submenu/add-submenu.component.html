@@ -1,0 +1,184 @@
+<div class="offcanvas-header border-bottom">
+  <h5 class="offcanvas-title">Add Submenu Hierarchy</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="onCancel()"
+  ></button>
+</div>
+
+<div class="offcanvas-body">
+  @if (parentItem) {
+    <div class="alert alert-info mb-3">
+      <i class="fas fa-info-circle me-2"></i>
+      Creating submenu under: <strong>{{ parentItem.label }}</strong>
+    </div>
+  }
+
+  <p class="text-muted mb-3">
+    Define multiple levels of menu items in a single operation. Each level will
+    be nested under the previous one.
+  </p>
+
+  <form [formGroup]="form" id="addSubmenuForm">
+    <div formArrayName="levels">
+      @for (level of levels.controls; track $index) {
+        <div
+          class="level-group mb-3 p-3 border rounded"
+          [formGroupName]="$index"
+        >
+          <div class="d-flex align-items-center mb-2">
+            <h6 class="mb-0 me-auto">
+              Level {{ $index + 1 }}
+              @if ($index === 0) {
+                <small class="text-muted">(Parent)</small>
+              } @else if ($index === levels.length - 1) {
+                <small class="text-muted">(Child)</small>
+              } @else {
+                <small class="text-muted">(Intermediate)</small>
+              }
+            </h6>
+            @if (levels.length > 1) {
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-danger"
+                (click)="removeLevel($index)"
+                [attr.aria-label]="'Remove level ' + ($index + 1)"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            }
+          </div>
+
+          <!-- Label field -->
+          <div class="mb-2">
+            <label [for]="'level-label-' + $index" class="form-label">
+              Label <span class="text-danger">*</span>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              [id]="'level-label-' + $index"
+              formControlName="label"
+              placeholder="Enter menu item label"
+              [class.is-invalid]="getLabelError($index) !== null"
+            />
+            @if (getLabelError($index)) {
+              <div class="invalid-feedback d-block">
+                {{ getLabelError($index) }}
+              </div>
+            }
+          </div>
+
+          <!-- Icon picker -->
+          <div class="mb-2">
+            <label [for]="'level-icon-' + $index" class="form-label">
+              Icon <span class="text-muted">(optional)</span>
+            </label>
+            <app-icon-picker
+              [selectedIcon]="level.get('icon')?.value"
+              (iconChange)="onIconChange($index, $event)"
+            ></app-icon-picker>
+          </div>
+
+          <!-- Hierarchy visualization -->
+          @if ($index > 0) {
+            <div class="hierarchy-indicator text-muted small">
+              <i class="fas fa-level-up-alt fa-rotate-90 me-1"></i>
+              Nested under:
+              <strong>{{
+                levels.at($index - 1).get("label")?.value || "Level " + $index
+              }}</strong>
+            </div>
+          }
+        </div>
+      }
+    </div>
+
+    <!-- Add level button -->
+    <div class="text-center mb-3">
+      @if (canAddLevel) {
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          (click)="addLevel()"
+        >
+          <i class="fas fa-plus me-2"></i>
+          Add Another Level
+          <small class="ms-1">({{ levels.length }}/{{ maxLevels }})</small>
+        </button>
+      } @else {
+        <div class="text-muted small">
+          <i class="fas fa-info-circle me-1"></i>
+          Maximum depth of {{ maxLevels }} levels reached
+        </div>
+      }
+    </div>
+
+    <!-- Content Configuration (transferred from parent) -->
+    @if (showContentConfig) {
+      <div class="mb-3">
+        <label for="contentConfig" class="form-label">
+          <i class="fas fa-cog me-1"></i>
+          Content Configuration
+          <span class="text-muted">(transferred from parent)</span>
+        </label>
+        <div class="alert alert-info small mb-2">
+          <i class="fas fa-info-circle me-1"></i>
+          This configuration is being transferred from "{{ parentItem?.label }}"
+          to the leaf node (last level).
+        </div>
+        <textarea
+          id="contentConfig"
+          class="form-control font-monospace"
+          formControlName="contentConfig"
+          rows="8"
+          placeholder="Enter content configuration as JSON"
+          [class.is-invalid]="contentConfigError !== null"
+        ></textarea>
+        @if (contentConfigError) {
+          <div class="invalid-feedback d-block">
+            {{ contentConfigError }}
+          </div>
+        }
+      </div>
+    }
+
+    <!-- Hierarchy preview -->
+    @if (levels.length > 1) {
+      <div class="hierarchy-preview p-3 bg-light rounded">
+        <h6 class="mb-2">Hierarchy Preview:</h6>
+        <div class="preview-tree">
+          @for (level of levels.controls; track $index) {
+            <div class="preview-item" [style.padding-left.px]="$index * 20">
+              <i class="fas fa-chevron-right me-1 text-muted"></i>
+              <i
+                [class]="level.get('icon')?.value || 'fas fa-folder'"
+                class="me-1"
+              ></i>
+              <span>{{
+                level.get("label")?.value || "Level " + ($index + 1)
+              }}</span>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </form>
+</div>
+
+<div class="offcanvas-footer border-top p-3 d-flex gap-2 justify-content-end">
+  <button type="button" class="btn btn-secondary" (click)="onCancel()">
+    Cancel
+  </button>
+  <button
+    type="button"
+    class="btn btn-primary"
+    [disabled]="!isValid"
+    (click)="onSave()"
+  >
+    <i class="fas fa-check me-2"></i>
+    Create Hierarchy
+  </button>
+</div>

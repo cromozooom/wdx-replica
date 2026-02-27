@@ -1,0 +1,116 @@
+<div class="menu-content-container d-flex flex-column gap-2 py-2">
+  @if (menuItem) {
+    <div class="content-header p-2">
+      <div class="d-flex align-items-center gap-3">
+        @if (menuItem.icon) {
+          <i [class]="menuItem.icon" class="menu-icon"></i>
+        }
+        <h1 class="h6 mb-0">{{ menuItem.label }}</h1>
+      </div>
+    </div>
+
+    <div class="content-body px-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Menu Item Details</h5>
+          <dl class="row mb-0">
+            <dt class="col-sm-3">ID:</dt>
+            <dd class="col-sm-9">{{ menuItem.id }}</dd>
+
+            <dt class="col-sm-3">Label:</dt>
+            <dd class="col-sm-9">{{ menuItem.label }}</dd>
+
+            @if (menuItem.icon) {
+              <dt class="col-sm-3">Icon:</dt>
+              <dd class="col-sm-9">
+                <i [class]="menuItem.icon" class="me-2"></i>
+                <code>{{ menuItem.icon }}</code>
+              </dd>
+            }
+
+            @if (menuItem.routerLink) {
+              <dt class="col-sm-3">Router Link:</dt>
+              <dd class="col-sm-9">
+                <code>{{ menuItem.routerLink }}</code>
+              </dd>
+            }
+
+            @if (menuItem.children && menuItem.children.length > 0) {
+              <dt class="col-sm-3">Children:</dt>
+              <dd class="col-sm-9">{{ menuItem.children.length }} item(s)</dd>
+            }
+
+            @if (menuItem.contentConfig) {
+              <dt class="col-sm-3">Content Type:</dt>
+              <dd class="col-sm-9">
+                <span class="badge bg-primary">{{
+                  menuItem.contentConfig.componentType || "undefined"
+                }}</span>
+              </dd>
+
+              @if (menuItem.contentConfig.settings) {
+                <dt class="col-sm-3">Settings:</dt>
+                <dd class="col-sm-9">
+                  <pre
+                    class="bg-light p-2 mb-0"
+                  ><code>{{ menuItem.contentConfig.settings | json }}</code></pre>
+                </dd>
+              }
+
+              @if (menuItem.contentConfig.permissions) {
+                <dt class="col-sm-3">Permissions:</dt>
+                <dd class="col-sm-9">
+                  @for (
+                    perm of menuItem.contentConfig.permissions;
+                    track perm
+                  ) {
+                    <span class="badge bg-warning me-1">{{ perm }}</span>
+                  }
+                </dd>
+              }
+            } @else {
+              <dt class="col-sm-3">Content Config:</dt>
+              <dd class="col-sm-9">
+                <span class="text-muted fst-italic">No configuration</span>
+              </dd>
+            }
+          </dl>
+        </div>
+      </div>
+
+      @if (menuItem.contentConfig) {
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="fas fa-file-alt me-2"></i>Content Preview
+            </h5>
+            <p class="mb-0">
+              This would display the
+              <strong>{{ menuItem.contentConfig.componentType }}</strong>
+              component with the configured settings.
+            </p>
+          </div>
+        </div>
+      }
+
+      <div class="mt-4">
+        <p class="text-muted">
+          @if (menuItem.contentConfig) {
+            <i class="fas fa-check-circle text-success me-2"></i>
+            This menu item has content configuration and can display dynamic
+            content.
+          } @else {
+            <i class="fas fa-info-circle me-2"></i>
+            This menu item doesn't have content configuration. Add children or
+            configure content to enhance functionality.
+          }
+        </p>
+      </div>
+    </div>
+  } @else {
+    <div class="alert alert-info">
+      <i class="fas fa-info-circle me-2"></i>
+      Select a menu item from the sidebar to view its content.
+    </div>
+  }
+</div>

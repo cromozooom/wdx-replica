@@ -29,16 +29,48 @@ export class SidebarToggleComponent {
   isLocked: boolean = false;
 
   /**
+   * Whether the toggle button is disabled (e.g., in edit mode).
+   */
+  @Input()
+  disabled: boolean = false;
+
+  /**
    * Emitted when user clicks the toggle button.
    */
   @Output()
   toggleClicked = new EventEmitter<void>();
 
   /**
+   * Emitted when mouse enters the toggle button.
+   */
+  @Output()
+  mouseEnter = new EventEmitter<void>();
+
+  /**
+   * Emitted when mouse leaves the toggle button.
+   */
+  @Output()
+  mouseLeave = new EventEmitter<void>();
+
+  /**
    * Handle toggle button click.
    */
   onToggle(): void {
     this.toggleClicked.emit();
+  }
+
+  /**
+   * Handle mouse enter event.
+   */
+  onMouseEnter(): void {
+    this.mouseEnter.emit();
+  }
+
+  /**
+   * Handle mouse leave event.
+   */
+  onMouseLeave(): void {
+    this.mouseLeave.emit();
   }
 
   /**

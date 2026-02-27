@@ -1,6 +1,34 @@
 // Sidebar Menu Styles (T032)
 // Part of the Jira-style hierarchical navigation sidebar feature
 
+:host {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.scroll_custom_1 {
+  scrollbar-width: thin;
+  /* Custom scrollbar styles */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .sidebar-menu {
   width: 100%;
   height: 100%;
@@ -29,4 +57,40 @@
   app-menu-item {
     display: block;
   }
+}
+
+// Drag-drop styling (T057, FR-019)
+.cdk-drag-preview {
+  opacity: 0.8;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border: 1px solid #0052cc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: grabbing;
+  z-index: 2000;
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.5;
+  border: 2px dashed #0052cc;
+  background-color: #deebff;
+  border-radius: 4px;
+  min-height: 32px;
+}
+
+.cdk-drop-list-dragging {
+  cursor: grabbing;
+
+  .menu-item {
+    cursor: grab;
+
+    &:hover {
+      cursor: grabbing;
+    }
+  }
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }

@@ -183,77 +183,77 @@ drag-drop items to reorder and change hierarchy
 
 ### Implementation for User Story 2
 
-- [ ] T036 [P] [US2] Create IconPickerComponent in
+- [x] T036 [P] [US2] Create IconPickerComponent in
       components/icon-picker/icon-picker.component.ts (standalone, OnPush,
       reusable) with ng-select integration
-- [ ] T037 [P] [US2] Create MenuItemEditorComponent in
+- [x] T037 [P] [US2] Create MenuItemEditorComponent in
       components/modals/menu-item-editor/menu-item-editor.component.ts
       (standalone, OnPush) with NgbActiveModal
-- [ ] T038 [P] [US2] Create DeleteConfirmationComponent in
+- [x] T038 [P] [US2] Create DeleteConfirmationComponent in
       components/modals/delete-confirmation/delete-confirmation.component.ts
       (standalone, OnPush) with NgbActiveModal
-- [ ] T039 [P] [US2] Implement MenuValidationService in
+- [x] T039 [P] [US2] Implement MenuValidationService in
       services/menu-validation.service.ts with methods:
       wouldCreateCircularReference(), validateDrop(), isDescendant()
-- [ ] T040 [US2] Implement edit mode toggle in JiraSidebarContainerComponent:
+- [x] T040 [US2] Implement edit mode toggle in JiraSidebarContainerComponent:
       toggleEditMode() method, check authorization (placeholder for future),
       update state.isEditMode signal
-- [ ] T041 [US2] Implement IconPickerComponent template in
+- [x] T041 [US2] Implement IconPickerComponent template in
       components/icon-picker/icon-picker.component.html: ng-select with custom
       option templates showing icon + label, search enabled, bindLabel="label",
       bindValue="id"
-- [ ] T042 [US2] Implement IconPickerComponent logic: accept selectedIcon input,
+- [x] T042 [US2] Implement IconPickerComponent logic: accept selectedIcon input,
       emit iconChange output, load FONT_AWESOME_ICONS constant, handle selection
-- [ ] T043 [US2] Create MenuItemEditorComponent template in
+- [x] T043 [US2] Create MenuItemEditorComponent template in
       components/modals/menu-item-editor/menu-item-editor.component.html: modal
       header/body/footer, ReactiveForm with label FormControl, icon-picker
       component, validation messages
-- [ ] T084 [US2] Add icon format validation in IconPickerComponent and
+- [x] T084 [US2] Add icon format validation in IconPickerComponent and
       MenuItemEditorComponent: validate selected icon matches pattern
       `/^fa[srlab] fa-[a-z0-9-]+$/`, display validation error if invalid
       (FR-034)
-- [ ] T044 [US2] Implement MenuItemEditorComponent logic: accept menuItem input,
+- [x] T044 [US2] Implement MenuItemEditorComponent logic: accept menuItem input,
       create FormGroup with label and icon controls, Validators.required for
       label, onSave() to close modal with form value, onCancel() to dismiss
-- [ ] T045 [US2] Create DeleteConfirmationComponent template in
+- [x] T045 [US2] Create DeleteConfirmationComponent template in
       components/modals/delete-confirmation/delete-confirmation.component.html:
       modal with message, radio buttons for cascade vs promote (if children
       exist), confirm/cancel buttons
-- [ ] T046 [US2] Implement DeleteConfirmationComponent logic: accept menuItem
+- [x] T046 [US2] Implement DeleteConfirmationComponent logic: accept menuItem
       input, show different UI if children exist, onConfirm() to close with
       choice (cascade/promote/simple), onCancel() to dismiss
-- [ ] T047 [US2] Add openEditDialog() method in JiraSidebarContainerComponent:
+- [x] T047 [US2] Add openEditDialog() method in JiraSidebarContainerComponent:
       inject NgbModal, open MenuItemEditorComponent, pass menuItem, handle
       result promise to update via MenuDataService.updateItem()
-- [ ] T048 [US2] Add openDeleteDialog() method in JiraSidebarContainerComponent:
+- [x] T048 [US2] Add openDeleteDialog() method in JiraSidebarContainerComponent:
       inject NgbModal, open DeleteConfirmationComponent, pass menuItem, handle
       result to call MenuDataService.deleteItem() with cascade flag
-- [ ] T049 [US2] Add createMenuItem() method in JiraSidebarContainerComponent:
+- [x] T049 [US2] Add createMenuItem() method in JiraSidebarContainerComponent:
       inject NgbModal, open MenuItemEditorComponent with empty item, handle
       result to call MenuDataService.addItem()
-- [ ] T050 [US2] Implement circular reference detection in
+- [x] T050 [US2] Implement circular reference detection in
       MenuValidationService: isDescendant() recursive traversal,
       wouldCreateCircularReference() check before drop
-- [ ] T051 [US2] Implement drag-drop in SidebarMenuComponent: add CdkDragDrop
+- [x] T051 [US2] Implement drag-drop in SidebarMenuComponent: add CdkDragDrop
       imports from @angular/cdk/drag-drop, cdkDropList directive, cdkDrag
       directive on tree nodes
-- [ ] T052 [US2] Implement drop handler in SidebarMenuComponent: onDrop() method
+- [x] T052 [US2] Implement drop handler in SidebarMenuComponent: onDrop() method
       with CdkDragDrop event, create DragDropContext object, validate with
       MenuValidationService, emit itemDropped event
-- [ ] T053 [US2] Implement drop validation and visual feedback in
+- [x] T053 [US2] Implement drop validation and visual feedback in
       SidebarMenuComponent: cdkDropListEnterPredicate to check circular refs,
       custom placeholder with .cdk-drag-placeholder class, drop zone
       highlighting
-- [ ] T054 [US2] Wire edit mode UI in SidebarMenuComponent template:
+- [x] T054 [US2] Wire edit mode UI in SidebarMenuComponent template:
       conditionally show Edit/Delete buttons when isEditMode input is true, emit
       editRequested and deleteRequested events with MenuItem
-- [ ] T055 [US2] Handle drag-drop event in JiraSidebarContainerComponent: listen
+- [x] T055 [US2] Handle drag-drop event in JiraSidebarContainerComponent: listen
       to itemDropped output, call MenuDataService.moveItem() with
       DragDropContext, update tree structure, save to localStorage
-- [ ] T056 [US2] Add edit mode toggle button in JiraSidebarContainerComponent
+- [x] T056 [US2] Add edit mode toggle button in JiraSidebarContainerComponent
       template: button to call toggleEditMode(), icon to show edit/view state,
       admin-only visibility (placeholder check)
-- [ ] T057 [US2] Implement SCSS for drag-drop in
+- [x] T057 [US2] Implement SCSS for drag-drop in
       components/sidebar-menu/sidebar-menu.component.scss: .cdk-drag-preview
       styling (opacity, shadow), .cdk-drag-placeholder styling (dashed border),
       .cdk-drop-list-dragging cursor
@@ -274,30 +274,30 @@ created and attached correctly
 
 ### Implementation for User Story 3
 
-- [ ] T058 [P] [US3] Create AddSubmenuComponent in
+- [x] T058 [P] [US3] Create AddSubmenuComponent in
       components/modals/add-submenu/add-submenu.component.ts (standalone,
       OnPush) with NgbActiveModal and ReactiveFormsModule
-- [ ] T059 [US3] Create AddSubmenuComponent template in
+- [x] T059 [US3] Create AddSubmenuComponent template in
       components/modals/add-submenu/add-submenu.component.html: modal with
       FormArray for levels, each level has label + icon-picker, "Add another
       level" button, save/cancel
-- [ ] T060 [US3] Implement AddSubmenuComponent logic: accept parentItem input,
+- [x] T060 [US3] Implement AddSubmenuComponent logic: accept parentItem input,
       create FormArray with FormGroup per level (label + icon controls),
       addLevel() method to push new FormGroup, removeLevel() method
-- [ ] T061 [US3] Implement onSave() in AddSubmenuComponent: validate FormArray,
+- [x] T061 [US3] Implement onSave() in AddSubmenuComponent: validate FormArray,
       build nested MenuItem structure from form values, generate unique IDs,
       close modal with result
-- [ ] T062 [US3] Add openAddSubmenuDialog() method in
+- [x] T062 [US3] Add openAddSubmenuDialog() method in
       JiraSidebarContainerComponent: inject NgbModal, open AddSubmenuComponent,
       pass parentItem, handle result to call MenuDataService.addSubmenu() with
       nested structure
-- [ ] T063 [US3] Implement addSubmenu() method in MenuDataService: accept
+- [x] T063 [US3] Implement addSubmenu() method in MenuDataService: accept
       parentItem and nested children, recursively add to tree structure, update
       itemsById map, save to localStorage
-- [ ] T064 [US3] Wire "Add Submenu" button in SidebarMenuComponent template:
+- [x] T064 [US3] Wire "Add Submenu" button in SidebarMenuComponent template:
       show button when isEditMode is true, emit addSubmenuRequested event with
       parent MenuItem
-- [ ] T065 [US3] Handle addSubmenuRequested event in
+- [x] T065 [US3] Handle addSubmenuRequested event in
       JiraSidebarContainerComponent: listen to output, call
       openAddSubmenuDialog() with emitted MenuItem
 

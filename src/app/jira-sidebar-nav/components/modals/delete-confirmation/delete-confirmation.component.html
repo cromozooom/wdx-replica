@@ -1,0 +1,87 @@
+<div class="modal-header">
+  <h5 class="modal-title">Confirm Deletion</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="onCancel()"
+  ></button>
+</div>
+
+<div class="modal-body">
+  <p class="mb-3">
+    Are you sure you want to delete <strong>{{ menuItem.label }}</strong
+    >?
+  </p>
+
+  @if (hasChildren) {
+    <div class="alert alert-warning" role="alert">
+      <i class="fas fa-exclamation-triangle me-2"></i>
+      <strong
+        >This item has {{ childrenCount }} direct child{{
+          childrenCount !== 1 ? "ren" : ""
+        }}</strong
+      >
+      ({{ descendantsCount }} total descendant{{
+        descendantsCount !== 1 ? "s" : ""
+      }})
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">What should happen to the children?</label>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="deleteStrategy"
+          id="strategyCascade"
+          [(ngModel)]="selectedStrategy"
+          value="cascade"
+        />
+        <label class="form-check-label" for="strategyCascade">
+          <strong>Delete all descendants</strong>
+          <div class="text-muted small">
+            This will permanently delete {{ menuItem.label }} and all
+            {{ descendantsCount }} child item{{
+              descendantsCount !== 1 ? "s" : ""
+            }}
+            beneath it.
+          </div>
+        </label>
+      </div>
+
+      <div class="form-check mt-2">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="deleteStrategy"
+          id="strategyPromote"
+          [(ngModel)]="selectedStrategy"
+          value="promote"
+        />
+        <label class="form-check-label" for="strategyPromote">
+          <strong>Keep children, promote them</strong>
+          <div class="text-muted small">
+            Delete only {{ menuItem.label }}, but keep its
+            {{ childrenCount }} direct child{{
+              childrenCount !== 1 ? "ren" : ""
+            }}. They will be moved up one level.
+          </div>
+        </label>
+      </div>
+    </div>
+  } @else {
+    <p class="text-muted">This action cannot be undone.</p>
+  }
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="onCancel()">
+    Cancel
+  </button>
+  <button type="button" class="btn btn-danger" (click)="onConfirm()">
+    <i class="fas fa-trash me-2"></i>
+    Delete {{ hasChildren && selectedStrategy === "cascade" ? "All" : "" }}
+  </button>
+</div>

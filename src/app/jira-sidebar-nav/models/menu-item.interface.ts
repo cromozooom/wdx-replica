@@ -53,6 +53,15 @@ export interface MenuItem {
   order?: number;
 
   /**
+   * Content configuration for leaf nodes (items without children).
+   * When a leaf node becomes a parent (first child added), this config
+   * is automatically transferred to the first child.
+   *
+   * Only exists for leaf nodes - parent nodes should not have contentConfig.
+   */
+  contentConfig?: MenuItemContentConfig;
+
+  /**
    * Optional metadata for future extensibility.
    */
   metadata?: {
@@ -71,4 +80,32 @@ export interface MenuItem {
      */
     cssClasses?: string[];
   };
+}
+
+/**
+ * Configuration for menu item content display.
+ * Stores the configuration needed to render the item's content in the main area.
+ */
+export interface MenuItemContentConfig {
+  /**
+   * Type of component or content to display.
+   * Examples: 'dashboard', 'grid', 'form', 'custom'
+   */
+  componentType?: string;
+
+  /**
+   * Component-specific settings and configuration.
+   * Structure depends on componentType.
+   */
+  settings?: Record<string, any>;
+
+  /**
+   * Required permissions to view this content.
+   */
+  permissions?: string[];
+
+  /**
+   * Optional route parameters for dynamic routing.
+   */
+  routeParams?: Record<string, string>;
 }

@@ -1,75 +1,69 @@
 // Menu Item Styles (T032, T082)
 // Part of the Jira-style hierarchical navigation sidebar feature
 
+@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../variables";
+@import "../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../../../node_modules/bootstrap/scss/mixins";
+
+:host {
+  width: 100%;
+  display: flex;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.menu-item.has-children-active {
+  color: color-contrast(shade-color($primary, 10%));
+  background-color: shade-color($primary, 10%);
+}
+
 .menu-item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
   cursor: pointer;
   transition: background-color 150ms ease;
   position: relative;
   min-height: 36px;
+  background-color: $primary; // Use SCSS variable, not CSS var
+  color: color-contrast($primary);
 
   // Hover state (FR-007: 100-200ms delay handled in TS)
   &:hover {
-    background-color: #ebecf0;
+    color: color-contrast(shade-color($primary, 20%));
+    background-color: shade-color($primary, 20%);
   }
 
   // Active state (FR-004)
   &.active {
-    background-color: #deebff;
-    color: #0052cc;
-    font-weight: 500;
-
-    &:hover {
-      background-color: #d4e3f7;
-    }
+    color: color-contrast(tint-color($primary, 0%));
+    background-color: tint-color($primary, 20%);
   }
 }
 
 // Expansion Icon
 .expansion-icon {
-  width: 16px;
-  height: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: #5e6c84;
   cursor: pointer;
   transition: transform 150ms ease;
 
-  &:hover {
-    color: #172b4d;
-  }
-
   &.expanded {
     transform: rotate(0deg);
-  }
-
-  i {
-    font-size: 10px;
   }
 }
 
 // Item Icon (FontAwesome)
 .item-icon {
-  width: 16px;
-  height: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: #5e6c84;
-
-  i {
-    font-size: 14px;
-  }
-
-  .menu-item.active & {
-    color: #0052cc;
-  }
 }
 
 // Item Label (T082: Label truncation with ellipsis)
@@ -79,8 +73,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 14px;
-  color: #172b4d;
 
   .item-link,
   .item-text {
@@ -97,8 +89,7 @@
   }
 
   .item-link.active {
-    color: #0052cc;
-    font-weight: 500;
+    color: $primary; // Use SCSS variable, not CSS var
   }
 }
 
@@ -107,13 +98,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 20px;
-  height: 20px;
-  padding: 0 6px;
-  border-radius: 10px;
-  background-color: #ff5630;
-  color: white;
-  font-size: 11px;
-  font-weight: 600;
   flex-shrink: 0;
+}
+
+// Edit mode actions (T054, FR-016, FR-017)
+.edit-actions {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.menu-item:hover .edit-actions {
+  opacity: 1;
 }

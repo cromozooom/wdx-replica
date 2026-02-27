@@ -44,6 +44,13 @@ export class MenuMockDataService {
                 icon: "fas fa-broadcast-tower",
                 routerLink: "/dashboard/analytics/realtime",
                 order: 0,
+                contentConfig: {
+                  componentType: "dashboard",
+                  settings: {
+                    refreshInterval: 5000,
+                    showLiveData: true,
+                  },
+                },
               },
               {
                 id: "1-1-2",
@@ -51,6 +58,13 @@ export class MenuMockDataService {
                 icon: "fas fa-history",
                 routerLink: "/dashboard/analytics/historical",
                 order: 1,
+                contentConfig: {
+                  componentType: "dashboard",
+                  settings: {
+                    dateRange: "last30days",
+                    aggregation: "daily",
+                  },
+                },
               },
             ],
           },
@@ -68,6 +82,13 @@ export class MenuMockDataService {
                 icon: "fas fa-calendar-alt",
                 routerLink: "/dashboard/reports/monthly",
                 order: 0,
+                contentConfig: {
+                  componentType: "report",
+                  settings: {
+                    reportType: "monthly",
+                    format: "pdf",
+                  },
+                },
               },
               {
                 id: "1-2-2",
@@ -75,6 +96,13 @@ export class MenuMockDataService {
                 icon: "fas fa-calendar-week",
                 routerLink: "/dashboard/reports/quarterly",
                 order: 1,
+                contentConfig: {
+                  componentType: "report",
+                  settings: {
+                    reportType: "quarterly",
+                    includeComparison: true,
+                  },
+                },
               },
               {
                 id: "1-2-3",
@@ -82,6 +110,13 @@ export class MenuMockDataService {
                 icon: "fas fa-calendar",
                 routerLink: "/dashboard/reports/annual",
                 order: 2,
+                contentConfig: {
+                  componentType: "report",
+                  settings: {
+                    reportType: "annual",
+                    includeSummary: true,
+                  },
+                },
               },
             ],
           },
@@ -109,6 +144,13 @@ export class MenuMockDataService {
                 icon: "fas fa-project-diagram",
                 routerLink: "/projects/active/alpha",
                 order: 0,
+                contentConfig: {
+                  componentType: "project",
+                  settings: {
+                    projectId: "alpha",
+                    status: "active",
+                  },
+                },
               },
               {
                 id: "2-1-2",
@@ -116,6 +158,13 @@ export class MenuMockDataService {
                 icon: "fas fa-project-diagram",
                 routerLink: "/projects/active/beta",
                 order: 1,
+                contentConfig: {
+                  componentType: "project",
+                  settings: {
+                    projectId: "beta",
+                    status: "active",
+                  },
+                },
               },
               {
                 id: "2-1-3",
@@ -123,6 +172,13 @@ export class MenuMockDataService {
                 icon: "fas fa-project-diagram",
                 routerLink: "/projects/active/gamma",
                 order: 2,
+                contentConfig: {
+                  componentType: "project",
+                  settings: {
+                    projectId: "gamma",
+                    status: "active",
+                  },
+                },
               },
             ],
           },
@@ -140,6 +196,13 @@ export class MenuMockDataService {
                 icon: "fas fa-calendar-times",
                 routerLink: "/projects/archived/2025",
                 order: 0,
+                contentConfig: {
+                  componentType: "grid",
+                  settings: {
+                    gridType: "archivedProjects",
+                    year: 2025,
+                  },
+                },
               },
               {
                 id: "2-2-2",
@@ -147,6 +210,13 @@ export class MenuMockDataService {
                 icon: "fas fa-calendar-times",
                 routerLink: "/projects/archived/2024",
                 order: 1,
+                contentConfig: {
+                  componentType: "grid",
+                  settings: {
+                    gridType: "archivedProjects",
+                    year: 2024,
+                  },
+                },
               },
             ],
           },
@@ -166,6 +236,13 @@ export class MenuMockDataService {
             icon: "fas fa-user",
             routerLink: "/settings/profile",
             order: 0,
+            contentConfig: {
+              componentType: "form",
+              settings: {
+                formType: "userProfile",
+                editable: true,
+              },
+            },
           },
           {
             id: "3-2",
@@ -181,6 +258,13 @@ export class MenuMockDataService {
                 icon: "fas fa-palette",
                 routerLink: "/settings/preferences/appearance",
                 order: 0,
+                contentConfig: {
+                  componentType: "form",
+                  settings: {
+                    formType: "appearance",
+                    themes: ["light", "dark", "auto"],
+                  },
+                },
               },
               {
                 id: "3-2-2",
@@ -188,6 +272,13 @@ export class MenuMockDataService {
                 icon: "fas fa-bell",
                 routerLink: "/settings/preferences/notifications",
                 order: 1,
+                contentConfig: {
+                  componentType: "form",
+                  settings: {
+                    formType: "notifications",
+                    channels: ["email", "push", "sms"],
+                  },
+                },
               },
             ],
           },
@@ -197,6 +288,14 @@ export class MenuMockDataService {
             icon: "fas fa-shield-alt",
             routerLink: "/settings/security",
             order: 2,
+            contentConfig: {
+              componentType: "form",
+              settings: {
+                formType: "security",
+                requiresAuth: true,
+              },
+              permissions: ["admin", "security_manager"],
+            },
           },
         ],
       },
@@ -214,6 +313,13 @@ export class MenuMockDataService {
             icon: "fas fa-book",
             routerLink: "/help/docs",
             order: 0,
+            contentConfig: {
+              componentType: "documentation",
+              settings: {
+                searchEnabled: true,
+                version: "latest",
+              },
+            },
           },
           {
             id: "4-2",
@@ -221,8 +327,43 @@ export class MenuMockDataService {
             icon: "fas fa-life-ring",
             routerLink: "/help/support",
             order: 1,
+            contentConfig: {
+              componentType: "support",
+              settings: {
+                ticketingEnabled: true,
+                chatEnabled: true,
+              },
+            },
           },
         ],
+      },
+      {
+        id: "5",
+        label: "Team",
+        icon: "fas fa-users",
+        routerLink: "/team",
+        order: 4,
+        contentConfig: {
+          componentType: "grid",
+          settings: {
+            gridType: "teamMembers",
+            columns: ["name", "role", "email"],
+          },
+        },
+      },
+      {
+        id: "6",
+        label: "Calendar",
+        icon: "fas fa-calendar-alt",
+        routerLink: "/calendar",
+        order: 5,
+        contentConfig: {
+          componentType: "calendar",
+          settings: {
+            view: "month",
+            showWeekends: true,
+          },
+        },
       },
     ];
   }

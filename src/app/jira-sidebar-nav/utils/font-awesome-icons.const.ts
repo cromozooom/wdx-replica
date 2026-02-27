@@ -13,6 +13,24 @@ import { IconDefinition } from "../models";
 export const FONT_AWESOME_ICONS: IconDefinition[] = [
   // Navigation & UI (15 icons)
   {
+    id: "fa-file",
+    label: "File",
+    category: "Dashboards",
+    cssClass: "fas fa-file",
+  },
+  {
+    id: "fa-address-card",
+    label: "Address Card",
+    category: "Dashboards",
+    cssClass: "fas fa-address-card",
+  },
+  {
+    id: "fa-bullseye-pointer",
+    label: "Target",
+    category: "Dashboards",
+    cssClass: "fas fa-bullseye-pointer",
+  },
+  {
     id: "fa-home",
     label: "Home",
     category: "Navigation",

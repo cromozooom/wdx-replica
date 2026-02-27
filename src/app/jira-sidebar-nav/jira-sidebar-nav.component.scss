@@ -1,13 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  --sideminSize: 0.8rem;
+  --sidemaxSize: 280px;
+}
+
 // Jira Sidebar Container Styles (T031)
 // Part of the Jira-style hierarchical navigation sidebar feature
 
 .jira-sidebar-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  background-color: #f4f5f7;
-  border-right: 1px solid #dfe1e6;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   z-index: 1000;
   overflow: hidden;
 
@@ -16,12 +23,11 @@
 
   // Box shadow when expanded
   &.visible {
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
   }
 
   // Hidden state (20px strip)
   &.hidden {
-    width: 20px !important;
+    width: var(--sideminSize) !important;
     cursor: pointer;
 
     app-sidebar-menu,
@@ -32,13 +38,14 @@
     }
 
     &:hover {
-      background-color: #e8eaed;
+      background-color: red;
     }
   }
 
   // Visible states (280px)
   &.visible {
-    width: 280px !important;
+    width: var(--sidemaxSize) !important;
+    max-width: var(--sidemaxSize) !important;
 
     app-sidebar-menu,
     app-sidebar-toggle,
@@ -48,17 +55,17 @@
       transition: opacity 150ms ease-in;
     }
   }
+}
 
-  // Locked state styling
-  &.locked {
-    app-sidebar-toggle {
-      .sidebar-toggle-btn {
-        background-color: #0052cc;
-        color: white;
+// Locked state styling
+.locked {
+  app-sidebar-toggle {
+    .sidebar-toggle-btn {
+      background-color: #0052cc;
+      color: white;
 
-        &:hover {
-          background-color: #0747a6;
-        }
+      &:hover {
+        background-color: #0747a6;
       }
     }
   }
@@ -77,35 +84,23 @@
   }
 }
 
-// Sidebar content layout
-app-sidebar-menu {
-  display: block;
-  height: calc(100vh - 120px);
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 8px 0;
+// Edit mode controls styling (T056)
+.edit-mode-controls {
+  border-top: 1px solid #e0e0e0;
+  background-color: #fafafa;
 
-  // Custom scrollbar
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #c1c7d0;
-    border-radius: 3px;
+  .btn {
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
 
     &:hover {
-      background: #a5adba;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
   }
 }
-
 // Sidebar Toggle Position
-app-sidebar-toggle {
+_app-sidebar-toggle {
   display: block;
   padding: 16px;
   border-bottom: 1px solid #dfe1e6;

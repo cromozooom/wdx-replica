@@ -1,11 +1,17 @@
 <!-- Sidebar Toggle Template (T030) -->
 <button
   type="button"
-  class="sidebar-toggle-btn"
+  class="btn btn-link text-decoration-none d-flex gap-2 px-1 align-items-center sidebar-toggle"
   [class.locked]="isLocked"
+  [disabled]="disabled"
   (click)="onToggle()"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
   [attr.aria-label]="getTooltipText()"
   [attr.title]="getTooltipText()"
 >
   <i [class]="isLocked ? 'fas fa-lock' : 'fas fa-lock-open'"></i>
+  <span>
+    {{ isLocked ? "locked" : "unlocked" }}
+  </span>
 </button>

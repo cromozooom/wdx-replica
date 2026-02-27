@@ -53,6 +53,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: "menu-demo",
+    loadChildren: () =>
+      import("./jira-sidebar-nav/jira-sidebar-nav.routes").then(
+        (m) => m.JIRA_SIDEBAR_NAV_ROUTES,
+      ),
+  },
+  {
     path: "",
     redirectTo: "dashboard",
     pathMatch: "full",

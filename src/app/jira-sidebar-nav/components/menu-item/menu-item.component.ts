@@ -6,7 +6,12 @@ import {
   Output,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { RouterModule } from "@angular/router";
+import {
+  NgbDropdown,
+  NgbDropdownToggle,
+  NgbDropdownMenu,
+  NgbDropdownItem,
+} from "@ng-bootstrap/ng-bootstrap";
 import { MenuItem } from "../../models";
 
 /**
@@ -18,7 +23,13 @@ import { MenuItem } from "../../models";
 @Component({
   selector: "app-menu-item",
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [
+    CommonModule,
+    NgbDropdown,
+    NgbDropdownToggle,
+    NgbDropdownMenu,
+    NgbDropdownItem,
+  ],
   templateUrl: "./menu-item.component.html",
   styleUrl: "./menu-item.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -55,6 +66,12 @@ export class MenuItemComponent {
   isExpanded: boolean = false;
 
   /**
+   * Whether any descendant of this item is active.
+   */
+  @Input()
+  hasChildrenActive: boolean = false;
+
+  /**
    * Whether edit mode is active.
    */
   @Input()
@@ -73,10 +90,35 @@ export class MenuItemComponent {
   expansionToggled = new EventEmitter<void>();
 
   /**
+   * Emitted when user clicks edit button (T054, FR-016).
+   */
+  @Output()
+  editRequested = new EventEmitter<MenuItem>();
+
+  /**
+   * Emitted when user clicks delete button (T054, FR-017).
+   */
+  @Output()
+  deleteRequested = new EventEmitter<MenuItem>();
+
+  /**
+   * Emitted when user clicks add child button.
+   */
+  @Output()
+  addChildRequested = new EventEmitter<MenuItem>();
+
+  /**
    * Calculate indentation padding.
    */
   getIndentPadding(): string {
     return `${this.level * 24}px`;
+  }
+
+  /**
+   * Check if this is a root level (level 0) item.
+   */
+  get isLevel0(): boolean {
+    return this.level === 0;
   }
 
   /**
@@ -94,5 +136,36 @@ export class MenuItemComponent {
   onToggleExpansion(event: MouseEvent): void {
     event.stopPropagation();
     this.expansionToggled.emit();
+  }
+
+  /**
+   * Handle edit button click (T054).
+   */
+  onEditClick(event: MouseEvent): void {
+    event.stopPropagation();
+    this.editRequested.emit(this.item);
+  }
+
+  /**
+   * Handle delete button click (T054).
+   */
+  onDeleteClick(event: MouseEvent): void {
+    event.stopPropagation();
+    this.deleteRequested.emit(this.item);
+  }
+
+  /**
+   * Handle add child button click.
+   */
+  onAddChildClick(event: MouseEvent): void {
+    event.stopPropagation();
+    this.addChildRequested.emit(this.item);
+  }
+
+  /**
+   * Handle dropdown toggle click (prevent propagation).
+   */
+  onDropdownToggle(event: MouseEvent): void {
+    event.stopPropagation();
   }
 }

@@ -1,0 +1,116 @@
+<div class="offcanvas-header border-bottom">
+  <h5 class="offcanvas-title">
+    {{ menuItem ? "Edit Menu Item" : "Create Menu Item" }}
+  </h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="onCancel()"
+  ></button>
+</div>
+
+<div class="offcanvas-body">
+  <form [formGroup]="form" id="menuItemForm">
+    <!-- Label field -->
+    <div class="mb-3">
+      <label for="itemLabel" class="form-label">
+        Label <span class="text-danger">*</span>
+      </label>
+      <input
+        type="text"
+        class="form-control"
+        id="itemLabel"
+        formControlName="label"
+        placeholder="Enter menu item label"
+        [class.is-invalid]="labelError !== null"
+        autofocus
+      />
+      @if (labelError) {
+        <div class="invalid-feedback d-block">
+          {{ labelError }}
+        </div>
+      }
+    </div>
+
+    <!-- Icon picker -->
+    <div class="mb-3">
+      <label for="itemIcon" class="form-label">
+        Icon <span class="text-muted">(optional)</span>
+      </label>
+      <app-icon-picker
+        [selectedIcon]="form.get('icon')?.value"
+        (iconChange)="onIconChange($event)"
+      >
+      </app-icon-picker>
+      <div class="form-text">
+        Select a FontAwesome icon or leave empty for no icon
+      </div>
+    </div>
+
+    <!-- Icon preview -->
+    @if (form.get("icon")?.value) {
+      <div class="mb-3">
+        <label class="form-label">Preview</label>
+        <div class="icon-preview p-3 border rounded bg-light">
+          <i [class]="form.get('icon')?.value" class="me-2"></i>
+          <span>{{ form.get("label")?.value || "Label" }}</span>
+        </div>
+      </div>
+    }
+
+    <!-- Content Configuration -->
+    @if (!menuItem || !menuItem.children || menuItem.children.length === 0) {
+      <div class="mb-3">
+        @if (parentItem?.contentConfig) {
+          <div class="alert alert-info small mb-2">
+            <i class="fas fa-transfer me-1"></i>
+            This configuration is being transferred from "{{
+              parentItem?.label
+            }}" because it's becoming a parent node.
+          </div>
+        }
+        <label for="contentConfig" class="form-label">
+          Content Configuration
+          <span class="text-muted">(JSON)</span>
+        </label>
+        <textarea
+          class="form-control font-monospace"
+          id="contentConfig"
+          formControlName="contentConfig"
+          rows="8"
+          placeholder="Enter JSON configuration"
+          [class.is-invalid]="contentConfigError !== null"
+        ></textarea>
+        @if (contentConfigError) {
+          <div class="invalid-feedback d-block">
+            {{ contentConfigError }}
+          </div>
+        }
+        <div class="form-text">
+          Configuration for widget display: componentType, widgetName,
+          apiEndpoint, etc.
+        </div>
+      </div>
+    } @else {
+      <div class="alert alert-info mb-3">
+        <i class="fas fa-info-circle me-2"></i>
+        Content configuration is not editable for items with children.
+      </div>
+    }
+  </form>
+</div>
+
+<div class="offcanvas-footer border-top p-3 d-flex gap-2 justify-content-end">
+  <button type="button" class="btn btn-secondary" (click)="onCancel()">
+    Cancel
+  </button>
+  <button
+    type="button"
+    class="btn btn-primary"
+    [disabled]="!isValid"
+    (click)="onSave()"
+  >
+    {{ menuItem ? "Save Changes" : "Create" }}
+  </button>
+</div>
