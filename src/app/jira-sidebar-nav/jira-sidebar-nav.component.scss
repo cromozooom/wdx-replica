@@ -1,0 +1,112 @@
+// Jira Sidebar Container Styles (T031)
+// Part of the Jira-style hierarchical navigation sidebar feature
+
+.jira-sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #f4f5f7;
+  border-right: 1px solid #dfe1e6;
+  z-index: 1000;
+  overflow: hidden;
+
+  // Smooth width transition (SC-005: <300ms)
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // Box shadow when expanded
+  &.visible {
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  // Hidden state (20px strip)
+  &.hidden {
+    width: 20px !important;
+    cursor: pointer;
+
+    app-sidebar-menu,
+    app-sidebar-toggle,
+    .edit-mode-controls {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: #e8eaed;
+    }
+  }
+
+  // Visible states (280px)
+  &.visible {
+    width: 280px !important;
+
+    app-sidebar-menu,
+    app-sidebar-toggle,
+    .edit-mode-controls {
+      opacity: 1;
+      pointer-events: auto;
+      transition: opacity 150ms ease-in;
+    }
+  }
+
+  // Locked state styling
+  &.locked {
+    app-sidebar-toggle {
+      .sidebar-toggle-btn {
+        background-color: #0052cc;
+        color: white;
+
+        &:hover {
+          background-color: #0747a6;
+        }
+      }
+    }
+  }
+}
+
+// Edit Mode Controls
+.edit-mode-controls {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+
+  .btn {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+// Sidebar content layout
+app-sidebar-menu {
+  display: block;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px 0;
+
+  // Custom scrollbar
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #c1c7d0;
+    border-radius: 3px;
+
+    &:hover {
+      background: #a5adba;
+    }
+  }
+}
+
+// Sidebar Toggle Position
+app-sidebar-toggle {
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #dfe1e6;
+}

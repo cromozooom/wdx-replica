@@ -96,74 +96,74 @@ verify auto-hide after 3 seconds when unlocked
 
 ### Implementation for User Story 1
 
-- [ ] T015 [P] [US1] Create JiraSidebarContainerComponent in
+- [x] T015 [P] [US1] Create JiraSidebarContainerComponent in
       jira-sidebar-nav.component.ts (standalone, OnPush) with signal-based state
       management
-- [ ] T016 [P] [US1] Create SidebarMenuComponent in
+- [x] T016 [P] [US1] Create SidebarMenuComponent in
       components/sidebar-menu/sidebar-menu.component.ts (standalone, OnPush)
       with Material Tree imports
-- [ ] T017 [P] [US1] Create MenuItemComponent in
+- [x] T017 [P] [US1] Create MenuItemComponent in
       components/menu-item/menu-item.component.ts (standalone, OnPush) for
       individual item rendering
-- [ ] T018 [P] [US1] Create SidebarToggleComponent in
+- [x] T018 [P] [US1] Create SidebarToggleComponent in
       components/sidebar-toggle/sidebar-toggle.component.ts (standalone, OnPush)
       for lock/unlock button
-- [ ] T019 [US1] Implement JiraSidebarContainerComponent state initialization:
+- [x] T019 [US1] Implement JiraSidebarContainerComponent state initialization:
       load from localStorage via MenuDataService, fallback to mock data,
       initialize signals (menuItems, isLocked, currentWidth, activeItemId)
-- [ ] T020 [US1] Implement computed signals in JiraSidebarContainerComponent:
+- [x] T020 [US1] Implement computed signals in JiraSidebarContainerComponent:
       menuItems, isLocked, isEditMode, currentWidth, expandedNodeIds
-- [ ] T021 [US1] Implement toggleLock() method in JiraSidebarContainerComponent:
+- [x] T021 [US1] Implement toggleLock() method in JiraSidebarContainerComponent:
       toggle state.isLocked, save to localStorage, mark for check
-- [ ] T022 [US1] Implement expandSidebar() and collapseSidebar() methods in
+- [x] T022 [US1] Implement expandSidebar() and collapseSidebar() methods in
       JiraSidebarContainerComponent: transition between Hidden (20px) and
       Temporary Visible (280px) states
-- [ ] T023 [US1] Setup Material Tree in SidebarMenuComponent: configure
+- [x] T023 [US1] Setup Material Tree in SidebarMenuComponent: configure
       NestedTreeControl with node.children accessor, MatTreeNestedDataSource
       with menuItems input
-- [ ] T024 [US1] Implement expansion state management in SidebarMenuComponent:
+- [x] T024 [US1] Implement expansion state management in SidebarMenuComponent:
       use expandedNodeIds input Set, emit nodeToggled events with itemId and
       expanded boolean
-- [ ] T025 [US1] Implement active item highlighting in MenuItemComponent: accept
+- [x] T025 [US1] Implement active item highlighting in MenuItemComponent: accept
       activeItemId input, apply active CSS class conditionally, use
       router.isActive for route matching
-- [ ] T026 [US1] Implement auto-hide timer with RxJS in
+- [x] T026 [US1] Implement auto-hide timer with RxJS in
       JiraSidebarContainerComponent: fromEvent for mouseenter/mouseleave on
       sidebar and trigger elements, timer(3000), switchMap for cancellation,
       takeUntilDestroyed()
-- [ ] T027 [US1] Create JiraSidebarContainerComponent template in
+- [x] T027 [US1] Create JiraSidebarContainerComponent template in
       jira-sidebar-nav.component.html: sidebar container with width binding,
       sidebar-toggle component, sidebar-menu component with event bindings
-- [ ] T028 [US1] Create SidebarMenuComponent template in
+- [x] T028 [US1] Create SidebarMenuComponent template in
       components/sidebar-menu/sidebar-menu.component.html: mat-tree with
       mat-nested-tree-node, expansion icons, indentation with padding-left
       binding (level \* 24px)
-- [ ] T029 [US1] Create MenuItemComponent template in
+- [x] T029 [US1] Create MenuItemComponent template in
       components/menu-item/menu-item.component.html: icon element with dynamic
       class binding, label text, active state styling
-- [ ] T030 [US1] Create SidebarToggleComponent template in
+- [x] T030 [US1] Create SidebarToggleComponent template in
       components/sidebar-toggle/sidebar-toggle.component.html: lock/unlock icon
       button, tooltip, click handler
-- [ ] T031 [US1] Implement SCSS for JiraSidebarContainerComponent in
+- [x] T031 [US1] Implement SCSS for JiraSidebarContainerComponent in
       jira-sidebar-nav.component.scss: sidebar positioning (fixed left), width
       transitions (300ms cubic-bezier), transform for collapse/expand, z-index
       layering
-- [ ] T032 [US1] Implement SCSS for SidebarMenuComponent in
+- [x] T032 [US1] Implement SCSS for SidebarMenuComponent in
       components/sidebar-menu/sidebar-menu.component.scss: tree node styling,
       indentation, expansion icons, hover states, active item highlighting
-- [ ] T033 [US1] Integrate localStorage sync in JiraSidebarContainerComponent:
+- [x] T033 [US1] Integrate localStorage sync in JiraSidebarContainerComponent:
       effect() to save expandedNodeIds and isLocked on state changes, load on
       ngOnInit
-- [ ] T034 [US1] Wire up navigation in MenuItemComponent: accept routerLink
+- [x] T034 [US1] Wire up navigation in MenuItemComponent: accept routerLink
       input, use routerLink directive, emit itemClicked event for container to
       handle
-- [ ] T035 [US1] Implement OnPush change detection optimization: inject
+- [x] T035 [US1] Implement OnPush change detection optimization: inject
       ChangeDetectorRef, call markForCheck() after manual state updates, use
       async pipe for observables
-- [ ] T082 [US1] Implement label truncation in MenuItemComponent template and
+- [x] T082 [US1] Implement label truncation in MenuItemComponent template and
       SCSS: max-width on label element, text-overflow: ellipsis, white-space:
       nowrap, title attribute binding for tooltip showing full text (FR-031)
-- [ ] T083 [US1] Add error notification component or service integration in
+- [x] T083 [US1] Add error notification component or service integration in
       JiraSidebarContainerComponent to display localStorage quota warnings from
       MenuDataService (FR-032)
 

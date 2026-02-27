@@ -1,0 +1,32 @@
+// Sidebar Menu Styles (T032)
+// Part of the Jira-style hierarchical navigation sidebar feature
+
+.sidebar-menu {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+// Menu Tree Styles
+.menu-tree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &.root-level {
+    padding: 0;
+  }
+
+  &.nested-level {
+    padding-left: 0;
+  }
+}
+
+.menu-tree-node {
+  margin: 0;
+  padding: 0;
+
+  app-menu-item {
+    display: block;
+  }
+}

@@ -1,0 +1,11 @@
+<!-- Sidebar Toggle Template (T030) -->
+<button
+  type="button"
+  class="sidebar-toggle-btn"
+  [class.locked]="isLocked"
+  (click)="onToggle()"
+  [attr.aria-label]="getTooltipText()"
+  [attr.title]="getTooltipText()"
+>
+  <i [class]="isLocked ? 'fas fa-lock' : 'fas fa-lock-open'"></i>
+</button>

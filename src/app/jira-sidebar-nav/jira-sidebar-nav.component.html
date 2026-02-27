@@ -1,0 +1,42 @@
+<!-- Jira Sidebar Navigation Container (T027) -->
+<div
+  class="jira-sidebar-container"
+  [class.locked]="isLocked()"
+  [class.hidden]="visibilityMode() === 'hidden'"
+  [class.visible]="
+    visibilityMode() === 'temporary_visible' ||
+    visibilityMode() === 'locked_visible'
+  "
+  [style.width.px]="currentWidth()"
+  (mouseenter)="onSidebarMouseEnter()"
+  (mouseleave)="onSidebarMouseLeave()"
+>
+  <!-- Sidebar Toggle Button -->
+  <app-sidebar-toggle
+    [isLocked]="isLocked()"
+    (toggleClicked)="toggleLock()"
+  ></app-sidebar-toggle>
+
+  <!-- Sidebar Menu -->
+  <app-sidebar-menu
+    [menuItems]="menuItems()"
+    [expandedNodeIds]="expandedNodeIds()"
+    [activeItemId]="activeItemId()"
+    [isEditMode]="isEditMode()"
+    (itemClicked)="onItemClicked($event)"
+    (nodeToggled)="onNodeToggled($event)"
+  ></app-sidebar-menu>
+
+  <!-- Edit Mode Toggle (for testing) -->
+  @if (isLocked()) {
+    <div class="edit-mode-controls">
+      <button
+        type="button"
+        class="btn btn-sm btn-outline-secondary"
+        (click)="toggleEditMode()"
+      >
+        {{ isEditMode() ? "Exit Edit Mode" : "Enter Edit Mode" }}
+      </button>
+    </div>
+  }
+</div>
