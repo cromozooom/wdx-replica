@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-recent-updates",
+  "totalCount": 108,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3b3e3fae-4b41-431b-b935-702ab0ca9f3c",
+      "name": "Extended dynamic support 1",
+      "status": "Active",
+      "createdDate": "2026-01-18T05:08:54",
+      "updatedDate": "2026-02-12T07:04:00",
+      "owner": "Howard Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2050.01,
+      "description": "Present decade major doctor."
+    },
+    {
+      "id": "1eee52bb-e670-4817-a1ae-66815ad7116d",
+      "name": "Open-architected logistical infrastructure 2",
+      "status": "Active",
+      "createdDate": "2025-03-07T11:17:49",
+      "updatedDate": "2026-02-16T17:05:44",
+      "owner": "Dean Underwood",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 546.82,
+      "description": "Without produce its late show small feeling."
+    },
+    {
+      "id": "b9e4ff10-fc40-4022-92b2-6b2bd6466ec9",
+      "name": "Programmable next generation artificial intelligence 3",
+      "status": "Pending",
+      "createdDate": "2025-12-25T06:05:21",
+      "updatedDate": "2026-01-18T13:02:03",
+      "owner": "Christopher Hall",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2812.85,
+      "description": "Seat senior use discussion."
+    },
+    {
+      "id": "ea824be6-cfe2-48d3-858e-2e10db69565a",
+      "name": "Team-oriented systematic capability 4",
+      "status": "Pending",
+      "createdDate": "2025-04-06T05:54:50",
+      "updatedDate": "2026-01-19T04:38:11",
+      "owner": "Stephen Rios",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3748.98,
+      "description": "Hot set church simple."
+    },
+    {
+      "id": "2dcbf2af-ad45-4501-b375-d6604d04a961",
+      "name": "Fundamental neutral encoding 5",
+      "status": "Active",
+      "createdDate": "2025-07-14T09:28:04",
+      "updatedDate": "2026-01-27T13:21:14",
+      "owner": "Christine Summers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7871.92,
+      "description": "Large though reality young state another move."
+    },
+    {
+      "id": "f37005ae-79b1-4fee-9209-24f78741e6f8",
+      "name": "Open-architected executive parallelism 6",
+      "status": "Active",
+      "createdDate": "2025-09-27T03:58:01",
+      "updatedDate": "2026-02-03T15:34:48",
+      "owner": "Susan Sanchez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7552.29,
+      "description": "Budget their car share."
+    },
+    {
+      "id": "d641d184-1769-4068-93a9-64207fe0f015",
+      "name": "Ameliorated coherent support 7",
+      "status": "Pending",
+      "createdDate": "2025-09-08T20:58:33",
+      "updatedDate": "2026-01-19T03:14:38",
+      "owner": "Shari Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7083.41,
+      "description": "May notice environmental firm customer rule citizen."
+    },
+    {
+      "id": "9d40f1fc-2c7c-4e2a-b0cc-c69ee6d54be7",
+      "name": "Organic uniform success 8",
+      "status": "Completed",
+      "createdDate": "2025-06-28T22:10:54",
+      "updatedDate": "2026-01-19T23:24:05",
+      "owner": "Kristin Sanchez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1067.45,
+      "description": "Now through event model."
+    },
+    {
+      "id": "ff155b7a-303f-4764-ba4a-bf99ecc46364",
+      "name": "Re-engineered national database 9",
+      "status": "Completed",
+      "createdDate": "2025-06-06T09:01:54",
+      "updatedDate": "2026-01-24T07:30:09",
+      "owner": "Melissa Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8530.46,
+      "description": "Back up game at for he art."
+    },
+    {
+      "id": "5ba0bb25-1678-41c7-ad69-9ed240db4f3a",
+      "name": "Seamless logistical flexibility 10",
+      "status": "Inactive",
+      "createdDate": "2025-07-11T09:27:04",
+      "updatedDate": "2026-01-28T12:04:59",
+      "owner": "Daniel Jenkins",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7829.84,
+      "description": "On tonight low food necessary."
+    },
+    {
+      "id": "144f1bc3-9543-4264-bfef-7ca0512141bb",
+      "name": "Streamlined directional instruction set 11",
+      "status": "Inactive",
+      "createdDate": "2025-06-18T03:46:24",
+      "updatedDate": "2026-02-17T10:56:40",
+      "owner": "Vickie Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4599.59,
+      "description": "Production your little career."
+    },
+    {
+      "id": "f8412c0e-e493-4343-b410-499bd2796917",
+      "name": "Grass-roots client-server secured line 12",
+      "status": "Inactive",
+      "createdDate": "2026-02-16T09:25:03",
+      "updatedDate": "2026-02-02T18:17:33",
+      "owner": "Thomas Lopez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7697.81,
+      "description": "Trial draw natural since Mr class."
+    },
+    {
+      "id": "abb6e704-12a5-4a8b-8fb2-6ae5f3a5ea90",
+      "name": "Team-oriented neutral intranet 13",
+      "status": "Active",
+      "createdDate": "2025-11-12T18:03:07",
+      "updatedDate": "2026-02-16T08:07:28",
+      "owner": "Lauren Hanson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8545.51,
+      "description": "Evidence grow wear police enjoy."
+    },
+    {
+      "id": "1771347c-0eb9-4dcb-aebd-9d5d09950df0",
+      "name": "Digitized encompassing attitude 14",
+      "status": "Completed",
+      "createdDate": "2025-11-18T21:45:23",
+      "updatedDate": "2026-02-12T13:10:38",
+      "owner": "Tricia Goodman",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7204.5,
+      "description": "Mention claim cup win bank."
+    },
+    {
+      "id": "885146d5-489e-4349-b555-bad65c22b428",
+      "name": "Integrated systematic product 15",
+      "status": "Inactive",
+      "createdDate": "2025-12-03T15:14:15",
+      "updatedDate": "2026-01-23T19:59:16",
+      "owner": "Michael Reyes",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 421.67,
+      "description": "Direction should born thought require air push blue."
+    },
+    {
+      "id": "32df51e2-7873-458c-9f91-77a74a18e73f",
+      "name": "Versatile holistic instruction set 16",
+      "status": "Pending",
+      "createdDate": "2025-12-28T06:50:34",
+      "updatedDate": "2026-02-07T11:11:43",
+      "owner": "Tammy Whitaker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4572.52,
+      "description": "Central skill successful majority story ball."
+    },
+    {
+      "id": "0d146dbe-1a20-42e1-be0b-4fb8a9b301ae",
+      "name": "Centralized intangible installation 17",
+      "status": "Pending",
+      "createdDate": "2025-07-07T00:33:47",
+      "updatedDate": "2026-01-23T01:43:00",
+      "owner": "Sarah Humphrey",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 695.65,
+      "description": "Network theory provide magazine what."
+    },
+    {
+      "id": "8dada6e3-66af-464a-a1a5-1893bda3bade",
+      "name": "Intuitive systematic approach 18",
+      "status": "Inactive",
+      "createdDate": "2025-08-19T08:33:23",
+      "updatedDate": "2026-02-08T09:34:36",
+      "owner": "Mark Mercer",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4616.94,
+      "description": "Traditional authority benefit chair first personal stage manager."
+    },
+    {
+      "id": "cb640330-5e78-4ee7-a6cb-8bc22ad6b1fc",
+      "name": "Secured modular Local Area Network 19",
+      "status": "Pending",
+      "createdDate": "2025-03-17T10:30:05",
+      "updatedDate": "2026-01-30T03:27:23",
+      "owner": "Samantha Aguilar",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6171.13,
+      "description": "Goal service happen just it phone responsibility rule."
+    },
+    {
+      "id": "92e41b8f-34e5-4dba-9439-89c7b5eedbb7",
+      "name": "Optimized fault-tolerant framework 20",
+      "status": "Inactive",
+      "createdDate": "2026-01-16T23:56:00",
+      "updatedDate": "2026-02-11T03:23:11",
+      "owner": "Alexander Mcclain",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4441.49,
+      "description": "Quickly raise lay energy interview there return."
+    },
+    {
+      "id": "e6fe1065-784c-4e41-b959-7c5718f35581",
+      "name": "Team-oriented responsive implementation 21",
+      "status": "Active",
+      "createdDate": "2025-02-25T15:06:17",
+      "updatedDate": "2026-01-19T09:28:11",
+      "owner": "Katherine Rodriguez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9116.06,
+      "description": "Action small daughter which task decide learn."
+    },
+    {
+      "id": "458a6496-640c-44e7-8613-ce83fb031336",
+      "name": "Intuitive intangible secured line 22",
+      "status": "Pending",
+      "createdDate": "2025-09-21T18:00:17",
+      "updatedDate": "2026-01-24T06:45:49",
+      "owner": "Kimberly Lynch",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5066.85,
+      "description": "Mouth develop simply particular right."
+    },
+    {
+      "id": "7d076411-a1d1-4e55-a837-6b6ea0c43fdf",
+      "name": "Decentralized 5thgeneration extranet 23",
+      "status": "Inactive",
+      "createdDate": "2025-09-30T17:08:01",
+      "updatedDate": "2026-01-19T04:08:27",
+      "owner": "Lauren Vega",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4123.86,
+      "description": "Discussion especially know lead."
+    },
+    {
+      "id": "e5471960-11de-4da0-900d-f03291218e2d",
+      "name": "Operative demand-driven open architecture 24",
+      "status": "Inactive",
+      "createdDate": "2026-01-31T11:06:23",
+      "updatedDate": "2026-01-21T22:16:18",
+      "owner": "David Sampson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4293.32,
+      "description": "Across small coach nation."
+    },
+    {
+      "id": "7cbd8e3a-799a-43fa-81a6-cbe8ca53acbf",
+      "name": "Virtual bi-directional pricing structure 25",
+      "status": "Completed",
+      "createdDate": "2025-06-15T01:03:24",
+      "updatedDate": "2026-01-19T18:49:44",
+      "owner": "Andrew Villegas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 504.76,
+      "description": "Under laugh environmental institution chance hold."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

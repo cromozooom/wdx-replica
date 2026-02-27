@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 414,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "89ff0e68-6699-4320-bd86-a9b22cdeab87",
+      "name": "Balanced actuating strategy 1",
+      "status": "Completed",
+      "createdDate": "2025-04-11T00:54:39",
+      "updatedDate": "2026-01-25T10:26:47",
+      "owner": "Jerome Everett",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8423.21,
+      "description": "Near behavior none remember deal."
+    },
+    {
+      "id": "aad6d824-855b-4ce3-a76d-0f9ae9139aab",
+      "name": "Cloned demand-driven framework 2",
+      "status": "Active",
+      "createdDate": "2025-05-02T21:40:58",
+      "updatedDate": "2026-01-31T08:03:36",
+      "owner": "Kevin Lara",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2469.51,
+      "description": "Fill week outside final avoid management."
+    },
+    {
+      "id": "5188c0c9-05c5-4cf7-b1d7-11ad0f3e3af6",
+      "name": "Universal transitional matrix 3",
+      "status": "Inactive",
+      "createdDate": "2025-05-07T17:05:53",
+      "updatedDate": "2026-01-23T16:31:41",
+      "owner": "Kara Dunlap",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5682.25,
+      "description": "Deal exactly tell assume international spring their."
+    },
+    {
+      "id": "f3b5a704-c110-41aa-8dc0-b98490151f98",
+      "name": "Cross-group motivating data-warehouse 4",
+      "status": "Inactive",
+      "createdDate": "2025-07-02T10:02:15",
+      "updatedDate": "2026-02-13T06:33:05",
+      "owner": "Andrea Randall PhD",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5239.98,
+      "description": "Together environmental child ahead paper."
+    },
+    {
+      "id": "c8a6efe8-724f-414b-9aea-dc8a8f68efa6",
+      "name": "Persevering exuding moratorium 5",
+      "status": "Active",
+      "createdDate": "2025-07-11T03:01:00",
+      "updatedDate": "2026-02-12T09:55:07",
+      "owner": "Luis Clark",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6975.45,
+      "description": "Explain front feeling direction forward current rather."
+    },
+    {
+      "id": "da3bbc84-8b4d-4b44-ba1e-8063273d2dd0",
+      "name": "Ergonomic solution-oriented alliance 6",
+      "status": "Inactive",
+      "createdDate": "2025-04-13T19:35:15",
+      "updatedDate": "2026-02-08T04:35:23",
+      "owner": "Megan Farrell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6589.12,
+      "description": "Business ago government election rate pick."
+    },
+    {
+      "id": "ee106369-0436-42fc-9023-b6c0ba86b19a",
+      "name": "Robust holistic initiative 7",
+      "status": "Inactive",
+      "createdDate": "2025-09-26T00:02:33",
+      "updatedDate": "2026-02-02T00:04:52",
+      "owner": "Justin Jackson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4506.13,
+      "description": "Sing card support artist hot son bring."
+    },
+    {
+      "id": "bbd7f0a2-24fa-4007-bb63-be97f863bdb3",
+      "name": "Function-based fresh-thinking workforce 8",
+      "status": "Completed",
+      "createdDate": "2025-05-01T04:22:38",
+      "updatedDate": "2026-02-12T06:47:10",
+      "owner": "Shannon Elliott",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4247.94,
+      "description": "Join hope ten between."
+    },
+    {
+      "id": "9324fac2-c692-4e20-b5c5-bb7541891792",
+      "name": "Horizontal high-level Graphic Interface 9",
+      "status": "Active",
+      "createdDate": "2025-06-15T04:29:19",
+      "updatedDate": "2026-01-25T10:25:55",
+      "owner": "Albert Dixon",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5329.33,
+      "description": "Trip final sound."
+    },
+    {
+      "id": "adc85cba-8ec6-48a3-ba52-8689d0305f67",
+      "name": "Public-key local info-mediaries 10",
+      "status": "Inactive",
+      "createdDate": "2025-02-25T06:31:11",
+      "updatedDate": "2026-02-14T14:49:49",
+      "owner": "Sarah Shelton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9435.44,
+      "description": "Give tend member from your outside state us."
+    },
+    {
+      "id": "da0032ec-0fa7-4716-b380-f814a4dfea86",
+      "name": "Digitized local functionalities 11",
+      "status": "Pending",
+      "createdDate": "2025-06-12T12:24:06",
+      "updatedDate": "2026-01-23T05:27:27",
+      "owner": "Heather Blevins",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2188.46,
+      "description": "Consider beyond difference able western change."
+    },
+    {
+      "id": "b927bba0-5973-4dee-a4ce-11aed12de076",
+      "name": "Upgradable logistical hardware 12",
+      "status": "Completed",
+      "createdDate": "2025-12-17T14:12:44",
+      "updatedDate": "2026-02-12T01:00:03",
+      "owner": "Amy Burns",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5695.28,
+      "description": "Present energy moment identify church."
+    },
+    {
+      "id": "161e5f6c-42c9-49aa-b11d-4ec9e038aed9",
+      "name": "Virtual mission-critical workforce 13",
+      "status": "Completed",
+      "createdDate": "2025-12-11T16:09:18",
+      "updatedDate": "2026-01-29T14:44:54",
+      "owner": "Jesse Monroe",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2152.92,
+      "description": "Accept reveal business stand chair interview."
+    },
+    {
+      "id": "64f711ff-9f68-43b3-99d8-01ac8ac7dfb2",
+      "name": "Down-sized asymmetric throughput 14",
+      "status": "Pending",
+      "createdDate": "2025-09-10T22:23:31",
+      "updatedDate": "2026-01-27T21:13:30",
+      "owner": "Joshua Randolph",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9333.27,
+      "description": "Beautiful few through property."
+    },
+    {
+      "id": "20cdde7e-e57f-4955-915f-034a6463f4a4",
+      "name": "Extended heuristic implementation 15",
+      "status": "Active",
+      "createdDate": "2025-12-26T12:29:37",
+      "updatedDate": "2026-02-03T06:11:51",
+      "owner": "Amy Trujillo",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9231.06,
+      "description": "Through professional whatever travel agent remain use."
+    },
+    {
+      "id": "6e3c82a3-f47e-4c90-9eac-5dddfb166bc2",
+      "name": "Networked mobile Local Area Network 16",
+      "status": "Pending",
+      "createdDate": "2025-08-19T14:53:17",
+      "updatedDate": "2026-01-19T16:44:37",
+      "owner": "Jennifer Jackson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 865.36,
+      "description": "Everybody however tree require."
+    },
+    {
+      "id": "887e2bfd-9d9d-432a-9cd5-1421d16dbb43",
+      "name": "Innovative homogeneous help-desk 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-22T13:35:05",
+      "updatedDate": "2026-01-30T11:26:45",
+      "owner": "Michelle Austin",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5346.83,
+      "description": "Rock young trade east look public billion."
+    },
+    {
+      "id": "ac7ee92b-a51e-49bc-b9c7-a022c52fffb8",
+      "name": "Networked asynchronous help-desk 18",
+      "status": "Active",
+      "createdDate": "2025-04-26T06:16:22",
+      "updatedDate": "2026-01-26T10:44:07",
+      "owner": "Kerri Petersen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4878.24,
+      "description": "Base boy case effect none around here."
+    },
+    {
+      "id": "25d26abf-84dc-4438-8fa1-7a2c173a6b02",
+      "name": "Horizontal context-sensitive capacity 19",
+      "status": "Completed",
+      "createdDate": "2025-07-28T17:00:16",
+      "updatedDate": "2026-02-03T10:31:55",
+      "owner": "Jason Gomez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9940.09,
+      "description": "Role career some order us sport rather network."
+    },
+    {
+      "id": "7e2128f1-000f-4b36-9a02-f56a19bc43d9",
+      "name": "Centralized impactful circuit 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-17T15:05:05",
+      "updatedDate": "2026-02-03T08:15:36",
+      "owner": "Donald Douglas",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7703.9,
+      "description": "With serious now without statement."
+    },
+    {
+      "id": "52754785-216f-4ca4-ba0f-9ee3ee85d819",
+      "name": "Synchronized regional intranet 21",
+      "status": "Completed",
+      "createdDate": "2025-02-21T23:23:00",
+      "updatedDate": "2026-02-16T14:23:08",
+      "owner": "Jacob Trujillo",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8844.79,
+      "description": "Almost shake place system forget ok minute despite."
+    },
+    {
+      "id": "275031a9-e636-4f2f-90d3-cb1934c892be",
+      "name": "Triple-buffered attitude-oriented access 22",
+      "status": "Completed",
+      "createdDate": "2025-12-09T17:05:11",
+      "updatedDate": "2026-01-20T23:30:23",
+      "owner": "Alexander Walker",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9902.75,
+      "description": "Ability heavy father unit."
+    },
+    {
+      "id": "85b0e48d-cc04-4b3f-8cb2-d21c05cfa76b",
+      "name": "Right-sized 4thgeneration concept 23",
+      "status": "Pending",
+      "createdDate": "2025-11-13T03:49:44",
+      "updatedDate": "2026-02-09T23:46:18",
+      "owner": "Kathryn Olson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2542.17,
+      "description": "Art rate develop talk tell role growth."
+    },
+    {
+      "id": "7a64788e-b76e-474e-9179-facb4c06e6da",
+      "name": "Balanced scalable algorithm 24",
+      "status": "Inactive",
+      "createdDate": "2025-05-03T23:28:51",
+      "updatedDate": "2026-02-17T00:53:07",
+      "owner": "Julie Cain",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7582.85,
+      "description": "Force black majority size another yet."
+    },
+    {
+      "id": "a1502110-9fc6-47d4-aa71-cb3e71551383",
+      "name": "Digitized dedicated firmware 25",
+      "status": "Inactive",
+      "createdDate": "2025-02-18T02:25:27",
+      "updatedDate": "2026-02-05T10:24:53",
+      "owner": "Renee Carlson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 259.67,
+      "description": "Pass development consider."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

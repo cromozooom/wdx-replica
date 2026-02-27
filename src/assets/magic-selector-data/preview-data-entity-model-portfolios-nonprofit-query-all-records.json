@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-modelportfolio",
+  "queryId": "query-all-records",
+  "totalCount": 238,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3485d30a-a535-45fb-bd8a-3ba3704d1495",
+      "name": "Business-focused actuating architecture 1",
+      "status": "Inactive",
+      "createdDate": "2025-03-13T20:59:29",
+      "updatedDate": "2026-01-30T22:27:35",
+      "owner": "Laura Kirby",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8245.84,
+      "description": "Human professional national thought."
+    },
+    {
+      "id": "9283f0bc-7766-4a01-a7e2-eda59d6573ce",
+      "name": "Total methodical infrastructure 2",
+      "status": "Completed",
+      "createdDate": "2025-10-02T22:47:24",
+      "updatedDate": "2026-02-17T01:57:20",
+      "owner": "Ryan Li",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9904.67,
+      "description": "Again store thank operation."
+    },
+    {
+      "id": "6d01e54f-ea38-40aa-b912-fb5401a191b0",
+      "name": "Public-key multi-state groupware 3",
+      "status": "Pending",
+      "createdDate": "2025-12-16T03:06:12",
+      "updatedDate": "2026-01-26T20:13:56",
+      "owner": "Donald White",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9875.06,
+      "description": "Fast pass contain wall politics."
+    },
+    {
+      "id": "8f9dbdd3-7422-4d82-a0c1-b5bb3e6551ce",
+      "name": "Compatible content-based application 4",
+      "status": "Active",
+      "createdDate": "2025-12-07T02:29:41",
+      "updatedDate": "2026-01-29T13:30:00",
+      "owner": "Angel Melton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9910.38,
+      "description": "Form arm through less blue."
+    },
+    {
+      "id": "aadd75f2-5a4b-4f37-9512-9b54e3d97052",
+      "name": "Profit-focused client-server support 5",
+      "status": "Pending",
+      "createdDate": "2026-01-23T06:23:57",
+      "updatedDate": "2026-02-05T18:11:17",
+      "owner": "Thomas Adams",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9428.35,
+      "description": "Least policy senior short."
+    },
+    {
+      "id": "588d429d-9317-446f-9f48-bd48d0d196dc",
+      "name": "Face-to-face mission-critical monitoring 6",
+      "status": "Completed",
+      "createdDate": "2025-10-31T09:34:12",
+      "updatedDate": "2026-02-13T17:27:13",
+      "owner": "Jessica Ward",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7883.75,
+      "description": "Building degree five sign."
+    },
+    {
+      "id": "74bff2bd-96a8-46a1-809a-0feaaec2a335",
+      "name": "Robust modular utilization 7",
+      "status": "Pending",
+      "createdDate": "2026-01-16T08:15:50",
+      "updatedDate": "2026-02-02T22:14:42",
+      "owner": "Spencer Davis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 221.28,
+      "description": "You turn military."
+    },
+    {
+      "id": "671af9d7-1726-4fe8-a653-553be38a841a",
+      "name": "Integrated well-modulated framework 8",
+      "status": "Completed",
+      "createdDate": "2025-11-30T01:54:39",
+      "updatedDate": "2026-02-01T05:21:32",
+      "owner": "Charles Martin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1293.25,
+      "description": "Behind cup meet main well."
+    },
+    {
+      "id": "426bc391-50a2-4d7d-8ca1-264815ca6845",
+      "name": "Profit-focused national time-frame 9",
+      "status": "Pending",
+      "createdDate": "2025-10-04T04:28:30",
+      "updatedDate": "2026-01-24T14:16:18",
+      "owner": "Jessica Daniel",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5386.78,
+      "description": "Investment sound no production."
+    },
+    {
+      "id": "05318389-7d40-4d23-ae14-f32beea5e581",
+      "name": "Reverse-engineered modular leverage 10",
+      "status": "Pending",
+      "createdDate": "2025-06-29T04:01:15",
+      "updatedDate": "2026-02-09T07:11:02",
+      "owner": "Amanda Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7995.92,
+      "description": "Different participant him per."
+    },
+    {
+      "id": "eef95d4d-5af8-4384-a464-4976b1776bac",
+      "name": "Realigned 3rdgeneration service-desk 11",
+      "status": "Pending",
+      "createdDate": "2025-12-24T09:18:06",
+      "updatedDate": "2026-01-30T05:02:39",
+      "owner": "James Phillips",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6255.87,
+      "description": "Speech process stand wonder event in."
+    },
+    {
+      "id": "91417810-0400-476e-9708-9cd6cb3a4248",
+      "name": "Face-to-face fresh-thinking methodology 12",
+      "status": "Inactive",
+      "createdDate": "2025-12-23T04:29:22",
+      "updatedDate": "2026-01-29T02:20:29",
+      "owner": "Veronica Hess",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2901.65,
+      "description": "Discover another sea forget miss."
+    },
+    {
+      "id": "75519e0c-dc54-40a4-a967-4da280b69ff5",
+      "name": "Progressive mobile array 13",
+      "status": "Inactive",
+      "createdDate": "2025-08-10T22:32:49",
+      "updatedDate": "2026-02-01T22:31:41",
+      "owner": "Samantha Brown",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6967.11,
+      "description": "Look campaign college hotel."
+    },
+    {
+      "id": "301c1965-420e-4773-9c89-c8377e1cce19",
+      "name": "Cross-platform systemic protocol 14",
+      "status": "Completed",
+      "createdDate": "2026-02-05T10:26:01",
+      "updatedDate": "2026-02-11T03:11:19",
+      "owner": "Rachel Bowen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9975.79,
+      "description": "Add even success item hour throw health."
+    },
+    {
+      "id": "372c3861-533c-478d-9b4c-1b65ddba8d6f",
+      "name": "Managed logistical moratorium 15",
+      "status": "Pending",
+      "createdDate": "2025-09-01T03:56:54",
+      "updatedDate": "2026-02-16T23:51:33",
+      "owner": "Ronald Robbins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4799.59,
+      "description": "Look her order low."
+    },
+    {
+      "id": "c1246633-564c-4a11-85aa-f36bf2b0e686",
+      "name": "Customer-focused cohesive solution 16",
+      "status": "Pending",
+      "createdDate": "2025-12-04T14:56:00",
+      "updatedDate": "2026-02-01T08:16:51",
+      "owner": "Michael Mills",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6687.67,
+      "description": "Whose everybody industry strategy level."
+    },
+    {
+      "id": "6ae75c21-336e-486f-8380-d172818109f4",
+      "name": "Multi-channeled mission-critical concept 17",
+      "status": "Active",
+      "createdDate": "2025-07-02T00:11:52",
+      "updatedDate": "2026-02-09T19:04:49",
+      "owner": "Leslie Campbell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9241.15,
+      "description": "Dog no include theory forward important protect."
+    },
+    {
+      "id": "f8967954-5cda-4aaf-9f14-d0dd0b86ffb9",
+      "name": "Pre-emptive context-sensitive challenge 18",
+      "status": "Inactive",
+      "createdDate": "2025-09-27T08:01:41",
+      "updatedDate": "2026-01-23T09:42:50",
+      "owner": "Amanda Frey",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7337.63,
+      "description": "White drive wall morning daughter on."
+    },
+    {
+      "id": "b6551abc-a12a-4293-99f3-5c99b07c9b2e",
+      "name": "Proactive user-facing challenge 19",
+      "status": "Completed",
+      "createdDate": "2026-02-09T20:51:07",
+      "updatedDate": "2026-01-25T20:16:48",
+      "owner": "Steve Fox MD",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9558.17,
+      "description": "Gas clear note now medical."
+    },
+    {
+      "id": "9f4808a7-d49a-493e-82f4-cd9b81e23093",
+      "name": "Grass-roots methodical analyzer 20",
+      "status": "Active",
+      "createdDate": "2025-12-04T18:29:13",
+      "updatedDate": "2026-02-14T21:36:50",
+      "owner": "Mr. John Becker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3872.08,
+      "description": "Network table discover seek."
+    },
+    {
+      "id": "4a1a9151-6719-421f-ab7e-2e64588fa69d",
+      "name": "Sharable interactive synergy 21",
+      "status": "Pending",
+      "createdDate": "2025-11-15T01:52:08",
+      "updatedDate": "2026-02-05T22:42:51",
+      "owner": "Margaret Owens",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3388.23,
+      "description": "See foreign popular laugh church sell camera."
+    },
+    {
+      "id": "25cccdaa-af86-456d-81ff-f3c0aabb25a4",
+      "name": "Distributed upward-trending focus group 22",
+      "status": "Pending",
+      "createdDate": "2025-12-18T09:37:57",
+      "updatedDate": "2026-02-15T13:04:40",
+      "owner": "Megan Kaiser",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7407.5,
+      "description": "Office everyone discussion simply board for."
+    },
+    {
+      "id": "888c0d8e-f57e-49d9-977f-b1b18dec89e3",
+      "name": "Configurable 6thgeneration throughput 23",
+      "status": "Completed",
+      "createdDate": "2026-02-01T16:31:08",
+      "updatedDate": "2026-02-11T09:24:43",
+      "owner": "Chloe Mcpherson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9625.56,
+      "description": "Than state pull concern out clear."
+    },
+    {
+      "id": "d8ddfc8f-e46e-46a2-858c-c708c0dca683",
+      "name": "Profound optimizing throughput 24",
+      "status": "Completed",
+      "createdDate": "2025-11-17T01:07:31",
+      "updatedDate": "2026-02-04T03:47:40",
+      "owner": "Donna Walsh",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1646.43,
+      "description": "Manager news side again develop owner."
+    },
+    {
+      "id": "459adafd-e798-47e0-b1c2-0b857d8e28cf",
+      "name": "Proactive system-worthy projection 25",
+      "status": "Pending",
+      "createdDate": "2025-09-05T22:16:58",
+      "updatedDate": "2026-02-04T11:52:53",
+      "owner": "Jennifer Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2456.05,
+      "description": "Evidence represent pretty short necessary painting."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 712,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "2cd30121-a5d7-4fc1-b22d-15ef555886f6",
+      "name": "Organized analyzing projection 1",
+      "status": "Completed",
+      "createdDate": "2025-10-17T14:55:21",
+      "updatedDate": "2026-01-23T22:51:20",
+      "owner": "William Morales",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8175.93,
+      "description": "Miss whose miss."
+    },
+    {
+      "id": "ad6de6a2-dbab-48f7-a93d-96f8234a6e6f",
+      "name": "Compatible web-enabled time-frame 2",
+      "status": "Inactive",
+      "createdDate": "2025-12-05T07:03:41",
+      "updatedDate": "2026-01-25T11:13:16",
+      "owner": "Anthony Abbott",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1476.13,
+      "description": "Bank law recognize floor."
+    },
+    {
+      "id": "9a548667-aa82-41a1-8de7-13b009eb8730",
+      "name": "Adaptive zero-defect process improvement 3",
+      "status": "Pending",
+      "createdDate": "2025-03-31T01:27:14",
+      "updatedDate": "2026-01-30T15:27:15",
+      "owner": "Andrea Hancock",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 696.61,
+      "description": "Face three physical news staff record soldier challenge."
+    },
+    {
+      "id": "d2f559dd-8645-44e7-a3fa-50fa090676ec",
+      "name": "De-engineered directional extranet 4",
+      "status": "Pending",
+      "createdDate": "2025-02-19T21:41:54",
+      "updatedDate": "2026-02-15T08:54:24",
+      "owner": "Lisa Riley",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4531.88,
+      "description": "Husband light show safe among inside."
+    },
+    {
+      "id": "c1b5af4e-c082-4c99-889f-0bd18c96ea5c",
+      "name": "Reactive tangible concept 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T00:07:01",
+      "updatedDate": "2026-02-03T07:51:07",
+      "owner": "Regina Pitts",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3538.69,
+      "description": "Game interesting watch."
+    },
+    {
+      "id": "15da4377-f3b9-4684-85cb-675887e1fab3",
+      "name": "Decentralized multimedia moratorium 6",
+      "status": "Active",
+      "createdDate": "2025-11-30T02:05:53",
+      "updatedDate": "2026-01-22T10:06:45",
+      "owner": "Angela Anderson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7541.7,
+      "description": "Keep full walk particularly anyone democratic remain."
+    },
+    {
+      "id": "8f22653e-6e7e-44de-83ce-4648bae32707",
+      "name": "Multi-channeled non-volatile algorithm 7",
+      "status": "Pending",
+      "createdDate": "2026-01-09T09:10:13",
+      "updatedDate": "2026-01-28T07:14:12",
+      "owner": "Mrs. Tracy Henderson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 803.92,
+      "description": "Interest strategy me expect."
+    },
+    {
+      "id": "c3440b10-6e74-4985-826a-6b6f62c5bf6b",
+      "name": "Compatible secondary parallelism 8",
+      "status": "Inactive",
+      "createdDate": "2025-11-06T08:07:06",
+      "updatedDate": "2026-02-06T13:26:05",
+      "owner": "Christopher Cortez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2871.85,
+      "description": "No pull garden food learn thus instead."
+    },
+    {
+      "id": "fc9eb30a-b4ad-45bc-838f-f6cc4a45bb4d",
+      "name": "Integrated global contingency 9",
+      "status": "Active",
+      "createdDate": "2025-07-20T16:04:37",
+      "updatedDate": "2026-01-25T20:01:49",
+      "owner": "Alejandro Schmidt",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2132.72,
+      "description": "Trip late performance music born young use."
+    },
+    {
+      "id": "41247afb-70ab-4c96-bdaf-a6e76e405558",
+      "name": "Persevering mobile projection 10",
+      "status": "Inactive",
+      "createdDate": "2025-04-08T10:38:10",
+      "updatedDate": "2026-01-30T12:06:33",
+      "owner": "Danielle Young",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1565.9,
+      "description": "Act resource method."
+    },
+    {
+      "id": "1401c3b9-8c20-42d8-8d85-dd746b14348d",
+      "name": "Automated bandwidth-monitored portal 11",
+      "status": "Completed",
+      "createdDate": "2025-06-14T01:21:54",
+      "updatedDate": "2026-01-19T21:32:13",
+      "owner": "Joshua Ramsey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9522.72,
+      "description": "Marriage level value reason around keep authority."
+    },
+    {
+      "id": "fa4938e7-103a-4817-b27b-e1621e195509",
+      "name": "User-friendly responsive service-desk 12",
+      "status": "Pending",
+      "createdDate": "2025-02-25T02:32:53",
+      "updatedDate": "2026-02-01T08:18:46",
+      "owner": "Rodney Leon",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8226.75,
+      "description": "Final light chair stock various sport image."
+    },
+    {
+      "id": "e24ba955-c89d-401f-9100-e6a4da0a15d7",
+      "name": "Enterprise-wide systematic utilization 13",
+      "status": "Completed",
+      "createdDate": "2025-11-12T23:41:49",
+      "updatedDate": "2026-01-30T21:33:26",
+      "owner": "Mary Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5024.65,
+      "description": "Not space together task not onto rather."
+    },
+    {
+      "id": "290826fd-88ec-4176-8f37-61dc9d922f4b",
+      "name": "User-centric non-volatile moratorium 14",
+      "status": "Completed",
+      "createdDate": "2025-09-02T09:11:21",
+      "updatedDate": "2026-01-25T13:40:22",
+      "owner": "Dr. Randall Mcconnell",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5445.95,
+      "description": "Want describe hit usually believe occur."
+    },
+    {
+      "id": "acf1c9a4-14e8-4b18-bd31-f1dfa1c3dc34",
+      "name": "Re-engineered non-volatile framework 15",
+      "status": "Pending",
+      "createdDate": "2025-08-12T16:30:12",
+      "updatedDate": "2026-02-03T12:21:05",
+      "owner": "Joel Mahoney",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 951.49,
+      "description": "Reflect put whose buy."
+    },
+    {
+      "id": "5beb1f6e-6987-4f6a-8c53-2e697f1e99ac",
+      "name": "Assimilated leadingedge encryption 16",
+      "status": "Active",
+      "createdDate": "2025-08-31T17:47:51",
+      "updatedDate": "2026-01-30T06:02:42",
+      "owner": "Christopher Duran",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9958.75,
+      "description": "Morning best big watch contain light."
+    },
+    {
+      "id": "d6b73652-029d-4840-ae83-efeebbd054c0",
+      "name": "Fully-configurable tertiary project 17",
+      "status": "Completed",
+      "createdDate": "2025-06-26T16:15:14",
+      "updatedDate": "2026-02-11T03:22:12",
+      "owner": "Alex Lee",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5343.51,
+      "description": "Magazine reason similar price create."
+    },
+    {
+      "id": "fc22e2b6-5ca0-4500-a5b0-7ece38d59a7d",
+      "name": "Integrated heuristic matrices 18",
+      "status": "Pending",
+      "createdDate": "2025-04-22T06:56:32",
+      "updatedDate": "2026-02-11T16:07:45",
+      "owner": "David Garrett",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5410.73,
+      "description": "Science much clearly different door within."
+    },
+    {
+      "id": "acfe361a-162f-481e-91bd-031f4bd960e8",
+      "name": "Adaptive next generation circuit 19",
+      "status": "Pending",
+      "createdDate": "2025-07-22T22:30:56",
+      "updatedDate": "2026-02-06T02:35:51",
+      "owner": "Jack Olsen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6841.89,
+      "description": "Fly conference analysis population under which relate."
+    },
+    {
+      "id": "be1c3acd-4cf5-43e2-a52f-4e011b2bd46a",
+      "name": "Synchronized optimizing emulation 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-23T13:13:36",
+      "updatedDate": "2026-02-08T12:19:05",
+      "owner": "John Flores",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7835.82,
+      "description": "Black perhaps gun."
+    },
+    {
+      "id": "da3574af-cdfd-4127-8ffd-57b959f0791a",
+      "name": "Cross-platform leadingedge neural-net 21",
+      "status": "Inactive",
+      "createdDate": "2025-11-25T03:46:43",
+      "updatedDate": "2026-01-30T23:20:53",
+      "owner": "Laura Sanchez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8652.95,
+      "description": "Understand night character carry why price."
+    },
+    {
+      "id": "52b73f04-6933-4a75-8d55-abda7152694d",
+      "name": "Re-contextualized executive software 22",
+      "status": "Inactive",
+      "createdDate": "2025-06-05T04:25:24",
+      "updatedDate": "2026-02-17T00:53:23",
+      "owner": "Heather Rivera",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6549.18,
+      "description": "College me possible effort these against later."
+    },
+    {
+      "id": "7fe692d9-6e99-4a2c-8274-21bb352a3c8c",
+      "name": "Integrated fault-tolerant Internet solution 23",
+      "status": "Pending",
+      "createdDate": "2025-09-08T16:48:05",
+      "updatedDate": "2026-01-27T00:04:25",
+      "owner": "William Marsh Jr.",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2460.38,
+      "description": "Environment free hair house."
+    },
+    {
+      "id": "709a4c18-7c7c-42b6-bbbe-4198c21de95c",
+      "name": "Switchable zero tolerance infrastructure 24",
+      "status": "Active",
+      "createdDate": "2025-11-30T08:05:40",
+      "updatedDate": "2026-02-12T07:46:14",
+      "owner": "Paul Choi",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3961.04,
+      "description": "Collection tough scene spend blue data cup side."
+    },
+    {
+      "id": "ed82d46d-ceba-435a-9f64-676b672206d1",
+      "name": "Team-oriented intangible database 25",
+      "status": "Pending",
+      "createdDate": "2025-11-18T15:10:45",
+      "updatedDate": "2026-02-08T16:38:57",
+      "owner": "Donna Hansen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9423.1,
+      "description": "Onto effort senior present."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

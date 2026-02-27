@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1213,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "7d90692b-98c7-467b-9856-a0313952b207",
+      "name": "Multi-lateral holistic contingency 1",
+      "status": "Pending",
+      "createdDate": "2026-01-22T23:23:29",
+      "updatedDate": "2026-02-07T02:03:13",
+      "owner": "Linda Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3037.38,
+      "description": "Enjoy save between old soldier last."
+    },
+    {
+      "id": "dc718eb1-b906-46b9-8953-3ba1834ddd9c",
+      "name": "Managed stable matrices 2",
+      "status": "Pending",
+      "createdDate": "2026-02-14T15:27:44",
+      "updatedDate": "2026-01-25T14:35:37",
+      "owner": "Mrs. Bailey Wood MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2718.55,
+      "description": "Network fine stand behind sister former light."
+    },
+    {
+      "id": "49488f2d-4cc7-44f2-b651-9a56675cb2b3",
+      "name": "Optimized 24hour portal 3",
+      "status": "Pending",
+      "createdDate": "2025-12-24T14:54:23",
+      "updatedDate": "2026-02-06T12:06:23",
+      "owner": "Erin Simmons",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9174.46,
+      "description": "Area family will."
+    },
+    {
+      "id": "fd2cd77b-c7cb-455b-bfd0-dc0ce30ee1ee",
+      "name": "Public-key clear-thinking model 4",
+      "status": "Inactive",
+      "createdDate": "2025-06-12T06:17:04",
+      "updatedDate": "2026-01-23T17:59:37",
+      "owner": "Timothy Robinson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8061.54,
+      "description": "Age real service page."
+    },
+    {
+      "id": "1ebd0830-fe55-4048-81ca-ba9af2e17747",
+      "name": "Persistent web-enabled service-desk 5",
+      "status": "Completed",
+      "createdDate": "2025-12-26T22:19:48",
+      "updatedDate": "2026-02-11T13:53:40",
+      "owner": "Melissa Campbell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4852.25,
+      "description": "Card table professor what."
+    },
+    {
+      "id": "836cd1ff-4f97-43bd-a984-20a65db7b3d1",
+      "name": "Managed even-keeled functionalities 6",
+      "status": "Active",
+      "createdDate": "2025-11-13T02:35:16",
+      "updatedDate": "2026-01-23T12:40:35",
+      "owner": "Stephanie Higgins",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2545.29,
+      "description": "Around Congress even adult after there chance."
+    },
+    {
+      "id": "474f5ed2-01a3-40fa-b48d-023eeb0d1d8e",
+      "name": "Automated fault-tolerant contingency 7",
+      "status": "Active",
+      "createdDate": "2025-03-11T14:43:42",
+      "updatedDate": "2026-02-02T02:05:18",
+      "owner": "Joseph Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5948.1,
+      "description": "Take position matter else effort force magazine even."
+    },
+    {
+      "id": "39ed7848-25de-45f0-9bbd-b2a37f6d73e2",
+      "name": "Mandatory explicit attitude 8",
+      "status": "Inactive",
+      "createdDate": "2026-02-06T03:00:50",
+      "updatedDate": "2026-01-19T02:07:48",
+      "owner": "Troy Snyder",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7971.14,
+      "description": "Million international force act short."
+    },
+    {
+      "id": "6f13612c-4ae5-4090-b8b1-c81b3f52b8ee",
+      "name": "Reactive modular hierarchy 9",
+      "status": "Active",
+      "createdDate": "2025-06-06T18:48:54",
+      "updatedDate": "2026-02-14T18:02:55",
+      "owner": "Stacy Newman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1024.77,
+      "description": "Expect shake moment treatment itself seek leave."
+    },
+    {
+      "id": "12d2ee74-3f40-4409-905e-fa7d0f83a93c",
+      "name": "Face-to-face asymmetric core 10",
+      "status": "Completed",
+      "createdDate": "2025-05-10T01:42:53",
+      "updatedDate": "2026-02-06T10:46:43",
+      "owner": "Tammy Peck",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 932.69,
+      "description": "How develop remember house number task their."
+    },
+    {
+      "id": "1dd52d25-4805-4e32-ae01-ac78e52a05e2",
+      "name": "Operative hybrid Local Area Network 11",
+      "status": "Active",
+      "createdDate": "2025-10-18T19:58:57",
+      "updatedDate": "2026-01-28T09:33:30",
+      "owner": "Renee Allen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4420.75,
+      "description": "My church politics morning skin necessary ago."
+    },
+    {
+      "id": "100a3148-ff94-4818-b3b2-98a7d110c007",
+      "name": "Programmable web-enabled infrastructure 12",
+      "status": "Active",
+      "createdDate": "2025-08-08T11:04:08",
+      "updatedDate": "2026-01-27T18:51:34",
+      "owner": "Alyssa Zhang",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2774.84,
+      "description": "President feeling full letter whom."
+    },
+    {
+      "id": "3989af9f-fade-4870-bd23-642a2365fb5a",
+      "name": "Open-source didactic collaboration 13",
+      "status": "Active",
+      "createdDate": "2025-09-25T06:01:35",
+      "updatedDate": "2026-02-09T13:19:34",
+      "owner": "Christian Gould",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9334.49,
+      "description": "Fund left school."
+    },
+    {
+      "id": "b7a0fc91-d173-405a-a0a3-d331643e1f76",
+      "name": "Pre-emptive leadingedge software 14",
+      "status": "Completed",
+      "createdDate": "2025-07-07T21:54:01",
+      "updatedDate": "2026-02-05T18:36:02",
+      "owner": "Melissa Green",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4874.97,
+      "description": "Soon sometimes system summer lead pressure thing develop."
+    },
+    {
+      "id": "b0f177ed-850e-46e1-9c0d-7136895070b9",
+      "name": "Centralized web-enabled portal 15",
+      "status": "Inactive",
+      "createdDate": "2025-06-22T07:08:51",
+      "updatedDate": "2026-02-09T20:36:13",
+      "owner": "Andrew Kramer",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4225.59,
+      "description": "Many adult under arm significant far than glass."
+    },
+    {
+      "id": "d2c690a1-3f6e-4f53-aa33-c815209b4846",
+      "name": "Team-oriented motivating workforce 16",
+      "status": "Completed",
+      "createdDate": "2025-09-03T08:48:38",
+      "updatedDate": "2026-01-30T08:33:08",
+      "owner": "Robin Gonzales DDS",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8267.57,
+      "description": "Early morning where view operation."
+    },
+    {
+      "id": "84e9bf4b-75f8-4cd8-94bf-7eaf5bc63e60",
+      "name": "User-centric full-range service-desk 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-18T03:13:07",
+      "updatedDate": "2026-02-14T02:54:06",
+      "owner": "Christopher Ross",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4355.64,
+      "description": "Phone own majority difficult south after."
+    },
+    {
+      "id": "6e6985cc-69e1-459a-8554-068b630ef534",
+      "name": "Innovative intermediate portal 18",
+      "status": "Inactive",
+      "createdDate": "2025-12-06T08:01:12",
+      "updatedDate": "2026-02-14T14:09:34",
+      "owner": "John Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1780.8,
+      "description": "Science none behavior bank fast."
+    },
+    {
+      "id": "4b4fa997-86d3-40e2-b902-c2421b587091",
+      "name": "Optional object-oriented info-mediaries 19",
+      "status": "Pending",
+      "createdDate": "2025-11-16T17:02:10",
+      "updatedDate": "2026-02-08T14:03:01",
+      "owner": "Johnny Perez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9829.75,
+      "description": "State miss pretty try through."
+    },
+    {
+      "id": "bd3a3a75-9ade-4b08-9867-e2494263d277",
+      "name": "Focused maximized support 20",
+      "status": "Pending",
+      "createdDate": "2025-03-26T12:30:12",
+      "updatedDate": "2026-02-07T01:01:03",
+      "owner": "Todd Walker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5831.99,
+      "description": "Bar play visit activity behavior ability recently know."
+    },
+    {
+      "id": "df6d835c-eddc-409b-bb81-76644221b1cd",
+      "name": "Customizable national artificial intelligence 21",
+      "status": "Inactive",
+      "createdDate": "2026-02-06T13:33:36",
+      "updatedDate": "2026-01-20T13:18:18",
+      "owner": "Benjamin English",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4458.17,
+      "description": "Program reflect job hope by."
+    },
+    {
+      "id": "bd8e056a-6561-4062-833a-3388e6d6a6bb",
+      "name": "Reduced zero tolerance capability 22",
+      "status": "Completed",
+      "createdDate": "2025-03-26T01:16:09",
+      "updatedDate": "2026-02-16T15:33:50",
+      "owner": "Monica Jefferson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6619.06,
+      "description": "Paper key those ok travel."
+    },
+    {
+      "id": "8d919ac5-83b0-4433-95af-6eb4fbc52be2",
+      "name": "Digitized real-time initiative 23",
+      "status": "Pending",
+      "createdDate": "2025-07-25T07:31:04",
+      "updatedDate": "2026-02-01T08:57:22",
+      "owner": "Alyssa Stanley",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6282.8,
+      "description": "Price turn ability central forget."
+    },
+    {
+      "id": "bb6ea6c4-1a08-4e84-b777-1d459c08dd90",
+      "name": "Stand-alone eco-centric framework 24",
+      "status": "Completed",
+      "createdDate": "2025-03-08T13:24:05",
+      "updatedDate": "2026-02-01T21:09:41",
+      "owner": "Daniel Nelson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1169.4,
+      "description": "Up four or art."
+    },
+    {
+      "id": "b54b6f8a-20a8-49d4-9731-d49cbd9a0f48",
+      "name": "Multi-channeled human-resource software 25",
+      "status": "Inactive",
+      "createdDate": "2025-11-23T10:56:55",
+      "updatedDate": "2026-02-03T18:04:20",
+      "owner": "Thomas Smith",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7784.77,
+      "description": "Election community quite money figure help executive."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 491,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "8995c10c-89da-4e40-9413-15a470f2801e",
+      "name": "Business-focused even-keeled system engine 1",
+      "status": "Completed",
+      "createdDate": "2025-11-26T06:46:24",
+      "updatedDate": "2026-02-04T05:14:08",
+      "owner": "Erin Jones",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5504.57,
+      "description": "Mouth nothing himself employee language effort policy network."
+    },
+    {
+      "id": "95919d27-65b1-4044-9db9-c8858da40314",
+      "name": "Cloned demand-driven hierarchy 2",
+      "status": "Active",
+      "createdDate": "2025-11-20T19:09:31",
+      "updatedDate": "2026-01-30T20:16:44",
+      "owner": "Kendra Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9702.16,
+      "description": "Imagine technology writer value idea sing what."
+    },
+    {
+      "id": "b01a392d-e379-47bf-93e8-2e1d06ce5cad",
+      "name": "Customer-focused tangible superstructure 3",
+      "status": "Pending",
+      "createdDate": "2026-02-07T22:07:52",
+      "updatedDate": "2026-01-29T21:31:04",
+      "owner": "Dylan Hill",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8751.87,
+      "description": "Garden continue position southern south short."
+    },
+    {
+      "id": "e7f332e8-5a77-49bc-8386-81a8a4e5c4aa",
+      "name": "Robust zero-defect attitude 4",
+      "status": "Inactive",
+      "createdDate": "2025-09-13T19:49:09",
+      "updatedDate": "2026-01-21T00:25:19",
+      "owner": "Julia Rogers",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 160.62,
+      "description": "Organization various high easy street product final."
+    },
+    {
+      "id": "ecafe6f1-e4c0-46c7-8976-152e5bcc8180",
+      "name": "Extended 3rdgeneration monitoring 5",
+      "status": "Completed",
+      "createdDate": "2025-03-24T00:14:13",
+      "updatedDate": "2026-02-09T05:43:10",
+      "owner": "Alyssa Wilkinson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1134.74,
+      "description": "Measure become movement with."
+    },
+    {
+      "id": "f8981e7f-ac01-463f-81bc-db8123d8d49f",
+      "name": "Automated motivating array 6",
+      "status": "Pending",
+      "createdDate": "2025-05-19T11:36:23",
+      "updatedDate": "2026-01-18T11:43:36",
+      "owner": "Alexander Moore",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5445.55,
+      "description": "Cover professor together wind each."
+    },
+    {
+      "id": "133d92e3-1ad6-471e-a90b-53252758bccc",
+      "name": "Customer-focused client-server utilization 7",
+      "status": "Active",
+      "createdDate": "2025-06-21T05:18:15",
+      "updatedDate": "2026-02-09T04:00:29",
+      "owner": "Shawna Cook",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 232.67,
+      "description": "Actually fish political religious."
+    },
+    {
+      "id": "26557fe9-11db-47c6-b00b-01ee7996b940",
+      "name": "Front-line client-server portal 8",
+      "status": "Completed",
+      "createdDate": "2025-05-17T02:51:40",
+      "updatedDate": "2026-02-12T06:08:30",
+      "owner": "Robert Hernandez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2370.79,
+      "description": "Magazine wife make sport event low."
+    },
+    {
+      "id": "ebff0866-88b0-4f2a-bc07-d8b3887ad2b3",
+      "name": "Re-contextualized exuding contingency 9",
+      "status": "Completed",
+      "createdDate": "2025-10-02T08:26:04",
+      "updatedDate": "2026-02-04T12:17:14",
+      "owner": "Dana Gonzalez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8762.03,
+      "description": "Pull visit small just ground."
+    },
+    {
+      "id": "39337691-e8ce-4c40-bd73-9de629924979",
+      "name": "Down-sized well-modulated service-desk 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-16T10:58:42",
+      "updatedDate": "2026-01-27T12:21:27",
+      "owner": "Noah Thompson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2560.68,
+      "description": "Beautiful candidate miss bit exactly suffer picture."
+    },
+    {
+      "id": "f7616ab9-712e-450b-9c47-e145a449c547",
+      "name": "Integrated explicit complexity 11",
+      "status": "Active",
+      "createdDate": "2025-04-23T14:09:29",
+      "updatedDate": "2026-01-24T09:56:50",
+      "owner": "Veronica Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3320.82,
+      "description": "Herself receive feeling until party deep none series."
+    },
+    {
+      "id": "b35db71f-d4cc-45d9-a4a8-9b523071dd25",
+      "name": "Progressive bandwidth-monitored pricing structure 12",
+      "status": "Inactive",
+      "createdDate": "2025-06-27T17:03:35",
+      "updatedDate": "2026-02-02T19:32:00",
+      "owner": "Ryan Lopez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3325.98,
+      "description": "Voice space human kid no."
+    },
+    {
+      "id": "fbd43f6d-db8e-4904-8506-4ab03f64f0cd",
+      "name": "Vision-oriented real-time ability 13",
+      "status": "Active",
+      "createdDate": "2025-05-31T22:03:48",
+      "updatedDate": "2026-02-12T07:47:04",
+      "owner": "Steven Gomez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7240.64,
+      "description": "Suddenly Mrs response key."
+    },
+    {
+      "id": "67c430c8-93e9-4dd6-a740-b9b1a8ab17e7",
+      "name": "Reverse-engineered leadingedge challenge 14",
+      "status": "Pending",
+      "createdDate": "2025-03-03T03:10:22",
+      "updatedDate": "2026-02-05T01:39:13",
+      "owner": "Charles Montgomery",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9666.9,
+      "description": "Return policy important some consumer leave life."
+    },
+    {
+      "id": "63bed83b-627d-4f56-b871-95bfa690061f",
+      "name": "Reverse-engineered static orchestration 15",
+      "status": "Pending",
+      "createdDate": "2025-07-26T09:21:13",
+      "updatedDate": "2026-01-30T00:05:33",
+      "owner": "Lisa Morgan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4604.46,
+      "description": "Field this similar form suggest successful."
+    },
+    {
+      "id": "07abe926-69d3-4b29-b6f3-33bd205a7212",
+      "name": "Reduced reciprocal flexibility 16",
+      "status": "Active",
+      "createdDate": "2026-02-06T01:13:08",
+      "updatedDate": "2026-02-10T08:28:30",
+      "owner": "Lawrence Hall",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1836.02,
+      "description": "Other when network after house section hand."
+    },
+    {
+      "id": "3267fb89-49f7-421e-aeed-7d230ced571b",
+      "name": "Cross-platform object-oriented policy 17",
+      "status": "Active",
+      "createdDate": "2025-10-26T20:50:24",
+      "updatedDate": "2026-02-09T11:26:54",
+      "owner": "Jill Harding",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2368.13,
+      "description": "Line quite imagine its attorney final door above."
+    },
+    {
+      "id": "9eb35e59-a82a-4284-9f10-baead6852da6",
+      "name": "De-engineered 3rdgeneration data-warehouse 18",
+      "status": "Inactive",
+      "createdDate": "2025-11-09T07:26:39",
+      "updatedDate": "2026-02-09T15:38:09",
+      "owner": "Ms. Lisa Williams",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1946.25,
+      "description": "Campaign Democrat dinner recognize why."
+    },
+    {
+      "id": "f3a9a21e-ea75-4321-9dce-10d967258dec",
+      "name": "Phased empowering approach 19",
+      "status": "Pending",
+      "createdDate": "2025-10-25T04:55:17",
+      "updatedDate": "2026-02-02T00:11:11",
+      "owner": "Grant Campos",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7223.4,
+      "description": "Put picture east off local president group."
+    },
+    {
+      "id": "999f9f84-a223-4e02-a582-e7f03b627d00",
+      "name": "Polarized modular protocol 20",
+      "status": "Inactive",
+      "createdDate": "2025-11-30T05:32:45",
+      "updatedDate": "2026-02-15T01:21:58",
+      "owner": "Aaron Cox",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7719.35,
+      "description": "Level clearly just allow fish create size."
+    },
+    {
+      "id": "32658c53-1906-4069-81db-e0e820c24548",
+      "name": "Profound encompassing approach 21",
+      "status": "Completed",
+      "createdDate": "2025-07-20T05:05:59",
+      "updatedDate": "2026-02-03T01:30:25",
+      "owner": "Marisa Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4157.8,
+      "description": "Professional office point learn."
+    },
+    {
+      "id": "307d7160-e11c-412e-b743-0599d54a2dea",
+      "name": "Universal homogeneous strategy 22",
+      "status": "Active",
+      "createdDate": "2025-07-29T05:01:33",
+      "updatedDate": "2026-01-23T08:21:10",
+      "owner": "Lynn Le",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7581.14,
+      "description": "Site race southern fire."
+    },
+    {
+      "id": "f59712a8-a5e4-41e2-b222-6b7a8c48b8d6",
+      "name": "Diverse real-time service-desk 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-12T10:16:43",
+      "updatedDate": "2026-01-27T13:33:05",
+      "owner": "Catherine Griffith",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6537.85,
+      "description": "Perhaps who bad."
+    },
+    {
+      "id": "51df8dd3-e36f-4347-b842-1990146dda44",
+      "name": "Enhanced intermediate support 24",
+      "status": "Active",
+      "createdDate": "2026-02-05T03:42:01",
+      "updatedDate": "2026-02-12T03:06:59",
+      "owner": "Kathleen Weber",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 433.48,
+      "description": "Easy size teach method."
+    },
+    {
+      "id": "d6317508-6a0b-4cc1-9383-6317b18f514d",
+      "name": "Networked reciprocal Internet solution 25",
+      "status": "Pending",
+      "createdDate": "2025-04-27T01:21:56",
+      "updatedDate": "2026-01-29T18:11:22",
+      "owner": "Samantha Gonzalez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6071.04,
+      "description": "Affect loss recognize animal reflect."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-all-records",
+  "totalCount": 297,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "56fca2c2-9a02-4015-95b3-fed908c905c3",
+      "name": "Innovative scalable hub 1",
+      "status": "Completed",
+      "createdDate": "2025-12-28T20:23:03",
+      "updatedDate": "2026-01-30T04:55:14",
+      "owner": "Christopher Carter",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 480.78,
+      "description": "Artist no per wait."
+    },
+    {
+      "id": "b39ed8d0-3fd1-4a38-b976-c64e0e8abf26",
+      "name": "Programmable executive encryption 2",
+      "status": "Pending",
+      "createdDate": "2025-09-15T13:04:52",
+      "updatedDate": "2026-01-20T12:18:15",
+      "owner": "Eric Bender",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6460.71,
+      "description": "Final book offer."
+    },
+    {
+      "id": "726ebb99-5f7f-4467-bc95-960382e12d0f",
+      "name": "Synergized client-driven flexibility 3",
+      "status": "Pending",
+      "createdDate": "2025-11-08T21:50:09",
+      "updatedDate": "2026-02-06T14:30:47",
+      "owner": "Nathaniel Mendoza",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2147.58,
+      "description": "Assume dinner control case."
+    },
+    {
+      "id": "b4f2e02b-b5b2-4077-a376-e78289abc800",
+      "name": "Innovative methodical instruction set 4",
+      "status": "Pending",
+      "createdDate": "2025-10-10T23:45:41",
+      "updatedDate": "2026-02-07T13:26:42",
+      "owner": "Bethany Thomas",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1403.22,
+      "description": "Career sometimes least."
+    },
+    {
+      "id": "6ff10e6b-ba77-436b-bc3a-b775ca6489e2",
+      "name": "Horizontal maximized synergy 5",
+      "status": "Completed",
+      "createdDate": "2025-06-09T16:45:14",
+      "updatedDate": "2026-02-14T04:56:19",
+      "owner": "Russell Wilson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8271.95,
+      "description": "Information learn people cold movie."
+    },
+    {
+      "id": "0fa48845-4850-4387-a6a2-88b669372ccb",
+      "name": "Ameliorated attitude-oriented middleware 6",
+      "status": "Pending",
+      "createdDate": "2025-04-19T18:10:46",
+      "updatedDate": "2026-02-02T15:03:38",
+      "owner": "Thomas Hicks",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3934.16,
+      "description": "Rest will special deep responsibility officer develop."
+    },
+    {
+      "id": "2890e904-8ebc-4b5a-b379-3e3a1a983336",
+      "name": "Focused eco-centric toolset 7",
+      "status": "Inactive",
+      "createdDate": "2025-05-21T21:08:31",
+      "updatedDate": "2026-01-24T20:55:39",
+      "owner": "Kiara Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5358.71,
+      "description": "It name open per figure call."
+    },
+    {
+      "id": "54bfdc74-a035-48f2-aeef-60f583fc0854",
+      "name": "Total asynchronous hardware 8",
+      "status": "Inactive",
+      "createdDate": "2025-06-04T23:20:45",
+      "updatedDate": "2026-02-14T08:48:11",
+      "owner": "Benjamin Roberts",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4430.6,
+      "description": "Bag interest number structure."
+    },
+    {
+      "id": "a932de2c-3d4c-4d17-ba95-e3bf8b6fb625",
+      "name": "Right-sized solution-oriented knowledge user 9",
+      "status": "Inactive",
+      "createdDate": "2025-06-03T11:37:59",
+      "updatedDate": "2026-02-16T05:34:42",
+      "owner": "Elizabeth Robinson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2297.52,
+      "description": "Actually place land your."
+    },
+    {
+      "id": "11b41123-8b90-4c64-b5ff-07ffcc8336f3",
+      "name": "Virtual disintermediate matrix 10",
+      "status": "Pending",
+      "createdDate": "2025-07-15T15:26:52",
+      "updatedDate": "2026-01-23T13:28:55",
+      "owner": "Amy Pearson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4573.39,
+      "description": "Myself floor involve father material."
+    },
+    {
+      "id": "aae06a41-26f3-47b9-9293-2647cab6910f",
+      "name": "Automated modular intranet 11",
+      "status": "Active",
+      "createdDate": "2025-04-13T10:37:50",
+      "updatedDate": "2026-02-15T18:25:10",
+      "owner": "Daniel Miller",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2560.76,
+      "description": "Subject notice under force money space area spring."
+    },
+    {
+      "id": "9c08396b-5116-4590-87bd-c061bdf4f5d1",
+      "name": "Universal solution-oriented orchestration 12",
+      "status": "Active",
+      "createdDate": "2025-06-01T02:26:12",
+      "updatedDate": "2026-02-06T21:11:11",
+      "owner": "Kristina Washington",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3665.9,
+      "description": "Company blue note wrong road forget."
+    },
+    {
+      "id": "770ef2c6-71b2-48c0-ad82-b96b2ff1f3b0",
+      "name": "Enterprise-wide logistical open architecture 13",
+      "status": "Pending",
+      "createdDate": "2025-08-07T01:54:16",
+      "updatedDate": "2026-02-11T14:52:11",
+      "owner": "Peter Ortiz",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3406.12,
+      "description": "Identify country talk song at near."
+    },
+    {
+      "id": "002b6ef0-c83a-49e8-bf9c-aad6cf28141e",
+      "name": "Devolved responsive middleware 14",
+      "status": "Inactive",
+      "createdDate": "2025-07-30T04:56:56",
+      "updatedDate": "2026-02-15T18:57:29",
+      "owner": "Jeffrey Grant",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1256.41,
+      "description": "Live he maybe company develop green."
+    },
+    {
+      "id": "a3aebb0a-4cc5-48a6-85cf-ac1984992be0",
+      "name": "Optional multi-tasking portal 15",
+      "status": "Pending",
+      "createdDate": "2025-07-14T20:27:38",
+      "updatedDate": "2026-02-06T20:15:49",
+      "owner": "Brittney Mitchell",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9085.08,
+      "description": "Well coach poor provide."
+    },
+    {
+      "id": "0417defa-4c82-48da-bafe-657dd0a4b96c",
+      "name": "Compatible zero administration ability 16",
+      "status": "Pending",
+      "createdDate": "2025-06-05T13:16:04",
+      "updatedDate": "2026-02-15T22:14:14",
+      "owner": "Sergio Stone",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9169.34,
+      "description": "Try nation study science law."
+    },
+    {
+      "id": "31beedfe-088e-4d52-b874-9c441bcbdc49",
+      "name": "Distributed zero-defect encoding 17",
+      "status": "Pending",
+      "createdDate": "2025-02-28T23:52:47",
+      "updatedDate": "2026-01-23T01:43:46",
+      "owner": "Kelly Robinson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5516.08,
+      "description": "Record identify space land."
+    },
+    {
+      "id": "17c7b8be-8c02-4fba-a2a6-140b73cb7a79",
+      "name": "Sharable intangible framework 18",
+      "status": "Active",
+      "createdDate": "2025-10-08T23:41:26",
+      "updatedDate": "2026-02-09T13:33:03",
+      "owner": "Jennifer Dominguez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7328.2,
+      "description": "Finally attack staff office career."
+    },
+    {
+      "id": "d148ef0f-2781-4cbb-9f78-c5f65004b991",
+      "name": "Organic motivating array 19",
+      "status": "Inactive",
+      "createdDate": "2025-09-16T17:18:32",
+      "updatedDate": "2026-02-04T16:53:43",
+      "owner": "Paula Hernandez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8174.78,
+      "description": "Agree federal career admit beautiful rule list food."
+    },
+    {
+      "id": "dcf8460c-ca7c-4915-b8e1-bf4218d3805f",
+      "name": "Programmable bifurcated function 20",
+      "status": "Completed",
+      "createdDate": "2025-11-08T18:38:05",
+      "updatedDate": "2026-01-29T09:09:39",
+      "owner": "Tara Fields",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8460.4,
+      "description": "Trade brother task church section agree piece."
+    },
+    {
+      "id": "27154414-df6f-493a-a2f4-a73c7e020e70",
+      "name": "Reverse-engineered disintermediate conglomeration 21",
+      "status": "Inactive",
+      "createdDate": "2025-05-07T01:38:10",
+      "updatedDate": "2026-02-09T02:57:56",
+      "owner": "Carl Garcia",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8270.72,
+      "description": "Wait try see attention others heart than stuff."
+    },
+    {
+      "id": "5c9ede5e-b014-405c-8163-fbbd59d86542",
+      "name": "Re-engineered systemic policy 22",
+      "status": "Completed",
+      "createdDate": "2025-03-28T09:21:46",
+      "updatedDate": "2026-01-30T15:59:33",
+      "owner": "Sheri Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4086.75,
+      "description": "Tonight to crime seven attack off development play."
+    },
+    {
+      "id": "c947216b-3793-49d6-ab0a-b709316ea871",
+      "name": "User-centric non-volatile emulation 23",
+      "status": "Active",
+      "createdDate": "2025-08-26T15:20:49",
+      "updatedDate": "2026-02-11T18:42:23",
+      "owner": "Jared Ward",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4982.57,
+      "description": "Benefit across dinner."
+    },
+    {
+      "id": "3e1073f4-2063-420a-93ec-ca9f13dbea67",
+      "name": "Configurable contextually-based system engine 24",
+      "status": "Completed",
+      "createdDate": "2025-06-12T10:47:56",
+      "updatedDate": "2026-02-04T12:13:21",
+      "owner": "Michael Hall",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4753.34,
+      "description": "Study anything create toward sort budget him of."
+    },
+    {
+      "id": "53e54480-f229-4d36-9914-b607f15f15d0",
+      "name": "Upgradable content-based encoding 25",
+      "status": "Inactive",
+      "createdDate": "2025-03-27T01:02:52",
+      "updatedDate": "2026-02-12T12:31:58",
+      "owner": "Juan Jordan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2237.99,
+      "description": "Around he sense clear decide road represent."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

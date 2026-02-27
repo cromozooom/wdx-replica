@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-all-records",
+  "totalCount": 1005,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "007dce49-8c69-46ab-834c-01d0f681257a",
+      "name": "Mandatory didactic conglomeration 1",
+      "status": "Completed",
+      "createdDate": "2026-02-11T03:59:37",
+      "updatedDate": "2026-02-10T09:35:21",
+      "owner": "Katherine Russo",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1628.5,
+      "description": "Add have network either heart just."
+    },
+    {
+      "id": "83212f7e-04a5-4905-b126-f518afad872f",
+      "name": "Optional 5thgeneration orchestration 2",
+      "status": "Pending",
+      "createdDate": "2025-12-05T01:35:59",
+      "updatedDate": "2026-02-04T07:50:52",
+      "owner": "Mark Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3945.28,
+      "description": "Son power guy heavy."
+    },
+    {
+      "id": "0858c857-c6dd-441f-bc22-b2c1eef2b7ae",
+      "name": "Face-to-face high-level groupware 3",
+      "status": "Pending",
+      "createdDate": "2025-05-25T23:31:55",
+      "updatedDate": "2026-02-03T23:54:31",
+      "owner": "Meghan Medina",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3956.21,
+      "description": "Memory fish letter PM black."
+    },
+    {
+      "id": "fc28c344-bb91-4ecd-9c8e-638f58cf8f4b",
+      "name": "Profound interactive hardware 4",
+      "status": "Active",
+      "createdDate": "2025-10-23T05:30:43",
+      "updatedDate": "2026-02-10T04:30:10",
+      "owner": "Jeremy Macias",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1885.85,
+      "description": "Carry decision attack off face pay."
+    },
+    {
+      "id": "4bb95a71-9304-475d-a75f-2595d17a5161",
+      "name": "Persistent real-time orchestration 5",
+      "status": "Completed",
+      "createdDate": "2025-08-13T09:06:05",
+      "updatedDate": "2026-02-08T06:46:55",
+      "owner": "Tonya Mcintyre",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 215.9,
+      "description": "Where report own conference thank always seven."
+    },
+    {
+      "id": "65533c47-3d58-4d6e-a51d-cf587d471b3b",
+      "name": "Compatible coherent instruction set 6",
+      "status": "Active",
+      "createdDate": "2025-11-06T19:19:26",
+      "updatedDate": "2026-01-29T06:46:16",
+      "owner": "Brian Kaiser",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1089.0,
+      "description": "Wait place pattern."
+    },
+    {
+      "id": "2332d90e-7d8a-416a-bbc8-13a8152ee37e",
+      "name": "Enterprise-wide client-server challenge 7",
+      "status": "Inactive",
+      "createdDate": "2025-03-02T02:39:57",
+      "updatedDate": "2026-01-22T12:30:12",
+      "owner": "Debbie Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1440.78,
+      "description": "Fear writer kid may behind successful most."
+    },
+    {
+      "id": "a88198b9-73c3-4942-94d4-65d896acf4da",
+      "name": "Down-sized holistic alliance 8",
+      "status": "Pending",
+      "createdDate": "2025-04-11T20:12:32",
+      "updatedDate": "2026-01-29T08:22:55",
+      "owner": "Jaime Hunter",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2488.34,
+      "description": "Answer staff worry pretty control."
+    },
+    {
+      "id": "f0a9c242-d568-4ff8-8382-8bdc19ad565f",
+      "name": "Realigned background structure 9",
+      "status": "Inactive",
+      "createdDate": "2025-06-09T20:51:34",
+      "updatedDate": "2026-02-17T01:22:50",
+      "owner": "Edward Perkins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5956.74,
+      "description": "Call series month cell bring own."
+    },
+    {
+      "id": "f9c581df-2138-4146-bdc2-3a72c1d91bc7",
+      "name": "Up-sized radical superstructure 10",
+      "status": "Inactive",
+      "createdDate": "2025-11-29T21:23:56",
+      "updatedDate": "2026-01-26T14:14:47",
+      "owner": "Jesus Aguilar",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1825.57,
+      "description": "Loss interest what player interview."
+    },
+    {
+      "id": "60ed6a5f-d4cf-4ac1-9e23-4a571e512bac",
+      "name": "Automated discrete functionalities 11",
+      "status": "Inactive",
+      "createdDate": "2025-12-04T11:55:27",
+      "updatedDate": "2026-01-21T21:05:07",
+      "owner": "Christopher Fischer",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5448.69,
+      "description": "Foot also require rock."
+    },
+    {
+      "id": "3c81b007-7b91-41bf-a407-f3faf59a4a7d",
+      "name": "Customer-focused scalable extranet 12",
+      "status": "Inactive",
+      "createdDate": "2025-05-12T19:19:24",
+      "updatedDate": "2026-01-29T13:03:20",
+      "owner": "Crystal Chavez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7508.2,
+      "description": "School around baby inside foreign beat across."
+    },
+    {
+      "id": "fb5a3f36-90a9-4c11-a640-6440bdbc572b",
+      "name": "Reverse-engineered static neural-net 13",
+      "status": "Inactive",
+      "createdDate": "2025-07-01T02:01:56",
+      "updatedDate": "2026-01-30T18:09:40",
+      "owner": "Tiffany Daniels",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2041.67,
+      "description": "Real improve phone tell."
+    },
+    {
+      "id": "d55e1fa7-b0dd-429f-8fa8-4e2088249901",
+      "name": "Programmable needs-based artificial intelligence 14",
+      "status": "Pending",
+      "createdDate": "2025-04-23T15:07:30",
+      "updatedDate": "2026-02-14T00:52:42",
+      "owner": "Joseph Mayer DVM",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 509.47,
+      "description": "Response beyond try."
+    },
+    {
+      "id": "b1b949f7-c3b9-4db6-9d30-e3cd8bf2498f",
+      "name": "Adaptive maximized infrastructure 15",
+      "status": "Pending",
+      "createdDate": "2025-05-01T04:28:48",
+      "updatedDate": "2026-01-30T00:49:32",
+      "owner": "Sydney Fitzgerald",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8454.58,
+      "description": "Speech start matter hospital fall."
+    },
+    {
+      "id": "07b3bcd8-796c-493c-b6db-8ead30b88dbd",
+      "name": "Integrated discrete pricing structure 16",
+      "status": "Active",
+      "createdDate": "2025-11-13T21:45:38",
+      "updatedDate": "2026-02-15T07:08:12",
+      "owner": "Mckenzie Kelly",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2558.13,
+      "description": "Writer recognize TV dog music dog."
+    },
+    {
+      "id": "9961bd25-1d19-4b9a-8f16-933a605fd782",
+      "name": "Automated zero tolerance system engine 17",
+      "status": "Inactive",
+      "createdDate": "2025-02-25T06:25:39",
+      "updatedDate": "2026-01-22T19:56:52",
+      "owner": "Desiree Wright",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 103.8,
+      "description": "Employee language should media build animal college."
+    },
+    {
+      "id": "aa825f5e-262b-492c-8962-d3c0b16b3ef1",
+      "name": "Cloned leadingedge success 18",
+      "status": "Active",
+      "createdDate": "2026-02-15T20:06:08",
+      "updatedDate": "2026-02-11T21:35:24",
+      "owner": "Veronica Ayala",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8248.25,
+      "description": "Certainly specific drop spring."
+    },
+    {
+      "id": "159ce4a8-9cd0-4dbe-ab10-04aaae6fdff1",
+      "name": "Multi-lateral incremental Local Area Network 19",
+      "status": "Completed",
+      "createdDate": "2025-08-10T15:27:26",
+      "updatedDate": "2026-02-02T04:32:18",
+      "owner": "Steven Frank",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8765.81,
+      "description": "Possible free show."
+    },
+    {
+      "id": "d6d73add-4f7c-4766-841d-4ff8439af8ca",
+      "name": "Progressive leadingedge process improvement 20",
+      "status": "Pending",
+      "createdDate": "2025-10-21T10:39:48",
+      "updatedDate": "2026-02-14T13:02:52",
+      "owner": "Brandon Davis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6993.54,
+      "description": "War pull other wife truth."
+    },
+    {
+      "id": "f4384519-362c-4645-a30b-885f40449a47",
+      "name": "Up-sized multi-state projection 21",
+      "status": "Active",
+      "createdDate": "2026-02-13T23:13:59",
+      "updatedDate": "2026-01-18T12:08:06",
+      "owner": "Matthew Nielsen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2081.05,
+      "description": "Study yard stand feel some."
+    },
+    {
+      "id": "fcfb3fff-ca41-475f-ad04-6f6737d679e6",
+      "name": "Phased national support 22",
+      "status": "Completed",
+      "createdDate": "2025-08-15T02:12:44",
+      "updatedDate": "2026-02-12T05:08:00",
+      "owner": "Vanessa White",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9047.08,
+      "description": "Read occur dream follow raise."
+    },
+    {
+      "id": "3fd416e9-0811-4754-97c3-5e08a9574933",
+      "name": "Enhanced upward-trending framework 23",
+      "status": "Inactive",
+      "createdDate": "2025-04-10T11:23:41",
+      "updatedDate": "2026-01-24T20:54:12",
+      "owner": "Danielle Reed",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9122.96,
+      "description": "Pm must season indeed medical quickly."
+    },
+    {
+      "id": "43607204-d6bb-49c4-a1cb-61305d50877a",
+      "name": "Fundamental 3rdgeneration migration 24",
+      "status": "Pending",
+      "createdDate": "2025-03-08T05:05:12",
+      "updatedDate": "2026-02-11T06:30:51",
+      "owner": "David Bryant",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3919.97,
+      "description": "Perform significant approach almost and share."
+    },
+    {
+      "id": "88eed0a8-70ea-49c0-aa7b-805aae5333b1",
+      "name": "Assimilated systematic info-mediaries 25",
+      "status": "Pending",
+      "createdDate": "2025-03-20T13:05:13",
+      "updatedDate": "2026-01-27T11:29:15",
+      "owner": "Holly Pope",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1775.8,
+      "description": "American identify party today suddenly affect."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 864,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "24f0f83b-2602-435a-bf0e-c02bf202d6dc",
+      "name": "Total impactful architecture 1",
+      "status": "Active",
+      "createdDate": "2025-11-04T06:33:38",
+      "updatedDate": "2026-01-18T17:24:05",
+      "owner": "Wendy Li",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4273.03,
+      "description": "Way story according focus."
+    },
+    {
+      "id": "632e9585-b350-4f7f-b88a-23fb1a91607c",
+      "name": "Streamlined maximized firmware 2",
+      "status": "Active",
+      "createdDate": "2025-11-10T08:03:29",
+      "updatedDate": "2026-02-03T22:59:01",
+      "owner": "Breanna Singleton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1481.87,
+      "description": "Continue news entire though old."
+    },
+    {
+      "id": "3699fb34-33f8-442a-96af-c40f05f76afb",
+      "name": "Organized secondary service-desk 3",
+      "status": "Completed",
+      "createdDate": "2025-10-20T21:05:11",
+      "updatedDate": "2026-01-23T07:02:26",
+      "owner": "Gerald Mercado",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 925.66,
+      "description": "Spring game believe."
+    },
+    {
+      "id": "f850502e-84db-4054-9310-7072691ed2ac",
+      "name": "Polarized encompassing productivity 4",
+      "status": "Inactive",
+      "createdDate": "2025-03-31T17:40:37",
+      "updatedDate": "2026-01-18T11:38:33",
+      "owner": "Tyler Graham",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9079.16,
+      "description": "Great require military although."
+    },
+    {
+      "id": "d8b80389-49f0-42d1-a45b-bed95535691c",
+      "name": "Fundamental uniform access 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-04T02:18:41",
+      "updatedDate": "2026-02-11T07:43:38",
+      "owner": "Donna Stout",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6114.91,
+      "description": "Some western performance."
+    },
+    {
+      "id": "5e9ea7ad-4e8f-49d7-b5d7-201d04668aec",
+      "name": "User-centric composite instruction set 6",
+      "status": "Completed",
+      "createdDate": "2026-01-10T22:55:55",
+      "updatedDate": "2026-02-06T17:34:47",
+      "owner": "Mrs. Sarah Marks",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2506.22,
+      "description": "Share page marriage east."
+    },
+    {
+      "id": "1722c363-76ec-4639-9d5b-2d4a11418747",
+      "name": "Cross-group reciprocal projection 7",
+      "status": "Completed",
+      "createdDate": "2026-01-10T12:35:05",
+      "updatedDate": "2026-02-04T18:28:42",
+      "owner": "Karen Graham",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3400.64,
+      "description": "With soon nature never."
+    },
+    {
+      "id": "03d2e075-fe26-4297-afa2-f612f22abd6a",
+      "name": "Future-proofed background frame 8",
+      "status": "Inactive",
+      "createdDate": "2025-05-20T23:34:45",
+      "updatedDate": "2026-01-22T16:03:28",
+      "owner": "Bradley Raymond",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9876.05,
+      "description": "Southern money garden change produce quite."
+    },
+    {
+      "id": "f7d724e8-8747-408b-a5b0-25169cecdd34",
+      "name": "Synergistic 24/7 workforce 9",
+      "status": "Completed",
+      "createdDate": "2025-07-11T23:01:45",
+      "updatedDate": "2026-01-29T13:20:23",
+      "owner": "Adam Adams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4840.0,
+      "description": "Fly money serious."
+    },
+    {
+      "id": "39d6030e-f5ee-49eb-8fa2-f1a14aadbcc8",
+      "name": "Distributed disintermediate service-desk 10",
+      "status": "Completed",
+      "createdDate": "2025-12-08T15:55:13",
+      "updatedDate": "2026-01-30T23:39:16",
+      "owner": "Daniel Hammond",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9947.57,
+      "description": "Cover for beat particularly base common character."
+    },
+    {
+      "id": "d98661ca-7ef7-4e5a-b649-b83f5d83a8e9",
+      "name": "Mandatory analyzing Internet solution 11",
+      "status": "Inactive",
+      "createdDate": "2025-06-15T05:17:35",
+      "updatedDate": "2026-01-23T05:38:00",
+      "owner": "Sarah Morris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8674.5,
+      "description": "No run himself above news likely indicate."
+    },
+    {
+      "id": "bd67a628-9d4c-4cc9-a29d-41c4c7a12163",
+      "name": "Assimilated asynchronous success 12",
+      "status": "Completed",
+      "createdDate": "2025-07-04T23:52:57",
+      "updatedDate": "2026-02-10T21:36:43",
+      "owner": "Carl Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5768.8,
+      "description": "Usually reflect garden right."
+    },
+    {
+      "id": "0c8e9f61-7d2e-4417-9974-365e04347f38",
+      "name": "Optional logistical solution 13",
+      "status": "Inactive",
+      "createdDate": "2025-11-19T16:03:56",
+      "updatedDate": "2026-02-04T13:18:41",
+      "owner": "Amanda Thompson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6223.56,
+      "description": "Benefit edge eye write necessary budget explain."
+    },
+    {
+      "id": "d161e608-521c-496b-b668-a8aeb4eb0c6d",
+      "name": "Cross-group exuding hierarchy 14",
+      "status": "Inactive",
+      "createdDate": "2025-03-30T23:33:39",
+      "updatedDate": "2026-01-26T08:32:27",
+      "owner": "Mr. Jonathan Taylor",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1669.86,
+      "description": "Expect any reveal high hard example."
+    },
+    {
+      "id": "902a6ede-bb1a-4008-8beb-9e244362fedb",
+      "name": "Object-based actuating productivity 15",
+      "status": "Pending",
+      "createdDate": "2025-08-31T14:10:02",
+      "updatedDate": "2026-01-28T12:12:25",
+      "owner": "Sheila Scott",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5519.94,
+      "description": "Doctor stand individual list."
+    },
+    {
+      "id": "8ca23237-21cf-45e4-b94f-7ce843e14758",
+      "name": "Multi-lateral human-resource leverage 16",
+      "status": "Completed",
+      "createdDate": "2025-03-07T06:01:36",
+      "updatedDate": "2026-02-05T02:59:51",
+      "owner": "Thomas Shaw",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7160.25,
+      "description": "Nearly save season."
+    },
+    {
+      "id": "0df47236-7a3f-4006-a7f7-0b50c0ddb931",
+      "name": "Multi-channeled asynchronous model 17",
+      "status": "Active",
+      "createdDate": "2025-06-03T07:06:43",
+      "updatedDate": "2026-01-26T00:43:08",
+      "owner": "Jamie Martinez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7290.99,
+      "description": "Successful draw born thank prove some anyone."
+    },
+    {
+      "id": "16e9f70d-c2fd-49ba-8c76-92ab8c6e1b0c",
+      "name": "Implemented reciprocal orchestration 18",
+      "status": "Active",
+      "createdDate": "2025-12-01T00:14:10",
+      "updatedDate": "2026-02-16T22:07:10",
+      "owner": "Anthony James",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9034.48,
+      "description": "Out serious crime enter staff."
+    },
+    {
+      "id": "d11a0ade-36f8-4f7b-9848-091922df07df",
+      "name": "Synergized responsive parallelism 19",
+      "status": "Inactive",
+      "createdDate": "2026-02-12T04:48:14",
+      "updatedDate": "2026-02-07T23:25:39",
+      "owner": "Terry Kramer",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6879.78,
+      "description": "Subject whom respond education man gun bill."
+    },
+    {
+      "id": "8b31f856-844e-43cf-b735-2ea1e876ffcc",
+      "name": "Integrated 6thgeneration workforce 20",
+      "status": "Pending",
+      "createdDate": "2025-12-04T17:25:02",
+      "updatedDate": "2026-02-01T00:42:02",
+      "owner": "Brenda Silva",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3592.2,
+      "description": "Free tax fight play thank toward."
+    },
+    {
+      "id": "59cb237c-60d0-4fd2-ba32-296c777a369e",
+      "name": "Centralized 24/7 website 21",
+      "status": "Pending",
+      "createdDate": "2025-04-12T01:22:31",
+      "updatedDate": "2026-02-04T22:30:50",
+      "owner": "Tyler Burgess",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9319.35,
+      "description": "Decide recognize computer main eight still product."
+    },
+    {
+      "id": "131ab1c9-c6d6-45d0-a502-5c67442e4224",
+      "name": "Organized stable interface 22",
+      "status": "Inactive",
+      "createdDate": "2025-10-25T03:12:12",
+      "updatedDate": "2026-02-01T14:28:42",
+      "owner": "Hannah Ibarra",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9457.82,
+      "description": "Mother idea offer politics everything not crime."
+    },
+    {
+      "id": "15644aff-ba61-4013-a91d-cdfc63a5a203",
+      "name": "User-centric tangible hierarchy 23",
+      "status": "Inactive",
+      "createdDate": "2025-02-22T05:16:28",
+      "updatedDate": "2026-02-12T11:59:58",
+      "owner": "Vicki Pratt",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7959.46,
+      "description": "Purpose staff firm pick other job action yard."
+    },
+    {
+      "id": "d981fb45-d95a-4f62-96aa-24312ac447e0",
+      "name": "Re-engineered static matrix 24",
+      "status": "Active",
+      "createdDate": "2025-10-08T15:55:27",
+      "updatedDate": "2026-02-16T13:29:54",
+      "owner": "Sharon Davis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4002.0,
+      "description": "Talk positive trip stay national discussion move."
+    },
+    {
+      "id": "ff69246f-ec39-4a7c-aa8e-390a6e5051c0",
+      "name": "Re-contextualized didactic framework 25",
+      "status": "Inactive",
+      "createdDate": "2025-11-21T04:17:31",
+      "updatedDate": "2026-02-02T21:49:43",
+      "owner": "Michael Ross",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1410.5,
+      "description": "Grow claim north chance whom cold."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

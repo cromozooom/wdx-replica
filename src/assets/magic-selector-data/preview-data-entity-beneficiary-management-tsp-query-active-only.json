@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-active-only",
+  "totalCount": 1485,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "be4f36db-e151-43e3-96d0-c884dd0dcd18",
+      "name": "Customizable static model 1",
+      "status": "Active",
+      "createdDate": "2025-10-22T13:20:14",
+      "updatedDate": "2026-02-13T07:59:21",
+      "owner": "Yolanda Rose",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5721.29,
+      "description": "Simply election threat agree mind."
+    },
+    {
+      "id": "81e81a49-c46f-4066-8f1f-1deda93aced4",
+      "name": "Distributed dedicated conglomeration 2",
+      "status": "Pending",
+      "createdDate": "2025-10-18T14:04:29",
+      "updatedDate": "2026-02-15T15:13:22",
+      "owner": "Vanessa Torres",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4035.47,
+      "description": "Benefit among likely there."
+    },
+    {
+      "id": "17fa7817-8545-4203-b513-bbe6d38957e9",
+      "name": "Advanced hybrid structure 3",
+      "status": "Pending",
+      "createdDate": "2026-02-04T02:01:16",
+      "updatedDate": "2026-02-08T19:34:37",
+      "owner": "Gregory Wagner",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4798.46,
+      "description": "Wide although expect question media look these medical."
+    },
+    {
+      "id": "8d308a87-c196-49db-a574-ecf304bdb4dc",
+      "name": "Exclusive exuding conglomeration 4",
+      "status": "Pending",
+      "createdDate": "2025-09-17T14:19:53",
+      "updatedDate": "2026-02-15T04:54:15",
+      "owner": "Edward Williams",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6145.37,
+      "description": "Movement lead several service."
+    },
+    {
+      "id": "7eb13f6c-1086-4dff-89ef-cdab006a37f1",
+      "name": "Reactive non-volatile methodology 5",
+      "status": "Completed",
+      "createdDate": "2025-04-13T14:15:22",
+      "updatedDate": "2026-02-17T10:42:58",
+      "owner": "Michael Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2837.91,
+      "description": "Size school friend medical follow."
+    },
+    {
+      "id": "44321674-b9b8-4c2c-b09d-c442672a15d5",
+      "name": "Adaptive bi-directional emulation 6",
+      "status": "Inactive",
+      "createdDate": "2025-10-03T00:30:55",
+      "updatedDate": "2026-02-07T03:52:46",
+      "owner": "Colleen Byrd",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2047.4,
+      "description": "Green as exist add."
+    },
+    {
+      "id": "862bdbd9-6ba7-4d22-a975-1ea4ce3ab92b",
+      "name": "Multi-channeled zero tolerance knowledgebase 7",
+      "status": "Inactive",
+      "createdDate": "2025-08-01T15:51:36",
+      "updatedDate": "2026-02-15T23:24:02",
+      "owner": "Melissa Lee",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1839.93,
+      "description": "Receive month catch enjoy cold always."
+    },
+    {
+      "id": "1941ccc3-b0da-4153-9a37-e3a4030f5821",
+      "name": "Centralized web-enabled knowledge user 8",
+      "status": "Active",
+      "createdDate": "2025-04-08T14:23:41",
+      "updatedDate": "2026-02-17T06:32:51",
+      "owner": "Jake Rodriguez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8011.73,
+      "description": "Special service line management."
+    },
+    {
+      "id": "6ff26bf7-ee65-4084-b066-95269c410a14",
+      "name": "Total national application 9",
+      "status": "Active",
+      "createdDate": "2025-04-14T11:55:49",
+      "updatedDate": "2026-02-03T20:42:32",
+      "owner": "Eugene Graham",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3308.77,
+      "description": "Professional keep note go."
+    },
+    {
+      "id": "1ecda74b-7b01-4752-8be8-ae8302d40dfb",
+      "name": "Team-oriented object-oriented forecast 10",
+      "status": "Pending",
+      "createdDate": "2025-11-10T06:31:51",
+      "updatedDate": "2026-01-23T09:50:50",
+      "owner": "James Hoffman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2273.87,
+      "description": "Be media hot new view beautiful quality."
+    },
+    {
+      "id": "986e0db5-b0b2-4f3f-a2ab-3e965943a15b",
+      "name": "Realigned bandwidth-monitored customer loyalty 11",
+      "status": "Inactive",
+      "createdDate": "2025-04-03T02:30:47",
+      "updatedDate": "2026-01-30T06:17:06",
+      "owner": "Monica Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8400.35,
+      "description": "Story maybe everybody real training practice left."
+    },
+    {
+      "id": "21dcf5fb-f373-4d5d-8413-94f1d1d438de",
+      "name": "User-friendly well-modulated extranet 12",
+      "status": "Pending",
+      "createdDate": "2025-02-21T09:59:08",
+      "updatedDate": "2026-02-09T11:10:27",
+      "owner": "Charles Campos",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6027.36,
+      "description": "Us successful letter thus want."
+    },
+    {
+      "id": "1ec12d87-34b2-4aa0-a9da-2ba7468700bf",
+      "name": "Right-sized responsive website 13",
+      "status": "Pending",
+      "createdDate": "2025-03-23T12:01:07",
+      "updatedDate": "2026-02-09T00:28:20",
+      "owner": "Megan Boyd",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1464.03,
+      "description": "With amount before onto."
+    },
+    {
+      "id": "d1fa79ab-3494-4411-bc11-27390484b102",
+      "name": "Sharable object-oriented policy 14",
+      "status": "Pending",
+      "createdDate": "2025-10-10T16:21:24",
+      "updatedDate": "2026-01-28T09:38:04",
+      "owner": "Sharon Lee",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8179.68,
+      "description": "Loss into financial message fast."
+    },
+    {
+      "id": "d2cf3612-498e-44c0-85b9-d4f02d45bf66",
+      "name": "Customer-focused context-sensitive product 15",
+      "status": "Pending",
+      "createdDate": "2025-05-11T04:19:22",
+      "updatedDate": "2026-02-05T17:43:54",
+      "owner": "Zoe Mitchell",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8506.47,
+      "description": "Dinner start its cost station now perhaps."
+    },
+    {
+      "id": "cb13d42c-df70-449c-b6c5-71a88e871714",
+      "name": "Universal tertiary monitoring 16",
+      "status": "Completed",
+      "createdDate": "2025-08-30T12:45:12",
+      "updatedDate": "2026-02-02T05:51:48",
+      "owner": "Brendan Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9914.11,
+      "description": "Road decide probably control four important artist."
+    },
+    {
+      "id": "2c580525-c42a-434e-99cb-d4c68c648168",
+      "name": "Team-oriented 24hour capacity 17",
+      "status": "Completed",
+      "createdDate": "2025-05-23T06:45:04",
+      "updatedDate": "2026-02-01T05:40:02",
+      "owner": "David Nichols",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 812.04,
+      "description": "Test sign consumer compare Republican perform."
+    },
+    {
+      "id": "6d28c239-51e4-4e0b-a76f-fa1faf6823da",
+      "name": "Open-source bandwidth-monitored array 18",
+      "status": "Inactive",
+      "createdDate": "2025-05-10T08:16:59",
+      "updatedDate": "2026-02-09T05:52:53",
+      "owner": "Geoffrey Rivers",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6403.81,
+      "description": "Message bag entire want successful partner."
+    },
+    {
+      "id": "f2958f69-cbc8-4f7f-9a13-de2e2e2c848e",
+      "name": "Monitored multi-tasking access 19",
+      "status": "Completed",
+      "createdDate": "2025-04-29T10:19:07",
+      "updatedDate": "2026-02-08T22:01:44",
+      "owner": "Matthew Patterson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8224.97,
+      "description": "Much low fear when collection song."
+    },
+    {
+      "id": "c7b0fe9e-136b-47ef-9c5e-7005bfced7b6",
+      "name": "Intuitive 5thgeneration synergy 20",
+      "status": "Pending",
+      "createdDate": "2025-11-11T23:57:56",
+      "updatedDate": "2026-02-14T01:54:31",
+      "owner": "Janice Robinson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6124.71,
+      "description": "Different meeting administration student."
+    },
+    {
+      "id": "2467c337-e175-408e-8e82-d539c5a92be9",
+      "name": "Up-sized uniform task-force 21",
+      "status": "Inactive",
+      "createdDate": "2025-04-13T15:21:56",
+      "updatedDate": "2026-01-19T08:04:06",
+      "owner": "Tamara Walker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9211.32,
+      "description": "Three bar history."
+    },
+    {
+      "id": "fea1cb01-d05f-4334-906c-28825a356130",
+      "name": "Visionary value-added productivity 22",
+      "status": "Completed",
+      "createdDate": "2025-11-19T01:20:30",
+      "updatedDate": "2026-01-31T06:31:16",
+      "owner": "Peter Patterson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 620.19,
+      "description": "Owner analysis movie third world."
+    },
+    {
+      "id": "ead1409f-5d4f-481b-9143-41a723ab7873",
+      "name": "Re-contextualized dedicated Graphic Interface 23",
+      "status": "Active",
+      "createdDate": "2025-06-28T01:41:42",
+      "updatedDate": "2026-01-27T22:03:20",
+      "owner": "Curtis Medina",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7380.53,
+      "description": "Rock conference to himself."
+    },
+    {
+      "id": "2e9d8d74-47ce-4864-a155-d2e68f9c0cdd",
+      "name": "Future-proofed optimal core 24",
+      "status": "Active",
+      "createdDate": "2026-02-07T02:04:37",
+      "updatedDate": "2026-01-21T02:48:02",
+      "owner": "Pedro Chase",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6076.29,
+      "description": "Fill like service wide with."
+    },
+    {
+      "id": "d038b863-2f3e-47e8-b61e-8b73bbc09a16",
+      "name": "Programmable local parallelism 25",
+      "status": "Inactive",
+      "createdDate": "2025-05-11T16:02:34",
+      "updatedDate": "2026-02-02T01:34:09",
+      "owner": "Bryan Miranda",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5177.63,
+      "description": "Our there build job."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-recent-updates",
+  "totalCount": 836,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "765c4191-190f-48ad-90f1-5a244d784896",
+      "name": "Implemented high-level hardware 1",
+      "status": "Pending",
+      "createdDate": "2025-08-04T22:03:21",
+      "updatedDate": "2026-01-18T12:46:48",
+      "owner": "Sandra Garcia",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4252.8,
+      "description": "Event for officer individual."
+    },
+    {
+      "id": "1bebc814-2c7e-4528-95a4-c36bd5fcb265",
+      "name": "Intuitive cohesive architecture 2",
+      "status": "Pending",
+      "createdDate": "2025-12-05T22:05:12",
+      "updatedDate": "2026-02-13T02:45:32",
+      "owner": "Edward Johnson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8284.17,
+      "description": "Wind figure operation case."
+    },
+    {
+      "id": "793870e1-844a-4ed2-94f4-5f8e2565fe6f",
+      "name": "Visionary 24hour extranet 3",
+      "status": "Inactive",
+      "createdDate": "2025-04-02T11:16:05",
+      "updatedDate": "2026-02-01T02:19:31",
+      "owner": "Laura Lopez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4008.0,
+      "description": "Their spring investment two local."
+    },
+    {
+      "id": "f2699044-f4ec-4557-be5f-6d6e24a2edbe",
+      "name": "Optional zero administration knowledgebase 4",
+      "status": "Inactive",
+      "createdDate": "2025-09-28T07:37:13",
+      "updatedDate": "2026-02-05T20:24:04",
+      "owner": "Kathy Burgess",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1534.08,
+      "description": "Shake door religious whole."
+    },
+    {
+      "id": "16c4d9bb-e5fb-4b91-830f-57540d396aab",
+      "name": "Face-to-face cohesive leverage 5",
+      "status": "Completed",
+      "createdDate": "2025-03-24T01:42:27",
+      "updatedDate": "2026-01-20T14:07:39",
+      "owner": "Dustin Carlson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7027.48,
+      "description": "Enough future religious price range."
+    },
+    {
+      "id": "3a24050a-6f40-4171-bc8b-0c88d094ecb8",
+      "name": "Re-contextualized discrete conglomeration 6",
+      "status": "Completed",
+      "createdDate": "2025-11-25T05:34:05",
+      "updatedDate": "2026-01-24T06:01:40",
+      "owner": "Stacy Rodriguez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3589.81,
+      "description": "Message trade back meeting available late."
+    },
+    {
+      "id": "7a10d1f5-52a4-475d-ad4f-b28e2e5263ed",
+      "name": "Reverse-engineered discrete service-desk 7",
+      "status": "Completed",
+      "createdDate": "2025-11-06T18:37:04",
+      "updatedDate": "2026-01-24T16:05:56",
+      "owner": "Rebecca Cole",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9753.02,
+      "description": "Difference at itself wish seek."
+    },
+    {
+      "id": "4c1a7a73-cb22-46f8-9065-4d5dec7f3670",
+      "name": "Versatile upward-trending extranet 8",
+      "status": "Completed",
+      "createdDate": "2025-11-24T02:21:27",
+      "updatedDate": "2026-02-05T07:19:51",
+      "owner": "Kelly Logan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 878.39,
+      "description": "Agreement and enough beyond medical key."
+    },
+    {
+      "id": "e5b52753-c673-4bce-9f7b-c78d41d57b52",
+      "name": "Fundamental dedicated flexibility 9",
+      "status": "Pending",
+      "createdDate": "2025-03-31T20:22:45",
+      "updatedDate": "2026-02-11T18:29:26",
+      "owner": "Eric Khan DVM",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8340.97,
+      "description": "Common above break model."
+    },
+    {
+      "id": "dcb2582a-cf74-430a-8718-6d72140b77c7",
+      "name": "Virtual zero administration conglomeration 10",
+      "status": "Completed",
+      "createdDate": "2025-07-06T13:41:07",
+      "updatedDate": "2026-01-21T01:45:47",
+      "owner": "Leonard Hardy",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5749.96,
+      "description": "Moment American example city."
+    },
+    {
+      "id": "68fb0e7e-c4c9-4f4e-b248-8b7a05d46f01",
+      "name": "Cross-platform executive installation 11",
+      "status": "Pending",
+      "createdDate": "2025-10-23T12:48:25",
+      "updatedDate": "2026-02-03T08:09:49",
+      "owner": "Elizabeth Black",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5032.97,
+      "description": "Against view general believe move kind."
+    },
+    {
+      "id": "81579feb-40b8-4d6a-9285-c27920ee668e",
+      "name": "Business-focused global standardization 12",
+      "status": "Active",
+      "createdDate": "2025-08-02T08:37:19",
+      "updatedDate": "2026-02-11T11:25:57",
+      "owner": "Kristen Morgan",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8762.8,
+      "description": "Both let street leader all manager."
+    },
+    {
+      "id": "b117be92-c59b-4ce2-a2ba-9f2b3b406152",
+      "name": "Versatile well-modulated utilization 13",
+      "status": "Completed",
+      "createdDate": "2026-02-07T02:03:11",
+      "updatedDate": "2026-02-17T02:43:50",
+      "owner": "Sonya Whitaker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6563.67,
+      "description": "Voice participant young television."
+    },
+    {
+      "id": "98a381b1-1119-494a-bd58-edd4128794db",
+      "name": "Balanced zero tolerance model 14",
+      "status": "Completed",
+      "createdDate": "2026-01-14T21:22:28",
+      "updatedDate": "2026-02-03T23:50:01",
+      "owner": "Travis Mendez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6707.48,
+      "description": "Key about game decade war."
+    },
+    {
+      "id": "1b1e2732-8321-41e4-a274-2a51d0683858",
+      "name": "Open-architected explicit moratorium 15",
+      "status": "Pending",
+      "createdDate": "2025-05-01T04:42:17",
+      "updatedDate": "2026-02-09T08:46:07",
+      "owner": "Mariah Allen",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4197.02,
+      "description": "Many behind social type morning long order."
+    },
+    {
+      "id": "1784e1d3-d087-4201-b602-3a63a6c15d0f",
+      "name": "Customer-focused encompassing complexity 16",
+      "status": "Completed",
+      "createdDate": "2025-08-24T16:18:57",
+      "updatedDate": "2026-02-11T02:30:47",
+      "owner": "Justin Estrada",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3269.52,
+      "description": "Others can everything politics type receive."
+    },
+    {
+      "id": "610a0df5-5c36-4733-a639-0ba4b1176e8a",
+      "name": "Ergonomic bandwidth-monitored task-force 17",
+      "status": "Pending",
+      "createdDate": "2026-01-18T08:42:51",
+      "updatedDate": "2026-02-13T00:42:25",
+      "owner": "Ryan Olson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4733.17,
+      "description": "Experience just night outside."
+    },
+    {
+      "id": "76181894-eae6-490d-b0be-60ba2255b502",
+      "name": "Visionary clear-thinking support 18",
+      "status": "Active",
+      "createdDate": "2026-02-04T14:25:27",
+      "updatedDate": "2026-02-02T22:00:30",
+      "owner": "Zachary Hudson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 562.04,
+      "description": "Step education then specific."
+    },
+    {
+      "id": "bd1b468b-ec11-4c2a-b932-68c47a037b05",
+      "name": "Optional multi-tasking array 19",
+      "status": "Completed",
+      "createdDate": "2025-05-27T17:11:47",
+      "updatedDate": "2026-01-23T16:27:05",
+      "owner": "Thomas Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5949.93,
+      "description": "Provide take star."
+    },
+    {
+      "id": "2a3d7106-5645-49b5-8c2e-2dc9d9b06af4",
+      "name": "Proactive needs-based open architecture 20",
+      "status": "Active",
+      "createdDate": "2026-02-13T13:21:53",
+      "updatedDate": "2026-02-13T02:13:58",
+      "owner": "Stephanie Stafford",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9151.39,
+      "description": "Whose seat floor memory someone ability."
+    },
+    {
+      "id": "7e200abf-a2f4-4ddb-bc13-d0840a8eff77",
+      "name": "Streamlined upward-trending success 21",
+      "status": "Completed",
+      "createdDate": "2025-11-28T21:47:35",
+      "updatedDate": "2026-02-03T09:23:36",
+      "owner": "Heather Clark",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3000.4,
+      "description": "Trouble assume approach consider modern investment."
+    },
+    {
+      "id": "0b69cfcc-e53a-48da-9f66-f96094643168",
+      "name": "Front-line uniform synergy 22",
+      "status": "Pending",
+      "createdDate": "2026-02-09T16:55:15",
+      "updatedDate": "2026-02-09T17:39:49",
+      "owner": "Kathryn Williams",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2830.09,
+      "description": "Despite already however whom."
+    },
+    {
+      "id": "2d135e67-4d35-4995-8c7e-e36f1fbcf293",
+      "name": "Virtual interactive intranet 23",
+      "status": "Completed",
+      "createdDate": "2025-03-21T05:32:39",
+      "updatedDate": "2026-02-08T05:32:42",
+      "owner": "Thomas Duncan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9512.73,
+      "description": "Clearly newspaper pay big Mrs American themselves real."
+    },
+    {
+      "id": "87899ad4-0e98-4123-b9dc-fa8f1f67d969",
+      "name": "Open-architected zero administration migration 24",
+      "status": "Inactive",
+      "createdDate": "2025-04-06T05:02:23",
+      "updatedDate": "2026-01-26T13:40:31",
+      "owner": "Kelly Carpenter",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7671.98,
+      "description": "Last service fine according."
+    },
+    {
+      "id": "18312e55-44e1-46be-bf16-f6a804dd731b",
+      "name": "Triple-buffered clear-thinking moderator 25",
+      "status": "Pending",
+      "createdDate": "2025-06-09T00:26:32",
+      "updatedDate": "2026-01-18T23:52:26",
+      "owner": "Seth Rodriguez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8135.09,
+      "description": "Recent national require whose."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

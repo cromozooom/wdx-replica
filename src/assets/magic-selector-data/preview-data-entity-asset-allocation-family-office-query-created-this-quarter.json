@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1276,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "fe4feaa4-daca-4863-b07e-cf97e409d389",
+      "name": "Switchable object-oriented archive 1",
+      "status": "Completed",
+      "createdDate": "2026-01-10T04:29:58",
+      "updatedDate": "2026-02-01T17:08:18",
+      "owner": "James Martin",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9848.56,
+      "description": "Far interest person present."
+    },
+    {
+      "id": "9be72b5c-a8f3-4255-9ca9-af65cf6f0332",
+      "name": "Balanced dedicated collaboration 2",
+      "status": "Inactive",
+      "createdDate": "2025-09-27T00:09:10",
+      "updatedDate": "2026-01-27T12:16:50",
+      "owner": "Curtis Hernandez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 870.35,
+      "description": "Offer thousand accept find international no."
+    },
+    {
+      "id": "aefe3b15-24dc-4467-b1cc-dae9e67a1610",
+      "name": "Operative non-volatile hierarchy 3",
+      "status": "Inactive",
+      "createdDate": "2025-08-28T10:10:19",
+      "updatedDate": "2026-01-31T07:22:45",
+      "owner": "Robert Elliott",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2230.0,
+      "description": "Up process summer create why name fly."
+    },
+    {
+      "id": "248e7b9d-3080-42df-b6a8-79a78371ef25",
+      "name": "Stand-alone clear-thinking firmware 4",
+      "status": "Inactive",
+      "createdDate": "2025-09-24T16:39:03",
+      "updatedDate": "2026-02-06T18:28:15",
+      "owner": "Robert Hickman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5932.8,
+      "description": "Nor source move effort."
+    },
+    {
+      "id": "fde98af8-eb07-4e3c-bb3d-f9ee886960ac",
+      "name": "Universal client-server conglomeration 5",
+      "status": "Completed",
+      "createdDate": "2025-10-20T10:55:18",
+      "updatedDate": "2026-01-18T15:05:47",
+      "owner": "Laurie Mcbride",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 497.66,
+      "description": "Social detail explain."
+    },
+    {
+      "id": "d8f5c8a2-ecf0-44e3-811e-c5f1a216e8a0",
+      "name": "Balanced composite complexity 6",
+      "status": "Pending",
+      "createdDate": "2025-09-01T01:14:48",
+      "updatedDate": "2026-02-10T20:34:49",
+      "owner": "Cody Gillespie",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4657.26,
+      "description": "Brother check remember fear."
+    },
+    {
+      "id": "6d25ca22-fae4-4b1e-9ebe-d042eefd2f7e",
+      "name": "Open-source didactic system engine 7",
+      "status": "Pending",
+      "createdDate": "2025-10-02T13:23:05",
+      "updatedDate": "2026-01-22T20:09:00",
+      "owner": "Jason Pratt",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5645.87,
+      "description": "Current water age marriage."
+    },
+    {
+      "id": "29be3dd1-b35d-4549-8e46-32f740e677f4",
+      "name": "Balanced 3rdgeneration instruction set 8",
+      "status": "Active",
+      "createdDate": "2025-05-08T11:22:38",
+      "updatedDate": "2026-01-31T04:21:39",
+      "owner": "Derek Fisher",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5854.39,
+      "description": "Image great worker."
+    },
+    {
+      "id": "6ab5d052-f27b-4fc1-9098-4568f8b5a6a5",
+      "name": "Right-sized stable open system 9",
+      "status": "Inactive",
+      "createdDate": "2025-04-02T10:39:13",
+      "updatedDate": "2026-01-20T04:35:08",
+      "owner": "Daniel Lyons",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6594.3,
+      "description": "Thus life agreement fund street."
+    },
+    {
+      "id": "2680f8e6-7bd0-4132-8035-954cc879ca32",
+      "name": "Re-engineered bandwidth-monitored implementation 10",
+      "status": "Completed",
+      "createdDate": "2026-01-17T12:57:18",
+      "updatedDate": "2026-02-02T04:45:29",
+      "owner": "Ana Gonzalez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3135.49,
+      "description": "Support science guess occur."
+    },
+    {
+      "id": "5a753ddc-fa63-4e5c-bb37-afeb6775e9f8",
+      "name": "Intuitive impactful open system 11",
+      "status": "Active",
+      "createdDate": "2025-09-24T00:18:45",
+      "updatedDate": "2026-01-31T21:11:09",
+      "owner": "William Bridges",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9085.33,
+      "description": "Safe weight fine wall."
+    },
+    {
+      "id": "52c54dbd-3d87-446f-8713-1ec668aa6388",
+      "name": "Vision-oriented well-modulated support 12",
+      "status": "Pending",
+      "createdDate": "2025-05-03T09:11:56",
+      "updatedDate": "2026-02-16T14:12:07",
+      "owner": "Kevin Gross",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2836.48,
+      "description": "Foot upon wife kitchen society."
+    },
+    {
+      "id": "a26e9fbd-8911-476b-b3b7-55e338204f29",
+      "name": "Streamlined holistic solution 13",
+      "status": "Active",
+      "createdDate": "2025-10-06T18:13:54",
+      "updatedDate": "2026-02-16T12:06:59",
+      "owner": "Jennifer Singh",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 995.53,
+      "description": "Success important group condition within than next."
+    },
+    {
+      "id": "3a4ba0fc-3cb8-4d2e-8a75-d876b2e68864",
+      "name": "Expanded human-resource intranet 14",
+      "status": "Inactive",
+      "createdDate": "2025-03-26T18:18:37",
+      "updatedDate": "2026-01-18T12:35:10",
+      "owner": "Kimberly Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5760.62,
+      "description": "Soon consider after process for."
+    },
+    {
+      "id": "e9aa40bd-ce4b-4821-a322-1dfc10d649e1",
+      "name": "Pre-emptive real-time strategy 15",
+      "status": "Active",
+      "createdDate": "2025-04-09T21:48:25",
+      "updatedDate": "2026-02-08T13:43:33",
+      "owner": "James Lee",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4062.83,
+      "description": "Beautiful organization technology beautiful even maybe."
+    },
+    {
+      "id": "c201fe41-e820-4845-b4b3-6b09c9779847",
+      "name": "Triple-buffered optimizing instruction set 16",
+      "status": "Completed",
+      "createdDate": "2025-08-29T09:53:54",
+      "updatedDate": "2026-01-23T16:55:05",
+      "owner": "Christy Berg",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5381.74,
+      "description": "Whatever stop result relationship machine."
+    },
+    {
+      "id": "be02ff4c-de38-424d-9c12-dfdd802fc9aa",
+      "name": "Universal leadingedge instruction set 17",
+      "status": "Inactive",
+      "createdDate": "2025-10-20T17:10:10",
+      "updatedDate": "2026-01-29T14:33:03",
+      "owner": "Sara Munoz",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6515.96,
+      "description": "Water father positive realize game control."
+    },
+    {
+      "id": "54eb2bd0-874f-47f2-b2d9-4bbf0d0904b2",
+      "name": "Function-based mission-critical data-warehouse 18",
+      "status": "Inactive",
+      "createdDate": "2025-04-28T15:35:39",
+      "updatedDate": "2026-01-31T01:19:19",
+      "owner": "Gilbert Farrell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9913.95,
+      "description": "Different center TV question year loss thus their."
+    },
+    {
+      "id": "60ddd24e-8f91-4cef-b8ae-48404d577f45",
+      "name": "Cross-group non-volatile product 19",
+      "status": "Pending",
+      "createdDate": "2025-08-06T13:03:09",
+      "updatedDate": "2026-02-11T03:43:16",
+      "owner": "Daniel Acosta",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 115.86,
+      "description": "Course pressure hard citizen."
+    },
+    {
+      "id": "82989de9-0518-40e5-8b90-43f7376289e6",
+      "name": "Sharable reciprocal challenge 20",
+      "status": "Pending",
+      "createdDate": "2025-07-15T18:20:28",
+      "updatedDate": "2026-02-07T16:26:20",
+      "owner": "Mark Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5995.56,
+      "description": "Practice response stay and sound establish."
+    },
+    {
+      "id": "8275985a-2fba-4683-b0e5-b75e421cb3a5",
+      "name": "Synergistic scalable Internet solution 21",
+      "status": "Inactive",
+      "createdDate": "2025-11-15T16:50:21",
+      "updatedDate": "2026-02-14T01:15:24",
+      "owner": "Kimberly Sanders",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8071.65,
+      "description": "Out scientist growth office quite."
+    },
+    {
+      "id": "ad66b6c3-514e-4601-b062-79cec13bf7b5",
+      "name": "Progressive uniform definition 22",
+      "status": "Completed",
+      "createdDate": "2025-04-19T14:18:55",
+      "updatedDate": "2026-02-17T05:41:50",
+      "owner": "Ralph Walker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3532.98,
+      "description": "Much if seek room former animal."
+    },
+    {
+      "id": "62999694-e994-4a11-bbb7-85e4c0ca06b5",
+      "name": "Managed analyzing knowledge user 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-23T10:32:51",
+      "updatedDate": "2026-01-26T22:27:27",
+      "owner": "Oscar Hall",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 274.88,
+      "description": "Management action someone look shoulder sell."
+    },
+    {
+      "id": "4957c408-b84a-409e-99f0-f55398e188ce",
+      "name": "Proactive fresh-thinking open system 24",
+      "status": "Completed",
+      "createdDate": "2025-04-03T15:43:16",
+      "updatedDate": "2026-02-07T08:13:26",
+      "owner": "Mary Bailey",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1343.98,
+      "description": "Sign say type scene."
+    },
+    {
+      "id": "a2fb53ca-945a-43c3-8ba8-e76530764c98",
+      "name": "Reverse-engineered 6thgeneration complexity 25",
+      "status": "Pending",
+      "createdDate": "2025-05-24T23:39:58",
+      "updatedDate": "2026-01-19T08:55:52",
+      "owner": "Rachel Tucker",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3098.87,
+      "description": "Tonight identify very natural."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

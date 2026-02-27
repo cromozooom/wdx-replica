@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-modelportfolio",
+  "queryId": "query-active-only",
+  "totalCount": 1028,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b4239d21-e45c-4d00-b0fc-142624ac40c4",
+      "name": "Phased tertiary database 1",
+      "status": "Pending",
+      "createdDate": "2025-03-06T14:48:03",
+      "updatedDate": "2026-02-16T17:33:19",
+      "owner": "Kristy Benson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2115.41,
+      "description": "Health hit wonder red on seven eat."
+    },
+    {
+      "id": "f23c561f-1477-4fab-8750-c440154e1d6b",
+      "name": "Persistent next generation benchmark 2",
+      "status": "Active",
+      "createdDate": "2025-09-22T15:59:01",
+      "updatedDate": "2026-02-13T03:42:50",
+      "owner": "Christopher Little",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5341.42,
+      "description": "Wear better stuff because protect cell reality."
+    },
+    {
+      "id": "d94893f1-8cf7-428a-9f7c-a451fc712fbd",
+      "name": "Re-engineered transitional hub 3",
+      "status": "Completed",
+      "createdDate": "2025-05-15T08:12:52",
+      "updatedDate": "2026-01-18T16:04:10",
+      "owner": "Kayla Potter",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3180.48,
+      "description": "Brother leave first firm."
+    },
+    {
+      "id": "944cf7c7-1927-4384-8334-2a9b1cb4df53",
+      "name": "Reduced high-level capability 4",
+      "status": "Pending",
+      "createdDate": "2025-03-20T00:07:11",
+      "updatedDate": "2026-01-24T18:26:30",
+      "owner": "Christine Davis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3185.82,
+      "description": "Explain house or idea."
+    },
+    {
+      "id": "0177cf30-2d59-4177-bae4-1f1c52d78bc4",
+      "name": "Networked coherent core 5",
+      "status": "Active",
+      "createdDate": "2025-05-27T03:52:22",
+      "updatedDate": "2026-01-19T12:28:19",
+      "owner": "Matthew Soto",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2406.34,
+      "description": "First plant admit after run state scene reduce."
+    },
+    {
+      "id": "1ee5a7d2-f2e8-4569-a4db-8f17519fb2f4",
+      "name": "Fully-configurable bifurcated ability 6",
+      "status": "Inactive",
+      "createdDate": "2025-04-29T07:56:10",
+      "updatedDate": "2026-02-05T12:18:38",
+      "owner": "Elizabeth Clayton",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3419.36,
+      "description": "Prevent drop door most move law south."
+    },
+    {
+      "id": "21570d9c-b737-49ac-8d48-9e3ffb0eb4cb",
+      "name": "Up-sized fresh-thinking Internet solution 7",
+      "status": "Completed",
+      "createdDate": "2025-06-08T20:39:39",
+      "updatedDate": "2026-01-29T20:57:11",
+      "owner": "Brian Mack",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7577.48,
+      "description": "Walk body question space."
+    },
+    {
+      "id": "d4fd5836-49fd-4de9-8731-63e99c5fc03b",
+      "name": "Business-focused non-volatile parallelism 8",
+      "status": "Active",
+      "createdDate": "2025-11-11T08:49:05",
+      "updatedDate": "2026-01-24T03:33:15",
+      "owner": "Daniel Green",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3431.39,
+      "description": "Fight none certain speak lay positive."
+    },
+    {
+      "id": "5a2fd2fd-928b-4948-9729-9d64e9b68302",
+      "name": "Persevering context-sensitive moderator 9",
+      "status": "Active",
+      "createdDate": "2025-06-08T01:24:06",
+      "updatedDate": "2026-01-24T00:44:42",
+      "owner": "Tim Bauer",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1651.63,
+      "description": "Wonder sure face size improve present week."
+    },
+    {
+      "id": "6da6679c-20ea-48d9-b4ad-5c8c3bc4390e",
+      "name": "Proactive intermediate extranet 10",
+      "status": "Completed",
+      "createdDate": "2025-10-27T16:44:03",
+      "updatedDate": "2026-02-04T20:47:41",
+      "owner": "Vincent Russell",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8745.25,
+      "description": "Least appear there why."
+    },
+    {
+      "id": "118308dd-72ce-498a-bedd-6e07787e705e",
+      "name": "Pre-emptive radical core 11",
+      "status": "Pending",
+      "createdDate": "2025-08-13T20:01:13",
+      "updatedDate": "2026-01-25T16:42:04",
+      "owner": "Kevin Arnold",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9777.24,
+      "description": "Issue machine usually."
+    },
+    {
+      "id": "c94005a8-273e-44b3-9fc2-e603a84c06ba",
+      "name": "Advanced full-range strategy 12",
+      "status": "Inactive",
+      "createdDate": "2025-11-25T16:46:50",
+      "updatedDate": "2026-02-07T10:50:10",
+      "owner": "Steven Travis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2574.94,
+      "description": "Population while power alone."
+    },
+    {
+      "id": "627ceab0-5105-4a75-8b90-c961b04f89f0",
+      "name": "Switchable bandwidth-monitored policy 13",
+      "status": "Completed",
+      "createdDate": "2025-04-13T11:26:00",
+      "updatedDate": "2026-01-21T19:48:52",
+      "owner": "Rachel Gomez MD",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9534.08,
+      "description": "Civil character season although program again mean."
+    },
+    {
+      "id": "e268d575-89e7-4962-b7e0-471328997d86",
+      "name": "Phased value-added knowledge user 14",
+      "status": "Active",
+      "createdDate": "2025-08-26T04:34:41",
+      "updatedDate": "2026-01-22T07:00:03",
+      "owner": "Sarah Young",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 265.68,
+      "description": "Land cover point necessary."
+    },
+    {
+      "id": "5f4352db-ba27-4f05-b7e5-e106aa11c745",
+      "name": "Down-sized fresh-thinking circuit 15",
+      "status": "Inactive",
+      "createdDate": "2026-01-13T05:41:52",
+      "updatedDate": "2026-02-01T03:55:59",
+      "owner": "Kent Campbell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1998.78,
+      "description": "Box share home growth sing develop station."
+    },
+    {
+      "id": "c7031873-3ffa-47f5-bc69-765929ce042a",
+      "name": "Persistent multimedia methodology 16",
+      "status": "Active",
+      "createdDate": "2025-07-30T15:42:22",
+      "updatedDate": "2026-02-08T07:23:39",
+      "owner": "Joanne Nelson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5176.94,
+      "description": "Beat impact suffer."
+    },
+    {
+      "id": "eb93f7f5-a965-4ef8-8556-5cffdd63c468",
+      "name": "Fully-configurable asymmetric knowledge user 17",
+      "status": "Inactive",
+      "createdDate": "2025-04-05T03:23:07",
+      "updatedDate": "2026-01-29T22:24:46",
+      "owner": "Kelly Orr",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4834.91,
+      "description": "Training provide fish read."
+    },
+    {
+      "id": "c5b22f78-3a26-4244-b709-943e555a0513",
+      "name": "Progressive 6thgeneration Local Area Network 18",
+      "status": "Inactive",
+      "createdDate": "2025-03-27T04:08:07",
+      "updatedDate": "2026-01-31T18:37:00",
+      "owner": "Kathleen Bowen",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 173.72,
+      "description": "Imagine couple if focus series."
+    },
+    {
+      "id": "9372e1ed-e5b9-4ad9-9343-c3cb5ec7fb6b",
+      "name": "Digitized radical standardization 19",
+      "status": "Active",
+      "createdDate": "2025-07-08T11:37:04",
+      "updatedDate": "2026-01-21T19:26:33",
+      "owner": "Teresa Marsh",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7929.02,
+      "description": "Business reflect drive single."
+    },
+    {
+      "id": "2be9cd5e-c614-4489-9d0b-94cb5d00daf6",
+      "name": "Re-engineered bandwidth-monitored concept 20",
+      "status": "Pending",
+      "createdDate": "2025-05-11T02:35:25",
+      "updatedDate": "2026-01-25T18:59:46",
+      "owner": "Cody Li",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9067.6,
+      "description": "Drive appear watch compare concern travel."
+    },
+    {
+      "id": "0567c3d9-e6ae-4d56-a511-aa89a17e8fbc",
+      "name": "Enhanced systemic forecast 21",
+      "status": "Pending",
+      "createdDate": "2025-12-08T13:00:33",
+      "updatedDate": "2026-01-27T23:58:07",
+      "owner": "Wayne Oneal",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5437.28,
+      "description": "Prevent pass here bad many live hotel."
+    },
+    {
+      "id": "0dd8f460-7c43-4fb1-85c8-ace03598a504",
+      "name": "User-centric hybrid core 22",
+      "status": "Completed",
+      "createdDate": "2026-01-25T03:28:42",
+      "updatedDate": "2026-02-03T22:17:42",
+      "owner": "Nicole Vang",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2141.95,
+      "description": "Various activity could ago."
+    },
+    {
+      "id": "cb81ac9d-7b3f-4b68-9c6e-848d08860c99",
+      "name": "Monitored optimizing array 23",
+      "status": "Active",
+      "createdDate": "2025-08-31T20:31:29",
+      "updatedDate": "2026-01-28T12:58:14",
+      "owner": "John West",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4042.03,
+      "description": "Material participant use citizen different add material."
+    },
+    {
+      "id": "be038b84-0901-4c28-b7dd-ee798823212f",
+      "name": "Mandatory bifurcated Graphical User Interface 24",
+      "status": "Active",
+      "createdDate": "2025-07-31T21:12:56",
+      "updatedDate": "2026-01-22T20:21:37",
+      "owner": "Sarah Hill DDS",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8814.16,
+      "description": "Light become public important."
+    },
+    {
+      "id": "67a27aea-3934-48cb-8fb2-28f681e52d76",
+      "name": "Public-key directional moratorium 25",
+      "status": "Active",
+      "createdDate": "2025-10-07T04:50:50",
+      "updatedDate": "2026-02-12T01:15:10",
+      "owner": "James Grant",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4734.93,
+      "description": "Kitchen conference product continue."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

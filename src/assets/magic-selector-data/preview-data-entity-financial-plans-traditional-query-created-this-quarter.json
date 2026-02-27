@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 937,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "879a5de3-9808-4b14-8c45-54a51ca9ebd7",
+      "name": "Programmable neutral product 1",
+      "status": "Pending",
+      "createdDate": "2025-05-21T01:37:50",
+      "updatedDate": "2026-02-11T19:12:47",
+      "owner": "Jose Chavez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4793.24,
+      "description": "Mother keep until quality."
+    },
+    {
+      "id": "0443c57e-beec-4585-8525-b01342b9e23d",
+      "name": "Diverse client-driven contingency 2",
+      "status": "Inactive",
+      "createdDate": "2025-05-21T05:21:24",
+      "updatedDate": "2026-01-23T12:42:47",
+      "owner": "Cynthia Hughes",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4052.73,
+      "description": "Article across name bill stuff."
+    },
+    {
+      "id": "3e42900c-ff40-4ea9-8a8f-aa7ba7edb3ec",
+      "name": "Persistent web-enabled info-mediaries 3",
+      "status": "Pending",
+      "createdDate": "2025-06-13T23:13:31",
+      "updatedDate": "2026-02-01T09:01:49",
+      "owner": "Rebecca Powers",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1152.66,
+      "description": "Second campaign TV represent year administration."
+    },
+    {
+      "id": "a14b4b1d-5d53-454c-977b-4d2ef4b6b19c",
+      "name": "Cross-platform directional solution 4",
+      "status": "Completed",
+      "createdDate": "2025-10-08T15:15:25",
+      "updatedDate": "2026-02-02T07:19:24",
+      "owner": "John Webb",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8998.05,
+      "description": "Everything clearly wear magazine detail life citizen else."
+    },
+    {
+      "id": "07397f56-9544-4b35-83cd-1f687008af87",
+      "name": "Mandatory didactic secured line 5",
+      "status": "Active",
+      "createdDate": "2025-05-27T21:08:26",
+      "updatedDate": "2026-01-27T07:38:46",
+      "owner": "Ashley Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3127.47,
+      "description": "Spend capital say write situation action."
+    },
+    {
+      "id": "930f2fee-8a1f-414a-9f51-14e23f4d914d",
+      "name": "Decentralized transitional conglomeration 6",
+      "status": "Inactive",
+      "createdDate": "2025-04-23T01:09:27",
+      "updatedDate": "2026-02-15T03:00:18",
+      "owner": "Lynn Robbins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5388.22,
+      "description": "Speech authority take real break certain yeah eye."
+    },
+    {
+      "id": "7b7380f6-1dbf-45c0-98ca-677f0b40d27f",
+      "name": "Focused optimizing neural-net 7",
+      "status": "Completed",
+      "createdDate": "2025-07-29T00:25:38",
+      "updatedDate": "2026-01-27T13:36:16",
+      "owner": "Jaclyn Gomez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 489.02,
+      "description": "Both partner fall month."
+    },
+    {
+      "id": "f173213e-aaea-443c-baae-ac1b7411dcac",
+      "name": "Multi-layered upward-trending core 8",
+      "status": "Active",
+      "createdDate": "2025-09-23T03:18:31",
+      "updatedDate": "2026-01-31T23:02:19",
+      "owner": "Tracey Wilson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4015.57,
+      "description": "Contain indicate much site create gun computer."
+    },
+    {
+      "id": "b7a29942-2a98-4fcd-8cfb-9b47912ca717",
+      "name": "Compatible even-keeled success 9",
+      "status": "Active",
+      "createdDate": "2025-05-06T04:12:05",
+      "updatedDate": "2026-01-25T09:57:34",
+      "owner": "Jean Wolf",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2765.7,
+      "description": "Far responsibility high born price someone various."
+    },
+    {
+      "id": "64db40c8-fe9c-4c7d-a012-773a40c247c7",
+      "name": "Optimized bifurcated project 10",
+      "status": "Active",
+      "createdDate": "2025-10-15T09:57:13",
+      "updatedDate": "2026-02-17T04:05:30",
+      "owner": "Paul Lucas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4729.11,
+      "description": "Tough series send five marriage here."
+    },
+    {
+      "id": "629ed6d4-bbd6-4d8a-94cf-912f8367df40",
+      "name": "Centralized upward-trending superstructure 11",
+      "status": "Active",
+      "createdDate": "2025-10-29T21:24:11",
+      "updatedDate": "2026-02-06T02:34:56",
+      "owner": "Alicia Smith",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5510.55,
+      "description": "True news live pass plan include."
+    },
+    {
+      "id": "b9241299-0927-4a27-bba7-9f7e214c5612",
+      "name": "Compatible full-range task-force 12",
+      "status": "Completed",
+      "createdDate": "2025-03-28T15:41:32",
+      "updatedDate": "2026-02-13T05:13:47",
+      "owner": "Austin Richard",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4476.87,
+      "description": "People many price officer you too."
+    },
+    {
+      "id": "8b2839a3-5548-4afa-9a3f-bdb58ccb98ad",
+      "name": "Multi-channeled asynchronous process improvement 13",
+      "status": "Pending",
+      "createdDate": "2025-06-17T11:42:02",
+      "updatedDate": "2026-01-19T16:06:41",
+      "owner": "Kimberly Melendez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8795.44,
+      "description": "Affect stage population black herself deep."
+    },
+    {
+      "id": "bf85eaaa-1287-4553-89bf-5ce112cde41f",
+      "name": "Stand-alone global encoding 14",
+      "status": "Active",
+      "createdDate": "2025-06-07T05:25:05",
+      "updatedDate": "2026-02-02T14:29:08",
+      "owner": "Melissa Gentry",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2603.26,
+      "description": "How network everybody above bed there audience whether."
+    },
+    {
+      "id": "bb8d3d91-510d-4d75-a079-8969d7b489d0",
+      "name": "Implemented systematic migration 15",
+      "status": "Active",
+      "createdDate": "2025-09-18T04:27:04",
+      "updatedDate": "2026-02-08T12:00:56",
+      "owner": "Pam Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8036.23,
+      "description": "Camera benefit this tax improve memory."
+    },
+    {
+      "id": "e1a77e2e-e234-4af8-aed5-0d21a6ebab3e",
+      "name": "Digitized executive database 16",
+      "status": "Active",
+      "createdDate": "2025-03-11T18:36:06",
+      "updatedDate": "2026-01-26T19:25:56",
+      "owner": "Joseph Peterson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7312.37,
+      "description": "Particularly career million quite forget physical."
+    },
+    {
+      "id": "5fe2a851-6e66-445f-b42e-eb088cc26bf1",
+      "name": "Streamlined 6thgeneration toolset 17",
+      "status": "Pending",
+      "createdDate": "2025-05-17T21:43:53",
+      "updatedDate": "2026-02-10T21:32:56",
+      "owner": "David Peterson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9076.95,
+      "description": "Treat line something finally west agree official."
+    },
+    {
+      "id": "bc70e31e-baf7-43aa-a969-a697eaf66349",
+      "name": "Inverse demand-driven access 18",
+      "status": "Inactive",
+      "createdDate": "2025-06-12T05:20:06",
+      "updatedDate": "2026-01-21T07:17:04",
+      "owner": "Cassandra Jackson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7495.74,
+      "description": "Scene it here though central."
+    },
+    {
+      "id": "ea4d6a9d-64f8-4865-8dcd-db00908b8867",
+      "name": "Phased grid-enabled open system 19",
+      "status": "Completed",
+      "createdDate": "2025-08-27T20:38:42",
+      "updatedDate": "2026-02-12T20:56:30",
+      "owner": "Randy Wallace",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4434.86,
+      "description": "Forward end real trade."
+    },
+    {
+      "id": "a6983e83-641f-4010-86d7-05c0af1c5092",
+      "name": "Virtual eco-centric Graphical User Interface 20",
+      "status": "Inactive",
+      "createdDate": "2025-08-11T16:31:41",
+      "updatedDate": "2026-02-12T06:34:40",
+      "owner": "Kaitlyn Duran",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3388.07,
+      "description": "Piece believe page public however some."
+    },
+    {
+      "id": "900a8b16-ff07-451d-a0bc-364d9f220128",
+      "name": "Customizable modular core 21",
+      "status": "Completed",
+      "createdDate": "2025-07-22T15:16:34",
+      "updatedDate": "2026-01-20T07:32:33",
+      "owner": "Jordan Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2267.57,
+      "description": "Begin population field event wonder book."
+    },
+    {
+      "id": "b92ba7e8-5e6a-499c-987f-14054eddd3e6",
+      "name": "Seamless static Internet solution 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-11T03:03:08",
+      "updatedDate": "2026-02-13T09:16:46",
+      "owner": "Brenda Kramer",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9853.62,
+      "description": "Seem official run word."
+    },
+    {
+      "id": "95c94f96-8d5a-47fc-bb51-a6e1e616375a",
+      "name": "Face-to-face regional projection 23",
+      "status": "Pending",
+      "createdDate": "2025-08-20T15:16:58",
+      "updatedDate": "2026-02-02T06:39:21",
+      "owner": "Dylan Richards",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4925.99,
+      "description": "Must certainly you letter close seven."
+    },
+    {
+      "id": "e2632254-72d5-440a-8cea-84d64657c060",
+      "name": "Ergonomic zero administration customer loyalty 24",
+      "status": "Completed",
+      "createdDate": "2025-10-06T10:19:41",
+      "updatedDate": "2026-01-20T02:28:10",
+      "owner": "Keith Young",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7675.22,
+      "description": "Try table inside else laugh."
+    },
+    {
+      "id": "b8900873-b371-45ad-83e3-93f68ff1d6b8",
+      "name": "Digitized background function 25",
+      "status": "Completed",
+      "createdDate": "2025-10-18T03:29:04",
+      "updatedDate": "2026-02-01T12:47:12",
+      "owner": "Susan Ashley",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2499.78,
+      "description": "Draw group world hotel wall shake."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

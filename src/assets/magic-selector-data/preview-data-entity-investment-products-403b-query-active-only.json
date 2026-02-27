@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 598,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "0444753a-2042-43be-a1c0-dae6b7ae30a8",
+      "name": "Down-sized coherent monitoring 1",
+      "status": "Pending",
+      "createdDate": "2025-09-26T05:54:38",
+      "updatedDate": "2026-01-31T11:51:36",
+      "owner": "Joshua Briggs",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4659.93,
+      "description": "Military need state."
+    },
+    {
+      "id": "7d67749d-730e-421e-8599-040459e65a84",
+      "name": "Seamless composite secured line 2",
+      "status": "Completed",
+      "createdDate": "2025-02-18T12:13:22",
+      "updatedDate": "2026-01-21T18:44:42",
+      "owner": "Jeffrey Dunn",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2108.59,
+      "description": "Current suffer product remain run project hospital."
+    },
+    {
+      "id": "284cbee1-c811-4b02-b200-b88d0faa6454",
+      "name": "Adaptive content-based standardization 3",
+      "status": "Pending",
+      "createdDate": "2026-01-03T12:03:37",
+      "updatedDate": "2026-02-09T07:54:02",
+      "owner": "Sharon Hughes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2672.62,
+      "description": "Site dark leader."
+    },
+    {
+      "id": "2d68b996-b2bc-49a6-9df4-9ff194ab4d81",
+      "name": "Extended static info-mediaries 4",
+      "status": "Pending",
+      "createdDate": "2025-09-13T06:40:43",
+      "updatedDate": "2026-01-25T22:49:47",
+      "owner": "Richard Simpson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8446.92,
+      "description": "Seven product range despite each economy present."
+    },
+    {
+      "id": "63c0e7fa-3b45-4aa7-9d63-4b3e82fb19dc",
+      "name": "Distributed responsive product 5",
+      "status": "Pending",
+      "createdDate": "2025-12-03T05:54:31",
+      "updatedDate": "2026-01-31T01:33:55",
+      "owner": "Kendra Norris",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7940.1,
+      "description": "Way bill industry find type prepare."
+    },
+    {
+      "id": "74d1a5a4-1c88-407b-b356-dd867b0838d5",
+      "name": "Vision-oriented reciprocal paradigm 6",
+      "status": "Active",
+      "createdDate": "2025-08-12T22:43:24",
+      "updatedDate": "2026-02-12T05:23:27",
+      "owner": "Michelle Anderson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7925.52,
+      "description": "Him long receive ask modern open."
+    },
+    {
+      "id": "8bed8e97-1ffd-4639-9f16-e4846430d50a",
+      "name": "Object-based regional moderator 7",
+      "status": "Active",
+      "createdDate": "2026-01-20T16:59:02",
+      "updatedDate": "2026-01-31T16:30:55",
+      "owner": "Tina Davis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4541.2,
+      "description": "Walk help maintain."
+    },
+    {
+      "id": "f34b54d3-683f-4445-8856-3f00bedea321",
+      "name": "Right-sized disintermediate database 8",
+      "status": "Pending",
+      "createdDate": "2025-09-02T15:55:04",
+      "updatedDate": "2026-01-24T16:03:40",
+      "owner": "Robert Obrien",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5862.21,
+      "description": "Relate decide everybody along east."
+    },
+    {
+      "id": "aa22739c-a748-4735-8099-6ad1d0154b41",
+      "name": "Configurable intangible neural-net 9",
+      "status": "Active",
+      "createdDate": "2025-12-22T01:28:48",
+      "updatedDate": "2026-01-26T01:50:24",
+      "owner": "Joseph Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4751.48,
+      "description": "Article glass system level professor nation."
+    },
+    {
+      "id": "e220edc6-4081-4c01-abbe-76d3834f9a27",
+      "name": "Down-sized zero-defect installation 10",
+      "status": "Pending",
+      "createdDate": "2025-04-30T08:24:44",
+      "updatedDate": "2026-02-01T20:36:35",
+      "owner": "Lori Reed",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5221.39,
+      "description": "Sea cell suggest."
+    },
+    {
+      "id": "7629f350-2c22-423a-b44b-43262891fa7a",
+      "name": "Compatible secondary challenge 11",
+      "status": "Active",
+      "createdDate": "2025-03-18T23:46:08",
+      "updatedDate": "2026-01-27T16:40:44",
+      "owner": "Steven Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7393.94,
+      "description": "Hear improve couple."
+    },
+    {
+      "id": "5d7363b9-bf79-40fb-8ab5-cb7c6874840a",
+      "name": "Progressive secondary collaboration 12",
+      "status": "Inactive",
+      "createdDate": "2025-03-29T11:02:29",
+      "updatedDate": "2026-02-12T19:19:45",
+      "owner": "Jessica Castaneda",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6022.0,
+      "description": "Challenge collection employee first room standard."
+    },
+    {
+      "id": "1020d559-b148-44c9-82b1-ae77b6ab2151",
+      "name": "Compatible client-driven initiative 13",
+      "status": "Pending",
+      "createdDate": "2025-11-23T10:43:25",
+      "updatedDate": "2026-01-24T09:06:05",
+      "owner": "James Wong",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7316.47,
+      "description": "East body option my difference less resource whether."
+    },
+    {
+      "id": "499dc475-33db-4601-89bf-978f6ffde06d",
+      "name": "Extended bottom-line Internet solution 14",
+      "status": "Pending",
+      "createdDate": "2025-06-24T01:39:02",
+      "updatedDate": "2026-01-27T23:03:18",
+      "owner": "Sharon Ruiz",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6618.18,
+      "description": "This poor during enjoy yourself."
+    },
+    {
+      "id": "f104038c-d05f-4440-8015-110de8f93e6b",
+      "name": "Reactive client-driven middleware 15",
+      "status": "Pending",
+      "createdDate": "2025-11-08T18:46:30",
+      "updatedDate": "2026-01-18T15:20:31",
+      "owner": "Jose David",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2836.83,
+      "description": "Year design the everyone Mrs."
+    },
+    {
+      "id": "ecd8d8c7-b867-412d-8827-02bb45cba542",
+      "name": "Grass-roots systematic solution 16",
+      "status": "Active",
+      "createdDate": "2025-11-14T17:51:19",
+      "updatedDate": "2026-02-07T23:08:10",
+      "owner": "Kaitlyn Carter",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9386.85,
+      "description": "Want thus state effect."
+    },
+    {
+      "id": "4e319378-a8f2-46d5-8620-be6794b96ddc",
+      "name": "Synergized object-oriented function 17",
+      "status": "Inactive",
+      "createdDate": "2025-04-22T04:21:16",
+      "updatedDate": "2026-01-22T04:41:56",
+      "owner": "Sean Schmidt",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2004.75,
+      "description": "Figure inside culture."
+    },
+    {
+      "id": "4f3e2a5d-0c0a-4dd1-a5ea-a8e6b7ca1a02",
+      "name": "Phased static workforce 18",
+      "status": "Pending",
+      "createdDate": "2025-12-03T02:45:44",
+      "updatedDate": "2026-02-05T05:58:04",
+      "owner": "Marcus Reyes",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6564.88,
+      "description": "Provide ball test simply price claim machine."
+    },
+    {
+      "id": "822bef33-4147-485d-87c4-e368c544dd6e",
+      "name": "Profound optimizing flexibility 19",
+      "status": "Completed",
+      "createdDate": "2025-07-18T09:20:37",
+      "updatedDate": "2026-02-09T04:36:45",
+      "owner": "Jacob Thomas",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1511.55,
+      "description": "Language newspaper knowledge source media common."
+    },
+    {
+      "id": "6242c51d-75ee-4300-b2b3-28a13ad96c88",
+      "name": "Multi-layered systemic standardization 20",
+      "status": "Inactive",
+      "createdDate": "2025-08-01T14:14:42",
+      "updatedDate": "2026-02-16T19:52:19",
+      "owner": "Nathan Alvarez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1663.87,
+      "description": "Hour technology book land safe."
+    },
+    {
+      "id": "8f42d544-3081-40e3-b53f-b5e3c1f18d27",
+      "name": "Configurable incremental capacity 21",
+      "status": "Inactive",
+      "createdDate": "2025-03-20T14:55:32",
+      "updatedDate": "2026-02-09T13:34:03",
+      "owner": "Amy Robles",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2211.79,
+      "description": "This even pull usually cost us loss."
+    },
+    {
+      "id": "de6bacbf-92cb-4969-9c5b-e06f370990ea",
+      "name": "Polarized content-based toolset 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-23T01:41:21",
+      "updatedDate": "2026-02-13T02:25:23",
+      "owner": "Colleen Best",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7930.24,
+      "description": "Decade stage main admit add outside five."
+    },
+    {
+      "id": "11f2dbf5-0c31-48a5-8e2a-212be0c84e64",
+      "name": "Persevering attitude-oriented implementation 23",
+      "status": "Completed",
+      "createdDate": "2025-04-27T06:54:47",
+      "updatedDate": "2026-02-16T16:13:54",
+      "owner": "Kristina Wheeler",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5362.71,
+      "description": "Hundred fact career risk opportunity writer."
+    },
+    {
+      "id": "e474d663-5039-42da-ae1c-6e30960d9243",
+      "name": "Monitored multi-tasking forecast 24",
+      "status": "Active",
+      "createdDate": "2025-07-07T06:03:04",
+      "updatedDate": "2026-01-22T23:04:57",
+      "owner": "Lance Hicks",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 254.5,
+      "description": "Rather win federal body."
+    },
+    {
+      "id": "38d0aa09-c3d0-42c7-82bf-e454ca2a9c35",
+      "name": "Optimized asymmetric projection 25",
+      "status": "Completed",
+      "createdDate": "2025-03-08T10:20:45",
+      "updatedDate": "2026-01-27T06:10:32",
+      "owner": "Dustin Campbell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2534.96,
+      "description": "Meet stand quickly."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

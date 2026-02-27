@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-security",
+  "queryId": "query-all-records",
+  "totalCount": 142,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "37c16075-afb3-4ec4-a62f-1319f8fb926d",
+      "name": "Business-focused background project 1",
+      "status": "Completed",
+      "createdDate": "2025-09-15T04:41:12",
+      "updatedDate": "2026-02-12T09:09:40",
+      "owner": "Jill Jenkins",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6487.0,
+      "description": "Down sound low minute expert two."
+    },
+    {
+      "id": "e2870d9e-6ff0-4b1c-ae23-373cdafd11c3",
+      "name": "Persevering attitude-oriented model 2",
+      "status": "Inactive",
+      "createdDate": "2025-05-15T11:51:49",
+      "updatedDate": "2026-02-11T19:49:36",
+      "owner": "Dakota Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2557.65,
+      "description": "Avoid write career option book look."
+    },
+    {
+      "id": "d71eb140-5f1f-4ea3-8340-9a465ccb8fbd",
+      "name": "Customer-focused dedicated software 3",
+      "status": "Pending",
+      "createdDate": "2025-04-10T13:10:14",
+      "updatedDate": "2026-01-27T00:05:08",
+      "owner": "Tracey Barnes",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2556.68,
+      "description": "Game focus against."
+    },
+    {
+      "id": "a3e281a3-49f9-46f3-87e7-d6eef903d512",
+      "name": "Adaptive neutral toolset 4",
+      "status": "Completed",
+      "createdDate": "2025-10-04T16:19:42",
+      "updatedDate": "2026-02-02T10:19:14",
+      "owner": "Frank Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1020.02,
+      "description": "Enjoy I natural."
+    },
+    {
+      "id": "d88d5379-c651-4953-9882-f566a1e99b7c",
+      "name": "Open-architected object-oriented customer loyalty 5",
+      "status": "Inactive",
+      "createdDate": "2025-02-26T19:09:01",
+      "updatedDate": "2026-02-01T23:06:53",
+      "owner": "Jonathan Harrison",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4805.56,
+      "description": "Rise station no table child dream impact."
+    },
+    {
+      "id": "ca88bd77-a923-43d0-bcf5-32e120407133",
+      "name": "Decentralized system-worthy hardware 6",
+      "status": "Inactive",
+      "createdDate": "2025-08-02T11:33:22",
+      "updatedDate": "2026-01-24T08:51:36",
+      "owner": "Jasmine Walker",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9436.8,
+      "description": "Color new information represent card treatment recent."
+    },
+    {
+      "id": "75be369f-ee73-4ea0-999c-c612c29bbd6a",
+      "name": "Reduced intermediate project 7",
+      "status": "Completed",
+      "createdDate": "2025-12-22T03:03:43",
+      "updatedDate": "2026-01-22T21:42:19",
+      "owner": "Amanda Barnett",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9484.26,
+      "description": "All story consumer student run soldier job share."
+    },
+    {
+      "id": "6829210e-1565-4f30-8505-471574ae2fae",
+      "name": "Managed interactive service-desk 8",
+      "status": "Active",
+      "createdDate": "2026-01-26T14:51:56",
+      "updatedDate": "2026-01-18T20:06:27",
+      "owner": "Kevin Schultz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4567.25,
+      "description": "Animal strong sound population yard book so."
+    },
+    {
+      "id": "158fdf54-9675-4d61-b149-f1e1ff8b257e",
+      "name": "Secured tertiary product 9",
+      "status": "Inactive",
+      "createdDate": "2025-09-13T04:25:40",
+      "updatedDate": "2026-01-24T19:14:26",
+      "owner": "Natasha Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4175.07,
+      "description": "Guy western young goal course fall."
+    },
+    {
+      "id": "0b40b516-4e25-4cec-b3f4-4561799192bc",
+      "name": "Secured optimizing benchmark 10",
+      "status": "Pending",
+      "createdDate": "2025-09-07T04:16:00",
+      "updatedDate": "2026-01-19T19:27:14",
+      "owner": "Kenneth Clark",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9145.13,
+      "description": "Soon wind left street."
+    },
+    {
+      "id": "d8a17f9c-8d05-4cb4-bd36-56c85d28700b",
+      "name": "Sharable motivating data-warehouse 11",
+      "status": "Inactive",
+      "createdDate": "2025-08-16T20:37:35",
+      "updatedDate": "2026-02-08T04:36:26",
+      "owner": "Richard Mcconnell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4482.68,
+      "description": "Research as over soon relate draw almost."
+    },
+    {
+      "id": "9ce3eba8-d00d-4ee5-a3dd-cea0c90e184d",
+      "name": "Organized executive frame 12",
+      "status": "Completed",
+      "createdDate": "2025-05-06T12:12:29",
+      "updatedDate": "2026-02-01T03:17:09",
+      "owner": "Rachel Donovan MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5857.03,
+      "description": "Phone dinner before city land movie discuss close."
+    },
+    {
+      "id": "96de2c2d-c21c-4c1a-bd69-c6eb41734b8a",
+      "name": "Progressive empowering portal 13",
+      "status": "Completed",
+      "createdDate": "2025-11-24T03:47:05",
+      "updatedDate": "2026-02-01T19:10:50",
+      "owner": "Melanie Stuart",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5801.14,
+      "description": "Environmental Mrs true source no us total."
+    },
+    {
+      "id": "b39de164-5e04-4702-af59-7feaa078e4d4",
+      "name": "Fundamental regional open architecture 14",
+      "status": "Pending",
+      "createdDate": "2026-01-10T16:29:37",
+      "updatedDate": "2026-01-22T21:12:42",
+      "owner": "Guy Schultz",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1767.93,
+      "description": "Many level friend ground fact notice."
+    },
+    {
+      "id": "3fef3d2a-aa15-44e5-a56a-51eb428e28d7",
+      "name": "Reduced mission-critical application 15",
+      "status": "Inactive",
+      "createdDate": "2026-01-28T03:08:37",
+      "updatedDate": "2026-02-04T23:57:59",
+      "owner": "Peter Chapman",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4043.28,
+      "description": "Hot note and class myself."
+    },
+    {
+      "id": "5552b61e-5cd3-4784-a308-a3d1b8b53db6",
+      "name": "Multi-channeled mobile adapter 16",
+      "status": "Active",
+      "createdDate": "2025-04-26T23:26:54",
+      "updatedDate": "2026-01-25T15:25:26",
+      "owner": "Amanda Edwards",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3347.97,
+      "description": "That ahead kitchen interview each."
+    },
+    {
+      "id": "8ecfd457-c0e1-421c-80eb-769de94e696d",
+      "name": "Multi-lateral exuding hierarchy 17",
+      "status": "Completed",
+      "createdDate": "2025-12-19T10:03:03",
+      "updatedDate": "2026-01-21T15:45:46",
+      "owner": "Brittany Martinez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7813.36,
+      "description": "Station push home hard movie."
+    },
+    {
+      "id": "8c64fca4-f472-4dc6-b907-fe9c68f6eaeb",
+      "name": "Configurable tangible attitude 18",
+      "status": "Active",
+      "createdDate": "2025-07-07T03:47:42",
+      "updatedDate": "2026-02-03T03:45:55",
+      "owner": "Marcus Ortiz",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7474.45,
+      "description": "Top book law."
+    },
+    {
+      "id": "b11bebe8-73d5-4e9c-8065-1f085f68d263",
+      "name": "Switchable homogeneous migration 19",
+      "status": "Inactive",
+      "createdDate": "2025-02-21T23:54:01",
+      "updatedDate": "2026-02-04T21:24:41",
+      "owner": "Connor Nelson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7043.23,
+      "description": "Still similar significant money discover."
+    },
+    {
+      "id": "4843c862-d481-4c1b-9c37-b2d0b0e03916",
+      "name": "Enhanced composite hardware 20",
+      "status": "Pending",
+      "createdDate": "2025-11-02T05:05:55",
+      "updatedDate": "2026-02-12T15:24:23",
+      "owner": "Fernando Clark",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4420.26,
+      "description": "Try agent great boy entire another."
+    },
+    {
+      "id": "9852e965-2889-4f5a-9a2b-b57fd6a8d2b8",
+      "name": "Organic transitional protocol 21",
+      "status": "Active",
+      "createdDate": "2025-05-09T17:28:11",
+      "updatedDate": "2026-01-30T15:11:52",
+      "owner": "Roy Miller",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2618.86,
+      "description": "Yourself mind enjoy relationship."
+    },
+    {
+      "id": "425a04a7-4284-4552-89fc-308960e194dc",
+      "name": "Enterprise-wide scalable toolset 22",
+      "status": "Inactive",
+      "createdDate": "2025-09-08T04:59:52",
+      "updatedDate": "2026-01-18T18:47:08",
+      "owner": "Michelle Lewis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6639.86,
+      "description": "Road discuss open do happen popular."
+    },
+    {
+      "id": "db7c43cc-e3b7-433e-8245-55c2cc6d98dc",
+      "name": "Fully-configurable zero administration archive 23",
+      "status": "Completed",
+      "createdDate": "2025-12-31T06:01:01",
+      "updatedDate": "2026-01-26T18:38:46",
+      "owner": "Vanessa Hamilton",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7049.95,
+      "description": "Wall them boy later create."
+    },
+    {
+      "id": "b3041ea7-401f-4fdc-8e1d-e870e8a93e46",
+      "name": "De-engineered clear-thinking middleware 24",
+      "status": "Completed",
+      "createdDate": "2025-04-16T04:54:19",
+      "updatedDate": "2026-01-26T16:40:02",
+      "owner": "Nancy Clark",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1853.05,
+      "description": "News lot billion choose."
+    },
+    {
+      "id": "3fe365ee-8401-49cf-b667-ddfd2cf82fdf",
+      "name": "Pre-emptive reciprocal frame 25",
+      "status": "Inactive",
+      "createdDate": "2025-07-28T06:49:49",
+      "updatedDate": "2026-01-19T20:33:31",
+      "owner": "John Dixon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1359.73,
+      "description": "Spend process yes growth actually."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

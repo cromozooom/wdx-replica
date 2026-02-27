@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 896,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "7e8ca5ee-9610-4f6d-994d-5ce7359255a2",
+      "name": "User-centric value-added focus group 1",
+      "status": "Completed",
+      "createdDate": "2025-10-09T00:01:15",
+      "updatedDate": "2026-02-04T03:21:05",
+      "owner": "Brianna Pierce",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2801.0,
+      "description": "Already talk kid south."
+    },
+    {
+      "id": "d5f7b59a-86fc-4295-af73-30f5449361e2",
+      "name": "Advanced client-driven attitude 2",
+      "status": "Inactive",
+      "createdDate": "2025-02-26T11:48:56",
+      "updatedDate": "2026-02-06T01:39:02",
+      "owner": "Ethan Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6385.54,
+      "description": "Old tend range that actually whose capital."
+    },
+    {
+      "id": "e90f1d17-15ec-4093-813e-13eb23984f6f",
+      "name": "Secured mission-critical capacity 3",
+      "status": "Inactive",
+      "createdDate": "2025-04-12T21:26:11",
+      "updatedDate": "2026-01-23T07:03:50",
+      "owner": "Adam Bradley",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 927.37,
+      "description": "Together firm show call though movement."
+    },
+    {
+      "id": "d0a31ae5-94fb-4040-885b-a96a0e6a602e",
+      "name": "Self-enabling leadingedge model 4",
+      "status": "Pending",
+      "createdDate": "2025-08-30T06:39:30",
+      "updatedDate": "2026-01-23T01:22:09",
+      "owner": "Kelly Thompson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4790.81,
+      "description": "Listen writer southern."
+    },
+    {
+      "id": "2223f437-39f2-47fe-8146-1854510b800f",
+      "name": "Cross-group bandwidth-monitored focus group 5",
+      "status": "Pending",
+      "createdDate": "2025-03-10T01:23:46",
+      "updatedDate": "2026-01-19T07:32:31",
+      "owner": "Sharon Manning",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 140.01,
+      "description": "Member enter effort together."
+    },
+    {
+      "id": "3a51fb70-7e46-4ce7-9031-d407d6a4f04d",
+      "name": "Expanded heuristic knowledge user 6",
+      "status": "Completed",
+      "createdDate": "2026-02-09T04:06:39",
+      "updatedDate": "2026-01-19T16:45:42",
+      "owner": "Angelica Fernandez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1996.76,
+      "description": "Yeah help live take position doctor rest."
+    },
+    {
+      "id": "a61355b4-66c1-49d9-a1ae-735d57071169",
+      "name": "Phased static toolset 7",
+      "status": "Inactive",
+      "createdDate": "2025-10-24T20:29:18",
+      "updatedDate": "2026-02-04T18:12:54",
+      "owner": "Deanna Walsh",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 756.89,
+      "description": "Box campaign baby yourself accept campaign every ago."
+    },
+    {
+      "id": "4b6a8633-251c-4bba-9abe-0ef6694bd85f",
+      "name": "Grass-roots local concept 8",
+      "status": "Completed",
+      "createdDate": "2025-12-12T10:39:40",
+      "updatedDate": "2026-01-31T09:10:43",
+      "owner": "Amanda Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2646.22,
+      "description": "Morning once notice start defense good a."
+    },
+    {
+      "id": "6d445017-86b0-4467-b4df-a59a59757af4",
+      "name": "Horizontal methodical capability 9",
+      "status": "Pending",
+      "createdDate": "2026-02-01T00:25:42",
+      "updatedDate": "2026-01-27T02:19:33",
+      "owner": "Scott Murphy",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3690.74,
+      "description": "Information week both think either."
+    },
+    {
+      "id": "16a505c0-80b2-4ca8-9af4-cad7edd5ee93",
+      "name": "Enhanced logistical throughput 10",
+      "status": "Completed",
+      "createdDate": "2025-03-04T22:28:57",
+      "updatedDate": "2026-02-04T09:15:42",
+      "owner": "Joe Collins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1941.73,
+      "description": "Wind discussion person explain fall best network middle."
+    },
+    {
+      "id": "f90f9f44-b15c-48ff-bd63-4f6f49bde2bb",
+      "name": "Balanced transitional productivity 11",
+      "status": "Active",
+      "createdDate": "2025-08-06T14:07:18",
+      "updatedDate": "2026-02-15T17:05:10",
+      "owner": "Steven Carson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1929.3,
+      "description": "Fast care hand ground."
+    },
+    {
+      "id": "10ef3935-d55b-451c-bcb8-9871d9032866",
+      "name": "Automated homogeneous success 12",
+      "status": "Active",
+      "createdDate": "2025-07-10T01:51:52",
+      "updatedDate": "2026-01-21T07:05:46",
+      "owner": "Alexis Day",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 177.11,
+      "description": "Practice bad movie future."
+    },
+    {
+      "id": "098c5b35-823c-44b3-884b-f4eb9a4241fe",
+      "name": "Optional didactic capability 13",
+      "status": "Active",
+      "createdDate": "2025-03-15T04:17:07",
+      "updatedDate": "2026-02-12T00:30:18",
+      "owner": "Ashley Herman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5228.79,
+      "description": "Total every somebody chance today friend from."
+    },
+    {
+      "id": "774c4ad0-f132-4a0a-b83b-3e83e9be7fd1",
+      "name": "Multi-lateral disintermediate utilization 14",
+      "status": "Active",
+      "createdDate": "2025-05-09T07:35:51",
+      "updatedDate": "2026-02-07T01:53:58",
+      "owner": "David Luna",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6553.48,
+      "description": "Never degree party less music."
+    },
+    {
+      "id": "1b0f5f4a-b3a8-4708-8aa4-acf3a9135cf0",
+      "name": "Multi-lateral local extranet 15",
+      "status": "Completed",
+      "createdDate": "2025-05-07T23:06:18",
+      "updatedDate": "2026-01-19T12:15:14",
+      "owner": "Maria Arnold",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5053.08,
+      "description": "Night in four community health threat test."
+    },
+    {
+      "id": "a6aaed3b-e68c-4c83-941b-c27d0733fbb4",
+      "name": "Adaptive eco-centric architecture 16",
+      "status": "Inactive",
+      "createdDate": "2025-06-18T17:17:13",
+      "updatedDate": "2026-01-19T08:58:30",
+      "owner": "Wendy Williams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8190.66,
+      "description": "Traditional red Congress tax education series general."
+    },
+    {
+      "id": "fe569bee-6bbd-4e91-8982-6d2049e5029d",
+      "name": "Assimilated dynamic initiative 17",
+      "status": "Inactive",
+      "createdDate": "2025-02-17T22:35:54",
+      "updatedDate": "2026-01-24T05:21:45",
+      "owner": "Stacy Howard",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9874.01,
+      "description": "Lawyer end technology billion those trip."
+    },
+    {
+      "id": "78bcafd5-50e5-43b8-b8a9-81e0083c6a0e",
+      "name": "Pre-emptive full-range flexibility 18",
+      "status": "Active",
+      "createdDate": "2025-12-26T17:25:13",
+      "updatedDate": "2026-01-28T13:38:51",
+      "owner": "Kathleen Wright",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4884.15,
+      "description": "Remain store walk matter religious spend."
+    },
+    {
+      "id": "aed95687-69e4-40e2-ba03-d3df2801f429",
+      "name": "Pre-emptive radical infrastructure 19",
+      "status": "Active",
+      "createdDate": "2025-07-06T14:44:25",
+      "updatedDate": "2026-01-30T16:25:30",
+      "owner": "Robert Suarez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 144.25,
+      "description": "Entire finish these difficult."
+    },
+    {
+      "id": "8a5d751f-ba52-4ff1-a7a9-2a5263c94890",
+      "name": "Pre-emptive mission-critical support 20",
+      "status": "Pending",
+      "createdDate": "2025-04-21T03:08:13",
+      "updatedDate": "2026-02-05T19:56:54",
+      "owner": "Lindsay Richardson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9711.93,
+      "description": "Support program specific model physical focus."
+    },
+    {
+      "id": "3f0e7e57-141d-4925-a409-6d2d632ad09d",
+      "name": "Optional asymmetric neural-net 21",
+      "status": "Inactive",
+      "createdDate": "2026-01-03T21:19:49",
+      "updatedDate": "2026-02-13T04:14:50",
+      "owner": "Jeffrey Everett",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 291.21,
+      "description": "Important prevent expert statement community avoid probably."
+    },
+    {
+      "id": "e60bef90-7ad5-4e74-a953-18bd15845429",
+      "name": "Reverse-engineered solution-oriented migration 22",
+      "status": "Active",
+      "createdDate": "2025-08-25T03:56:50",
+      "updatedDate": "2026-02-07T03:57:15",
+      "owner": "Amber Diaz",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6681.64,
+      "description": "Per note major week common write when."
+    },
+    {
+      "id": "e17effec-4286-4a2a-bb16-96239c201fe0",
+      "name": "Robust disintermediate service-desk 23",
+      "status": "Completed",
+      "createdDate": "2025-07-26T19:07:12",
+      "updatedDate": "2026-01-27T09:51:04",
+      "owner": "Justin Peterson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3867.69,
+      "description": "Page most need where possible star."
+    },
+    {
+      "id": "ad4684d1-131c-49d6-abe0-c620b937e690",
+      "name": "Synergistic directional paradigm 24",
+      "status": "Pending",
+      "createdDate": "2025-08-07T02:17:12",
+      "updatedDate": "2026-02-12T13:55:43",
+      "owner": "Dana Hernandez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9457.8,
+      "description": "Candidate young challenge interview north news."
+    },
+    {
+      "id": "979824c1-9511-4622-b276-89225c6b3cf2",
+      "name": "Face-to-face neutral approach 25",
+      "status": "Pending",
+      "createdDate": "2025-10-16T02:38:34",
+      "updatedDate": "2026-02-05T00:06:18",
+      "owner": "Alexandra Ross",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7354.49,
+      "description": "Cost rock open after."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

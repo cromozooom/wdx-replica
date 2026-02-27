@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-feestatement",
+  "queryId": "query-all-records",
+  "totalCount": 878,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "8511b71f-b801-4b43-9664-944d847db2f8",
+      "name": "Switchable foreground monitoring 1",
+      "status": "Pending",
+      "createdDate": "2025-07-15T21:35:02",
+      "updatedDate": "2026-01-26T00:50:14",
+      "owner": "William Santiago",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9912.79,
+      "description": "Present in I score."
+    },
+    {
+      "id": "b6c16f41-f4e8-472b-a5a6-cd120532c97b",
+      "name": "Robust directional collaboration 2",
+      "status": "Inactive",
+      "createdDate": "2025-06-30T04:05:12",
+      "updatedDate": "2026-01-30T07:23:57",
+      "owner": "Stephanie Hale",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9342.58,
+      "description": "Law will enough sell former tend."
+    },
+    {
+      "id": "d3c1c911-9898-410c-b6b7-3a6de33b78b7",
+      "name": "Synergized optimizing software 3",
+      "status": "Completed",
+      "createdDate": "2025-11-11T21:41:39",
+      "updatedDate": "2026-02-05T23:39:36",
+      "owner": "Angela Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 879.47,
+      "description": "Hard into fall several."
+    },
+    {
+      "id": "41e40d78-3acb-430f-88de-176ecabbf43a",
+      "name": "Vision-oriented even-keeled capacity 4",
+      "status": "Inactive",
+      "createdDate": "2025-08-09T05:03:05",
+      "updatedDate": "2026-01-22T18:47:57",
+      "owner": "Andrea Perry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7281.03,
+      "description": "Maybe teach treatment over series."
+    },
+    {
+      "id": "c79a8701-45af-4a62-8b6a-6f1afc2eb845",
+      "name": "Customer-focused background neural-net 5",
+      "status": "Inactive",
+      "createdDate": "2025-04-04T18:50:26",
+      "updatedDate": "2026-01-31T22:47:27",
+      "owner": "Amber Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3572.74,
+      "description": "Ago southern major summer force actually card."
+    },
+    {
+      "id": "af9b35ac-d295-4c28-a17e-094701166e73",
+      "name": "Exclusive fresh-thinking workforce 6",
+      "status": "Pending",
+      "createdDate": "2025-08-25T02:49:43",
+      "updatedDate": "2026-02-16T13:37:38",
+      "owner": "Kimberly Gray",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6897.87,
+      "description": "Speech food under sea."
+    },
+    {
+      "id": "f1e91368-4c6f-430b-9eed-8c34c45551f2",
+      "name": "Right-sized mission-critical toolset 7",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T03:37:37",
+      "updatedDate": "2026-01-30T22:29:21",
+      "owner": "Larry Diaz",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2005.41,
+      "description": "Use indeed yeah friend scientist off."
+    },
+    {
+      "id": "0725cdf6-36a2-4f7e-b820-b840ac61efaa",
+      "name": "Exclusive bifurcated framework 8",
+      "status": "Pending",
+      "createdDate": "2025-10-16T18:34:31",
+      "updatedDate": "2026-02-07T06:26:18",
+      "owner": "Bryan Johnson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 600.55,
+      "description": "Best modern offer."
+    },
+    {
+      "id": "610b157a-699d-4ab4-80eb-2bf7dfd79f97",
+      "name": "Monitored demand-driven initiative 9",
+      "status": "Active",
+      "createdDate": "2025-04-28T01:28:45",
+      "updatedDate": "2026-02-07T16:16:40",
+      "owner": "Patrick Marshall",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2778.68,
+      "description": "Move night education maintain approach heart."
+    },
+    {
+      "id": "2a600472-d096-4180-97db-beea9dc4832c",
+      "name": "Function-based composite workforce 10",
+      "status": "Pending",
+      "createdDate": "2025-03-24T00:01:18",
+      "updatedDate": "2026-02-11T13:47:17",
+      "owner": "Daniel Howard",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 978.66,
+      "description": "Fish debate little value break four five until."
+    },
+    {
+      "id": "28219ece-950e-46f5-9ab3-a939975ed607",
+      "name": "Reverse-engineered intangible neural-net 11",
+      "status": "Active",
+      "createdDate": "2025-10-30T05:14:11",
+      "updatedDate": "2026-01-26T08:46:26",
+      "owner": "Paul Allison",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8925.14,
+      "description": "Cover certainly ask key thought their."
+    },
+    {
+      "id": "93b3db55-6f76-4ff7-9b19-5945f23b1785",
+      "name": "Customer-focused user-facing analyzer 12",
+      "status": "Active",
+      "createdDate": "2025-08-22T17:13:44",
+      "updatedDate": "2026-02-16T08:23:09",
+      "owner": "Michelle Ellis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7855.12,
+      "description": "Drop sound big in value life office."
+    },
+    {
+      "id": "af2945f5-9ecf-4dd1-8432-ce74dab4e06d",
+      "name": "Total encompassing adapter 13",
+      "status": "Completed",
+      "createdDate": "2025-03-24T11:18:42",
+      "updatedDate": "2026-01-27T08:37:58",
+      "owner": "Miss Alyssa Lopez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2800.52,
+      "description": "Myself garden indicate condition mother."
+    },
+    {
+      "id": "f127e9f5-9a93-4cb2-8738-749de5cbe2c6",
+      "name": "Future-proofed demand-driven task-force 14",
+      "status": "Pending",
+      "createdDate": "2025-06-09T20:39:30",
+      "updatedDate": "2026-01-18T12:49:58",
+      "owner": "James Holland",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8280.62,
+      "description": "Foreign media finish head instead matter avoid."
+    },
+    {
+      "id": "ba15c2a2-f644-42ca-bd04-ca61fc963e9b",
+      "name": "Public-key grid-enabled software 15",
+      "status": "Inactive",
+      "createdDate": "2025-03-05T03:29:44",
+      "updatedDate": "2026-02-11T23:26:05",
+      "owner": "Sergio Tate",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4730.19,
+      "description": "Over keep less people ask work view any."
+    },
+    {
+      "id": "20d5bf3e-7839-403e-9b55-73a006c66895",
+      "name": "Sharable solution-oriented standardization 16",
+      "status": "Completed",
+      "createdDate": "2025-05-15T17:23:11",
+      "updatedDate": "2026-02-08T14:20:39",
+      "owner": "Jeffrey Bowman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 646.75,
+      "description": "Water worker mean realize board actually message."
+    },
+    {
+      "id": "4279d54e-fd81-4f7f-a12c-ad5cf21bfd97",
+      "name": "Persistent needs-based capacity 17",
+      "status": "Completed",
+      "createdDate": "2025-10-28T18:17:11",
+      "updatedDate": "2026-02-09T04:38:11",
+      "owner": "Madison Spears",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8583.15,
+      "description": "Down east during."
+    },
+    {
+      "id": "e88938a3-a80a-46df-8b60-d56ba5dcd08a",
+      "name": "Front-line actuating implementation 18",
+      "status": "Pending",
+      "createdDate": "2025-04-16T18:04:13",
+      "updatedDate": "2026-02-16T19:28:57",
+      "owner": "Steven Perez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3682.7,
+      "description": "Want traditional poor firm ever edge."
+    },
+    {
+      "id": "310fc30b-bd04-4bb5-9263-b605a1e52beb",
+      "name": "Function-based directional moratorium 19",
+      "status": "Pending",
+      "createdDate": "2026-01-03T03:19:22",
+      "updatedDate": "2026-01-26T15:53:05",
+      "owner": "Marissa Morales",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8855.59,
+      "description": "Which window how ok eight road see especially."
+    },
+    {
+      "id": "3ee328fe-3cc8-416c-bf36-a8102829375e",
+      "name": "Assimilated multi-tasking middleware 20",
+      "status": "Active",
+      "createdDate": "2025-12-05T20:23:30",
+      "updatedDate": "2026-02-13T09:42:20",
+      "owner": "Gabriel Reed",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3504.55,
+      "description": "Consider physical team worry education seek may letter."
+    },
+    {
+      "id": "cd66aa0d-508e-4c5e-95aa-e7414f0c4024",
+      "name": "Down-sized transitional standardization 21",
+      "status": "Inactive",
+      "createdDate": "2025-11-16T11:43:44",
+      "updatedDate": "2026-01-31T13:11:16",
+      "owner": "Kenneth Finley",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4739.07,
+      "description": "Even hard customer southern."
+    },
+    {
+      "id": "32e67d56-2c97-457c-8268-d41d08027d6b",
+      "name": "Cross-group eco-centric info-mediaries 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-15T16:08:29",
+      "updatedDate": "2026-02-09T05:47:27",
+      "owner": "Brian Navarro",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7377.39,
+      "description": "Job lot officer."
+    },
+    {
+      "id": "48699c8f-ee1b-411d-b186-aa07e79b95e1",
+      "name": "Proactive logistical hardware 23",
+      "status": "Pending",
+      "createdDate": "2025-07-26T11:30:07",
+      "updatedDate": "2026-02-12T01:23:59",
+      "owner": "Timothy Wilson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1974.05,
+      "description": "Prevent hard activity property protect."
+    },
+    {
+      "id": "d446f422-c94e-4046-87ab-83412ec6b75b",
+      "name": "Multi-channeled homogeneous success 24",
+      "status": "Pending",
+      "createdDate": "2025-03-20T12:57:17",
+      "updatedDate": "2026-02-10T10:40:18",
+      "owner": "Madison Obrien",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8287.77,
+      "description": "Water however religious cup."
+    },
+    {
+      "id": "271ae3d3-ce49-4274-b556-ed558a1e2eaf",
+      "name": "Optional exuding artificial intelligence 25",
+      "status": "Completed",
+      "createdDate": "2025-04-02T13:05:50",
+      "updatedDate": "2026-02-02T20:06:05",
+      "owner": "Jennifer Adams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1039.41,
+      "description": "Certain up meet board leader but."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

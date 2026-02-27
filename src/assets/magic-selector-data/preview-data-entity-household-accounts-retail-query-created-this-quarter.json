@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1364,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "090803a3-c137-46f8-99ba-c698d4348a36",
+      "name": "Intuitive system-worthy interface 1",
+      "status": "Inactive",
+      "createdDate": "2025-08-12T17:40:47",
+      "updatedDate": "2026-02-04T12:20:19",
+      "owner": "Emily Foster",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9473.06,
+      "description": "Black team door fund."
+    },
+    {
+      "id": "d74fc9b4-3288-4575-ae14-9c62fef75259",
+      "name": "Universal system-worthy implementation 2",
+      "status": "Completed",
+      "createdDate": "2025-10-29T01:03:15",
+      "updatedDate": "2026-02-10T14:05:02",
+      "owner": "Nicole Higgins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5657.84,
+      "description": "Surface dog realize suffer start official design."
+    },
+    {
+      "id": "431f4546-1393-47e0-a622-d0f9fb93f4a8",
+      "name": "Extended actuating knowledge user 3",
+      "status": "Pending",
+      "createdDate": "2025-05-05T23:21:14",
+      "updatedDate": "2026-02-10T08:25:28",
+      "owner": "Christopher Keller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2110.88,
+      "description": "Rest product itself chair."
+    },
+    {
+      "id": "77f37b8a-7e16-40ae-9427-f86ec5f42fcd",
+      "name": "Secured multi-tasking algorithm 4",
+      "status": "Pending",
+      "createdDate": "2026-01-01T05:08:39",
+      "updatedDate": "2026-01-30T03:08:20",
+      "owner": "Elizabeth Lopez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4894.29,
+      "description": "Check likely story above painting move conference."
+    },
+    {
+      "id": "cdf60616-c238-4e4a-8240-f39c37d31778",
+      "name": "Seamless next generation throughput 5",
+      "status": "Completed",
+      "createdDate": "2025-07-05T13:55:43",
+      "updatedDate": "2026-02-12T15:36:03",
+      "owner": "Nathan Heath",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8217.87,
+      "description": "Will daughter coach direction wear western."
+    },
+    {
+      "id": "1cab60a8-cf73-412d-b484-02f2f951ab68",
+      "name": "Fully-configurable transitional info-mediaries 6",
+      "status": "Pending",
+      "createdDate": "2025-12-07T19:49:51",
+      "updatedDate": "2026-01-19T17:23:19",
+      "owner": "Leslie Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8267.17,
+      "description": "Future thank coach analysis space window."
+    },
+    {
+      "id": "b876c6fa-2640-4638-9feb-0d6c8a03e820",
+      "name": "Team-oriented responsive alliance 7",
+      "status": "Inactive",
+      "createdDate": "2026-02-16T02:44:09",
+      "updatedDate": "2026-02-02T02:08:37",
+      "owner": "Amanda Perry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1807.95,
+      "description": "Organization budget less early PM return study."
+    },
+    {
+      "id": "577f3877-2b72-4e57-852f-04758e527a3c",
+      "name": "Progressive user-facing support 8",
+      "status": "Active",
+      "createdDate": "2025-04-26T21:24:50",
+      "updatedDate": "2026-02-14T05:26:04",
+      "owner": "Elizabeth Thomas",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3617.47,
+      "description": "Her whatever see beyond investment."
+    },
+    {
+      "id": "612fe6e6-ac47-4b72-9378-111ca2133696",
+      "name": "Focused content-based core 9",
+      "status": "Inactive",
+      "createdDate": "2025-10-25T17:48:04",
+      "updatedDate": "2026-02-10T21:48:01",
+      "owner": "Shannon Diaz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7541.61,
+      "description": "Move perhaps together teacher meeting."
+    },
+    {
+      "id": "62c7a27c-e0bc-4220-a9ce-d8f5fd6c9db6",
+      "name": "Right-sized needs-based secured line 10",
+      "status": "Completed",
+      "createdDate": "2025-07-25T14:38:53",
+      "updatedDate": "2026-02-03T05:31:29",
+      "owner": "Michael Robles",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3379.3,
+      "description": "Human truth let single."
+    },
+    {
+      "id": "0d974bd4-cc31-407e-9c03-05a72abde922",
+      "name": "Advanced multi-state emulation 11",
+      "status": "Pending",
+      "createdDate": "2026-01-15T08:30:16",
+      "updatedDate": "2026-01-23T20:19:25",
+      "owner": "Samuel Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8819.71,
+      "description": "Form guy child age over she wind."
+    },
+    {
+      "id": "443ca84a-544a-4520-87a5-fafc6e0144ee",
+      "name": "Extended zero-defect intranet 12",
+      "status": "Active",
+      "createdDate": "2025-09-24T12:00:24",
+      "updatedDate": "2026-02-08T21:49:18",
+      "owner": "Mark Cooper",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2349.42,
+      "description": "Sport against act assume."
+    },
+    {
+      "id": "ff8a533d-4095-4448-a55c-8e1ac983eb27",
+      "name": "Exclusive systemic paradigm 13",
+      "status": "Inactive",
+      "createdDate": "2025-06-21T16:27:30",
+      "updatedDate": "2026-02-01T11:14:50",
+      "owner": "Brittany Knox",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 648.12,
+      "description": "Them space support name."
+    },
+    {
+      "id": "0ff199b1-3aee-4124-a350-21cc19394364",
+      "name": "Function-based context-sensitive focus group 14",
+      "status": "Inactive",
+      "createdDate": "2025-09-06T23:59:10",
+      "updatedDate": "2026-01-26T07:55:14",
+      "owner": "Ruth Stephens",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9961.08,
+      "description": "Bill size identify and war investment."
+    },
+    {
+      "id": "48507d08-9814-4e2c-a8dc-e1ffca1a10bb",
+      "name": "Customer-focused logistical database 15",
+      "status": "Inactive",
+      "createdDate": "2025-09-14T20:47:29",
+      "updatedDate": "2026-02-08T04:52:12",
+      "owner": "Melissa Campbell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3248.36,
+      "description": "Look argue moment common far."
+    },
+    {
+      "id": "b4397e51-0975-4529-ab87-12d4526b3946",
+      "name": "Triple-buffered didactic archive 16",
+      "status": "Active",
+      "createdDate": "2025-12-17T06:58:01",
+      "updatedDate": "2026-02-11T16:04:49",
+      "owner": "Thomas Chaney",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4831.02,
+      "description": "Myself beyond page."
+    },
+    {
+      "id": "528d385e-63de-41e1-a60f-d09b77e4f568",
+      "name": "Synergized demand-driven flexibility 17",
+      "status": "Active",
+      "createdDate": "2025-03-23T23:33:24",
+      "updatedDate": "2026-02-05T10:25:43",
+      "owner": "Autumn Edwards",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3878.53,
+      "description": "Three sign discuss back outside."
+    },
+    {
+      "id": "e58147f3-a37c-4c18-945d-81528eefdc45",
+      "name": "Expanded global framework 18",
+      "status": "Active",
+      "createdDate": "2025-05-27T00:32:45",
+      "updatedDate": "2026-02-03T13:19:52",
+      "owner": "Jennifer Blackwell",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5648.04,
+      "description": "Old include prevent involve fill hit Congress whose."
+    },
+    {
+      "id": "dae4b554-054e-4fbd-89dc-1de66aa9820b",
+      "name": "Customizable demand-driven synergy 19",
+      "status": "Inactive",
+      "createdDate": "2025-10-31T11:33:06",
+      "updatedDate": "2026-02-08T00:06:00",
+      "owner": "Mrs. Savannah Mcintosh",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2825.49,
+      "description": "One shoulder stage whatever bed green fish everyone."
+    },
+    {
+      "id": "7249db4d-8a40-4ebd-a208-bb4631a25a49",
+      "name": "Organic mobile customer loyalty 20",
+      "status": "Pending",
+      "createdDate": "2025-07-11T13:26:41",
+      "updatedDate": "2026-02-07T23:03:24",
+      "owner": "Tanya Taylor",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1104.52,
+      "description": "Image week including realize under."
+    },
+    {
+      "id": "b1ae7600-519e-4781-a478-235531f6c6ca",
+      "name": "Public-key full-range data-warehouse 21",
+      "status": "Inactive",
+      "createdDate": "2025-10-27T11:06:34",
+      "updatedDate": "2026-01-28T17:17:25",
+      "owner": "Edward Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9755.91,
+      "description": "Piece run certain laugh work likely guy."
+    },
+    {
+      "id": "a6c45a0e-fc74-49cd-8bf1-e16d7179f1f1",
+      "name": "Assimilated composite structure 22",
+      "status": "Completed",
+      "createdDate": "2025-05-25T13:05:14",
+      "updatedDate": "2026-01-18T19:44:43",
+      "owner": "Julie Alexander",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1497.16,
+      "description": "The thousand style around."
+    },
+    {
+      "id": "0b440e02-726d-4258-a5e0-028f8ccec601",
+      "name": "Organic cohesive solution 23",
+      "status": "Pending",
+      "createdDate": "2025-12-05T10:48:24",
+      "updatedDate": "2026-01-20T19:09:13",
+      "owner": "Dustin Terry",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3776.43,
+      "description": "Agreement later west series majority after indicate."
+    },
+    {
+      "id": "e88bdaa9-28ea-4012-ac4d-0a4297a93f59",
+      "name": "Inverse radical adapter 24",
+      "status": "Pending",
+      "createdDate": "2025-12-30T16:21:40",
+      "updatedDate": "2026-01-27T02:47:56",
+      "owner": "Shawn Rogers",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8133.52,
+      "description": "Coach arrive recognize play southern how."
+    },
+    {
+      "id": "1f572202-dcd8-48cf-ba5d-fe8cbe39e51e",
+      "name": "Seamless reciprocal throughput 25",
+      "status": "Completed",
+      "createdDate": "2025-05-11T04:29:57",
+      "updatedDate": "2026-02-05T18:19:27",
+      "owner": "Veronica Cohen",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7533.0,
+      "description": "Strong Republican yes their might could late."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

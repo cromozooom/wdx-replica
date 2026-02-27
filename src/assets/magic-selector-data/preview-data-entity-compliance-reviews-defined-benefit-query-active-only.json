@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-active-only",
+  "totalCount": 71,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "df680183-cbb0-4f3c-9d58-f22b7893d82e",
+      "name": "Pre-emptive intermediate alliance 1",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T21:23:05",
+      "updatedDate": "2026-02-06T04:33:02",
+      "owner": "Emily Whitaker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 793.52,
+      "description": "Everybody I happy realize threat my son."
+    },
+    {
+      "id": "0b0c1458-4264-4bb0-a6eb-fbe8f2abc64f",
+      "name": "Profit-focused upward-trending archive 2",
+      "status": "Pending",
+      "createdDate": "2025-12-16T04:06:41",
+      "updatedDate": "2026-02-02T07:36:13",
+      "owner": "Jeffrey Wilson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4661.16,
+      "description": "Thus real board right anything find."
+    },
+    {
+      "id": "694cf39c-f5a6-4e21-85eb-705961852c15",
+      "name": "Fully-configurable system-worthy parallelism 3",
+      "status": "Active",
+      "createdDate": "2025-10-30T01:00:21",
+      "updatedDate": "2026-02-16T12:07:37",
+      "owner": "Stacey Shaffer",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5193.72,
+      "description": "Kid possible director film building."
+    },
+    {
+      "id": "5a8912b1-2e45-44a6-87c9-8d74c5e8d137",
+      "name": "Team-oriented encompassing policy 4",
+      "status": "Active",
+      "createdDate": "2025-11-10T19:07:29",
+      "updatedDate": "2026-01-30T23:30:14",
+      "owner": "Abigail Simpson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4649.11,
+      "description": "Us food how street spend much."
+    },
+    {
+      "id": "8f4f0c87-a355-4a4d-96c2-2caf045e5341",
+      "name": "Team-oriented attitude-oriented access 5",
+      "status": "Pending",
+      "createdDate": "2025-08-20T06:24:12",
+      "updatedDate": "2026-02-12T23:45:58",
+      "owner": "Richard Richard",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 393.09,
+      "description": "Against sound within."
+    },
+    {
+      "id": "21b055ca-55dc-4974-a59c-6a3f1b008a76",
+      "name": "User-friendly neutral moderator 6",
+      "status": "Completed",
+      "createdDate": "2026-01-05T20:41:41",
+      "updatedDate": "2026-01-20T20:10:56",
+      "owner": "Scott Osborn",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1148.97,
+      "description": "Pay I fast."
+    },
+    {
+      "id": "0a3a525e-5793-467e-aacf-b2f177500d96",
+      "name": "De-engineered 5thgeneration capacity 7",
+      "status": "Pending",
+      "createdDate": "2025-07-14T00:23:47",
+      "updatedDate": "2026-02-05T23:58:00",
+      "owner": "Elizabeth Gonzalez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6874.54,
+      "description": "Market write over."
+    },
+    {
+      "id": "b93ee5ab-7e41-427b-9f97-de2fe1972807",
+      "name": "Re-engineered user-facing info-mediaries 8",
+      "status": "Active",
+      "createdDate": "2025-05-14T22:25:09",
+      "updatedDate": "2026-01-29T23:42:10",
+      "owner": "Lawrence Anderson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4156.46,
+      "description": "Pretty yard bank well owner."
+    },
+    {
+      "id": "536478dd-eee8-4f56-8610-2ed68a2162e1",
+      "name": "Stand-alone logistical matrix 9",
+      "status": "Pending",
+      "createdDate": "2025-09-08T14:19:37",
+      "updatedDate": "2026-02-09T01:28:27",
+      "owner": "Brian Pugh",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8478.19,
+      "description": "Begin explain among power cup ball window."
+    },
+    {
+      "id": "f2a6ff6e-0add-452e-aaa7-bb74485ab222",
+      "name": "Centralized multi-tasking access 10",
+      "status": "Completed",
+      "createdDate": "2025-12-26T09:03:23",
+      "updatedDate": "2026-02-07T02:48:26",
+      "owner": "Stephanie Arias",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9854.38,
+      "description": "Run consumer reduce within."
+    },
+    {
+      "id": "b20808df-cd73-4e76-ab28-f3cf6e9d2f9c",
+      "name": "User-centric mobile data-warehouse 11",
+      "status": "Inactive",
+      "createdDate": "2025-11-23T08:43:27",
+      "updatedDate": "2026-02-15T08:13:25",
+      "owner": "Victor Baird",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2033.93,
+      "description": "Game major avoid build very always deal."
+    },
+    {
+      "id": "070b4c72-8364-42f5-a98d-590f553cc9ea",
+      "name": "Focused multimedia capacity 12",
+      "status": "Pending",
+      "createdDate": "2025-03-25T18:15:47",
+      "updatedDate": "2026-02-08T21:11:12",
+      "owner": "Mark Powell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5725.32,
+      "description": "Crime simple name lead create concern."
+    },
+    {
+      "id": "5425e180-d912-4229-ba6f-3b0799879429",
+      "name": "Total demand-driven implementation 13",
+      "status": "Inactive",
+      "createdDate": "2025-07-04T16:07:39",
+      "updatedDate": "2026-02-03T19:53:28",
+      "owner": "Brianna Parker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4212.82,
+      "description": "Question air heavy story federal himself."
+    },
+    {
+      "id": "9c8eb507-ac6c-4527-8fd4-c7b07b89028e",
+      "name": "Streamlined bandwidth-monitored productivity 14",
+      "status": "Pending",
+      "createdDate": "2025-04-16T04:20:27",
+      "updatedDate": "2026-01-29T23:21:17",
+      "owner": "Amy Mccall",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1063.14,
+      "description": "According body little not."
+    },
+    {
+      "id": "b51a4db2-8213-4e3f-9ed7-2aadf7d1ad33",
+      "name": "Persevering content-based collaboration 15",
+      "status": "Inactive",
+      "createdDate": "2025-05-11T13:02:01",
+      "updatedDate": "2026-01-31T14:13:40",
+      "owner": "Ronnie Esparza DDS",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1500.14,
+      "description": "Surface ten throughout floor."
+    },
+    {
+      "id": "6e31799f-037f-4d9f-9db7-d23f1225390d",
+      "name": "Universal well-modulated artificial intelligence 16",
+      "status": "Inactive",
+      "createdDate": "2025-12-01T05:15:47",
+      "updatedDate": "2026-01-18T23:05:54",
+      "owner": "Olivia Bishop",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1045.81,
+      "description": "Own anything different act."
+    },
+    {
+      "id": "3467db80-4ff2-4d5d-8835-9aaa780498ea",
+      "name": "Digitized human-resource open system 17",
+      "status": "Active",
+      "createdDate": "2025-04-02T10:18:46",
+      "updatedDate": "2026-02-08T15:44:44",
+      "owner": "Joel Higgins",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7497.69,
+      "description": "Teach security indeed rest guy use."
+    },
+    {
+      "id": "72d2b29e-88a3-4ba9-9139-fd1ae37d279f",
+      "name": "Polarized methodical leverage 18",
+      "status": "Pending",
+      "createdDate": "2025-09-13T13:26:09",
+      "updatedDate": "2026-01-21T18:49:10",
+      "owner": "Tina Lee",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3660.96,
+      "description": "Positive however minute them."
+    },
+    {
+      "id": "1e04376f-23e3-4823-b5d2-35a147b651b5",
+      "name": "Team-oriented optimal knowledge user 19",
+      "status": "Active",
+      "createdDate": "2025-07-25T01:50:25",
+      "updatedDate": "2026-01-27T22:46:12",
+      "owner": "Richard Oliver",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2559.27,
+      "description": "Daughter win explain near eye local drive."
+    },
+    {
+      "id": "b9c499e5-be63-4ba3-8897-bc73ad2ebc1d",
+      "name": "Future-proofed bifurcated interface 20",
+      "status": "Pending",
+      "createdDate": "2025-11-10T17:59:26",
+      "updatedDate": "2026-02-10T07:08:49",
+      "owner": "Leah Stein",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 396.01,
+      "description": "Theory claim yet last consider."
+    },
+    {
+      "id": "9ad8207a-30d6-4bc8-9f1e-9ea1a038a28d",
+      "name": "Extended demand-driven installation 21",
+      "status": "Pending",
+      "createdDate": "2025-10-23T23:00:26",
+      "updatedDate": "2026-01-26T10:16:43",
+      "owner": "Jennifer Kim",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1524.47,
+      "description": "Born she detail amount."
+    },
+    {
+      "id": "94c4e1d5-c409-4783-b677-f7b62b350b4c",
+      "name": "Ergonomic stable knowledge user 22",
+      "status": "Inactive",
+      "createdDate": "2025-05-16T21:57:09",
+      "updatedDate": "2026-01-30T02:09:13",
+      "owner": "Kayla Campbell",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9490.06,
+      "description": "Mention degree actually also industry."
+    },
+    {
+      "id": "a158eae6-45c1-4592-b4b6-0ece1bfa4247",
+      "name": "Polarized full-range customer loyalty 23",
+      "status": "Completed",
+      "createdDate": "2025-05-03T08:23:27",
+      "updatedDate": "2026-02-14T14:24:45",
+      "owner": "Zachary Jones",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1837.06,
+      "description": "Answer office both politics bed standard also."
+    },
+    {
+      "id": "d440ba00-4342-46da-9eba-b9d8ad639a51",
+      "name": "Managed well-modulated hub 24",
+      "status": "Inactive",
+      "createdDate": "2026-01-22T16:45:07",
+      "updatedDate": "2026-02-11T15:35:41",
+      "owner": "Miguel Bennett",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7357.04,
+      "description": "Consumer last contain then each white leave."
+    },
+    {
+      "id": "32d28367-b62c-4d33-895d-e9738aac26da",
+      "name": "Distributed clear-thinking instruction set 25",
+      "status": "Inactive",
+      "createdDate": "2025-07-24T19:55:39",
+      "updatedDate": "2026-02-15T02:33:48",
+      "owner": "Mary Clark",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8580.95,
+      "description": "Themselves beautiful work real from lose."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

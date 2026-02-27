@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-modelportfolio",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 475,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "d570f7c9-16e1-4905-bf9e-16943514342a",
+      "name": "Front-line global database 1",
+      "status": "Pending",
+      "createdDate": "2025-06-22T04:34:36",
+      "updatedDate": "2026-01-30T00:40:49",
+      "owner": "Aaron Woodard",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7334.16,
+      "description": "Reflect area collection."
+    },
+    {
+      "id": "08c2e8ea-9425-4cf5-b501-539029b0bafb",
+      "name": "Versatile explicit service-desk 2",
+      "status": "Completed",
+      "createdDate": "2026-02-05T09:28:30",
+      "updatedDate": "2026-02-07T11:13:52",
+      "owner": "Sue Rice DDS",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1380.83,
+      "description": "Thought human drop issue boy number."
+    },
+    {
+      "id": "f4dc5437-f3b8-4ab7-b63c-767886908651",
+      "name": "Visionary optimal artificial intelligence 3",
+      "status": "Inactive",
+      "createdDate": "2025-12-07T05:04:55",
+      "updatedDate": "2026-01-31T14:52:01",
+      "owner": "Kristin Banks",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8481.18,
+      "description": "Create Democrat young check support expert."
+    },
+    {
+      "id": "5e479bb1-4012-4678-ba5d-3f9ef96bcdeb",
+      "name": "Grass-roots maximized pricing structure 4",
+      "status": "Completed",
+      "createdDate": "2025-05-09T22:50:12",
+      "updatedDate": "2026-02-17T00:40:56",
+      "owner": "Gabriel Chan",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2215.09,
+      "description": "Money win inside."
+    },
+    {
+      "id": "540a0e0d-c285-40ee-ab5c-eaf965c171aa",
+      "name": "Balanced intermediate productivity 5",
+      "status": "Completed",
+      "createdDate": "2025-06-02T13:31:06",
+      "updatedDate": "2026-01-19T22:40:48",
+      "owner": "Karen Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1682.61,
+      "description": "Hot base find personal."
+    },
+    {
+      "id": "c50b6bd1-d46e-4b12-8687-2d7716a5b521",
+      "name": "Quality-focused solution-oriented intranet 6",
+      "status": "Inactive",
+      "createdDate": "2025-09-18T06:55:01",
+      "updatedDate": "2026-01-31T10:51:50",
+      "owner": "Cody Glass",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2049.31,
+      "description": "Measure no defense why nothing."
+    },
+    {
+      "id": "5e842311-9566-4660-9743-71ed562361fc",
+      "name": "Reduced needs-based task-force 7",
+      "status": "Completed",
+      "createdDate": "2026-01-12T06:43:41",
+      "updatedDate": "2026-01-23T10:34:24",
+      "owner": "Eugene Brooks",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3306.05,
+      "description": "Physical professional easy build former."
+    },
+    {
+      "id": "0df2510e-7adc-456c-b62a-cd65eb3c00d4",
+      "name": "Organized local throughput 8",
+      "status": "Completed",
+      "createdDate": "2026-01-15T05:26:17",
+      "updatedDate": "2026-02-05T23:01:45",
+      "owner": "Erin Barron",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7204.52,
+      "description": "Later course production let determine."
+    },
+    {
+      "id": "707ab8cb-eb57-4c54-97d9-db7988cf6033",
+      "name": "Front-line foreground intranet 9",
+      "status": "Inactive",
+      "createdDate": "2025-09-06T15:23:42",
+      "updatedDate": "2026-01-28T06:29:49",
+      "owner": "Matthew Jones",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2878.08,
+      "description": "Available beat customer own."
+    },
+    {
+      "id": "8a539ca9-9823-4189-9a43-34323df99488",
+      "name": "Customizable system-worthy middleware 10",
+      "status": "Completed",
+      "createdDate": "2025-06-23T03:20:17",
+      "updatedDate": "2026-01-28T22:54:36",
+      "owner": "Gabriela Thomas",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8622.93,
+      "description": "Audience minute threat real sound lead upon two."
+    },
+    {
+      "id": "ce760c80-dea7-464c-a704-880a47f58fd6",
+      "name": "Streamlined 4thgeneration hub 11",
+      "status": "Inactive",
+      "createdDate": "2025-08-21T12:31:38",
+      "updatedDate": "2026-01-23T21:30:21",
+      "owner": "Patrick Martinez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4991.7,
+      "description": "Today maybe close possible eat enough."
+    },
+    {
+      "id": "230c66bb-8316-43e7-bb95-b56f0b506123",
+      "name": "Ameliorated well-modulated interface 12",
+      "status": "Inactive",
+      "createdDate": "2025-05-19T14:57:21",
+      "updatedDate": "2026-01-22T01:27:57",
+      "owner": "Timothy Powell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9788.38,
+      "description": "Smile condition him particularly news."
+    },
+    {
+      "id": "ad7be7dd-813f-4351-b32e-a3f6ada6ea68",
+      "name": "Diverse bifurcated Local Area Network 13",
+      "status": "Active",
+      "createdDate": "2025-05-11T04:25:37",
+      "updatedDate": "2026-01-25T20:36:21",
+      "owner": "John Harper",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1138.03,
+      "description": "Pm analysis hundred bar."
+    },
+    {
+      "id": "b3dc581b-9d0a-428b-a02d-e9097c9d9719",
+      "name": "Profit-focused tangible synergy 14",
+      "status": "Pending",
+      "createdDate": "2025-04-05T19:38:02",
+      "updatedDate": "2026-01-20T21:23:47",
+      "owner": "Sarah Frazier",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5101.43,
+      "description": "During item candidate other deep."
+    },
+    {
+      "id": "97460f18-3103-465d-8fde-64ec467600d5",
+      "name": "Programmable eco-centric paradigm 15",
+      "status": "Inactive",
+      "createdDate": "2025-02-20T09:26:12",
+      "updatedDate": "2026-02-05T13:52:51",
+      "owner": "Todd Moreno",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2096.26,
+      "description": "Sea group effort product particular dog."
+    },
+    {
+      "id": "c6f13a2a-e730-4747-8769-3146265b5aae",
+      "name": "Re-engineered global approach 16",
+      "status": "Completed",
+      "createdDate": "2025-11-02T20:03:42",
+      "updatedDate": "2026-02-03T19:13:02",
+      "owner": "Ashley Fernandez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4362.56,
+      "description": "History I under particular beyond matter begin."
+    },
+    {
+      "id": "f522937c-430b-4e5a-8d44-b52d11002dd7",
+      "name": "Digitized 24hour functionalities 17",
+      "status": "Active",
+      "createdDate": "2025-04-07T13:54:47",
+      "updatedDate": "2026-02-15T09:29:13",
+      "owner": "Regina Mills",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2132.22,
+      "description": "Four training more level measure line."
+    },
+    {
+      "id": "df84b752-0e3c-43a2-833c-97f358cb4002",
+      "name": "Stand-alone full-range benchmark 18",
+      "status": "Pending",
+      "createdDate": "2025-04-18T21:37:05",
+      "updatedDate": "2026-01-29T20:56:51",
+      "owner": "Curtis Dixon",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1770.41,
+      "description": "Tend trade full make."
+    },
+    {
+      "id": "f3514a2e-3b4b-4a22-b24a-19e66a3ca5e7",
+      "name": "Virtual hybrid service-desk 19",
+      "status": "Active",
+      "createdDate": "2025-10-07T23:00:34",
+      "updatedDate": "2026-02-12T00:05:14",
+      "owner": "Melissa Warren",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5856.38,
+      "description": "Open baby cover light."
+    },
+    {
+      "id": "7ae3208b-9eb5-4448-80b4-b84e060172ae",
+      "name": "Programmable empowering functionalities 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-07T21:11:26",
+      "updatedDate": "2026-02-07T08:31:28",
+      "owner": "Brandon Collins",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5492.74,
+      "description": "Stand today specific strong ten for mean."
+    },
+    {
+      "id": "438d78c0-41f9-43ea-8a4e-d63e34825bbd",
+      "name": "Switchable non-volatile orchestration 21",
+      "status": "Active",
+      "createdDate": "2025-05-24T07:32:26",
+      "updatedDate": "2026-02-09T11:59:22",
+      "owner": "Elizabeth Edwards",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2098.53,
+      "description": "End onto market build fly."
+    },
+    {
+      "id": "9b7daa58-873b-4e3a-b8d0-837db68d12a9",
+      "name": "Polarized heuristic Graphical User Interface 22",
+      "status": "Pending",
+      "createdDate": "2025-11-13T08:22:51",
+      "updatedDate": "2026-01-19T23:07:24",
+      "owner": "Robert Reynolds",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8295.8,
+      "description": "Pick change hit leave leave however sense."
+    },
+    {
+      "id": "71a11d6d-964c-45db-97bc-673017231010",
+      "name": "Polarized mission-critical time-frame 23",
+      "status": "Active",
+      "createdDate": "2025-12-22T21:51:00",
+      "updatedDate": "2026-01-23T21:12:55",
+      "owner": "Linda Jackson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6118.6,
+      "description": "Ever situation everyone test money behind."
+    },
+    {
+      "id": "786a7908-ced7-4ad2-b327-53ef80bef2ca",
+      "name": "Future-proofed dedicated monitoring 24",
+      "status": "Completed",
+      "createdDate": "2025-09-23T23:11:22",
+      "updatedDate": "2026-02-07T08:45:29",
+      "owner": "Nicholas Frost",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7264.85,
+      "description": "Door certainly customer seek southern."
+    },
+    {
+      "id": "47fde06e-11b9-4e50-8d85-edfa73497233",
+      "name": "Balanced 3rdgeneration throughput 25",
+      "status": "Pending",
+      "createdDate": "2025-02-28T10:08:32",
+      "updatedDate": "2026-01-31T07:10:19",
+      "owner": "Maria Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2699.17,
+      "description": "Something get of difference compare place."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

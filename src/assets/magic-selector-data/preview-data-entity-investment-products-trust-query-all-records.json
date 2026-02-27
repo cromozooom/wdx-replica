@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-all-records",
+  "totalCount": 907,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "e704358e-edd5-4e66-bbae-2f01bda00e17",
+      "name": "Distributed system-worthy help-desk 1",
+      "status": "Pending",
+      "createdDate": "2025-07-27T11:21:07",
+      "updatedDate": "2026-02-09T06:52:06",
+      "owner": "Keith Miller",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 120.27,
+      "description": "Nothing discuss personal look night whether fall."
+    },
+    {
+      "id": "36700304-f801-46af-a7f9-41b9fbd62e4f",
+      "name": "Optimized secondary process improvement 2",
+      "status": "Completed",
+      "createdDate": "2026-01-21T23:09:43",
+      "updatedDate": "2026-01-20T08:58:40",
+      "owner": "Kimberly Montoya",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6166.52,
+      "description": "Treat out including be professional help address."
+    },
+    {
+      "id": "1277097b-a61f-4724-8048-7163a65200b5",
+      "name": "Up-sized regional paradigm 3",
+      "status": "Active",
+      "createdDate": "2025-03-01T15:34:37",
+      "updatedDate": "2026-01-21T10:03:05",
+      "owner": "Cheryl Perez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3615.66,
+      "description": "Direction necessary energy big response doctor north former."
+    },
+    {
+      "id": "1c4275dd-80ef-4aa4-b974-3325ede89870",
+      "name": "Down-sized discrete product 4",
+      "status": "Pending",
+      "createdDate": "2025-05-28T00:38:31",
+      "updatedDate": "2026-02-03T14:05:26",
+      "owner": "Harold Ingram DDS",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6443.66,
+      "description": "Music position deal focus activity law."
+    },
+    {
+      "id": "aa4c59bc-ab06-46ca-ba52-041c7a26e32a",
+      "name": "Networked uniform analyzer 5",
+      "status": "Inactive",
+      "createdDate": "2025-08-13T08:02:28",
+      "updatedDate": "2026-02-02T00:55:31",
+      "owner": "Jonathan Rhodes",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9899.22,
+      "description": "Room break staff information sure list professor."
+    },
+    {
+      "id": "0c73af97-9b8b-4a40-b379-b35733bb275a",
+      "name": "Upgradable bandwidth-monitored Internet solution 6",
+      "status": "Inactive",
+      "createdDate": "2025-03-24T05:06:11",
+      "updatedDate": "2026-01-21T02:05:06",
+      "owner": "Cindy Vasquez MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5389.11,
+      "description": "To write how western democratic none though nearly."
+    },
+    {
+      "id": "bd10055f-7db1-41a3-8cdf-fb9d5704ffee",
+      "name": "Networked well-modulated pricing structure 7",
+      "status": "Active",
+      "createdDate": "2025-10-03T03:17:21",
+      "updatedDate": "2026-01-19T21:22:17",
+      "owner": "Daniel Peck",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5097.26,
+      "description": "Authority really view ready natural."
+    },
+    {
+      "id": "9ecc9fc6-a543-47c4-9173-a03dbc555ab7",
+      "name": "Sharable transitional definition 8",
+      "status": "Inactive",
+      "createdDate": "2025-05-10T23:11:17",
+      "updatedDate": "2026-02-02T20:17:37",
+      "owner": "Laura Martin",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5695.06,
+      "description": "Prove relationship happy national."
+    },
+    {
+      "id": "1000340d-5372-4724-b0b9-2fbceea2bdb8",
+      "name": "Implemented stable complexity 9",
+      "status": "Completed",
+      "createdDate": "2025-10-06T02:06:03",
+      "updatedDate": "2026-02-01T03:43:16",
+      "owner": "Amanda Bryant",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1611.16,
+      "description": "Change also property environment behavior property hospital."
+    },
+    {
+      "id": "48a078d2-b5bc-4635-8678-bf5eb75df194",
+      "name": "Face-to-face web-enabled attitude 10",
+      "status": "Pending",
+      "createdDate": "2025-07-09T05:23:20",
+      "updatedDate": "2026-02-17T01:27:38",
+      "owner": "Caitlin Anderson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5972.1,
+      "description": "Political necessary bank foot."
+    },
+    {
+      "id": "3a019391-b4a4-4623-85dd-578ee16d78c7",
+      "name": "Centralized methodical synergy 11",
+      "status": "Completed",
+      "createdDate": "2025-12-22T21:53:48",
+      "updatedDate": "2026-02-04T15:25:00",
+      "owner": "Stacey Maynard",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8532.24,
+      "description": "Such firm computer but thank."
+    },
+    {
+      "id": "d440714c-4a56-4289-8ec5-300d4f7a2b24",
+      "name": "Triple-buffered cohesive customer loyalty 12",
+      "status": "Inactive",
+      "createdDate": "2025-11-09T14:34:36",
+      "updatedDate": "2026-02-15T07:12:54",
+      "owner": "Alan George",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4415.07,
+      "description": "Fear alone whose size never quality goal."
+    },
+    {
+      "id": "72f0ea9c-99d6-4872-9ac4-34c88d197d1d",
+      "name": "Fully-configurable 5thgeneration middleware 13",
+      "status": "Completed",
+      "createdDate": "2025-05-05T05:36:20",
+      "updatedDate": "2026-02-01T23:23:22",
+      "owner": "Jay Jordan",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7503.13,
+      "description": "Help factor outside notice begin."
+    },
+    {
+      "id": "f8df3233-b7e8-4383-8b5a-95a478a3d4d3",
+      "name": "Optimized next generation hub 14",
+      "status": "Pending",
+      "createdDate": "2025-06-04T21:37:09",
+      "updatedDate": "2026-02-03T19:29:40",
+      "owner": "John Harper",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5779.56,
+      "description": "Big them meeting our Mrs."
+    },
+    {
+      "id": "16dc3a3f-76c8-4a4f-910e-da770ccbbbf6",
+      "name": "User-centric systematic portal 15",
+      "status": "Inactive",
+      "createdDate": "2025-05-12T05:11:21",
+      "updatedDate": "2026-02-15T16:38:20",
+      "owner": "John Gomez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2347.7,
+      "description": "Under green growth factor."
+    },
+    {
+      "id": "74854334-5d2d-4391-8613-2ff978b2022d",
+      "name": "Customer-focused static pricing structure 16",
+      "status": "Pending",
+      "createdDate": "2025-11-21T11:53:49",
+      "updatedDate": "2026-01-29T13:04:03",
+      "owner": "Michael Richards",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4469.85,
+      "description": "Away these Congress threat theory these lead beat."
+    },
+    {
+      "id": "eb58ac61-530b-41d0-9b6b-aea12a465c62",
+      "name": "Multi-lateral disintermediate algorithm 17",
+      "status": "Completed",
+      "createdDate": "2025-05-05T23:24:21",
+      "updatedDate": "2026-01-25T18:18:11",
+      "owner": "Kim Torres",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1465.12,
+      "description": "Present all back majority."
+    },
+    {
+      "id": "7d56f245-2e79-4f27-b535-80fc52001822",
+      "name": "Diverse impactful implementation 18",
+      "status": "Active",
+      "createdDate": "2025-04-21T04:35:24",
+      "updatedDate": "2026-01-27T02:27:49",
+      "owner": "Paul Boyd",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5274.49,
+      "description": "Half magazine any mean finally."
+    },
+    {
+      "id": "2d41a219-d849-4c86-9b31-974e08a1f24d",
+      "name": "Balanced attitude-oriented Local Area Network 19",
+      "status": "Completed",
+      "createdDate": "2025-07-11T21:06:21",
+      "updatedDate": "2026-02-04T01:28:30",
+      "owner": "Bill Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9341.22,
+      "description": "Instead view TV summer citizen other morning."
+    },
+    {
+      "id": "3ceaf542-37c3-4d68-8d00-c590f65f8bd1",
+      "name": "Compatible national approach 20",
+      "status": "Inactive",
+      "createdDate": "2025-07-12T15:23:12",
+      "updatedDate": "2026-02-13T21:44:17",
+      "owner": "Jacob Smith",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1848.41,
+      "description": "For safe him station finally."
+    },
+    {
+      "id": "45e11290-9d73-493e-af08-b5c376439096",
+      "name": "Organic needs-based time-frame 21",
+      "status": "Completed",
+      "createdDate": "2025-05-30T21:13:35",
+      "updatedDate": "2026-01-29T12:57:50",
+      "owner": "Meredith Soto",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2491.84,
+      "description": "Official cause even mouth produce."
+    },
+    {
+      "id": "a64d72ae-7ab3-4ed0-b6e5-f77c1a8b8660",
+      "name": "Enterprise-wide zero administration parallelism 22",
+      "status": "Inactive",
+      "createdDate": "2025-09-19T06:36:20",
+      "updatedDate": "2026-01-25T15:58:22",
+      "owner": "Victoria Simmons",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5084.79,
+      "description": "Opportunity like where space popular."
+    },
+    {
+      "id": "59a29146-d325-4ca6-b999-7789a7eba251",
+      "name": "Pre-emptive national conglomeration 23",
+      "status": "Completed",
+      "createdDate": "2025-10-25T11:39:57",
+      "updatedDate": "2026-01-31T18:46:24",
+      "owner": "Heidi Huang",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4881.84,
+      "description": "Carry window four discussion will."
+    },
+    {
+      "id": "4de21bf2-f895-4cbd-af55-67b7685fc8ac",
+      "name": "Networked logistical success 24",
+      "status": "Completed",
+      "createdDate": "2025-04-10T10:07:53",
+      "updatedDate": "2026-01-25T20:55:38",
+      "owner": "Tamara Sutton",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7096.65,
+      "description": "Green imagine especially between however indeed onto accept."
+    },
+    {
+      "id": "32e286a8-1582-4112-8b5c-99a7d8161a2f",
+      "name": "Realigned scalable success 25",
+      "status": "Active",
+      "createdDate": "2025-10-17T08:55:29",
+      "updatedDate": "2026-02-06T14:57:55",
+      "owner": "Samantha Lee",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9109.94,
+      "description": "Heavy he bank son she year consider resource."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

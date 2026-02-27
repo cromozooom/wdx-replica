@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-all-records",
+  "totalCount": 586,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "2c2d8547-7d81-4224-aa26-0f4a84507f80",
+      "name": "Horizontal non-volatile array 1",
+      "status": "Pending",
+      "createdDate": "2025-11-04T22:03:42",
+      "updatedDate": "2026-01-20T12:03:44",
+      "owner": "Seth Meyer",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3184.21,
+      "description": "Religious enter maybe stage."
+    },
+    {
+      "id": "bc2f98a9-5559-4631-8a85-11ad18c10817",
+      "name": "Synergized bi-directional orchestration 2",
+      "status": "Completed",
+      "createdDate": "2025-09-29T19:06:26",
+      "updatedDate": "2026-02-15T18:41:42",
+      "owner": "Amanda Garcia",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9005.21,
+      "description": "Yard actually always interest consider."
+    },
+    {
+      "id": "006a46a3-2070-46e9-9fde-3b69443f1615",
+      "name": "Object-based 6thgeneration circuit 3",
+      "status": "Inactive",
+      "createdDate": "2025-11-29T18:21:37",
+      "updatedDate": "2026-02-13T05:31:56",
+      "owner": "Tracy Brock",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9935.93,
+      "description": "Accept place east television card."
+    },
+    {
+      "id": "177d4900-172c-4f4a-a6a5-2e82288f4c93",
+      "name": "Face-to-face 6thgeneration project 4",
+      "status": "Completed",
+      "createdDate": "2025-09-14T17:02:01",
+      "updatedDate": "2026-01-27T10:44:45",
+      "owner": "Kevin Yang",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 638.8,
+      "description": "Test game support."
+    },
+    {
+      "id": "b739dd4f-c01d-4875-b43d-0ed87229e9fc",
+      "name": "Multi-channeled foreground interface 5",
+      "status": "Pending",
+      "createdDate": "2025-11-29T17:00:39",
+      "updatedDate": "2026-02-16T02:30:38",
+      "owner": "Danielle Quinn",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1084.94,
+      "description": "Able just ball program."
+    },
+    {
+      "id": "857eeb38-3be3-4e5a-a5f6-49bf130e5f7c",
+      "name": "Re-engineered modular forecast 6",
+      "status": "Completed",
+      "createdDate": "2025-02-22T21:48:03",
+      "updatedDate": "2026-01-29T22:52:36",
+      "owner": "Mario Sutton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3016.33,
+      "description": "Citizen only read economic put seem ground."
+    },
+    {
+      "id": "2f34ebe9-75ad-43c4-a2cb-71f1ec8b9d8d",
+      "name": "Self-enabling system-worthy application 7",
+      "status": "Active",
+      "createdDate": "2025-03-26T08:17:22",
+      "updatedDate": "2026-02-15T03:15:33",
+      "owner": "John Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7191.94,
+      "description": "Edge society large oil purpose sea team."
+    },
+    {
+      "id": "ef05a26d-6cb7-4d5f-a990-209161f87451",
+      "name": "Cross-platform asymmetric strategy 8",
+      "status": "Inactive",
+      "createdDate": "2025-08-13T16:50:59",
+      "updatedDate": "2026-02-16T22:32:45",
+      "owner": "Paul Gilbert",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5663.81,
+      "description": "Radio eight evening response civil within road they."
+    },
+    {
+      "id": "7561e833-7ac5-4281-8615-9da007c7bded",
+      "name": "Object-based modular neural-net 9",
+      "status": "Pending",
+      "createdDate": "2025-04-27T06:57:59",
+      "updatedDate": "2026-01-24T18:59:28",
+      "owner": "Tony Lawrence",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1012.21,
+      "description": "Series popular system in."
+    },
+    {
+      "id": "535e771b-4c46-4829-810c-512368ee4f06",
+      "name": "Seamless encompassing Graphic Interface 10",
+      "status": "Pending",
+      "createdDate": "2025-02-18T16:53:12",
+      "updatedDate": "2026-01-21T02:02:43",
+      "owner": "Jacob Montgomery",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3902.65,
+      "description": "Class along hotel shake base culture know."
+    },
+    {
+      "id": "22c51434-e6d9-4806-9e99-1b78e5d5def5",
+      "name": "Innovative analyzing budgetary management 11",
+      "status": "Active",
+      "createdDate": "2025-07-01T22:28:11",
+      "updatedDate": "2026-02-07T12:22:20",
+      "owner": "Tina Newman",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1939.93,
+      "description": "Break where its result."
+    },
+    {
+      "id": "06411fd7-b6f1-430e-8e5e-e104657ecd1e",
+      "name": "Networked dynamic implementation 12",
+      "status": "Completed",
+      "createdDate": "2025-10-23T07:35:45",
+      "updatedDate": "2026-01-29T15:49:44",
+      "owner": "William Garcia",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4407.74,
+      "description": "Yes evidence material risk."
+    },
+    {
+      "id": "64a9227d-e1aa-49b6-a98b-59f71e3bdaf2",
+      "name": "Enterprise-wide web-enabled alliance 13",
+      "status": "Pending",
+      "createdDate": "2025-11-15T01:48:13",
+      "updatedDate": "2026-01-31T18:08:26",
+      "owner": "Brandon Shelton",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5890.23,
+      "description": "Movement community scene three."
+    },
+    {
+      "id": "a8acc0c6-a23a-4f18-89fa-b3373a972b5a",
+      "name": "Decentralized scalable architecture 14",
+      "status": "Active",
+      "createdDate": "2025-08-08T17:18:40",
+      "updatedDate": "2026-01-28T00:16:13",
+      "owner": "Teresa York",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4066.27,
+      "description": "Success college city small onto area peace."
+    },
+    {
+      "id": "f070610d-95e4-4f2b-8809-b7b39906b5a9",
+      "name": "Versatile even-keeled framework 15",
+      "status": "Inactive",
+      "createdDate": "2025-09-20T21:49:09",
+      "updatedDate": "2026-02-17T04:42:23",
+      "owner": "Chad Chen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3633.81,
+      "description": "Century leg movement strong poor home."
+    },
+    {
+      "id": "3591f352-37e6-4ea1-b7cd-812b486505f8",
+      "name": "Grass-roots bottom-line throughput 16",
+      "status": "Completed",
+      "createdDate": "2025-03-05T00:19:10",
+      "updatedDate": "2026-01-21T18:02:02",
+      "owner": "Suzanne Parker",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1713.2,
+      "description": "Population artist such catch every."
+    },
+    {
+      "id": "374901d9-642c-4c3b-8ebb-dcc39351b6c8",
+      "name": "User-friendly fault-tolerant core 17",
+      "status": "Pending",
+      "createdDate": "2025-07-01T04:25:19",
+      "updatedDate": "2026-02-17T03:36:43",
+      "owner": "Rebecca Lambert",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1492.56,
+      "description": "Live though range total prevent much practice."
+    },
+    {
+      "id": "3c21574a-2384-4d49-8248-bb5c74d638ab",
+      "name": "Up-sized 3rdgeneration initiative 18",
+      "status": "Active",
+      "createdDate": "2026-02-01T01:22:02",
+      "updatedDate": "2026-02-01T18:26:54",
+      "owner": "Matthew Nelson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7524.48,
+      "description": "Rock commercial home their fall."
+    },
+    {
+      "id": "f2399c2a-3ff5-4e34-8246-276f61f9c724",
+      "name": "De-engineered dedicated hardware 19",
+      "status": "Active",
+      "createdDate": "2025-10-18T18:17:13",
+      "updatedDate": "2026-02-06T13:27:22",
+      "owner": "Ryan Spencer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6766.62,
+      "description": "Certain wish trip attention."
+    },
+    {
+      "id": "2509f274-65ff-45d0-948f-d0c37feb0b80",
+      "name": "Right-sized human-resource workforce 20",
+      "status": "Inactive",
+      "createdDate": "2025-10-11T23:28:23",
+      "updatedDate": "2026-02-11T09:57:48",
+      "owner": "Steven Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5764.82,
+      "description": "Argue rate represent adult."
+    },
+    {
+      "id": "d0b2d4ae-90b3-42e6-aab1-a711e5ca78ab",
+      "name": "Optional object-oriented time-frame 21",
+      "status": "Active",
+      "createdDate": "2025-09-28T08:16:29",
+      "updatedDate": "2026-02-08T06:14:18",
+      "owner": "Kelly Wagner",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1079.53,
+      "description": "Color talk chance bed without."
+    },
+    {
+      "id": "8658cff8-59e3-4818-872f-512230e0435f",
+      "name": "Distributed directional utilization 22",
+      "status": "Completed",
+      "createdDate": "2025-12-08T07:58:12",
+      "updatedDate": "2026-01-31T14:36:47",
+      "owner": "Beth Robinson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2358.71,
+      "description": "End lead these century beautiful charge natural."
+    },
+    {
+      "id": "d5a76c7b-ba95-4766-a366-6ddd3d26c4d0",
+      "name": "Focused grid-enabled pricing structure 23",
+      "status": "Completed",
+      "createdDate": "2025-07-22T04:56:45",
+      "updatedDate": "2026-02-13T12:53:28",
+      "owner": "Debra Decker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9843.24,
+      "description": "Cold future behavior contain address Mr."
+    },
+    {
+      "id": "9cf88618-a379-4c28-9cac-760382b417b4",
+      "name": "Digitized high-level analyzer 24",
+      "status": "Active",
+      "createdDate": "2026-02-15T04:35:25",
+      "updatedDate": "2026-02-12T22:51:51",
+      "owner": "Jordan Garza",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4792.36,
+      "description": "Pattern send although continue their create paper."
+    },
+    {
+      "id": "beec748f-1e7c-4fa3-9516-703764acbe39",
+      "name": "Integrated 24hour access 25",
+      "status": "Active",
+      "createdDate": "2025-09-07T03:30:40",
+      "updatedDate": "2026-02-10T22:58:12",
+      "owner": "Harold Gomez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 837.87,
+      "description": "Decision ahead cause kind argue environmental effect."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

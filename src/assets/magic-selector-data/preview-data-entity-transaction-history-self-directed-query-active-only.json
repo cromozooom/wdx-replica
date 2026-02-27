@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-active-only",
+  "totalCount": 1402,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "476fd41b-7086-453f-8295-fa392e976493",
+      "name": "Fully-configurable intangible collaboration 1",
+      "status": "Pending",
+      "createdDate": "2025-08-21T21:20:08",
+      "updatedDate": "2026-02-03T12:31:07",
+      "owner": "Mark Stephens",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3347.66,
+      "description": "Story ball sign upon land other."
+    },
+    {
+      "id": "cf3a66ba-56f2-4f13-b15f-99273d6d9965",
+      "name": "Persistent encompassing website 2",
+      "status": "Completed",
+      "createdDate": "2025-03-14T20:03:34",
+      "updatedDate": "2026-01-21T11:02:36",
+      "owner": "Adam Thomas",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4309.91,
+      "description": "Protect often stop somebody take card series."
+    },
+    {
+      "id": "b656c2f0-3f70-43e8-87fa-9b9ea01f2052",
+      "name": "Balanced didactic encryption 3",
+      "status": "Active",
+      "createdDate": "2025-06-09T13:10:06",
+      "updatedDate": "2026-01-26T08:43:19",
+      "owner": "John Ford",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6102.74,
+      "description": "Of few success stop must."
+    },
+    {
+      "id": "34d55014-c9b1-4680-acda-35631a91f758",
+      "name": "Organic context-sensitive projection 4",
+      "status": "Inactive",
+      "createdDate": "2025-11-06T12:02:34",
+      "updatedDate": "2026-01-28T10:15:04",
+      "owner": "Robert Mueller",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8785.34,
+      "description": "Listen similar modern forget no future ahead."
+    },
+    {
+      "id": "240fccfe-4c89-4f42-8427-23c6bf9d3f57",
+      "name": "Customer-focused coherent conglomeration 5",
+      "status": "Completed",
+      "createdDate": "2025-11-01T09:26:48",
+      "updatedDate": "2026-02-06T15:30:10",
+      "owner": "Timothy Whitney",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3124.31,
+      "description": "Rich line return plan until."
+    },
+    {
+      "id": "6148271f-6643-45bf-ada0-a3c4db4b6661",
+      "name": "Balanced multi-tasking projection 6",
+      "status": "Active",
+      "createdDate": "2025-11-30T05:00:13",
+      "updatedDate": "2026-01-26T11:11:47",
+      "owner": "Justin English",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5767.33,
+      "description": "Man executive base pressure respond."
+    },
+    {
+      "id": "a74571fc-5dd5-4104-8a28-c980ec5493f8",
+      "name": "Fully-configurable multi-tasking adapter 7",
+      "status": "Completed",
+      "createdDate": "2025-10-30T07:57:58",
+      "updatedDate": "2026-01-29T04:53:00",
+      "owner": "Ariel Moore",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4017.44,
+      "description": "Chance activity us billion serious remember."
+    },
+    {
+      "id": "d8e04046-0996-4958-ae08-e9dbdf6e163a",
+      "name": "Mandatory mission-critical product 8",
+      "status": "Pending",
+      "createdDate": "2025-11-28T09:11:04",
+      "updatedDate": "2026-02-07T14:56:31",
+      "owner": "Brandon Day",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5405.96,
+      "description": "Factor although these ready."
+    },
+    {
+      "id": "68409596-1543-4f6e-85bf-459b2d60714a",
+      "name": "Pre-emptive clear-thinking toolset 9",
+      "status": "Completed",
+      "createdDate": "2025-07-14T03:25:39",
+      "updatedDate": "2026-02-17T02:26:28",
+      "owner": "William Schaefer",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7270.89,
+      "description": "Five weight artist street."
+    },
+    {
+      "id": "39c6ed99-f6f7-44a9-9f0b-81bac64e3961",
+      "name": "Optimized multi-tasking protocol 10",
+      "status": "Inactive",
+      "createdDate": "2025-10-15T22:25:36",
+      "updatedDate": "2026-02-07T04:20:00",
+      "owner": "Michael Lee",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6799.46,
+      "description": "Operation pattern itself some first oil fund physical."
+    },
+    {
+      "id": "100ce71c-49e1-4f8a-bab3-4152ec08516b",
+      "name": "Ergonomic local access 11",
+      "status": "Pending",
+      "createdDate": "2025-12-09T08:54:39",
+      "updatedDate": "2026-02-13T21:30:26",
+      "owner": "Ernest Gilbert",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 981.83,
+      "description": "Especially very decade morning."
+    },
+    {
+      "id": "60c1f0f4-8ff3-4f61-822c-1ba62cec2666",
+      "name": "Cloned encompassing approach 12",
+      "status": "Inactive",
+      "createdDate": "2025-12-30T09:51:50",
+      "updatedDate": "2026-02-02T17:21:06",
+      "owner": "Cheryl Moss",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6213.59,
+      "description": "Bit work inside."
+    },
+    {
+      "id": "6a4b3cbb-0501-4a0a-be06-25fb6a7cbb38",
+      "name": "De-engineered clear-thinking matrix 13",
+      "status": "Inactive",
+      "createdDate": "2025-05-04T08:20:36",
+      "updatedDate": "2026-02-12T17:36:16",
+      "owner": "Michelle Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 514.84,
+      "description": "Local however gun production positive if."
+    },
+    {
+      "id": "7fcc8a0e-df93-479f-9267-665594e373bf",
+      "name": "Implemented bi-directional core 14",
+      "status": "Completed",
+      "createdDate": "2025-11-29T17:44:20",
+      "updatedDate": "2026-02-14T13:26:40",
+      "owner": "Corey Melton",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5082.53,
+      "description": "Specific five stage right produce."
+    },
+    {
+      "id": "e3950611-fff8-49bb-8385-07137b152ad2",
+      "name": "Focused context-sensitive moratorium 15",
+      "status": "Completed",
+      "createdDate": "2025-04-28T08:29:02",
+      "updatedDate": "2026-02-07T08:06:11",
+      "owner": "Randy Valdez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 671.05,
+      "description": "Culture forget into forward."
+    },
+    {
+      "id": "70689d2c-2bca-4f8a-97c9-0c92e9cfc35a",
+      "name": "Integrated responsive migration 16",
+      "status": "Completed",
+      "createdDate": "2025-03-15T16:21:26",
+      "updatedDate": "2026-01-30T08:26:29",
+      "owner": "Ashley Jackson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1713.18,
+      "description": "After wait pressure amount."
+    },
+    {
+      "id": "ec7dd1a6-1dc0-4d5e-8c6f-3ddc9be9ad69",
+      "name": "Seamless system-worthy benchmark 17",
+      "status": "Active",
+      "createdDate": "2025-08-12T22:59:57",
+      "updatedDate": "2026-01-27T12:05:25",
+      "owner": "Rachel Edwards",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2437.48,
+      "description": "Garden century because section avoid room its."
+    },
+    {
+      "id": "90067c78-6786-48b6-92ea-f93b4cee606a",
+      "name": "Enterprise-wide value-added hardware 18",
+      "status": "Inactive",
+      "createdDate": "2025-08-05T04:04:51",
+      "updatedDate": "2026-01-19T21:35:01",
+      "owner": "Johnathan Elliott",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9394.51,
+      "description": "Area adult book according role three our."
+    },
+    {
+      "id": "53f8df56-6b01-45d8-94ab-8fc4db00ee9e",
+      "name": "Customizable fresh-thinking parallelism 19",
+      "status": "Pending",
+      "createdDate": "2025-12-23T07:47:26",
+      "updatedDate": "2026-01-29T14:06:24",
+      "owner": "Michelle Diaz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5701.67,
+      "description": "However usually magazine story reach score father market."
+    },
+    {
+      "id": "c50fda0a-9456-4291-8500-615f04868d61",
+      "name": "Cross-group 24hour emulation 20",
+      "status": "Completed",
+      "createdDate": "2025-08-23T18:59:23",
+      "updatedDate": "2026-02-02T23:04:41",
+      "owner": "Emily Vargas",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4958.15,
+      "description": "Factor pull idea than sister sometimes up."
+    },
+    {
+      "id": "7dfe16fb-99ed-4473-b9cb-1cb2025152fc",
+      "name": "Stand-alone 24/7 encoding 21",
+      "status": "Pending",
+      "createdDate": "2025-10-08T23:43:36",
+      "updatedDate": "2026-02-15T17:51:07",
+      "owner": "Jeremiah Gibson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5401.78,
+      "description": "Chance item attention when."
+    },
+    {
+      "id": "47535326-c449-4c78-9136-69c30b658339",
+      "name": "Quality-focused motivating throughput 22",
+      "status": "Inactive",
+      "createdDate": "2025-04-01T06:48:06",
+      "updatedDate": "2026-02-02T00:23:17",
+      "owner": "Randall Gomez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2183.75,
+      "description": "Opportunity fill what say town."
+    },
+    {
+      "id": "0d2fcd14-eb81-4460-be09-1fc8b6dfb0d6",
+      "name": "Upgradable national initiative 23",
+      "status": "Inactive",
+      "createdDate": "2025-10-25T00:47:38",
+      "updatedDate": "2026-01-23T04:40:08",
+      "owner": "Michael Blair",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3232.98,
+      "description": "Myself step three increase."
+    },
+    {
+      "id": "0ef67f0d-1a9b-4bbd-b033-fe6d8c7ec680",
+      "name": "Expanded high-level implementation 24",
+      "status": "Active",
+      "createdDate": "2025-09-20T20:58:50",
+      "updatedDate": "2026-02-04T05:04:07",
+      "owner": "Alyssa Newton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6894.59,
+      "description": "Reach upon fund manage senior."
+    },
+    {
+      "id": "388d7ce4-4432-4169-a31a-cf7c485823fd",
+      "name": "Operative high-level array 25",
+      "status": "Completed",
+      "createdDate": "2025-06-25T00:45:24",
+      "updatedDate": "2026-01-27T05:55:06",
+      "owner": "Curtis Hudson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 272.03,
+      "description": "Keep nature watch but school word decide."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

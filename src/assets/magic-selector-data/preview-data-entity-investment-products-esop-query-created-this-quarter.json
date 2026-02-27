@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 942,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "af2c2a62-cb15-419b-a127-934c219a4eb1",
+      "name": "User-centric bifurcated product 1",
+      "status": "Active",
+      "createdDate": "2025-03-04T09:10:07",
+      "updatedDate": "2026-02-16T23:25:56",
+      "owner": "Scott Mccann",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5610.31,
+      "description": "Scene avoid teach fall pattern baby drive."
+    },
+    {
+      "id": "ee9c44aa-ecc7-4e35-823a-56d41ae9734d",
+      "name": "Up-sized object-oriented software 2",
+      "status": "Completed",
+      "createdDate": "2025-08-22T08:13:14",
+      "updatedDate": "2026-02-16T14:46:59",
+      "owner": "Brad Rogers",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9090.52,
+      "description": "Organization morning order clear nothing may hour."
+    },
+    {
+      "id": "cb2bec2b-a4e0-4132-80ac-9b8130885d81",
+      "name": "Team-oriented modular database 3",
+      "status": "Active",
+      "createdDate": "2025-03-05T05:44:45",
+      "updatedDate": "2026-01-21T04:17:56",
+      "owner": "Regina Hart",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 149.23,
+      "description": "Dinner its lay decade."
+    },
+    {
+      "id": "1e1326ff-5b2e-481d-9d9c-23fc243638a1",
+      "name": "Switchable fresh-thinking synergy 4",
+      "status": "Pending",
+      "createdDate": "2026-02-08T17:51:10",
+      "updatedDate": "2026-01-25T12:20:15",
+      "owner": "Gavin Jensen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2279.91,
+      "description": "Possible president senior whole per month spring."
+    },
+    {
+      "id": "978587ec-baf3-4e05-831c-2983b07fd25b",
+      "name": "Visionary mobile policy 5",
+      "status": "Pending",
+      "createdDate": "2025-09-17T02:14:34",
+      "updatedDate": "2026-01-30T01:21:36",
+      "owner": "Sara Carter",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1035.65,
+      "description": "Subject gas according occur."
+    },
+    {
+      "id": "f3843c0c-6dde-4dca-a0ab-fa5ac672b60e",
+      "name": "Digitized zero-defect database 6",
+      "status": "Active",
+      "createdDate": "2025-05-18T07:30:07",
+      "updatedDate": "2026-02-04T07:32:42",
+      "owner": "Jonathan Newton",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4792.29,
+      "description": "Guess spring common report offer team."
+    },
+    {
+      "id": "a9568332-5e8c-4085-a2ea-b811efc41fd5",
+      "name": "Automated secondary ability 7",
+      "status": "Pending",
+      "createdDate": "2026-01-31T10:18:53",
+      "updatedDate": "2026-01-21T09:25:16",
+      "owner": "Calvin Willis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5679.32,
+      "description": "Pull also movie though per ask deep."
+    },
+    {
+      "id": "f8a7977f-04b9-4116-bdef-fb38f2abb76b",
+      "name": "Fundamental client-server frame 8",
+      "status": "Completed",
+      "createdDate": "2025-02-17T14:58:32",
+      "updatedDate": "2026-02-13T13:19:18",
+      "owner": "Michael Butler",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8673.21,
+      "description": "Cover help resource strong rate wall."
+    },
+    {
+      "id": "0a41c4c3-8732-4ced-a054-76564bf6e4af",
+      "name": "Synergistic bifurcated interface 9",
+      "status": "Completed",
+      "createdDate": "2025-02-28T12:29:42",
+      "updatedDate": "2026-01-31T21:18:24",
+      "owner": "Carol Phelps",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8136.68,
+      "description": "Up threat course interesting price defense tonight."
+    },
+    {
+      "id": "313fb8d0-0a0b-4af9-a6d2-709de04f2121",
+      "name": "Diverse background moderator 10",
+      "status": "Pending",
+      "createdDate": "2025-08-24T04:46:48",
+      "updatedDate": "2026-02-13T15:19:20",
+      "owner": "Matthew Allison",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5071.84,
+      "description": "His have name visit recent find."
+    },
+    {
+      "id": "20f81238-9167-4e6d-baee-fba202e34e79",
+      "name": "Virtual human-resource support 11",
+      "status": "Completed",
+      "createdDate": "2025-06-05T03:19:33",
+      "updatedDate": "2026-01-28T00:43:24",
+      "owner": "Mark Mills",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8624.86,
+      "description": "Pull eat idea bill stuff."
+    },
+    {
+      "id": "b14e6841-342a-45d6-8d4e-9e4967d2ce78",
+      "name": "Right-sized encompassing Local Area Network 12",
+      "status": "Inactive",
+      "createdDate": "2026-02-02T23:09:12",
+      "updatedDate": "2026-01-30T00:58:54",
+      "owner": "Samantha Blair",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1580.53,
+      "description": "Score budget rest four area year simple color."
+    },
+    {
+      "id": "aa9c8026-1e41-4030-bedb-031d68131eb8",
+      "name": "Cross-group holistic Local Area Network 13",
+      "status": "Active",
+      "createdDate": "2025-02-25T23:50:17",
+      "updatedDate": "2026-01-30T08:46:49",
+      "owner": "April Costa",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1950.93,
+      "description": "Then bit him politics."
+    },
+    {
+      "id": "e2fb69c5-c417-4a54-8508-7029febcfb73",
+      "name": "Function-based radical knowledge user 14",
+      "status": "Active",
+      "createdDate": "2025-10-28T05:46:59",
+      "updatedDate": "2026-02-06T12:30:41",
+      "owner": "Melanie Medina",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9174.89,
+      "description": "Whatever cell someone reduce oil several over."
+    },
+    {
+      "id": "590c6e09-ca5c-44fb-bb0e-e3b13ace6ae1",
+      "name": "Face-to-face 24hour definition 15",
+      "status": "Completed",
+      "createdDate": "2025-10-09T21:05:23",
+      "updatedDate": "2026-02-15T13:34:03",
+      "owner": "Eric Ramsey",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1178.25,
+      "description": "Final expert on wear."
+    },
+    {
+      "id": "189ffe32-b27c-43e4-801a-183a9efadb42",
+      "name": "Multi-tiered bi-directional focus group 16",
+      "status": "Completed",
+      "createdDate": "2026-02-06T03:52:01",
+      "updatedDate": "2026-01-22T23:42:11",
+      "owner": "David Meyer",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4024.28,
+      "description": "Too usually others eye provide degree may."
+    },
+    {
+      "id": "bfb8ce71-ffd7-43d3-9edf-782ff363c0b9",
+      "name": "Team-oriented eco-centric open architecture 17",
+      "status": "Completed",
+      "createdDate": "2025-07-06T00:04:53",
+      "updatedDate": "2026-01-25T04:37:34",
+      "owner": "April Young",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3438.04,
+      "description": "Small thought change."
+    },
+    {
+      "id": "acbb4240-9e52-4404-b7fe-53ed5350b305",
+      "name": "Adaptive attitude-oriented policy 18",
+      "status": "Pending",
+      "createdDate": "2025-05-05T22:15:10",
+      "updatedDate": "2026-01-29T04:16:02",
+      "owner": "Joseph Villanueva",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7441.85,
+      "description": "Though all call start here consider."
+    },
+    {
+      "id": "327a67c1-4f83-45ad-ad34-cb3f1b3836be",
+      "name": "Inverse transitional migration 19",
+      "status": "Completed",
+      "createdDate": "2025-06-29T11:54:13",
+      "updatedDate": "2026-01-31T15:21:46",
+      "owner": "Tyler Hughes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4439.77,
+      "description": "Deep alone old name want its floor shake."
+    },
+    {
+      "id": "54e27a51-9de7-469f-94d8-d7147dd58445",
+      "name": "Profit-focused solution-oriented installation 20",
+      "status": "Active",
+      "createdDate": "2025-09-23T00:18:39",
+      "updatedDate": "2026-02-01T08:55:19",
+      "owner": "Tamara Montoya",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 189.3,
+      "description": "Price growth city important minute reflect."
+    },
+    {
+      "id": "253a1eb5-313e-4c98-a3b7-70cefaac7ba3",
+      "name": "Open-source executive extranet 21",
+      "status": "Active",
+      "createdDate": "2025-03-25T04:06:22",
+      "updatedDate": "2026-02-09T00:35:27",
+      "owner": "Holly Gray",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9455.4,
+      "description": "Religious just responsibility camera trouble."
+    },
+    {
+      "id": "bea90947-98df-4073-8652-9e77d557af07",
+      "name": "Quality-focused human-resource firmware 22",
+      "status": "Pending",
+      "createdDate": "2025-08-27T17:44:29",
+      "updatedDate": "2026-02-13T09:37:38",
+      "owner": "Lisa Ward",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1519.14,
+      "description": "Tonight among their money difficult early animal."
+    },
+    {
+      "id": "54c9ea64-b009-4638-9481-30ea0c6ac977",
+      "name": "Reverse-engineered client-driven database 23",
+      "status": "Inactive",
+      "createdDate": "2025-05-28T05:50:23",
+      "updatedDate": "2026-01-28T08:31:39",
+      "owner": "Joanne Lang",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4482.04,
+      "description": "Budget likely final remember sign nice."
+    },
+    {
+      "id": "ebc68722-831b-4fa8-8c10-e1d93426a43d",
+      "name": "Profit-focused next generation moderator 24",
+      "status": "Pending",
+      "createdDate": "2026-01-17T21:06:17",
+      "updatedDate": "2026-02-04T17:23:59",
+      "owner": "Larry Pierce",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9791.17,
+      "description": "Heavy name hundred."
+    },
+    {
+      "id": "28801cf7-3750-463f-b1f4-c00496e42852",
+      "name": "Public-key disintermediate migration 25",
+      "status": "Pending",
+      "createdDate": "2025-06-04T17:31:54",
+      "updatedDate": "2026-02-03T10:34:03",
+      "owner": "Casey Hodge",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6087.17,
+      "description": "Attorney product market cost affect but huge happy."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-active-only",
+  "totalCount": 1242,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "effec9ac-ce27-4f59-82fc-474647c8ea15",
+      "name": "Team-oriented didactic implementation 1",
+      "status": "Inactive",
+      "createdDate": "2025-04-10T21:02:14",
+      "updatedDate": "2026-01-27T05:29:21",
+      "owner": "Luis Taylor",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8125.56,
+      "description": "Long teach with attention hope fund truth marriage."
+    },
+    {
+      "id": "c37f54ed-41e9-430c-ab10-b673e1d1d316",
+      "name": "Persevering full-range core 2",
+      "status": "Completed",
+      "createdDate": "2025-05-03T03:52:09",
+      "updatedDate": "2026-01-22T23:08:10",
+      "owner": "Maureen Johnson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3265.37,
+      "description": "Bar federal visit easy girl."
+    },
+    {
+      "id": "d8a492b8-e725-4432-b156-7b197958aa58",
+      "name": "Customizable neutral emulation 3",
+      "status": "Pending",
+      "createdDate": "2025-09-30T20:30:42",
+      "updatedDate": "2026-01-31T09:18:31",
+      "owner": "Lauren Murray",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 232.37,
+      "description": "Understand hold mention."
+    },
+    {
+      "id": "da8f78b6-2f2b-4144-897f-93dac9387ca8",
+      "name": "Devolved local archive 4",
+      "status": "Inactive",
+      "createdDate": "2025-10-16T01:09:04",
+      "updatedDate": "2026-01-31T05:33:27",
+      "owner": "Theodore Garcia",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5743.36,
+      "description": "First goal street sure already same project."
+    },
+    {
+      "id": "a2d13458-12b7-4191-afc9-017e321db454",
+      "name": "Reactive composite extranet 5",
+      "status": "Active",
+      "createdDate": "2025-06-20T03:37:06",
+      "updatedDate": "2026-02-12T01:02:48",
+      "owner": "Oscar Santos",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8727.93,
+      "description": "May let reach event."
+    },
+    {
+      "id": "cf7ea377-b8b6-4cec-b785-142e59afd8d9",
+      "name": "Synergized attitude-oriented capacity 6",
+      "status": "Pending",
+      "createdDate": "2025-07-26T18:56:33",
+      "updatedDate": "2026-01-19T00:54:59",
+      "owner": "Ashley Davis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1722.48,
+      "description": "Surface score five staff."
+    },
+    {
+      "id": "76ae3669-7a5e-4076-8311-da2eb24ba6b0",
+      "name": "Cross-group motivating core 7",
+      "status": "Pending",
+      "createdDate": "2025-10-16T18:42:37",
+      "updatedDate": "2026-01-28T18:50:05",
+      "owner": "Jacob Hester",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6021.24,
+      "description": "Fire while baby art her night Mrs."
+    },
+    {
+      "id": "f08232b9-67cc-4f30-b709-be09f026be68",
+      "name": "Vision-oriented next generation throughput 8",
+      "status": "Active",
+      "createdDate": "2025-10-13T10:52:37",
+      "updatedDate": "2026-01-26T12:27:53",
+      "owner": "Sean Jones",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7828.21,
+      "description": "Mission model often usually science blue also."
+    },
+    {
+      "id": "c4c362f3-f27a-48e1-83ee-d7acb9e89131",
+      "name": "Innovative 4thgeneration circuit 9",
+      "status": "Active",
+      "createdDate": "2025-09-10T09:56:56",
+      "updatedDate": "2026-01-19T08:37:31",
+      "owner": "Mary Martinez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5647.07,
+      "description": "Peace forward lay ok head."
+    },
+    {
+      "id": "9900e997-dee9-43da-873f-5f60af0004a7",
+      "name": "Visionary user-facing groupware 10",
+      "status": "Completed",
+      "createdDate": "2025-10-18T16:42:35",
+      "updatedDate": "2026-01-18T14:35:58",
+      "owner": "Miranda Hunt",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3373.38,
+      "description": "House off art certainly spring car remember."
+    },
+    {
+      "id": "6461879f-ebda-42bc-9828-7ac377b1eeff",
+      "name": "De-engineered multimedia success 11",
+      "status": "Pending",
+      "createdDate": "2025-06-13T14:07:45",
+      "updatedDate": "2026-02-14T04:12:04",
+      "owner": "Monica Whitehead",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9012.37,
+      "description": "Military unit social hit."
+    },
+    {
+      "id": "30a1b447-56f5-42b6-9a9e-054027d2d736",
+      "name": "Assimilated client-server collaboration 12",
+      "status": "Inactive",
+      "createdDate": "2025-06-22T08:55:53",
+      "updatedDate": "2026-02-17T01:49:28",
+      "owner": "Robert Taylor",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4735.0,
+      "description": "Cut administration ok tell learn before mother good."
+    },
+    {
+      "id": "118b00e8-aef0-4c5e-842a-ad4c038ee996",
+      "name": "Innovative discrete Graphic Interface 13",
+      "status": "Completed",
+      "createdDate": "2025-07-19T15:25:28",
+      "updatedDate": "2026-01-30T14:07:39",
+      "owner": "Stephen Miller",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4015.93,
+      "description": "Federal room above explain may environment."
+    },
+    {
+      "id": "9d652834-4a84-4c0c-8185-b472d53eb1a0",
+      "name": "Quality-focused next generation knowledgebase 14",
+      "status": "Active",
+      "createdDate": "2025-09-25T00:12:06",
+      "updatedDate": "2026-01-30T18:30:29",
+      "owner": "Matthew Lopez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 702.15,
+      "description": "For off decade song."
+    },
+    {
+      "id": "dfb2a296-dc45-4022-b9b0-70ce96f61ced",
+      "name": "Persevering homogeneous framework 15",
+      "status": "Completed",
+      "createdDate": "2025-04-25T12:20:04",
+      "updatedDate": "2026-02-03T22:12:35",
+      "owner": "Steven Nelson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3302.49,
+      "description": "Enough recent practice clearly clearly just do."
+    },
+    {
+      "id": "04718d49-e13a-49d3-a3d3-dfb1109182b8",
+      "name": "Upgradable tangible knowledgebase 16",
+      "status": "Active",
+      "createdDate": "2025-05-31T05:08:34",
+      "updatedDate": "2026-01-29T06:42:29",
+      "owner": "Nicole Stephenson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3148.77,
+      "description": "Discussion word among major."
+    },
+    {
+      "id": "215dc14c-dd65-4a35-b1ed-0a26318184c8",
+      "name": "Customer-focused optimizing moratorium 17",
+      "status": "Active",
+      "createdDate": "2025-10-20T05:07:21",
+      "updatedDate": "2026-02-04T17:00:33",
+      "owner": "Mrs. Jennifer Crawford",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6377.12,
+      "description": "Interest ago purpose value sound beautiful."
+    },
+    {
+      "id": "00dd5a82-160f-4fef-a13a-05bb645feb6b",
+      "name": "Optional contextually-based neural-net 18",
+      "status": "Active",
+      "createdDate": "2025-02-28T05:26:33",
+      "updatedDate": "2026-01-24T04:01:27",
+      "owner": "Tanya Mclaughlin DDS",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8013.13,
+      "description": "Happy cause nice win."
+    },
+    {
+      "id": "fdd70fc7-81f2-4487-a2db-9916cd43e5dd",
+      "name": "Managed context-sensitive productivity 19",
+      "status": "Pending",
+      "createdDate": "2025-08-21T21:14:59",
+      "updatedDate": "2026-01-27T15:05:13",
+      "owner": "Seth Mcclure",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1268.13,
+      "description": "Generation far father chance blue member."
+    },
+    {
+      "id": "80eb9033-e6cd-40c4-96e1-44d23bba274e",
+      "name": "Streamlined foreground hierarchy 20",
+      "status": "Active",
+      "createdDate": "2025-05-30T19:13:26",
+      "updatedDate": "2026-02-05T11:42:01",
+      "owner": "Carol Hess",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6528.05,
+      "description": "Together other issue always."
+    },
+    {
+      "id": "4ad48190-4aba-42ba-9da2-26fea857b6dd",
+      "name": "Intuitive systematic matrices 21",
+      "status": "Inactive",
+      "createdDate": "2025-10-20T19:38:12",
+      "updatedDate": "2026-01-23T09:47:32",
+      "owner": "Amanda Morgan",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6371.21,
+      "description": "Land head red ok."
+    },
+    {
+      "id": "54014028-541d-4e76-a127-f15d65bfa795",
+      "name": "User-friendly 3rdgeneration matrices 22",
+      "status": "Active",
+      "createdDate": "2026-02-01T04:04:43",
+      "updatedDate": "2026-01-27T05:27:01",
+      "owner": "Andrew Reeves",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3576.27,
+      "description": "Community one response born red top fine."
+    },
+    {
+      "id": "8a86f670-68af-4817-90ff-6d6ecf2e5bda",
+      "name": "Pre-emptive contextually-based workforce 23",
+      "status": "Completed",
+      "createdDate": "2025-12-11T11:44:05",
+      "updatedDate": "2026-01-27T05:36:22",
+      "owner": "Megan Elliott",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8011.1,
+      "description": "Town likely use together authority it much."
+    },
+    {
+      "id": "04897cb4-47ab-4a27-9d40-2be953a03b26",
+      "name": "Networked disintermediate collaboration 24",
+      "status": "Pending",
+      "createdDate": "2025-07-21T08:21:56",
+      "updatedDate": "2026-01-23T01:14:40",
+      "owner": "Natalie Aguilar",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4912.46,
+      "description": "May plant speech will."
+    },
+    {
+      "id": "36544e8c-a0a1-4ce7-92c5-ae3cf573f6db",
+      "name": "Pre-emptive mobile moderator 25",
+      "status": "Pending",
+      "createdDate": "2026-01-14T13:25:28",
+      "updatedDate": "2026-01-27T05:21:08",
+      "owner": "Paul Vasquez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7662.37,
+      "description": "Agency return other natural."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-research",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 555,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "373d1c97-1f0e-47c7-98b7-1a8fc9a095d0",
+      "name": "Reduced actuating initiative 1",
+      "status": "Active",
+      "createdDate": "2025-03-07T14:42:46",
+      "updatedDate": "2026-02-07T03:59:53",
+      "owner": "Fred James",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6625.52,
+      "description": "Stay hotel magazine method focus specific policy could."
+    },
+    {
+      "id": "71f28c9a-d88c-41d6-9f3e-fb10fb12103c",
+      "name": "Robust dynamic website 2",
+      "status": "Pending",
+      "createdDate": "2026-01-10T16:54:29",
+      "updatedDate": "2026-01-19T06:20:57",
+      "owner": "Dalton Ross",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 295.98,
+      "description": "Rest work fall raise."
+    },
+    {
+      "id": "c780f814-cbe8-4073-b61f-2865e023a1dc",
+      "name": "Intuitive demand-driven database 3",
+      "status": "Inactive",
+      "createdDate": "2025-10-04T09:11:03",
+      "updatedDate": "2026-02-08T04:07:49",
+      "owner": "Scott Morrow",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7488.97,
+      "description": "Own evening cut."
+    },
+    {
+      "id": "4a5af3da-3d20-400b-9057-d7fa10de5438",
+      "name": "Future-proofed global methodology 4",
+      "status": "Completed",
+      "createdDate": "2025-03-13T10:05:35",
+      "updatedDate": "2026-02-14T08:01:28",
+      "owner": "Kenneth Carroll",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8550.34,
+      "description": "Meet identify partner economic."
+    },
+    {
+      "id": "4ca0dd05-fc99-4bed-be3a-b3adaec35c22",
+      "name": "Advanced system-worthy pricing structure 5",
+      "status": "Completed",
+      "createdDate": "2025-08-31T10:39:14",
+      "updatedDate": "2026-01-31T03:22:01",
+      "owner": "Danielle Mendoza",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9904.52,
+      "description": "Weight voice administration seat."
+    },
+    {
+      "id": "c91b7625-4e39-4546-a6cc-76566d823f81",
+      "name": "Operative transitional neural-net 6",
+      "status": "Active",
+      "createdDate": "2026-01-18T13:44:03",
+      "updatedDate": "2026-01-22T09:48:29",
+      "owner": "Kevin Cox",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5028.82,
+      "description": "If stock lawyer new."
+    },
+    {
+      "id": "b1e5fbda-69ad-41ce-a233-d78ac86960be",
+      "name": "Ergonomic exuding hub 7",
+      "status": "Completed",
+      "createdDate": "2025-05-11T14:45:34",
+      "updatedDate": "2026-02-08T19:54:01",
+      "owner": "Maureen Wise",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6923.44,
+      "description": "Make hundred approach focus defense magazine."
+    },
+    {
+      "id": "dc3059b6-559e-43cd-9be6-1ac072d244bf",
+      "name": "Persistent encompassing algorithm 8",
+      "status": "Pending",
+      "createdDate": "2026-02-09T13:52:09",
+      "updatedDate": "2026-01-28T05:35:26",
+      "owner": "David Fitzpatrick",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7543.09,
+      "description": "Scene international society everything contain not."
+    },
+    {
+      "id": "5765fda1-aa8e-456b-85a0-eb287d0a4142",
+      "name": "Monitored even-keeled Internet solution 9",
+      "status": "Active",
+      "createdDate": "2025-03-29T11:43:36",
+      "updatedDate": "2026-02-15T03:34:42",
+      "owner": "Pamela Heath",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3805.62,
+      "description": "Run not south rock adult forget."
+    },
+    {
+      "id": "c7ecb2b1-7ca1-4da9-980b-5a71eb9e730a",
+      "name": "Re-contextualized background flexibility 10",
+      "status": "Inactive",
+      "createdDate": "2025-06-08T20:16:59",
+      "updatedDate": "2026-01-27T23:32:24",
+      "owner": "David Orozco",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5723.34,
+      "description": "Night yes artist message big camera country economy."
+    },
+    {
+      "id": "254ae919-bf72-4611-b818-f32239c6c488",
+      "name": "Streamlined logistical conglomeration 11",
+      "status": "Inactive",
+      "createdDate": "2026-02-04T16:54:28",
+      "updatedDate": "2026-02-01T10:15:16",
+      "owner": "Angela Moss",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7291.54,
+      "description": "Reality style physical catch hard we often."
+    },
+    {
+      "id": "e7733bd0-c956-4c0c-b1b3-73e92eaef981",
+      "name": "User-friendly actuating migration 12",
+      "status": "Inactive",
+      "createdDate": "2025-07-20T18:50:19",
+      "updatedDate": "2026-01-28T18:43:49",
+      "owner": "Andrew Bell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3532.65,
+      "description": "Degree of impact prove."
+    },
+    {
+      "id": "75d44afe-2e5e-44b9-bf1c-0a67f975b1fe",
+      "name": "Open-source tangible ability 13",
+      "status": "Active",
+      "createdDate": "2025-12-03T00:07:09",
+      "updatedDate": "2026-02-01T13:29:25",
+      "owner": "Tara Woods",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5083.67,
+      "description": "Create learn improve brother."
+    },
+    {
+      "id": "cad84140-32a4-4beb-b2c7-0535e6decc7f",
+      "name": "Persevering eco-centric projection 14",
+      "status": "Active",
+      "createdDate": "2026-01-28T08:24:42",
+      "updatedDate": "2026-02-10T12:23:40",
+      "owner": "Amber Joseph",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3342.5,
+      "description": "Return machine beautiful."
+    },
+    {
+      "id": "506e76fe-3ca1-4998-8cac-7af4dc14058f",
+      "name": "Distributed content-based hardware 15",
+      "status": "Active",
+      "createdDate": "2026-02-09T20:25:48",
+      "updatedDate": "2026-01-23T19:00:32",
+      "owner": "Michael Price",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2197.39,
+      "description": "Until another director."
+    },
+    {
+      "id": "5cbc71a6-a07d-497b-869b-9779ed574308",
+      "name": "Fundamental optimizing firmware 16",
+      "status": "Active",
+      "createdDate": "2025-08-15T12:35:03",
+      "updatedDate": "2026-01-27T08:42:14",
+      "owner": "Tara Simmons",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2414.95,
+      "description": "Against program show include resource nice more."
+    },
+    {
+      "id": "6a818eeb-4866-42ab-9c8e-47277e1a39f6",
+      "name": "Organized eco-centric task-force 17",
+      "status": "Completed",
+      "createdDate": "2025-11-03T07:58:54",
+      "updatedDate": "2026-01-18T19:25:45",
+      "owner": "Kristen Lawson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 886.79,
+      "description": "Audience into pull level leave environment."
+    },
+    {
+      "id": "443573bb-ac1a-41fd-a0bc-7e651a64d5b4",
+      "name": "Visionary client-driven groupware 18",
+      "status": "Active",
+      "createdDate": "2025-07-10T20:51:00",
+      "updatedDate": "2026-01-28T17:39:11",
+      "owner": "Kristin Hayes",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6785.35,
+      "description": "Manager official little chance."
+    },
+    {
+      "id": "95349c78-53ac-400a-a11e-03692129da9f",
+      "name": "Reduced value-added encoding 19",
+      "status": "Pending",
+      "createdDate": "2025-05-27T17:26:12",
+      "updatedDate": "2026-02-07T16:53:17",
+      "owner": "Gina Warren",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2732.91,
+      "description": "Something wonder stage race if."
+    },
+    {
+      "id": "f16036f8-025b-40f8-bc24-2100ed1bc3ca",
+      "name": "Extended zero-defect methodology 20",
+      "status": "Inactive",
+      "createdDate": "2025-02-25T23:33:25",
+      "updatedDate": "2026-01-22T07:34:03",
+      "owner": "Stacy Stanley",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4809.02,
+      "description": "Never recent TV throw own school."
+    },
+    {
+      "id": "6e7d6828-bd57-4aca-96dc-3c13b654d4dc",
+      "name": "Cross-platform hybrid orchestration 21",
+      "status": "Completed",
+      "createdDate": "2025-05-19T06:03:25",
+      "updatedDate": "2026-01-21T00:52:51",
+      "owner": "Elizabeth Russell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4331.92,
+      "description": "Yet lot price particularly walk man."
+    },
+    {
+      "id": "ec04f8ad-1e2f-42f8-8e1b-bd7c8a27e351",
+      "name": "Realigned zero tolerance algorithm 22",
+      "status": "Active",
+      "createdDate": "2025-06-12T08:52:49",
+      "updatedDate": "2026-01-29T00:03:05",
+      "owner": "Sean Park",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7919.62,
+      "description": "Unit huge fish."
+    },
+    {
+      "id": "89f24af4-a411-49d2-bc50-a634d2243aad",
+      "name": "Proactive asymmetric secured line 23",
+      "status": "Completed",
+      "createdDate": "2025-06-01T13:27:39",
+      "updatedDate": "2026-02-05T22:45:20",
+      "owner": "Michael Wilson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5722.43,
+      "description": "Dark risk report account."
+    },
+    {
+      "id": "9b15946d-3810-4f8a-81da-3aa7974d972c",
+      "name": "Total contextually-based application 24",
+      "status": "Completed",
+      "createdDate": "2025-04-29T07:51:20",
+      "updatedDate": "2026-02-16T13:19:17",
+      "owner": "John Briggs",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6719.8,
+      "description": "Open station fill deep financial white take."
+    },
+    {
+      "id": "0918bbeb-5682-478c-903d-9544c7a66ed0",
+      "name": "Stand-alone secondary knowledgebase 25",
+      "status": "Pending",
+      "createdDate": "2025-08-03T23:31:12",
+      "updatedDate": "2026-02-08T22:47:24",
+      "owner": "Rodney Mitchell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8278.86,
+      "description": "Represent above tax push in evening."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

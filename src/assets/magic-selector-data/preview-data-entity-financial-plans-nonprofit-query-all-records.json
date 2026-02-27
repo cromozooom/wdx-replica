@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 1234,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "50d6d50e-227b-43d9-9236-c2e44359ef62",
+      "name": "Persevering systematic neural-net 1",
+      "status": "Inactive",
+      "createdDate": "2025-03-31T21:24:16",
+      "updatedDate": "2026-01-30T15:36:14",
+      "owner": "Sandra Williams",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3389.18,
+      "description": "Production anything myself himself section ability good technology."
+    },
+    {
+      "id": "ee5f3f9e-ee0f-4977-9bbb-21255fa25e1a",
+      "name": "Networked analyzing parallelism 2",
+      "status": "Pending",
+      "createdDate": "2025-06-24T02:33:04",
+      "updatedDate": "2026-02-12T21:31:40",
+      "owner": "Mr. Jerry Johnson Jr.",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6715.56,
+      "description": "Too food cell."
+    },
+    {
+      "id": "0bc8563c-43dc-4794-8d6a-7ff1f72da774",
+      "name": "Universal demand-driven superstructure 3",
+      "status": "Inactive",
+      "createdDate": "2025-08-10T04:30:33",
+      "updatedDate": "2026-02-14T03:03:48",
+      "owner": "Andrew Robinson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6552.57,
+      "description": "Generation skin leg several force woman."
+    },
+    {
+      "id": "c9056a55-2aba-48cc-9182-f309710bc3a2",
+      "name": "Reverse-engineered secondary groupware 4",
+      "status": "Completed",
+      "createdDate": "2025-12-13T11:34:08",
+      "updatedDate": "2026-01-25T07:06:38",
+      "owner": "Jasmine Cochran",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3973.64,
+      "description": "Usually myself from cell he watch animal movement."
+    },
+    {
+      "id": "3f187a79-aa23-44da-a305-1ad1c10c8075",
+      "name": "Right-sized multi-tasking moratorium 5",
+      "status": "Completed",
+      "createdDate": "2025-08-24T16:44:45",
+      "updatedDate": "2026-02-17T03:27:32",
+      "owner": "Kristin Austin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7604.21,
+      "description": "Born east born kid."
+    },
+    {
+      "id": "242029f6-290f-449e-a580-fc812cca2a8b",
+      "name": "Horizontal leadingedge policy 6",
+      "status": "Active",
+      "createdDate": "2025-03-24T12:52:39",
+      "updatedDate": "2026-01-22T03:20:21",
+      "owner": "Ronald Fernandez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7070.37,
+      "description": "Position think by himself indicate floor."
+    },
+    {
+      "id": "41884a5e-865a-44d7-9cca-36c3e2cee90d",
+      "name": "User-centric bi-directional algorithm 7",
+      "status": "Inactive",
+      "createdDate": "2026-02-01T18:30:08",
+      "updatedDate": "2026-01-29T06:25:32",
+      "owner": "Russell Leonard",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1455.39,
+      "description": "Your support condition represent something member."
+    },
+    {
+      "id": "b5093b68-fcd8-43bf-bf58-42723f529480",
+      "name": "Phased zero-defect access 8",
+      "status": "Inactive",
+      "createdDate": "2025-12-30T22:27:43",
+      "updatedDate": "2026-02-13T19:40:44",
+      "owner": "Peter Carroll MD",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9760.86,
+      "description": "Avoid trip again author tree catch."
+    },
+    {
+      "id": "338aad28-d454-408b-a075-4e13327c4111",
+      "name": "Open-source secondary parallelism 9",
+      "status": "Completed",
+      "createdDate": "2026-01-25T10:49:04",
+      "updatedDate": "2026-02-09T17:49:24",
+      "owner": "Deborah Braun",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5963.04,
+      "description": "Factor administration first bill edge north."
+    },
+    {
+      "id": "9a8e1855-8ba1-4f1b-a372-084e16b9eb8f",
+      "name": "Re-engineered bottom-line leverage 10",
+      "status": "Pending",
+      "createdDate": "2025-10-04T08:35:25",
+      "updatedDate": "2026-02-01T21:19:58",
+      "owner": "Victor Bond",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3164.46,
+      "description": "Magazine significant reduce out."
+    },
+    {
+      "id": "8b00f5fe-9674-4efa-bc49-e5c88f793581",
+      "name": "Multi-lateral analyzing Internet solution 11",
+      "status": "Inactive",
+      "createdDate": "2026-01-12T11:22:29",
+      "updatedDate": "2026-02-05T18:00:51",
+      "owner": "Caleb Lawrence",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3835.08,
+      "description": "Early allow expect amount reveal."
+    },
+    {
+      "id": "e3a8bbfe-c2b6-4705-ae82-b383d77cf54a",
+      "name": "Seamless high-level knowledge user 12",
+      "status": "Inactive",
+      "createdDate": "2025-12-16T00:22:30",
+      "updatedDate": "2026-01-26T16:32:27",
+      "owner": "Curtis Duncan",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5295.19,
+      "description": "Hold describe much health campaign Mr."
+    },
+    {
+      "id": "51afe682-1fe1-4a6f-a8cb-506e0cc27689",
+      "name": "Robust zero-defect moratorium 13",
+      "status": "Completed",
+      "createdDate": "2025-09-12T04:13:40",
+      "updatedDate": "2026-02-17T10:44:50",
+      "owner": "Mary Kline",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4292.11,
+      "description": "Coach matter item."
+    },
+    {
+      "id": "827a531d-a510-4d69-9038-79468d56cb12",
+      "name": "Customer-focused 5thgeneration pricing structure 14",
+      "status": "Pending",
+      "createdDate": "2025-04-08T01:05:50",
+      "updatedDate": "2026-01-30T23:15:23",
+      "owner": "Nicole Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6940.74,
+      "description": "Purpose prepare during."
+    },
+    {
+      "id": "5f52e29d-60a9-4989-88f9-428afbff6d91",
+      "name": "Balanced actuating portal 15",
+      "status": "Active",
+      "createdDate": "2025-09-05T02:24:43",
+      "updatedDate": "2026-02-13T05:52:40",
+      "owner": "Vanessa Stafford",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7488.98,
+      "description": "Change long free inside."
+    },
+    {
+      "id": "bb8ab978-d5de-48d4-9284-ebcbe80f3136",
+      "name": "Mandatory hybrid concept 16",
+      "status": "Inactive",
+      "createdDate": "2025-05-29T21:55:29",
+      "updatedDate": "2026-02-08T14:53:57",
+      "owner": "Ricardo Thompson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4421.05,
+      "description": "Future improve father a."
+    },
+    {
+      "id": "63878716-a471-4b8e-9cd5-eefca37b52eb",
+      "name": "Realigned asymmetric hub 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-09T14:21:58",
+      "updatedDate": "2026-02-04T11:22:18",
+      "owner": "Charles Hunt",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8003.56,
+      "description": "Partner agent physical offer value beyond wish try."
+    },
+    {
+      "id": "84459411-fbc1-4929-9130-667791cf9641",
+      "name": "Organized static interface 18",
+      "status": "Completed",
+      "createdDate": "2025-07-07T03:50:25",
+      "updatedDate": "2026-01-26T19:13:48",
+      "owner": "Misty Maxwell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6743.85,
+      "description": "Lose concern series take idea."
+    },
+    {
+      "id": "e645fe56-8d61-4d39-8469-4c144d052bf1",
+      "name": "Multi-lateral tangible leverage 19",
+      "status": "Pending",
+      "createdDate": "2025-07-21T19:10:00",
+      "updatedDate": "2026-01-19T03:17:26",
+      "owner": "Lisa Cooper",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2007.26,
+      "description": "List north fund own identify listen."
+    },
+    {
+      "id": "97e9ec0f-eac3-4e71-bf44-77443f764d16",
+      "name": "Cross-group context-sensitive focus group 20",
+      "status": "Inactive",
+      "createdDate": "2025-11-05T01:05:39",
+      "updatedDate": "2026-02-11T21:10:18",
+      "owner": "Heather Hill",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2318.1,
+      "description": "Read sometimes international scene court international."
+    },
+    {
+      "id": "dbe39542-39e7-4d7d-b2a2-58f19715beed",
+      "name": "Multi-lateral mission-critical collaboration 21",
+      "status": "Completed",
+      "createdDate": "2025-02-21T08:39:54",
+      "updatedDate": "2026-01-23T17:34:09",
+      "owner": "Nathan Mcmahon",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9096.08,
+      "description": "Interesting will strong human threat."
+    },
+    {
+      "id": "708d906a-44fe-496b-a079-17e84196c3f3",
+      "name": "Universal tertiary attitude 22",
+      "status": "Inactive",
+      "createdDate": "2025-11-22T15:31:49",
+      "updatedDate": "2026-02-06T04:39:54",
+      "owner": "Margaret Bowen",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5568.15,
+      "description": "Glass prove prevent process court."
+    },
+    {
+      "id": "52413d95-3135-451d-934b-b3f0b0c04395",
+      "name": "Robust intangible hardware 23",
+      "status": "Active",
+      "createdDate": "2025-09-26T01:29:57",
+      "updatedDate": "2026-02-10T20:48:45",
+      "owner": "Beth Johns",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6225.01,
+      "description": "Travel despite door company."
+    },
+    {
+      "id": "60aa2dc9-e805-403e-afed-848a36f2a865",
+      "name": "Optimized bottom-line approach 24",
+      "status": "Active",
+      "createdDate": "2025-06-27T08:15:01",
+      "updatedDate": "2026-01-22T09:12:32",
+      "owner": "David Maxwell",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6967.27,
+      "description": "Power let newspaper lead."
+    },
+    {
+      "id": "edba9660-9655-4310-a582-0aa2139b1e08",
+      "name": "Customer-focused impactful adapter 25",
+      "status": "Active",
+      "createdDate": "2025-11-05T20:44:20",
+      "updatedDate": "2026-01-19T13:39:09",
+      "owner": "Laura Gonzales",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3184.34,
+      "description": "Art return become talk policy structure prove."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

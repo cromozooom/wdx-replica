@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1412,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "65e002c4-9a31-4160-831c-15fbc95bf274",
+      "name": "Virtual logistical solution 1",
+      "status": "Inactive",
+      "createdDate": "2025-12-08T13:47:40",
+      "updatedDate": "2026-01-27T04:14:06",
+      "owner": "Ashley Montes",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3978.67,
+      "description": "Employee mother hair national little news."
+    },
+    {
+      "id": "decb9782-f3d5-4626-b175-6efe655fbd45",
+      "name": "Multi-layered cohesive budgetary management 2",
+      "status": "Completed",
+      "createdDate": "2025-12-30T17:23:01",
+      "updatedDate": "2026-02-05T02:18:58",
+      "owner": "Briana Hamilton",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9526.69,
+      "description": "Necessary bring cause cause condition."
+    },
+    {
+      "id": "83df8da8-13dd-4af3-8873-52d9f8695c0c",
+      "name": "Self-enabling responsive standardization 3",
+      "status": "Completed",
+      "createdDate": "2025-10-04T16:56:42",
+      "updatedDate": "2026-01-30T13:02:18",
+      "owner": "Michelle Bryant",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 900.84,
+      "description": "Practice probably same reach figure address note whatever."
+    },
+    {
+      "id": "cd327bef-3374-4142-a684-4e273de4cb0e",
+      "name": "Team-oriented holistic architecture 4",
+      "status": "Pending",
+      "createdDate": "2026-01-09T18:40:24",
+      "updatedDate": "2026-01-27T05:11:17",
+      "owner": "Suzanne Alvarado",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6956.92,
+      "description": "Sound certain would fund institution eight."
+    },
+    {
+      "id": "0c6c4e5a-dc09-4b23-9218-1d4c2a9861e9",
+      "name": "Extended zero administration initiative 5",
+      "status": "Pending",
+      "createdDate": "2025-08-11T16:20:11",
+      "updatedDate": "2026-02-07T23:05:41",
+      "owner": "Daniel Graves",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6867.88,
+      "description": "Glass answer agency yet need none generation friend."
+    },
+    {
+      "id": "6e5a9378-c2c6-40f0-8bbb-30ed39cfd5ab",
+      "name": "Multi-layered contextually-based intranet 6",
+      "status": "Pending",
+      "createdDate": "2025-03-17T20:12:08",
+      "updatedDate": "2026-01-21T06:59:27",
+      "owner": "Brenda Sloan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5991.94,
+      "description": "Sign head special better."
+    },
+    {
+      "id": "0de7224a-fcc0-48e6-90d2-2cddf2a37d9d",
+      "name": "Universal non-volatile projection 7",
+      "status": "Completed",
+      "createdDate": "2026-02-13T04:42:01",
+      "updatedDate": "2026-02-11T12:07:42",
+      "owner": "Shelly Adams",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9850.67,
+      "description": "Prevent good manage believe within sea character stage."
+    },
+    {
+      "id": "7eb8d6a5-2e27-4422-b87a-614edaa0e77a",
+      "name": "Organized holistic task-force 8",
+      "status": "Pending",
+      "createdDate": "2026-01-11T21:09:46",
+      "updatedDate": "2026-02-16T15:20:23",
+      "owner": "Daniel Shah",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9196.32,
+      "description": "Represent middle note when argue less."
+    },
+    {
+      "id": "7d420f58-c353-4d15-aab3-d5b160372ea5",
+      "name": "Grass-roots next generation website 9",
+      "status": "Pending",
+      "createdDate": "2025-09-03T05:54:37",
+      "updatedDate": "2026-02-15T16:38:19",
+      "owner": "David Fisher",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4411.32,
+      "description": "Pm continue occur."
+    },
+    {
+      "id": "eb7fc747-db91-4ca7-b00d-729a4608e612",
+      "name": "Expanded multi-tasking ability 10",
+      "status": "Inactive",
+      "createdDate": "2025-07-02T03:05:52",
+      "updatedDate": "2026-02-16T11:27:45",
+      "owner": "Charles Tate",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6903.81,
+      "description": "Rather standard nearly."
+    },
+    {
+      "id": "b8e549d2-9d59-4a10-847d-4bc829029d45",
+      "name": "Vision-oriented coherent encoding 11",
+      "status": "Active",
+      "createdDate": "2025-05-22T06:12:42",
+      "updatedDate": "2026-01-31T19:53:56",
+      "owner": "Ethan Odom",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2348.61,
+      "description": "Argue member subject light."
+    },
+    {
+      "id": "aa20f71a-9e6e-41cb-acf7-4f6a6b5cdbe8",
+      "name": "Progressive needs-based firmware 12",
+      "status": "Pending",
+      "createdDate": "2025-11-06T19:50:53",
+      "updatedDate": "2026-01-22T18:35:56",
+      "owner": "Sara Choi",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4761.75,
+      "description": "Style five happen kind."
+    },
+    {
+      "id": "d3329cec-fad0-40b2-851e-72967d07d679",
+      "name": "Progressive scalable task-force 13",
+      "status": "Active",
+      "createdDate": "2026-01-01T05:30:58",
+      "updatedDate": "2026-01-29T14:02:54",
+      "owner": "David Peck",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 384.53,
+      "description": "Why book upon forward."
+    },
+    {
+      "id": "66b22faf-90c0-4bd3-b5d6-3d23f3141257",
+      "name": "User-centric even-keeled firmware 14",
+      "status": "Inactive",
+      "createdDate": "2025-03-10T09:08:18",
+      "updatedDate": "2026-01-27T07:54:45",
+      "owner": "Benjamin Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8655.23,
+      "description": "List apply already develop law detail tax despite."
+    },
+    {
+      "id": "27ee4dcf-f9dd-4787-a4d3-42194ffff057",
+      "name": "Realigned local middleware 15",
+      "status": "Active",
+      "createdDate": "2025-03-14T16:13:04",
+      "updatedDate": "2026-02-07T13:58:30",
+      "owner": "Paul Kline",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5493.24,
+      "description": "Describe help include show also."
+    },
+    {
+      "id": "2e88b840-8e2d-4502-b5dd-b89b3acd3cc0",
+      "name": "Polarized fresh-thinking adapter 16",
+      "status": "Inactive",
+      "createdDate": "2025-12-29T01:14:39",
+      "updatedDate": "2026-01-31T22:37:16",
+      "owner": "Dennis Pope",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6229.62,
+      "description": "Worry develop may war."
+    },
+    {
+      "id": "f3c35313-2dc1-47ce-b30f-083751f1ce00",
+      "name": "Distributed coherent function 17",
+      "status": "Inactive",
+      "createdDate": "2025-11-02T04:13:08",
+      "updatedDate": "2026-02-05T08:09:59",
+      "owner": "Michael Patrick",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9486.52,
+      "description": "Threat least physical fill blood executive."
+    },
+    {
+      "id": "83f47c59-5fe5-4f7e-866f-50667275a998",
+      "name": "Realigned zero-defect process improvement 18",
+      "status": "Inactive",
+      "createdDate": "2025-12-29T18:55:23",
+      "updatedDate": "2026-01-21T14:54:02",
+      "owner": "Regina Weber",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9669.47,
+      "description": "Just may begin although."
+    },
+    {
+      "id": "1a0f100c-22a5-4eea-8f19-e1510a15ae43",
+      "name": "Focused multi-tasking data-warehouse 19",
+      "status": "Completed",
+      "createdDate": "2025-11-13T07:28:43",
+      "updatedDate": "2026-01-19T18:00:07",
+      "owner": "Brenda Nelson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6651.24,
+      "description": "Forget phone along hour ask chance."
+    },
+    {
+      "id": "549d75e3-dc0a-4c74-973a-eabf8d162e14",
+      "name": "Secured uniform matrices 20",
+      "status": "Inactive",
+      "createdDate": "2025-05-23T01:09:30",
+      "updatedDate": "2026-01-23T04:13:31",
+      "owner": "Austin Colon",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6258.14,
+      "description": "Relationship goal find section get."
+    },
+    {
+      "id": "bb567bd9-def1-4db0-beb2-adab9f266e4a",
+      "name": "Configurable solution-oriented forecast 21",
+      "status": "Completed",
+      "createdDate": "2025-03-24T23:59:40",
+      "updatedDate": "2026-02-16T06:10:07",
+      "owner": "Sean Morse",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 971.46,
+      "description": "Win walk serve federal."
+    },
+    {
+      "id": "1362e939-9f35-4c84-8b27-3fb8d2c7b727",
+      "name": "Customizable systematic extranet 22",
+      "status": "Pending",
+      "createdDate": "2025-12-03T02:49:29",
+      "updatedDate": "2026-01-29T00:47:36",
+      "owner": "Michael Chen",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4660.88,
+      "description": "Realize religious seat side there issue represent."
+    },
+    {
+      "id": "395ae3b2-32f2-4ce7-a43f-24baaeaf8938",
+      "name": "Robust zero administration artificial intelligence 23",
+      "status": "Completed",
+      "createdDate": "2025-07-01T02:33:51",
+      "updatedDate": "2026-02-17T09:17:46",
+      "owner": "Laura Lee",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8995.52,
+      "description": "Because music field near senior."
+    },
+    {
+      "id": "a80882dc-f5e4-43f7-bca5-21deed194dfb",
+      "name": "Future-proofed uniform intranet 24",
+      "status": "Completed",
+      "createdDate": "2025-09-21T01:27:11",
+      "updatedDate": "2026-02-11T22:05:06",
+      "owner": "Megan Crosby",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4356.29,
+      "description": "Drug practice mention know in night."
+    },
+    {
+      "id": "ca250d2e-9458-401f-84d4-bf18ac2925e5",
+      "name": "Reactive full-range hub 25",
+      "status": "Inactive",
+      "createdDate": "2025-12-31T00:44:39",
+      "updatedDate": "2026-02-01T14:03:33",
+      "owner": "Gregory Summers",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3933.53,
+      "description": "Apply join research rather similar officer well."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

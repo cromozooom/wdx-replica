@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 243,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "982d591c-a5cd-41ff-93fb-51c77bcb6408",
+      "name": "Profound client-server hierarchy 1",
+      "status": "Completed",
+      "createdDate": "2025-09-15T07:40:50",
+      "updatedDate": "2026-02-15T19:54:19",
+      "owner": "Patrick Cole II",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6130.87,
+      "description": "Guy sometimes much need recently."
+    },
+    {
+      "id": "88545a5f-0a6b-472b-b999-4a1491bf702a",
+      "name": "Public-key real-time data-warehouse 2",
+      "status": "Pending",
+      "createdDate": "2025-08-06T10:03:26",
+      "updatedDate": "2026-02-14T02:42:42",
+      "owner": "Natalie Thomas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6772.18,
+      "description": "Season past enough way raise rather drug."
+    },
+    {
+      "id": "d111b2ce-dd3c-475b-9a4f-bbf53496d5ea",
+      "name": "Polarized 24/7 success 3",
+      "status": "Active",
+      "createdDate": "2025-07-24T16:43:00",
+      "updatedDate": "2026-01-28T14:04:33",
+      "owner": "Brian Murphy",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 640.09,
+      "description": "Quickly other fly board music act after."
+    },
+    {
+      "id": "5cb86286-35ff-48e4-b8d6-8b0c889f9e84",
+      "name": "Monitored 4thgeneration parallelism 4",
+      "status": "Pending",
+      "createdDate": "2025-06-15T09:48:26",
+      "updatedDate": "2026-01-29T00:50:40",
+      "owner": "Jennifer Rangel",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9125.28,
+      "description": "Fish season half wide."
+    },
+    {
+      "id": "e1a29a61-1ac1-4176-bb66-89f673d7ecea",
+      "name": "Multi-channeled context-sensitive paradigm 5",
+      "status": "Completed",
+      "createdDate": "2025-08-15T10:29:19",
+      "updatedDate": "2026-01-31T17:33:06",
+      "owner": "Melanie Nichols",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2326.67,
+      "description": "Avoid old yourself development."
+    },
+    {
+      "id": "0e98d3fd-a5cb-4586-8525-70061afaa295",
+      "name": "Assimilated eco-centric website 6",
+      "status": "Inactive",
+      "createdDate": "2025-11-20T22:24:29",
+      "updatedDate": "2026-01-26T03:44:41",
+      "owner": "Timothy Harrington",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4741.51,
+      "description": "Raise next drop who no carry."
+    },
+    {
+      "id": "41b38152-a8a5-4b1f-a260-18c15e93a2af",
+      "name": "Profound homogeneous help-desk 7",
+      "status": "Active",
+      "createdDate": "2025-06-17T18:53:34",
+      "updatedDate": "2026-01-31T09:39:57",
+      "owner": "Victoria Gibson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4811.39,
+      "description": "Manage somebody which."
+    },
+    {
+      "id": "3b2373ba-00cf-4091-aeb2-0ad7aedf461b",
+      "name": "Organized 6thgeneration moratorium 8",
+      "status": "Pending",
+      "createdDate": "2025-10-27T14:11:36",
+      "updatedDate": "2026-01-20T06:42:30",
+      "owner": "Alicia Fox",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7239.94,
+      "description": "Audience read argue remember reflect song rich."
+    },
+    {
+      "id": "248ce42f-18c1-4e0c-8c34-6230a2306abf",
+      "name": "Organic systematic time-frame 9",
+      "status": "Completed",
+      "createdDate": "2025-08-12T08:59:13",
+      "updatedDate": "2026-02-10T12:44:00",
+      "owner": "Michael Washington",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2161.07,
+      "description": "Now none opportunity."
+    },
+    {
+      "id": "a9888060-4de7-4e26-8d10-072773eae3e3",
+      "name": "Reverse-engineered cohesive open architecture 10",
+      "status": "Inactive",
+      "createdDate": "2025-05-07T11:22:22",
+      "updatedDate": "2026-01-25T23:20:30",
+      "owner": "Gerald Walters",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4362.07,
+      "description": "Thought leg hear."
+    },
+    {
+      "id": "78282874-e6f6-41d0-a8fd-9ef641f2c5b4",
+      "name": "Balanced dynamic focus group 11",
+      "status": "Inactive",
+      "createdDate": "2025-05-03T08:16:03",
+      "updatedDate": "2026-01-30T22:22:16",
+      "owner": "Susan Webb",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 607.54,
+      "description": "Brother enough great prevent."
+    },
+    {
+      "id": "1847c299-f24a-4752-aa39-0e715edc66eb",
+      "name": "Enhanced attitude-oriented protocol 12",
+      "status": "Active",
+      "createdDate": "2025-02-24T12:01:03",
+      "updatedDate": "2026-01-24T10:57:14",
+      "owner": "Susan Martin",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2104.79,
+      "description": "Spend board program far sister learn resource."
+    },
+    {
+      "id": "757d1412-8e90-4597-a7f1-d38e7a4beda2",
+      "name": "Advanced bandwidth-monitored support 13",
+      "status": "Active",
+      "createdDate": "2025-07-17T01:36:37",
+      "updatedDate": "2026-02-07T19:16:59",
+      "owner": "Gordon Morales",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1947.58,
+      "description": "Age security top when new."
+    },
+    {
+      "id": "87a51e75-9974-460d-ae07-482f8a645a99",
+      "name": "Enhanced secondary orchestration 14",
+      "status": "Completed",
+      "createdDate": "2025-05-25T11:08:49",
+      "updatedDate": "2026-02-12T03:00:15",
+      "owner": "Sarah Grant",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9415.39,
+      "description": "Kid among do race age civil catch base."
+    },
+    {
+      "id": "0d17b72f-8580-4049-ab68-f8aa77626278",
+      "name": "Organic disintermediate middleware 15",
+      "status": "Pending",
+      "createdDate": "2025-08-15T15:37:03",
+      "updatedDate": "2026-02-08T22:53:55",
+      "owner": "Paula Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 459.42,
+      "description": "Table site part bed might everybody can forward."
+    },
+    {
+      "id": "a0022a4c-9eef-4122-a38c-a12032ce09e7",
+      "name": "Synergized intangible process improvement 16",
+      "status": "Inactive",
+      "createdDate": "2025-12-09T16:11:15",
+      "updatedDate": "2026-01-30T00:07:59",
+      "owner": "Mark Williams",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6193.36,
+      "description": "Put car true he."
+    },
+    {
+      "id": "d49d9c13-d5e2-4f95-aad0-9bbfc31de14a",
+      "name": "Open-architected object-oriented core 17",
+      "status": "Completed",
+      "createdDate": "2025-12-11T02:36:48",
+      "updatedDate": "2026-02-13T09:57:53",
+      "owner": "Kyle King",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3837.23,
+      "description": "Reveal final crime player entire occur."
+    },
+    {
+      "id": "d4fcc874-d960-42fc-80c7-3a11a318af64",
+      "name": "Focused dedicated synergy 18",
+      "status": "Completed",
+      "createdDate": "2026-01-25T19:28:30",
+      "updatedDate": "2026-01-28T16:04:24",
+      "owner": "Emily Sims",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1288.44,
+      "description": "Quality college sound short community success."
+    },
+    {
+      "id": "af0b0221-113f-4d0d-904d-a81b063d5f4b",
+      "name": "Right-sized interactive utilization 19",
+      "status": "Inactive",
+      "createdDate": "2025-10-12T00:34:25",
+      "updatedDate": "2026-01-20T06:28:21",
+      "owner": "Gary King",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8114.49,
+      "description": "Simply study eight professional pretty unit."
+    },
+    {
+      "id": "12dba4a6-4622-41c3-9094-4fe3cf8383a4",
+      "name": "Team-oriented human-resource solution 20",
+      "status": "Inactive",
+      "createdDate": "2025-07-05T04:30:15",
+      "updatedDate": "2026-02-08T13:58:56",
+      "owner": "Becky Kirby",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3896.08,
+      "description": "Reality growth agency ago show building."
+    },
+    {
+      "id": "541c15f2-88a9-439d-9d02-aa443380ac19",
+      "name": "Realigned client-driven challenge 21",
+      "status": "Inactive",
+      "createdDate": "2026-02-06T02:18:04",
+      "updatedDate": "2026-02-13T03:23:17",
+      "owner": "Mary Franklin",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5545.98,
+      "description": "House give something body ago describe board."
+    },
+    {
+      "id": "6df1aa15-9d72-479b-85c5-a81a9be6c357",
+      "name": "Synergized contextually-based instruction set 22",
+      "status": "Pending",
+      "createdDate": "2025-04-30T02:40:25",
+      "updatedDate": "2026-02-10T20:13:58",
+      "owner": "Andrew Juarez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7213.55,
+      "description": "After ahead suggest then bank bring miss."
+    },
+    {
+      "id": "bc093dbf-1e22-4bce-b01c-d25a4218f40b",
+      "name": "Programmable multimedia protocol 23",
+      "status": "Completed",
+      "createdDate": "2025-03-13T03:12:06",
+      "updatedDate": "2026-02-15T13:18:44",
+      "owner": "Michelle Garcia",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5555.68,
+      "description": "Nature front drug effort fact artist."
+    },
+    {
+      "id": "2e289d82-97f2-47cc-a2ff-d1bfd93e2582",
+      "name": "Customizable 6thgeneration pricing structure 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-11T17:09:38",
+      "updatedDate": "2026-02-13T15:30:43",
+      "owner": "Brandi Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 667.03,
+      "description": "Democrat assume available life case father other."
+    },
+    {
+      "id": "aee46508-94fa-498a-8165-f1f83da880e8",
+      "name": "De-engineered mission-critical hardware 25",
+      "status": "Inactive",
+      "createdDate": "2025-11-09T06:50:07",
+      "updatedDate": "2026-01-31T17:33:48",
+      "owner": "Danielle King",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9250.44,
+      "description": "Movie remember late owner behind between ago."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

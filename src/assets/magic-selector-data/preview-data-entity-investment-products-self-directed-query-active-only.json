@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 836,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "4bc34650-f500-44be-ae94-7915c4b65478",
+      "name": "Progressive 4thgeneration hub 1",
+      "status": "Active",
+      "createdDate": "2025-08-19T00:40:29",
+      "updatedDate": "2026-01-19T17:09:11",
+      "owner": "Donald Olsen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9758.9,
+      "description": "During president current represent toward hard four."
+    },
+    {
+      "id": "3240ef60-f1a7-4a2f-9ca0-c4eee8d78bd1",
+      "name": "Polarized neutral workforce 2",
+      "status": "Completed",
+      "createdDate": "2025-07-01T20:39:30",
+      "updatedDate": "2026-02-03T06:11:46",
+      "owner": "Rebecca Foster",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5616.17,
+      "description": "Really model their."
+    },
+    {
+      "id": "13fe036c-93c1-4ed8-9995-8ea86d6a2410",
+      "name": "Optional context-sensitive firmware 3",
+      "status": "Completed",
+      "createdDate": "2025-02-22T18:14:58",
+      "updatedDate": "2026-01-27T06:33:37",
+      "owner": "Jamie Thompson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3650.13,
+      "description": "Industry leader outside realize."
+    },
+    {
+      "id": "d66f5344-9bde-4589-a825-d8d0a45bc50b",
+      "name": "Multi-layered full-range array 4",
+      "status": "Pending",
+      "createdDate": "2025-03-09T20:29:40",
+      "updatedDate": "2026-01-29T02:17:46",
+      "owner": "Sarah Pratt",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 933.78,
+      "description": "Purpose family man vote always position name."
+    },
+    {
+      "id": "9abf909b-2ee9-430c-b75f-3b5569dd0800",
+      "name": "Persistent bottom-line concept 5",
+      "status": "Pending",
+      "createdDate": "2025-11-29T23:15:57",
+      "updatedDate": "2026-01-27T17:53:55",
+      "owner": "Dr. Brian Edwards",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 718.03,
+      "description": "Lead event yourself image artist."
+    },
+    {
+      "id": "628919c8-01d3-4d5c-8a64-cd721855c6b0",
+      "name": "Exclusive attitude-oriented framework 6",
+      "status": "Active",
+      "createdDate": "2025-09-16T00:56:03",
+      "updatedDate": "2026-02-15T23:36:47",
+      "owner": "Alexander Larsen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5891.4,
+      "description": "Campaign not quickly important."
+    },
+    {
+      "id": "db9f8ef5-99b1-436c-8f44-b19ea744ef9b",
+      "name": "User-friendly client-driven throughput 7",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T22:58:02",
+      "updatedDate": "2026-02-17T01:53:28",
+      "owner": "Amy Key",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8268.64,
+      "description": "Section what something low."
+    },
+    {
+      "id": "8b86f21a-850d-41f6-bbb6-bf92aa39970e",
+      "name": "Robust fresh-thinking Internet solution 8",
+      "status": "Pending",
+      "createdDate": "2025-07-22T22:31:55",
+      "updatedDate": "2026-02-08T19:13:16",
+      "owner": "Troy Lopez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9047.5,
+      "description": "Peace explain team our development against law thank."
+    },
+    {
+      "id": "9d01ee52-6656-4a6a-86a8-5b9a1e46ed37",
+      "name": "Secured bi-directional implementation 9",
+      "status": "Active",
+      "createdDate": "2025-12-03T04:33:58",
+      "updatedDate": "2026-02-15T00:06:13",
+      "owner": "Adam Collins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3737.58,
+      "description": "Fact through describe."
+    },
+    {
+      "id": "3ebb8b14-4054-473c-b73e-273b8139f767",
+      "name": "Progressive content-based structure 10",
+      "status": "Completed",
+      "createdDate": "2025-05-28T08:25:32",
+      "updatedDate": "2026-01-27T19:53:48",
+      "owner": "Jessica Bates",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2660.3,
+      "description": "Carry country go college store her picture."
+    },
+    {
+      "id": "ec77fafd-ee85-458a-b61f-d3feb741e3ae",
+      "name": "Profit-focused zero tolerance system engine 11",
+      "status": "Pending",
+      "createdDate": "2025-07-25T00:37:57",
+      "updatedDate": "2026-02-08T07:50:53",
+      "owner": "Janet Delacruz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5104.58,
+      "description": "Able outside parent government."
+    },
+    {
+      "id": "0f83fb12-6f34-4244-b8d1-f539dc42b62a",
+      "name": "Secured responsive moderator 12",
+      "status": "Inactive",
+      "createdDate": "2025-04-27T09:33:11",
+      "updatedDate": "2026-02-05T12:15:00",
+      "owner": "Julie Contreras",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9833.46,
+      "description": "Great just argue purpose cup threat thus."
+    },
+    {
+      "id": "09298e55-24c4-4f75-a2dc-4a09f5577c66",
+      "name": "Intuitive actuating definition 13",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T12:54:10",
+      "updatedDate": "2026-01-24T16:40:06",
+      "owner": "James Foster",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3751.43,
+      "description": "Over book consumer establish south thought thousand."
+    },
+    {
+      "id": "0ed3e0a9-51c4-4556-975b-c7d8e76c0f3e",
+      "name": "Managed value-added emulation 14",
+      "status": "Completed",
+      "createdDate": "2026-01-18T06:50:26",
+      "updatedDate": "2026-02-05T04:30:34",
+      "owner": "Madeline Torres",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1760.68,
+      "description": "Know live well Congress chance."
+    },
+    {
+      "id": "9d0759ef-e846-4bb1-977c-e2a5568137ee",
+      "name": "Customer-focused incremental capacity 15",
+      "status": "Completed",
+      "createdDate": "2025-12-01T19:00:13",
+      "updatedDate": "2026-02-07T19:38:48",
+      "owner": "Kathryn Martinez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5166.49,
+      "description": "Feel responsibility paper source drug."
+    },
+    {
+      "id": "96f430f6-89dc-4584-9b37-cb4df03ea075",
+      "name": "Streamlined maximized workforce 16",
+      "status": "Active",
+      "createdDate": "2025-05-14T21:10:17",
+      "updatedDate": "2026-01-28T11:49:03",
+      "owner": "Laura Montoya",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4361.68,
+      "description": "Hold military by claim."
+    },
+    {
+      "id": "39feb131-ae72-4716-ad0e-8991fa44e1c6",
+      "name": "Multi-tiered system-worthy moderator 17",
+      "status": "Pending",
+      "createdDate": "2025-04-28T14:27:01",
+      "updatedDate": "2026-02-03T21:56:34",
+      "owner": "Donna Reynolds",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7989.92,
+      "description": "Learn human series war."
+    },
+    {
+      "id": "8c81e751-be2b-4f81-873b-0f2308ce6fd7",
+      "name": "Synergized coherent productivity 18",
+      "status": "Completed",
+      "createdDate": "2025-06-13T04:08:55",
+      "updatedDate": "2026-02-05T08:40:21",
+      "owner": "Kristen Oconnor",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9449.81,
+      "description": "Author spring address letter our democratic notice."
+    },
+    {
+      "id": "560f73f3-14d1-4235-ac15-7760cbeab9be",
+      "name": "Business-focused multi-state structure 19",
+      "status": "Pending",
+      "createdDate": "2025-07-21T18:31:04",
+      "updatedDate": "2026-01-21T17:34:37",
+      "owner": "Christopher Schneider",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7653.46,
+      "description": "She certainly above eight whom recognize."
+    },
+    {
+      "id": "5bda7edd-4854-4500-84a5-796bef1ccfd0",
+      "name": "Synergized full-range artificial intelligence 20",
+      "status": "Completed",
+      "createdDate": "2025-08-25T07:16:29",
+      "updatedDate": "2026-01-29T01:52:11",
+      "owner": "Brenda Andrews",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1693.31,
+      "description": "Maintain from tree."
+    },
+    {
+      "id": "1a96b109-546e-4209-a92f-177e67f3a4e9",
+      "name": "Horizontal exuding system engine 21",
+      "status": "Completed",
+      "createdDate": "2025-06-01T08:46:40",
+      "updatedDate": "2026-02-06T21:09:12",
+      "owner": "Michael Oconnor",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1820.14,
+      "description": "Truth decide power book."
+    },
+    {
+      "id": "027a0a5a-7645-457f-96e3-cb8d21424e38",
+      "name": "Mandatory static core 22",
+      "status": "Completed",
+      "createdDate": "2025-05-16T19:17:36",
+      "updatedDate": "2026-02-08T09:56:44",
+      "owner": "Manuel Martin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4205.23,
+      "description": "Everyone seat force article former apply authority."
+    },
+    {
+      "id": "4ae8e7ee-2195-4ec2-8727-22165dfc7663",
+      "name": "Monitored global protocol 23",
+      "status": "Active",
+      "createdDate": "2025-03-27T13:51:59",
+      "updatedDate": "2026-01-23T13:49:51",
+      "owner": "John Anderson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 400.61,
+      "description": "Rule century its win majority old."
+    },
+    {
+      "id": "bc32583e-ab42-4b06-82d3-fed60a538d6a",
+      "name": "Phased multimedia system engine 24",
+      "status": "Inactive",
+      "createdDate": "2025-05-12T17:34:07",
+      "updatedDate": "2026-02-03T13:12:30",
+      "owner": "Kenneth Santos",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 962.27,
+      "description": "Theory phone in last statement cultural."
+    },
+    {
+      "id": "7a1a25c8-a383-4474-9787-b9f6bd593df2",
+      "name": "Progressive optimal paradigm 25",
+      "status": "Completed",
+      "createdDate": "2025-04-09T17:21:06",
+      "updatedDate": "2026-01-21T16:29:56",
+      "owner": "Joseph Hawkins",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1913.32,
+      "description": "Pull medical customer couple eye."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-active-only",
+  "totalCount": 78,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "bb677b28-e4cb-472d-a0a0-ec0d7a75560b",
+      "name": "Progressive non-volatile paradigm 1",
+      "status": "Completed",
+      "createdDate": "2025-03-05T15:48:24",
+      "updatedDate": "2026-01-23T03:00:36",
+      "owner": "Charles Combs",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5259.57,
+      "description": "Young must two cell note."
+    },
+    {
+      "id": "197185cf-ee18-4a32-a2d5-8b2009c5f710",
+      "name": "Decentralized 3rdgeneration hierarchy 2",
+      "status": "Inactive",
+      "createdDate": "2025-05-31T21:46:49",
+      "updatedDate": "2026-02-08T11:46:20",
+      "owner": "Jason Mcfarland",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1746.9,
+      "description": "Resource plant movement daughter large."
+    },
+    {
+      "id": "137f6326-d9b0-4c3f-9035-30f11837d7aa",
+      "name": "Cloned needs-based product 3",
+      "status": "Pending",
+      "createdDate": "2025-05-11T13:37:09",
+      "updatedDate": "2026-01-22T06:12:27",
+      "owner": "Raymond Bennett",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 895.6,
+      "description": "Stock task president quality training agreement exactly laugh."
+    },
+    {
+      "id": "1436fc46-5215-49aa-8ffb-d3b1dbc14e5d",
+      "name": "Integrated homogeneous collaboration 4",
+      "status": "Active",
+      "createdDate": "2025-10-08T14:44:42",
+      "updatedDate": "2026-01-28T22:05:39",
+      "owner": "Joseph Reid",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6799.69,
+      "description": "Race local every strategy."
+    },
+    {
+      "id": "0b7f8b59-9d8c-443d-b72e-3b4d291c32f1",
+      "name": "Self-enabling well-modulated product 5",
+      "status": "Pending",
+      "createdDate": "2025-11-02T22:29:08",
+      "updatedDate": "2026-02-11T09:27:21",
+      "owner": "Trevor Schneider",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 725.11,
+      "description": "Outside child instead away hold already."
+    },
+    {
+      "id": "0551f772-9d5b-43df-81ec-e85ecfd55a94",
+      "name": "Decentralized impactful concept 6",
+      "status": "Completed",
+      "createdDate": "2026-01-01T00:55:42",
+      "updatedDate": "2026-01-31T07:07:01",
+      "owner": "Angela Spencer",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9989.47,
+      "description": "Practice middle eye news scientist same."
+    },
+    {
+      "id": "b97cd420-9e47-4483-8e43-80b556fc0836",
+      "name": "Advanced local archive 7",
+      "status": "Pending",
+      "createdDate": "2025-11-14T04:56:22",
+      "updatedDate": "2026-01-25T16:15:36",
+      "owner": "Debra Kelly",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5929.35,
+      "description": "Stage cold focus near building describe remember."
+    },
+    {
+      "id": "f8e63236-ff6e-4d00-ab1c-9627990acda6",
+      "name": "Digitized bottom-line Internet solution 8",
+      "status": "Inactive",
+      "createdDate": "2026-01-29T06:22:42",
+      "updatedDate": "2026-02-10T03:33:46",
+      "owner": "Valerie Russell",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9544.64,
+      "description": "Pull almost act eye."
+    },
+    {
+      "id": "0573e794-4a3c-4a74-9f02-ca17d22f2e2a",
+      "name": "Compatible multimedia emulation 9",
+      "status": "Completed",
+      "createdDate": "2025-11-30T18:38:41",
+      "updatedDate": "2026-02-06T01:31:11",
+      "owner": "Kimberly Sanchez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 800.88,
+      "description": "Explain fish never wide sometimes play play enjoy."
+    },
+    {
+      "id": "5178ba74-b28f-447b-8034-8e37129d92d5",
+      "name": "Synergistic incremental functionalities 10",
+      "status": "Pending",
+      "createdDate": "2025-11-23T16:11:43",
+      "updatedDate": "2026-02-14T21:58:29",
+      "owner": "Daniel Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4241.28,
+      "description": "Least good admit adult."
+    },
+    {
+      "id": "307fabd6-2546-4cb4-9964-9f23fc2a9a78",
+      "name": "Optional solution-oriented conglomeration 11",
+      "status": "Active",
+      "createdDate": "2026-02-11T00:06:52",
+      "updatedDate": "2026-01-25T10:05:40",
+      "owner": "Alexander Thomas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3518.45,
+      "description": "Weight analysis company home popular forward both."
+    },
+    {
+      "id": "c6bf6c4d-e47f-4ea1-b753-c5952de45acb",
+      "name": "Business-focused analyzing solution 12",
+      "status": "Pending",
+      "createdDate": "2025-12-30T00:30:20",
+      "updatedDate": "2026-02-11T07:26:41",
+      "owner": "David Stuart",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2888.95,
+      "description": "Development report job evidence."
+    },
+    {
+      "id": "f050a037-152e-4806-9cf4-4337ebcf288f",
+      "name": "Enterprise-wide motivating info-mediaries 13",
+      "status": "Pending",
+      "createdDate": "2025-05-17T03:18:06",
+      "updatedDate": "2026-01-23T22:03:06",
+      "owner": "Maureen Cook",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9584.07,
+      "description": "Hour maintain woman quality address."
+    },
+    {
+      "id": "03c0a3b2-c8f7-4874-9532-2a7162c6b2d8",
+      "name": "Inverse hybrid migration 14",
+      "status": "Inactive",
+      "createdDate": "2025-08-07T07:57:52",
+      "updatedDate": "2026-02-16T03:11:05",
+      "owner": "Anne Shepherd",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1580.19,
+      "description": "In enter impact work whatever weight table data."
+    },
+    {
+      "id": "ba5eefce-bf3a-4c3c-a24e-0a50da965459",
+      "name": "Self-enabling local matrix 15",
+      "status": "Pending",
+      "createdDate": "2025-09-29T06:11:33",
+      "updatedDate": "2026-02-06T20:39:35",
+      "owner": "Margaret Benjamin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5320.43,
+      "description": "Wonder keep study plant rise feel chair."
+    },
+    {
+      "id": "53656a0f-be13-47e3-a04e-71ff57e95967",
+      "name": "Enhanced responsive protocol 16",
+      "status": "Inactive",
+      "createdDate": "2025-03-27T15:08:18",
+      "updatedDate": "2026-01-26T00:23:22",
+      "owner": "Jaime Golden PhD",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7734.88,
+      "description": "Authority college kid and actually happen sure."
+    },
+    {
+      "id": "40713e07-dcd4-45f8-a8f7-52014d497293",
+      "name": "Horizontal fresh-thinking extranet 17",
+      "status": "Completed",
+      "createdDate": "2025-08-13T20:15:11",
+      "updatedDate": "2026-02-01T20:14:53",
+      "owner": "Brandon Randolph",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8070.03,
+      "description": "Long cut board also perhaps oil music."
+    },
+    {
+      "id": "a0fe4a71-9afe-49c6-bb6a-55510599ca70",
+      "name": "Expanded leadingedge open architecture 18",
+      "status": "Pending",
+      "createdDate": "2025-07-03T03:36:08",
+      "updatedDate": "2026-02-06T22:51:46",
+      "owner": "Brenda Washington",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5373.26,
+      "description": "Myself free particular next new room exist manage."
+    },
+    {
+      "id": "a4294baa-20f5-4b0b-b2d3-11924320c6fb",
+      "name": "Centralized regional system engine 19",
+      "status": "Inactive",
+      "createdDate": "2025-06-16T13:15:38",
+      "updatedDate": "2026-01-28T09:03:32",
+      "owner": "Kristina Beard",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9923.07,
+      "description": "Something us green rate theory."
+    },
+    {
+      "id": "aaef8243-2302-4167-8b76-bb2ba2ee1261",
+      "name": "Organic needs-based budgetary management 20",
+      "status": "Active",
+      "createdDate": "2025-04-10T03:28:14",
+      "updatedDate": "2026-02-11T11:34:44",
+      "owner": "Patricia Hull",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9042.05,
+      "description": "Own age strong."
+    },
+    {
+      "id": "ae13e881-5e7d-4ea3-94b7-0ee7b136109c",
+      "name": "Business-focused holistic approach 21",
+      "status": "Active",
+      "createdDate": "2025-03-20T02:25:47",
+      "updatedDate": "2026-02-10T17:47:08",
+      "owner": "Amanda Miller",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1027.99,
+      "description": "Deep indeed line morning."
+    },
+    {
+      "id": "3701a969-df5e-445d-a5c5-f30dfaa36bf2",
+      "name": "Ergonomic asynchronous orchestration 22",
+      "status": "Completed",
+      "createdDate": "2026-02-01T16:28:01",
+      "updatedDate": "2026-02-14T09:25:32",
+      "owner": "Christopher Rodriguez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4371.34,
+      "description": "Include continue key."
+    },
+    {
+      "id": "adba7020-00a9-49d5-93a5-914415639a53",
+      "name": "Distributed optimal workforce 23",
+      "status": "Pending",
+      "createdDate": "2026-02-01T22:56:07",
+      "updatedDate": "2026-01-24T14:14:50",
+      "owner": "Lacey Nelson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7737.86,
+      "description": "Fine address able significant according bit important."
+    },
+    {
+      "id": "5379e214-4be5-4dda-bfd1-142e29b36d08",
+      "name": "Front-line 24/7 challenge 24",
+      "status": "Active",
+      "createdDate": "2025-04-03T02:14:50",
+      "updatedDate": "2026-02-10T22:02:51",
+      "owner": "Jay Ward",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3059.2,
+      "description": "Floor price involve pull century."
+    },
+    {
+      "id": "e64d9818-c556-4f33-ad1b-6a73a4d0c1a7",
+      "name": "Balanced interactive projection 25",
+      "status": "Completed",
+      "createdDate": "2025-04-22T04:47:02",
+      "updatedDate": "2026-02-14T20:42:15",
+      "owner": "Christopher Fletcher",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3431.64,
+      "description": "Two human identify through list arm."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

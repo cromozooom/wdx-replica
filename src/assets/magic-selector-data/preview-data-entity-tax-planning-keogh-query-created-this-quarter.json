@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1132,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "0119631e-f6d9-4afe-9939-daff0010520a",
+      "name": "Operative solution-oriented task-force 1",
+      "status": "Pending",
+      "createdDate": "2026-02-08T21:29:03",
+      "updatedDate": "2026-02-12T20:43:23",
+      "owner": "Tamara Waters",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1539.03,
+      "description": "Dinner piece tree write must particular add."
+    },
+    {
+      "id": "39d9c7aa-2556-4da1-9c3e-986ad263e1b1",
+      "name": "Progressive zero tolerance success 2",
+      "status": "Completed",
+      "createdDate": "2025-11-27T11:25:33",
+      "updatedDate": "2026-02-04T13:35:09",
+      "owner": "Mr. Mark White",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7515.3,
+      "description": "Spring cut behind idea door appear eat."
+    },
+    {
+      "id": "5432d1e8-4a6c-48d0-b50e-8aa3f65db51c",
+      "name": "Configurable bottom-line parallelism 3",
+      "status": "Inactive",
+      "createdDate": "2025-02-22T20:54:25",
+      "updatedDate": "2026-01-25T17:12:43",
+      "owner": "Joyce Wood",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3820.91,
+      "description": "With send white huge."
+    },
+    {
+      "id": "26bb0f98-396c-4b6d-b3a3-1cec0c655f4c",
+      "name": "Cross-group hybrid collaboration 4",
+      "status": "Inactive",
+      "createdDate": "2025-03-19T14:27:46",
+      "updatedDate": "2026-02-16T23:37:03",
+      "owner": "Nathan House",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8689.8,
+      "description": "She Mrs firm."
+    },
+    {
+      "id": "f4206c8e-03e7-4ddd-9a41-d0d869942f90",
+      "name": "Customer-focused methodical pricing structure 5",
+      "status": "Inactive",
+      "createdDate": "2025-06-18T10:23:13",
+      "updatedDate": "2026-02-10T23:12:57",
+      "owner": "Debra Brooks",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 237.77,
+      "description": "Trade production arm establish."
+    },
+    {
+      "id": "17fbba62-593e-4ca7-bbd8-71975e77cb5a",
+      "name": "Polarized web-enabled architecture 6",
+      "status": "Pending",
+      "createdDate": "2025-04-22T08:25:42",
+      "updatedDate": "2026-01-21T01:42:59",
+      "owner": "Paul Arroyo",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2748.42,
+      "description": "Much hotel source amount beyond stay."
+    },
+    {
+      "id": "857b1c8a-d5be-4aae-9b24-b5d373fc43ab",
+      "name": "Total impactful workforce 7",
+      "status": "Pending",
+      "createdDate": "2025-08-13T08:34:22",
+      "updatedDate": "2026-01-24T13:48:29",
+      "owner": "Jacob Benjamin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 963.7,
+      "description": "Grow fund word develop night performance."
+    },
+    {
+      "id": "31bc5856-fb85-4127-a248-9540fb38190d",
+      "name": "Triple-buffered well-modulated database 8",
+      "status": "Completed",
+      "createdDate": "2026-01-16T21:56:30",
+      "updatedDate": "2026-01-24T18:35:25",
+      "owner": "Gregory Carter",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3012.55,
+      "description": "Dark be avoid major data."
+    },
+    {
+      "id": "f4123d3f-9a38-421d-b38e-afd42d9974e5",
+      "name": "Synchronized asynchronous product 9",
+      "status": "Completed",
+      "createdDate": "2025-11-26T02:34:28",
+      "updatedDate": "2026-02-07T03:52:07",
+      "owner": "Michael Rosario IV",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1595.37,
+      "description": "Even wish politics front occur consumer because."
+    },
+    {
+      "id": "5c9c2eb6-bef0-46c1-8e36-1ca73f34a684",
+      "name": "Synchronized optimizing infrastructure 10",
+      "status": "Completed",
+      "createdDate": "2025-03-04T16:25:13",
+      "updatedDate": "2026-02-15T00:26:49",
+      "owner": "Carl Contreras",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6095.47,
+      "description": "Particularly however painting move treatment."
+    },
+    {
+      "id": "abf94cf9-65dd-4d59-99fd-1a0470c36fc2",
+      "name": "Robust multi-tasking infrastructure 11",
+      "status": "Active",
+      "createdDate": "2025-12-24T15:06:22",
+      "updatedDate": "2026-02-01T02:38:27",
+      "owner": "Shawn Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2022.51,
+      "description": "Wall kind this century whole."
+    },
+    {
+      "id": "de091e6e-02a5-43ed-9cf5-c4956521970d",
+      "name": "Polarized modular frame 12",
+      "status": "Completed",
+      "createdDate": "2025-06-28T18:13:10",
+      "updatedDate": "2026-01-23T17:07:40",
+      "owner": "Angel Schmidt",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5485.82,
+      "description": "Sing move know for business heavy rock identify."
+    },
+    {
+      "id": "b8a9c20d-16a8-4450-b4cc-fedce70b6f2f",
+      "name": "Automated user-facing concept 13",
+      "status": "Pending",
+      "createdDate": "2025-02-22T17:42:26",
+      "updatedDate": "2026-02-08T18:57:32",
+      "owner": "Jennifer Kerr",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6426.75,
+      "description": "Girl this realize card author big us."
+    },
+    {
+      "id": "0367bb60-3c67-47dc-b9f3-fc70e4e1771b",
+      "name": "Implemented background throughput 14",
+      "status": "Inactive",
+      "createdDate": "2025-09-03T21:42:12",
+      "updatedDate": "2026-02-14T06:49:29",
+      "owner": "Thomas Vaughan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7463.31,
+      "description": "Poor order small why most capital case."
+    },
+    {
+      "id": "3dcb72cb-e0d9-4c13-8ea1-739fa9aa1996",
+      "name": "Optimized analyzing initiative 15",
+      "status": "Inactive",
+      "createdDate": "2025-11-13T09:34:43",
+      "updatedDate": "2026-02-08T23:29:01",
+      "owner": "Ronald Nguyen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5058.91,
+      "description": "Room out require pattern call fast."
+    },
+    {
+      "id": "b4330fab-3113-4d8a-93c5-914c7dbaab06",
+      "name": "Managed multi-state paradigm 16",
+      "status": "Inactive",
+      "createdDate": "2025-06-09T03:45:30",
+      "updatedDate": "2026-01-31T18:05:07",
+      "owner": "Edward Jimenez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2331.99,
+      "description": "Try air call teacher building moment."
+    },
+    {
+      "id": "f5833b39-c04c-41a4-a20d-78ef8d7b6878",
+      "name": "Sharable impactful protocol 17",
+      "status": "Pending",
+      "createdDate": "2025-10-27T14:51:23",
+      "updatedDate": "2026-01-21T17:20:32",
+      "owner": "Robert Parker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5631.39,
+      "description": "Window skill figure level yard."
+    },
+    {
+      "id": "178c91f3-76a0-44a4-9c93-e441d5915969",
+      "name": "Universal systematic archive 18",
+      "status": "Active",
+      "createdDate": "2025-12-05T16:57:12",
+      "updatedDate": "2026-02-14T18:11:02",
+      "owner": "Maria Tran",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6623.72,
+      "description": "General other newspaper expect police yet summer."
+    },
+    {
+      "id": "5a846810-4824-4dc0-9451-90e1e7e8394f",
+      "name": "Re-contextualized directional orchestration 19",
+      "status": "Completed",
+      "createdDate": "2025-12-04T19:12:00",
+      "updatedDate": "2026-02-05T04:22:04",
+      "owner": "Martin Cox",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6623.17,
+      "description": "Statement benefit wonder station someone."
+    },
+    {
+      "id": "46908c97-24b5-460b-9175-92e3bfa84d2f",
+      "name": "Cloned human-resource model 20",
+      "status": "Active",
+      "createdDate": "2025-10-02T14:50:32",
+      "updatedDate": "2026-02-04T20:46:48",
+      "owner": "Stephanie Serrano",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3849.74,
+      "description": "Turn over than suffer environment cost off under."
+    },
+    {
+      "id": "22373753-61fa-4c1a-94bd-3b4bdd453fb1",
+      "name": "Exclusive responsive data-warehouse 21",
+      "status": "Completed",
+      "createdDate": "2025-09-27T06:21:15",
+      "updatedDate": "2026-01-31T17:03:44",
+      "owner": "Rebecca Rodriguez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9221.69,
+      "description": "Sit degree able idea out family need."
+    },
+    {
+      "id": "60cdb555-e55b-4c3c-838c-eb379dcfc48a",
+      "name": "Re-contextualized high-level standardization 22",
+      "status": "Active",
+      "createdDate": "2025-05-18T02:45:52",
+      "updatedDate": "2026-02-11T07:59:47",
+      "owner": "Mr. Derek Howard",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3641.98,
+      "description": "There effort catch guy positive finally."
+    },
+    {
+      "id": "4ee0fecd-0fbc-4031-a0eb-de54aaebf599",
+      "name": "Down-sized zero administration orchestration 23",
+      "status": "Active",
+      "createdDate": "2025-08-05T18:15:13",
+      "updatedDate": "2026-02-16T10:33:38",
+      "owner": "Anita Wade",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5978.51,
+      "description": "Finish why spring field former lead ball."
+    },
+    {
+      "id": "153fc079-1fc5-41d2-b145-4c2d712dbb04",
+      "name": "Enterprise-wide homogeneous hierarchy 24",
+      "status": "Inactive",
+      "createdDate": "2025-04-19T04:55:30",
+      "updatedDate": "2026-01-25T23:04:09",
+      "owner": "Joe Rodriguez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7964.26,
+      "description": "Reveal central growth write month serve."
+    },
+    {
+      "id": "9c044deb-78d2-4f14-9795-abcccfbd16db",
+      "name": "Cross-group background productivity 25",
+      "status": "Pending",
+      "createdDate": "2025-09-14T06:05:44",
+      "updatedDate": "2026-02-08T04:59:04",
+      "owner": "Joseph Williamson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6231.18,
+      "description": "Worker building challenge."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

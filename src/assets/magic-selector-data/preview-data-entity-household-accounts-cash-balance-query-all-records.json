@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-all-records",
+  "totalCount": 1439,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ed2ff244-c78d-42f8-a19d-3883c06d61af",
+      "name": "Horizontal system-worthy adapter 1",
+      "status": "Completed",
+      "createdDate": "2025-03-12T23:14:55",
+      "updatedDate": "2026-01-29T13:17:13",
+      "owner": "Elizabeth Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4808.44,
+      "description": "That executive somebody."
+    },
+    {
+      "id": "bb1d883a-ec7c-4de4-bf6d-481573fad4b7",
+      "name": "Distributed incremental ability 2",
+      "status": "Completed",
+      "createdDate": "2025-05-20T06:16:06",
+      "updatedDate": "2026-02-15T04:47:56",
+      "owner": "Richard Logan",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6465.77,
+      "description": "Reveal it scene arm."
+    },
+    {
+      "id": "684c92bd-a241-4718-9b72-1253486c3614",
+      "name": "Cross-group systemic software 3",
+      "status": "Active",
+      "createdDate": "2025-03-13T02:18:01",
+      "updatedDate": "2026-02-12T07:28:34",
+      "owner": "Sonya Zhang",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6618.99,
+      "description": "Stay where main section particularly open remember commercial."
+    },
+    {
+      "id": "7fd1ad61-9efc-4204-8322-6d2fb0b73188",
+      "name": "User-centric needs-based algorithm 4",
+      "status": "Pending",
+      "createdDate": "2026-01-26T18:47:29",
+      "updatedDate": "2026-02-09T23:19:21",
+      "owner": "Timothy Higgins",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3227.36,
+      "description": "Thing eight both base financial letter book."
+    },
+    {
+      "id": "3fad8347-7d23-4c7d-91f3-a79c351c9623",
+      "name": "Assimilated bandwidth-monitored task-force 5",
+      "status": "Completed",
+      "createdDate": "2026-02-04T17:24:06",
+      "updatedDate": "2026-02-04T07:59:04",
+      "owner": "Jessica Avila",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7701.54,
+      "description": "Produce fine size enjoy yet outside office."
+    },
+    {
+      "id": "08b86494-c066-43ca-b25d-3a7134901961",
+      "name": "Organized high-level project 6",
+      "status": "Inactive",
+      "createdDate": "2025-08-21T18:27:57",
+      "updatedDate": "2026-01-20T05:40:18",
+      "owner": "Joyce Thompson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1854.73,
+      "description": "Challenge miss theory government change say experience future."
+    },
+    {
+      "id": "c113eb8a-3dba-41ca-a3f2-5362f31791da",
+      "name": "Vision-oriented object-oriented support 7",
+      "status": "Inactive",
+      "createdDate": "2025-07-11T19:22:40",
+      "updatedDate": "2026-01-19T17:43:11",
+      "owner": "Angela Ball",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1117.48,
+      "description": "City national any sound where guy common."
+    },
+    {
+      "id": "54fd2794-6607-4a42-99d7-45bd635f9333",
+      "name": "Vision-oriented impactful website 8",
+      "status": "Inactive",
+      "createdDate": "2025-10-06T17:58:33",
+      "updatedDate": "2026-02-11T18:13:46",
+      "owner": "Michelle Martin DVM",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2605.33,
+      "description": "Moment with own wife quickly mention thousand job."
+    },
+    {
+      "id": "6e628b1e-986b-42fa-a432-f74a5a7b9bc1",
+      "name": "Streamlined impactful instruction set 9",
+      "status": "Active",
+      "createdDate": "2025-12-05T03:09:27",
+      "updatedDate": "2026-02-06T11:45:39",
+      "owner": "Brian Hernandez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4642.73,
+      "description": "Important probably follow draw test challenge stock."
+    },
+    {
+      "id": "fe78cc72-e924-46ff-8bdd-4dbf9ff2fb86",
+      "name": "Self-enabling zero-defect open architecture 10",
+      "status": "Completed",
+      "createdDate": "2025-10-14T18:00:08",
+      "updatedDate": "2026-01-26T15:57:13",
+      "owner": "Krystal Hall",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6680.99,
+      "description": "Summer use a show home shoulder song."
+    },
+    {
+      "id": "39780b3f-9cdc-43d2-9fd9-3173a39e2327",
+      "name": "Realigned 24hour migration 11",
+      "status": "Active",
+      "createdDate": "2025-12-10T02:05:46",
+      "updatedDate": "2026-01-21T10:19:06",
+      "owner": "April Copeland",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3944.32,
+      "description": "Tell whatever election reality number finish."
+    },
+    {
+      "id": "18ab15c4-795a-4fca-ae19-a9e557d1da32",
+      "name": "Phased foreground policy 12",
+      "status": "Active",
+      "createdDate": "2025-05-05T10:52:24",
+      "updatedDate": "2026-01-25T20:12:06",
+      "owner": "Robert Wallace",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9681.08,
+      "description": "Performance decade maybe fill."
+    },
+    {
+      "id": "4d5d1796-681d-4c6b-9481-070e29f6d30e",
+      "name": "Balanced 6thgeneration collaboration 13",
+      "status": "Completed",
+      "createdDate": "2025-08-14T01:21:00",
+      "updatedDate": "2026-02-11T14:11:41",
+      "owner": "Edward Aguilar",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7899.82,
+      "description": "Fine ten letter rise involve."
+    },
+    {
+      "id": "70624e2e-19eb-4f20-86f1-8a41563fa61e",
+      "name": "Progressive system-worthy collaboration 14",
+      "status": "Inactive",
+      "createdDate": "2025-04-05T04:49:57",
+      "updatedDate": "2026-01-21T14:05:37",
+      "owner": "Ryan Cain",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1744.81,
+      "description": "Scientist week else recent manager fire third."
+    },
+    {
+      "id": "8b1fcbd1-4a2f-4ac5-ba71-d359730417ee",
+      "name": "Versatile foreground website 15",
+      "status": "Inactive",
+      "createdDate": "2025-10-21T10:06:59",
+      "updatedDate": "2026-01-20T20:32:01",
+      "owner": "Peter Velez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4809.72,
+      "description": "Fear everybody material."
+    },
+    {
+      "id": "d0d8b338-f195-4700-a5f1-4a815cf4a983",
+      "name": "Organic zero tolerance hardware 16",
+      "status": "Pending",
+      "createdDate": "2025-10-20T05:14:33",
+      "updatedDate": "2026-02-04T06:55:51",
+      "owner": "Diana Sanders",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8597.5,
+      "description": "Player boy force simply upon."
+    },
+    {
+      "id": "283d6c75-8cab-4fa6-a99f-ebe1eb4a534e",
+      "name": "Customizable maximized challenge 17",
+      "status": "Active",
+      "createdDate": "2025-05-28T15:20:11",
+      "updatedDate": "2026-02-11T21:31:30",
+      "owner": "Stephanie Cruz",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5525.41,
+      "description": "Myself really popular nation."
+    },
+    {
+      "id": "c0af2990-6494-458e-9544-f87bc54fc33a",
+      "name": "Diverse static functionalities 18",
+      "status": "Active",
+      "createdDate": "2025-08-13T05:27:12",
+      "updatedDate": "2026-01-31T15:33:17",
+      "owner": "Carrie Knight",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2395.64,
+      "description": "Court heart interest without including who."
+    },
+    {
+      "id": "0ca254b3-0bfc-4d99-99c8-63309fae470b",
+      "name": "Robust uniform methodology 19",
+      "status": "Pending",
+      "createdDate": "2025-06-29T03:19:28",
+      "updatedDate": "2026-02-01T21:14:43",
+      "owner": "John Hanson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9904.42,
+      "description": "Traditional for late huge speech understand floor."
+    },
+    {
+      "id": "71b92dbb-3735-40a6-94bc-07485eb7ee53",
+      "name": "Front-line client-server alliance 20",
+      "status": "Completed",
+      "createdDate": "2025-03-20T04:32:11",
+      "updatedDate": "2026-02-06T21:14:37",
+      "owner": "Mrs. Susan Hale",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 608.52,
+      "description": "Something above expert."
+    },
+    {
+      "id": "854949e4-c86c-48de-826c-0aab8b2cf5d8",
+      "name": "Innovative eco-centric implementation 21",
+      "status": "Completed",
+      "createdDate": "2025-12-26T08:27:16",
+      "updatedDate": "2026-01-20T22:28:11",
+      "owner": "Lisa Andrews",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8376.59,
+      "description": "Fill keep thousand that own detail number."
+    },
+    {
+      "id": "c18e8ed4-b4b1-43aa-8e47-d5c59b6ef30b",
+      "name": "Streamlined grid-enabled throughput 22",
+      "status": "Completed",
+      "createdDate": "2026-01-03T21:43:01",
+      "updatedDate": "2026-02-01T09:37:00",
+      "owner": "Nathan Trevino",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2139.8,
+      "description": "Event policy risk task."
+    },
+    {
+      "id": "5561520b-e228-4ebe-8179-a7194b3280d8",
+      "name": "Multi-tiered non-volatile help-desk 23",
+      "status": "Inactive",
+      "createdDate": "2025-02-19T13:16:38",
+      "updatedDate": "2026-01-21T06:46:01",
+      "owner": "Alexander Phillips",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3220.43,
+      "description": "Stage second generation tell easy western."
+    },
+    {
+      "id": "58838162-0cbc-4de9-b92e-62f939a120de",
+      "name": "Distributed zero-defect project 24",
+      "status": "Completed",
+      "createdDate": "2025-04-13T02:40:38",
+      "updatedDate": "2026-01-31T14:56:14",
+      "owner": "Frances Robles",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 369.9,
+      "description": "Important thing allow different."
+    },
+    {
+      "id": "9dadba5b-3d02-4f48-8bfa-e21625d6ef15",
+      "name": "Versatile dynamic attitude 25",
+      "status": "Pending",
+      "createdDate": "2025-09-18T08:50:50",
+      "updatedDate": "2026-02-13T16:25:40",
+      "owner": "Matthew Schwartz",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3827.95,
+      "description": "Without resource crime seat imagine claim."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

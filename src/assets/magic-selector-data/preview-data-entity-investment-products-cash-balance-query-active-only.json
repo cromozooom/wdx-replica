@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 614,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a7deca4b-2c22-4a1b-acec-5e6d575350a3",
+      "name": "Object-based didactic secured line 1",
+      "status": "Pending",
+      "createdDate": "2025-08-30T11:48:01",
+      "updatedDate": "2026-02-12T16:58:31",
+      "owner": "Tina Williams MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5482.98,
+      "description": "Certainly happy fact fear soldier."
+    },
+    {
+      "id": "285e32af-15d2-445d-a0ab-a459daa06a1b",
+      "name": "Fundamental client-server knowledge user 2",
+      "status": "Pending",
+      "createdDate": "2026-01-26T05:16:49",
+      "updatedDate": "2026-02-05T01:34:49",
+      "owner": "Barbara Hall",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 567.77,
+      "description": "Industry class perform program seat."
+    },
+    {
+      "id": "f4f3b883-baca-4b14-befe-47829b4c9f66",
+      "name": "Switchable composite open system 3",
+      "status": "Completed",
+      "createdDate": "2025-08-17T16:48:05",
+      "updatedDate": "2026-02-07T01:22:52",
+      "owner": "Austin Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7891.94,
+      "description": "Across red focus range teach build."
+    },
+    {
+      "id": "79990708-900a-4a00-8565-573013c65da1",
+      "name": "Adaptive stable collaboration 4",
+      "status": "Inactive",
+      "createdDate": "2025-04-02T11:07:13",
+      "updatedDate": "2026-02-05T07:18:29",
+      "owner": "Jeremy Davis",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4860.59,
+      "description": "Allow almost pretty type."
+    },
+    {
+      "id": "10f8364c-bb60-40c8-9877-3816fa58bf1b",
+      "name": "Exclusive zero-defect open system 5",
+      "status": "Active",
+      "createdDate": "2025-04-28T08:36:33",
+      "updatedDate": "2026-02-01T12:01:54",
+      "owner": "Virginia Robinson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6550.73,
+      "description": "Position cell over pull final."
+    },
+    {
+      "id": "e7b855b7-96c5-4272-8316-abb8ba4ec5d3",
+      "name": "Synergized neutral open system 6",
+      "status": "Inactive",
+      "createdDate": "2025-06-18T10:03:07",
+      "updatedDate": "2026-01-31T18:30:09",
+      "owner": "Charlotte Gaines",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7074.17,
+      "description": "But idea model involve trial discussion subject."
+    },
+    {
+      "id": "d5173305-f29b-4dd5-a9d4-e73f9846ceed",
+      "name": "Automated methodical hub 7",
+      "status": "Inactive",
+      "createdDate": "2025-06-01T04:19:47",
+      "updatedDate": "2026-02-08T09:49:02",
+      "owner": "Robert Wang",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5323.03,
+      "description": "These Republican mean hit tend city."
+    },
+    {
+      "id": "8b7ec163-2f16-41fc-a463-a3a909dece39",
+      "name": "Operative context-sensitive methodology 8",
+      "status": "Pending",
+      "createdDate": "2026-02-02T01:18:05",
+      "updatedDate": "2026-02-03T23:24:51",
+      "owner": "Michael Cruz",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9916.16,
+      "description": "See boy fight hard speech score party ground."
+    },
+    {
+      "id": "a3ffcd40-0af4-44d6-b02e-09cc911820bb",
+      "name": "Cloned holistic migration 9",
+      "status": "Active",
+      "createdDate": "2025-02-24T03:09:26",
+      "updatedDate": "2026-02-01T05:36:05",
+      "owner": "Eric Lyons",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4368.1,
+      "description": "Away rest thought detail."
+    },
+    {
+      "id": "80886ad9-e004-412c-b270-1a597854ed69",
+      "name": "Compatible client-server throughput 10",
+      "status": "Pending",
+      "createdDate": "2025-11-27T18:41:41",
+      "updatedDate": "2026-02-12T05:38:16",
+      "owner": "Kellie Moore",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8807.95,
+      "description": "Almost they pick less."
+    },
+    {
+      "id": "7752f1ff-bf4e-44f4-929c-0741eb80b679",
+      "name": "Open-source even-keeled open architecture 11",
+      "status": "Pending",
+      "createdDate": "2025-12-01T05:05:23",
+      "updatedDate": "2026-02-08T22:25:19",
+      "owner": "Jeffrey Martin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3395.72,
+      "description": "Trouble Democrat including fire election anyone run."
+    },
+    {
+      "id": "43d4f7f6-fa49-45b7-8c96-793d04f43b62",
+      "name": "Focused global matrices 12",
+      "status": "Active",
+      "createdDate": "2025-06-29T21:07:32",
+      "updatedDate": "2026-01-21T14:34:29",
+      "owner": "Stephanie Kidd",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9330.74,
+      "description": "Opportunity create opportunity produce bad likely."
+    },
+    {
+      "id": "718acf22-825f-4d4c-8e7b-dff1b8b5be20",
+      "name": "Seamless bi-directional migration 13",
+      "status": "Pending",
+      "createdDate": "2025-07-01T14:02:12",
+      "updatedDate": "2026-02-04T23:43:34",
+      "owner": "Jordan Wilkins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1385.42,
+      "description": "School law star fast."
+    },
+    {
+      "id": "a5e7290c-e62a-4975-8b7a-b1094b32e740",
+      "name": "Realigned disintermediate open system 14",
+      "status": "Pending",
+      "createdDate": "2025-04-13T20:14:19",
+      "updatedDate": "2026-02-17T03:47:29",
+      "owner": "Mary Martin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3780.17,
+      "description": "Speech white public stock."
+    },
+    {
+      "id": "0a4303c1-8075-4879-adf0-200edd4216ab",
+      "name": "De-engineered disintermediate encryption 15",
+      "status": "Completed",
+      "createdDate": "2025-05-07T17:41:34",
+      "updatedDate": "2026-01-31T07:35:12",
+      "owner": "Stephen Brooks",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5771.52,
+      "description": "Keep would control common."
+    },
+    {
+      "id": "c9065a4d-f7bc-4b52-beca-89827d165e8e",
+      "name": "Assimilated methodical knowledge user 16",
+      "status": "Completed",
+      "createdDate": "2025-03-08T21:34:54",
+      "updatedDate": "2026-01-25T18:15:50",
+      "owner": "Lisa Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1446.14,
+      "description": "Industry little account record."
+    },
+    {
+      "id": "35bb5f37-edfe-4a74-aa71-31f10c47fe4f",
+      "name": "Proactive homogeneous superstructure 17",
+      "status": "Pending",
+      "createdDate": "2025-09-16T15:53:29",
+      "updatedDate": "2026-02-03T02:18:14",
+      "owner": "Ashley Glover",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7187.98,
+      "description": "Wife certain force marriage back poor."
+    },
+    {
+      "id": "315c9519-4272-44d5-9c2c-21ad12c01144",
+      "name": "Extended reciprocal extranet 18",
+      "status": "Pending",
+      "createdDate": "2025-11-20T20:34:29",
+      "updatedDate": "2026-02-08T11:00:15",
+      "owner": "Anna Wells",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5527.01,
+      "description": "Cup it life life after."
+    },
+    {
+      "id": "3a2a5047-62a2-4ba6-820b-9270f86965ce",
+      "name": "Streamlined multi-state paradigm 19",
+      "status": "Pending",
+      "createdDate": "2025-03-18T16:21:21",
+      "updatedDate": "2026-01-24T16:06:22",
+      "owner": "Tracey Fuller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9519.48,
+      "description": "Pattern long dream section."
+    },
+    {
+      "id": "0d323d16-2725-4fc0-a1e9-a4ac5fc180e4",
+      "name": "Inverse optimal definition 20",
+      "status": "Completed",
+      "createdDate": "2026-01-30T08:11:22",
+      "updatedDate": "2026-01-18T18:45:11",
+      "owner": "Karen Lee",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2816.78,
+      "description": "Be week that fill again fire."
+    },
+    {
+      "id": "56327d05-7a12-4936-995d-27d80adfef0a",
+      "name": "Function-based hybrid customer loyalty 21",
+      "status": "Completed",
+      "createdDate": "2026-01-05T04:17:09",
+      "updatedDate": "2026-01-27T04:41:23",
+      "owner": "Michael Ramos",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3267.03,
+      "description": "Door pick public kid far."
+    },
+    {
+      "id": "d8933651-2b7f-4d48-839c-192cc29c7c71",
+      "name": "Monitored responsive flexibility 22",
+      "status": "Active",
+      "createdDate": "2025-10-27T18:41:34",
+      "updatedDate": "2026-02-11T17:12:12",
+      "owner": "Philip Clark",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5870.21,
+      "description": "Expert look debate to dark break."
+    },
+    {
+      "id": "1bd74dc9-e555-45d4-8a3b-b7210ee0424b",
+      "name": "Down-sized homogeneous challenge 23",
+      "status": "Inactive",
+      "createdDate": "2026-01-02T18:03:58",
+      "updatedDate": "2026-02-14T14:38:35",
+      "owner": "Stephanie Cooper",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4994.19,
+      "description": "That imagine under fill family evidence sense table."
+    },
+    {
+      "id": "0547f6e3-7042-45dc-a719-62a04e06a4ba",
+      "name": "Visionary intangible moratorium 24",
+      "status": "Completed",
+      "createdDate": "2025-04-30T02:01:19",
+      "updatedDate": "2026-02-17T02:37:29",
+      "owner": "David Bennett",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6007.62,
+      "description": "Return stock right realize."
+    },
+    {
+      "id": "740c4eab-a2d4-4c92-a9bd-020c089eaeca",
+      "name": "Re-contextualized stable toolset 25",
+      "status": "Inactive",
+      "createdDate": "2025-03-15T06:08:25",
+      "updatedDate": "2026-02-16T17:31:29",
+      "owner": "Ashley Sanchez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6713.41,
+      "description": "Especially themselves ground account gun boy popular."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

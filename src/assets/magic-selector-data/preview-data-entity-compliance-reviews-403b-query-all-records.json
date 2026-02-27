@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-all-records",
+  "totalCount": 314,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "59385ef4-97ac-452f-b99a-13ddd075da94",
+      "name": "Optimized actuating support 1",
+      "status": "Active",
+      "createdDate": "2025-03-17T18:23:11",
+      "updatedDate": "2026-01-21T06:13:11",
+      "owner": "Kathleen Owens",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1675.39,
+      "description": "Describe point high."
+    },
+    {
+      "id": "5d04eb09-98ec-48b1-b620-2cfe96af5236",
+      "name": "Versatile demand-driven focus group 2",
+      "status": "Inactive",
+      "createdDate": "2026-02-03T02:41:18",
+      "updatedDate": "2026-01-21T23:13:08",
+      "owner": "Phillip Ryan",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2146.9,
+      "description": "Treatment door wind paper hour hot west."
+    },
+    {
+      "id": "8b42b450-98dd-4fcc-b1c6-ee832271c1a3",
+      "name": "Switchable clear-thinking matrix 3",
+      "status": "Inactive",
+      "createdDate": "2026-01-14T11:15:36",
+      "updatedDate": "2026-01-22T12:31:20",
+      "owner": "Dr. Angela Edwards",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7287.24,
+      "description": "Art close expert."
+    },
+    {
+      "id": "eccd9a97-0e30-4b13-9fb4-90c0ab6922be",
+      "name": "Stand-alone bandwidth-monitored superstructure 4",
+      "status": "Completed",
+      "createdDate": "2026-01-12T20:16:01",
+      "updatedDate": "2026-02-09T14:01:47",
+      "owner": "Ryan Simmons",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4534.96,
+      "description": "Discuss be goal candidate great administration new."
+    },
+    {
+      "id": "9aeb05dc-5efe-4c1a-83ef-da1d4ce2453d",
+      "name": "Public-key methodical system engine 5",
+      "status": "Completed",
+      "createdDate": "2025-07-30T00:06:26",
+      "updatedDate": "2026-01-23T02:33:53",
+      "owner": "Roger Long",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8843.71,
+      "description": "Street but everything here."
+    },
+    {
+      "id": "5b32815f-5495-48f9-a53b-f463b58a9123",
+      "name": "Synchronized homogeneous initiative 6",
+      "status": "Completed",
+      "createdDate": "2025-08-13T01:38:45",
+      "updatedDate": "2026-02-04T05:26:41",
+      "owner": "David Graves",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 424.62,
+      "description": "Foot direction throughout drop edge order."
+    },
+    {
+      "id": "6b5fbd73-bd3d-43e9-baf9-d93b356174b7",
+      "name": "Face-to-face client-server implementation 7",
+      "status": "Completed",
+      "createdDate": "2025-05-27T13:38:25",
+      "updatedDate": "2026-02-04T03:47:07",
+      "owner": "Michael Dickerson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5265.72,
+      "description": "Administration city production pattern director various."
+    },
+    {
+      "id": "31d956f7-e116-441b-a39e-ca1e66c595b4",
+      "name": "Grass-roots 6thgeneration software 8",
+      "status": "Completed",
+      "createdDate": "2025-11-12T06:46:19",
+      "updatedDate": "2026-02-04T02:08:08",
+      "owner": "Casey Cooper",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3646.42,
+      "description": "Reality hospital PM enough."
+    },
+    {
+      "id": "d40211f7-f3fe-4b72-84a3-f76d26ee6df7",
+      "name": "Monitored explicit architecture 9",
+      "status": "Completed",
+      "createdDate": "2025-04-10T15:46:13",
+      "updatedDate": "2026-02-12T23:14:38",
+      "owner": "Patrick Cruz",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 814.26,
+      "description": "Store agree see system fly money size."
+    },
+    {
+      "id": "e70913b4-e151-49c8-8b15-0c343867c763",
+      "name": "Configurable intermediate instruction set 10",
+      "status": "Active",
+      "createdDate": "2025-12-19T00:48:47",
+      "updatedDate": "2026-02-07T00:18:37",
+      "owner": "Julie Potter",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1400.1,
+      "description": "Art may song tax."
+    },
+    {
+      "id": "4866103c-b4db-4eb4-a03e-7adf6fb8d8ca",
+      "name": "Cross-group tertiary Local Area Network 11",
+      "status": "Active",
+      "createdDate": "2025-10-17T03:41:06",
+      "updatedDate": "2026-02-06T15:55:39",
+      "owner": "Maria Edwards",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9980.65,
+      "description": "Manager section near American during."
+    },
+    {
+      "id": "9aaff5dc-30f4-4544-939d-b7e9a14ea123",
+      "name": "Automated intermediate analyzer 12",
+      "status": "Pending",
+      "createdDate": "2026-01-18T03:26:57",
+      "updatedDate": "2026-02-17T03:23:29",
+      "owner": "Brianna Cooper",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9116.6,
+      "description": "Rich entire show whose produce government present."
+    },
+    {
+      "id": "dbf8b827-692b-4b74-864b-44773dd55071",
+      "name": "Organic needs-based encryption 13",
+      "status": "Completed",
+      "createdDate": "2026-02-01T00:28:40",
+      "updatedDate": "2026-02-11T17:14:50",
+      "owner": "Michael Murray",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4497.78,
+      "description": "History able fire increase close."
+    },
+    {
+      "id": "ce3cc92d-494a-4813-ae21-38551b6590ce",
+      "name": "Decentralized neutral Local Area Network 14",
+      "status": "Active",
+      "createdDate": "2025-04-03T04:41:20",
+      "updatedDate": "2026-01-26T04:24:47",
+      "owner": "Gabriel Hawkins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 704.23,
+      "description": "Lose energy those end."
+    },
+    {
+      "id": "f020c955-60ce-4340-8ba4-bb3d481c4304",
+      "name": "Fully-configurable tangible capability 15",
+      "status": "Inactive",
+      "createdDate": "2025-03-08T03:06:59",
+      "updatedDate": "2026-02-01T10:08:56",
+      "owner": "Daniel Becker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4523.66,
+      "description": "Little professor government likely development final."
+    },
+    {
+      "id": "46c40603-2d6e-40f0-a90a-a810441f6881",
+      "name": "Realigned analyzing utilization 16",
+      "status": "Inactive",
+      "createdDate": "2025-09-19T01:28:10",
+      "updatedDate": "2026-02-06T05:13:40",
+      "owner": "Angie Booth",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2613.91,
+      "description": "Our lose score process attorney assume not."
+    },
+    {
+      "id": "1c52834f-238d-4277-bf26-9a03b14af3e6",
+      "name": "Re-contextualized optimal website 17",
+      "status": "Completed",
+      "createdDate": "2025-09-28T11:49:55",
+      "updatedDate": "2026-02-10T03:03:10",
+      "owner": "Laura Adams",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3101.4,
+      "description": "Actually place lose."
+    },
+    {
+      "id": "aaa2fb77-4ca8-4721-9784-4951f11d4fef",
+      "name": "Digitized disintermediate success 18",
+      "status": "Completed",
+      "createdDate": "2025-08-07T01:02:52",
+      "updatedDate": "2026-01-28T18:26:59",
+      "owner": "Anthony Lindsey",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9452.94,
+      "description": "Several forget like care song key."
+    },
+    {
+      "id": "0be36d7d-9a4e-4d68-88c4-beecf2564794",
+      "name": "Versatile systemic intranet 19",
+      "status": "Inactive",
+      "createdDate": "2026-02-03T00:13:05",
+      "updatedDate": "2026-01-21T22:01:04",
+      "owner": "Tyler Knight",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7081.67,
+      "description": "Quite else short work one she like."
+    },
+    {
+      "id": "454c3528-16aa-4093-9927-e2cae47dbb86",
+      "name": "Quality-focused bandwidth-monitored Local Area Network 20",
+      "status": "Pending",
+      "createdDate": "2025-05-28T11:54:19",
+      "updatedDate": "2026-01-31T19:58:07",
+      "owner": "Kenneth Bartlett",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3703.24,
+      "description": "Data this hair station."
+    },
+    {
+      "id": "f497d3f6-5502-4d29-88e2-bae3af626f89",
+      "name": "Ameliorated mobile project 21",
+      "status": "Inactive",
+      "createdDate": "2025-05-18T15:51:40",
+      "updatedDate": "2026-01-27T18:16:50",
+      "owner": "Joy Curtis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1254.69,
+      "description": "Style like stand dark."
+    },
+    {
+      "id": "bfa2b058-9ba2-4413-9fcd-da946daf77d1",
+      "name": "Polarized bandwidth-monitored encryption 22",
+      "status": "Pending",
+      "createdDate": "2025-08-12T23:35:51",
+      "updatedDate": "2026-02-17T07:53:43",
+      "owner": "Justin Ramirez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2709.69,
+      "description": "Rise agency send might top growth tell."
+    },
+    {
+      "id": "f87abb31-f38b-453a-8fb0-cc89d9bf626a",
+      "name": "Fully-configurable 6thgeneration concept 23",
+      "status": "Completed",
+      "createdDate": "2025-05-25T12:10:24",
+      "updatedDate": "2026-02-02T13:28:41",
+      "owner": "Tyler Francis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9163.44,
+      "description": "Mrs professor prepare."
+    },
+    {
+      "id": "6236e901-bfb5-4ba1-a998-5d2a4cf7cb93",
+      "name": "Assimilated impactful concept 24",
+      "status": "Inactive",
+      "createdDate": "2026-01-23T17:37:09",
+      "updatedDate": "2026-02-12T06:42:38",
+      "owner": "Gabrielle Little",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9539.06,
+      "description": "Night scene describe guess write part."
+    },
+    {
+      "id": "032b1a5a-52ce-4ad8-93a9-2576f51c5cd9",
+      "name": "Re-contextualized object-oriented flexibility 25",
+      "status": "Active",
+      "createdDate": "2025-12-30T10:04:37",
+      "updatedDate": "2026-02-14T05:27:09",
+      "owner": "Samantha Hale",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 386.25,
+      "description": "Hair treat civil capital however long born."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

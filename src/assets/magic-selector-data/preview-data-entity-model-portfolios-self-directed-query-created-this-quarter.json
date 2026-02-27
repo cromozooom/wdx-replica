@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-modelportfolio",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1150,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "7f23b8e4-7b3d-4883-9873-77e311c650c7",
+      "name": "Proactive client-server circuit 1",
+      "status": "Pending",
+      "createdDate": "2025-10-23T08:24:47",
+      "updatedDate": "2026-01-31T13:30:54",
+      "owner": "Marc Hernandez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4373.13,
+      "description": "Put many along."
+    },
+    {
+      "id": "d57c9e1a-7cc1-4a4b-b6e1-ced15a9206c5",
+      "name": "Streamlined client-driven migration 2",
+      "status": "Active",
+      "createdDate": "2025-09-09T09:37:28",
+      "updatedDate": "2026-02-09T07:25:46",
+      "owner": "Dr. Alexandra Snyder MD",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2125.33,
+      "description": "Operation strategy data husband."
+    },
+    {
+      "id": "6dfb5a94-ff4a-432a-b5b5-2eed5c142c89",
+      "name": "Digitized discrete strategy 3",
+      "status": "Pending",
+      "createdDate": "2025-10-25T09:31:08",
+      "updatedDate": "2026-02-05T14:57:10",
+      "owner": "Patrick Brown",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7757.32,
+      "description": "Center out tree true determine."
+    },
+    {
+      "id": "583d1bba-0859-4c45-bab4-4a2087089a56",
+      "name": "Customer-focused tangible archive 4",
+      "status": "Completed",
+      "createdDate": "2025-09-26T08:59:11",
+      "updatedDate": "2026-01-31T15:51:16",
+      "owner": "Erin Smith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4086.91,
+      "description": "Generation one face build film while huge."
+    },
+    {
+      "id": "1cd117ac-0223-4e08-baec-286a82f7a986",
+      "name": "Pre-emptive needs-based paradigm 5",
+      "status": "Active",
+      "createdDate": "2025-03-26T13:04:16",
+      "updatedDate": "2026-02-16T16:00:21",
+      "owner": "Rachel Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6126.36,
+      "description": "Summer listen chair war career computer."
+    },
+    {
+      "id": "d814476b-6c17-4c6d-bfde-1886ee915817",
+      "name": "Vision-oriented 4thgeneration support 6",
+      "status": "Pending",
+      "createdDate": "2025-03-29T23:23:50",
+      "updatedDate": "2026-02-09T17:01:37",
+      "owner": "Dennis Little",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8865.55,
+      "description": "Choice approach meet stop doctor."
+    },
+    {
+      "id": "91e61ea4-2d09-4949-9b82-a22a9f0ff22f",
+      "name": "Face-to-face client-driven portal 7",
+      "status": "Inactive",
+      "createdDate": "2025-04-15T13:00:50",
+      "updatedDate": "2026-01-28T10:17:28",
+      "owner": "Jacob Burns",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4424.16,
+      "description": "Degree friend effort."
+    },
+    {
+      "id": "1088633f-0c4b-4e37-a2e3-e3c7438836e2",
+      "name": "Focused executive task-force 8",
+      "status": "Pending",
+      "createdDate": "2025-09-20T21:50:16",
+      "updatedDate": "2026-01-29T02:18:18",
+      "owner": "Paul Morales",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5461.73,
+      "description": "Size nation according drive social become range cover."
+    },
+    {
+      "id": "c1dc7043-b0cc-4b3a-94fc-65a328b00111",
+      "name": "Progressive optimal functionalities 9",
+      "status": "Completed",
+      "createdDate": "2025-06-07T09:37:26",
+      "updatedDate": "2026-01-26T05:42:27",
+      "owner": "Elaine Taylor",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7570.08,
+      "description": "Western economic weight strategy evidence ahead modern."
+    },
+    {
+      "id": "cd89d3ce-e05e-471d-abe3-0cefc0a58619",
+      "name": "Self-enabling impactful instruction set 10",
+      "status": "Completed",
+      "createdDate": "2025-09-18T04:31:15",
+      "updatedDate": "2026-02-14T09:39:12",
+      "owner": "Tiffany Potts",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9014.4,
+      "description": "Order why fear before race every key turn."
+    },
+    {
+      "id": "e2e8786f-b573-4f5d-902b-21a2f886998c",
+      "name": "Down-sized uniform benchmark 11",
+      "status": "Active",
+      "createdDate": "2025-07-30T02:49:35",
+      "updatedDate": "2026-01-26T01:32:23",
+      "owner": "Kiara Hernandez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 515.66,
+      "description": "Every meet exist."
+    },
+    {
+      "id": "db11a41d-83fd-4b3b-876e-00b51c2b7ce6",
+      "name": "Ameliorated leadingedge algorithm 12",
+      "status": "Pending",
+      "createdDate": "2025-03-12T22:39:46",
+      "updatedDate": "2026-02-09T02:23:43",
+      "owner": "Alex Martinez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1606.34,
+      "description": "Least nearly effect kind oil."
+    },
+    {
+      "id": "d49d529d-fd2f-4aa1-a27b-37261837c236",
+      "name": "Integrated background application 13",
+      "status": "Pending",
+      "createdDate": "2025-05-14T08:55:39",
+      "updatedDate": "2026-02-04T06:27:10",
+      "owner": "Michael Mitchell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3937.66,
+      "description": "Agreement owner already himself staff value floor."
+    },
+    {
+      "id": "ff83b1a6-1018-4fa3-ae4e-0edfbfb64599",
+      "name": "Diverse object-oriented strategy 14",
+      "status": "Completed",
+      "createdDate": "2026-01-17T22:26:49",
+      "updatedDate": "2026-02-05T14:36:00",
+      "owner": "Cassidy Martin",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9456.2,
+      "description": "Budget citizen capital side building child."
+    },
+    {
+      "id": "5aceae60-a2d1-4809-bdba-6b3231dcfccb",
+      "name": "Intuitive user-facing encoding 15",
+      "status": "Inactive",
+      "createdDate": "2026-02-08T23:11:37",
+      "updatedDate": "2026-02-10T11:46:03",
+      "owner": "Dr. Tabitha Kim",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9239.04,
+      "description": "Major behavior production yeah."
+    },
+    {
+      "id": "8b752376-019a-4592-ba87-a23a680a9717",
+      "name": "Front-line real-time Graphic Interface 16",
+      "status": "Pending",
+      "createdDate": "2025-03-10T12:27:43",
+      "updatedDate": "2026-02-11T20:57:17",
+      "owner": "Tommy Bell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7366.24,
+      "description": "Across certain fund population perform."
+    },
+    {
+      "id": "b35dc0e2-2d1b-4e55-8f7e-7d6a6fcb63ca",
+      "name": "Sharable attitude-oriented extranet 17",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T03:49:43",
+      "updatedDate": "2026-02-15T08:58:57",
+      "owner": "Matthew Williams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9191.81,
+      "description": "Nation west often whose rise those customer."
+    },
+    {
+      "id": "69a61726-ec86-47f7-bb93-c2bde5bf475f",
+      "name": "Managed neutral strategy 18",
+      "status": "Active",
+      "createdDate": "2025-04-06T11:21:06",
+      "updatedDate": "2026-01-25T08:43:22",
+      "owner": "Michael Vasquez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7188.73,
+      "description": "Method and PM use miss society."
+    },
+    {
+      "id": "185b1214-e561-48cf-9a8b-68bd3f6ecf1e",
+      "name": "Multi-lateral directional open system 19",
+      "status": "Active",
+      "createdDate": "2025-09-22T18:38:10",
+      "updatedDate": "2026-01-29T21:22:46",
+      "owner": "Manuel Ellison",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2881.41,
+      "description": "Name plan institution treatment road claim democratic leave."
+    },
+    {
+      "id": "f3a741eb-093c-4fdc-a1e3-10ea92ef4e2a",
+      "name": "Right-sized needs-based synergy 20",
+      "status": "Active",
+      "createdDate": "2025-12-20T19:34:18",
+      "updatedDate": "2026-01-19T07:04:26",
+      "owner": "Jennifer Green",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9869.85,
+      "description": "Wear worker certain method."
+    },
+    {
+      "id": "cd6494b5-0e63-4952-92a0-77aecb758ff2",
+      "name": "Networked 3rdgeneration budgetary management 21",
+      "status": "Completed",
+      "createdDate": "2025-10-16T01:56:00",
+      "updatedDate": "2026-01-31T11:21:51",
+      "owner": "Jody Garrett",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1283.94,
+      "description": "Sometimes present themselves pass data."
+    },
+    {
+      "id": "ea86d14d-0639-4400-a4f8-a8108a18ee45",
+      "name": "Optional user-facing success 22",
+      "status": "Inactive",
+      "createdDate": "2025-10-09T15:11:43",
+      "updatedDate": "2026-02-08T03:45:52",
+      "owner": "Andrew Nelson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6863.56,
+      "description": "Fight modern dinner."
+    },
+    {
+      "id": "6c34e55f-627b-49a4-a2e9-560ee96015d0",
+      "name": "Re-engineered incremental methodology 23",
+      "status": "Pending",
+      "createdDate": "2025-08-02T09:29:44",
+      "updatedDate": "2026-02-13T22:02:45",
+      "owner": "Shannon Porter",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4780.51,
+      "description": "Election song writer whether bill necessary gun."
+    },
+    {
+      "id": "0ff14187-b795-449e-aa44-e3c042859333",
+      "name": "Phased web-enabled core 24",
+      "status": "Active",
+      "createdDate": "2025-12-28T20:18:21",
+      "updatedDate": "2026-02-14T19:05:37",
+      "owner": "Heather Warren",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7576.41,
+      "description": "Government quickly room power alone."
+    },
+    {
+      "id": "2422631e-d084-4dcd-9cd6-87e4590b96e2",
+      "name": "Versatile context-sensitive intranet 25",
+      "status": "Active",
+      "createdDate": "2026-01-09T15:14:25",
+      "updatedDate": "2026-01-28T20:41:34",
+      "owner": "Jesse Sanders",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3525.01,
+      "description": "Which trial moment create."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

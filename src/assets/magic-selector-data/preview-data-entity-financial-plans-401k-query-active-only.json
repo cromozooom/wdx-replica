@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-active-only",
+  "totalCount": 251,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "895c1564-f0ec-44b1-8ec5-79d5a294f391",
+      "name": "Sharable non-volatile emulation 1",
+      "status": "Completed",
+      "createdDate": "2026-01-01T10:51:09",
+      "updatedDate": "2026-01-19T02:02:14",
+      "owner": "Raymond Munoz",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1284.83,
+      "description": "Authority television free you short language cost recently."
+    },
+    {
+      "id": "2df22bcd-35ca-4f38-b4b2-631ce70a1248",
+      "name": "Mandatory needs-based intranet 2",
+      "status": "Pending",
+      "createdDate": "2025-09-05T18:12:16",
+      "updatedDate": "2026-02-16T17:52:59",
+      "owner": "Michael Graham",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9905.79,
+      "description": "At simply ahead public."
+    },
+    {
+      "id": "160006cc-5d7f-44be-b8b1-806250edb60a",
+      "name": "Function-based secondary strategy 3",
+      "status": "Active",
+      "createdDate": "2025-03-24T20:45:09",
+      "updatedDate": "2026-01-31T21:58:05",
+      "owner": "Samantha Newman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4838.91,
+      "description": "Whom without stay very down."
+    },
+    {
+      "id": "7d93ad0c-cb6a-4140-9121-49a6661a6b35",
+      "name": "User-friendly actuating collaboration 4",
+      "status": "Inactive",
+      "createdDate": "2025-07-18T21:44:13",
+      "updatedDate": "2026-02-16T13:19:55",
+      "owner": "Frances Frederick",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8670.65,
+      "description": "Town available example everything."
+    },
+    {
+      "id": "6eba673c-0093-4c18-9d67-993f08df2d81",
+      "name": "Public-key hybrid service-desk 5",
+      "status": "Completed",
+      "createdDate": "2025-03-18T02:55:36",
+      "updatedDate": "2026-02-14T14:32:03",
+      "owner": "Christopher Kennedy",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 302.82,
+      "description": "Often factor year boy rate form through hour."
+    },
+    {
+      "id": "e032c996-f0c0-487a-a6b0-02cb707a00ed",
+      "name": "Fully-configurable coherent array 6",
+      "status": "Completed",
+      "createdDate": "2025-04-14T04:20:01",
+      "updatedDate": "2026-02-03T19:35:07",
+      "owner": "Steven Rivera",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9747.08,
+      "description": "Where back name computer like religious."
+    },
+    {
+      "id": "ff81489f-1c34-4967-a41f-d908fbe72d7d",
+      "name": "Future-proofed local monitoring 7",
+      "status": "Inactive",
+      "createdDate": "2025-12-12T22:42:01",
+      "updatedDate": "2026-02-01T06:51:06",
+      "owner": "Martha Clements",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3043.58,
+      "description": "Forget theory adult fine machine follow."
+    },
+    {
+      "id": "a31a0a4b-738f-45da-af07-c8b17cac264d",
+      "name": "Open-architected high-level groupware 8",
+      "status": "Pending",
+      "createdDate": "2026-01-17T13:55:48",
+      "updatedDate": "2026-01-21T09:52:11",
+      "owner": "Mary Nguyen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 829.67,
+      "description": "Body inside issue region civil cut."
+    },
+    {
+      "id": "0de2ef03-d8f8-4ef4-9432-a5b6d23e95b4",
+      "name": "Devolved upward-trending benchmark 9",
+      "status": "Inactive",
+      "createdDate": "2025-09-22T00:33:33",
+      "updatedDate": "2026-01-30T23:23:44",
+      "owner": "Antonio Moss",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4901.0,
+      "description": "Start look listen look everybody go."
+    },
+    {
+      "id": "cb3a5756-ec98-4555-b0e9-7c706b37917f",
+      "name": "Virtual mobile conglomeration 10",
+      "status": "Completed",
+      "createdDate": "2025-09-12T09:06:57",
+      "updatedDate": "2026-02-16T21:37:59",
+      "owner": "Justin Rice",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6434.19,
+      "description": "Sing prove budget civil detail threat rich."
+    },
+    {
+      "id": "ef6fa181-e2f9-40f0-934d-70f92e91dba4",
+      "name": "Synergistic coherent ability 11",
+      "status": "Inactive",
+      "createdDate": "2025-12-22T07:39:44",
+      "updatedDate": "2026-01-24T12:15:14",
+      "owner": "Lindsey Stephenson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8104.45,
+      "description": "Sit during safe guess firm."
+    },
+    {
+      "id": "2edce056-1a13-4494-84b6-1dcbd8d356cd",
+      "name": "Enterprise-wide client-server superstructure 12",
+      "status": "Pending",
+      "createdDate": "2025-04-22T07:57:02",
+      "updatedDate": "2026-02-09T11:03:19",
+      "owner": "David Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7483.73,
+      "description": "Per hard senior machine."
+    },
+    {
+      "id": "3f35787e-c912-4087-813c-d9d7f60bd147",
+      "name": "Business-focused client-driven artificial intelligence 13",
+      "status": "Inactive",
+      "createdDate": "2025-05-17T12:26:24",
+      "updatedDate": "2026-01-31T02:21:24",
+      "owner": "Tony Singleton",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4774.09,
+      "description": "Stage agency side part head several."
+    },
+    {
+      "id": "4d517b36-1f4f-4061-8137-7ce88bf6d4be",
+      "name": "Digitized well-modulated solution 14",
+      "status": "Completed",
+      "createdDate": "2025-02-19T09:39:43",
+      "updatedDate": "2026-02-02T20:11:05",
+      "owner": "Hannah Conrad",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5359.84,
+      "description": "Song heart any because situation particular million."
+    },
+    {
+      "id": "d0f95328-459d-49e0-9700-d25374131acb",
+      "name": "Streamlined hybrid collaboration 15",
+      "status": "Inactive",
+      "createdDate": "2025-02-18T03:46:24",
+      "updatedDate": "2026-01-28T23:51:02",
+      "owner": "Frank Lopez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6976.34,
+      "description": "End throw teacher already soon."
+    },
+    {
+      "id": "b3bca042-05fa-4cd9-a222-b56a3030a2aa",
+      "name": "Networked stable capability 16",
+      "status": "Active",
+      "createdDate": "2025-12-28T16:05:19",
+      "updatedDate": "2026-01-18T12:13:35",
+      "owner": "Amanda Luna",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4221.19,
+      "description": "Whether without relate her build capital."
+    },
+    {
+      "id": "072be3eb-43da-4da2-9948-082ff280188a",
+      "name": "Decentralized heuristic knowledgebase 17",
+      "status": "Active",
+      "createdDate": "2025-09-21T06:16:37",
+      "updatedDate": "2026-01-25T23:53:54",
+      "owner": "Fernando Reyes",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5550.66,
+      "description": "Various public show news loss star pull."
+    },
+    {
+      "id": "8c0f93d0-7073-42a9-87d8-45165f32f7c6",
+      "name": "Re-engineered disintermediate project 18",
+      "status": "Inactive",
+      "createdDate": "2025-08-13T07:43:41",
+      "updatedDate": "2026-02-01T07:29:08",
+      "owner": "Debra Thomas",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1866.57,
+      "description": "Thing mouth kid be subject kid."
+    },
+    {
+      "id": "d3404154-4932-4f5c-ba71-75ee30ed1338",
+      "name": "Monitored interactive conglomeration 19",
+      "status": "Completed",
+      "createdDate": "2025-03-15T06:30:24",
+      "updatedDate": "2026-02-14T17:07:26",
+      "owner": "Melissa Gonzales",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 655.76,
+      "description": "Yeah campaign actually near growth team."
+    },
+    {
+      "id": "e4d50d8a-a2a6-4ec7-aa86-c0e2829c07db",
+      "name": "Upgradable intangible product 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-14T00:45:50",
+      "updatedDate": "2026-01-23T01:36:52",
+      "owner": "Sandra Garcia",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4112.41,
+      "description": "Attention sport bring attorney join identify."
+    },
+    {
+      "id": "c144660d-b28f-40c4-9c71-be813f265c27",
+      "name": "Advanced analyzing product 21",
+      "status": "Inactive",
+      "createdDate": "2025-06-06T13:58:36",
+      "updatedDate": "2026-01-26T02:57:42",
+      "owner": "Jeffrey Kim",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1967.62,
+      "description": "Option person support fall maybe board those."
+    },
+    {
+      "id": "2e2948cd-013e-4644-8c4b-c73833109aca",
+      "name": "Secured multi-tasking portal 22",
+      "status": "Pending",
+      "createdDate": "2025-08-10T19:01:37",
+      "updatedDate": "2026-01-27T18:05:24",
+      "owner": "Sierra Williams MD",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6564.57,
+      "description": "Dog most site doctor evidence into."
+    },
+    {
+      "id": "27662ad2-9c9c-4afc-9347-f81eb4614a7e",
+      "name": "Ergonomic leadingedge analyzer 23",
+      "status": "Active",
+      "createdDate": "2025-07-19T13:44:21",
+      "updatedDate": "2026-02-02T04:43:55",
+      "owner": "Troy Thomas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7933.71,
+      "description": "Service beyond bag ten authority."
+    },
+    {
+      "id": "7d194a75-3e39-4273-8335-0e049e68c0cf",
+      "name": "Mandatory full-range encoding 24",
+      "status": "Inactive",
+      "createdDate": "2025-08-11T11:15:13",
+      "updatedDate": "2026-02-04T14:23:39",
+      "owner": "Chad Berry",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8074.95,
+      "description": "Rule try born include stand continue professor."
+    },
+    {
+      "id": "6ba31f93-443e-4702-a7a7-8ba6baa83efb",
+      "name": "Devolved homogeneous groupware 25",
+      "status": "Pending",
+      "createdDate": "2026-02-09T05:55:36",
+      "updatedDate": "2026-02-04T13:30:18",
+      "owner": "Phillip Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8342.56,
+      "description": "Southern truth price party."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

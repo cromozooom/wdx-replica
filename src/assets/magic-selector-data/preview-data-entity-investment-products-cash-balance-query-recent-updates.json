@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-recent-updates",
+  "totalCount": 731,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "5ebda2fe-d208-4840-9381-b083a9225b15",
+      "name": "Upgradable local middleware 1",
+      "status": "Completed",
+      "createdDate": "2025-10-02T23:33:33",
+      "updatedDate": "2026-01-31T10:24:06",
+      "owner": "Chris Gordon",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9121.27,
+      "description": "Interview cost particular everyone tree."
+    },
+    {
+      "id": "0ba95f35-5193-40c7-9d27-3bcd61032553",
+      "name": "Reverse-engineered global monitoring 2",
+      "status": "Inactive",
+      "createdDate": "2025-09-30T19:56:48",
+      "updatedDate": "2026-02-05T04:43:06",
+      "owner": "Jordan Nelson MD",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9339.48,
+      "description": "Little American reach sort."
+    },
+    {
+      "id": "c82cc640-ee90-4766-b199-91b01d715220",
+      "name": "Synergized system-worthy portal 3",
+      "status": "Pending",
+      "createdDate": "2025-10-24T10:37:04",
+      "updatedDate": "2026-01-25T15:32:13",
+      "owner": "Ruth Kelly",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4077.88,
+      "description": "Military theory mind listen."
+    },
+    {
+      "id": "0726eae6-a6e5-4672-a1d9-35edcd27dddc",
+      "name": "Vision-oriented transitional hardware 4",
+      "status": "Inactive",
+      "createdDate": "2025-03-07T05:18:19",
+      "updatedDate": "2026-01-20T04:48:48",
+      "owner": "Katherine Harris",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8688.93,
+      "description": "Bring question report play."
+    },
+    {
+      "id": "1b4e98b8-3390-4709-938f-e0dceccc7a29",
+      "name": "Quality-focused fault-tolerant ability 5",
+      "status": "Inactive",
+      "createdDate": "2025-05-12T08:26:02",
+      "updatedDate": "2026-01-19T21:43:21",
+      "owner": "Katie Austin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1793.66,
+      "description": "Evening miss teacher police record throughout."
+    },
+    {
+      "id": "30206b95-3cd7-43ab-83f2-cb80a3a9bb7d",
+      "name": "Reactive encompassing capacity 6",
+      "status": "Pending",
+      "createdDate": "2025-10-26T02:50:44",
+      "updatedDate": "2026-02-03T02:47:44",
+      "owner": "Gregory Martin",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8897.7,
+      "description": "Notice black common until."
+    },
+    {
+      "id": "84b4ef64-4beb-4f27-8dc0-44900f94d1e0",
+      "name": "Re-contextualized responsive forecast 7",
+      "status": "Completed",
+      "createdDate": "2026-01-01T18:27:31",
+      "updatedDate": "2026-02-13T04:53:23",
+      "owner": "Keith Smith",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6000.8,
+      "description": "Risk middle talk already."
+    },
+    {
+      "id": "9a2ffd93-3880-4e8c-9790-44660833e1b2",
+      "name": "Intuitive 5thgeneration concept 8",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T07:40:51",
+      "updatedDate": "2026-01-20T13:47:37",
+      "owner": "Daniel Bryant",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7906.92,
+      "description": "Rest want beyond without."
+    },
+    {
+      "id": "5df49ca9-1782-40d6-9fe6-1c742fe77ba0",
+      "name": "Triple-buffered even-keeled open system 9",
+      "status": "Inactive",
+      "createdDate": "2025-05-07T01:08:23",
+      "updatedDate": "2026-02-07T04:20:52",
+      "owner": "Daniel Casey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9198.1,
+      "description": "There technology total these."
+    },
+    {
+      "id": "8ea6623a-f16b-47a0-a437-9e976e72ea39",
+      "name": "User-centric systematic framework 10",
+      "status": "Inactive",
+      "createdDate": "2026-01-20T22:01:06",
+      "updatedDate": "2026-01-28T03:01:21",
+      "owner": "Andrea Gardner",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1556.27,
+      "description": "Hard him measure should."
+    },
+    {
+      "id": "e1d46420-3adb-4b6e-945d-616e38b7427b",
+      "name": "Digitized bifurcated portal 11",
+      "status": "Pending",
+      "createdDate": "2025-04-05T23:57:12",
+      "updatedDate": "2026-01-31T23:28:19",
+      "owner": "Rebecca Wolfe",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9316.14,
+      "description": "Sport after above physical across blood."
+    },
+    {
+      "id": "c2d648e7-235d-4efb-ae9f-2fe09596a294",
+      "name": "Mandatory high-level access 12",
+      "status": "Active",
+      "createdDate": "2025-05-09T15:37:25",
+      "updatedDate": "2026-01-26T06:38:50",
+      "owner": "Nicole Middleton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3900.55,
+      "description": "Begin shoulder growth season year Mr."
+    },
+    {
+      "id": "7dda7777-3472-4874-9f30-d7ebd607efa4",
+      "name": "Multi-tiered heuristic encryption 13",
+      "status": "Active",
+      "createdDate": "2025-09-29T12:21:14",
+      "updatedDate": "2026-01-19T10:09:22",
+      "owner": "Stefanie Velasquez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 719.45,
+      "description": "Begin least seven."
+    },
+    {
+      "id": "c910cb4d-99af-499a-b1e9-7f8e6ff5c479",
+      "name": "Cloned disintermediate encoding 14",
+      "status": "Completed",
+      "createdDate": "2025-04-07T11:55:41",
+      "updatedDate": "2026-02-01T13:36:46",
+      "owner": "Billy Santos",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1798.64,
+      "description": "News tax hundred place."
+    },
+    {
+      "id": "a989a06e-f362-4221-ac9c-e16b1fc728bb",
+      "name": "Self-enabling methodical success 15",
+      "status": "Inactive",
+      "createdDate": "2025-11-22T12:12:12",
+      "updatedDate": "2026-01-19T15:54:20",
+      "owner": "William Mason",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6609.93,
+      "description": "Morning team simple yourself thing."
+    },
+    {
+      "id": "1bd1dbad-1a51-4c5a-ba36-0a2abce7d4ae",
+      "name": "Stand-alone multimedia application 16",
+      "status": "Inactive",
+      "createdDate": "2025-09-26T21:55:16",
+      "updatedDate": "2026-01-26T22:06:02",
+      "owner": "Misty Carlson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7046.24,
+      "description": "Send street agreement modern size."
+    },
+    {
+      "id": "4a620726-6b22-457a-98cb-e9d7b46fbdbc",
+      "name": "Fundamental heuristic policy 17",
+      "status": "Active",
+      "createdDate": "2025-11-08T09:39:20",
+      "updatedDate": "2026-01-21T16:54:43",
+      "owner": "Nathaniel Carter",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3928.85,
+      "description": "Cold air wear card."
+    },
+    {
+      "id": "8bca2857-b4ea-4d4a-a4d9-4ee2cd086a30",
+      "name": "Front-line national customer loyalty 18",
+      "status": "Inactive",
+      "createdDate": "2026-01-01T10:24:45",
+      "updatedDate": "2026-01-27T22:42:03",
+      "owner": "Tracy Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4589.57,
+      "description": "Road miss picture group right as fear."
+    },
+    {
+      "id": "ab9fcb24-fdf4-41a6-8f0d-08a2dfedaeaf",
+      "name": "Robust system-worthy attitude 19",
+      "status": "Active",
+      "createdDate": "2025-11-30T06:50:37",
+      "updatedDate": "2026-01-19T14:25:54",
+      "owner": "Nicole Jenkins",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4487.98,
+      "description": "Magazine mission simply cost particular tax media."
+    },
+    {
+      "id": "d16184bc-73bd-41ba-bac4-e92208183d1a",
+      "name": "Integrated multimedia info-mediaries 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-23T16:55:07",
+      "updatedDate": "2026-02-08T03:13:23",
+      "owner": "Matthew Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6320.96,
+      "description": "Interesting create address."
+    },
+    {
+      "id": "a37b6914-0047-4189-ba48-7ba5b3a89e16",
+      "name": "Secured multi-tasking model 21",
+      "status": "Completed",
+      "createdDate": "2025-08-08T15:28:59",
+      "updatedDate": "2026-02-06T14:40:38",
+      "owner": "Allison Turner",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1190.3,
+      "description": "Medical simply public threat major."
+    },
+    {
+      "id": "ce221e07-447d-4696-bf4c-93b205faa3ac",
+      "name": "Multi-layered fault-tolerant ability 22",
+      "status": "Active",
+      "createdDate": "2026-01-31T06:53:42",
+      "updatedDate": "2026-02-13T07:52:32",
+      "owner": "Stephanie Calderon",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5792.34,
+      "description": "Special price but environment."
+    },
+    {
+      "id": "9a260bdc-05dd-4c45-81b0-03593d39668a",
+      "name": "Automated intermediate neural-net 23",
+      "status": "Completed",
+      "createdDate": "2025-05-09T23:55:28",
+      "updatedDate": "2026-01-28T01:44:28",
+      "owner": "Michael Elliott",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8818.49,
+      "description": "Start computer society free adult."
+    },
+    {
+      "id": "fbe8df5c-4729-43d4-8ccd-d618d477a4c0",
+      "name": "Public-key solution-oriented support 24",
+      "status": "Active",
+      "createdDate": "2025-10-10T21:37:03",
+      "updatedDate": "2026-02-13T18:09:29",
+      "owner": "Gina Peters",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7833.05,
+      "description": "Opportunity bag lawyer own pull."
+    },
+    {
+      "id": "e0db3d3c-a3e5-41ff-9233-52321ad2daa6",
+      "name": "Switchable 5thgeneration concept 25",
+      "status": "Inactive",
+      "createdDate": "2025-08-20T16:16:46",
+      "updatedDate": "2026-01-22T11:27:28",
+      "owner": "Mandy Miller",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1970.0,
+      "description": "Show above low."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

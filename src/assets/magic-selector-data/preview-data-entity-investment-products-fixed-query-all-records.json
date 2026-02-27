@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-all-records",
+  "totalCount": 102,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "7ae6c5f2-ce35-4830-bf8f-c15cf917136e",
+      "name": "Digitized logistical archive 1",
+      "status": "Pending",
+      "createdDate": "2026-01-15T06:00:32",
+      "updatedDate": "2026-02-15T15:20:37",
+      "owner": "Blake Taylor",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4743.01,
+      "description": "Beat off kitchen any."
+    },
+    {
+      "id": "f63a4355-0589-46a6-b0a7-b19346c096fc",
+      "name": "Automated maximized monitoring 2",
+      "status": "Inactive",
+      "createdDate": "2025-03-10T09:44:47",
+      "updatedDate": "2026-02-06T21:09:28",
+      "owner": "Christy Murray",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4510.1,
+      "description": "Own against among say only television herself."
+    },
+    {
+      "id": "344f4208-7bd6-496a-9779-024ae24618a2",
+      "name": "Implemented stable functionalities 3",
+      "status": "Completed",
+      "createdDate": "2025-05-11T19:48:44",
+      "updatedDate": "2026-02-02T00:20:45",
+      "owner": "William Knight",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5682.15,
+      "description": "Tough collection unit president test majority hour."
+    },
+    {
+      "id": "e1714e6e-4e51-44b4-8dbb-b81d62f6870b",
+      "name": "Re-contextualized systematic model 4",
+      "status": "Inactive",
+      "createdDate": "2026-01-03T22:46:34",
+      "updatedDate": "2026-02-13T05:15:52",
+      "owner": "Steven Young",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5338.97,
+      "description": "Area guy professor break because."
+    },
+    {
+      "id": "41b1d922-78ab-4b74-9cff-2ef888a4847f",
+      "name": "Advanced cohesive neural-net 5",
+      "status": "Inactive",
+      "createdDate": "2025-03-14T13:34:34",
+      "updatedDate": "2026-01-30T06:35:09",
+      "owner": "Megan Martinez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6384.85,
+      "description": "Check behind artist."
+    },
+    {
+      "id": "e00320a1-1d26-41c4-ad10-b88b536012fe",
+      "name": "Synergized 24/7 interface 6",
+      "status": "Pending",
+      "createdDate": "2025-06-30T21:51:13",
+      "updatedDate": "2026-01-19T12:50:39",
+      "owner": "Anthony Swanson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1004.3,
+      "description": "Friend point often expect loss among everything."
+    },
+    {
+      "id": "c7cfa3b6-dfd3-4d39-a1b2-8a479dc6147a",
+      "name": "Proactive background info-mediaries 7",
+      "status": "Pending",
+      "createdDate": "2025-08-25T03:45:54",
+      "updatedDate": "2026-01-22T18:32:31",
+      "owner": "Brian Campbell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7653.83,
+      "description": "Though think theory."
+    },
+    {
+      "id": "0a84f489-b279-4df6-8df2-0a529e255920",
+      "name": "Ameliorated context-sensitive conglomeration 8",
+      "status": "Pending",
+      "createdDate": "2025-07-30T15:20:04",
+      "updatedDate": "2026-01-19T11:54:09",
+      "owner": "Patricia Kramer",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6412.13,
+      "description": "Allow suffer send ten draw five make pay."
+    },
+    {
+      "id": "22dbe05c-8184-4ed9-b3fc-f91bb2b7f25b",
+      "name": "Organic multi-state middleware 9",
+      "status": "Pending",
+      "createdDate": "2026-02-12T07:20:40",
+      "updatedDate": "2026-01-19T16:09:02",
+      "owner": "Kristen Sellers MD",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9870.1,
+      "description": "Population media final child."
+    },
+    {
+      "id": "a5aa53fb-9090-4f4f-bebf-5324500a926a",
+      "name": "Secured foreground definition 10",
+      "status": "Active",
+      "createdDate": "2025-07-11T12:16:46",
+      "updatedDate": "2026-01-26T03:23:33",
+      "owner": "Donna Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6731.78,
+      "description": "Purpose break capital sea more line son report."
+    },
+    {
+      "id": "00150e9b-fd77-48a6-b2f9-5c8485b75ea9",
+      "name": "Optional optimal alliance 11",
+      "status": "Completed",
+      "createdDate": "2025-11-18T21:23:00",
+      "updatedDate": "2026-02-17T03:22:03",
+      "owner": "Richard Patterson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2046.56,
+      "description": "Manager force young action his yard."
+    },
+    {
+      "id": "ba0aa2b4-7985-4c3a-8a64-6a2879e81064",
+      "name": "Triple-buffered interactive protocol 12",
+      "status": "Inactive",
+      "createdDate": "2025-09-27T22:42:04",
+      "updatedDate": "2026-01-18T12:57:00",
+      "owner": "Kimberly Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7898.83,
+      "description": "That stay fall year trial."
+    },
+    {
+      "id": "40243352-9a4a-41cd-b686-89323bfe2d43",
+      "name": "Compatible content-based success 13",
+      "status": "Completed",
+      "createdDate": "2025-05-21T08:34:23",
+      "updatedDate": "2026-02-10T04:51:21",
+      "owner": "Anne Fox",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9350.06,
+      "description": "Scene small sell movement hair whom allow."
+    },
+    {
+      "id": "b7bd370e-4f33-4322-bf05-e0d9b4516633",
+      "name": "Centralized object-oriented productivity 14",
+      "status": "Completed",
+      "createdDate": "2025-10-31T17:50:34",
+      "updatedDate": "2026-01-24T19:37:16",
+      "owner": "Kristen George",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3098.33,
+      "description": "Against serve represent team skin collection."
+    },
+    {
+      "id": "cde3b640-b764-4b8a-a6bf-e0996e77ae73",
+      "name": "Exclusive zero administration pricing structure 15",
+      "status": "Inactive",
+      "createdDate": "2025-10-17T12:25:55",
+      "updatedDate": "2026-02-05T21:22:52",
+      "owner": "Dylan Hernandez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2575.14,
+      "description": "Conference myself reveal citizen letter remain bad unit."
+    },
+    {
+      "id": "57cb13e9-e594-4325-a225-e8246ef25a86",
+      "name": "Streamlined hybrid framework 16",
+      "status": "Inactive",
+      "createdDate": "2026-01-05T09:27:10",
+      "updatedDate": "2026-02-04T13:48:01",
+      "owner": "Allison Allison",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8546.15,
+      "description": "Career memory anything decide scene."
+    },
+    {
+      "id": "820c17e7-ecd9-4332-8770-7dbcc66254dd",
+      "name": "Expanded stable process improvement 17",
+      "status": "Completed",
+      "createdDate": "2025-11-17T22:40:48",
+      "updatedDate": "2026-01-24T02:56:31",
+      "owner": "Christine Palmer",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9801.17,
+      "description": "Interesting itself parent home offer."
+    },
+    {
+      "id": "0fb2886f-d90c-47b9-a02b-b69a23b4e070",
+      "name": "Public-key national collaboration 18",
+      "status": "Active",
+      "createdDate": "2025-12-14T11:28:23",
+      "updatedDate": "2026-02-04T18:20:38",
+      "owner": "Heather Vasquez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5930.73,
+      "description": "Never model responsibility single whom."
+    },
+    {
+      "id": "de882970-65fa-4841-8ee0-f9592b33a891",
+      "name": "Decentralized national frame 19",
+      "status": "Inactive",
+      "createdDate": "2025-12-10T22:05:02",
+      "updatedDate": "2026-02-10T21:35:04",
+      "owner": "Dean Cardenas",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2614.08,
+      "description": "Fact official worker discover doctor."
+    },
+    {
+      "id": "cc06dbcb-0f05-4bee-8285-f3217f81b003",
+      "name": "Public-key systemic artificial intelligence 20",
+      "status": "Pending",
+      "createdDate": "2025-10-01T06:13:51",
+      "updatedDate": "2026-01-30T15:47:05",
+      "owner": "Gerald Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4755.02,
+      "description": "Short rise edge story commercial woman dream."
+    },
+    {
+      "id": "d2055e98-ac68-4dc3-ac4b-9d60095bf6a5",
+      "name": "Configurable exuding Graphical User Interface 21",
+      "status": "Completed",
+      "createdDate": "2025-11-18T18:27:42",
+      "updatedDate": "2026-02-05T15:33:00",
+      "owner": "Charles Henson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4369.82,
+      "description": "Level sort parent group development note western."
+    },
+    {
+      "id": "ea877ad4-7143-4a9b-9a34-1653ecda1508",
+      "name": "Public-key even-keeled function 22",
+      "status": "Active",
+      "createdDate": "2026-02-14T16:53:56",
+      "updatedDate": "2026-01-25T12:19:12",
+      "owner": "Joe Spencer",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 202.6,
+      "description": "Station yourself in government offer."
+    },
+    {
+      "id": "15c5f868-9100-47cc-8918-c7e0a2487da0",
+      "name": "Function-based zero administration Graphical User Interface 23",
+      "status": "Active",
+      "createdDate": "2025-09-17T23:42:22",
+      "updatedDate": "2026-01-25T13:27:05",
+      "owner": "Lisa Le",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6663.44,
+      "description": "After able safe city question."
+    },
+    {
+      "id": "c547a1d4-ed8f-4e6a-9348-ff6923a160c6",
+      "name": "Cross-platform multi-state workforce 24",
+      "status": "Completed",
+      "createdDate": "2025-11-07T00:12:40",
+      "updatedDate": "2026-01-24T16:35:20",
+      "owner": "Lauren Dean",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9355.0,
+      "description": "Same point cut property remain action structure."
+    },
+    {
+      "id": "52981d8e-e242-424b-a049-ecd0e3fd1f5c",
+      "name": "Cross-group optimizing emulation 25",
+      "status": "Pending",
+      "createdDate": "2025-04-20T10:34:30",
+      "updatedDate": "2026-01-24T00:02:41",
+      "owner": "Elizabeth Ward",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1159.8,
+      "description": "Significant stock they call current speak American."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

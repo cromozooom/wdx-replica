@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 850,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "0f75decb-7cf7-41f8-bd19-c7fe4cda503c",
+      "name": "Devolved impactful application 1",
+      "status": "Completed",
+      "createdDate": "2025-06-14T04:25:53",
+      "updatedDate": "2026-02-09T11:31:08",
+      "owner": "Robert Stewart",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2086.98,
+      "description": "Expect health light."
+    },
+    {
+      "id": "6713a1f4-3f88-47d2-a375-23d77720cbff",
+      "name": "Streamlined high-level flexibility 2",
+      "status": "Inactive",
+      "createdDate": "2025-08-04T20:11:48",
+      "updatedDate": "2026-01-19T11:30:27",
+      "owner": "Lauren Mendez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4113.51,
+      "description": "Republican three approach position."
+    },
+    {
+      "id": "8b5b696a-366b-470f-8080-50d4a74be2b8",
+      "name": "Optional asymmetric collaboration 3",
+      "status": "Completed",
+      "createdDate": "2026-01-17T12:35:46",
+      "updatedDate": "2026-02-09T01:52:07",
+      "owner": "Michael Baker",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2695.01,
+      "description": "Music here should image."
+    },
+    {
+      "id": "5ceba8f2-3a64-41e7-a157-eb584b733e06",
+      "name": "Stand-alone motivating installation 4",
+      "status": "Active",
+      "createdDate": "2025-03-09T11:35:20",
+      "updatedDate": "2026-02-08T22:55:16",
+      "owner": "Jeffery Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8179.72,
+      "description": "Easy offer reveal step fill."
+    },
+    {
+      "id": "f9127db2-87a7-4f8a-b4f7-ed5134c420fb",
+      "name": "Intuitive demand-driven approach 5",
+      "status": "Pending",
+      "createdDate": "2025-05-18T19:47:35",
+      "updatedDate": "2026-01-29T20:30:19",
+      "owner": "Tara Lin",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4258.12,
+      "description": "Join spring great agency hospital mother."
+    },
+    {
+      "id": "89682464-0efa-4890-bfbb-ac5920650684",
+      "name": "Digitized radical website 6",
+      "status": "Completed",
+      "createdDate": "2026-02-15T15:06:29",
+      "updatedDate": "2026-01-19T06:04:11",
+      "owner": "Anna Fields",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3373.18,
+      "description": "Begin west lot compare soldier country."
+    },
+    {
+      "id": "b245b42a-bf89-46ff-b62e-4120c28cf263",
+      "name": "Front-line heuristic open architecture 7",
+      "status": "Inactive",
+      "createdDate": "2025-03-07T09:18:52",
+      "updatedDate": "2026-02-06T15:28:03",
+      "owner": "Shannon May",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8352.62,
+      "description": "Response huge near then around partner per."
+    },
+    {
+      "id": "489cfaef-3db8-4d9e-8525-266a4e3a02ca",
+      "name": "Networked bifurcated conglomeration 8",
+      "status": "Pending",
+      "createdDate": "2025-08-28T09:51:59",
+      "updatedDate": "2026-02-17T07:50:37",
+      "owner": "Jody Ward",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2217.46,
+      "description": "High seven subject."
+    },
+    {
+      "id": "a565bdf7-aaa8-4d77-bf83-4da9de3662e5",
+      "name": "Progressive human-resource methodology 9",
+      "status": "Active",
+      "createdDate": "2025-12-05T13:38:16",
+      "updatedDate": "2026-02-11T12:16:35",
+      "owner": "Steven Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5731.3,
+      "description": "Hit occur cultural way unit process."
+    },
+    {
+      "id": "e0e1ae67-6d0b-4eb3-8b94-3969602cf963",
+      "name": "Open-source interactive hierarchy 10",
+      "status": "Completed",
+      "createdDate": "2025-03-27T02:54:45",
+      "updatedDate": "2026-02-01T02:38:00",
+      "owner": "Tina Carey",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6141.78,
+      "description": "Investment follow recognize animal."
+    },
+    {
+      "id": "2a2cad27-e939-4993-a785-93211cdbe950",
+      "name": "De-engineered client-driven open system 11",
+      "status": "Active",
+      "createdDate": "2025-12-04T15:46:47",
+      "updatedDate": "2026-01-24T04:32:19",
+      "owner": "Valerie Thompson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 653.45,
+      "description": "Heavy thought among cut kid start character."
+    },
+    {
+      "id": "a8ca805d-60fa-47e1-84ca-35726898f916",
+      "name": "Function-based web-enabled service-desk 12",
+      "status": "Pending",
+      "createdDate": "2025-06-18T05:45:33",
+      "updatedDate": "2026-01-24T10:50:58",
+      "owner": "Shirley Huerta",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 886.32,
+      "description": "Study factor process west consumer."
+    },
+    {
+      "id": "be92e177-ed59-40bf-9301-60a7e8e2cf4d",
+      "name": "Proactive object-oriented intranet 13",
+      "status": "Active",
+      "createdDate": "2025-04-23T12:35:01",
+      "updatedDate": "2026-02-09T23:52:43",
+      "owner": "Anthony Blair",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 725.04,
+      "description": "Conference mention not."
+    },
+    {
+      "id": "70455c92-7302-4a90-a745-855e35e76fb4",
+      "name": "Up-sized stable methodology 14",
+      "status": "Inactive",
+      "createdDate": "2025-12-22T09:17:04",
+      "updatedDate": "2026-02-10T11:07:57",
+      "owner": "Tammy Lewis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2138.35,
+      "description": "Catch draw ask imagine adult."
+    },
+    {
+      "id": "45f5517f-c48a-44ba-9fdf-80ae8ac491d6",
+      "name": "Reduced actuating definition 15",
+      "status": "Completed",
+      "createdDate": "2025-04-17T20:40:27",
+      "updatedDate": "2026-02-04T11:10:05",
+      "owner": "Megan Hale",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2996.96,
+      "description": "We truth help control."
+    },
+    {
+      "id": "d4c7a28a-20cb-43ba-8d09-c8d44256586b",
+      "name": "Open-architected local application 16",
+      "status": "Completed",
+      "createdDate": "2025-09-08T06:47:59",
+      "updatedDate": "2026-02-01T17:37:24",
+      "owner": "Patricia Lawrence",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1320.63,
+      "description": "Skill and different look lay."
+    },
+    {
+      "id": "0fff8c56-f6fb-4f9a-9e24-b7b42aa5b461",
+      "name": "Quality-focused zero-defect initiative 17",
+      "status": "Completed",
+      "createdDate": "2025-06-08T17:38:17",
+      "updatedDate": "2026-01-24T04:33:52",
+      "owner": "Carolyn Peterson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9902.65,
+      "description": "Lose project interesting position never need."
+    },
+    {
+      "id": "929f0c7e-ea3d-4f08-b16e-169ec74ddec4",
+      "name": "Profit-focused optimizing software 18",
+      "status": "Active",
+      "createdDate": "2026-01-24T18:54:18",
+      "updatedDate": "2026-01-27T20:53:30",
+      "owner": "Ryan Silva",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9097.79,
+      "description": "Expert wear seat charge beat one."
+    },
+    {
+      "id": "c6e02f86-a3fa-42b9-8a34-e73a16344d04",
+      "name": "Persistent neutral hardware 19",
+      "status": "Inactive",
+      "createdDate": "2025-03-10T22:56:33",
+      "updatedDate": "2026-01-21T06:10:34",
+      "owner": "Mrs. Taylor Best",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8228.33,
+      "description": "Education pull deep toward."
+    },
+    {
+      "id": "b3c2a036-1ccc-4962-b288-5c5105141463",
+      "name": "Future-proofed zero-defect projection 20",
+      "status": "Pending",
+      "createdDate": "2025-06-08T09:31:06",
+      "updatedDate": "2026-02-03T21:40:40",
+      "owner": "Veronica Paul",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8772.08,
+      "description": "Everybody loss seat."
+    },
+    {
+      "id": "e2c8f568-a163-4542-bbb2-ec31c30ea1da",
+      "name": "Ergonomic hybrid encryption 21",
+      "status": "Inactive",
+      "createdDate": "2026-01-02T18:53:27",
+      "updatedDate": "2026-01-20T14:03:36",
+      "owner": "Carla Burnett",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1641.27,
+      "description": "She meeting suffer service program."
+    },
+    {
+      "id": "3faa47be-3738-4ded-9cbf-9243803be3e8",
+      "name": "Devolved upward-trending synergy 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-22T05:12:44",
+      "updatedDate": "2026-01-27T08:35:42",
+      "owner": "Alexa Grant",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2633.18,
+      "description": "Teach can war town finally."
+    },
+    {
+      "id": "094e8cd3-3521-419c-b0a7-f5dc8048eb50",
+      "name": "Team-oriented leadingedge protocol 23",
+      "status": "Pending",
+      "createdDate": "2025-04-10T18:41:41",
+      "updatedDate": "2026-02-12T02:30:30",
+      "owner": "Amber Wagner",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7301.15,
+      "description": "Culture at risk total medical chance."
+    },
+    {
+      "id": "6b369566-efcf-427a-9b59-9a241365c192",
+      "name": "De-engineered intangible policy 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-04T01:52:40",
+      "updatedDate": "2026-02-11T13:37:18",
+      "owner": "Elizabeth Mack",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1472.93,
+      "description": "Some dinner seem technology."
+    },
+    {
+      "id": "c4f1dcbd-d63c-4728-87bb-851af7b217e0",
+      "name": "Quality-focused stable initiative 25",
+      "status": "Active",
+      "createdDate": "2025-05-28T23:07:05",
+      "updatedDate": "2026-02-11T10:15:20",
+      "owner": "Larry Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5980.96,
+      "description": "Remember she box pattern."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

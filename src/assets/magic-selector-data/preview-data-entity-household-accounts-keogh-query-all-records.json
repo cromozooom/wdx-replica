@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-all-records",
+  "totalCount": 195,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "331267f1-6036-4c6f-b180-e24f7831c7d4",
+      "name": "Future-proofed full-range structure 1",
+      "status": "Inactive",
+      "createdDate": "2025-10-08T06:32:16",
+      "updatedDate": "2026-02-03T17:05:25",
+      "owner": "William Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4239.76,
+      "description": "Think couple eat."
+    },
+    {
+      "id": "b20470d2-e98c-43f3-ba9d-f61631088be3",
+      "name": "Horizontal human-resource software 2",
+      "status": "Pending",
+      "createdDate": "2025-10-13T22:48:45",
+      "updatedDate": "2026-01-22T19:49:24",
+      "owner": "Heather Garcia",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2593.98,
+      "description": "Maybe share into particular grow."
+    },
+    {
+      "id": "a7828122-08ea-48e6-90c7-5cddd5c655f7",
+      "name": "Compatible 24/7 orchestration 3",
+      "status": "Inactive",
+      "createdDate": "2025-11-02T05:39:58",
+      "updatedDate": "2026-01-28T19:22:50",
+      "owner": "Kristy Thomas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8699.63,
+      "description": "Sit determine language above woman push."
+    },
+    {
+      "id": "736c37fd-4ccd-4051-848a-9405e50ce479",
+      "name": "Extended 5thgeneration knowledge user 4",
+      "status": "Pending",
+      "createdDate": "2025-11-15T01:50:39",
+      "updatedDate": "2026-02-06T08:47:09",
+      "owner": "Jennifer Collins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 851.93,
+      "description": "Seek moment reveal difficult."
+    },
+    {
+      "id": "77c002fc-e5a1-4ced-82a9-197f572956b3",
+      "name": "Cross-group scalable firmware 5",
+      "status": "Completed",
+      "createdDate": "2025-07-30T15:57:06",
+      "updatedDate": "2026-02-11T08:47:53",
+      "owner": "Eric Collins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2090.02,
+      "description": "Painting official others officer."
+    },
+    {
+      "id": "57136c83-dc8b-43aa-85e1-4930188cf8ca",
+      "name": "Organized context-sensitive system engine 6",
+      "status": "Pending",
+      "createdDate": "2025-06-13T11:43:04",
+      "updatedDate": "2026-02-08T04:36:12",
+      "owner": "Sandra Lamb",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3306.68,
+      "description": "Popular book board magazine cultural quality."
+    },
+    {
+      "id": "c0dc1b2e-8455-4e96-bfac-a4dabd6587b4",
+      "name": "Innovative grid-enabled instruction set 7",
+      "status": "Pending",
+      "createdDate": "2025-08-22T21:26:13",
+      "updatedDate": "2026-02-08T00:45:53",
+      "owner": "Jason Ferguson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6198.65,
+      "description": "Since yes real first mean court join."
+    },
+    {
+      "id": "dde52c1e-2432-442f-8fdf-c031ab9730f2",
+      "name": "Function-based fault-tolerant ability 8",
+      "status": "Active",
+      "createdDate": "2025-06-18T05:06:01",
+      "updatedDate": "2026-02-09T18:34:05",
+      "owner": "Zachary Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8403.84,
+      "description": "Something control once prevent."
+    },
+    {
+      "id": "7bf9137b-cde6-44ef-b8e1-1b84970b512a",
+      "name": "Switchable national definition 9",
+      "status": "Completed",
+      "createdDate": "2025-05-03T23:15:35",
+      "updatedDate": "2026-02-05T08:32:13",
+      "owner": "Katherine Waters",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1448.72,
+      "description": "Maintain region any professor protect program either."
+    },
+    {
+      "id": "b9667223-cf08-45d0-ac0b-6dea1f49e731",
+      "name": "Streamlined 4thgeneration artificial intelligence 10",
+      "status": "Active",
+      "createdDate": "2025-06-04T12:21:58",
+      "updatedDate": "2026-01-26T02:21:41",
+      "owner": "Amy Weber",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1815.87,
+      "description": "Before believe Democrat person."
+    },
+    {
+      "id": "fe1c1397-d39d-48b6-8069-4d18f113bbc4",
+      "name": "Reactive motivating pricing structure 11",
+      "status": "Pending",
+      "createdDate": "2025-08-30T06:19:50",
+      "updatedDate": "2026-01-20T15:08:05",
+      "owner": "Jenna Bass",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4590.4,
+      "description": "Science collection which one hundred indeed same."
+    },
+    {
+      "id": "2d576542-351c-4676-bb21-36370ed8f642",
+      "name": "Fully-configurable didactic moderator 12",
+      "status": "Completed",
+      "createdDate": "2025-12-06T09:10:18",
+      "updatedDate": "2026-01-20T14:01:46",
+      "owner": "Taylor Carson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 520.15,
+      "description": "Difficult approach eat green."
+    },
+    {
+      "id": "53cc7e87-291a-4d47-acc7-4dddafa1e459",
+      "name": "Virtual explicit methodology 13",
+      "status": "Inactive",
+      "createdDate": "2026-01-28T19:23:07",
+      "updatedDate": "2026-02-07T16:50:10",
+      "owner": "Roberto Jones",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8958.06,
+      "description": "Cultural page score commercial possible certainly role."
+    },
+    {
+      "id": "f4bf6b67-ba43-40a5-b330-e3f4138c712a",
+      "name": "Stand-alone exuding application 14",
+      "status": "Active",
+      "createdDate": "2025-04-13T01:32:57",
+      "updatedDate": "2026-01-23T06:02:13",
+      "owner": "Gabriella Thomas",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3724.72,
+      "description": "Listen reality child."
+    },
+    {
+      "id": "6f18f452-4f40-4f56-8ff8-24fa78b79e98",
+      "name": "Devolved bandwidth-monitored toolset 15",
+      "status": "Inactive",
+      "createdDate": "2025-04-05T19:35:38",
+      "updatedDate": "2026-02-14T15:15:52",
+      "owner": "Stephanie Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9284.92,
+      "description": "Agree contain above director."
+    },
+    {
+      "id": "a186613f-a15a-47c7-822d-2d15a999b2f5",
+      "name": "Enterprise-wide systemic open system 16",
+      "status": "Completed",
+      "createdDate": "2025-06-28T22:02:21",
+      "updatedDate": "2026-02-04T17:28:30",
+      "owner": "Ann Orozco",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9932.74,
+      "description": "Business safe position dog choice."
+    },
+    {
+      "id": "e302cff6-3bea-4f58-b687-956cfa17787c",
+      "name": "Configurable logistical software 17",
+      "status": "Pending",
+      "createdDate": "2026-01-13T23:51:51",
+      "updatedDate": "2026-02-03T08:58:20",
+      "owner": "Allen Rodriguez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6515.88,
+      "description": "Mission they know institution."
+    },
+    {
+      "id": "c962d22b-d5ab-4603-8ee8-605b7a0921ad",
+      "name": "Synergistic bifurcated support 18",
+      "status": "Completed",
+      "createdDate": "2025-04-04T22:26:15",
+      "updatedDate": "2026-01-31T20:25:43",
+      "owner": "Theresa Steele",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2485.21,
+      "description": "Sister computer dog girl."
+    },
+    {
+      "id": "1064c0a1-d67c-4dc5-9368-53aac975afb0",
+      "name": "Down-sized foreground task-force 19",
+      "status": "Completed",
+      "createdDate": "2025-06-30T01:16:43",
+      "updatedDate": "2026-01-29T23:13:31",
+      "owner": "Amber Patel",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6261.55,
+      "description": "Before her teacher yes firm author agent."
+    },
+    {
+      "id": "782d5683-5c34-481e-8a2c-adcb76f39b55",
+      "name": "Devolved next generation workforce 20",
+      "status": "Completed",
+      "createdDate": "2025-04-14T13:39:16",
+      "updatedDate": "2026-02-10T07:06:54",
+      "owner": "Matthew Powell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2017.69,
+      "description": "This provide agency state."
+    },
+    {
+      "id": "48253db9-fef4-46f7-9b37-acffa0c529c3",
+      "name": "Profit-focused maximized Graphical User Interface 21",
+      "status": "Completed",
+      "createdDate": "2025-07-07T04:33:44",
+      "updatedDate": "2026-02-04T17:21:25",
+      "owner": "David Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3467.49,
+      "description": "So thought them beat voice society."
+    },
+    {
+      "id": "17fc6f75-b81d-4315-bb1d-9c79c60c2fbf",
+      "name": "Managed 5thgeneration standardization 22",
+      "status": "Inactive",
+      "createdDate": "2025-12-12T17:00:46",
+      "updatedDate": "2026-02-07T22:17:19",
+      "owner": "Hannah Smith",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8535.59,
+      "description": "Level close or your figure."
+    },
+    {
+      "id": "7823e2ce-a0f1-4508-8c1c-d262046ca4ac",
+      "name": "Reverse-engineered system-worthy benchmark 23",
+      "status": "Inactive",
+      "createdDate": "2025-04-13T08:39:24",
+      "updatedDate": "2026-02-03T11:39:41",
+      "owner": "Jacob Richardson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3646.54,
+      "description": "Discussion cost remain both work from."
+    },
+    {
+      "id": "39c97a41-17e1-466b-a5dd-6c5e6d307f02",
+      "name": "Organized mobile orchestration 24",
+      "status": "Inactive",
+      "createdDate": "2026-01-17T08:56:54",
+      "updatedDate": "2026-01-29T16:32:10",
+      "owner": "Brendan Rowe",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3014.09,
+      "description": "Movement before meeting find name."
+    },
+    {
+      "id": "8d54da7e-be58-4016-ac88-5998b1638983",
+      "name": "Team-oriented non-volatile leverage 25",
+      "status": "Completed",
+      "createdDate": "2025-06-02T17:13:17",
+      "updatedDate": "2026-02-07T06:57:04",
+      "owner": "Lisa Salinas",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3571.29,
+      "description": "Speak value never fund."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-all-records",
+  "totalCount": 1128,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "9ff5dbe9-556f-4e7c-803b-dac2e8eb3bbf",
+      "name": "User-friendly executive product 1",
+      "status": "Active",
+      "createdDate": "2025-07-07T07:59:30",
+      "updatedDate": "2026-02-06T02:36:47",
+      "owner": "Jason White",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3387.16,
+      "description": "We use happy half."
+    },
+    {
+      "id": "aa53c6ef-01f3-4197-800e-69588cc825f7",
+      "name": "Assimilated contextually-based middleware 2",
+      "status": "Pending",
+      "createdDate": "2025-09-27T05:48:09",
+      "updatedDate": "2026-02-08T22:02:13",
+      "owner": "Angela Boyd",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8428.89,
+      "description": "Adult large certain woman goal."
+    },
+    {
+      "id": "509cd5ac-6e70-4101-aeeb-da81f8469173",
+      "name": "Switchable explicit strategy 3",
+      "status": "Active",
+      "createdDate": "2025-09-16T14:28:10",
+      "updatedDate": "2026-02-06T04:56:59",
+      "owner": "Eric Reyes",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 947.56,
+      "description": "Almost necessary report institution adult."
+    },
+    {
+      "id": "d54457fe-b710-44f8-9077-a004e40ff05e",
+      "name": "Universal demand-driven flexibility 4",
+      "status": "Pending",
+      "createdDate": "2025-09-07T06:27:43",
+      "updatedDate": "2026-01-22T16:03:59",
+      "owner": "Dan Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3832.07,
+      "description": "Organization southern eat."
+    },
+    {
+      "id": "927ee426-e077-4df3-a4d5-0ac202cc0b3a",
+      "name": "Total reciprocal product 5",
+      "status": "Pending",
+      "createdDate": "2025-04-20T17:39:17",
+      "updatedDate": "2026-01-22T15:19:57",
+      "owner": "Gary Bryant",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 276.58,
+      "description": "Your particularly support weight."
+    },
+    {
+      "id": "619c469a-d962-44a8-8e23-8eaafd5c0802",
+      "name": "Sharable hybrid toolset 6",
+      "status": "Completed",
+      "createdDate": "2025-11-30T19:15:26",
+      "updatedDate": "2026-01-21T23:17:12",
+      "owner": "Jennifer Sims",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6219.99,
+      "description": "Election impact always trial."
+    },
+    {
+      "id": "7e45a27f-0419-487e-928f-bcbe59efd69b",
+      "name": "Balanced 5thgeneration algorithm 7",
+      "status": "Active",
+      "createdDate": "2025-06-12T21:17:49",
+      "updatedDate": "2026-01-25T16:05:52",
+      "owner": "Shawn Figueroa",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8331.04,
+      "description": "Stuff level wrong yeah expect five cup."
+    },
+    {
+      "id": "fa126caa-9b79-4f03-b78f-323b014356b5",
+      "name": "Open-source executive ability 8",
+      "status": "Completed",
+      "createdDate": "2025-07-10T17:05:21",
+      "updatedDate": "2026-01-21T03:55:04",
+      "owner": "Stephanie Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4635.4,
+      "description": "Teacher expect should."
+    },
+    {
+      "id": "99c0bf25-8880-42a9-981f-7e0a16a10b34",
+      "name": "Enhanced executive approach 9",
+      "status": "Pending",
+      "createdDate": "2025-05-13T23:04:08",
+      "updatedDate": "2026-02-10T01:22:04",
+      "owner": "Christopher Romero",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 425.21,
+      "description": "Week mean what."
+    },
+    {
+      "id": "ec7380e1-ea56-4bd1-8e03-0811b89c7c23",
+      "name": "Expanded demand-driven matrix 10",
+      "status": "Pending",
+      "createdDate": "2026-01-23T12:46:44",
+      "updatedDate": "2026-01-22T01:20:10",
+      "owner": "Robin Bass",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9954.3,
+      "description": "Writer practice member."
+    },
+    {
+      "id": "fce8898a-21e0-419b-b261-659bbef1f069",
+      "name": "Public-key incremental access 11",
+      "status": "Pending",
+      "createdDate": "2025-05-24T21:29:50",
+      "updatedDate": "2026-02-07T23:06:43",
+      "owner": "James Cortez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3061.23,
+      "description": "Source natural customer various."
+    },
+    {
+      "id": "906d1fd8-8d0f-49d9-96e9-205975f7e1a3",
+      "name": "Diverse secondary framework 12",
+      "status": "Pending",
+      "createdDate": "2025-10-06T19:50:24",
+      "updatedDate": "2026-01-30T20:51:16",
+      "owner": "Angela Guzman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2859.78,
+      "description": "Particularly office skill."
+    },
+    {
+      "id": "3cd7a0dc-5aca-48ff-9c36-8162185122be",
+      "name": "Devolved didactic open architecture 13",
+      "status": "Active",
+      "createdDate": "2026-02-11T19:04:25",
+      "updatedDate": "2026-02-09T20:52:29",
+      "owner": "Michael Sharp",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3385.56,
+      "description": "According side pull dream threat."
+    },
+    {
+      "id": "e8e7d3e5-aec6-4618-9c60-a9f6562529c0",
+      "name": "Total static methodology 14",
+      "status": "Inactive",
+      "createdDate": "2025-07-31T09:18:40",
+      "updatedDate": "2026-02-07T00:44:46",
+      "owner": "Charles Snyder",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3583.66,
+      "description": "Out employee standard type."
+    },
+    {
+      "id": "e6f2e24b-ae93-49ef-8bd0-7a9c484898f0",
+      "name": "Seamless explicit function 15",
+      "status": "Active",
+      "createdDate": "2026-01-08T21:08:07",
+      "updatedDate": "2026-02-15T16:23:22",
+      "owner": "Victoria Curtis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2244.21,
+      "description": "Perhaps care thought day owner."
+    },
+    {
+      "id": "5d3d800b-e831-4c6a-8e09-da676b74dc35",
+      "name": "Centralized solution-oriented benchmark 16",
+      "status": "Active",
+      "createdDate": "2025-07-29T16:47:38",
+      "updatedDate": "2026-02-11T00:38:13",
+      "owner": "Traci Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1033.04,
+      "description": "Military summer expect modern."
+    },
+    {
+      "id": "1b376d9b-96d0-4dc6-ad0e-f3c216059aa9",
+      "name": "Face-to-face systematic attitude 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-09T23:29:11",
+      "updatedDate": "2026-02-04T22:28:05",
+      "owner": "Lauren Clark",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8751.49,
+      "description": "Exist once against fall statement sing wrong."
+    },
+    {
+      "id": "846e7fcf-ec89-44a9-bb8b-253f793cedad",
+      "name": "Devolved tangible initiative 18",
+      "status": "Pending",
+      "createdDate": "2025-05-09T15:43:58",
+      "updatedDate": "2026-01-31T08:08:50",
+      "owner": "Rebecca Hernandez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5913.5,
+      "description": "Live right score onto indicate laugh."
+    },
+    {
+      "id": "8e7e9778-128e-4b2e-8b82-c0da48361fab",
+      "name": "Vision-oriented attitude-oriented hub 19",
+      "status": "Completed",
+      "createdDate": "2025-10-15T08:54:17",
+      "updatedDate": "2026-01-23T16:25:36",
+      "owner": "William Hahn",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4241.09,
+      "description": "Situation people why husband their."
+    },
+    {
+      "id": "27ea72bb-42f2-4b70-a807-d1b06edfd9ac",
+      "name": "Balanced 6thgeneration focus group 20",
+      "status": "Pending",
+      "createdDate": "2026-01-16T18:39:06",
+      "updatedDate": "2026-01-19T15:07:03",
+      "owner": "Jennifer Williams",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3592.81,
+      "description": "Least we speech thing book including."
+    },
+    {
+      "id": "99a276d3-2c95-4417-9b2f-8112811db9e1",
+      "name": "Optional transitional leverage 21",
+      "status": "Pending",
+      "createdDate": "2025-05-10T04:53:41",
+      "updatedDate": "2026-02-11T03:22:21",
+      "owner": "Heidi Williams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2742.9,
+      "description": "Way guy create son example may already doctor."
+    },
+    {
+      "id": "23eb7766-997a-4baa-a369-00d4e987885d",
+      "name": "Enterprise-wide 6thgeneration instruction set 22",
+      "status": "Inactive",
+      "createdDate": "2025-06-14T21:08:34",
+      "updatedDate": "2026-01-23T13:57:51",
+      "owner": "Casey Harris",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1476.41,
+      "description": "Generation hundred strategy campaign minute write study."
+    },
+    {
+      "id": "0dbf0468-bfcd-4da3-81bc-a895341a59ec",
+      "name": "Virtual mission-critical leverage 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-13T23:36:17",
+      "updatedDate": "2026-02-10T13:37:04",
+      "owner": "Mrs. Jennifer Lawrence",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7068.95,
+      "description": "Ball hand tend."
+    },
+    {
+      "id": "5e09c3ca-0f90-4f74-9234-cb7d836b2408",
+      "name": "Reduced stable archive 24",
+      "status": "Pending",
+      "createdDate": "2025-11-27T00:02:10",
+      "updatedDate": "2026-01-21T12:07:42",
+      "owner": "Bridget White",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3288.18,
+      "description": "Possible shake close."
+    },
+    {
+      "id": "f20a4684-48f4-4bf4-bb1c-0f1ad5964054",
+      "name": "Multi-layered mobile process improvement 25",
+      "status": "Active",
+      "createdDate": "2025-04-27T13:06:17",
+      "updatedDate": "2026-01-21T10:48:06",
+      "owner": "Jeffrey Edwards PhD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2291.43,
+      "description": "College model listen another assume seat daughter."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

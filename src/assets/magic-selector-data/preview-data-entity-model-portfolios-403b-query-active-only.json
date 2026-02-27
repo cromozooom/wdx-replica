@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-modelportfolio",
+  "queryId": "query-active-only",
+  "totalCount": 647,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "8b3d8c7f-847d-4cc6-9b79-88f54c9dffd1",
+      "name": "Pre-emptive mission-critical model 1",
+      "status": "Pending",
+      "createdDate": "2025-08-07T11:29:43",
+      "updatedDate": "2026-01-26T07:29:50",
+      "owner": "Philip Anderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9768.62,
+      "description": "Check see baby direction raise physical."
+    },
+    {
+      "id": "14ce3f72-5371-4a92-a97c-2d470fc9cacb",
+      "name": "Versatile background approach 2",
+      "status": "Inactive",
+      "createdDate": "2025-10-03T02:48:19",
+      "updatedDate": "2026-01-25T18:42:58",
+      "owner": "James Garcia",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 176.34,
+      "description": "Character real respond hold."
+    },
+    {
+      "id": "428efb10-8774-47e7-98df-54f6c8c40eb9",
+      "name": "Profound mission-critical system engine 3",
+      "status": "Inactive",
+      "createdDate": "2025-12-14T19:35:55",
+      "updatedDate": "2026-02-01T12:57:42",
+      "owner": "Michelle Price",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6824.67,
+      "description": "Police adult care."
+    },
+    {
+      "id": "e71a967b-1e1d-4af7-b6ea-85d27b88d625",
+      "name": "Progressive motivating challenge 4",
+      "status": "Completed",
+      "createdDate": "2026-01-02T11:56:28",
+      "updatedDate": "2026-02-03T01:25:52",
+      "owner": "Marcus Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7466.38,
+      "description": "Station live especially space war this."
+    },
+    {
+      "id": "7e7a854a-f01c-4881-9424-300d25547276",
+      "name": "Front-line content-based definition 5",
+      "status": "Inactive",
+      "createdDate": "2025-11-12T06:43:22",
+      "updatedDate": "2026-02-13T01:02:34",
+      "owner": "Jamie Richardson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3503.18,
+      "description": "Happen expect card clear."
+    },
+    {
+      "id": "c056852b-5ee9-405b-ac46-4f8bb23d6d03",
+      "name": "Distributed empowering capability 6",
+      "status": "Inactive",
+      "createdDate": "2026-01-26T17:41:32",
+      "updatedDate": "2026-01-26T19:54:08",
+      "owner": "Margaret Harris",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7332.22,
+      "description": "Contain across today deep."
+    },
+    {
+      "id": "76730024-1dcb-4942-97d1-3b28a66b7834",
+      "name": "Universal context-sensitive core 7",
+      "status": "Completed",
+      "createdDate": "2025-11-06T16:50:02",
+      "updatedDate": "2026-02-10T14:04:15",
+      "owner": "Ian Vasquez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4146.87,
+      "description": "Attention many first moment rule general business might."
+    },
+    {
+      "id": "3627eccc-a744-45eb-9e1e-bce38d6b6ce3",
+      "name": "Fully-configurable systemic database 8",
+      "status": "Pending",
+      "createdDate": "2026-02-09T05:24:37",
+      "updatedDate": "2026-01-22T09:11:30",
+      "owner": "Melissa Brown",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 324.61,
+      "description": "Hard sometimes these what for clearly yet."
+    },
+    {
+      "id": "126d80e7-c0ec-40c8-89ae-3d7964dc344d",
+      "name": "Vision-oriented modular Graphic Interface 9",
+      "status": "Completed",
+      "createdDate": "2025-04-28T13:30:22",
+      "updatedDate": "2026-02-06T06:52:08",
+      "owner": "Dakota Todd",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5530.67,
+      "description": "Democrat arm minute difference attorney."
+    },
+    {
+      "id": "46590ae7-be1e-4b71-ab0f-86d60b72bd45",
+      "name": "Organized interactive artificial intelligence 10",
+      "status": "Pending",
+      "createdDate": "2025-09-13T06:29:33",
+      "updatedDate": "2026-01-23T11:29:25",
+      "owner": "Anna Johnson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7750.33,
+      "description": "Final career line condition bank measure."
+    },
+    {
+      "id": "be69a431-e558-4fbb-82e2-ad1cfe499d85",
+      "name": "Horizontal methodical database 11",
+      "status": "Completed",
+      "createdDate": "2026-02-01T10:17:57",
+      "updatedDate": "2026-02-14T16:15:19",
+      "owner": "Steven Beck",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7894.67,
+      "description": "Fact involve center program family challenge."
+    },
+    {
+      "id": "8bafc9c4-0ca1-4acb-a0f8-e2a683cf5347",
+      "name": "Enhanced attitude-oriented leverage 12",
+      "status": "Active",
+      "createdDate": "2025-10-04T15:17:28",
+      "updatedDate": "2026-01-27T01:56:20",
+      "owner": "Marcus Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5693.93,
+      "description": "Account third poor cause seek seat."
+    },
+    {
+      "id": "70b216f2-c240-4cb6-bf0a-2a629d164bb0",
+      "name": "Re-engineered mission-critical concept 13",
+      "status": "Active",
+      "createdDate": "2025-09-13T17:07:48",
+      "updatedDate": "2026-01-28T18:11:05",
+      "owner": "Jason Bryant",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4188.3,
+      "description": "Hold event kid."
+    },
+    {
+      "id": "0c3a2d9c-d5c2-4311-af5b-85dc6be97a94",
+      "name": "Function-based coherent implementation 14",
+      "status": "Pending",
+      "createdDate": "2025-05-11T02:29:39",
+      "updatedDate": "2026-01-28T06:03:21",
+      "owner": "Edward Cole",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6620.88,
+      "description": "Off follow political piece degree why her we."
+    },
+    {
+      "id": "b667d04d-0499-48dc-9eda-b461d96391c9",
+      "name": "Persistent zero administration extranet 15",
+      "status": "Inactive",
+      "createdDate": "2025-09-11T22:43:32",
+      "updatedDate": "2026-01-29T14:18:15",
+      "owner": "David Hansen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5835.71,
+      "description": "Experience its answer born society them."
+    },
+    {
+      "id": "5a564fa1-9829-4128-8bc9-01a20858b215",
+      "name": "Synergized optimizing intranet 16",
+      "status": "Pending",
+      "createdDate": "2025-11-11T11:33:17",
+      "updatedDate": "2026-01-22T16:11:05",
+      "owner": "Patricia Clark",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4433.24,
+      "description": "Mean house conference commercial particularly fine dinner speech."
+    },
+    {
+      "id": "c4f7fc56-4a00-4cb7-bd23-5850df9aee4e",
+      "name": "Persevering coherent artificial intelligence 17",
+      "status": "Active",
+      "createdDate": "2025-11-12T17:14:26",
+      "updatedDate": "2026-01-19T14:28:10",
+      "owner": "Adam Burke",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4552.02,
+      "description": "As kind know have away almost direction."
+    },
+    {
+      "id": "21b9b366-0f62-4cc1-b26e-f6a5f566bdbe",
+      "name": "Multi-lateral eco-centric alliance 18",
+      "status": "Inactive",
+      "createdDate": "2025-12-30T06:54:19",
+      "updatedDate": "2026-01-24T05:51:48",
+      "owner": "Jeffrey Nelson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6273.45,
+      "description": "Well subject president film section can."
+    },
+    {
+      "id": "68a66990-a053-4a65-a867-86d2850a86c9",
+      "name": "Customizable tertiary archive 19",
+      "status": "Completed",
+      "createdDate": "2025-07-25T06:59:29",
+      "updatedDate": "2026-01-19T09:13:18",
+      "owner": "Anita Green",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 375.89,
+      "description": "Training reach media choose."
+    },
+    {
+      "id": "063dac41-61b9-4aff-8bba-bdc6ee6b5773",
+      "name": "Switchable needs-based artificial intelligence 20",
+      "status": "Pending",
+      "createdDate": "2025-10-24T05:42:31",
+      "updatedDate": "2026-02-08T06:00:11",
+      "owner": "Sandra Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5276.55,
+      "description": "Where bar office heart poor professional kitchen."
+    },
+    {
+      "id": "c3ae11ae-e9df-45b5-b577-ee446e001399",
+      "name": "Ergonomic multi-state data-warehouse 21",
+      "status": "Inactive",
+      "createdDate": "2025-03-14T07:22:01",
+      "updatedDate": "2026-01-25T08:18:29",
+      "owner": "Sherry Gomez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4980.99,
+      "description": "Anything ten whole."
+    },
+    {
+      "id": "15c4d40f-05b5-4d6e-ba46-ac2f701d5709",
+      "name": "Polarized maximized data-warehouse 22",
+      "status": "Inactive",
+      "createdDate": "2025-09-13T18:20:23",
+      "updatedDate": "2026-01-28T04:01:33",
+      "owner": "Andrew Benitez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2540.93,
+      "description": "Month floor fire beautiful hold water."
+    },
+    {
+      "id": "dcff53c6-2aa3-46b2-ba66-b53172c1c1f4",
+      "name": "Seamless web-enabled methodology 23",
+      "status": "Completed",
+      "createdDate": "2025-02-20T12:20:53",
+      "updatedDate": "2026-02-17T01:48:01",
+      "owner": "Geoffrey Chan",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9895.08,
+      "description": "Action himself minute kid."
+    },
+    {
+      "id": "c002ec02-2889-4e2e-b76c-c13bb1a4154c",
+      "name": "Open-architected 5thgeneration website 24",
+      "status": "Pending",
+      "createdDate": "2025-09-27T05:38:05",
+      "updatedDate": "2026-01-18T18:40:55",
+      "owner": "Heather Townsend",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3389.81,
+      "description": "Without attack without eight account really fill."
+    },
+    {
+      "id": "62e3c82a-db36-4987-a216-df25a55adf25",
+      "name": "Function-based static productivity 25",
+      "status": "Inactive",
+      "createdDate": "2025-10-21T05:11:21",
+      "updatedDate": "2026-01-22T23:42:45",
+      "owner": "Cheyenne Singleton",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7435.25,
+      "description": "Land employee season top work energy."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-active-only",
+  "totalCount": 920,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a88f061f-5d11-43dd-a584-01ed7a33398e",
+      "name": "Team-oriented next generation product 1",
+      "status": "Inactive",
+      "createdDate": "2025-03-26T18:00:13",
+      "updatedDate": "2026-02-02T14:52:01",
+      "owner": "Natalie Buckley",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8599.79,
+      "description": "Worker six authority force culture do."
+    },
+    {
+      "id": "b24b1c58-a05d-405b-bb36-8bd3aee71f3b",
+      "name": "Enterprise-wide uniform website 2",
+      "status": "Completed",
+      "createdDate": "2025-11-09T09:50:26",
+      "updatedDate": "2026-01-31T23:09:14",
+      "owner": "Patrick Haynes",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3124.13,
+      "description": "Father reflect exist buy compare worry."
+    },
+    {
+      "id": "3e34afed-6c49-40aa-9c85-24b0d97611e8",
+      "name": "Versatile stable firmware 3",
+      "status": "Pending",
+      "createdDate": "2025-08-16T10:58:44",
+      "updatedDate": "2026-02-16T18:46:57",
+      "owner": "Justin Alvarez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3563.08,
+      "description": "Nice available health strategy mother."
+    },
+    {
+      "id": "a65efc87-430e-4af9-9691-504ab49af197",
+      "name": "Seamless methodical Local Area Network 4",
+      "status": "Inactive",
+      "createdDate": "2025-06-22T03:21:05",
+      "updatedDate": "2026-02-10T06:46:41",
+      "owner": "Diane Price",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8500.84,
+      "description": "Card fine suddenly break."
+    },
+    {
+      "id": "0580f83b-c8d8-40cb-9aed-85b6e0f0d3ce",
+      "name": "Multi-channeled 5thgeneration paradigm 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-04T17:59:18",
+      "updatedDate": "2026-02-13T08:38:38",
+      "owner": "Eric Clements",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4142.61,
+      "description": "Than dinner center poor agency amount very nature."
+    },
+    {
+      "id": "fe92d7cd-6e55-4a4c-af33-250bd22fd1d8",
+      "name": "Triple-buffered 24hour encoding 6",
+      "status": "Completed",
+      "createdDate": "2026-02-02T16:56:18",
+      "updatedDate": "2026-01-28T20:43:36",
+      "owner": "Kristen Martin",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3281.27,
+      "description": "Best pick begin score charge benefit."
+    },
+    {
+      "id": "01a4b1fe-9b54-49bc-a658-bb10f2bf1a7d",
+      "name": "Reduced context-sensitive methodology 7",
+      "status": "Active",
+      "createdDate": "2025-11-04T18:57:05",
+      "updatedDate": "2026-01-23T10:55:01",
+      "owner": "Jordan Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4836.28,
+      "description": "Might condition new cell me."
+    },
+    {
+      "id": "d591b545-6c66-43dd-b6e2-2db93cf106c5",
+      "name": "Configurable uniform task-force 8",
+      "status": "Pending",
+      "createdDate": "2026-01-31T08:55:47",
+      "updatedDate": "2026-02-15T11:03:34",
+      "owner": "Austin Barry",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5561.26,
+      "description": "Hundred option yes but take dog thought."
+    },
+    {
+      "id": "44c9b57e-3809-4d3b-9e69-d3f9ed567b35",
+      "name": "Expanded multimedia frame 9",
+      "status": "Completed",
+      "createdDate": "2025-03-04T12:00:55",
+      "updatedDate": "2026-02-15T15:17:59",
+      "owner": "Shelly Villanueva",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1798.29,
+      "description": "Note everyone picture address author house scientist security."
+    },
+    {
+      "id": "118e06a8-0ab0-4db9-9e45-e1604f3ef728",
+      "name": "Total content-based intranet 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-13T21:33:25",
+      "updatedDate": "2026-02-04T18:38:54",
+      "owner": "Stephanie Lopez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8884.57,
+      "description": "Wait station people seat."
+    },
+    {
+      "id": "210acc9e-eebe-4d7c-89f3-82e3efc5a0d1",
+      "name": "Public-key bifurcated utilization 11",
+      "status": "Pending",
+      "createdDate": "2025-08-12T16:06:40",
+      "updatedDate": "2026-01-27T06:49:06",
+      "owner": "Jessica Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7362.3,
+      "description": "Total surface news field question."
+    },
+    {
+      "id": "0deebd24-add6-4b42-99a0-16f4c4ff480a",
+      "name": "Adaptive secondary benchmark 12",
+      "status": "Pending",
+      "createdDate": "2025-11-28T06:18:07",
+      "updatedDate": "2026-02-07T10:17:42",
+      "owner": "Tony Harris",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1737.67,
+      "description": "Wear back final employee politics industry."
+    },
+    {
+      "id": "b58bdba9-9819-424e-8a87-e263063ddcd1",
+      "name": "Multi-tiered grid-enabled focus group 13",
+      "status": "Pending",
+      "createdDate": "2025-06-28T20:43:23",
+      "updatedDate": "2026-01-25T05:11:31",
+      "owner": "Cassandra Rodriguez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8956.08,
+      "description": "Series think kid level sing mention."
+    },
+    {
+      "id": "2f25a655-487b-44b5-b26c-5d2759cfc25c",
+      "name": "Inverse local solution 14",
+      "status": "Active",
+      "createdDate": "2026-01-14T06:54:57",
+      "updatedDate": "2026-02-10T17:21:37",
+      "owner": "Colleen Knight",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9009.24,
+      "description": "Would must authority this blue up."
+    },
+    {
+      "id": "3edd5c88-5d34-4f74-b13f-6c5a62638882",
+      "name": "Profit-focused system-worthy ability 15",
+      "status": "Pending",
+      "createdDate": "2026-01-27T12:58:44",
+      "updatedDate": "2026-01-29T04:04:18",
+      "owner": "Nicole Bush",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7766.97,
+      "description": "Particular accept among nor under thought."
+    },
+    {
+      "id": "1c6bcf0d-1928-4372-a807-8c7b1704e8ee",
+      "name": "Focused tertiary frame 16",
+      "status": "Pending",
+      "createdDate": "2025-11-12T00:41:49",
+      "updatedDate": "2026-01-22T13:23:06",
+      "owner": "Ronald Bailey",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5453.84,
+      "description": "Concern risk purpose test interest government."
+    },
+    {
+      "id": "2023220a-7909-4e6b-9f08-9c9c24ef3751",
+      "name": "User-friendly leadingedge circuit 17",
+      "status": "Completed",
+      "createdDate": "2025-07-02T22:06:51",
+      "updatedDate": "2026-02-16T19:25:01",
+      "owner": "Julie Herrera",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6571.08,
+      "description": "Interest fast just pattern eye total."
+    },
+    {
+      "id": "7c3c30ae-efc3-44fd-9901-cafa9bb9e23b",
+      "name": "Balanced encompassing core 18",
+      "status": "Active",
+      "createdDate": "2025-12-30T12:33:23",
+      "updatedDate": "2026-02-08T06:57:59",
+      "owner": "Brooke Vasquez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5447.69,
+      "description": "Option series crime far include third artist boy."
+    },
+    {
+      "id": "cbb8e86c-a589-48a3-b0a6-87e9a04b9e0d",
+      "name": "Implemented non-volatile matrix 19",
+      "status": "Completed",
+      "createdDate": "2025-11-17T20:50:23",
+      "updatedDate": "2026-01-31T12:38:03",
+      "owner": "Adrian Holland",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2965.29,
+      "description": "Popular share of activity system apply individual."
+    },
+    {
+      "id": "d85afd48-6e80-4e73-80c5-47975ef797d9",
+      "name": "Stand-alone regional task-force 20",
+      "status": "Inactive",
+      "createdDate": "2025-10-04T03:18:45",
+      "updatedDate": "2026-01-19T21:54:26",
+      "owner": "Courtney Rasmussen",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3499.37,
+      "description": "Throw situation word happen play each hear."
+    },
+    {
+      "id": "db82d81d-136a-4fdb-947d-6376adb31c4f",
+      "name": "Virtual grid-enabled parallelism 21",
+      "status": "Inactive",
+      "createdDate": "2025-11-26T15:49:28",
+      "updatedDate": "2026-02-15T01:33:55",
+      "owner": "John Novak",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2349.0,
+      "description": "Share thus speak general."
+    },
+    {
+      "id": "f2a99c54-47f3-4555-b02b-c2f557d3dea5",
+      "name": "Inverse heuristic knowledge user 22",
+      "status": "Pending",
+      "createdDate": "2025-11-17T00:17:07",
+      "updatedDate": "2026-02-04T19:44:28",
+      "owner": "Susan Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6314.09,
+      "description": "Fund edge democratic share nice report fly."
+    },
+    {
+      "id": "1e7389fd-c244-478d-aa7d-cdf275527ddd",
+      "name": "Pre-emptive human-resource methodology 23",
+      "status": "Active",
+      "createdDate": "2025-07-01T07:47:03",
+      "updatedDate": "2026-02-06T23:15:32",
+      "owner": "Ashley Stewart",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4264.85,
+      "description": "So evidence really rest."
+    },
+    {
+      "id": "c9213f26-2689-4810-8f72-85ff15ec88d0",
+      "name": "Up-sized impactful secured line 24",
+      "status": "Inactive",
+      "createdDate": "2025-07-05T10:40:21",
+      "updatedDate": "2026-01-18T17:03:57",
+      "owner": "Noah Sanchez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6000.42,
+      "description": "Song seat not conference."
+    },
+    {
+      "id": "1b99c967-a38c-405b-837e-0b3e2d5bb30a",
+      "name": "Pre-emptive web-enabled orchestration 25",
+      "status": "Active",
+      "createdDate": "2025-10-04T06:59:48",
+      "updatedDate": "2026-02-02T11:19:56",
+      "owner": "Jane Moore",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 767.08,
+      "description": "Game religious anything hotel money."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

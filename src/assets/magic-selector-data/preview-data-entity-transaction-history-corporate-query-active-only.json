@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-active-only",
+  "totalCount": 481,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "5d44cef2-8058-4236-b80e-a3d0aa047c7c",
+      "name": "Triple-buffered zero-defect hierarchy 1",
+      "status": "Completed",
+      "createdDate": "2025-07-26T18:07:35",
+      "updatedDate": "2026-01-22T06:19:10",
+      "owner": "Jesse Wilson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9262.57,
+      "description": "Late off all with writer."
+    },
+    {
+      "id": "65fabdd2-6ff8-486c-b501-169da89b2dec",
+      "name": "Implemented heuristic instruction set 2",
+      "status": "Pending",
+      "createdDate": "2025-03-16T21:38:04",
+      "updatedDate": "2026-01-30T05:42:09",
+      "owner": "Matthew Drake",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4741.45,
+      "description": "System certainly win education operation change."
+    },
+    {
+      "id": "e9606628-cc4e-4175-b1d7-44e3c6237ba6",
+      "name": "Seamless multimedia knowledgebase 3",
+      "status": "Active",
+      "createdDate": "2025-04-29T05:14:40",
+      "updatedDate": "2026-01-18T15:38:45",
+      "owner": "Drew Barber",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9324.56,
+      "description": "Development party nor conference difference it recent itself."
+    },
+    {
+      "id": "1d2712e7-2b7a-4e92-b442-12b4dc8cf103",
+      "name": "Polarized multimedia help-desk 4",
+      "status": "Inactive",
+      "createdDate": "2025-04-23T16:39:27",
+      "updatedDate": "2026-01-31T06:51:36",
+      "owner": "Ashley Richards",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8290.17,
+      "description": "Success much why cultural prove despite learn."
+    },
+    {
+      "id": "2a36de99-9510-42b2-9837-23a8faff1f00",
+      "name": "Persevering user-facing methodology 5",
+      "status": "Pending",
+      "createdDate": "2025-11-16T13:40:27",
+      "updatedDate": "2026-01-27T20:14:10",
+      "owner": "James Patel",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5669.23,
+      "description": "Enough and event floor her federal toward."
+    },
+    {
+      "id": "1e46a192-891f-4700-a865-3e86a2bac0df",
+      "name": "Multi-channeled dedicated monitoring 6",
+      "status": "Pending",
+      "createdDate": "2025-05-08T10:27:54",
+      "updatedDate": "2026-02-11T06:09:44",
+      "owner": "Jamie Rios",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5198.17,
+      "description": "Similar environmental position could lose member buy."
+    },
+    {
+      "id": "13c95a62-0000-42c9-994d-841b2acaad4e",
+      "name": "Synchronized value-added definition 7",
+      "status": "Pending",
+      "createdDate": "2025-05-01T08:20:15",
+      "updatedDate": "2026-02-14T23:45:44",
+      "owner": "Michelle Cruz",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8707.54,
+      "description": "Fund statement effort save."
+    },
+    {
+      "id": "a56ea738-d34b-463b-8a47-33039bf8b676",
+      "name": "Proactive leadingedge access 8",
+      "status": "Completed",
+      "createdDate": "2025-03-03T22:58:07",
+      "updatedDate": "2026-02-07T08:54:46",
+      "owner": "Clayton Stewart",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 508.53,
+      "description": "Much participant figure generation however test life."
+    },
+    {
+      "id": "4bb99825-563e-4e1c-813d-64b5daca1d18",
+      "name": "Public-key bifurcated orchestration 9",
+      "status": "Active",
+      "createdDate": "2026-02-04T03:38:20",
+      "updatedDate": "2026-01-18T21:53:41",
+      "owner": "Lisa Fletcher",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8563.86,
+      "description": "Final memory girl rise deal."
+    },
+    {
+      "id": "1560e19a-b3f1-4b8d-9102-91bd9be3712f",
+      "name": "Object-based clear-thinking contingency 10",
+      "status": "Completed",
+      "createdDate": "2025-11-09T18:10:22",
+      "updatedDate": "2026-01-31T09:04:01",
+      "owner": "Jessica Wise",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8296.71,
+      "description": "Third window piece."
+    },
+    {
+      "id": "c0700704-b2b3-4fdc-a769-e32d3c4d7302",
+      "name": "Horizontal clear-thinking success 11",
+      "status": "Active",
+      "createdDate": "2026-02-01T18:45:56",
+      "updatedDate": "2026-02-13T19:08:19",
+      "owner": "Audrey Hall",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4344.49,
+      "description": "Head behavior quickly information."
+    },
+    {
+      "id": "220ac2b5-e854-4691-8e13-48b1bde1b5e0",
+      "name": "Phased intangible productivity 12",
+      "status": "Active",
+      "createdDate": "2025-02-24T10:14:02",
+      "updatedDate": "2026-02-17T06:40:50",
+      "owner": "Ricky Hamilton",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9118.64,
+      "description": "Will than support account positive reveal."
+    },
+    {
+      "id": "233c8d6e-d89d-4163-a00c-a35c5dbaabe9",
+      "name": "Re-engineered multi-tasking functionalities 13",
+      "status": "Active",
+      "createdDate": "2025-08-19T05:38:00",
+      "updatedDate": "2026-02-17T10:12:04",
+      "owner": "Michael Mitchell",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5616.85,
+      "description": "Standard of tonight billion."
+    },
+    {
+      "id": "957f5f5b-c425-4f48-a753-3caf5b6c004d",
+      "name": "Organized homogeneous algorithm 14",
+      "status": "Active",
+      "createdDate": "2025-09-07T21:36:17",
+      "updatedDate": "2026-01-30T20:44:45",
+      "owner": "Derek Galvan",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4062.57,
+      "description": "Change three number produce young open you nothing."
+    },
+    {
+      "id": "354318f5-9756-4127-90c0-c25d0b14a4eb",
+      "name": "Intuitive reciprocal function 15",
+      "status": "Completed",
+      "createdDate": "2025-03-06T05:51:24",
+      "updatedDate": "2026-02-10T00:40:47",
+      "owner": "Kimberly Sutton",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2473.65,
+      "description": "Play learn least either traditional could all."
+    },
+    {
+      "id": "9a4c4e29-ea76-4dc5-9c29-90169a83f51e",
+      "name": "Vision-oriented 4thgeneration contingency 16",
+      "status": "Completed",
+      "createdDate": "2026-01-08T21:07:37",
+      "updatedDate": "2026-01-28T15:27:49",
+      "owner": "Lee Scott",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7812.6,
+      "description": "Understand film region their less house."
+    },
+    {
+      "id": "031e2bbe-f5fb-41b7-91ad-a76fffac1efa",
+      "name": "Versatile dynamic model 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-24T15:26:38",
+      "updatedDate": "2026-01-26T10:32:19",
+      "owner": "Jennifer Miller",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4706.41,
+      "description": "Here assume least result behavior form."
+    },
+    {
+      "id": "3781998a-87b5-4e95-bfec-3ae7e6b639ad",
+      "name": "Enhanced homogeneous solution 18",
+      "status": "Inactive",
+      "createdDate": "2025-08-26T18:29:44",
+      "updatedDate": "2026-02-17T08:58:05",
+      "owner": "Nicole Green",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4069.14,
+      "description": "Easy medical four ok claim newspaper."
+    },
+    {
+      "id": "fa6983b1-dd2c-4d5b-83c6-a4bc0e2cf858",
+      "name": "Assimilated foreground access 19",
+      "status": "Completed",
+      "createdDate": "2025-09-11T13:58:58",
+      "updatedDate": "2026-02-11T01:14:20",
+      "owner": "Brittany Hanna",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1173.39,
+      "description": "Contain guess style better."
+    },
+    {
+      "id": "163182f5-5506-4c4e-8164-55fda315a791",
+      "name": "Function-based interactive architecture 20",
+      "status": "Active",
+      "createdDate": "2025-12-22T04:41:27",
+      "updatedDate": "2026-01-21T15:27:20",
+      "owner": "Vincent Morris",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6951.75,
+      "description": "Represent tell across late or consider."
+    },
+    {
+      "id": "634faf69-8440-4172-a330-7c3d45716877",
+      "name": "Monitored 6thgeneration orchestration 21",
+      "status": "Active",
+      "createdDate": "2025-10-26T23:29:13",
+      "updatedDate": "2026-02-05T21:07:33",
+      "owner": "Laura Wang",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3377.51,
+      "description": "Through inside well them issue worker or."
+    },
+    {
+      "id": "2c1731f0-5c19-4e6b-97fe-0996b3119258",
+      "name": "Pre-emptive clear-thinking throughput 22",
+      "status": "Pending",
+      "createdDate": "2025-04-12T10:19:05",
+      "updatedDate": "2026-02-02T00:35:24",
+      "owner": "Jamie Jones",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9146.66,
+      "description": "Final game student town report under pass."
+    },
+    {
+      "id": "ee1af542-b43e-4eae-bcd4-fb5e458beef7",
+      "name": "Organized scalable strategy 23",
+      "status": "Pending",
+      "createdDate": "2025-03-08T10:02:37",
+      "updatedDate": "2026-01-27T21:50:50",
+      "owner": "Shelley Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2021.93,
+      "description": "Today likely continue measure fill now."
+    },
+    {
+      "id": "02b09d1a-148f-4f19-bea1-3b3fca006485",
+      "name": "Decentralized interactive strategy 24",
+      "status": "Inactive",
+      "createdDate": "2025-11-11T06:45:10",
+      "updatedDate": "2026-01-29T00:15:11",
+      "owner": "David Jones",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6881.55,
+      "description": "Growth pass happy common."
+    },
+    {
+      "id": "c8f78cef-d1e4-4a83-a49a-dcb1867e9560",
+      "name": "Programmable object-oriented protocol 25",
+      "status": "Active",
+      "createdDate": "2025-05-18T20:06:42",
+      "updatedDate": "2026-02-07T11:07:46",
+      "owner": "Tanya Bray",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3870.15,
+      "description": "Show what buy or give they."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 335,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "e60c4f3d-45a6-45f6-aacb-dca2b4a6ab3b",
+      "name": "Robust explicit time-frame 1",
+      "status": "Pending",
+      "createdDate": "2025-03-18T00:44:59",
+      "updatedDate": "2026-02-13T20:11:57",
+      "owner": "Heather Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7813.23,
+      "description": "Per mission source determine."
+    },
+    {
+      "id": "a36c4644-8842-429b-85e7-9bb738bcc80b",
+      "name": "Innovative motivating Internet solution 2",
+      "status": "Active",
+      "createdDate": "2026-01-13T12:44:13",
+      "updatedDate": "2026-02-05T12:28:39",
+      "owner": "Melanie Alvarez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9294.86,
+      "description": "Yeah ago action see by institution."
+    },
+    {
+      "id": "240d758e-4a87-49d3-ba1b-0988984be134",
+      "name": "Triple-buffered asymmetric hardware 3",
+      "status": "Pending",
+      "createdDate": "2025-11-12T04:54:39",
+      "updatedDate": "2026-02-12T03:06:27",
+      "owner": "Michael Patel",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 856.53,
+      "description": "Cause generation here economy media usually those."
+    },
+    {
+      "id": "ee818626-bc87-4226-a88f-fc5b468a17a2",
+      "name": "Automated 24hour website 4",
+      "status": "Inactive",
+      "createdDate": "2026-01-11T14:04:52",
+      "updatedDate": "2026-02-04T18:41:57",
+      "owner": "Michael Meyer",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1423.42,
+      "description": "Factor me building guess magazine form ago."
+    },
+    {
+      "id": "004f1fd1-4536-4e5d-bc64-ed0695f6c87e",
+      "name": "Polarized well-modulated instruction set 5",
+      "status": "Active",
+      "createdDate": "2026-01-17T08:37:46",
+      "updatedDate": "2026-01-21T23:27:20",
+      "owner": "Jonathan Martinez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6023.06,
+      "description": "Beyond especially then care talk."
+    },
+    {
+      "id": "0a905057-1392-428c-89af-736e15de626a",
+      "name": "Organized real-time pricing structure 6",
+      "status": "Pending",
+      "createdDate": "2025-05-02T00:31:19",
+      "updatedDate": "2026-02-03T09:08:16",
+      "owner": "Samantha Taylor",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7361.52,
+      "description": "Us minute actually want feeling."
+    },
+    {
+      "id": "2683d6fa-ac83-470c-a3a7-3a4870015065",
+      "name": "Optimized impactful firmware 7",
+      "status": "Completed",
+      "createdDate": "2025-10-24T21:31:42",
+      "updatedDate": "2026-01-18T21:23:45",
+      "owner": "Elizabeth Moore",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 814.46,
+      "description": "Represent moment enough of."
+    },
+    {
+      "id": "f1894b06-d42a-4404-8d3d-b56766490423",
+      "name": "Front-line next generation hierarchy 8",
+      "status": "Pending",
+      "createdDate": "2025-08-07T18:15:35",
+      "updatedDate": "2026-01-20T05:11:28",
+      "owner": "Karen Davis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9203.54,
+      "description": "That trial maintain assume several arrive property."
+    },
+    {
+      "id": "fdd16e8e-6d8d-41e4-a56c-1562acf74010",
+      "name": "Horizontal grid-enabled concept 9",
+      "status": "Active",
+      "createdDate": "2025-09-21T21:17:31",
+      "updatedDate": "2026-02-03T15:50:45",
+      "owner": "Rebecca Jimenez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2614.48,
+      "description": "Direction huge good reveal."
+    },
+    {
+      "id": "55d4f17b-bb89-473f-b949-c56491a0b908",
+      "name": "Extended asymmetric extranet 10",
+      "status": "Completed",
+      "createdDate": "2025-10-05T01:47:46",
+      "updatedDate": "2026-02-10T21:18:50",
+      "owner": "Sharon Austin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1352.27,
+      "description": "Range shoulder available age knowledge."
+    },
+    {
+      "id": "65450591-4b2d-4b2a-8646-7590d1989ae9",
+      "name": "Persevering zero administration algorithm 11",
+      "status": "Pending",
+      "createdDate": "2026-02-08T17:55:28",
+      "updatedDate": "2026-02-04T00:45:12",
+      "owner": "Kayla Evans",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5533.82,
+      "description": "Own lead themselves country his."
+    },
+    {
+      "id": "1a037678-8f70-441a-9de1-8dcd0941b280",
+      "name": "Optional tangible info-mediaries 12",
+      "status": "Completed",
+      "createdDate": "2025-03-24T06:50:39",
+      "updatedDate": "2026-02-12T12:37:26",
+      "owner": "Robert Sanders",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6634.28,
+      "description": "Determine maybe most technology who budget."
+    },
+    {
+      "id": "71e93d03-64ec-46cd-bac4-4b77b9a49edb",
+      "name": "Balanced client-driven moratorium 13",
+      "status": "Inactive",
+      "createdDate": "2025-04-01T07:34:05",
+      "updatedDate": "2026-01-27T15:38:44",
+      "owner": "Kathleen Robinson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9332.69,
+      "description": "Gas Congress method movement audience yes increase deep."
+    },
+    {
+      "id": "3f090812-430c-4bad-a094-b4908d261b78",
+      "name": "Integrated clear-thinking website 14",
+      "status": "Pending",
+      "createdDate": "2025-05-01T18:31:55",
+      "updatedDate": "2026-02-16T09:53:39",
+      "owner": "Jessica Peterson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8762.27,
+      "description": "Significant range free unit finish."
+    },
+    {
+      "id": "13058b4d-149c-4820-92c9-f9b971c6f061",
+      "name": "Multi-lateral zero-defect success 15",
+      "status": "Active",
+      "createdDate": "2025-12-08T22:48:33",
+      "updatedDate": "2026-01-30T04:34:17",
+      "owner": "Todd Dalton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3583.04,
+      "description": "Step series notice."
+    },
+    {
+      "id": "c092223e-c06c-4a3f-8339-c93bb0baf306",
+      "name": "Future-proofed value-added superstructure 16",
+      "status": "Completed",
+      "createdDate": "2025-12-21T11:13:31",
+      "updatedDate": "2026-01-23T07:07:47",
+      "owner": "Peter Martinez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 725.82,
+      "description": "While television common discover."
+    },
+    {
+      "id": "8d806cb0-199e-4876-ae5a-6174efc93a7d",
+      "name": "Synergized solution-oriented moratorium 17",
+      "status": "Pending",
+      "createdDate": "2025-06-08T08:05:26",
+      "updatedDate": "2026-02-08T12:40:01",
+      "owner": "William Reid",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7454.06,
+      "description": "Morning participant go detail artist huge during."
+    },
+    {
+      "id": "bf5fc42e-69dc-467c-b4a9-ab1a904e77b9",
+      "name": "Profound even-keeled forecast 18",
+      "status": "Completed",
+      "createdDate": "2025-10-06T14:51:34",
+      "updatedDate": "2026-02-03T15:23:30",
+      "owner": "Steven Gonzalez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 179.44,
+      "description": "Billion foreign political change believe realize."
+    },
+    {
+      "id": "01853c1b-c076-4da6-a194-72cdf27a8460",
+      "name": "Integrated bifurcated customer loyalty 19",
+      "status": "Pending",
+      "createdDate": "2025-12-05T15:31:23",
+      "updatedDate": "2026-02-13T04:36:27",
+      "owner": "Megan Ray",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1939.07,
+      "description": "Available really community sound."
+    },
+    {
+      "id": "395ed73a-690c-4c54-bb37-576679fb59f1",
+      "name": "Reduced motivating complexity 20",
+      "status": "Inactive",
+      "createdDate": "2026-01-11T09:06:45",
+      "updatedDate": "2026-02-08T06:19:29",
+      "owner": "Allen Cook",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8193.5,
+      "description": "Capital resource likely population these create speech."
+    },
+    {
+      "id": "b59c4fe8-2f0e-45eb-9c94-317273892959",
+      "name": "Total national function 21",
+      "status": "Completed",
+      "createdDate": "2025-06-09T13:37:28",
+      "updatedDate": "2026-01-25T03:53:54",
+      "owner": "Jason Campbell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7563.99,
+      "description": "Light appear foot certainly."
+    },
+    {
+      "id": "e863f188-40f6-44c0-885e-27e8995ea130",
+      "name": "Adaptive explicit circuit 22",
+      "status": "Completed",
+      "createdDate": "2025-03-04T09:18:19",
+      "updatedDate": "2026-02-09T08:44:22",
+      "owner": "William Copeland",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8505.64,
+      "description": "Conference car miss mention."
+    },
+    {
+      "id": "6c9f563d-1401-4990-8cf8-21a278955ceb",
+      "name": "Synergistic motivating attitude 23",
+      "status": "Completed",
+      "createdDate": "2025-10-04T17:26:46",
+      "updatedDate": "2026-02-06T17:54:12",
+      "owner": "Debra Ramirez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 332.48,
+      "description": "Consumer role conference contain."
+    },
+    {
+      "id": "f35c3725-b3c3-467e-b895-83a688ce4031",
+      "name": "Right-sized well-modulated encryption 24",
+      "status": "Pending",
+      "createdDate": "2025-05-31T23:03:38",
+      "updatedDate": "2026-01-26T11:47:44",
+      "owner": "Susan Rivera",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8840.8,
+      "description": "System leg fall already charge."
+    },
+    {
+      "id": "baed17d1-021c-4eb4-a29c-12f0dbd2bbf6",
+      "name": "Upgradable mission-critical open architecture 25",
+      "status": "Completed",
+      "createdDate": "2025-09-19T04:23:18",
+      "updatedDate": "2026-02-12T07:41:25",
+      "owner": "Christina Michael",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1936.59,
+      "description": "Rock Democrat guess result."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

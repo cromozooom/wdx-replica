@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 488,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "c8aec2ae-aa9f-40b5-994f-23bf647980c2",
+      "name": "Synchronized value-added definition 1",
+      "status": "Active",
+      "createdDate": "2026-02-16T10:43:19",
+      "updatedDate": "2026-01-25T20:25:12",
+      "owner": "Michael Ross",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4284.57,
+      "description": "End field wall former."
+    },
+    {
+      "id": "36610b8d-ac78-4338-9e6d-ba73059adf23",
+      "name": "Team-oriented cohesive matrix 2",
+      "status": "Active",
+      "createdDate": "2025-05-22T20:42:09",
+      "updatedDate": "2026-02-16T00:06:53",
+      "owner": "Mark Harvey",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2034.53,
+      "description": "Main believe itself whom since."
+    },
+    {
+      "id": "bd799967-8f3a-482d-b651-08a9963d6aff",
+      "name": "Configurable content-based parallelism 3",
+      "status": "Pending",
+      "createdDate": "2026-01-13T16:07:03",
+      "updatedDate": "2026-02-14T03:58:19",
+      "owner": "Brittney Cook",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2749.21,
+      "description": "Mention realize imagine my later."
+    },
+    {
+      "id": "e3aec564-2513-4670-9238-5d35d6f780e8",
+      "name": "Devolved regional focus group 4",
+      "status": "Pending",
+      "createdDate": "2026-01-18T12:37:06",
+      "updatedDate": "2026-02-12T03:17:57",
+      "owner": "Christine Rogers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6686.63,
+      "description": "Other away decide center option know."
+    },
+    {
+      "id": "86a5e44e-b196-4806-b978-d770e90487a8",
+      "name": "Integrated local firmware 5",
+      "status": "Active",
+      "createdDate": "2025-08-26T05:07:13",
+      "updatedDate": "2026-02-16T22:09:06",
+      "owner": "Cody Kennedy",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8371.46,
+      "description": "Go ask left our behind set tell."
+    },
+    {
+      "id": "d3fe184b-1d9b-4f3b-b234-e49eba6f4fd8",
+      "name": "Expanded full-range parallelism 6",
+      "status": "Active",
+      "createdDate": "2025-03-29T14:54:28",
+      "updatedDate": "2026-02-10T00:14:19",
+      "owner": "James Torres",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3139.57,
+      "description": "Ever instead effort which read."
+    },
+    {
+      "id": "b2e6477e-fb92-4116-8d5f-54ba113376e6",
+      "name": "Centralized bi-directional flexibility 7",
+      "status": "Pending",
+      "createdDate": "2025-02-23T07:34:10",
+      "updatedDate": "2026-02-16T02:23:55",
+      "owner": "Christopher Gill",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9065.65,
+      "description": "Thing fear chance body despite."
+    },
+    {
+      "id": "12ef3b61-406e-42f5-8ef1-2198fae4d9d3",
+      "name": "Reverse-engineered bandwidth-monitored success 8",
+      "status": "Pending",
+      "createdDate": "2025-11-05T13:31:14",
+      "updatedDate": "2026-02-11T14:29:00",
+      "owner": "Tina Russell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5997.03,
+      "description": "Notice those certainly laugh once especially."
+    },
+    {
+      "id": "f22fa6bd-d48c-4747-89e4-5814627c49f5",
+      "name": "Innovative eco-centric knowledge user 9",
+      "status": "Pending",
+      "createdDate": "2026-02-10T04:09:20",
+      "updatedDate": "2026-02-09T11:41:23",
+      "owner": "Kenneth Simon",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7955.83,
+      "description": "Local process less fine."
+    },
+    {
+      "id": "aba52812-a9ca-41b6-a4a0-873057feccb4",
+      "name": "Diverse mission-critical access 10",
+      "status": "Active",
+      "createdDate": "2025-12-01T01:05:52",
+      "updatedDate": "2026-01-24T06:24:53",
+      "owner": "Vicki Clark",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9315.52,
+      "description": "Form represent set eye."
+    },
+    {
+      "id": "810525cf-dc63-4554-8164-dca82073eeec",
+      "name": "Managed systemic benchmark 11",
+      "status": "Inactive",
+      "createdDate": "2025-08-24T12:41:40",
+      "updatedDate": "2026-01-21T15:07:40",
+      "owner": "Diana Walker MD",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5443.73,
+      "description": "Main subject when listen fall effort."
+    },
+    {
+      "id": "fc0d1fa7-3bb6-45da-9c45-5915c03140a6",
+      "name": "Mandatory client-driven interface 12",
+      "status": "Pending",
+      "createdDate": "2025-10-08T08:21:31",
+      "updatedDate": "2026-01-23T21:51:49",
+      "owner": "Brittany Jenkins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6071.61,
+      "description": "Teacher range rest blood people yet."
+    },
+    {
+      "id": "5fda9bda-f067-42e2-a81d-26cfda28aa62",
+      "name": "Digitized scalable superstructure 13",
+      "status": "Active",
+      "createdDate": "2025-07-23T09:44:38",
+      "updatedDate": "2026-01-22T11:55:18",
+      "owner": "Evan Haynes",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3287.39,
+      "description": "Child single environment government single evidence fire."
+    },
+    {
+      "id": "cf89d638-d7d2-4897-a757-866838e18cc0",
+      "name": "Focused disintermediate info-mediaries 14",
+      "status": "Completed",
+      "createdDate": "2026-01-14T17:18:31",
+      "updatedDate": "2026-02-09T13:05:40",
+      "owner": "Douglas George",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8276.92,
+      "description": "Crime mean everyone early anything often."
+    },
+    {
+      "id": "c3df2026-f1fc-462e-a999-028fa616fd09",
+      "name": "Compatible disintermediate functionalities 15",
+      "status": "Pending",
+      "createdDate": "2025-09-17T15:05:31",
+      "updatedDate": "2026-02-11T07:40:09",
+      "owner": "Julie Dickerson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5009.3,
+      "description": "Bed few current discover lawyer parent eight."
+    },
+    {
+      "id": "e00f10e6-cdca-47ae-a4f9-bfa430b5e280",
+      "name": "Synchronized bi-directional approach 16",
+      "status": "Completed",
+      "createdDate": "2025-03-11T00:51:49",
+      "updatedDate": "2026-02-15T03:26:40",
+      "owner": "Lee Moses",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3455.55,
+      "description": "Budget whom life rule require."
+    },
+    {
+      "id": "de40f7f5-55d5-4708-8659-a5cdcced4fce",
+      "name": "Enhanced interactive emulation 17",
+      "status": "Active",
+      "createdDate": "2025-02-22T18:22:07",
+      "updatedDate": "2026-02-14T00:47:15",
+      "owner": "Denise Barron",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 190.41,
+      "description": "Maintain respond those deal."
+    },
+    {
+      "id": "76e15d9b-d52f-4475-9a27-71e3aafbaff2",
+      "name": "Networked empowering array 18",
+      "status": "Pending",
+      "createdDate": "2025-09-28T23:18:29",
+      "updatedDate": "2026-02-01T10:56:20",
+      "owner": "Bradley Smith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1406.95,
+      "description": "Civil laugh police food probably education as."
+    },
+    {
+      "id": "dc05249f-7bca-4cde-8f20-16d209834483",
+      "name": "Versatile analyzing software 19",
+      "status": "Completed",
+      "createdDate": "2025-04-17T10:56:55",
+      "updatedDate": "2026-01-26T03:41:25",
+      "owner": "Shelby Ibarra",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3924.54,
+      "description": "Glass camera within clear."
+    },
+    {
+      "id": "826f00f3-31fc-4ef5-975d-245c131f3cc6",
+      "name": "Synergistic zero tolerance collaboration 20",
+      "status": "Pending",
+      "createdDate": "2025-04-25T22:52:49",
+      "updatedDate": "2026-02-10T23:57:58",
+      "owner": "Jennifer Lewis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1419.06,
+      "description": "Main the describe clear point modern fight."
+    },
+    {
+      "id": "b170dba4-be63-452a-b544-d5087fa3b4cd",
+      "name": "Future-proofed bifurcated definition 21",
+      "status": "Active",
+      "createdDate": "2025-08-19T15:00:24",
+      "updatedDate": "2026-02-06T01:44:25",
+      "owner": "Robert George",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9801.75,
+      "description": "Soon different know stay most action story everybody."
+    },
+    {
+      "id": "d156eb54-7e23-446b-b896-f9fb1a1489aa",
+      "name": "Quality-focused background open system 22",
+      "status": "Active",
+      "createdDate": "2025-09-11T14:26:01",
+      "updatedDate": "2026-01-27T14:01:43",
+      "owner": "James Campbell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5115.31,
+      "description": "Though interview week later inside project from."
+    },
+    {
+      "id": "925d19e2-e51f-4331-ab9c-2a3ab4f8c546",
+      "name": "Pre-emptive contextually-based help-desk 23",
+      "status": "Active",
+      "createdDate": "2025-11-12T10:34:29",
+      "updatedDate": "2026-02-13T12:39:16",
+      "owner": "Dana Adkins",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2616.86,
+      "description": "Approach short thousand tax actually."
+    },
+    {
+      "id": "4ea9bb9a-66ec-4e18-ad7f-e44a8d1e4823",
+      "name": "Persistent responsive concept 24",
+      "status": "Active",
+      "createdDate": "2025-08-14T13:50:30",
+      "updatedDate": "2026-02-14T13:48:48",
+      "owner": "Gregory Carlson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3146.7,
+      "description": "Important writer same peace sign."
+    },
+    {
+      "id": "8a6ae172-e1c1-4783-846e-e320cc66b98d",
+      "name": "Secured content-based workforce 25",
+      "status": "Pending",
+      "createdDate": "2025-07-31T03:34:22",
+      "updatedDate": "2026-01-27T19:48:40",
+      "owner": "Elizabeth Hickman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7430.8,
+      "description": "Phone series financial interview by."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

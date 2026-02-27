@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 579,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "87655b50-1932-460f-b00f-983baff2d4e2",
+      "name": "Exclusive 24hour product 1",
+      "status": "Active",
+      "createdDate": "2025-06-22T07:45:34",
+      "updatedDate": "2026-02-09T10:32:35",
+      "owner": "Robert Sanchez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2111.29,
+      "description": "Time away plant remain range."
+    },
+    {
+      "id": "f7a324f5-271a-43a5-8c43-7bfbe807df74",
+      "name": "Multi-lateral optimal workforce 2",
+      "status": "Completed",
+      "createdDate": "2025-06-26T04:40:34",
+      "updatedDate": "2026-02-02T00:06:36",
+      "owner": "Michele Young",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4282.16,
+      "description": "Space win store need remember game."
+    },
+    {
+      "id": "67d78f38-8a95-4530-87c8-9b9e20265caf",
+      "name": "Synergized fault-tolerant task-force 3",
+      "status": "Active",
+      "createdDate": "2025-11-10T00:22:52",
+      "updatedDate": "2026-01-27T16:46:06",
+      "owner": "Hannah Castro",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6678.34,
+      "description": "Mouth move seven green."
+    },
+    {
+      "id": "7312b087-e6e6-44d4-aeb1-d47cad7e48ca",
+      "name": "Total regional system engine 4",
+      "status": "Active",
+      "createdDate": "2025-10-06T13:25:24",
+      "updatedDate": "2026-02-08T00:43:59",
+      "owner": "Sharon Sanchez PhD",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9908.2,
+      "description": "Create scientist sometimes husband pretty design start."
+    },
+    {
+      "id": "1445242a-7380-49b3-be99-dc2810d07c2f",
+      "name": "Pre-emptive non-volatile circuit 5",
+      "status": "Inactive",
+      "createdDate": "2025-09-04T00:48:11",
+      "updatedDate": "2026-02-02T16:00:20",
+      "owner": "Craig Sampson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1065.16,
+      "description": "Must career house approach drug."
+    },
+    {
+      "id": "b9a9c671-9b32-41b7-b386-320498c3189d",
+      "name": "Visionary cohesive open system 6",
+      "status": "Active",
+      "createdDate": "2025-07-12T07:58:37",
+      "updatedDate": "2026-01-29T18:20:04",
+      "owner": "Allen Woods",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6122.95,
+      "description": "Much state camera foot attorney."
+    },
+    {
+      "id": "7a829a91-98d5-4737-a9b0-856a2fe2e7ae",
+      "name": "Implemented hybrid attitude 7",
+      "status": "Completed",
+      "createdDate": "2025-11-14T00:17:34",
+      "updatedDate": "2026-02-15T02:02:07",
+      "owner": "Kristina Jordan",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7634.95,
+      "description": "Environmental television company its only."
+    },
+    {
+      "id": "071bd718-abbf-4968-8216-f371a3b7b597",
+      "name": "Organic zero-defect concept 8",
+      "status": "Completed",
+      "createdDate": "2025-12-20T08:52:13",
+      "updatedDate": "2026-01-30T18:57:23",
+      "owner": "Jeffrey Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 442.77,
+      "description": "Level fly despite field arrive hour full brother."
+    },
+    {
+      "id": "d3012a3e-4ec8-4fbe-af4e-2465812b4d54",
+      "name": "Sharable user-facing collaboration 9",
+      "status": "Completed",
+      "createdDate": "2025-09-13T15:36:11",
+      "updatedDate": "2026-02-16T17:42:19",
+      "owner": "Noah Smith",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2870.61,
+      "description": "Debate on establish board executive indeed."
+    },
+    {
+      "id": "5bd6b4cd-30b1-4fc1-9afe-b2322e5b5314",
+      "name": "Stand-alone global pricing structure 10",
+      "status": "Active",
+      "createdDate": "2025-04-16T22:28:26",
+      "updatedDate": "2026-01-29T14:00:39",
+      "owner": "Alexandra Sutton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5457.69,
+      "description": "Area end run no accept source at."
+    },
+    {
+      "id": "51c0cdec-efaa-475f-a21b-1e01ff5f307d",
+      "name": "Synergized well-modulated intranet 11",
+      "status": "Pending",
+      "createdDate": "2026-02-09T12:08:55",
+      "updatedDate": "2026-01-29T21:00:17",
+      "owner": "Abigail Gallegos",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1569.27,
+      "description": "Quite list prove environment."
+    },
+    {
+      "id": "c0738334-f410-4823-9843-7fef3e07735f",
+      "name": "Open-architected real-time matrices 12",
+      "status": "Completed",
+      "createdDate": "2026-02-08T20:23:50",
+      "updatedDate": "2026-01-21T14:31:09",
+      "owner": "Wendy Randolph",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8576.12,
+      "description": "Sport close protect box meet group."
+    },
+    {
+      "id": "fc1039d4-5d08-4d02-9c31-0f79e6fd35a2",
+      "name": "Polarized actuating emulation 13",
+      "status": "Inactive",
+      "createdDate": "2025-10-30T07:21:10",
+      "updatedDate": "2026-02-13T19:53:44",
+      "owner": "Kimberly West",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8145.22,
+      "description": "Agree not imagine important wrong everything."
+    },
+    {
+      "id": "b571f55e-1587-46de-9f8a-a0ebc06bf7ce",
+      "name": "Open-architected neutral info-mediaries 14",
+      "status": "Completed",
+      "createdDate": "2026-01-27T00:30:10",
+      "updatedDate": "2026-01-20T19:16:13",
+      "owner": "Theresa Lewis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5172.21,
+      "description": "Hear magazine send per almost develop law history."
+    },
+    {
+      "id": "20bbee69-9a62-472b-961f-66be7f054e67",
+      "name": "Focused methodical encoding 15",
+      "status": "Completed",
+      "createdDate": "2026-01-09T04:27:54",
+      "updatedDate": "2026-01-31T11:17:48",
+      "owner": "Shaun Jackson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8715.04,
+      "description": "Gun provide world beautiful through cell statement poor."
+    },
+    {
+      "id": "f5d695d5-ffc2-4482-abb9-f05c78e0ebdd",
+      "name": "Multi-channeled fault-tolerant open architecture 16",
+      "status": "Inactive",
+      "createdDate": "2025-03-15T06:59:35",
+      "updatedDate": "2026-02-08T16:08:00",
+      "owner": "Craig Bautista",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5962.26,
+      "description": "Tree learn security time computer series skin."
+    },
+    {
+      "id": "a8587a59-b41f-49ea-8483-547c2523e94e",
+      "name": "Up-sized impactful success 17",
+      "status": "Completed",
+      "createdDate": "2025-10-23T06:18:36",
+      "updatedDate": "2026-02-17T04:36:59",
+      "owner": "Brian Ortiz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6395.74,
+      "description": "Model message have finally choose charge I."
+    },
+    {
+      "id": "66920a3b-aaa3-4760-a0ef-ccc4a52be01a",
+      "name": "Networked non-volatile utilization 18",
+      "status": "Pending",
+      "createdDate": "2025-11-03T08:01:44",
+      "updatedDate": "2026-01-20T20:28:09",
+      "owner": "Paul Sandoval",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9682.51,
+      "description": "He even wrong I window meet."
+    },
+    {
+      "id": "69a781fd-71c8-460f-96b5-57a33f0b3924",
+      "name": "Organized grid-enabled initiative 19",
+      "status": "Inactive",
+      "createdDate": "2025-02-24T17:55:50",
+      "updatedDate": "2026-02-10T00:46:00",
+      "owner": "Katherine Morgan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2875.12,
+      "description": "Run score course already speak."
+    },
+    {
+      "id": "969f8d85-24c2-4006-85d8-31396011c409",
+      "name": "Customizable attitude-oriented forecast 20",
+      "status": "Completed",
+      "createdDate": "2025-10-31T11:50:56",
+      "updatedDate": "2026-02-16T21:16:52",
+      "owner": "Denise Anderson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9259.12,
+      "description": "Career peace place look head within."
+    },
+    {
+      "id": "a7fecb2b-a0d4-4561-b6b7-d6d666f35573",
+      "name": "Cross-group homogeneous Graphic Interface 21",
+      "status": "Pending",
+      "createdDate": "2025-08-20T10:53:02",
+      "updatedDate": "2026-02-04T07:10:05",
+      "owner": "Christopher Curtis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3872.89,
+      "description": "Himself condition itself region how clear receive."
+    },
+    {
+      "id": "ec49c198-f871-400a-86e0-99d7d179c40c",
+      "name": "Persistent executive instruction set 22",
+      "status": "Active",
+      "createdDate": "2025-10-09T13:23:03",
+      "updatedDate": "2026-02-08T23:58:18",
+      "owner": "Jessica Macdonald",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9377.73,
+      "description": "Town property early officer affect."
+    },
+    {
+      "id": "3b93d491-119b-457f-b954-76a0cb803fb8",
+      "name": "Re-engineered holistic pricing structure 23",
+      "status": "Active",
+      "createdDate": "2025-06-05T23:10:23",
+      "updatedDate": "2026-02-07T22:56:54",
+      "owner": "Abigail Franco",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3889.76,
+      "description": "Image decade standard summer."
+    },
+    {
+      "id": "0b013124-a31e-4592-8b2c-2b4800eca429",
+      "name": "Open-source neutral project 24",
+      "status": "Active",
+      "createdDate": "2025-11-07T09:19:14",
+      "updatedDate": "2026-01-24T04:42:24",
+      "owner": "Douglas Webster",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2204.03,
+      "description": "Win benefit treatment eye bit inside water."
+    },
+    {
+      "id": "ffbcedf8-8c36-4dc3-9727-3b378f59858a",
+      "name": "Sharable tertiary policy 25",
+      "status": "Active",
+      "createdDate": "2025-09-08T00:28:56",
+      "updatedDate": "2026-01-24T08:33:20",
+      "owner": "Maria Hunter",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3170.17,
+      "description": "Around impact usually industry."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

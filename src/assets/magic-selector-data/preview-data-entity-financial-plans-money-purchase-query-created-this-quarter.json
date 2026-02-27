@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 850,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "525ab02f-351a-4a9f-bbd7-b3d988a88fd7",
+      "name": "Fundamental client-driven pricing structure 1",
+      "status": "Pending",
+      "createdDate": "2025-04-22T17:39:53",
+      "updatedDate": "2026-01-22T04:45:11",
+      "owner": "Ryan Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6881.23,
+      "description": "Voice everybody read writer bring interview onto."
+    },
+    {
+      "id": "4d5cd4a3-cbea-4adf-b962-76b93b52af11",
+      "name": "Diverse bi-directional protocol 2",
+      "status": "Active",
+      "createdDate": "2025-06-30T16:55:25",
+      "updatedDate": "2026-01-26T15:08:46",
+      "owner": "Kristine Anderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7802.72,
+      "description": "Even step ok right."
+    },
+    {
+      "id": "6deb5fa6-944f-4c84-9308-6eb6b867bb66",
+      "name": "Multi-tiered disintermediate customer loyalty 3",
+      "status": "Completed",
+      "createdDate": "2025-04-23T06:22:47",
+      "updatedDate": "2026-01-21T16:48:54",
+      "owner": "Frances Poole",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2283.0,
+      "description": "Town tonight young our if."
+    },
+    {
+      "id": "1b615160-0ca0-4cd7-9aa4-fc9446763b85",
+      "name": "Innovative 6thgeneration open system 4",
+      "status": "Completed",
+      "createdDate": "2025-08-13T09:01:19",
+      "updatedDate": "2026-01-25T13:12:03",
+      "owner": "Mr. Bradley Contreras",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9355.8,
+      "description": "Yourself week common bank both think easy."
+    },
+    {
+      "id": "6d45d8a5-5f19-4f15-9a04-50db45367413",
+      "name": "Optional asynchronous pricing structure 5",
+      "status": "Completed",
+      "createdDate": "2025-11-28T12:14:52",
+      "updatedDate": "2026-02-02T20:58:07",
+      "owner": "Nicholas Clayton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2569.54,
+      "description": "Attention growth onto event if capital successful."
+    },
+    {
+      "id": "95a6c82f-3645-44ad-a4bf-98d853b4dd6f",
+      "name": "Synergistic uniform neural-net 6",
+      "status": "Pending",
+      "createdDate": "2025-04-24T07:47:53",
+      "updatedDate": "2026-01-31T22:49:52",
+      "owner": "Heather Roy",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1102.29,
+      "description": "Drive south action any meet only."
+    },
+    {
+      "id": "297bf809-ce31-4901-b462-bcd2d5f74638",
+      "name": "Balanced system-worthy workforce 7",
+      "status": "Inactive",
+      "createdDate": "2025-11-04T12:50:25",
+      "updatedDate": "2026-02-03T05:13:11",
+      "owner": "Sharon Kaufman",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5068.98,
+      "description": "City might wide very."
+    },
+    {
+      "id": "3f54303c-8388-45f6-b6d1-2ed1f2b2e288",
+      "name": "Focused global capacity 8",
+      "status": "Active",
+      "createdDate": "2025-08-31T00:13:56",
+      "updatedDate": "2026-01-31T06:01:08",
+      "owner": "Samuel Swanson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1409.94,
+      "description": "Less miss beat wide hold court."
+    },
+    {
+      "id": "3684776d-2e32-447f-a8d8-131ea409cb35",
+      "name": "Object-based explicit structure 9",
+      "status": "Pending",
+      "createdDate": "2026-01-24T14:34:37",
+      "updatedDate": "2026-02-11T14:41:09",
+      "owner": "Peter Elliott",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4557.38,
+      "description": "Lawyer less no behavior arm remain."
+    },
+    {
+      "id": "47816ce5-4a14-4f42-be98-346481bf64c7",
+      "name": "Automated coherent core 10",
+      "status": "Completed",
+      "createdDate": "2025-07-12T14:33:59",
+      "updatedDate": "2026-02-13T11:02:44",
+      "owner": "Sean Henderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3673.06,
+      "description": "Focus record because serve include."
+    },
+    {
+      "id": "835e4ec1-a8e5-4119-9944-757eb97fb7b5",
+      "name": "Persistent optimal emulation 11",
+      "status": "Inactive",
+      "createdDate": "2025-03-04T06:39:35",
+      "updatedDate": "2026-01-31T17:41:02",
+      "owner": "Alyssa Boyle",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2337.43,
+      "description": "Attack similar by least million."
+    },
+    {
+      "id": "49b0dd1c-d66c-40e2-87c0-9c1b5c4841c3",
+      "name": "Mandatory contextually-based capability 12",
+      "status": "Completed",
+      "createdDate": "2025-11-28T00:05:30",
+      "updatedDate": "2026-01-19T06:22:53",
+      "owner": "Amanda Bernard",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6083.06,
+      "description": "Along education machine against figure of."
+    },
+    {
+      "id": "26c70db2-4f8e-40cf-9c54-2fa797696f49",
+      "name": "Persistent human-resource focus group 13",
+      "status": "Inactive",
+      "createdDate": "2025-05-14T15:42:17",
+      "updatedDate": "2026-02-16T09:35:44",
+      "owner": "Jennifer Martin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5963.2,
+      "description": "Research story admit human yourself economic."
+    },
+    {
+      "id": "bcbc9351-bffa-42ef-ad80-7dc4448e1090",
+      "name": "Public-key coherent capability 14",
+      "status": "Pending",
+      "createdDate": "2026-02-10T04:46:44",
+      "updatedDate": "2026-02-15T19:08:19",
+      "owner": "Kelsey Jackson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9358.72,
+      "description": "Face day game both fight travel culture."
+    },
+    {
+      "id": "0897b67b-e081-480f-9f73-53ce5c62c5aa",
+      "name": "Intuitive needs-based flexibility 15",
+      "status": "Inactive",
+      "createdDate": "2025-05-16T09:35:52",
+      "updatedDate": "2026-01-20T09:30:41",
+      "owner": "Miguel Rodriguez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5484.02,
+      "description": "Management under network onto hotel dog south."
+    },
+    {
+      "id": "5a6d74b8-88ab-40cd-83c6-0f0bfe002d82",
+      "name": "Face-to-face homogeneous orchestration 16",
+      "status": "Inactive",
+      "createdDate": "2025-11-09T17:43:12",
+      "updatedDate": "2026-02-02T15:51:36",
+      "owner": "Rose Liu",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 741.7,
+      "description": "Appear different some anyone population."
+    },
+    {
+      "id": "a3b7d10e-61c4-47ea-b043-62e6ae30190c",
+      "name": "User-centric optimizing data-warehouse 17",
+      "status": "Completed",
+      "createdDate": "2026-01-30T20:43:11",
+      "updatedDate": "2026-02-06T01:09:09",
+      "owner": "Clinton Parks",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6646.63,
+      "description": "Coach rather act throw."
+    },
+    {
+      "id": "e5d4a9fa-d2b5-4db5-a96c-3d315e53dc6d",
+      "name": "Re-engineered value-added service-desk 18",
+      "status": "Completed",
+      "createdDate": "2025-09-13T16:07:03",
+      "updatedDate": "2026-02-10T06:19:11",
+      "owner": "Dana Freeman",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3652.68,
+      "description": "Whom per world town us."
+    },
+    {
+      "id": "624bee00-8a5b-4fed-bec7-f37e6c8aed52",
+      "name": "Business-focused bi-directional budgetary management 19",
+      "status": "Inactive",
+      "createdDate": "2025-04-15T00:49:05",
+      "updatedDate": "2026-02-06T13:03:05",
+      "owner": "Roger Harper",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3118.74,
+      "description": "May music kind yes."
+    },
+    {
+      "id": "fbb6caab-166c-48c1-b20c-0b1432df4f08",
+      "name": "Optional 24/7 focus group 20",
+      "status": "Active",
+      "createdDate": "2025-08-24T13:36:55",
+      "updatedDate": "2026-01-29T13:35:06",
+      "owner": "Katie Moreno",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4263.03,
+      "description": "Whose relationship serious hand last next."
+    },
+    {
+      "id": "34565430-8b19-4bc5-ab9a-090da973bcc5",
+      "name": "Sharable discrete migration 21",
+      "status": "Active",
+      "createdDate": "2025-12-29T04:33:11",
+      "updatedDate": "2026-02-03T10:27:54",
+      "owner": "Samuel Barton",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3284.48,
+      "description": "Consumer market hope past less mention effort."
+    },
+    {
+      "id": "0144c009-6f20-476b-8495-e852d4ee8427",
+      "name": "Versatile secondary intranet 22",
+      "status": "Pending",
+      "createdDate": "2025-12-01T13:59:25",
+      "updatedDate": "2026-02-03T10:32:24",
+      "owner": "Ryan Decker",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 729.43,
+      "description": "Red professor Mrs hospital how."
+    },
+    {
+      "id": "708a937e-57e2-4d92-b0d1-e78fd7b7b9a8",
+      "name": "Compatible high-level pricing structure 23",
+      "status": "Inactive",
+      "createdDate": "2025-11-15T05:06:09",
+      "updatedDate": "2026-01-21T21:20:09",
+      "owner": "Dennis Atkinson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8398.59,
+      "description": "Open reflect treat respond."
+    },
+    {
+      "id": "62957de7-4ad8-442f-a8e4-ae0cf8fba80f",
+      "name": "Enterprise-wide upward-trending strategy 24",
+      "status": "Pending",
+      "createdDate": "2025-06-06T10:42:43",
+      "updatedDate": "2026-02-05T02:13:25",
+      "owner": "Lisa Buck",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1730.74,
+      "description": "Treatment would only."
+    },
+    {
+      "id": "fad00780-0666-4cc7-82c8-8e26b4a5582c",
+      "name": "Programmable client-server circuit 25",
+      "status": "Pending",
+      "createdDate": "2025-02-21T14:29:59",
+      "updatedDate": "2026-02-04T11:38:12",
+      "owner": "Jonathon Liu",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5040.98,
+      "description": "Police take rest involve impact."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

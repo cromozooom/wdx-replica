@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-security",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1029,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "edbcb045-b7f1-4d84-900d-825a9c263621",
+      "name": "Public-key hybrid migration 1",
+      "status": "Completed",
+      "createdDate": "2025-07-09T14:18:36",
+      "updatedDate": "2026-01-28T02:44:37",
+      "owner": "Christopher Thompson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8002.59,
+      "description": "Beat mother second many."
+    },
+    {
+      "id": "8c185052-14e5-4ee1-afc3-5959a2caff98",
+      "name": "Assimilated executive forecast 2",
+      "status": "Completed",
+      "createdDate": "2025-12-13T06:54:05",
+      "updatedDate": "2026-01-30T16:11:07",
+      "owner": "Noah Brown",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2737.74,
+      "description": "Mother success personal set big policy."
+    },
+    {
+      "id": "1e0e78fb-b364-427e-a2ed-61441cc1c49d",
+      "name": "Devolved homogeneous protocol 3",
+      "status": "Pending",
+      "createdDate": "2025-06-10T02:39:00",
+      "updatedDate": "2026-02-02T16:40:06",
+      "owner": "Katie Downs",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2943.53,
+      "description": "Require mouth foot wait."
+    },
+    {
+      "id": "a283767f-d10b-4bdf-9efe-40cdc4304add",
+      "name": "Advanced human-resource orchestration 4",
+      "status": "Completed",
+      "createdDate": "2026-02-09T18:37:28",
+      "updatedDate": "2026-02-07T07:22:57",
+      "owner": "Brittney Weaver",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3656.15,
+      "description": "Action store movement audience book ability."
+    },
+    {
+      "id": "6044914a-6758-47b2-b81a-cbec49c5436d",
+      "name": "Progressive responsive core 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-05T03:48:57",
+      "updatedDate": "2026-01-25T08:36:33",
+      "owner": "Andrew Montgomery",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9600.42,
+      "description": "Hard guess lead fast successful prepare."
+    },
+    {
+      "id": "8b6a4d6e-e8b3-44ec-a221-262f5e33177d",
+      "name": "Upgradable composite system engine 6",
+      "status": "Pending",
+      "createdDate": "2025-11-23T23:00:42",
+      "updatedDate": "2026-02-01T07:40:27",
+      "owner": "Jennifer Curtis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7010.22,
+      "description": "You energy return sound."
+    },
+    {
+      "id": "4ff4c16d-f4b3-4a74-bc4b-7f27b1581218",
+      "name": "Focused uniform algorithm 7",
+      "status": "Inactive",
+      "createdDate": "2025-09-28T17:14:15",
+      "updatedDate": "2026-01-28T07:36:27",
+      "owner": "Marie Crane",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7116.77,
+      "description": "Year treatment entire go hot."
+    },
+    {
+      "id": "d9ee21c9-ab2a-4d34-9750-d44eef26bcf2",
+      "name": "Enterprise-wide value-added encoding 8",
+      "status": "Inactive",
+      "createdDate": "2025-06-15T13:14:15",
+      "updatedDate": "2026-01-26T16:36:22",
+      "owner": "Brenda Lee",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8600.62,
+      "description": "Foreign miss various west."
+    },
+    {
+      "id": "a9e04431-d016-4991-9d51-d8961eb1ef08",
+      "name": "Optional homogeneous moderator 9",
+      "status": "Pending",
+      "createdDate": "2025-04-09T18:02:28",
+      "updatedDate": "2026-02-07T14:10:12",
+      "owner": "Vanessa Marks",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 429.32,
+      "description": "Human on interesting weight thus."
+    },
+    {
+      "id": "2028f47d-5ed2-4df3-b134-73d271c8fecf",
+      "name": "Organic multimedia extranet 10",
+      "status": "Inactive",
+      "createdDate": "2026-02-12T18:55:21",
+      "updatedDate": "2026-01-28T04:39:07",
+      "owner": "Eric Levine",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3057.68,
+      "description": "Accept pass simple."
+    },
+    {
+      "id": "e8218eaa-7502-437d-9297-97aabe7f269e",
+      "name": "Enhanced upward-trending challenge 11",
+      "status": "Pending",
+      "createdDate": "2025-08-21T06:42:25",
+      "updatedDate": "2026-01-20T15:59:15",
+      "owner": "Dale Cole",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1708.44,
+      "description": "Deep age threat present throughout."
+    },
+    {
+      "id": "537b0cf5-de93-40ea-b558-421fc8c81bed",
+      "name": "Networked leadingedge synergy 12",
+      "status": "Active",
+      "createdDate": "2025-04-03T13:41:13",
+      "updatedDate": "2026-01-27T12:45:36",
+      "owner": "Larry Copeland",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8184.96,
+      "description": "Continue lose office recent above local politics know."
+    },
+    {
+      "id": "b7b9727f-fbc8-4eb7-a1d4-1d7d676a98e6",
+      "name": "Managed impactful hierarchy 13",
+      "status": "Active",
+      "createdDate": "2025-09-10T05:27:06",
+      "updatedDate": "2026-01-18T14:15:40",
+      "owner": "Nicholas Peters",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2688.13,
+      "description": "Structure trial born here."
+    },
+    {
+      "id": "1656f3c8-6c6f-4115-9c0d-0f57e972bfc2",
+      "name": "Expanded modular neural-net 14",
+      "status": "Inactive",
+      "createdDate": "2025-08-14T04:51:42",
+      "updatedDate": "2026-02-05T07:35:55",
+      "owner": "Jesus Daniel",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6448.29,
+      "description": "Cover response deep memory population knowledge."
+    },
+    {
+      "id": "53b252fa-1bae-41a0-b896-fafbb26411f3",
+      "name": "Innovative regional interface 15",
+      "status": "Active",
+      "createdDate": "2025-09-29T19:14:12",
+      "updatedDate": "2026-01-24T19:52:32",
+      "owner": "Christopher Valdez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8413.77,
+      "description": "Perform thank I Democrat possible."
+    },
+    {
+      "id": "7975f55b-798b-4d43-9616-ae38f1140011",
+      "name": "Pre-emptive human-resource analyzer 16",
+      "status": "Inactive",
+      "createdDate": "2026-01-03T01:16:25",
+      "updatedDate": "2026-01-24T00:07:31",
+      "owner": "Ashley Coleman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6476.28,
+      "description": "Bring describe thank half standard area carry live."
+    },
+    {
+      "id": "3beae8fb-d727-4a78-88c0-0a9be1d9e6a9",
+      "name": "Extended 6thgeneration Graphic Interface 17",
+      "status": "Inactive",
+      "createdDate": "2025-04-03T07:22:11",
+      "updatedDate": "2026-01-29T07:46:19",
+      "owner": "Taylor Williams",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3620.98,
+      "description": "Various live avoid."
+    },
+    {
+      "id": "341eda62-432d-4651-99d3-241cfdf058de",
+      "name": "Quality-focused optimal concept 18",
+      "status": "Completed",
+      "createdDate": "2025-07-06T09:52:42",
+      "updatedDate": "2026-01-31T04:04:02",
+      "owner": "Joseph Mills",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9968.11,
+      "description": "Make set already traditional general in although."
+    },
+    {
+      "id": "7a0214d6-d187-4836-9d88-087f53348938",
+      "name": "Triple-buffered optimal leverage 19",
+      "status": "Active",
+      "createdDate": "2025-03-07T20:26:21",
+      "updatedDate": "2026-01-24T19:13:51",
+      "owner": "Monica Lang",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7437.57,
+      "description": "Safe reveal throw far fast budget."
+    },
+    {
+      "id": "e2e0ff5c-66f4-4586-94e9-dd7278b776cc",
+      "name": "Monitored fresh-thinking access 20",
+      "status": "Pending",
+      "createdDate": "2025-07-30T00:27:46",
+      "updatedDate": "2026-02-10T06:16:49",
+      "owner": "Andrew Howard",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2109.35,
+      "description": "Case us add new."
+    },
+    {
+      "id": "e75bb504-259b-481b-9773-c31702d2577f",
+      "name": "Virtual stable initiative 21",
+      "status": "Inactive",
+      "createdDate": "2025-12-21T19:00:40",
+      "updatedDate": "2026-01-21T16:23:33",
+      "owner": "David Bailey",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3920.35,
+      "description": "Box team statement lay debate truth which term."
+    },
+    {
+      "id": "24a35c6c-9290-4ff6-9215-012089ed4455",
+      "name": "Integrated 24/7 Local Area Network 22",
+      "status": "Pending",
+      "createdDate": "2025-06-02T13:15:27",
+      "updatedDate": "2026-02-07T22:49:27",
+      "owner": "Jack Kim",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8373.73,
+      "description": "American conference station act raise."
+    },
+    {
+      "id": "b45a8f3e-4634-4283-bdbe-49d14f4e3b7e",
+      "name": "Reduced contextually-based migration 23",
+      "status": "Inactive",
+      "createdDate": "2025-04-06T15:23:44",
+      "updatedDate": "2026-01-21T14:46:09",
+      "owner": "Nathan Roberts",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5488.01,
+      "description": "Break ago order start civil effort suddenly civil."
+    },
+    {
+      "id": "8f9a78d0-cbbb-41c0-8955-b4fb09ee6881",
+      "name": "Extended full-range functionalities 24",
+      "status": "Completed",
+      "createdDate": "2026-01-09T21:45:29",
+      "updatedDate": "2026-01-20T16:06:19",
+      "owner": "Linda Wilson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6481.82,
+      "description": "Ball get forward road including player door result."
+    },
+    {
+      "id": "876d2cb5-db0f-4dc9-ab25-99c06ac7bf31",
+      "name": "Front-line bottom-line toolset 25",
+      "status": "Active",
+      "createdDate": "2025-05-16T09:55:24",
+      "updatedDate": "2026-02-02T04:38:46",
+      "owner": "Teresa Owens",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8680.53,
+      "description": "Possible on let forward."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

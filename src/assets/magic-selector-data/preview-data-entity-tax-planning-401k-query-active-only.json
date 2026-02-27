@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-active-only",
+  "totalCount": 800,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "14a2116c-9a80-4501-a49c-670f36dfacd2",
+      "name": "Triple-buffered incremental implementation 1",
+      "status": "Pending",
+      "createdDate": "2025-12-14T22:11:17",
+      "updatedDate": "2026-01-21T14:40:22",
+      "owner": "Michelle Lee",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2829.15,
+      "description": "Budget have life."
+    },
+    {
+      "id": "de90d16a-b092-49c2-9b26-e3d48047343d",
+      "name": "Digitized composite strategy 2",
+      "status": "Pending",
+      "createdDate": "2025-09-08T20:46:18",
+      "updatedDate": "2026-02-08T23:59:06",
+      "owner": "Dennis Lambert",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 970.72,
+      "description": "Nation bill most certain dark radio."
+    },
+    {
+      "id": "339da32f-1a6f-4a17-b9e4-039d78b9a74a",
+      "name": "Ergonomic secondary firmware 3",
+      "status": "Completed",
+      "createdDate": "2026-02-13T18:34:42",
+      "updatedDate": "2026-02-05T03:44:03",
+      "owner": "Christina Hudson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4549.37,
+      "description": "Service reveal whatever new our place these."
+    },
+    {
+      "id": "cea314fc-3cf1-4127-a8fb-98369133cf04",
+      "name": "Extended fresh-thinking throughput 4",
+      "status": "Inactive",
+      "createdDate": "2026-02-04T12:04:53",
+      "updatedDate": "2026-01-23T21:30:20",
+      "owner": "Mark Clements",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2008.82,
+      "description": "Page professional among respond rule."
+    },
+    {
+      "id": "0e61efe9-dfa8-4c6d-905a-c448cc28062a",
+      "name": "Synergistic even-keeled array 5",
+      "status": "Inactive",
+      "createdDate": "2025-08-17T22:11:07",
+      "updatedDate": "2026-02-16T14:31:24",
+      "owner": "Austin Aguilar",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 892.45,
+      "description": "Break form use."
+    },
+    {
+      "id": "2ac776f8-bdac-48ee-8bd0-0a13d243a9f7",
+      "name": "Realigned bottom-line product 6",
+      "status": "Active",
+      "createdDate": "2025-12-24T23:02:15",
+      "updatedDate": "2026-01-27T23:19:46",
+      "owner": "Bradley Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6250.49,
+      "description": "Indicate water name strategy Mrs particularly."
+    },
+    {
+      "id": "7ef90180-bd7e-4422-90fe-b9bdfa3f60ab",
+      "name": "Customer-focused attitude-oriented secured line 7",
+      "status": "Inactive",
+      "createdDate": "2025-08-27T11:32:06",
+      "updatedDate": "2026-02-13T23:00:55",
+      "owner": "Amanda Garcia",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5179.77,
+      "description": "Success worry carry west seem most worker record."
+    },
+    {
+      "id": "f88e4967-6bdc-418a-9390-dc43153ed544",
+      "name": "Visionary asymmetric contingency 8",
+      "status": "Inactive",
+      "createdDate": "2025-08-07T00:34:00",
+      "updatedDate": "2026-02-08T08:40:07",
+      "owner": "Ryan Lin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 699.85,
+      "description": "May without fast."
+    },
+    {
+      "id": "b5154451-eaa0-4914-8c08-283359ac6c38",
+      "name": "Function-based fresh-thinking process improvement 9",
+      "status": "Active",
+      "createdDate": "2026-01-15T03:05:34",
+      "updatedDate": "2026-01-28T10:22:44",
+      "owner": "Sarah Russell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8973.16,
+      "description": "Bad join just fact."
+    },
+    {
+      "id": "05f4cf69-098b-49a9-a094-362745a2d08e",
+      "name": "Multi-tiered actuating moderator 10",
+      "status": "Inactive",
+      "createdDate": "2025-10-24T21:30:05",
+      "updatedDate": "2026-02-16T21:41:58",
+      "owner": "Michael Wood",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3254.94,
+      "description": "Risk way lawyer head whether politics who red."
+    },
+    {
+      "id": "6b9cbee8-ab33-46ec-89f4-ec37e9232c9a",
+      "name": "Open-source hybrid workforce 11",
+      "status": "Pending",
+      "createdDate": "2025-07-11T10:43:39",
+      "updatedDate": "2026-01-29T15:54:47",
+      "owner": "Matthew Williams",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5778.56,
+      "description": "Relate west single over focus."
+    },
+    {
+      "id": "c516ee25-20df-4f3d-a554-02389eb972ec",
+      "name": "Extended high-level task-force 12",
+      "status": "Completed",
+      "createdDate": "2025-08-15T04:05:28",
+      "updatedDate": "2026-02-06T20:41:34",
+      "owner": "John Hoffman",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6795.21,
+      "description": "Example positive player five everybody back."
+    },
+    {
+      "id": "e58cc858-de04-47c8-aee9-bd68eaf33c1b",
+      "name": "Customer-focused needs-based system engine 13",
+      "status": "Inactive",
+      "createdDate": "2025-03-19T19:27:52",
+      "updatedDate": "2026-01-30T22:31:40",
+      "owner": "David Ford",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1555.66,
+      "description": "Whether reach most talk development light."
+    },
+    {
+      "id": "f8098255-91ea-492a-9deb-dbb78346b452",
+      "name": "Expanded contextually-based benchmark 14",
+      "status": "Pending",
+      "createdDate": "2025-05-08T18:27:35",
+      "updatedDate": "2026-02-03T19:53:12",
+      "owner": "Michael Greene",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4018.23,
+      "description": "What agree end father."
+    },
+    {
+      "id": "c9c5f5f6-a0f2-46b9-ae57-8890ccbc1b3d",
+      "name": "Profit-focused user-facing product 15",
+      "status": "Active",
+      "createdDate": "2025-09-12T20:45:16",
+      "updatedDate": "2026-01-19T01:27:59",
+      "owner": "Norma Fernandez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3169.42,
+      "description": "None first moment mean middle what attorney."
+    },
+    {
+      "id": "e48f8e56-1991-4aac-8e28-02ab0309032d",
+      "name": "Grass-roots systematic strategy 16",
+      "status": "Pending",
+      "createdDate": "2025-11-07T09:05:54",
+      "updatedDate": "2026-01-25T21:48:37",
+      "owner": "Christopher Woods",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 305.73,
+      "description": "Against manager high lawyer."
+    },
+    {
+      "id": "5c811165-4d0d-4c58-86e4-11c7f1b1decd",
+      "name": "Total holistic alliance 17",
+      "status": "Pending",
+      "createdDate": "2025-12-23T17:47:25",
+      "updatedDate": "2026-02-16T18:26:24",
+      "owner": "Amber Bates",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2074.83,
+      "description": "Environment right Congress."
+    },
+    {
+      "id": "f445bf56-9414-49ee-9f24-57d21c0afaa7",
+      "name": "Compatible incremental installation 18",
+      "status": "Active",
+      "createdDate": "2025-08-25T04:04:59",
+      "updatedDate": "2026-01-23T02:59:02",
+      "owner": "Krista Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3161.17,
+      "description": "Form respond stand entire ground oil hand hour."
+    },
+    {
+      "id": "d9e6273e-387c-49c9-afe6-5df2833c5800",
+      "name": "Multi-lateral analyzing function 19",
+      "status": "Inactive",
+      "createdDate": "2025-06-11T11:16:26",
+      "updatedDate": "2026-01-30T06:02:53",
+      "owner": "Jason Owens",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8085.52,
+      "description": "Treatment organization everyone much."
+    },
+    {
+      "id": "0887ed09-c493-402e-8720-1ec7e1010f50",
+      "name": "Switchable dedicated attitude 20",
+      "status": "Active",
+      "createdDate": "2025-11-23T02:34:39",
+      "updatedDate": "2026-02-08T17:09:28",
+      "owner": "Cole Sanchez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3583.86,
+      "description": "Son its high meeting."
+    },
+    {
+      "id": "9b1ec144-ef90-4058-a1ec-ca4a685ceeef",
+      "name": "Re-contextualized user-facing parallelism 21",
+      "status": "Completed",
+      "createdDate": "2025-05-15T00:58:45",
+      "updatedDate": "2026-02-10T04:10:08",
+      "owner": "Vincent Norris",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4183.04,
+      "description": "Room state may personal."
+    },
+    {
+      "id": "5523d66d-bd84-46f1-8880-03cd6ae865e8",
+      "name": "Ameliorated coherent complexity 22",
+      "status": "Active",
+      "createdDate": "2025-02-25T17:11:47",
+      "updatedDate": "2026-01-26T17:33:05",
+      "owner": "Shannon Johns",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8452.28,
+      "description": "Better over practice drop record know."
+    },
+    {
+      "id": "d4817c6f-b53f-4b67-9228-3f52a996ec0e",
+      "name": "Reactive 24hour flexibility 23",
+      "status": "Inactive",
+      "createdDate": "2025-09-22T16:47:18",
+      "updatedDate": "2026-02-13T08:11:29",
+      "owner": "Stephanie Lopez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6458.75,
+      "description": "Bag war ago live my."
+    },
+    {
+      "id": "b3787f8e-8dff-49b4-93ce-f1f75fc65647",
+      "name": "Multi-layered demand-driven encryption 24",
+      "status": "Pending",
+      "createdDate": "2025-08-19T19:48:18",
+      "updatedDate": "2026-01-28T21:06:44",
+      "owner": "Alejandro Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1470.69,
+      "description": "Production together assume trial event."
+    },
+    {
+      "id": "b6415497-6714-4121-9d06-008789171f02",
+      "name": "Exclusive content-based throughput 25",
+      "status": "Completed",
+      "createdDate": "2025-12-12T00:01:43",
+      "updatedDate": "2026-01-22T22:30:58",
+      "owner": "Connie Anderson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6366.19,
+      "description": "Near admit responsibility quickly."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

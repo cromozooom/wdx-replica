@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-all-records",
+  "totalCount": 60,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "2dbd79fb-c87c-4b78-9066-4c59af318cfa",
+      "name": "Operative real-time hierarchy 1",
+      "status": "Completed",
+      "createdDate": "2025-09-06T09:30:15",
+      "updatedDate": "2026-01-29T05:28:00",
+      "owner": "Jasmine Hayes",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3082.35,
+      "description": "Reason continue culture role room."
+    },
+    {
+      "id": "924601e0-ddef-47fe-ae11-6e7a54431e72",
+      "name": "Profound high-level process improvement 2",
+      "status": "Active",
+      "createdDate": "2025-05-02T09:35:24",
+      "updatedDate": "2026-02-07T07:41:59",
+      "owner": "Jennifer Bryant",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9165.68,
+      "description": "Among main hold far left entire great."
+    },
+    {
+      "id": "1f9e5b7b-2cf0-4a4b-a26a-1b06ba8568b8",
+      "name": "Re-contextualized system-worthy budgetary management 3",
+      "status": "Completed",
+      "createdDate": "2025-12-14T19:07:33",
+      "updatedDate": "2026-02-13T21:38:17",
+      "owner": "Walter Perez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7791.3,
+      "description": "Blue treat who save statement manager."
+    },
+    {
+      "id": "fe472afd-7ca0-4686-b61f-dfb04586eb82",
+      "name": "Decentralized high-level Graphical User Interface 4",
+      "status": "Inactive",
+      "createdDate": "2025-08-23T00:34:13",
+      "updatedDate": "2026-02-07T15:59:56",
+      "owner": "Susan Moore",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1736.79,
+      "description": "Staff option knowledge age describe manage."
+    },
+    {
+      "id": "940d0688-8c5b-4eb7-a066-1b958b8d1b32",
+      "name": "Exclusive object-oriented attitude 5",
+      "status": "Inactive",
+      "createdDate": "2025-10-21T02:17:06",
+      "updatedDate": "2026-01-19T18:11:34",
+      "owner": "Jeffrey Mccann",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2566.8,
+      "description": "Short your point one between tell moment believe."
+    },
+    {
+      "id": "6ff9e8bf-6e73-4e72-89d1-c4af77161c7b",
+      "name": "Balanced well-modulated initiative 6",
+      "status": "Active",
+      "createdDate": "2025-02-19T11:03:40",
+      "updatedDate": "2026-02-11T05:20:55",
+      "owner": "Ashley Wagner",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3213.95,
+      "description": "Nothing help career want."
+    },
+    {
+      "id": "cfbe8f6a-f7de-45c1-b8b6-e82f66166087",
+      "name": "Front-line reciprocal migration 7",
+      "status": "Inactive",
+      "createdDate": "2025-09-11T01:13:24",
+      "updatedDate": "2026-01-29T14:43:10",
+      "owner": "Ricardo Frank",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9242.29,
+      "description": "Stand others per check way choose."
+    },
+    {
+      "id": "e112d90e-0a77-4283-adb8-45b9c2b59d7c",
+      "name": "Open-architected encompassing open system 8",
+      "status": "Pending",
+      "createdDate": "2025-02-18T19:42:15",
+      "updatedDate": "2026-01-21T22:58:54",
+      "owner": "Rebecca Hernandez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4257.61,
+      "description": "Sign cell write voice."
+    },
+    {
+      "id": "37c22c98-c564-439b-a9f0-fbec25dacb7f",
+      "name": "Multi-layered intermediate hub 9",
+      "status": "Active",
+      "createdDate": "2025-06-02T11:37:50",
+      "updatedDate": "2026-01-21T18:04:59",
+      "owner": "Thomas Wilson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2003.65,
+      "description": "Born prove edge whose long."
+    },
+    {
+      "id": "a5c0d216-c54c-4d0e-a6b3-322f69e965fe",
+      "name": "Multi-tiered high-level success 10",
+      "status": "Active",
+      "createdDate": "2025-03-21T14:33:35",
+      "updatedDate": "2026-01-29T14:49:03",
+      "owner": "Johnny Stein",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6257.35,
+      "description": "Clear health president force painting get people."
+    },
+    {
+      "id": "e9f136dd-1589-405d-ba35-634ac7743778",
+      "name": "Virtual actuating projection 11",
+      "status": "Inactive",
+      "createdDate": "2025-07-30T13:48:41",
+      "updatedDate": "2026-01-20T04:29:08",
+      "owner": "Albert Mcguire",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2320.67,
+      "description": "Model speak goal tell."
+    },
+    {
+      "id": "90219959-9750-4178-9162-2c74046d2ce3",
+      "name": "Cross-group hybrid functionalities 12",
+      "status": "Pending",
+      "createdDate": "2025-05-23T22:22:00",
+      "updatedDate": "2026-01-31T00:24:55",
+      "owner": "Christina Grant",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2799.19,
+      "description": "Get between traditional tree pressure break thousand animal."
+    },
+    {
+      "id": "3c1cf311-52de-41d5-a377-3b7cd9812388",
+      "name": "Reduced explicit time-frame 13",
+      "status": "Active",
+      "createdDate": "2025-02-26T21:07:54",
+      "updatedDate": "2026-01-21T03:18:34",
+      "owner": "Thomas Patrick",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1133.84,
+      "description": "Our key store agency city hotel."
+    },
+    {
+      "id": "66ee7490-95ea-44e5-8553-feec06082d3d",
+      "name": "Face-to-face zero-defect synergy 14",
+      "status": "Inactive",
+      "createdDate": "2025-11-15T11:35:40",
+      "updatedDate": "2026-01-27T15:54:02",
+      "owner": "Gregory Potter",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4907.97,
+      "description": "Between during middle structure successful deal."
+    },
+    {
+      "id": "566aa05d-6446-4081-8399-0543eb86cbbd",
+      "name": "Front-line web-enabled budgetary management 15",
+      "status": "Active",
+      "createdDate": "2026-01-07T21:51:15",
+      "updatedDate": "2026-01-19T03:44:16",
+      "owner": "Mr. Omar Stone",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 138.75,
+      "description": "Describe member threat hold rate quickly keep."
+    },
+    {
+      "id": "392f4570-748b-48f5-a247-ab2f3fbf437d",
+      "name": "Phased multi-state software 16",
+      "status": "Completed",
+      "createdDate": "2025-10-20T05:53:14",
+      "updatedDate": "2026-02-05T07:56:44",
+      "owner": "Garrett Arnold",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4599.54,
+      "description": "Discover last science form society."
+    },
+    {
+      "id": "dbd47170-e97f-4400-9f31-333c0c7378b2",
+      "name": "Exclusive context-sensitive archive 17",
+      "status": "Pending",
+      "createdDate": "2025-06-12T20:55:21",
+      "updatedDate": "2026-02-12T22:19:48",
+      "owner": "Heather Ford",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 633.29,
+      "description": "Other behind pretty newspaper need."
+    },
+    {
+      "id": "76c60795-518f-49f7-b551-00b0c6f42a0a",
+      "name": "Inverse asynchronous hub 18",
+      "status": "Completed",
+      "createdDate": "2025-04-24T15:31:00",
+      "updatedDate": "2026-02-05T05:46:15",
+      "owner": "Jeremy Cox",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2267.0,
+      "description": "Case send some."
+    },
+    {
+      "id": "694663ee-f2ff-41fe-944e-3af6cd2d8d68",
+      "name": "Automated real-time groupware 19",
+      "status": "Pending",
+      "createdDate": "2025-08-05T23:51:55",
+      "updatedDate": "2026-02-17T03:26:32",
+      "owner": "Angela Lee",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5929.21,
+      "description": "Catch bag consumer great believe."
+    },
+    {
+      "id": "251591fa-20d4-4987-8283-1826a9574726",
+      "name": "Implemented bi-directional adapter 20",
+      "status": "Completed",
+      "createdDate": "2025-10-17T04:17:25",
+      "updatedDate": "2026-02-09T22:55:14",
+      "owner": "Paige Castillo",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7254.78,
+      "description": "Continue own hear stage."
+    },
+    {
+      "id": "00298659-a77a-4b9a-9b2d-42471b814009",
+      "name": "Configurable solution-oriented Internet solution 21",
+      "status": "Pending",
+      "createdDate": "2025-05-09T11:01:15",
+      "updatedDate": "2026-02-03T05:36:06",
+      "owner": "Steven Kline",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5715.25,
+      "description": "Cost democratic campaign enjoy."
+    },
+    {
+      "id": "4dbe9780-ac12-401d-964a-76ced2fbc63a",
+      "name": "Total content-based firmware 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-16T22:47:34",
+      "updatedDate": "2026-02-13T23:52:12",
+      "owner": "Sharon Coleman",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 607.22,
+      "description": "Road system experience artist."
+    },
+    {
+      "id": "0cb0698f-1ff1-4c25-8251-9ab126185873",
+      "name": "Cloned contextually-based process improvement 23",
+      "status": "Completed",
+      "createdDate": "2025-10-22T09:30:39",
+      "updatedDate": "2026-02-17T04:25:24",
+      "owner": "Paul Hill",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8711.9,
+      "description": "Just security feeling challenge blood much."
+    },
+    {
+      "id": "2425ab6d-cb3a-4b28-a6e0-4731775e128a",
+      "name": "Sharable dedicated interface 24",
+      "status": "Completed",
+      "createdDate": "2025-07-03T17:08:23",
+      "updatedDate": "2026-01-22T09:17:44",
+      "owner": "Jason Adams",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4399.39,
+      "description": "Sea million describe place force kid."
+    },
+    {
+      "id": "2faaba1a-529b-4bef-af77-b2a8b54f6d36",
+      "name": "Quality-focused multi-state groupware 25",
+      "status": "Pending",
+      "createdDate": "2026-01-18T19:32:01",
+      "updatedDate": "2026-02-10T12:19:41",
+      "owner": "Richard Scott",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7222.37,
+      "description": "Everyone career man option."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

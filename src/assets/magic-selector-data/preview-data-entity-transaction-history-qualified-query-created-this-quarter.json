@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 410,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "40ad2df5-b2aa-4775-ae11-fac0d3ccbab1",
+      "name": "Synergized systemic knowledge user 1",
+      "status": "Active",
+      "createdDate": "2025-09-20T20:40:26",
+      "updatedDate": "2026-01-23T03:46:19",
+      "owner": "Martin Sandoval",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6724.24,
+      "description": "Day deal and technology someone."
+    },
+    {
+      "id": "0468e9f3-9242-4368-a7e5-78bcc147893e",
+      "name": "Up-sized value-added installation 2",
+      "status": "Inactive",
+      "createdDate": "2025-06-03T05:21:03",
+      "updatedDate": "2026-01-24T15:29:44",
+      "owner": "Megan Ryan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9640.26,
+      "description": "Mission stock woman school stay few."
+    },
+    {
+      "id": "7a1bd526-3115-4ae2-baee-ea662b4495ed",
+      "name": "Operative uniform challenge 3",
+      "status": "Completed",
+      "createdDate": "2025-10-26T16:18:44",
+      "updatedDate": "2026-01-22T22:54:29",
+      "owner": "Debra White",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2743.86,
+      "description": "American wall so heavy in."
+    },
+    {
+      "id": "3a5ce024-0dc8-456e-a166-11293ca30391",
+      "name": "Diverse scalable monitoring 4",
+      "status": "Active",
+      "createdDate": "2025-10-01T22:14:44",
+      "updatedDate": "2026-02-03T16:23:31",
+      "owner": "Emily Brock",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5501.29,
+      "description": "Tell full threat outside hit middle."
+    },
+    {
+      "id": "42a80c52-f2be-43af-9961-e4e2a61e0b48",
+      "name": "Versatile didactic artificial intelligence 5",
+      "status": "Completed",
+      "createdDate": "2026-02-07T23:03:13",
+      "updatedDate": "2026-01-30T12:57:28",
+      "owner": "Nicholas Morrow",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2608.02,
+      "description": "Form most method follow with."
+    },
+    {
+      "id": "4c099fa8-b595-4076-a732-f7bae869d3fe",
+      "name": "Innovative holistic project 6",
+      "status": "Pending",
+      "createdDate": "2025-03-01T17:19:36",
+      "updatedDate": "2026-01-20T00:46:09",
+      "owner": "Ana Bell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 455.26,
+      "description": "Guess subject bar thank."
+    },
+    {
+      "id": "bb505f6a-4c56-4974-a86e-1b98462910bd",
+      "name": "Organic tangible projection 7",
+      "status": "Inactive",
+      "createdDate": "2025-06-21T10:45:41",
+      "updatedDate": "2026-02-13T12:28:54",
+      "owner": "Jamie Hunt",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1421.97,
+      "description": "Voice grow measure consumer."
+    },
+    {
+      "id": "02db3673-a4ac-4eb6-b0f4-91e76a2657af",
+      "name": "User-centric attitude-oriented software 8",
+      "status": "Inactive",
+      "createdDate": "2025-09-14T09:43:12",
+      "updatedDate": "2026-01-29T05:46:14",
+      "owner": "John Perez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7939.56,
+      "description": "Capital never star economy."
+    },
+    {
+      "id": "7949be49-2adc-4c51-89f1-70fa3a5f8737",
+      "name": "Function-based intermediate neural-net 9",
+      "status": "Inactive",
+      "createdDate": "2025-08-18T10:18:56",
+      "updatedDate": "2026-02-10T00:49:23",
+      "owner": "Michelle Williams",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9186.14,
+      "description": "Memory sea get Congress level measure."
+    },
+    {
+      "id": "c9132a1f-2617-44ab-a897-39b7a5d2daf1",
+      "name": "User-centric leadingedge model 10",
+      "status": "Completed",
+      "createdDate": "2025-06-18T11:11:43",
+      "updatedDate": "2026-01-22T16:36:56",
+      "owner": "Latoya Levine",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5208.8,
+      "description": "Career yes every interesting."
+    },
+    {
+      "id": "aac70ba6-dd69-4ff8-b654-137e35c28e67",
+      "name": "Customizable contextually-based utilization 11",
+      "status": "Active",
+      "createdDate": "2025-02-24T06:55:09",
+      "updatedDate": "2026-02-08T15:20:57",
+      "owner": "Adam Morrison",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6334.84,
+      "description": "Simply color man card."
+    },
+    {
+      "id": "8f516db8-00d8-4998-930c-3929a4b8202b",
+      "name": "Object-based fresh-thinking task-force 12",
+      "status": "Active",
+      "createdDate": "2026-01-22T15:33:47",
+      "updatedDate": "2026-02-14T01:05:08",
+      "owner": "Stephen Castaneda",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8318.09,
+      "description": "With movie he leg."
+    },
+    {
+      "id": "0f3c5029-1914-4f26-a5a2-c776d1706137",
+      "name": "Persevering transitional solution 13",
+      "status": "Completed",
+      "createdDate": "2025-09-14T20:19:53",
+      "updatedDate": "2026-01-23T21:50:04",
+      "owner": "Jodi Morrison",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4940.53,
+      "description": "Administration happy pressure order entire."
+    },
+    {
+      "id": "e56c7226-1541-446b-9c2f-95b84621a83c",
+      "name": "Profound uniform budgetary management 14",
+      "status": "Completed",
+      "createdDate": "2025-03-21T02:56:34",
+      "updatedDate": "2026-01-22T18:54:34",
+      "owner": "Austin Graham",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 923.77,
+      "description": "Majority tonight tree speech class give east."
+    },
+    {
+      "id": "115ca214-e4fc-44c6-a496-909ac3fb8444",
+      "name": "Innovative disintermediate customer loyalty 15",
+      "status": "Completed",
+      "createdDate": "2025-08-08T07:06:39",
+      "updatedDate": "2026-02-15T16:37:07",
+      "owner": "Michael Johnson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6989.28,
+      "description": "Big also laugh mind team could."
+    },
+    {
+      "id": "bedb8965-f9dc-4552-84c4-56e46226ae09",
+      "name": "Configurable 24hour alliance 16",
+      "status": "Completed",
+      "createdDate": "2025-04-22T09:50:26",
+      "updatedDate": "2026-01-25T01:47:30",
+      "owner": "Angela Barnett MD",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8189.9,
+      "description": "Trouble respond wrong information morning."
+    },
+    {
+      "id": "6888063e-fab9-43b3-ad10-beca5104cb41",
+      "name": "Operative needs-based monitoring 17",
+      "status": "Inactive",
+      "createdDate": "2026-02-16T02:53:08",
+      "updatedDate": "2026-01-18T12:13:38",
+      "owner": "Tammy Benitez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9862.26,
+      "description": "Class source hot others big join."
+    },
+    {
+      "id": "8ff0be9e-9249-4cf6-83e6-57fdb116d5c0",
+      "name": "Realigned demand-driven intranet 18",
+      "status": "Pending",
+      "createdDate": "2025-03-09T17:25:10",
+      "updatedDate": "2026-02-10T12:07:39",
+      "owner": "Wesley Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7368.91,
+      "description": "Approach discussion true."
+    },
+    {
+      "id": "cb80aa42-889b-4a3d-9d10-ccb48a4b2d24",
+      "name": "Implemented dynamic concept 19",
+      "status": "Inactive",
+      "createdDate": "2025-06-18T12:31:37",
+      "updatedDate": "2026-01-21T05:43:12",
+      "owner": "Nicholas Jackson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7340.73,
+      "description": "Manager ahead month rule others report."
+    },
+    {
+      "id": "95d45b69-0a60-4bcd-a906-4c8be1d35593",
+      "name": "Organic background concept 20",
+      "status": "Inactive",
+      "createdDate": "2025-08-23T06:08:37",
+      "updatedDate": "2026-01-28T21:31:45",
+      "owner": "Robert Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1000.66,
+      "description": "Number two simply population."
+    },
+    {
+      "id": "6f01df46-3075-4121-a403-df9b8c6dfe4c",
+      "name": "Face-to-face systematic complexity 21",
+      "status": "Active",
+      "createdDate": "2026-02-14T21:26:09",
+      "updatedDate": "2026-02-03T03:13:35",
+      "owner": "Colton Wright",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5409.39,
+      "description": "Help commercial behind research soldier he security."
+    },
+    {
+      "id": "15960dc2-9fba-4b17-bc43-a5b17000944b",
+      "name": "Integrated disintermediate artificial intelligence 22",
+      "status": "Pending",
+      "createdDate": "2025-09-11T13:48:15",
+      "updatedDate": "2026-01-21T04:27:57",
+      "owner": "Sarah Mckenzie",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1550.45,
+      "description": "Less pull mission two."
+    },
+    {
+      "id": "9ca4d0f3-54ac-4442-8ac7-373e936bdd94",
+      "name": "Multi-channeled homogeneous artificial intelligence 23",
+      "status": "Active",
+      "createdDate": "2025-04-27T14:36:21",
+      "updatedDate": "2026-01-26T11:39:46",
+      "owner": "Bethany Green",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3743.35,
+      "description": "Represent position produce can."
+    },
+    {
+      "id": "c00cd185-5ad8-4451-a16f-2b963ef9ad15",
+      "name": "Virtual executive circuit 24",
+      "status": "Pending",
+      "createdDate": "2025-05-28T14:05:28",
+      "updatedDate": "2026-02-13T16:46:50",
+      "owner": "James Garcia",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 187.77,
+      "description": "History animal explain suffer society television."
+    },
+    {
+      "id": "ee2a9357-a653-46fd-a335-1e3b9dee606a",
+      "name": "Cloned 24hour capability 25",
+      "status": "Active",
+      "createdDate": "2025-11-22T14:02:07",
+      "updatedDate": "2026-02-08T03:06:53",
+      "owner": "Sarah Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 891.54,
+      "description": "Election begin young purpose."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

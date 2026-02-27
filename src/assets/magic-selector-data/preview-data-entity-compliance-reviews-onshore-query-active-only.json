@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-active-only",
+  "totalCount": 189,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "9d877e99-1187-48be-828e-6c2996262ac5",
+      "name": "Ergonomic client-driven adapter 1",
+      "status": "Pending",
+      "createdDate": "2026-01-24T20:48:57",
+      "updatedDate": "2026-02-05T15:20:25",
+      "owner": "William Rivera",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3221.14,
+      "description": "Production fine beat detail need."
+    },
+    {
+      "id": "57b2cfb2-9e1b-4b2c-bb6d-166fcb32c484",
+      "name": "Universal fault-tolerant time-frame 2",
+      "status": "Inactive",
+      "createdDate": "2025-12-10T17:39:29",
+      "updatedDate": "2026-01-18T14:41:03",
+      "owner": "Annette Perry",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6061.88,
+      "description": "Popular wide into learn drop its."
+    },
+    {
+      "id": "c4d1cdaf-405b-490c-ac68-d43fd0791728",
+      "name": "Cross-platform homogeneous structure 3",
+      "status": "Completed",
+      "createdDate": "2025-12-01T22:12:59",
+      "updatedDate": "2026-02-08T18:00:51",
+      "owner": "Robert Snow",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4122.64,
+      "description": "Under federal police station issue since."
+    },
+    {
+      "id": "db4e9ad6-5125-4c74-b22c-ea58446c7fe7",
+      "name": "Ergonomic maximized service-desk 4",
+      "status": "Pending",
+      "createdDate": "2025-07-16T14:49:33",
+      "updatedDate": "2026-01-23T22:42:18",
+      "owner": "Rachel Rowland",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6328.51,
+      "description": "Adult key test film movement."
+    },
+    {
+      "id": "4192bace-bdcd-49ed-bc18-c5f16b1ee8b7",
+      "name": "Implemented optimizing alliance 5",
+      "status": "Inactive",
+      "createdDate": "2025-12-12T15:37:32",
+      "updatedDate": "2026-02-02T07:14:42",
+      "owner": "Ashley Martinez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2245.45,
+      "description": "Animal else take order office."
+    },
+    {
+      "id": "2b33c234-c65f-4747-9237-9cada4bcf812",
+      "name": "Advanced scalable attitude 6",
+      "status": "Pending",
+      "createdDate": "2025-08-05T02:56:06",
+      "updatedDate": "2026-02-08T02:19:48",
+      "owner": "Joe Brown",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8884.28,
+      "description": "Hit professor whole."
+    },
+    {
+      "id": "28edba6d-add4-430b-9276-ec3f398b0c79",
+      "name": "Persevering uniform monitoring 7",
+      "status": "Completed",
+      "createdDate": "2025-03-19T10:18:04",
+      "updatedDate": "2026-02-01T16:41:23",
+      "owner": "Sabrina Hicks",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5624.84,
+      "description": "Hand find thing training teacher."
+    },
+    {
+      "id": "47c509d1-2dd0-4194-8e33-87cd0998214d",
+      "name": "Stand-alone content-based access 8",
+      "status": "Pending",
+      "createdDate": "2025-11-21T06:56:12",
+      "updatedDate": "2026-01-27T14:07:53",
+      "owner": "Sarah Marshall",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 783.56,
+      "description": "Teach position main tonight administration drive agree."
+    },
+    {
+      "id": "1f970a91-dbd8-4130-b6fc-7834aee32705",
+      "name": "Devolved empowering function 9",
+      "status": "Pending",
+      "createdDate": "2025-06-25T04:51:18",
+      "updatedDate": "2026-01-30T12:02:27",
+      "owner": "Laura Holmes",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3492.74,
+      "description": "Mention report best lay."
+    },
+    {
+      "id": "f924ca00-f3ba-42a2-be70-61e63c16cc00",
+      "name": "Fully-configurable fresh-thinking extranet 10",
+      "status": "Pending",
+      "createdDate": "2025-11-05T09:14:18",
+      "updatedDate": "2026-01-31T13:31:20",
+      "owner": "Elizabeth Carlson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 808.28,
+      "description": "As name analysis stand single red huge."
+    },
+    {
+      "id": "664d7049-eb16-449a-b97c-4d2fe1bc0544",
+      "name": "Ameliorated responsive support 11",
+      "status": "Inactive",
+      "createdDate": "2025-02-19T12:15:04",
+      "updatedDate": "2026-02-06T05:57:17",
+      "owner": "Frank Mcdaniel",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 217.04,
+      "description": "Plan outside amount none."
+    },
+    {
+      "id": "ce457194-096f-41b0-8cf1-b1fe40efa507",
+      "name": "Organic actuating service-desk 12",
+      "status": "Completed",
+      "createdDate": "2025-04-13T23:53:34",
+      "updatedDate": "2026-01-28T18:14:13",
+      "owner": "Jared Wright",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8111.39,
+      "description": "Where involve own test community price true account."
+    },
+    {
+      "id": "cfcc7779-712c-426b-8f2b-445e66eb30cd",
+      "name": "Persevering asymmetric Local Area Network 13",
+      "status": "Active",
+      "createdDate": "2025-06-03T01:53:09",
+      "updatedDate": "2026-02-02T22:04:00",
+      "owner": "Larry Mooney",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9353.32,
+      "description": "Role truth drive wife political old."
+    },
+    {
+      "id": "5f3de4ff-9802-495e-9abc-08f9d608224e",
+      "name": "Polarized 3rdgeneration matrices 14",
+      "status": "Completed",
+      "createdDate": "2025-12-18T14:59:27",
+      "updatedDate": "2026-01-21T08:38:29",
+      "owner": "Michael Shaw",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2886.54,
+      "description": "Recognize between time it least call young account."
+    },
+    {
+      "id": "b1d47231-caee-4de1-8592-ad319f2e9085",
+      "name": "Synergized exuding open system 15",
+      "status": "Completed",
+      "createdDate": "2026-02-06T00:41:43",
+      "updatedDate": "2026-02-06T07:17:46",
+      "owner": "Rachel Dunn",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7980.09,
+      "description": "Base soldier manage material impact show."
+    },
+    {
+      "id": "cdfe1868-8467-4c94-8212-9062c22edf5a",
+      "name": "Distributed intermediate success 16",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T18:21:40",
+      "updatedDate": "2026-01-31T20:40:18",
+      "owner": "Martin Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4614.58,
+      "description": "Game fine well."
+    },
+    {
+      "id": "89394a15-641f-4308-87a2-0ab5cff49d9e",
+      "name": "Assimilated intermediate orchestration 17",
+      "status": "Pending",
+      "createdDate": "2025-04-18T22:36:48",
+      "updatedDate": "2026-02-13T17:17:53",
+      "owner": "Jacob Graves",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6310.11,
+      "description": "Fish write Congress picture possible."
+    },
+    {
+      "id": "d50b12ba-02a2-4c76-88dd-a7be0ca6dd2e",
+      "name": "Ergonomic upward-trending neural-net 18",
+      "status": "Completed",
+      "createdDate": "2025-10-21T13:05:25",
+      "updatedDate": "2026-01-31T10:16:55",
+      "owner": "Ann Clark",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 334.83,
+      "description": "People middle great evidence more rock production."
+    },
+    {
+      "id": "528d7e72-ea26-421b-8df6-c1d73bff5956",
+      "name": "Organized interactive emulation 19",
+      "status": "Completed",
+      "createdDate": "2025-08-08T04:22:48",
+      "updatedDate": "2026-02-09T16:00:42",
+      "owner": "Charles Higgins",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3154.87,
+      "description": "Quality husband religious Democrat learn check."
+    },
+    {
+      "id": "2b9d01b4-fd5e-4f1c-bf15-6a20ea538eae",
+      "name": "Monitored bandwidth-monitored focus group 20",
+      "status": "Inactive",
+      "createdDate": "2025-08-12T01:06:41",
+      "updatedDate": "2026-02-02T07:09:07",
+      "owner": "Dylan Anderson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2200.51,
+      "description": "Music wall loss ask specific."
+    },
+    {
+      "id": "dae4504b-c1ca-423b-96ec-b68ff7ef0566",
+      "name": "Quality-focused responsive website 21",
+      "status": "Completed",
+      "createdDate": "2025-09-22T00:38:25",
+      "updatedDate": "2026-01-26T03:52:50",
+      "owner": "William Vaughan",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5552.15,
+      "description": "Individual example open out language language safe."
+    },
+    {
+      "id": "2b5f9275-77ee-4a0c-bf80-f1ca4f895be2",
+      "name": "De-engineered disintermediate function 22",
+      "status": "Inactive",
+      "createdDate": "2026-02-02T00:41:05",
+      "updatedDate": "2026-02-02T07:13:10",
+      "owner": "Heather Diaz",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3937.95,
+      "description": "Month crime meeting thus detail recognize fund."
+    },
+    {
+      "id": "ab2668d2-b2b3-410a-a0bc-99757cbfd5fb",
+      "name": "Down-sized transitional open architecture 23",
+      "status": "Completed",
+      "createdDate": "2025-03-20T01:26:44",
+      "updatedDate": "2026-01-28T14:19:04",
+      "owner": "Alice Bradley",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 589.1,
+      "description": "Rule front rather question."
+    },
+    {
+      "id": "e45d5562-7aeb-481a-b307-39726d8196ce",
+      "name": "Balanced discrete system engine 24",
+      "status": "Inactive",
+      "createdDate": "2025-09-13T20:28:11",
+      "updatedDate": "2026-01-28T05:37:03",
+      "owner": "James Garcia",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 529.5,
+      "description": "Reflect oil single finish mouth."
+    },
+    {
+      "id": "56eb2337-687a-4198-bb40-7a7f54815956",
+      "name": "Universal uniform solution 25",
+      "status": "Completed",
+      "createdDate": "2025-12-06T16:16:28",
+      "updatedDate": "2026-02-02T19:39:03",
+      "owner": "Carlos Miller",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 215.02,
+      "description": "Several whom theory sort wish product represent."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

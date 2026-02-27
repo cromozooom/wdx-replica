@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-kycdocument",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 426,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b70246ae-c969-4e9a-8f58-4bf6615ce732",
+      "name": "Enhanced directional definition 1",
+      "status": "Inactive",
+      "createdDate": "2025-03-22T23:38:41",
+      "updatedDate": "2026-02-16T06:43:56",
+      "owner": "Ronald Rios PhD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2063.17,
+      "description": "Chair around eight direction possible out already."
+    },
+    {
+      "id": "15b6ec19-4da6-493a-b3b2-8ee51b796f42",
+      "name": "Future-proofed zero-defect model 2",
+      "status": "Completed",
+      "createdDate": "2025-05-22T09:51:49",
+      "updatedDate": "2026-01-31T01:39:32",
+      "owner": "James Williams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7076.96,
+      "description": "Give cultural best we."
+    },
+    {
+      "id": "eebb6b09-67e0-48a2-9f58-06de40e816fe",
+      "name": "Fundamental modular open system 3",
+      "status": "Inactive",
+      "createdDate": "2025-05-20T22:14:32",
+      "updatedDate": "2026-02-09T17:22:17",
+      "owner": "Brenda Munoz",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3897.2,
+      "description": "Rest responsibility process role instead business indeed."
+    },
+    {
+      "id": "d7237da8-b72e-4f8b-894a-88b80ef23e94",
+      "name": "Proactive 6thgeneration frame 4",
+      "status": "Inactive",
+      "createdDate": "2025-05-12T07:54:21",
+      "updatedDate": "2026-01-26T02:30:49",
+      "owner": "David Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9664.69,
+      "description": "Speak drive affect blue staff health."
+    },
+    {
+      "id": "f04101aa-68e1-4610-9935-ed1219cc788d",
+      "name": "Intuitive asynchronous help-desk 5",
+      "status": "Pending",
+      "createdDate": "2025-08-15T22:15:59",
+      "updatedDate": "2026-02-12T19:28:21",
+      "owner": "Sheila Taylor",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8484.01,
+      "description": "Who no finally price resource."
+    },
+    {
+      "id": "fd66ea13-dab9-47a7-b5b0-6c59ab262295",
+      "name": "Centralized asynchronous capability 6",
+      "status": "Active",
+      "createdDate": "2025-04-17T20:46:15",
+      "updatedDate": "2026-01-22T16:21:31",
+      "owner": "Deborah West",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5634.47,
+      "description": "Live these present pressure miss."
+    },
+    {
+      "id": "e558d3a2-d091-4c06-913c-e5baf0488ddf",
+      "name": "Proactive leadingedge instruction set 7",
+      "status": "Active",
+      "createdDate": "2025-11-16T10:22:41",
+      "updatedDate": "2026-01-18T18:50:56",
+      "owner": "Jay Jensen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1540.98,
+      "description": "Mouth outside guess themselves."
+    },
+    {
+      "id": "235f8a96-38d5-4401-b0c0-1b430b014e4f",
+      "name": "Phased foreground moratorium 8",
+      "status": "Inactive",
+      "createdDate": "2025-08-28T12:41:55",
+      "updatedDate": "2026-01-26T04:06:36",
+      "owner": "Amanda Christian",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2336.17,
+      "description": "Price eat edge letter push laugh."
+    },
+    {
+      "id": "b6a326db-b8e3-4b8f-980f-2874468aa49a",
+      "name": "Centralized leadingedge array 9",
+      "status": "Active",
+      "createdDate": "2025-07-09T13:12:06",
+      "updatedDate": "2026-01-27T09:12:35",
+      "owner": "Michelle Stewart",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1958.22,
+      "description": "Decision rule now half party."
+    },
+    {
+      "id": "9159343a-9177-418b-92a9-52657f1108b4",
+      "name": "Up-sized context-sensitive matrix 10",
+      "status": "Inactive",
+      "createdDate": "2026-01-13T15:01:38",
+      "updatedDate": "2026-01-25T14:56:42",
+      "owner": "Thomas Grimes",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7833.48,
+      "description": "Level new but."
+    },
+    {
+      "id": "13a58309-d1b1-4737-a9f2-c0c58cfdedb3",
+      "name": "Proactive high-level contingency 11",
+      "status": "Completed",
+      "createdDate": "2025-06-01T07:48:19",
+      "updatedDate": "2026-01-28T06:40:28",
+      "owner": "Kathleen Collier",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4176.64,
+      "description": "Movie responsibility short draw."
+    },
+    {
+      "id": "43b7d037-920e-4aff-ab6d-9065d15172ec",
+      "name": "Profit-focused cohesive application 12",
+      "status": "Completed",
+      "createdDate": "2025-04-05T01:29:09",
+      "updatedDate": "2026-01-27T08:32:27",
+      "owner": "Amanda Williams",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8345.55,
+      "description": "Car key ago poor."
+    },
+    {
+      "id": "98f317bc-9f76-4eb4-8b9d-2bebde50d372",
+      "name": "Stand-alone reciprocal capacity 13",
+      "status": "Active",
+      "createdDate": "2025-07-23T19:54:24",
+      "updatedDate": "2026-02-16T06:14:40",
+      "owner": "Sydney Boyd",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8121.84,
+      "description": "Food school since interest reveal."
+    },
+    {
+      "id": "30918288-0a5f-46c3-8d8e-92cd53d3d29a",
+      "name": "Multi-lateral composite ability 14",
+      "status": "Completed",
+      "createdDate": "2025-03-09T06:19:30",
+      "updatedDate": "2026-01-20T21:35:25",
+      "owner": "Michelle Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5736.39,
+      "description": "Style rock eye game hard wear."
+    },
+    {
+      "id": "ca0e42f6-dc22-4584-98ac-eab0fd2f57b3",
+      "name": "User-centric multi-tasking budgetary management 15",
+      "status": "Active",
+      "createdDate": "2025-04-19T00:13:31",
+      "updatedDate": "2026-02-09T05:32:27",
+      "owner": "John Washington",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1410.68,
+      "description": "Cultural run bad note because."
+    },
+    {
+      "id": "91b0c8b7-839b-4c13-a7d3-ed6bbc5aed88",
+      "name": "De-engineered bottom-line matrix 16",
+      "status": "Completed",
+      "createdDate": "2025-04-17T12:06:27",
+      "updatedDate": "2026-01-27T08:21:28",
+      "owner": "Lisa James",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3968.38,
+      "description": "Vote five when nice."
+    },
+    {
+      "id": "55212b5c-bdfd-4fd4-856d-f59c4f110693",
+      "name": "Open-architected multimedia Internet solution 17",
+      "status": "Pending",
+      "createdDate": "2025-04-09T03:21:52",
+      "updatedDate": "2026-02-06T11:51:47",
+      "owner": "Joanna Wright",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3039.5,
+      "description": "Police administration standard trade group."
+    },
+    {
+      "id": "a04b0837-e2d8-44d2-a705-d83334d365d5",
+      "name": "Devolved client-server hardware 18",
+      "status": "Completed",
+      "createdDate": "2025-08-13T21:56:25",
+      "updatedDate": "2026-02-09T21:23:44",
+      "owner": "Thomas Mcdaniel",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8484.22,
+      "description": "Human though simply just arm compare inside."
+    },
+    {
+      "id": "12841113-0cff-4f1d-a843-224b33198dbf",
+      "name": "Organic holistic instruction set 19",
+      "status": "Active",
+      "createdDate": "2025-04-08T08:53:40",
+      "updatedDate": "2026-02-06T12:53:20",
+      "owner": "James Soto",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4638.92,
+      "description": "Federal until tough the since election customer."
+    },
+    {
+      "id": "8faab7db-c8c5-427e-bf72-3997da944970",
+      "name": "Implemented encompassing monitoring 20",
+      "status": "Inactive",
+      "createdDate": "2025-08-19T03:44:22",
+      "updatedDate": "2026-01-23T23:58:45",
+      "owner": "Ryan Gallegos",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5256.44,
+      "description": "Himself interesting by at support reduce."
+    },
+    {
+      "id": "133a5085-f9d2-4ce9-a826-87d646b0f7b5",
+      "name": "Innovative multimedia capability 21",
+      "status": "Active",
+      "createdDate": "2025-09-22T22:33:16",
+      "updatedDate": "2026-02-10T14:01:33",
+      "owner": "Brenda Valencia",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5557.69,
+      "description": "So firm painting nation clear."
+    },
+    {
+      "id": "590f2dd7-63c9-44b8-b30f-7841678ff3ea",
+      "name": "Stand-alone object-oriented parallelism 22",
+      "status": "Active",
+      "createdDate": "2026-02-13T21:59:36",
+      "updatedDate": "2026-02-08T00:34:25",
+      "owner": "Christopher Reilly",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6018.17,
+      "description": "Debate whole strong build baby within."
+    },
+    {
+      "id": "95a8b6c4-17f8-47b1-ac76-f173250c58f7",
+      "name": "Programmable 24/7 superstructure 23",
+      "status": "Pending",
+      "createdDate": "2025-05-15T07:19:55",
+      "updatedDate": "2026-02-03T23:32:17",
+      "owner": "Patricia Brewer",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2913.79,
+      "description": "Quite join far threat half teacher."
+    },
+    {
+      "id": "5129bbc5-1715-45ec-a501-4e76a7b88396",
+      "name": "Digitized zero administration analyzer 24",
+      "status": "Pending",
+      "createdDate": "2025-02-23T14:18:41",
+      "updatedDate": "2026-02-13T10:27:08",
+      "owner": "Holly Maddox",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4403.2,
+      "description": "Again make fine artist statement."
+    },
+    {
+      "id": "fbb8e540-a859-4f90-baea-8ffdeaca20d4",
+      "name": "Ergonomic mobile emulation 25",
+      "status": "Completed",
+      "createdDate": "2025-11-09T05:34:10",
+      "updatedDate": "2026-02-15T01:50:08",
+      "owner": "Joann Gonzalez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5677.63,
+      "description": "Environmental season imagine bag region surface maybe."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 483,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "7f49966d-dbba-4b86-88b4-acfd3cec40e7",
+      "name": "Programmable fresh-thinking leverage 1",
+      "status": "Completed",
+      "createdDate": "2025-03-27T16:55:57",
+      "updatedDate": "2026-02-11T17:20:08",
+      "owner": "Matthew Bryant",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1091.13,
+      "description": "Short future final assume."
+    },
+    {
+      "id": "239a7012-0cfb-490b-b740-64331050182b",
+      "name": "Distributed uniform hardware 2",
+      "status": "Pending",
+      "createdDate": "2025-11-26T16:02:19",
+      "updatedDate": "2026-02-16T14:38:04",
+      "owner": "Brandon Carter",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5212.33,
+      "description": "Let walk fire hundred throughout."
+    },
+    {
+      "id": "801ea8aa-1d92-4bd0-954c-45c20b4b1bbd",
+      "name": "Polarized actuating algorithm 3",
+      "status": "Pending",
+      "createdDate": "2025-03-10T11:37:20",
+      "updatedDate": "2026-01-23T18:27:39",
+      "owner": "Richard Morales",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 579.77,
+      "description": "Bed cold good project opportunity measure."
+    },
+    {
+      "id": "8cdbdd25-6e38-4049-a942-22682d652ec9",
+      "name": "Persevering static algorithm 4",
+      "status": "Active",
+      "createdDate": "2025-05-06T09:54:59",
+      "updatedDate": "2026-01-26T21:33:16",
+      "owner": "Louis Murray",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3260.02,
+      "description": "Loss owner likely."
+    },
+    {
+      "id": "f5db6acc-02d2-4c92-a21e-add39a9a0800",
+      "name": "Automated local moderator 5",
+      "status": "Inactive",
+      "createdDate": "2025-06-30T11:27:31",
+      "updatedDate": "2026-01-19T20:54:19",
+      "owner": "Leonard Morgan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7055.95,
+      "description": "Everybody theory hear but through."
+    },
+    {
+      "id": "f107b430-a798-49db-9a1f-999db7bd2c22",
+      "name": "Digitized logistical challenge 6",
+      "status": "Pending",
+      "createdDate": "2026-01-19T08:49:50",
+      "updatedDate": "2026-02-17T01:05:52",
+      "owner": "Marc Alexander",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6262.11,
+      "description": "Ground left during."
+    },
+    {
+      "id": "b92f326c-32fd-4f32-8113-268915a1d1ae",
+      "name": "Enterprise-wide coherent synergy 7",
+      "status": "Active",
+      "createdDate": "2025-10-26T19:10:31",
+      "updatedDate": "2026-01-28T22:28:39",
+      "owner": "Laura Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7213.1,
+      "description": "Plan because history use paper finally."
+    },
+    {
+      "id": "f9ee967f-c718-4687-80d0-1f00359b9a58",
+      "name": "Vision-oriented modular monitoring 8",
+      "status": "Pending",
+      "createdDate": "2026-01-23T19:02:24",
+      "updatedDate": "2026-02-12T16:30:37",
+      "owner": "Mark Tyler",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6393.37,
+      "description": "Single table glass career."
+    },
+    {
+      "id": "619250b1-1d6b-4a6e-ae90-1b0de78bd4e4",
+      "name": "Reduced optimal secured line 9",
+      "status": "Inactive",
+      "createdDate": "2025-11-09T19:16:01",
+      "updatedDate": "2026-01-21T21:43:02",
+      "owner": "Kimberly Massey",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 391.35,
+      "description": "Wear good dinner hard yard chance."
+    },
+    {
+      "id": "bdd8408a-8d66-4e5d-ab2c-b5ba5716e9fc",
+      "name": "Enterprise-wide multi-state artificial intelligence 10",
+      "status": "Pending",
+      "createdDate": "2025-04-21T17:41:47",
+      "updatedDate": "2026-02-15T07:50:14",
+      "owner": "Jennifer Liu",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9126.1,
+      "description": "Everybody indeed environment."
+    },
+    {
+      "id": "f6b1061d-9f6c-4db5-8ac0-7999ba02e6c5",
+      "name": "Phased global project 11",
+      "status": "Pending",
+      "createdDate": "2025-03-22T21:44:57",
+      "updatedDate": "2026-01-20T04:12:14",
+      "owner": "Dawn Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7833.09,
+      "description": "Past something whom watch best light now."
+    },
+    {
+      "id": "f9f272ef-32a5-470c-9d9e-d4d0f26743d3",
+      "name": "Centralized static array 12",
+      "status": "Active",
+      "createdDate": "2025-07-22T10:49:01",
+      "updatedDate": "2026-01-30T03:49:33",
+      "owner": "Heather Potts",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3583.75,
+      "description": "Sign research call mission relate pretty."
+    },
+    {
+      "id": "fac8bfcc-6e77-43cf-8f29-1e5fbb856487",
+      "name": "Phased human-resource challenge 13",
+      "status": "Completed",
+      "createdDate": "2025-07-15T15:41:11",
+      "updatedDate": "2026-02-06T12:56:54",
+      "owner": "Jason James",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2869.64,
+      "description": "Woman Democrat born short adult project environment."
+    },
+    {
+      "id": "64a6c079-1d23-445a-b11e-00b28d66104a",
+      "name": "Front-line attitude-oriented archive 14",
+      "status": "Completed",
+      "createdDate": "2025-10-06T06:08:03",
+      "updatedDate": "2026-01-31T10:10:16",
+      "owner": "Steven Douglas",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7724.74,
+      "description": "Would list low land even civil system."
+    },
+    {
+      "id": "eff35f2f-a22d-4469-b8cc-bfb4a091158f",
+      "name": "Organic fault-tolerant parallelism 15",
+      "status": "Active",
+      "createdDate": "2025-09-20T00:22:09",
+      "updatedDate": "2026-01-27T23:48:02",
+      "owner": "Christopher Moore",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9558.02,
+      "description": "Really morning seat both pattern indicate."
+    },
+    {
+      "id": "6be8b4f2-2ebf-4ca7-9826-d6fb4fb06646",
+      "name": "De-engineered didactic access 16",
+      "status": "Completed",
+      "createdDate": "2025-11-05T05:45:43",
+      "updatedDate": "2026-01-27T01:40:17",
+      "owner": "Mr. Sean Morris",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4490.69,
+      "description": "High choice feeling heart interview."
+    },
+    {
+      "id": "c9ecc371-47fd-40d7-9029-d6b70807c3ab",
+      "name": "Customer-focused radical process improvement 17",
+      "status": "Pending",
+      "createdDate": "2026-02-08T03:53:54",
+      "updatedDate": "2026-02-14T04:27:07",
+      "owner": "Sean Sims",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8837.4,
+      "description": "Deep hit including toward senior girl project."
+    },
+    {
+      "id": "3713b77e-5309-466b-9035-792fd39a14e3",
+      "name": "Centralized maximized analyzer 18",
+      "status": "Completed",
+      "createdDate": "2025-02-20T11:45:38",
+      "updatedDate": "2026-02-05T04:11:24",
+      "owner": "Sabrina Long",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1070.86,
+      "description": "Window provide among."
+    },
+    {
+      "id": "f8b2328d-f3fa-4192-b759-fcda31676f3d",
+      "name": "Total encompassing concept 19",
+      "status": "Pending",
+      "createdDate": "2025-12-11T10:35:34",
+      "updatedDate": "2026-02-01T04:39:01",
+      "owner": "Michelle Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4007.66,
+      "description": "Reality situation population value feel increase dinner."
+    },
+    {
+      "id": "73c62f10-0780-421e-ae68-f57a40a89f3e",
+      "name": "Optimized directional throughput 20",
+      "status": "Pending",
+      "createdDate": "2025-03-01T07:31:08",
+      "updatedDate": "2026-01-24T15:41:17",
+      "owner": "Jennifer Garcia",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 727.53,
+      "description": "Entire prepare cold smile really alone."
+    },
+    {
+      "id": "f6919ddc-88a7-4ba7-b497-2c68bb1208b4",
+      "name": "Stand-alone holistic product 21",
+      "status": "Inactive",
+      "createdDate": "2025-05-13T20:53:06",
+      "updatedDate": "2026-02-16T23:07:10",
+      "owner": "Danielle Cochran",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1975.8,
+      "description": "Close hair matter crime small out."
+    },
+    {
+      "id": "2eea4844-1b0a-45a4-83a5-2fc954ba5608",
+      "name": "Upgradable motivating throughput 22",
+      "status": "Completed",
+      "createdDate": "2025-03-09T13:00:19",
+      "updatedDate": "2026-02-08T20:39:24",
+      "owner": "Logan Clark",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5681.32,
+      "description": "College in two even."
+    },
+    {
+      "id": "8c6b016f-95d1-494e-9938-a810e968f342",
+      "name": "Down-sized value-added success 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-23T06:02:15",
+      "updatedDate": "2026-01-24T19:07:37",
+      "owner": "Kristine Yang",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9146.35,
+      "description": "Music according site avoid dark than."
+    },
+    {
+      "id": "ffd06147-0fc2-45b7-a5a3-73815e619f0d",
+      "name": "Digitized 5thgeneration middleware 24",
+      "status": "Completed",
+      "createdDate": "2025-08-07T09:26:52",
+      "updatedDate": "2026-01-20T13:27:58",
+      "owner": "Terry Henry",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5884.91,
+      "description": "Strategy opportunity explain management gun born hear good."
+    },
+    {
+      "id": "f0c9d942-9093-49d9-acd2-4a461427ea72",
+      "name": "Synergized asymmetric matrices 25",
+      "status": "Pending",
+      "createdDate": "2025-12-07T09:03:48",
+      "updatedDate": "2026-02-03T19:34:47",
+      "owner": "Melissa Morales",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4776.91,
+      "description": "Tend painting bed conference when."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

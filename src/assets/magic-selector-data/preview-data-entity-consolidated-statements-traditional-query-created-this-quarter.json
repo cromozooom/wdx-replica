@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-statement",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 590,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a97ea919-8a98-421e-a03a-7d2cbe0f0cc9",
+      "name": "Cloned responsive initiative 1",
+      "status": "Pending",
+      "createdDate": "2025-10-29T17:43:10",
+      "updatedDate": "2026-02-03T08:31:55",
+      "owner": "Jacob Gates",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2359.68,
+      "description": "Bar attorney ask difficult economic long cost."
+    },
+    {
+      "id": "0a104e44-dea6-4f9b-8b33-826b88cb6707",
+      "name": "Implemented discrete flexibility 2",
+      "status": "Completed",
+      "createdDate": "2026-01-29T00:41:55",
+      "updatedDate": "2026-02-17T05:37:25",
+      "owner": "Anna Martin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1446.62,
+      "description": "Talk whether approach however."
+    },
+    {
+      "id": "95b47d3e-ced5-4537-b771-2438e19a9c22",
+      "name": "Diverse bi-directional parallelism 3",
+      "status": "Completed",
+      "createdDate": "2025-08-06T05:25:29",
+      "updatedDate": "2026-02-07T08:58:04",
+      "owner": "Beth Lopez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3480.02,
+      "description": "Newspaper deal poor evidence story."
+    },
+    {
+      "id": "6312bf3a-dc45-4166-823a-778292fb806d",
+      "name": "Grass-roots bottom-line open system 4",
+      "status": "Active",
+      "createdDate": "2025-05-08T05:27:16",
+      "updatedDate": "2026-01-31T10:30:52",
+      "owner": "Mary Morales",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1565.65,
+      "description": "Campaign pick usually middle."
+    },
+    {
+      "id": "a9fe54be-bfd5-428e-95fe-1d6cbbc54ce2",
+      "name": "Virtual explicit policy 5",
+      "status": "Active",
+      "createdDate": "2025-08-15T13:22:24",
+      "updatedDate": "2026-02-17T04:16:13",
+      "owner": "Kristi Thomas MD",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9031.02,
+      "description": "Floor again PM front these trouble."
+    },
+    {
+      "id": "506c611d-2481-4a81-890b-db8090ca2120",
+      "name": "Distributed clear-thinking monitoring 6",
+      "status": "Inactive",
+      "createdDate": "2025-08-26T13:03:25",
+      "updatedDate": "2026-02-01T07:33:08",
+      "owner": "Leonard Arnold",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3619.63,
+      "description": "Share day score figure rise difficult."
+    },
+    {
+      "id": "83e6817c-bd4c-4584-a314-48e9dd9794be",
+      "name": "Robust grid-enabled instruction set 7",
+      "status": "Completed",
+      "createdDate": "2025-04-29T11:31:57",
+      "updatedDate": "2026-02-12T07:05:34",
+      "owner": "Amy White",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9522.91,
+      "description": "Meet however his add dinner son decision."
+    },
+    {
+      "id": "c1c8ae8d-fddc-4455-998f-97e7956da439",
+      "name": "Seamless methodical knowledgebase 8",
+      "status": "Active",
+      "createdDate": "2025-03-21T01:13:02",
+      "updatedDate": "2026-01-20T19:27:29",
+      "owner": "Ashley Bennett",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4869.8,
+      "description": "Book sure network."
+    },
+    {
+      "id": "b77b426f-2a12-4e98-8fdc-ccf5ef980af0",
+      "name": "Stand-alone zero tolerance hierarchy 9",
+      "status": "Completed",
+      "createdDate": "2025-10-04T17:25:21",
+      "updatedDate": "2026-01-31T15:30:35",
+      "owner": "Michael Evans",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5043.16,
+      "description": "Over smile itself state huge each."
+    },
+    {
+      "id": "99251fa5-ad02-417c-a507-b81f0f54a3d2",
+      "name": "Triple-buffered explicit Local Area Network 10",
+      "status": "Completed",
+      "createdDate": "2025-07-28T15:00:16",
+      "updatedDate": "2026-02-12T01:47:55",
+      "owner": "Brandon Chen",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6591.6,
+      "description": "Just after center."
+    },
+    {
+      "id": "17bf1731-8b14-4767-ac90-148bcd826e4a",
+      "name": "Stand-alone bifurcated parallelism 11",
+      "status": "Inactive",
+      "createdDate": "2025-10-04T06:36:09",
+      "updatedDate": "2026-02-05T01:11:00",
+      "owner": "Rickey Peterson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6248.1,
+      "description": "And huge direction somebody key."
+    },
+    {
+      "id": "6cf996e9-8570-44c2-8f50-8d45362edf1e",
+      "name": "Progressive directional interface 12",
+      "status": "Inactive",
+      "createdDate": "2025-09-01T14:51:42",
+      "updatedDate": "2026-01-28T14:13:36",
+      "owner": "Steven Graham",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4860.92,
+      "description": "Bag power if production quite realize."
+    },
+    {
+      "id": "379444f6-0583-40e8-8fad-e022bfc30cfd",
+      "name": "Switchable transitional hierarchy 13",
+      "status": "Pending",
+      "createdDate": "2025-03-15T04:32:47",
+      "updatedDate": "2026-02-05T00:38:04",
+      "owner": "Casey Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4533.26,
+      "description": "Her fish effort authority at act."
+    },
+    {
+      "id": "e4cc107d-37ef-4436-924b-a97977b7bb7f",
+      "name": "Realigned 3rdgeneration policy 14",
+      "status": "Completed",
+      "createdDate": "2025-07-04T19:16:42",
+      "updatedDate": "2026-01-20T08:50:56",
+      "owner": "Karen Carson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6197.12,
+      "description": "Art number inside imagine card story pretty."
+    },
+    {
+      "id": "a45c884b-8475-4ea0-b8b5-92859a575fc5",
+      "name": "Enterprise-wide cohesive frame 15",
+      "status": "Active",
+      "createdDate": "2025-11-18T12:12:03",
+      "updatedDate": "2026-02-14T20:38:29",
+      "owner": "Mrs. Rachel Harris",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3000.57,
+      "description": "Conference push group talk also."
+    },
+    {
+      "id": "169b6c20-4c57-4705-997c-3a0f427d9096",
+      "name": "Compatible actuating monitoring 16",
+      "status": "Completed",
+      "createdDate": "2025-12-08T09:44:59",
+      "updatedDate": "2026-01-22T04:48:33",
+      "owner": "Jesse Moore",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6984.3,
+      "description": "Teacher face meet fact."
+    },
+    {
+      "id": "cea2abe9-0f0b-4313-8d9d-fd7248496550",
+      "name": "Pre-emptive disintermediate toolset 17",
+      "status": "Pending",
+      "createdDate": "2025-09-15T13:05:43",
+      "updatedDate": "2026-02-11T01:07:19",
+      "owner": "Chelsea Thompson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6575.0,
+      "description": "Find opportunity game type ahead truth."
+    },
+    {
+      "id": "e4d1ab62-50c5-447d-ab60-f75bb474744c",
+      "name": "Seamless dedicated projection 18",
+      "status": "Inactive",
+      "createdDate": "2025-07-13T10:46:36",
+      "updatedDate": "2026-02-11T02:18:46",
+      "owner": "Ashley Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5334.15,
+      "description": "Not spring alone because executive."
+    },
+    {
+      "id": "3205bfde-a901-4e8c-a740-de6cb9d9f6b6",
+      "name": "Multi-tiered bottom-line intranet 19",
+      "status": "Active",
+      "createdDate": "2025-09-14T03:14:51",
+      "updatedDate": "2026-01-29T02:18:39",
+      "owner": "Kathleen Walton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2975.85,
+      "description": "Power traditional with board newspaper city."
+    },
+    {
+      "id": "b4b5e3c5-4f10-4925-b06d-0cb00936ef85",
+      "name": "Face-to-face incremental definition 20",
+      "status": "Active",
+      "createdDate": "2025-05-27T14:17:42",
+      "updatedDate": "2026-02-06T07:40:01",
+      "owner": "William Guerra",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8396.31,
+      "description": "Piece half real us young network fund."
+    },
+    {
+      "id": "c886a23d-9d77-4dd5-92e0-ee3ef7859322",
+      "name": "Secured national info-mediaries 21",
+      "status": "Active",
+      "createdDate": "2026-01-19T09:06:23",
+      "updatedDate": "2026-02-14T21:12:02",
+      "owner": "Holly Chavez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1078.45,
+      "description": "More glass notice indeed very create."
+    },
+    {
+      "id": "2646b68a-9fbd-4d73-bde3-86725d2f2c24",
+      "name": "Cross-platform uniform pricing structure 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-19T16:13:35",
+      "updatedDate": "2026-01-25T12:19:17",
+      "owner": "Ryan Graves",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4008.83,
+      "description": "Prepare organization this former need help plant."
+    },
+    {
+      "id": "572e0374-d547-4786-9c0a-d78e8b7967ce",
+      "name": "Re-engineered demand-driven software 23",
+      "status": "Completed",
+      "createdDate": "2025-08-22T15:37:22",
+      "updatedDate": "2026-01-23T13:45:04",
+      "owner": "Brandy Reeves",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1861.77,
+      "description": "Sign finally health edge consumer land."
+    },
+    {
+      "id": "1839c450-b69f-4436-ad09-54b5a2a9e09a",
+      "name": "Intuitive mobile database 24",
+      "status": "Active",
+      "createdDate": "2025-10-23T17:59:16",
+      "updatedDate": "2026-02-04T12:01:20",
+      "owner": "Matthew Drake",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8259.74,
+      "description": "Suggest space of director guess particularly."
+    },
+    {
+      "id": "94bd784a-3348-4aa8-a36f-c5c77d4e065e",
+      "name": "Diverse 3rdgeneration function 25",
+      "status": "Inactive",
+      "createdDate": "2025-06-04T20:20:05",
+      "updatedDate": "2026-01-27T18:43:36",
+      "owner": "Dr. Brett White PhD",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5084.28,
+      "description": "Control red before."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

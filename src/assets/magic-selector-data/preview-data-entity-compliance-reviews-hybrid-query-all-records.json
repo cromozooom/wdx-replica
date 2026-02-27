@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-all-records",
+  "totalCount": 786,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b263fc11-ad7a-4261-8ddc-c6912440c874",
+      "name": "Team-oriented responsive firmware 1",
+      "status": "Completed",
+      "createdDate": "2025-08-28T02:14:30",
+      "updatedDate": "2026-02-09T16:04:53",
+      "owner": "Sheila Sweeney",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1622.15,
+      "description": "Two let close political season."
+    },
+    {
+      "id": "0987900d-c93d-4d05-9db3-224e74b133fa",
+      "name": "Intuitive uniform framework 2",
+      "status": "Active",
+      "createdDate": "2025-11-21T01:23:08",
+      "updatedDate": "2026-01-29T20:58:21",
+      "owner": "Scott Scott",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3015.11,
+      "description": "Record age effort beautiful matter around."
+    },
+    {
+      "id": "587bc423-42cd-4af4-9247-b9af3ce0be95",
+      "name": "Cloned mobile open architecture 3",
+      "status": "Inactive",
+      "createdDate": "2025-05-11T21:07:39",
+      "updatedDate": "2026-02-11T19:11:41",
+      "owner": "Jacob Ferguson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9194.79,
+      "description": "Call need effort safe."
+    },
+    {
+      "id": "c8d98660-2c50-4b39-a3bb-c747948135b4",
+      "name": "Polarized human-resource instruction set 4",
+      "status": "Pending",
+      "createdDate": "2025-12-01T21:01:42",
+      "updatedDate": "2026-01-31T09:10:30",
+      "owner": "Leon Martinez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6776.82,
+      "description": "Physical save source whole action."
+    },
+    {
+      "id": "f90027b0-0a23-482d-b272-7f9b2f11ab76",
+      "name": "Inverse static synergy 5",
+      "status": "Active",
+      "createdDate": "2025-10-10T13:08:55",
+      "updatedDate": "2026-01-24T03:37:21",
+      "owner": "John Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7564.31,
+      "description": "High form training."
+    },
+    {
+      "id": "94b45558-69b1-46f5-9f89-ab85815b8e0f",
+      "name": "Object-based attitude-oriented database 6",
+      "status": "Active",
+      "createdDate": "2025-08-16T07:45:08",
+      "updatedDate": "2026-02-16T20:36:31",
+      "owner": "Sophia Wilson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4858.45,
+      "description": "Remain week true say."
+    },
+    {
+      "id": "dc127cb3-0060-4e9e-b7cd-c36acff056ff",
+      "name": "Reduced systemic circuit 7",
+      "status": "Completed",
+      "createdDate": "2025-08-27T03:26:23",
+      "updatedDate": "2026-01-31T07:21:59",
+      "owner": "George Wilson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8979.81,
+      "description": "Nearly radio picture education evening development onto."
+    },
+    {
+      "id": "32b5c15a-0735-4438-b9a9-be496de0f821",
+      "name": "Adaptive even-keeled open architecture 8",
+      "status": "Active",
+      "createdDate": "2025-06-30T01:11:09",
+      "updatedDate": "2026-02-14T03:56:29",
+      "owner": "Hannah Skinner",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9570.73,
+      "description": "Finally involve study place law back."
+    },
+    {
+      "id": "77242e16-615d-415e-8a6e-fb5cd5d6bfd3",
+      "name": "Decentralized optimal emulation 9",
+      "status": "Completed",
+      "createdDate": "2026-01-07T18:56:24",
+      "updatedDate": "2026-01-22T16:07:21",
+      "owner": "Paul Morrow",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5201.99,
+      "description": "Environmental free onto might."
+    },
+    {
+      "id": "64b5c562-1c15-4a22-902c-1bda0167db2a",
+      "name": "Function-based non-volatile neural-net 10",
+      "status": "Inactive",
+      "createdDate": "2025-06-01T02:29:38",
+      "updatedDate": "2026-02-12T15:04:52",
+      "owner": "Eric Fry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6624.91,
+      "description": "Least memory citizen."
+    },
+    {
+      "id": "08e16cd6-eec5-4f04-bf7d-269647298c3c",
+      "name": "Exclusive explicit groupware 11",
+      "status": "Pending",
+      "createdDate": "2025-02-26T09:19:24",
+      "updatedDate": "2026-01-31T06:10:02",
+      "owner": "Abigail Clark",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5650.53,
+      "description": "Born issue business write able pressure."
+    },
+    {
+      "id": "afacf36a-4c26-4ec4-a405-fc1a4803ebd5",
+      "name": "Balanced mobile knowledgebase 12",
+      "status": "Pending",
+      "createdDate": "2025-04-21T12:50:47",
+      "updatedDate": "2026-02-14T12:49:24",
+      "owner": "Corey Lester",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3240.16,
+      "description": "Prove serious woman order cut."
+    },
+    {
+      "id": "b5148b25-89fc-4a3f-8c5a-bd57d27dc3a2",
+      "name": "Extended non-volatile pricing structure 13",
+      "status": "Inactive",
+      "createdDate": "2025-03-13T03:40:22",
+      "updatedDate": "2026-02-09T01:00:02",
+      "owner": "Patrick Le",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7930.85,
+      "description": "Television road away later middle dog event."
+    },
+    {
+      "id": "2a7afcfb-4395-4aa6-a21e-a2640029089c",
+      "name": "Robust optimizing contingency 14",
+      "status": "Active",
+      "createdDate": "2025-07-05T06:07:10",
+      "updatedDate": "2026-01-28T08:53:09",
+      "owner": "Johnny Garner",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7081.11,
+      "description": "Gun member fine wonder be pick."
+    },
+    {
+      "id": "fceba8a2-02c2-41da-8f5a-b6a8bf03f382",
+      "name": "Optional logistical superstructure 15",
+      "status": "Completed",
+      "createdDate": "2025-03-11T12:52:18",
+      "updatedDate": "2026-02-16T09:51:34",
+      "owner": "Nathan Vega",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6177.66,
+      "description": "Main girl reality realize now other administration."
+    },
+    {
+      "id": "c873777d-3309-4212-a91f-90c07f84db4a",
+      "name": "Self-enabling methodical knowledgebase 16",
+      "status": "Active",
+      "createdDate": "2025-02-28T19:51:32",
+      "updatedDate": "2026-01-31T11:21:39",
+      "owner": "John Andrews",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7491.54,
+      "description": "Example produce station put."
+    },
+    {
+      "id": "be4617b0-c799-49fc-8592-88e64610365a",
+      "name": "Organized attitude-oriented matrix 17",
+      "status": "Inactive",
+      "createdDate": "2025-12-11T02:53:55",
+      "updatedDate": "2026-01-19T07:22:40",
+      "owner": "Kelly Ellis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8902.18,
+      "description": "Whose stand thousand right deep."
+    },
+    {
+      "id": "b8e558ec-3674-4e04-a1f2-c912cb2bc882",
+      "name": "Function-based leadingedge collaboration 18",
+      "status": "Active",
+      "createdDate": "2025-03-24T04:20:19",
+      "updatedDate": "2026-02-06T22:36:30",
+      "owner": "Mason Miller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3981.1,
+      "description": "Perhaps sound member authority agree firm."
+    },
+    {
+      "id": "b020d814-977b-4978-8ac6-7a8188005ebf",
+      "name": "Digitized homogeneous matrix 19",
+      "status": "Inactive",
+      "createdDate": "2025-09-12T06:54:52",
+      "updatedDate": "2026-02-07T22:29:17",
+      "owner": "Mr. Chad Gardner",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 116.31,
+      "description": "At music respond finally dark seat produce reach."
+    },
+    {
+      "id": "11499cfa-87e2-47c4-af97-eee5c43b5dbe",
+      "name": "Re-engineered user-facing database 20",
+      "status": "Pending",
+      "createdDate": "2025-12-04T18:48:28",
+      "updatedDate": "2026-01-29T10:26:33",
+      "owner": "Paige Day",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2641.55,
+      "description": "Star quality sell cold produce."
+    },
+    {
+      "id": "60e8da83-9913-4e24-9089-43cdbe961f6e",
+      "name": "Phased clear-thinking knowledge user 21",
+      "status": "Inactive",
+      "createdDate": "2025-06-15T11:27:02",
+      "updatedDate": "2026-02-10T16:23:48",
+      "owner": "Katherine Miller DDS",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6598.76,
+      "description": "Suddenly production least how yourself allow success."
+    },
+    {
+      "id": "c59ad1e0-16a8-4b71-9dad-8e539ba9f740",
+      "name": "Organized non-volatile firmware 22",
+      "status": "Active",
+      "createdDate": "2025-11-07T02:39:57",
+      "updatedDate": "2026-02-08T04:35:21",
+      "owner": "Elizabeth Deleon",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5618.84,
+      "description": "Cause fill PM trial up whole establish."
+    },
+    {
+      "id": "54988075-5903-4ec4-a5dd-951545edd6a8",
+      "name": "Future-proofed fault-tolerant task-force 23",
+      "status": "Active",
+      "createdDate": "2025-09-20T18:16:01",
+      "updatedDate": "2026-01-24T07:13:54",
+      "owner": "Ryan Reed",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8728.59,
+      "description": "Blood billion seven student."
+    },
+    {
+      "id": "192a27f8-af39-45c6-a29c-016a60eef418",
+      "name": "Robust tertiary parallelism 24",
+      "status": "Pending",
+      "createdDate": "2025-07-14T16:01:00",
+      "updatedDate": "2026-02-11T09:04:09",
+      "owner": "Patrick Hoffman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4397.11,
+      "description": "Surface factor I call debate financial notice imagine."
+    },
+    {
+      "id": "bf4e18ad-1b20-4655-8d32-83eddd95b3be",
+      "name": "Self-enabling context-sensitive productivity 25",
+      "status": "Completed",
+      "createdDate": "2026-01-26T19:56:56",
+      "updatedDate": "2026-01-29T04:53:03",
+      "owner": "Holly White",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 287.67,
+      "description": "Actually letter since himself."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

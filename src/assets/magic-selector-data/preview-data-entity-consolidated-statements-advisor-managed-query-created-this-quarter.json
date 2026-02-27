@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-statement",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 337,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "0ba370ff-0977-4864-8023-da8ba58fdfdf",
+      "name": "Team-oriented dynamic initiative 1",
+      "status": "Completed",
+      "createdDate": "2025-11-16T12:17:34",
+      "updatedDate": "2026-02-06T10:45:38",
+      "owner": "Brian Morgan",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4229.88,
+      "description": "Do challenge popular last."
+    },
+    {
+      "id": "c5d289d8-8db2-494c-8b14-7ac26960e819",
+      "name": "User-friendly tertiary toolset 2",
+      "status": "Pending",
+      "createdDate": "2025-11-02T12:09:49",
+      "updatedDate": "2026-02-11T21:37:48",
+      "owner": "Gary Sullivan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4851.32,
+      "description": "Imagine they significant that new."
+    },
+    {
+      "id": "df0cb69b-64e3-4f27-affc-f7ba82763d3f",
+      "name": "Operative 3rdgeneration Graphical User Interface 3",
+      "status": "Active",
+      "createdDate": "2025-11-18T19:26:14",
+      "updatedDate": "2026-01-25T05:25:21",
+      "owner": "Mr. James Reese",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1061.26,
+      "description": "Result evidence who institution Democrat."
+    },
+    {
+      "id": "64e8ee80-bac0-497f-b158-25b1db1f3334",
+      "name": "Reverse-engineered optimal functionalities 4",
+      "status": "Pending",
+      "createdDate": "2025-11-16T04:01:38",
+      "updatedDate": "2026-01-25T03:03:27",
+      "owner": "Kathy Hines",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7219.03,
+      "description": "Next break sing town head."
+    },
+    {
+      "id": "e87d3bda-4ec2-4b9c-9974-beddc2446f64",
+      "name": "Cross-group web-enabled capability 5",
+      "status": "Inactive",
+      "createdDate": "2025-03-07T23:09:55",
+      "updatedDate": "2026-01-19T17:35:10",
+      "owner": "Kristin Shepard",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1457.9,
+      "description": "Customer protect none in experience mouth value."
+    },
+    {
+      "id": "9acdc2db-0411-49d0-9751-d1dc3895d6da",
+      "name": "Horizontal upward-trending capability 6",
+      "status": "Pending",
+      "createdDate": "2025-06-28T01:03:42",
+      "updatedDate": "2026-01-24T20:09:59",
+      "owner": "Wayne Marsh",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2576.58,
+      "description": "Set visit without morning be into treatment."
+    },
+    {
+      "id": "e33a1fb7-15ed-42c1-b611-b26c804ebff3",
+      "name": "Centralized tangible open system 7",
+      "status": "Completed",
+      "createdDate": "2025-08-17T19:37:56",
+      "updatedDate": "2026-01-31T04:26:23",
+      "owner": "Nicole Boyd",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3026.19,
+      "description": "Decision short woman her character picture."
+    },
+    {
+      "id": "e5afba04-929b-4577-8a14-2d2e90f5e5c0",
+      "name": "Compatible maximized challenge 8",
+      "status": "Completed",
+      "createdDate": "2025-05-02T19:42:09",
+      "updatedDate": "2026-02-07T18:17:30",
+      "owner": "David Harris",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5593.39,
+      "description": "Fine event operation over drive assume day."
+    },
+    {
+      "id": "58612779-ef9e-4f9f-99f6-52210ed664c9",
+      "name": "Public-key bandwidth-monitored parallelism 9",
+      "status": "Completed",
+      "createdDate": "2025-12-11T20:03:59",
+      "updatedDate": "2026-02-17T08:29:25",
+      "owner": "Joshua Sims",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2863.09,
+      "description": "My visit their state outside often long."
+    },
+    {
+      "id": "d6a9754e-0348-4904-b4cd-fce94b25abae",
+      "name": "Ameliorated systematic capability 10",
+      "status": "Inactive",
+      "createdDate": "2025-10-04T16:45:09",
+      "updatedDate": "2026-02-17T05:01:40",
+      "owner": "Danielle Chambers",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9715.72,
+      "description": "Outside last rock."
+    },
+    {
+      "id": "82eb8e69-6c10-44a1-a169-41f1cc293622",
+      "name": "Cloned foreground groupware 11",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T09:19:52",
+      "updatedDate": "2026-01-19T13:53:38",
+      "owner": "Amanda Mitchell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1206.56,
+      "description": "Three particular newspaper red worry."
+    },
+    {
+      "id": "e08ce76c-9dcd-4703-becf-9791b288a29d",
+      "name": "Switchable bandwidth-monitored installation 12",
+      "status": "Completed",
+      "createdDate": "2025-11-10T09:58:19",
+      "updatedDate": "2026-02-07T21:07:31",
+      "owner": "Daniel Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 272.81,
+      "description": "Green war relationship lead."
+    },
+    {
+      "id": "63dfe828-31a4-4a58-83b8-d480213fd492",
+      "name": "Cross-group 5thgeneration info-mediaries 13",
+      "status": "Completed",
+      "createdDate": "2025-05-06T20:10:21",
+      "updatedDate": "2026-02-04T12:49:37",
+      "owner": "Julie Moore",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1031.4,
+      "description": "Full girl book."
+    },
+    {
+      "id": "42ab8781-c46b-40f1-b804-db50d48cbc5f",
+      "name": "Customer-focused reciprocal Graphical User Interface 14",
+      "status": "Active",
+      "createdDate": "2025-08-15T15:36:00",
+      "updatedDate": "2026-01-28T13:30:25",
+      "owner": "Wendy Hernandez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3216.81,
+      "description": "Federal move night growth factor letter ready hard."
+    },
+    {
+      "id": "1fc098e1-0baf-4ba5-8b12-b3af6d30829c",
+      "name": "Extended object-oriented time-frame 15",
+      "status": "Active",
+      "createdDate": "2025-12-06T19:22:41",
+      "updatedDate": "2026-02-14T06:14:07",
+      "owner": "James Haynes",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9753.98,
+      "description": "Player clearly through health."
+    },
+    {
+      "id": "9c36f660-80c9-42e3-9b91-1f089d2fb602",
+      "name": "Virtual bifurcated portal 16",
+      "status": "Completed",
+      "createdDate": "2025-08-28T23:30:06",
+      "updatedDate": "2026-01-23T01:22:13",
+      "owner": "Michael Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 634.49,
+      "description": "Past century open create tough especially."
+    },
+    {
+      "id": "8db5e3e7-a38b-40fe-bb16-d49732d1dfef",
+      "name": "Stand-alone multi-tasking attitude 17",
+      "status": "Pending",
+      "createdDate": "2025-10-18T02:12:00",
+      "updatedDate": "2026-01-20T02:19:35",
+      "owner": "Shelly Watkins",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8969.54,
+      "description": "Act industry arm day standard."
+    },
+    {
+      "id": "09590a14-c7f5-443c-8d0f-78510b275896",
+      "name": "Function-based neutral portal 18",
+      "status": "Completed",
+      "createdDate": "2025-05-28T11:35:54",
+      "updatedDate": "2026-02-16T17:12:16",
+      "owner": "Joseph Buchanan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 933.63,
+      "description": "Author boy boy."
+    },
+    {
+      "id": "167adf38-f693-4898-bb5d-e101508048f2",
+      "name": "Managed full-range attitude 19",
+      "status": "Inactive",
+      "createdDate": "2025-08-03T15:11:59",
+      "updatedDate": "2026-01-26T05:38:13",
+      "owner": "Timothy Morris",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5858.95,
+      "description": "Traditional nature win bag great wide full bit."
+    },
+    {
+      "id": "0d6c273a-177f-4a48-bcd8-a58652001847",
+      "name": "Horizontal dynamic standardization 20",
+      "status": "Active",
+      "createdDate": "2025-07-26T21:47:14",
+      "updatedDate": "2026-02-05T13:51:48",
+      "owner": "Richard Velez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9529.58,
+      "description": "Family eat one offer."
+    },
+    {
+      "id": "f88db7de-3a61-4fc2-a605-57a7c86f5b89",
+      "name": "Assimilated zero administration monitoring 21",
+      "status": "Inactive",
+      "createdDate": "2025-02-26T21:16:02",
+      "updatedDate": "2026-02-11T20:30:53",
+      "owner": "Sergio Harris",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5796.17,
+      "description": "How care make around station recently."
+    },
+    {
+      "id": "bc114c18-4def-4636-b2d0-f4a3021c1418",
+      "name": "Persevering transitional infrastructure 22",
+      "status": "Inactive",
+      "createdDate": "2025-02-25T22:21:15",
+      "updatedDate": "2026-01-24T10:50:12",
+      "owner": "Kelly Carr",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2793.12,
+      "description": "Clear remember democratic boy fast something herself."
+    },
+    {
+      "id": "07bcaad3-2265-4323-9869-9b956f1df67e",
+      "name": "Virtual real-time product 23",
+      "status": "Active",
+      "createdDate": "2025-05-30T02:07:56",
+      "updatedDate": "2026-02-10T16:37:38",
+      "owner": "Jonathan Hernandez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3008.39,
+      "description": "Field computer court thank."
+    },
+    {
+      "id": "a57af110-a860-4a9e-bf5f-78873b8507df",
+      "name": "Reduced human-resource matrix 24",
+      "status": "Active",
+      "createdDate": "2025-07-28T03:52:01",
+      "updatedDate": "2026-02-11T10:11:02",
+      "owner": "Robert Elliott",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 853.9,
+      "description": "Cup play lose draw join care start."
+    },
+    {
+      "id": "65300022-ec0e-4626-8aa4-f093994a6a88",
+      "name": "Profit-focused national initiative 25",
+      "status": "Inactive",
+      "createdDate": "2025-06-24T08:47:14",
+      "updatedDate": "2026-02-14T20:56:28",
+      "owner": "Jose Boyd",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1826.39,
+      "description": "Son some almost month entire."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-regulatoryfiling",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 380,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "d0b58a81-f17c-4b42-8351-5afd184ec4db",
+      "name": "Programmable value-added info-mediaries 1",
+      "status": "Completed",
+      "createdDate": "2025-03-16T10:06:09",
+      "updatedDate": "2026-02-05T01:50:11",
+      "owner": "William White",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9618.9,
+      "description": "Particular step phone."
+    },
+    {
+      "id": "9a982177-9f74-4b0d-a66b-eacaf8fb95ac",
+      "name": "Ergonomic multimedia utilization 2",
+      "status": "Completed",
+      "createdDate": "2025-11-08T06:09:53",
+      "updatedDate": "2026-02-09T04:45:22",
+      "owner": "Danielle Bryant",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1806.25,
+      "description": "Drive ball interview east go mission economy."
+    },
+    {
+      "id": "8f4039e6-b407-427c-835b-e9b0d7363a5b",
+      "name": "Seamless 24/7 monitoring 3",
+      "status": "Pending",
+      "createdDate": "2025-06-01T07:26:52",
+      "updatedDate": "2026-01-25T13:43:33",
+      "owner": "Krista Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6246.45,
+      "description": "That drug rock allow see."
+    },
+    {
+      "id": "d17cefb3-0856-4eab-984e-9031637d3847",
+      "name": "Innovative systemic capacity 4",
+      "status": "Completed",
+      "createdDate": "2026-01-11T15:48:15",
+      "updatedDate": "2026-02-14T21:15:09",
+      "owner": "Jasmin Schaefer",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5279.8,
+      "description": "Health customer success."
+    },
+    {
+      "id": "52bc421e-77e8-435b-8e33-28d2bbfdae07",
+      "name": "Right-sized fault-tolerant migration 5",
+      "status": "Completed",
+      "createdDate": "2025-11-29T12:12:14",
+      "updatedDate": "2026-02-13T07:17:51",
+      "owner": "Joshua Rogers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9393.23,
+      "description": "Cup measure house."
+    },
+    {
+      "id": "5ff8173d-8b3b-482b-937a-84e85ef4d073",
+      "name": "User-centric coherent groupware 6",
+      "status": "Completed",
+      "createdDate": "2026-01-10T04:36:07",
+      "updatedDate": "2026-02-08T08:24:51",
+      "owner": "John Livingston PhD",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4878.81,
+      "description": "Race instead television skill during."
+    },
+    {
+      "id": "43bdb463-b618-46a8-a112-04b71a47f4f6",
+      "name": "Profound explicit system engine 7",
+      "status": "Inactive",
+      "createdDate": "2025-10-29T14:53:41",
+      "updatedDate": "2026-01-30T17:00:02",
+      "owner": "Anthony Wilson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6745.01,
+      "description": "Number history still pay page might process teach."
+    },
+    {
+      "id": "bfade272-9b49-4c38-b31c-7dc0d8f8db03",
+      "name": "Exclusive web-enabled encryption 8",
+      "status": "Active",
+      "createdDate": "2025-11-29T10:21:52",
+      "updatedDate": "2026-01-29T14:22:03",
+      "owner": "Matthew Thomas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7789.26,
+      "description": "Bill PM organization mother character."
+    },
+    {
+      "id": "f23c5d4b-eb8c-43d8-9908-3224720b81cf",
+      "name": "Visionary asynchronous time-frame 9",
+      "status": "Pending",
+      "createdDate": "2025-04-24T02:26:39",
+      "updatedDate": "2026-02-02T19:41:18",
+      "owner": "Jerry Reed",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2130.2,
+      "description": "National for company last heart animal hotel."
+    },
+    {
+      "id": "f4894a92-c30a-455e-9d3f-f4532ef770fe",
+      "name": "Cloned reciprocal groupware 10",
+      "status": "Inactive",
+      "createdDate": "2025-11-20T16:32:33",
+      "updatedDate": "2026-01-21T12:38:35",
+      "owner": "Joseph Mcclure",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4388.44,
+      "description": "Manager see experience majority language area."
+    },
+    {
+      "id": "78094439-437c-49a0-8b27-e7e1764e6acf",
+      "name": "Down-sized uniform concept 11",
+      "status": "Completed",
+      "createdDate": "2026-02-15T10:26:05",
+      "updatedDate": "2026-01-31T08:25:44",
+      "owner": "Brian Williams",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3766.93,
+      "description": "Head price dog option."
+    },
+    {
+      "id": "a5e20905-266d-4153-9e28-b3e694cea07a",
+      "name": "Self-enabling non-volatile installation 12",
+      "status": "Inactive",
+      "createdDate": "2025-11-14T21:20:07",
+      "updatedDate": "2026-01-26T13:35:35",
+      "owner": "Jennifer Campbell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8403.88,
+      "description": "Sea art wonder poor summer."
+    },
+    {
+      "id": "447b1ccd-b308-480a-9191-47e7aed528d2",
+      "name": "Total real-time contingency 13",
+      "status": "Completed",
+      "createdDate": "2025-02-21T15:24:46",
+      "updatedDate": "2026-02-15T18:19:48",
+      "owner": "Austin Montgomery",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7304.0,
+      "description": "Production voice score world manage."
+    },
+    {
+      "id": "95715f16-53af-4742-bd5a-c06d7f0b3099",
+      "name": "Organic didactic process improvement 14",
+      "status": "Inactive",
+      "createdDate": "2025-10-16T12:36:42",
+      "updatedDate": "2026-02-14T03:59:23",
+      "owner": "Cathy Melendez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9820.82,
+      "description": "Party significant apply treat some."
+    },
+    {
+      "id": "49f803b6-aa40-4b65-a841-4f7609601a27",
+      "name": "Networked actuating concept 15",
+      "status": "Pending",
+      "createdDate": "2025-06-19T06:39:03",
+      "updatedDate": "2026-01-19T04:10:41",
+      "owner": "Miranda Barber",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8102.24,
+      "description": "Increase tax situation begin hear."
+    },
+    {
+      "id": "d9db7380-1b67-43ea-ac31-0692c4e4a6e7",
+      "name": "Upgradable 5thgeneration Graphic Interface 16",
+      "status": "Inactive",
+      "createdDate": "2025-10-17T22:58:01",
+      "updatedDate": "2026-02-09T19:14:48",
+      "owner": "Edward Myers",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8264.08,
+      "description": "Forget soldier team add."
+    },
+    {
+      "id": "d235c09d-c431-45bc-b8ab-c8712375b09d",
+      "name": "Switchable leadingedge flexibility 17",
+      "status": "Inactive",
+      "createdDate": "2026-02-15T07:01:17",
+      "updatedDate": "2026-02-13T23:29:34",
+      "owner": "Mark Cooper",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8229.3,
+      "description": "Listen country trade."
+    },
+    {
+      "id": "5043a4bc-cf72-437b-b27d-39f6d9aa633a",
+      "name": "Intuitive 24/7 success 18",
+      "status": "Pending",
+      "createdDate": "2025-02-23T11:58:15",
+      "updatedDate": "2026-01-23T04:56:45",
+      "owner": "Rachel Singleton",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1424.52,
+      "description": "Include put fast western able."
+    },
+    {
+      "id": "4b407b24-8674-4d8f-a0be-17fa4ee34c14",
+      "name": "Inverse clear-thinking customer loyalty 19",
+      "status": "Inactive",
+      "createdDate": "2025-03-30T22:55:29",
+      "updatedDate": "2026-01-30T21:20:50",
+      "owner": "Taylor Young",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7805.26,
+      "description": "Reflect play catch these."
+    },
+    {
+      "id": "72936e94-cd8c-421b-aa96-ae513cd86023",
+      "name": "Fundamental foreground open system 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-27T07:16:49",
+      "updatedDate": "2026-02-03T04:38:30",
+      "owner": "Alexandra Yates",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7073.12,
+      "description": "Song security sometimes hospital wrong particularly."
+    },
+    {
+      "id": "b026b0cd-e659-4e5b-b5ba-6c4f47ce1d4e",
+      "name": "Seamless optimal orchestration 21",
+      "status": "Inactive",
+      "createdDate": "2025-07-28T11:36:51",
+      "updatedDate": "2026-02-06T00:42:19",
+      "owner": "Jennifer Chapman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6645.4,
+      "description": "Song their scene may seem approach."
+    },
+    {
+      "id": "38c16373-acf1-47a5-9cb5-8ddd7d589611",
+      "name": "Right-sized zero administration intranet 22",
+      "status": "Completed",
+      "createdDate": "2025-03-21T16:12:36",
+      "updatedDate": "2026-02-01T20:01:09",
+      "owner": "Henry Durham",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1578.83,
+      "description": "Phone improve impact."
+    },
+    {
+      "id": "913391a5-d7b9-4b31-bd15-8531adb84796",
+      "name": "Future-proofed system-worthy productivity 23",
+      "status": "Inactive",
+      "createdDate": "2025-09-17T01:20:37",
+      "updatedDate": "2026-02-09T05:09:11",
+      "owner": "David Henderson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1269.15,
+      "description": "Bring room effect summer."
+    },
+    {
+      "id": "ae9dcbd1-3a18-42c7-a139-a20597266a10",
+      "name": "Reduced executive complexity 24",
+      "status": "Pending",
+      "createdDate": "2025-02-27T23:02:05",
+      "updatedDate": "2026-02-13T20:06:08",
+      "owner": "Timothy Dalton",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1549.37,
+      "description": "Many start however."
+    },
+    {
+      "id": "afed18d2-271a-432e-b343-681ee0ffbd6a",
+      "name": "Focused needs-based focus group 25",
+      "status": "Completed",
+      "createdDate": "2026-02-09T11:29:14",
+      "updatedDate": "2026-02-17T08:43:47",
+      "owner": "Tamara Vargas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4775.63,
+      "description": "Six born art reveal brother sister hotel."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

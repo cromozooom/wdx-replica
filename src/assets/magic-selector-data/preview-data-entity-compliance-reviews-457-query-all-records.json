@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-all-records",
+  "totalCount": 550,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "5bbef3e0-b308-4a69-9516-b82dd926b7b9",
+      "name": "Programmable mobile emulation 1",
+      "status": "Inactive",
+      "createdDate": "2025-10-17T00:12:13",
+      "updatedDate": "2026-02-10T16:31:02",
+      "owner": "Kelsey Turner",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1048.71,
+      "description": "Sister realize piece country."
+    },
+    {
+      "id": "22dab3a3-02b9-483a-b7d4-01a5495a2215",
+      "name": "Proactive zero administration service-desk 2",
+      "status": "Inactive",
+      "createdDate": "2025-11-24T17:19:45",
+      "updatedDate": "2026-01-28T18:07:13",
+      "owner": "Ann Harris",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9199.89,
+      "description": "Medical mission husband show college process few."
+    },
+    {
+      "id": "577ccad1-dafc-4033-aa4f-fc29e76488e7",
+      "name": "Business-focused intermediate Internet solution 3",
+      "status": "Inactive",
+      "createdDate": "2025-03-18T22:08:53",
+      "updatedDate": "2026-01-24T21:21:52",
+      "owner": "Leah Craig",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8169.43,
+      "description": "Character believe follow newspaper late."
+    },
+    {
+      "id": "4fcd1e08-b9da-4379-bf44-fb49dadc1803",
+      "name": "Triple-buffered client-driven process improvement 4",
+      "status": "Inactive",
+      "createdDate": "2025-08-06T12:29:54",
+      "updatedDate": "2026-02-11T17:53:14",
+      "owner": "James Miller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 953.25,
+      "description": "Perhaps affect herself on president."
+    },
+    {
+      "id": "ae38ad04-3b4a-4f75-8b37-7078fb54010a",
+      "name": "Reverse-engineered executive database 5",
+      "status": "Pending",
+      "createdDate": "2025-04-25T05:48:35",
+      "updatedDate": "2026-01-25T00:46:35",
+      "owner": "Stephen Mullins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5165.13,
+      "description": "Note student specific program child enjoy."
+    },
+    {
+      "id": "c88dd738-a6a8-43f4-87b4-39fa155085f5",
+      "name": "Distributed system-worthy time-frame 6",
+      "status": "Inactive",
+      "createdDate": "2025-05-01T14:09:19",
+      "updatedDate": "2026-01-22T13:46:28",
+      "owner": "Jesus Mcpherson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 391.53,
+      "description": "Not research society someone own medical gas."
+    },
+    {
+      "id": "f4691f82-c62a-4f5c-a7e2-9556ec0e4e1b",
+      "name": "Centralized mission-critical installation 7",
+      "status": "Active",
+      "createdDate": "2025-03-25T02:42:35",
+      "updatedDate": "2026-01-22T14:30:56",
+      "owner": "Tiffany Perry",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9082.27,
+      "description": "Leave heart positive truth friend suddenly bed."
+    },
+    {
+      "id": "d0efb9dc-8970-48cd-ab78-10c26989c9bb",
+      "name": "Focused intangible monitoring 8",
+      "status": "Inactive",
+      "createdDate": "2025-06-10T11:28:25",
+      "updatedDate": "2026-01-31T05:36:15",
+      "owner": "Linda Edwards",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 477.85,
+      "description": "Glass game teacher hand plan."
+    },
+    {
+      "id": "265b6256-817f-4ca2-9b08-0ecbf43bd2d2",
+      "name": "Quality-focused 3rdgeneration middleware 9",
+      "status": "Active",
+      "createdDate": "2026-01-22T18:49:15",
+      "updatedDate": "2026-02-01T17:43:40",
+      "owner": "Stephanie Burton",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3536.99,
+      "description": "Us manage easy most wall state next."
+    },
+    {
+      "id": "ce1fec21-845a-40aa-869d-9dd97168ec2f",
+      "name": "Re-engineered bi-directional application 10",
+      "status": "Completed",
+      "createdDate": "2025-11-26T02:31:33",
+      "updatedDate": "2026-02-02T15:16:05",
+      "owner": "Richard Lopez DDS",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3016.75,
+      "description": "Official meet raise as."
+    },
+    {
+      "id": "63ca338b-b68b-4053-b951-f20834b4bd6b",
+      "name": "Innovative system-worthy migration 11",
+      "status": "Active",
+      "createdDate": "2026-01-13T00:31:34",
+      "updatedDate": "2026-02-14T07:23:06",
+      "owner": "Ian Henry",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 822.56,
+      "description": "Under officer next."
+    },
+    {
+      "id": "1f0dc797-2fff-4027-8771-87b32803a4b6",
+      "name": "Open-architected motivating middleware 12",
+      "status": "Active",
+      "createdDate": "2025-07-13T10:01:39",
+      "updatedDate": "2026-02-10T11:13:30",
+      "owner": "Jason Atkins",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 407.67,
+      "description": "Night share here one Mrs employee finish."
+    },
+    {
+      "id": "ea5681fa-7b04-4392-bb10-31da955034ac",
+      "name": "Open-source multimedia info-mediaries 13",
+      "status": "Active",
+      "createdDate": "2025-10-25T03:22:07",
+      "updatedDate": "2026-02-17T01:18:58",
+      "owner": "Bruce Carey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1557.95,
+      "description": "Add as break vote."
+    },
+    {
+      "id": "eb6e074f-8c86-4b9c-bdd7-ea96153e3f5c",
+      "name": "Synergistic scalable functionalities 14",
+      "status": "Pending",
+      "createdDate": "2025-07-19T11:24:04",
+      "updatedDate": "2026-01-24T19:10:16",
+      "owner": "Nicholas Allen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6048.07,
+      "description": "Left prove despite."
+    },
+    {
+      "id": "95ffd9cb-f9dc-4aff-94df-38eddb8afd55",
+      "name": "Phased asymmetric installation 15",
+      "status": "Inactive",
+      "createdDate": "2025-08-07T22:31:34",
+      "updatedDate": "2026-01-31T09:37:03",
+      "owner": "Phillip Pope",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7140.89,
+      "description": "Have newspaper leave happen upon month wall position."
+    },
+    {
+      "id": "2ea98fb3-6d21-4b88-b404-637b39a61db4",
+      "name": "Decentralized human-resource infrastructure 16",
+      "status": "Active",
+      "createdDate": "2025-12-25T15:31:39",
+      "updatedDate": "2026-01-31T13:56:49",
+      "owner": "Rebecca Jackson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 717.54,
+      "description": "Price produce soon improve speech behind center meeting."
+    },
+    {
+      "id": "a1939cd1-95ce-4dc8-a8bd-1d3b9fde1e11",
+      "name": "Public-key needs-based instruction set 17",
+      "status": "Inactive",
+      "createdDate": "2026-01-06T18:54:44",
+      "updatedDate": "2026-01-28T08:16:19",
+      "owner": "Claudia Jenkins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9363.42,
+      "description": "Management it short on growth."
+    },
+    {
+      "id": "da47aac0-2a01-4544-b48f-82d2512082c9",
+      "name": "Extended systemic system engine 18",
+      "status": "Active",
+      "createdDate": "2025-12-21T02:51:13",
+      "updatedDate": "2026-02-09T15:04:18",
+      "owner": "Amy Rodriguez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1175.5,
+      "description": "Later country reality southern check."
+    },
+    {
+      "id": "085d67d3-ef42-4bf0-bf30-23e4723845cf",
+      "name": "Triple-buffered neutral capability 19",
+      "status": "Active",
+      "createdDate": "2025-06-01T05:09:36",
+      "updatedDate": "2026-02-04T05:39:10",
+      "owner": "Emily Harris",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1696.69,
+      "description": "Generation couple whose for network success."
+    },
+    {
+      "id": "0190e547-3818-4af3-9103-38986fefb138",
+      "name": "Cross-group value-added website 20",
+      "status": "Active",
+      "createdDate": "2025-12-23T19:01:51",
+      "updatedDate": "2026-02-09T01:09:24",
+      "owner": "Miranda Wright",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 650.18,
+      "description": "Kid after result man place accept."
+    },
+    {
+      "id": "5b1f55ef-9d78-4492-bdeb-631ea1cf8ddd",
+      "name": "Seamless national system engine 21",
+      "status": "Pending",
+      "createdDate": "2026-02-01T09:18:22",
+      "updatedDate": "2026-02-03T12:54:03",
+      "owner": "Patrick Morales",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9626.97,
+      "description": "Teacher will involve."
+    },
+    {
+      "id": "90be4e79-7a00-4192-b499-a20a8e896b1b",
+      "name": "Streamlined zero-defect workforce 22",
+      "status": "Completed",
+      "createdDate": "2025-03-01T15:56:17",
+      "updatedDate": "2026-02-13T17:25:20",
+      "owner": "Shaun Vargas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2170.46,
+      "description": "Event treat relationship by key."
+    },
+    {
+      "id": "93d74292-57f2-4b9d-8cf5-56d094abebc1",
+      "name": "Optional user-facing knowledgebase 23",
+      "status": "Inactive",
+      "createdDate": "2026-01-24T12:51:17",
+      "updatedDate": "2026-02-13T14:06:48",
+      "owner": "Heather Campbell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6962.41,
+      "description": "Down amount purpose form for."
+    },
+    {
+      "id": "6f3eb9ff-507e-4242-8a44-29009d9336d1",
+      "name": "Extended eco-centric task-force 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-04T15:08:00",
+      "updatedDate": "2026-01-21T16:18:16",
+      "owner": "Lisa Price",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 953.12,
+      "description": "Have candidate boy."
+    },
+    {
+      "id": "7a30d56d-1798-4631-8978-3c90fe0bcfd3",
+      "name": "Re-contextualized next generation parallelism 25",
+      "status": "Pending",
+      "createdDate": "2025-10-28T05:14:56",
+      "updatedDate": "2026-02-01T11:05:24",
+      "owner": "Brian Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3892.11,
+      "description": "Bed drive friend bar others space."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

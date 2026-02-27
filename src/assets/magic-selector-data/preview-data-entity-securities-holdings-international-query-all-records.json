@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-security",
+  "queryId": "query-all-records",
+  "totalCount": 515,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "cd9fd178-bd03-4cf2-be99-b6f16cde2814",
+      "name": "Innovative 24hour data-warehouse 1",
+      "status": "Pending",
+      "createdDate": "2025-12-15T19:27:20",
+      "updatedDate": "2026-01-23T02:33:54",
+      "owner": "Lauren Morgan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 793.75,
+      "description": "Right condition rest many mean student."
+    },
+    {
+      "id": "0293868b-05d3-4fe9-8783-f91bb0238193",
+      "name": "Horizontal stable help-desk 2",
+      "status": "Inactive",
+      "createdDate": "2025-08-12T13:49:32",
+      "updatedDate": "2026-02-17T06:01:15",
+      "owner": "Richard Baker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8712.04,
+      "description": "Letter relationship until eight three building surface."
+    },
+    {
+      "id": "37e472db-4a8f-4408-9f8e-a3ee292c933c",
+      "name": "Profound tangible model 3",
+      "status": "Active",
+      "createdDate": "2025-06-03T19:15:17",
+      "updatedDate": "2026-02-02T23:01:56",
+      "owner": "Shane Watson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7995.76,
+      "description": "Tell role arm quality free create space."
+    },
+    {
+      "id": "04b42075-79c9-4b6c-ab68-7fc08ef810fb",
+      "name": "Future-proofed systematic hub 4",
+      "status": "Completed",
+      "createdDate": "2025-04-16T23:08:07",
+      "updatedDate": "2026-01-30T21:47:51",
+      "owner": "Jennifer Santos",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5613.31,
+      "description": "Room east few authority."
+    },
+    {
+      "id": "49027148-2067-41b9-b93d-0f8194abbb58",
+      "name": "Configurable solution-oriented framework 5",
+      "status": "Pending",
+      "createdDate": "2025-07-29T11:57:37",
+      "updatedDate": "2026-02-02T21:27:47",
+      "owner": "Meghan Barton",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 261.63,
+      "description": "Nice understand fill whether theory including."
+    },
+    {
+      "id": "ee67f0bf-7d49-414e-9c5d-c2c7fb697b11",
+      "name": "Automated web-enabled capacity 6",
+      "status": "Inactive",
+      "createdDate": "2026-02-10T07:04:12",
+      "updatedDate": "2026-01-26T17:20:19",
+      "owner": "Mark Gonzales",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8338.91,
+      "description": "Color suddenly imagine arrive law turn."
+    },
+    {
+      "id": "1e5af425-1db2-48ec-9ab2-f64dfcda3896",
+      "name": "Compatible didactic interface 7",
+      "status": "Inactive",
+      "createdDate": "2026-02-08T06:44:46",
+      "updatedDate": "2026-02-06T01:34:02",
+      "owner": "Christopher Montgomery",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2473.1,
+      "description": "Billion job speak realize."
+    },
+    {
+      "id": "c1e25739-4183-4651-9434-0b4ed7047fd3",
+      "name": "Virtual uniform policy 8",
+      "status": "Completed",
+      "createdDate": "2025-03-23T13:21:01",
+      "updatedDate": "2026-02-02T16:22:32",
+      "owner": "Zachary Lopez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1829.9,
+      "description": "A write simply."
+    },
+    {
+      "id": "17f5fea0-d118-4e62-af6e-682de04ed2d9",
+      "name": "Cross-group dedicated challenge 9",
+      "status": "Completed",
+      "createdDate": "2025-04-05T08:13:25",
+      "updatedDate": "2026-02-02T05:33:52",
+      "owner": "Lynn Hernandez MD",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4358.78,
+      "description": "Break shoulder fall example total."
+    },
+    {
+      "id": "83888615-ef9d-4e76-9349-87932e40ccbd",
+      "name": "Future-proofed homogeneous moderator 10",
+      "status": "Completed",
+      "createdDate": "2025-12-28T21:36:48",
+      "updatedDate": "2026-02-06T17:07:02",
+      "owner": "Raymond Mckenzie",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6148.68,
+      "description": "Organization summer alone hand remember cup chance."
+    },
+    {
+      "id": "1c4b7ace-981d-4982-879c-38e0c0b66b35",
+      "name": "Business-focused next generation contingency 11",
+      "status": "Inactive",
+      "createdDate": "2025-11-27T14:01:26",
+      "updatedDate": "2026-02-17T06:53:26",
+      "owner": "Jeff Nunez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3925.73,
+      "description": "Act number bill several catch."
+    },
+    {
+      "id": "888980d5-ca6f-48bc-a784-98f0d195af1a",
+      "name": "Implemented intangible framework 12",
+      "status": "Pending",
+      "createdDate": "2025-04-18T02:49:37",
+      "updatedDate": "2026-01-30T04:12:21",
+      "owner": "Robert Brooks",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4419.3,
+      "description": "Experience factor happy."
+    },
+    {
+      "id": "21674d54-d7dd-4777-917b-54e2cf6eb4c5",
+      "name": "Front-line mission-critical secured line 13",
+      "status": "Inactive",
+      "createdDate": "2025-04-04T13:34:29",
+      "updatedDate": "2026-02-06T22:15:51",
+      "owner": "Emily Butler",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3681.81,
+      "description": "Light among force that action account."
+    },
+    {
+      "id": "985b02c3-30b3-4853-966f-d3bf2da590b7",
+      "name": "User-centric foreground monitoring 14",
+      "status": "Pending",
+      "createdDate": "2025-05-25T18:03:13",
+      "updatedDate": "2026-02-13T20:18:44",
+      "owner": "Lauren Phillips",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 959.06,
+      "description": "Focus cost woman not seek."
+    },
+    {
+      "id": "dc5b8357-ea4e-46f2-aff3-ba3a74533b5d",
+      "name": "Upgradable contextually-based customer loyalty 15",
+      "status": "Inactive",
+      "createdDate": "2025-11-07T00:02:47",
+      "updatedDate": "2026-02-13T13:18:51",
+      "owner": "Erin Walker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 582.72,
+      "description": "Detail although daughter."
+    },
+    {
+      "id": "518089ac-c750-494b-a091-585f71bc352a",
+      "name": "Reactive 24hour policy 16",
+      "status": "Completed",
+      "createdDate": "2025-11-21T14:57:27",
+      "updatedDate": "2026-02-07T07:12:29",
+      "owner": "Shannon Welch",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9411.7,
+      "description": "Fine effect shoulder upon soon."
+    },
+    {
+      "id": "3dce689e-89a3-436b-882f-2a419082db16",
+      "name": "Progressive human-resource functionalities 17",
+      "status": "Active",
+      "createdDate": "2025-08-12T23:17:14",
+      "updatedDate": "2026-02-03T00:44:01",
+      "owner": "Jason Murillo",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8179.92,
+      "description": "Attack pretty race."
+    },
+    {
+      "id": "64483b61-c59a-474f-b94c-c43f25bd1e7d",
+      "name": "Down-sized system-worthy hub 18",
+      "status": "Inactive",
+      "createdDate": "2025-10-05T07:36:06",
+      "updatedDate": "2026-02-09T04:24:43",
+      "owner": "Joann Mills",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 678.01,
+      "description": "Tough base seem what conference sound think."
+    },
+    {
+      "id": "b694b861-ec5d-4312-b7fd-c0d364fbc2f1",
+      "name": "Robust leadingedge customer loyalty 19",
+      "status": "Pending",
+      "createdDate": "2025-11-28T03:25:04",
+      "updatedDate": "2026-01-29T19:48:30",
+      "owner": "Michael Houston",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4141.93,
+      "description": "Series use close PM if."
+    },
+    {
+      "id": "e9d18b04-7289-45e6-b7d1-631be0b8ce97",
+      "name": "Quality-focused methodical productivity 20",
+      "status": "Pending",
+      "createdDate": "2025-08-02T07:37:11",
+      "updatedDate": "2026-01-27T19:57:28",
+      "owner": "William Bauer",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4086.51,
+      "description": "Newspaper apply land decide land."
+    },
+    {
+      "id": "9a0f791a-0752-48c0-b60a-0cf2b73fa293",
+      "name": "Reduced well-modulated Graphical User Interface 21",
+      "status": "Inactive",
+      "createdDate": "2025-10-17T03:49:03",
+      "updatedDate": "2026-02-13T04:58:57",
+      "owner": "Ashley Taylor",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7946.16,
+      "description": "Town head mother note church firm risk."
+    },
+    {
+      "id": "85def4af-e6ec-404d-bd26-137158f4fdcc",
+      "name": "Phased background adapter 22",
+      "status": "Inactive",
+      "createdDate": "2025-11-29T03:38:36",
+      "updatedDate": "2026-02-09T21:07:50",
+      "owner": "Steven Perez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7380.96,
+      "description": "Subject hope phone assume north strategy mention example."
+    },
+    {
+      "id": "08b79272-04a0-4477-907d-6b204c32617e",
+      "name": "User-centric asynchronous initiative 23",
+      "status": "Active",
+      "createdDate": "2026-01-17T07:36:00",
+      "updatedDate": "2026-02-11T06:41:52",
+      "owner": "Michael Boyle",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9140.11,
+      "description": "Blue time kind effect."
+    },
+    {
+      "id": "d27651de-8f76-4a2b-8e62-6aa686a1c411",
+      "name": "Phased high-level superstructure 24",
+      "status": "Pending",
+      "createdDate": "2025-07-10T06:12:52",
+      "updatedDate": "2026-01-30T18:36:57",
+      "owner": "Caitlin Oconnor",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7132.11,
+      "description": "Fish measure work story."
+    },
+    {
+      "id": "5a387bc3-c9eb-4968-9ad8-d450d417cadd",
+      "name": "Face-to-face secondary contingency 25",
+      "status": "Active",
+      "createdDate": "2025-10-19T20:40:19",
+      "updatedDate": "2026-02-04T02:29:34",
+      "owner": "Robert Jackson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2660.99,
+      "description": "She doctor prove when place people."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

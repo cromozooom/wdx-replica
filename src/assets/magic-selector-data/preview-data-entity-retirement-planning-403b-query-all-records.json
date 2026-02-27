@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-retirementplan",
+  "queryId": "query-all-records",
+  "totalCount": 376,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "6e20cc66-6a7b-4dda-b365-3c9823c51e46",
+      "name": "Automated contextually-based framework 1",
+      "status": "Pending",
+      "createdDate": "2025-11-03T07:54:00",
+      "updatedDate": "2026-02-09T03:41:23",
+      "owner": "Levi Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6079.27,
+      "description": "Be case up perform true rock truth public."
+    },
+    {
+      "id": "91ab7cfa-453a-4837-a7ac-51e997152a52",
+      "name": "Right-sized reciprocal task-force 2",
+      "status": "Active",
+      "createdDate": "2025-03-14T02:46:27",
+      "updatedDate": "2026-01-28T10:24:14",
+      "owner": "Michael Callahan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1581.71,
+      "description": "Her short sense responsibility."
+    },
+    {
+      "id": "ae2422b3-ac39-4f78-9c99-f96b95a447c5",
+      "name": "Streamlined grid-enabled database 3",
+      "status": "Active",
+      "createdDate": "2025-04-19T08:02:45",
+      "updatedDate": "2026-02-14T01:31:20",
+      "owner": "Tony Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5786.84,
+      "description": "Onto glass amount if."
+    },
+    {
+      "id": "04210fde-672b-4a67-a830-e4784d448b02",
+      "name": "Expanded user-facing challenge 4",
+      "status": "Active",
+      "createdDate": "2025-09-30T01:24:43",
+      "updatedDate": "2026-02-11T06:14:24",
+      "owner": "Ronald Clark",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6568.8,
+      "description": "Add help keep."
+    },
+    {
+      "id": "a49ae593-9f14-4e16-9284-c4cc01a426ca",
+      "name": "Seamless multi-tasking productivity 5",
+      "status": "Pending",
+      "createdDate": "2025-06-29T18:53:46",
+      "updatedDate": "2026-02-13T19:46:16",
+      "owner": "Michael Russell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2937.04,
+      "description": "Control control admit police security case."
+    },
+    {
+      "id": "886c55ea-95f6-45aa-8252-da16150185a0",
+      "name": "Focused well-modulated Internet solution 6",
+      "status": "Pending",
+      "createdDate": "2025-06-07T22:24:41",
+      "updatedDate": "2026-01-26T10:23:24",
+      "owner": "Autumn Morrow",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1560.7,
+      "description": "Rest daughter enter foreign."
+    },
+    {
+      "id": "8a9d2846-49ee-4806-b2f0-4f55f4796255",
+      "name": "Advanced executive neural-net 7",
+      "status": "Pending",
+      "createdDate": "2025-07-08T03:31:31",
+      "updatedDate": "2026-01-27T00:20:49",
+      "owner": "James Stein",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2226.37,
+      "description": "About season operation all themselves government."
+    },
+    {
+      "id": "4624f5e8-990b-4506-84df-74b09ae13952",
+      "name": "Front-line tangible neural-net 8",
+      "status": "Active",
+      "createdDate": "2026-02-02T10:38:46",
+      "updatedDate": "2026-02-16T15:40:23",
+      "owner": "Sara Lopez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8989.04,
+      "description": "Leave after information with."
+    },
+    {
+      "id": "0f8f1f1d-abaa-4f46-a677-dbbb115ad6cf",
+      "name": "Front-line systemic complexity 9",
+      "status": "Pending",
+      "createdDate": "2025-09-10T16:42:38",
+      "updatedDate": "2026-02-09T03:55:54",
+      "owner": "Shawna Avila",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7467.55,
+      "description": "Cost wish friend scene edge military father."
+    },
+    {
+      "id": "25b92570-904a-497a-90a4-a2485873c9ba",
+      "name": "Universal hybrid hardware 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-22T21:26:27",
+      "updatedDate": "2026-02-05T11:21:58",
+      "owner": "Jason Schmidt",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8389.47,
+      "description": "Player just half member book."
+    },
+    {
+      "id": "abefae02-eeb9-4636-8fc8-15660b23c961",
+      "name": "Multi-lateral intangible neural-net 11",
+      "status": "Active",
+      "createdDate": "2026-01-18T12:49:26",
+      "updatedDate": "2026-01-27T04:35:12",
+      "owner": "Brian Marks",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5242.49,
+      "description": "Hit process thing chance."
+    },
+    {
+      "id": "1ede61f9-ff59-430d-bf22-522cacfd0822",
+      "name": "Cross-platform contextually-based instruction set 12",
+      "status": "Active",
+      "createdDate": "2025-04-04T13:51:57",
+      "updatedDate": "2026-02-06T15:26:53",
+      "owner": "Steven Roberts",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4678.96,
+      "description": "Small soon risk professor work knowledge walk."
+    },
+    {
+      "id": "9571bc60-b2dc-42ca-9c39-908ff0a474c3",
+      "name": "Virtual uniform concept 13",
+      "status": "Active",
+      "createdDate": "2025-02-26T11:10:49",
+      "updatedDate": "2026-02-12T17:45:22",
+      "owner": "Tasha Mason",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4302.89,
+      "description": "Democrat nor camera explain."
+    },
+    {
+      "id": "bcfaa19a-f599-497f-9a21-1720cf9beb5e",
+      "name": "Enterprise-wide homogeneous strategy 14",
+      "status": "Inactive",
+      "createdDate": "2025-05-10T14:16:20",
+      "updatedDate": "2026-01-27T18:40:27",
+      "owner": "Jordan Austin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1395.79,
+      "description": "Door notice media himself."
+    },
+    {
+      "id": "13d7914c-cd8d-488a-a598-04f3f935ff67",
+      "name": "Grass-roots stable alliance 15",
+      "status": "Completed",
+      "createdDate": "2025-04-23T18:25:48",
+      "updatedDate": "2026-02-10T11:03:51",
+      "owner": "Samantha Jackson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6564.12,
+      "description": "Enough general especially early run town."
+    },
+    {
+      "id": "1c8cbf57-e301-47d1-b797-8aee58b53cb1",
+      "name": "User-friendly bandwidth-monitored system engine 16",
+      "status": "Completed",
+      "createdDate": "2025-12-19T17:08:54",
+      "updatedDate": "2026-01-27T18:29:38",
+      "owner": "Thomas Skinner",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1715.01,
+      "description": "According usually provide central authority range house."
+    },
+    {
+      "id": "cc1593d6-5be8-4a3a-8ce7-89f2cae1708e",
+      "name": "Re-engineered responsive process improvement 17",
+      "status": "Pending",
+      "createdDate": "2025-11-15T12:08:49",
+      "updatedDate": "2026-01-25T03:23:48",
+      "owner": "Karen Brennan",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8564.36,
+      "description": "Even response study listen try plan book north."
+    },
+    {
+      "id": "1579974e-53be-43e1-ac93-bd4efe81ea7c",
+      "name": "Balanced value-added knowledgebase 18",
+      "status": "Active",
+      "createdDate": "2025-08-06T06:08:18",
+      "updatedDate": "2026-02-13T03:49:59",
+      "owner": "Felicia Decker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5603.7,
+      "description": "Information drug mouth evidence social."
+    },
+    {
+      "id": "8398fd80-a504-403b-8094-c616759dce8e",
+      "name": "Versatile mobile initiative 19",
+      "status": "Completed",
+      "createdDate": "2025-02-27T11:15:47",
+      "updatedDate": "2026-02-08T04:17:52",
+      "owner": "Jose Salazar",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5720.75,
+      "description": "The win couple step reveal yet visit."
+    },
+    {
+      "id": "070b5d19-8b4a-43db-b3f2-e0b24bdb965e",
+      "name": "Decentralized disintermediate analyzer 20",
+      "status": "Pending",
+      "createdDate": "2025-11-10T17:13:24",
+      "updatedDate": "2026-02-13T17:49:59",
+      "owner": "Cynthia Lambert",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8892.02,
+      "description": "Sometimes believe simply threat recent land brother."
+    },
+    {
+      "id": "3148f9c0-cc05-4298-86a4-f2a2adb5cfac",
+      "name": "Team-oriented transitional architecture 21",
+      "status": "Completed",
+      "createdDate": "2026-02-15T19:30:28",
+      "updatedDate": "2026-01-31T03:45:55",
+      "owner": "Kevin Dunn",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9428.57,
+      "description": "Quickly accept decide."
+    },
+    {
+      "id": "1c077ec8-5a75-4bf4-918c-0237c83aff48",
+      "name": "Customizable static architecture 22",
+      "status": "Completed",
+      "createdDate": "2025-06-11T13:02:13",
+      "updatedDate": "2026-02-05T13:38:05",
+      "owner": "Patricia Wheeler",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 132.11,
+      "description": "Data occur matter standard surface wrong."
+    },
+    {
+      "id": "7a095574-c9bb-4442-8cca-db40373e36b7",
+      "name": "Enhanced multi-tasking software 23",
+      "status": "Inactive",
+      "createdDate": "2026-02-04T11:56:27",
+      "updatedDate": "2026-01-26T03:46:07",
+      "owner": "Deborah Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9659.59,
+      "description": "Course price friend yeah west financial center."
+    },
+    {
+      "id": "4ccb117f-e828-484b-8839-5e703a4929be",
+      "name": "Multi-channeled dynamic strategy 24",
+      "status": "Pending",
+      "createdDate": "2026-01-26T16:16:36",
+      "updatedDate": "2026-02-05T00:55:43",
+      "owner": "Lori Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9640.55,
+      "description": "Lead bit lot training police."
+    },
+    {
+      "id": "08b2724b-0870-4a1b-8462-65cac6631cd4",
+      "name": "Integrated 24hour secured line 25",
+      "status": "Active",
+      "createdDate": "2025-04-29T02:48:14",
+      "updatedDate": "2026-02-01T20:47:24",
+      "owner": "Ryan Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 523.01,
+      "description": "Nothing life join concern."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

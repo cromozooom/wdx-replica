@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 469,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "bca0d25d-89f2-4b35-a0ef-4a4aaa38beb3",
+      "name": "Enterprise-wide needs-based capability 1",
+      "status": "Inactive",
+      "createdDate": "2025-05-24T02:20:40",
+      "updatedDate": "2026-01-25T00:56:19",
+      "owner": "David Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5653.39,
+      "description": "Building five play."
+    },
+    {
+      "id": "cd99aca1-8306-4927-bc5b-d0f6aaec345f",
+      "name": "Enhanced hybrid product 2",
+      "status": "Pending",
+      "createdDate": "2025-09-25T18:08:59",
+      "updatedDate": "2026-02-11T13:38:08",
+      "owner": "Jaime Terry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8698.35,
+      "description": "Approach doctor public cup happen."
+    },
+    {
+      "id": "1e3cb4e1-389e-4cbe-8b78-ad951855d025",
+      "name": "Team-oriented attitude-oriented benchmark 3",
+      "status": "Pending",
+      "createdDate": "2025-06-26T05:51:03",
+      "updatedDate": "2026-02-09T03:33:43",
+      "owner": "Sarah Allen",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 530.53,
+      "description": "Theory develop figure property charge."
+    },
+    {
+      "id": "977f09f7-8379-48f4-b658-6d85ba0838dd",
+      "name": "Organized uniform concept 4",
+      "status": "Completed",
+      "createdDate": "2025-02-27T15:58:05",
+      "updatedDate": "2026-01-22T20:11:11",
+      "owner": "Dale Valentine",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8044.79,
+      "description": "Necessary lead body group order she."
+    },
+    {
+      "id": "521cd66b-00a0-4cfa-a039-9b8e73f197f1",
+      "name": "Organic interactive approach 5",
+      "status": "Active",
+      "createdDate": "2025-02-17T12:54:04",
+      "updatedDate": "2026-01-26T12:25:34",
+      "owner": "James Young",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5374.77,
+      "description": "Baby draw Democrat available."
+    },
+    {
+      "id": "f7912c6a-8127-4d50-b7b9-8eaa1087cb23",
+      "name": "Distributed needs-based model 6",
+      "status": "Inactive",
+      "createdDate": "2025-05-11T04:34:28",
+      "updatedDate": "2026-02-07T21:58:56",
+      "owner": "Ebony Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1256.48,
+      "description": "Increase put through teacher."
+    },
+    {
+      "id": "b2819f13-ec8d-4558-9aae-14182bcd4420",
+      "name": "Monitored multi-state methodology 7",
+      "status": "Active",
+      "createdDate": "2025-10-05T03:57:26",
+      "updatedDate": "2026-01-31T21:04:47",
+      "owner": "Sabrina Petty",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7272.28,
+      "description": "Practice attention full job peace."
+    },
+    {
+      "id": "b471e06a-6852-4b8c-91e8-496e1b9af0f0",
+      "name": "Advanced hybrid intranet 8",
+      "status": "Active",
+      "createdDate": "2025-08-25T00:45:58",
+      "updatedDate": "2026-01-31T23:07:16",
+      "owner": "Eric Peters",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1984.08,
+      "description": "Cut less table dark back reduce best."
+    },
+    {
+      "id": "da463839-6e5b-4c1e-98a9-36092829c214",
+      "name": "Re-contextualized heuristic open architecture 9",
+      "status": "Active",
+      "createdDate": "2025-02-20T15:04:08",
+      "updatedDate": "2026-02-05T01:01:27",
+      "owner": "Kyle Brown",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4850.64,
+      "description": "Interesting recently large white model which last quite."
+    },
+    {
+      "id": "6088711d-3f58-471b-a214-d933306c42f0",
+      "name": "Extended mission-critical Local Area Network 10",
+      "status": "Inactive",
+      "createdDate": "2025-04-26T22:07:55",
+      "updatedDate": "2026-02-04T11:56:07",
+      "owner": "Erin Cook",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8429.37,
+      "description": "Lawyer dream recent environment together eight perhaps."
+    },
+    {
+      "id": "20306ab4-96cd-44cc-83d0-654fd01bb67c",
+      "name": "Re-engineered background toolset 11",
+      "status": "Inactive",
+      "createdDate": "2025-05-26T06:31:14",
+      "updatedDate": "2026-02-01T13:14:22",
+      "owner": "Melissa Freeman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4830.21,
+      "description": "Past mind move just."
+    },
+    {
+      "id": "fba1889f-e57a-4d6a-833f-b1494176e415",
+      "name": "Phased responsive protocol 12",
+      "status": "Pending",
+      "createdDate": "2025-10-26T04:41:58",
+      "updatedDate": "2026-01-22T15:54:53",
+      "owner": "Daniel Marshall MD",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5079.92,
+      "description": "Smile mind hair apply street understand value truth."
+    },
+    {
+      "id": "9ac69287-d088-4ca1-8b3f-dcb1a53c4025",
+      "name": "Triple-buffered background collaboration 13",
+      "status": "Active",
+      "createdDate": "2025-07-04T20:54:35",
+      "updatedDate": "2026-02-03T20:41:07",
+      "owner": "Dale Mitchell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3104.05,
+      "description": "Inside politics television job."
+    },
+    {
+      "id": "50745e1a-3c81-4023-8fb6-56061d36031f",
+      "name": "Virtual analyzing throughput 14",
+      "status": "Pending",
+      "createdDate": "2025-04-19T10:50:09",
+      "updatedDate": "2026-01-19T18:26:21",
+      "owner": "Seth Hansen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8997.88,
+      "description": "Foot do think someone and pay."
+    },
+    {
+      "id": "7c4a7e97-d530-433b-a05e-cd4317afda57",
+      "name": "Multi-lateral national frame 15",
+      "status": "Inactive",
+      "createdDate": "2026-01-14T19:01:04",
+      "updatedDate": "2026-02-11T12:20:52",
+      "owner": "Jennifer Clark",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3985.04,
+      "description": "Discover always put protect author also."
+    },
+    {
+      "id": "eccc7e92-465e-4936-bb75-388109263bc5",
+      "name": "Configurable static database 16",
+      "status": "Inactive",
+      "createdDate": "2025-10-17T10:03:18",
+      "updatedDate": "2026-01-27T23:42:28",
+      "owner": "Brittany Davis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8843.82,
+      "description": "Large woman subject."
+    },
+    {
+      "id": "29ef2459-a3c4-428e-844e-9a3abfbf6ac1",
+      "name": "Multi-channeled next generation definition 17",
+      "status": "Active",
+      "createdDate": "2026-01-13T21:31:54",
+      "updatedDate": "2026-01-20T07:01:02",
+      "owner": "Casey Black",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9429.01,
+      "description": "Fund less catch true."
+    },
+    {
+      "id": "61750e10-b29f-4cca-8e74-7e01c49f8ace",
+      "name": "Extended regional knowledge user 18",
+      "status": "Completed",
+      "createdDate": "2025-10-29T06:42:10",
+      "updatedDate": "2026-02-02T18:24:29",
+      "owner": "Travis Phillips",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 535.03,
+      "description": "Chance assume dark wait down."
+    },
+    {
+      "id": "dd9f0e91-16a6-48f2-88aa-49092dcae786",
+      "name": "Profit-focused scalable success 19",
+      "status": "Completed",
+      "createdDate": "2025-05-15T16:12:00",
+      "updatedDate": "2026-01-29T05:49:58",
+      "owner": "Valerie Mathews",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7650.17,
+      "description": "Road it above support place those compare."
+    },
+    {
+      "id": "4fd847c0-f7c0-4c0f-982f-79c34e79d16a",
+      "name": "Persevering composite artificial intelligence 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-15T16:00:05",
+      "updatedDate": "2026-01-24T03:58:40",
+      "owner": "Benjamin Sanders",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7282.66,
+      "description": "Politics always cause bit."
+    },
+    {
+      "id": "170efb6c-d435-4acb-ac57-fa1f235d040e",
+      "name": "Organized fault-tolerant parallelism 21",
+      "status": "Pending",
+      "createdDate": "2025-08-24T15:59:42",
+      "updatedDate": "2026-02-11T04:20:43",
+      "owner": "Jessica Gordon",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9341.04,
+      "description": "Person tonight mouth age activity piece."
+    },
+    {
+      "id": "5adf5b64-9f28-469b-a3e1-9ae80aff7a56",
+      "name": "Expanded multi-state architecture 22",
+      "status": "Completed",
+      "createdDate": "2026-02-04T01:30:25",
+      "updatedDate": "2026-01-21T02:26:23",
+      "owner": "Jennifer Allen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7226.32,
+      "description": "Effect month base baby language."
+    },
+    {
+      "id": "e2c1899f-1bb9-4f56-aa43-0db7c1954cf7",
+      "name": "Vision-oriented regional infrastructure 23",
+      "status": "Active",
+      "createdDate": "2025-08-19T05:07:25",
+      "updatedDate": "2026-02-11T03:52:09",
+      "owner": "Shawn Castro",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7161.83,
+      "description": "Card nation form rather heavy."
+    },
+    {
+      "id": "4051394d-cef0-4b5b-a6df-a48370a26d0a",
+      "name": "Multi-channeled eco-centric firmware 24",
+      "status": "Active",
+      "createdDate": "2025-09-08T02:22:52",
+      "updatedDate": "2026-02-10T14:54:49",
+      "owner": "Michelle Hester",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4513.02,
+      "description": "Find between song time cultural training wife."
+    },
+    {
+      "id": "ab3776f0-8b99-4a56-a45d-9d4619eeb747",
+      "name": "Distributed bi-directional implementation 25",
+      "status": "Pending",
+      "createdDate": "2025-12-25T08:22:25",
+      "updatedDate": "2026-01-25T02:02:50",
+      "owner": "Jacob Ross",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3628.38,
+      "description": "Minute pattern day type ever artist same color."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

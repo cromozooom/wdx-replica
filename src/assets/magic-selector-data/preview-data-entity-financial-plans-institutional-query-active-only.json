@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-active-only",
+  "totalCount": 1456,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "94c8565c-5e68-45f0-bbaf-8fcc8b93d30f",
+      "name": "Business-focused directional focus group 1",
+      "status": "Completed",
+      "createdDate": "2025-03-11T11:58:17",
+      "updatedDate": "2026-02-02T02:05:28",
+      "owner": "Devin Hubbard",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 526.61,
+      "description": "Another talk offer up there."
+    },
+    {
+      "id": "b62e7760-3f0f-4ee4-89ea-c027cef5741f",
+      "name": "Optional 5thgeneration migration 2",
+      "status": "Completed",
+      "createdDate": "2025-12-24T17:23:44",
+      "updatedDate": "2026-01-28T02:56:25",
+      "owner": "Eric Ford",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9806.49,
+      "description": "Fire course design class."
+    },
+    {
+      "id": "c0d2a393-fe69-4614-91e6-78a4a1c00cfe",
+      "name": "Extended secondary superstructure 3",
+      "status": "Pending",
+      "createdDate": "2025-11-06T15:54:49",
+      "updatedDate": "2026-02-16T00:07:36",
+      "owner": "Kimberly Neal",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3130.21,
+      "description": "From or fear."
+    },
+    {
+      "id": "56c97838-bfaa-48b5-b76b-523b1c425ead",
+      "name": "Team-oriented bottom-line adapter 4",
+      "status": "Pending",
+      "createdDate": "2025-04-27T12:33:50",
+      "updatedDate": "2026-02-07T03:54:43",
+      "owner": "Jason Morton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 237.92,
+      "description": "Prepare perform despite low force whether."
+    },
+    {
+      "id": "58a09149-f852-4fb6-aa50-0d3ace461e00",
+      "name": "Cross-platform encompassing toolset 5",
+      "status": "Pending",
+      "createdDate": "2025-06-22T16:41:05",
+      "updatedDate": "2026-02-09T07:34:19",
+      "owner": "Bradley Chavez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 389.1,
+      "description": "Institution parent bill must least."
+    },
+    {
+      "id": "e71a8fde-310d-4ce7-914f-757b8cfe2d3b",
+      "name": "Grass-roots asynchronous open architecture 6",
+      "status": "Completed",
+      "createdDate": "2025-02-17T15:48:29",
+      "updatedDate": "2026-02-03T22:21:51",
+      "owner": "Elizabeth Walker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2511.01,
+      "description": "Management project former for."
+    },
+    {
+      "id": "3fb3d287-932e-4b8e-b710-5a967e29e4d2",
+      "name": "Grass-roots zero administration leverage 7",
+      "status": "Inactive",
+      "createdDate": "2025-09-06T23:33:26",
+      "updatedDate": "2026-02-01T21:22:16",
+      "owner": "Terry Hendricks",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4651.68,
+      "description": "Law word central."
+    },
+    {
+      "id": "3c8c3daa-a0cb-4d7c-8d55-d9cc06bf2a6f",
+      "name": "Horizontal user-facing extranet 8",
+      "status": "Completed",
+      "createdDate": "2025-09-04T12:57:30",
+      "updatedDate": "2026-01-30T08:18:25",
+      "owner": "Brian Wall",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7789.68,
+      "description": "Particularly option Democrat agree production matter administration."
+    },
+    {
+      "id": "66d0890f-4049-473c-a699-39fc43a16304",
+      "name": "Multi-layered context-sensitive hub 9",
+      "status": "Completed",
+      "createdDate": "2025-03-11T15:41:51",
+      "updatedDate": "2026-01-30T16:05:37",
+      "owner": "Jessica Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5528.75,
+      "description": "Indeed lawyer yes into old stuff first."
+    },
+    {
+      "id": "04d74499-9f0e-45ce-a7b4-c1a998da113f",
+      "name": "Self-enabling contextually-based focus group 10",
+      "status": "Active",
+      "createdDate": "2025-06-01T21:25:14",
+      "updatedDate": "2026-02-17T05:55:25",
+      "owner": "Latoya Costa",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6784.98,
+      "description": "Hope expect every process data left should."
+    },
+    {
+      "id": "8e8260e8-11a8-465e-9b58-fc81eb63a7d2",
+      "name": "Total real-time success 11",
+      "status": "Active",
+      "createdDate": "2026-01-01T17:10:14",
+      "updatedDate": "2026-02-12T05:56:14",
+      "owner": "James Hunt",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8467.24,
+      "description": "Need present go."
+    },
+    {
+      "id": "31af9d81-8a89-409d-8651-69ebae3db76a",
+      "name": "Versatile systemic budgetary management 12",
+      "status": "Active",
+      "createdDate": "2025-06-12T11:51:32",
+      "updatedDate": "2026-02-10T19:35:11",
+      "owner": "George Miller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8407.7,
+      "description": "Blood seek theory this."
+    },
+    {
+      "id": "d9b2ee45-80b0-4551-aaab-2ed8b359df24",
+      "name": "Operative zero administration pricing structure 13",
+      "status": "Completed",
+      "createdDate": "2025-09-11T18:25:11",
+      "updatedDate": "2026-01-25T10:20:52",
+      "owner": "Meghan Jones",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9918.91,
+      "description": "Public state item can."
+    },
+    {
+      "id": "b6c46f21-f6f6-4ba3-885a-d7425a8b4d9b",
+      "name": "Streamlined regional toolset 14",
+      "status": "Completed",
+      "createdDate": "2025-11-16T16:37:23",
+      "updatedDate": "2026-01-27T05:15:36",
+      "owner": "Lee Gallagher",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8744.86,
+      "description": "Nearly sometimes material three involve."
+    },
+    {
+      "id": "8210c7c4-f1af-4018-a231-8c7b8de829f2",
+      "name": "Horizontal reciprocal workforce 15",
+      "status": "Inactive",
+      "createdDate": "2025-10-16T05:35:23",
+      "updatedDate": "2026-02-16T08:17:36",
+      "owner": "Micheal Green",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9697.07,
+      "description": "Before world figure almost art international."
+    },
+    {
+      "id": "5b6b6859-00d6-40be-ac8d-ab3622810411",
+      "name": "Virtual human-resource access 16",
+      "status": "Completed",
+      "createdDate": "2025-05-09T22:36:08",
+      "updatedDate": "2026-01-23T00:00:23",
+      "owner": "Rachel Stephens",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3426.71,
+      "description": "News build part heart build air."
+    },
+    {
+      "id": "f921d2c7-15fb-4dcb-b9d4-c450c08de17e",
+      "name": "Multi-layered executive Graphic Interface 17",
+      "status": "Active",
+      "createdDate": "2025-07-17T23:33:00",
+      "updatedDate": "2026-01-18T17:42:20",
+      "owner": "Sarah White DVM",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4475.05,
+      "description": "Yes culture let admit heavy fire."
+    },
+    {
+      "id": "2da5e51b-e014-4462-8baf-806a6fe11a67",
+      "name": "Profit-focused 6thgeneration synergy 18",
+      "status": "Pending",
+      "createdDate": "2025-11-06T18:34:03",
+      "updatedDate": "2026-01-26T03:05:08",
+      "owner": "Edward Bell",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7084.91,
+      "description": "Beautiful campaign off box writer suddenly reality view."
+    },
+    {
+      "id": "e2f7f027-2e73-466b-aec0-d7adb10dd469",
+      "name": "Public-key real-time application 19",
+      "status": "Active",
+      "createdDate": "2025-10-01T19:08:05",
+      "updatedDate": "2026-02-02T02:51:47",
+      "owner": "Stephanie Hughes",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7861.7,
+      "description": "Goal degree PM."
+    },
+    {
+      "id": "1457ea57-5cbd-4f0a-8fa8-5de9884f90f8",
+      "name": "Profit-focused real-time customer loyalty 20",
+      "status": "Completed",
+      "createdDate": "2025-07-21T16:00:47",
+      "updatedDate": "2026-01-28T00:23:40",
+      "owner": "Jon Brady",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8226.61,
+      "description": "Fire can catch staff especially section."
+    },
+    {
+      "id": "82914636-25af-4f57-a05e-b630458ac22e",
+      "name": "Optional empowering protocol 21",
+      "status": "Inactive",
+      "createdDate": "2025-08-11T05:03:16",
+      "updatedDate": "2026-02-14T16:04:13",
+      "owner": "Amber Flores",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7761.26,
+      "description": "Decision challenge talk development."
+    },
+    {
+      "id": "4dfa42f6-73e7-4674-b842-6cc499fb4817",
+      "name": "Right-sized 6thgeneration knowledge user 22",
+      "status": "Inactive",
+      "createdDate": "2026-02-01T03:33:01",
+      "updatedDate": "2026-01-26T14:46:40",
+      "owner": "Javier Mckee",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7965.9,
+      "description": "Bit bank another sea."
+    },
+    {
+      "id": "21c643d8-0681-47b9-9fad-bcaca557da6d",
+      "name": "Ergonomic zero administration functionalities 23",
+      "status": "Completed",
+      "createdDate": "2025-10-12T05:07:15",
+      "updatedDate": "2026-02-03T07:01:45",
+      "owner": "Christopher Castillo",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7203.56,
+      "description": "When yes white best represent."
+    },
+    {
+      "id": "223f098a-d50e-4311-8f95-97aa3a071221",
+      "name": "Multi-tiered directional budgetary management 24",
+      "status": "Active",
+      "createdDate": "2025-11-21T15:43:29",
+      "updatedDate": "2026-02-09T16:25:13",
+      "owner": "Tammy Gomez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4995.53,
+      "description": "Worker fight product read treat product."
+    },
+    {
+      "id": "3f63346e-23bb-4ce5-b50a-77615461bfe0",
+      "name": "Assimilated multimedia definition 25",
+      "status": "Inactive",
+      "createdDate": "2025-12-06T03:44:15",
+      "updatedDate": "2026-01-18T23:52:12",
+      "owner": "Oscar Vasquez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4186.79,
+      "description": "Sit pattern themselves dog animal leader various."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

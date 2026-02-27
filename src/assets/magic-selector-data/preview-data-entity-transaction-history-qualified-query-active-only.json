@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-active-only",
+  "totalCount": 731,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "2dd1d1c2-dd9e-456c-9296-58e97acf234e",
+      "name": "Synchronized mobile knowledgebase 1",
+      "status": "Completed",
+      "createdDate": "2025-12-25T00:28:54",
+      "updatedDate": "2026-02-03T09:54:04",
+      "owner": "Benjamin Frederick",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8569.99,
+      "description": "Modern soon consumer east."
+    },
+    {
+      "id": "9c836cca-72ab-44dd-8d0d-16a77a8b63b3",
+      "name": "Team-oriented clear-thinking interface 2",
+      "status": "Inactive",
+      "createdDate": "2025-04-08T02:29:10",
+      "updatedDate": "2026-02-05T23:39:49",
+      "owner": "Teresa Ayers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 584.24,
+      "description": "Including together take stage section pull loss keep."
+    },
+    {
+      "id": "dd55e1aa-c158-4c82-8756-fc1460ed05bb",
+      "name": "Realigned systemic groupware 3",
+      "status": "Active",
+      "createdDate": "2025-05-31T20:38:36",
+      "updatedDate": "2026-02-16T09:52:38",
+      "owner": "Amanda Henderson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6163.37,
+      "description": "Likely next side weight."
+    },
+    {
+      "id": "87cfbb21-c7d7-4d70-9845-a47402dc473a",
+      "name": "Organic multi-state contingency 4",
+      "status": "Inactive",
+      "createdDate": "2025-05-23T06:25:00",
+      "updatedDate": "2026-02-02T21:00:59",
+      "owner": "Walter Bauer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2046.96,
+      "description": "Myself perform economic carry car military."
+    },
+    {
+      "id": "62e3fbd4-1fb4-4172-b0c5-e064b7eff041",
+      "name": "Persistent multi-state open architecture 5",
+      "status": "Pending",
+      "createdDate": "2025-09-29T22:54:27",
+      "updatedDate": "2026-02-05T08:00:54",
+      "owner": "Justin Lam",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2259.58,
+      "description": "Less ground everything beautiful."
+    },
+    {
+      "id": "a32f895c-4773-4364-8ee2-3f298d9a1542",
+      "name": "Object-based real-time utilization 6",
+      "status": "Active",
+      "createdDate": "2025-08-27T07:34:08",
+      "updatedDate": "2026-01-23T05:13:48",
+      "owner": "Matthew Martinez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1271.51,
+      "description": "Yeah tough effort."
+    },
+    {
+      "id": "ca71a84c-9828-4122-af64-0201360a1285",
+      "name": "Multi-lateral regional encryption 7",
+      "status": "Inactive",
+      "createdDate": "2025-09-20T08:55:52",
+      "updatedDate": "2026-01-27T07:47:45",
+      "owner": "Troy Cox",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9699.83,
+      "description": "Answer test purpose room government."
+    },
+    {
+      "id": "039b2b42-9b19-498e-bdd4-53bd62110b1d",
+      "name": "Function-based foreground solution 8",
+      "status": "Completed",
+      "createdDate": "2025-05-05T12:31:09",
+      "updatedDate": "2026-01-18T11:57:16",
+      "owner": "Jason Ferguson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 766.03,
+      "description": "Nature both idea test discussion."
+    },
+    {
+      "id": "30791b92-4c6d-4c1f-82eb-ba139f49cfec",
+      "name": "Total real-time matrix 9",
+      "status": "Active",
+      "createdDate": "2025-06-17T23:38:30",
+      "updatedDate": "2026-02-15T14:54:18",
+      "owner": "Raymond Church",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4965.2,
+      "description": "Air success agreement."
+    },
+    {
+      "id": "0529b173-e12f-4fb2-ac16-9b6b33263b93",
+      "name": "Assimilated asynchronous challenge 10",
+      "status": "Active",
+      "createdDate": "2025-11-24T19:42:38",
+      "updatedDate": "2026-01-19T16:08:39",
+      "owner": "Richard Wagner",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6912.44,
+      "description": "View work simple hair drug guess."
+    },
+    {
+      "id": "27029c0b-d508-491a-95e6-abe77085e03f",
+      "name": "Quality-focused zero-defect hardware 11",
+      "status": "Inactive",
+      "createdDate": "2025-04-25T02:07:46",
+      "updatedDate": "2026-01-27T19:57:54",
+      "owner": "Sarah Castillo",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9301.68,
+      "description": "Middle finish inside enough."
+    },
+    {
+      "id": "4509a9c0-2b36-4d32-89bc-a4cc3af420d5",
+      "name": "Reduced foreground toolset 12",
+      "status": "Pending",
+      "createdDate": "2025-10-05T02:52:18",
+      "updatedDate": "2026-01-23T03:47:59",
+      "owner": "Joshua Robles",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2877.17,
+      "description": "Avoid force recent natural."
+    },
+    {
+      "id": "d1763035-2ac3-48d9-a4af-48eb029e95d5",
+      "name": "Cross-group secondary architecture 13",
+      "status": "Active",
+      "createdDate": "2025-08-24T05:27:42",
+      "updatedDate": "2026-02-08T06:48:15",
+      "owner": "Matthew Murphy",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7638.78,
+      "description": "Tv walk chance station situation trial."
+    },
+    {
+      "id": "da873dd0-c32f-40a4-b3f3-186aed5f4cf6",
+      "name": "Exclusive client-server attitude 14",
+      "status": "Completed",
+      "createdDate": "2025-08-28T17:53:43",
+      "updatedDate": "2026-02-05T22:02:19",
+      "owner": "Victoria Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5137.8,
+      "description": "Ground though decade understand green doctor along trip."
+    },
+    {
+      "id": "84b07b15-2b4a-4922-b9f4-2f60034a910e",
+      "name": "Customizable exuding parallelism 15",
+      "status": "Completed",
+      "createdDate": "2025-10-26T20:17:40",
+      "updatedDate": "2026-01-26T06:52:38",
+      "owner": "David Townsend",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1803.27,
+      "description": "Nor heart size minute."
+    },
+    {
+      "id": "c615f8c3-2fb9-4c12-8301-8db0efe28f71",
+      "name": "Quality-focused well-modulated time-frame 16",
+      "status": "Pending",
+      "createdDate": "2025-08-03T21:58:21",
+      "updatedDate": "2026-01-31T07:08:45",
+      "owner": "Nancy Robinson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2288.51,
+      "description": "South production election small music."
+    },
+    {
+      "id": "874d2031-1969-4579-b9d4-1a904444a388",
+      "name": "Seamless dynamic open system 17",
+      "status": "Active",
+      "createdDate": "2025-04-19T17:24:33",
+      "updatedDate": "2026-02-08T02:04:00",
+      "owner": "Ricky Ayala",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3487.61,
+      "description": "Environment share wife."
+    },
+    {
+      "id": "cbd94e4d-064f-4043-aece-61f975717cfc",
+      "name": "Organic holistic alliance 18",
+      "status": "Active",
+      "createdDate": "2025-07-29T15:00:56",
+      "updatedDate": "2026-02-10T01:07:26",
+      "owner": "Thomas White",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6764.94,
+      "description": "Product account guy near ago hospital."
+    },
+    {
+      "id": "33f71cbe-8ac1-49a0-b0b7-3bbc91beb989",
+      "name": "Multi-tiered 24/7 moderator 19",
+      "status": "Active",
+      "createdDate": "2025-05-29T06:30:55",
+      "updatedDate": "2026-01-29T01:26:06",
+      "owner": "Lisa Weaver",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7003.64,
+      "description": "Business right prepare option create change public."
+    },
+    {
+      "id": "d4718667-63c8-4cb4-af3f-aea23b2ed676",
+      "name": "Enhanced transitional hierarchy 20",
+      "status": "Pending",
+      "createdDate": "2026-01-13T17:30:35",
+      "updatedDate": "2026-02-13T21:47:38",
+      "owner": "Thomas Wall",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8271.37,
+      "description": "Policy sell Mrs two degree before."
+    },
+    {
+      "id": "11ee0f6d-594b-4d2e-889e-90504549ecb5",
+      "name": "Automated interactive solution 21",
+      "status": "Completed",
+      "createdDate": "2025-07-09T12:28:13",
+      "updatedDate": "2026-01-19T16:40:44",
+      "owner": "Justin Hamilton",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2992.87,
+      "description": "Debate fill training."
+    },
+    {
+      "id": "e69e588b-1ee5-4084-92a7-e32308558f56",
+      "name": "Enhanced encompassing attitude 22",
+      "status": "Completed",
+      "createdDate": "2025-11-11T06:46:27",
+      "updatedDate": "2026-02-05T13:00:25",
+      "owner": "Deborah Brown",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1252.64,
+      "description": "Staff TV chair worry."
+    },
+    {
+      "id": "b732a4a8-a9c7-4bb5-9f28-acf9f990498d",
+      "name": "Stand-alone upward-trending strategy 23",
+      "status": "Pending",
+      "createdDate": "2025-03-08T18:47:09",
+      "updatedDate": "2026-02-11T13:12:29",
+      "owner": "Cynthia Tyler",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9373.38,
+      "description": "Matter board tell usually dream."
+    },
+    {
+      "id": "ae0330f1-8c56-41ac-8532-a08be1b833de",
+      "name": "Realigned system-worthy neural-net 24",
+      "status": "Completed",
+      "createdDate": "2025-02-23T02:08:29",
+      "updatedDate": "2026-02-01T06:44:16",
+      "owner": "Tyler Stuart",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1735.71,
+      "description": "Special help class by how side during."
+    },
+    {
+      "id": "f16220b8-612e-4ce6-8478-38c068c7fc82",
+      "name": "Expanded human-resource productivity 25",
+      "status": "Inactive",
+      "createdDate": "2025-05-11T06:15:42",
+      "updatedDate": "2026-01-27T13:42:41",
+      "owner": "Richard Munoz",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 273.88,
+      "description": "Chance board matter language news cold once."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

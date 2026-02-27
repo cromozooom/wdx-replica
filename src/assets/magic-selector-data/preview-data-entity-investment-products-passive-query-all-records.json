@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-all-records",
+  "totalCount": 598,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a8c65ecf-d49e-4fc8-bdb3-603ea33ad57b",
+      "name": "Synergized global throughput 1",
+      "status": "Completed",
+      "createdDate": "2025-08-18T12:06:53",
+      "updatedDate": "2026-02-02T09:43:01",
+      "owner": "Terry Griffin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6905.43,
+      "description": "Senior mother everybody world soldier notice marriage."
+    },
+    {
+      "id": "1bdf25a8-7f4e-4c9d-8871-59133fd95455",
+      "name": "Configurable encompassing portal 2",
+      "status": "Pending",
+      "createdDate": "2026-01-29T00:04:49",
+      "updatedDate": "2026-02-16T23:29:47",
+      "owner": "Lori Jones",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9582.99,
+      "description": "Director month now a hand occur."
+    },
+    {
+      "id": "ab72a149-7f6f-4e05-8e56-fc8c857326fc",
+      "name": "Optional web-enabled hardware 3",
+      "status": "Pending",
+      "createdDate": "2025-12-12T00:47:14",
+      "updatedDate": "2026-02-15T03:35:01",
+      "owner": "Brandy Greene",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1066.86,
+      "description": "Feel catch security four."
+    },
+    {
+      "id": "d4f97e5e-48a1-49f8-9762-52ffe1faf568",
+      "name": "Total radical framework 4",
+      "status": "Pending",
+      "createdDate": "2025-08-12T23:54:04",
+      "updatedDate": "2026-01-22T07:13:24",
+      "owner": "Tyler Robinson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6886.84,
+      "description": "Great difficult wall effect leader east entire."
+    },
+    {
+      "id": "8a470a5c-9005-42e0-bf22-dd74198f6fa6",
+      "name": "Persevering context-sensitive middleware 5",
+      "status": "Inactive",
+      "createdDate": "2025-05-13T19:20:46",
+      "updatedDate": "2026-02-09T18:20:22",
+      "owner": "Mary Porter",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8369.95,
+      "description": "Girl sister commercial center community soldier his."
+    },
+    {
+      "id": "68ddb4a8-42bc-44a5-948b-a8e4e3496af6",
+      "name": "Automated radical data-warehouse 6",
+      "status": "Active",
+      "createdDate": "2026-01-08T05:18:22",
+      "updatedDate": "2026-02-14T11:57:57",
+      "owner": "Amy Wright",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8793.8,
+      "description": "Why what this discussion admit learn."
+    },
+    {
+      "id": "3651005a-83ef-4436-adc1-5bdc38b98095",
+      "name": "Enhanced scalable initiative 7",
+      "status": "Completed",
+      "createdDate": "2025-04-17T06:21:51",
+      "updatedDate": "2026-02-13T12:33:28",
+      "owner": "Barbara Scott",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9546.62,
+      "description": "Catch these happen until field painting worry."
+    },
+    {
+      "id": "9f1dfdd2-c605-4594-9ae2-6a3ea897d2f3",
+      "name": "Inverse modular productivity 8",
+      "status": "Inactive",
+      "createdDate": "2025-09-13T01:21:04",
+      "updatedDate": "2026-02-10T06:09:15",
+      "owner": "Tammy Davis",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6782.62,
+      "description": "Phone respond think imagine across."
+    },
+    {
+      "id": "153c4598-8972-487b-a527-4922112fb5b0",
+      "name": "Progressive tertiary support 9",
+      "status": "Completed",
+      "createdDate": "2025-11-06T04:39:10",
+      "updatedDate": "2026-01-22T10:21:53",
+      "owner": "Bianca Henry",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5146.55,
+      "description": "Quality story once."
+    },
+    {
+      "id": "5e251fb6-37bf-4f36-9933-2eb1ccc41086",
+      "name": "Virtual exuding data-warehouse 10",
+      "status": "Active",
+      "createdDate": "2025-10-24T10:54:09",
+      "updatedDate": "2026-02-13T13:21:02",
+      "owner": "Sarah Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2391.73,
+      "description": "Common life catch myself last."
+    },
+    {
+      "id": "324752ec-70d9-4185-8714-bd918b901e2d",
+      "name": "Ergonomic secondary model 11",
+      "status": "Pending",
+      "createdDate": "2025-09-08T12:50:45",
+      "updatedDate": "2026-01-22T05:55:19",
+      "owner": "Holly Freeman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5781.19,
+      "description": "Miss matter second eat."
+    },
+    {
+      "id": "6d3c298e-4c7e-44a2-8daf-940797cc0d11",
+      "name": "Front-line content-based open architecture 12",
+      "status": "Active",
+      "createdDate": "2025-06-15T02:00:38",
+      "updatedDate": "2026-02-16T15:36:31",
+      "owner": "Tamara Nelson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5796.27,
+      "description": "Parent growth camera order two."
+    },
+    {
+      "id": "66269553-760d-40a8-87bb-6ae866cb298c",
+      "name": "Universal radical implementation 13",
+      "status": "Completed",
+      "createdDate": "2025-07-09T12:47:18",
+      "updatedDate": "2026-02-12T03:35:10",
+      "owner": "Justin Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2115.37,
+      "description": "Claim night amount measure be particularly cause."
+    },
+    {
+      "id": "0e5326ad-0ff0-4114-8762-756273d4d717",
+      "name": "Fundamental radical installation 14",
+      "status": "Completed",
+      "createdDate": "2025-05-09T22:09:33",
+      "updatedDate": "2026-01-22T00:13:49",
+      "owner": "Jeremy Salazar",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4357.18,
+      "description": "Heart thank page individual may scene opportunity to."
+    },
+    {
+      "id": "a411b1af-4108-4e45-864f-250fed6c737b",
+      "name": "Enhanced non-volatile focus group 15",
+      "status": "Active",
+      "createdDate": "2025-06-28T09:17:44",
+      "updatedDate": "2026-02-14T09:06:20",
+      "owner": "Erika Oliver",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5437.01,
+      "description": "Bed ready mouth."
+    },
+    {
+      "id": "de8095e2-93ab-4ee8-b368-1cffbddef7ed",
+      "name": "Object-based transitional installation 16",
+      "status": "Completed",
+      "createdDate": "2026-01-11T19:45:08",
+      "updatedDate": "2026-02-13T10:42:11",
+      "owner": "Kristy Spencer",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9904.18,
+      "description": "Reality rock investment pick vote campaign."
+    },
+    {
+      "id": "889a3df1-e235-4675-a6f8-45c9580bbd46",
+      "name": "Fundamental multimedia application 17",
+      "status": "Active",
+      "createdDate": "2025-03-02T20:49:29",
+      "updatedDate": "2026-01-22T22:35:14",
+      "owner": "Jennifer Deleon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6904.22,
+      "description": "Knowledge produce business firm democratic money house."
+    },
+    {
+      "id": "e78b611d-fe94-4e95-967c-4ca9833cf7cf",
+      "name": "Seamless secondary installation 18",
+      "status": "Completed",
+      "createdDate": "2025-07-02T15:56:37",
+      "updatedDate": "2026-02-01T15:42:10",
+      "owner": "Matthew Flowers",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7484.03,
+      "description": "Senior food executive heavy everybody."
+    },
+    {
+      "id": "a7c44fc6-9264-4acd-ad4a-cd22654f9d9a",
+      "name": "Organized demand-driven complexity 19",
+      "status": "Active",
+      "createdDate": "2025-11-14T03:47:18",
+      "updatedDate": "2026-01-26T14:17:24",
+      "owner": "Danielle Rivera",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 460.18,
+      "description": "West hot machine however near idea."
+    },
+    {
+      "id": "27ede828-3910-4d1c-b832-f883bac2fe6a",
+      "name": "Future-proofed national system engine 20",
+      "status": "Completed",
+      "createdDate": "2025-08-14T05:17:15",
+      "updatedDate": "2026-01-24T11:12:35",
+      "owner": "Phillip Ferguson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3096.87,
+      "description": "Hour beautiful food civil girl."
+    },
+    {
+      "id": "b3d41dcb-d2d9-495b-a211-1c38a4345eab",
+      "name": "Polarized neutral instruction set 21",
+      "status": "Inactive",
+      "createdDate": "2025-10-25T09:31:09",
+      "updatedDate": "2026-01-30T13:12:04",
+      "owner": "George Gray",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5858.49,
+      "description": "Say beautiful mind test eat."
+    },
+    {
+      "id": "4c8f64cf-46b4-4e11-a328-c11081669355",
+      "name": "Enhanced background toolset 22",
+      "status": "Completed",
+      "createdDate": "2025-09-28T06:53:32",
+      "updatedDate": "2026-01-21T18:28:43",
+      "owner": "Briana Hubbard",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5046.92,
+      "description": "Road according true cut."
+    },
+    {
+      "id": "a69b6315-d778-4b17-95fe-b42d54713f14",
+      "name": "Up-sized modular groupware 23",
+      "status": "Inactive",
+      "createdDate": "2025-04-28T06:19:26",
+      "updatedDate": "2026-02-01T22:43:33",
+      "owner": "Vincent Flynn",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4473.2,
+      "description": "Stay bit family truth."
+    },
+    {
+      "id": "db2555de-f5ed-4a6b-98b7-466c6abfda55",
+      "name": "Seamless 4thgeneration projection 24",
+      "status": "Active",
+      "createdDate": "2025-09-29T23:05:39",
+      "updatedDate": "2026-02-13T03:46:54",
+      "owner": "Timothy Tucker",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7419.54,
+      "description": "Begin behind find walk candidate."
+    },
+    {
+      "id": "7b50932f-941d-4865-8033-7eda83e4434b",
+      "name": "Progressive well-modulated extranet 25",
+      "status": "Inactive",
+      "createdDate": "2025-07-04T22:06:44",
+      "updatedDate": "2026-02-01T13:21:11",
+      "owner": "Melissa Patton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2433.2,
+      "description": "Nature sister to must."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

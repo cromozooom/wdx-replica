@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-active-only",
+  "totalCount": 1146,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "441f0ca0-1ae9-457c-8030-3efe263d1dd2",
+      "name": "Optimized 6thgeneration definition 1",
+      "status": "Pending",
+      "createdDate": "2025-05-19T00:27:06",
+      "updatedDate": "2026-01-23T06:53:19",
+      "owner": "Sally Davis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7345.49,
+      "description": "Unit subject author decide five."
+    },
+    {
+      "id": "8d1807ba-6a10-43dd-ba3f-c45a582d1f26",
+      "name": "Vision-oriented incremental superstructure 2",
+      "status": "Pending",
+      "createdDate": "2025-10-31T10:22:45",
+      "updatedDate": "2026-02-04T10:16:22",
+      "owner": "Andrew Hernandez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5516.0,
+      "description": "Learn reality serious candidate sense which media."
+    },
+    {
+      "id": "f26ade69-259c-47e5-b674-cddc5f5b01e2",
+      "name": "Front-line cohesive framework 3",
+      "status": "Pending",
+      "createdDate": "2025-08-15T19:28:51",
+      "updatedDate": "2026-01-18T22:35:25",
+      "owner": "Chad Warner",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3168.04,
+      "description": "Movement discover not scientist."
+    },
+    {
+      "id": "80e51ab5-e937-4901-9791-23d6e81d1e71",
+      "name": "Grass-roots 5thgeneration function 4",
+      "status": "Pending",
+      "createdDate": "2025-04-03T02:30:28",
+      "updatedDate": "2026-01-23T13:59:23",
+      "owner": "Harold Welch",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4110.15,
+      "description": "Order recognize administration with beyond purpose."
+    },
+    {
+      "id": "e7fd2084-c53b-462b-a634-4e6622113f76",
+      "name": "Enhanced attitude-oriented firmware 5",
+      "status": "Active",
+      "createdDate": "2025-03-22T03:36:55",
+      "updatedDate": "2026-02-03T12:02:38",
+      "owner": "Gregory Ford",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3331.74,
+      "description": "Capital class shoulder where."
+    },
+    {
+      "id": "c40a0bf9-8b2d-4df5-b2a8-e802acd21e53",
+      "name": "Seamless methodical collaboration 6",
+      "status": "Completed",
+      "createdDate": "2025-03-19T14:27:41",
+      "updatedDate": "2026-01-24T17:56:31",
+      "owner": "Matthew Nelson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8808.32,
+      "description": "Home rate hundred better big raise."
+    },
+    {
+      "id": "64239ab7-c749-47ec-a7dd-a8bf4ab679ab",
+      "name": "Face-to-face disintermediate standardization 7",
+      "status": "Active",
+      "createdDate": "2025-04-18T23:20:04",
+      "updatedDate": "2026-02-14T02:55:53",
+      "owner": "Mary Watson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4066.74,
+      "description": "Color court nice include change character everything."
+    },
+    {
+      "id": "9af14e76-bf2c-46d7-af43-7f6e8c159e2e",
+      "name": "Automated reciprocal architecture 8",
+      "status": "Inactive",
+      "createdDate": "2025-11-04T06:48:17",
+      "updatedDate": "2026-01-28T15:05:04",
+      "owner": "Lauren Smith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6628.49,
+      "description": "Soldier may probably Congress."
+    },
+    {
+      "id": "98fb84ba-80af-4964-ba8c-b1131137d4cd",
+      "name": "Quality-focused reciprocal projection 9",
+      "status": "Pending",
+      "createdDate": "2025-08-01T20:29:56",
+      "updatedDate": "2026-02-04T14:51:41",
+      "owner": "April Contreras",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 113.5,
+      "description": "Class early soon all marriage set."
+    },
+    {
+      "id": "7285147e-aa74-4347-85c0-b9228ac2ac60",
+      "name": "Implemented methodical data-warehouse 10",
+      "status": "Active",
+      "createdDate": "2025-09-10T20:48:49",
+      "updatedDate": "2026-02-12T20:26:35",
+      "owner": "Tony Hodges",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9983.53,
+      "description": "Short mouth word unit."
+    },
+    {
+      "id": "ff4d69e0-7726-4e31-bf7b-e5e06f80c1d5",
+      "name": "Ameliorated high-level hardware 11",
+      "status": "Active",
+      "createdDate": "2025-06-02T09:25:16",
+      "updatedDate": "2026-01-27T23:45:57",
+      "owner": "Stacy Peterson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5334.65,
+      "description": "Important environmental offer some bad."
+    },
+    {
+      "id": "1f1199cb-40c7-4bed-97b1-d341e3e4f736",
+      "name": "Innovative even-keeled instruction set 12",
+      "status": "Inactive",
+      "createdDate": "2025-03-06T00:09:26",
+      "updatedDate": "2026-01-23T20:44:36",
+      "owner": "Lance Carroll",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2890.23,
+      "description": "Contain same away major soon west her."
+    },
+    {
+      "id": "024861cd-0e95-4383-a73b-33813e825de5",
+      "name": "Reverse-engineered contextually-based frame 13",
+      "status": "Inactive",
+      "createdDate": "2025-08-09T17:04:25",
+      "updatedDate": "2026-02-05T00:11:37",
+      "owner": "Tiffany Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3287.05,
+      "description": "Investment five national really production."
+    },
+    {
+      "id": "daf8ebe8-dab3-4a27-8816-43969abbb107",
+      "name": "Cross-platform modular instruction set 14",
+      "status": "Inactive",
+      "createdDate": "2025-11-26T13:43:14",
+      "updatedDate": "2026-02-05T05:32:52",
+      "owner": "Victoria Simon",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6983.63,
+      "description": "Deep think ball forward image door."
+    },
+    {
+      "id": "f0a71a84-81ec-4ee6-a4e6-addf8e9654a4",
+      "name": "Self-enabling reciprocal info-mediaries 15",
+      "status": "Pending",
+      "createdDate": "2025-02-23T23:15:38",
+      "updatedDate": "2026-02-14T18:07:56",
+      "owner": "Brian Murphy",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6926.78,
+      "description": "Dark technology range glass now."
+    },
+    {
+      "id": "094d9fd3-018d-4633-b423-6d6a35b92557",
+      "name": "Adaptive non-volatile budgetary management 16",
+      "status": "Pending",
+      "createdDate": "2025-12-20T01:25:13",
+      "updatedDate": "2026-02-13T18:13:11",
+      "owner": "Shelia Crane",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5004.26,
+      "description": "Consider generation become."
+    },
+    {
+      "id": "e241a1fa-adce-409b-90ce-6dc74be4d2f0",
+      "name": "Advanced intangible customer loyalty 17",
+      "status": "Pending",
+      "createdDate": "2025-11-29T07:25:43",
+      "updatedDate": "2026-02-04T16:03:12",
+      "owner": "Mary Ibarra",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4229.38,
+      "description": "Start dinner heavy eye project."
+    },
+    {
+      "id": "952cad57-dfb1-470d-a4b5-8dd0d84fa9bf",
+      "name": "Reduced systemic matrix 18",
+      "status": "Inactive",
+      "createdDate": "2025-11-04T19:52:01",
+      "updatedDate": "2026-01-18T20:55:20",
+      "owner": "Nicholas Moore",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1671.02,
+      "description": "Fear computer big pick radio nearly offer."
+    },
+    {
+      "id": "6016d10f-1f2c-4bbc-8a89-9202424f5aad",
+      "name": "Extended bi-directional portal 19",
+      "status": "Inactive",
+      "createdDate": "2026-02-03T09:25:44",
+      "updatedDate": "2026-02-05T13:21:01",
+      "owner": "Christopher Pollard",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6741.27,
+      "description": "Lose technology positive hair product product."
+    },
+    {
+      "id": "046c691c-236e-47a4-b218-ae0ce1558679",
+      "name": "Business-focused full-range product 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-17T12:01:38",
+      "updatedDate": "2026-02-16T21:08:10",
+      "owner": "Michael Barnett",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1025.22,
+      "description": "Food true night prevent teach see region."
+    },
+    {
+      "id": "ffb7feaa-4598-464a-b28e-ce31f8868b6f",
+      "name": "Compatible fresh-thinking emulation 21",
+      "status": "Pending",
+      "createdDate": "2025-08-02T14:40:14",
+      "updatedDate": "2026-01-18T18:10:04",
+      "owner": "Brooke Green",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5319.89,
+      "description": "Develop item catch."
+    },
+    {
+      "id": "01840661-5457-43b3-b54d-aaade0b01d02",
+      "name": "Ergonomic dynamic adapter 22",
+      "status": "Active",
+      "createdDate": "2026-01-12T16:48:41",
+      "updatedDate": "2026-01-20T11:09:39",
+      "owner": "Natasha Brock",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6618.07,
+      "description": "General one red business hard same until."
+    },
+    {
+      "id": "5f40f152-61aa-48c9-9923-bb74eba641eb",
+      "name": "Vision-oriented incremental function 23",
+      "status": "Active",
+      "createdDate": "2025-10-06T22:54:08",
+      "updatedDate": "2026-02-12T04:43:53",
+      "owner": "Sharon Vincent",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5023.75,
+      "description": "Suddenly prevent your land."
+    },
+    {
+      "id": "35828d5e-21d4-4f80-b5a5-6739d13f0ca0",
+      "name": "Profit-focused upward-trending instruction set 24",
+      "status": "Inactive",
+      "createdDate": "2025-07-17T03:33:14",
+      "updatedDate": "2026-02-05T09:45:19",
+      "owner": "Michael Diaz",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9793.43,
+      "description": "Hot mind big section determine."
+    },
+    {
+      "id": "9823fd51-ebf1-4c4e-8329-5b0693482572",
+      "name": "Reverse-engineered real-time knowledgebase 25",
+      "status": "Active",
+      "createdDate": "2025-08-26T07:00:12",
+      "updatedDate": "2026-01-26T00:44:14",
+      "owner": "Mrs. Faith Flowers",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 374.25,
+      "description": "Activity yeah head."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

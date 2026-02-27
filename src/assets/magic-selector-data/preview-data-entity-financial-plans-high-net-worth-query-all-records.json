@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 274,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "5850395c-31e0-4343-bdb5-9859823f2a2a",
+      "name": "Future-proofed responsive groupware 1",
+      "status": "Active",
+      "createdDate": "2025-09-12T06:47:20",
+      "updatedDate": "2026-01-29T02:04:26",
+      "owner": "Kimberly Davis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 676.43,
+      "description": "Up respond main fly live friend."
+    },
+    {
+      "id": "dbed7ae2-8242-4aeb-9280-9a374c482018",
+      "name": "Managed 24hour moratorium 2",
+      "status": "Pending",
+      "createdDate": "2025-04-06T08:42:11",
+      "updatedDate": "2026-02-14T16:32:48",
+      "owner": "Tiffany Clark",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7201.13,
+      "description": "Late thing then real yet phone plant about."
+    },
+    {
+      "id": "7f6e854a-64b6-4156-891d-6c04a2814c1a",
+      "name": "Phased attitude-oriented strategy 3",
+      "status": "Pending",
+      "createdDate": "2025-04-26T20:39:13",
+      "updatedDate": "2026-01-29T08:11:37",
+      "owner": "Erica Munoz",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5583.27,
+      "description": "Improve tell herself why heart office."
+    },
+    {
+      "id": "a1eea541-a8cd-44d1-8857-95779243702a",
+      "name": "Synchronized tangible paradigm 4",
+      "status": "Completed",
+      "createdDate": "2025-05-02T17:55:45",
+      "updatedDate": "2026-02-06T11:02:19",
+      "owner": "Sabrina Young",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1115.61,
+      "description": "Here subject poor you particular leave."
+    },
+    {
+      "id": "bc2c26df-babd-4d9a-978f-ec6788fa4fee",
+      "name": "De-engineered reciprocal standardization 5",
+      "status": "Active",
+      "createdDate": "2025-07-28T23:26:13",
+      "updatedDate": "2026-01-23T20:32:11",
+      "owner": "Matthew Ewing",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8964.88,
+      "description": "Mission good soldier beyond entire."
+    },
+    {
+      "id": "cc6067d4-d75d-4b4a-884a-bd2464ff3fa3",
+      "name": "Operative composite frame 6",
+      "status": "Completed",
+      "createdDate": "2025-07-11T15:38:20",
+      "updatedDate": "2026-01-18T14:53:57",
+      "owner": "Robert Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3437.08,
+      "description": "Away alone itself important fire."
+    },
+    {
+      "id": "487bf0cd-9b77-45f7-b0be-9fd8d8357830",
+      "name": "Profit-focused cohesive infrastructure 7",
+      "status": "Completed",
+      "createdDate": "2025-06-26T20:03:14",
+      "updatedDate": "2026-02-04T06:21:51",
+      "owner": "Kara Williams",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3848.52,
+      "description": "Create method wide new home protect work."
+    },
+    {
+      "id": "f85c8fe0-ae24-4a4a-bb68-e318759e8ef8",
+      "name": "Phased motivating workforce 8",
+      "status": "Pending",
+      "createdDate": "2025-02-23T17:59:07",
+      "updatedDate": "2026-02-01T11:17:35",
+      "owner": "Haley Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7865.75,
+      "description": "In policy condition very break."
+    },
+    {
+      "id": "58c4bb3b-e70a-4300-b729-c792ebbe7b67",
+      "name": "Proactive fresh-thinking portal 9",
+      "status": "Completed",
+      "createdDate": "2025-12-04T09:10:19",
+      "updatedDate": "2026-01-26T21:59:32",
+      "owner": "Catherine Bennett",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1102.23,
+      "description": "Best example as add."
+    },
+    {
+      "id": "fcf1ffdd-d7d5-4f70-b158-2c93a979d0c5",
+      "name": "Versatile upward-trending encryption 10",
+      "status": "Active",
+      "createdDate": "2025-11-22T19:26:58",
+      "updatedDate": "2026-01-27T12:52:50",
+      "owner": "Francis Robinson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 869.53,
+      "description": "Later lose field worker."
+    },
+    {
+      "id": "b6c96027-db49-42d6-9c21-cab5bba47dac",
+      "name": "Optional uniform application 11",
+      "status": "Completed",
+      "createdDate": "2025-07-27T07:09:08",
+      "updatedDate": "2026-02-12T17:26:33",
+      "owner": "Teresa Mclaughlin",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5148.71,
+      "description": "Science explain work Mrs start start."
+    },
+    {
+      "id": "430e49cf-963a-493f-b5bc-a3c070fc83cc",
+      "name": "Mandatory background hierarchy 12",
+      "status": "Pending",
+      "createdDate": "2025-03-05T19:45:04",
+      "updatedDate": "2026-01-27T22:44:26",
+      "owner": "Travis Ramirez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6088.16,
+      "description": "Support issue air interest often."
+    },
+    {
+      "id": "629599fd-7000-43c8-acea-7e67f8683a8b",
+      "name": "Integrated content-based core 13",
+      "status": "Active",
+      "createdDate": "2025-05-18T11:33:49",
+      "updatedDate": "2026-01-29T03:07:21",
+      "owner": "Crystal Barton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8408.72,
+      "description": "History hope season then."
+    },
+    {
+      "id": "88e00378-0bd6-4eaf-9da8-63af1b10b579",
+      "name": "Phased 24/7 circuit 14",
+      "status": "Pending",
+      "createdDate": "2025-07-26T15:51:42",
+      "updatedDate": "2026-02-14T04:11:02",
+      "owner": "Elizabeth Orr",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1498.49,
+      "description": "Remain performance focus beautiful stop wide appear."
+    },
+    {
+      "id": "0f5098da-4871-4795-93a1-84b208e89a5f",
+      "name": "Seamless tertiary instruction set 15",
+      "status": "Active",
+      "createdDate": "2025-09-25T23:19:53",
+      "updatedDate": "2026-01-31T15:08:23",
+      "owner": "Paul Strickland",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2308.55,
+      "description": "Model result door but win cold hundred."
+    },
+    {
+      "id": "71bdecc1-7644-4d94-bf92-9cb0b814381f",
+      "name": "Down-sized non-volatile support 16",
+      "status": "Completed",
+      "createdDate": "2026-02-09T19:35:30",
+      "updatedDate": "2026-01-20T18:46:02",
+      "owner": "Robin Miller",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5373.14,
+      "description": "Idea create carry method teach necessary only."
+    },
+    {
+      "id": "94a38be2-63a8-4629-a6ab-cd2a7931c0d4",
+      "name": "Enterprise-wide 4thgeneration adapter 17",
+      "status": "Inactive",
+      "createdDate": "2025-04-05T23:27:17",
+      "updatedDate": "2026-02-13T01:04:47",
+      "owner": "Patricia Taylor",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2200.17,
+      "description": "Garden but spend pretty defense thank."
+    },
+    {
+      "id": "75fdf378-3131-4857-84b9-1b32d9d2614d",
+      "name": "Persevering bi-directional circuit 18",
+      "status": "Completed",
+      "createdDate": "2025-06-28T08:39:24",
+      "updatedDate": "2026-02-10T20:36:35",
+      "owner": "Brian Brown",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8060.12,
+      "description": "Study such her cultural bed degree industry."
+    },
+    {
+      "id": "2db9a9ed-5d85-4256-a956-42f8bb5ba2da",
+      "name": "User-centric exuding implementation 19",
+      "status": "Active",
+      "createdDate": "2025-06-05T01:31:15",
+      "updatedDate": "2026-02-09T19:59:29",
+      "owner": "Mark Young",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 506.04,
+      "description": "Him image one lawyer price whole phone."
+    },
+    {
+      "id": "f5589484-cf40-4e15-b8d3-a1196cac0153",
+      "name": "Cloned tertiary software 20",
+      "status": "Inactive",
+      "createdDate": "2026-01-08T17:09:30",
+      "updatedDate": "2026-02-09T08:08:35",
+      "owner": "Bridget Cameron",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5732.27,
+      "description": "Card until low action let continue."
+    },
+    {
+      "id": "4f666d18-fc64-4e34-9bcc-ab8c09badc59",
+      "name": "Polarized empowering attitude 21",
+      "status": "Active",
+      "createdDate": "2025-03-27T12:22:09",
+      "updatedDate": "2026-01-26T20:34:04",
+      "owner": "Jacqueline Mitchell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4185.01,
+      "description": "Source reason myself your."
+    },
+    {
+      "id": "8d9a7d1d-a563-4a3d-9aad-f5059ee86949",
+      "name": "Synergistic local toolset 22",
+      "status": "Completed",
+      "createdDate": "2026-01-22T11:29:47",
+      "updatedDate": "2026-02-11T02:56:57",
+      "owner": "Kerry Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6584.06,
+      "description": "Campaign against dark officer environment travel."
+    },
+    {
+      "id": "44644815-20ca-4f0d-82d1-a50ae617f130",
+      "name": "Horizontal static portal 23",
+      "status": "Pending",
+      "createdDate": "2025-12-21T13:38:06",
+      "updatedDate": "2026-01-28T20:54:22",
+      "owner": "Vanessa Walsh",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1168.42,
+      "description": "Present least letter open tell."
+    },
+    {
+      "id": "03c16e2b-3080-4418-872b-69788b4d75f0",
+      "name": "Networked leadingedge instruction set 24",
+      "status": "Completed",
+      "createdDate": "2025-11-13T22:21:37",
+      "updatedDate": "2026-02-03T11:20:34",
+      "owner": "Dr. Jessica Ross",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8556.37,
+      "description": "Somebody north mind dream."
+    },
+    {
+      "id": "b4e34145-5d3e-4545-a803-f5eb5fd843b4",
+      "name": "Fully-configurable client-server functionalities 25",
+      "status": "Pending",
+      "createdDate": "2025-11-30T03:21:14",
+      "updatedDate": "2026-02-15T05:44:24",
+      "owner": "Dr. Melanie Raymond",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6627.14,
+      "description": "Town late produce test car three."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 595,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "12759de8-bd19-4ed9-8570-a1032f984550",
+      "name": "Implemented real-time definition 1",
+      "status": "Pending",
+      "createdDate": "2025-11-14T05:02:13",
+      "updatedDate": "2026-02-13T06:38:11",
+      "owner": "Sarah Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9022.81,
+      "description": "Discuss director our professional view."
+    },
+    {
+      "id": "3fe328e5-a3c7-4663-902d-b83ca3845c69",
+      "name": "Open-architected intermediate matrices 2",
+      "status": "Pending",
+      "createdDate": "2025-10-15T02:37:00",
+      "updatedDate": "2026-02-01T13:13:41",
+      "owner": "Ian Banks",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5253.11,
+      "description": "Finish until full forward condition."
+    },
+    {
+      "id": "cc0475ae-779c-45fa-b247-868c4c12531c",
+      "name": "Synchronized client-server forecast 3",
+      "status": "Completed",
+      "createdDate": "2025-08-01T12:11:11",
+      "updatedDate": "2026-01-20T11:49:34",
+      "owner": "Becky Galvan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9866.52,
+      "description": "Claim reveal direction develop pretty."
+    },
+    {
+      "id": "111f1388-8224-448f-a4da-446c5561b84d",
+      "name": "Balanced disintermediate product 4",
+      "status": "Inactive",
+      "createdDate": "2025-11-19T06:01:23",
+      "updatedDate": "2026-02-05T20:47:14",
+      "owner": "Bryan Walker",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6718.09,
+      "description": "Coach above standard leader same special."
+    },
+    {
+      "id": "c00b4028-1328-45bf-9c73-3ee3dbd337b1",
+      "name": "Object-based human-resource data-warehouse 5",
+      "status": "Inactive",
+      "createdDate": "2025-09-17T07:07:31",
+      "updatedDate": "2026-01-20T02:36:47",
+      "owner": "Cristian Gould",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5815.61,
+      "description": "Kind away draw she in."
+    },
+    {
+      "id": "905988a2-b028-4609-8894-c305ea811496",
+      "name": "Profound web-enabled capacity 6",
+      "status": "Active",
+      "createdDate": "2025-05-21T21:54:56",
+      "updatedDate": "2026-02-02T18:24:26",
+      "owner": "Andrew Green",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5237.67,
+      "description": "Mr trade tough explain order production risk."
+    },
+    {
+      "id": "a6410ed2-f625-4731-b7f7-14121c563d88",
+      "name": "Multi-tiered tertiary architecture 7",
+      "status": "Active",
+      "createdDate": "2025-02-25T18:17:31",
+      "updatedDate": "2026-01-22T07:40:31",
+      "owner": "Catherine Sanchez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3113.39,
+      "description": "Your will per south lay six."
+    },
+    {
+      "id": "6a08e06f-bde3-46a7-bc38-0cd441dc1fae",
+      "name": "Managed static productivity 8",
+      "status": "Inactive",
+      "createdDate": "2025-11-03T07:10:16",
+      "updatedDate": "2026-01-19T12:59:13",
+      "owner": "Julie Galloway",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9696.17,
+      "description": "Pass raise cost wear."
+    },
+    {
+      "id": "e19e20a9-e8f5-4850-a5bc-acd6d4d882e8",
+      "name": "Versatile value-added process improvement 9",
+      "status": "Inactive",
+      "createdDate": "2025-10-02T21:03:26",
+      "updatedDate": "2026-02-02T05:12:05",
+      "owner": "Steven Martinez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8124.22,
+      "description": "Build animal former rise special successful anyone."
+    },
+    {
+      "id": "51bc9305-a881-44c8-8ad0-b242e204936d",
+      "name": "Face-to-face attitude-oriented protocol 10",
+      "status": "Pending",
+      "createdDate": "2025-09-22T18:39:21",
+      "updatedDate": "2026-01-23T13:22:12",
+      "owner": "Claire Morrow",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7962.14,
+      "description": "Glass woman effort a protect."
+    },
+    {
+      "id": "91c08b84-d96c-4764-9a9d-0e7cfe82be63",
+      "name": "Networked full-range pricing structure 11",
+      "status": "Active",
+      "createdDate": "2025-09-02T02:44:49",
+      "updatedDate": "2026-01-20T03:50:20",
+      "owner": "Tracy Smith",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9268.55,
+      "description": "Simply present result authority possible light draw."
+    },
+    {
+      "id": "63815d4f-ce5a-4bec-aadf-095d9a4fa897",
+      "name": "Persistent 4thgeneration secured line 12",
+      "status": "Completed",
+      "createdDate": "2025-11-01T17:59:40",
+      "updatedDate": "2026-02-08T03:10:11",
+      "owner": "Robert Hill",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3482.86,
+      "description": "Indicate discuss suddenly."
+    },
+    {
+      "id": "21a08ec2-ac0d-4c93-948c-86e65f00f9f7",
+      "name": "Triple-buffered fault-tolerant budgetary management 13",
+      "status": "Inactive",
+      "createdDate": "2025-12-31T19:52:06",
+      "updatedDate": "2026-01-20T14:44:41",
+      "owner": "Andrew Garcia",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5824.28,
+      "description": "Home true can security choose laugh truth hundred."
+    },
+    {
+      "id": "86857f09-d501-444f-b569-998d4bbc6c13",
+      "name": "Customer-focused interactive flexibility 14",
+      "status": "Inactive",
+      "createdDate": "2025-11-24T04:39:02",
+      "updatedDate": "2026-02-08T04:25:49",
+      "owner": "Vickie Martinez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 855.79,
+      "description": "Support nice perhaps theory almost level."
+    },
+    {
+      "id": "536d9f98-6c77-4d7e-a92c-d2a9230c9196",
+      "name": "Total 4thgeneration customer loyalty 15",
+      "status": "Inactive",
+      "createdDate": "2025-10-21T02:10:18",
+      "updatedDate": "2026-01-21T04:01:57",
+      "owner": "Cheryl Kane",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3913.34,
+      "description": "Child hit audience interest."
+    },
+    {
+      "id": "d67adcbe-f021-43d8-b76a-1830fdea9116",
+      "name": "Team-oriented optimizing project 16",
+      "status": "Pending",
+      "createdDate": "2025-10-22T12:32:07",
+      "updatedDate": "2026-01-29T02:59:32",
+      "owner": "Regina Browning",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9286.85,
+      "description": "Weight need such management their pull which."
+    },
+    {
+      "id": "aeabb800-1658-4685-80b9-9058b1071333",
+      "name": "Progressive mission-critical emulation 17",
+      "status": "Pending",
+      "createdDate": "2025-06-11T23:39:52",
+      "updatedDate": "2026-02-02T00:25:42",
+      "owner": "Laura Diaz",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1591.96,
+      "description": "Experience fire station page."
+    },
+    {
+      "id": "fa014c96-d0c2-469f-8c4e-781014f412f4",
+      "name": "Object-based client-driven leverage 18",
+      "status": "Inactive",
+      "createdDate": "2025-10-26T21:07:24",
+      "updatedDate": "2026-02-07T16:53:52",
+      "owner": "Andrea Clarke",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8448.37,
+      "description": "Provide north store look lose if."
+    },
+    {
+      "id": "e1992f46-c8e8-4cd4-8c42-ded8630ad3bc",
+      "name": "User-centric zero administration matrix 19",
+      "status": "Pending",
+      "createdDate": "2025-05-21T04:23:24",
+      "updatedDate": "2026-01-28T08:44:25",
+      "owner": "Amanda Ellis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 425.23,
+      "description": "Whether area front figure able inside."
+    },
+    {
+      "id": "38bda781-4523-4e9e-9bdb-803d77e38309",
+      "name": "Public-key asynchronous Local Area Network 20",
+      "status": "Completed",
+      "createdDate": "2026-01-05T05:25:52",
+      "updatedDate": "2026-02-12T23:48:12",
+      "owner": "Mark Hunt",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7672.53,
+      "description": "Project determine economy front under tax individual."
+    },
+    {
+      "id": "37c1cdb7-95ca-4b27-b4fc-00a9f961ba16",
+      "name": "De-engineered modular task-force 21",
+      "status": "Pending",
+      "createdDate": "2025-09-09T15:56:41",
+      "updatedDate": "2026-01-28T21:44:59",
+      "owner": "Jade Peterson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6731.95,
+      "description": "Special hundred course then economic."
+    },
+    {
+      "id": "757d06f7-198a-4078-9d8e-11017ba08eb6",
+      "name": "Proactive zero-defect alliance 22",
+      "status": "Active",
+      "createdDate": "2026-01-10T17:49:09",
+      "updatedDate": "2026-01-27T20:19:08",
+      "owner": "Tyler Horton",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2444.35,
+      "description": "Owner across thousand huge across popular speak."
+    },
+    {
+      "id": "f9664c4e-2e84-4a1b-9752-02c6f2dbe580",
+      "name": "Cross-group needs-based model 23",
+      "status": "Active",
+      "createdDate": "2025-05-28T02:37:06",
+      "updatedDate": "2026-02-11T07:57:51",
+      "owner": "Lindsay Hill",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9084.38,
+      "description": "Property herself nation president."
+    },
+    {
+      "id": "1a6f3c74-8822-44c6-baaf-96b929696035",
+      "name": "Customer-focused neutral product 24",
+      "status": "Active",
+      "createdDate": "2025-10-27T11:14:55",
+      "updatedDate": "2026-02-07T15:39:17",
+      "owner": "Penny Williams",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5749.62,
+      "description": "Many group network especially bed each."
+    },
+    {
+      "id": "259d0912-ea98-4149-8274-371c71f0a91b",
+      "name": "Balanced leadingedge throughput 25",
+      "status": "Completed",
+      "createdDate": "2025-07-12T23:47:17",
+      "updatedDate": "2026-02-01T08:34:47",
+      "owner": "Sean Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1483.52,
+      "description": "Study save yet however consumer fly market summer."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

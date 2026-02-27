@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-statement",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 995,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "fc7e3fea-2e29-4898-b78d-c7c3d0063eda",
+      "name": "Grass-roots motivating hub 1",
+      "status": "Inactive",
+      "createdDate": "2025-11-26T04:15:17",
+      "updatedDate": "2026-01-24T20:10:01",
+      "owner": "Mark Hall",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9578.66,
+      "description": "About represent eat court above do choice."
+    },
+    {
+      "id": "21a4494d-d886-4862-9807-ea4c9b95aef3",
+      "name": "Future-proofed next generation solution 2",
+      "status": "Pending",
+      "createdDate": "2026-01-30T00:47:18",
+      "updatedDate": "2026-02-03T13:31:57",
+      "owner": "John Thomas",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9356.36,
+      "description": "Bank base skill weight minute need happy."
+    },
+    {
+      "id": "324fb17a-4b7e-4100-bf9f-daf3f6dbc1f6",
+      "name": "Persistent high-level middleware 3",
+      "status": "Completed",
+      "createdDate": "2025-12-13T21:04:06",
+      "updatedDate": "2026-02-12T07:56:54",
+      "owner": "Jordan Ballard",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8157.02,
+      "description": "North husband have movement situation seek someone production."
+    },
+    {
+      "id": "b6cd7399-0c5e-43a3-b328-34664baf5e43",
+      "name": "Self-enabling zero administration capability 4",
+      "status": "Active",
+      "createdDate": "2025-03-12T16:51:17",
+      "updatedDate": "2026-02-02T02:32:09",
+      "owner": "Barry Contreras",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8040.67,
+      "description": "Top discuss occur decade exactly exist."
+    },
+    {
+      "id": "fef23b24-b2bd-4cdf-92ba-3141445bfff4",
+      "name": "Inverse static capability 5",
+      "status": "Pending",
+      "createdDate": "2025-04-06T13:53:16",
+      "updatedDate": "2026-02-06T00:10:04",
+      "owner": "Micheal Buchanan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2303.64,
+      "description": "As be movement how day."
+    },
+    {
+      "id": "32232064-b56c-496b-bbef-5793ac946b33",
+      "name": "Re-engineered object-oriented utilization 6",
+      "status": "Completed",
+      "createdDate": "2025-08-15T16:59:12",
+      "updatedDate": "2026-01-20T05:48:53",
+      "owner": "Brittany Perez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4498.37,
+      "description": "Religious allow nice thousand part more fast."
+    },
+    {
+      "id": "ea218e03-0a03-48db-8a4d-2058e14b642b",
+      "name": "Multi-lateral logistical application 7",
+      "status": "Pending",
+      "createdDate": "2025-07-31T07:37:28",
+      "updatedDate": "2026-02-03T04:40:01",
+      "owner": "Lori Delgado",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9370.59,
+      "description": "Serve audience cause cause care along themselves."
+    },
+    {
+      "id": "061a7aed-8de4-4194-a384-abca4da59865",
+      "name": "Self-enabling user-facing focus group 8",
+      "status": "Pending",
+      "createdDate": "2026-01-28T03:36:22",
+      "updatedDate": "2026-01-28T16:01:43",
+      "owner": "Robert Adams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6270.92,
+      "description": "Lose since impact be ready quite."
+    },
+    {
+      "id": "6f311621-7c70-4844-9dda-d58ca6e0e6e1",
+      "name": "Automated 24/7 alliance 9",
+      "status": "Completed",
+      "createdDate": "2025-09-22T00:57:02",
+      "updatedDate": "2026-02-11T02:31:27",
+      "owner": "Frank Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9846.56,
+      "description": "Sister most according audience picture."
+    },
+    {
+      "id": "8b09582d-8cd2-4962-ab57-62d1776088cc",
+      "name": "Sharable responsive synergy 10",
+      "status": "Inactive",
+      "createdDate": "2025-09-17T21:08:30",
+      "updatedDate": "2026-02-13T10:15:27",
+      "owner": "Katherine Perez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4046.61,
+      "description": "Media during week four result."
+    },
+    {
+      "id": "5e275c11-9111-41b6-9524-ecf717e485b5",
+      "name": "Robust multimedia policy 11",
+      "status": "Active",
+      "createdDate": "2025-09-30T23:16:12",
+      "updatedDate": "2026-02-02T03:59:54",
+      "owner": "Clayton Allen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7098.3,
+      "description": "Relationship serious clearly."
+    },
+    {
+      "id": "77897f68-6e6a-4757-ab86-eb4bcfdf2901",
+      "name": "Switchable discrete strategy 12",
+      "status": "Pending",
+      "createdDate": "2025-05-10T00:06:31",
+      "updatedDate": "2026-01-31T07:46:12",
+      "owner": "Deborah Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1812.58,
+      "description": "Develop simple seat player health environment language."
+    },
+    {
+      "id": "e650a532-115f-4aed-ac04-2b3c831a9ed7",
+      "name": "Reduced object-oriented synergy 13",
+      "status": "Inactive",
+      "createdDate": "2025-09-11T14:51:42",
+      "updatedDate": "2026-02-15T18:25:59",
+      "owner": "Catherine Sanders",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4620.47,
+      "description": "Rest high environmental tend technology under institution off."
+    },
+    {
+      "id": "59d14ec4-f583-4ce7-a48d-343e66b71982",
+      "name": "Business-focused bi-directional product 14",
+      "status": "Inactive",
+      "createdDate": "2025-10-04T19:43:16",
+      "updatedDate": "2026-02-08T21:12:09",
+      "owner": "Joseph Garcia",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 548.52,
+      "description": "Test above beautiful board measure site."
+    },
+    {
+      "id": "6e84996f-5e3e-448f-b937-d0e37940bcd2",
+      "name": "Re-contextualized 4thgeneration policy 15",
+      "status": "Active",
+      "createdDate": "2025-06-18T05:42:06",
+      "updatedDate": "2026-02-03T15:04:32",
+      "owner": "Sarah Price",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2628.93,
+      "description": "School single price quite series together."
+    },
+    {
+      "id": "29588b33-61df-4b23-82db-c7ef4717b2c8",
+      "name": "Integrated optimizing product 16",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T09:05:53",
+      "updatedDate": "2026-01-22T23:06:50",
+      "owner": "Renee Powell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6093.22,
+      "description": "Notice tonight laugh various."
+    },
+    {
+      "id": "debdd91c-576c-4947-9ef0-47d4a1d7e347",
+      "name": "Phased neutral open system 17",
+      "status": "Completed",
+      "createdDate": "2025-10-21T19:37:49",
+      "updatedDate": "2026-02-07T13:56:21",
+      "owner": "Jesse Payne",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4103.22,
+      "description": "Term official investment message young gas."
+    },
+    {
+      "id": "59e47763-9733-421c-ab52-40ad4c3e678f",
+      "name": "Organized logistical policy 18",
+      "status": "Active",
+      "createdDate": "2025-03-28T07:53:22",
+      "updatedDate": "2026-01-25T12:45:36",
+      "owner": "Douglas Holmes",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7755.91,
+      "description": "Oil perhaps serious both."
+    },
+    {
+      "id": "c538de06-cce4-406b-a654-f65b9047a340",
+      "name": "Diverse methodical function 19",
+      "status": "Active",
+      "createdDate": "2025-07-29T04:16:16",
+      "updatedDate": "2026-02-15T10:11:55",
+      "owner": "Roberto Martinez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1551.9,
+      "description": "Professor more audience example deep power."
+    },
+    {
+      "id": "dc3029fb-f1bf-4ba6-9fd8-96f181a9fabf",
+      "name": "Synergized 6thgeneration knowledge user 20",
+      "status": "Inactive",
+      "createdDate": "2025-07-28T06:48:24",
+      "updatedDate": "2026-02-08T01:48:52",
+      "owner": "Michael Moore",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4364.99,
+      "description": "Serious note long current sign different data."
+    },
+    {
+      "id": "90cbf809-2e5e-4b3e-afbf-290c80ae390a",
+      "name": "Virtual radical software 21",
+      "status": "Completed",
+      "createdDate": "2025-07-23T18:09:59",
+      "updatedDate": "2026-01-22T14:06:21",
+      "owner": "Heather Walker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1432.47,
+      "description": "Hotel final loss arm computer miss."
+    },
+    {
+      "id": "f261cfaf-1f35-4c55-bedf-d93afa5e23a0",
+      "name": "Implemented well-modulated website 22",
+      "status": "Pending",
+      "createdDate": "2025-03-21T04:53:43",
+      "updatedDate": "2026-01-30T14:18:53",
+      "owner": "Brandy Garrett",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9097.06,
+      "description": "Away range fall improve arrive tend."
+    },
+    {
+      "id": "8e1b7fd3-4ac8-43bd-a5dc-7cff3b066f9c",
+      "name": "Profound asymmetric orchestration 23",
+      "status": "Inactive",
+      "createdDate": "2026-02-12T15:23:05",
+      "updatedDate": "2026-02-07T14:41:45",
+      "owner": "Karen Bullock",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8904.81,
+      "description": "Once she sign sense under since room."
+    },
+    {
+      "id": "9f8ea5aa-106a-4b93-b871-00d4f7d0f392",
+      "name": "Balanced zero-defect complexity 24",
+      "status": "Completed",
+      "createdDate": "2025-08-07T13:45:25",
+      "updatedDate": "2026-01-31T03:22:03",
+      "owner": "Jonathon Davila",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7388.41,
+      "description": "Little learn billion result prevent part check hold."
+    },
+    {
+      "id": "23833256-855e-4ada-82e3-9a87c81c2abd",
+      "name": "Integrated bifurcated contingency 25",
+      "status": "Inactive",
+      "createdDate": "2025-06-29T10:47:36",
+      "updatedDate": "2026-02-10T18:44:47",
+      "owner": "Mary Dixon",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7678.51,
+      "description": "Usually media pass office capital above drive."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

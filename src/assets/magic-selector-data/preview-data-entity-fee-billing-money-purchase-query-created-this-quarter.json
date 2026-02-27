@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-feestatement",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 284,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "988f8dab-d615-44c6-a8b2-c8f12e2c2070",
+      "name": "Automated intangible capacity 1",
+      "status": "Completed",
+      "createdDate": "2025-09-19T06:24:19",
+      "updatedDate": "2026-01-22T09:26:42",
+      "owner": "Michael Wilson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6640.6,
+      "description": "Respond sister treatment song follow."
+    },
+    {
+      "id": "768cfa3f-33f2-4a14-8814-f9cd2604ddee",
+      "name": "Vision-oriented contextually-based installation 2",
+      "status": "Active",
+      "createdDate": "2026-01-13T06:33:27",
+      "updatedDate": "2026-02-10T19:27:50",
+      "owner": "Christopher Ibarra",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5160.86,
+      "description": "Technology two politics lose start."
+    },
+    {
+      "id": "e61db585-f5e3-4c16-b35f-ddf70741ed1f",
+      "name": "Persevering value-added orchestration 3",
+      "status": "Inactive",
+      "createdDate": "2025-07-06T11:08:33",
+      "updatedDate": "2026-02-09T02:44:15",
+      "owner": "Christine White",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7649.77,
+      "description": "Music position toward suddenly himself mind."
+    },
+    {
+      "id": "86f7c8ab-b7c3-4f8c-af86-b8dd8c0994ca",
+      "name": "Expanded logistical circuit 4",
+      "status": "Pending",
+      "createdDate": "2025-04-07T07:22:08",
+      "updatedDate": "2026-01-21T08:38:56",
+      "owner": "Eric Nelson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5986.09,
+      "description": "Section bank ready arm model receive indeed short."
+    },
+    {
+      "id": "3cd9f13c-6642-419e-a301-8fae2fae6dcc",
+      "name": "Managed impactful success 5",
+      "status": "Completed",
+      "createdDate": "2025-12-27T21:50:35",
+      "updatedDate": "2026-02-10T12:53:50",
+      "owner": "Stephanie Cook",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7023.93,
+      "description": "Debate man themselves."
+    },
+    {
+      "id": "7b973db8-6d13-4141-9545-5efce61d849f",
+      "name": "Devolved dedicated workforce 6",
+      "status": "Pending",
+      "createdDate": "2025-08-15T06:05:32",
+      "updatedDate": "2026-01-20T02:00:03",
+      "owner": "Jane Martin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2885.35,
+      "description": "Writer level heart effort."
+    },
+    {
+      "id": "bd46bc86-2fdd-499e-9b2e-3867455e1883",
+      "name": "Ameliorated executive projection 7",
+      "status": "Active",
+      "createdDate": "2025-03-16T12:42:57",
+      "updatedDate": "2026-01-18T22:40:04",
+      "owner": "Mrs. Lisa Williams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4511.08,
+      "description": "Lay start avoid house."
+    },
+    {
+      "id": "def17527-5a55-4256-beb9-db55e47d0f82",
+      "name": "Proactive even-keeled array 8",
+      "status": "Active",
+      "createdDate": "2026-01-19T00:07:04",
+      "updatedDate": "2026-02-10T21:03:17",
+      "owner": "David Weber",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5374.4,
+      "description": "Stay federal arrive sea safe image among."
+    },
+    {
+      "id": "8f16af56-5868-47c9-9e97-589cbb91dd32",
+      "name": "Virtual clear-thinking leverage 9",
+      "status": "Active",
+      "createdDate": "2025-07-28T15:54:55",
+      "updatedDate": "2026-02-14T21:25:21",
+      "owner": "Thomas Smith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8404.33,
+      "description": "Two share seat serious information employee."
+    },
+    {
+      "id": "16872d03-94b9-4bb9-b23b-071abe27e111",
+      "name": "Up-sized needs-based complexity 10",
+      "status": "Active",
+      "createdDate": "2025-04-03T11:01:17",
+      "updatedDate": "2026-01-28T04:52:05",
+      "owner": "Billy Oneal",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5256.1,
+      "description": "Police piece cause lead man line she."
+    },
+    {
+      "id": "bf743b4f-af00-46ec-b492-8a2f9a3995c7",
+      "name": "Robust global function 11",
+      "status": "Inactive",
+      "createdDate": "2026-02-15T08:13:24",
+      "updatedDate": "2026-02-11T05:38:19",
+      "owner": "Diana Schmidt",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5672.2,
+      "description": "Left remember reduce say here."
+    },
+    {
+      "id": "869e019d-c80d-48aa-bc88-bf355f93e812",
+      "name": "Persevering bifurcated protocol 12",
+      "status": "Completed",
+      "createdDate": "2025-05-11T02:54:14",
+      "updatedDate": "2026-02-10T23:17:16",
+      "owner": "Chase Ramirez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6652.72,
+      "description": "Group in break future near."
+    },
+    {
+      "id": "affeece4-91a8-4659-ad57-f105ce169f14",
+      "name": "Front-line discrete matrix 13",
+      "status": "Inactive",
+      "createdDate": "2025-12-29T15:10:21",
+      "updatedDate": "2026-01-22T03:00:06",
+      "owner": "Kelly Pineda",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3562.7,
+      "description": "Sort film or nation if full."
+    },
+    {
+      "id": "708e3a1d-403e-4e5a-bb52-31c661ba5b5e",
+      "name": "Implemented well-modulated artificial intelligence 14",
+      "status": "Active",
+      "createdDate": "2025-02-27T21:51:37",
+      "updatedDate": "2026-02-02T20:10:05",
+      "owner": "John Fowler",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7118.26,
+      "description": "Land service campaign perhaps."
+    },
+    {
+      "id": "b42d7b76-8e50-4b0e-947d-539629f2c93d",
+      "name": "Synergized real-time Local Area Network 15",
+      "status": "Inactive",
+      "createdDate": "2025-02-26T09:58:45",
+      "updatedDate": "2026-01-28T03:06:27",
+      "owner": "Melanie Kim",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2206.02,
+      "description": "Where among safe road per sound."
+    },
+    {
+      "id": "c3b0c8ea-3a31-4841-bffc-82133635b47a",
+      "name": "Focused next generation artificial intelligence 16",
+      "status": "Active",
+      "createdDate": "2025-11-04T09:41:52",
+      "updatedDate": "2026-01-22T07:08:26",
+      "owner": "Billy Powell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8431.64,
+      "description": "Job trip air."
+    },
+    {
+      "id": "75440bea-ed9c-44aa-88e5-3bcaf9c043e5",
+      "name": "Function-based dynamic monitoring 17",
+      "status": "Inactive",
+      "createdDate": "2025-11-14T04:00:13",
+      "updatedDate": "2026-02-03T18:53:38",
+      "owner": "Cody Powers",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3166.26,
+      "description": "Agree be trip thought."
+    },
+    {
+      "id": "55dc1f5c-5f0f-44d1-9330-660903cf3c2d",
+      "name": "Multi-tiered 6thgeneration success 18",
+      "status": "Active",
+      "createdDate": "2025-04-30T22:03:04",
+      "updatedDate": "2026-01-26T09:40:04",
+      "owner": "Sandra Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6132.21,
+      "description": "Such relationship necessary notice through."
+    },
+    {
+      "id": "303c2417-eef9-49a5-9d70-b1e647c85171",
+      "name": "Fundamental fault-tolerant firmware 19",
+      "status": "Active",
+      "createdDate": "2025-04-12T21:27:00",
+      "updatedDate": "2026-02-08T04:55:37",
+      "owner": "Sarah Hawkins",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8676.57,
+      "description": "Magazine star lawyer nation woman soon agency."
+    },
+    {
+      "id": "97c770bd-2e8e-459a-b8ef-34687f98acfb",
+      "name": "Digitized eco-centric capability 20",
+      "status": "Inactive",
+      "createdDate": "2025-05-23T03:16:55",
+      "updatedDate": "2026-02-02T11:32:45",
+      "owner": "Amy Mclean",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3368.16,
+      "description": "Red later choose health concern person."
+    },
+    {
+      "id": "3ca90532-d388-41cf-b92d-c9662d94822f",
+      "name": "Monitored contextually-based collaboration 21",
+      "status": "Inactive",
+      "createdDate": "2025-08-12T12:23:08",
+      "updatedDate": "2026-02-10T00:11:24",
+      "owner": "Alexander Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2504.03,
+      "description": "Century every type."
+    },
+    {
+      "id": "c0a2f3a7-a010-411e-95ca-b837667b92c3",
+      "name": "Multi-layered zero-defect hierarchy 22",
+      "status": "Completed",
+      "createdDate": "2025-11-18T13:03:50",
+      "updatedDate": "2026-02-12T01:14:24",
+      "owner": "Ashley Cook",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8950.34,
+      "description": "Young fill peace address Democrat."
+    },
+    {
+      "id": "ce56f74e-948c-4e4e-bb5b-5463870620ff",
+      "name": "User-friendly high-level circuit 23",
+      "status": "Active",
+      "createdDate": "2025-05-21T23:32:19",
+      "updatedDate": "2026-02-13T00:08:54",
+      "owner": "Samuel Brooks",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1196.44,
+      "description": "Operation future offer quickly deep."
+    },
+    {
+      "id": "9c66867f-27a6-47b3-b191-beabf253f571",
+      "name": "Inverse context-sensitive utilization 24",
+      "status": "Completed",
+      "createdDate": "2025-04-06T03:01:00",
+      "updatedDate": "2026-02-08T12:52:01",
+      "owner": "Jill Rhodes",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4846.34,
+      "description": "Fill difficult television."
+    },
+    {
+      "id": "61dd9c9d-f515-4ec1-a601-4d02e79bd9d4",
+      "name": "Enhanced static hub 25",
+      "status": "Completed",
+      "createdDate": "2025-11-02T06:39:48",
+      "updatedDate": "2026-01-18T18:48:15",
+      "owner": "Victoria Craig",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6537.72,
+      "description": "Blood show available occur send loss."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 597,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "1f76c54a-6997-489a-93dd-0fd68e8eaf52",
+      "name": "Ergonomic dynamic function 1",
+      "status": "Active",
+      "createdDate": "2025-08-01T23:45:26",
+      "updatedDate": "2026-01-29T09:50:02",
+      "owner": "Jean Wise MD",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8956.56,
+      "description": "Before check strategy sit rate majority low."
+    },
+    {
+      "id": "14a4ea18-659c-4454-a7f9-d14480afea32",
+      "name": "Stand-alone 5thgeneration database 2",
+      "status": "Completed",
+      "createdDate": "2025-08-21T00:02:32",
+      "updatedDate": "2026-01-25T01:33:56",
+      "owner": "Mr. Matthew Bell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3672.28,
+      "description": "She will bank economy recognize."
+    },
+    {
+      "id": "a2a9ad40-ebf8-496d-b90a-db6bd70b8e55",
+      "name": "Customizable motivating initiative 3",
+      "status": "Inactive",
+      "createdDate": "2025-05-19T21:51:53",
+      "updatedDate": "2026-02-07T14:20:43",
+      "owner": "Jeremy Harris",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1757.43,
+      "description": "Star visit water serve."
+    },
+    {
+      "id": "1758ebb0-a7de-41fd-90fb-df6471415ace",
+      "name": "Quality-focused encompassing functionalities 4",
+      "status": "Inactive",
+      "createdDate": "2025-06-28T04:45:57",
+      "updatedDate": "2026-02-14T15:47:57",
+      "owner": "Laura Boyd",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5296.75,
+      "description": "Poor join seven letter manager."
+    },
+    {
+      "id": "a82425fe-fa70-4bf3-a54a-566efbc85c5f",
+      "name": "Horizontal stable hierarchy 5",
+      "status": "Completed",
+      "createdDate": "2026-01-17T05:38:27",
+      "updatedDate": "2026-01-20T02:12:31",
+      "owner": "Linda Ramirez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5712.42,
+      "description": "Brother message increase loss."
+    },
+    {
+      "id": "e9d0b049-d2ff-46bb-8ef9-a599032c274a",
+      "name": "Visionary non-volatile encoding 6",
+      "status": "Inactive",
+      "createdDate": "2025-12-31T16:51:13",
+      "updatedDate": "2026-02-04T03:38:14",
+      "owner": "Brian Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6169.48,
+      "description": "Deal consumer smile couple Congress instead film school."
+    },
+    {
+      "id": "8a99b7c6-3d24-4c45-9a60-d0859c64ea39",
+      "name": "Re-contextualized value-added ability 7",
+      "status": "Active",
+      "createdDate": "2025-04-25T02:12:15",
+      "updatedDate": "2026-01-28T13:01:17",
+      "owner": "Danielle Nguyen",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6000.4,
+      "description": "Forget make friend several national wind."
+    },
+    {
+      "id": "a7807b69-cc70-46eb-810c-4a1ef758959c",
+      "name": "Synergized bi-directional collaboration 8",
+      "status": "Inactive",
+      "createdDate": "2025-05-22T21:22:26",
+      "updatedDate": "2026-01-30T07:47:45",
+      "owner": "John Berry",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4870.54,
+      "description": "Open despite college write might soon."
+    },
+    {
+      "id": "671fa721-b0ed-4b2a-95c0-9e1a3a3f734a",
+      "name": "Face-to-face real-time challenge 9",
+      "status": "Inactive",
+      "createdDate": "2025-06-24T08:54:32",
+      "updatedDate": "2026-02-03T00:43:01",
+      "owner": "Alicia Potts",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4419.09,
+      "description": "Eat travel exist president eye direction power."
+    },
+    {
+      "id": "02a6b70d-3549-47c6-92c7-89a1f859fa51",
+      "name": "Optimized global standardization 10",
+      "status": "Completed",
+      "createdDate": "2025-03-18T18:33:21",
+      "updatedDate": "2026-02-03T06:31:39",
+      "owner": "Jill Walton",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4027.3,
+      "description": "Floor environmental result which."
+    },
+    {
+      "id": "5307d813-3a2b-46bd-8bf5-d9d41a4bc873",
+      "name": "Profit-focused 24hour circuit 11",
+      "status": "Inactive",
+      "createdDate": "2025-11-14T03:42:37",
+      "updatedDate": "2026-02-14T10:41:04",
+      "owner": "Cheryl Blevins",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2756.41,
+      "description": "Or finish involve his event."
+    },
+    {
+      "id": "4a615baa-b5b6-4895-9b81-68b6c4e91e6a",
+      "name": "Business-focused fault-tolerant monitoring 12",
+      "status": "Pending",
+      "createdDate": "2025-09-25T15:07:58",
+      "updatedDate": "2026-02-06T00:54:33",
+      "owner": "Anne Potter",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5509.81,
+      "description": "Public thousand heavy age thought food sign."
+    },
+    {
+      "id": "7f42728f-4843-4cd1-b3c4-4016372d48cc",
+      "name": "Innovative logistical alliance 13",
+      "status": "Active",
+      "createdDate": "2026-01-17T23:44:51",
+      "updatedDate": "2026-01-26T15:42:40",
+      "owner": "Dr. Madison Robinson MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8590.84,
+      "description": "Song case under scene."
+    },
+    {
+      "id": "29a3118b-261f-45b3-82f4-750c54d18750",
+      "name": "Synergistic mission-critical attitude 14",
+      "status": "Inactive",
+      "createdDate": "2025-03-18T02:10:12",
+      "updatedDate": "2026-01-20T03:17:33",
+      "owner": "John Cochran",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8861.63,
+      "description": "Suffer capital natural."
+    },
+    {
+      "id": "1d6706b9-e04a-4359-8c79-8408b6c9b2de",
+      "name": "Configurable upward-trending conglomeration 15",
+      "status": "Completed",
+      "createdDate": "2025-05-08T12:41:33",
+      "updatedDate": "2026-02-14T04:54:40",
+      "owner": "Caitlin Blankenship",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7840.99,
+      "description": "Lawyer network challenge thus director perhaps."
+    },
+    {
+      "id": "f3a31a1f-8a79-4763-bcd9-d3bd430252a8",
+      "name": "Multi-layered contextually-based Graphic Interface 16",
+      "status": "Pending",
+      "createdDate": "2025-10-16T07:07:58",
+      "updatedDate": "2026-01-20T00:09:48",
+      "owner": "Kristen Faulkner",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7018.37,
+      "description": "Behavior pretty energy maybe voice."
+    },
+    {
+      "id": "f319aedd-44a9-4d2c-9ed5-6c97f6483886",
+      "name": "Synergistic scalable monitoring 17",
+      "status": "Inactive",
+      "createdDate": "2025-12-13T01:49:41",
+      "updatedDate": "2026-01-25T00:24:01",
+      "owner": "Susan Valdez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2122.55,
+      "description": "Seat magazine result site set into community."
+    },
+    {
+      "id": "a2683b96-99c0-4e9d-95bb-aca3fdd1bc12",
+      "name": "Phased clear-thinking standardization 18",
+      "status": "Inactive",
+      "createdDate": "2025-07-29T10:02:23",
+      "updatedDate": "2026-02-01T04:28:00",
+      "owner": "Heather Durham",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9274.63,
+      "description": "Whose again throughout standard onto fish alone war."
+    },
+    {
+      "id": "7ef6eb4f-17d5-48ac-bb51-c5efe27cfac8",
+      "name": "Networked transitional flexibility 19",
+      "status": "Inactive",
+      "createdDate": "2025-08-05T04:52:27",
+      "updatedDate": "2026-02-12T10:30:59",
+      "owner": "Morgan Larsen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1633.01,
+      "description": "Send drop born green anyone."
+    },
+    {
+      "id": "cab01672-0398-4c35-b755-fea0a6a2d13f",
+      "name": "Triple-buffered tangible function 20",
+      "status": "Active",
+      "createdDate": "2026-01-25T11:37:05",
+      "updatedDate": "2026-01-25T13:30:00",
+      "owner": "Meagan Richardson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9539.42,
+      "description": "Task herself yes table former."
+    },
+    {
+      "id": "c6a3b7f7-3c97-4319-9739-167c8e347446",
+      "name": "Versatile explicit protocol 21",
+      "status": "Active",
+      "createdDate": "2025-04-22T23:28:08",
+      "updatedDate": "2026-01-24T17:29:50",
+      "owner": "Kelsey Rich",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2693.53,
+      "description": "Make well light community."
+    },
+    {
+      "id": "3bb0ea58-a81f-483e-8ab0-bf844b0761bd",
+      "name": "Fully-configurable impactful software 22",
+      "status": "Pending",
+      "createdDate": "2025-12-14T12:33:02",
+      "updatedDate": "2026-02-13T05:59:57",
+      "owner": "Steven Munoz",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1602.24,
+      "description": "Interesting have enough avoid pretty white call that."
+    },
+    {
+      "id": "ad395d07-deb8-4f6b-a59d-7587959cd21a",
+      "name": "Compatible asynchronous core 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-20T11:36:32",
+      "updatedDate": "2026-01-31T01:31:37",
+      "owner": "Robert Hudson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4742.61,
+      "description": "Director hair trouble or bit."
+    },
+    {
+      "id": "5208cc35-86d3-4716-9410-8eae00b7ea98",
+      "name": "Profound national infrastructure 24",
+      "status": "Inactive",
+      "createdDate": "2025-07-29T17:26:08",
+      "updatedDate": "2026-01-23T02:33:28",
+      "owner": "Emily Mccoy",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1725.82,
+      "description": "Life action police order must relationship call."
+    },
+    {
+      "id": "aa7cced5-a291-429b-a555-796635559405",
+      "name": "Synchronized interactive utilization 25",
+      "status": "Inactive",
+      "createdDate": "2025-05-09T00:42:19",
+      "updatedDate": "2026-01-29T03:35:20",
+      "owner": "Madison Nicholson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4339.14,
+      "description": "Commercial number watch add energy."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

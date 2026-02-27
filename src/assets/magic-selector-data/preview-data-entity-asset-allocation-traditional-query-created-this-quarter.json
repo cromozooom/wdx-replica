@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 386,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "48a4c93d-4070-406c-afe0-c46fcb90fb0f",
+      "name": "Object-based fresh-thinking migration 1",
+      "status": "Pending",
+      "createdDate": "2025-04-01T12:50:31",
+      "updatedDate": "2026-02-07T17:20:12",
+      "owner": "Jeffrey Glenn",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7213.81,
+      "description": "Relationship ok keep result physical."
+    },
+    {
+      "id": "cbac3fa5-e156-4eb9-85ea-80c85958950b",
+      "name": "Open-architected bandwidth-monitored process improvement 2",
+      "status": "Inactive",
+      "createdDate": "2026-02-07T15:08:10",
+      "updatedDate": "2026-02-15T07:47:36",
+      "owner": "Donna Hunt",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5881.08,
+      "description": "Account trial nearly thank claim reflect act up."
+    },
+    {
+      "id": "ac37eae3-8ac2-493b-a5e3-fb39d8286af5",
+      "name": "Upgradable zero-defect data-warehouse 3",
+      "status": "Completed",
+      "createdDate": "2025-07-10T23:05:22",
+      "updatedDate": "2026-01-19T06:17:09",
+      "owner": "Scott Valdez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8134.78,
+      "description": "Whatever much dinner lawyer put fund."
+    },
+    {
+      "id": "f0eef198-0050-4e24-a1ce-573ad60619ab",
+      "name": "Optional object-oriented policy 4",
+      "status": "Completed",
+      "createdDate": "2025-05-26T21:18:00",
+      "updatedDate": "2026-02-01T12:39:47",
+      "owner": "Charles Hill",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9025.53,
+      "description": "Food describe build prepare."
+    },
+    {
+      "id": "639b872b-bd78-4b00-955d-a2159d573206",
+      "name": "Synergistic mission-critical focus group 5",
+      "status": "Active",
+      "createdDate": "2025-05-05T11:01:36",
+      "updatedDate": "2026-02-16T17:02:27",
+      "owner": "Mrs. Shelley Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7250.42,
+      "description": "Cup office book standard."
+    },
+    {
+      "id": "a149f86e-54ee-4bd7-8b07-e081a662ca22",
+      "name": "Focused next generation infrastructure 6",
+      "status": "Active",
+      "createdDate": "2025-12-15T18:25:31",
+      "updatedDate": "2026-02-11T00:16:06",
+      "owner": "Tara Andrews",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1507.67,
+      "description": "Later skill most blue this thank."
+    },
+    {
+      "id": "8e91dd7c-2df7-466f-b1ba-aed2dde02893",
+      "name": "Configurable methodical model 7",
+      "status": "Pending",
+      "createdDate": "2025-09-24T17:38:05",
+      "updatedDate": "2026-02-10T12:42:23",
+      "owner": "April Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3374.02,
+      "description": "Offer cover life growth over follow member we."
+    },
+    {
+      "id": "e41d9e4e-383b-4d41-9d8c-f78bb89ca294",
+      "name": "Fundamental homogeneous conglomeration 8",
+      "status": "Active",
+      "createdDate": "2025-06-01T20:01:20",
+      "updatedDate": "2026-02-01T05:31:48",
+      "owner": "Richard Collier",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5935.92,
+      "description": "Prepare most hot speak southern herself blood."
+    },
+    {
+      "id": "928d6b92-ecf3-4b62-9511-ca815393a35a",
+      "name": "Cross-platform maximized middleware 9",
+      "status": "Inactive",
+      "createdDate": "2025-08-20T06:18:16",
+      "updatedDate": "2026-01-22T11:11:25",
+      "owner": "Jennifer Rice",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8128.95,
+      "description": "Themselves process sort college key simply almost pretty."
+    },
+    {
+      "id": "a5e6cb16-c752-49ce-9214-458bff748485",
+      "name": "Synchronized eco-centric paradigm 10",
+      "status": "Completed",
+      "createdDate": "2025-12-03T03:55:10",
+      "updatedDate": "2026-01-21T16:15:50",
+      "owner": "Joy Padilla",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1384.63,
+      "description": "Relationship break can short."
+    },
+    {
+      "id": "28b5e3a6-eedc-44bc-b462-7c96ccb67f52",
+      "name": "Future-proofed system-worthy function 11",
+      "status": "Active",
+      "createdDate": "2026-01-12T10:59:37",
+      "updatedDate": "2026-01-23T10:57:48",
+      "owner": "Matthew Carter",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5130.11,
+      "description": "That call art debate southern."
+    },
+    {
+      "id": "2a416c6f-ce52-4dca-bb37-3d708c61346d",
+      "name": "Phased real-time workforce 12",
+      "status": "Pending",
+      "createdDate": "2025-06-14T22:51:13",
+      "updatedDate": "2026-02-16T07:27:04",
+      "owner": "Lisa Elliott",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4257.46,
+      "description": "Rule price indicate smile should nothing scientist."
+    },
+    {
+      "id": "1d2b4d59-6f1a-4af1-adea-a559a3ccc067",
+      "name": "Virtual client-server artificial intelligence 13",
+      "status": "Active",
+      "createdDate": "2026-01-09T06:26:20",
+      "updatedDate": "2026-02-10T19:28:41",
+      "owner": "Shannon Harris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2807.92,
+      "description": "Even else action ahead down decade."
+    },
+    {
+      "id": "4d74ee96-c814-4bdf-b263-45414cd76b0d",
+      "name": "Business-focused directional capacity 14",
+      "status": "Completed",
+      "createdDate": "2025-05-12T09:47:50",
+      "updatedDate": "2026-02-13T15:10:24",
+      "owner": "Patricia Campbell",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5865.63,
+      "description": "Suddenly standard sense successful office improve business."
+    },
+    {
+      "id": "4a3537cb-5e2f-4c05-baea-ea719b7ab211",
+      "name": "Multi-lateral composite collaboration 15",
+      "status": "Active",
+      "createdDate": "2025-10-21T07:55:45",
+      "updatedDate": "2026-01-26T10:20:15",
+      "owner": "Angel Phillips",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5285.21,
+      "description": "Different possible than since whether radio thus choice."
+    },
+    {
+      "id": "07c683f2-6d88-43cf-920b-dd0209cf431a",
+      "name": "Integrated system-worthy data-warehouse 16",
+      "status": "Active",
+      "createdDate": "2025-12-29T15:35:23",
+      "updatedDate": "2026-02-12T05:09:13",
+      "owner": "Louis Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8742.16,
+      "description": "Subject win how nation deep last."
+    },
+    {
+      "id": "f623e5f7-6eeb-41aa-a173-c15d545c400a",
+      "name": "Proactive context-sensitive project 17",
+      "status": "Completed",
+      "createdDate": "2025-03-02T21:33:14",
+      "updatedDate": "2026-01-28T15:31:47",
+      "owner": "Erin Rodriguez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2768.59,
+      "description": "Response manager military watch save week."
+    },
+    {
+      "id": "ae0fd9a7-7074-4e34-885b-608fdc4635ba",
+      "name": "Face-to-face clear-thinking definition 18",
+      "status": "Pending",
+      "createdDate": "2025-06-27T05:38:50",
+      "updatedDate": "2026-02-16T08:58:10",
+      "owner": "Joan Frazier",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6980.89,
+      "description": "Employee major prepare however away."
+    },
+    {
+      "id": "ea4f9321-58ea-4dfe-9de5-391a5a4b8450",
+      "name": "Networked homogeneous time-frame 19",
+      "status": "Pending",
+      "createdDate": "2025-04-20T03:50:16",
+      "updatedDate": "2026-01-30T08:52:26",
+      "owner": "Sandy Miller",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9638.22,
+      "description": "Civil rather better operation."
+    },
+    {
+      "id": "47813da8-06cb-48c0-9007-b85c321d572b",
+      "name": "Profit-focused incremental initiative 20",
+      "status": "Pending",
+      "createdDate": "2025-10-21T03:07:54",
+      "updatedDate": "2026-01-20T22:32:08",
+      "owner": "Theodore Patel",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9832.37,
+      "description": "Almost tough high within."
+    },
+    {
+      "id": "2a8d1b60-0278-4f42-8da0-17e29958d9b4",
+      "name": "Monitored context-sensitive neural-net 21",
+      "status": "Completed",
+      "createdDate": "2026-02-09T19:38:35",
+      "updatedDate": "2026-02-12T21:39:24",
+      "owner": "Heather Chavez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2111.83,
+      "description": "Study bar data resource finish live type spring."
+    },
+    {
+      "id": "4ac1a2bc-26aa-486c-a021-23f7d97dfb53",
+      "name": "Future-proofed heuristic approach 22",
+      "status": "Inactive",
+      "createdDate": "2025-04-24T23:59:23",
+      "updatedDate": "2026-02-09T02:00:02",
+      "owner": "Heather Schmitt",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9848.59,
+      "description": "For list trouble born continue system determine this."
+    },
+    {
+      "id": "31c4c26d-7318-4f8b-ae96-f194dc741397",
+      "name": "Open-architected analyzing collaboration 23",
+      "status": "Active",
+      "createdDate": "2025-08-29T10:55:48",
+      "updatedDate": "2026-01-31T07:19:39",
+      "owner": "Jason Evans",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6031.78,
+      "description": "His throughout particular whatever."
+    },
+    {
+      "id": "0028b0de-a012-4d57-98c9-1267d0c23abe",
+      "name": "Enterprise-wide neutral protocol 24",
+      "status": "Pending",
+      "createdDate": "2025-11-05T20:23:15",
+      "updatedDate": "2026-02-16T09:54:21",
+      "owner": "Jennifer Rowe",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4252.48,
+      "description": "Bad energy language she."
+    },
+    {
+      "id": "7086c8a0-6b63-4390-9223-a15df4439c45",
+      "name": "Front-line zero-defect customer loyalty 25",
+      "status": "Completed",
+      "createdDate": "2025-07-30T20:01:00",
+      "updatedDate": "2026-01-28T01:22:49",
+      "owner": "Adam Jones",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2079.52,
+      "description": "I guess others enter."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

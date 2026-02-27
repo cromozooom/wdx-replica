@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1352,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "c111d576-d0a0-489e-9d6c-990214023992",
+      "name": "Exclusive human-resource moderator 1",
+      "status": "Completed",
+      "createdDate": "2025-08-24T11:25:50",
+      "updatedDate": "2026-02-08T21:38:15",
+      "owner": "Laura Tran",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7863.01,
+      "description": "Feeling language that heart really."
+    },
+    {
+      "id": "a2df8e25-b63a-43c0-9a92-b698bc100174",
+      "name": "Up-sized coherent superstructure 2",
+      "status": "Completed",
+      "createdDate": "2025-11-23T16:17:27",
+      "updatedDate": "2026-02-05T21:05:17",
+      "owner": "Michael Washington",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7000.93,
+      "description": "Write effort name cut citizen."
+    },
+    {
+      "id": "601806ee-8217-48eb-85ca-2d6d45288980",
+      "name": "Profit-focused logistical concept 3",
+      "status": "Active",
+      "createdDate": "2025-09-11T15:00:49",
+      "updatedDate": "2026-02-07T11:39:46",
+      "owner": "David Stephenson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9907.88,
+      "description": "Model material natural as human role."
+    },
+    {
+      "id": "119eb8da-9d24-4702-ac1b-81814be7ee74",
+      "name": "Programmable maximized pricing structure 4",
+      "status": "Active",
+      "createdDate": "2025-06-03T21:34:07",
+      "updatedDate": "2026-02-13T23:56:51",
+      "owner": "Casey Pruitt",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2978.11,
+      "description": "Begin modern religious."
+    },
+    {
+      "id": "4fcf559a-fea7-46e7-b55c-9b23ca49c9cf",
+      "name": "Upgradable zero administration knowledgebase 5",
+      "status": "Completed",
+      "createdDate": "2025-09-28T11:26:14",
+      "updatedDate": "2026-01-28T20:22:37",
+      "owner": "Daisy Howard",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2516.11,
+      "description": "Year her affect surface exist."
+    },
+    {
+      "id": "baaffb6b-7629-4592-a292-e52a53f16073",
+      "name": "Upgradable full-range process improvement 6",
+      "status": "Inactive",
+      "createdDate": "2025-08-10T07:47:47",
+      "updatedDate": "2026-02-15T21:20:01",
+      "owner": "Brenda Price",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2956.04,
+      "description": "Right life later baby financial college."
+    },
+    {
+      "id": "4146065f-f8e6-4ade-8f54-6ad479301e30",
+      "name": "Grass-roots dynamic intranet 7",
+      "status": "Completed",
+      "createdDate": "2026-01-25T16:51:40",
+      "updatedDate": "2026-01-28T23:09:21",
+      "owner": "Daniel Murray",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 700.59,
+      "description": "Difference collection along."
+    },
+    {
+      "id": "d2774107-3ae2-4091-8858-afeb56915f7c",
+      "name": "Realigned real-time product 8",
+      "status": "Active",
+      "createdDate": "2025-12-14T21:45:30",
+      "updatedDate": "2026-02-08T02:21:46",
+      "owner": "James Serrano",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1547.31,
+      "description": "Tree nor avoid else."
+    },
+    {
+      "id": "e1d83c24-27e5-496b-a4f1-82e20ea2cd3f",
+      "name": "Expanded explicit capability 9",
+      "status": "Inactive",
+      "createdDate": "2025-11-01T07:35:34",
+      "updatedDate": "2026-01-19T00:08:56",
+      "owner": "Stephen Lewis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6892.42,
+      "description": "South face specific south require."
+    },
+    {
+      "id": "d8a76b09-4af4-4310-8e22-f9af9b9761b1",
+      "name": "User-friendly non-volatile parallelism 10",
+      "status": "Active",
+      "createdDate": "2025-03-07T02:44:24",
+      "updatedDate": "2026-02-01T11:10:16",
+      "owner": "Thomas Powell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2360.29,
+      "description": "Point behind improve down represent store since whatever."
+    },
+    {
+      "id": "f52fb11f-788a-4013-b693-4bab787cbcca",
+      "name": "Configurable needs-based toolset 11",
+      "status": "Active",
+      "createdDate": "2025-02-28T00:13:01",
+      "updatedDate": "2026-02-05T01:47:48",
+      "owner": "David Wood",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2071.95,
+      "description": "Whom while require find room itself."
+    },
+    {
+      "id": "c202be61-f952-4876-996a-1befd09f6526",
+      "name": "Balanced exuding matrix 12",
+      "status": "Pending",
+      "createdDate": "2025-06-04T13:07:33",
+      "updatedDate": "2026-02-14T02:06:41",
+      "owner": "Dr. Donna Myers",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7848.56,
+      "description": "Study build class impact."
+    },
+    {
+      "id": "3705dfd3-86af-4d91-8432-2cefff5e950e",
+      "name": "Function-based regional structure 13",
+      "status": "Pending",
+      "createdDate": "2025-03-27T00:32:16",
+      "updatedDate": "2026-01-19T08:34:43",
+      "owner": "Brandi Berry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3598.18,
+      "description": "Side author better partner knowledge never find production."
+    },
+    {
+      "id": "af914bb1-b0b7-4199-a55e-3d3781b6170b",
+      "name": "Cross-platform executive access 14",
+      "status": "Completed",
+      "createdDate": "2025-05-05T17:14:07",
+      "updatedDate": "2026-01-25T09:55:26",
+      "owner": "Joseph Ross",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9646.26,
+      "description": "Mind discuss themselves letter grow option."
+    },
+    {
+      "id": "25278789-8205-4906-abf5-d29c07b79169",
+      "name": "Multi-tiered modular project 15",
+      "status": "Inactive",
+      "createdDate": "2025-10-10T14:51:59",
+      "updatedDate": "2026-02-12T11:17:22",
+      "owner": "William Ortiz",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6972.03,
+      "description": "Defense foot suddenly development together expect since former."
+    },
+    {
+      "id": "cfd72d85-4f94-44ef-97a6-84774910e923",
+      "name": "Profit-focused fault-tolerant initiative 16",
+      "status": "Completed",
+      "createdDate": "2025-09-25T04:53:07",
+      "updatedDate": "2026-02-16T04:28:03",
+      "owner": "Rachel Hernandez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5962.59,
+      "description": "Each area structure kind."
+    },
+    {
+      "id": "f84fa5be-6fd2-4a07-9a16-339354098f07",
+      "name": "De-engineered executive hub 17",
+      "status": "Active",
+      "createdDate": "2025-06-07T20:37:30",
+      "updatedDate": "2026-02-05T10:51:51",
+      "owner": "Jessica Williams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5285.38,
+      "description": "Choose each soldier for."
+    },
+    {
+      "id": "2b05ca07-147f-4457-8eee-f188ac2cbfa2",
+      "name": "Diverse secondary initiative 18",
+      "status": "Active",
+      "createdDate": "2025-05-26T06:04:17",
+      "updatedDate": "2026-02-08T21:47:18",
+      "owner": "Christy Wells",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7462.72,
+      "description": "The threat ready middle she."
+    },
+    {
+      "id": "624c4720-6e59-4890-99fc-2c9323a4b22e",
+      "name": "Networked modular protocol 19",
+      "status": "Active",
+      "createdDate": "2026-02-04T10:45:39",
+      "updatedDate": "2026-02-16T17:56:48",
+      "owner": "Fred Webb",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3023.64,
+      "description": "Become political traditional within save feeling."
+    },
+    {
+      "id": "955e3ded-e31c-4696-bb1f-0f7731fac3e2",
+      "name": "Open-architected dynamic protocol 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-08T15:26:59",
+      "updatedDate": "2026-01-22T22:07:24",
+      "owner": "Jillian Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5682.75,
+      "description": "Child song maybe."
+    },
+    {
+      "id": "8e9ddd8c-d5c7-456a-943a-d3de54fa6ed6",
+      "name": "Distributed zero administration extranet 21",
+      "status": "Pending",
+      "createdDate": "2025-05-11T18:00:58",
+      "updatedDate": "2026-02-14T20:53:03",
+      "owner": "Christian Rivas",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1047.81,
+      "description": "Central speech student national find everything see."
+    },
+    {
+      "id": "58405ae5-f138-46df-8268-05ac89a4f46c",
+      "name": "Open-architected actuating structure 22",
+      "status": "Pending",
+      "createdDate": "2025-06-20T22:19:02",
+      "updatedDate": "2026-01-19T05:51:08",
+      "owner": "Heather Salinas",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9574.56,
+      "description": "This life former then."
+    },
+    {
+      "id": "f99078b5-d55e-4c89-9259-ae2668e181b7",
+      "name": "Automated user-facing system engine 23",
+      "status": "Completed",
+      "createdDate": "2025-12-19T10:41:54",
+      "updatedDate": "2026-01-26T09:57:01",
+      "owner": "Jessica Figueroa",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2164.38,
+      "description": "Today same future."
+    },
+    {
+      "id": "68b7c5c3-425f-49e0-abf1-0f9619eaa809",
+      "name": "Customer-focused heuristic paradigm 24",
+      "status": "Inactive",
+      "createdDate": "2025-02-25T00:45:07",
+      "updatedDate": "2026-02-14T19:36:40",
+      "owner": "Jessica Johnson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7624.85,
+      "description": "Professional big listen foreign car surface professor."
+    },
+    {
+      "id": "47fefb9d-dff2-4fd4-b171-6b9162b3187f",
+      "name": "Grass-roots coherent budgetary management 25",
+      "status": "Pending",
+      "createdDate": "2025-11-16T13:14:57",
+      "updatedDate": "2026-01-21T12:30:58",
+      "owner": "Nicholas Santiago",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3823.94,
+      "description": "Interview child everything campaign price threat little."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

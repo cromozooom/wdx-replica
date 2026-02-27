@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 1316,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "0fb2f384-e75e-4bf4-829e-e2026308b168",
+      "name": "Phased multi-state project 1",
+      "status": "Completed",
+      "createdDate": "2025-09-12T16:19:55",
+      "updatedDate": "2026-02-09T14:46:07",
+      "owner": "Michael York",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1797.55,
+      "description": "Decide start score section really alone find."
+    },
+    {
+      "id": "dd1362bb-15b0-432b-befc-70efff666f25",
+      "name": "Phased tertiary process improvement 2",
+      "status": "Completed",
+      "createdDate": "2026-01-14T03:43:57",
+      "updatedDate": "2026-01-25T14:58:00",
+      "owner": "Lisa Stark",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7667.97,
+      "description": "Gas away several guy American discuss already."
+    },
+    {
+      "id": "84cde7c4-8ef8-43d5-b68e-f2fbc0cd4468",
+      "name": "Assimilated logistical capacity 3",
+      "status": "Completed",
+      "createdDate": "2025-11-25T17:43:04",
+      "updatedDate": "2026-01-25T05:32:02",
+      "owner": "Maria Kaiser",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 390.74,
+      "description": "Pass resource pressure owner new."
+    },
+    {
+      "id": "98321e99-8d07-4652-bf04-f471844384c6",
+      "name": "Inverse encompassing pricing structure 4",
+      "status": "Inactive",
+      "createdDate": "2026-02-15T18:26:07",
+      "updatedDate": "2026-01-19T06:51:14",
+      "owner": "Richard Matthews",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4802.55,
+      "description": "Truth owner fact certain half PM."
+    },
+    {
+      "id": "fc49bf37-8aaf-46c2-aae1-76b9ab4d560f",
+      "name": "Extended value-added core 5",
+      "status": "Active",
+      "createdDate": "2025-02-24T12:22:22",
+      "updatedDate": "2026-02-03T10:47:53",
+      "owner": "Donald Price",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5812.36,
+      "description": "Beyond economy try finish voice street."
+    },
+    {
+      "id": "cc60916b-95a5-4b8b-ba84-1ca8364d5d72",
+      "name": "Assimilated even-keeled utilization 6",
+      "status": "Completed",
+      "createdDate": "2025-03-22T22:24:20",
+      "updatedDate": "2026-01-31T23:03:41",
+      "owner": "Christina Anderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3933.35,
+      "description": "Certain color term image may suggest just staff."
+    },
+    {
+      "id": "97ed9d5c-cc61-4b97-bfc8-aa2e59f2ef37",
+      "name": "Managed multi-tasking intranet 7",
+      "status": "Pending",
+      "createdDate": "2026-01-22T22:35:36",
+      "updatedDate": "2026-02-12T00:07:28",
+      "owner": "Scott Hebert",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1928.47,
+      "description": "Not weight nice she movement cost real."
+    },
+    {
+      "id": "015a0e96-cee7-4834-80c4-bc7aaa72de0b",
+      "name": "Intuitive zero-defect middleware 8",
+      "status": "Inactive",
+      "createdDate": "2025-02-17T07:34:52",
+      "updatedDate": "2026-01-26T13:18:33",
+      "owner": "Mr. James Vargas",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8833.64,
+      "description": "Simply region capital along week air."
+    },
+    {
+      "id": "d4302b7a-11fb-4e67-a195-53ad1e2a8ce2",
+      "name": "Distributed logistical migration 9",
+      "status": "Inactive",
+      "createdDate": "2025-07-24T09:36:03",
+      "updatedDate": "2026-02-04T19:39:03",
+      "owner": "Mary Baxter",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3970.8,
+      "description": "Material kind economic."
+    },
+    {
+      "id": "7c4eb126-c4a2-48ad-bb37-407e7b129d3c",
+      "name": "Business-focused logistical service-desk 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-24T11:03:33",
+      "updatedDate": "2026-02-11T21:52:07",
+      "owner": "Peggy Koch",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 490.22,
+      "description": "Process almost cost sure me."
+    },
+    {
+      "id": "e39a81a3-c442-418f-8021-7cc816c3d97e",
+      "name": "Down-sized directional open system 11",
+      "status": "Completed",
+      "createdDate": "2025-07-31T11:44:03",
+      "updatedDate": "2026-02-02T10:27:23",
+      "owner": "Haley Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2504.63,
+      "description": "That political page identify."
+    },
+    {
+      "id": "c4d2e85a-bc5d-460b-983d-c571b2ff72a8",
+      "name": "Quality-focused next generation help-desk 12",
+      "status": "Completed",
+      "createdDate": "2026-01-10T21:16:14",
+      "updatedDate": "2026-01-22T17:02:38",
+      "owner": "Charles Schaefer",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5243.79,
+      "description": "Budget seat final gun far customer call."
+    },
+    {
+      "id": "6732c6cc-691f-4102-9bd5-4c20fff0d4ce",
+      "name": "Programmable didactic alliance 13",
+      "status": "Active",
+      "createdDate": "2025-08-31T09:28:28",
+      "updatedDate": "2026-01-18T21:41:59",
+      "owner": "Connie Munoz",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9122.6,
+      "description": "Much learn pattern also yet."
+    },
+    {
+      "id": "18bb5b8e-75be-4492-bb3b-8bcaf7e08188",
+      "name": "Object-based intermediate capacity 14",
+      "status": "Active",
+      "createdDate": "2025-03-20T17:21:41",
+      "updatedDate": "2026-02-12T21:14:27",
+      "owner": "Cynthia Myers",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9835.44,
+      "description": "Cut last democratic onto central."
+    },
+    {
+      "id": "5557d85a-1046-40ed-a9f9-48cd28f1e124",
+      "name": "Multi-tiered solution-oriented neural-net 15",
+      "status": "Inactive",
+      "createdDate": "2025-03-25T07:05:15",
+      "updatedDate": "2026-01-29T20:44:21",
+      "owner": "Ronald Rubio",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3984.31,
+      "description": "Majority play establish everyone cultural never conference."
+    },
+    {
+      "id": "a4e7ddaa-604d-4843-a76a-4e274b55e96e",
+      "name": "Enhanced dynamic firmware 16",
+      "status": "Active",
+      "createdDate": "2025-07-17T10:36:34",
+      "updatedDate": "2026-02-08T12:14:31",
+      "owner": "Karen Rosales",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 799.82,
+      "description": "Start position mean."
+    },
+    {
+      "id": "912389d0-601a-4ff4-9fa0-6c08e9c63523",
+      "name": "Multi-layered full-range hub 17",
+      "status": "Active",
+      "createdDate": "2025-02-25T09:58:50",
+      "updatedDate": "2026-02-05T12:10:26",
+      "owner": "Maria Sullivan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2955.07,
+      "description": "Situation true natural."
+    },
+    {
+      "id": "3402ffbf-ee23-4f26-b45a-bed5a5eeb61a",
+      "name": "Upgradable maximized methodology 18",
+      "status": "Pending",
+      "createdDate": "2025-11-13T19:26:57",
+      "updatedDate": "2026-01-22T19:31:43",
+      "owner": "Dr. Debra Cooper",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4963.06,
+      "description": "Manage rule economic material response pressure yes."
+    },
+    {
+      "id": "10726557-4c17-4a90-9735-08b58efea32c",
+      "name": "Front-line eco-centric matrix 19",
+      "status": "Inactive",
+      "createdDate": "2026-01-30T17:52:21",
+      "updatedDate": "2026-02-03T12:43:39",
+      "owner": "Sheila Mendez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7571.96,
+      "description": "Several budget event brother city cut."
+    },
+    {
+      "id": "0300a219-b1a8-4b79-8b2c-ed5e8ea9c323",
+      "name": "Synergistic contextually-based open system 20",
+      "status": "Pending",
+      "createdDate": "2026-02-01T05:30:55",
+      "updatedDate": "2026-02-15T02:45:20",
+      "owner": "Monica Dean",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 884.34,
+      "description": "Fact wait plan about."
+    },
+    {
+      "id": "fdd6f9dd-e781-4046-b48b-920d641a0a78",
+      "name": "Intuitive attitude-oriented alliance 21",
+      "status": "Pending",
+      "createdDate": "2025-08-06T02:04:23",
+      "updatedDate": "2026-01-28T15:07:23",
+      "owner": "Brenda Turner",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5893.33,
+      "description": "Popular institution heavy."
+    },
+    {
+      "id": "24bc53ef-8005-4ce5-bce3-f1c885188019",
+      "name": "Operative content-based adapter 22",
+      "status": "Active",
+      "createdDate": "2025-11-21T08:39:52",
+      "updatedDate": "2026-01-31T00:15:40",
+      "owner": "Christina Choi",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6803.69,
+      "description": "Window hear behavior however pull."
+    },
+    {
+      "id": "77cb5051-54c8-43cd-abcc-0e916f8f2fbe",
+      "name": "Upgradable needs-based knowledge user 23",
+      "status": "Inactive",
+      "createdDate": "2025-11-21T08:46:45",
+      "updatedDate": "2026-01-22T04:54:37",
+      "owner": "Linda Clark",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 104.97,
+      "description": "First early huge nature."
+    },
+    {
+      "id": "b361aad5-c3e7-4569-844a-e0787b3f8deb",
+      "name": "Robust maximized matrix 24",
+      "status": "Pending",
+      "createdDate": "2025-10-17T07:17:05",
+      "updatedDate": "2026-02-07T01:58:26",
+      "owner": "Matthew Garcia",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7699.46,
+      "description": "Hair apply kind information."
+    },
+    {
+      "id": "421427d9-cafb-48bb-a6d0-d37a47655b7b",
+      "name": "Proactive non-volatile budgetary management 25",
+      "status": "Completed",
+      "createdDate": "2026-02-03T06:03:49",
+      "updatedDate": "2026-02-15T11:34:00",
+      "owner": "April Weber",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2375.75,
+      "description": "Rock interest worker worry for."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-kycdocument",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 708,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "fcccf7b3-57c4-4f6b-bdf2-da01e9816ae2",
+      "name": "Diverse mobile software 1",
+      "status": "Completed",
+      "createdDate": "2025-12-04T01:10:06",
+      "updatedDate": "2026-01-22T19:02:53",
+      "owner": "Julie Bates",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2950.76,
+      "description": "Several list page response professor."
+    },
+    {
+      "id": "2c52ade5-baca-4ef2-b117-ebeb8ff7bf73",
+      "name": "Reactive content-based solution 2",
+      "status": "Completed",
+      "createdDate": "2026-01-31T03:40:09",
+      "updatedDate": "2026-01-26T16:33:21",
+      "owner": "Mark Freeman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7802.78,
+      "description": "Baby three toward course billion student radio."
+    },
+    {
+      "id": "1de740c2-804e-45a5-b597-d876a7aa622f",
+      "name": "Persevering asynchronous projection 3",
+      "status": "Pending",
+      "createdDate": "2025-05-08T20:55:16",
+      "updatedDate": "2026-01-19T23:43:12",
+      "owner": "Melissa Reyes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2395.56,
+      "description": "Sit official style."
+    },
+    {
+      "id": "2c442bb2-d802-4c2d-affc-537ae5d1bc92",
+      "name": "Vision-oriented reciprocal open architecture 4",
+      "status": "Inactive",
+      "createdDate": "2025-11-14T04:41:32",
+      "updatedDate": "2026-02-13T01:26:22",
+      "owner": "Jose Clark",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8573.36,
+      "description": "Whom skin phone."
+    },
+    {
+      "id": "5cc30d92-6c4b-4606-b972-87e84c45154c",
+      "name": "Re-contextualized logistical Internet solution 5",
+      "status": "Active",
+      "createdDate": "2025-09-23T17:43:07",
+      "updatedDate": "2026-02-03T21:56:41",
+      "owner": "David Everett",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3082.74,
+      "description": "The billion special list PM."
+    },
+    {
+      "id": "d2bf54a6-b415-4702-a62f-fcad6bec0c60",
+      "name": "Multi-channeled national conglomeration 6",
+      "status": "Inactive",
+      "createdDate": "2025-03-28T01:25:35",
+      "updatedDate": "2026-02-02T22:00:45",
+      "owner": "Cameron Kim",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2941.18,
+      "description": "Young must expert message certainly describe seven."
+    },
+    {
+      "id": "3999b7e9-cb68-4f2b-90b0-a37a73d9cbfd",
+      "name": "Synergized dynamic algorithm 7",
+      "status": "Pending",
+      "createdDate": "2025-07-16T16:17:08",
+      "updatedDate": "2026-02-14T04:39:45",
+      "owner": "Megan Flowers",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2783.65,
+      "description": "Language along wear."
+    },
+    {
+      "id": "12644b94-e14b-4098-8640-110ff884fbc8",
+      "name": "Profit-focused tertiary framework 8",
+      "status": "Completed",
+      "createdDate": "2025-09-01T18:28:40",
+      "updatedDate": "2026-02-04T00:56:07",
+      "owner": "Mary Quinn",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1212.54,
+      "description": "Police upon responsibility order."
+    },
+    {
+      "id": "920746ab-ce94-4e6d-912f-3f2ee67739cb",
+      "name": "Re-engineered hybrid algorithm 9",
+      "status": "Inactive",
+      "createdDate": "2025-05-17T18:22:08",
+      "updatedDate": "2026-01-24T14:50:24",
+      "owner": "Melinda Ibarra",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9868.53,
+      "description": "Kid how space another western effect."
+    },
+    {
+      "id": "7fed9721-4e1e-4053-aca5-298a22cda9d2",
+      "name": "Customizable mission-critical system engine 10",
+      "status": "Inactive",
+      "createdDate": "2025-05-02T13:26:51",
+      "updatedDate": "2026-02-15T08:24:31",
+      "owner": "Jonathan Faulkner",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6534.37,
+      "description": "Product role a fast TV."
+    },
+    {
+      "id": "4bf9191e-bb4c-4b1c-9dd1-a321246b9ebc",
+      "name": "User-centric upward-trending collaboration 11",
+      "status": "Pending",
+      "createdDate": "2025-10-04T08:40:42",
+      "updatedDate": "2026-01-25T19:52:05",
+      "owner": "Bob Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2723.79,
+      "description": "Defense relationship entire others although sister central."
+    },
+    {
+      "id": "c25092fa-a750-42f4-a64f-716cec312378",
+      "name": "Pre-emptive multimedia artificial intelligence 12",
+      "status": "Inactive",
+      "createdDate": "2025-02-25T04:24:27",
+      "updatedDate": "2026-02-16T14:58:26",
+      "owner": "Melanie Carpenter",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1557.63,
+      "description": "Job stop computer important thought."
+    },
+    {
+      "id": "228e4a88-c685-4cf1-9ab5-8c7d0547c029",
+      "name": "Exclusive content-based focus group 13",
+      "status": "Inactive",
+      "createdDate": "2025-04-12T04:23:32",
+      "updatedDate": "2026-01-28T08:12:30",
+      "owner": "Lisa Huff",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2307.18,
+      "description": "Rule must fact later."
+    },
+    {
+      "id": "54f3e32e-e11c-4e47-a7ad-7b0ac9a0b622",
+      "name": "Pre-emptive heuristic strategy 14",
+      "status": "Active",
+      "createdDate": "2025-11-06T06:57:17",
+      "updatedDate": "2026-02-07T10:32:00",
+      "owner": "Rebecca Lloyd",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8604.96,
+      "description": "Simply goal thing person."
+    },
+    {
+      "id": "564ee305-b0a9-4158-aed7-abc60e7783d7",
+      "name": "Realigned 24/7 infrastructure 15",
+      "status": "Inactive",
+      "createdDate": "2025-10-28T03:11:17",
+      "updatedDate": "2026-02-16T17:09:22",
+      "owner": "Kimberly Lin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9643.44,
+      "description": "Believe safe name him."
+    },
+    {
+      "id": "eb2c4e20-4891-49d8-b305-27ac27d84e3f",
+      "name": "Digitized interactive strategy 16",
+      "status": "Pending",
+      "createdDate": "2025-04-13T21:25:50",
+      "updatedDate": "2026-02-01T01:35:31",
+      "owner": "Nathan Garcia",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3394.85,
+      "description": "Piece buy black within."
+    },
+    {
+      "id": "57d2eb41-b387-419a-b6c7-4a987c2c0ea7",
+      "name": "Managed client-driven protocol 17",
+      "status": "Active",
+      "createdDate": "2025-05-21T04:54:58",
+      "updatedDate": "2026-02-13T01:51:05",
+      "owner": "Andrew Guzman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 491.43,
+      "description": "She position few protect."
+    },
+    {
+      "id": "9e504322-05c0-4520-8531-261a1d0d155a",
+      "name": "Secured regional emulation 18",
+      "status": "Inactive",
+      "createdDate": "2025-12-08T10:01:57",
+      "updatedDate": "2026-01-19T05:00:29",
+      "owner": "Brandon Gordon",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3917.9,
+      "description": "Operation during decade everything me civil positive."
+    },
+    {
+      "id": "a2637bfd-f027-45b6-85e7-82da718d84ef",
+      "name": "Grass-roots client-driven archive 19",
+      "status": "Inactive",
+      "createdDate": "2025-10-05T18:58:23",
+      "updatedDate": "2026-01-23T15:52:16",
+      "owner": "Kathryn Powers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5777.01,
+      "description": "Kind natural for."
+    },
+    {
+      "id": "71e35bc0-d600-468f-a47c-94e85ca00bd1",
+      "name": "Multi-layered leadingedge task-force 20",
+      "status": "Completed",
+      "createdDate": "2025-05-26T04:41:36",
+      "updatedDate": "2026-01-22T17:26:07",
+      "owner": "David Myers",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1285.12,
+      "description": "Believe still idea condition local."
+    },
+    {
+      "id": "1d78d82f-0cdc-47c8-adc8-6e853c4313ec",
+      "name": "Assimilated disintermediate Internet solution 21",
+      "status": "Completed",
+      "createdDate": "2025-05-23T10:07:21",
+      "updatedDate": "2026-01-31T21:39:50",
+      "owner": "Michael Dixon",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9739.37,
+      "description": "Big management probably home hand."
+    },
+    {
+      "id": "5e60a13f-811c-4651-89d1-9df113fd74bc",
+      "name": "Configurable optimizing alliance 22",
+      "status": "Pending",
+      "createdDate": "2025-11-10T19:11:57",
+      "updatedDate": "2026-01-24T00:08:34",
+      "owner": "Alison Gonzalez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5369.97,
+      "description": "Relationship night work increase inside."
+    },
+    {
+      "id": "f0e012e4-cc3c-4b69-8013-97f59429f780",
+      "name": "Expanded solution-oriented Graphic Interface 23",
+      "status": "Completed",
+      "createdDate": "2025-12-26T13:11:00",
+      "updatedDate": "2026-02-03T10:46:24",
+      "owner": "Samuel Phillips",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3580.33,
+      "description": "Wife clear sport debate represent next."
+    },
+    {
+      "id": "a80277b2-6b7a-434c-8a1c-8d251c8d2dd8",
+      "name": "Multi-lateral 24/7 groupware 24",
+      "status": "Inactive",
+      "createdDate": "2025-09-29T08:38:13",
+      "updatedDate": "2026-02-10T10:24:08",
+      "owner": "Julie Nelson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8853.95,
+      "description": "Court plant type claim develop."
+    },
+    {
+      "id": "cf77fb5b-1788-448e-83c8-cd13b9693945",
+      "name": "Devolved methodical emulation 25",
+      "status": "Pending",
+      "createdDate": "2026-02-04T01:40:46",
+      "updatedDate": "2026-01-22T14:23:04",
+      "owner": "Henry Hunter",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8023.04,
+      "description": "Cold forward now hospital often maybe security fly."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

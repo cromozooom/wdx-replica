@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-active-only",
+  "totalCount": 938,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "9b62b8fa-30ee-4b77-b7bb-9fc43f9cea89",
+      "name": "Customer-focused solution-oriented benchmark 1",
+      "status": "Active",
+      "createdDate": "2025-11-10T04:32:44",
+      "updatedDate": "2026-02-11T16:41:44",
+      "owner": "Erica Garcia",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4530.43,
+      "description": "Station final floor trouble."
+    },
+    {
+      "id": "b9604048-e807-4c15-88c1-1444ea20aa0f",
+      "name": "Reduced neutral budgetary management 2",
+      "status": "Completed",
+      "createdDate": "2025-09-24T06:29:41",
+      "updatedDate": "2026-02-02T03:51:58",
+      "owner": "Casey Bowman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4680.56,
+      "description": "Guess indicate ground career a final main."
+    },
+    {
+      "id": "03ce3512-b323-4aa4-bf78-fdcabff106c8",
+      "name": "Switchable bandwidth-monitored solution 3",
+      "status": "Completed",
+      "createdDate": "2025-09-12T02:23:43",
+      "updatedDate": "2026-01-25T18:37:17",
+      "owner": "Frank Thomas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5034.16,
+      "description": "Quickly create glass prepare middle increase growth."
+    },
+    {
+      "id": "3e7f1ff3-446b-4e5d-8d20-0988c16bd39f",
+      "name": "Re-engineered dynamic neural-net 4",
+      "status": "Pending",
+      "createdDate": "2025-09-04T11:24:58",
+      "updatedDate": "2026-01-20T09:06:09",
+      "owner": "Jason Krueger",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9206.39,
+      "description": "Song do human report out."
+    },
+    {
+      "id": "df5af0de-7878-4afe-bd6b-dc7a0a861978",
+      "name": "Persevering attitude-oriented analyzer 5",
+      "status": "Completed",
+      "createdDate": "2025-05-04T20:10:59",
+      "updatedDate": "2026-02-07T02:58:21",
+      "owner": "Melissa Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9674.18,
+      "description": "Forget thus old plant."
+    },
+    {
+      "id": "4db435c4-8edb-43f7-b731-648d34ecaaed",
+      "name": "Automated transitional archive 6",
+      "status": "Active",
+      "createdDate": "2025-08-09T08:36:34",
+      "updatedDate": "2026-02-09T19:38:32",
+      "owner": "Jennifer Morgan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6905.29,
+      "description": "Give food language our person attention within."
+    },
+    {
+      "id": "c1795c14-cbf9-4edb-bd86-284df5415a7b",
+      "name": "Synchronized holistic frame 7",
+      "status": "Completed",
+      "createdDate": "2025-05-11T00:45:58",
+      "updatedDate": "2026-02-08T04:35:51",
+      "owner": "Jonathan Daniels",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1980.53,
+      "description": "Yourself ten debate expert field international."
+    },
+    {
+      "id": "97e90bfe-c332-4a78-9479-17fd34102810",
+      "name": "Realigned uniform ability 8",
+      "status": "Pending",
+      "createdDate": "2025-06-22T19:55:48",
+      "updatedDate": "2026-01-22T11:45:32",
+      "owner": "Mr. Parker Jones",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1960.06,
+      "description": "See every my shake federal."
+    },
+    {
+      "id": "177bcff3-8074-457d-84f2-981bbb1ee629",
+      "name": "Open-architected responsive firmware 9",
+      "status": "Active",
+      "createdDate": "2025-06-28T11:40:49",
+      "updatedDate": "2026-02-08T01:31:29",
+      "owner": "Jacob Alvarez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8059.61,
+      "description": "Question run American six expert thought."
+    },
+    {
+      "id": "02cd1b8c-ec32-487b-b587-046fc177aa51",
+      "name": "Visionary zero administration website 10",
+      "status": "Inactive",
+      "createdDate": "2026-01-17T17:53:08",
+      "updatedDate": "2026-02-13T10:27:18",
+      "owner": "Martin Gomez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4801.78,
+      "description": "Year least field picture show trial."
+    },
+    {
+      "id": "07cb96c0-dc0f-42c1-baf2-c3dfee71e4e6",
+      "name": "Synchronized coherent emulation 11",
+      "status": "Active",
+      "createdDate": "2025-11-13T06:29:50",
+      "updatedDate": "2026-02-04T22:38:26",
+      "owner": "Charlene Kane",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4162.4,
+      "description": "Middle education stay machine."
+    },
+    {
+      "id": "a78c4040-b1d0-4a45-9fff-dd8e34a670a1",
+      "name": "Decentralized mobile throughput 12",
+      "status": "Active",
+      "createdDate": "2025-07-04T12:46:36",
+      "updatedDate": "2026-02-08T08:36:58",
+      "owner": "Matthew Allen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2614.77,
+      "description": "Stop fear cause them trade rise of."
+    },
+    {
+      "id": "a2ca0ede-1dd6-4f4b-b332-68990ee54e9e",
+      "name": "Managed asynchronous budgetary management 13",
+      "status": "Active",
+      "createdDate": "2025-10-01T10:00:14",
+      "updatedDate": "2026-02-04T17:51:53",
+      "owner": "David Holmes",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6961.31,
+      "description": "They plan what method style color."
+    },
+    {
+      "id": "ea1e5555-0e58-43ab-9720-6dd587ce66c9",
+      "name": "Automated leadingedge alliance 14",
+      "status": "Inactive",
+      "createdDate": "2026-02-10T05:29:57",
+      "updatedDate": "2026-01-21T17:31:02",
+      "owner": "Chelsea Andrade",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4657.25,
+      "description": "Well ball clear let rock you."
+    },
+    {
+      "id": "f71062d7-0c7e-4b90-8373-7057089232e2",
+      "name": "Synergistic maximized secured line 15",
+      "status": "Inactive",
+      "createdDate": "2025-11-27T06:40:29",
+      "updatedDate": "2026-01-27T11:46:56",
+      "owner": "Matthew Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2881.39,
+      "description": "Beautiful coach respond radio media energy."
+    },
+    {
+      "id": "971b4aa5-bb37-4437-a7d0-9f60a715368a",
+      "name": "Synergistic multimedia structure 16",
+      "status": "Active",
+      "createdDate": "2025-06-21T11:53:24",
+      "updatedDate": "2026-01-25T20:28:00",
+      "owner": "Ricky Graham",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1172.44,
+      "description": "Size cultural quite question too."
+    },
+    {
+      "id": "be769369-1fd8-4242-a0e0-88987a07f303",
+      "name": "Future-proofed cohesive access 17",
+      "status": "Active",
+      "createdDate": "2025-04-24T02:13:23",
+      "updatedDate": "2026-01-19T17:34:47",
+      "owner": "Angel Mullins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7491.54,
+      "description": "Right market eye road."
+    },
+    {
+      "id": "e34741dc-a8ce-4124-a0dc-4476007c9a6e",
+      "name": "Stand-alone modular toolset 18",
+      "status": "Completed",
+      "createdDate": "2025-07-07T00:19:22",
+      "updatedDate": "2026-01-20T14:11:51",
+      "owner": "Joseph Grant",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 680.5,
+      "description": "Positive chance light recognize sea."
+    },
+    {
+      "id": "3de63849-17ab-447b-a83f-55b5f4abe4a2",
+      "name": "Pre-emptive explicit conglomeration 19",
+      "status": "Inactive",
+      "createdDate": "2026-01-11T03:42:13",
+      "updatedDate": "2026-02-01T16:27:40",
+      "owner": "Kristin Owens",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7406.08,
+      "description": "Short natural research."
+    },
+    {
+      "id": "31db47ae-f2e1-466a-ace7-ae92a410c82c",
+      "name": "Diverse interactive initiative 20",
+      "status": "Active",
+      "createdDate": "2026-01-27T01:20:49",
+      "updatedDate": "2026-01-26T10:31:33",
+      "owner": "James George",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1228.61,
+      "description": "Right morning store foreign."
+    },
+    {
+      "id": "e4371f79-44d4-4c8d-8ffd-486a5f6fb326",
+      "name": "Down-sized motivating application 21",
+      "status": "Active",
+      "createdDate": "2026-01-16T00:44:38",
+      "updatedDate": "2026-01-30T13:56:54",
+      "owner": "Mary Chandler",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8930.77,
+      "description": "Cold series here act others reach."
+    },
+    {
+      "id": "24275061-aac4-4211-a75d-53fe881352bb",
+      "name": "Visionary high-level website 22",
+      "status": "Pending",
+      "createdDate": "2025-03-31T20:33:18",
+      "updatedDate": "2026-01-29T16:05:16",
+      "owner": "Christopher Benson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8750.97,
+      "description": "Pressure red production less."
+    },
+    {
+      "id": "2dddfbc5-4446-4821-b962-0689d3e6495c",
+      "name": "User-friendly optimizing portal 23",
+      "status": "Completed",
+      "createdDate": "2025-07-10T10:05:28",
+      "updatedDate": "2026-01-24T20:35:50",
+      "owner": "Shannon Gomez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4653.2,
+      "description": "Whole party clear prepare anyone."
+    },
+    {
+      "id": "aa7d6bb7-e976-44db-96ac-2d26b6bdbdb9",
+      "name": "Progressive executive service-desk 24",
+      "status": "Active",
+      "createdDate": "2025-09-22T01:18:11",
+      "updatedDate": "2026-01-21T13:57:22",
+      "owner": "Micheal Brown",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6376.21,
+      "description": "Us white watch positive."
+    },
+    {
+      "id": "733f20c3-1fe0-4124-b424-da02d4bd0de4",
+      "name": "Integrated maximized neural-net 25",
+      "status": "Active",
+      "createdDate": "2025-07-20T00:42:50",
+      "updatedDate": "2026-01-26T05:16:13",
+      "owner": "Mary Tyler",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9619.76,
+      "description": "Natural choice try attention area."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

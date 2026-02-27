@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-modelportfolio",
+  "queryId": "query-all-records",
+  "totalCount": 1134,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "6d02370c-f795-4ef0-8ca1-0fb0c370e003",
+      "name": "Optional neutral structure 1",
+      "status": "Completed",
+      "createdDate": "2025-10-27T08:01:44",
+      "updatedDate": "2026-01-24T11:03:05",
+      "owner": "Molly Hernandez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4243.88,
+      "description": "Bar water notice go share gas which."
+    },
+    {
+      "id": "02b4313d-5b14-4d1b-a0ee-97b98bc46a9a",
+      "name": "Compatible directional open architecture 2",
+      "status": "Pending",
+      "createdDate": "2026-01-06T22:32:32",
+      "updatedDate": "2026-02-07T18:04:25",
+      "owner": "Cathy Anderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5805.12,
+      "description": "Total campaign yes ten Mr doctor go."
+    },
+    {
+      "id": "66d2d8b3-01f2-4432-9c23-de37e81ef9f2",
+      "name": "Stand-alone dedicated circuit 3",
+      "status": "Completed",
+      "createdDate": "2025-03-20T11:12:24",
+      "updatedDate": "2026-01-21T16:51:37",
+      "owner": "Karen Graves",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3805.41,
+      "description": "Truth focus her century democratic program offer."
+    },
+    {
+      "id": "440cfab2-b416-44a3-9d13-bd3e3e59302e",
+      "name": "User-centric didactic collaboration 4",
+      "status": "Active",
+      "createdDate": "2025-11-04T02:05:41",
+      "updatedDate": "2026-02-01T23:53:11",
+      "owner": "James Owens",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9969.24,
+      "description": "Writer sea by sure job time."
+    },
+    {
+      "id": "b12cf7a8-462c-4946-9634-78ea7700395e",
+      "name": "Visionary tangible emulation 5",
+      "status": "Active",
+      "createdDate": "2025-03-24T20:36:41",
+      "updatedDate": "2026-02-10T06:32:28",
+      "owner": "Marcus Ashley",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4103.03,
+      "description": "Involve young they."
+    },
+    {
+      "id": "d213ef8d-ce58-4970-b18d-cbe720a81ccb",
+      "name": "Right-sized reciprocal challenge 6",
+      "status": "Pending",
+      "createdDate": "2025-04-03T19:25:45",
+      "updatedDate": "2026-01-30T04:36:19",
+      "owner": "Steve Mueller",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3782.93,
+      "description": "Rock heavy around man."
+    },
+    {
+      "id": "fd35ff50-bffd-42a0-8c34-0aa5b4f84e1b",
+      "name": "Integrated impactful capacity 7",
+      "status": "Inactive",
+      "createdDate": "2025-12-28T04:20:46",
+      "updatedDate": "2026-02-02T10:27:42",
+      "owner": "Terrance Anderson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5424.4,
+      "description": "Can manage land century every."
+    },
+    {
+      "id": "2b841868-fd7a-4141-8c35-d4b9cb795994",
+      "name": "Universal even-keeled parallelism 8",
+      "status": "Pending",
+      "createdDate": "2025-08-30T12:32:53",
+      "updatedDate": "2026-02-05T06:41:30",
+      "owner": "Jennifer Monroe",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7652.11,
+      "description": "Anyone central year outside whom serve."
+    },
+    {
+      "id": "1991b570-7026-4b80-a7c5-dc60da8e66ed",
+      "name": "Self-enabling next generation utilization 9",
+      "status": "Active",
+      "createdDate": "2026-01-18T14:48:25",
+      "updatedDate": "2026-02-07T01:33:21",
+      "owner": "John Jacobson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1323.12,
+      "description": "Might hit piece kid risk trial six."
+    },
+    {
+      "id": "5a4af7b6-93e3-40fa-8a0e-8c5394b3f6db",
+      "name": "Horizontal neutral framework 10",
+      "status": "Completed",
+      "createdDate": "2025-10-23T05:10:42",
+      "updatedDate": "2026-01-21T14:45:50",
+      "owner": "Earl Gonzalez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 900.37,
+      "description": "Court mind magazine entire."
+    },
+    {
+      "id": "10e4231d-c833-4b1c-9fd0-ca0f9dc060e8",
+      "name": "Decentralized maximized system engine 11",
+      "status": "Inactive",
+      "createdDate": "2025-06-27T00:50:53",
+      "updatedDate": "2026-02-15T09:06:56",
+      "owner": "Brian Brown",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3176.29,
+      "description": "Eat catch keep recent American."
+    },
+    {
+      "id": "f006e5b5-42fa-46a6-9db3-181f7a317f92",
+      "name": "Centralized modular data-warehouse 12",
+      "status": "Inactive",
+      "createdDate": "2025-07-26T03:41:50",
+      "updatedDate": "2026-01-19T12:04:13",
+      "owner": "Jason Rogers",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3332.61,
+      "description": "Political likely wife compare shake knowledge television question."
+    },
+    {
+      "id": "20419935-52da-434d-972f-d9d6e6003822",
+      "name": "Diverse hybrid firmware 13",
+      "status": "Active",
+      "createdDate": "2025-11-11T17:39:04",
+      "updatedDate": "2026-02-02T16:53:38",
+      "owner": "Gina Murray",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6529.69,
+      "description": "Or personal option about."
+    },
+    {
+      "id": "eddade99-efe3-4d8d-821f-a295da96a467",
+      "name": "Cross-group grid-enabled methodology 14",
+      "status": "Completed",
+      "createdDate": "2025-09-29T07:52:43",
+      "updatedDate": "2026-02-17T06:15:59",
+      "owner": "Gabrielle Morris",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4962.37,
+      "description": "Group method contain natural."
+    },
+    {
+      "id": "2c5aba67-4a3c-4d90-b5b0-c097def56908",
+      "name": "Advanced 5thgeneration challenge 15",
+      "status": "Inactive",
+      "createdDate": "2025-02-27T23:27:06",
+      "updatedDate": "2026-01-21T01:35:43",
+      "owner": "Brian Delgado",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5316.19,
+      "description": "Central else by car religious only."
+    },
+    {
+      "id": "c1a8846f-2d5d-4f19-992e-9cbf50903a58",
+      "name": "Diverse high-level methodology 16",
+      "status": "Completed",
+      "createdDate": "2025-07-07T05:42:47",
+      "updatedDate": "2026-02-08T23:24:21",
+      "owner": "Scott Walter",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4375.62,
+      "description": "It Mr less floor race health."
+    },
+    {
+      "id": "14fc415a-2f1f-4b0d-976e-595c23434614",
+      "name": "Reactive value-added benchmark 17",
+      "status": "Inactive",
+      "createdDate": "2025-12-09T13:23:52",
+      "updatedDate": "2026-02-08T17:13:22",
+      "owner": "Amber Lamb",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9237.37,
+      "description": "Notice move offer top action model."
+    },
+    {
+      "id": "42d182a1-0bbe-437d-be44-2807b623df98",
+      "name": "Function-based disintermediate task-force 18",
+      "status": "Active",
+      "createdDate": "2025-12-08T20:36:52",
+      "updatedDate": "2026-01-20T06:35:53",
+      "owner": "Daniel Lee",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3267.69,
+      "description": "School suggest bring board network."
+    },
+    {
+      "id": "7c7bc00f-4bb0-4c90-a1bc-04769d58ca81",
+      "name": "Virtual dynamic utilization 19",
+      "status": "Active",
+      "createdDate": "2025-08-02T11:34:49",
+      "updatedDate": "2026-02-14T09:40:06",
+      "owner": "Melissa Herman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5845.88,
+      "description": "End personal operation dog."
+    },
+    {
+      "id": "b9ddfc67-4b8c-461c-8cb2-52de65266c56",
+      "name": "Sharable contextually-based Graphical User Interface 20",
+      "status": "Completed",
+      "createdDate": "2025-04-26T10:54:21",
+      "updatedDate": "2026-02-15T10:17:23",
+      "owner": "Kent Berg",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5988.69,
+      "description": "Trouble opportunity recognize media third."
+    },
+    {
+      "id": "e5cda708-473c-424c-996f-f177463abf82",
+      "name": "Multi-layered 24/7 product 21",
+      "status": "Active",
+      "createdDate": "2025-06-09T19:37:12",
+      "updatedDate": "2026-01-29T23:55:44",
+      "owner": "Michelle Reyes",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9085.28,
+      "description": "Sell image always particular leader during season."
+    },
+    {
+      "id": "989578d9-419f-4247-93cf-f0e6c6dd054d",
+      "name": "Exclusive uniform project 22",
+      "status": "Completed",
+      "createdDate": "2025-05-06T04:34:06",
+      "updatedDate": "2026-02-06T20:52:04",
+      "owner": "Sabrina Hernandez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8912.54,
+      "description": "To relationship choice his so raise action."
+    },
+    {
+      "id": "54352813-4a5d-499e-b15c-ef67b35317de",
+      "name": "Organized user-facing contingency 23",
+      "status": "Completed",
+      "createdDate": "2025-05-25T14:02:54",
+      "updatedDate": "2026-02-11T22:51:39",
+      "owner": "William Tate",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1689.64,
+      "description": "Painting southern nothing size whole himself."
+    },
+    {
+      "id": "58426ca1-34e9-45b3-b490-a44a6ad38386",
+      "name": "Expanded radical workforce 24",
+      "status": "Active",
+      "createdDate": "2025-06-28T18:32:22",
+      "updatedDate": "2026-02-08T11:11:55",
+      "owner": "Carol Hernandez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7640.63,
+      "description": "Himself dinner capital offer loss raise pick."
+    },
+    {
+      "id": "98c1997d-1992-49f3-a7f7-41a6817b203b",
+      "name": "Business-focused heuristic attitude 25",
+      "status": "Active",
+      "createdDate": "2025-07-28T15:24:30",
+      "updatedDate": "2026-01-31T16:45:18",
+      "owner": "Jeff Alvarez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6186.43,
+      "description": "Government campaign law life."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

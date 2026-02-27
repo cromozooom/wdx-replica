@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-modelportfolio",
+  "queryId": "query-all-records",
+  "totalCount": 579,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "1833237c-b8d2-4822-b537-3209ce2f3aa2",
+      "name": "Extended 24hour interface 1",
+      "status": "Inactive",
+      "createdDate": "2026-01-23T20:31:36",
+      "updatedDate": "2026-02-13T00:49:48",
+      "owner": "Steven Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7463.12,
+      "description": "Seven subject put significant."
+    },
+    {
+      "id": "43c3ccfb-3da5-4257-913c-419372195c5b",
+      "name": "Inverse full-range portal 2",
+      "status": "Active",
+      "createdDate": "2025-10-09T02:40:33",
+      "updatedDate": "2026-02-04T12:35:45",
+      "owner": "Rebecca Nguyen",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3772.89,
+      "description": "Hold without employee."
+    },
+    {
+      "id": "492fdf91-4e42-4021-9e39-d6c224b8ae03",
+      "name": "Balanced discrete help-desk 3",
+      "status": "Completed",
+      "createdDate": "2025-07-20T07:37:18",
+      "updatedDate": "2026-01-28T10:21:52",
+      "owner": "Thomas Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1246.28,
+      "description": "Southern value experience claim."
+    },
+    {
+      "id": "91c74b0b-f513-4577-ab4a-d63fb799c84a",
+      "name": "Universal fresh-thinking forecast 4",
+      "status": "Completed",
+      "createdDate": "2025-05-10T08:34:09",
+      "updatedDate": "2026-02-16T16:08:57",
+      "owner": "Abigail Solis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5110.12,
+      "description": "Technology over rock."
+    },
+    {
+      "id": "81678666-9e7d-4151-8b7d-eded3cef45a5",
+      "name": "Quality-focused homogeneous software 5",
+      "status": "Completed",
+      "createdDate": "2025-03-18T09:33:20",
+      "updatedDate": "2026-01-22T10:30:05",
+      "owner": "Brandon Murray",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5606.42,
+      "description": "Maintain ground rich house fine nation analysis by."
+    },
+    {
+      "id": "58ab30e7-9ca4-4bc9-a074-1e47dab1bc02",
+      "name": "Reverse-engineered contextually-based info-mediaries 6",
+      "status": "Completed",
+      "createdDate": "2025-09-09T18:34:21",
+      "updatedDate": "2026-02-01T05:36:15",
+      "owner": "Mark Reyes",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7496.2,
+      "description": "Contain major change."
+    },
+    {
+      "id": "1fcfedc2-1fb6-45a8-975c-f242548424b9",
+      "name": "Public-key reciprocal core 7",
+      "status": "Pending",
+      "createdDate": "2026-02-01T05:50:38",
+      "updatedDate": "2026-01-20T19:44:06",
+      "owner": "Melissa Thomas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9110.51,
+      "description": "What respond serious draw sport good."
+    },
+    {
+      "id": "9ef733ea-3dc9-441b-abef-b0b75dcdf018",
+      "name": "Object-based zero tolerance time-frame 8",
+      "status": "Completed",
+      "createdDate": "2025-02-25T12:02:11",
+      "updatedDate": "2026-02-16T04:41:35",
+      "owner": "John Mccoy",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3054.08,
+      "description": "Behind maintain best also situation yes."
+    },
+    {
+      "id": "359c15a6-22a8-4d28-9db8-6b01577819bd",
+      "name": "Implemented regional utilization 9",
+      "status": "Completed",
+      "createdDate": "2025-12-30T07:36:28",
+      "updatedDate": "2026-01-28T09:00:31",
+      "owner": "Caitlin Ortega",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5696.63,
+      "description": "Time military or natural plan."
+    },
+    {
+      "id": "9633bf18-c8df-42cc-9ca7-905c3992f627",
+      "name": "Managed neutral toolset 10",
+      "status": "Active",
+      "createdDate": "2025-07-05T18:04:41",
+      "updatedDate": "2026-01-28T11:23:41",
+      "owner": "Douglas Long",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6206.05,
+      "description": "Political near relate daughter soon imagine."
+    },
+    {
+      "id": "ae075f69-72a3-4199-a01f-86224ab53724",
+      "name": "Up-sized mission-critical structure 11",
+      "status": "Pending",
+      "createdDate": "2025-11-28T03:37:43",
+      "updatedDate": "2026-01-31T02:04:53",
+      "owner": "Tiffany Mcguire",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4020.41,
+      "description": "Build clearly try nor blue service."
+    },
+    {
+      "id": "adff9372-8e49-4dff-b488-52cbbf1ca216",
+      "name": "Intuitive holistic capability 12",
+      "status": "Active",
+      "createdDate": "2025-10-10T16:51:18",
+      "updatedDate": "2026-02-13T13:23:51",
+      "owner": "Susan Walker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 115.11,
+      "description": "Step consumer way throughout join wall."
+    },
+    {
+      "id": "4abe06f9-0a32-4c98-b545-efdc9bf2064c",
+      "name": "Cross-platform reciprocal interface 13",
+      "status": "Active",
+      "createdDate": "2025-05-31T03:39:28",
+      "updatedDate": "2026-02-01T20:27:26",
+      "owner": "Mary Schultz MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8540.43,
+      "description": "Card seven indeed the well south wish."
+    },
+    {
+      "id": "7a41b2b7-6fd2-4527-8769-31da8da7ab9c",
+      "name": "Cross-platform neutral approach 14",
+      "status": "Inactive",
+      "createdDate": "2025-03-16T04:56:53",
+      "updatedDate": "2026-02-01T00:31:26",
+      "owner": "Trevor Bean",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9468.27,
+      "description": "How rise mother."
+    },
+    {
+      "id": "4951f6b4-91af-49a8-b188-8a6ba9b4e7a0",
+      "name": "Streamlined zero administration secured line 15",
+      "status": "Inactive",
+      "createdDate": "2025-09-24T11:11:21",
+      "updatedDate": "2026-02-06T16:12:53",
+      "owner": "Gregory Hanson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 666.09,
+      "description": "Follow evening whole."
+    },
+    {
+      "id": "51b2cbdf-04d7-4b5c-9f51-d269f15f19ed",
+      "name": "Object-based global infrastructure 16",
+      "status": "Completed",
+      "createdDate": "2025-09-17T03:24:39",
+      "updatedDate": "2026-02-09T10:13:01",
+      "owner": "Manuel Anderson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3884.27,
+      "description": "Medical face later whom assume commercial serve."
+    },
+    {
+      "id": "40d295c7-c672-455a-8e5b-138da4aa5384",
+      "name": "Mandatory national knowledgebase 17",
+      "status": "Inactive",
+      "createdDate": "2025-09-28T17:05:32",
+      "updatedDate": "2026-01-23T00:03:16",
+      "owner": "Julia Ortiz",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9624.07,
+      "description": "Difference choose peace foreign college data today church."
+    },
+    {
+      "id": "62999d65-9907-41f5-9edb-8305e07a8312",
+      "name": "Multi-tiered clear-thinking approach 18",
+      "status": "Inactive",
+      "createdDate": "2025-11-15T12:12:20",
+      "updatedDate": "2026-01-19T12:25:26",
+      "owner": "Connie Cross",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7313.73,
+      "description": "Inside near before."
+    },
+    {
+      "id": "10badffa-168b-40f2-8e8b-10701643963d",
+      "name": "Sharable eco-centric infrastructure 19",
+      "status": "Completed",
+      "createdDate": "2025-12-08T12:41:30",
+      "updatedDate": "2026-02-02T09:55:17",
+      "owner": "Tyler Mckinney",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8631.36,
+      "description": "Guess finish sport everyone tonight more."
+    },
+    {
+      "id": "e6fa9e94-0c21-426b-b544-929f22277023",
+      "name": "Multi-layered 4thgeneration synergy 20",
+      "status": "Inactive",
+      "createdDate": "2026-01-10T22:28:43",
+      "updatedDate": "2026-01-21T19:47:02",
+      "owner": "Robert Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4597.12,
+      "description": "Present although charge step."
+    },
+    {
+      "id": "f86c887f-4001-4897-bea0-6c566155776b",
+      "name": "Implemented neutral implementation 21",
+      "status": "Inactive",
+      "createdDate": "2025-11-30T22:37:45",
+      "updatedDate": "2026-02-01T08:58:16",
+      "owner": "Miguel Roberts",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3449.27,
+      "description": "Worker parent all lose structure."
+    },
+    {
+      "id": "efa27ce8-004d-4883-81c6-43e50822200b",
+      "name": "Fundamental 6thgeneration Internet solution 22",
+      "status": "Pending",
+      "createdDate": "2025-02-18T18:22:01",
+      "updatedDate": "2026-01-29T06:18:21",
+      "owner": "Paul Austin",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6525.94,
+      "description": "Bed themselves position camera woman light."
+    },
+    {
+      "id": "3b55315e-9527-4fb7-bf60-55daa780c6b2",
+      "name": "Integrated system-worthy circuit 23",
+      "status": "Pending",
+      "createdDate": "2025-02-24T14:41:55",
+      "updatedDate": "2026-01-22T16:27:22",
+      "owner": "Zachary Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6559.47,
+      "description": "Could candidate whole section."
+    },
+    {
+      "id": "ed7f4a12-bcc3-472c-a88a-13c1ef1cac2a",
+      "name": "Expanded disintermediate forecast 24",
+      "status": "Inactive",
+      "createdDate": "2026-01-04T22:53:10",
+      "updatedDate": "2026-01-26T01:07:48",
+      "owner": "Robert Rice",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2659.46,
+      "description": "Still much dog also any move consumer."
+    },
+    {
+      "id": "26b21d0c-1b74-4e4c-a8c4-f7aeafee5f39",
+      "name": "Organized cohesive instruction set 25",
+      "status": "Pending",
+      "createdDate": "2026-01-29T18:38:49",
+      "updatedDate": "2026-02-12T14:26:21",
+      "owner": "Todd Ramirez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5494.98,
+      "description": "Plant customer allow blood."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

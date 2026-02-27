@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 496,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b743964c-734d-486f-91cf-a5966bf4bed2",
+      "name": "Enhanced multi-state analyzer 1",
+      "status": "Completed",
+      "createdDate": "2025-12-06T14:27:02",
+      "updatedDate": "2026-02-01T11:07:25",
+      "owner": "James Friedman",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7738.76,
+      "description": "According would enough law."
+    },
+    {
+      "id": "cf2b5536-95c4-4ff2-95e1-8827c65a77a8",
+      "name": "Upgradable client-server access 2",
+      "status": "Completed",
+      "createdDate": "2025-05-17T11:53:15",
+      "updatedDate": "2026-01-27T02:16:22",
+      "owner": "Denise Taylor",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2152.74,
+      "description": "Gas fish amount clear."
+    },
+    {
+      "id": "84e073cd-a536-4504-b50d-0d99a087c72b",
+      "name": "Multi-lateral client-driven project 3",
+      "status": "Inactive",
+      "createdDate": "2025-05-27T14:20:26",
+      "updatedDate": "2026-02-16T15:25:59",
+      "owner": "Samantha Davis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4118.51,
+      "description": "Too people have specific."
+    },
+    {
+      "id": "6218ae8e-a59f-4692-8d6f-80df565cc15b",
+      "name": "Face-to-face bi-directional hub 4",
+      "status": "Inactive",
+      "createdDate": "2025-11-28T15:34:23",
+      "updatedDate": "2026-02-09T05:17:37",
+      "owner": "Emily Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8241.21,
+      "description": "Focus talk often turn factor ability."
+    },
+    {
+      "id": "0eb95678-c4ca-4769-b878-34ddc0a8a9c5",
+      "name": "Down-sized human-resource algorithm 5",
+      "status": "Inactive",
+      "createdDate": "2025-09-22T09:59:48",
+      "updatedDate": "2026-01-24T01:01:08",
+      "owner": "Kenneth Peterson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 814.71,
+      "description": "Far resource store politics."
+    },
+    {
+      "id": "c6f2131f-7d5e-43c4-ad3c-d9973dd1e9a0",
+      "name": "Function-based tertiary open architecture 6",
+      "status": "Inactive",
+      "createdDate": "2025-03-15T13:38:12",
+      "updatedDate": "2026-02-15T10:24:47",
+      "owner": "Laura Sutton",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1660.89,
+      "description": "Receive see color rise event machine important."
+    },
+    {
+      "id": "32a9e786-d087-454c-9f40-ed44b8332e79",
+      "name": "Enterprise-wide zero administration monitoring 7",
+      "status": "Inactive",
+      "createdDate": "2025-07-06T03:57:53",
+      "updatedDate": "2026-01-23T00:45:31",
+      "owner": "Debra Reed",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5656.78,
+      "description": "Almost evidence produce successful event magazine."
+    },
+    {
+      "id": "b8f86c93-a2bc-44aa-a452-dc7f12407c38",
+      "name": "Future-proofed zero-defect concept 8",
+      "status": "Pending",
+      "createdDate": "2025-12-15T17:47:01",
+      "updatedDate": "2026-01-19T22:42:22",
+      "owner": "Angela Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7916.76,
+      "description": "Player eat under message wonder magazine enjoy."
+    },
+    {
+      "id": "fcd8777d-bb92-4255-90ca-981bd3eccf69",
+      "name": "Future-proofed directional project 9",
+      "status": "Completed",
+      "createdDate": "2025-07-12T09:21:45",
+      "updatedDate": "2026-01-20T15:22:14",
+      "owner": "Gregory Huynh",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1456.29,
+      "description": "Enjoy would military."
+    },
+    {
+      "id": "f52dfa00-1a5a-4415-872f-81535de31127",
+      "name": "Ergonomic client-driven projection 10",
+      "status": "Active",
+      "createdDate": "2025-04-21T04:49:12",
+      "updatedDate": "2026-02-04T08:16:33",
+      "owner": "Gabriel Obrien",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 990.31,
+      "description": "System TV present energy television."
+    },
+    {
+      "id": "2f96ac54-3f13-4b66-bbe0-da624cb12872",
+      "name": "Innovative motivating access 11",
+      "status": "Pending",
+      "createdDate": "2025-12-29T06:34:06",
+      "updatedDate": "2026-01-23T13:09:02",
+      "owner": "Julie Clark",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9663.76,
+      "description": "People carry goal able help recognize adult."
+    },
+    {
+      "id": "66ff7ed0-1042-4b92-abab-f08aba6d304e",
+      "name": "Right-sized content-based function 12",
+      "status": "Completed",
+      "createdDate": "2025-12-02T22:45:39",
+      "updatedDate": "2026-02-13T00:49:23",
+      "owner": "Andrew Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6097.37,
+      "description": "Doctor enough inside step through hold."
+    },
+    {
+      "id": "7f613446-a5fc-485a-898c-9337ca1c8499",
+      "name": "Secured needs-based moderator 13",
+      "status": "Completed",
+      "createdDate": "2026-01-09T08:51:25",
+      "updatedDate": "2026-02-08T04:06:09",
+      "owner": "Deborah Roberts",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 532.88,
+      "description": "Good place later green."
+    },
+    {
+      "id": "c6476014-7c3c-4a94-8c86-098060b623a9",
+      "name": "Fundamental hybrid utilization 14",
+      "status": "Inactive",
+      "createdDate": "2025-06-01T01:41:25",
+      "updatedDate": "2026-01-18T12:40:51",
+      "owner": "Chelsea Conrad",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8007.02,
+      "description": "Look other carry cup last create."
+    },
+    {
+      "id": "b8d106c6-a366-4e0a-af62-373e96504269",
+      "name": "Programmable value-added artificial intelligence 15",
+      "status": "Active",
+      "createdDate": "2025-07-29T19:55:18",
+      "updatedDate": "2026-01-21T18:07:10",
+      "owner": "Aaron Patel",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1334.9,
+      "description": "She light teach defense pass."
+    },
+    {
+      "id": "1799e560-c4b0-4ced-9481-8aa6aff07e3a",
+      "name": "Stand-alone encompassing collaboration 16",
+      "status": "Completed",
+      "createdDate": "2025-04-22T15:50:04",
+      "updatedDate": "2026-02-12T23:20:33",
+      "owner": "Kristin Miller",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2560.88,
+      "description": "Would whom happy evening save."
+    },
+    {
+      "id": "a3a4d87e-9455-4c2a-b883-b989b36f142b",
+      "name": "Right-sized explicit project 17",
+      "status": "Active",
+      "createdDate": "2025-09-11T21:20:45",
+      "updatedDate": "2026-02-13T18:55:39",
+      "owner": "Alexandria Sanchez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7850.06,
+      "description": "Inside bring response less."
+    },
+    {
+      "id": "da4ff78f-3640-4f5a-a6c5-9fe9324569ab",
+      "name": "Organized multimedia artificial intelligence 18",
+      "status": "Completed",
+      "createdDate": "2026-02-06T01:09:37",
+      "updatedDate": "2026-02-14T18:01:28",
+      "owner": "James Thomas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7096.77,
+      "description": "Wall right television practice."
+    },
+    {
+      "id": "c3bf85a1-2d1f-422c-8b31-341b9621225e",
+      "name": "Seamless needs-based encoding 19",
+      "status": "Active",
+      "createdDate": "2026-02-10T08:02:49",
+      "updatedDate": "2026-02-10T12:51:52",
+      "owner": "Olivia Swanson MD",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6332.56,
+      "description": "According eat paper new recently most senior."
+    },
+    {
+      "id": "c5e76fae-a400-4c96-8b2e-acb70c4e5a58",
+      "name": "Multi-tiered user-facing definition 20",
+      "status": "Completed",
+      "createdDate": "2025-03-15T17:10:21",
+      "updatedDate": "2026-01-21T21:29:44",
+      "owner": "Craig Grimes",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 860.28,
+      "description": "In edge board low black property dinner."
+    },
+    {
+      "id": "afac304b-c923-41dd-8efd-388e15cf1a57",
+      "name": "Business-focused context-sensitive flexibility 21",
+      "status": "Completed",
+      "createdDate": "2025-09-28T19:25:08",
+      "updatedDate": "2026-02-05T11:13:24",
+      "owner": "Bryan Martinez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2384.58,
+      "description": "Away book within rate."
+    },
+    {
+      "id": "b93e809e-6854-45c9-9fc0-b2998218d630",
+      "name": "Multi-lateral executive ability 22",
+      "status": "Active",
+      "createdDate": "2025-11-04T04:14:19",
+      "updatedDate": "2026-02-05T17:05:27",
+      "owner": "Scott Crawford",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4393.81,
+      "description": "Soon hand game old."
+    },
+    {
+      "id": "d825429b-4e98-432e-80c4-3cdcf9c63927",
+      "name": "Automated multi-tasking installation 23",
+      "status": "Completed",
+      "createdDate": "2025-10-06T03:12:23",
+      "updatedDate": "2026-02-06T20:55:30",
+      "owner": "John Vargas",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4132.86,
+      "description": "World manage above several well home."
+    },
+    {
+      "id": "f1b460d8-911c-4d50-9d6e-343f3064dbfd",
+      "name": "Future-proofed reciprocal function 24",
+      "status": "Inactive",
+      "createdDate": "2026-02-15T04:22:46",
+      "updatedDate": "2026-02-06T15:39:08",
+      "owner": "Laura Williams",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3606.17,
+      "description": "Apply way hair late."
+    },
+    {
+      "id": "253d1b66-1858-4924-a6c4-a00d9d7cba20",
+      "name": "Virtual value-added array 25",
+      "status": "Inactive",
+      "createdDate": "2025-05-15T22:55:34",
+      "updatedDate": "2026-01-24T20:51:33",
+      "owner": "Teresa Morris",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7436.73,
+      "description": "Us fly to watch able."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-active-only",
+  "totalCount": 218,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "890f58d9-5533-4e49-a7d6-f4f5f01badfe",
+      "name": "Managed attitude-oriented analyzer 1",
+      "status": "Active",
+      "createdDate": "2026-01-11T18:01:14",
+      "updatedDate": "2026-02-04T05:20:43",
+      "owner": "Kaitlin Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8249.33,
+      "description": "Team level view."
+    },
+    {
+      "id": "0d22ad0a-9c39-4382-ae4d-5923584b6b63",
+      "name": "Managed exuding process improvement 2",
+      "status": "Active",
+      "createdDate": "2025-06-03T09:55:37",
+      "updatedDate": "2026-02-07T23:39:22",
+      "owner": "Kenneth Ray",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1814.68,
+      "description": "Quite wife create."
+    },
+    {
+      "id": "e7f95369-d7e2-4fad-bae4-5e5c66881683",
+      "name": "De-engineered asynchronous data-warehouse 3",
+      "status": "Pending",
+      "createdDate": "2026-01-22T20:43:44",
+      "updatedDate": "2026-01-22T02:35:33",
+      "owner": "Emily Harper",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5650.73,
+      "description": "Notice start ready another lose try south."
+    },
+    {
+      "id": "06d21d82-d09b-403c-a527-9bbf614f8058",
+      "name": "Cross-group coherent conglomeration 4",
+      "status": "Completed",
+      "createdDate": "2025-10-03T19:46:11",
+      "updatedDate": "2026-01-30T12:23:09",
+      "owner": "Jesse Mclaughlin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5096.69,
+      "description": "Approach hotel reduce few thing sing."
+    },
+    {
+      "id": "38959ba3-179f-4ade-b65d-065de56fe0de",
+      "name": "Face-to-face human-resource analyzer 5",
+      "status": "Active",
+      "createdDate": "2025-11-24T17:04:20",
+      "updatedDate": "2026-02-11T02:29:19",
+      "owner": "Joshua Sullivan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8801.5,
+      "description": "National space organization fear."
+    },
+    {
+      "id": "3c674974-e6ab-4389-bdd3-7d9eddbc01e3",
+      "name": "Secured solution-oriented intranet 6",
+      "status": "Active",
+      "createdDate": "2025-06-25T01:30:57",
+      "updatedDate": "2026-02-04T16:53:01",
+      "owner": "David Duncan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7898.04,
+      "description": "Trouble near eat Mr include."
+    },
+    {
+      "id": "46b387a4-9bc4-40cc-b7c1-25770f34c189",
+      "name": "Integrated upward-trending emulation 7",
+      "status": "Active",
+      "createdDate": "2025-02-18T14:19:24",
+      "updatedDate": "2026-01-27T10:24:34",
+      "owner": "Christopher Brandt",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5190.33,
+      "description": "Somebody sound amount this save me."
+    },
+    {
+      "id": "e3c5e0b2-ce0a-418b-94f7-e7b3b5ffc329",
+      "name": "Enterprise-wide neutral data-warehouse 8",
+      "status": "Active",
+      "createdDate": "2025-11-28T04:03:35",
+      "updatedDate": "2026-02-01T09:21:03",
+      "owner": "Lindsay Christensen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7051.19,
+      "description": "Police discuss the."
+    },
+    {
+      "id": "b6859327-53fd-4dfd-ae3e-ac64710e9141",
+      "name": "Focused maximized policy 9",
+      "status": "Pending",
+      "createdDate": "2025-07-07T16:02:45",
+      "updatedDate": "2026-01-19T02:41:30",
+      "owner": "Alexander Lawson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 261.21,
+      "description": "Simple most notice he."
+    },
+    {
+      "id": "d006777e-4241-4f61-be7c-f4fbb217947f",
+      "name": "Devolved zero-defect moratorium 10",
+      "status": "Pending",
+      "createdDate": "2025-09-09T03:47:30",
+      "updatedDate": "2026-02-08T09:24:18",
+      "owner": "Jamie Atkinson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 100.37,
+      "description": "Nothing least large sense."
+    },
+    {
+      "id": "2928e8ca-83d5-4c19-812c-382a765cdcdd",
+      "name": "Distributed executive complexity 11",
+      "status": "Completed",
+      "createdDate": "2025-09-12T22:09:01",
+      "updatedDate": "2026-02-07T07:08:59",
+      "owner": "Thomas Tate",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8793.15,
+      "description": "Market ground research good us point."
+    },
+    {
+      "id": "b7f45b3a-5a74-405a-b63f-5c91d73a5967",
+      "name": "Function-based clear-thinking workforce 12",
+      "status": "Completed",
+      "createdDate": "2025-07-29T03:05:46",
+      "updatedDate": "2026-01-20T18:22:21",
+      "owner": "Olivia Mooney",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 649.62,
+      "description": "Structure smile ready big music add."
+    },
+    {
+      "id": "7ecd0c52-011c-4454-b392-555d675b2876",
+      "name": "Cloned foreground function 13",
+      "status": "Active",
+      "createdDate": "2026-01-17T06:06:05",
+      "updatedDate": "2026-01-19T21:02:03",
+      "owner": "Cindy Bonilla",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8809.77,
+      "description": "Father choose suffer small our trouble."
+    },
+    {
+      "id": "e56262b3-53ae-4ad1-b2e7-ef73a425d160",
+      "name": "Self-enabling attitude-oriented process improvement 14",
+      "status": "Completed",
+      "createdDate": "2025-12-11T06:06:46",
+      "updatedDate": "2026-01-28T02:24:42",
+      "owner": "Trevor Marsh",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2656.45,
+      "description": "Believe time Congress better."
+    },
+    {
+      "id": "1938f19c-f274-431f-8a96-5ca7a859d083",
+      "name": "Face-to-face high-level monitoring 15",
+      "status": "Completed",
+      "createdDate": "2025-03-07T00:13:24",
+      "updatedDate": "2026-02-05T16:30:59",
+      "owner": "Alicia Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1632.99,
+      "description": "Another officer under rate loss stay."
+    },
+    {
+      "id": "6a3bddb9-d5e2-4f04-945c-bf80294ae208",
+      "name": "Pre-emptive real-time concept 16",
+      "status": "Active",
+      "createdDate": "2025-08-07T16:22:45",
+      "updatedDate": "2026-01-31T08:33:28",
+      "owner": "Amanda Brown",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3669.33,
+      "description": "Range matter late pressure happen address charge possible."
+    },
+    {
+      "id": "fded346f-543c-4121-8927-487f4a2edc13",
+      "name": "Horizontal discrete orchestration 17",
+      "status": "Pending",
+      "createdDate": "2025-07-07T00:34:03",
+      "updatedDate": "2026-02-14T20:55:38",
+      "owner": "Jessica Collins",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6006.16,
+      "description": "Send reality young machine nor site."
+    },
+    {
+      "id": "d532cf3d-514a-4c1b-97b5-ff2179464f1b",
+      "name": "Mandatory discrete Graphic Interface 18",
+      "status": "Active",
+      "createdDate": "2025-05-25T02:14:35",
+      "updatedDate": "2026-02-12T16:29:54",
+      "owner": "Pamela Lambert",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5153.1,
+      "description": "Keep job debate available likely tell soon."
+    },
+    {
+      "id": "a69b7d93-71f5-4c6e-85e2-c7b654af91ab",
+      "name": "Decentralized human-resource interface 19",
+      "status": "Active",
+      "createdDate": "2025-09-10T09:12:03",
+      "updatedDate": "2026-02-02T11:12:45",
+      "owner": "Christopher Todd",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2558.07,
+      "description": "Fall current care above."
+    },
+    {
+      "id": "d2135124-2dc2-4069-8fea-a6ace2bcf0e9",
+      "name": "Integrated zero tolerance software 20",
+      "status": "Active",
+      "createdDate": "2025-05-15T22:21:32",
+      "updatedDate": "2026-02-03T22:54:55",
+      "owner": "Lee Taylor",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3232.88,
+      "description": "Thought draw when."
+    },
+    {
+      "id": "1a62be17-f904-4533-b090-84ed79d1ef6d",
+      "name": "Streamlined actuating encryption 21",
+      "status": "Completed",
+      "createdDate": "2025-09-26T15:31:06",
+      "updatedDate": "2026-01-23T14:20:58",
+      "owner": "Paula Mills",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9198.53,
+      "description": "Little board while have."
+    },
+    {
+      "id": "29f70f61-c92d-4769-b65a-fd02069f4fb7",
+      "name": "Switchable intermediate help-desk 22",
+      "status": "Inactive",
+      "createdDate": "2025-10-24T22:40:57",
+      "updatedDate": "2026-02-06T20:18:58",
+      "owner": "Jordan Gomez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2588.4,
+      "description": "World hear each within add thus."
+    },
+    {
+      "id": "16566ff6-be3c-4080-ab59-224d4751f243",
+      "name": "Realigned even-keeled leverage 23",
+      "status": "Pending",
+      "createdDate": "2025-10-03T22:32:45",
+      "updatedDate": "2026-02-15T05:47:20",
+      "owner": "Tammy Figueroa",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1206.17,
+      "description": "Health shoulder stand hair involve."
+    },
+    {
+      "id": "3b208f22-c1f3-42d5-bb2e-f183afefdf38",
+      "name": "Automated foreground process improvement 24",
+      "status": "Completed",
+      "createdDate": "2025-12-08T14:07:49",
+      "updatedDate": "2026-01-24T01:35:13",
+      "owner": "Joshua Taylor",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8485.24,
+      "description": "Rock history pull."
+    },
+    {
+      "id": "a710178c-2934-43f9-a4d7-d4ab6fb6b135",
+      "name": "Function-based fault-tolerant forecast 25",
+      "status": "Completed",
+      "createdDate": "2025-04-30T16:42:51",
+      "updatedDate": "2026-01-24T14:13:51",
+      "owner": "Gregory Hill",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3198.74,
+      "description": "Change bar security seek not if."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-all-records",
+  "totalCount": 708,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b000a089-4801-408f-9195-5d1d2345efc6",
+      "name": "Universal multimedia help-desk 1",
+      "status": "Active",
+      "createdDate": "2025-03-02T07:32:48",
+      "updatedDate": "2026-01-30T23:18:32",
+      "owner": "David Olsen",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8417.79,
+      "description": "Hot camera affect."
+    },
+    {
+      "id": "b71d72bd-b930-496f-b9fb-272033aa9226",
+      "name": "Cloned impactful open system 2",
+      "status": "Pending",
+      "createdDate": "2025-05-12T23:43:00",
+      "updatedDate": "2026-01-19T11:25:49",
+      "owner": "John Jacobs",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3413.55,
+      "description": "Start plant work source save."
+    },
+    {
+      "id": "87148b88-da93-4e57-83ae-571f320c4faf",
+      "name": "Reduced human-resource help-desk 3",
+      "status": "Active",
+      "createdDate": "2025-05-12T13:58:31",
+      "updatedDate": "2026-01-26T02:22:22",
+      "owner": "Jennifer Allen",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8431.78,
+      "description": "Discuss concern language travel area responsibility hand."
+    },
+    {
+      "id": "cffa4e32-35a5-44f6-8178-155009269c85",
+      "name": "Focused upward-trending hierarchy 4",
+      "status": "Inactive",
+      "createdDate": "2025-09-12T03:00:22",
+      "updatedDate": "2026-02-07T01:21:41",
+      "owner": "Kim Frazier",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8652.49,
+      "description": "Pick at management."
+    },
+    {
+      "id": "8e74c639-ff1d-4334-a050-a225c8590ada",
+      "name": "Monitored maximized paradigm 5",
+      "status": "Active",
+      "createdDate": "2025-07-31T04:13:02",
+      "updatedDate": "2026-02-04T11:43:24",
+      "owner": "Kristen Brown",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8753.08,
+      "description": "Hotel newspaper inside."
+    },
+    {
+      "id": "61504701-df61-4ab3-99c6-2116da3f7a2e",
+      "name": "Networked needs-based support 6",
+      "status": "Pending",
+      "createdDate": "2025-08-21T17:19:55",
+      "updatedDate": "2026-02-10T07:05:07",
+      "owner": "Linda Juarez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8242.15,
+      "description": "Friend human reality agree month."
+    },
+    {
+      "id": "db3b5874-19f3-4015-9b9e-e6c1b5f0d139",
+      "name": "Ameliorated analyzing productivity 7",
+      "status": "Inactive",
+      "createdDate": "2025-03-29T06:26:20",
+      "updatedDate": "2026-01-31T18:53:56",
+      "owner": "Frank Collins",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8248.51,
+      "description": "Six financial our interest pretty."
+    },
+    {
+      "id": "f4132692-f931-43f4-a4d7-912840787e38",
+      "name": "Up-sized content-based secured line 8",
+      "status": "Pending",
+      "createdDate": "2026-01-02T20:26:02",
+      "updatedDate": "2026-01-28T14:29:07",
+      "owner": "Jennifer Baker",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9450.1,
+      "description": "Manager try size."
+    },
+    {
+      "id": "f997863f-7de9-488c-9f68-ac1bc2a4a399",
+      "name": "Future-proofed non-volatile software 9",
+      "status": "Active",
+      "createdDate": "2025-05-26T07:52:36",
+      "updatedDate": "2026-01-28T00:22:19",
+      "owner": "Kathryn Rodriguez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4603.44,
+      "description": "These energy capital idea keep."
+    },
+    {
+      "id": "c91bb811-ed71-422a-a792-3acc35696a05",
+      "name": "Focused stable policy 10",
+      "status": "Pending",
+      "createdDate": "2025-08-05T01:52:48",
+      "updatedDate": "2026-02-04T12:41:24",
+      "owner": "David Blevins",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9114.35,
+      "description": "Fish especially north find impact."
+    },
+    {
+      "id": "9c5d8fe1-5565-4952-8b2a-3b71a59a5fe8",
+      "name": "Distributed foreground process improvement 11",
+      "status": "Active",
+      "createdDate": "2025-04-22T13:23:58",
+      "updatedDate": "2026-02-05T08:27:32",
+      "owner": "Kelly Estrada",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6196.24,
+      "description": "Various agreement although agreement under."
+    },
+    {
+      "id": "9c27c582-2718-4d4f-9e64-5c676ef3bdbc",
+      "name": "Horizontal leadingedge framework 12",
+      "status": "Completed",
+      "createdDate": "2025-07-22T08:18:12",
+      "updatedDate": "2026-02-12T21:50:15",
+      "owner": "Erik Werner",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7734.46,
+      "description": "Country send bag perform building without feel."
+    },
+    {
+      "id": "db2a24b7-587f-4d2b-9f07-509866905dd2",
+      "name": "Ameliorated 3rdgeneration implementation 13",
+      "status": "Inactive",
+      "createdDate": "2025-04-06T09:04:18",
+      "updatedDate": "2026-02-02T04:02:24",
+      "owner": "Courtney Ward",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9776.79,
+      "description": "Discussion well unit."
+    },
+    {
+      "id": "f2ce3387-ce56-49f2-9a97-658ad238cd0a",
+      "name": "Front-line disintermediate intranet 14",
+      "status": "Completed",
+      "createdDate": "2025-06-05T20:36:39",
+      "updatedDate": "2026-01-31T19:44:09",
+      "owner": "Jose Whitaker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4523.73,
+      "description": "Writer idea less throughout door pull."
+    },
+    {
+      "id": "4bc03358-4c0e-4544-9067-63293635cbb1",
+      "name": "Persevering radical portal 15",
+      "status": "Pending",
+      "createdDate": "2025-07-23T16:19:37",
+      "updatedDate": "2026-01-24T01:22:08",
+      "owner": "Joshua Stark",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8960.73,
+      "description": "Can present inside region both sister."
+    },
+    {
+      "id": "f8ecf611-509b-4884-9c13-597d95b79d3e",
+      "name": "Integrated asymmetric benchmark 16",
+      "status": "Inactive",
+      "createdDate": "2025-11-19T15:01:59",
+      "updatedDate": "2026-01-22T11:00:10",
+      "owner": "Jennifer Hopkins",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 641.28,
+      "description": "Guess serious probably."
+    },
+    {
+      "id": "c39a7b09-006a-407e-a1ae-d413e6bccb21",
+      "name": "Team-oriented dedicated contingency 17",
+      "status": "Completed",
+      "createdDate": "2025-03-18T13:16:21",
+      "updatedDate": "2026-02-10T18:39:50",
+      "owner": "Dorothy White",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6942.16,
+      "description": "Road his lose these particular black question."
+    },
+    {
+      "id": "2b4317db-4289-4605-ba17-fd66d6008b89",
+      "name": "Versatile demand-driven throughput 18",
+      "status": "Active",
+      "createdDate": "2026-01-09T13:21:55",
+      "updatedDate": "2026-01-22T06:50:13",
+      "owner": "Megan Navarro",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5002.35,
+      "description": "Seem decade brother him partner."
+    },
+    {
+      "id": "3815e4b5-976c-43da-b54a-4b1fd2513798",
+      "name": "Triple-buffered transitional ability 19",
+      "status": "Inactive",
+      "createdDate": "2025-05-07T04:06:51",
+      "updatedDate": "2026-02-03T01:24:50",
+      "owner": "Robert Carey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1614.9,
+      "description": "Maybe course board character."
+    },
+    {
+      "id": "d9cb1e58-6218-4da1-a1c1-5ccd9a69aaa3",
+      "name": "Compatible national conglomeration 20",
+      "status": "Pending",
+      "createdDate": "2025-07-23T16:52:27",
+      "updatedDate": "2026-02-13T00:33:53",
+      "owner": "Kimberly Hoffman",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7443.55,
+      "description": "Concern fill fill well."
+    },
+    {
+      "id": "18e2c3bc-1eb4-4989-bf31-2b2e976890af",
+      "name": "User-friendly multimedia implementation 21",
+      "status": "Pending",
+      "createdDate": "2026-02-10T16:00:59",
+      "updatedDate": "2026-02-06T13:33:08",
+      "owner": "Jennifer Gates",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 977.09,
+      "description": "Board same relationship."
+    },
+    {
+      "id": "ea4a624f-79b9-459c-b85a-5a17624ed3d1",
+      "name": "User-friendly impactful frame 22",
+      "status": "Pending",
+      "createdDate": "2025-10-09T04:14:14",
+      "updatedDate": "2026-02-16T11:24:22",
+      "owner": "Alison Garcia",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4120.47,
+      "description": "Fall act campaign than value white."
+    },
+    {
+      "id": "12dc0c86-eb5b-4821-94cd-88a9226c7588",
+      "name": "Front-line empowering toolset 23",
+      "status": "Pending",
+      "createdDate": "2025-09-14T17:02:48",
+      "updatedDate": "2026-01-30T08:36:16",
+      "owner": "Holly Ortiz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9377.34,
+      "description": "Collection sport each."
+    },
+    {
+      "id": "7fbd1f62-2a48-4ac7-8d95-3d2fd7ca24a6",
+      "name": "Digitized non-volatile parallelism 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-05T18:41:36",
+      "updatedDate": "2026-02-07T15:55:06",
+      "owner": "Sally Brooks PhD",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9952.03,
+      "description": "Partner when million including."
+    },
+    {
+      "id": "ce1517fb-1738-4144-9460-43610b5f5a4c",
+      "name": "Proactive 3rdgeneration infrastructure 25",
+      "status": "Pending",
+      "createdDate": "2025-09-16T19:54:13",
+      "updatedDate": "2026-02-08T16:17:52",
+      "owner": "Lisa Harris",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6743.87,
+      "description": "Paper even certainly economic mean drug investment."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

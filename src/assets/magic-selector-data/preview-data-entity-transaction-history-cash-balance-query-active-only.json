@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-active-only",
+  "totalCount": 275,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "4a329682-2e41-4ec4-84fa-01aaa62adad2",
+      "name": "Total needs-based extranet 1",
+      "status": "Active",
+      "createdDate": "2026-02-14T14:36:55",
+      "updatedDate": "2026-01-19T17:22:29",
+      "owner": "Matthew Baker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5295.11,
+      "description": "Say day money likely card."
+    },
+    {
+      "id": "e56e94a8-571e-4412-accd-b2333cc3357d",
+      "name": "Function-based dynamic definition 2",
+      "status": "Active",
+      "createdDate": "2025-06-19T19:58:13",
+      "updatedDate": "2026-01-28T19:43:57",
+      "owner": "Carrie Becker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 449.49,
+      "description": "Game source sense beyond."
+    },
+    {
+      "id": "1b91b0f5-483a-495e-933b-1748a7fcd84f",
+      "name": "Automated intangible forecast 3",
+      "status": "Active",
+      "createdDate": "2025-03-26T05:27:55",
+      "updatedDate": "2026-01-31T23:51:21",
+      "owner": "Kathleen Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5468.78,
+      "description": "Style of ball feeling rather."
+    },
+    {
+      "id": "f2afaf46-1f5b-4691-91ba-395147c50411",
+      "name": "Proactive global access 4",
+      "status": "Completed",
+      "createdDate": "2025-10-29T19:30:54",
+      "updatedDate": "2026-02-07T15:40:54",
+      "owner": "Danielle Walker",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9155.08,
+      "description": "Many turn study theory health science."
+    },
+    {
+      "id": "09bb38ed-21dc-4c5e-90d7-fedaf639f84f",
+      "name": "Realigned full-range flexibility 5",
+      "status": "Active",
+      "createdDate": "2025-04-29T20:02:52",
+      "updatedDate": "2026-02-15T18:34:13",
+      "owner": "Isaac Bailey",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 905.93,
+      "description": "Learn may thousand instead position administration huge."
+    },
+    {
+      "id": "267c0d86-9d8e-4660-9550-3db1ba697845",
+      "name": "Virtual homogeneous standardization 6",
+      "status": "Inactive",
+      "createdDate": "2025-08-01T06:14:19",
+      "updatedDate": "2026-02-12T15:22:59",
+      "owner": "Todd Patterson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2044.05,
+      "description": "Explain than seat worker."
+    },
+    {
+      "id": "1f943a1e-ed25-41dd-ae91-51f496859e15",
+      "name": "Profit-focused discrete challenge 7",
+      "status": "Active",
+      "createdDate": "2025-07-21T07:38:08",
+      "updatedDate": "2026-02-02T07:25:12",
+      "owner": "Mr. Jerry Pollard",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2008.79,
+      "description": "Attack discover physical discussion unit professor."
+    },
+    {
+      "id": "4435371b-923f-4dd3-bbe2-78f2e8d95fcf",
+      "name": "Decentralized mission-critical initiative 8",
+      "status": "Pending",
+      "createdDate": "2025-07-14T10:52:04",
+      "updatedDate": "2026-01-24T09:48:17",
+      "owner": "Kimberly Moore",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2706.22,
+      "description": "Throughout toward government defense all."
+    },
+    {
+      "id": "e0d163b9-9111-4a93-a102-8909fe1bf311",
+      "name": "Realigned zero administration interface 9",
+      "status": "Active",
+      "createdDate": "2026-01-02T04:37:02",
+      "updatedDate": "2026-01-26T11:36:19",
+      "owner": "Jacqueline Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 550.8,
+      "description": "Street every whom social war leave."
+    },
+    {
+      "id": "6dcc0122-57b1-488a-a60c-a47167974712",
+      "name": "Streamlined homogeneous forecast 10",
+      "status": "Inactive",
+      "createdDate": "2025-05-25T06:30:45",
+      "updatedDate": "2026-01-18T19:21:11",
+      "owner": "Amanda Carroll",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 198.92,
+      "description": "Red able industry something."
+    },
+    {
+      "id": "01f2a942-07af-4109-bbaf-8225acde640c",
+      "name": "Triple-buffered didactic hub 11",
+      "status": "Active",
+      "createdDate": "2026-02-01T07:16:44",
+      "updatedDate": "2026-01-29T01:37:47",
+      "owner": "Gregory Mendoza",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7984.66,
+      "description": "Woman week world outside chair condition."
+    },
+    {
+      "id": "ee9966ce-a237-4621-a956-c44427c43243",
+      "name": "Streamlined tertiary definition 12",
+      "status": "Completed",
+      "createdDate": "2025-05-21T23:18:53",
+      "updatedDate": "2026-01-27T06:29:36",
+      "owner": "Ronald Lang",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5128.65,
+      "description": "Hotel hundred relationship last."
+    },
+    {
+      "id": "c85a0a9d-206f-41e3-9832-4d4c962908b9",
+      "name": "Vision-oriented 24/7 matrices 13",
+      "status": "Active",
+      "createdDate": "2025-06-25T15:38:40",
+      "updatedDate": "2026-02-08T18:57:56",
+      "owner": "Brandon Kennedy",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1655.36,
+      "description": "Address staff however have often though drive."
+    },
+    {
+      "id": "c4e5bbe4-23c5-42ca-81ee-cbac7aae7130",
+      "name": "Object-based static artificial intelligence 14",
+      "status": "Inactive",
+      "createdDate": "2025-05-18T21:29:09",
+      "updatedDate": "2026-02-07T01:25:19",
+      "owner": "Shawn Murray",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9387.46,
+      "description": "Government memory eye on treat."
+    },
+    {
+      "id": "5ff1d6a4-9ba8-42ef-a015-695f0d619990",
+      "name": "Multi-channeled tangible strategy 15",
+      "status": "Active",
+      "createdDate": "2025-07-10T11:34:35",
+      "updatedDate": "2026-01-24T21:30:10",
+      "owner": "Eric Lamb",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3998.42,
+      "description": "Stuff leave two music boy which reveal."
+    },
+    {
+      "id": "f8a693cc-823d-4385-83d3-44f0e17454a8",
+      "name": "Right-sized actuating project 16",
+      "status": "Completed",
+      "createdDate": "2025-12-11T17:45:03",
+      "updatedDate": "2026-02-05T20:43:26",
+      "owner": "Donna Wells",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2145.55,
+      "description": "Toward week sport again month mention."
+    },
+    {
+      "id": "798dade4-0c1e-404b-928b-a21e612eb09a",
+      "name": "Enhanced secondary monitoring 17",
+      "status": "Completed",
+      "createdDate": "2025-09-05T13:31:59",
+      "updatedDate": "2026-01-30T02:30:40",
+      "owner": "Lindsay Carter",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3847.41,
+      "description": "Kid include why ahead alone."
+    },
+    {
+      "id": "002f10fb-1709-443e-b978-e84cdf855cac",
+      "name": "Total static array 18",
+      "status": "Completed",
+      "createdDate": "2025-05-06T08:24:21",
+      "updatedDate": "2026-01-29T14:32:48",
+      "owner": "Daniel Cooper",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6130.21,
+      "description": "Use painting week from."
+    },
+    {
+      "id": "101f9178-81e3-48ea-9948-b29a3e5e27b0",
+      "name": "Synchronized interactive installation 19",
+      "status": "Pending",
+      "createdDate": "2026-01-01T07:53:36",
+      "updatedDate": "2026-02-15T23:09:44",
+      "owner": "Michael Davis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6464.56,
+      "description": "Position thousand decide along front give."
+    },
+    {
+      "id": "d6ce8ff3-db9c-4959-9313-41981b2e50c4",
+      "name": "Phased fault-tolerant service-desk 20",
+      "status": "Completed",
+      "createdDate": "2025-09-10T15:29:50",
+      "updatedDate": "2026-01-19T06:53:46",
+      "owner": "Lynn Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2325.1,
+      "description": "Tree deep author thousand democratic must."
+    },
+    {
+      "id": "f117565b-8ec4-40eb-bd39-a250375c9763",
+      "name": "Mandatory global installation 21",
+      "status": "Inactive",
+      "createdDate": "2025-10-10T17:31:01",
+      "updatedDate": "2026-02-16T09:46:02",
+      "owner": "Aaron Rodriguez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1855.62,
+      "description": "Into make address real."
+    },
+    {
+      "id": "b394c486-1b37-464c-b7e1-f1d3dc7a2de8",
+      "name": "Virtual optimal solution 22",
+      "status": "Inactive",
+      "createdDate": "2025-08-13T09:20:27",
+      "updatedDate": "2026-02-17T06:07:39",
+      "owner": "Donna Morgan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2045.21,
+      "description": "Mr them clear."
+    },
+    {
+      "id": "ec67fc40-0197-4ffa-b57f-6eb89b9a3cf8",
+      "name": "Customizable didactic adapter 23",
+      "status": "Pending",
+      "createdDate": "2026-01-10T07:33:39",
+      "updatedDate": "2026-01-27T06:00:27",
+      "owner": "Darius Webb",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3574.91,
+      "description": "Production yeah lead significant Republican media."
+    },
+    {
+      "id": "1a2921c8-3763-42ca-9366-bb1e58f5222f",
+      "name": "Intuitive empowering synergy 24",
+      "status": "Pending",
+      "createdDate": "2026-01-15T20:51:26",
+      "updatedDate": "2026-02-02T10:02:58",
+      "owner": "Bonnie Williamson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3629.62,
+      "description": "Their explain thing."
+    },
+    {
+      "id": "bcae2336-9167-401c-a6db-a9243fb00fad",
+      "name": "Monitored 5thgeneration core 25",
+      "status": "Inactive",
+      "createdDate": "2026-01-04T08:30:44",
+      "updatedDate": "2026-01-21T13:39:31",
+      "owner": "Jenna Curry",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8182.85,
+      "description": "Police visit improve feel above."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

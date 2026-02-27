@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-kycdocument",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1164,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "66cf8153-7736-403e-8ce7-37d4e014e2bf",
+      "name": "User-friendly high-level support 1",
+      "status": "Pending",
+      "createdDate": "2025-05-12T21:10:12",
+      "updatedDate": "2026-01-27T11:08:31",
+      "owner": "Sarah Weber",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6489.93,
+      "description": "Politics low and let maybe debate."
+    },
+    {
+      "id": "1de40976-302f-4613-a0d5-0b3a735b5442",
+      "name": "Polarized impactful parallelism 2",
+      "status": "Active",
+      "createdDate": "2025-04-09T11:33:27",
+      "updatedDate": "2026-02-13T19:03:46",
+      "owner": "Debra Perry",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5902.97,
+      "description": "Blue seem student far industry foreign product."
+    },
+    {
+      "id": "eaa0601e-b183-4d7d-8190-63e4063e66f1",
+      "name": "Re-contextualized transitional challenge 3",
+      "status": "Active",
+      "createdDate": "2025-04-23T18:44:42",
+      "updatedDate": "2026-01-18T20:12:49",
+      "owner": "Jason Marquez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3040.57,
+      "description": "Unit help customer image record."
+    },
+    {
+      "id": "4974a40d-003a-4355-8116-8e65f62f409b",
+      "name": "Synergized background knowledge user 4",
+      "status": "Active",
+      "createdDate": "2025-12-25T13:01:58",
+      "updatedDate": "2026-02-12T07:00:06",
+      "owner": "Melissa Baker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5742.75,
+      "description": "Accept let least involve."
+    },
+    {
+      "id": "849ab633-797f-4f82-989f-907f1acd0196",
+      "name": "Operative eco-centric solution 5",
+      "status": "Inactive",
+      "createdDate": "2025-08-25T00:50:36",
+      "updatedDate": "2026-01-26T05:51:52",
+      "owner": "Barbara Lee",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9147.45,
+      "description": "Take whole thousand goal."
+    },
+    {
+      "id": "23b05ae1-60c3-4aa7-b919-20a5ac201c87",
+      "name": "Phased zero administration framework 6",
+      "status": "Pending",
+      "createdDate": "2026-01-31T18:06:13",
+      "updatedDate": "2026-02-01T20:13:09",
+      "owner": "Nathan Barajas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8618.31,
+      "description": "Care both building join front recognize."
+    },
+    {
+      "id": "b105e6d4-9da5-425d-bdea-97c7f0e27d08",
+      "name": "Focused multimedia info-mediaries 7",
+      "status": "Active",
+      "createdDate": "2025-05-24T22:42:30",
+      "updatedDate": "2026-01-25T05:10:03",
+      "owner": "Rita Howard",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2892.81,
+      "description": "Interest or late turn mother."
+    },
+    {
+      "id": "d7a6140b-3cd3-4ca9-b925-3ebcd9ea2bdc",
+      "name": "Cross-platform bifurcated core 8",
+      "status": "Pending",
+      "createdDate": "2025-11-24T07:40:22",
+      "updatedDate": "2026-01-29T16:59:44",
+      "owner": "Ashley Carlson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4131.49,
+      "description": "Eye sister direction relationship."
+    },
+    {
+      "id": "98143478-8dfc-437e-b2b3-59cf11a19115",
+      "name": "Persevering bandwidth-monitored function 9",
+      "status": "Inactive",
+      "createdDate": "2025-10-12T01:07:23",
+      "updatedDate": "2026-02-13T19:26:10",
+      "owner": "Margaret Lawson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9070.59,
+      "description": "Threat ready brother wife health."
+    },
+    {
+      "id": "eb599221-4db9-44f0-a6dc-c2c1b8e48fe2",
+      "name": "Down-sized modular archive 10",
+      "status": "Completed",
+      "createdDate": "2025-08-07T11:54:20",
+      "updatedDate": "2026-02-08T17:43:52",
+      "owner": "Jessica Keller",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7204.79,
+      "description": "Recently not argue almost run do majority."
+    },
+    {
+      "id": "633c6943-08b2-4d3f-8ec2-37d2616c631c",
+      "name": "Re-contextualized secondary knowledge user 11",
+      "status": "Completed",
+      "createdDate": "2025-11-29T09:43:37",
+      "updatedDate": "2026-02-02T13:34:45",
+      "owner": "Michael Thomas",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4928.8,
+      "description": "Once method first city."
+    },
+    {
+      "id": "c3c36d07-db53-474f-a452-8f6c4b122f7f",
+      "name": "Persistent stable adapter 12",
+      "status": "Completed",
+      "createdDate": "2025-08-25T03:18:24",
+      "updatedDate": "2026-02-06T11:10:08",
+      "owner": "Troy Lee",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6529.71,
+      "description": "Tell area much practice carry season."
+    },
+    {
+      "id": "b7413d48-859f-489d-a306-8b6534c13447",
+      "name": "Configurable static access 13",
+      "status": "Completed",
+      "createdDate": "2025-04-02T10:06:39",
+      "updatedDate": "2026-01-23T02:50:57",
+      "owner": "Jacob Gordon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5689.3,
+      "description": "Pay join record story cup fly."
+    },
+    {
+      "id": "aebddb4d-2a34-4609-a8bb-9e202b52558e",
+      "name": "Team-oriented fault-tolerant firmware 14",
+      "status": "Active",
+      "createdDate": "2025-02-26T13:46:37",
+      "updatedDate": "2026-02-08T11:16:52",
+      "owner": "Stefanie Trevino",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8472.67,
+      "description": "Force thus civil responsibility black none glass."
+    },
+    {
+      "id": "5e199bba-5fa4-46ad-942f-1f4ddaab8c5c",
+      "name": "Inverse 6thgeneration methodology 15",
+      "status": "Inactive",
+      "createdDate": "2026-01-18T14:29:36",
+      "updatedDate": "2026-01-30T13:41:30",
+      "owner": "Eduardo Harding",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7206.84,
+      "description": "Say write history traditional shake Democrat cut certainly."
+    },
+    {
+      "id": "fab51c22-a22a-42cc-96b6-943d4593315c",
+      "name": "Enterprise-wide modular product 16",
+      "status": "Active",
+      "createdDate": "2025-03-17T11:41:07",
+      "updatedDate": "2026-02-07T01:20:52",
+      "owner": "William Wilson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7400.97,
+      "description": "It also thought."
+    },
+    {
+      "id": "d297da63-cd55-441c-be13-94c7c1262354",
+      "name": "Persevering attitude-oriented Local Area Network 17",
+      "status": "Completed",
+      "createdDate": "2025-03-13T04:29:55",
+      "updatedDate": "2026-02-05T03:35:37",
+      "owner": "David Lloyd",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1159.02,
+      "description": "Interview movie factor."
+    },
+    {
+      "id": "5eed7f5d-8e95-4bfe-9bb1-3463279d38e8",
+      "name": "Reduced mobile productivity 18",
+      "status": "Active",
+      "createdDate": "2025-10-04T06:37:57",
+      "updatedDate": "2026-01-22T07:26:24",
+      "owner": "Richard Cardenas",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6839.32,
+      "description": "Shoulder space defense child second ability."
+    },
+    {
+      "id": "acf8db7c-71f6-40f1-b4ec-91a594dca06b",
+      "name": "Open-architected incremental Graphic Interface 19",
+      "status": "Completed",
+      "createdDate": "2025-02-22T01:26:52",
+      "updatedDate": "2026-02-01T23:41:46",
+      "owner": "Katie Nunez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5719.65,
+      "description": "Activity bad plan hot stuff PM practice."
+    },
+    {
+      "id": "7163f3f4-fb85-41f9-9c1f-8aebe8780de7",
+      "name": "User-friendly attitude-oriented function 20",
+      "status": "Pending",
+      "createdDate": "2025-10-28T12:19:05",
+      "updatedDate": "2026-02-12T00:36:34",
+      "owner": "Nicholas Davis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8227.28,
+      "description": "Trade spend public company."
+    },
+    {
+      "id": "3d60655c-7966-4d9e-9fc6-8b007d718924",
+      "name": "Multi-layered dynamic function 21",
+      "status": "Inactive",
+      "createdDate": "2025-10-04T23:47:04",
+      "updatedDate": "2026-01-30T23:44:50",
+      "owner": "Amanda Horn",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3407.49,
+      "description": "Agent many learn bad receive entire any feel."
+    },
+    {
+      "id": "0f7f298a-51b4-4059-b297-4bc9f0c0a4d8",
+      "name": "Pre-emptive empowering website 22",
+      "status": "Inactive",
+      "createdDate": "2025-04-18T17:42:39",
+      "updatedDate": "2026-01-27T05:43:51",
+      "owner": "Brandon Hoffman",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4637.39,
+      "description": "Raise work act test ability."
+    },
+    {
+      "id": "22ca9a75-9266-4ca4-a8a8-1a0929ec2646",
+      "name": "Pre-emptive empowering protocol 23",
+      "status": "Active",
+      "createdDate": "2025-05-10T02:16:24",
+      "updatedDate": "2026-01-18T14:52:08",
+      "owner": "Joe Summers",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9815.81,
+      "description": "Government almost child already threat really employee."
+    },
+    {
+      "id": "79d47136-1477-442b-8ce7-183249914efa",
+      "name": "Persevering contextually-based access 24",
+      "status": "Active",
+      "createdDate": "2025-09-17T14:13:03",
+      "updatedDate": "2026-02-03T22:17:17",
+      "owner": "Kimberly Turner",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6015.58,
+      "description": "Recently information guess draw cultural ball market kind."
+    },
+    {
+      "id": "51548745-4531-4e4c-8457-a43e02608a25",
+      "name": "Triple-buffered motivating website 25",
+      "status": "Inactive",
+      "createdDate": "2025-05-29T02:27:42",
+      "updatedDate": "2026-02-08T11:58:44",
+      "owner": "Amy Farmer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8433.28,
+      "description": "No similar once country high draw."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

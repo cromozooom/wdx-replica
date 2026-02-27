@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-all-records",
+  "totalCount": 106,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "fb13bde8-2204-4ba7-b993-f6ef84c263c2",
+      "name": "Integrated well-modulated project 1",
+      "status": "Active",
+      "createdDate": "2026-02-09T08:50:01",
+      "updatedDate": "2026-02-01T08:21:49",
+      "owner": "Marc Mcguire",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7957.27,
+      "description": "Degree full middle case bed ahead level."
+    },
+    {
+      "id": "0398ebc7-0eb1-4be9-aafb-c659a9e89fcc",
+      "name": "Reactive tangible standardization 2",
+      "status": "Pending",
+      "createdDate": "2025-02-28T11:19:55",
+      "updatedDate": "2026-01-28T04:45:49",
+      "owner": "Virginia Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2248.06,
+      "description": "Fall central senior building poor yard off."
+    },
+    {
+      "id": "88a5fc3f-23df-4ba5-bf21-bcad47445390",
+      "name": "Innovative solution-oriented function 3",
+      "status": "Pending",
+      "createdDate": "2025-07-26T07:28:40",
+      "updatedDate": "2026-02-02T17:40:56",
+      "owner": "Thomas Tanner",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9691.86,
+      "description": "Experience hotel control PM."
+    },
+    {
+      "id": "567d994b-3f83-4b61-8a99-9c51eede3a4e",
+      "name": "Exclusive 4thgeneration circuit 4",
+      "status": "Inactive",
+      "createdDate": "2025-07-21T06:52:34",
+      "updatedDate": "2026-02-06T20:30:03",
+      "owner": "Jordan Ramos",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8470.06,
+      "description": "Turn call cost toward yard."
+    },
+    {
+      "id": "785b92d3-f0af-4297-91d6-899cc63b0f76",
+      "name": "Organized 4thgeneration moratorium 5",
+      "status": "Completed",
+      "createdDate": "2025-08-28T07:03:00",
+      "updatedDate": "2026-02-05T04:55:46",
+      "owner": "Leslie Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3382.08,
+      "description": "Prove most challenge forward consumer seek health ready."
+    },
+    {
+      "id": "48d901b7-cbed-44ca-bc48-fcf55a9817f0",
+      "name": "Business-focused bifurcated ability 6",
+      "status": "Pending",
+      "createdDate": "2025-12-09T17:15:46",
+      "updatedDate": "2026-02-08T09:54:11",
+      "owner": "Patrick Frazier",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1381.14,
+      "description": "Interview doctor concern scientist."
+    },
+    {
+      "id": "ae7521ae-674d-4e78-8d91-1c2f53e408bf",
+      "name": "Synergized asymmetric interface 7",
+      "status": "Completed",
+      "createdDate": "2025-05-02T03:09:48",
+      "updatedDate": "2026-01-21T16:15:43",
+      "owner": "Karen King DDS",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3548.9,
+      "description": "Thank kind traditional actually."
+    },
+    {
+      "id": "73737ab3-36c6-4dda-ba0f-51d68feb24a6",
+      "name": "Persistent heuristic application 8",
+      "status": "Pending",
+      "createdDate": "2026-01-15T12:15:44",
+      "updatedDate": "2026-01-26T04:56:24",
+      "owner": "Douglas Patel",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1537.08,
+      "description": "Final significant why citizen hold."
+    },
+    {
+      "id": "e77b55fd-d776-4926-a5c5-e3f700ae09a6",
+      "name": "Multi-channeled stable implementation 9",
+      "status": "Completed",
+      "createdDate": "2025-05-20T10:21:14",
+      "updatedDate": "2026-02-13T03:56:08",
+      "owner": "Brendan Malone",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 663.49,
+      "description": "Gun act fly."
+    },
+    {
+      "id": "7471ac98-687e-493c-821e-ff404ad7d4f5",
+      "name": "Monitored fault-tolerant functionalities 10",
+      "status": "Active",
+      "createdDate": "2025-10-07T00:16:11",
+      "updatedDate": "2026-01-29T01:45:00",
+      "owner": "Eric Riley",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9974.02,
+      "description": "Middle her opportunity minute skill beyond nice."
+    },
+    {
+      "id": "b32004cf-91e6-4d5c-b287-ad9d47907231",
+      "name": "Streamlined multi-tasking contingency 11",
+      "status": "Completed",
+      "createdDate": "2025-06-08T08:41:01",
+      "updatedDate": "2026-01-19T18:53:53",
+      "owner": "Darrell Little",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6479.72,
+      "description": "Feeling notice that now determine."
+    },
+    {
+      "id": "fcfee229-d253-43d4-93ea-f64dddf6d4d6",
+      "name": "Expanded clear-thinking synergy 12",
+      "status": "Active",
+      "createdDate": "2025-03-08T00:33:01",
+      "updatedDate": "2026-01-28T14:19:34",
+      "owner": "Thomas Wallace",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5958.23,
+      "description": "Serve dinner speak one."
+    },
+    {
+      "id": "780d9fda-7ada-49ba-b201-f9c577f59da9",
+      "name": "Adaptive solution-oriented workforce 13",
+      "status": "Pending",
+      "createdDate": "2025-11-03T07:22:01",
+      "updatedDate": "2026-02-06T03:13:29",
+      "owner": "Tammy Lewis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 579.64,
+      "description": "Partner never hope benefit live she friend."
+    },
+    {
+      "id": "5a6475b6-4f61-4cbe-88a8-5ff79ca349d9",
+      "name": "Optimized upward-trending functionalities 14",
+      "status": "Inactive",
+      "createdDate": "2025-09-15T13:44:10",
+      "updatedDate": "2026-02-06T17:41:25",
+      "owner": "Kimberly Flores",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2392.23,
+      "description": "Not reach board support free maintain culture."
+    },
+    {
+      "id": "021575ce-193a-41b4-a62c-ec88331fd031",
+      "name": "Centralized grid-enabled capacity 15",
+      "status": "Pending",
+      "createdDate": "2025-03-08T21:53:47",
+      "updatedDate": "2026-02-07T18:08:43",
+      "owner": "Jesse Ross",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1335.46,
+      "description": "Business note attention trouble provide arrive race."
+    },
+    {
+      "id": "e05d936b-1d33-49ac-9c5e-49df1a0a7cbc",
+      "name": "Vision-oriented bi-directional solution 16",
+      "status": "Pending",
+      "createdDate": "2025-05-19T04:41:10",
+      "updatedDate": "2026-01-21T02:03:30",
+      "owner": "Heather Moran",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4508.46,
+      "description": "My tax another wonder sort fly."
+    },
+    {
+      "id": "0dd99707-5d47-4375-8f03-01079a366230",
+      "name": "Multi-layered tangible matrices 17",
+      "status": "Active",
+      "createdDate": "2025-07-24T18:11:08",
+      "updatedDate": "2026-02-05T18:10:04",
+      "owner": "Allison Fox",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 670.19,
+      "description": "Stuff bed particular president sense also."
+    },
+    {
+      "id": "741abe31-7815-4fc6-9293-e799beb87220",
+      "name": "Synergistic client-server conglomeration 18",
+      "status": "Completed",
+      "createdDate": "2025-05-18T20:10:52",
+      "updatedDate": "2026-02-01T05:35:44",
+      "owner": "Tiffany Evans",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6589.16,
+      "description": "Issue claim director into somebody."
+    },
+    {
+      "id": "aef8cb83-2005-40ed-b28a-d203eadb413b",
+      "name": "Re-engineered grid-enabled application 19",
+      "status": "Inactive",
+      "createdDate": "2026-02-13T13:11:57",
+      "updatedDate": "2026-01-22T17:55:17",
+      "owner": "Ryan Olson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8120.04,
+      "description": "By term despite ability."
+    },
+    {
+      "id": "8af22c46-86de-426c-9ef0-940160095039",
+      "name": "Integrated reciprocal functionalities 20",
+      "status": "Active",
+      "createdDate": "2025-08-07T07:53:22",
+      "updatedDate": "2026-01-31T00:34:49",
+      "owner": "Shannon Harris",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1239.13,
+      "description": "Interview TV military to."
+    },
+    {
+      "id": "df175662-865c-4e79-bc86-c3852b3c3e22",
+      "name": "Fully-configurable composite capability 21",
+      "status": "Inactive",
+      "createdDate": "2025-08-03T17:33:35",
+      "updatedDate": "2026-01-18T22:24:21",
+      "owner": "Timothy Chaney",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 957.62,
+      "description": "Drive camera message listen."
+    },
+    {
+      "id": "aedd608d-ed59-4bca-b8ea-e6522813995e",
+      "name": "Persistent non-volatile leverage 22",
+      "status": "Inactive",
+      "createdDate": "2025-03-09T18:55:26",
+      "updatedDate": "2026-01-29T09:31:23",
+      "owner": "Charles Parks",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5381.76,
+      "description": "Whole main guy open describe work."
+    },
+    {
+      "id": "98e33d1d-736e-47e3-8221-81b9acfb9517",
+      "name": "Polarized 5thgeneration support 23",
+      "status": "Pending",
+      "createdDate": "2026-01-24T21:18:46",
+      "updatedDate": "2026-02-17T09:45:56",
+      "owner": "Frank Lamb",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9965.04,
+      "description": "Education attorney lawyer effect dinner white million."
+    },
+    {
+      "id": "c53653ec-082f-4547-af8b-e702d0951dd5",
+      "name": "Multi-layered needs-based solution 24",
+      "status": "Pending",
+      "createdDate": "2025-12-13T20:28:44",
+      "updatedDate": "2026-02-02T16:55:19",
+      "owner": "David Mendoza",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2886.46,
+      "description": "Themselves ability allow."
+    },
+    {
+      "id": "26640c07-eca9-4eca-b22f-5e7754ea7126",
+      "name": "Vision-oriented context-sensitive Graphic Interface 25",
+      "status": "Inactive",
+      "createdDate": "2025-02-19T09:45:23",
+      "updatedDate": "2026-02-10T16:51:55",
+      "owner": "Dustin Valdez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8454.77,
+      "description": "Service follow conference she pressure sport commercial."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

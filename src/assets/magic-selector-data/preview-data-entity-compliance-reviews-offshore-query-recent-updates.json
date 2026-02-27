@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-recent-updates",
+  "totalCount": 94,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "be7b27b3-9f50-4aa9-b8e5-ba22cdf86861",
+      "name": "Stand-alone exuding open architecture 1",
+      "status": "Inactive",
+      "createdDate": "2025-02-27T12:43:03",
+      "updatedDate": "2026-02-07T06:06:58",
+      "owner": "Sarah Stout",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2700.69,
+      "description": "Service situation her try American."
+    },
+    {
+      "id": "b00dfac1-6992-438a-8241-2752d5c99aad",
+      "name": "Compatible 3rdgeneration methodology 2",
+      "status": "Pending",
+      "createdDate": "2025-03-09T00:47:36",
+      "updatedDate": "2026-02-12T21:13:02",
+      "owner": "Sherri Keith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9925.06,
+      "description": "Ball agency season common."
+    },
+    {
+      "id": "c3ec727e-df1f-48b0-a329-f759caf273db",
+      "name": "Distributed fresh-thinking database 3",
+      "status": "Active",
+      "createdDate": "2025-05-12T05:54:20",
+      "updatedDate": "2026-02-06T13:39:32",
+      "owner": "Rebekah Hudson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5995.07,
+      "description": "Do a responsibility adult bring."
+    },
+    {
+      "id": "433314c0-c65c-473b-b390-9044fa5604df",
+      "name": "Switchable multi-tasking moderator 4",
+      "status": "Pending",
+      "createdDate": "2026-02-02T19:49:23",
+      "updatedDate": "2026-02-04T08:21:45",
+      "owner": "Joseph Hicks",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5237.23,
+      "description": "Price kid television six guess need information."
+    },
+    {
+      "id": "fb0b4b4c-e7ac-4078-8f55-8d3a1b09dd5d",
+      "name": "Optional background database 5",
+      "status": "Completed",
+      "createdDate": "2025-12-29T22:02:42",
+      "updatedDate": "2026-01-30T06:01:34",
+      "owner": "Andrea Martinez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6855.01,
+      "description": "Quality else leader rich."
+    },
+    {
+      "id": "c36635e2-730f-4eab-a2e1-2579bfa9e0bb",
+      "name": "Adaptive multi-tasking Local Area Network 6",
+      "status": "Completed",
+      "createdDate": "2025-08-13T05:22:23",
+      "updatedDate": "2026-02-06T07:10:18",
+      "owner": "Bryan Clark",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5079.18,
+      "description": "Hand quality expert management tend let none."
+    },
+    {
+      "id": "ce0f8f02-5f73-4635-a341-e33f5bbab9f8",
+      "name": "Grass-roots analyzing intranet 7",
+      "status": "Active",
+      "createdDate": "2025-02-22T08:22:48",
+      "updatedDate": "2026-02-12T04:47:56",
+      "owner": "Jeffery Garcia",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8978.26,
+      "description": "Standard which game five."
+    },
+    {
+      "id": "541175a4-cbba-4a56-a8c3-3c6397c13483",
+      "name": "Organic real-time productivity 8",
+      "status": "Completed",
+      "createdDate": "2025-06-07T10:42:15",
+      "updatedDate": "2026-01-26T16:06:08",
+      "owner": "Brendan Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 662.03,
+      "description": "Station discussion bag strategy hear style draw tax."
+    },
+    {
+      "id": "8c37c72d-0f18-4b84-90a4-8156b5128ab7",
+      "name": "Robust incremental knowledge user 9",
+      "status": "Pending",
+      "createdDate": "2025-11-23T04:48:12",
+      "updatedDate": "2026-01-28T03:52:18",
+      "owner": "Matthew Dillon",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9523.86,
+      "description": "Table raise thus control candidate."
+    },
+    {
+      "id": "2709a58c-feb3-4642-a7e0-e52d2cc98c6a",
+      "name": "Pre-emptive radical encoding 10",
+      "status": "Inactive",
+      "createdDate": "2026-02-11T06:14:32",
+      "updatedDate": "2026-01-28T01:57:35",
+      "owner": "Susan Gray",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6648.73,
+      "description": "Their high religious stand government pressure water writer."
+    },
+    {
+      "id": "7ac2f1ff-88d7-4667-a71f-24be48d0ea05",
+      "name": "Optional non-volatile implementation 11",
+      "status": "Active",
+      "createdDate": "2025-07-06T06:07:40",
+      "updatedDate": "2026-02-16T00:15:55",
+      "owner": "Danielle Taylor",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6941.67,
+      "description": "Seven board when."
+    },
+    {
+      "id": "7f515608-8703-46bf-ad95-b1f679d300ba",
+      "name": "Fully-configurable dedicated circuit 12",
+      "status": "Active",
+      "createdDate": "2025-12-13T07:00:51",
+      "updatedDate": "2026-02-17T10:38:47",
+      "owner": "Madison Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8864.07,
+      "description": "During organization house."
+    },
+    {
+      "id": "cc76af1a-bddb-4d44-98ea-f06e516d389f",
+      "name": "Fundamental executive algorithm 13",
+      "status": "Pending",
+      "createdDate": "2025-06-03T15:04:47",
+      "updatedDate": "2026-01-28T03:00:12",
+      "owner": "Mike Francis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5555.37,
+      "description": "Fast always decade situation."
+    },
+    {
+      "id": "26eb8b0f-f9ed-4378-9066-c0131978bdfe",
+      "name": "Enhanced 4thgeneration Local Area Network 14",
+      "status": "Pending",
+      "createdDate": "2025-04-11T02:01:54",
+      "updatedDate": "2026-02-08T21:54:29",
+      "owner": "David Gilbert",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7122.82,
+      "description": "Marriage activity while education society move."
+    },
+    {
+      "id": "e8aeab34-cf3a-4f14-9e0f-717a10445b12",
+      "name": "Innovative bi-directional task-force 15",
+      "status": "Active",
+      "createdDate": "2025-07-25T00:03:26",
+      "updatedDate": "2026-01-19T23:29:49",
+      "owner": "Ebony Delacruz",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8384.11,
+      "description": "Office glass option owner."
+    },
+    {
+      "id": "f8c9f1fe-adf2-4480-8d82-705de40e70b2",
+      "name": "Fundamental value-added synergy 16",
+      "status": "Active",
+      "createdDate": "2025-08-22T23:04:11",
+      "updatedDate": "2026-01-21T04:54:13",
+      "owner": "Danielle Brooks",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5140.64,
+      "description": "After itself lose education minute usually have."
+    },
+    {
+      "id": "0511496e-9ffe-4227-b016-4582b43cc41d",
+      "name": "Compatible user-facing projection 17",
+      "status": "Inactive",
+      "createdDate": "2026-01-28T01:35:40",
+      "updatedDate": "2026-01-27T01:03:59",
+      "owner": "Michelle Nichols",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8249.08,
+      "description": "Character security thing her fact key."
+    },
+    {
+      "id": "558a8379-a772-4e80-af2b-fb56f6cb95cc",
+      "name": "Sharable solution-oriented matrix 18",
+      "status": "Active",
+      "createdDate": "2025-08-15T17:14:39",
+      "updatedDate": "2026-01-18T21:34:02",
+      "owner": "Erin Marsh",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9945.65,
+      "description": "Decade any want investment provide."
+    },
+    {
+      "id": "f1016b30-04b3-4605-b2a4-ab7c3cc9cb42",
+      "name": "Future-proofed mission-critical flexibility 19",
+      "status": "Pending",
+      "createdDate": "2025-07-25T05:41:28",
+      "updatedDate": "2026-02-02T22:00:28",
+      "owner": "Brian Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9306.05,
+      "description": "Development return conference conference."
+    },
+    {
+      "id": "c21ec99d-df68-41f5-8b12-af9e7fe00eac",
+      "name": "Advanced grid-enabled analyzer 20",
+      "status": "Inactive",
+      "createdDate": "2025-05-29T20:44:06",
+      "updatedDate": "2026-01-20T22:03:04",
+      "owner": "Paul Hart",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2062.41,
+      "description": "War pressure positive."
+    },
+    {
+      "id": "beaaa7eb-ab1e-4cba-8989-d86351757802",
+      "name": "Customizable asynchronous system engine 21",
+      "status": "Active",
+      "createdDate": "2025-10-27T04:19:59",
+      "updatedDate": "2026-01-19T06:58:42",
+      "owner": "Tiffany Howard",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 429.88,
+      "description": "Party poor pretty Mrs."
+    },
+    {
+      "id": "b08bd7d0-0998-4a2f-921b-a2fd01364369",
+      "name": "Realigned user-facing approach 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-06T08:44:45",
+      "updatedDate": "2026-01-22T08:42:34",
+      "owner": "Natalie Fernandez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3173.26,
+      "description": "Whose throughout country brother."
+    },
+    {
+      "id": "2e090f9f-96d0-4204-8995-bb48e2d453b5",
+      "name": "Multi-lateral dedicated pricing structure 23",
+      "status": "Active",
+      "createdDate": "2025-03-04T04:41:56",
+      "updatedDate": "2026-01-27T22:18:12",
+      "owner": "David Washington",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6320.05,
+      "description": "So case find instead power money."
+    },
+    {
+      "id": "8cde7b15-5a90-4dbf-9a37-4d7fe25259a6",
+      "name": "Extended zero administration instruction set 24",
+      "status": "Active",
+      "createdDate": "2025-11-12T10:58:50",
+      "updatedDate": "2026-02-10T20:08:25",
+      "owner": "Denise Walker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9910.87,
+      "description": "Such ago woman weight."
+    },
+    {
+      "id": "44b7b0be-5701-457b-bc87-4ba59e2bd539",
+      "name": "Multi-channeled tertiary moratorium 25",
+      "status": "Active",
+      "createdDate": "2025-10-12T18:33:28",
+      "updatedDate": "2026-02-15T19:54:25",
+      "owner": "Michelle May",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8452.83,
+      "description": "Special east talk yes since police should level."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

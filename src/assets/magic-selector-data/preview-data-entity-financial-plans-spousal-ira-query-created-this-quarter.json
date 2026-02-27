@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 134,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a0849153-59e9-4312-8e89-3cc7acba0687",
+      "name": "Focused executive interface 1",
+      "status": "Pending",
+      "createdDate": "2026-01-20T12:56:33",
+      "updatedDate": "2026-01-20T13:51:53",
+      "owner": "Sarah Melton",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9143.55,
+      "description": "Sound realize ahead."
+    },
+    {
+      "id": "921b5877-05e9-43ed-ba5a-48241617730d",
+      "name": "Configurable logistical neural-net 2",
+      "status": "Pending",
+      "createdDate": "2025-07-29T15:27:49",
+      "updatedDate": "2026-02-17T11:24:30",
+      "owner": "Marisa Ward",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3668.01,
+      "description": "Defense ask represent."
+    },
+    {
+      "id": "b4f20ac4-5aea-4737-abc6-202583015adf",
+      "name": "Team-oriented foreground concept 3",
+      "status": "Active",
+      "createdDate": "2026-01-09T15:18:45",
+      "updatedDate": "2026-02-16T18:00:17",
+      "owner": "Jane Gibson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9773.15,
+      "description": "Right agency fall act real."
+    },
+    {
+      "id": "db29e8d9-f0c5-4ed1-a69d-abdc8bf80ebe",
+      "name": "Multi-lateral well-modulated task-force 4",
+      "status": "Inactive",
+      "createdDate": "2025-11-26T18:15:29",
+      "updatedDate": "2026-01-25T21:56:12",
+      "owner": "Matthew Watson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7629.61,
+      "description": "Design offer employee issue mission ground huge."
+    },
+    {
+      "id": "5c4fbc47-b3ab-4cd1-857f-096b94a6a766",
+      "name": "Ergonomic attitude-oriented hub 5",
+      "status": "Completed",
+      "createdDate": "2025-11-12T06:10:46",
+      "updatedDate": "2026-01-20T16:26:09",
+      "owner": "Lisa Lewis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3497.56,
+      "description": "Assume lawyer house treatment effort admit house too."
+    },
+    {
+      "id": "a6434a98-5833-4ea0-b48f-93cd3ba20ec3",
+      "name": "Implemented content-based capacity 6",
+      "status": "Completed",
+      "createdDate": "2026-02-03T09:23:30",
+      "updatedDate": "2026-02-11T17:11:24",
+      "owner": "Gabriela Church",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6302.78,
+      "description": "Phone clear medical TV."
+    },
+    {
+      "id": "fe82ad0a-ee60-4d9c-b172-b6b10dddec7f",
+      "name": "Ameliorated reciprocal website 7",
+      "status": "Pending",
+      "createdDate": "2025-03-05T23:14:06",
+      "updatedDate": "2026-02-03T10:07:58",
+      "owner": "Laura Becker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1952.99,
+      "description": "Walk because clearly cost best occur."
+    },
+    {
+      "id": "4402b34a-adb8-486c-b658-abeb54fdaccb",
+      "name": "Persistent 4thgeneration process improvement 8",
+      "status": "Inactive",
+      "createdDate": "2025-04-04T11:48:27",
+      "updatedDate": "2026-01-28T10:35:31",
+      "owner": "Roy Jones",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6868.61,
+      "description": "Pattern million color and region improve figure."
+    },
+    {
+      "id": "8df3844e-992f-4bb7-96db-8ce0e3dea48d",
+      "name": "Public-key intermediate neural-net 9",
+      "status": "Completed",
+      "createdDate": "2026-01-23T07:39:58",
+      "updatedDate": "2026-02-05T08:42:50",
+      "owner": "Monica Roberson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2841.0,
+      "description": "Talk something fund."
+    },
+    {
+      "id": "6227d5ac-f4a3-4417-aa8c-da636bc781bf",
+      "name": "Reactive scalable matrices 10",
+      "status": "Completed",
+      "createdDate": "2025-05-29T01:05:25",
+      "updatedDate": "2026-01-26T17:31:39",
+      "owner": "Ryan Smith",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6598.29,
+      "description": "It name number author."
+    },
+    {
+      "id": "c8a1bec2-47e5-4709-a737-7bea2ace3947",
+      "name": "Persistent 24/7 access 11",
+      "status": "Active",
+      "createdDate": "2025-08-17T01:44:51",
+      "updatedDate": "2026-01-31T11:55:37",
+      "owner": "Lisa Caldwell",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7614.47,
+      "description": "Federal peace window land fund education prepare."
+    },
+    {
+      "id": "8d4d7066-1d63-45bb-af51-cc18a92af967",
+      "name": "Optimized national success 12",
+      "status": "Inactive",
+      "createdDate": "2025-05-19T16:47:29",
+      "updatedDate": "2026-02-14T06:14:39",
+      "owner": "Robert Peterson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8773.44,
+      "description": "Organization pattern great people wide."
+    },
+    {
+      "id": "0917a3c6-cdef-4623-b97b-040b2141d8ae",
+      "name": "Monitored attitude-oriented product 13",
+      "status": "Inactive",
+      "createdDate": "2025-05-15T00:10:29",
+      "updatedDate": "2026-01-25T08:56:58",
+      "owner": "Stephanie Baker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8721.03,
+      "description": "News country every including finish."
+    },
+    {
+      "id": "95a744ab-44b3-4be4-8dc9-e64cbb545e1b",
+      "name": "Digitized multi-state solution 14",
+      "status": "Active",
+      "createdDate": "2025-04-18T15:45:27",
+      "updatedDate": "2026-01-20T21:40:47",
+      "owner": "Teresa James",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7171.35,
+      "description": "Two sing certainly this including."
+    },
+    {
+      "id": "7d6776cc-6377-4fe1-a83b-ca35a6210f6b",
+      "name": "Optional hybrid strategy 15",
+      "status": "Completed",
+      "createdDate": "2025-08-28T00:58:29",
+      "updatedDate": "2026-01-31T05:38:53",
+      "owner": "Donald Schroeder",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2378.22,
+      "description": "Himself modern society lot skin ahead."
+    },
+    {
+      "id": "960513df-ea0c-4068-aae5-43b0a214c6f0",
+      "name": "Multi-channeled zero-defect instruction set 16",
+      "status": "Inactive",
+      "createdDate": "2026-01-02T01:33:56",
+      "updatedDate": "2026-02-06T09:53:31",
+      "owner": "Amanda Gilbert",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 497.62,
+      "description": "Herself group wrong effect serious write."
+    },
+    {
+      "id": "a955a277-6a94-4f84-8b98-976704fe85de",
+      "name": "Open-architected stable archive 17",
+      "status": "Active",
+      "createdDate": "2025-07-04T11:38:39",
+      "updatedDate": "2026-02-12T04:37:32",
+      "owner": "Ana Ingram",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7215.68,
+      "description": "She thank surface special actually stand future easy."
+    },
+    {
+      "id": "1c40bd55-310a-4054-9bc7-ebdc335938f5",
+      "name": "Total needs-based open architecture 18",
+      "status": "Completed",
+      "createdDate": "2025-08-17T02:47:53",
+      "updatedDate": "2026-02-08T20:03:19",
+      "owner": "Melanie Williams",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9940.98,
+      "description": "Guess raise budget wear affect sure often your."
+    },
+    {
+      "id": "302e00af-1dc5-43a3-8616-868d4c943de5",
+      "name": "Virtual 3rdgeneration flexibility 19",
+      "status": "Active",
+      "createdDate": "2026-02-08T21:17:00",
+      "updatedDate": "2026-01-23T17:12:14",
+      "owner": "Kevin Jordan",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3021.71,
+      "description": "Third building whole physical mind."
+    },
+    {
+      "id": "d704b5eb-a011-433e-a70d-5bf157d0c8ac",
+      "name": "Ameliorated discrete orchestration 20",
+      "status": "Inactive",
+      "createdDate": "2025-03-16T22:15:56",
+      "updatedDate": "2026-02-04T12:55:32",
+      "owner": "Stephanie Young",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3197.01,
+      "description": "Hundred agreement teach particularly because can property."
+    },
+    {
+      "id": "551e8923-56c5-43bf-8b76-b7bcb7872bf7",
+      "name": "Self-enabling asynchronous parallelism 21",
+      "status": "Inactive",
+      "createdDate": "2025-04-27T19:13:48",
+      "updatedDate": "2026-02-06T15:13:34",
+      "owner": "Christina Mcdonald",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1464.27,
+      "description": "Author young any decade action."
+    },
+    {
+      "id": "da3bf531-5ff9-4108-bb81-460c4cfdd689",
+      "name": "Exclusive heuristic Internet solution 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-28T09:08:21",
+      "updatedDate": "2026-02-01T09:02:42",
+      "owner": "Stephanie Gomez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7482.58,
+      "description": "Strategy business probably."
+    },
+    {
+      "id": "7b9551cb-3bf3-4d2e-85eb-dd509b3a25c1",
+      "name": "Total modular initiative 23",
+      "status": "Pending",
+      "createdDate": "2025-10-21T20:02:05",
+      "updatedDate": "2026-02-03T14:53:46",
+      "owner": "Steven Rodriguez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9806.69,
+      "description": "Teacher rock water career thousand."
+    },
+    {
+      "id": "005bfce7-7492-4f24-8f56-d8b6562dab19",
+      "name": "Polarized foreground Internet solution 24",
+      "status": "Active",
+      "createdDate": "2025-02-20T03:50:55",
+      "updatedDate": "2026-02-16T20:42:01",
+      "owner": "Chris Serrano",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9538.53,
+      "description": "Happy become as new table wife car central."
+    },
+    {
+      "id": "862dce93-4797-42c7-9390-8c5ad2dd9dcd",
+      "name": "Secured needs-based solution 25",
+      "status": "Active",
+      "createdDate": "2025-08-01T00:36:47",
+      "updatedDate": "2026-02-13T04:01:30",
+      "owner": "Linda Walker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1883.67,
+      "description": "Environment skill three area future."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

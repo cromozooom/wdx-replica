@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-regulatoryfiling",
+  "queryId": "query-all-records",
+  "totalCount": 213,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "949ec499-61d7-4c1b-b0b7-69b58768a020",
+      "name": "Customer-focused multimedia middleware 1",
+      "status": "Completed",
+      "createdDate": "2025-08-28T02:36:46",
+      "updatedDate": "2026-01-28T05:21:38",
+      "owner": "Joe Adams",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7186.78,
+      "description": "Light raise own."
+    },
+    {
+      "id": "d009b72e-5ffb-4bf6-bf63-dda410f92562",
+      "name": "Quality-focused motivating throughput 2",
+      "status": "Completed",
+      "createdDate": "2025-04-18T18:37:09",
+      "updatedDate": "2026-01-22T17:22:40",
+      "owner": "Sherri Mitchell",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3175.91,
+      "description": "Coach within pressure suddenly force."
+    },
+    {
+      "id": "aca3ca06-f02a-4a55-b7bc-182986f2d6f8",
+      "name": "Balanced dynamic challenge 3",
+      "status": "Pending",
+      "createdDate": "2025-11-26T13:43:53",
+      "updatedDate": "2026-01-25T17:10:03",
+      "owner": "Jeremy Meza",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 407.78,
+      "description": "Interest page animal bank behavior."
+    },
+    {
+      "id": "0c64ef12-43e3-4863-9f6c-2cc5fda22584",
+      "name": "Programmable hybrid algorithm 4",
+      "status": "Active",
+      "createdDate": "2025-10-20T21:23:31",
+      "updatedDate": "2026-02-13T00:44:17",
+      "owner": "Amanda Ward",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4415.75,
+      "description": "Public reason management name."
+    },
+    {
+      "id": "5e52e69d-b0ef-43cb-8722-5db2db226054",
+      "name": "Cross-platform regional secured line 5",
+      "status": "Pending",
+      "createdDate": "2025-12-09T22:08:16",
+      "updatedDate": "2026-02-09T13:17:57",
+      "owner": "Fred Burns",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9955.6,
+      "description": "Industry care represent travel material."
+    },
+    {
+      "id": "0230088d-0469-4666-8838-68cc2ff70d59",
+      "name": "Grass-roots heuristic interface 6",
+      "status": "Pending",
+      "createdDate": "2025-02-18T07:44:32",
+      "updatedDate": "2026-01-30T10:37:44",
+      "owner": "Cesar Villarreal",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1468.45,
+      "description": "Stay still kid such modern see down."
+    },
+    {
+      "id": "46767574-3b99-43a7-8d53-bad36ee02a89",
+      "name": "Virtual 4thgeneration focus group 7",
+      "status": "Inactive",
+      "createdDate": "2025-12-27T15:51:48",
+      "updatedDate": "2026-01-23T19:44:19",
+      "owner": "Anthony Baker",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1586.2,
+      "description": "News president plant now stock nation."
+    },
+    {
+      "id": "edb17de6-896f-4627-b849-b52f12a98138",
+      "name": "Open-source human-resource secured line 8",
+      "status": "Active",
+      "createdDate": "2025-05-14T16:23:51",
+      "updatedDate": "2026-01-27T04:05:11",
+      "owner": "Robert Petersen",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4066.84,
+      "description": "Ahead computer rate lead song unit figure."
+    },
+    {
+      "id": "8c1dc55d-71b2-4717-b730-5964f5bcd4e9",
+      "name": "Multi-tiered client-server artificial intelligence 9",
+      "status": "Pending",
+      "createdDate": "2025-12-24T21:54:13",
+      "updatedDate": "2026-01-24T06:08:15",
+      "owner": "Frances Collins",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1447.67,
+      "description": "Happy bill seek offer Mrs."
+    },
+    {
+      "id": "31ef3991-0a02-48c8-aa53-c1757bf39e00",
+      "name": "Enhanced attitude-oriented application 10",
+      "status": "Inactive",
+      "createdDate": "2025-07-27T14:18:28",
+      "updatedDate": "2026-02-15T23:36:19",
+      "owner": "Patricia Reyes MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6625.77,
+      "description": "Everyone movement us item dog."
+    },
+    {
+      "id": "d6282268-fd1a-4ba7-bd51-df042af96069",
+      "name": "Multi-channeled upward-trending encryption 11",
+      "status": "Completed",
+      "createdDate": "2025-08-06T20:29:09",
+      "updatedDate": "2026-02-07T20:11:05",
+      "owner": "Lisa Collins",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 142.61,
+      "description": "Consumer up bank keep either field late partner."
+    },
+    {
+      "id": "908e3c39-cfda-49f3-97bf-2aa9b2c0a11f",
+      "name": "Organized human-resource hierarchy 12",
+      "status": "Completed",
+      "createdDate": "2025-09-19T01:11:01",
+      "updatedDate": "2026-02-07T21:32:15",
+      "owner": "Mr. Jeremiah Hester",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 839.48,
+      "description": "Ability medical what."
+    },
+    {
+      "id": "400b7626-7b33-492f-b32d-bf05040f906f",
+      "name": "Programmable background frame 13",
+      "status": "Completed",
+      "createdDate": "2025-10-31T21:06:57",
+      "updatedDate": "2026-02-10T07:12:21",
+      "owner": "Michael Graham",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1933.55,
+      "description": "Factor fall far run today."
+    },
+    {
+      "id": "25a29a58-9361-41d4-b070-50877e6e2164",
+      "name": "Versatile motivating hierarchy 14",
+      "status": "Pending",
+      "createdDate": "2025-06-11T12:17:58",
+      "updatedDate": "2026-02-16T05:07:56",
+      "owner": "Jennifer Wilson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4537.07,
+      "description": "Owner agreement rise hard."
+    },
+    {
+      "id": "d9890b03-cee3-406c-abd9-9ff11eb75cb1",
+      "name": "Function-based high-level approach 15",
+      "status": "Active",
+      "createdDate": "2025-09-09T23:09:21",
+      "updatedDate": "2026-02-17T00:38:51",
+      "owner": "Denise Howard",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1189.75,
+      "description": "Shake scene at."
+    },
+    {
+      "id": "ac205722-b360-45f7-8030-b7fc3a1b7774",
+      "name": "Synchronized impactful circuit 16",
+      "status": "Inactive",
+      "createdDate": "2025-10-02T13:20:24",
+      "updatedDate": "2026-01-21T11:12:42",
+      "owner": "Steven Perez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1631.25,
+      "description": "Network section view month several different."
+    },
+    {
+      "id": "72510eda-a338-4450-be69-d348591bed28",
+      "name": "Extended systematic collaboration 17",
+      "status": "Active",
+      "createdDate": "2025-11-21T12:06:02",
+      "updatedDate": "2026-01-23T08:26:51",
+      "owner": "Daniel Torres",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6359.91,
+      "description": "Production summer evidence forget."
+    },
+    {
+      "id": "74cccae7-2bbb-411a-95e5-ce2139e40173",
+      "name": "Multi-channeled fresh-thinking process improvement 18",
+      "status": "Active",
+      "createdDate": "2025-10-19T20:40:50",
+      "updatedDate": "2026-02-06T12:15:50",
+      "owner": "John Watson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6678.0,
+      "description": "Allow history travel couple system along own natural."
+    },
+    {
+      "id": "6dd536a3-dd95-4cd7-97eb-7288e50c1617",
+      "name": "Digitized value-added groupware 19",
+      "status": "Pending",
+      "createdDate": "2025-08-08T22:05:47",
+      "updatedDate": "2026-02-12T00:10:15",
+      "owner": "Alicia Cuevas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1703.1,
+      "description": "Usually various many specific actually always."
+    },
+    {
+      "id": "9e6ecb9b-086c-429d-8e2e-caf39e667d79",
+      "name": "Ergonomic even-keeled budgetary management 20",
+      "status": "Pending",
+      "createdDate": "2025-07-19T03:14:49",
+      "updatedDate": "2026-02-11T18:02:04",
+      "owner": "Scott Sullivan",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4866.26,
+      "description": "Total spend say."
+    },
+    {
+      "id": "942a1a0f-dde2-4335-a7ed-1b69121c32e2",
+      "name": "Compatible encompassing flexibility 21",
+      "status": "Pending",
+      "createdDate": "2025-09-15T16:12:21",
+      "updatedDate": "2026-02-12T14:00:25",
+      "owner": "Michael Crane",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7249.06,
+      "description": "Threat commercial get exist culture friend find."
+    },
+    {
+      "id": "8061883c-8b7f-4ba3-9231-cb632bfd35a9",
+      "name": "Sharable context-sensitive Local Area Network 22",
+      "status": "Active",
+      "createdDate": "2025-06-22T22:49:29",
+      "updatedDate": "2026-02-02T00:51:36",
+      "owner": "Helen Burgess",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5468.14,
+      "description": "Father article music there food."
+    },
+    {
+      "id": "e5211693-80f3-46aa-9232-7f57eea811af",
+      "name": "Enterprise-wide context-sensitive application 23",
+      "status": "Active",
+      "createdDate": "2025-09-11T16:58:24",
+      "updatedDate": "2026-02-01T08:37:37",
+      "owner": "Mr. Derek Hernandez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3607.36,
+      "description": "Strong meeting wife various seek recent."
+    },
+    {
+      "id": "41386fa7-ff61-4874-b96b-793daa97bdd1",
+      "name": "Focused clear-thinking open system 24",
+      "status": "Completed",
+      "createdDate": "2025-07-24T09:27:13",
+      "updatedDate": "2026-02-01T04:39:19",
+      "owner": "Heather Hicks",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8764.41,
+      "description": "Stage bring fight office pay window our save."
+    },
+    {
+      "id": "5d143ddc-c2b0-49c8-acc6-e21ba1474462",
+      "name": "Expanded zero administration customer loyalty 25",
+      "status": "Pending",
+      "createdDate": "2025-09-03T01:21:58",
+      "updatedDate": "2026-01-31T09:30:34",
+      "owner": "Terry Young",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8873.6,
+      "description": "Attention finish scientist other weight painting production."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

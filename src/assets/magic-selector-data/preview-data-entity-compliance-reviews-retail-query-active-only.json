@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-active-only",
+  "totalCount": 449,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "67052117-da9d-4717-85ee-c94577c5a9ff",
+      "name": "Advanced value-added capability 1",
+      "status": "Completed",
+      "createdDate": "2025-07-30T16:14:56",
+      "updatedDate": "2026-02-15T06:29:24",
+      "owner": "Troy Hill",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4575.13,
+      "description": "Three far take."
+    },
+    {
+      "id": "1cae55fc-0b1e-410e-bc5d-82a682b4f8fe",
+      "name": "Enhanced needs-based pricing structure 2",
+      "status": "Active",
+      "createdDate": "2025-10-27T19:12:29",
+      "updatedDate": "2026-02-02T08:42:25",
+      "owner": "Michele Jimenez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 890.9,
+      "description": "Price story class along tell two."
+    },
+    {
+      "id": "94bd244c-9a77-44b2-87d8-286493858082",
+      "name": "Quality-focused foreground core 3",
+      "status": "Completed",
+      "createdDate": "2025-06-26T07:11:20",
+      "updatedDate": "2026-02-12T22:16:21",
+      "owner": "Andrew Mccoy",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1979.04,
+      "description": "Later simply parent debate apply mind."
+    },
+    {
+      "id": "950d2713-2cbe-447e-8235-a4ef7b09061e",
+      "name": "Centralized intangible focus group 4",
+      "status": "Completed",
+      "createdDate": "2026-02-12T07:48:14",
+      "updatedDate": "2026-01-28T02:17:32",
+      "owner": "John Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3253.89,
+      "description": "Central himself speech development recently yourself short."
+    },
+    {
+      "id": "49cebec0-f562-40b5-bb74-90e299d07496",
+      "name": "Programmable eco-centric access 5",
+      "status": "Inactive",
+      "createdDate": "2025-09-05T15:52:48",
+      "updatedDate": "2026-02-15T18:17:56",
+      "owner": "Melissa Cook",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6500.48,
+      "description": "Last economy organization bit eat reveal."
+    },
+    {
+      "id": "a5d6a781-1d9b-4e98-b576-d7c0b6559085",
+      "name": "Diverse maximized intranet 6",
+      "status": "Pending",
+      "createdDate": "2025-08-05T22:57:34",
+      "updatedDate": "2026-01-24T02:25:10",
+      "owner": "Ashley Fields",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9199.56,
+      "description": "Campaign well job recognize."
+    },
+    {
+      "id": "7b52cc8c-beb5-4f26-81f3-12bfa11cfc55",
+      "name": "Robust regional access 7",
+      "status": "Completed",
+      "createdDate": "2026-01-17T11:10:58",
+      "updatedDate": "2026-02-06T05:28:35",
+      "owner": "Veronica Gordon",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2190.19,
+      "description": "Already chance some care family."
+    },
+    {
+      "id": "cb56025c-b169-4f4e-89a4-a2edb7669428",
+      "name": "Cross-group solution-oriented collaboration 8",
+      "status": "Completed",
+      "createdDate": "2025-08-11T12:22:47",
+      "updatedDate": "2026-02-06T00:21:16",
+      "owner": "Edwin Benjamin",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7373.0,
+      "description": "Job would soon between end policy skin."
+    },
+    {
+      "id": "0a0adc38-15dd-49b8-bbb5-b2b3ae4ea76b",
+      "name": "Persistent global parallelism 9",
+      "status": "Inactive",
+      "createdDate": "2025-04-15T04:47:01",
+      "updatedDate": "2026-02-03T12:00:16",
+      "owner": "Diana Richards",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1226.03,
+      "description": "Hope to score significant difference."
+    },
+    {
+      "id": "2f17a862-b50f-4a01-9aa7-3f47d3c8ef53",
+      "name": "Integrated zero administration architecture 10",
+      "status": "Completed",
+      "createdDate": "2025-11-07T07:48:40",
+      "updatedDate": "2026-01-26T19:48:59",
+      "owner": "John Anderson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9422.34,
+      "description": "Situation visit hair again decide."
+    },
+    {
+      "id": "ee57f7c8-690a-468c-9144-cf8608431846",
+      "name": "Object-based mission-critical ability 11",
+      "status": "Completed",
+      "createdDate": "2025-10-31T07:18:25",
+      "updatedDate": "2026-01-23T03:17:07",
+      "owner": "Anthony Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5710.46,
+      "description": "Degree budget point leave imagine practice meet probably."
+    },
+    {
+      "id": "fa8b4b43-8745-4187-be6e-e4120fff8741",
+      "name": "Synergistic stable approach 12",
+      "status": "Completed",
+      "createdDate": "2025-03-08T06:56:38",
+      "updatedDate": "2026-02-13T22:11:35",
+      "owner": "Makayla Tyler",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2146.87,
+      "description": "Deep sense eye we kitchen."
+    },
+    {
+      "id": "608f732b-9100-4304-910b-e29d6964dada",
+      "name": "Fully-configurable hybrid solution 13",
+      "status": "Completed",
+      "createdDate": "2026-01-01T17:15:40",
+      "updatedDate": "2026-01-30T20:43:13",
+      "owner": "Samuel Martinez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 864.69,
+      "description": "Participant successful field catch during water everyone."
+    },
+    {
+      "id": "c3d2d6f0-d8ae-43c0-a55c-23bc0491af25",
+      "name": "Advanced well-modulated moratorium 14",
+      "status": "Pending",
+      "createdDate": "2025-07-21T08:54:21",
+      "updatedDate": "2026-01-31T23:05:01",
+      "owner": "Juan Young",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3417.57,
+      "description": "Hold project catch large keep especially."
+    },
+    {
+      "id": "11f5f41d-3f72-4e0c-865a-f654ec04e1d9",
+      "name": "Innovative context-sensitive website 15",
+      "status": "Completed",
+      "createdDate": "2026-01-31T12:24:00",
+      "updatedDate": "2026-02-08T21:52:40",
+      "owner": "Dave Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5698.21,
+      "description": "Various thank whether really."
+    },
+    {
+      "id": "2c97f005-305e-4210-a31c-a4971de60321",
+      "name": "Automated uniform hardware 16",
+      "status": "Inactive",
+      "createdDate": "2025-06-17T01:20:17",
+      "updatedDate": "2026-01-27T03:56:06",
+      "owner": "Roy Sanchez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9223.39,
+      "description": "Challenge shoulder administration nice tax space indicate team."
+    },
+    {
+      "id": "4fca691e-4950-465d-b340-5e7a2cd29b81",
+      "name": "Fully-configurable clear-thinking array 17",
+      "status": "Active",
+      "createdDate": "2025-12-16T22:40:33",
+      "updatedDate": "2026-02-12T13:14:26",
+      "owner": "Kelly Mason",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7899.43,
+      "description": "Fight plant campaign baby low keep outside."
+    },
+    {
+      "id": "66257387-852c-40a9-aa57-3026c247d0cb",
+      "name": "Ergonomic interactive interface 18",
+      "status": "Inactive",
+      "createdDate": "2025-08-12T17:26:30",
+      "updatedDate": "2026-02-15T10:01:26",
+      "owner": "Hannah Brown",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5592.05,
+      "description": "Young letter likely gas organization camera."
+    },
+    {
+      "id": "65607984-b2c8-48ff-a7cc-3820773cce91",
+      "name": "User-friendly web-enabled service-desk 19",
+      "status": "Pending",
+      "createdDate": "2025-10-26T03:11:03",
+      "updatedDate": "2026-02-07T01:08:59",
+      "owner": "Jonathan Ibarra",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2319.44,
+      "description": "Church color pretty same which interview spend."
+    },
+    {
+      "id": "a8f840c2-4eb8-4364-aaf2-1a26612be152",
+      "name": "Progressive empowering knowledgebase 20",
+      "status": "Pending",
+      "createdDate": "2025-10-28T10:52:50",
+      "updatedDate": "2026-02-16T20:48:08",
+      "owner": "Joann Figueroa",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2314.35,
+      "description": "From bit magazine something five."
+    },
+    {
+      "id": "df304f70-1e1d-45c4-86cb-34f05ca75886",
+      "name": "Vision-oriented upward-trending framework 21",
+      "status": "Active",
+      "createdDate": "2025-02-28T15:03:33",
+      "updatedDate": "2026-01-21T15:43:43",
+      "owner": "Daniel Norton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2642.95,
+      "description": "Professor measure safe."
+    },
+    {
+      "id": "18607812-fbfb-48ce-8452-31475670e472",
+      "name": "User-centric 5thgeneration budgetary management 22",
+      "status": "Completed",
+      "createdDate": "2025-02-17T06:05:35",
+      "updatedDate": "2026-01-26T18:12:15",
+      "owner": "Curtis Turner",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5609.99,
+      "description": "Parent difficult recently painting where vote."
+    },
+    {
+      "id": "9895fa7a-db02-4a01-9a1f-ac543b565eb1",
+      "name": "Reactive contextually-based strategy 23",
+      "status": "Completed",
+      "createdDate": "2025-10-22T20:52:39",
+      "updatedDate": "2026-01-26T05:41:27",
+      "owner": "Kevin Fowler",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9387.61,
+      "description": "Environmental most whole."
+    },
+    {
+      "id": "c0d14116-3423-4ef0-9835-f13791de385c",
+      "name": "Sharable bottom-line moderator 24",
+      "status": "Completed",
+      "createdDate": "2025-04-23T02:29:06",
+      "updatedDate": "2026-01-31T23:12:50",
+      "owner": "Richard Duran",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2565.63,
+      "description": "Quality charge clearly day well source resource Congress."
+    },
+    {
+      "id": "adedcb3c-24a7-4349-b544-c3451fba747a",
+      "name": "Front-line encompassing adapter 25",
+      "status": "Inactive",
+      "createdDate": "2025-10-17T06:44:32",
+      "updatedDate": "2026-02-13T22:08:17",
+      "owner": "Robert Hughes",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6139.47,
+      "description": "Remain hand drop information hundred."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

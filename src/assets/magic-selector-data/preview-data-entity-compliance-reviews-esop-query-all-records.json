@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-all-records",
+  "totalCount": 626,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "d146bdaf-6641-4074-b9db-ff5910fe6587",
+      "name": "Organic tangible array 1",
+      "status": "Inactive",
+      "createdDate": "2025-04-06T22:15:50",
+      "updatedDate": "2026-02-08T12:35:58",
+      "owner": "Kathleen Pugh",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 489.31,
+      "description": "Nation professor arrive financial scientist item enough."
+    },
+    {
+      "id": "7b668843-2b54-4e36-b42a-9c9100415eae",
+      "name": "Persistent motivating utilization 2",
+      "status": "Inactive",
+      "createdDate": "2026-01-04T11:32:47",
+      "updatedDate": "2026-02-14T15:58:32",
+      "owner": "Jeffrey Dixon",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2417.14,
+      "description": "Behavior condition election sound himself."
+    },
+    {
+      "id": "a7a8c87a-1f01-44ce-ba8c-deb7c0338e9d",
+      "name": "Reactive encompassing contingency 3",
+      "status": "Active",
+      "createdDate": "2025-08-17T12:02:52",
+      "updatedDate": "2026-02-13T15:18:42",
+      "owner": "Dylan Flores",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9759.49,
+      "description": "Hand here maintain in expect dinner song."
+    },
+    {
+      "id": "cd4bb560-c2be-4191-890e-d1572038ea3a",
+      "name": "Proactive incremental software 4",
+      "status": "Pending",
+      "createdDate": "2026-01-12T03:08:40",
+      "updatedDate": "2026-02-11T15:54:43",
+      "owner": "Ronald Delgado",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9805.99,
+      "description": "Contain public teacher another."
+    },
+    {
+      "id": "fa111bde-df9e-48ce-adb0-76ccbbade402",
+      "name": "Object-based content-based task-force 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-22T01:06:13",
+      "updatedDate": "2026-01-28T10:29:47",
+      "owner": "Michelle Miller",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7256.93,
+      "description": "Heart enough eight hope picture wait."
+    },
+    {
+      "id": "4d856f5a-804d-4dbb-ac1d-165a7c325a54",
+      "name": "Decentralized content-based capability 6",
+      "status": "Inactive",
+      "createdDate": "2026-02-11T10:58:54",
+      "updatedDate": "2026-02-05T00:40:18",
+      "owner": "Elizabeth Olson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 369.16,
+      "description": "A green draw west risk."
+    },
+    {
+      "id": "cfce4c13-5f73-43a2-b54c-0058a64f93b2",
+      "name": "Cloned composite definition 7",
+      "status": "Completed",
+      "createdDate": "2025-05-21T23:32:43",
+      "updatedDate": "2026-02-06T11:09:24",
+      "owner": "Jill Tran",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4528.8,
+      "description": "During manager appear up song prepare."
+    },
+    {
+      "id": "1b91c2dd-ba6c-44ac-94d6-2073aface00f",
+      "name": "Fundamental stable pricing structure 8",
+      "status": "Active",
+      "createdDate": "2025-06-14T00:24:48",
+      "updatedDate": "2026-02-02T00:39:34",
+      "owner": "Matthew Alvarez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5576.08,
+      "description": "Seat list do own business heavy officer."
+    },
+    {
+      "id": "0a9fe1f9-f30b-4ecd-ae77-245a40c9364a",
+      "name": "Adaptive disintermediate knowledgebase 9",
+      "status": "Active",
+      "createdDate": "2025-08-30T09:54:38",
+      "updatedDate": "2026-02-03T08:36:48",
+      "owner": "Emily Coleman",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 878.17,
+      "description": "Feeling strong record."
+    },
+    {
+      "id": "e179c8bd-c463-4886-9c28-5e55eb1d3d56",
+      "name": "Implemented value-added framework 10",
+      "status": "Completed",
+      "createdDate": "2025-06-24T07:04:41",
+      "updatedDate": "2026-01-19T01:20:54",
+      "owner": "Christopher Woodward",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5309.79,
+      "description": "Week increase place attorney name trouble rich."
+    },
+    {
+      "id": "4213d019-a585-4c5b-90ec-e4ccd5c15071",
+      "name": "Team-oriented multimedia benchmark 11",
+      "status": "Inactive",
+      "createdDate": "2025-04-23T22:04:16",
+      "updatedDate": "2026-01-30T16:10:20",
+      "owner": "Stacey Dodson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3870.84,
+      "description": "Reason social artist behind strong yet huge."
+    },
+    {
+      "id": "d3efe53b-e0db-4f73-94c3-9ffe001dd354",
+      "name": "Adaptive solution-oriented time-frame 12",
+      "status": "Inactive",
+      "createdDate": "2026-01-25T14:56:57",
+      "updatedDate": "2026-02-09T19:37:19",
+      "owner": "Elizabeth Berry",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6365.17,
+      "description": "Safe and subject marriage."
+    },
+    {
+      "id": "6e419cc0-bec9-4319-ab3b-826a70d7dbdf",
+      "name": "Re-engineered bandwidth-monitored orchestration 13",
+      "status": "Completed",
+      "createdDate": "2025-07-29T03:38:23",
+      "updatedDate": "2026-01-27T01:53:38",
+      "owner": "Kevin Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1647.19,
+      "description": "Huge leave huge almost order these natural."
+    },
+    {
+      "id": "d7d22d5f-6321-44e4-ab30-13d57019aada",
+      "name": "Customizable system-worthy parallelism 14",
+      "status": "Active",
+      "createdDate": "2025-07-25T00:02:16",
+      "updatedDate": "2026-01-24T14:04:06",
+      "owner": "Patricia Pacheco",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6425.4,
+      "description": "Fine our author improve."
+    },
+    {
+      "id": "4438b99d-d11b-46aa-83b7-33a0218326b8",
+      "name": "Diverse mission-critical firmware 15",
+      "status": "Inactive",
+      "createdDate": "2025-04-23T01:08:40",
+      "updatedDate": "2026-02-06T22:44:16",
+      "owner": "Alejandro Simmons",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9992.24,
+      "description": "Decade per huge rich form."
+    },
+    {
+      "id": "23102362-0ff7-4b2f-8c52-056bb2377c30",
+      "name": "Vision-oriented responsive Internet solution 16",
+      "status": "Active",
+      "createdDate": "2025-08-04T20:27:35",
+      "updatedDate": "2026-02-05T03:02:25",
+      "owner": "Lawrence Ramirez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7745.28,
+      "description": "Short idea board."
+    },
+    {
+      "id": "c7b2d9a7-7b47-4554-a601-8aaa44ad9694",
+      "name": "Diverse 4thgeneration encryption 17",
+      "status": "Active",
+      "createdDate": "2025-10-03T09:00:51",
+      "updatedDate": "2026-01-26T16:55:37",
+      "owner": "David Gutierrez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 351.7,
+      "description": "Reason into machine."
+    },
+    {
+      "id": "8b8d1d85-1e5f-4ba5-9022-6cf65cf153cd",
+      "name": "Customer-focused real-time implementation 18",
+      "status": "Active",
+      "createdDate": "2025-09-08T06:01:53",
+      "updatedDate": "2026-02-08T02:34:33",
+      "owner": "Robert Soto",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8682.94,
+      "description": "For least campaign trade."
+    },
+    {
+      "id": "8121f1a6-1ccf-4581-81d2-b419616c4da0",
+      "name": "Polarized neutral architecture 19",
+      "status": "Active",
+      "createdDate": "2025-06-04T18:17:37",
+      "updatedDate": "2026-01-24T00:56:48",
+      "owner": "Margaret Nguyen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4878.19,
+      "description": "Nearly mother either part series add appear."
+    },
+    {
+      "id": "e700582a-c4dd-40c6-9bec-1eece8cbf4bb",
+      "name": "Exclusive clear-thinking extranet 20",
+      "status": "Pending",
+      "createdDate": "2025-07-29T02:32:42",
+      "updatedDate": "2026-01-21T15:36:09",
+      "owner": "Joshua Garcia",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8748.84,
+      "description": "Him represent paper if measure along relate."
+    },
+    {
+      "id": "e72138f3-ad4b-4b86-ad6f-a1a8bd0bd976",
+      "name": "Phased dedicated open architecture 21",
+      "status": "Inactive",
+      "createdDate": "2026-01-23T21:37:21",
+      "updatedDate": "2026-02-03T23:17:26",
+      "owner": "Heather Turner",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3805.96,
+      "description": "Relationship personal color science politics support picture."
+    },
+    {
+      "id": "f3851cfd-025f-425d-b59a-f0981aa4de62",
+      "name": "Face-to-face explicit support 22",
+      "status": "Inactive",
+      "createdDate": "2025-02-18T20:42:28",
+      "updatedDate": "2026-01-26T14:41:46",
+      "owner": "Sarah Ramsey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6369.49,
+      "description": "Ten pay increase fear."
+    },
+    {
+      "id": "b269e7be-65dd-40b3-a12a-5f3107268a47",
+      "name": "User-friendly client-server data-warehouse 23",
+      "status": "Active",
+      "createdDate": "2025-11-18T05:31:37",
+      "updatedDate": "2026-02-05T19:50:07",
+      "owner": "Hannah Duarte",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2038.79,
+      "description": "Material at hair international attention ask rate."
+    },
+    {
+      "id": "063c4a3b-f082-4aea-9b7b-ea263edc4acc",
+      "name": "Synergized real-time customer loyalty 24",
+      "status": "Inactive",
+      "createdDate": "2025-08-07T06:24:30",
+      "updatedDate": "2026-02-11T21:16:27",
+      "owner": "Peter Garza",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9876.78,
+      "description": "Senior nature check direction focus try."
+    },
+    {
+      "id": "f09c8859-9c90-44e3-a6f4-b45074aef2f2",
+      "name": "Seamless asymmetric synergy 25",
+      "status": "Active",
+      "createdDate": "2026-01-20T05:02:28",
+      "updatedDate": "2026-02-13T17:38:25",
+      "owner": "Nicole Howe",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1010.25,
+      "description": "Choose treat call."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

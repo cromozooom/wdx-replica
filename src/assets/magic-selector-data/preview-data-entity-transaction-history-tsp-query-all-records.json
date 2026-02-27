@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-all-records",
+  "totalCount": 999,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "6ff3fb49-7bde-40e6-9a37-88f89cf190cc",
+      "name": "Secured secondary core 1",
+      "status": "Pending",
+      "createdDate": "2025-09-15T03:18:35",
+      "updatedDate": "2026-02-14T23:10:51",
+      "owner": "Jennifer Johnston",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4706.29,
+      "description": "Possible camera purpose."
+    },
+    {
+      "id": "70521e55-7b48-4fb2-abfe-acef615eb83d",
+      "name": "Realigned tertiary website 2",
+      "status": "Pending",
+      "createdDate": "2026-01-04T11:21:06",
+      "updatedDate": "2026-02-06T16:16:54",
+      "owner": "Edward Diaz",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 298.91,
+      "description": "Bar yourself modern happy let."
+    },
+    {
+      "id": "ca72407b-2f4e-4901-afdf-ae582cd073f9",
+      "name": "User-friendly object-oriented encryption 3",
+      "status": "Inactive",
+      "createdDate": "2025-02-27T08:11:37",
+      "updatedDate": "2026-02-09T16:21:29",
+      "owner": "Ashley Hill",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2743.18,
+      "description": "Here go as happy buy right staff improve."
+    },
+    {
+      "id": "4adde826-a251-4837-a1cc-9d2dd8cc4978",
+      "name": "Business-focused scalable solution 4",
+      "status": "Completed",
+      "createdDate": "2025-04-09T09:12:51",
+      "updatedDate": "2026-01-28T16:33:32",
+      "owner": "Randall Lewis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3833.44,
+      "description": "And discover number defense."
+    },
+    {
+      "id": "58def506-aa86-44f9-8f07-44077c3e7682",
+      "name": "Distributed exuding pricing structure 5",
+      "status": "Completed",
+      "createdDate": "2025-12-12T05:43:05",
+      "updatedDate": "2026-02-05T07:21:30",
+      "owner": "Yolanda Johnson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9143.05,
+      "description": "Open alone thank make chance himself."
+    },
+    {
+      "id": "bff57aab-2c5d-48fd-bba9-d890359ffdb8",
+      "name": "Assimilated motivating methodology 6",
+      "status": "Pending",
+      "createdDate": "2025-03-09T08:01:28",
+      "updatedDate": "2026-02-13T00:49:38",
+      "owner": "Michelle Hatfield",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2451.6,
+      "description": "Assume see ok action."
+    },
+    {
+      "id": "29d3d198-c4ff-4c42-8e0f-c70b3a5b1f5f",
+      "name": "Future-proofed bottom-line help-desk 7",
+      "status": "Pending",
+      "createdDate": "2025-11-21T03:52:08",
+      "updatedDate": "2026-01-30T14:08:56",
+      "owner": "Caroline Valenzuela PhD",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1219.1,
+      "description": "Knowledge amount stuff often police."
+    },
+    {
+      "id": "8aa81f8b-5f37-4404-8809-440427efd4f9",
+      "name": "Down-sized executive artificial intelligence 8",
+      "status": "Pending",
+      "createdDate": "2025-02-28T14:08:38",
+      "updatedDate": "2026-02-14T08:05:14",
+      "owner": "Derek Robinson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 261.5,
+      "description": "Hospital Democrat stock water down certainly scene."
+    },
+    {
+      "id": "aeb1fe2d-af7d-4518-868d-1e23cb1f116c",
+      "name": "Extended systemic throughput 9",
+      "status": "Active",
+      "createdDate": "2025-11-05T10:45:26",
+      "updatedDate": "2026-01-19T13:15:02",
+      "owner": "Beth Rodriguez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1698.84,
+      "description": "Environmental begin little western ahead."
+    },
+    {
+      "id": "f87f6b70-e7cf-49e7-a53c-771e537e7fba",
+      "name": "Upgradable demand-driven intranet 10",
+      "status": "Completed",
+      "createdDate": "2025-04-22T20:19:30",
+      "updatedDate": "2026-02-02T18:04:08",
+      "owner": "Susan Carey",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1692.35,
+      "description": "Others quality form stand into."
+    },
+    {
+      "id": "bc0c9ff7-0b80-47e2-9614-3315c0ad7ec3",
+      "name": "Organized background productivity 11",
+      "status": "Pending",
+      "createdDate": "2025-11-09T00:26:47",
+      "updatedDate": "2026-02-01T10:15:18",
+      "owner": "Zoe Moore",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4726.1,
+      "description": "Book now everything."
+    },
+    {
+      "id": "aea1023e-3628-4e8a-a4f9-43f07a9db562",
+      "name": "Networked secondary definition 12",
+      "status": "Inactive",
+      "createdDate": "2025-08-13T13:18:58",
+      "updatedDate": "2026-02-13T17:09:31",
+      "owner": "Miguel Douglas",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3134.56,
+      "description": "Arm establish respond important language memory."
+    },
+    {
+      "id": "b73794db-dca8-4a18-b791-109fc46c2021",
+      "name": "Automated radical application 13",
+      "status": "Active",
+      "createdDate": "2025-05-25T10:18:08",
+      "updatedDate": "2026-01-20T13:56:22",
+      "owner": "Kristine Roy",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 733.1,
+      "description": "Single like bad major inside war."
+    },
+    {
+      "id": "a9ff4eaf-3657-4052-bda2-c32f5df10782",
+      "name": "Distributed web-enabled moratorium 14",
+      "status": "Active",
+      "createdDate": "2025-09-27T21:52:36",
+      "updatedDate": "2026-01-28T11:08:27",
+      "owner": "Shane Warner",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7683.3,
+      "description": "Occur town others manager car."
+    },
+    {
+      "id": "7862b106-896c-40c4-a3f4-812a59ced181",
+      "name": "Extended multi-tasking collaboration 15",
+      "status": "Active",
+      "createdDate": "2025-02-22T16:00:07",
+      "updatedDate": "2026-02-09T14:04:23",
+      "owner": "Jessica Mejia MD",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2470.56,
+      "description": "Since reach president institution."
+    },
+    {
+      "id": "083fee5b-1635-49d5-a0f7-4b21a8fc7b47",
+      "name": "Exclusive discrete neural-net 16",
+      "status": "Active",
+      "createdDate": "2025-07-03T20:16:45",
+      "updatedDate": "2026-02-16T16:30:57",
+      "owner": "Jennifer Mcneil",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3739.47,
+      "description": "Recent owner make whatever feel."
+    },
+    {
+      "id": "32ec6b0e-a121-47d5-afed-e65422211ecd",
+      "name": "Function-based object-oriented customer loyalty 17",
+      "status": "Pending",
+      "createdDate": "2025-12-26T10:00:50",
+      "updatedDate": "2026-02-02T12:58:55",
+      "owner": "Richard Harmon",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3975.19,
+      "description": "Late military these cause security administration director."
+    },
+    {
+      "id": "35356e3e-e8e8-4b1b-b2b7-8b358251244e",
+      "name": "Business-focused human-resource project 18",
+      "status": "Completed",
+      "createdDate": "2026-01-10T17:31:34",
+      "updatedDate": "2026-01-19T20:36:18",
+      "owner": "John Burke",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8484.85,
+      "description": "Stage mission never place watch official."
+    },
+    {
+      "id": "53029730-d0b8-4753-91dc-17029c2caf3c",
+      "name": "Upgradable neutral portal 19",
+      "status": "Pending",
+      "createdDate": "2025-05-14T01:05:06",
+      "updatedDate": "2026-02-02T15:49:41",
+      "owner": "Andre Sanchez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1144.67,
+      "description": "Anything themselves its indicate more."
+    },
+    {
+      "id": "3e3a002b-068d-4ef1-a999-8c10e803fec2",
+      "name": "Team-oriented empowering Internet solution 20",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T19:43:41",
+      "updatedDate": "2026-01-27T22:25:34",
+      "owner": "Rita Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3319.55,
+      "description": "Agree high education since across set."
+    },
+    {
+      "id": "22bd353e-b5ad-4352-bce8-03b186cc7644",
+      "name": "Diverse asynchronous parallelism 21",
+      "status": "Completed",
+      "createdDate": "2025-07-27T04:33:41",
+      "updatedDate": "2026-02-12T19:53:25",
+      "owner": "Mr. David Scott",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8929.33,
+      "description": "Artist defense large offer last feel."
+    },
+    {
+      "id": "1fc4e42b-6cff-4ff4-a178-81cea161ca28",
+      "name": "Innovative didactic functionalities 22",
+      "status": "Pending",
+      "createdDate": "2025-09-16T23:31:31",
+      "updatedDate": "2026-02-03T13:13:03",
+      "owner": "Victoria Long",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5794.56,
+      "description": "Look majority past right."
+    },
+    {
+      "id": "b6f18706-0eaf-4c4b-ba4c-c807bb37ad38",
+      "name": "Cross-platform stable methodology 23",
+      "status": "Inactive",
+      "createdDate": "2025-02-27T20:05:11",
+      "updatedDate": "2026-02-17T02:21:47",
+      "owner": "Linda Alvarez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4634.2,
+      "description": "Use policy toward throw hot animal store."
+    },
+    {
+      "id": "0b8a8abf-6583-44fa-b519-9a8668f24ab7",
+      "name": "Multi-lateral neutral software 24",
+      "status": "Active",
+      "createdDate": "2025-05-10T14:58:29",
+      "updatedDate": "2026-01-25T20:20:57",
+      "owner": "Ashley May",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6259.23,
+      "description": "Rate forget argue talk to president."
+    },
+    {
+      "id": "403a2691-1e8f-4516-b1b7-0dbb15a082e9",
+      "name": "Decentralized modular Internet solution 25",
+      "status": "Active",
+      "createdDate": "2025-10-23T02:36:41",
+      "updatedDate": "2026-02-02T01:04:45",
+      "owner": "Dr. Carl Warren",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6682.34,
+      "description": "Room customer specific."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

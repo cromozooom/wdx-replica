@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-research",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 537,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "831b1915-d3bd-457b-8407-64ed0a2a7c93",
+      "name": "Reactive user-facing solution 1",
+      "status": "Inactive",
+      "createdDate": "2025-04-21T21:08:40",
+      "updatedDate": "2026-02-02T05:17:01",
+      "owner": "Jessica Adkins",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4451.97,
+      "description": "Later game style fall."
+    },
+    {
+      "id": "7b0f478a-ee88-4cf1-a89e-7a7e9f4279da",
+      "name": "Balanced real-time secured line 2",
+      "status": "Pending",
+      "createdDate": "2025-04-06T00:49:22",
+      "updatedDate": "2026-02-16T12:55:19",
+      "owner": "Robert Friedman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9531.37,
+      "description": "Control space home."
+    },
+    {
+      "id": "c17a15dd-c8df-4c36-850d-62e746867a6e",
+      "name": "Networked value-added system engine 3",
+      "status": "Completed",
+      "createdDate": "2025-12-10T08:31:44",
+      "updatedDate": "2026-02-01T22:52:02",
+      "owner": "Brian Villarreal",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9696.18,
+      "description": "Meet good fact."
+    },
+    {
+      "id": "2ff46517-131c-4fb7-8ac8-f85f08516a8c",
+      "name": "Devolved next generation extranet 4",
+      "status": "Inactive",
+      "createdDate": "2025-07-26T05:39:33",
+      "updatedDate": "2026-01-29T01:23:56",
+      "owner": "Samantha Oneal",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2296.88,
+      "description": "Discuss animal share attention but purpose."
+    },
+    {
+      "id": "b8fdb2cf-7841-43bf-9242-0bbddf286ba0",
+      "name": "Object-based contextually-based workforce 5",
+      "status": "Pending",
+      "createdDate": "2025-06-22T06:46:40",
+      "updatedDate": "2026-02-09T07:51:37",
+      "owner": "Jacob Mason",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8083.73,
+      "description": "Begin where speak what."
+    },
+    {
+      "id": "1d3357d3-77c7-4c02-85a8-2eb8e491f98c",
+      "name": "Robust multi-state circuit 6",
+      "status": "Pending",
+      "createdDate": "2025-09-13T08:16:08",
+      "updatedDate": "2026-01-23T13:05:59",
+      "owner": "Lisa Gonzalez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3742.73,
+      "description": "Only ready represent."
+    },
+    {
+      "id": "4ea7fd7f-69a3-4b1f-b1f5-c8b111c92091",
+      "name": "Versatile foreground infrastructure 7",
+      "status": "Completed",
+      "createdDate": "2025-07-02T19:45:47",
+      "updatedDate": "2026-02-09T19:08:01",
+      "owner": "Patty Cook",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6789.14,
+      "description": "Ability important really begin throughout size friend."
+    },
+    {
+      "id": "12f9873e-c60f-48c2-aed6-1b6c33f47bda",
+      "name": "Advanced systemic architecture 8",
+      "status": "Inactive",
+      "createdDate": "2025-10-27T01:31:15",
+      "updatedDate": "2026-02-09T08:24:12",
+      "owner": "Arthur Roth",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8904.74,
+      "description": "Blue its article step decide professional agreement."
+    },
+    {
+      "id": "76de77bb-6a2b-48fc-a3b7-66f313a6ba79",
+      "name": "Switchable systemic help-desk 9",
+      "status": "Completed",
+      "createdDate": "2025-08-29T09:16:38",
+      "updatedDate": "2026-01-19T05:13:31",
+      "owner": "Chad Ruiz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9276.82,
+      "description": "When view mention way."
+    },
+    {
+      "id": "ac49fe1e-3cdc-4023-9ca4-7d795881bb46",
+      "name": "Devolved tangible secured line 10",
+      "status": "Active",
+      "createdDate": "2025-03-12T07:03:06",
+      "updatedDate": "2026-01-26T18:49:58",
+      "owner": "Kevin Larsen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9898.5,
+      "description": "Building my grow whole agree great within pressure."
+    },
+    {
+      "id": "8fe0f011-66a4-49d1-b63f-da2bf0e41384",
+      "name": "Cloned optimizing structure 11",
+      "status": "Pending",
+      "createdDate": "2025-10-25T11:20:00",
+      "updatedDate": "2026-01-31T10:12:36",
+      "owner": "Eric Reilly",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7772.76,
+      "description": "Talk out herself risk."
+    },
+    {
+      "id": "7aa65768-9911-4c87-93cd-6edb5a128df4",
+      "name": "Seamless user-facing service-desk 12",
+      "status": "Inactive",
+      "createdDate": "2026-01-02T17:22:07",
+      "updatedDate": "2026-01-24T14:46:01",
+      "owner": "Dana Bryant",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6064.72,
+      "description": "Sing up star especially quite."
+    },
+    {
+      "id": "c74044c0-7681-44d5-8859-5d3a543a6218",
+      "name": "Cross-group heuristic analyzer 13",
+      "status": "Pending",
+      "createdDate": "2025-02-20T18:27:10",
+      "updatedDate": "2026-01-28T19:28:18",
+      "owner": "Patricia Pitts",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 133.98,
+      "description": "Program very kitchen official rest fine senior care."
+    },
+    {
+      "id": "666d914c-a143-43c1-8cf8-d7542fd6073f",
+      "name": "Cross-group incremental neural-net 14",
+      "status": "Completed",
+      "createdDate": "2025-03-10T20:30:00",
+      "updatedDate": "2026-01-24T00:55:30",
+      "owner": "Alexis Hall",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8864.65,
+      "description": "Memory western until face home."
+    },
+    {
+      "id": "26211819-f0bf-4c03-ac93-f9ae1bd562e9",
+      "name": "Decentralized context-sensitive portal 15",
+      "status": "Inactive",
+      "createdDate": "2025-03-07T10:08:02",
+      "updatedDate": "2026-01-31T13:24:58",
+      "owner": "Sabrina Liu",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4314.1,
+      "description": "Senior fine arrive single call blue method."
+    },
+    {
+      "id": "b5ec4f58-205c-47f7-8430-7e78ae9d402a",
+      "name": "Ergonomic mission-critical Graphic Interface 16",
+      "status": "Active",
+      "createdDate": "2026-01-19T01:29:46",
+      "updatedDate": "2026-01-22T13:26:01",
+      "owner": "Logan Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5304.21,
+      "description": "Option office right feel."
+    },
+    {
+      "id": "bd5ea76f-f1fa-491a-9a0b-eda42cb8cd0f",
+      "name": "Down-sized even-keeled moratorium 17",
+      "status": "Completed",
+      "createdDate": "2026-01-16T14:23:06",
+      "updatedDate": "2026-01-28T05:01:16",
+      "owner": "Stacy Rodriguez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6150.7,
+      "description": "Clear eye answer forget because."
+    },
+    {
+      "id": "e249d8f3-d248-40a4-9846-62a97bcdcfae",
+      "name": "Secured optimal extranet 18",
+      "status": "Pending",
+      "createdDate": "2025-06-28T05:53:32",
+      "updatedDate": "2026-02-14T21:18:44",
+      "owner": "Bryan Delgado",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6086.39,
+      "description": "Wrong opportunity attack our."
+    },
+    {
+      "id": "6bbbdb87-c9da-4a89-8b39-1a397bf12387",
+      "name": "Future-proofed methodical complexity 19",
+      "status": "Completed",
+      "createdDate": "2025-02-18T06:40:03",
+      "updatedDate": "2026-02-14T20:49:23",
+      "owner": "Ashley Mccall",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5144.05,
+      "description": "Process rock account."
+    },
+    {
+      "id": "745a474f-1853-461d-aade-fd21d2af92a8",
+      "name": "Streamlined regional encoding 20",
+      "status": "Pending",
+      "createdDate": "2025-11-06T01:40:21",
+      "updatedDate": "2026-02-01T06:09:34",
+      "owner": "David Kramer",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 450.96,
+      "description": "Address response trade our well million outside."
+    },
+    {
+      "id": "089798a3-c6ff-4ffa-94dc-f6fface6f37f",
+      "name": "Open-source maximized ability 21",
+      "status": "Completed",
+      "createdDate": "2025-12-14T07:07:06",
+      "updatedDate": "2026-02-12T17:54:13",
+      "owner": "Allison Lee",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3667.62,
+      "description": "Word trade shake fear apply low fight medical."
+    },
+    {
+      "id": "9a1dc8b8-a67b-4551-a017-ec37b71b27b8",
+      "name": "Triple-buffered disintermediate toolset 22",
+      "status": "Inactive",
+      "createdDate": "2025-12-16T16:04:20",
+      "updatedDate": "2026-01-31T01:40:19",
+      "owner": "Jack Montgomery",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9922.28,
+      "description": "Because everybody know million hand spend stage store."
+    },
+    {
+      "id": "0cda4fbd-3eed-4354-95c2-3ca1d78d933a",
+      "name": "Programmable maximized standardization 23",
+      "status": "Inactive",
+      "createdDate": "2025-06-25T16:17:01",
+      "updatedDate": "2026-01-21T21:59:16",
+      "owner": "Richard Brewer",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 129.65,
+      "description": "Build room such major interesting media choice seven."
+    },
+    {
+      "id": "1cf3dc0f-0c63-4245-a35f-0b8464a9a5a5",
+      "name": "Compatible context-sensitive monitoring 24",
+      "status": "Completed",
+      "createdDate": "2025-12-25T23:11:10",
+      "updatedDate": "2026-02-03T13:18:32",
+      "owner": "Jamie Nguyen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7789.24,
+      "description": "Education agreement risk road place."
+    },
+    {
+      "id": "ee8848d9-eed9-404f-a34d-6999b13d2a8c",
+      "name": "Front-line radical Local Area Network 25",
+      "status": "Active",
+      "createdDate": "2025-07-23T18:23:43",
+      "updatedDate": "2026-02-03T10:33:58",
+      "owner": "Caitlyn Maldonado",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3000.52,
+      "description": "Miss than lot hold baby quality security."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-active-only",
+  "totalCount": 1234,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "590c5c68-7165-482e-9772-049f7cab3f7d",
+      "name": "Operative discrete approach 1",
+      "status": "Pending",
+      "createdDate": "2025-12-08T13:59:11",
+      "updatedDate": "2026-02-11T12:22:13",
+      "owner": "Anita Guzman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5755.24,
+      "description": "Something specific air table."
+    },
+    {
+      "id": "09d2e4bf-71d7-4f11-8429-8b92f7a5f86f",
+      "name": "Open-architected empowering knowledge user 2",
+      "status": "Pending",
+      "createdDate": "2026-01-12T14:56:27",
+      "updatedDate": "2026-01-22T20:56:49",
+      "owner": "Logan Aguilar",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4864.4,
+      "description": "Particular yes everything especially race several."
+    },
+    {
+      "id": "8458ad35-1274-408d-bc4c-8fc7c6932b4a",
+      "name": "Business-focused full-range artificial intelligence 3",
+      "status": "Inactive",
+      "createdDate": "2025-04-02T03:38:43",
+      "updatedDate": "2026-02-12T20:12:43",
+      "owner": "Harold Cook",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4144.74,
+      "description": "Card poor song cell real whose phone."
+    },
+    {
+      "id": "c53290b1-9b4b-4af8-8440-83e0696440c7",
+      "name": "Pre-emptive web-enabled data-warehouse 4",
+      "status": "Inactive",
+      "createdDate": "2025-10-13T08:28:34",
+      "updatedDate": "2026-02-11T09:56:33",
+      "owner": "Kara Tucker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6191.86,
+      "description": "Participant degree read represent whether."
+    },
+    {
+      "id": "54d56c92-4cce-49eb-8d1d-7586335272aa",
+      "name": "Centralized heuristic functionalities 5",
+      "status": "Inactive",
+      "createdDate": "2025-03-18T01:03:38",
+      "updatedDate": "2026-02-05T01:59:10",
+      "owner": "William Owens",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9210.69,
+      "description": "Case pull machine prepare official skill."
+    },
+    {
+      "id": "67c85003-16fb-4d95-a102-e58acebc7287",
+      "name": "Self-enabling 24/7 intranet 6",
+      "status": "Pending",
+      "createdDate": "2026-01-09T06:04:14",
+      "updatedDate": "2026-02-08T23:59:30",
+      "owner": "Jose Willis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5715.27,
+      "description": "Budget brother chance kid once others project."
+    },
+    {
+      "id": "64b8399f-94ab-4cb0-8544-e20396356bcd",
+      "name": "Implemented global focus group 7",
+      "status": "Active",
+      "createdDate": "2025-04-02T22:14:09",
+      "updatedDate": "2026-02-05T04:48:36",
+      "owner": "Michael Campbell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 599.69,
+      "description": "Painting view else little."
+    },
+    {
+      "id": "af286882-8143-4096-9b96-7fcaa92a902d",
+      "name": "Optional foreground data-warehouse 8",
+      "status": "Completed",
+      "createdDate": "2026-01-17T15:35:35",
+      "updatedDate": "2026-02-06T23:34:50",
+      "owner": "Warren Walsh",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5673.53,
+      "description": "Whole surface old town similar spend exist you."
+    },
+    {
+      "id": "0285529d-a8ff-4be8-bace-dcea34f2f714",
+      "name": "Optional bi-directional system engine 9",
+      "status": "Completed",
+      "createdDate": "2025-04-09T13:25:54",
+      "updatedDate": "2026-02-01T07:26:26",
+      "owner": "Jeffrey Pope",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1843.99,
+      "description": "Central attack friend or several full reveal."
+    },
+    {
+      "id": "b8b367ed-92d1-4806-bada-9acf45782c83",
+      "name": "Phased zero tolerance artificial intelligence 10",
+      "status": "Inactive",
+      "createdDate": "2025-12-22T09:12:32",
+      "updatedDate": "2026-01-30T23:32:06",
+      "owner": "John Dickerson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9828.42,
+      "description": "Art about form eat second treat blood."
+    },
+    {
+      "id": "6d8f70c9-2cc6-4869-b886-526013e77c18",
+      "name": "Realigned tertiary throughput 11",
+      "status": "Active",
+      "createdDate": "2025-09-20T18:52:21",
+      "updatedDate": "2026-01-29T04:03:35",
+      "owner": "Paul Richard",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3318.62,
+      "description": "Establish country wish though but foreign black."
+    },
+    {
+      "id": "0bfbb1fd-3284-41c1-9636-8364d58c192a",
+      "name": "Proactive intangible concept 12",
+      "status": "Active",
+      "createdDate": "2025-04-30T05:16:20",
+      "updatedDate": "2026-02-10T20:05:57",
+      "owner": "Amy Lowe",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2739.33,
+      "description": "Happy our fish music remember military would bring."
+    },
+    {
+      "id": "b31d4076-67b8-45fa-b238-67e064d4873a",
+      "name": "Intuitive hybrid firmware 13",
+      "status": "Active",
+      "createdDate": "2025-06-23T06:00:11",
+      "updatedDate": "2026-01-27T02:23:32",
+      "owner": "Taylor Martin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4423.73,
+      "description": "Without when why trade state he."
+    },
+    {
+      "id": "a4018ce5-28ba-48f3-95f4-deaa1269b59e",
+      "name": "Customer-focused heuristic initiative 14",
+      "status": "Completed",
+      "createdDate": "2025-11-25T04:33:28",
+      "updatedDate": "2026-01-29T03:26:27",
+      "owner": "Brian Mitchell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6195.33,
+      "description": "Institution find game political series."
+    },
+    {
+      "id": "d8a42571-1569-4793-9e98-8ce35740bb8b",
+      "name": "Assimilated leadingedge solution 15",
+      "status": "Completed",
+      "createdDate": "2025-10-28T18:23:51",
+      "updatedDate": "2026-02-07T05:36:57",
+      "owner": "Tyler Wilson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7679.16,
+      "description": "Soon visit maintain along story."
+    },
+    {
+      "id": "0a1115fe-93af-4265-b087-096c43943b31",
+      "name": "Face-to-face explicit architecture 16",
+      "status": "Completed",
+      "createdDate": "2025-11-26T22:01:54",
+      "updatedDate": "2026-02-15T11:42:02",
+      "owner": "Jeffrey Mccarthy",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1877.55,
+      "description": "Site fund blood."
+    },
+    {
+      "id": "fc81ecf6-3b7e-4c52-85f7-bfb3b495ac8d",
+      "name": "Face-to-face object-oriented infrastructure 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-18T14:42:56",
+      "updatedDate": "2026-02-09T17:03:40",
+      "owner": "Christopher Church",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1419.35,
+      "description": "Health rest good yes soldier."
+    },
+    {
+      "id": "e2a403ff-3a1c-4096-b6fe-92b312718848",
+      "name": "Stand-alone even-keeled orchestration 18",
+      "status": "Active",
+      "createdDate": "2025-03-11T09:00:10",
+      "updatedDate": "2026-01-26T12:14:47",
+      "owner": "Carlos Butler",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7143.02,
+      "description": "Section get save."
+    },
+    {
+      "id": "37d6879b-3ba4-4118-bc31-8891705edd3d",
+      "name": "Optimized discrete process improvement 19",
+      "status": "Completed",
+      "createdDate": "2025-12-06T01:57:00",
+      "updatedDate": "2026-01-25T14:48:26",
+      "owner": "Travis Walsh",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7610.99,
+      "description": "Effect election month town much foreign generation."
+    },
+    {
+      "id": "4a9d10a4-ee53-4723-9d7a-10df92ee0578",
+      "name": "Vision-oriented optimal monitoring 20",
+      "status": "Active",
+      "createdDate": "2025-08-15T10:59:23",
+      "updatedDate": "2026-02-01T17:25:22",
+      "owner": "Debra Munoz",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6892.24,
+      "description": "Few the start help win raise."
+    },
+    {
+      "id": "8335d806-b92d-4bcb-a6e7-8c28f3e01841",
+      "name": "Realigned stable database 21",
+      "status": "Active",
+      "createdDate": "2025-09-13T13:13:57",
+      "updatedDate": "2026-01-30T12:28:20",
+      "owner": "Ann Ferguson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 882.21,
+      "description": "Serious election stay hair."
+    },
+    {
+      "id": "63ae3b69-e1e5-4511-87e3-cf9c2765d75a",
+      "name": "Re-engineered attitude-oriented implementation 22",
+      "status": "Active",
+      "createdDate": "2025-03-10T06:27:41",
+      "updatedDate": "2026-02-13T19:28:19",
+      "owner": "Mark Walters",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 711.94,
+      "description": "Including few energy wonder ability purpose indeed."
+    },
+    {
+      "id": "a8ac3fb8-1f60-418f-b832-388734bc0834",
+      "name": "Mandatory asymmetric info-mediaries 23",
+      "status": "Completed",
+      "createdDate": "2025-08-20T14:47:57",
+      "updatedDate": "2026-02-06T09:10:37",
+      "owner": "Jennifer Rios MD",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7064.12,
+      "description": "Shake development never they early."
+    },
+    {
+      "id": "8575a426-c889-463c-8fe4-bce5790e3782",
+      "name": "Automated human-resource instruction set 24",
+      "status": "Completed",
+      "createdDate": "2025-12-16T04:11:52",
+      "updatedDate": "2026-01-29T22:13:17",
+      "owner": "Anthony Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5806.91,
+      "description": "Stage operation outside yourself another."
+    },
+    {
+      "id": "fcd480cf-3431-452c-9065-a4ffa476213d",
+      "name": "Streamlined clear-thinking task-force 25",
+      "status": "Pending",
+      "createdDate": "2025-12-09T20:46:22",
+      "updatedDate": "2026-01-22T13:10:02",
+      "owner": "Vanessa Adams",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4339.33,
+      "description": "Policy process tax growth enjoy."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-all-records",
+  "totalCount": 712,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "d6e0cc0a-086b-4798-85fc-369b3323e07d",
+      "name": "Universal impactful methodology 1",
+      "status": "Pending",
+      "createdDate": "2025-09-06T15:26:39",
+      "updatedDate": "2026-02-13T06:46:32",
+      "owner": "James Robinson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2514.23,
+      "description": "Out thing person game."
+    },
+    {
+      "id": "8a46985d-44f4-460f-bdbb-ebd71942c646",
+      "name": "Expanded 24/7 protocol 2",
+      "status": "Active",
+      "createdDate": "2025-11-30T06:57:33",
+      "updatedDate": "2026-02-11T17:00:05",
+      "owner": "Deborah Turner",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5910.1,
+      "description": "Specific agent term participant."
+    },
+    {
+      "id": "1c439ae8-1537-46e4-bb5d-5ad30a41ad3e",
+      "name": "Mandatory holistic concept 3",
+      "status": "Pending",
+      "createdDate": "2025-09-06T21:04:39",
+      "updatedDate": "2026-01-25T18:36:21",
+      "owner": "Douglas Macdonald",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9781.92,
+      "description": "Play prove recent sport watch want how."
+    },
+    {
+      "id": "d9cdeb2b-ee73-4dd8-a71b-6384422e307f",
+      "name": "Exclusive holistic hub 4",
+      "status": "Active",
+      "createdDate": "2025-05-22T12:45:23",
+      "updatedDate": "2026-02-15T00:04:25",
+      "owner": "Christopher Gordon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9891.83,
+      "description": "Strategy story building see."
+    },
+    {
+      "id": "f5e88c96-2e3c-45a1-b679-8bdc9ac367b6",
+      "name": "Upgradable tertiary matrix 5",
+      "status": "Active",
+      "createdDate": "2025-08-08T12:05:57",
+      "updatedDate": "2026-01-27T16:25:37",
+      "owner": "Kathryn Cowan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1478.32,
+      "description": "Same pull identify break reflect keep."
+    },
+    {
+      "id": "fcb8d19b-ef9a-40b0-9a6d-2e7cecfdac4e",
+      "name": "Up-sized client-driven definition 6",
+      "status": "Inactive",
+      "createdDate": "2025-10-02T23:24:09",
+      "updatedDate": "2026-01-19T10:59:45",
+      "owner": "Mr. Jacob Herring Jr.",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8062.18,
+      "description": "Realize about him dream concern without."
+    },
+    {
+      "id": "93eec1e7-7e6a-4d1a-8247-36788f6d1dd7",
+      "name": "Managed attitude-oriented instruction set 7",
+      "status": "Completed",
+      "createdDate": "2025-06-11T22:12:57",
+      "updatedDate": "2026-02-06T04:12:33",
+      "owner": "William Lewis",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 468.44,
+      "description": "Other quite near act such point doctor decide."
+    },
+    {
+      "id": "82d20afd-ad1c-48b7-b86d-8c565545e442",
+      "name": "Multi-tiered zero tolerance ability 8",
+      "status": "Inactive",
+      "createdDate": "2025-07-08T09:53:10",
+      "updatedDate": "2026-02-16T03:34:58",
+      "owner": "Jose Gutierrez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9138.26,
+      "description": "Cold thank participant trial rock color service too."
+    },
+    {
+      "id": "42414087-f47a-40a5-8031-f78b0b45b884",
+      "name": "Extended systemic core 9",
+      "status": "Active",
+      "createdDate": "2026-01-12T11:03:01",
+      "updatedDate": "2026-02-08T22:18:19",
+      "owner": "Charles James",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1677.68,
+      "description": "Effort prepare possible child pull structure listen whatever."
+    },
+    {
+      "id": "0c55f79f-b037-459e-8f7d-ea14b3d16f51",
+      "name": "Adaptive dynamic utilization 10",
+      "status": "Inactive",
+      "createdDate": "2026-02-13T07:07:09",
+      "updatedDate": "2026-02-16T05:54:05",
+      "owner": "Kayla Pollard",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5557.69,
+      "description": "Special water defense girl compare."
+    },
+    {
+      "id": "9ddd9147-9610-4a7a-b862-202dc16a3d10",
+      "name": "Business-focused analyzing success 11",
+      "status": "Pending",
+      "createdDate": "2025-07-30T01:23:39",
+      "updatedDate": "2026-02-09T03:34:33",
+      "owner": "Gary Watson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1286.74,
+      "description": "Hold federal weight top music letter."
+    },
+    {
+      "id": "43249468-0507-457b-8a46-d61b18cb9f7d",
+      "name": "Enhanced explicit projection 12",
+      "status": "Completed",
+      "createdDate": "2025-12-03T15:57:15",
+      "updatedDate": "2026-02-10T23:14:29",
+      "owner": "Dana Turner",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3323.74,
+      "description": "Floor oil matter third road store material."
+    },
+    {
+      "id": "de9f8bd3-7516-4847-8057-a62933152d41",
+      "name": "Configurable intermediate monitoring 13",
+      "status": "Pending",
+      "createdDate": "2025-05-14T10:44:53",
+      "updatedDate": "2026-02-13T22:46:35",
+      "owner": "Gregory Hughes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8577.84,
+      "description": "Born company quality national."
+    },
+    {
+      "id": "564a90de-8731-425b-a090-00c3d2ef4d86",
+      "name": "Customer-focused scalable monitoring 14",
+      "status": "Pending",
+      "createdDate": "2025-10-04T22:45:40",
+      "updatedDate": "2026-02-04T20:00:40",
+      "owner": "Christopher Parker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7810.68,
+      "description": "Clear indicate for recognize site."
+    },
+    {
+      "id": "23d34e89-9286-48d8-9612-75fa47623614",
+      "name": "Configurable regional frame 15",
+      "status": "Pending",
+      "createdDate": "2026-01-28T06:17:00",
+      "updatedDate": "2026-01-27T22:09:17",
+      "owner": "Shawna Jennings",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5482.7,
+      "description": "Amount position player lay sing."
+    },
+    {
+      "id": "38c54982-6ef2-4004-a456-901750b24009",
+      "name": "Vision-oriented homogeneous data-warehouse 16",
+      "status": "Active",
+      "createdDate": "2025-11-04T15:04:01",
+      "updatedDate": "2026-02-16T06:53:29",
+      "owner": "Lydia Lewis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5292.92,
+      "description": "Administration eye join radio."
+    },
+    {
+      "id": "feb66d43-ae9e-4c7e-9fe2-55d6492ab202",
+      "name": "Decentralized impactful implementation 17",
+      "status": "Completed",
+      "createdDate": "2025-06-24T21:20:21",
+      "updatedDate": "2026-02-02T20:38:06",
+      "owner": "Ashley Chaney",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7074.95,
+      "description": "Early situation bring stop occur return team place."
+    },
+    {
+      "id": "cf430c15-a799-49b8-8753-f3a015d8de59",
+      "name": "Sharable actuating circuit 18",
+      "status": "Inactive",
+      "createdDate": "2025-07-10T20:38:36",
+      "updatedDate": "2026-01-31T22:47:16",
+      "owner": "John Keith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3412.96,
+      "description": "Cup bit model hair true speak painting network."
+    },
+    {
+      "id": "a22b479d-0096-4578-bc06-dd96cd7c5aec",
+      "name": "Ameliorated 5thgeneration parallelism 19",
+      "status": "Inactive",
+      "createdDate": "2026-01-28T17:22:17",
+      "updatedDate": "2026-01-22T18:52:01",
+      "owner": "Amber Hutchinson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4708.41,
+      "description": "Drop describe look professor Mrs then decade."
+    },
+    {
+      "id": "8352b397-586b-4614-809b-7bd14926b948",
+      "name": "Optimized dynamic circuit 20",
+      "status": "Active",
+      "createdDate": "2025-02-17T15:35:50",
+      "updatedDate": "2026-02-15T04:21:51",
+      "owner": "Tyler Ortiz",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5359.2,
+      "description": "At staff Republican main."
+    },
+    {
+      "id": "ac7fccab-423d-4b7a-95e6-ab4a61625453",
+      "name": "Vision-oriented bi-directional intranet 21",
+      "status": "Completed",
+      "createdDate": "2025-08-29T23:38:55",
+      "updatedDate": "2026-02-12T06:59:23",
+      "owner": "Joshua Marshall",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4117.08,
+      "description": "Small laugh natural method across single."
+    },
+    {
+      "id": "c961a71d-da28-4c19-841f-5ac74c1416d0",
+      "name": "Integrated exuding interface 22",
+      "status": "Active",
+      "createdDate": "2025-05-16T07:13:52",
+      "updatedDate": "2026-02-13T11:06:59",
+      "owner": "Jesse Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9035.11,
+      "description": "She laugh speak space provide."
+    },
+    {
+      "id": "c3ef9404-1527-4286-ac36-c637aad2310b",
+      "name": "Expanded actuating product 23",
+      "status": "Completed",
+      "createdDate": "2025-11-28T19:30:50",
+      "updatedDate": "2026-01-20T08:19:18",
+      "owner": "Jason Pearson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5917.82,
+      "description": "Fly mouth market measure."
+    },
+    {
+      "id": "021ec57e-3341-4645-bfd3-fcef76ff6481",
+      "name": "Implemented optimal data-warehouse 24",
+      "status": "Completed",
+      "createdDate": "2025-05-15T11:14:50",
+      "updatedDate": "2026-02-04T22:10:14",
+      "owner": "Jennifer Roberts",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1628.66,
+      "description": "Break truth hour author do thing black."
+    },
+    {
+      "id": "15fc20b2-82f9-4d2d-9c90-770e90a861a5",
+      "name": "Virtual bifurcated application 25",
+      "status": "Pending",
+      "createdDate": "2025-05-27T19:06:45",
+      "updatedDate": "2026-02-08T13:44:16",
+      "owner": "Michael Brown",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9889.32,
+      "description": "Concern enjoy many condition fish."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

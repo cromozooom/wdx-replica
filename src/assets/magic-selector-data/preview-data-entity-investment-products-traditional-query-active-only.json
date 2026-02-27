@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 302,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "9d453a1a-1575-4e5e-a3bf-be6b42c285c8",
+      "name": "Diverse bifurcated portal 1",
+      "status": "Pending",
+      "createdDate": "2025-07-01T18:19:35",
+      "updatedDate": "2026-02-14T22:11:45",
+      "owner": "Jesus Webster",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2165.48,
+      "description": "Term customer away production top often later most."
+    },
+    {
+      "id": "6fe12cad-b68f-4e7b-b1e4-62756a7bb26e",
+      "name": "Diverse composite capacity 2",
+      "status": "Pending",
+      "createdDate": "2025-05-22T08:21:53",
+      "updatedDate": "2026-02-06T21:16:22",
+      "owner": "Christopher Aguilar",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3840.65,
+      "description": "Truth throughout behind environment work major."
+    },
+    {
+      "id": "989faa0e-dac5-4b81-b968-a20dc3104d7f",
+      "name": "Ergonomic neutral moratorium 3",
+      "status": "Pending",
+      "createdDate": "2025-08-31T20:00:40",
+      "updatedDate": "2026-01-29T18:01:04",
+      "owner": "Jeffrey Orozco",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5709.71,
+      "description": "Join heavy activity support level."
+    },
+    {
+      "id": "1be895f4-096b-4651-ae31-768c253dbb37",
+      "name": "Business-focused optimal hardware 4",
+      "status": "Active",
+      "createdDate": "2025-03-18T03:51:14",
+      "updatedDate": "2026-01-19T04:15:31",
+      "owner": "Jennifer Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3913.15,
+      "description": "Newspaper determine environment someone every."
+    },
+    {
+      "id": "de8a98c0-24a9-4482-bf53-a6072ea6ffce",
+      "name": "Secured bottom-line Graphic Interface 5",
+      "status": "Pending",
+      "createdDate": "2025-10-16T21:25:40",
+      "updatedDate": "2026-02-04T06:46:05",
+      "owner": "Theodore Dickson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2938.09,
+      "description": "Ball view article dream."
+    },
+    {
+      "id": "831ce6f6-a43c-433f-9de2-a1816a3f5c27",
+      "name": "Organic 4thgeneration secured line 6",
+      "status": "Inactive",
+      "createdDate": "2025-03-13T23:05:52",
+      "updatedDate": "2026-01-29T14:51:35",
+      "owner": "Abigail Anderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3885.1,
+      "description": "Arrive ago western break run."
+    },
+    {
+      "id": "aa936134-fb63-4099-956c-b544e0e605a8",
+      "name": "Switchable clear-thinking system engine 7",
+      "status": "Pending",
+      "createdDate": "2025-11-24T10:27:02",
+      "updatedDate": "2026-02-15T00:14:54",
+      "owner": "Jeffrey Lee",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4236.22,
+      "description": "Tree focus hand once Republican red."
+    },
+    {
+      "id": "a3a1cf2f-3570-4a88-826f-c0406bd7cf3c",
+      "name": "Cloned zero tolerance groupware 8",
+      "status": "Active",
+      "createdDate": "2025-02-19T03:12:52",
+      "updatedDate": "2026-01-27T00:50:27",
+      "owner": "Jeffery Lawrence",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5738.69,
+      "description": "Perhaps might growth hit medical deep forget."
+    },
+    {
+      "id": "dd6f05f5-5080-46e3-b3eb-d694a12e6c9c",
+      "name": "Upgradable 5thgeneration emulation 9",
+      "status": "Completed",
+      "createdDate": "2025-05-03T18:42:47",
+      "updatedDate": "2026-02-16T15:30:18",
+      "owner": "Jason Perez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8881.71,
+      "description": "Quite against hospital without yes."
+    },
+    {
+      "id": "58bb8b1b-590f-41b4-a144-edac0b79db35",
+      "name": "Extended dedicated leverage 10",
+      "status": "Completed",
+      "createdDate": "2025-04-11T19:28:31",
+      "updatedDate": "2026-02-01T03:32:09",
+      "owner": "Brian Medina",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4841.85,
+      "description": "Report practice wall member join."
+    },
+    {
+      "id": "62534eed-f934-4dd4-a0ce-43471452f77c",
+      "name": "User-friendly value-added attitude 11",
+      "status": "Active",
+      "createdDate": "2025-04-16T04:18:17",
+      "updatedDate": "2026-02-14T04:15:43",
+      "owner": "Michael Kim",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7616.9,
+      "description": "Include environment serve including rise someone magazine."
+    },
+    {
+      "id": "f767beb3-df84-4609-846f-922e33857fd7",
+      "name": "Mandatory 5thgeneration projection 12",
+      "status": "Active",
+      "createdDate": "2025-07-19T03:46:35",
+      "updatedDate": "2026-01-29T20:57:49",
+      "owner": "Michael Holt",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8345.61,
+      "description": "Choice call condition each keep."
+    },
+    {
+      "id": "42c04f6b-9d9e-45cb-bb95-97f42be725b6",
+      "name": "Cross-platform executive groupware 13",
+      "status": "Active",
+      "createdDate": "2025-05-27T15:12:36",
+      "updatedDate": "2026-02-12T01:59:03",
+      "owner": "Courtney Carr",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3262.16,
+      "description": "Billion note mission power in environment listen."
+    },
+    {
+      "id": "117f84e1-8876-4a88-aeff-b9315b1c47d5",
+      "name": "Stand-alone upward-trending installation 14",
+      "status": "Completed",
+      "createdDate": "2025-04-22T19:13:58",
+      "updatedDate": "2026-01-25T02:22:02",
+      "owner": "Shelly Hoffman",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4247.83,
+      "description": "Behavior if success around will want note tonight."
+    },
+    {
+      "id": "198c199a-f611-49ba-a280-0034847b3561",
+      "name": "Enhanced object-oriented focus group 15",
+      "status": "Completed",
+      "createdDate": "2025-07-08T11:11:31",
+      "updatedDate": "2026-01-24T08:37:47",
+      "owner": "Peter Garcia",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7043.64,
+      "description": "Pull sport change indicate capital pass experience."
+    },
+    {
+      "id": "857fa609-f980-4862-b948-5d881ab34ec3",
+      "name": "Persevering bifurcated hardware 16",
+      "status": "Completed",
+      "createdDate": "2026-01-30T09:39:23",
+      "updatedDate": "2026-01-27T09:19:45",
+      "owner": "Jason Lee",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6044.87,
+      "description": "In early term shoulder."
+    },
+    {
+      "id": "01ff8f6e-9dd0-4c7c-925a-20efe15d0c80",
+      "name": "Triple-buffered 6thgeneration Internet solution 17",
+      "status": "Completed",
+      "createdDate": "2025-06-02T12:45:55",
+      "updatedDate": "2026-02-14T02:15:01",
+      "owner": "Valerie Lopez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4497.13,
+      "description": "Serve person now direction back."
+    },
+    {
+      "id": "4ab8417c-49ef-4c72-a386-8b9ca167b3c3",
+      "name": "Vision-oriented non-volatile core 18",
+      "status": "Inactive",
+      "createdDate": "2025-11-22T13:03:05",
+      "updatedDate": "2026-01-23T11:26:13",
+      "owner": "Anna Reynolds",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7440.4,
+      "description": "Become certain modern popular PM writer source."
+    },
+    {
+      "id": "5d4513a2-9885-4343-8d07-ec0cdf1a7d18",
+      "name": "Re-engineered web-enabled budgetary management 19",
+      "status": "Completed",
+      "createdDate": "2025-06-27T02:28:04",
+      "updatedDate": "2026-01-20T09:09:20",
+      "owner": "Dakota Campos",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5048.17,
+      "description": "Whom why several economy."
+    },
+    {
+      "id": "f1ccb523-a10c-478f-9f61-7cad7179ad48",
+      "name": "Cross-group 3rdgeneration toolset 20",
+      "status": "Completed",
+      "createdDate": "2025-10-03T14:52:16",
+      "updatedDate": "2026-02-05T19:37:53",
+      "owner": "Dustin Cummings",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4391.32,
+      "description": "Very race education score president church."
+    },
+    {
+      "id": "c63f5280-c00c-475a-b030-cd8f5d60d869",
+      "name": "Persistent next generation parallelism 21",
+      "status": "Inactive",
+      "createdDate": "2026-01-31T22:44:56",
+      "updatedDate": "2026-01-30T02:33:43",
+      "owner": "Melissa Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6102.1,
+      "description": "More hope four cut sure."
+    },
+    {
+      "id": "0a2ad61b-21f5-4fed-a103-c3a334c4c374",
+      "name": "Synchronized asynchronous task-force 22",
+      "status": "Active",
+      "createdDate": "2025-08-13T01:54:00",
+      "updatedDate": "2026-02-01T13:57:48",
+      "owner": "Edward Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2518.21,
+      "description": "Sign hour floor test however support."
+    },
+    {
+      "id": "25bf96a2-2284-44ce-8126-a440dcfb4235",
+      "name": "Total responsive migration 23",
+      "status": "Pending",
+      "createdDate": "2025-08-11T15:40:03",
+      "updatedDate": "2026-01-21T21:03:55",
+      "owner": "Elizabeth Gilmore",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 335.26,
+      "description": "Main test system bank answer from."
+    },
+    {
+      "id": "631b1d2a-47cd-4cd1-81aa-77335d40f7a3",
+      "name": "Streamlined mobile artificial intelligence 24",
+      "status": "Active",
+      "createdDate": "2025-12-11T10:43:36",
+      "updatedDate": "2026-02-17T11:18:57",
+      "owner": "Maria Ramos",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5529.91,
+      "description": "Prove east stand scene us."
+    },
+    {
+      "id": "f68a34fc-6bd5-4f8b-ab35-a007f1af60e0",
+      "name": "Centralized bottom-line benchmark 25",
+      "status": "Active",
+      "createdDate": "2025-03-20T16:15:26",
+      "updatedDate": "2026-01-30T18:55:32",
+      "owner": "Mario Thompson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1941.27,
+      "description": "Western artist policy."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-active-only",
+  "totalCount": 692,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "4e0eaec6-350a-431a-a6e0-9fa2c4ead02e",
+      "name": "Team-oriented background application 1",
+      "status": "Inactive",
+      "createdDate": "2026-01-21T20:23:22",
+      "updatedDate": "2026-01-21T23:53:35",
+      "owner": "Teresa Pace",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6819.4,
+      "description": "Create choice war month person offer."
+    },
+    {
+      "id": "2d0cf462-798b-4252-83d8-5cf815523435",
+      "name": "Expanded interactive alliance 2",
+      "status": "Completed",
+      "createdDate": "2025-11-30T18:13:02",
+      "updatedDate": "2026-02-07T04:02:11",
+      "owner": "Bryan Garcia",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5304.47,
+      "description": "Officer interest over seat cup man."
+    },
+    {
+      "id": "01a85776-f6df-4729-9ca0-5f58c3127dd8",
+      "name": "De-engineered full-range intranet 3",
+      "status": "Inactive",
+      "createdDate": "2025-12-08T23:58:03",
+      "updatedDate": "2026-01-23T05:05:33",
+      "owner": "Kelly Hutchinson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7039.64,
+      "description": "Anything more draw prevent usually most."
+    },
+    {
+      "id": "d000a82b-6523-41bb-b297-376968be78b9",
+      "name": "Configurable stable conglomeration 4",
+      "status": "Completed",
+      "createdDate": "2025-06-25T07:43:31",
+      "updatedDate": "2026-01-31T09:11:25",
+      "owner": "Tara Manning",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2495.54,
+      "description": "Eye affect member key especially."
+    },
+    {
+      "id": "940520e9-b6fa-44c7-894c-7fc68cb171c3",
+      "name": "Secured asymmetric access 5",
+      "status": "Completed",
+      "createdDate": "2025-12-26T13:57:51",
+      "updatedDate": "2026-02-09T10:37:36",
+      "owner": "Christine Roach",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6752.1,
+      "description": "Next majority hotel wide dark."
+    },
+    {
+      "id": "9030a4a2-6055-4390-9991-ffdbbe3ffc08",
+      "name": "Optimized executive productivity 6",
+      "status": "Completed",
+      "createdDate": "2025-03-18T04:48:19",
+      "updatedDate": "2026-02-16T09:44:04",
+      "owner": "Christopher Barker",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4326.36,
+      "description": "Into sister who interest."
+    },
+    {
+      "id": "ea0b864b-9356-400c-a668-f79fae2f1cd1",
+      "name": "Front-line bi-directional Internet solution 7",
+      "status": "Active",
+      "createdDate": "2025-08-23T15:33:45",
+      "updatedDate": "2026-02-12T18:00:50",
+      "owner": "Justin Barnes",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2179.39,
+      "description": "Now hold who pick foreign bad."
+    },
+    {
+      "id": "86050be0-fb77-4f67-b96e-a828bac9469a",
+      "name": "Compatible grid-enabled complexity 8",
+      "status": "Pending",
+      "createdDate": "2025-04-27T02:52:25",
+      "updatedDate": "2026-01-29T16:59:36",
+      "owner": "Mary Tran",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1436.28,
+      "description": "World wind court remember."
+    },
+    {
+      "id": "c84133ea-3753-4016-8652-d0f119d1fccc",
+      "name": "Business-focused stable firmware 9",
+      "status": "Pending",
+      "createdDate": "2025-09-01T14:28:00",
+      "updatedDate": "2026-02-16T09:23:33",
+      "owner": "Donna Fowler",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8744.78,
+      "description": "Research can report town sit."
+    },
+    {
+      "id": "2cec8ee0-b45a-420f-959e-56808c08d5ab",
+      "name": "Configurable multi-state time-frame 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-26T19:04:16",
+      "updatedDate": "2026-01-27T07:13:55",
+      "owner": "Holly Alexander",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2497.35,
+      "description": "Degree operation mother could."
+    },
+    {
+      "id": "7cd0cc2f-74ca-4074-a060-72cbd2c844da",
+      "name": "Innovative optimal matrix 11",
+      "status": "Pending",
+      "createdDate": "2025-06-27T16:29:11",
+      "updatedDate": "2026-02-06T21:13:36",
+      "owner": "Rebekah Carpenter",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9708.46,
+      "description": "Cultural much exist individual."
+    },
+    {
+      "id": "04d9f848-47d5-41d2-ac0d-110c88e3c7f6",
+      "name": "Upgradable transitional middleware 12",
+      "status": "Completed",
+      "createdDate": "2025-03-20T02:23:28",
+      "updatedDate": "2026-01-23T09:27:09",
+      "owner": "Corey Mcdonald",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7157.38,
+      "description": "Animal real again beyond win."
+    },
+    {
+      "id": "464acc47-c421-44f2-92d5-164d4c75782d",
+      "name": "Sharable scalable infrastructure 13",
+      "status": "Inactive",
+      "createdDate": "2026-01-16T00:03:26",
+      "updatedDate": "2026-01-23T04:34:07",
+      "owner": "Robert Garcia",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6725.11,
+      "description": "Last dark drug organization."
+    },
+    {
+      "id": "2cf88109-86d5-41df-a3e7-f12726535c77",
+      "name": "Secured leadingedge groupware 14",
+      "status": "Pending",
+      "createdDate": "2025-12-01T18:57:49",
+      "updatedDate": "2026-02-12T20:37:08",
+      "owner": "Mrs. Ashley Berry",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3682.47,
+      "description": "Me future nearly."
+    },
+    {
+      "id": "a7ea1a1c-f732-4ffd-9e0f-18fa367adaad",
+      "name": "Universal logistical artificial intelligence 15",
+      "status": "Pending",
+      "createdDate": "2025-11-13T13:15:19",
+      "updatedDate": "2026-01-28T23:40:51",
+      "owner": "Donna Compton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7287.67,
+      "description": "End other term."
+    },
+    {
+      "id": "6207ec8a-161f-471d-bfbb-21a0b40a8511",
+      "name": "Realigned methodical archive 16",
+      "status": "Inactive",
+      "createdDate": "2026-01-26T23:07:24",
+      "updatedDate": "2026-01-21T08:01:11",
+      "owner": "Daniel Davidson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7418.54,
+      "description": "Impact foot single conference big glass."
+    },
+    {
+      "id": "05955b8f-b7ae-479f-b020-a120c8660e2a",
+      "name": "Open-architected bifurcated toolset 17",
+      "status": "Inactive",
+      "createdDate": "2025-10-04T05:45:56",
+      "updatedDate": "2026-01-18T14:37:26",
+      "owner": "Caitlyn Haley",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 599.93,
+      "description": "Write price business."
+    },
+    {
+      "id": "133caf0c-4665-41bf-92c7-69449853dc75",
+      "name": "Mandatory well-modulated protocol 18",
+      "status": "Inactive",
+      "createdDate": "2025-10-05T14:55:22",
+      "updatedDate": "2026-02-01T17:09:26",
+      "owner": "Melissa Hoffman",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8221.3,
+      "description": "Move never industry bar require far law before."
+    },
+    {
+      "id": "7a92e646-e9a5-4b43-9d88-0dbad786c067",
+      "name": "Universal executive adapter 19",
+      "status": "Completed",
+      "createdDate": "2026-02-02T06:43:55",
+      "updatedDate": "2026-02-07T10:17:30",
+      "owner": "Cassandra Yoder",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9964.57,
+      "description": "Upon but subject situation newspaper."
+    },
+    {
+      "id": "36133c32-0700-471a-bfcc-8f148e6bb86c",
+      "name": "Phased real-time time-frame 20",
+      "status": "Pending",
+      "createdDate": "2025-06-28T14:36:38",
+      "updatedDate": "2026-02-04T00:26:32",
+      "owner": "Paul Nguyen",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5653.08,
+      "description": "Above network garden form hand be yeah."
+    },
+    {
+      "id": "b3320fab-e66f-499e-a32b-02f9387029b6",
+      "name": "Proactive empowering architecture 21",
+      "status": "Pending",
+      "createdDate": "2025-06-20T21:27:34",
+      "updatedDate": "2026-02-02T21:19:40",
+      "owner": "Thomas Chang",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5468.48,
+      "description": "Allow day recognize important public senior individual plan."
+    },
+    {
+      "id": "60d66222-b769-4c31-b74c-52c249a42eff",
+      "name": "Sharable bottom-line concept 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-18T21:49:43",
+      "updatedDate": "2026-02-01T04:06:18",
+      "owner": "Kevin Delacruz",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8597.8,
+      "description": "Who start top follow put."
+    },
+    {
+      "id": "1ba95180-18b3-459f-89c2-5ec097479df8",
+      "name": "Total empowering contingency 23",
+      "status": "Pending",
+      "createdDate": "2025-06-07T18:44:53",
+      "updatedDate": "2026-01-28T12:34:44",
+      "owner": "Paul Vaughn",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 332.21,
+      "description": "Arrive may send eat process risk minute against."
+    },
+    {
+      "id": "564e7b6a-819d-48ae-bd2e-0f2a669bc27b",
+      "name": "Automated scalable capacity 24",
+      "status": "Active",
+      "createdDate": "2025-11-22T00:51:04",
+      "updatedDate": "2026-01-29T14:51:08",
+      "owner": "Gail Allen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7377.54,
+      "description": "Thing live point PM stage note his."
+    },
+    {
+      "id": "34401cdd-3c99-4877-ab32-272917891d86",
+      "name": "Ameliorated zero administration adapter 25",
+      "status": "Pending",
+      "createdDate": "2026-01-31T13:46:39",
+      "updatedDate": "2026-02-10T22:09:48",
+      "owner": "Tina Malone",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6460.07,
+      "description": "Artist myself explain drive north responsibility speak."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

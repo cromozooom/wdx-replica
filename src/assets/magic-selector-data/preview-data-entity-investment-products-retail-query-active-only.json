@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 772,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "cb0b2844-337b-43c2-acf0-2e4460d0143c",
+      "name": "Adaptive even-keeled encryption 1",
+      "status": "Inactive",
+      "createdDate": "2025-09-07T10:34:24",
+      "updatedDate": "2026-02-09T15:00:28",
+      "owner": "Tara Mcdonald",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3135.68,
+      "description": "Arrive member enough street involve."
+    },
+    {
+      "id": "04511fcf-ef89-4bc9-bdad-db3d5341dad4",
+      "name": "Intuitive fresh-thinking productivity 2",
+      "status": "Completed",
+      "createdDate": "2025-09-12T18:53:27",
+      "updatedDate": "2026-01-19T00:42:46",
+      "owner": "Ryan Edwards PhD",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6543.44,
+      "description": "Receive move travel firm everyone far."
+    },
+    {
+      "id": "bed7c34a-86d1-4da8-8fe7-52ca67e0e943",
+      "name": "Up-sized incremental implementation 3",
+      "status": "Completed",
+      "createdDate": "2026-01-10T16:55:32",
+      "updatedDate": "2026-01-20T15:06:10",
+      "owner": "Leslie Jackson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2359.39,
+      "description": "Final understand rise performance few."
+    },
+    {
+      "id": "2fe50675-5eb8-48f6-8b84-691fd3f0ced5",
+      "name": "Streamlined bandwidth-monitored solution 4",
+      "status": "Inactive",
+      "createdDate": "2025-04-15T23:17:52",
+      "updatedDate": "2026-01-21T18:35:29",
+      "owner": "Katherine Watson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7740.17,
+      "description": "Day more daughter."
+    },
+    {
+      "id": "f85ca1ba-5902-424a-834b-7b9f2b93a07d",
+      "name": "Right-sized asymmetric algorithm 5",
+      "status": "Pending",
+      "createdDate": "2025-03-25T19:53:08",
+      "updatedDate": "2026-01-25T03:23:45",
+      "owner": "Mr. Phillip Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6135.41,
+      "description": "Well size door effort piece law he."
+    },
+    {
+      "id": "9b00d3cb-3526-4f9c-8dac-4a54709f8869",
+      "name": "Streamlined zero tolerance policy 6",
+      "status": "Completed",
+      "createdDate": "2025-10-19T05:48:54",
+      "updatedDate": "2026-01-20T04:05:31",
+      "owner": "Julia Snyder",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9525.16,
+      "description": "Recently upon tonight leader enough will."
+    },
+    {
+      "id": "9f2276d2-74a5-40b4-9990-48ad707b6031",
+      "name": "Polarized cohesive complexity 7",
+      "status": "Active",
+      "createdDate": "2025-12-25T20:23:32",
+      "updatedDate": "2026-02-09T15:14:13",
+      "owner": "Edward Hess",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1454.03,
+      "description": "Support somebody painting economic program."
+    },
+    {
+      "id": "e19bb8d4-6540-4545-8247-3286d7641b06",
+      "name": "Fully-configurable exuding open system 8",
+      "status": "Completed",
+      "createdDate": "2026-01-23T07:55:38",
+      "updatedDate": "2026-01-18T21:22:53",
+      "owner": "Zachary Green",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2728.6,
+      "description": "Property right company alone suddenly leader no."
+    },
+    {
+      "id": "fa3a9949-5913-4c49-9953-aaaf011eaecb",
+      "name": "Upgradable logistical groupware 9",
+      "status": "Active",
+      "createdDate": "2025-04-20T01:54:58",
+      "updatedDate": "2026-02-15T06:03:11",
+      "owner": "Cassandra Wallace",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1910.98,
+      "description": "Trial factor glass store appear cell speech."
+    },
+    {
+      "id": "2439465f-a96c-444f-a7f4-f22d68d661f1",
+      "name": "Expanded uniform capacity 10",
+      "status": "Inactive",
+      "createdDate": "2025-06-08T17:20:01",
+      "updatedDate": "2026-02-11T05:50:01",
+      "owner": "Natalie Fritz",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3389.92,
+      "description": "Beat matter born."
+    },
+    {
+      "id": "86738c47-5b15-4f4f-9a4b-59305c05f0a5",
+      "name": "Open-architected impactful conglomeration 11",
+      "status": "Inactive",
+      "createdDate": "2026-02-12T14:41:22",
+      "updatedDate": "2026-02-13T10:08:24",
+      "owner": "Robert Thompson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1721.46,
+      "description": "Indicate discussion pick lose long."
+    },
+    {
+      "id": "8713b91b-1128-4c98-a4d0-3d85bcb262a7",
+      "name": "Synergized upward-trending portal 12",
+      "status": "Active",
+      "createdDate": "2025-12-15T17:49:47",
+      "updatedDate": "2026-02-06T06:03:01",
+      "owner": "Terri Buchanan",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9820.86,
+      "description": "Assume activity give reach."
+    },
+    {
+      "id": "e518298e-f377-4eca-a516-51a58595d636",
+      "name": "Phased logistical core 13",
+      "status": "Completed",
+      "createdDate": "2025-09-25T14:17:09",
+      "updatedDate": "2026-02-01T14:06:03",
+      "owner": "Kayla Reynolds",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6183.07,
+      "description": "Building only continue player."
+    },
+    {
+      "id": "8dacf3bc-5d3d-4c1e-b1a2-db5908fd929b",
+      "name": "Polarized bandwidth-monitored capacity 14",
+      "status": "Completed",
+      "createdDate": "2025-08-09T03:10:21",
+      "updatedDate": "2026-02-15T17:18:30",
+      "owner": "Shane Francis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7575.78,
+      "description": "Kitchen sound either how require hour."
+    },
+    {
+      "id": "f03346bc-8e38-4425-b6c5-d41bef01d380",
+      "name": "Expanded mission-critical capability 15",
+      "status": "Active",
+      "createdDate": "2025-02-26T05:50:13",
+      "updatedDate": "2026-01-27T01:24:33",
+      "owner": "Jonathan Fernandez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4325.99,
+      "description": "Single group at born hundred."
+    },
+    {
+      "id": "19eeca43-a702-4353-8c03-a600d5472d0f",
+      "name": "Realigned 24/7 paradigm 16",
+      "status": "Pending",
+      "createdDate": "2026-01-24T10:40:11",
+      "updatedDate": "2026-02-14T06:14:02",
+      "owner": "Teresa Cruz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8594.84,
+      "description": "Recent or among happy I sign increase resource."
+    },
+    {
+      "id": "946b1c35-17da-4273-b080-26ae6c2e86a7",
+      "name": "Streamlined intangible neural-net 17",
+      "status": "Inactive",
+      "createdDate": "2026-02-11T18:50:53",
+      "updatedDate": "2026-01-19T06:02:56",
+      "owner": "Lisa Roberts",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1746.28,
+      "description": "Risk generation dark."
+    },
+    {
+      "id": "256d98ea-6af7-443e-8246-65681af70b05",
+      "name": "Mandatory asynchronous adapter 18",
+      "status": "Pending",
+      "createdDate": "2025-08-31T02:49:00",
+      "updatedDate": "2026-02-08T20:22:42",
+      "owner": "Matthew Boyle",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3107.69,
+      "description": "Better number himself drop from thousand."
+    },
+    {
+      "id": "3f5e28b7-07e7-45ee-89f9-b03ccebd93e0",
+      "name": "Face-to-face web-enabled challenge 19",
+      "status": "Pending",
+      "createdDate": "2025-03-14T21:29:53",
+      "updatedDate": "2026-01-26T12:09:44",
+      "owner": "Toni Harmon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2131.38,
+      "description": "Chair step capital fact."
+    },
+    {
+      "id": "b10f238f-3a50-4da0-b817-f4ec7433a7f5",
+      "name": "Universal content-based forecast 20",
+      "status": "Completed",
+      "createdDate": "2025-03-28T03:13:10",
+      "updatedDate": "2026-01-24T16:18:31",
+      "owner": "Jasmine Walter",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7830.41,
+      "description": "Knowledge decide card across though assume."
+    },
+    {
+      "id": "80d1e402-7775-46ec-8954-fb670d9cef56",
+      "name": "Ergonomic stable secured line 21",
+      "status": "Inactive",
+      "createdDate": "2025-05-09T00:00:49",
+      "updatedDate": "2026-02-09T00:13:46",
+      "owner": "John Lin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 717.32,
+      "description": "Standard production example including."
+    },
+    {
+      "id": "896e7c12-cb6c-4a93-823d-6aec0145c7c0",
+      "name": "Synergistic secondary hub 22",
+      "status": "Completed",
+      "createdDate": "2025-04-30T23:11:33",
+      "updatedDate": "2026-01-19T19:54:36",
+      "owner": "Michael Watts",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1392.65,
+      "description": "Consumer stop run although a involve."
+    },
+    {
+      "id": "7d46a886-bf71-4c31-afd7-7913a711ba2e",
+      "name": "Fundamental regional synergy 23",
+      "status": "Completed",
+      "createdDate": "2025-07-01T22:57:29",
+      "updatedDate": "2026-01-22T00:45:48",
+      "owner": "Shannon Baker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9148.93,
+      "description": "I seat peace audience."
+    },
+    {
+      "id": "9be8abb4-cf8a-4c24-8bba-6043110f9e42",
+      "name": "Horizontal multimedia algorithm 24",
+      "status": "Completed",
+      "createdDate": "2025-11-17T14:37:38",
+      "updatedDate": "2026-01-25T02:37:16",
+      "owner": "Heather Watson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4269.03,
+      "description": "Result draw first."
+    },
+    {
+      "id": "6cf8ea80-dce8-4d9c-a876-374647551bef",
+      "name": "Visionary eco-centric ability 25",
+      "status": "Inactive",
+      "createdDate": "2025-05-25T22:40:03",
+      "updatedDate": "2026-02-14T21:40:32",
+      "owner": "Norman Dickson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8174.92,
+      "description": "Remember per job behind reach."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 212,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "37c60c8b-8377-45c5-8374-b734769fb2f0",
+      "name": "Pre-emptive bandwidth-monitored benchmark 1",
+      "status": "Active",
+      "createdDate": "2025-07-12T22:54:30",
+      "updatedDate": "2026-02-03T16:44:27",
+      "owner": "Brian Miller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1762.56,
+      "description": "Behavior nor until."
+    },
+    {
+      "id": "7072c937-8b8f-4700-baa5-3fa44584f574",
+      "name": "Automated solution-oriented website 2",
+      "status": "Pending",
+      "createdDate": "2025-06-04T03:57:40",
+      "updatedDate": "2026-01-23T05:24:22",
+      "owner": "Erica Campbell",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8802.69,
+      "description": "Pressure station hotel you."
+    },
+    {
+      "id": "d97755a6-7f2b-45e6-819c-6abbd9a6b6c6",
+      "name": "Open-source bottom-line data-warehouse 3",
+      "status": "Pending",
+      "createdDate": "2025-09-24T03:26:17",
+      "updatedDate": "2026-01-27T12:35:07",
+      "owner": "Michael Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6333.01,
+      "description": "Sport he sit character."
+    },
+    {
+      "id": "9f9d289a-19ea-4dba-b638-baa174e3792c",
+      "name": "De-engineered impactful encoding 4",
+      "status": "Inactive",
+      "createdDate": "2025-05-10T02:20:58",
+      "updatedDate": "2026-01-22T02:07:01",
+      "owner": "April Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2977.46,
+      "description": "Remember begin exist carry economic like citizen."
+    },
+    {
+      "id": "ae350f07-8af3-45b5-b84c-2c615c4f77d6",
+      "name": "Right-sized didactic throughput 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T04:32:24",
+      "updatedDate": "2026-02-08T04:07:31",
+      "owner": "Frank Ellis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9217.72,
+      "description": "Star prepare first already."
+    },
+    {
+      "id": "f6d7f0a6-7b2c-4916-89d7-cedee6e61fb5",
+      "name": "Digitized 24hour monitoring 6",
+      "status": "Completed",
+      "createdDate": "2025-04-19T04:33:00",
+      "updatedDate": "2026-01-26T15:41:38",
+      "owner": "Jerry Simmons",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5828.57,
+      "description": "Difficult sister argue him environmental bring central low."
+    },
+    {
+      "id": "b6febee6-b943-4378-ac09-73c66d407d69",
+      "name": "Innovative system-worthy contingency 7",
+      "status": "Completed",
+      "createdDate": "2025-08-08T10:00:12",
+      "updatedDate": "2026-01-19T00:32:30",
+      "owner": "Karen Nelson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2981.4,
+      "description": "Evening person property majority attack."
+    },
+    {
+      "id": "ed85f912-266b-4294-9986-fbee37cefd37",
+      "name": "Reverse-engineered radical data-warehouse 8",
+      "status": "Pending",
+      "createdDate": "2025-06-26T04:48:15",
+      "updatedDate": "2026-02-11T06:49:51",
+      "owner": "Virginia Scott",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4566.42,
+      "description": "Culture ability fish include specific little eat."
+    },
+    {
+      "id": "01db0fca-3852-41e2-800a-17c6053d4e68",
+      "name": "Cross-group executive alliance 9",
+      "status": "Inactive",
+      "createdDate": "2025-08-28T12:36:55",
+      "updatedDate": "2026-02-16T04:49:26",
+      "owner": "Elizabeth Munoz",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5929.82,
+      "description": "Language later either civil wait base letter."
+    },
+    {
+      "id": "d9942cf4-b488-4f1a-ba01-a33bb38ca49c",
+      "name": "Switchable explicit hierarchy 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-28T05:30:43",
+      "updatedDate": "2026-01-31T06:35:18",
+      "owner": "Yvonne Taylor",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5061.4,
+      "description": "Occur civil father special."
+    },
+    {
+      "id": "7a202ec7-29bd-4a6d-a3c5-fea683206b00",
+      "name": "Team-oriented 3rdgeneration collaboration 11",
+      "status": "Completed",
+      "createdDate": "2025-05-08T01:17:06",
+      "updatedDate": "2026-02-09T05:04:16",
+      "owner": "Lisa Harris",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7236.57,
+      "description": "Example note card next hand."
+    },
+    {
+      "id": "47f34a29-8b30-40de-9ee3-a6a487aa4374",
+      "name": "Right-sized disintermediate core 12",
+      "status": "Completed",
+      "createdDate": "2025-09-20T23:55:38",
+      "updatedDate": "2026-02-16T04:53:13",
+      "owner": "Charles Valencia",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4761.5,
+      "description": "Bar without letter president serious."
+    },
+    {
+      "id": "fde3d628-05e8-42b3-8a3e-ab977f798c1f",
+      "name": "Digitized next generation infrastructure 13",
+      "status": "Inactive",
+      "createdDate": "2025-12-05T19:34:56",
+      "updatedDate": "2026-01-30T00:39:09",
+      "owner": "Philip Green",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7006.4,
+      "description": "Goal remain color tonight event either."
+    },
+    {
+      "id": "b59a2c47-dc9a-4a20-b3f3-173a2e207b6f",
+      "name": "Synergized disintermediate adapter 14",
+      "status": "Completed",
+      "createdDate": "2025-10-06T03:14:18",
+      "updatedDate": "2026-02-06T14:13:14",
+      "owner": "Ashley Gomez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1656.23,
+      "description": "Particular Mr put finish."
+    },
+    {
+      "id": "6c8782ca-1733-445a-82db-fdd49a17ca00",
+      "name": "Implemented zero tolerance utilization 15",
+      "status": "Completed",
+      "createdDate": "2026-02-11T01:53:17",
+      "updatedDate": "2026-02-02T17:07:16",
+      "owner": "Lacey Roberts",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3732.95,
+      "description": "Serve Mr with tonight."
+    },
+    {
+      "id": "e51f3e3f-9812-4d81-90c6-b9c48763e88e",
+      "name": "Universal global encryption 16",
+      "status": "Completed",
+      "createdDate": "2025-09-29T12:02:25",
+      "updatedDate": "2026-01-20T23:38:21",
+      "owner": "Nicholas Edwards",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2584.67,
+      "description": "Stand pay industry movement."
+    },
+    {
+      "id": "2ae91505-67ff-4c0d-b7f5-99e0c0228b0d",
+      "name": "Virtual optimizing capability 17",
+      "status": "Inactive",
+      "createdDate": "2025-06-27T21:52:20",
+      "updatedDate": "2026-01-24T03:20:14",
+      "owner": "Anthony Lowe",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7589.19,
+      "description": "Sport hear fast sister benefit through."
+    },
+    {
+      "id": "4c25f3c2-4da4-4a51-9008-bc64b045b0d9",
+      "name": "Universal content-based ability 18",
+      "status": "Completed",
+      "createdDate": "2025-12-17T21:49:48",
+      "updatedDate": "2026-01-31T16:24:11",
+      "owner": "Latasha French",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3905.34,
+      "description": "Else hotel general vote pretty Congress try much."
+    },
+    {
+      "id": "456a6fa6-880f-41ce-aac2-7dde2fdfdfd4",
+      "name": "Exclusive executive artificial intelligence 19",
+      "status": "Active",
+      "createdDate": "2025-12-14T13:28:33",
+      "updatedDate": "2026-01-26T21:07:29",
+      "owner": "Cory Cain",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9971.02,
+      "description": "Care both financial air true."
+    },
+    {
+      "id": "8cf34ab9-fd9a-48ea-bf07-0eaa7878bebb",
+      "name": "Implemented 3rdgeneration model 20",
+      "status": "Inactive",
+      "createdDate": "2025-10-10T20:16:03",
+      "updatedDate": "2026-01-20T20:21:41",
+      "owner": "Rachel Lane",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4193.87,
+      "description": "Heavy I out."
+    },
+    {
+      "id": "1bd73b31-f182-43c1-bad3-caa7cb7945fb",
+      "name": "Vision-oriented modular Graphic Interface 21",
+      "status": "Active",
+      "createdDate": "2025-10-16T17:37:06",
+      "updatedDate": "2026-02-15T06:50:16",
+      "owner": "Christopher Green Jr.",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6148.41,
+      "description": "Himself bit service action."
+    },
+    {
+      "id": "dd14d155-5270-44a6-a265-220e545fe14a",
+      "name": "Team-oriented attitude-oriented interface 22",
+      "status": "Inactive",
+      "createdDate": "2025-03-19T06:45:29",
+      "updatedDate": "2026-01-24T22:51:04",
+      "owner": "Anthony Wood",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7959.35,
+      "description": "Need wear avoid fear."
+    },
+    {
+      "id": "1f5c5f2b-e109-4089-9445-54caa7d46b1a",
+      "name": "Distributed clear-thinking open system 23",
+      "status": "Inactive",
+      "createdDate": "2026-02-11T02:24:22",
+      "updatedDate": "2026-02-05T01:47:46",
+      "owner": "Mrs. Debra Garner",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 484.32,
+      "description": "Middle join science pass."
+    },
+    {
+      "id": "97d1db99-ef32-48c6-a93e-d2d6b3a412d9",
+      "name": "Automated national pricing structure 24",
+      "status": "Completed",
+      "createdDate": "2025-12-19T03:41:52",
+      "updatedDate": "2026-01-27T09:51:23",
+      "owner": "Kristin Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6709.64,
+      "description": "Sign sound third rest case what hundred."
+    },
+    {
+      "id": "51bc67fe-09bc-4d02-bd07-cb19974490a4",
+      "name": "Exclusive tertiary monitoring 25",
+      "status": "Active",
+      "createdDate": "2026-02-15T23:49:09",
+      "updatedDate": "2026-02-07T08:38:12",
+      "owner": "Andrew Delgado",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5245.01,
+      "description": "List method continue identify."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

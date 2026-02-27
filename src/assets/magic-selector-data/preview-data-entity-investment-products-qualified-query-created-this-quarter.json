@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 97,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ed1ecba3-0dd5-45ef-bf2b-ab8e1ded16f8",
+      "name": "User-friendly didactic projection 1",
+      "status": "Completed",
+      "createdDate": "2025-06-12T05:56:16",
+      "updatedDate": "2026-02-07T02:39:05",
+      "owner": "Gary Hayden",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 579.0,
+      "description": "Identify spend chance side training front girl support."
+    },
+    {
+      "id": "34b79bd9-bf47-45e5-9b0b-6af5bcb3ec8d",
+      "name": "Organic 3rdgeneration protocol 2",
+      "status": "Pending",
+      "createdDate": "2025-09-18T14:50:26",
+      "updatedDate": "2026-01-25T14:56:59",
+      "owner": "Mark Gonzales",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3071.29,
+      "description": "Yes source politics travel."
+    },
+    {
+      "id": "e8db2893-c7ff-49b0-8e7f-e3dc5f3b8407",
+      "name": "Focused grid-enabled algorithm 3",
+      "status": "Pending",
+      "createdDate": "2025-03-31T13:20:53",
+      "updatedDate": "2026-02-14T16:10:48",
+      "owner": "Kelly Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8615.55,
+      "description": "Figure cut person unit of rate term real."
+    },
+    {
+      "id": "57242c95-67d9-43b1-933a-ea7f665289d1",
+      "name": "Monitored regional info-mediaries 4",
+      "status": "Inactive",
+      "createdDate": "2026-01-25T20:49:27",
+      "updatedDate": "2026-01-24T14:38:21",
+      "owner": "Sally Greene",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2035.77,
+      "description": "Property never popular last per collection economic community."
+    },
+    {
+      "id": "0ff1492d-0339-4f6d-b586-f22bc64744f5",
+      "name": "Enhanced well-modulated extranet 5",
+      "status": "Completed",
+      "createdDate": "2025-10-07T01:05:03",
+      "updatedDate": "2026-02-04T15:00:40",
+      "owner": "Erin Walker",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8556.71,
+      "description": "Past rock himself might voice."
+    },
+    {
+      "id": "1c294628-7f4b-4e76-8000-4748e4194836",
+      "name": "Cross-group hybrid toolset 6",
+      "status": "Completed",
+      "createdDate": "2025-05-10T11:49:00",
+      "updatedDate": "2026-02-08T11:08:39",
+      "owner": "Christine Bell",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7187.44,
+      "description": "Mother space both add water generation."
+    },
+    {
+      "id": "ae5dd03c-c95f-4684-b593-56f3d6d3e50d",
+      "name": "Profit-focused secondary projection 7",
+      "status": "Active",
+      "createdDate": "2025-02-19T06:15:57",
+      "updatedDate": "2026-02-07T01:09:11",
+      "owner": "Brooke George",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4455.25,
+      "description": "Short letter society across."
+    },
+    {
+      "id": "1be64f44-71fa-48af-8575-549e3fc28d54",
+      "name": "Down-sized fresh-thinking firmware 8",
+      "status": "Completed",
+      "createdDate": "2026-01-03T03:13:00",
+      "updatedDate": "2026-02-11T22:51:47",
+      "owner": "Nancy Hampton",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1319.94,
+      "description": "Want dark project represent."
+    },
+    {
+      "id": "491b78a7-5046-4323-9c53-1bc9213e90ef",
+      "name": "Quality-focused user-facing structure 9",
+      "status": "Active",
+      "createdDate": "2025-05-09T02:02:30",
+      "updatedDate": "2026-01-25T05:54:39",
+      "owner": "Heather Goodman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9315.36,
+      "description": "One there go theory add nearly."
+    },
+    {
+      "id": "23e1003c-8e12-4cb9-bcc8-2303487cf4d5",
+      "name": "Future-proofed zero tolerance open architecture 10",
+      "status": "Inactive",
+      "createdDate": "2025-04-20T14:00:59",
+      "updatedDate": "2026-02-10T14:08:27",
+      "owner": "Sherri Ibarra",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7407.26,
+      "description": "Large newspaper us detail."
+    },
+    {
+      "id": "a09b444f-30a7-45d4-9a4a-eadac80e00fd",
+      "name": "Enhanced transitional protocol 11",
+      "status": "Pending",
+      "createdDate": "2025-11-26T09:47:19",
+      "updatedDate": "2026-02-02T11:18:54",
+      "owner": "Donald Salinas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4760.66,
+      "description": "Direction arm onto kind politics reduce."
+    },
+    {
+      "id": "59e20b56-6091-4806-a172-5a3613e6507a",
+      "name": "Networked bottom-line collaboration 12",
+      "status": "Active",
+      "createdDate": "2025-11-21T16:05:15",
+      "updatedDate": "2026-02-02T16:10:48",
+      "owner": "Miranda Chung",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9616.34,
+      "description": "On all coach group."
+    },
+    {
+      "id": "7347b013-3d26-4fc2-a40b-96cd38869f58",
+      "name": "Ergonomic didactic utilization 13",
+      "status": "Completed",
+      "createdDate": "2025-07-22T09:59:55",
+      "updatedDate": "2026-02-12T02:12:11",
+      "owner": "Mrs. Joanna Ramos",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4025.48,
+      "description": "Term thus writer good whether."
+    },
+    {
+      "id": "7f814808-de00-45e2-a543-4dbe3f34a0c1",
+      "name": "Cloned disintermediate challenge 14",
+      "status": "Inactive",
+      "createdDate": "2025-03-04T00:18:45",
+      "updatedDate": "2026-01-24T00:10:49",
+      "owner": "Jason Kennedy",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3461.71,
+      "description": "Spend word part we."
+    },
+    {
+      "id": "c0324f42-ff36-4b24-9504-a9d29e2d5101",
+      "name": "Team-oriented regional process improvement 15",
+      "status": "Inactive",
+      "createdDate": "2026-01-09T19:19:37",
+      "updatedDate": "2026-02-15T04:33:49",
+      "owner": "Linda Short",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3717.46,
+      "description": "Attack dream experience computer lawyer operation."
+    },
+    {
+      "id": "f39c5363-20fc-4532-8119-596474a7ab9f",
+      "name": "Persistent incremental firmware 16",
+      "status": "Pending",
+      "createdDate": "2025-05-14T11:04:12",
+      "updatedDate": "2026-01-26T01:11:45",
+      "owner": "Natalie Clark",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6271.95,
+      "description": "Cup hit art never like."
+    },
+    {
+      "id": "06577a61-8d2a-424f-a99d-4eaad520bdd2",
+      "name": "Assimilated system-worthy firmware 17",
+      "status": "Completed",
+      "createdDate": "2025-12-31T10:09:53",
+      "updatedDate": "2026-02-04T08:02:07",
+      "owner": "Kevin Espinoza",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5409.3,
+      "description": "Husband item beyond care may why stand."
+    },
+    {
+      "id": "7cf6de06-ce99-44af-9982-086766b5f8ae",
+      "name": "Multi-lateral mobile middleware 18",
+      "status": "Completed",
+      "createdDate": "2025-11-11T19:14:04",
+      "updatedDate": "2026-02-10T03:16:11",
+      "owner": "Shannon Rodriguez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4194.45,
+      "description": "Operation middle enter."
+    },
+    {
+      "id": "b5689bac-44ef-44d5-b512-630d4f772d4c",
+      "name": "User-centric fault-tolerant service-desk 19",
+      "status": "Active",
+      "createdDate": "2025-02-26T19:17:55",
+      "updatedDate": "2026-02-09T03:41:23",
+      "owner": "Nicholas Zuniga",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3448.14,
+      "description": "That certainly send risk senior technology."
+    },
+    {
+      "id": "010d8fb1-00b7-4377-bced-4aee73b4c11d",
+      "name": "Cross-platform 5thgeneration knowledge user 20",
+      "status": "Inactive",
+      "createdDate": "2025-07-20T05:21:12",
+      "updatedDate": "2026-02-08T19:22:25",
+      "owner": "Ronnie Garcia",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9267.99,
+      "description": "Address owner trip real something already long."
+    },
+    {
+      "id": "198dd1b6-f551-4dc1-9bc4-2ef70dced307",
+      "name": "Organized 6thgeneration encryption 21",
+      "status": "Active",
+      "createdDate": "2025-12-18T14:02:47",
+      "updatedDate": "2026-02-16T19:40:53",
+      "owner": "Geoffrey Pratt",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2565.83,
+      "description": "Seat only give debate explain."
+    },
+    {
+      "id": "004358ee-b395-40b1-b618-f7e724257a1a",
+      "name": "Diverse real-time Local Area Network 22",
+      "status": "Active",
+      "createdDate": "2025-05-02T14:41:45",
+      "updatedDate": "2026-02-16T19:42:38",
+      "owner": "Kenneth Knight",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4265.3,
+      "description": "Difference under soldier history eat answer."
+    },
+    {
+      "id": "bf9e7b0a-3b19-481f-a2d9-d0c80863dbf1",
+      "name": "User-friendly intermediate pricing structure 23",
+      "status": "Pending",
+      "createdDate": "2025-09-16T23:23:12",
+      "updatedDate": "2026-02-17T01:30:22",
+      "owner": "Aimee Briggs",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8547.22,
+      "description": "Within too both head far."
+    },
+    {
+      "id": "365c2982-ac0b-4708-9b2f-82b9632c6aab",
+      "name": "Self-enabling didactic collaboration 24",
+      "status": "Completed",
+      "createdDate": "2026-01-01T20:44:44",
+      "updatedDate": "2026-01-29T10:31:35",
+      "owner": "Travis Woodard",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5525.68,
+      "description": "True government eat here soon take."
+    },
+    {
+      "id": "fbf13cbb-d027-4860-b40f-5dcd23941b95",
+      "name": "Upgradable disintermediate info-mediaries 25",
+      "status": "Pending",
+      "createdDate": "2025-04-05T22:42:22",
+      "updatedDate": "2026-01-27T23:44:09",
+      "owner": "Eric Schaefer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6836.06,
+      "description": "Particularly drug arrive still know sell money."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

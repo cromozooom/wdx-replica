@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 629,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "7d28e1ed-5078-4f26-837b-8ab02b63d06f",
+      "name": "Operative composite forecast 1",
+      "status": "Inactive",
+      "createdDate": "2025-12-20T11:46:50",
+      "updatedDate": "2026-01-21T20:57:48",
+      "owner": "Nicolas Villa",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 330.69,
+      "description": "Mind say bed much several."
+    },
+    {
+      "id": "1ff0a472-4ebb-4d85-865b-3c6977daece1",
+      "name": "Open-source tangible instruction set 2",
+      "status": "Completed",
+      "createdDate": "2025-03-26T21:22:39",
+      "updatedDate": "2026-02-13T00:26:57",
+      "owner": "Ann Wells",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3938.81,
+      "description": "Because population back defense next each."
+    },
+    {
+      "id": "87b0a74e-642f-4aef-a021-541fa1279aac",
+      "name": "Right-sized eco-centric extranet 3",
+      "status": "Inactive",
+      "createdDate": "2026-01-06T11:36:23",
+      "updatedDate": "2026-01-22T03:45:42",
+      "owner": "Haley Hill",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 509.68,
+      "description": "Long enter my window firm visit."
+    },
+    {
+      "id": "d0fecd86-c0e3-4ddd-b0f1-63eff5e34e2d",
+      "name": "Networked coherent algorithm 4",
+      "status": "Inactive",
+      "createdDate": "2025-06-14T06:12:40",
+      "updatedDate": "2026-02-12T23:45:31",
+      "owner": "James Page",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3134.16,
+      "description": "Red child strategy career yes network direction."
+    },
+    {
+      "id": "d34ca53d-932e-48d6-8a8c-1d4d7e0a1984",
+      "name": "Multi-lateral transitional implementation 5",
+      "status": "Inactive",
+      "createdDate": "2025-10-23T07:03:54",
+      "updatedDate": "2026-02-10T13:19:25",
+      "owner": "Sherri Harris",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 660.54,
+      "description": "Spring build medical bed raise crime morning."
+    },
+    {
+      "id": "0c7f0649-7426-4ca0-9ec5-d9e2282139b8",
+      "name": "Visionary 24hour concept 6",
+      "status": "Inactive",
+      "createdDate": "2025-11-11T18:38:40",
+      "updatedDate": "2026-01-19T23:42:10",
+      "owner": "Andrew Villegas",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8360.68,
+      "description": "Fund require nothing."
+    },
+    {
+      "id": "8bd051da-1a6b-4dd3-ba42-43dc7c928be6",
+      "name": "Fully-configurable system-worthy orchestration 7",
+      "status": "Pending",
+      "createdDate": "2026-01-07T17:40:39",
+      "updatedDate": "2026-01-25T20:17:01",
+      "owner": "Christine Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1746.64,
+      "description": "Son time among."
+    },
+    {
+      "id": "c3735e56-b30f-4bd5-922d-50f637d550eb",
+      "name": "Intuitive fresh-thinking groupware 8",
+      "status": "Inactive",
+      "createdDate": "2026-02-13T23:44:46",
+      "updatedDate": "2026-02-13T06:17:29",
+      "owner": "Jonathon Chapman",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2433.46,
+      "description": "Particular tough begin like."
+    },
+    {
+      "id": "c7ba5be0-309d-4536-87b1-1beee146ed32",
+      "name": "Decentralized non-volatile productivity 9",
+      "status": "Inactive",
+      "createdDate": "2025-10-21T03:38:03",
+      "updatedDate": "2026-02-02T18:05:00",
+      "owner": "Leah Hobbs",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3064.33,
+      "description": "Ok central team happen."
+    },
+    {
+      "id": "05061d1d-15fb-419e-9a0a-4362f9b245b6",
+      "name": "Persistent modular synergy 10",
+      "status": "Active",
+      "createdDate": "2025-10-24T14:01:54",
+      "updatedDate": "2026-02-13T23:54:09",
+      "owner": "Kevin Larson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5489.45,
+      "description": "Contain health he fact anyone view say."
+    },
+    {
+      "id": "3ec474c5-43c2-4b5b-bba8-fbd672989912",
+      "name": "De-engineered mission-critical support 11",
+      "status": "Inactive",
+      "createdDate": "2025-08-17T23:54:12",
+      "updatedDate": "2026-02-08T19:33:59",
+      "owner": "Steve Wood",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2999.56,
+      "description": "Modern around foot sister near best meet."
+    },
+    {
+      "id": "b4312d35-2ea7-4ad7-a9f6-6bf447c98200",
+      "name": "Reduced interactive standardization 12",
+      "status": "Pending",
+      "createdDate": "2025-11-21T01:40:53",
+      "updatedDate": "2026-01-20T07:05:28",
+      "owner": "Nicholas Price",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6571.23,
+      "description": "International deal attack special too girl out."
+    },
+    {
+      "id": "6faa2a01-4728-480b-b160-28d5c830f077",
+      "name": "Diverse radical leverage 13",
+      "status": "Completed",
+      "createdDate": "2025-04-25T08:59:20",
+      "updatedDate": "2026-02-14T22:29:29",
+      "owner": "April Mann",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2604.68,
+      "description": "Do exactly yeah her democratic than say."
+    },
+    {
+      "id": "a0bed9fc-8441-4c4b-968e-b8d5681e87df",
+      "name": "Robust bandwidth-monitored hub 14",
+      "status": "Inactive",
+      "createdDate": "2026-02-12T09:55:05",
+      "updatedDate": "2026-01-25T22:26:41",
+      "owner": "Stacy Torres",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7080.09,
+      "description": "Their others charge watch become fire leader."
+    },
+    {
+      "id": "d3d4e97a-8d2a-48fd-92cd-0f63b5e06c40",
+      "name": "Ergonomic content-based matrices 15",
+      "status": "Active",
+      "createdDate": "2025-03-08T09:04:49",
+      "updatedDate": "2026-01-27T20:52:36",
+      "owner": "Raymond Wilson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4250.31,
+      "description": "Author weight whether partner physical."
+    },
+    {
+      "id": "8961cb23-9de2-46ce-a2fe-4a580f939ff6",
+      "name": "Configurable multi-tasking intranet 16",
+      "status": "Inactive",
+      "createdDate": "2025-04-03T04:22:25",
+      "updatedDate": "2026-02-02T17:51:29",
+      "owner": "Gary Jones",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2465.22,
+      "description": "Reality explain now keep through."
+    },
+    {
+      "id": "e39ca7b4-d4ce-4d46-99e5-711c1ca2b4d6",
+      "name": "Reverse-engineered heuristic paradigm 17",
+      "status": "Active",
+      "createdDate": "2025-07-10T06:29:01",
+      "updatedDate": "2026-02-07T10:27:59",
+      "owner": "Michael Fleming",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6548.36,
+      "description": "After home law part."
+    },
+    {
+      "id": "5f79321d-227e-4dcb-815b-c1cb821104fb",
+      "name": "Enterprise-wide needs-based support 18",
+      "status": "Inactive",
+      "createdDate": "2026-01-15T16:03:42",
+      "updatedDate": "2026-02-12T13:18:01",
+      "owner": "Joseph Price",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4812.9,
+      "description": "Know off later born."
+    },
+    {
+      "id": "243850a1-eb24-4b2a-8585-97d792fc1ab2",
+      "name": "Diverse value-added knowledge user 19",
+      "status": "Pending",
+      "createdDate": "2025-09-11T12:39:08",
+      "updatedDate": "2026-02-09T08:33:08",
+      "owner": "Katelyn Rodriguez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1991.28,
+      "description": "Else east for throw himself anything cover."
+    },
+    {
+      "id": "eb9d8f17-551b-4941-881c-6ca152d8f12b",
+      "name": "Cross-platform scalable utilization 20",
+      "status": "Inactive",
+      "createdDate": "2025-03-11T00:14:43",
+      "updatedDate": "2026-02-17T02:17:16",
+      "owner": "Robert Page",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5003.4,
+      "description": "Ever story start save why."
+    },
+    {
+      "id": "3050f8b7-07f4-43e6-9adb-52aff9063095",
+      "name": "Business-focused content-based knowledgebase 21",
+      "status": "Completed",
+      "createdDate": "2025-03-20T20:43:43",
+      "updatedDate": "2026-02-16T15:29:02",
+      "owner": "Steven Fuentes",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1070.63,
+      "description": "Behind dinner official."
+    },
+    {
+      "id": "529ccb99-963a-46a6-872c-856de229ab35",
+      "name": "Monitored executive challenge 22",
+      "status": "Completed",
+      "createdDate": "2026-02-03T21:12:31",
+      "updatedDate": "2026-01-24T09:06:06",
+      "owner": "Suzanne Sanders",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6188.69,
+      "description": "Book stop them learn nature management she article."
+    },
+    {
+      "id": "da5b4669-4c8a-4bb3-a9dc-2b22096d4c2c",
+      "name": "Inverse fault-tolerant time-frame 23",
+      "status": "Completed",
+      "createdDate": "2025-03-25T03:16:56",
+      "updatedDate": "2026-01-28T05:10:38",
+      "owner": "Shane Olson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9811.87,
+      "description": "Hear almost marriage finish operation maybe."
+    },
+    {
+      "id": "94552a80-698c-4386-8c65-258222930e7c",
+      "name": "Organic clear-thinking knowledgebase 24",
+      "status": "Completed",
+      "createdDate": "2025-02-21T12:59:18",
+      "updatedDate": "2026-01-23T06:29:09",
+      "owner": "Scott Small",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5675.14,
+      "description": "Local throw suggest."
+    },
+    {
+      "id": "fe6b331c-5438-430e-ab73-1310da29c90b",
+      "name": "Optimized fault-tolerant array 25",
+      "status": "Inactive",
+      "createdDate": "2025-07-05T10:54:29",
+      "updatedDate": "2026-02-13T20:39:23",
+      "owner": "William Stewart",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4901.46,
+      "description": "Image road hear address maintain nice high."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

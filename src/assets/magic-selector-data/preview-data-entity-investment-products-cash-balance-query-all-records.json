@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-all-records",
+  "totalCount": 164,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "6f1cf6e7-80ad-47b9-8907-0883f217ac36",
+      "name": "User-friendly user-facing strategy 1",
+      "status": "Completed",
+      "createdDate": "2025-07-07T03:35:03",
+      "updatedDate": "2026-01-26T23:54:50",
+      "owner": "Jennifer Arnold",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4134.77,
+      "description": "Southern center better pay cause stay with ask."
+    },
+    {
+      "id": "b986a2a1-e395-4e6c-80b8-f0d9fef9073c",
+      "name": "Synergized systemic throughput 2",
+      "status": "Inactive",
+      "createdDate": "2026-01-13T09:22:10",
+      "updatedDate": "2026-01-28T15:26:08",
+      "owner": "Rachel Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3340.28,
+      "description": "Political cultural finally admit suddenly Republican."
+    },
+    {
+      "id": "a49b9cd4-7454-4397-9fe3-6bf84f6819b0",
+      "name": "User-centric web-enabled system engine 3",
+      "status": "Active",
+      "createdDate": "2025-03-23T03:55:01",
+      "updatedDate": "2026-02-13T10:23:11",
+      "owner": "Taylor Compton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5526.57,
+      "description": "Guess hotel change no west job chair."
+    },
+    {
+      "id": "b5ed4918-11c5-43e5-9d5b-91e8be33cbec",
+      "name": "Up-sized bottom-line synergy 4",
+      "status": "Inactive",
+      "createdDate": "2025-04-21T07:18:43",
+      "updatedDate": "2026-02-14T15:07:14",
+      "owner": "Robert Alvarez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5480.53,
+      "description": "Certainly finally your best consumer team."
+    },
+    {
+      "id": "e1f68143-c864-4481-aad9-e26fb46b612e",
+      "name": "Intuitive dedicated concept 5",
+      "status": "Active",
+      "createdDate": "2025-03-12T10:23:47",
+      "updatedDate": "2026-02-04T19:33:28",
+      "owner": "Alexis Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 593.05,
+      "description": "Order apply approach floor car."
+    },
+    {
+      "id": "5073a5ae-fabe-43bd-a59a-a2c49161d49a",
+      "name": "Open-source logistical approach 6",
+      "status": "Completed",
+      "createdDate": "2025-11-03T17:35:42",
+      "updatedDate": "2026-02-17T05:12:54",
+      "owner": "Vanessa Waller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1214.05,
+      "description": "State article speak participant want single discussion."
+    },
+    {
+      "id": "8dd285dc-8cec-44de-8dc7-8363983f5f84",
+      "name": "Diverse cohesive emulation 7",
+      "status": "Pending",
+      "createdDate": "2025-06-25T16:05:05",
+      "updatedDate": "2026-02-12T08:55:30",
+      "owner": "Joseph Chavez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5195.57,
+      "description": "This interview agent."
+    },
+    {
+      "id": "15d1c625-d30b-4304-9e7b-0927883410d6",
+      "name": "Multi-channeled intermediate info-mediaries 8",
+      "status": "Inactive",
+      "createdDate": "2025-06-10T05:05:42",
+      "updatedDate": "2026-01-31T05:48:05",
+      "owner": "Albert Clark",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4237.25,
+      "description": "Serious north account seven process begin."
+    },
+    {
+      "id": "1d2b7689-ad58-413e-951e-2ff8b50f2400",
+      "name": "Universal didactic application 9",
+      "status": "Inactive",
+      "createdDate": "2025-04-14T20:55:31",
+      "updatedDate": "2026-02-01T17:37:30",
+      "owner": "Dylan Poole",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9781.3,
+      "description": "Worry size degree once law dream special."
+    },
+    {
+      "id": "6b1a9939-7463-4223-8773-8db8a9944d3e",
+      "name": "Front-line exuding methodology 10",
+      "status": "Inactive",
+      "createdDate": "2025-09-29T13:06:05",
+      "updatedDate": "2026-02-08T06:46:57",
+      "owner": "Peter Cross",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 117.84,
+      "description": "Reason information training run affect expect game."
+    },
+    {
+      "id": "7c7aefaf-49ef-4d71-be28-778a127618be",
+      "name": "Team-oriented empowering function 11",
+      "status": "Completed",
+      "createdDate": "2025-06-15T00:30:08",
+      "updatedDate": "2026-02-13T03:24:44",
+      "owner": "Crystal Ross",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3771.69,
+      "description": "Above owner sport assume nature raise station."
+    },
+    {
+      "id": "1328f3d6-3ebd-4380-bad8-8949da34eb40",
+      "name": "Innovative client-driven toolset 12",
+      "status": "Inactive",
+      "createdDate": "2025-04-15T21:41:11",
+      "updatedDate": "2026-02-16T11:07:36",
+      "owner": "Brian Moore",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 700.08,
+      "description": "Democrat full apply well body because."
+    },
+    {
+      "id": "386158f3-978e-42e2-a3a6-18d50c837a4b",
+      "name": "Cross-platform object-oriented approach 13",
+      "status": "Active",
+      "createdDate": "2025-07-04T16:01:07",
+      "updatedDate": "2026-02-07T05:31:40",
+      "owner": "Catherine Miller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2536.13,
+      "description": "Full religious current south protect election."
+    },
+    {
+      "id": "e8eab654-87f1-465f-acf7-60790cf45f90",
+      "name": "Advanced methodical emulation 14",
+      "status": "Pending",
+      "createdDate": "2025-12-16T07:17:03",
+      "updatedDate": "2026-01-31T11:00:25",
+      "owner": "Connie Stokes",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4867.5,
+      "description": "Expert late citizen ahead young professional."
+    },
+    {
+      "id": "b353089c-2cbb-439e-98ed-8b4309026bce",
+      "name": "Assimilated systematic encryption 15",
+      "status": "Inactive",
+      "createdDate": "2025-06-04T10:53:22",
+      "updatedDate": "2026-02-05T14:26:07",
+      "owner": "Julie Parker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6769.18,
+      "description": "Sit leg lot father here week indeed."
+    },
+    {
+      "id": "9d711639-993d-4c68-b444-2b6461d102e7",
+      "name": "Adaptive multi-tasking moderator 16",
+      "status": "Completed",
+      "createdDate": "2025-06-06T11:37:03",
+      "updatedDate": "2026-02-12T10:02:27",
+      "owner": "Sabrina Vega",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9788.85,
+      "description": "Adult west to billion I."
+    },
+    {
+      "id": "474fa6bc-ae1e-4110-937a-451d89fa8325",
+      "name": "Multi-tiered motivating leverage 17",
+      "status": "Inactive",
+      "createdDate": "2025-07-16T06:22:24",
+      "updatedDate": "2026-01-31T15:54:52",
+      "owner": "Dustin Cox",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9255.98,
+      "description": "Mouth inside every college grow everything answer."
+    },
+    {
+      "id": "be2bfc41-d22a-4341-b068-565a2b2bab36",
+      "name": "Sharable content-based moratorium 18",
+      "status": "Pending",
+      "createdDate": "2025-04-18T22:45:12",
+      "updatedDate": "2026-01-29T08:31:29",
+      "owner": "Kimberly Burgess",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7674.73,
+      "description": "Boy course another education test parent dinner."
+    },
+    {
+      "id": "748dd648-47e8-494a-9b97-5611ace11743",
+      "name": "Phased contextually-based definition 19",
+      "status": "Active",
+      "createdDate": "2025-08-19T01:48:39",
+      "updatedDate": "2026-01-23T16:36:55",
+      "owner": "Carolyn Kelley PhD",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3921.0,
+      "description": "Specific reveal city want."
+    },
+    {
+      "id": "9376d974-d2d3-48ac-a767-cb8e4f119249",
+      "name": "Total regional interface 20",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T11:14:27",
+      "updatedDate": "2026-01-21T13:46:33",
+      "owner": "Cynthia Goodwin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6712.72,
+      "description": "Help exactly agent hard magazine service."
+    },
+    {
+      "id": "76b1face-77dd-48d6-8ff6-2b8632edb39e",
+      "name": "Persistent explicit frame 21",
+      "status": "Pending",
+      "createdDate": "2025-09-08T18:01:57",
+      "updatedDate": "2026-02-05T05:49:50",
+      "owner": "Cindy Mays",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2496.16,
+      "description": "Business here fish name response."
+    },
+    {
+      "id": "57f6fb96-3203-4cdd-903c-eb4341bfb3e5",
+      "name": "Proactive human-resource help-desk 22",
+      "status": "Inactive",
+      "createdDate": "2025-04-16T02:58:18",
+      "updatedDate": "2026-01-28T14:42:57",
+      "owner": "Rebecca Schwartz",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6516.37,
+      "description": "Bring dog approach notice drive reduce adult."
+    },
+    {
+      "id": "38b78ab5-5805-4558-9342-ec3151eccd17",
+      "name": "Robust well-modulated process improvement 23",
+      "status": "Active",
+      "createdDate": "2025-05-31T17:50:08",
+      "updatedDate": "2026-01-18T15:45:39",
+      "owner": "Natasha Cobb",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2345.24,
+      "description": "Husband simply stand month affect pattern or position."
+    },
+    {
+      "id": "f5852b8b-bb99-4f1f-94e6-f3c11751aff8",
+      "name": "Inverse asymmetric system engine 24",
+      "status": "Inactive",
+      "createdDate": "2025-08-14T10:13:13",
+      "updatedDate": "2026-02-16T20:31:19",
+      "owner": "Louis Davila",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9500.58,
+      "description": "Six particularly exactly perform."
+    },
+    {
+      "id": "6efe000f-a380-41ff-8e4c-c22eaddc3664",
+      "name": "Persistent clear-thinking model 25",
+      "status": "Active",
+      "createdDate": "2025-12-16T22:39:45",
+      "updatedDate": "2026-02-06T01:53:26",
+      "owner": "Heather Holder",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6838.65,
+      "description": "Together sound fall."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

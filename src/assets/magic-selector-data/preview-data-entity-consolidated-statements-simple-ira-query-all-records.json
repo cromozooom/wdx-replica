@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-statement",
+  "queryId": "query-all-records",
+  "totalCount": 228,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "61dd60fc-29ba-4665-8899-3bbb05ceeeb6",
+      "name": "Persevering 24/7 solution 1",
+      "status": "Active",
+      "createdDate": "2025-03-30T22:08:53",
+      "updatedDate": "2026-01-19T06:36:26",
+      "owner": "Zachary Lopez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7536.43,
+      "description": "Create pay outside."
+    },
+    {
+      "id": "43f015f3-1c73-43ed-ac58-ef9368bec0ac",
+      "name": "Business-focused client-server function 2",
+      "status": "Inactive",
+      "createdDate": "2025-10-27T03:31:03",
+      "updatedDate": "2026-01-28T08:40:25",
+      "owner": "John Myers",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2096.59,
+      "description": "Art traditional agent get surface find."
+    },
+    {
+      "id": "4f7e91a3-668b-43f1-bad2-2bb733e00900",
+      "name": "Pre-emptive context-sensitive firmware 3",
+      "status": "Inactive",
+      "createdDate": "2025-03-09T12:42:59",
+      "updatedDate": "2026-02-05T18:56:00",
+      "owner": "Nathaniel Cook",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3468.74,
+      "description": "Those bag toward nearly police."
+    },
+    {
+      "id": "78f5d99b-abf8-4c92-b2ee-180ace440ca4",
+      "name": "Intuitive actuating firmware 4",
+      "status": "Active",
+      "createdDate": "2025-11-09T11:43:21",
+      "updatedDate": "2026-02-04T18:40:50",
+      "owner": "Gregory Brandt",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2359.13,
+      "description": "Everything seek rate night lay."
+    },
+    {
+      "id": "593572b6-6ca5-4c5c-9003-4e4083cc4118",
+      "name": "Reactive multi-tasking infrastructure 5",
+      "status": "Completed",
+      "createdDate": "2025-11-30T04:41:42",
+      "updatedDate": "2026-02-03T15:48:08",
+      "owner": "Marc Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7858.19,
+      "description": "Anyone remember which college shoulder such."
+    },
+    {
+      "id": "94b08068-da6b-4d85-b8fc-bbaa76ebc5f0",
+      "name": "Advanced demand-driven alliance 6",
+      "status": "Completed",
+      "createdDate": "2025-03-29T08:24:48",
+      "updatedDate": "2026-02-03T04:22:04",
+      "owner": "Karen Daniels",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6740.22,
+      "description": "Get onto trip would media watch."
+    },
+    {
+      "id": "bd12f85d-36c6-4ce3-a7df-bbc29aac3783",
+      "name": "Grass-roots dynamic moderator 7",
+      "status": "Pending",
+      "createdDate": "2025-04-25T03:22:21",
+      "updatedDate": "2026-01-20T04:36:47",
+      "owner": "Zoe Thompson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9315.61,
+      "description": "Enjoy data each cover offer wait."
+    },
+    {
+      "id": "ae2a5fb0-1546-4c96-a220-266b9085ede3",
+      "name": "Diverse directional software 8",
+      "status": "Completed",
+      "createdDate": "2026-01-22T20:46:07",
+      "updatedDate": "2026-02-05T16:48:17",
+      "owner": "Nicole Gonzalez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6378.58,
+      "description": "Employee assume six theory."
+    },
+    {
+      "id": "3f8ea0fc-1748-40c8-aca4-60310b153801",
+      "name": "Cross-group user-facing matrix 9",
+      "status": "Completed",
+      "createdDate": "2025-06-27T01:46:50",
+      "updatedDate": "2026-02-05T16:19:30",
+      "owner": "Robin Chaney",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7344.44,
+      "description": "Suddenly grow cut particularly."
+    },
+    {
+      "id": "873b42a2-a05f-495d-836a-a084d1756737",
+      "name": "Persistent solution-oriented Graphic Interface 10",
+      "status": "Completed",
+      "createdDate": "2025-06-26T04:58:33",
+      "updatedDate": "2026-02-08T13:13:22",
+      "owner": "Kathleen Aguirre",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5655.98,
+      "description": "Fire decide matter rather almost security."
+    },
+    {
+      "id": "ccaeab97-a040-43a6-a706-cf79846a01ac",
+      "name": "Progressive demand-driven orchestration 11",
+      "status": "Inactive",
+      "createdDate": "2025-12-04T08:23:01",
+      "updatedDate": "2026-02-03T21:08:39",
+      "owner": "Kathleen Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8414.08,
+      "description": "It contain than economic appear nor draw."
+    },
+    {
+      "id": "4702d370-6e8b-4d63-8ab1-c645e2adf56d",
+      "name": "Multi-tiered needs-based architecture 12",
+      "status": "Completed",
+      "createdDate": "2025-08-10T02:17:53",
+      "updatedDate": "2026-02-11T06:12:21",
+      "owner": "William Vasquez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4786.14,
+      "description": "Best page poor couple."
+    },
+    {
+      "id": "1c91bb6e-6699-4c1f-86c3-3ba1f9d91c27",
+      "name": "Enterprise-wide discrete contingency 13",
+      "status": "Inactive",
+      "createdDate": "2026-01-03T01:34:35",
+      "updatedDate": "2026-02-06T15:04:39",
+      "owner": "Matthew Wilkinson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 676.41,
+      "description": "Movement between agency occur."
+    },
+    {
+      "id": "e5127114-ef5d-4f5c-93d3-7b6a7a4d251d",
+      "name": "Cloned 24/7 standardization 14",
+      "status": "Completed",
+      "createdDate": "2026-01-09T17:34:22",
+      "updatedDate": "2026-02-17T04:54:28",
+      "owner": "Tammy Baker",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6571.21,
+      "description": "Civil far television surface."
+    },
+    {
+      "id": "702f87eb-07ab-4b72-9cae-3bd9cdae61cf",
+      "name": "Open-source uniform protocol 15",
+      "status": "Completed",
+      "createdDate": "2025-06-26T10:37:34",
+      "updatedDate": "2026-02-04T19:38:46",
+      "owner": "Meagan Martinez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6596.8,
+      "description": "Time by wonder present nation cold."
+    },
+    {
+      "id": "9e793c0e-526f-46df-b48c-95b2b6ffc268",
+      "name": "Optimized explicit extranet 16",
+      "status": "Active",
+      "createdDate": "2025-04-09T02:21:45",
+      "updatedDate": "2026-02-03T10:43:33",
+      "owner": "Chelsea Anderson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4208.71,
+      "description": "Technology we significant."
+    },
+    {
+      "id": "06f27947-9b95-4cec-aef9-414f1dc0c69c",
+      "name": "Organized multimedia neural-net 17",
+      "status": "Pending",
+      "createdDate": "2025-08-22T21:18:46",
+      "updatedDate": "2026-02-01T16:46:30",
+      "owner": "Emily Rowland",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9450.42,
+      "description": "Often media operation religious."
+    },
+    {
+      "id": "2e86f692-7c7b-46f7-bf1a-42bb45b6b932",
+      "name": "Operative mission-critical functionalities 18",
+      "status": "Inactive",
+      "createdDate": "2025-03-30T17:52:39",
+      "updatedDate": "2026-02-05T06:57:34",
+      "owner": "Jim Robinson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8500.16,
+      "description": "Mrs establish action eat word if."
+    },
+    {
+      "id": "0482d91c-4553-44d4-a607-028b05505491",
+      "name": "Horizontal 24hour ability 19",
+      "status": "Inactive",
+      "createdDate": "2025-05-06T05:56:56",
+      "updatedDate": "2026-01-31T05:52:06",
+      "owner": "Jeffrey Beltran",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6459.55,
+      "description": "Whatever class knowledge air."
+    },
+    {
+      "id": "548b4827-2db7-4ad1-94cc-62ab5bb11aad",
+      "name": "Object-based user-facing throughput 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-25T04:48:39",
+      "updatedDate": "2026-01-22T11:15:42",
+      "owner": "Mathew Porter",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2999.12,
+      "description": "Themselves industry entire choose."
+    },
+    {
+      "id": "2942dafe-7fe3-42d7-8bc9-e2a86f5136ef",
+      "name": "Horizontal incremental initiative 21",
+      "status": "Pending",
+      "createdDate": "2025-10-31T18:49:58",
+      "updatedDate": "2026-01-25T07:01:15",
+      "owner": "Brian Garcia",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4489.44,
+      "description": "Certainly test state push."
+    },
+    {
+      "id": "bd627fc2-c4a3-4007-8a86-2805a154099a",
+      "name": "Optional needs-based concept 22",
+      "status": "Completed",
+      "createdDate": "2025-04-11T13:25:12",
+      "updatedDate": "2026-02-04T02:12:08",
+      "owner": "Sarah Moore",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7492.81,
+      "description": "Artist loss doctor campaign whether ever make."
+    },
+    {
+      "id": "58b9e1b6-4953-4ae8-9ae9-ba2da1a6985e",
+      "name": "Persistent demand-driven workforce 23",
+      "status": "Pending",
+      "createdDate": "2026-01-20T07:21:48",
+      "updatedDate": "2026-01-21T02:47:47",
+      "owner": "Mark Robbins",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9014.62,
+      "description": "Fly themselves dog show floor food individual."
+    },
+    {
+      "id": "9d737240-c984-4b5c-af78-c81025ba150b",
+      "name": "Multi-lateral secondary definition 24",
+      "status": "Inactive",
+      "createdDate": "2025-03-03T03:31:43",
+      "updatedDate": "2026-01-19T14:17:24",
+      "owner": "Alexandria Roman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1313.93,
+      "description": "Per resource action I then property."
+    },
+    {
+      "id": "703b32e8-e86e-49cc-91dd-8b879faf2192",
+      "name": "Programmable leadingedge framework 25",
+      "status": "Inactive",
+      "createdDate": "2025-09-28T09:54:46",
+      "updatedDate": "2026-01-24T09:18:40",
+      "owner": "Daniel Wyatt",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 500.73,
+      "description": "Avoid among whatever open."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

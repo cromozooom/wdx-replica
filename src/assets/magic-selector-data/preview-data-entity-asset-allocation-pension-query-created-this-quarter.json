@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 496,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b913dffb-95e0-4763-9f86-ca9a99a56978",
+      "name": "Customer-focused attitude-oriented data-warehouse 1",
+      "status": "Active",
+      "createdDate": "2026-01-09T02:19:40",
+      "updatedDate": "2026-01-28T09:35:59",
+      "owner": "Jose Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9925.38,
+      "description": "Sell employee should compare."
+    },
+    {
+      "id": "68918909-0389-4c38-a237-a3ee0777c56b",
+      "name": "Triple-buffered dynamic time-frame 2",
+      "status": "Active",
+      "createdDate": "2025-03-28T22:16:52",
+      "updatedDate": "2026-02-16T07:55:11",
+      "owner": "Margaret Garcia",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5426.77,
+      "description": "Radio training question experience watch."
+    },
+    {
+      "id": "9d35fce8-0b4d-44a8-b77e-7453eb143910",
+      "name": "Versatile systemic parallelism 3",
+      "status": "Active",
+      "createdDate": "2025-05-30T12:06:44",
+      "updatedDate": "2026-02-06T15:55:23",
+      "owner": "Christina Brown DVM",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4930.64,
+      "description": "Big official eye foreign civil."
+    },
+    {
+      "id": "6265f9d4-8e41-4cf5-b5bf-a2d4cbfa9733",
+      "name": "Seamless logistical data-warehouse 4",
+      "status": "Completed",
+      "createdDate": "2025-08-06T11:48:48",
+      "updatedDate": "2026-01-24T10:49:22",
+      "owner": "Madeline Pollard",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7165.68,
+      "description": "Until half animal likely place."
+    },
+    {
+      "id": "5c0b2826-ac1b-4256-8c88-d9bcc0fedf1a",
+      "name": "Secured logistical attitude 5",
+      "status": "Inactive",
+      "createdDate": "2025-04-15T09:22:54",
+      "updatedDate": "2026-02-10T08:57:24",
+      "owner": "Elizabeth Oneill",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7695.2,
+      "description": "Wall arm human bad three lead appear final."
+    },
+    {
+      "id": "1646aa71-64c2-4834-8ae6-01a25352b5b3",
+      "name": "Organic actuating groupware 6",
+      "status": "Pending",
+      "createdDate": "2025-04-30T09:51:15",
+      "updatedDate": "2026-01-25T22:52:46",
+      "owner": "Lisa Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1788.37,
+      "description": "State not tend star camera not because."
+    },
+    {
+      "id": "0cc373d5-7347-4312-9510-e32557741074",
+      "name": "Innovative high-level parallelism 7",
+      "status": "Pending",
+      "createdDate": "2025-02-19T07:10:49",
+      "updatedDate": "2026-01-28T00:29:58",
+      "owner": "Christopher Ramos",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 879.81,
+      "description": "Find ground table source hundred which subject."
+    },
+    {
+      "id": "b4174cb8-d1f9-4b5b-8582-987014682924",
+      "name": "Programmable coherent matrix 8",
+      "status": "Inactive",
+      "createdDate": "2026-01-28T16:12:32",
+      "updatedDate": "2026-01-24T15:29:53",
+      "owner": "Willie Thompson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5341.53,
+      "description": "True soldier teach else majority discussion."
+    },
+    {
+      "id": "20681708-5c20-4ca3-9d1a-a15cbe67c18e",
+      "name": "Optional attitude-oriented architecture 9",
+      "status": "Active",
+      "createdDate": "2025-09-03T20:06:15",
+      "updatedDate": "2026-02-07T02:30:01",
+      "owner": "Pamela Davis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6393.13,
+      "description": "Customer activity star chance."
+    },
+    {
+      "id": "b1ba03e6-73d5-4f96-859e-8d4ad721c33b",
+      "name": "Enhanced zero tolerance firmware 10",
+      "status": "Active",
+      "createdDate": "2025-08-11T16:26:35",
+      "updatedDate": "2026-01-22T15:57:36",
+      "owner": "Michelle Clark",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1752.42,
+      "description": "Training level participant most spend."
+    },
+    {
+      "id": "addd7e7d-b88f-4d1a-a567-1baf72132112",
+      "name": "Persevering executive emulation 11",
+      "status": "Active",
+      "createdDate": "2025-05-08T12:06:42",
+      "updatedDate": "2026-02-08T06:25:15",
+      "owner": "Whitney Ruiz",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1356.42,
+      "description": "Show necessary tell whom smile light."
+    },
+    {
+      "id": "a544322a-d47b-4791-8fcd-e262496c2454",
+      "name": "Versatile content-based functionalities 12",
+      "status": "Inactive",
+      "createdDate": "2025-05-10T19:18:53",
+      "updatedDate": "2026-02-09T23:12:00",
+      "owner": "Phillip Bowman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6891.2,
+      "description": "Hair almost international draw."
+    },
+    {
+      "id": "18032543-f454-4d02-9101-a884e65d7b0c",
+      "name": "Automated non-volatile attitude 13",
+      "status": "Completed",
+      "createdDate": "2025-07-02T00:05:18",
+      "updatedDate": "2026-01-23T20:52:42",
+      "owner": "Lindsay Fox",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2727.41,
+      "description": "South road manage range."
+    },
+    {
+      "id": "73955a3f-3cb6-4ce2-b59f-6328f7eecad3",
+      "name": "Diverse secondary toolset 14",
+      "status": "Pending",
+      "createdDate": "2025-07-12T15:42:22",
+      "updatedDate": "2026-02-12T21:00:15",
+      "owner": "Jenna Taylor",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7056.74,
+      "description": "Should section bit system person."
+    },
+    {
+      "id": "dc7e3224-01cb-49e5-bb2b-7fb2076ff7c3",
+      "name": "Down-sized zero-defect secured line 15",
+      "status": "Inactive",
+      "createdDate": "2025-12-05T07:39:49",
+      "updatedDate": "2026-02-01T09:05:32",
+      "owner": "Donna Dodson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7479.65,
+      "description": "Process field contain writer son."
+    },
+    {
+      "id": "788c56b3-2a78-45e8-9b82-db48d078ebfe",
+      "name": "Decentralized clear-thinking complexity 16",
+      "status": "Completed",
+      "createdDate": "2025-05-10T09:15:34",
+      "updatedDate": "2026-01-31T07:37:44",
+      "owner": "Michelle Ortiz",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8868.89,
+      "description": "Possible bit manage listen however everyone property."
+    },
+    {
+      "id": "57f54c86-6ca8-4ab2-98e9-9e66c2d693ff",
+      "name": "Streamlined multimedia time-frame 17",
+      "status": "Inactive",
+      "createdDate": "2025-10-11T12:14:10",
+      "updatedDate": "2026-02-04T06:53:10",
+      "owner": "Jordan Patel",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8345.55,
+      "description": "Threat see number attention pressure decide."
+    },
+    {
+      "id": "3ac3da36-d705-4bc1-a17e-0684739827ac",
+      "name": "Synergistic multimedia focus group 18",
+      "status": "Active",
+      "createdDate": "2026-02-02T04:42:57",
+      "updatedDate": "2026-02-16T22:42:55",
+      "owner": "Tina Rubio",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9359.36,
+      "description": "Mind realize type both much traditional parent."
+    },
+    {
+      "id": "7bd193a5-689a-4d29-9ee7-8b2f038df401",
+      "name": "Total didactic strategy 19",
+      "status": "Active",
+      "createdDate": "2025-09-01T08:53:56",
+      "updatedDate": "2026-02-10T14:06:07",
+      "owner": "Lauren Cherry",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 805.05,
+      "description": "Purpose environmental day program into project section."
+    },
+    {
+      "id": "6f7497c8-199d-4e5c-8dae-a00fc03694af",
+      "name": "Integrated cohesive moderator 20",
+      "status": "Completed",
+      "createdDate": "2025-09-10T12:04:30",
+      "updatedDate": "2026-02-07T15:39:17",
+      "owner": "Cory Mccullough",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9993.49,
+      "description": "Success question seem she care cultural speak."
+    },
+    {
+      "id": "d36c0787-5ca5-40c9-9711-726e8310a9c2",
+      "name": "Secured needs-based structure 21",
+      "status": "Inactive",
+      "createdDate": "2025-10-17T04:10:17",
+      "updatedDate": "2026-02-14T04:34:05",
+      "owner": "David Wilson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5340.72,
+      "description": "Unit myself around act."
+    },
+    {
+      "id": "37e58ea2-bef1-47af-807f-ace9181eefa0",
+      "name": "Intuitive optimizing capacity 22",
+      "status": "Completed",
+      "createdDate": "2025-04-12T15:44:31",
+      "updatedDate": "2026-02-11T18:04:39",
+      "owner": "Rebecca White",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7876.12,
+      "description": "Nice station pay history style."
+    },
+    {
+      "id": "98b5b4bc-3b79-4b88-9fda-2fcdea2ab1ce",
+      "name": "Multi-lateral object-oriented strategy 23",
+      "status": "Active",
+      "createdDate": "2026-02-09T17:00:31",
+      "updatedDate": "2026-01-27T14:47:21",
+      "owner": "Eric Carpenter",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9660.1,
+      "description": "Cover share team plant memory court recently."
+    },
+    {
+      "id": "518efa25-5681-4c97-b031-bc2363df68f5",
+      "name": "Advanced responsive system engine 24",
+      "status": "Pending",
+      "createdDate": "2025-06-11T17:06:52",
+      "updatedDate": "2026-01-29T06:17:33",
+      "owner": "Joseph Byrd",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1161.36,
+      "description": "Do well use risk."
+    },
+    {
+      "id": "7098b19a-6c8c-40ee-8b76-6b3c0884c57c",
+      "name": "Synergistic scalable Local Area Network 25",
+      "status": "Pending",
+      "createdDate": "2025-05-16T12:09:21",
+      "updatedDate": "2026-02-14T22:13:41",
+      "owner": "Tammy Flores",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3007.93,
+      "description": "Treatment maybe cause modern effect."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

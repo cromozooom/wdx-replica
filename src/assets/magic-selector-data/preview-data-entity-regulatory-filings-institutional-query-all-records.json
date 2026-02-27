@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-regulatoryfiling",
+  "queryId": "query-all-records",
+  "totalCount": 772,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "00414b55-8c29-4953-874c-712c01166ad6",
+      "name": "Visionary neutral hierarchy 1",
+      "status": "Inactive",
+      "createdDate": "2025-06-11T10:00:53",
+      "updatedDate": "2026-01-29T19:28:42",
+      "owner": "Mary Mason",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5286.67,
+      "description": "Return option prepare."
+    },
+    {
+      "id": "622fae99-42d5-4c0e-91a2-ffaae72d04c4",
+      "name": "Open-source logistical moratorium 2",
+      "status": "Inactive",
+      "createdDate": "2026-01-30T19:01:58",
+      "updatedDate": "2026-01-30T04:02:29",
+      "owner": "Rhonda Merritt",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4972.14,
+      "description": "Responsibility present generation customer provide often."
+    },
+    {
+      "id": "121ee7c0-61e5-420e-a7cf-fecfb8f17cc8",
+      "name": "Diverse system-worthy service-desk 3",
+      "status": "Pending",
+      "createdDate": "2025-05-06T12:52:06",
+      "updatedDate": "2026-01-21T03:55:29",
+      "owner": "Eric Schmidt",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7473.47,
+      "description": "Year have camera save five."
+    },
+    {
+      "id": "b1710f3f-0846-430b-9d7d-47248f1fc063",
+      "name": "Secured executive forecast 4",
+      "status": "Inactive",
+      "createdDate": "2025-10-01T11:19:29",
+      "updatedDate": "2026-02-16T13:23:47",
+      "owner": "Brian Olson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2720.17,
+      "description": "Bag college the."
+    },
+    {
+      "id": "88a0fd8f-4d52-4c70-aac6-12e6946a2a86",
+      "name": "Compatible stable data-warehouse 5",
+      "status": "Active",
+      "createdDate": "2025-05-16T22:00:30",
+      "updatedDate": "2026-01-24T17:38:09",
+      "owner": "Lisa Shah",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2623.93,
+      "description": "Western mother shake cost them all front."
+    },
+    {
+      "id": "28dfa098-7f9f-4989-b584-3189617acab7",
+      "name": "Reverse-engineered systemic infrastructure 6",
+      "status": "Active",
+      "createdDate": "2025-05-31T07:12:47",
+      "updatedDate": "2026-02-15T04:12:46",
+      "owner": "Nicole Wilson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7953.71,
+      "description": "Popular measure spend say international through."
+    },
+    {
+      "id": "e89a34cf-c6f6-4596-9556-628166cdc146",
+      "name": "Business-focused heuristic knowledge user 7",
+      "status": "Inactive",
+      "createdDate": "2025-12-28T01:30:02",
+      "updatedDate": "2026-02-07T08:49:01",
+      "owner": "Colton Greer",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2139.68,
+      "description": "Young run action last finally official."
+    },
+    {
+      "id": "edbdffa6-3ee1-4757-af02-dea82ba1ce33",
+      "name": "Digitized composite customer loyalty 8",
+      "status": "Inactive",
+      "createdDate": "2025-08-11T01:46:32",
+      "updatedDate": "2026-01-19T23:42:18",
+      "owner": "Michael Marshall",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4214.43,
+      "description": "Take industry door pretty or fear."
+    },
+    {
+      "id": "f693d481-6614-43d4-8322-58bf76ea8b50",
+      "name": "Quality-focused bi-directional complexity 9",
+      "status": "Completed",
+      "createdDate": "2025-07-22T10:16:09",
+      "updatedDate": "2026-01-21T01:39:22",
+      "owner": "Juan Brewer",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8600.64,
+      "description": "Treat there really member message hit natural."
+    },
+    {
+      "id": "ebe60f47-4938-47d7-b8e6-4cfd551ab752",
+      "name": "Reduced uniform open architecture 10",
+      "status": "Active",
+      "createdDate": "2025-03-24T07:24:28",
+      "updatedDate": "2026-02-16T23:22:23",
+      "owner": "Bradley Liu",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3868.16,
+      "description": "Set total lose mission."
+    },
+    {
+      "id": "3aff8f87-4490-4be0-9d87-b2ba8ec3190f",
+      "name": "Quality-focused coherent knowledgebase 11",
+      "status": "Pending",
+      "createdDate": "2025-05-23T13:09:28",
+      "updatedDate": "2026-02-08T20:16:55",
+      "owner": "Christina Doyle",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4528.43,
+      "description": "Apply newspaper event shake without."
+    },
+    {
+      "id": "4e2efc4d-06a9-495c-884a-8ea15a775c87",
+      "name": "Enhanced 24hour flexibility 12",
+      "status": "Active",
+      "createdDate": "2025-07-15T23:14:36",
+      "updatedDate": "2026-01-19T05:58:55",
+      "owner": "Michelle Hall",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1402.08,
+      "description": "Job though meeting account just finally."
+    },
+    {
+      "id": "f232047b-2939-4c0d-b43a-e8e7716b53d3",
+      "name": "Open-source 5thgeneration help-desk 13",
+      "status": "Active",
+      "createdDate": "2026-02-12T04:57:20",
+      "updatedDate": "2026-01-23T10:37:18",
+      "owner": "Samuel Kerr",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9773.68,
+      "description": "Young member course cover future thus."
+    },
+    {
+      "id": "f5fed0b4-a0ba-41ca-8928-773762d0d534",
+      "name": "Multi-channeled secondary architecture 14",
+      "status": "Pending",
+      "createdDate": "2026-01-30T12:42:14",
+      "updatedDate": "2026-02-10T06:05:34",
+      "owner": "Christopher Ramos",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1049.89,
+      "description": "Down after hundred shake lawyer million risk."
+    },
+    {
+      "id": "42a200d5-9656-4c07-a96b-d66b766097a7",
+      "name": "Networked 5thgeneration parallelism 15",
+      "status": "Pending",
+      "createdDate": "2025-11-10T23:49:31",
+      "updatedDate": "2026-01-21T04:12:54",
+      "owner": "Christopher Mathews",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4219.97,
+      "description": "Company everything another prepare member eat."
+    },
+    {
+      "id": "da8783b3-20b9-4597-8404-916c72f776b7",
+      "name": "Assimilated content-based info-mediaries 16",
+      "status": "Inactive",
+      "createdDate": "2025-07-31T17:18:33",
+      "updatedDate": "2026-02-09T16:10:56",
+      "owner": "Rhonda Cooper",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4795.97,
+      "description": "Without statement old young wrong individual trip toward."
+    },
+    {
+      "id": "0a1e348d-0091-4fe2-94f6-99c2f49c90ff",
+      "name": "Automated holistic alliance 17",
+      "status": "Pending",
+      "createdDate": "2025-06-18T05:40:15",
+      "updatedDate": "2026-01-26T20:31:20",
+      "owner": "Sheryl House",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9886.7,
+      "description": "Entire girl above onto war until almost."
+    },
+    {
+      "id": "a1085a5b-c571-4c64-907a-1cfd70c387f2",
+      "name": "Synergistic upward-trending Internet solution 18",
+      "status": "Completed",
+      "createdDate": "2025-08-16T22:47:13",
+      "updatedDate": "2026-01-21T16:50:51",
+      "owner": "Jeffrey Silva",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8127.41,
+      "description": "Consider interesting soldier TV."
+    },
+    {
+      "id": "f3766138-d97c-46a5-afa4-eaed28fceac9",
+      "name": "Reactive client-driven adapter 19",
+      "status": "Active",
+      "createdDate": "2026-02-12T17:40:09",
+      "updatedDate": "2026-02-14T22:47:32",
+      "owner": "Nathaniel Stevens",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8199.62,
+      "description": "Form number speech federal very whose."
+    },
+    {
+      "id": "c4761c66-3bbd-4498-8bfe-2129c846cb97",
+      "name": "Polarized even-keeled contingency 20",
+      "status": "Inactive",
+      "createdDate": "2025-07-29T22:13:40",
+      "updatedDate": "2026-02-05T08:09:18",
+      "owner": "Eric Brennan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 866.35,
+      "description": "Arm significant black today we government new."
+    },
+    {
+      "id": "0a4e878e-2bfd-4a2d-9803-cd676ff4be58",
+      "name": "Devolved 4thgeneration intranet 21",
+      "status": "Pending",
+      "createdDate": "2025-07-22T23:17:52",
+      "updatedDate": "2026-01-20T01:18:45",
+      "owner": "Jonathan Carey",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9994.31,
+      "description": "Card might time before project know glass."
+    },
+    {
+      "id": "6ca5fdb7-7533-40ca-bd88-ebae9afd30ab",
+      "name": "Customer-focused didactic function 22",
+      "status": "Pending",
+      "createdDate": "2025-07-18T07:49:14",
+      "updatedDate": "2026-01-20T05:02:26",
+      "owner": "Alicia Lewis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8008.21,
+      "description": "So street future house usually some inside."
+    },
+    {
+      "id": "ea8ed337-2ce2-463e-b21b-67851b5e2a18",
+      "name": "Multi-lateral explicit model 23",
+      "status": "Pending",
+      "createdDate": "2025-03-18T14:00:09",
+      "updatedDate": "2026-02-16T19:59:22",
+      "owner": "Jason Silva",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3209.26,
+      "description": "Their fight reveal past street."
+    },
+    {
+      "id": "9af14050-b53e-4c5b-bce3-af8d68743e32",
+      "name": "Intuitive zero-defect challenge 24",
+      "status": "Pending",
+      "createdDate": "2025-06-21T17:59:21",
+      "updatedDate": "2026-01-28T01:08:35",
+      "owner": "Teresa Rodriguez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3499.11,
+      "description": "Page trouble both easy particular more simple air."
+    },
+    {
+      "id": "b9ee6e55-c409-4662-b1bb-eec324c39ae8",
+      "name": "Diverse discrete open architecture 25",
+      "status": "Completed",
+      "createdDate": "2025-05-24T21:23:20",
+      "updatedDate": "2026-02-16T04:16:52",
+      "owner": "Alicia Curtis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6814.09,
+      "description": "Lawyer save bed many drug."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

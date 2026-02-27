@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1245,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "50a6a4b5-746b-4416-b68e-e1ea8bf9a965",
+      "name": "Profit-focused regional flexibility 1",
+      "status": "Pending",
+      "createdDate": "2025-07-29T05:31:13",
+      "updatedDate": "2026-01-18T21:33:58",
+      "owner": "James Mills",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4270.49,
+      "description": "Today instead until."
+    },
+    {
+      "id": "1b544d87-603b-4468-a885-993d74c5b1b5",
+      "name": "Streamlined intermediate encryption 2",
+      "status": "Inactive",
+      "createdDate": "2025-02-20T23:26:27",
+      "updatedDate": "2026-02-03T13:26:58",
+      "owner": "Rachel Hood",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5391.43,
+      "description": "Fight stand low whole line."
+    },
+    {
+      "id": "25453ff1-92a6-4baa-bade-c80374a59716",
+      "name": "Synergized multi-state conglomeration 3",
+      "status": "Inactive",
+      "createdDate": "2025-08-10T14:23:22",
+      "updatedDate": "2026-02-09T00:50:20",
+      "owner": "Candice Cruz",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8600.04,
+      "description": "Help wife method seven other."
+    },
+    {
+      "id": "59c8b4ec-4412-4f07-b28c-6e78f3649838",
+      "name": "Decentralized non-volatile emulation 4",
+      "status": "Completed",
+      "createdDate": "2026-01-25T21:52:05",
+      "updatedDate": "2026-02-07T17:01:47",
+      "owner": "Emily Lewis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1747.74,
+      "description": "Treatment natural anything laugh require."
+    },
+    {
+      "id": "f7a56537-4518-4306-a955-c7a4fec99e8b",
+      "name": "De-engineered user-facing hub 5",
+      "status": "Pending",
+      "createdDate": "2025-07-10T12:56:10",
+      "updatedDate": "2026-02-02T20:36:09",
+      "owner": "Jaclyn Hayes",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8420.61,
+      "description": "Page style middle material instead."
+    },
+    {
+      "id": "9e17517a-fe6f-4c06-a313-c4a8087719c1",
+      "name": "Focused bifurcated middleware 6",
+      "status": "Completed",
+      "createdDate": "2025-09-23T13:35:34",
+      "updatedDate": "2026-01-23T20:46:18",
+      "owner": "Brian Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6450.23,
+      "description": "Ground find situation tax evidence skill agent."
+    },
+    {
+      "id": "0609ef6e-29b3-4ee6-92a1-0dd27d0a0036",
+      "name": "Distributed secondary concept 7",
+      "status": "Inactive",
+      "createdDate": "2025-07-06T11:01:20",
+      "updatedDate": "2026-01-22T07:08:54",
+      "owner": "Sharon Ward",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9981.53,
+      "description": "Too around sport appear executive daughter trade."
+    },
+    {
+      "id": "375d80a0-524e-4134-af02-b2ba19acfcbe",
+      "name": "Decentralized bi-directional database 8",
+      "status": "Pending",
+      "createdDate": "2025-07-03T22:45:50",
+      "updatedDate": "2026-01-23T03:04:13",
+      "owner": "Rachel Ramirez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6368.85,
+      "description": "Air although commercial series debate what according understand."
+    },
+    {
+      "id": "b4f97ebb-d80a-4d09-8966-7dba99783cb3",
+      "name": "Fully-configurable scalable extranet 9",
+      "status": "Completed",
+      "createdDate": "2025-03-27T14:26:28",
+      "updatedDate": "2026-02-12T17:35:31",
+      "owner": "Jason Schmitt",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1002.79,
+      "description": "Apply night but return ability."
+    },
+    {
+      "id": "be3e5da0-964a-4710-8ef2-b77c9930f4e0",
+      "name": "Streamlined modular parallelism 10",
+      "status": "Active",
+      "createdDate": "2025-06-27T16:07:24",
+      "updatedDate": "2026-01-28T09:38:48",
+      "owner": "Thomas Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6502.99,
+      "description": "Glass human away television these force."
+    },
+    {
+      "id": "d9cc0cb9-29b5-4b05-b62d-009e269f0e6a",
+      "name": "Proactive zero administration utilization 11",
+      "status": "Completed",
+      "createdDate": "2025-03-11T22:07:11",
+      "updatedDate": "2026-02-05T23:47:28",
+      "owner": "Debra Sherman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9229.13,
+      "description": "Add many trip sound image."
+    },
+    {
+      "id": "9c3274ff-84be-4634-884d-872bdb249492",
+      "name": "Front-line heuristic definition 12",
+      "status": "Active",
+      "createdDate": "2025-04-05T12:29:50",
+      "updatedDate": "2026-02-07T14:36:47",
+      "owner": "Nicholas Cole IV",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9719.52,
+      "description": "Beautiful natural pay individual."
+    },
+    {
+      "id": "79c594b1-04c5-4e30-8190-73892790e3d3",
+      "name": "Multi-lateral local encoding 13",
+      "status": "Pending",
+      "createdDate": "2025-03-24T09:07:38",
+      "updatedDate": "2026-01-28T22:58:06",
+      "owner": "Lisa Richardson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3658.56,
+      "description": "We hour the up former perhaps hear."
+    },
+    {
+      "id": "69456d3e-57f3-486c-84ee-1cda02f3746e",
+      "name": "Down-sized client-driven ability 14",
+      "status": "Active",
+      "createdDate": "2025-10-24T18:19:03",
+      "updatedDate": "2026-02-03T20:17:09",
+      "owner": "Ana Prince",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3195.1,
+      "description": "National indeed develop anything two reason."
+    },
+    {
+      "id": "14f0546b-31a7-4144-8ce9-c1d8e4b4a2ed",
+      "name": "Programmable next generation projection 15",
+      "status": "Completed",
+      "createdDate": "2025-05-07T20:49:02",
+      "updatedDate": "2026-02-08T10:20:18",
+      "owner": "Jonathan Fischer",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 879.31,
+      "description": "Appear score relationship represent."
+    },
+    {
+      "id": "4b9b12b7-94de-4771-8e48-08674da68dfd",
+      "name": "Networked composite emulation 16",
+      "status": "Inactive",
+      "createdDate": "2025-03-12T15:08:16",
+      "updatedDate": "2026-01-24T00:41:46",
+      "owner": "Patrick Alexander",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9799.96,
+      "description": "Result specific still recognize reduce water least production."
+    },
+    {
+      "id": "399f7874-98a2-4691-bdcc-8dee575237c1",
+      "name": "Front-line explicit methodology 17",
+      "status": "Active",
+      "createdDate": "2025-11-04T21:48:44",
+      "updatedDate": "2026-02-17T00:17:01",
+      "owner": "Denise Charles",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 288.61,
+      "description": "Success morning inside."
+    },
+    {
+      "id": "bbb42a84-3f6a-461b-a9cf-7431f91dfb3e",
+      "name": "Enhanced zero tolerance orchestration 18",
+      "status": "Pending",
+      "createdDate": "2025-10-13T08:16:26",
+      "updatedDate": "2026-01-19T08:11:01",
+      "owner": "Madeline Alexander",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 176.62,
+      "description": "War inside dog year."
+    },
+    {
+      "id": "096f5499-8b84-42f4-a4b9-bb6d339d7ffb",
+      "name": "Re-contextualized user-facing approach 19",
+      "status": "Completed",
+      "createdDate": "2025-07-25T09:42:45",
+      "updatedDate": "2026-01-30T00:31:04",
+      "owner": "Dustin Rodriguez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5522.33,
+      "description": "Focus million house food company establish partner."
+    },
+    {
+      "id": "b630721b-681b-49c1-bf7d-b6289c03c5fc",
+      "name": "Optimized multi-state emulation 20",
+      "status": "Completed",
+      "createdDate": "2025-05-02T07:19:25",
+      "updatedDate": "2026-01-19T23:24:04",
+      "owner": "Mallory Moss",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 467.65,
+      "description": "List life service dream have accept moment."
+    },
+    {
+      "id": "086f671a-b062-4c70-9672-cf300d1cf8f8",
+      "name": "Phased mobile algorithm 21",
+      "status": "Inactive",
+      "createdDate": "2025-09-06T03:59:02",
+      "updatedDate": "2026-02-01T14:59:19",
+      "owner": "Martin Gentry",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7814.79,
+      "description": "Still look million beautiful."
+    },
+    {
+      "id": "642be710-a7d6-4ac7-8c14-fd2776d15d98",
+      "name": "Customer-focused mobile emulation 22",
+      "status": "Active",
+      "createdDate": "2026-01-15T19:33:43",
+      "updatedDate": "2026-02-16T01:59:32",
+      "owner": "Lori Martinez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6930.1,
+      "description": "Believe someone answer cost phone box."
+    },
+    {
+      "id": "aaa5d43a-d72e-4afc-b6ba-9d94e8cfff39",
+      "name": "Quality-focused clear-thinking framework 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-18T12:25:12",
+      "updatedDate": "2026-02-10T15:08:45",
+      "owner": "Lisa Cook",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7990.87,
+      "description": "Past between process indicate."
+    },
+    {
+      "id": "48bec32c-74bd-45cd-8c3d-34a438609ccc",
+      "name": "Digitized intermediate paradigm 24",
+      "status": "Pending",
+      "createdDate": "2025-03-07T08:36:00",
+      "updatedDate": "2026-01-21T21:34:25",
+      "owner": "Danny Reid",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2163.57,
+      "description": "Wait page why program."
+    },
+    {
+      "id": "b68a1c3c-f87f-486a-948c-5f492c39b371",
+      "name": "Organic transitional implementation 25",
+      "status": "Pending",
+      "createdDate": "2025-08-02T01:01:50",
+      "updatedDate": "2026-02-04T12:45:41",
+      "owner": "Heather Phillips PhD",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7691.07,
+      "description": "Recent put history national none."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

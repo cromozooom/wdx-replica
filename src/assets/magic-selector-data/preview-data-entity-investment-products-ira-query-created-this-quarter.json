@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 847,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "aa07ffe2-ef57-4f51-9a99-aa63b07dff42",
+      "name": "Ergonomic needs-based time-frame 1",
+      "status": "Pending",
+      "createdDate": "2025-07-13T14:25:04",
+      "updatedDate": "2026-02-12T06:56:16",
+      "owner": "Jacob Tran",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3617.22,
+      "description": "Both without cover page rule once."
+    },
+    {
+      "id": "16cb71a8-37a4-4689-a225-7ab96ac1b617",
+      "name": "Inverse actuating challenge 2",
+      "status": "Inactive",
+      "createdDate": "2025-10-29T13:11:32",
+      "updatedDate": "2026-02-04T15:11:02",
+      "owner": "Joshua Garcia",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4124.29,
+      "description": "Much free way although."
+    },
+    {
+      "id": "11053c53-8c46-40f8-82b4-83a30e9dc918",
+      "name": "Implemented explicit functionalities 3",
+      "status": "Inactive",
+      "createdDate": "2025-08-19T13:41:43",
+      "updatedDate": "2026-02-14T05:13:05",
+      "owner": "Karen Stephens",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1401.79,
+      "description": "Prepare summer reality it drug laugh pass."
+    },
+    {
+      "id": "a6a07f33-ba31-46c3-91d5-b126eb1567a6",
+      "name": "Face-to-face well-modulated matrix 4",
+      "status": "Inactive",
+      "createdDate": "2026-01-28T03:58:10",
+      "updatedDate": "2026-01-19T01:03:16",
+      "owner": "Todd Garza",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4607.32,
+      "description": "Believe black fill light."
+    },
+    {
+      "id": "755a4d19-5a37-44e8-8243-6a40579f653b",
+      "name": "Cross-platform composite knowledgebase 5",
+      "status": "Active",
+      "createdDate": "2025-05-15T11:00:12",
+      "updatedDate": "2026-01-23T05:46:18",
+      "owner": "Bethany Huff",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7560.85,
+      "description": "Soon size number them."
+    },
+    {
+      "id": "c4ddb0d4-e0de-40ff-81b3-64cbc87a762a",
+      "name": "Progressive local initiative 6",
+      "status": "Pending",
+      "createdDate": "2025-05-07T20:17:39",
+      "updatedDate": "2026-02-10T09:53:42",
+      "owner": "Thomas Haley",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9228.63,
+      "description": "Campaign book seek require night soon fly."
+    },
+    {
+      "id": "07b58b17-31a8-4093-88d5-d01c15abc5c5",
+      "name": "Fundamental multi-tasking orchestration 7",
+      "status": "Pending",
+      "createdDate": "2026-01-21T07:46:46",
+      "updatedDate": "2026-01-24T05:28:23",
+      "owner": "Nancy Holmes",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9463.4,
+      "description": "Season whole resource guess environmental early."
+    },
+    {
+      "id": "8d815026-a94e-407a-8b1a-e1300e1770d4",
+      "name": "Function-based fresh-thinking orchestration 8",
+      "status": "Pending",
+      "createdDate": "2025-05-14T19:25:59",
+      "updatedDate": "2026-02-06T07:44:07",
+      "owner": "Erika Wallace",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2779.42,
+      "description": "Anything card letter law model debate radio employee."
+    },
+    {
+      "id": "fb2b0b23-1553-472b-a514-1f05b8f07c05",
+      "name": "Inverse coherent initiative 9",
+      "status": "Inactive",
+      "createdDate": "2025-09-04T09:39:00",
+      "updatedDate": "2026-02-06T23:38:17",
+      "owner": "Michael Good",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3149.23,
+      "description": "Newspaper big clearly significant hundred adult economy."
+    },
+    {
+      "id": "5723edef-be3d-4838-a741-1252c525ca85",
+      "name": "Optional empowering toolset 10",
+      "status": "Pending",
+      "createdDate": "2025-07-30T13:32:05",
+      "updatedDate": "2026-02-17T03:59:42",
+      "owner": "Shaun Mccann",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3338.33,
+      "description": "Use man send prove generation general."
+    },
+    {
+      "id": "9b5f4117-36f5-43eb-b353-9ef5f43e5628",
+      "name": "Phased radical interface 11",
+      "status": "Inactive",
+      "createdDate": "2025-05-19T09:09:22",
+      "updatedDate": "2026-01-29T07:14:59",
+      "owner": "Bob Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4346.42,
+      "description": "Look themselves major course."
+    },
+    {
+      "id": "03346c26-8a2f-4c6d-8dc3-e9e573860585",
+      "name": "Customer-focused actuating forecast 12",
+      "status": "Active",
+      "createdDate": "2025-08-24T20:14:00",
+      "updatedDate": "2026-01-25T05:47:53",
+      "owner": "Phyllis Barnes",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5644.67,
+      "description": "Keep main already."
+    },
+    {
+      "id": "4e9f0d1e-5250-4b71-adfc-64ef3182ed29",
+      "name": "Intuitive encompassing migration 13",
+      "status": "Completed",
+      "createdDate": "2025-09-07T11:56:09",
+      "updatedDate": "2026-01-23T21:15:42",
+      "owner": "Rachel Perkins",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6012.71,
+      "description": "Resource wind must although hope learn affect cold."
+    },
+    {
+      "id": "dd1ea8d7-c799-444d-b914-1d487a71c002",
+      "name": "Synergized empowering intranet 14",
+      "status": "Inactive",
+      "createdDate": "2025-09-27T20:05:46",
+      "updatedDate": "2026-01-24T14:00:11",
+      "owner": "Thomas Gonzales",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3695.83,
+      "description": "Pay we early network service nation under just."
+    },
+    {
+      "id": "f5e78136-8f7f-4cb2-861d-78242501358f",
+      "name": "Customer-focused radical framework 15",
+      "status": "Inactive",
+      "createdDate": "2025-04-19T07:02:03",
+      "updatedDate": "2026-01-25T15:23:28",
+      "owner": "Susan Ponce MD",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7994.25,
+      "description": "When reality event usually second."
+    },
+    {
+      "id": "ff93e1b8-f106-4903-961e-d311c7c717ba",
+      "name": "Managed 4thgeneration middleware 16",
+      "status": "Inactive",
+      "createdDate": "2025-10-11T03:49:22",
+      "updatedDate": "2026-02-03T05:38:43",
+      "owner": "Patrick Sanchez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4238.83,
+      "description": "Nice provide buy visit suffer."
+    },
+    {
+      "id": "376b3c00-9498-4321-b26e-90af09f5e76a",
+      "name": "Diverse even-keeled artificial intelligence 17",
+      "status": "Active",
+      "createdDate": "2025-12-23T14:21:26",
+      "updatedDate": "2026-02-08T10:52:38",
+      "owner": "Stephen Davis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9664.02,
+      "description": "Product yet former have large he opportunity."
+    },
+    {
+      "id": "28213509-d490-4e16-a298-ece0eccacc69",
+      "name": "Networked well-modulated projection 18",
+      "status": "Inactive",
+      "createdDate": "2025-12-31T10:35:08",
+      "updatedDate": "2026-01-23T02:48:49",
+      "owner": "Beth Chase",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5238.96,
+      "description": "Require talk try approach else."
+    },
+    {
+      "id": "4a158a3f-37fa-4534-a2b8-93cf8b05a198",
+      "name": "Diverse systemic groupware 19",
+      "status": "Inactive",
+      "createdDate": "2025-08-18T07:33:36",
+      "updatedDate": "2026-01-25T17:11:14",
+      "owner": "Jeffrey Richardson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3424.82,
+      "description": "Finally these market activity shake man."
+    },
+    {
+      "id": "8c8e5906-0152-4015-b79d-5c048c0de03e",
+      "name": "Cross-group coherent instruction set 20",
+      "status": "Active",
+      "createdDate": "2026-02-03T19:03:07",
+      "updatedDate": "2026-01-31T15:53:37",
+      "owner": "Michelle Morales",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6254.45,
+      "description": "North that professional language miss color first keep."
+    },
+    {
+      "id": "2084c7cd-8c7f-4265-af29-f86baa3a8a47",
+      "name": "Profound intangible extranet 21",
+      "status": "Pending",
+      "createdDate": "2026-01-11T09:20:49",
+      "updatedDate": "2026-02-13T06:23:11",
+      "owner": "Alison Reese",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7127.76,
+      "description": "Generation she analysis with author step table life."
+    },
+    {
+      "id": "b7cd60ed-afcf-4e0d-84e3-1cabd866e5de",
+      "name": "Public-key fault-tolerant attitude 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-31T09:46:57",
+      "updatedDate": "2026-01-27T17:24:02",
+      "owner": "Samuel Stone",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4603.31,
+      "description": "Staff always institution book clearly."
+    },
+    {
+      "id": "79dcff22-7c06-4c35-b217-a11ca33870f1",
+      "name": "Polarized optimal success 23",
+      "status": "Inactive",
+      "createdDate": "2025-09-22T07:18:02",
+      "updatedDate": "2026-02-10T02:04:25",
+      "owner": "Robert Page",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2011.77,
+      "description": "Too hospital letter difficult finish."
+    },
+    {
+      "id": "7cbf3a78-a107-46ff-a810-52e1cdd4f9bf",
+      "name": "Versatile next generation challenge 24",
+      "status": "Active",
+      "createdDate": "2025-04-06T22:07:38",
+      "updatedDate": "2026-02-10T23:22:47",
+      "owner": "Elizabeth Pham",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9770.85,
+      "description": "Two woman manager window notice town need."
+    },
+    {
+      "id": "6881d660-aabd-4c58-a0d8-0c93cc89f85b",
+      "name": "Universal leadingedge approach 25",
+      "status": "Completed",
+      "createdDate": "2025-04-10T02:56:39",
+      "updatedDate": "2026-01-31T15:12:45",
+      "owner": "Bryan King",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2923.16,
+      "description": "Language leg under."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

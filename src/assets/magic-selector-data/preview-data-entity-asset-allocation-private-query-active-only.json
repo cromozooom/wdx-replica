@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-active-only",
+  "totalCount": 163,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "45e433ad-f019-44c1-99d6-8fbfc4714799",
+      "name": "Innovative homogeneous toolset 1",
+      "status": "Active",
+      "createdDate": "2025-09-21T23:33:43",
+      "updatedDate": "2026-02-12T06:27:12",
+      "owner": "Lindsay Wong",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9040.91,
+      "description": "Me side everything mean detail thus well."
+    },
+    {
+      "id": "1880fd4b-2197-4819-b5c4-05259abbadf8",
+      "name": "Customer-focused upward-trending standardization 2",
+      "status": "Active",
+      "createdDate": "2025-02-23T23:44:00",
+      "updatedDate": "2026-01-30T02:04:13",
+      "owner": "Jacob Thompson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6087.58,
+      "description": "Watch whom card day."
+    },
+    {
+      "id": "d62edb6d-5215-4d18-bec3-0b6ca5b5b164",
+      "name": "Virtual maximized interface 3",
+      "status": "Inactive",
+      "createdDate": "2025-09-01T09:18:26",
+      "updatedDate": "2026-02-16T18:47:26",
+      "owner": "Juan Gould",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9096.95,
+      "description": "Very production remember add home avoid program."
+    },
+    {
+      "id": "7433e805-98a1-45c1-9d2f-00bf3fec6c67",
+      "name": "De-engineered mission-critical function 4",
+      "status": "Pending",
+      "createdDate": "2025-08-10T09:44:00",
+      "updatedDate": "2026-01-29T17:18:35",
+      "owner": "Brian Jones",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7403.19,
+      "description": "Choose light home yet remember eye success."
+    },
+    {
+      "id": "99749c9b-9645-4503-a4b9-6996bc327093",
+      "name": "Integrated bi-directional interface 5",
+      "status": "Completed",
+      "createdDate": "2025-05-11T08:53:09",
+      "updatedDate": "2026-02-03T03:56:23",
+      "owner": "Katrina Trevino",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3960.96,
+      "description": "Particular just theory ready price heavy."
+    },
+    {
+      "id": "416e044a-1f06-4145-b0e7-ebf835e9290b",
+      "name": "Fundamental 4thgeneration customer loyalty 6",
+      "status": "Inactive",
+      "createdDate": "2025-06-20T19:01:20",
+      "updatedDate": "2026-02-16T01:57:06",
+      "owner": "Philip Mcguire",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1099.59,
+      "description": "Role tonight measure itself choose."
+    },
+    {
+      "id": "53af2f71-c937-44e3-98cf-a54ad248fdd3",
+      "name": "Upgradable zero administration challenge 7",
+      "status": "Completed",
+      "createdDate": "2026-01-14T21:37:30",
+      "updatedDate": "2026-01-31T13:46:18",
+      "owner": "Edward Mcdaniel",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7272.58,
+      "description": "Land admit still citizen dark whatever list."
+    },
+    {
+      "id": "9cf8af58-46e2-49c3-bdbb-5ad9deaa576a",
+      "name": "Right-sized bandwidth-monitored capacity 8",
+      "status": "Pending",
+      "createdDate": "2025-04-12T14:20:20",
+      "updatedDate": "2026-01-25T22:53:06",
+      "owner": "Gina Stephens",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3275.26,
+      "description": "Play spring institution middle name both food."
+    },
+    {
+      "id": "0cc884fb-34d8-4960-a403-6bf88373b334",
+      "name": "Face-to-face tertiary focus group 9",
+      "status": "Pending",
+      "createdDate": "2025-02-20T20:52:16",
+      "updatedDate": "2026-01-29T16:24:46",
+      "owner": "Christopher Jenkins",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5461.74,
+      "description": "Car our lay TV school reach."
+    },
+    {
+      "id": "b8b9f2d0-88e0-4fcd-a1c7-b55e712a7fe2",
+      "name": "Operative content-based attitude 10",
+      "status": "Active",
+      "createdDate": "2026-01-14T02:04:51",
+      "updatedDate": "2026-01-23T20:54:57",
+      "owner": "Kathy Nguyen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 812.76,
+      "description": "Language run positive success."
+    },
+    {
+      "id": "d17cfed8-1f1d-4189-83d9-643154a0bd31",
+      "name": "Configurable fresh-thinking core 11",
+      "status": "Pending",
+      "createdDate": "2026-02-07T06:40:06",
+      "updatedDate": "2026-01-25T10:14:11",
+      "owner": "Lee Carter",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4844.63,
+      "description": "Particularly sort send choice always interview up herself."
+    },
+    {
+      "id": "9cd87788-e4e7-4dae-ba96-3e205e8a605f",
+      "name": "Self-enabling clear-thinking budgetary management 12",
+      "status": "Active",
+      "createdDate": "2025-03-16T23:15:26",
+      "updatedDate": "2026-01-23T00:43:15",
+      "owner": "Troy Rose MD",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3701.73,
+      "description": "Research bad behind like include."
+    },
+    {
+      "id": "3ef7285d-a177-42d7-9b0a-1284df5c5a5d",
+      "name": "Programmable incremental monitoring 13",
+      "status": "Completed",
+      "createdDate": "2025-05-25T01:34:26",
+      "updatedDate": "2026-01-19T20:57:59",
+      "owner": "Theresa Medina",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6850.78,
+      "description": "Think if season."
+    },
+    {
+      "id": "fb1dfbc9-0909-4df1-a4fa-66f480f2dd93",
+      "name": "De-engineered systemic success 14",
+      "status": "Active",
+      "createdDate": "2025-12-30T00:45:34",
+      "updatedDate": "2026-02-15T05:54:12",
+      "owner": "Gilbert Farrell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3451.06,
+      "description": "Operation kid guess follow."
+    },
+    {
+      "id": "c335880a-3ff3-4bff-95fc-95224805f7f2",
+      "name": "Pre-emptive high-level open architecture 15",
+      "status": "Pending",
+      "createdDate": "2025-07-20T04:37:35",
+      "updatedDate": "2026-01-19T11:58:04",
+      "owner": "Anna Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7526.73,
+      "description": "Economy nature anyone information suffer full reveal sea."
+    },
+    {
+      "id": "7562618f-7f1f-486b-a266-1611ab7ef77f",
+      "name": "Virtual clear-thinking workforce 16",
+      "status": "Inactive",
+      "createdDate": "2025-07-26T04:04:46",
+      "updatedDate": "2026-02-03T17:30:19",
+      "owner": "Devon Hess",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2029.06,
+      "description": "Daughter dinner miss job during church want."
+    },
+    {
+      "id": "d2eeabc4-ec1e-4760-b088-3cd7ff185e8f",
+      "name": "Fully-configurable optimizing concept 17",
+      "status": "Inactive",
+      "createdDate": "2025-11-24T07:43:24",
+      "updatedDate": "2026-02-13T00:24:46",
+      "owner": "Ryan Blake",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5696.69,
+      "description": "Such police particular room I late church policy."
+    },
+    {
+      "id": "e6c827ca-28f3-42c0-b899-b325d1766b46",
+      "name": "Distributed transitional Graphical User Interface 18",
+      "status": "Active",
+      "createdDate": "2025-11-10T19:48:07",
+      "updatedDate": "2026-01-25T19:47:38",
+      "owner": "Bridget Patel",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9708.93,
+      "description": "Tell step partner sense between feel."
+    },
+    {
+      "id": "13ddde28-0100-42f2-b53f-3ed560d60557",
+      "name": "Proactive national core 19",
+      "status": "Pending",
+      "createdDate": "2025-09-26T17:25:42",
+      "updatedDate": "2026-02-12T21:00:25",
+      "owner": "Joseph Hale",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2110.11,
+      "description": "That remember each buy production along."
+    },
+    {
+      "id": "245d1a49-1b22-4926-9a2e-2116235ae7c4",
+      "name": "Object-based tertiary encryption 20",
+      "status": "Active",
+      "createdDate": "2025-03-10T10:26:41",
+      "updatedDate": "2026-02-01T07:55:50",
+      "owner": "Nicole Rice",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4647.25,
+      "description": "Nice special concern development tell."
+    },
+    {
+      "id": "fd6ee9f1-3e7a-41f6-baeb-52eda9b2cba9",
+      "name": "Virtual bifurcated emulation 21",
+      "status": "Completed",
+      "createdDate": "2025-08-01T14:44:45",
+      "updatedDate": "2026-01-27T14:42:22",
+      "owner": "Eric Nunez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9413.91,
+      "description": "Show across military foot thought."
+    },
+    {
+      "id": "9a250590-7d6a-4120-8e17-43584da16b58",
+      "name": "Persevering demand-driven access 22",
+      "status": "Pending",
+      "createdDate": "2025-09-18T02:04:09",
+      "updatedDate": "2026-01-25T14:58:18",
+      "owner": "Jacob Lang",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7587.22,
+      "description": "You dinner something very."
+    },
+    {
+      "id": "fb7690a0-d941-4663-af77-bf2f3dc0e42e",
+      "name": "Optimized mobile emulation 23",
+      "status": "Pending",
+      "createdDate": "2025-06-10T01:01:12",
+      "updatedDate": "2026-02-14T01:40:55",
+      "owner": "Taylor Bailey",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3118.67,
+      "description": "Type look themselves guy."
+    },
+    {
+      "id": "3ca7a53a-3c86-42a1-af18-7946e77fd0fd",
+      "name": "Balanced logistical flexibility 24",
+      "status": "Pending",
+      "createdDate": "2025-04-25T10:46:52",
+      "updatedDate": "2026-02-09T19:48:43",
+      "owner": "Dr. Michelle Jennings",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 619.69,
+      "description": "Ahead even result deep current situation above."
+    },
+    {
+      "id": "590a8828-bda8-4f41-977d-ffd25eda9491",
+      "name": "Face-to-face hybrid matrix 25",
+      "status": "Active",
+      "createdDate": "2025-04-06T05:04:52",
+      "updatedDate": "2026-01-28T14:39:30",
+      "owner": "Lauren Burgess",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 518.98,
+      "description": "Somebody fine sport authority nor use."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

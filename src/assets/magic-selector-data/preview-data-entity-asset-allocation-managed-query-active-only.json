@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-active-only",
+  "totalCount": 768,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "37c1874b-d561-4e52-a264-f50b19883699",
+      "name": "Assimilated neutral initiative 1",
+      "status": "Completed",
+      "createdDate": "2025-04-05T21:23:30",
+      "updatedDate": "2026-01-21T17:08:00",
+      "owner": "Michael Miller Jr.",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5981.81,
+      "description": "Old hotel everything single kitchen down."
+    },
+    {
+      "id": "b177e7cc-5e3b-437d-a1aa-72900cb26e31",
+      "name": "Vision-oriented regional info-mediaries 2",
+      "status": "Completed",
+      "createdDate": "2025-07-09T03:15:51",
+      "updatedDate": "2026-02-02T05:49:08",
+      "owner": "Adam Young DDS",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1802.05,
+      "description": "Choose check country run trip."
+    },
+    {
+      "id": "3a2c12fc-bc37-470c-b3d9-43d4a99ed28f",
+      "name": "Seamless discrete access 3",
+      "status": "Completed",
+      "createdDate": "2025-07-29T21:00:20",
+      "updatedDate": "2026-02-07T23:28:11",
+      "owner": "Dana Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5251.23,
+      "description": "Couple factor poor design."
+    },
+    {
+      "id": "685db715-b031-4d27-98da-0a8977f66e48",
+      "name": "Automated reciprocal capability 4",
+      "status": "Active",
+      "createdDate": "2025-05-20T23:36:42",
+      "updatedDate": "2026-02-15T19:15:23",
+      "owner": "Miranda Williams",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9025.25,
+      "description": "Six reveal visit safe member."
+    },
+    {
+      "id": "43eb6626-f1f0-4b9e-aa24-b1d6e141c316",
+      "name": "Profound hybrid initiative 5",
+      "status": "Pending",
+      "createdDate": "2025-07-12T07:10:47",
+      "updatedDate": "2026-02-07T04:45:35",
+      "owner": "Pamela Stone",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5547.02,
+      "description": "Help child public rich."
+    },
+    {
+      "id": "75d60fe0-7a6a-4b0a-a954-5dc540643922",
+      "name": "Face-to-face fault-tolerant flexibility 6",
+      "status": "Inactive",
+      "createdDate": "2026-01-12T16:43:58",
+      "updatedDate": "2026-02-11T17:10:52",
+      "owner": "Benjamin Hanson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7616.7,
+      "description": "Talk phone attention."
+    },
+    {
+      "id": "4143b479-533e-4b55-abe5-81c4928651c1",
+      "name": "Enhanced asynchronous solution 7",
+      "status": "Completed",
+      "createdDate": "2026-01-27T05:19:22",
+      "updatedDate": "2026-02-16T21:42:14",
+      "owner": "Troy Clark",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1590.16,
+      "description": "Cost put throughout second true author."
+    },
+    {
+      "id": "93be02ed-ba34-4dac-bbfd-e5453a928497",
+      "name": "Implemented reciprocal definition 8",
+      "status": "Completed",
+      "createdDate": "2026-01-05T03:54:11",
+      "updatedDate": "2026-01-26T00:10:03",
+      "owner": "Robert Taylor",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3713.67,
+      "description": "Ever push realize sit."
+    },
+    {
+      "id": "99ab6b5a-8dbc-4d9d-8f23-3c04a7e1049c",
+      "name": "Exclusive even-keeled synergy 9",
+      "status": "Inactive",
+      "createdDate": "2025-07-10T09:49:17",
+      "updatedDate": "2026-02-10T21:26:00",
+      "owner": "Troy Kim",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9222.55,
+      "description": "Rock leave store natural."
+    },
+    {
+      "id": "2a7157d4-4fee-49d8-816a-58e5c1e4f478",
+      "name": "Function-based scalable hub 10",
+      "status": "Completed",
+      "createdDate": "2025-03-16T21:47:24",
+      "updatedDate": "2026-02-07T05:00:04",
+      "owner": "Michael Schneider",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8700.46,
+      "description": "Partner back heavy sign represent."
+    },
+    {
+      "id": "d46ac737-7bae-42f0-af7d-726a1e6b2834",
+      "name": "Upgradable contextually-based process improvement 11",
+      "status": "Inactive",
+      "createdDate": "2025-03-21T21:23:58",
+      "updatedDate": "2026-01-29T06:11:38",
+      "owner": "Diana Coleman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2711.05,
+      "description": "Light college expect road difficult thought up shake."
+    },
+    {
+      "id": "7ae87986-7e09-4f20-a4e6-472656aa1976",
+      "name": "Mandatory client-driven definition 12",
+      "status": "Completed",
+      "createdDate": "2025-05-05T12:48:17",
+      "updatedDate": "2026-01-31T23:20:29",
+      "owner": "Angela Taylor",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 549.24,
+      "description": "Sport energy training wrong year."
+    },
+    {
+      "id": "734b68bc-83dd-475d-a77b-412414b3d2b3",
+      "name": "Enhanced directional extranet 13",
+      "status": "Active",
+      "createdDate": "2025-04-07T13:23:12",
+      "updatedDate": "2026-01-21T14:47:47",
+      "owner": "Thomas Mcdonald",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4851.94,
+      "description": "Plan hard cut drive card own pass."
+    },
+    {
+      "id": "f033ce9b-975c-4aee-b526-63eae59a0f2f",
+      "name": "Enterprise-wide secondary superstructure 14",
+      "status": "Completed",
+      "createdDate": "2025-07-24T00:12:47",
+      "updatedDate": "2026-01-24T10:39:54",
+      "owner": "Sophia Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1564.45,
+      "description": "Clearly five him cause."
+    },
+    {
+      "id": "27032945-0aa4-4ebe-ad0f-65180c905f3e",
+      "name": "Configurable zero administration firmware 15",
+      "status": "Pending",
+      "createdDate": "2025-11-29T06:25:30",
+      "updatedDate": "2026-02-05T01:46:09",
+      "owner": "Gregory Hamilton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8510.6,
+      "description": "Officer health woman size."
+    },
+    {
+      "id": "7c767f94-ee19-46cb-8323-c724cbcb0c71",
+      "name": "Ameliorated 5thgeneration frame 16",
+      "status": "Inactive",
+      "createdDate": "2025-05-24T02:23:27",
+      "updatedDate": "2026-02-14T16:15:44",
+      "owner": "Angela Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6701.68,
+      "description": "Table soon group option stay hot."
+    },
+    {
+      "id": "f8847018-618d-4ef2-95c4-9bc5742ecbb8",
+      "name": "Stand-alone empowering archive 17",
+      "status": "Active",
+      "createdDate": "2025-05-12T20:28:18",
+      "updatedDate": "2026-02-08T03:16:46",
+      "owner": "Gregory Young",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3261.17,
+      "description": "Red report Democrat scene management seat."
+    },
+    {
+      "id": "3dc4e114-d6f7-45b5-a62c-5c9c1b30198a",
+      "name": "Ameliorated mobile adapter 18",
+      "status": "Pending",
+      "createdDate": "2025-04-28T11:48:58",
+      "updatedDate": "2026-02-11T19:25:08",
+      "owner": "Elizabeth Hays",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3242.68,
+      "description": "Green anything office garden science hit."
+    },
+    {
+      "id": "ce49fed9-f094-462e-9b12-985bdf627e85",
+      "name": "Reverse-engineered didactic model 19",
+      "status": "Active",
+      "createdDate": "2025-11-25T23:14:26",
+      "updatedDate": "2026-02-12T23:02:41",
+      "owner": "Mrs. Jennifer Hamilton",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 850.47,
+      "description": "Its occur majority easy physical decade."
+    },
+    {
+      "id": "f9ec2e59-b67d-4bbb-9aa3-bee0dd398426",
+      "name": "Expanded radical help-desk 20",
+      "status": "Pending",
+      "createdDate": "2025-12-05T08:49:57",
+      "updatedDate": "2026-01-29T19:22:32",
+      "owner": "Brenda Lindsey",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6956.19,
+      "description": "Drop kitchen measure interest."
+    },
+    {
+      "id": "f2f24f8c-986e-4ba2-a16d-5112ddf609fc",
+      "name": "Implemented holistic contingency 21",
+      "status": "Active",
+      "createdDate": "2025-10-19T11:25:11",
+      "updatedDate": "2026-01-24T11:29:29",
+      "owner": "Justin Ellis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7569.95,
+      "description": "Pick tough better forward once."
+    },
+    {
+      "id": "bd87fb25-9e8e-4e2d-9511-60ae592e62e5",
+      "name": "Automated explicit neural-net 22",
+      "status": "Active",
+      "createdDate": "2025-08-18T13:22:29",
+      "updatedDate": "2026-02-17T08:39:31",
+      "owner": "David Martin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5074.44,
+      "description": "Leave according remember vote movie."
+    },
+    {
+      "id": "3d449be7-c83e-4684-b487-a4c3f7dd85a7",
+      "name": "Managed cohesive functionalities 23",
+      "status": "Inactive",
+      "createdDate": "2025-04-02T08:44:17",
+      "updatedDate": "2026-02-14T04:45:37",
+      "owner": "Lauren Perez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 447.73,
+      "description": "Building sit when now share range."
+    },
+    {
+      "id": "9f3c7468-230e-4576-a3f0-c8a3a942bb98",
+      "name": "Front-line non-volatile superstructure 24",
+      "status": "Pending",
+      "createdDate": "2025-11-01T00:41:55",
+      "updatedDate": "2026-02-11T23:07:09",
+      "owner": "Sara Simmons",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9792.63,
+      "description": "Pay heavy instead particularly start."
+    },
+    {
+      "id": "de53d462-b72d-445b-82cf-f1847dfb9591",
+      "name": "Programmable full-range strategy 25",
+      "status": "Inactive",
+      "createdDate": "2025-11-15T00:16:26",
+      "updatedDate": "2026-01-21T16:40:48",
+      "owner": "Sarah Cole",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2534.16,
+      "description": "Movement matter me sure us adult."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

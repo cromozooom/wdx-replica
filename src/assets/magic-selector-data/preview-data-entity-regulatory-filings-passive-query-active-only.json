@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-regulatoryfiling",
+  "queryId": "query-active-only",
+  "totalCount": 1486,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ef351946-5e12-407c-8b98-e94723229683",
+      "name": "Face-to-face static archive 1",
+      "status": "Active",
+      "createdDate": "2026-02-09T11:46:44",
+      "updatedDate": "2026-01-18T18:04:24",
+      "owner": "Dennis Morales",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1038.91,
+      "description": "Window by available second."
+    },
+    {
+      "id": "6df6b889-8d00-4b10-8166-3254ee0ea8d8",
+      "name": "Front-line methodical framework 2",
+      "status": "Active",
+      "createdDate": "2025-03-27T21:48:54",
+      "updatedDate": "2026-02-07T01:53:41",
+      "owner": "Katie Underwood",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7629.5,
+      "description": "Bit within exactly prove computer bar shoulder nor."
+    },
+    {
+      "id": "2392fc0c-5b18-4d96-b66d-3dbd5d1d91d9",
+      "name": "Future-proofed multimedia monitoring 3",
+      "status": "Completed",
+      "createdDate": "2026-01-16T20:43:28",
+      "updatedDate": "2026-01-20T10:35:48",
+      "owner": "Debra Martinez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3598.55,
+      "description": "If size nature."
+    },
+    {
+      "id": "729a56b9-545a-4ec3-8aea-7565d21d541c",
+      "name": "Innovative optimizing parallelism 4",
+      "status": "Inactive",
+      "createdDate": "2025-05-30T01:12:53",
+      "updatedDate": "2026-02-06T18:20:17",
+      "owner": "Alexandria Ward",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2851.09,
+      "description": "Total month explain season reveal."
+    },
+    {
+      "id": "98ca8428-585d-4cec-8a14-cea479ad4006",
+      "name": "Reduced intangible synergy 5",
+      "status": "Completed",
+      "createdDate": "2025-03-11T16:55:48",
+      "updatedDate": "2026-02-15T01:13:27",
+      "owner": "Rodney Wang",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6437.85,
+      "description": "Exist there letter six sometimes girl way."
+    },
+    {
+      "id": "55da22a0-0245-4e69-8367-3e1bb2472b17",
+      "name": "Cloned exuding workforce 6",
+      "status": "Pending",
+      "createdDate": "2025-09-06T15:57:35",
+      "updatedDate": "2026-02-01T05:23:44",
+      "owner": "Dr. Shannon Hoffman",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1081.42,
+      "description": "Perhaps most significant organization choose window."
+    },
+    {
+      "id": "dbb0ab70-8c28-484d-b58f-1cdc48fc2e8c",
+      "name": "Open-architected object-oriented projection 7",
+      "status": "Active",
+      "createdDate": "2025-06-08T04:08:04",
+      "updatedDate": "2026-02-03T03:20:33",
+      "owner": "Marilyn Goodwin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9386.86,
+      "description": "Food evidence kind any water capital respond."
+    },
+    {
+      "id": "05756bc5-df21-44ea-92c5-45e6973ab489",
+      "name": "Fully-configurable holistic forecast 8",
+      "status": "Completed",
+      "createdDate": "2026-02-09T09:18:52",
+      "updatedDate": "2026-01-31T17:02:28",
+      "owner": "Karen Dennis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4964.27,
+      "description": "Decade major question very nature adult discuss."
+    },
+    {
+      "id": "e2ab4273-e3d4-475e-995d-c34deba9dc32",
+      "name": "Cloned analyzing definition 9",
+      "status": "Pending",
+      "createdDate": "2025-06-27T01:35:31",
+      "updatedDate": "2026-02-01T02:00:37",
+      "owner": "Daniel Bryant",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5516.76,
+      "description": "Remain wall ground enter heart."
+    },
+    {
+      "id": "a8c68721-9b0b-4c93-a9b5-163feb785bb5",
+      "name": "Centralized empowering hierarchy 10",
+      "status": "Inactive",
+      "createdDate": "2025-12-18T09:19:12",
+      "updatedDate": "2026-01-31T16:53:45",
+      "owner": "Daniel Daugherty",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9262.69,
+      "description": "Stuff skin level west figure."
+    },
+    {
+      "id": "89837ce1-8751-447a-b529-0d14a00b76e5",
+      "name": "Self-enabling user-facing structure 11",
+      "status": "Inactive",
+      "createdDate": "2025-03-04T11:31:35",
+      "updatedDate": "2026-01-27T11:17:22",
+      "owner": "Melissa Perry",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4941.74,
+      "description": "Too later whom television various."
+    },
+    {
+      "id": "557c7ae4-2069-4155-8e69-71638a5f4766",
+      "name": "Business-focused human-resource secured line 12",
+      "status": "Completed",
+      "createdDate": "2025-10-02T00:21:09",
+      "updatedDate": "2026-01-22T21:45:01",
+      "owner": "Pamela Jacobs",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4660.87,
+      "description": "Wish well even final."
+    },
+    {
+      "id": "a88b3477-5bec-4012-83dd-4f64b114a3e9",
+      "name": "Grass-roots mobile initiative 13",
+      "status": "Active",
+      "createdDate": "2025-04-24T23:42:14",
+      "updatedDate": "2026-02-09T17:51:43",
+      "owner": "Daniel Vega",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9576.82,
+      "description": "Nature Mr Congress accept reality cell thank."
+    },
+    {
+      "id": "7aa100d9-1c52-47dd-bdc1-738b9cbeffad",
+      "name": "Realigned heuristic core 14",
+      "status": "Inactive",
+      "createdDate": "2025-09-01T00:13:54",
+      "updatedDate": "2026-01-31T12:50:06",
+      "owner": "Paul Cummings",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8792.92,
+      "description": "Think argue result view crime test whatever may."
+    },
+    {
+      "id": "79d12ea7-8abe-4afa-a930-3f3263e65756",
+      "name": "Front-line grid-enabled interface 15",
+      "status": "Pending",
+      "createdDate": "2025-12-13T09:49:08",
+      "updatedDate": "2026-02-01T06:08:11",
+      "owner": "Mrs. Jennifer Lamb MD",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9377.76,
+      "description": "Table skin friend hit final kind discussion."
+    },
+    {
+      "id": "8f91e7eb-d7ad-4330-86d3-774a6340ad41",
+      "name": "Multi-channeled dedicated forecast 16",
+      "status": "Completed",
+      "createdDate": "2025-09-04T02:33:29",
+      "updatedDate": "2026-02-14T17:19:06",
+      "owner": "Dr. Michael Alvarez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7120.65,
+      "description": "Prevent nor somebody area."
+    },
+    {
+      "id": "a38359ae-ba7b-4eea-8617-81e93a154607",
+      "name": "Re-contextualized background approach 17",
+      "status": "Active",
+      "createdDate": "2025-09-07T15:17:42",
+      "updatedDate": "2026-02-04T18:20:27",
+      "owner": "Stephanie Gamble",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2409.88,
+      "description": "Wrong whole when ahead these still church."
+    },
+    {
+      "id": "bc2f7bd2-9f76-4718-a3a7-627ca654832d",
+      "name": "Customer-focused full-range solution 18",
+      "status": "Active",
+      "createdDate": "2025-03-23T16:51:06",
+      "updatedDate": "2026-02-08T00:06:03",
+      "owner": "Patrick Merritt",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5674.95,
+      "description": "Hospital by hard pressure thousand how."
+    },
+    {
+      "id": "821e589f-d738-4795-93f6-5105ae80940b",
+      "name": "Inverse background capability 19",
+      "status": "Pending",
+      "createdDate": "2025-04-30T14:06:08",
+      "updatedDate": "2026-01-27T14:27:11",
+      "owner": "Alfred Peters Jr.",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7949.73,
+      "description": "Red drive agreement almost condition party letter."
+    },
+    {
+      "id": "e204bf9c-5d7a-4d73-8355-bae1861f808c",
+      "name": "Triple-buffered composite utilization 20",
+      "status": "Active",
+      "createdDate": "2025-06-07T19:14:34",
+      "updatedDate": "2026-01-21T07:47:20",
+      "owner": "Daniel Myers",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7668.85,
+      "description": "Threat structure their local laugh popular cost box."
+    },
+    {
+      "id": "cb86d318-ca30-4497-bb50-86975eb17721",
+      "name": "Realigned methodical ability 21",
+      "status": "Active",
+      "createdDate": "2025-09-08T02:33:35",
+      "updatedDate": "2026-01-28T01:52:46",
+      "owner": "Jorge Valentine",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2261.42,
+      "description": "Already case offer change drop prove finally."
+    },
+    {
+      "id": "601800ac-e496-4b13-99a6-ce8a3a1d809f",
+      "name": "Grass-roots hybrid leverage 22",
+      "status": "Pending",
+      "createdDate": "2025-09-17T23:58:18",
+      "updatedDate": "2026-01-22T00:17:26",
+      "owner": "Amy Donovan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1864.86,
+      "description": "Pull into lose before official student tree."
+    },
+    {
+      "id": "d8223b1b-8af3-4d5b-95d8-29b3694c2158",
+      "name": "Stand-alone stable alliance 23",
+      "status": "Completed",
+      "createdDate": "2025-04-11T23:45:17",
+      "updatedDate": "2026-01-29T06:50:34",
+      "owner": "Michael Sellers",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1617.71,
+      "description": "Behavior middle view past show energy father test."
+    },
+    {
+      "id": "0ab77e99-7ade-4e97-9296-e20f6a05e5ed",
+      "name": "Devolved neutral initiative 24",
+      "status": "Completed",
+      "createdDate": "2025-05-03T09:44:19",
+      "updatedDate": "2026-02-03T16:01:57",
+      "owner": "Brian Tucker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1046.3,
+      "description": "Trade research audience name society whole man."
+    },
+    {
+      "id": "88c83902-288a-4a65-b603-f52700abee82",
+      "name": "Ergonomic next generation throughput 25",
+      "status": "Active",
+      "createdDate": "2025-07-17T17:54:37",
+      "updatedDate": "2026-01-20T00:33:32",
+      "owner": "Raymond Myers",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7128.61,
+      "description": "Agree hard exactly remain."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

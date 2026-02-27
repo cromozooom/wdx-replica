@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-kycdocument",
+  "queryId": "query-active-only",
+  "totalCount": 1213,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "fe4edacd-9607-4e1f-96ac-c6acd80047bb",
+      "name": "Extended zero-defect middleware 1",
+      "status": "Active",
+      "createdDate": "2025-07-25T21:10:32",
+      "updatedDate": "2026-01-20T10:02:00",
+      "owner": "Christina Johnston",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4346.52,
+      "description": "Bar growth show white manage left north."
+    },
+    {
+      "id": "13cf44ff-d3ed-4e32-a012-1cddf4d0750a",
+      "name": "User-centric background contingency 2",
+      "status": "Pending",
+      "createdDate": "2025-03-19T18:07:24",
+      "updatedDate": "2026-01-25T11:48:20",
+      "owner": "Ashley Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8683.91,
+      "description": "Staff moment area answer glass week."
+    },
+    {
+      "id": "f94807ab-7b2a-4759-b209-a58b2d7b4284",
+      "name": "Innovative maximized attitude 3",
+      "status": "Inactive",
+      "createdDate": "2026-01-23T19:16:14",
+      "updatedDate": "2026-02-13T13:46:42",
+      "owner": "Nathan Perez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 421.51,
+      "description": "Fill relationship girl town image fine."
+    },
+    {
+      "id": "fa240499-a60d-4d2d-b56a-d314c6cd58b7",
+      "name": "Sharable executive secured line 4",
+      "status": "Active",
+      "createdDate": "2025-05-31T23:48:00",
+      "updatedDate": "2026-02-09T03:41:55",
+      "owner": "Alexis Flores",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9853.17,
+      "description": "Despite man describe yet."
+    },
+    {
+      "id": "865d55de-2625-4f61-bcdd-029e4d6cce4e",
+      "name": "Inverse regional framework 5",
+      "status": "Pending",
+      "createdDate": "2026-01-31T20:21:39",
+      "updatedDate": "2026-02-07T21:31:38",
+      "owner": "Kevin Fox",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9688.88,
+      "description": "Road of can much."
+    },
+    {
+      "id": "51621eae-cc6c-438d-97c0-313e9a2c9d89",
+      "name": "Centralized demand-driven protocol 6",
+      "status": "Inactive",
+      "createdDate": "2025-05-02T12:43:58",
+      "updatedDate": "2026-02-01T19:02:04",
+      "owner": "Derrick Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8191.38,
+      "description": "Office red north artist simply reflect than half."
+    },
+    {
+      "id": "2cc2dadb-d11c-4abd-afab-37af37b0667f",
+      "name": "Devolved directional toolset 7",
+      "status": "Inactive",
+      "createdDate": "2026-02-13T04:41:59",
+      "updatedDate": "2026-01-31T00:21:33",
+      "owner": "Willie Gonzalez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 455.22,
+      "description": "Material program member go."
+    },
+    {
+      "id": "d32d7756-aa72-47cc-8db4-3f1490cda2ac",
+      "name": "Fundamental dynamic system engine 8",
+      "status": "Pending",
+      "createdDate": "2025-09-10T20:20:54",
+      "updatedDate": "2026-02-02T22:42:17",
+      "owner": "Raymond Diaz",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8963.26,
+      "description": "Still by home thus."
+    },
+    {
+      "id": "6ddd12a5-100d-45f2-b8cb-10672a8e446c",
+      "name": "Compatible dynamic hardware 9",
+      "status": "Inactive",
+      "createdDate": "2025-11-28T04:32:17",
+      "updatedDate": "2026-02-08T23:53:28",
+      "owner": "Phillip Boyd",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8135.15,
+      "description": "Painting pressure send tell stock."
+    },
+    {
+      "id": "24fb0f1b-f879-49af-ba81-5348281f7296",
+      "name": "Managed attitude-oriented orchestration 10",
+      "status": "Completed",
+      "createdDate": "2025-04-28T12:40:16",
+      "updatedDate": "2026-02-15T04:52:15",
+      "owner": "Cheryl Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6436.28,
+      "description": "Trade news fight pattern war without exactly member."
+    },
+    {
+      "id": "378d0b50-2386-4fcb-81e9-42b53ec97b39",
+      "name": "Customizable executive knowledgebase 11",
+      "status": "Active",
+      "createdDate": "2025-07-13T06:11:23",
+      "updatedDate": "2026-02-05T12:02:55",
+      "owner": "Carlos Harper",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1816.54,
+      "description": "Right life offer last sense still."
+    },
+    {
+      "id": "252d9b51-8a46-4132-a49d-1373ae5b22f9",
+      "name": "Face-to-face composite help-desk 12",
+      "status": "Active",
+      "createdDate": "2025-06-30T00:07:19",
+      "updatedDate": "2026-02-06T06:10:52",
+      "owner": "Mark Taylor",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6520.24,
+      "description": "Huge car sound that entire true explain."
+    },
+    {
+      "id": "692f293b-852c-49a3-8406-434c24945367",
+      "name": "Re-engineered hybrid budgetary management 13",
+      "status": "Pending",
+      "createdDate": "2025-12-22T18:54:00",
+      "updatedDate": "2026-01-25T06:47:55",
+      "owner": "Terry Barnes",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2001.72,
+      "description": "Generation activity group wall add."
+    },
+    {
+      "id": "d3c9320f-9079-4e02-8777-ffa087700bd8",
+      "name": "Organic foreground workforce 14",
+      "status": "Pending",
+      "createdDate": "2026-01-27T11:54:57",
+      "updatedDate": "2026-01-26T09:56:55",
+      "owner": "Tracy Curtis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 830.2,
+      "description": "Investment while success."
+    },
+    {
+      "id": "fb712adb-7f00-4f5c-8b9e-03490553d6f5",
+      "name": "Intuitive attitude-oriented superstructure 15",
+      "status": "Active",
+      "createdDate": "2025-09-05T07:08:32",
+      "updatedDate": "2026-01-29T02:56:49",
+      "owner": "Diane Mitchell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7500.42,
+      "description": "Company long thought agree."
+    },
+    {
+      "id": "c117df93-78dc-4258-8be6-9259b9a89d38",
+      "name": "Reduced global access 16",
+      "status": "Pending",
+      "createdDate": "2025-08-07T23:06:43",
+      "updatedDate": "2026-01-30T18:39:30",
+      "owner": "Michael Howard",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8940.19,
+      "description": "Already property rather hear."
+    },
+    {
+      "id": "1befd020-7a8a-49a7-998d-41362766da95",
+      "name": "Switchable zero-defect collaboration 17",
+      "status": "Inactive",
+      "createdDate": "2025-05-02T15:36:36",
+      "updatedDate": "2026-02-08T02:10:41",
+      "owner": "Ashley Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7294.92,
+      "description": "Back increase theory generation mean."
+    },
+    {
+      "id": "7e21a007-b933-4c66-b351-fe1928108921",
+      "name": "Realigned scalable neural-net 18",
+      "status": "Inactive",
+      "createdDate": "2025-10-30T13:29:10",
+      "updatedDate": "2026-01-18T12:43:16",
+      "owner": "Dr. Christina Jones",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6045.67,
+      "description": "Together be raise attack during picture."
+    },
+    {
+      "id": "b90d9ef7-9d34-4b62-a4e9-a170eb79b1af",
+      "name": "Secured user-facing middleware 19",
+      "status": "Completed",
+      "createdDate": "2025-04-03T04:08:04",
+      "updatedDate": "2026-01-23T21:56:38",
+      "owner": "Joseph Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4935.07,
+      "description": "Another control career one Mrs."
+    },
+    {
+      "id": "50684764-8e11-4e07-8797-eeb3cba6f10f",
+      "name": "Assimilated directional strategy 20",
+      "status": "Inactive",
+      "createdDate": "2026-01-05T23:20:37",
+      "updatedDate": "2026-02-16T23:03:15",
+      "owner": "Corey Duran",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9240.82,
+      "description": "Our from inside less read data."
+    },
+    {
+      "id": "649fda46-9746-4697-891d-e91cd7d98a6a",
+      "name": "Monitored systematic infrastructure 21",
+      "status": "Active",
+      "createdDate": "2025-08-22T16:56:13",
+      "updatedDate": "2026-02-05T05:59:23",
+      "owner": "Lori Flores",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 614.64,
+      "description": "Account hard pay price building plant teacher."
+    },
+    {
+      "id": "b314810d-fd04-45e9-9923-1e536e707e78",
+      "name": "Cross-group 24/7 encoding 22",
+      "status": "Inactive",
+      "createdDate": "2025-08-31T04:06:44",
+      "updatedDate": "2026-01-31T06:04:59",
+      "owner": "Adam Santos",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6614.91,
+      "description": "Way although player owner government both turn."
+    },
+    {
+      "id": "7a3845de-3b41-4cba-980d-2b44343aa68a",
+      "name": "Fundamental bifurcated time-frame 23",
+      "status": "Completed",
+      "createdDate": "2025-08-19T18:36:09",
+      "updatedDate": "2026-02-16T23:20:18",
+      "owner": "Donna Wagner",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4283.32,
+      "description": "City leave note peace."
+    },
+    {
+      "id": "2345e98e-8a34-4bca-b084-b17047e37a40",
+      "name": "Front-line discrete Graphic Interface 24",
+      "status": "Completed",
+      "createdDate": "2025-09-07T14:03:11",
+      "updatedDate": "2026-01-26T11:57:44",
+      "owner": "Christopher Perry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9887.03,
+      "description": "Kind big keep challenge adult."
+    },
+    {
+      "id": "48543e0a-8484-49aa-a706-90ed2cc1d103",
+      "name": "User-friendly 24/7 forecast 25",
+      "status": "Pending",
+      "createdDate": "2025-09-01T23:59:53",
+      "updatedDate": "2026-02-06T15:07:19",
+      "owner": "Nicholas Curry",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7406.07,
+      "description": "You type total."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

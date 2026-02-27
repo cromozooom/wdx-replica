@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-active-only",
+  "totalCount": 1161,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "97ed6bc1-c4e5-431c-ae87-83218baa9aa2",
+      "name": "Enterprise-wide needs-based attitude 1",
+      "status": "Completed",
+      "createdDate": "2025-08-20T02:04:00",
+      "updatedDate": "2026-02-02T00:36:54",
+      "owner": "Jeffrey White",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2378.8,
+      "description": "Believe consumer serious."
+    },
+    {
+      "id": "9ee59753-f83b-448f-a625-7c6c0bdd35ef",
+      "name": "Reduced exuding conglomeration 2",
+      "status": "Completed",
+      "createdDate": "2025-04-14T19:09:49",
+      "updatedDate": "2026-02-01T05:43:13",
+      "owner": "Evan Griffin",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5129.16,
+      "description": "Standard threat official need design."
+    },
+    {
+      "id": "860a61d5-2145-4b07-bf76-14cef10653cd",
+      "name": "Synergistic cohesive open system 3",
+      "status": "Completed",
+      "createdDate": "2025-08-13T01:50:09",
+      "updatedDate": "2026-02-08T21:33:57",
+      "owner": "Faith Sanchez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1862.04,
+      "description": "Dream finish mind."
+    },
+    {
+      "id": "ac38bab0-c493-402f-8a2a-4494e113e397",
+      "name": "Realigned optimal function 4",
+      "status": "Inactive",
+      "createdDate": "2025-12-23T02:14:27",
+      "updatedDate": "2026-01-22T15:12:24",
+      "owner": "Stephanie Cannon",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 958.4,
+      "description": "Line really area leader."
+    },
+    {
+      "id": "2e37fc32-8173-4e13-88fa-aab788956401",
+      "name": "Open-source human-resource function 5",
+      "status": "Pending",
+      "createdDate": "2025-09-24T10:20:18",
+      "updatedDate": "2026-02-08T20:37:25",
+      "owner": "Erica Keith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3775.55,
+      "description": "Perform participant most wind have."
+    },
+    {
+      "id": "b478e168-755c-4457-bbe3-efc1733629e9",
+      "name": "Phased didactic Graphical User Interface 6",
+      "status": "Completed",
+      "createdDate": "2025-08-06T20:38:38",
+      "updatedDate": "2026-02-05T05:56:49",
+      "owner": "Doris Anderson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6495.12,
+      "description": "Painting pretty since wife middle responsibility."
+    },
+    {
+      "id": "2d9e5b4c-598b-4372-b8e0-1b1808bdd45c",
+      "name": "Team-oriented upward-trending concept 7",
+      "status": "Inactive",
+      "createdDate": "2025-10-12T14:34:47",
+      "updatedDate": "2026-01-29T06:14:10",
+      "owner": "Elijah King",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1970.35,
+      "description": "Pull probably hit her though hospital lawyer."
+    },
+    {
+      "id": "b13384a1-9f71-4d82-abd7-9a09c5c737c6",
+      "name": "Realigned fresh-thinking middleware 8",
+      "status": "Active",
+      "createdDate": "2025-11-13T02:40:19",
+      "updatedDate": "2026-01-23T08:22:12",
+      "owner": "Robert Sandoval",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 533.65,
+      "description": "Adult through senior physical couple defense among."
+    },
+    {
+      "id": "0f37aa11-c808-4d43-8ba8-09c694733fa4",
+      "name": "Vision-oriented homogeneous data-warehouse 9",
+      "status": "Pending",
+      "createdDate": "2025-11-02T06:52:39",
+      "updatedDate": "2026-01-24T10:59:45",
+      "owner": "William Steele",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1121.26,
+      "description": "Care security watch writer election information loss."
+    },
+    {
+      "id": "76e7c8f1-9eb8-42a8-8bfa-44de0726ed63",
+      "name": "Ameliorated zero tolerance infrastructure 10",
+      "status": "Pending",
+      "createdDate": "2025-03-12T16:01:00",
+      "updatedDate": "2026-02-02T01:42:00",
+      "owner": "Phillip Berry",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 283.7,
+      "description": "Bed week these process."
+    },
+    {
+      "id": "f4e42a61-4ab7-4a1d-99aa-f2a6591d5c77",
+      "name": "Customer-focused modular algorithm 11",
+      "status": "Pending",
+      "createdDate": "2025-03-28T18:08:50",
+      "updatedDate": "2026-02-08T14:12:28",
+      "owner": "Crystal Joseph",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3084.1,
+      "description": "Good order final his similar box indeed."
+    },
+    {
+      "id": "e92b37c7-ae87-490b-8de4-f4a6abd16e3c",
+      "name": "Open-architected context-sensitive approach 12",
+      "status": "Pending",
+      "createdDate": "2025-04-06T07:02:29",
+      "updatedDate": "2026-01-31T05:52:45",
+      "owner": "Alexander Perkins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3009.72,
+      "description": "Prevent financial door attention where."
+    },
+    {
+      "id": "442fb768-f1cc-4e09-941e-02f6b9703cce",
+      "name": "Decentralized global analyzer 13",
+      "status": "Pending",
+      "createdDate": "2025-05-06T01:39:03",
+      "updatedDate": "2026-02-09T19:16:10",
+      "owner": "Angela Long",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1149.6,
+      "description": "Phone arm hour place."
+    },
+    {
+      "id": "0b888387-18a6-4a00-a2d1-3eadb7380624",
+      "name": "Ergonomic high-level analyzer 14",
+      "status": "Completed",
+      "createdDate": "2026-01-30T21:40:28",
+      "updatedDate": "2026-01-29T18:02:27",
+      "owner": "Miguel Moyer",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9597.57,
+      "description": "Any discussion evening very poor collection."
+    },
+    {
+      "id": "0f51b1ca-b3c6-4d8a-99da-38587d85ebc7",
+      "name": "Ameliorated tangible algorithm 15",
+      "status": "Inactive",
+      "createdDate": "2025-08-12T09:43:15",
+      "updatedDate": "2026-02-01T01:21:17",
+      "owner": "Kelly Woods",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8388.61,
+      "description": "Country only hospital bill place."
+    },
+    {
+      "id": "8d922562-6e1b-43c6-8a4a-0f8ad836d67e",
+      "name": "Business-focused interactive forecast 16",
+      "status": "Pending",
+      "createdDate": "2025-06-12T13:36:24",
+      "updatedDate": "2026-01-19T17:09:09",
+      "owner": "Rebecca Kemp",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3064.2,
+      "description": "Rise role body material end pass."
+    },
+    {
+      "id": "1fd39e4a-d8e3-4c3e-85ca-f07d7c7afd37",
+      "name": "Upgradable multi-tasking forecast 17",
+      "status": "Active",
+      "createdDate": "2025-10-01T17:28:50",
+      "updatedDate": "2026-02-02T22:27:19",
+      "owner": "Tara Phillips",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2217.16,
+      "description": "Enjoy across bring national plan war."
+    },
+    {
+      "id": "3bb2ae59-ed5e-4e4f-b8dd-bdb35106851b",
+      "name": "Focused transitional help-desk 18",
+      "status": "Inactive",
+      "createdDate": "2025-07-20T11:23:00",
+      "updatedDate": "2026-02-13T23:49:36",
+      "owner": "Mary Ellis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2905.84,
+      "description": "American cultural party size which tree course."
+    },
+    {
+      "id": "eaa1efbc-5138-44c5-8404-2df5d387b8c6",
+      "name": "Future-proofed even-keeled application 19",
+      "status": "Active",
+      "createdDate": "2025-09-12T18:48:03",
+      "updatedDate": "2026-02-06T15:00:44",
+      "owner": "Robert Heath",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5015.66,
+      "description": "Deal travel involve certain see."
+    },
+    {
+      "id": "7e264e58-b294-427d-b59c-96021e3a18ee",
+      "name": "Face-to-face clear-thinking structure 20",
+      "status": "Active",
+      "createdDate": "2025-05-21T05:45:55",
+      "updatedDate": "2026-01-29T08:25:29",
+      "owner": "Melvin Gordon",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4432.56,
+      "description": "Person finally set evening participant."
+    },
+    {
+      "id": "793bdd6e-924e-4105-90f1-d7d6e9f4b2e9",
+      "name": "Secured attitude-oriented functionalities 21",
+      "status": "Completed",
+      "createdDate": "2025-07-12T07:51:33",
+      "updatedDate": "2026-01-22T13:45:40",
+      "owner": "Martin Chavez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8099.25,
+      "description": "Various may sometimes interview through democratic."
+    },
+    {
+      "id": "c38fb0a0-2bb7-477e-b7b3-0e1546188be9",
+      "name": "Seamless 5thgeneration infrastructure 22",
+      "status": "Inactive",
+      "createdDate": "2025-10-11T00:28:24",
+      "updatedDate": "2026-02-01T22:38:46",
+      "owner": "Heather Wilson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1590.42,
+      "description": "That thought blood tax deep town worry."
+    },
+    {
+      "id": "f50ef920-3b73-4977-b90b-c01c6f3cb17f",
+      "name": "Front-line homogeneous software 23",
+      "status": "Completed",
+      "createdDate": "2025-05-20T17:07:31",
+      "updatedDate": "2026-01-28T20:21:46",
+      "owner": "Richard Young",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1468.01,
+      "description": "Decide pay travel keep."
+    },
+    {
+      "id": "32d10163-e42d-424d-92f3-61246bbb26b0",
+      "name": "Phased contextually-based parallelism 24",
+      "status": "Inactive",
+      "createdDate": "2026-02-11T15:36:29",
+      "updatedDate": "2026-01-24T16:27:03",
+      "owner": "Jessica Phillips",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3697.57,
+      "description": "Clearly ask run sort."
+    },
+    {
+      "id": "0ff60338-829e-4eb7-89fb-12c1f0c991e9",
+      "name": "Progressive asymmetric superstructure 25",
+      "status": "Pending",
+      "createdDate": "2025-02-28T11:56:14",
+      "updatedDate": "2026-01-26T23:48:40",
+      "owner": "Jonathan White",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3663.25,
+      "description": "Course she child."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

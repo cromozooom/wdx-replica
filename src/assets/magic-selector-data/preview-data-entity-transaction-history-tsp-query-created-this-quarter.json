@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 401,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "dd8cc3b9-4649-4065-ac9b-3683be264781",
+      "name": "Stand-alone transitional budgetary management 1",
+      "status": "Inactive",
+      "createdDate": "2025-10-06T12:04:55",
+      "updatedDate": "2026-01-26T10:20:16",
+      "owner": "Joyce Griffith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5845.76,
+      "description": "Hot fund study crime dinner process enough base."
+    },
+    {
+      "id": "985b7704-3171-4ad7-b46e-88efbf7d1d09",
+      "name": "Open-source empowering database 2",
+      "status": "Pending",
+      "createdDate": "2025-10-19T18:16:20",
+      "updatedDate": "2026-02-05T15:20:44",
+      "owner": "Casey Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5780.97,
+      "description": "Practice a paper."
+    },
+    {
+      "id": "8ccfbdeb-f041-4c89-a9bf-079249518f4d",
+      "name": "Monitored user-facing protocol 3",
+      "status": "Pending",
+      "createdDate": "2025-09-20T14:47:28",
+      "updatedDate": "2026-01-29T16:49:48",
+      "owner": "John Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8760.35,
+      "description": "Get record around."
+    },
+    {
+      "id": "4c0a770a-4f02-4410-a31d-d28c875e73a3",
+      "name": "Profit-focused hybrid project 4",
+      "status": "Completed",
+      "createdDate": "2025-07-14T01:04:27",
+      "updatedDate": "2026-01-23T22:02:04",
+      "owner": "Christopher Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2754.86,
+      "description": "Meeting head break city per."
+    },
+    {
+      "id": "5d400b88-3d6d-4f39-bbf9-67e1ab88e23f",
+      "name": "Multi-lateral bandwidth-monitored contingency 5",
+      "status": "Pending",
+      "createdDate": "2025-06-13T12:00:50",
+      "updatedDate": "2026-01-20T14:04:14",
+      "owner": "Jerry Melton",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4754.03,
+      "description": "Foreign pull me everyone energy collection."
+    },
+    {
+      "id": "d8383bac-1f78-4726-b784-629888230cbc",
+      "name": "User-centric bandwidth-monitored monitoring 6",
+      "status": "Completed",
+      "createdDate": "2025-11-16T18:25:53",
+      "updatedDate": "2026-02-08T13:18:15",
+      "owner": "Nancy Stewart",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1361.07,
+      "description": "Future subject they staff bad decide wife."
+    },
+    {
+      "id": "a7871fcd-e745-4a83-a712-7b62c2e6b94c",
+      "name": "Upgradable multi-state focus group 7",
+      "status": "Completed",
+      "createdDate": "2025-10-11T12:23:33",
+      "updatedDate": "2026-02-15T17:03:06",
+      "owner": "Marissa Livingston",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8690.72,
+      "description": "Alone knowledge it I position deep."
+    },
+    {
+      "id": "a5e7f713-eaa3-4562-a88e-27b3c3fb7042",
+      "name": "User-friendly asymmetric open system 8",
+      "status": "Completed",
+      "createdDate": "2025-07-11T09:20:24",
+      "updatedDate": "2026-02-04T02:54:32",
+      "owner": "Melissa Wagner",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4394.21,
+      "description": "Truth town onto."
+    },
+    {
+      "id": "3758dbf8-3d56-4400-bfc9-7fd975a7e415",
+      "name": "De-engineered uniform contingency 9",
+      "status": "Pending",
+      "createdDate": "2025-12-24T16:26:27",
+      "updatedDate": "2026-02-06T07:27:15",
+      "owner": "Tara Maynard",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 425.77,
+      "description": "More note any century coach teach despite."
+    },
+    {
+      "id": "2f9b4ebe-cc2e-4885-a77d-f734bc64b102",
+      "name": "Function-based contextually-based throughput 10",
+      "status": "Active",
+      "createdDate": "2025-05-10T21:08:38",
+      "updatedDate": "2026-02-16T20:02:13",
+      "owner": "Jordan Armstrong",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 893.05,
+      "description": "Collection tree middle church."
+    },
+    {
+      "id": "56a5a7a3-5882-429d-8d79-44be384244bc",
+      "name": "Ameliorated zero tolerance projection 11",
+      "status": "Inactive",
+      "createdDate": "2025-08-10T23:05:22",
+      "updatedDate": "2026-01-30T22:02:48",
+      "owner": "Meghan Reyes",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7283.39,
+      "description": "Strategy firm accept arm recently day."
+    },
+    {
+      "id": "4515a917-6ce3-4366-973a-59374accf3a0",
+      "name": "Function-based optimal capacity 12",
+      "status": "Inactive",
+      "createdDate": "2025-12-20T06:20:08",
+      "updatedDate": "2026-02-13T09:22:42",
+      "owner": "Kelly Hudson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6747.12,
+      "description": "Particular themselves most mean."
+    },
+    {
+      "id": "edc2cd59-0a96-4933-8107-578b50fec82f",
+      "name": "Ergonomic heuristic definition 13",
+      "status": "Active",
+      "createdDate": "2026-01-27T01:02:57",
+      "updatedDate": "2026-01-20T20:04:19",
+      "owner": "Miss Nicole Hicks MD",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 289.41,
+      "description": "Provide international author likely above beautiful memory."
+    },
+    {
+      "id": "c94cc648-4bed-458d-8304-bb5280868e8a",
+      "name": "Cross-group client-driven portal 14",
+      "status": "Completed",
+      "createdDate": "2025-07-01T18:38:34",
+      "updatedDate": "2026-02-01T04:20:50",
+      "owner": "Katie Harper",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1592.98,
+      "description": "Mind have others machine minute six."
+    },
+    {
+      "id": "29b3e373-eeb2-4863-94a5-4176e6a03bc2",
+      "name": "Down-sized bottom-line emulation 15",
+      "status": "Inactive",
+      "createdDate": "2025-11-24T11:08:15",
+      "updatedDate": "2026-01-29T05:28:21",
+      "owner": "Philip Moore",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1469.78,
+      "description": "Agree TV pretty moment treat."
+    },
+    {
+      "id": "a27df477-c225-4f9c-8cf8-4bca1c8b994d",
+      "name": "Persistent intangible groupware 16",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T15:40:31",
+      "updatedDate": "2026-01-18T16:28:44",
+      "owner": "John Ayers",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4450.89,
+      "description": "College during hard resource."
+    },
+    {
+      "id": "e4766e6e-2384-4091-81ad-dbfadee8438c",
+      "name": "Public-key 3rdgeneration protocol 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-09T22:31:34",
+      "updatedDate": "2026-01-28T04:09:30",
+      "owner": "Elizabeth Harris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7949.37,
+      "description": "Everything vote hope citizen."
+    },
+    {
+      "id": "c5910294-299c-4d84-9423-358955bda8bd",
+      "name": "Mandatory heuristic interface 18",
+      "status": "Completed",
+      "createdDate": "2025-08-30T03:06:16",
+      "updatedDate": "2026-01-30T17:43:48",
+      "owner": "Daniel Pugh",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5383.78,
+      "description": "See ability kitchen Republican relationship about it."
+    },
+    {
+      "id": "09236bc5-d408-4286-92ea-dcb9ec36fabd",
+      "name": "Realigned disintermediate analyzer 19",
+      "status": "Pending",
+      "createdDate": "2025-05-29T23:33:35",
+      "updatedDate": "2026-02-12T11:48:48",
+      "owner": "Danielle White",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9246.09,
+      "description": "Whom far understand know past single success."
+    },
+    {
+      "id": "d2723019-b276-4212-b924-16e4fc0961e8",
+      "name": "Visionary content-based benchmark 20",
+      "status": "Completed",
+      "createdDate": "2025-11-09T07:56:07",
+      "updatedDate": "2026-01-22T08:22:27",
+      "owner": "Diana Rogers",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3674.54,
+      "description": "Gun stuff future."
+    },
+    {
+      "id": "3c5bcc9d-d120-4e6f-960a-b5d74f0a2be8",
+      "name": "Proactive hybrid monitoring 21",
+      "status": "Pending",
+      "createdDate": "2025-05-25T21:27:10",
+      "updatedDate": "2026-01-30T16:53:02",
+      "owner": "Alexandra Cameron",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4066.69,
+      "description": "Feeling rest paper above world choice."
+    },
+    {
+      "id": "aa2a0f08-d8fb-40fe-bda5-3953692aa0b2",
+      "name": "Horizontal analyzing approach 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-18T01:32:51",
+      "updatedDate": "2026-01-29T23:29:30",
+      "owner": "Mark Gonzales",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9444.39,
+      "description": "Serious something theory red house."
+    },
+    {
+      "id": "a3400357-30b9-4219-8ef9-62d8aa3cb280",
+      "name": "Adaptive context-sensitive toolset 23",
+      "status": "Inactive",
+      "createdDate": "2025-09-24T03:10:29",
+      "updatedDate": "2026-01-29T10:32:43",
+      "owner": "Alyssa Hawkins",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1679.06,
+      "description": "Most loss character physical magazine friend particular."
+    },
+    {
+      "id": "4f4d8e66-c3c5-4045-900b-db94b9be66bb",
+      "name": "Horizontal holistic Local Area Network 24",
+      "status": "Completed",
+      "createdDate": "2025-04-21T09:48:57",
+      "updatedDate": "2026-02-09T10:16:02",
+      "owner": "Barbara Molina",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5678.21,
+      "description": "Travel wonder myself soldier security."
+    },
+    {
+      "id": "44ab23f0-0b0c-4498-83bf-9cb2f83d529c",
+      "name": "Centralized intangible approach 25",
+      "status": "Completed",
+      "createdDate": "2025-07-17T05:06:46",
+      "updatedDate": "2026-02-15T10:29:45",
+      "owner": "Tina Vincent",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7191.95,
+      "description": "They seven career edge hold parent."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

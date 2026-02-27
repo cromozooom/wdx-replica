@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-statement",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 55,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "88de9917-261a-4aa0-bfcf-38321b0ee6fb",
+      "name": "Implemented modular paradigm 1",
+      "status": "Completed",
+      "createdDate": "2025-08-15T11:25:25",
+      "updatedDate": "2026-02-09T14:08:28",
+      "owner": "Kevin Scott",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5798.42,
+      "description": "Time painting help game."
+    },
+    {
+      "id": "1bcfae65-be06-4bc8-8abb-703dfdcca5cb",
+      "name": "Distributed solution-oriented function 2",
+      "status": "Completed",
+      "createdDate": "2025-05-29T03:59:27",
+      "updatedDate": "2026-02-05T01:44:11",
+      "owner": "Joseph Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4326.53,
+      "description": "Real course bring ten early within."
+    },
+    {
+      "id": "86b0dbb0-e644-4159-9d50-911d182019a0",
+      "name": "Future-proofed next generation instruction set 3",
+      "status": "Active",
+      "createdDate": "2025-07-22T07:06:36",
+      "updatedDate": "2026-02-10T00:37:50",
+      "owner": "Thomas Munoz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6726.5,
+      "description": "Unit amount throughout."
+    },
+    {
+      "id": "aa264a8f-618f-400d-bdfa-1526508d60d1",
+      "name": "Business-focused radical architecture 4",
+      "status": "Active",
+      "createdDate": "2025-12-24T03:36:35",
+      "updatedDate": "2026-02-13T05:22:16",
+      "owner": "Wesley Taylor",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8560.7,
+      "description": "Nature middle kind institution along mission."
+    },
+    {
+      "id": "dc92e19a-ae1b-4518-a058-5964940b13fa",
+      "name": "Distributed 24/7 framework 5",
+      "status": "Active",
+      "createdDate": "2025-10-13T01:09:13",
+      "updatedDate": "2026-01-28T02:59:22",
+      "owner": "Richard Russo",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2092.38,
+      "description": "Mouth at push."
+    },
+    {
+      "id": "0bc30bc9-a085-42a7-995e-9de93b88130f",
+      "name": "Organic foreground core 6",
+      "status": "Completed",
+      "createdDate": "2025-07-23T16:20:14",
+      "updatedDate": "2026-01-27T12:47:37",
+      "owner": "Kristi Wilson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3647.12,
+      "description": "Price station across each southern address guess."
+    },
+    {
+      "id": "ebae7d90-82bb-4039-84da-273fb24554b5",
+      "name": "Programmable zero tolerance matrix 7",
+      "status": "Active",
+      "createdDate": "2025-08-31T00:15:00",
+      "updatedDate": "2026-02-08T20:10:00",
+      "owner": "Michael Moore",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1940.2,
+      "description": "Candidate success focus high few."
+    },
+    {
+      "id": "f48bc175-3320-4b15-8cf2-35427efb405d",
+      "name": "Managed modular alliance 8",
+      "status": "Inactive",
+      "createdDate": "2025-08-03T15:24:39",
+      "updatedDate": "2026-02-09T06:56:07",
+      "owner": "Gregory Zimmerman",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3387.02,
+      "description": "Common hotel along."
+    },
+    {
+      "id": "bbfb6225-1477-4cf8-b3be-bcfbc9afbe34",
+      "name": "Progressive next generation analyzer 9",
+      "status": "Completed",
+      "createdDate": "2025-12-18T09:46:38",
+      "updatedDate": "2026-02-05T07:17:58",
+      "owner": "Richard Ellison",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4201.71,
+      "description": "Develop drop charge measure."
+    },
+    {
+      "id": "36c4a784-c5e2-420b-ac24-9227e64b10df",
+      "name": "Organic secondary data-warehouse 10",
+      "status": "Active",
+      "createdDate": "2025-05-29T10:33:43",
+      "updatedDate": "2026-01-28T06:26:07",
+      "owner": "David Barnett",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7085.98,
+      "description": "Half bed career."
+    },
+    {
+      "id": "7a62f0f7-fe58-45b0-88d0-06e00f8242e5",
+      "name": "Managed fresh-thinking ability 11",
+      "status": "Completed",
+      "createdDate": "2025-12-01T17:56:11",
+      "updatedDate": "2026-02-09T14:19:50",
+      "owner": "Cynthia Vazquez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3252.02,
+      "description": "Five upon moment benefit."
+    },
+    {
+      "id": "780df9d2-79f2-4eef-a862-4b192bed91a5",
+      "name": "Digitized modular forecast 12",
+      "status": "Completed",
+      "createdDate": "2025-07-03T14:31:08",
+      "updatedDate": "2026-02-04T04:17:24",
+      "owner": "Taylor Sosa",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1397.83,
+      "description": "Interesting effort democratic ask."
+    },
+    {
+      "id": "f378f42b-6d46-43ff-8273-bf33617795b6",
+      "name": "Profit-focused directional firmware 13",
+      "status": "Completed",
+      "createdDate": "2025-11-05T04:34:33",
+      "updatedDate": "2026-02-02T20:01:48",
+      "owner": "Sarah Gardner",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8927.96,
+      "description": "Analysis start same."
+    },
+    {
+      "id": "d224e913-0f1c-492b-a14a-ebd3b49040f1",
+      "name": "Synergistic next generation firmware 14",
+      "status": "Inactive",
+      "createdDate": "2025-11-07T09:03:47",
+      "updatedDate": "2026-02-12T03:53:34",
+      "owner": "Tammy Adkins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4967.24,
+      "description": "Affect would appear north myself dark."
+    },
+    {
+      "id": "3b636778-f36d-415b-8cdf-3b9f9727c854",
+      "name": "User-friendly upward-trending instruction set 15",
+      "status": "Active",
+      "createdDate": "2025-04-19T18:38:04",
+      "updatedDate": "2026-01-27T21:12:37",
+      "owner": "Sandra Brown",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7576.49,
+      "description": "Door job institution small defense."
+    },
+    {
+      "id": "32cd94ec-f328-49b5-b990-0c9bb0a434d6",
+      "name": "Enterprise-wide asynchronous architecture 16",
+      "status": "Pending",
+      "createdDate": "2025-12-09T12:29:46",
+      "updatedDate": "2026-02-17T08:17:17",
+      "owner": "Mrs. Lisa Pena",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5356.91,
+      "description": "Congress seek risk full."
+    },
+    {
+      "id": "eab87cba-5516-405c-afbe-d49c08ef1e0d",
+      "name": "Triple-buffered mission-critical middleware 17",
+      "status": "Inactive",
+      "createdDate": "2025-10-30T05:38:26",
+      "updatedDate": "2026-02-08T02:19:31",
+      "owner": "James Tran",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7634.06,
+      "description": "Method home example mother lose yet heart quickly."
+    },
+    {
+      "id": "4cda21dc-d476-48ee-b3b7-66ba88c5c92b",
+      "name": "Business-focused asymmetric parallelism 18",
+      "status": "Active",
+      "createdDate": "2025-03-09T20:51:20",
+      "updatedDate": "2026-02-15T01:13:11",
+      "owner": "Meghan Gaines",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8285.79,
+      "description": "Exactly series drug course American onto."
+    },
+    {
+      "id": "f453f07d-e833-48d3-80f2-59327a90e097",
+      "name": "Quality-focused regional archive 19",
+      "status": "Inactive",
+      "createdDate": "2025-09-15T09:45:03",
+      "updatedDate": "2026-02-06T12:26:18",
+      "owner": "Robert Robbins MD",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1704.62,
+      "description": "Wrong attack energy affect."
+    },
+    {
+      "id": "ff05de5f-a370-4bb0-91f3-304a3783c939",
+      "name": "Automated cohesive functionalities 20",
+      "status": "Pending",
+      "createdDate": "2025-09-09T08:32:03",
+      "updatedDate": "2026-02-03T07:41:25",
+      "owner": "Alexandra Griffith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6488.18,
+      "description": "Everybody what next job sport."
+    },
+    {
+      "id": "bcca69f1-222c-4e8b-a3f9-3f5cf331e18b",
+      "name": "Total human-resource strategy 21",
+      "status": "Pending",
+      "createdDate": "2025-09-08T10:11:12",
+      "updatedDate": "2026-01-31T23:34:14",
+      "owner": "Amy Strickland",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 213.25,
+      "description": "Top life law be example."
+    },
+    {
+      "id": "b5710799-aec8-43e7-aa54-2ae75bacd0c6",
+      "name": "Managed dynamic encoding 22",
+      "status": "Completed",
+      "createdDate": "2025-11-25T10:34:16",
+      "updatedDate": "2026-01-25T09:04:15",
+      "owner": "Hannah Jenkins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5776.85,
+      "description": "Rather kind prevent because."
+    },
+    {
+      "id": "d2ba9349-ed11-447b-8b4c-78e5918af4d2",
+      "name": "Synchronized systemic data-warehouse 23",
+      "status": "Completed",
+      "createdDate": "2025-05-23T00:22:16",
+      "updatedDate": "2026-02-14T04:30:49",
+      "owner": "Maria Perez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6754.87,
+      "description": "Maintain water work without oil."
+    },
+    {
+      "id": "139b1a4d-4d85-49a5-8a75-5a270bee3959",
+      "name": "Integrated optimizing system engine 24",
+      "status": "Completed",
+      "createdDate": "2025-11-30T06:25:43",
+      "updatedDate": "2026-01-22T14:36:57",
+      "owner": "Eduardo Andrews",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6495.61,
+      "description": "Industry better human hotel yes whole."
+    },
+    {
+      "id": "b1f90e53-b666-490e-9dce-f6665d217a35",
+      "name": "Extended even-keeled utilization 25",
+      "status": "Completed",
+      "createdDate": "2025-12-15T21:53:26",
+      "updatedDate": "2026-02-03T15:13:54",
+      "owner": "Richard Joyce",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6728.28,
+      "description": "Important car hold red player."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

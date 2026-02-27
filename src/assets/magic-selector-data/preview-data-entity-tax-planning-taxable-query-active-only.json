@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-active-only",
+  "totalCount": 150,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "fecbf7ef-7875-4152-a3ad-8aee1539721b",
+      "name": "Secured asymmetric time-frame 1",
+      "status": "Inactive",
+      "createdDate": "2025-07-06T17:38:50",
+      "updatedDate": "2026-02-14T22:13:38",
+      "owner": "Jason Anderson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8482.45,
+      "description": "Now million hospital memory care later politics drug."
+    },
+    {
+      "id": "6b0249f2-d913-4706-a5cd-790742d5d09c",
+      "name": "Future-proofed didactic workforce 2",
+      "status": "Pending",
+      "createdDate": "2025-07-28T02:25:12",
+      "updatedDate": "2026-02-11T06:12:38",
+      "owner": "Jamie Collins",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4498.14,
+      "description": "Sing beyond very stand our place appear."
+    },
+    {
+      "id": "5a431fe8-3537-4b07-bcbc-d4c23ac6073c",
+      "name": "Up-sized explicit software 3",
+      "status": "Active",
+      "createdDate": "2025-12-17T21:22:47",
+      "updatedDate": "2026-02-07T00:42:59",
+      "owner": "Andrew Martin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 655.79,
+      "description": "Officer here together we drop yeah financial."
+    },
+    {
+      "id": "df2c39ba-4eeb-4bbc-aada-56c058305d4f",
+      "name": "Configurable explicit throughput 4",
+      "status": "Active",
+      "createdDate": "2025-06-05T16:27:46",
+      "updatedDate": "2026-01-24T01:15:39",
+      "owner": "Brent Jenkins",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 290.4,
+      "description": "Military argue nature candidate door."
+    },
+    {
+      "id": "be680946-5eac-46ca-a43a-17c8608d85cd",
+      "name": "Inverse optimal collaboration 5",
+      "status": "Active",
+      "createdDate": "2025-11-27T14:50:07",
+      "updatedDate": "2026-01-27T12:14:27",
+      "owner": "Eric Bush",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4306.11,
+      "description": "Choice available today something senior record."
+    },
+    {
+      "id": "1452eab9-835b-45c2-b868-d245f9ab9af7",
+      "name": "Profound zero administration help-desk 6",
+      "status": "Inactive",
+      "createdDate": "2025-03-25T14:57:19",
+      "updatedDate": "2026-02-09T19:02:15",
+      "owner": "David Brock",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6773.92,
+      "description": "Evidence although where man exactly."
+    },
+    {
+      "id": "00156074-64ad-4d8c-87d7-1ec2ff801f09",
+      "name": "Face-to-face foreground project 7",
+      "status": "Completed",
+      "createdDate": "2025-07-19T00:05:15",
+      "updatedDate": "2026-02-16T09:59:13",
+      "owner": "Karen Carr",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 564.3,
+      "description": "Born back personal."
+    },
+    {
+      "id": "b513f006-468f-47e5-a735-37924d5d57a7",
+      "name": "Robust directional help-desk 8",
+      "status": "Active",
+      "createdDate": "2025-12-17T19:01:48",
+      "updatedDate": "2026-01-28T04:53:41",
+      "owner": "Megan Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3622.81,
+      "description": "Final hospital high claim dark."
+    },
+    {
+      "id": "fc04cf2e-0808-4d9f-af5f-103e81706a94",
+      "name": "Mandatory optimal collaboration 9",
+      "status": "Inactive",
+      "createdDate": "2025-05-07T21:16:42",
+      "updatedDate": "2026-01-19T01:03:47",
+      "owner": "Drew Ramos",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2173.02,
+      "description": "Young bed live."
+    },
+    {
+      "id": "2b5280fc-bd50-485a-a4b5-6fc327d2e735",
+      "name": "Multi-channeled radical paradigm 10",
+      "status": "Active",
+      "createdDate": "2025-05-22T07:13:13",
+      "updatedDate": "2026-01-25T05:26:38",
+      "owner": "Denise Sampson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3892.26,
+      "description": "Task tonight population brother approach around remember."
+    },
+    {
+      "id": "701d2308-9d36-4f94-a2c6-0a012dd1e4d8",
+      "name": "Multi-lateral next generation migration 11",
+      "status": "Active",
+      "createdDate": "2025-03-14T21:02:04",
+      "updatedDate": "2026-01-24T08:44:41",
+      "owner": "Kelly Fritz",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1241.32,
+      "description": "Get rule collection."
+    },
+    {
+      "id": "f9c82457-f111-4b43-95ed-4a59169302ba",
+      "name": "Multi-lateral fault-tolerant capability 12",
+      "status": "Completed",
+      "createdDate": "2026-02-08T15:56:01",
+      "updatedDate": "2026-01-18T15:49:38",
+      "owner": "Natalie Martin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2562.79,
+      "description": "Too mission very sense nation simple probably."
+    },
+    {
+      "id": "854791c5-d7fb-464a-8cd7-3f96d392a459",
+      "name": "Adaptive asynchronous conglomeration 13",
+      "status": "Pending",
+      "createdDate": "2025-04-29T23:44:23",
+      "updatedDate": "2026-01-26T18:21:33",
+      "owner": "Michael Simpson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3424.51,
+      "description": "Whatever PM born great PM say month."
+    },
+    {
+      "id": "ab6932c8-63c0-4e1a-9e61-d5bbb34ca45f",
+      "name": "Multi-tiered responsive process improvement 14",
+      "status": "Inactive",
+      "createdDate": "2025-04-27T12:12:42",
+      "updatedDate": "2026-01-27T15:28:08",
+      "owner": "Rachel Ramirez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3848.49,
+      "description": "Sell way first remain."
+    },
+    {
+      "id": "897223d5-175d-454d-a55c-b889a888f50d",
+      "name": "Intuitive dynamic concept 15",
+      "status": "Pending",
+      "createdDate": "2025-05-26T21:49:42",
+      "updatedDate": "2026-01-20T03:35:48",
+      "owner": "Carrie Daniel",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3132.04,
+      "description": "Upon religious wife management."
+    },
+    {
+      "id": "eecd0a8f-7d40-4a24-8675-509fa3250c02",
+      "name": "Self-enabling static forecast 16",
+      "status": "Inactive",
+      "createdDate": "2025-06-12T05:11:54",
+      "updatedDate": "2026-01-18T12:04:17",
+      "owner": "Alicia Acosta",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8937.17,
+      "description": "And glass center soldier doctor without main."
+    },
+    {
+      "id": "c1ad36c6-2578-45c5-aa3e-7f798e5147b9",
+      "name": "Managed leadingedge success 17",
+      "status": "Pending",
+      "createdDate": "2025-09-09T05:13:28",
+      "updatedDate": "2026-01-31T13:31:00",
+      "owner": "Rhonda Wilson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2684.14,
+      "description": "Hotel positive bring wind."
+    },
+    {
+      "id": "2c595b01-e701-46a8-8a36-6060c33a3058",
+      "name": "Inverse interactive collaboration 18",
+      "status": "Completed",
+      "createdDate": "2026-02-14T08:02:40",
+      "updatedDate": "2026-01-19T16:36:05",
+      "owner": "Alexandra White",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7618.3,
+      "description": "Very kitchen several individual."
+    },
+    {
+      "id": "95844a26-9a86-40b8-8446-c7b4534c7e05",
+      "name": "Enterprise-wide methodical standardization 19",
+      "status": "Inactive",
+      "createdDate": "2025-12-01T01:07:30",
+      "updatedDate": "2026-02-12T15:00:01",
+      "owner": "Nancy Phillips",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 536.3,
+      "description": "Water cover once resource ten happy."
+    },
+    {
+      "id": "9f5ff887-1d43-4077-9459-3a51d0c5d56f",
+      "name": "Multi-lateral grid-enabled artificial intelligence 20",
+      "status": "Inactive",
+      "createdDate": "2025-03-31T18:59:46",
+      "updatedDate": "2026-02-15T23:44:29",
+      "owner": "Charles Powell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8843.45,
+      "description": "Management account different old."
+    },
+    {
+      "id": "a8ce347d-6546-440a-8824-f5fde7e24f58",
+      "name": "Persistent cohesive structure 21",
+      "status": "Inactive",
+      "createdDate": "2026-01-02T20:23:50",
+      "updatedDate": "2026-01-20T16:26:05",
+      "owner": "Barry Williams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7586.02,
+      "description": "Either usually media those."
+    },
+    {
+      "id": "a70b94d7-9c9b-4cf3-8c06-37c173a56077",
+      "name": "Monitored radical leverage 22",
+      "status": "Completed",
+      "createdDate": "2025-10-08T14:30:10",
+      "updatedDate": "2026-02-07T13:28:41",
+      "owner": "Lawrence Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3332.64,
+      "description": "Expect easy million direction."
+    },
+    {
+      "id": "3ca728b6-38b8-419e-8fdf-9109bff7b5ce",
+      "name": "Organized neutral alliance 23",
+      "status": "Inactive",
+      "createdDate": "2025-04-05T04:30:56",
+      "updatedDate": "2026-02-11T00:28:20",
+      "owner": "Matthew Woods",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9128.32,
+      "description": "Summer forward white instead writer program address."
+    },
+    {
+      "id": "3580485b-893e-4fd2-bc53-3deb7dd28a69",
+      "name": "Reduced background middleware 24",
+      "status": "Active",
+      "createdDate": "2025-06-25T03:18:23",
+      "updatedDate": "2026-01-24T04:33:23",
+      "owner": "Frank Bates",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8032.16,
+      "description": "Ground federal produce effect physical everybody hospital structure."
+    },
+    {
+      "id": "a6b876ef-fad7-472b-9aa6-0041185d42b9",
+      "name": "Automated dedicated matrix 25",
+      "status": "Active",
+      "createdDate": "2025-05-08T21:31:01",
+      "updatedDate": "2026-02-04T08:17:04",
+      "owner": "Elizabeth Munoz",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6674.6,
+      "description": "Call treatment treat source economic high."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-analysis",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 397,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3d47e1be-f214-49bb-ba9c-02c0e565803e",
+      "name": "Triple-buffered attitude-oriented product 1",
+      "status": "Active",
+      "createdDate": "2025-09-02T23:56:51",
+      "updatedDate": "2026-01-24T16:37:30",
+      "owner": "Mr. Carlos Hamilton",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3218.58,
+      "description": "Nothing door writer north billion."
+    },
+    {
+      "id": "7d1f368e-1f26-4460-badd-c44cba4c6af5",
+      "name": "Decentralized dedicated throughput 2",
+      "status": "Inactive",
+      "createdDate": "2025-03-08T06:26:32",
+      "updatedDate": "2026-01-27T02:25:49",
+      "owner": "Andrea Huang DVM",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4083.14,
+      "description": "Media out with dog red almost life."
+    },
+    {
+      "id": "e9131a32-e7d6-43ee-99b8-48c494887ca4",
+      "name": "Right-sized multi-tasking strategy 3",
+      "status": "Completed",
+      "createdDate": "2025-03-20T23:30:04",
+      "updatedDate": "2026-02-11T02:17:51",
+      "owner": "Crystal Robertson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3742.5,
+      "description": "Long hand pattern address program away good."
+    },
+    {
+      "id": "6705e3dc-9fe5-4117-a88d-f03a9fb194c6",
+      "name": "Down-sized foreground intranet 4",
+      "status": "Completed",
+      "createdDate": "2025-09-12T00:30:54",
+      "updatedDate": "2026-01-27T00:03:10",
+      "owner": "Mrs. Elizabeth Hall",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6917.48,
+      "description": "Back up term present."
+    },
+    {
+      "id": "223f6e21-3a6d-440e-834e-57d79bf0a724",
+      "name": "Distributed system-worthy knowledgebase 5",
+      "status": "Inactive",
+      "createdDate": "2025-03-10T07:36:26",
+      "updatedDate": "2026-02-01T18:15:12",
+      "owner": "Raymond Santana",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9938.0,
+      "description": "Quality perform whom one evidence agent."
+    },
+    {
+      "id": "71239a3f-2b82-4536-a2d1-eb2e842ea27d",
+      "name": "Profit-focused responsive neural-net 6",
+      "status": "Pending",
+      "createdDate": "2025-07-26T13:50:45",
+      "updatedDate": "2026-02-14T19:47:33",
+      "owner": "Thomas Caldwell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 532.42,
+      "description": "Air cold sea fill box."
+    },
+    {
+      "id": "68db55fc-3575-4471-9ec5-bd475639392d",
+      "name": "Sharable composite interface 7",
+      "status": "Pending",
+      "createdDate": "2025-07-28T20:17:57",
+      "updatedDate": "2026-02-11T11:23:28",
+      "owner": "Jeremy Davies",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2071.65,
+      "description": "Teacher allow while statement attention wish."
+    },
+    {
+      "id": "b5568413-abe9-412c-9050-81090cfeca07",
+      "name": "Face-to-face zero-defect implementation 8",
+      "status": "Inactive",
+      "createdDate": "2025-03-31T11:43:35",
+      "updatedDate": "2026-01-18T21:38:34",
+      "owner": "Leslie Hurley",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2671.1,
+      "description": "Play culture certainly position relate."
+    },
+    {
+      "id": "c65f125c-36ab-4a5c-9265-a047c12a8554",
+      "name": "Profound empowering matrices 9",
+      "status": "Completed",
+      "createdDate": "2025-06-10T16:13:05",
+      "updatedDate": "2026-02-02T02:51:21",
+      "owner": "Robert Garrison",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8616.02,
+      "description": "Purpose me them forward suffer."
+    },
+    {
+      "id": "a9c108e4-c29c-4f7e-a6ba-7cc0b7618911",
+      "name": "Versatile mobile knowledgebase 10",
+      "status": "Active",
+      "createdDate": "2025-12-25T22:26:05",
+      "updatedDate": "2026-01-20T07:28:12",
+      "owner": "Jacqueline Ellis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5562.12,
+      "description": "Capital play do call peace."
+    },
+    {
+      "id": "a21cf6e7-512c-4ad6-a918-0e6148f9653c",
+      "name": "Quality-focused regional artificial intelligence 11",
+      "status": "Inactive",
+      "createdDate": "2025-05-04T22:35:06",
+      "updatedDate": "2026-02-09T23:03:50",
+      "owner": "Natasha Mckenzie",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7808.28,
+      "description": "Part star traditional get responsibility professional beautiful."
+    },
+    {
+      "id": "1bc0043d-bcfd-4319-bf09-9cdfa1c115de",
+      "name": "Seamless optimal product 12",
+      "status": "Active",
+      "createdDate": "2025-04-17T10:41:54",
+      "updatedDate": "2026-01-26T12:38:27",
+      "owner": "Julie Barron DDS",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4810.43,
+      "description": "Degree audience go someone thought life wish."
+    },
+    {
+      "id": "bd643348-e495-4751-8f80-f481f8a4e15e",
+      "name": "Intuitive real-time approach 13",
+      "status": "Completed",
+      "createdDate": "2025-11-20T17:39:17",
+      "updatedDate": "2026-02-16T17:55:07",
+      "owner": "Patricia Flores",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9046.06,
+      "description": "Behind baby tree your standard true exactly item."
+    },
+    {
+      "id": "77a1dd12-c1f5-49fc-a5db-e8dd12d9e0ba",
+      "name": "Polarized fresh-thinking complexity 14",
+      "status": "Inactive",
+      "createdDate": "2025-10-29T14:45:56",
+      "updatedDate": "2026-02-12T19:35:42",
+      "owner": "Crystal Green DVM",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5804.13,
+      "description": "Sell best Democrat watch art."
+    },
+    {
+      "id": "faeae7c3-e147-47ce-b3f0-a2fc1c3fe457",
+      "name": "Enterprise-wide incremental secured line 15",
+      "status": "Completed",
+      "createdDate": "2025-05-29T15:22:56",
+      "updatedDate": "2026-02-05T03:11:39",
+      "owner": "Sharon Chapman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4715.67,
+      "description": "Miss control consumer structure arm adult stand box."
+    },
+    {
+      "id": "93bfef17-300a-4555-8940-a6056c5d4f27",
+      "name": "Operative didactic access 16",
+      "status": "Active",
+      "createdDate": "2025-12-18T12:38:17",
+      "updatedDate": "2026-02-09T01:07:06",
+      "owner": "Douglas Hoover PhD",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3165.18,
+      "description": "Political green anyone official soldier."
+    },
+    {
+      "id": "a7603cc1-994c-4083-86bf-2f2ca68e983b",
+      "name": "Persevering interactive synergy 17",
+      "status": "Completed",
+      "createdDate": "2025-03-27T02:07:47",
+      "updatedDate": "2026-02-12T20:24:59",
+      "owner": "Megan Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6148.4,
+      "description": "Close response station issue else focus."
+    },
+    {
+      "id": "380d38d2-30a2-4057-9b3c-fa55bb7b3e75",
+      "name": "Expanded high-level synergy 18",
+      "status": "Active",
+      "createdDate": "2025-08-22T15:04:16",
+      "updatedDate": "2026-01-21T11:22:31",
+      "owner": "Christina Henderson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 738.45,
+      "description": "Reveal well entire include."
+    },
+    {
+      "id": "28b5de73-f1de-4a73-8d20-2cd0a6050c12",
+      "name": "Customer-focused 3rdgeneration flexibility 19",
+      "status": "Completed",
+      "createdDate": "2025-11-11T06:44:15",
+      "updatedDate": "2026-02-15T14:54:57",
+      "owner": "Leslie Lowe",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1339.09,
+      "description": "Response after right decide name contain."
+    },
+    {
+      "id": "875e08e7-a9a9-4a94-b63b-cc4f5a4bf437",
+      "name": "Proactive dynamic leverage 20",
+      "status": "Pending",
+      "createdDate": "2025-10-04T23:46:57",
+      "updatedDate": "2026-02-08T12:08:17",
+      "owner": "Margaret Yates",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9407.16,
+      "description": "During politics effect stuff Democrat management medical."
+    },
+    {
+      "id": "f015d7f6-af06-4c62-b416-5a7123daba7c",
+      "name": "Synergized 24hour initiative 21",
+      "status": "Pending",
+      "createdDate": "2025-09-11T20:31:44",
+      "updatedDate": "2026-01-30T20:16:02",
+      "owner": "Bruce Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8239.21,
+      "description": "American while wife attorney."
+    },
+    {
+      "id": "a6d18c19-83c2-4388-898d-95c8da124f36",
+      "name": "Advanced reciprocal workforce 22",
+      "status": "Pending",
+      "createdDate": "2025-12-04T14:49:04",
+      "updatedDate": "2026-01-19T12:04:10",
+      "owner": "Lacey Chavez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5927.05,
+      "description": "Somebody several need."
+    },
+    {
+      "id": "65b3b0a7-55f9-410e-acb8-446bbbf8192c",
+      "name": "Distributed 4thgeneration approach 23",
+      "status": "Active",
+      "createdDate": "2025-09-14T14:17:12",
+      "updatedDate": "2026-01-30T17:39:34",
+      "owner": "Michael Perez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4507.91,
+      "description": "Without more difference out dinner."
+    },
+    {
+      "id": "6bfeaa29-074b-4f9e-9a8d-917e6aa4ca59",
+      "name": "Profit-focused non-volatile matrices 24",
+      "status": "Inactive",
+      "createdDate": "2025-09-08T16:03:10",
+      "updatedDate": "2026-01-29T00:36:27",
+      "owner": "Stephanie Cox",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3574.67,
+      "description": "So group might here weight price."
+    },
+    {
+      "id": "cf8ea92f-e27c-41c6-a00c-84b03b35ced1",
+      "name": "Stand-alone homogeneous data-warehouse 25",
+      "status": "Active",
+      "createdDate": "2025-08-26T22:15:15",
+      "updatedDate": "2026-01-21T12:28:15",
+      "owner": "Jessica Martin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7030.53,
+      "description": "Kind each television firm rest soon."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 545,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "580dc098-716a-4eea-b105-9f82a317efdc",
+      "name": "Optimized 5thgeneration focus group 1",
+      "status": "Completed",
+      "createdDate": "2025-04-19T21:36:24",
+      "updatedDate": "2026-01-30T03:10:03",
+      "owner": "Deborah Garcia",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9801.12,
+      "description": "Girl rock notice natural child."
+    },
+    {
+      "id": "ebe30b0a-1df2-4b1b-9df9-1a259f06c897",
+      "name": "Persevering full-range hub 2",
+      "status": "Inactive",
+      "createdDate": "2025-03-07T00:39:25",
+      "updatedDate": "2026-01-24T01:49:23",
+      "owner": "Matthew Patterson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6007.1,
+      "description": "Everyone record large ground movie hear toward."
+    },
+    {
+      "id": "4ea2448e-500d-405d-bfdf-9a5f25d2928c",
+      "name": "Devolved zero tolerance website 3",
+      "status": "Inactive",
+      "createdDate": "2025-09-16T07:16:34",
+      "updatedDate": "2026-02-14T00:11:11",
+      "owner": "Brian Mendoza",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 833.05,
+      "description": "Resource religious follow traditional another arm different."
+    },
+    {
+      "id": "3f819859-3220-479e-b384-e6fe6ad7852e",
+      "name": "Organic empowering functionalities 4",
+      "status": "Active",
+      "createdDate": "2025-11-12T11:22:59",
+      "updatedDate": "2026-02-10T08:12:27",
+      "owner": "Jennifer Johnson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2436.89,
+      "description": "Foreign finish describe tax Congress no guy."
+    },
+    {
+      "id": "8baf9c6a-0938-4b04-b88c-3156f3e31f6e",
+      "name": "Centralized fresh-thinking groupware 5",
+      "status": "Active",
+      "createdDate": "2026-02-07T03:10:56",
+      "updatedDate": "2026-02-06T02:28:16",
+      "owner": "Billy Hamilton",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9461.68,
+      "description": "Garden husband point continue manager civil modern."
+    },
+    {
+      "id": "705c0b3d-4568-48f4-a6f6-3864e3c80056",
+      "name": "Universal fresh-thinking hardware 6",
+      "status": "Pending",
+      "createdDate": "2025-05-11T17:14:30",
+      "updatedDate": "2026-01-20T23:55:36",
+      "owner": "Amy Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8629.81,
+      "description": "Chair offer oil figure space police."
+    },
+    {
+      "id": "1162b6eb-1b54-4481-8bb4-81ae7398a1f1",
+      "name": "Pre-emptive incremental hardware 7",
+      "status": "Active",
+      "createdDate": "2025-07-13T21:51:16",
+      "updatedDate": "2026-01-29T23:10:55",
+      "owner": "James Hubbard",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5279.06,
+      "description": "Life teacher remain service step sing enough."
+    },
+    {
+      "id": "2a86b2bc-4af9-4c09-bf0e-bb71024e9efa",
+      "name": "Focused exuding framework 8",
+      "status": "Active",
+      "createdDate": "2025-04-30T21:30:34",
+      "updatedDate": "2026-01-27T21:22:10",
+      "owner": "Meredith Lane",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5574.88,
+      "description": "Audience resource institution carry."
+    },
+    {
+      "id": "01b8abca-cc01-433b-b66f-1145cb4df1f7",
+      "name": "Multi-channeled leadingedge forecast 9",
+      "status": "Active",
+      "createdDate": "2026-01-03T22:45:30",
+      "updatedDate": "2026-02-04T08:54:50",
+      "owner": "Matthew Freeman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7127.46,
+      "description": "Than sure part."
+    },
+    {
+      "id": "40db90b5-8953-43b6-8b9e-a672d3b2c24f",
+      "name": "Expanded actuating groupware 10",
+      "status": "Pending",
+      "createdDate": "2026-02-10T13:26:11",
+      "updatedDate": "2026-01-25T22:43:32",
+      "owner": "George Ewing",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7358.55,
+      "description": "Move worry hit son miss when."
+    },
+    {
+      "id": "fcc4e909-d223-4e6c-a4dc-7c784da5d5ff",
+      "name": "Integrated exuding alliance 11",
+      "status": "Pending",
+      "createdDate": "2025-10-25T03:52:02",
+      "updatedDate": "2026-01-31T12:48:34",
+      "owner": "Daniel Owens",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7264.76,
+      "description": "Wide full part."
+    },
+    {
+      "id": "3f03afcc-8ceb-44aa-9648-69f778f8234c",
+      "name": "Streamlined transitional methodology 12",
+      "status": "Inactive",
+      "createdDate": "2026-01-22T23:18:12",
+      "updatedDate": "2026-01-20T16:39:58",
+      "owner": "Mark Pierce",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9113.83,
+      "description": "Treat recent half significant fire almost."
+    },
+    {
+      "id": "e9818ada-faf4-40bc-b099-215dc9cbc2ae",
+      "name": "Multi-tiered leadingedge workforce 13",
+      "status": "Pending",
+      "createdDate": "2025-08-16T23:03:00",
+      "updatedDate": "2026-01-22T11:22:51",
+      "owner": "Tim Werner",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9408.32,
+      "description": "Specific true sport teach."
+    },
+    {
+      "id": "ae5b0719-25ee-4cf1-b3ae-11acaf25f8b3",
+      "name": "Function-based exuding implementation 14",
+      "status": "Pending",
+      "createdDate": "2025-11-10T22:23:03",
+      "updatedDate": "2026-02-02T15:43:37",
+      "owner": "Misty Graves",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9796.18,
+      "description": "Position senior friend admit direction attorney loss."
+    },
+    {
+      "id": "61584bed-d066-4dfc-a8be-853d9f7ed00b",
+      "name": "Sharable human-resource firmware 15",
+      "status": "Completed",
+      "createdDate": "2025-11-15T07:25:57",
+      "updatedDate": "2026-02-08T06:09:22",
+      "owner": "Martha Crawford",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4143.64,
+      "description": "Discuss another view entire bank."
+    },
+    {
+      "id": "755a0ce9-7a97-48ac-bf84-a238559bc56a",
+      "name": "Proactive 6thgeneration synergy 16",
+      "status": "Inactive",
+      "createdDate": "2025-06-19T06:13:30",
+      "updatedDate": "2026-01-26T04:10:24",
+      "owner": "Samuel Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2471.64,
+      "description": "Stock speak well east."
+    },
+    {
+      "id": "3bf6707b-8f77-4c1a-98f3-2dd00748191c",
+      "name": "Stand-alone stable time-frame 17",
+      "status": "Completed",
+      "createdDate": "2026-02-05T03:23:11",
+      "updatedDate": "2026-02-16T21:17:35",
+      "owner": "James Elliott",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7716.24,
+      "description": "Dinner them newspaper upon card."
+    },
+    {
+      "id": "539773da-d890-4208-a5c9-7c144d44b35a",
+      "name": "Synergized homogeneous open architecture 18",
+      "status": "Inactive",
+      "createdDate": "2025-11-19T06:50:55",
+      "updatedDate": "2026-02-11T14:19:18",
+      "owner": "Brittany Reynolds",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2827.53,
+      "description": "Stand deal now art doctor surface."
+    },
+    {
+      "id": "70580805-ebfb-4811-854c-b8a77c62886e",
+      "name": "Realigned upward-trending access 19",
+      "status": "Active",
+      "createdDate": "2025-07-25T05:47:11",
+      "updatedDate": "2026-01-30T07:58:02",
+      "owner": "Colton Harrison",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7793.88,
+      "description": "Similar official garden usually politics raise day."
+    },
+    {
+      "id": "67b25658-3b9d-4a2a-9493-16e92fb5fcbe",
+      "name": "Polarized homogeneous attitude 20",
+      "status": "Completed",
+      "createdDate": "2025-04-21T23:12:44",
+      "updatedDate": "2026-02-02T01:07:45",
+      "owner": "Tara Jenkins",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7264.55,
+      "description": "Huge smile enough support stock talk thousand."
+    },
+    {
+      "id": "6684f269-98c0-4d2d-844c-e7c397344c6b",
+      "name": "Versatile systematic knowledgebase 21",
+      "status": "Active",
+      "createdDate": "2025-06-18T13:41:01",
+      "updatedDate": "2026-02-05T12:28:54",
+      "owner": "Danny Cuevas",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2413.7,
+      "description": "Set house skin situation important quality."
+    },
+    {
+      "id": "c30dc7f1-7c2d-4198-8889-9e36425b3ca2",
+      "name": "Multi-tiered upward-trending hierarchy 22",
+      "status": "Pending",
+      "createdDate": "2025-05-19T03:52:08",
+      "updatedDate": "2026-02-05T08:08:31",
+      "owner": "Lisa Walker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5054.06,
+      "description": "Low sport more budget agency bank police those."
+    },
+    {
+      "id": "42f53839-436a-44e7-8f68-5177e94caf24",
+      "name": "Pre-emptive fault-tolerant middleware 23",
+      "status": "Inactive",
+      "createdDate": "2026-02-07T06:27:59",
+      "updatedDate": "2026-01-29T18:23:39",
+      "owner": "Nathan Sheppard",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1150.67,
+      "description": "Very happen season reveal."
+    },
+    {
+      "id": "36b7fda2-2160-403f-9c86-b66bc3009e60",
+      "name": "De-engineered composite infrastructure 24",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T14:50:25",
+      "updatedDate": "2026-01-30T19:53:51",
+      "owner": "Donald Walker",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4571.29,
+      "description": "Full week civil story tough under trip."
+    },
+    {
+      "id": "df4242ba-6369-4796-9776-9994fbc9848b",
+      "name": "Business-focused responsive analyzer 25",
+      "status": "Completed",
+      "createdDate": "2025-12-03T11:36:16",
+      "updatedDate": "2026-01-20T00:02:40",
+      "owner": "Vernon Francis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8865.41,
+      "description": "Per level soldier leader into live culture certainly."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

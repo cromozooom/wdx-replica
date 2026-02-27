@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 922,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "dc003aa9-13e6-4079-ac57-34775400e819",
+      "name": "Pre-emptive full-range product 1",
+      "status": "Active",
+      "createdDate": "2025-11-20T22:42:03",
+      "updatedDate": "2026-02-04T15:34:36",
+      "owner": "Jasmine Salazar",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6277.92,
+      "description": "To daughter still million."
+    },
+    {
+      "id": "c5017d5b-73eb-4d87-8bbe-15a267556786",
+      "name": "Multi-layered mission-critical task-force 2",
+      "status": "Active",
+      "createdDate": "2025-03-31T17:18:29",
+      "updatedDate": "2026-02-03T19:56:41",
+      "owner": "Joseph Graham",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2016.29,
+      "description": "Number reason man capital public under country my."
+    },
+    {
+      "id": "8c43292f-ae22-475a-ae6e-570c5d4d4819",
+      "name": "Quality-focused 4thgeneration core 3",
+      "status": "Completed",
+      "createdDate": "2025-03-07T23:26:49",
+      "updatedDate": "2026-02-17T07:18:55",
+      "owner": "Barry Grant",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4991.31,
+      "description": "Term notice discover health health."
+    },
+    {
+      "id": "9e3103f1-c378-4300-94b7-6acac358c56a",
+      "name": "Self-enabling responsive encoding 4",
+      "status": "Inactive",
+      "createdDate": "2026-01-21T09:49:10",
+      "updatedDate": "2026-01-29T22:31:25",
+      "owner": "Matthew Thompson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3706.87,
+      "description": "Job religious information hope."
+    },
+    {
+      "id": "753c3542-10fe-4afd-b9fc-505935abc626",
+      "name": "Multi-layered uniform access 5",
+      "status": "Active",
+      "createdDate": "2025-07-22T08:06:55",
+      "updatedDate": "2026-01-28T07:09:45",
+      "owner": "Regina Waller",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5160.66,
+      "description": "Real health door he peace time."
+    },
+    {
+      "id": "90e99156-c064-416e-83b6-791a97b3d9a7",
+      "name": "Grass-roots secondary initiative 6",
+      "status": "Completed",
+      "createdDate": "2025-05-13T15:00:08",
+      "updatedDate": "2026-01-18T21:03:44",
+      "owner": "Keith Peterson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 181.45,
+      "description": "Plant growth pattern."
+    },
+    {
+      "id": "9e0d09df-4a4b-4f32-b1bc-ce837c69dbf5",
+      "name": "Inverse logistical Local Area Network 7",
+      "status": "Active",
+      "createdDate": "2025-07-15T09:08:44",
+      "updatedDate": "2026-01-21T05:15:57",
+      "owner": "Steve Adams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8054.09,
+      "description": "Voice point exist kind."
+    },
+    {
+      "id": "f4dbd4f1-5745-46f5-879e-8ad3eea635b1",
+      "name": "Innovative maximized approach 8",
+      "status": "Pending",
+      "createdDate": "2025-02-18T19:20:47",
+      "updatedDate": "2026-02-12T23:57:59",
+      "owner": "James Carrillo",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6843.26,
+      "description": "Phone since responsibility represent."
+    },
+    {
+      "id": "e3a60d0d-7a12-4220-90a2-37db4de6fe40",
+      "name": "Proactive maximized extranet 9",
+      "status": "Active",
+      "createdDate": "2025-12-04T21:21:34",
+      "updatedDate": "2026-02-08T02:06:37",
+      "owner": "Ryan Brock",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8359.48,
+      "description": "Writer quite white deep."
+    },
+    {
+      "id": "ed84c40d-f5f0-4af4-9206-3dfc8b18ccc7",
+      "name": "Managed 24/7 paradigm 10",
+      "status": "Inactive",
+      "createdDate": "2025-07-08T07:12:32",
+      "updatedDate": "2026-01-24T22:12:27",
+      "owner": "Amy James",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9210.87,
+      "description": "Others hand stuff with."
+    },
+    {
+      "id": "6efccf13-ada4-4a31-9f32-b2dd927c3b3c",
+      "name": "Programmable logistical utilization 11",
+      "status": "Inactive",
+      "createdDate": "2025-12-29T23:18:29",
+      "updatedDate": "2026-01-31T23:44:00",
+      "owner": "James Sullivan",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8980.24,
+      "description": "Owner room star."
+    },
+    {
+      "id": "fedf1675-e963-4344-a7f9-b83e3dda6237",
+      "name": "Proactive dynamic groupware 12",
+      "status": "Inactive",
+      "createdDate": "2025-09-05T06:49:44",
+      "updatedDate": "2026-02-16T09:13:43",
+      "owner": "David Hudson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7934.21,
+      "description": "Development return probably size see this mission your."
+    },
+    {
+      "id": "07561b09-8f49-452a-86f3-9b1ba2173d1a",
+      "name": "User-friendly optimizing productivity 13",
+      "status": "Completed",
+      "createdDate": "2025-09-26T11:33:48",
+      "updatedDate": "2026-02-08T09:03:07",
+      "owner": "Wesley Wells",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6594.32,
+      "description": "Later care short already development stay debate interview."
+    },
+    {
+      "id": "5d2e131b-4dcf-4c01-86a0-311cf8c5a964",
+      "name": "Synchronized didactic moderator 14",
+      "status": "Inactive",
+      "createdDate": "2025-10-03T18:16:35",
+      "updatedDate": "2026-02-15T02:36:58",
+      "owner": "Ana Flores",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8538.25,
+      "description": "Bring TV realize over respond reveal throughout contain."
+    },
+    {
+      "id": "ed4e13df-dc23-4c73-8c61-9bdf959dd10d",
+      "name": "Ameliorated context-sensitive data-warehouse 15",
+      "status": "Inactive",
+      "createdDate": "2025-04-08T14:59:21",
+      "updatedDate": "2026-01-26T00:50:08",
+      "owner": "Christine Caldwell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3185.19,
+      "description": "Way brother increase statement contain year Republican hear."
+    },
+    {
+      "id": "b7d363bf-6757-4ab2-967d-6645688373aa",
+      "name": "Synergistic well-modulated frame 16",
+      "status": "Active",
+      "createdDate": "2025-06-16T09:35:17",
+      "updatedDate": "2026-01-28T06:04:49",
+      "owner": "Alejandro Woods",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1036.35,
+      "description": "Chance source recognize necessary physical."
+    },
+    {
+      "id": "367d17df-daa4-4e03-91e3-fca5233e78a8",
+      "name": "Mandatory incremental application 17",
+      "status": "Completed",
+      "createdDate": "2026-02-12T23:34:58",
+      "updatedDate": "2026-01-19T15:38:49",
+      "owner": "Mary White",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8290.87,
+      "description": "Question experience glass call seek."
+    },
+    {
+      "id": "91132fe3-f829-48b6-95b8-b535c079000a",
+      "name": "Future-proofed maximized collaboration 18",
+      "status": "Completed",
+      "createdDate": "2025-07-27T22:19:43",
+      "updatedDate": "2026-01-31T10:33:42",
+      "owner": "Gregory Calderon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 855.26,
+      "description": "Lot avoid play your deal skill."
+    },
+    {
+      "id": "07ea7761-4713-4407-bad0-8a24431bae92",
+      "name": "Configurable 24hour utilization 19",
+      "status": "Completed",
+      "createdDate": "2026-01-05T19:14:13",
+      "updatedDate": "2026-02-05T03:41:34",
+      "owner": "Sydney Ford",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3319.68,
+      "description": "Statement tell instead strategy work score."
+    },
+    {
+      "id": "919821b1-9b91-4b44-835a-2175d4d1ba24",
+      "name": "Extended 24/7 project 20",
+      "status": "Inactive",
+      "createdDate": "2025-05-23T06:54:23",
+      "updatedDate": "2026-02-17T02:50:28",
+      "owner": "James Graves",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1179.01,
+      "description": "Evening cold cause ok."
+    },
+    {
+      "id": "dce6ff5d-18e8-4d68-aae3-aa395d6a9128",
+      "name": "Persevering solution-oriented website 21",
+      "status": "Pending",
+      "createdDate": "2025-11-20T08:01:10",
+      "updatedDate": "2026-02-17T03:41:09",
+      "owner": "Susan Williams",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7918.93,
+      "description": "Raise identify fall."
+    },
+    {
+      "id": "54d82d3a-620a-4a9e-9bf4-1785b0c956be",
+      "name": "Organized bifurcated help-desk 22",
+      "status": "Pending",
+      "createdDate": "2025-05-01T11:07:12",
+      "updatedDate": "2026-01-21T21:26:18",
+      "owner": "Dustin Koch",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 523.09,
+      "description": "Old themselves soldier."
+    },
+    {
+      "id": "f6b07c57-a4cc-4e1e-9d89-1ce33d5668de",
+      "name": "Reduced reciprocal core 23",
+      "status": "Completed",
+      "createdDate": "2025-11-08T11:01:50",
+      "updatedDate": "2026-02-16T11:31:58",
+      "owner": "Danny Davis",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5904.51,
+      "description": "Can hospital low view character choose."
+    },
+    {
+      "id": "ce3acff5-6c53-48df-b2be-79cdafb41d72",
+      "name": "Virtual human-resource migration 24",
+      "status": "Pending",
+      "createdDate": "2025-09-02T09:40:10",
+      "updatedDate": "2026-01-19T15:48:15",
+      "owner": "Wendy Mitchell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1592.06,
+      "description": "Sound book tax."
+    },
+    {
+      "id": "52b3e8f4-82ba-478a-a59d-b9c6b44e9914",
+      "name": "Networked grid-enabled Internet solution 25",
+      "status": "Inactive",
+      "createdDate": "2025-08-28T03:43:15",
+      "updatedDate": "2026-01-27T06:13:11",
+      "owner": "Keith Mata",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6824.03,
+      "description": "Happen send former cup despite college loss indicate."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

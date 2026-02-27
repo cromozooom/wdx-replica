@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-active-only",
+  "totalCount": 418,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "8cc8b055-ae3d-4828-96f6-091e3a725bb7",
+      "name": "Innovative homogeneous methodology 1",
+      "status": "Pending",
+      "createdDate": "2025-12-21T04:05:32",
+      "updatedDate": "2026-01-25T04:32:00",
+      "owner": "Amy Whitaker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6202.94,
+      "description": "Rate time young style three."
+    },
+    {
+      "id": "ac7057d0-3655-467a-971f-f1a2a7d028cc",
+      "name": "Re-contextualized mission-critical hierarchy 2",
+      "status": "Active",
+      "createdDate": "2025-11-25T00:38:51",
+      "updatedDate": "2026-01-26T11:44:53",
+      "owner": "Monica Knight",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1733.89,
+      "description": "Store mind purpose customer which."
+    },
+    {
+      "id": "a14fa893-f878-468e-9a17-0c651504ff0e",
+      "name": "Seamless leadingedge workforce 3",
+      "status": "Completed",
+      "createdDate": "2025-04-14T12:10:47",
+      "updatedDate": "2026-02-12T15:41:27",
+      "owner": "Teresa Booth",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3285.7,
+      "description": "Hundred model friend necessary watch difference."
+    },
+    {
+      "id": "fa685639-bcbe-46f0-b5d6-74668407a167",
+      "name": "Triple-buffered incremental Internet solution 4",
+      "status": "Inactive",
+      "createdDate": "2025-04-09T12:01:41",
+      "updatedDate": "2026-02-03T12:26:04",
+      "owner": "Dana Johnston",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2650.79,
+      "description": "A place they what field."
+    },
+    {
+      "id": "2c877c6f-7092-47cd-92ef-1cad6c81e629",
+      "name": "Face-to-face high-level workforce 5",
+      "status": "Completed",
+      "createdDate": "2025-08-01T09:28:43",
+      "updatedDate": "2026-02-03T02:59:21",
+      "owner": "Laura Bailey",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3741.78,
+      "description": "Range section manager describe."
+    },
+    {
+      "id": "6476a799-28d4-47bb-ba76-d9d21b8891ff",
+      "name": "Exclusive bi-directional focus group 6",
+      "status": "Pending",
+      "createdDate": "2025-11-03T22:17:15",
+      "updatedDate": "2026-01-26T20:21:29",
+      "owner": "Richard Gordon",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4182.29,
+      "description": "Catch PM same yourself two will than."
+    },
+    {
+      "id": "a8c07049-22c7-4110-b573-b935a6120da3",
+      "name": "Decentralized client-server data-warehouse 7",
+      "status": "Inactive",
+      "createdDate": "2025-09-10T23:59:17",
+      "updatedDate": "2026-01-31T11:31:05",
+      "owner": "David Lane",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4556.01,
+      "description": "Both sister know word book common school."
+    },
+    {
+      "id": "56807b52-2147-47df-b1ce-754af5b7b7c8",
+      "name": "Balanced heuristic groupware 8",
+      "status": "Completed",
+      "createdDate": "2025-12-20T18:54:48",
+      "updatedDate": "2026-01-22T21:57:27",
+      "owner": "Jodi Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4797.94,
+      "description": "Source yard top hear could military."
+    },
+    {
+      "id": "1ee3ae26-b6da-4f4a-8405-c64f85af784b",
+      "name": "Versatile zero-defect circuit 9",
+      "status": "Active",
+      "createdDate": "2026-01-11T06:15:53",
+      "updatedDate": "2026-01-21T00:53:06",
+      "owner": "Sarah Grant",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5902.73,
+      "description": "Arm activity health effort couple policy main beautiful."
+    },
+    {
+      "id": "07842e40-0f60-4e4e-9aa7-8b4397fc0038",
+      "name": "Re-contextualized human-resource firmware 10",
+      "status": "Active",
+      "createdDate": "2025-08-19T10:20:02",
+      "updatedDate": "2026-02-10T00:55:06",
+      "owner": "Noah Bird",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8653.66,
+      "description": "Especially practice again here may."
+    },
+    {
+      "id": "f4b7d100-09b2-447d-bbb5-3c6be3b9f436",
+      "name": "Inverse 6thgeneration open system 11",
+      "status": "Inactive",
+      "createdDate": "2025-05-28T01:12:26",
+      "updatedDate": "2026-01-27T01:28:51",
+      "owner": "Amanda Beck",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7287.34,
+      "description": "Available activity eat find these."
+    },
+    {
+      "id": "d931702e-5782-4840-9664-b46288a70e54",
+      "name": "Decentralized full-range knowledgebase 12",
+      "status": "Completed",
+      "createdDate": "2025-10-16T00:10:55",
+      "updatedDate": "2026-01-27T23:38:49",
+      "owner": "Jeffery Combs",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2865.27,
+      "description": "Agreement despite option."
+    },
+    {
+      "id": "1cfac0db-344d-4089-b9cf-266f60bddeb8",
+      "name": "User-centric asynchronous application 13",
+      "status": "Pending",
+      "createdDate": "2025-05-08T09:56:07",
+      "updatedDate": "2026-02-07T09:36:08",
+      "owner": "Michael Butler",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2912.21,
+      "description": "Whatever after cultural accept wall fine sell."
+    },
+    {
+      "id": "c9c81f06-9d26-4ff8-8e48-082287a49d33",
+      "name": "Pre-emptive even-keeled project 14",
+      "status": "Pending",
+      "createdDate": "2025-12-13T17:01:01",
+      "updatedDate": "2026-02-15T12:00:09",
+      "owner": "Justin Murray",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4292.21,
+      "description": "Lawyer leader gun stock about."
+    },
+    {
+      "id": "9d1c5ede-16c5-43c5-929d-286b37f7e604",
+      "name": "Persistent 6thgeneration approach 15",
+      "status": "Completed",
+      "createdDate": "2026-01-14T14:06:59",
+      "updatedDate": "2026-02-03T06:28:48",
+      "owner": "David Sanchez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5999.15,
+      "description": "Ago news administration training very painting compare."
+    },
+    {
+      "id": "6fc28219-2160-4736-9bae-7fb05f813935",
+      "name": "Right-sized multi-tasking workforce 16",
+      "status": "Inactive",
+      "createdDate": "2025-07-28T01:58:25",
+      "updatedDate": "2026-01-22T17:58:09",
+      "owner": "Paul Klein",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6781.07,
+      "description": "Response me hotel nearly see."
+    },
+    {
+      "id": "71a4ec87-c84c-44b2-9c4a-1659df541506",
+      "name": "Mandatory analyzing orchestration 17",
+      "status": "Inactive",
+      "createdDate": "2025-05-18T05:43:30",
+      "updatedDate": "2026-02-01T12:08:08",
+      "owner": "Sheila Garcia DVM",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3908.92,
+      "description": "Discover mission despite live."
+    },
+    {
+      "id": "13e992cf-e027-4233-8c2d-c78d3c222553",
+      "name": "Inverse radical orchestration 18",
+      "status": "Completed",
+      "createdDate": "2025-03-13T09:58:49",
+      "updatedDate": "2026-01-26T03:41:00",
+      "owner": "Samantha Wood",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1290.07,
+      "description": "Education career organization here voice."
+    },
+    {
+      "id": "ad679308-a41e-4c96-a073-75fcc525cccc",
+      "name": "Re-engineered exuding encoding 19",
+      "status": "Completed",
+      "createdDate": "2025-08-17T14:15:58",
+      "updatedDate": "2026-02-06T01:33:56",
+      "owner": "Kevin Gordon",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1141.72,
+      "description": "Name name research machine media nation."
+    },
+    {
+      "id": "b1764a32-8f21-498b-a5e5-13578554f70e",
+      "name": "Persistent dynamic model 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-06T10:44:19",
+      "updatedDate": "2026-01-30T21:41:44",
+      "owner": "Emily Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8117.44,
+      "description": "Left baby analysis century pass two strategy."
+    },
+    {
+      "id": "ef93e11a-6bb7-4296-adab-03e5829257e0",
+      "name": "Object-based dynamic project 21",
+      "status": "Active",
+      "createdDate": "2025-07-19T19:49:34",
+      "updatedDate": "2026-02-14T08:12:17",
+      "owner": "Jose White",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3610.01,
+      "description": "Professor young road movie."
+    },
+    {
+      "id": "50f5c076-af30-4803-87a6-fddfd509d978",
+      "name": "Enhanced transitional array 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-22T00:09:30",
+      "updatedDate": "2026-02-16T04:05:36",
+      "owner": "Krista White",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6638.49,
+      "description": "Read who country onto benefit for."
+    },
+    {
+      "id": "a97c8f3e-c318-4b36-a4e3-b0a7cc5bb65e",
+      "name": "Upgradable systematic matrices 23",
+      "status": "Completed",
+      "createdDate": "2025-09-17T00:51:31",
+      "updatedDate": "2026-02-16T05:08:43",
+      "owner": "Jessica Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6274.1,
+      "description": "Put by heart majority last west traditional."
+    },
+    {
+      "id": "2c334ee7-15a0-4cad-9daa-04a9a08cecfb",
+      "name": "Persevering solution-oriented data-warehouse 24",
+      "status": "Active",
+      "createdDate": "2025-12-15T16:55:48",
+      "updatedDate": "2026-01-29T00:17:13",
+      "owner": "Melissa Hoffman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5578.28,
+      "description": "Per white condition action table."
+    },
+    {
+      "id": "296c74f4-412a-46fa-9f9f-20f09bde1523",
+      "name": "Streamlined client-driven customer loyalty 25",
+      "status": "Completed",
+      "createdDate": "2026-01-16T11:25:44",
+      "updatedDate": "2026-02-15T14:30:45",
+      "owner": "Heather Stewart",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9378.66,
+      "description": "Per go hand late reduce focus."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}
