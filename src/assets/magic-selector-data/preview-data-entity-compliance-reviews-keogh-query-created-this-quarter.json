@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1117,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "bb421aaf-3a06-4090-b423-87e91daf511b",
+      "name": "Reduced dedicated conglomeration 1",
+      "status": "Completed",
+      "createdDate": "2025-09-03T18:37:40",
+      "updatedDate": "2026-02-14T19:34:21",
+      "owner": "John Thomas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1478.9,
+      "description": "Carry would avoid."
+    },
+    {
+      "id": "60621c98-d362-43bc-9ddf-b87f28558649",
+      "name": "Diverse didactic project 2",
+      "status": "Active",
+      "createdDate": "2025-05-16T13:51:16",
+      "updatedDate": "2026-02-01T15:15:55",
+      "owner": "Mary Li",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1664.74,
+      "description": "Believe sound class age."
+    },
+    {
+      "id": "cc868208-4f4d-4717-8e09-d415b252885b",
+      "name": "Quality-focused holistic capacity 3",
+      "status": "Completed",
+      "createdDate": "2025-04-08T12:48:58",
+      "updatedDate": "2026-02-16T21:21:12",
+      "owner": "Crystal Watson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3113.41,
+      "description": "Agent candidate develop maintain."
+    },
+    {
+      "id": "a64ab4f7-1afc-415c-82b7-28464c259d63",
+      "name": "Open-source eco-centric hub 4",
+      "status": "Active",
+      "createdDate": "2025-10-17T10:07:59",
+      "updatedDate": "2026-01-23T17:32:23",
+      "owner": "Taylor Collins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7610.27,
+      "description": "Out prevent explain half hour available account."
+    },
+    {
+      "id": "ebf72f28-5df0-48f1-90df-50a297ba6205",
+      "name": "Profit-focused background throughput 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-13T04:19:55",
+      "updatedDate": "2026-01-21T02:31:29",
+      "owner": "Amanda Alexander",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1820.04,
+      "description": "Too really stuff."
+    },
+    {
+      "id": "0f908e20-36e9-48cd-bd04-061993258018",
+      "name": "Function-based foreground parallelism 6",
+      "status": "Completed",
+      "createdDate": "2025-04-07T16:43:04",
+      "updatedDate": "2026-01-26T23:15:09",
+      "owner": "Melissa Barrett",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8497.72,
+      "description": "Treat light along any how."
+    },
+    {
+      "id": "abb83253-78e3-4ed5-8d79-afa130d6ab44",
+      "name": "Optional dynamic open system 7",
+      "status": "Pending",
+      "createdDate": "2025-07-28T21:05:23",
+      "updatedDate": "2026-01-19T17:21:44",
+      "owner": "Angela Farrell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4568.82,
+      "description": "Even season factor."
+    },
+    {
+      "id": "0b210d14-01ea-458c-b2b9-c243400ef4bb",
+      "name": "Persistent uniform interface 8",
+      "status": "Active",
+      "createdDate": "2025-08-01T09:05:27",
+      "updatedDate": "2026-01-19T05:36:55",
+      "owner": "Caitlin Walters",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8998.02,
+      "description": "No appear remain front participant hot."
+    },
+    {
+      "id": "b7554315-b870-40d4-8032-9df79c5e7afa",
+      "name": "Grass-roots neutral contingency 9",
+      "status": "Pending",
+      "createdDate": "2025-11-28T07:01:16",
+      "updatedDate": "2026-01-28T01:05:07",
+      "owner": "Gina Schultz",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 173.49,
+      "description": "Section instead her oil day."
+    },
+    {
+      "id": "730dc589-ceb4-4be9-bcc1-0ac26bd0ce99",
+      "name": "Right-sized human-resource application 10",
+      "status": "Inactive",
+      "createdDate": "2025-08-02T20:08:47",
+      "updatedDate": "2026-01-28T14:25:10",
+      "owner": "Tanya Morrison",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5258.23,
+      "description": "Executive rock single data avoid civil."
+    },
+    {
+      "id": "a1ce762e-4b82-4e45-935e-75acb4c6b983",
+      "name": "Object-based optimal product 11",
+      "status": "Completed",
+      "createdDate": "2025-10-02T02:17:32",
+      "updatedDate": "2026-02-01T18:06:43",
+      "owner": "Robert Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 905.49,
+      "description": "Civil wait carry this foot family."
+    },
+    {
+      "id": "4c932533-49c9-46f1-9601-367beb463192",
+      "name": "Automated optimizing software 12",
+      "status": "Pending",
+      "createdDate": "2026-02-08T09:16:34",
+      "updatedDate": "2026-01-24T06:52:06",
+      "owner": "Brian Cameron",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9030.83,
+      "description": "Middle few half suggest compare."
+    },
+    {
+      "id": "c949f117-33f9-4bb8-9bc6-363def7bb581",
+      "name": "Cross-group 24hour structure 13",
+      "status": "Pending",
+      "createdDate": "2025-12-05T03:24:05",
+      "updatedDate": "2026-01-21T07:40:35",
+      "owner": "Douglas Cobb",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7547.12,
+      "description": "Who control listen quality minute response model."
+    },
+    {
+      "id": "e87f26de-d0e5-469e-a468-5fe4870af657",
+      "name": "Networked leadingedge contingency 14",
+      "status": "Completed",
+      "createdDate": "2025-03-27T04:03:20",
+      "updatedDate": "2026-01-28T18:40:45",
+      "owner": "Shawn Elliott",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5849.79,
+      "description": "Direction over him even fear."
+    },
+    {
+      "id": "a8c3c62c-9265-4f44-b502-aa548f2e0532",
+      "name": "De-engineered methodical hub 15",
+      "status": "Completed",
+      "createdDate": "2025-12-26T07:39:54",
+      "updatedDate": "2026-02-04T04:15:48",
+      "owner": "Crystal Briggs",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8535.7,
+      "description": "Why tough real."
+    },
+    {
+      "id": "d8035ded-2617-4385-8392-60cc5757b584",
+      "name": "Visionary 3rdgeneration firmware 16",
+      "status": "Pending",
+      "createdDate": "2025-04-27T12:47:39",
+      "updatedDate": "2026-01-26T23:45:08",
+      "owner": "Michael Porter",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5975.24,
+      "description": "Interview him analysis year cell line."
+    },
+    {
+      "id": "e702116a-5fd5-4b8f-9429-fdd422dbeb09",
+      "name": "Automated neutral budgetary management 17",
+      "status": "Active",
+      "createdDate": "2025-08-24T09:51:53",
+      "updatedDate": "2026-02-16T05:06:23",
+      "owner": "David Swanson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2266.79,
+      "description": "Along watch generation example again specific."
+    },
+    {
+      "id": "b90d5a53-80c8-4836-b2d4-efacc1a71926",
+      "name": "Managed zero administration open system 18",
+      "status": "Active",
+      "createdDate": "2025-12-25T17:40:57",
+      "updatedDate": "2026-01-31T13:06:44",
+      "owner": "Katherine Mccarty",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3943.09,
+      "description": "Finish report cell all."
+    },
+    {
+      "id": "068bf89f-54c8-4200-ab10-aa262a48ffca",
+      "name": "Seamless optimal capability 19",
+      "status": "Active",
+      "createdDate": "2026-01-25T21:46:25",
+      "updatedDate": "2026-02-15T19:02:44",
+      "owner": "Robert Miles",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6317.15,
+      "description": "Detail play fund of house play."
+    },
+    {
+      "id": "501fc933-a777-4b2f-a437-b4256895790e",
+      "name": "Visionary coherent throughput 20",
+      "status": "Pending",
+      "createdDate": "2025-12-04T00:35:24",
+      "updatedDate": "2026-01-28T23:33:13",
+      "owner": "Kevin Boone",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 334.35,
+      "description": "Book challenge offer set Congress."
+    },
+    {
+      "id": "3c4c5e6b-b332-4cd0-afdf-5141609e44ec",
+      "name": "Upgradable grid-enabled function 21",
+      "status": "Active",
+      "createdDate": "2025-11-15T05:18:08",
+      "updatedDate": "2026-01-25T14:06:24",
+      "owner": "Mary Rodgers",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3854.44,
+      "description": "Able entire want to high health final."
+    },
+    {
+      "id": "a360159e-682d-4126-b65f-af6212045376",
+      "name": "Focused systematic product 22",
+      "status": "Inactive",
+      "createdDate": "2025-11-07T09:37:01",
+      "updatedDate": "2026-01-29T17:00:59",
+      "owner": "Don Braun",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6058.56,
+      "description": "Administration five state fund serve class."
+    },
+    {
+      "id": "c360051d-11dc-407f-86cb-73ca87de9b57",
+      "name": "Grass-roots holistic instruction set 23",
+      "status": "Inactive",
+      "createdDate": "2026-01-16T16:19:18",
+      "updatedDate": "2026-01-31T13:36:48",
+      "owner": "Jennifer Oconnor",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8169.08,
+      "description": "Effect great past I tonight nation."
+    },
+    {
+      "id": "5a9dd550-8884-4159-b29a-8745837957c6",
+      "name": "Open-source regional utilization 24",
+      "status": "Completed",
+      "createdDate": "2025-04-28T23:02:13",
+      "updatedDate": "2026-01-28T00:02:42",
+      "owner": "Anthony Baker",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 667.25,
+      "description": "Production first national dream hit."
+    },
+    {
+      "id": "f51fcb39-e8bf-473c-b4d1-81e3324accad",
+      "name": "Team-oriented non-volatile artificial intelligence 25",
+      "status": "Completed",
+      "createdDate": "2025-10-16T07:57:46",
+      "updatedDate": "2026-01-31T09:15:18",
+      "owner": "Joshua Todd",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2756.87,
+      "description": "Involve receive night save let."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

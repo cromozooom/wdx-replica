@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-active-only",
+  "totalCount": 300,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "7c4e0a49-7c58-4a6d-8375-ce46903e64b2",
+      "name": "Intuitive intermediate migration 1",
+      "status": "Inactive",
+      "createdDate": "2026-01-07T13:46:19",
+      "updatedDate": "2026-02-10T18:00:43",
+      "owner": "Julie Dominguez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3164.39,
+      "description": "After fill business."
+    },
+    {
+      "id": "dfddc318-45eb-4c37-8b0d-c7d8383d26b9",
+      "name": "Fundamental client-server methodology 2",
+      "status": "Active",
+      "createdDate": "2025-02-17T06:38:53",
+      "updatedDate": "2026-02-14T07:16:41",
+      "owner": "James Galloway",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2681.4,
+      "description": "Agent same support positive."
+    },
+    {
+      "id": "462474cf-db70-45dd-8c60-0015666c0cfc",
+      "name": "Integrated radical website 3",
+      "status": "Active",
+      "createdDate": "2026-01-11T00:40:51",
+      "updatedDate": "2026-02-07T15:07:07",
+      "owner": "Michelle Murphy",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8384.27,
+      "description": "If blood what attorney past matter."
+    },
+    {
+      "id": "11752247-3e4f-4e80-a7cf-151355616bb5",
+      "name": "Open-source real-time challenge 4",
+      "status": "Inactive",
+      "createdDate": "2025-09-29T02:21:20",
+      "updatedDate": "2026-01-19T07:45:07",
+      "owner": "Sandra Martinez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8470.02,
+      "description": "Sometimes thing young if easy take develop."
+    },
+    {
+      "id": "e88cc050-74f5-43b0-9655-1e890e0675b7",
+      "name": "Future-proofed value-added knowledge user 5",
+      "status": "Pending",
+      "createdDate": "2026-01-27T03:46:50",
+      "updatedDate": "2026-01-23T09:35:44",
+      "owner": "Sara Mooney",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8964.97,
+      "description": "Environment pretty imagine two wait finally animal."
+    },
+    {
+      "id": "a5d59c59-a3ec-4464-b1aa-7781cb9f7384",
+      "name": "Streamlined asynchronous circuit 6",
+      "status": "Completed",
+      "createdDate": "2025-02-18T12:16:40",
+      "updatedDate": "2026-01-24T08:06:30",
+      "owner": "Tamara Sims",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6359.69,
+      "description": "Black arm another response Democrat wear."
+    },
+    {
+      "id": "b99283f8-8cd9-4512-8969-df2366a72ddb",
+      "name": "Team-oriented zero tolerance instruction set 7",
+      "status": "Active",
+      "createdDate": "2025-08-13T07:33:46",
+      "updatedDate": "2026-02-06T09:48:07",
+      "owner": "Valerie Olson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6862.8,
+      "description": "Notice century girl draw trouble."
+    },
+    {
+      "id": "75975171-031a-47d9-adce-b1a4b9b93e95",
+      "name": "Assimilated well-modulated open system 8",
+      "status": "Inactive",
+      "createdDate": "2025-06-17T03:39:14",
+      "updatedDate": "2026-01-31T22:50:35",
+      "owner": "Mikayla Taylor",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6067.42,
+      "description": "History candidate me fact theory picture likely."
+    },
+    {
+      "id": "2c54d8f0-c542-498d-944c-07350a295031",
+      "name": "Triple-buffered transitional standardization 9",
+      "status": "Pending",
+      "createdDate": "2025-03-03T16:37:04",
+      "updatedDate": "2026-02-06T05:25:22",
+      "owner": "Alyssa Goodwin MD",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 150.1,
+      "description": "Organization memory visit consumer."
+    },
+    {
+      "id": "0306ff4e-0ed7-41d9-961b-9f3fccbaa40b",
+      "name": "Profit-focused clear-thinking Internet solution 10",
+      "status": "Pending",
+      "createdDate": "2025-09-24T07:22:43",
+      "updatedDate": "2026-01-26T21:17:28",
+      "owner": "Bradley Stewart",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4733.09,
+      "description": "Surface sell newspaper media begin."
+    },
+    {
+      "id": "0b455c5c-a254-48b2-85ff-799634257ebe",
+      "name": "Adaptive mobile standardization 11",
+      "status": "Completed",
+      "createdDate": "2025-05-20T11:25:37",
+      "updatedDate": "2026-02-12T03:16:31",
+      "owner": "Marc Floyd",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8699.13,
+      "description": "Manager unit very international state white public."
+    },
+    {
+      "id": "bfd3ab47-5b73-4566-8ac7-0bfc693bbada",
+      "name": "Horizontal executive solution 12",
+      "status": "Active",
+      "createdDate": "2025-09-18T19:08:31",
+      "updatedDate": "2026-02-06T03:18:00",
+      "owner": "Latasha Rogers",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6023.77,
+      "description": "Head professional every yard such."
+    },
+    {
+      "id": "9267cbdc-a325-4a07-960e-2fc1b24c0c6f",
+      "name": "Switchable homogeneous moratorium 13",
+      "status": "Pending",
+      "createdDate": "2025-06-04T16:35:52",
+      "updatedDate": "2026-01-27T15:47:33",
+      "owner": "Jo Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2119.6,
+      "description": "Yourself dog foreign avoid image citizen glass television."
+    },
+    {
+      "id": "b0c2a996-d9b1-411c-8b6a-ed33cbbef9c1",
+      "name": "Multi-lateral cohesive info-mediaries 14",
+      "status": "Completed",
+      "createdDate": "2025-04-09T20:27:11",
+      "updatedDate": "2026-01-31T09:48:41",
+      "owner": "Debbie Lee",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4183.03,
+      "description": "Culture town organization team."
+    },
+    {
+      "id": "9149dd94-4d81-4d0a-85ae-249494c6eac2",
+      "name": "Down-sized multi-tasking adapter 15",
+      "status": "Active",
+      "createdDate": "2026-01-21T05:05:37",
+      "updatedDate": "2026-02-11T16:32:20",
+      "owner": "James Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2924.07,
+      "description": "Direction network him message class series discussion economy."
+    },
+    {
+      "id": "7f73e832-8817-4dd1-95dd-4345ba7bb89d",
+      "name": "Synergized value-added interface 16",
+      "status": "Active",
+      "createdDate": "2025-05-12T10:01:33",
+      "updatedDate": "2026-02-11T15:34:12",
+      "owner": "Jaime Baker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 989.89,
+      "description": "Power range appear perform."
+    },
+    {
+      "id": "fdc10fb7-8c37-4d4d-b07b-a5e17bb755ce",
+      "name": "Ameliorated methodical Graphical User Interface 17",
+      "status": "Pending",
+      "createdDate": "2025-03-25T06:51:41",
+      "updatedDate": "2026-01-29T14:45:02",
+      "owner": "Michael Sanders",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6710.0,
+      "description": "Paper economic tend."
+    },
+    {
+      "id": "b6bea7b2-6dbb-41be-97cc-e68b8f827bff",
+      "name": "Total disintermediate moderator 18",
+      "status": "Active",
+      "createdDate": "2025-06-09T02:30:25",
+      "updatedDate": "2026-01-27T12:42:38",
+      "owner": "Jennifer Harper",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3862.0,
+      "description": "Yourself old beat after condition art drop card."
+    },
+    {
+      "id": "954842c7-35e7-45d8-8e0b-a26bdf076ab0",
+      "name": "De-engineered mobile database 19",
+      "status": "Inactive",
+      "createdDate": "2026-01-26T15:56:18",
+      "updatedDate": "2026-02-09T22:57:29",
+      "owner": "Phyllis Strickland",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4328.93,
+      "description": "Seem too red fire affect situation side."
+    },
+    {
+      "id": "df9fe299-8b0e-4390-93c9-dbf606904f46",
+      "name": "Cloned real-time encoding 20",
+      "status": "Pending",
+      "createdDate": "2025-12-23T19:42:05",
+      "updatedDate": "2026-02-08T11:16:40",
+      "owner": "Andrew Jackson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5489.12,
+      "description": "Technology instead situation rock near."
+    },
+    {
+      "id": "6bcaba51-5b96-4865-82fe-2f69416c487b",
+      "name": "Integrated logistical service-desk 21",
+      "status": "Inactive",
+      "createdDate": "2026-02-02T23:16:19",
+      "updatedDate": "2026-02-02T00:58:57",
+      "owner": "Eric Ortiz",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 134.33,
+      "description": "Structure sign effect term him season happen."
+    },
+    {
+      "id": "c2ac67f8-4892-4956-b801-68c6cf261172",
+      "name": "Operative exuding knowledgebase 22",
+      "status": "Inactive",
+      "createdDate": "2025-08-26T14:07:51",
+      "updatedDate": "2026-01-29T15:30:53",
+      "owner": "Jason Castro",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 686.32,
+      "description": "Call safe feel not wall from since."
+    },
+    {
+      "id": "811ea8b3-c0c5-4667-b628-1908a07928c2",
+      "name": "Quality-focused actuating superstructure 23",
+      "status": "Pending",
+      "createdDate": "2025-03-16T21:37:05",
+      "updatedDate": "2026-02-02T03:45:58",
+      "owner": "Shane Dickerson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4266.73,
+      "description": "Reflect difference strong prevent practice gun already."
+    },
+    {
+      "id": "63d96f1e-5d47-4e09-955e-2a4e1ec597c3",
+      "name": "Public-key fresh-thinking hub 24",
+      "status": "Inactive",
+      "createdDate": "2025-05-22T15:48:39",
+      "updatedDate": "2026-02-16T05:28:16",
+      "owner": "Paul Davis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7168.57,
+      "description": "Month next night sort like."
+    },
+    {
+      "id": "499774c1-9487-4591-a573-fd935efca9d2",
+      "name": "User-friendly maximized customer loyalty 25",
+      "status": "Inactive",
+      "createdDate": "2025-06-26T17:38:03",
+      "updatedDate": "2026-02-14T17:13:06",
+      "owner": "David Palmer",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2422.83,
+      "description": "Carry dog eat blue TV majority."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

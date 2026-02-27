@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1326,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "8dfdb52d-cb97-4a7f-a8fe-83f55082a3a1",
+      "name": "Business-focused composite core 1",
+      "status": "Active",
+      "createdDate": "2025-11-06T04:23:22",
+      "updatedDate": "2026-02-15T10:41:21",
+      "owner": "Samuel Thompson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7216.21,
+      "description": "Detail attention quickly think treatment."
+    },
+    {
+      "id": "8ff20727-e699-4e3a-afe6-ab45c77f3906",
+      "name": "Integrated maximized circuit 2",
+      "status": "Active",
+      "createdDate": "2026-02-10T16:33:45",
+      "updatedDate": "2026-01-31T13:50:23",
+      "owner": "Stephen Howe",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8122.82,
+      "description": "Still compare amount specific who talk behind."
+    },
+    {
+      "id": "ab1ff1c5-e338-4c4d-838c-b5ff210865ca",
+      "name": "Team-oriented hybrid infrastructure 3",
+      "status": "Active",
+      "createdDate": "2025-04-13T13:55:45",
+      "updatedDate": "2026-02-05T18:10:36",
+      "owner": "Jordan Drake",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3797.92,
+      "description": "Exactly animal art."
+    },
+    {
+      "id": "a26922ec-1216-4ccc-af80-f66bb0fc3652",
+      "name": "Diverse dedicated website 4",
+      "status": "Completed",
+      "createdDate": "2025-05-28T15:24:52",
+      "updatedDate": "2026-02-01T16:15:51",
+      "owner": "Nicole Williams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4231.58,
+      "description": "Kitchen trip minute whatever discover."
+    },
+    {
+      "id": "e3cc7b0d-7018-46c8-baa4-b87ebb3049dc",
+      "name": "Expanded bifurcated interface 5",
+      "status": "Active",
+      "createdDate": "2025-04-11T04:00:49",
+      "updatedDate": "2026-02-06T22:53:23",
+      "owner": "Brandi Mccormick",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3196.29,
+      "description": "Simple camera seat cell entire yourself."
+    },
+    {
+      "id": "742849c3-68ee-4cc3-bb1f-ed4840328733",
+      "name": "Synergistic fresh-thinking focus group 6",
+      "status": "Inactive",
+      "createdDate": "2025-12-27T08:04:27",
+      "updatedDate": "2026-01-21T14:36:27",
+      "owner": "Cody Hill",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7499.19,
+      "description": "Certain right true tough trouble two."
+    },
+    {
+      "id": "2d9d669d-d259-4982-b895-31f20d2f4864",
+      "name": "Digitized solution-oriented Graphic Interface 7",
+      "status": "Active",
+      "createdDate": "2025-12-03T06:50:03",
+      "updatedDate": "2026-02-13T11:30:40",
+      "owner": "Elizabeth Peterson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7385.94,
+      "description": "Herself civil forget way movement want goal."
+    },
+    {
+      "id": "a7737712-581a-4be3-ac44-e2c391dad0c0",
+      "name": "Multi-tiered contextually-based instruction set 8",
+      "status": "Active",
+      "createdDate": "2025-07-26T04:47:23",
+      "updatedDate": "2026-01-30T10:36:29",
+      "owner": "David Martinez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1840.26,
+      "description": "Inside across conference fund somebody plant program."
+    },
+    {
+      "id": "f9f1195b-aa69-4ec3-beab-a7cf284dc9d1",
+      "name": "Proactive exuding budgetary management 9",
+      "status": "Pending",
+      "createdDate": "2026-02-03T00:07:41",
+      "updatedDate": "2026-02-08T06:29:11",
+      "owner": "Timothy Morris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4969.1,
+      "description": "Law director while condition."
+    },
+    {
+      "id": "2889bf82-eaa6-48c3-911b-c31e724b5ba2",
+      "name": "Innovative actuating complexity 10",
+      "status": "Completed",
+      "createdDate": "2025-06-12T06:40:10",
+      "updatedDate": "2026-01-25T23:00:34",
+      "owner": "Mrs. Holly Castro DDS",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8321.78,
+      "description": "Large mouth work kid travel."
+    },
+    {
+      "id": "942f2f5f-d251-4edc-aaf9-55cc65626c27",
+      "name": "Triple-buffered cohesive challenge 11",
+      "status": "Completed",
+      "createdDate": "2025-11-08T03:42:11",
+      "updatedDate": "2026-01-20T19:33:59",
+      "owner": "Cynthia Terry",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3347.68,
+      "description": "Service third point them practice."
+    },
+    {
+      "id": "0c1b58de-e5f8-475c-a581-c68761961321",
+      "name": "Right-sized contextually-based capacity 12",
+      "status": "Inactive",
+      "createdDate": "2025-06-23T01:54:19",
+      "updatedDate": "2026-01-28T04:45:08",
+      "owner": "Jared Olson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8228.66,
+      "description": "Weight public prevent."
+    },
+    {
+      "id": "5e553160-913c-446a-a4bd-41ee937b16b9",
+      "name": "Robust impactful standardization 13",
+      "status": "Inactive",
+      "createdDate": "2025-08-26T13:04:00",
+      "updatedDate": "2026-02-09T03:01:30",
+      "owner": "Felicia Owens",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4725.79,
+      "description": "Exactly perform then though recent law."
+    },
+    {
+      "id": "b00e53ff-8caa-4969-b43c-3d5230ae4199",
+      "name": "Proactive systemic throughput 14",
+      "status": "Completed",
+      "createdDate": "2026-01-28T06:45:02",
+      "updatedDate": "2026-02-09T12:19:58",
+      "owner": "Rachael Burton",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8375.58,
+      "description": "Else east box really among show."
+    },
+    {
+      "id": "48b39781-f729-4def-8033-6d39c821c49a",
+      "name": "Open-architected empowering frame 15",
+      "status": "Active",
+      "createdDate": "2025-10-24T00:54:58",
+      "updatedDate": "2026-01-29T15:54:03",
+      "owner": "Michael Robinson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2330.7,
+      "description": "Free local research after class."
+    },
+    {
+      "id": "bc6388ee-2b17-4a79-ac47-192cc311ad5f",
+      "name": "Multi-lateral asymmetric info-mediaries 16",
+      "status": "Inactive",
+      "createdDate": "2025-08-23T06:34:47",
+      "updatedDate": "2026-02-13T18:10:47",
+      "owner": "James Chen",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8970.41,
+      "description": "Prevent let attack my lay laugh."
+    },
+    {
+      "id": "cec6f4c7-d626-4e8f-bcd9-2c7711a8649b",
+      "name": "Compatible tertiary migration 17",
+      "status": "Pending",
+      "createdDate": "2025-09-06T13:01:36",
+      "updatedDate": "2026-01-29T21:29:28",
+      "owner": "Bryan Callahan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2544.44,
+      "description": "Answer throughout light live security produce rule."
+    },
+    {
+      "id": "9c5cb10d-73b1-47d5-978b-f025c06dfea4",
+      "name": "Profit-focused methodical monitoring 18",
+      "status": "Completed",
+      "createdDate": "2025-03-27T09:31:12",
+      "updatedDate": "2026-01-25T10:09:28",
+      "owner": "Angela Hood",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9229.47,
+      "description": "Activity ok hard example lay like surface."
+    },
+    {
+      "id": "b32021bd-4fa9-4bcb-9c15-e7aed60cad9f",
+      "name": "Grass-roots solution-oriented Internet solution 19",
+      "status": "Pending",
+      "createdDate": "2026-01-30T22:15:52",
+      "updatedDate": "2026-01-22T17:48:10",
+      "owner": "Melinda Mcknight",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2612.72,
+      "description": "Across together drive final."
+    },
+    {
+      "id": "fff6d757-6a49-428a-b82c-bb637503dcd6",
+      "name": "Decentralized human-resource protocol 20",
+      "status": "Completed",
+      "createdDate": "2025-12-09T23:21:32",
+      "updatedDate": "2026-02-02T13:06:26",
+      "owner": "Daniel Stevens",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6673.78,
+      "description": "Machine partner significant."
+    },
+    {
+      "id": "586be0b3-3ec3-4f59-b33e-d6d70e592ae8",
+      "name": "Horizontal holistic synergy 21",
+      "status": "Inactive",
+      "createdDate": "2025-07-16T19:29:25",
+      "updatedDate": "2026-01-27T18:38:10",
+      "owner": "Christine Stone",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4233.19,
+      "description": "Notice against hear ahead not."
+    },
+    {
+      "id": "4e6bb3e6-b330-4339-a490-3abd45c66968",
+      "name": "Adaptive multimedia paradigm 22",
+      "status": "Inactive",
+      "createdDate": "2025-06-18T18:07:17",
+      "updatedDate": "2026-02-11T03:48:48",
+      "owner": "Michael Cook",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 870.13,
+      "description": "Stay table every have."
+    },
+    {
+      "id": "9c70ad77-7e81-4e2d-b135-dda0c402f812",
+      "name": "Assimilated impactful monitoring 23",
+      "status": "Active",
+      "createdDate": "2025-06-18T23:34:34",
+      "updatedDate": "2026-02-10T23:01:07",
+      "owner": "Brenda Harding",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 863.62,
+      "description": "Word support top."
+    },
+    {
+      "id": "27977580-f789-4768-86e5-6c237bc478be",
+      "name": "Adaptive leadingedge database 24",
+      "status": "Active",
+      "createdDate": "2025-04-12T04:40:32",
+      "updatedDate": "2026-01-24T05:20:23",
+      "owner": "Rebecca Valdez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7426.63,
+      "description": "Piece across ask rock body art."
+    },
+    {
+      "id": "bdbe113b-d91c-4e47-838c-438d4af647d7",
+      "name": "Profound logistical instruction set 25",
+      "status": "Pending",
+      "createdDate": "2025-12-06T06:05:24",
+      "updatedDate": "2026-02-07T17:16:45",
+      "owner": "Linda Powers",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8596.48,
+      "description": "Mouth natural PM bring."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

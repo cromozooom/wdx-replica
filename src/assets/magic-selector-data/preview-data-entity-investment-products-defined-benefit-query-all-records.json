@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-all-records",
+  "totalCount": 289,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a8eca395-07fd-47f3-b739-75bba2944d3e",
+      "name": "Innovative optimal concept 1",
+      "status": "Pending",
+      "createdDate": "2025-08-22T16:54:24",
+      "updatedDate": "2026-02-13T05:56:10",
+      "owner": "Ronald Rowe",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6445.75,
+      "description": "Cost term color then."
+    },
+    {
+      "id": "c5bce5f1-7f3a-4c3d-9e3e-5b344f50840f",
+      "name": "Organic 5thgeneration toolset 2",
+      "status": "Pending",
+      "createdDate": "2025-11-23T17:46:36",
+      "updatedDate": "2026-01-20T12:47:46",
+      "owner": "Angela Guzman",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4356.9,
+      "description": "Message tonight detail argue my remember official."
+    },
+    {
+      "id": "dea14367-d7d6-46bc-b54a-ee3d8bfb0718",
+      "name": "Versatile bifurcated knowledgebase 3",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T12:31:53",
+      "updatedDate": "2026-02-09T03:10:09",
+      "owner": "Rachel Cortez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1999.03,
+      "description": "Executive election same act detail."
+    },
+    {
+      "id": "fbcfa376-13e2-4318-9912-8bdf989fa490",
+      "name": "Visionary static emulation 4",
+      "status": "Completed",
+      "createdDate": "2025-03-25T06:47:41",
+      "updatedDate": "2026-01-24T23:00:09",
+      "owner": "Shannon Bush",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5116.21,
+      "description": "Western draw history trade claim."
+    },
+    {
+      "id": "7db24edb-d7b1-48ef-af35-7632d3c245bc",
+      "name": "Advanced dedicated access 5",
+      "status": "Inactive",
+      "createdDate": "2025-03-17T19:57:44",
+      "updatedDate": "2026-01-22T13:32:43",
+      "owner": "Jeffrey Bell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1642.76,
+      "description": "Suffer respond argue rich say make."
+    },
+    {
+      "id": "84d55f5a-b2ad-4102-87f5-fffa2c8f9184",
+      "name": "Multi-tiered encompassing archive 6",
+      "status": "Completed",
+      "createdDate": "2025-03-28T09:49:00",
+      "updatedDate": "2026-01-28T17:50:24",
+      "owner": "Brendan Woods",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8662.18,
+      "description": "Record say section."
+    },
+    {
+      "id": "dc8d4446-d0e4-42f4-9d95-92307dd22692",
+      "name": "Enhanced interactive functionalities 7",
+      "status": "Pending",
+      "createdDate": "2025-10-19T13:37:35",
+      "updatedDate": "2026-01-26T21:43:47",
+      "owner": "Karen Stewart",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7892.28,
+      "description": "Discuss population fund city professor."
+    },
+    {
+      "id": "f906640a-cc4d-4247-a81c-5d5f35f56560",
+      "name": "Grass-roots asynchronous customer loyalty 8",
+      "status": "Inactive",
+      "createdDate": "2026-01-13T19:36:20",
+      "updatedDate": "2026-02-05T19:13:04",
+      "owner": "Derek Miles",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2326.04,
+      "description": "Everything citizen century lead for factor."
+    },
+    {
+      "id": "2c07a326-0787-4a91-88c7-c9197f45f95e",
+      "name": "Devolved fresh-thinking hub 9",
+      "status": "Completed",
+      "createdDate": "2025-03-21T14:29:28",
+      "updatedDate": "2026-02-01T10:20:20",
+      "owner": "Karen Morris",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1316.28,
+      "description": "Rate save image about author across local."
+    },
+    {
+      "id": "7f256789-0cd1-4360-af4b-0b1c62d04c2b",
+      "name": "Monitored dedicated function 10",
+      "status": "Completed",
+      "createdDate": "2025-10-19T22:21:16",
+      "updatedDate": "2026-02-15T16:47:03",
+      "owner": "Tracy Gilbert",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7626.4,
+      "description": "Move final like like."
+    },
+    {
+      "id": "4b55c21f-42d9-4b64-9e66-57eaec694660",
+      "name": "Fundamental multi-state concept 11",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T15:57:28",
+      "updatedDate": "2026-01-29T16:54:37",
+      "owner": "Jerry Santiago",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1534.21,
+      "description": "Your push material."
+    },
+    {
+      "id": "2c19b7aa-2e61-429d-8b82-962fca2ecea3",
+      "name": "Stand-alone maximized hub 12",
+      "status": "Active",
+      "createdDate": "2025-09-24T11:37:40",
+      "updatedDate": "2026-01-25T17:04:22",
+      "owner": "Johnny Thomas",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5857.48,
+      "description": "Soon later instead such fight room partner."
+    },
+    {
+      "id": "8076d06e-2489-4799-a26d-306144897475",
+      "name": "Multi-lateral fault-tolerant neural-net 13",
+      "status": "Pending",
+      "createdDate": "2025-03-04T10:37:53",
+      "updatedDate": "2026-02-09T21:54:50",
+      "owner": "Debbie Long",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6389.59,
+      "description": "Close mother themselves experience class."
+    },
+    {
+      "id": "2aab0531-3d4c-4506-8526-63493e85852a",
+      "name": "Reduced intangible analyzer 14",
+      "status": "Active",
+      "createdDate": "2025-12-21T23:35:08",
+      "updatedDate": "2026-01-27T11:02:24",
+      "owner": "Brandon Martinez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1805.34,
+      "description": "Close fill up Democrat general."
+    },
+    {
+      "id": "b59b60e5-03d4-41df-8bed-231b909405ee",
+      "name": "Compatible fault-tolerant emulation 15",
+      "status": "Active",
+      "createdDate": "2025-06-10T04:46:31",
+      "updatedDate": "2026-01-23T19:38:03",
+      "owner": "David Potts",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2377.2,
+      "description": "Knowledge network although camera expert but."
+    },
+    {
+      "id": "ad9ed96c-c298-4a73-b625-e0be1c9f758c",
+      "name": "Right-sized intangible portal 16",
+      "status": "Active",
+      "createdDate": "2025-11-02T11:10:16",
+      "updatedDate": "2026-02-05T07:53:11",
+      "owner": "Glen Garcia",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9615.38,
+      "description": "Way mean generation you."
+    },
+    {
+      "id": "25a2ec8b-abcb-4ab0-846e-12942f5f1368",
+      "name": "Open-architected directional interface 17",
+      "status": "Inactive",
+      "createdDate": "2025-12-21T18:58:43",
+      "updatedDate": "2026-01-20T14:51:53",
+      "owner": "Kathy Murphy",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2870.09,
+      "description": "Police law never and environmental health."
+    },
+    {
+      "id": "45afc8a5-c679-4922-ba0a-5c08e81c0197",
+      "name": "Fundamental maximized standardization 18",
+      "status": "Inactive",
+      "createdDate": "2026-01-30T23:58:16",
+      "updatedDate": "2026-01-25T18:41:17",
+      "owner": "Tyler Wolfe",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7950.39,
+      "description": "Hour even black line idea."
+    },
+    {
+      "id": "8bacea96-837f-4203-9577-92e15ffb7608",
+      "name": "Adaptive high-level synergy 19",
+      "status": "Completed",
+      "createdDate": "2025-06-17T16:28:17",
+      "updatedDate": "2026-01-20T06:13:56",
+      "owner": "Paul Jones",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4427.72,
+      "description": "Police population floor both by management."
+    },
+    {
+      "id": "e81f879f-acbb-43e5-aed8-4dd65e20230a",
+      "name": "Intuitive upward-trending structure 20",
+      "status": "Pending",
+      "createdDate": "2025-11-21T10:23:22",
+      "updatedDate": "2026-01-21T03:03:52",
+      "owner": "Mr. James Kent",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 900.83,
+      "description": "Its effect deal move."
+    },
+    {
+      "id": "723b49fb-f582-410a-86ea-ea0a2beb9ea3",
+      "name": "Exclusive maximized definition 21",
+      "status": "Pending",
+      "createdDate": "2025-02-26T18:16:50",
+      "updatedDate": "2026-02-07T21:49:25",
+      "owner": "Larry Camacho",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3977.02,
+      "description": "Maintain same impact charge light interest report."
+    },
+    {
+      "id": "067b2568-57bb-4973-a531-bf8cefea0fcf",
+      "name": "Synergized methodical productivity 22",
+      "status": "Pending",
+      "createdDate": "2025-09-23T02:01:47",
+      "updatedDate": "2026-02-12T09:44:08",
+      "owner": "Julie Phillips",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 669.68,
+      "description": "Speak street eight occur too."
+    },
+    {
+      "id": "13178ecf-4070-497e-b296-620fda73890d",
+      "name": "Future-proofed composite architecture 23",
+      "status": "Pending",
+      "createdDate": "2025-07-30T12:14:57",
+      "updatedDate": "2026-01-21T02:23:22",
+      "owner": "Karen Shelton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5250.09,
+      "description": "Under seem card light mind resource traditional."
+    },
+    {
+      "id": "220104ff-ef45-4c71-9109-2a267451d6b0",
+      "name": "User-centric radical solution 24",
+      "status": "Pending",
+      "createdDate": "2026-01-17T12:22:26",
+      "updatedDate": "2026-02-11T19:43:07",
+      "owner": "Amanda Hoffman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6934.51,
+      "description": "Believe investment speak value entire."
+    },
+    {
+      "id": "c2d300f6-3792-4ae3-b2c5-ccfe45f62514",
+      "name": "Proactive methodical support 25",
+      "status": "Active",
+      "createdDate": "2025-04-01T03:30:23",
+      "updatedDate": "2026-02-11T19:28:35",
+      "owner": "Tyler Nichols",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3488.45,
+      "description": "Buy on single Mrs hundred member write still."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

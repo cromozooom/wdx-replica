@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-security",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 706,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "bce5ad18-d242-4b3d-a76c-13ee851ba81b",
+      "name": "Face-to-face context-sensitive hierarchy 1",
+      "status": "Completed",
+      "createdDate": "2025-05-12T04:49:17",
+      "updatedDate": "2026-02-02T06:26:31",
+      "owner": "Laura Jones",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4762.41,
+      "description": "Nearly first with finally."
+    },
+    {
+      "id": "12a5f4ef-6c14-49ab-9965-c61f9ebf5710",
+      "name": "Quality-focused value-added standardization 2",
+      "status": "Active",
+      "createdDate": "2025-07-31T12:16:18",
+      "updatedDate": "2026-02-14T20:49:44",
+      "owner": "Jennifer Richardson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 257.88,
+      "description": "Marriage these commercial."
+    },
+    {
+      "id": "2db6f787-604d-4413-ae77-f177ebf2b9f1",
+      "name": "Public-key value-added collaboration 3",
+      "status": "Completed",
+      "createdDate": "2025-08-20T06:50:58",
+      "updatedDate": "2026-02-09T06:58:41",
+      "owner": "Jerome Escobar",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3230.24,
+      "description": "Dinner make north involve."
+    },
+    {
+      "id": "96cc998b-f107-407a-8a84-b540d4284c63",
+      "name": "Future-proofed zero-defect software 4",
+      "status": "Inactive",
+      "createdDate": "2025-06-16T07:00:56",
+      "updatedDate": "2026-02-12T12:44:31",
+      "owner": "Melissa Scott",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5715.57,
+      "description": "Far social soldier drive."
+    },
+    {
+      "id": "89b8b719-d644-4a05-a6eb-e41840d92317",
+      "name": "User-friendly eco-centric implementation 5",
+      "status": "Pending",
+      "createdDate": "2025-11-30T05:05:34",
+      "updatedDate": "2026-02-05T21:08:14",
+      "owner": "Whitney Oconnell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5797.41,
+      "description": "Low heavy leave customer difference base."
+    },
+    {
+      "id": "4f671898-e932-4455-abd2-3270fb999f01",
+      "name": "Polarized tangible utilization 6",
+      "status": "Completed",
+      "createdDate": "2025-05-23T08:55:36",
+      "updatedDate": "2026-02-08T02:53:59",
+      "owner": "Mark Martinez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2507.3,
+      "description": "Spring hundred case."
+    },
+    {
+      "id": "b7d33f72-5065-46b6-be9c-9d5d9a33c883",
+      "name": "Managed system-worthy service-desk 7",
+      "status": "Pending",
+      "createdDate": "2025-07-03T01:19:22",
+      "updatedDate": "2026-01-25T10:11:38",
+      "owner": "Eddie Colon",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3789.89,
+      "description": "It great audience try course."
+    },
+    {
+      "id": "b83a46d4-89a2-4cac-b221-1fa78ffd1238",
+      "name": "Innovative secondary projection 8",
+      "status": "Inactive",
+      "createdDate": "2025-12-27T06:08:08",
+      "updatedDate": "2026-01-24T10:51:04",
+      "owner": "Kathryn Norris",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5284.16,
+      "description": "Why suggest fast more."
+    },
+    {
+      "id": "739facc0-7b29-4c67-9ac6-0a718a8ffe3f",
+      "name": "Grass-roots well-modulated encryption 9",
+      "status": "Pending",
+      "createdDate": "2025-05-14T02:34:24",
+      "updatedDate": "2026-02-13T04:22:15",
+      "owner": "Lauren Matthews",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3648.88,
+      "description": "And anything maintain hotel forward."
+    },
+    {
+      "id": "49bab493-063d-4d59-b9c3-fb4644e9477c",
+      "name": "Centralized zero-defect installation 10",
+      "status": "Completed",
+      "createdDate": "2025-03-03T13:44:56",
+      "updatedDate": "2026-02-15T23:31:19",
+      "owner": "Ashley Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5737.23,
+      "description": "Technology program memory cause health strategy PM teach."
+    },
+    {
+      "id": "f7f05e3a-aabe-4349-b7f7-fc710c989c0c",
+      "name": "Organic mobile standardization 11",
+      "status": "Inactive",
+      "createdDate": "2025-09-16T03:51:04",
+      "updatedDate": "2026-01-20T11:27:36",
+      "owner": "Frank Cook",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2076.07,
+      "description": "He official financial technology nor if."
+    },
+    {
+      "id": "403e0418-9bcb-4cf0-a8f7-2fc9f4ce0393",
+      "name": "Switchable transitional concept 12",
+      "status": "Pending",
+      "createdDate": "2025-10-01T22:35:21",
+      "updatedDate": "2026-02-01T15:08:06",
+      "owner": "Leonard Delacruz",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 147.92,
+      "description": "Star cover agreement write feeling meet."
+    },
+    {
+      "id": "f7c7f445-3be6-46db-ba73-40e88c1c9f71",
+      "name": "Automated contextually-based encoding 13",
+      "status": "Inactive",
+      "createdDate": "2025-12-02T12:48:28",
+      "updatedDate": "2026-01-23T11:52:56",
+      "owner": "Erika Little",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7588.96,
+      "description": "Bank control national hour trade."
+    },
+    {
+      "id": "f9112a30-349f-44a1-88f6-fc623bd22a39",
+      "name": "Fundamental grid-enabled collaboration 14",
+      "status": "Inactive",
+      "createdDate": "2025-02-20T00:21:54",
+      "updatedDate": "2026-02-07T12:18:57",
+      "owner": "Marc Hanna",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3927.3,
+      "description": "Step this state wide too."
+    },
+    {
+      "id": "04ee37c4-55bb-4734-a7b7-d37af5f2ca47",
+      "name": "Implemented composite time-frame 15",
+      "status": "Inactive",
+      "createdDate": "2025-08-31T19:04:31",
+      "updatedDate": "2026-01-25T22:34:40",
+      "owner": "Desiree Romero",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 644.79,
+      "description": "These happy boy mother staff worker."
+    },
+    {
+      "id": "10d8b9cd-41c4-41ad-97aa-e59b32962f45",
+      "name": "Right-sized systematic encoding 16",
+      "status": "Active",
+      "createdDate": "2025-02-18T12:18:49",
+      "updatedDate": "2026-02-09T14:15:31",
+      "owner": "Marissa Padilla",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2342.72,
+      "description": "Room term your team right."
+    },
+    {
+      "id": "cfcf4aec-8190-4c7a-9744-360624b98cc9",
+      "name": "Digitized secondary moratorium 17",
+      "status": "Pending",
+      "createdDate": "2025-11-22T14:13:18",
+      "updatedDate": "2026-02-07T03:21:51",
+      "owner": "Dr. Jeremiah Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9399.24,
+      "description": "Firm support stock positive note specific."
+    },
+    {
+      "id": "a119511b-262f-4872-96c5-e4f0aadc82c2",
+      "name": "Organized transitional orchestration 18",
+      "status": "Completed",
+      "createdDate": "2025-06-15T16:35:30",
+      "updatedDate": "2026-01-19T19:18:26",
+      "owner": "Shane Young",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5240.43,
+      "description": "Why person firm include hot else book."
+    },
+    {
+      "id": "2d880b77-3808-4c8e-b289-5bb19d5bc73b",
+      "name": "Phased bottom-line info-mediaries 19",
+      "status": "Inactive",
+      "createdDate": "2025-12-10T17:04:12",
+      "updatedDate": "2026-01-31T23:50:52",
+      "owner": "Mr. Joshua Oconnor",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7910.17,
+      "description": "Doctor avoid hot family again up appear."
+    },
+    {
+      "id": "4b68e0b5-0c6e-4a92-bf91-2356891ea412",
+      "name": "Fundamental tangible time-frame 20",
+      "status": "Completed",
+      "createdDate": "2025-06-17T03:35:26",
+      "updatedDate": "2026-01-27T21:18:09",
+      "owner": "Alexander Williams",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9196.68,
+      "description": "Style everyone professional development."
+    },
+    {
+      "id": "236bb0d4-c90c-47b3-8f41-5ca3519bf3f6",
+      "name": "Implemented methodical Graphical User Interface 21",
+      "status": "Active",
+      "createdDate": "2025-11-04T06:27:34",
+      "updatedDate": "2026-02-17T02:09:46",
+      "owner": "Samuel Bryant",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2596.23,
+      "description": "According lose cost authority."
+    },
+    {
+      "id": "46a624be-1490-4e2b-8ba1-2395c7bbb7c0",
+      "name": "Face-to-face dynamic algorithm 22",
+      "status": "Inactive",
+      "createdDate": "2025-08-03T07:32:01",
+      "updatedDate": "2026-02-03T16:51:04",
+      "owner": "Jim Chan",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4608.73,
+      "description": "Necessary moment ago marriage identify often."
+    },
+    {
+      "id": "6b874c72-0617-40f3-9a83-8e8a8dd5e099",
+      "name": "Cross-platform tertiary functionalities 23",
+      "status": "Active",
+      "createdDate": "2025-11-11T12:27:52",
+      "updatedDate": "2026-02-07T10:44:51",
+      "owner": "Brian Peters",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2586.34,
+      "description": "Detail already court newspaper medical because."
+    },
+    {
+      "id": "29c9178b-fcf9-4aa1-9d67-0e45b7f5d388",
+      "name": "Organic 5thgeneration collaboration 24",
+      "status": "Inactive",
+      "createdDate": "2025-03-23T18:02:45",
+      "updatedDate": "2026-01-30T10:43:59",
+      "owner": "Jennifer Bates",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3538.57,
+      "description": "Site speak away stock."
+    },
+    {
+      "id": "991a629e-d71a-4dd0-981b-c6721315ffab",
+      "name": "Fundamental interactive flexibility 25",
+      "status": "Inactive",
+      "createdDate": "2025-06-29T15:43:07",
+      "updatedDate": "2026-01-23T00:19:00",
+      "owner": "Amber Carroll",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5833.11,
+      "description": "Political we evidence while study respond side."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

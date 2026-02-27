@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-modelportfolio",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 661,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ff26f8bf-eedf-4308-8b42-757ee13443f1",
+      "name": "Secured value-added challenge 1",
+      "status": "Completed",
+      "createdDate": "2025-10-07T23:19:25",
+      "updatedDate": "2026-01-31T12:25:47",
+      "owner": "Sarah Willis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1034.56,
+      "description": "Hundred rule team financial tell."
+    },
+    {
+      "id": "1c41f7b9-d840-463a-a0c7-18e6008aa17b",
+      "name": "Horizontal impactful Graphic Interface 2",
+      "status": "Active",
+      "createdDate": "2025-09-03T15:09:23",
+      "updatedDate": "2026-01-21T07:47:53",
+      "owner": "Michelle Frazier",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3931.35,
+      "description": "Let simple them movement more respond."
+    },
+    {
+      "id": "ea418f83-87cd-4592-86f1-9d9e6ed6c200",
+      "name": "Assimilated discrete capability 3",
+      "status": "Active",
+      "createdDate": "2025-10-24T08:06:41",
+      "updatedDate": "2026-01-19T06:35:54",
+      "owner": "Sara Hernandez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2824.72,
+      "description": "Site girl doctor."
+    },
+    {
+      "id": "5dbca98d-64f8-44b6-9c56-dfb6570e19f1",
+      "name": "Assimilated homogeneous approach 4",
+      "status": "Pending",
+      "createdDate": "2026-02-14T17:46:09",
+      "updatedDate": "2026-01-23T07:06:42",
+      "owner": "Michael Smith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4130.5,
+      "description": "Card coach decide."
+    },
+    {
+      "id": "6387d6b8-7e9b-449f-bfb1-8860b393cd12",
+      "name": "Up-sized homogeneous ability 5",
+      "status": "Active",
+      "createdDate": "2025-11-20T15:21:46",
+      "updatedDate": "2026-02-13T15:43:00",
+      "owner": "Christine Hughes",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1280.55,
+      "description": "Better most politics education myself."
+    },
+    {
+      "id": "7252c1e8-5103-42cf-81d9-9f173428df8c",
+      "name": "Self-enabling grid-enabled parallelism 6",
+      "status": "Active",
+      "createdDate": "2025-06-23T19:35:59",
+      "updatedDate": "2026-01-22T17:26:11",
+      "owner": "Kathryn Medina",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1088.84,
+      "description": "Subject under mind light."
+    },
+    {
+      "id": "6174fe40-f80f-4117-b8fc-36ffe81ba526",
+      "name": "Proactive heuristic middleware 7",
+      "status": "Completed",
+      "createdDate": "2025-04-08T21:42:22",
+      "updatedDate": "2026-02-16T02:44:03",
+      "owner": "Adam Young",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2482.84,
+      "description": "Against industry coach professional organization phone next."
+    },
+    {
+      "id": "3e10fc69-b0a7-40ed-b1fd-ca58ce470575",
+      "name": "Profit-focused bottom-line Graphical User Interface 8",
+      "status": "Active",
+      "createdDate": "2025-09-07T18:02:07",
+      "updatedDate": "2026-01-24T19:20:20",
+      "owner": "Joseph Martin",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4022.84,
+      "description": "Both technology security certain east difference."
+    },
+    {
+      "id": "5b37bc39-225f-434d-8747-8c6d8c8aefdd",
+      "name": "Quality-focused bottom-line adapter 9",
+      "status": "Pending",
+      "createdDate": "2025-09-20T11:45:34",
+      "updatedDate": "2026-01-21T11:22:33",
+      "owner": "Carol Allen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8896.83,
+      "description": "Media former mission identify reason foot."
+    },
+    {
+      "id": "fd650d88-2a32-4aff-b6f0-fe517af777d0",
+      "name": "Polarized homogeneous framework 10",
+      "status": "Inactive",
+      "createdDate": "2025-11-28T13:17:19",
+      "updatedDate": "2026-02-11T21:42:17",
+      "owner": "Jill Johnston",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5741.7,
+      "description": "Water far stock though out less."
+    },
+    {
+      "id": "090b1853-7f08-4bd6-bb7f-74dc5c1c1f76",
+      "name": "Multi-layered even-keeled portal 11",
+      "status": "Completed",
+      "createdDate": "2025-05-07T01:31:32",
+      "updatedDate": "2026-02-11T21:25:01",
+      "owner": "Cindy Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 609.28,
+      "description": "Discover develop front blood news."
+    },
+    {
+      "id": "3d82eb19-b1a3-4549-a91c-d97aa8ed2962",
+      "name": "Reverse-engineered motivating forecast 12",
+      "status": "Inactive",
+      "createdDate": "2025-03-29T04:27:21",
+      "updatedDate": "2026-02-15T10:13:28",
+      "owner": "Michael Price",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 549.53,
+      "description": "Military wind movie exactly."
+    },
+    {
+      "id": "363f00f2-6fca-4eac-9d39-7bdf258d619b",
+      "name": "Persevering context-sensitive Graphical User Interface 13",
+      "status": "Completed",
+      "createdDate": "2025-09-25T04:20:50",
+      "updatedDate": "2026-01-29T13:14:38",
+      "owner": "Carrie Mendoza",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5947.92,
+      "description": "Right where produce buy arrive various ground."
+    },
+    {
+      "id": "08ccd212-8564-4632-a880-1b4aace7b545",
+      "name": "Digitized tertiary productivity 14",
+      "status": "Inactive",
+      "createdDate": "2025-09-20T11:18:50",
+      "updatedDate": "2026-02-15T19:06:27",
+      "owner": "Kimberly Spencer",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5550.89,
+      "description": "Wrong even feeling several agreement sit level."
+    },
+    {
+      "id": "a6c3ddfe-f12d-4459-a671-d470a58e8575",
+      "name": "Open-source transitional ability 15",
+      "status": "Active",
+      "createdDate": "2026-02-08T20:37:29",
+      "updatedDate": "2026-02-12T23:32:39",
+      "owner": "Nicole Brown",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7466.06,
+      "description": "Beyond determine how weight couple response."
+    },
+    {
+      "id": "e1b520b6-6962-4536-9190-3332f66c40e0",
+      "name": "Function-based interactive encryption 16",
+      "status": "Active",
+      "createdDate": "2025-09-02T06:05:55",
+      "updatedDate": "2026-02-07T12:41:06",
+      "owner": "Michael Garza",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6487.53,
+      "description": "Its break those despite population arrive last."
+    },
+    {
+      "id": "88581701-3f51-49bd-a188-0ad9b8117c30",
+      "name": "Cloned bifurcated flexibility 17",
+      "status": "Pending",
+      "createdDate": "2026-01-24T17:29:29",
+      "updatedDate": "2026-02-04T21:40:36",
+      "owner": "Ashley Beltran",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2063.94,
+      "description": "Space president think listen return main level."
+    },
+    {
+      "id": "b629ebe9-9ef8-438a-a622-a38d7d8e5016",
+      "name": "De-engineered discrete capability 18",
+      "status": "Active",
+      "createdDate": "2025-12-11T10:34:05",
+      "updatedDate": "2026-02-10T08:29:43",
+      "owner": "Jaime Mccullough",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8691.76,
+      "description": "Arm growth much fill suddenly."
+    },
+    {
+      "id": "d3de09b3-ee91-46b4-b3f5-fab7faca1bd7",
+      "name": "Open-source attitude-oriented flexibility 19",
+      "status": "Active",
+      "createdDate": "2025-07-18T08:17:51",
+      "updatedDate": "2026-01-28T13:07:31",
+      "owner": "William Haney",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8363.97,
+      "description": "Site attorney politics."
+    },
+    {
+      "id": "5239e285-bf48-44a0-9d04-2c499e6400fc",
+      "name": "Re-engineered grid-enabled Local Area Network 20",
+      "status": "Active",
+      "createdDate": "2025-11-09T02:58:49",
+      "updatedDate": "2026-01-28T02:36:33",
+      "owner": "Colton Underwood",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5874.3,
+      "description": "Early give save them."
+    },
+    {
+      "id": "27a89606-e405-4058-85f2-ea9ca74ef793",
+      "name": "Open-architected heuristic functionalities 21",
+      "status": "Pending",
+      "createdDate": "2025-09-03T09:57:23",
+      "updatedDate": "2026-01-30T19:36:43",
+      "owner": "Joseph Love",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6775.28,
+      "description": "Manage southern fear child least product."
+    },
+    {
+      "id": "383c8374-b9e8-4bd0-916f-8bb19cc97022",
+      "name": "Self-enabling logistical array 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-14T00:46:45",
+      "updatedDate": "2026-01-24T10:39:00",
+      "owner": "Ashley Montoya",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 626.14,
+      "description": "Ability what question star white."
+    },
+    {
+      "id": "de7d42bf-a923-4dc8-88f9-6b2fd0e11b55",
+      "name": "Diverse needs-based migration 23",
+      "status": "Inactive",
+      "createdDate": "2025-02-26T10:39:14",
+      "updatedDate": "2026-02-06T18:15:11",
+      "owner": "Jennifer Butler",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4371.13,
+      "description": "Ready town scene car ahead career bad."
+    },
+    {
+      "id": "932f051c-c01b-43c4-9273-e65748471bf7",
+      "name": "Versatile multimedia implementation 24",
+      "status": "Inactive",
+      "createdDate": "2025-02-21T23:58:57",
+      "updatedDate": "2026-02-14T15:47:47",
+      "owner": "Kevin King",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4790.69,
+      "description": "Owner probably against."
+    },
+    {
+      "id": "3a187b14-26c5-4f46-81f9-ae34fadbe794",
+      "name": "Centralized 6thgeneration system engine 25",
+      "status": "Active",
+      "createdDate": "2026-01-17T02:29:51",
+      "updatedDate": "2026-02-02T00:58:31",
+      "owner": "Michael Donaldson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6765.74,
+      "description": "Major article score have."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

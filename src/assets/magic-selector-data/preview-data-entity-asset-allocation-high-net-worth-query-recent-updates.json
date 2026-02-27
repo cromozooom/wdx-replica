@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-recent-updates",
+  "totalCount": 317,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "e906297d-ec73-4040-858f-a9381ba47755",
+      "name": "Open-architected incremental help-desk 1",
+      "status": "Completed",
+      "createdDate": "2025-04-24T12:57:07",
+      "updatedDate": "2026-02-05T10:26:43",
+      "owner": "Dr. Stephen Myers MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5640.33,
+      "description": "Forget power woman."
+    },
+    {
+      "id": "9fec2f5a-cfc5-4384-91bb-91543915b5a4",
+      "name": "Reverse-engineered secondary intranet 2",
+      "status": "Inactive",
+      "createdDate": "2025-04-25T11:59:51",
+      "updatedDate": "2026-01-25T06:07:06",
+      "owner": "Ms. Paula Solis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6405.24,
+      "description": "Write meet personal management mean rock."
+    },
+    {
+      "id": "f638c9d8-f2be-4bdc-b4ef-630c9205727c",
+      "name": "De-engineered zero administration protocol 3",
+      "status": "Active",
+      "createdDate": "2025-09-04T00:38:26",
+      "updatedDate": "2026-01-22T16:32:51",
+      "owner": "Lisa Patel",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6518.54,
+      "description": "Goal food challenge."
+    },
+    {
+      "id": "506f2d5f-5c37-4936-8044-26866966015b",
+      "name": "Mandatory 24hour emulation 4",
+      "status": "Completed",
+      "createdDate": "2025-06-13T04:47:54",
+      "updatedDate": "2026-01-30T10:07:01",
+      "owner": "Michael Williamson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6203.45,
+      "description": "One nor then several."
+    },
+    {
+      "id": "4c62ff37-19f8-4dcb-ace9-72dbf93790fe",
+      "name": "Cloned modular superstructure 5",
+      "status": "Inactive",
+      "createdDate": "2026-01-16T19:19:21",
+      "updatedDate": "2026-02-09T08:51:07",
+      "owner": "Carol Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1137.54,
+      "description": "Represent direction represent though across."
+    },
+    {
+      "id": "45420888-3f47-441d-877d-c347bf3aa8b1",
+      "name": "Cross-platform optimizing system engine 6",
+      "status": "Inactive",
+      "createdDate": "2025-12-14T21:02:50",
+      "updatedDate": "2026-01-29T07:50:04",
+      "owner": "Kim Martin",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6604.0,
+      "description": "Its year sometimes."
+    },
+    {
+      "id": "bc152bc7-9a74-4a75-82c9-f1f1fe42fb02",
+      "name": "Right-sized cohesive success 7",
+      "status": "Completed",
+      "createdDate": "2025-12-09T13:29:43",
+      "updatedDate": "2026-02-12T08:10:09",
+      "owner": "Jose Jones",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 645.1,
+      "description": "Economy operation minute thank to mention."
+    },
+    {
+      "id": "df342ad7-f54d-47d4-9169-e0325fcea436",
+      "name": "Implemented 24hour policy 8",
+      "status": "Inactive",
+      "createdDate": "2025-04-25T16:30:35",
+      "updatedDate": "2026-02-04T06:50:30",
+      "owner": "Jose Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6725.59,
+      "description": "Answer score deep director little better."
+    },
+    {
+      "id": "02093676-b659-4fab-8da5-dd63d257ee8d",
+      "name": "Extended tertiary analyzer 9",
+      "status": "Inactive",
+      "createdDate": "2025-04-12T10:51:05",
+      "updatedDate": "2026-02-10T02:18:58",
+      "owner": "Scott Bennett",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6779.16,
+      "description": "Discuss color eye machine."
+    },
+    {
+      "id": "d511f390-07f3-40ab-809c-2f051bdb2a91",
+      "name": "Optional zero-defect approach 10",
+      "status": "Completed",
+      "createdDate": "2025-08-13T06:33:53",
+      "updatedDate": "2026-02-10T23:46:52",
+      "owner": "Amanda Cooper",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2025.86,
+      "description": "North strategy two international ten."
+    },
+    {
+      "id": "e4416570-b4d5-451f-bae8-6079e7edbc4d",
+      "name": "Quality-focused even-keeled support 11",
+      "status": "Active",
+      "createdDate": "2025-08-24T05:04:32",
+      "updatedDate": "2026-02-14T11:47:32",
+      "owner": "Jennifer Copeland",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1977.14,
+      "description": "Degree matter institution walk front lead save."
+    },
+    {
+      "id": "0f424d50-6aa1-4942-b95f-618b7e1af8e7",
+      "name": "Fundamental discrete challenge 12",
+      "status": "Inactive",
+      "createdDate": "2025-06-24T04:35:32",
+      "updatedDate": "2026-02-13T14:39:03",
+      "owner": "Michael Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7404.75,
+      "description": "Magazine safe audience song adult if understand."
+    },
+    {
+      "id": "28e90736-3c5a-4ede-9cd9-387257a1bc11",
+      "name": "Realigned heuristic moderator 13",
+      "status": "Active",
+      "createdDate": "2025-09-29T22:29:49",
+      "updatedDate": "2026-02-05T20:58:29",
+      "owner": "Robert Salazar",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5714.83,
+      "description": "Perhaps yard record something."
+    },
+    {
+      "id": "c5627380-858e-4b32-b898-57993f16a5c3",
+      "name": "Streamlined demand-driven adapter 14",
+      "status": "Active",
+      "createdDate": "2025-05-08T10:28:58",
+      "updatedDate": "2026-01-19T01:48:19",
+      "owner": "Suzanne Griffin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3638.65,
+      "description": "Plant control event game again."
+    },
+    {
+      "id": "66d21120-3f65-498b-b26c-309be399ee34",
+      "name": "Quality-focused national ability 15",
+      "status": "Pending",
+      "createdDate": "2025-05-29T04:21:44",
+      "updatedDate": "2026-01-23T07:48:17",
+      "owner": "Eric Waller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9488.32,
+      "description": "Stay material possible long."
+    },
+    {
+      "id": "15f926a0-1866-49f6-a0d8-b4058f81cc21",
+      "name": "Function-based discrete matrix 16",
+      "status": "Inactive",
+      "createdDate": "2025-06-13T11:38:35",
+      "updatedDate": "2026-01-20T03:00:12",
+      "owner": "Nicholas Robinson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3409.71,
+      "description": "Industry course challenge then pressure owner."
+    },
+    {
+      "id": "c2440ffc-d52a-4a9d-b5d0-75f358839df9",
+      "name": "Persistent background secured line 17",
+      "status": "Inactive",
+      "createdDate": "2026-01-09T07:37:13",
+      "updatedDate": "2026-01-29T18:37:01",
+      "owner": "Kimberly Boone",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7901.01,
+      "description": "Notice discussion candidate central skin special."
+    },
+    {
+      "id": "b993e708-ecc3-40de-8063-24c1d71353a6",
+      "name": "Synchronized coherent core 18",
+      "status": "Active",
+      "createdDate": "2025-05-31T12:32:18",
+      "updatedDate": "2026-01-19T10:25:50",
+      "owner": "Julia Hood DVM",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1858.9,
+      "description": "Order paper system can past which research shoulder."
+    },
+    {
+      "id": "c333e1bc-e5bb-47bd-8410-b9dba03ddb74",
+      "name": "Re-engineered next generation intranet 19",
+      "status": "Completed",
+      "createdDate": "2025-10-03T21:09:57",
+      "updatedDate": "2026-01-29T16:45:05",
+      "owner": "Cassandra Brooks",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7387.24,
+      "description": "Yes provide whether north whatever."
+    },
+    {
+      "id": "5e368463-b9a7-49af-98ea-08000692d1e1",
+      "name": "Programmable real-time extranet 20",
+      "status": "Pending",
+      "createdDate": "2025-10-30T21:32:53",
+      "updatedDate": "2026-01-24T00:14:55",
+      "owner": "Mr. Stephen Fischer",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5399.03,
+      "description": "Lot wind skill executive together rise cover."
+    },
+    {
+      "id": "f68564a0-09ad-4f1d-89b0-8f259c597888",
+      "name": "Seamless heuristic throughput 21",
+      "status": "Active",
+      "createdDate": "2025-05-10T13:39:47",
+      "updatedDate": "2026-02-02T08:01:15",
+      "owner": "Connor Warner",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7100.88,
+      "description": "Difficult bill key across."
+    },
+    {
+      "id": "1e85cf27-5f7a-42f4-a3cb-74ada66e7e3e",
+      "name": "Up-sized mobile protocol 22",
+      "status": "Completed",
+      "createdDate": "2025-05-26T13:02:09",
+      "updatedDate": "2026-02-04T00:37:41",
+      "owner": "Zachary Mayo",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3964.71,
+      "description": "Suffer late investment picture."
+    },
+    {
+      "id": "8fd6b146-d368-4f57-b052-076ab3f0dd62",
+      "name": "Ameliorated encompassing alliance 23",
+      "status": "Active",
+      "createdDate": "2025-12-30T02:14:20",
+      "updatedDate": "2026-02-08T08:53:31",
+      "owner": "Christina Francis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7070.76,
+      "description": "Message career security past statement."
+    },
+    {
+      "id": "ea5177f4-55cc-4417-bfd4-093e102454f5",
+      "name": "Stand-alone real-time capacity 24",
+      "status": "Inactive",
+      "createdDate": "2025-05-30T13:02:46",
+      "updatedDate": "2026-01-23T19:34:09",
+      "owner": "Cynthia Lopez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9932.8,
+      "description": "Store ever stage vote least."
+    },
+    {
+      "id": "46edade8-c7ea-4a79-8410-1a000fdb9a23",
+      "name": "Down-sized analyzing alliance 25",
+      "status": "Inactive",
+      "createdDate": "2025-05-25T01:01:31",
+      "updatedDate": "2026-02-16T18:56:14",
+      "owner": "Matthew Garrett",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8956.21,
+      "description": "Deal rest dog yeah plant."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

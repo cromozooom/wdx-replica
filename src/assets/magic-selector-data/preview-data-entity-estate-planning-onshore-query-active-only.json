@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-active-only",
+  "totalCount": 150,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "1a1322c3-25d4-4ec9-99af-36b8f2ae8e8f",
+      "name": "Implemented analyzing collaboration 1",
+      "status": "Active",
+      "createdDate": "2025-09-30T10:01:20",
+      "updatedDate": "2026-02-17T00:55:59",
+      "owner": "Jennifer Dixon",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6409.18,
+      "description": "Catch at avoid whether nearly."
+    },
+    {
+      "id": "f8746afc-b95c-4f30-bf2b-f77a0af51c81",
+      "name": "Realigned homogeneous conglomeration 2",
+      "status": "Pending",
+      "createdDate": "2025-10-11T22:45:38",
+      "updatedDate": "2026-01-28T07:21:19",
+      "owner": "Jeff Hart",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5489.1,
+      "description": "Bag election short some push society."
+    },
+    {
+      "id": "09bd54d7-378b-464d-b28a-05fceee7a68f",
+      "name": "Seamless analyzing concept 3",
+      "status": "Active",
+      "createdDate": "2026-01-24T20:56:20",
+      "updatedDate": "2026-01-25T06:01:22",
+      "owner": "Tim Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3968.6,
+      "description": "Focus garden finish huge."
+    },
+    {
+      "id": "819f4542-d5ca-4814-a316-87197dd70367",
+      "name": "Profound fresh-thinking migration 4",
+      "status": "Active",
+      "createdDate": "2025-11-29T13:04:45",
+      "updatedDate": "2026-01-27T23:46:40",
+      "owner": "Lori Perez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3280.42,
+      "description": "Create matter some on not large."
+    },
+    {
+      "id": "db352429-3a23-4d90-bcee-5b0d5b901552",
+      "name": "Enterprise-wide asynchronous neural-net 5",
+      "status": "Inactive",
+      "createdDate": "2025-05-08T18:37:37",
+      "updatedDate": "2026-02-12T22:25:17",
+      "owner": "Joshua Thomas",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5940.45,
+      "description": "Develop fear moment oil society late list radio."
+    },
+    {
+      "id": "d7da7757-c234-4db4-9843-5a3ff5c306d9",
+      "name": "De-engineered dynamic installation 6",
+      "status": "Inactive",
+      "createdDate": "2025-05-22T12:22:22",
+      "updatedDate": "2026-02-09T08:33:18",
+      "owner": "Haley Sparks",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4154.3,
+      "description": "Public near three former strategy."
+    },
+    {
+      "id": "69f9a1d9-7894-4b86-8712-e0c039fdd5d2",
+      "name": "Robust tertiary orchestration 7",
+      "status": "Inactive",
+      "createdDate": "2025-06-19T01:31:09",
+      "updatedDate": "2026-01-23T00:12:14",
+      "owner": "Kristin Ross",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7429.49,
+      "description": "Every pick ten interesting remember group guy."
+    },
+    {
+      "id": "e27d8d99-82fa-40cc-b954-b1bb0922a790",
+      "name": "Up-sized modular open system 8",
+      "status": "Active",
+      "createdDate": "2025-06-29T19:36:37",
+      "updatedDate": "2026-01-31T15:45:33",
+      "owner": "Nicholas Benitez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3397.04,
+      "description": "Change might including nation teach."
+    },
+    {
+      "id": "a8db3428-4735-4611-9bbf-849cb9bdbf2f",
+      "name": "Mandatory maximized Graphical User Interface 9",
+      "status": "Completed",
+      "createdDate": "2025-11-18T18:00:01",
+      "updatedDate": "2026-01-28T16:12:19",
+      "owner": "Lisa Lewis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 620.5,
+      "description": "Rather central much statement check."
+    },
+    {
+      "id": "5eaafeb0-d305-4f5f-b009-404839944f86",
+      "name": "Mandatory bandwidth-monitored support 10",
+      "status": "Pending",
+      "createdDate": "2025-07-24T15:56:34",
+      "updatedDate": "2026-02-04T03:06:26",
+      "owner": "Jeffrey Odonnell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 279.52,
+      "description": "Suggest indeed own often say ask example."
+    },
+    {
+      "id": "f4ef0ee2-64ee-40b3-93f2-4cd6a6387a8b",
+      "name": "Expanded human-resource budgetary management 11",
+      "status": "Inactive",
+      "createdDate": "2025-03-21T05:32:18",
+      "updatedDate": "2026-02-09T22:14:46",
+      "owner": "Bobby Ware",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2612.43,
+      "description": "Attention green there half."
+    },
+    {
+      "id": "224c6c7d-daef-4c99-9f5d-89e91c305575",
+      "name": "Cross-platform impactful encoding 12",
+      "status": "Completed",
+      "createdDate": "2026-01-01T05:38:41",
+      "updatedDate": "2026-02-16T16:36:45",
+      "owner": "Jennifer Clark",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2625.12,
+      "description": "Law call ten west who."
+    },
+    {
+      "id": "9e38c36f-4b74-4715-b7a1-7f8402c9c1de",
+      "name": "Cross-platform client-server standardization 13",
+      "status": "Pending",
+      "createdDate": "2025-03-15T06:28:22",
+      "updatedDate": "2026-01-19T23:01:47",
+      "owner": "Monica Mercado",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1652.72,
+      "description": "Ready high address."
+    },
+    {
+      "id": "39b05de9-d5c7-45ea-ad6e-febabecd9308",
+      "name": "Distributed content-based firmware 14",
+      "status": "Active",
+      "createdDate": "2025-05-02T18:46:16",
+      "updatedDate": "2026-01-28T12:38:00",
+      "owner": "Joshua Perez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1699.62,
+      "description": "Mission prevent war contain politics social."
+    },
+    {
+      "id": "9756af7c-804a-4f18-844a-fa24db4397e7",
+      "name": "Open-architected bifurcated flexibility 15",
+      "status": "Inactive",
+      "createdDate": "2025-03-04T17:48:18",
+      "updatedDate": "2026-02-05T18:10:13",
+      "owner": "Peter Tran",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2138.67,
+      "description": "Speech assume middle issue point church."
+    },
+    {
+      "id": "e1524e1a-b58b-4a8a-a742-df15050ce7e4",
+      "name": "Vision-oriented context-sensitive contingency 16",
+      "status": "Active",
+      "createdDate": "2025-11-03T09:42:44",
+      "updatedDate": "2026-02-01T07:10:46",
+      "owner": "Erin Harris",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3278.18,
+      "description": "Special color gas leader."
+    },
+    {
+      "id": "af1b6a90-3355-47b2-a46a-e18af4552eb1",
+      "name": "Persevering executive focus group 17",
+      "status": "Pending",
+      "createdDate": "2025-03-20T23:16:47",
+      "updatedDate": "2026-02-07T11:57:18",
+      "owner": "Robert Wilson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9986.72,
+      "description": "Toward anyone cold source find."
+    },
+    {
+      "id": "e8ef823a-a6b1-414b-87d9-adf872253abd",
+      "name": "Expanded needs-based archive 18",
+      "status": "Pending",
+      "createdDate": "2025-11-28T19:49:23",
+      "updatedDate": "2026-01-28T05:42:31",
+      "owner": "Ricky Stevenson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2310.96,
+      "description": "Buy support action interesting protect notice tonight exist."
+    },
+    {
+      "id": "31480baf-d575-4d02-ad5a-88811dc8396c",
+      "name": "Expanded discrete leverage 19",
+      "status": "Inactive",
+      "createdDate": "2025-03-07T18:34:41",
+      "updatedDate": "2026-02-06T06:34:21",
+      "owner": "Martin Black",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8236.91,
+      "description": "Democrat sea news find art religious most."
+    },
+    {
+      "id": "414ee4fa-917e-4ceb-a96b-b3a5296d85e1",
+      "name": "Balanced solution-oriented application 20",
+      "status": "Pending",
+      "createdDate": "2025-03-15T02:58:11",
+      "updatedDate": "2026-01-27T23:20:55",
+      "owner": "Stephen Campbell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5946.48,
+      "description": "Customer career same determine study front."
+    },
+    {
+      "id": "f54c2074-7da8-4d18-b12b-5abb2ff850e5",
+      "name": "Future-proofed systematic firmware 21",
+      "status": "Active",
+      "createdDate": "2025-09-03T01:08:19",
+      "updatedDate": "2026-01-19T09:55:01",
+      "owner": "Christine Weaver",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5188.37,
+      "description": "Cause under here determine commercial."
+    },
+    {
+      "id": "497e860d-9911-445b-a606-0a7409b1bead",
+      "name": "Re-engineered optimal emulation 22",
+      "status": "Pending",
+      "createdDate": "2025-11-19T16:44:06",
+      "updatedDate": "2026-01-28T10:52:44",
+      "owner": "Cheryl Robertson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3108.75,
+      "description": "Recently few good our between help concern."
+    },
+    {
+      "id": "2f9c04e4-74e1-4743-8a96-917f20451694",
+      "name": "Mandatory clear-thinking encryption 23",
+      "status": "Active",
+      "createdDate": "2025-05-09T02:17:55",
+      "updatedDate": "2026-02-09T01:09:30",
+      "owner": "Angel Combs",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4549.36,
+      "description": "Space left run through finish without."
+    },
+    {
+      "id": "e33f1743-297e-4a8f-8380-88c510fa8e50",
+      "name": "Implemented object-oriented encryption 24",
+      "status": "Inactive",
+      "createdDate": "2025-04-14T23:16:56",
+      "updatedDate": "2026-02-12T17:31:57",
+      "owner": "Christina Perez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9940.34,
+      "description": "Quickly last cause spring before already writer."
+    },
+    {
+      "id": "c2d0cc5e-e839-49d4-ab16-da276caf8d36",
+      "name": "Adaptive object-oriented alliance 25",
+      "status": "Pending",
+      "createdDate": "2026-01-11T03:29:46",
+      "updatedDate": "2026-02-08T15:06:18",
+      "owner": "Phillip Williams",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5126.7,
+      "description": "Probably world book shake."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

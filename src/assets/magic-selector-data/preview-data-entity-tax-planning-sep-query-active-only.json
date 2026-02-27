@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-active-only",
+  "totalCount": 176,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "e3f1d5a4-79a6-401e-a8be-1ba881f72f5a",
+      "name": "Ergonomic modular matrix 1",
+      "status": "Pending",
+      "createdDate": "2026-02-16T05:56:34",
+      "updatedDate": "2026-02-10T12:56:38",
+      "owner": "Paul Baker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3180.04,
+      "description": "Event audience full allow."
+    },
+    {
+      "id": "aa7f8813-d60c-47cb-8418-a19be26443d5",
+      "name": "Persistent next generation help-desk 2",
+      "status": "Inactive",
+      "createdDate": "2025-04-27T06:57:54",
+      "updatedDate": "2026-01-24T06:05:50",
+      "owner": "Jay Moore",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5038.85,
+      "description": "Unit break make leg."
+    },
+    {
+      "id": "4b284626-f7ba-40c4-8c64-cead0a81b711",
+      "name": "Fundamental contextually-based collaboration 3",
+      "status": "Completed",
+      "createdDate": "2025-12-27T03:12:11",
+      "updatedDate": "2026-02-03T03:51:16",
+      "owner": "Kimberly Lewis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8527.07,
+      "description": "Sign couple approach leader."
+    },
+    {
+      "id": "c26873ee-4100-43a5-968c-7af70686d285",
+      "name": "Managed well-modulated archive 4",
+      "status": "Completed",
+      "createdDate": "2025-03-06T09:49:34",
+      "updatedDate": "2026-01-22T03:33:33",
+      "owner": "Michael Pineda",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2010.64,
+      "description": "Box find order not economy player not."
+    },
+    {
+      "id": "c7bcdc8c-aea9-4650-ab4f-36881fc569c3",
+      "name": "Object-based hybrid time-frame 5",
+      "status": "Pending",
+      "createdDate": "2025-09-10T10:19:23",
+      "updatedDate": "2026-01-22T13:54:23",
+      "owner": "Eric Smith",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6881.47,
+      "description": "Read he idea fight yard necessary successful."
+    },
+    {
+      "id": "0f56bb8b-8fb8-42af-b4b1-d81865235161",
+      "name": "Up-sized national projection 6",
+      "status": "Active",
+      "createdDate": "2026-02-01T22:42:11",
+      "updatedDate": "2026-01-24T19:04:49",
+      "owner": "Lisa Bailey",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5581.15,
+      "description": "Amount security value available collection."
+    },
+    {
+      "id": "7be76e88-0337-4883-829f-04516ace096c",
+      "name": "Automated background intranet 7",
+      "status": "Pending",
+      "createdDate": "2025-05-17T17:08:47",
+      "updatedDate": "2026-02-05T16:36:22",
+      "owner": "Eduardo Carpenter",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3850.72,
+      "description": "Likely arrive woman that into system boy little."
+    },
+    {
+      "id": "fe7cdf29-b292-4452-8a1a-c132368eee6f",
+      "name": "Persistent national capability 8",
+      "status": "Completed",
+      "createdDate": "2025-02-18T20:00:32",
+      "updatedDate": "2026-02-11T19:34:37",
+      "owner": "Erica Thomas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2031.54,
+      "description": "Scene article realize meeting scene fear."
+    },
+    {
+      "id": "ad3a3ca2-9cb7-43dc-8229-9af22f199964",
+      "name": "De-engineered 4thgeneration migration 9",
+      "status": "Inactive",
+      "createdDate": "2026-02-03T11:10:32",
+      "updatedDate": "2026-02-03T08:01:39",
+      "owner": "Ryan Baldwin",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 577.66,
+      "description": "Visit weight between either."
+    },
+    {
+      "id": "b54266b4-6b1d-4088-859e-871bd3410743",
+      "name": "Streamlined next generation array 10",
+      "status": "Active",
+      "createdDate": "2025-03-06T23:13:28",
+      "updatedDate": "2026-01-29T00:07:03",
+      "owner": "Erica Taylor",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4143.52,
+      "description": "Like end these individual practice sell."
+    },
+    {
+      "id": "2d26e646-3479-4989-bb7e-990da936708c",
+      "name": "Multi-channeled upward-trending collaboration 11",
+      "status": "Active",
+      "createdDate": "2025-12-14T07:21:21",
+      "updatedDate": "2026-01-29T16:38:27",
+      "owner": "Jimmy Molina",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5409.7,
+      "description": "Stop board involve food foreign protect."
+    },
+    {
+      "id": "770e3c3b-9b93-4591-8dd9-374775311326",
+      "name": "Reverse-engineered holistic utilization 12",
+      "status": "Inactive",
+      "createdDate": "2025-12-01T10:07:45",
+      "updatedDate": "2026-01-21T12:34:11",
+      "owner": "Tina Chen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 731.32,
+      "description": "Chair but care feel my off."
+    },
+    {
+      "id": "0c1bd56f-f9f4-4f3f-8b03-7686c0f086e8",
+      "name": "Monitored disintermediate leverage 13",
+      "status": "Completed",
+      "createdDate": "2026-01-11T20:10:46",
+      "updatedDate": "2026-02-01T20:06:17",
+      "owner": "Tina Bowman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9585.84,
+      "description": "Apply listen great force I."
+    },
+    {
+      "id": "35f172d3-8c46-4c07-9999-e12cee71d84a",
+      "name": "Visionary responsive support 14",
+      "status": "Inactive",
+      "createdDate": "2026-02-06T13:00:21",
+      "updatedDate": "2026-02-09T19:46:59",
+      "owner": "Mark Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 544.46,
+      "description": "Politics ago face share manager true."
+    },
+    {
+      "id": "af21f374-594a-4710-9dc4-f4fc89b546d0",
+      "name": "Automated interactive standardization 15",
+      "status": "Pending",
+      "createdDate": "2025-09-06T13:59:11",
+      "updatedDate": "2026-01-20T10:54:01",
+      "owner": "David Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3772.12,
+      "description": "News series whole generation surface."
+    },
+    {
+      "id": "566bbbc6-49fb-4d7b-b92e-50f103cb6610",
+      "name": "Enhanced 5thgeneration architecture 16",
+      "status": "Active",
+      "createdDate": "2025-08-07T00:41:55",
+      "updatedDate": "2026-01-28T04:13:04",
+      "owner": "Jesse Vaughn",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6263.01,
+      "description": "Kitchen director wonder heart."
+    },
+    {
+      "id": "f3caf26e-5c46-4be5-98a1-72d46338b97a",
+      "name": "Quality-focused scalable attitude 17",
+      "status": "Active",
+      "createdDate": "2025-06-23T00:34:56",
+      "updatedDate": "2026-01-28T02:41:44",
+      "owner": "Thomas Shelton",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6997.38,
+      "description": "Popular close teach foot research rise at threat."
+    },
+    {
+      "id": "4ccfaa4b-79da-4234-a438-9abb92bedf6c",
+      "name": "Business-focused next generation parallelism 18",
+      "status": "Active",
+      "createdDate": "2025-12-23T21:08:37",
+      "updatedDate": "2026-01-25T23:56:54",
+      "owner": "Jamie Holloway",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 562.82,
+      "description": "Hospital age sport hold some hold."
+    },
+    {
+      "id": "d574b64c-e5b7-4e42-979a-20c5b2b4e9f3",
+      "name": "Diverse upward-trending application 19",
+      "status": "Inactive",
+      "createdDate": "2025-05-29T14:21:56",
+      "updatedDate": "2026-02-17T08:47:47",
+      "owner": "Deborah Saunders",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7874.07,
+      "description": "Later move section than office."
+    },
+    {
+      "id": "30269080-cb40-4b54-9c5a-5479c9b6b2e8",
+      "name": "Pre-emptive logistical encoding 20",
+      "status": "Completed",
+      "createdDate": "2025-08-16T02:48:19",
+      "updatedDate": "2026-01-26T20:28:43",
+      "owner": "Joan Edwards",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 791.01,
+      "description": "Say call share wrong rise add face owner."
+    },
+    {
+      "id": "7c09238c-608a-4bf8-bfc7-ced332912337",
+      "name": "Pre-emptive executive task-force 21",
+      "status": "Completed",
+      "createdDate": "2025-10-13T01:03:31",
+      "updatedDate": "2026-02-17T03:36:09",
+      "owner": "Sarah Vasquez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8199.7,
+      "description": "Difference threat reason direction opportunity let second."
+    },
+    {
+      "id": "4d00e92d-6e19-4c34-a379-33d414b7f223",
+      "name": "Integrated analyzing capacity 22",
+      "status": "Completed",
+      "createdDate": "2025-09-07T03:01:24",
+      "updatedDate": "2026-01-20T04:29:44",
+      "owner": "Sarah Allen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2047.29,
+      "description": "From southern whether bill effort may customer."
+    },
+    {
+      "id": "ebd9cac1-2eca-40db-9205-b2b293004e1c",
+      "name": "Polarized zero administration concept 23",
+      "status": "Active",
+      "createdDate": "2025-07-22T21:48:48",
+      "updatedDate": "2026-02-13T16:47:33",
+      "owner": "Cindy Sanchez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6649.78,
+      "description": "Current actually apply."
+    },
+    {
+      "id": "55ec031c-a90c-476c-b9de-2dd460a222d6",
+      "name": "Horizontal discrete encoding 24",
+      "status": "Pending",
+      "createdDate": "2025-12-15T04:24:52",
+      "updatedDate": "2026-02-05T08:24:44",
+      "owner": "Sherry Strickland",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1679.72,
+      "description": "Question drop hospital plant scientist head actually."
+    },
+    {
+      "id": "1f7274ad-9524-484f-a812-cb724a0ff2dd",
+      "name": "Quality-focused incremental attitude 25",
+      "status": "Active",
+      "createdDate": "2025-07-10T01:58:54",
+      "updatedDate": "2026-02-13T03:28:36",
+      "owner": "Tiffany Whitaker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3401.25,
+      "description": "Keep amount feeling parent those father along rather."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

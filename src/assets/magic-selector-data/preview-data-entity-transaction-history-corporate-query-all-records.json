@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-all-records",
+  "totalCount": 1210,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "66bf7c39-cee5-4633-8e48-815f3105b118",
+      "name": "Mandatory dedicated structure 1",
+      "status": "Active",
+      "createdDate": "2025-11-02T17:21:07",
+      "updatedDate": "2026-01-29T17:57:53",
+      "owner": "Samantha Kramer",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8984.28,
+      "description": "Space weight population tend else authority."
+    },
+    {
+      "id": "5b3c67c6-d2a1-4dba-97ed-99f713ba8209",
+      "name": "Team-oriented value-added knowledge user 2",
+      "status": "Pending",
+      "createdDate": "2025-04-24T01:27:58",
+      "updatedDate": "2026-02-08T04:50:59",
+      "owner": "Katherine Ramirez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5437.85,
+      "description": "Yeah drop street government soldier."
+    },
+    {
+      "id": "1662a74a-33fc-4121-bfb0-b383b695d92c",
+      "name": "Inverse asynchronous utilization 3",
+      "status": "Active",
+      "createdDate": "2026-01-13T15:30:40",
+      "updatedDate": "2026-02-05T18:58:10",
+      "owner": "Angela Ibarra",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8224.28,
+      "description": "Stuff personal exist low quality after a miss."
+    },
+    {
+      "id": "d503ce4b-97d2-4ca9-8df3-963adc40df3d",
+      "name": "Multi-lateral cohesive standardization 4",
+      "status": "Completed",
+      "createdDate": "2026-01-24T05:05:39",
+      "updatedDate": "2026-01-29T15:21:23",
+      "owner": "Joel Price",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1665.46,
+      "description": "Water off far music."
+    },
+    {
+      "id": "d5c8e21d-195b-4e33-90d7-5777d3d15641",
+      "name": "Multi-layered upward-trending functionalities 5",
+      "status": "Completed",
+      "createdDate": "2026-01-22T22:57:12",
+      "updatedDate": "2026-02-03T02:27:59",
+      "owner": "Robert Norris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2846.02,
+      "description": "Charge deal occur physical itself."
+    },
+    {
+      "id": "7144b00d-dde5-4767-a684-b7209c37f605",
+      "name": "Sharable needs-based service-desk 6",
+      "status": "Inactive",
+      "createdDate": "2025-05-29T23:23:15",
+      "updatedDate": "2026-02-01T18:26:40",
+      "owner": "Ashley Stafford",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7473.03,
+      "description": "Reach plan beat class left at."
+    },
+    {
+      "id": "f00c307d-e3d3-458f-a39f-6d30301fd344",
+      "name": "Secured encompassing help-desk 7",
+      "status": "Completed",
+      "createdDate": "2026-02-11T11:52:57",
+      "updatedDate": "2026-02-03T19:24:28",
+      "owner": "Leslie Hunt",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7196.85,
+      "description": "Else at exist crime could bill street."
+    },
+    {
+      "id": "ee834ff2-de5b-4649-806b-4cc408efef0c",
+      "name": "Fundamental asymmetric ability 8",
+      "status": "Inactive",
+      "createdDate": "2025-03-29T18:33:03",
+      "updatedDate": "2026-02-08T01:21:37",
+      "owner": "David Watson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1718.88,
+      "description": "Begin great need identify professor example bank."
+    },
+    {
+      "id": "bb62e2d5-3815-4b8d-bb52-649f103f8537",
+      "name": "Proactive zero tolerance function 9",
+      "status": "Inactive",
+      "createdDate": "2025-05-24T08:02:30",
+      "updatedDate": "2026-01-22T18:47:04",
+      "owner": "Connor Jones PhD",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2148.72,
+      "description": "Interesting red sound wrong yourself rest film."
+    },
+    {
+      "id": "5ec538ad-6abb-40db-9741-b4aa49f56002",
+      "name": "Exclusive heuristic software 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-30T23:15:29",
+      "updatedDate": "2026-01-27T21:24:22",
+      "owner": "Amber Austin",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4024.22,
+      "description": "My happen minute forward exactly."
+    },
+    {
+      "id": "6ddd2797-bcd1-4d80-919e-55f754c8284e",
+      "name": "Versatile radical framework 11",
+      "status": "Pending",
+      "createdDate": "2025-05-20T04:38:23",
+      "updatedDate": "2026-01-30T03:47:43",
+      "owner": "Connor Garcia",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3660.22,
+      "description": "Certain official big where claim."
+    },
+    {
+      "id": "9705c1f9-5a0e-4760-b745-5d0d3a23f8d9",
+      "name": "Diverse next generation alliance 12",
+      "status": "Pending",
+      "createdDate": "2025-12-01T16:36:47",
+      "updatedDate": "2026-02-13T21:16:30",
+      "owner": "Gerald Lloyd",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1608.14,
+      "description": "Pass past mind new million look measure."
+    },
+    {
+      "id": "d05dfa29-edc4-475e-883b-7d1617bf485a",
+      "name": "Advanced fresh-thinking core 13",
+      "status": "Inactive",
+      "createdDate": "2025-03-24T22:07:15",
+      "updatedDate": "2026-01-27T18:24:36",
+      "owner": "David Coffey",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1287.5,
+      "description": "Collection her three reveal know."
+    },
+    {
+      "id": "a2271293-8353-4b99-b75c-c85f8e3a20c6",
+      "name": "Re-contextualized regional alliance 14",
+      "status": "Active",
+      "createdDate": "2026-01-24T19:24:46",
+      "updatedDate": "2026-01-28T04:18:27",
+      "owner": "Sarah Long",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3268.15,
+      "description": "Do race team into."
+    },
+    {
+      "id": "954805c2-f54d-4fd0-857e-9947e4471afb",
+      "name": "Exclusive incremental strategy 15",
+      "status": "Inactive",
+      "createdDate": "2025-07-29T18:53:00",
+      "updatedDate": "2026-01-22T16:49:39",
+      "owner": "David Espinoza",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8386.4,
+      "description": "Teacher pick sure performance indicate community kitchen."
+    },
+    {
+      "id": "4e2d129a-2013-43d9-858c-a71e1b7d345b",
+      "name": "Organized zero tolerance process improvement 16",
+      "status": "Pending",
+      "createdDate": "2026-01-14T11:20:13",
+      "updatedDate": "2026-02-13T04:59:21",
+      "owner": "Kristy Johnson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6222.09,
+      "description": "Item fund risk specific board approach data."
+    },
+    {
+      "id": "04e07165-0071-42a8-b36c-fddf7a6ec0c9",
+      "name": "Inverse incremental circuit 17",
+      "status": "Completed",
+      "createdDate": "2025-04-18T10:51:04",
+      "updatedDate": "2026-02-05T10:03:50",
+      "owner": "William Weaver",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8915.64,
+      "description": "When according maybe study week impact officer."
+    },
+    {
+      "id": "e559ec54-19e0-40e3-9a4d-b573894112f5",
+      "name": "Grass-roots coherent infrastructure 18",
+      "status": "Active",
+      "createdDate": "2025-08-12T22:35:01",
+      "updatedDate": "2026-02-13T12:10:11",
+      "owner": "Jaime Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5130.66,
+      "description": "Somebody majority necessary people bag small television."
+    },
+    {
+      "id": "a40e0a2f-1194-486a-a8e3-4a2e99ff41e0",
+      "name": "Stand-alone needs-based initiative 19",
+      "status": "Active",
+      "createdDate": "2025-04-12T11:10:14",
+      "updatedDate": "2026-02-07T10:48:04",
+      "owner": "Scott Hanson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2081.44,
+      "description": "Specific to key."
+    },
+    {
+      "id": "54f887bf-911d-4cd1-8214-a0a8d05468e2",
+      "name": "Vision-oriented context-sensitive leverage 20",
+      "status": "Pending",
+      "createdDate": "2025-04-19T11:45:05",
+      "updatedDate": "2026-02-09T15:31:34",
+      "owner": "Carol Bowman",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2314.09,
+      "description": "Them thing general sit."
+    },
+    {
+      "id": "72248c19-0c11-481e-b38e-075ac48cbae5",
+      "name": "Reverse-engineered client-driven capability 21",
+      "status": "Inactive",
+      "createdDate": "2025-11-04T16:14:52",
+      "updatedDate": "2026-01-24T23:20:16",
+      "owner": "Melanie Carter",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2879.81,
+      "description": "Whatever civil room interesting build compare."
+    },
+    {
+      "id": "b82cf91c-8db7-4f90-afd0-2e8dd77f03b5",
+      "name": "Centralized demand-driven knowledge user 22",
+      "status": "Active",
+      "createdDate": "2025-10-10T02:41:05",
+      "updatedDate": "2026-02-17T01:45:24",
+      "owner": "Chelsea Gamble",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9911.19,
+      "description": "Early phone around office energy event."
+    },
+    {
+      "id": "84b2f3a8-6213-437c-bf62-48efb91fd4bc",
+      "name": "Integrated executive Local Area Network 23",
+      "status": "Pending",
+      "createdDate": "2025-06-17T19:03:58",
+      "updatedDate": "2026-01-24T11:25:04",
+      "owner": "Colleen Montoya",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 247.25,
+      "description": "Manager democratic thing its hard."
+    },
+    {
+      "id": "1d5e7436-5b2b-4c3d-8756-0953ae9d17f9",
+      "name": "Phased homogeneous archive 24",
+      "status": "Completed",
+      "createdDate": "2025-09-14T00:10:51",
+      "updatedDate": "2026-01-28T13:01:42",
+      "owner": "Amanda Pierce",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4174.86,
+      "description": "Beautiful important animal."
+    },
+    {
+      "id": "dfe4a94b-9cf9-4b7d-bca7-b9d92985116e",
+      "name": "Triple-buffered neutral Graphical User Interface 25",
+      "status": "Pending",
+      "createdDate": "2026-01-16T04:55:41",
+      "updatedDate": "2026-01-28T06:19:00",
+      "owner": "Debra Martinez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4244.76,
+      "description": "Attorney sure goal somebody authority accept boy sometimes."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

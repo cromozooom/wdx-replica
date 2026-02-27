@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-active-only",
+  "totalCount": 127,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b1b83313-6144-4cef-b57b-253aecfffcb3",
+      "name": "Public-key executive product 1",
+      "status": "Inactive",
+      "createdDate": "2026-02-06T06:11:40",
+      "updatedDate": "2026-01-20T11:05:14",
+      "owner": "Jonathon Holder",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 579.26,
+      "description": "Community believe smile specific."
+    },
+    {
+      "id": "136a908c-8363-40c2-bfac-99cdb9904747",
+      "name": "Organized systemic analyzer 2",
+      "status": "Inactive",
+      "createdDate": "2026-01-17T13:19:25",
+      "updatedDate": "2026-02-11T09:33:11",
+      "owner": "Gary Davis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1624.66,
+      "description": "Season rest notice drug report look."
+    },
+    {
+      "id": "1995d81e-6046-4b59-aa43-b394a6657fdd",
+      "name": "Right-sized system-worthy synergy 3",
+      "status": "Active",
+      "createdDate": "2025-07-30T00:47:05",
+      "updatedDate": "2026-02-02T16:35:16",
+      "owner": "Steven Parker",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8381.65,
+      "description": "Ten specific half."
+    },
+    {
+      "id": "6b2ff025-ae00-4ab8-9926-bd9359c0e3df",
+      "name": "Customer-focused 4thgeneration structure 4",
+      "status": "Inactive",
+      "createdDate": "2025-11-18T15:30:10",
+      "updatedDate": "2026-02-15T06:41:37",
+      "owner": "Scott Alvarez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9580.67,
+      "description": "Quality key design floor happen world."
+    },
+    {
+      "id": "ab36b2a7-c1a6-4de3-8a6a-e14c84bd4584",
+      "name": "Up-sized multi-tasking service-desk 5",
+      "status": "Active",
+      "createdDate": "2025-06-18T03:10:18",
+      "updatedDate": "2026-02-13T03:27:21",
+      "owner": "Sherri Hoffman",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2626.54,
+      "description": "Commercial woman size cultural member."
+    },
+    {
+      "id": "9a227ae5-09ea-4b60-95dc-35b67a60d071",
+      "name": "Versatile bottom-line help-desk 6",
+      "status": "Pending",
+      "createdDate": "2025-11-20T08:12:51",
+      "updatedDate": "2026-01-30T16:50:03",
+      "owner": "Jason Stuart",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9755.7,
+      "description": "Key raise cold ever do fact various."
+    },
+    {
+      "id": "6bc19d0f-ca76-40c2-b8d8-c3ed9b667ceb",
+      "name": "Inverse hybrid architecture 7",
+      "status": "Inactive",
+      "createdDate": "2026-02-15T17:36:11",
+      "updatedDate": "2026-02-03T17:52:25",
+      "owner": "Samuel Klein",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7752.78,
+      "description": "Near return must position."
+    },
+    {
+      "id": "e8a23623-bfa1-4a5d-b359-7e9c22f0a786",
+      "name": "Triple-buffered contextually-based complexity 8",
+      "status": "Inactive",
+      "createdDate": "2025-03-21T00:33:23",
+      "updatedDate": "2026-01-23T15:42:41",
+      "owner": "Wesley Dunn",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4102.55,
+      "description": "About traditional opportunity thus push."
+    },
+    {
+      "id": "99e487d9-aaa9-4ead-b87d-e31fcc9a7a54",
+      "name": "Vision-oriented executive monitoring 9",
+      "status": "Active",
+      "createdDate": "2025-09-17T15:56:47",
+      "updatedDate": "2026-02-03T13:00:11",
+      "owner": "Jason Jackson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8684.11,
+      "description": "Say toward most eat life few."
+    },
+    {
+      "id": "be8960d7-6c91-4ccd-a595-60122ebf686b",
+      "name": "Synergized interactive system engine 10",
+      "status": "Pending",
+      "createdDate": "2026-01-23T07:18:07",
+      "updatedDate": "2026-02-16T04:06:00",
+      "owner": "Paul Richmond",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 574.04,
+      "description": "Focus manage just commercial world special."
+    },
+    {
+      "id": "33f4fad5-d05f-424a-8548-1f2a98627052",
+      "name": "Balanced 5thgeneration firmware 11",
+      "status": "Inactive",
+      "createdDate": "2025-03-14T19:40:36",
+      "updatedDate": "2026-01-28T18:52:00",
+      "owner": "Olivia King",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8876.89,
+      "description": "Dinner question white."
+    },
+    {
+      "id": "784debbe-29d6-4073-946d-d472149de97e",
+      "name": "Implemented incremental capacity 12",
+      "status": "Inactive",
+      "createdDate": "2026-02-01T04:59:50",
+      "updatedDate": "2026-01-27T13:02:54",
+      "owner": "Allison Hawkins",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9175.56,
+      "description": "Enjoy class pressure leave."
+    },
+    {
+      "id": "eff81f59-451c-4284-8f38-36d791b00e7c",
+      "name": "Multi-channeled tertiary Internet solution 13",
+      "status": "Inactive",
+      "createdDate": "2025-10-19T07:31:19",
+      "updatedDate": "2026-02-01T03:22:32",
+      "owner": "Nathaniel Murillo",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4356.68,
+      "description": "Film street family."
+    },
+    {
+      "id": "015f5307-caa1-4623-9d84-8c390b838475",
+      "name": "Programmable asynchronous website 14",
+      "status": "Completed",
+      "createdDate": "2025-02-17T19:32:05",
+      "updatedDate": "2026-02-01T18:29:58",
+      "owner": "Jessica Mack",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4782.7,
+      "description": "Life short woman reflect begin answer then."
+    },
+    {
+      "id": "11fedd1c-0633-4d55-a2fb-c45adcbf53fd",
+      "name": "Synergized multi-tasking budgetary management 15",
+      "status": "Completed",
+      "createdDate": "2025-10-24T02:08:27",
+      "updatedDate": "2026-02-05T15:16:59",
+      "owner": "Jonathan Hernandez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5022.33,
+      "description": "Somebody situation less floor three as gas."
+    },
+    {
+      "id": "b0941916-54b6-4502-be42-52a86d05163e",
+      "name": "Front-line didactic data-warehouse 16",
+      "status": "Completed",
+      "createdDate": "2025-09-11T09:24:09",
+      "updatedDate": "2026-02-04T02:08:56",
+      "owner": "Mrs. Jessica Sims",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8128.59,
+      "description": "Star clear sense relationship."
+    },
+    {
+      "id": "8af18a8b-4cf1-49fc-8997-9c69b9ed775c",
+      "name": "Sharable scalable throughput 17",
+      "status": "Active",
+      "createdDate": "2025-05-13T13:33:55",
+      "updatedDate": "2026-02-12T06:26:36",
+      "owner": "Kelli Stanley",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8454.26,
+      "description": "Worker toward answer remain."
+    },
+    {
+      "id": "1277231c-6514-4220-bce6-3b3a83fca86c",
+      "name": "Distributed mission-critical definition 18",
+      "status": "Pending",
+      "createdDate": "2025-02-21T18:16:16",
+      "updatedDate": "2026-01-22T08:16:58",
+      "owner": "Shane Edwards",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1672.25,
+      "description": "Significant expert measure would less."
+    },
+    {
+      "id": "55cf9f4c-94ff-4ec3-abdf-d1c38f512bcc",
+      "name": "Multi-lateral global focus group 19",
+      "status": "Active",
+      "createdDate": "2025-08-21T18:52:47",
+      "updatedDate": "2026-02-16T10:33:28",
+      "owner": "Eric Kaufman",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6880.95,
+      "description": "Training some although."
+    },
+    {
+      "id": "69f32235-fa7d-4cb3-bb00-015cd70a98d2",
+      "name": "Horizontal object-oriented customer loyalty 20",
+      "status": "Active",
+      "createdDate": "2025-10-26T10:25:59",
+      "updatedDate": "2026-02-02T10:01:35",
+      "owner": "Johnny Arias",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8218.1,
+      "description": "Home read art technology yourself movie bad."
+    },
+    {
+      "id": "34934d38-c8bb-4f9d-9f6c-4a9245ae7850",
+      "name": "Distributed fault-tolerant model 21",
+      "status": "Inactive",
+      "createdDate": "2025-06-07T21:30:46",
+      "updatedDate": "2026-01-30T13:18:38",
+      "owner": "Stephanie Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1314.2,
+      "description": "Head cover point skin scene issue."
+    },
+    {
+      "id": "566e07ba-089c-4553-9627-5e1eebff7e1b",
+      "name": "Profound 3rdgeneration firmware 22",
+      "status": "Completed",
+      "createdDate": "2025-04-08T00:17:30",
+      "updatedDate": "2026-02-10T23:25:47",
+      "owner": "Amy Rosario",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1832.88,
+      "description": "Indeed section community care despite candidate."
+    },
+    {
+      "id": "7beb84fa-e981-4536-b379-2c90919488e6",
+      "name": "Seamless heuristic methodology 23",
+      "status": "Pending",
+      "createdDate": "2025-12-06T15:37:49",
+      "updatedDate": "2026-01-20T08:39:32",
+      "owner": "Curtis Lopez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2654.36,
+      "description": "Hotel no by you lay."
+    },
+    {
+      "id": "97db2576-9f9c-4762-944f-1cb367d9d2a1",
+      "name": "Pre-emptive real-time strategy 24",
+      "status": "Pending",
+      "createdDate": "2025-05-07T15:22:46",
+      "updatedDate": "2026-02-07T18:08:46",
+      "owner": "Stephanie Caldwell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8403.38,
+      "description": "Production new reduce from because new listen."
+    },
+    {
+      "id": "9603f66e-4c8f-4158-bdb9-1794255ba400",
+      "name": "Visionary 24/7 forecast 25",
+      "status": "Pending",
+      "createdDate": "2025-04-06T02:45:44",
+      "updatedDate": "2026-02-16T03:38:25",
+      "owner": "Gabrielle Mcdonald",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6106.1,
+      "description": "Their bit bit plan nor."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

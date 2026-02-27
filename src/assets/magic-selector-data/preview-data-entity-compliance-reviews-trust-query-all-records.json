@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-all-records",
+  "totalCount": 235,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "10555b60-f7e3-42ef-8b72-09cc3d47a963",
+      "name": "Triple-buffered responsive toolset 1",
+      "status": "Pending",
+      "createdDate": "2025-10-21T00:05:36",
+      "updatedDate": "2026-01-29T18:32:58",
+      "owner": "Jerry Bauer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7969.04,
+      "description": "Really now guess."
+    },
+    {
+      "id": "cb3028ce-3eff-4f2e-aa0b-09b496b1fc7c",
+      "name": "Down-sized neutral monitoring 2",
+      "status": "Completed",
+      "createdDate": "2025-04-08T05:10:46",
+      "updatedDate": "2026-01-31T18:32:13",
+      "owner": "Catherine Wilson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9471.26,
+      "description": "May create place claim local."
+    },
+    {
+      "id": "11043dde-90ce-4212-885c-c136d164689e",
+      "name": "Enhanced clear-thinking encryption 3",
+      "status": "Completed",
+      "createdDate": "2025-07-26T03:07:01",
+      "updatedDate": "2026-01-18T20:57:45",
+      "owner": "Richard Meyer",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3778.65,
+      "description": "Politics president they analysis of several."
+    },
+    {
+      "id": "16c2848b-34da-4327-924f-0a278b1afff6",
+      "name": "Right-sized needs-based knowledge user 4",
+      "status": "Pending",
+      "createdDate": "2025-04-06T13:42:43",
+      "updatedDate": "2026-01-22T17:38:46",
+      "owner": "Kara Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5727.08,
+      "description": "Consumer goal thank."
+    },
+    {
+      "id": "6e750360-b2c0-4891-bb79-08f8adffeacc",
+      "name": "Advanced fresh-thinking instruction set 5",
+      "status": "Active",
+      "createdDate": "2025-09-19T00:38:41",
+      "updatedDate": "2026-01-31T11:28:10",
+      "owner": "William Mann",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8933.75,
+      "description": "Store develop right bed other huge drop."
+    },
+    {
+      "id": "e417b44c-66a8-4a39-91da-f0eeb01e58c4",
+      "name": "Function-based methodical archive 6",
+      "status": "Completed",
+      "createdDate": "2025-12-21T01:43:55",
+      "updatedDate": "2026-01-30T02:35:23",
+      "owner": "Calvin Thompson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2361.98,
+      "description": "Information base stay executive back talk."
+    },
+    {
+      "id": "7ba0c5e4-2c85-42a0-bb32-082a6264666f",
+      "name": "Implemented reciprocal projection 7",
+      "status": "Inactive",
+      "createdDate": "2025-05-21T04:02:47",
+      "updatedDate": "2026-02-08T08:28:27",
+      "owner": "Elizabeth Sutton",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9299.22,
+      "description": "Energy society fear."
+    },
+    {
+      "id": "8439e93a-9444-46dd-98e2-f380965bd9d1",
+      "name": "Visionary reciprocal frame 8",
+      "status": "Pending",
+      "createdDate": "2026-02-12T08:03:42",
+      "updatedDate": "2026-01-21T00:21:49",
+      "owner": "Mrs. Deborah White",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1055.53,
+      "description": "South state right."
+    },
+    {
+      "id": "ff556d1e-66bd-4dba-80a0-4a36da1cc27c",
+      "name": "Reactive neutral initiative 9",
+      "status": "Pending",
+      "createdDate": "2025-11-03T19:39:35",
+      "updatedDate": "2026-01-19T12:46:44",
+      "owner": "Margaret Hughes",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8489.8,
+      "description": "Need read career professional."
+    },
+    {
+      "id": "3cdb3ce9-e7e8-4064-9b85-132ef5bdb6a9",
+      "name": "Ameliorated high-level groupware 10",
+      "status": "Inactive",
+      "createdDate": "2025-11-30T03:36:42",
+      "updatedDate": "2026-02-13T15:26:28",
+      "owner": "Rodney Carlson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9271.12,
+      "description": "Beat event evidence our door."
+    },
+    {
+      "id": "aa24ce87-533a-43fb-8a80-422896e8353b",
+      "name": "Customer-focused leadingedge support 11",
+      "status": "Completed",
+      "createdDate": "2025-03-18T07:21:29",
+      "updatedDate": "2026-01-18T21:11:02",
+      "owner": "Michele Yates",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7509.19,
+      "description": "Special measure body beyond local eat risk."
+    },
+    {
+      "id": "b4a052a8-7652-4f79-8acd-ac9135d2ff5b",
+      "name": "Ergonomic dedicated system engine 12",
+      "status": "Active",
+      "createdDate": "2025-06-25T22:59:59",
+      "updatedDate": "2026-01-21T00:30:23",
+      "owner": "James Klein",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 190.08,
+      "description": "Medical former grow he herself."
+    },
+    {
+      "id": "90c9e851-8281-4c9d-ae28-983d8b75314f",
+      "name": "Progressive heuristic intranet 13",
+      "status": "Active",
+      "createdDate": "2025-09-28T06:19:20",
+      "updatedDate": "2026-01-29T15:11:44",
+      "owner": "Deanna Henderson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1243.29,
+      "description": "Finally feeling floor."
+    },
+    {
+      "id": "3c577362-05fc-4d1b-afd1-1c92cb1a85e7",
+      "name": "Digitized holistic project 14",
+      "status": "Completed",
+      "createdDate": "2025-11-15T20:46:45",
+      "updatedDate": "2026-02-11T08:46:35",
+      "owner": "Joseph Griffith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5887.66,
+      "description": "Task group evidence figure."
+    },
+    {
+      "id": "76f2abc3-70a1-406d-a35a-17d54afbee7e",
+      "name": "Cloned object-oriented archive 15",
+      "status": "Active",
+      "createdDate": "2025-03-02T20:04:03",
+      "updatedDate": "2026-01-18T17:04:25",
+      "owner": "Lisa Peters",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8241.53,
+      "description": "Interest interest field other court."
+    },
+    {
+      "id": "7aa043bb-5e16-43cf-92ba-b942b607aa4e",
+      "name": "Optional bottom-line functionalities 16",
+      "status": "Active",
+      "createdDate": "2025-05-07T18:15:19",
+      "updatedDate": "2026-02-02T18:38:58",
+      "owner": "Rhonda Arnold",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3109.14,
+      "description": "Share weight technology it set chance cover key."
+    },
+    {
+      "id": "058360f8-285b-41f9-97cd-3e17a9ef9d99",
+      "name": "Inverse impactful knowledgebase 17",
+      "status": "Inactive",
+      "createdDate": "2025-11-12T17:01:05",
+      "updatedDate": "2026-02-13T23:27:54",
+      "owner": "Shelley Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4051.99,
+      "description": "Finally their discover color medical."
+    },
+    {
+      "id": "219ec059-1bca-444b-8529-8dd2a572d8c8",
+      "name": "Re-contextualized systematic capability 18",
+      "status": "Completed",
+      "createdDate": "2025-08-09T08:56:33",
+      "updatedDate": "2026-01-24T04:28:53",
+      "owner": "Anne Strong",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6539.5,
+      "description": "Try great game safe within recognize."
+    },
+    {
+      "id": "b2a59ee9-4ce1-4ce7-9752-192456b93e60",
+      "name": "Fully-configurable mission-critical alliance 19",
+      "status": "Active",
+      "createdDate": "2025-12-31T11:10:36",
+      "updatedDate": "2026-02-03T02:04:10",
+      "owner": "Jerry Horn",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5486.97,
+      "description": "Spring best matter film."
+    },
+    {
+      "id": "daa662f5-9b9c-4d2b-a59f-72266650ecf2",
+      "name": "Synergistic high-level product 20",
+      "status": "Inactive",
+      "createdDate": "2026-02-09T02:35:52",
+      "updatedDate": "2026-02-10T05:14:52",
+      "owner": "Samuel Dean",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7336.62,
+      "description": "Political wish wrong deal."
+    },
+    {
+      "id": "553eb8c1-c6c8-406a-b928-9573dd98f71a",
+      "name": "Assimilated methodical Local Area Network 21",
+      "status": "Pending",
+      "createdDate": "2025-09-12T09:50:32",
+      "updatedDate": "2026-02-15T04:49:31",
+      "owner": "Nicole Wright",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4289.35,
+      "description": "Series to laugh talk."
+    },
+    {
+      "id": "97bdf0c5-9561-4bbf-9a95-b47e54728a8a",
+      "name": "Enterprise-wide multimedia hierarchy 22",
+      "status": "Pending",
+      "createdDate": "2025-11-15T11:03:35",
+      "updatedDate": "2026-02-15T18:30:28",
+      "owner": "Catherine Sanford",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7874.43,
+      "description": "Dream set environmental ten source."
+    },
+    {
+      "id": "9e8f1672-daa3-4760-bd32-6c9f34d005cf",
+      "name": "Synergistic discrete analyzer 23",
+      "status": "Pending",
+      "createdDate": "2025-08-20T20:15:36",
+      "updatedDate": "2026-01-25T10:31:02",
+      "owner": "Amanda Wright",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 415.7,
+      "description": "Movie plant last hand church loss."
+    },
+    {
+      "id": "a3ba6ad8-e0cd-4d86-b5a3-ff91808f2994",
+      "name": "Cross-group discrete frame 24",
+      "status": "Pending",
+      "createdDate": "2025-08-05T01:02:59",
+      "updatedDate": "2026-01-26T11:39:56",
+      "owner": "Tammy Mata",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6867.51,
+      "description": "Sort single ok American."
+    },
+    {
+      "id": "ba0f2be1-708f-4d94-a39f-e8570cba715c",
+      "name": "Enterprise-wide user-facing moratorium 25",
+      "status": "Pending",
+      "createdDate": "2025-06-15T16:50:16",
+      "updatedDate": "2026-01-25T23:45:04",
+      "owner": "Kristin Macdonald",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9148.45,
+      "description": "System bar I style human those hospital."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

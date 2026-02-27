@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-all-records",
+  "totalCount": 1083,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "82a2a40a-e1a0-412f-a83e-b2c44755e3a2",
+      "name": "Team-oriented encompassing methodology 1",
+      "status": "Pending",
+      "createdDate": "2025-05-25T10:24:27",
+      "updatedDate": "2026-02-08T02:58:45",
+      "owner": "Darryl Rivers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6122.59,
+      "description": "Middle red thing move away health seven."
+    },
+    {
+      "id": "f638789a-3919-4e2f-aef5-81fd1e672d15",
+      "name": "Quality-focused non-volatile interface 2",
+      "status": "Active",
+      "createdDate": "2025-07-14T20:22:10",
+      "updatedDate": "2026-02-14T13:10:31",
+      "owner": "Jonathan Lewis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 381.48,
+      "description": "Color we year."
+    },
+    {
+      "id": "6dd0b072-27a3-4f9e-957b-ba7a9007b287",
+      "name": "Robust homogeneous database 3",
+      "status": "Active",
+      "createdDate": "2025-04-05T18:18:29",
+      "updatedDate": "2026-02-13T21:03:04",
+      "owner": "Sherri Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1335.08,
+      "description": "Record inside give hour physical measure."
+    },
+    {
+      "id": "085e71b1-e545-4145-b6be-daf088afb8e6",
+      "name": "Synergistic upward-trending conglomeration 4",
+      "status": "Active",
+      "createdDate": "2025-02-28T05:57:18",
+      "updatedDate": "2026-02-16T11:05:29",
+      "owner": "Ryan Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9902.97,
+      "description": "Particularly level think organization."
+    },
+    {
+      "id": "6e016da1-267e-412e-a8df-d4363efc4ad3",
+      "name": "Open-architected optimal budgetary management 5",
+      "status": "Completed",
+      "createdDate": "2026-02-08T13:28:03",
+      "updatedDate": "2026-02-02T22:40:42",
+      "owner": "Michelle Green",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9589.75,
+      "description": "Begin better offer about wonder suddenly ability."
+    },
+    {
+      "id": "98a5bf21-0051-4a6c-9c01-40386f4d1323",
+      "name": "Grass-roots analyzing policy 6",
+      "status": "Inactive",
+      "createdDate": "2025-07-28T05:10:37",
+      "updatedDate": "2026-02-15T13:17:39",
+      "owner": "Roberta Taylor",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4661.2,
+      "description": "Receive development against reason analysis."
+    },
+    {
+      "id": "76739db3-6afd-4c00-9b46-04d2f515adaa",
+      "name": "Front-line attitude-oriented definition 7",
+      "status": "Inactive",
+      "createdDate": "2025-04-15T06:49:35",
+      "updatedDate": "2026-02-15T17:56:05",
+      "owner": "Karen Horton",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7237.3,
+      "description": "Space finish list cost wonder right book."
+    },
+    {
+      "id": "7be285e4-ccb3-4d14-8aa6-5b04c362a4d2",
+      "name": "Managed multimedia solution 8",
+      "status": "Pending",
+      "createdDate": "2025-08-08T21:29:32",
+      "updatedDate": "2026-01-29T22:28:34",
+      "owner": "Bianca Watts",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9158.87,
+      "description": "Table machine contain cold perhaps interest."
+    },
+    {
+      "id": "266d2eb4-a35e-4134-83a8-1deb7f2b2c69",
+      "name": "Open-architected asymmetric hierarchy 9",
+      "status": "Inactive",
+      "createdDate": "2025-07-24T10:44:22",
+      "updatedDate": "2026-02-07T02:14:19",
+      "owner": "Katrina Cortez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4080.64,
+      "description": "After first mouth term."
+    },
+    {
+      "id": "8763e423-1e3b-4630-94b6-7e380b349e1e",
+      "name": "Integrated demand-driven productivity 10",
+      "status": "Inactive",
+      "createdDate": "2025-05-28T06:30:14",
+      "updatedDate": "2026-02-05T21:10:55",
+      "owner": "Sara Wright",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4123.27,
+      "description": "Relate at professor wait us."
+    },
+    {
+      "id": "6900be6b-2215-4fea-96eb-e6cd2842e8a2",
+      "name": "Focused even-keeled knowledge user 11",
+      "status": "Pending",
+      "createdDate": "2025-08-06T15:57:01",
+      "updatedDate": "2026-02-10T01:32:46",
+      "owner": "Danielle Hays",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8425.35,
+      "description": "Must military will data data happen."
+    },
+    {
+      "id": "3e11e872-17f2-4ceb-98de-8147b2534dd2",
+      "name": "Phased logistical migration 12",
+      "status": "Completed",
+      "createdDate": "2025-03-04T22:38:14",
+      "updatedDate": "2026-01-21T13:34:59",
+      "owner": "Patricia Spears",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6155.84,
+      "description": "Into each claim always."
+    },
+    {
+      "id": "2a7c1fe9-51d3-4787-ad7c-be29d43f774e",
+      "name": "Optimized zero administration support 13",
+      "status": "Completed",
+      "createdDate": "2025-05-09T05:52:09",
+      "updatedDate": "2026-01-22T20:26:29",
+      "owner": "Alexander Hill",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5644.52,
+      "description": "Animal generation middle."
+    },
+    {
+      "id": "46c9451e-85bb-42a1-a63d-8e38585adf5c",
+      "name": "Fully-configurable 24/7 implementation 14",
+      "status": "Active",
+      "createdDate": "2025-09-11T10:33:05",
+      "updatedDate": "2026-01-28T16:34:27",
+      "owner": "John Stevens",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1257.04,
+      "description": "Stock peace measure religious society truth yeah."
+    },
+    {
+      "id": "6a6ae30f-fb9a-4b0b-be1e-d32324da4ec6",
+      "name": "Open-source tangible system engine 15",
+      "status": "Inactive",
+      "createdDate": "2025-04-11T16:03:14",
+      "updatedDate": "2026-02-16T07:41:46",
+      "owner": "Bailey Harris",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 221.69,
+      "description": "Tough price black none ability north say."
+    },
+    {
+      "id": "4a3d8d90-38f4-4425-9e2a-0c428980a867",
+      "name": "Operative content-based framework 16",
+      "status": "Active",
+      "createdDate": "2025-05-11T18:59:45",
+      "updatedDate": "2026-02-13T21:21:22",
+      "owner": "Adam Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6051.47,
+      "description": "Happy great population several several with wall professor."
+    },
+    {
+      "id": "cef9c164-1c38-4152-960f-088fcea948cd",
+      "name": "Fully-configurable fresh-thinking hub 17",
+      "status": "Completed",
+      "createdDate": "2025-05-16T17:09:31",
+      "updatedDate": "2026-02-17T05:34:54",
+      "owner": "Casey Hickman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3305.08,
+      "description": "Food stuff father fill behind."
+    },
+    {
+      "id": "2d54d7eb-a1f5-4fc7-816e-e676a80bfdbc",
+      "name": "Distributed multi-tasking system engine 18",
+      "status": "Inactive",
+      "createdDate": "2025-12-06T15:04:05",
+      "updatedDate": "2026-01-28T18:26:18",
+      "owner": "Ashlee Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2433.25,
+      "description": "Floor Republican wind play half wind."
+    },
+    {
+      "id": "0d2ab312-c2ba-4762-9d29-1441b27cd254",
+      "name": "User-centric radical task-force 19",
+      "status": "Completed",
+      "createdDate": "2025-12-27T20:47:48",
+      "updatedDate": "2026-01-24T09:50:28",
+      "owner": "David Roberts",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9015.82,
+      "description": "Way guess hear open difference discuss attorney."
+    },
+    {
+      "id": "b980fd66-e584-4ab7-8d37-58a4e2b71db2",
+      "name": "Total 4thgeneration Local Area Network 20",
+      "status": "Active",
+      "createdDate": "2025-09-13T22:44:17",
+      "updatedDate": "2026-01-30T14:08:51",
+      "owner": "Timothy Chandler",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1483.68,
+      "description": "Clear each certain town training."
+    },
+    {
+      "id": "7bf23377-5b71-407a-b5c2-b6a30d76d76d",
+      "name": "Polarized demand-driven open architecture 21",
+      "status": "Active",
+      "createdDate": "2026-02-05T16:55:43",
+      "updatedDate": "2026-02-15T01:03:37",
+      "owner": "Nicholas Arias",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 439.28,
+      "description": "Different inside alone current exist indeed."
+    },
+    {
+      "id": "6fb638c5-9a10-402c-87cb-ad28396fe310",
+      "name": "Intuitive intangible secured line 22",
+      "status": "Inactive",
+      "createdDate": "2025-03-08T09:32:05",
+      "updatedDate": "2026-01-19T02:03:37",
+      "owner": "Lydia Gibson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3388.89,
+      "description": "Arm majority each."
+    },
+    {
+      "id": "417a7cda-714b-413e-b555-73a0db4592e7",
+      "name": "Profound scalable neural-net 23",
+      "status": "Inactive",
+      "createdDate": "2025-04-27T11:31:43",
+      "updatedDate": "2026-02-06T13:59:51",
+      "owner": "Melissa Davies",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6078.18,
+      "description": "Group data real over."
+    },
+    {
+      "id": "a83a6dbb-4bec-40f8-a17c-148848e3b5d0",
+      "name": "Public-key zero tolerance Local Area Network 24",
+      "status": "Pending",
+      "createdDate": "2025-06-18T17:50:02",
+      "updatedDate": "2026-01-18T19:18:36",
+      "owner": "Marcus Howard",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3366.21,
+      "description": "Strategy indeed so these."
+    },
+    {
+      "id": "ef73f0e1-1c00-4b4a-8d24-8ebfbcf81de7",
+      "name": "Virtual attitude-oriented database 25",
+      "status": "Pending",
+      "createdDate": "2025-05-22T17:05:54",
+      "updatedDate": "2026-01-26T19:51:48",
+      "owner": "Nicole Kelly",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1523.14,
+      "description": "Provide piece drug more store."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

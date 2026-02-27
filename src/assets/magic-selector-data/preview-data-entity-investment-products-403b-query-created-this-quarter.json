@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1102,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b5b1311a-a077-493a-b1fa-371ec00b1b6c",
+      "name": "Mandatory high-level frame 1",
+      "status": "Active",
+      "createdDate": "2026-01-13T10:08:06",
+      "updatedDate": "2026-02-11T15:24:26",
+      "owner": "Diana Strickland",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8827.73,
+      "description": "Song Republican win."
+    },
+    {
+      "id": "d209621e-0f30-4756-b671-8359f1e27b9c",
+      "name": "Future-proofed tangible pricing structure 2",
+      "status": "Inactive",
+      "createdDate": "2025-03-28T09:17:56",
+      "updatedDate": "2026-02-05T07:48:33",
+      "owner": "Scott Lewis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9891.95,
+      "description": "Sport individual answer go."
+    },
+    {
+      "id": "28d2699e-a111-4f1e-916e-dedb2f368068",
+      "name": "Inverse contextually-based function 3",
+      "status": "Pending",
+      "createdDate": "2025-10-11T06:56:33",
+      "updatedDate": "2026-01-26T00:26:33",
+      "owner": "Rachel Hayes",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3779.7,
+      "description": "Dream theory mouth."
+    },
+    {
+      "id": "9cbd6862-80cb-4cc9-a88f-9ce909a29cbb",
+      "name": "Quality-focused tertiary function 4",
+      "status": "Completed",
+      "createdDate": "2025-03-01T08:22:36",
+      "updatedDate": "2026-02-10T00:05:35",
+      "owner": "Luke Hernandez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8691.61,
+      "description": "Glass student want approach last after I."
+    },
+    {
+      "id": "1eb6b446-4a7a-4341-b97b-858793134a2d",
+      "name": "Virtual intermediate knowledgebase 5",
+      "status": "Pending",
+      "createdDate": "2026-02-11T07:42:39",
+      "updatedDate": "2026-01-24T13:37:40",
+      "owner": "Nicole Mccoy",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6592.7,
+      "description": "Everything notice such economic opportunity sing recently."
+    },
+    {
+      "id": "d40e7294-0e0f-4e57-8763-b5d73c32328e",
+      "name": "Face-to-face 3rdgeneration process improvement 6",
+      "status": "Active",
+      "createdDate": "2025-09-23T16:26:34",
+      "updatedDate": "2026-01-31T07:56:45",
+      "owner": "Michael Forbes",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4906.82,
+      "description": "Strategy mouth chair its seven join act."
+    },
+    {
+      "id": "7b828f97-bbf0-43de-9ed3-b06f800a26d4",
+      "name": "Visionary actuating infrastructure 7",
+      "status": "Pending",
+      "createdDate": "2025-03-08T02:54:40",
+      "updatedDate": "2026-01-31T22:30:01",
+      "owner": "Erik Jefferson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7904.01,
+      "description": "Both draw age institution."
+    },
+    {
+      "id": "141ba171-a316-47d5-a970-ef9c8a968a59",
+      "name": "Configurable intermediate methodology 8",
+      "status": "Completed",
+      "createdDate": "2025-12-14T17:31:57",
+      "updatedDate": "2026-02-01T12:11:08",
+      "owner": "Lisa Valencia",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4470.03,
+      "description": "After picture friend authority help may customer."
+    },
+    {
+      "id": "532d4756-75a9-460b-8863-59e50f3bf81b",
+      "name": "Multi-lateral homogeneous flexibility 9",
+      "status": "Inactive",
+      "createdDate": "2025-03-27T11:28:28",
+      "updatedDate": "2026-02-01T13:35:56",
+      "owner": "Thomas Clark",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4105.88,
+      "description": "Control can hour seven."
+    },
+    {
+      "id": "70feb202-da47-4cb0-800c-149d80fa0926",
+      "name": "Configurable impactful projection 10",
+      "status": "Inactive",
+      "createdDate": "2025-06-19T07:14:48",
+      "updatedDate": "2026-02-09T04:21:59",
+      "owner": "Monica Crosby",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6188.75,
+      "description": "Give per fast industry black red save."
+    },
+    {
+      "id": "8f67e0b6-4b5d-4224-a140-249bd49ed043",
+      "name": "Assimilated systematic function 11",
+      "status": "Pending",
+      "createdDate": "2025-03-01T08:09:09",
+      "updatedDate": "2026-01-19T04:53:07",
+      "owner": "Ariel Cox",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 287.07,
+      "description": "Action someone recognize section decision operation."
+    },
+    {
+      "id": "7aeb90e3-93de-4dc3-a2f6-65a5de2acfc3",
+      "name": "Ergonomic asynchronous monitoring 12",
+      "status": "Pending",
+      "createdDate": "2025-03-19T04:19:15",
+      "updatedDate": "2026-02-09T15:55:03",
+      "owner": "Morgan Grant",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3892.86,
+      "description": "Approach like sound drive again."
+    },
+    {
+      "id": "8f176794-1eca-4fc3-93fd-e23976085647",
+      "name": "Function-based modular challenge 13",
+      "status": "Active",
+      "createdDate": "2025-04-18T10:08:19",
+      "updatedDate": "2026-02-04T11:30:50",
+      "owner": "Angelica Hobbs",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1983.1,
+      "description": "Book old front action myself few."
+    },
+    {
+      "id": "2ae21189-8ceb-4bb8-8410-e9a44db146d5",
+      "name": "Customer-focused executive open system 14",
+      "status": "Active",
+      "createdDate": "2025-09-07T16:45:53",
+      "updatedDate": "2026-02-07T23:13:29",
+      "owner": "Stacie Gomez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6918.95,
+      "description": "Economic behavior film training."
+    },
+    {
+      "id": "fb7bf214-c08a-46b7-be48-4cfc20dda0a6",
+      "name": "Switchable content-based hardware 15",
+      "status": "Active",
+      "createdDate": "2025-09-13T10:24:18",
+      "updatedDate": "2026-02-07T03:25:01",
+      "owner": "Angela Watts",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7172.03,
+      "description": "Back man mission provide future usually."
+    },
+    {
+      "id": "19b14b75-d95a-4fd9-b28a-3f23d08b7893",
+      "name": "Multi-layered explicit superstructure 16",
+      "status": "Completed",
+      "createdDate": "2025-10-10T18:06:43",
+      "updatedDate": "2026-02-04T23:07:54",
+      "owner": "Emily Hess",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8632.83,
+      "description": "Board life coach decide find friend lose."
+    },
+    {
+      "id": "17e6f131-8133-4777-acd6-99b9ef15894f",
+      "name": "Enhanced client-driven monitoring 17",
+      "status": "Pending",
+      "createdDate": "2025-02-24T09:21:30",
+      "updatedDate": "2026-02-15T04:12:54",
+      "owner": "Andrew Mercado",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5000.3,
+      "description": "Available wrong certain discussion easy."
+    },
+    {
+      "id": "7f2a72ed-0a47-42fe-b3ef-645138284889",
+      "name": "Down-sized 6thgeneration collaboration 18",
+      "status": "Inactive",
+      "createdDate": "2025-06-22T15:08:12",
+      "updatedDate": "2026-02-05T13:37:44",
+      "owner": "Kathleen Noble",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1267.85,
+      "description": "Here south citizen reduce."
+    },
+    {
+      "id": "b929d77a-a5c1-44d7-931f-006ad0f3b0fe",
+      "name": "Self-enabling contextually-based standardization 19",
+      "status": "Pending",
+      "createdDate": "2025-02-26T05:42:13",
+      "updatedDate": "2026-02-13T10:48:51",
+      "owner": "Jessica Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9779.96,
+      "description": "Scene local identify change."
+    },
+    {
+      "id": "c6247acc-bb8a-43fc-92a2-127d6418b4e8",
+      "name": "Visionary upward-trending concept 20",
+      "status": "Completed",
+      "createdDate": "2026-01-15T01:25:03",
+      "updatedDate": "2026-02-14T22:43:35",
+      "owner": "Kenneth Wang",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6206.39,
+      "description": "Establish local learn company personal on."
+    },
+    {
+      "id": "feeee3d5-ccad-4a1d-8a7d-e0a5058fa9fd",
+      "name": "Integrated object-oriented Graphic Interface 21",
+      "status": "Completed",
+      "createdDate": "2025-03-02T22:29:06",
+      "updatedDate": "2026-02-14T18:01:35",
+      "owner": "John Gonzales",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3626.47,
+      "description": "Pattern apply follow apply huge experience write management."
+    },
+    {
+      "id": "196e7f88-1796-450e-9c8a-704095a48023",
+      "name": "Innovative discrete structure 22",
+      "status": "Inactive",
+      "createdDate": "2025-09-14T20:44:01",
+      "updatedDate": "2026-01-20T14:59:48",
+      "owner": "Brandon Fowler",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8724.91,
+      "description": "Example member technology."
+    },
+    {
+      "id": "f282bed1-3149-4759-9cd5-6d076eca2dcc",
+      "name": "Progressive explicit data-warehouse 23",
+      "status": "Completed",
+      "createdDate": "2025-06-14T11:19:59",
+      "updatedDate": "2026-01-26T04:28:09",
+      "owner": "Adam Ballard",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9844.93,
+      "description": "So official Democrat team."
+    },
+    {
+      "id": "14f783c9-3fc1-40aa-98e1-818aec7f8b64",
+      "name": "Customizable systematic capacity 24",
+      "status": "Pending",
+      "createdDate": "2025-09-02T21:55:05",
+      "updatedDate": "2026-01-27T04:14:44",
+      "owner": "Mary Thompson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6570.02,
+      "description": "Trade produce current identify trial artist."
+    },
+    {
+      "id": "af99bccf-4b3c-4875-ad3f-fddb2d17d910",
+      "name": "Vision-oriented global circuit 25",
+      "status": "Completed",
+      "createdDate": "2025-10-07T23:13:04",
+      "updatedDate": "2026-02-07T13:51:04",
+      "owner": "Tyrone Mejia",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8307.37,
+      "description": "Story option area continue serve statement."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

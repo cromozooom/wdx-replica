@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1490,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "1d876599-ec57-4992-950f-3b86abf5f227",
+      "name": "Re-engineered bi-directional pricing structure 1",
+      "status": "Active",
+      "createdDate": "2025-10-09T05:17:57",
+      "updatedDate": "2026-02-02T10:37:19",
+      "owner": "Edward Pruitt",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9667.69,
+      "description": "Bed north right house."
+    },
+    {
+      "id": "1c6fdbcf-21ec-45c8-b072-a25d9d292bfe",
+      "name": "Optimized bifurcated matrix 2",
+      "status": "Active",
+      "createdDate": "2025-06-07T22:03:34",
+      "updatedDate": "2026-01-31T17:23:09",
+      "owner": "Matthew Simpson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4846.9,
+      "description": "Near though something each something course."
+    },
+    {
+      "id": "6cbd4c24-148c-49bc-8f2a-5ae421df2c36",
+      "name": "Phased incremental Local Area Network 3",
+      "status": "Completed",
+      "createdDate": "2025-11-29T06:54:11",
+      "updatedDate": "2026-01-19T23:14:31",
+      "owner": "Edwin Robertson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2590.31,
+      "description": "Detail after nor claim instead act."
+    },
+    {
+      "id": "c83731c0-a1c3-4b08-ad95-3ef9d13c6c7e",
+      "name": "Fully-configurable zero tolerance orchestration 4",
+      "status": "Active",
+      "createdDate": "2025-08-23T11:56:24",
+      "updatedDate": "2026-01-29T02:41:33",
+      "owner": "Todd Garcia",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6389.82,
+      "description": "Structure else most themselves."
+    },
+    {
+      "id": "20ddead1-a848-401d-9a5a-d8b3612b06d3",
+      "name": "Visionary 3rdgeneration structure 5",
+      "status": "Active",
+      "createdDate": "2025-06-30T08:06:49",
+      "updatedDate": "2026-02-03T04:14:56",
+      "owner": "Angelica Valencia",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 683.81,
+      "description": "Base three language town."
+    },
+    {
+      "id": "aaf105bc-6902-42b8-abff-fcee98883356",
+      "name": "Extended fresh-thinking leverage 6",
+      "status": "Active",
+      "createdDate": "2026-01-22T14:13:45",
+      "updatedDate": "2026-02-07T18:24:15",
+      "owner": "Denise Baker",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3098.42,
+      "description": "Why long fight husband."
+    },
+    {
+      "id": "ca192acd-e253-4e50-ae83-cd233213ac55",
+      "name": "Open-architected well-modulated structure 7",
+      "status": "Inactive",
+      "createdDate": "2025-04-24T01:38:17",
+      "updatedDate": "2026-02-10T06:15:02",
+      "owner": "Joseph Flores",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3960.96,
+      "description": "Specific build loss reality great join believe suffer."
+    },
+    {
+      "id": "c01f4098-130e-4f50-b50d-a3307a44d924",
+      "name": "Realigned even-keeled methodology 8",
+      "status": "Completed",
+      "createdDate": "2025-10-27T03:40:56",
+      "updatedDate": "2026-02-16T18:27:41",
+      "owner": "Anthony Compton",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2887.51,
+      "description": "Star here event president system."
+    },
+    {
+      "id": "11c908c1-2bb8-4c93-916d-f4ca27f255b6",
+      "name": "Monitored context-sensitive open architecture 9",
+      "status": "Active",
+      "createdDate": "2025-03-04T12:06:49",
+      "updatedDate": "2026-02-13T11:20:52",
+      "owner": "Michael Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9288.04,
+      "description": "Than someone everyone point house under."
+    },
+    {
+      "id": "3211d78b-0a09-4df9-9481-ed4d3921834e",
+      "name": "Balanced web-enabled capacity 10",
+      "status": "Pending",
+      "createdDate": "2025-05-08T22:20:06",
+      "updatedDate": "2026-02-16T23:09:15",
+      "owner": "Darlene Hanson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9787.53,
+      "description": "Agent article son seem."
+    },
+    {
+      "id": "90f1d6ff-0d71-406a-a8e2-7a094b16f2ad",
+      "name": "Phased interactive info-mediaries 11",
+      "status": "Pending",
+      "createdDate": "2025-03-30T02:51:08",
+      "updatedDate": "2026-02-15T21:26:47",
+      "owner": "James Moore",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9081.94,
+      "description": "Church allow write bag policy month."
+    },
+    {
+      "id": "69ebb05c-afb3-41a6-8cfd-21565cc8e193",
+      "name": "Sharable bifurcated paradigm 12",
+      "status": "Completed",
+      "createdDate": "2025-04-12T12:49:37",
+      "updatedDate": "2026-02-04T10:43:10",
+      "owner": "Tony Watson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 869.82,
+      "description": "Only cell born down film same everybody."
+    },
+    {
+      "id": "41fd6a01-da40-4b8f-9f9d-c210837b21a6",
+      "name": "Mandatory value-added circuit 13",
+      "status": "Active",
+      "createdDate": "2025-11-28T07:32:06",
+      "updatedDate": "2026-02-11T07:16:13",
+      "owner": "Brian Taylor",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7730.14,
+      "description": "How truth begin campaign herself single hair."
+    },
+    {
+      "id": "58716f82-5b78-45d0-856b-a6d8fc2b6456",
+      "name": "Object-based executive conglomeration 14",
+      "status": "Pending",
+      "createdDate": "2025-10-30T06:09:21",
+      "updatedDate": "2026-01-26T07:29:32",
+      "owner": "Jason Gilbert",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5556.28,
+      "description": "Coach look have rich."
+    },
+    {
+      "id": "fb8689d5-fbc3-45c4-b568-a50f075ace3a",
+      "name": "Optional foreground definition 15",
+      "status": "Completed",
+      "createdDate": "2025-08-31T01:57:35",
+      "updatedDate": "2026-01-20T10:08:56",
+      "owner": "Sean Melendez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9479.46,
+      "description": "Hundred provide after budget."
+    },
+    {
+      "id": "39e48279-affc-4f3b-9511-6d77c92b9f7c",
+      "name": "Pre-emptive tangible interface 16",
+      "status": "Inactive",
+      "createdDate": "2025-07-14T21:21:06",
+      "updatedDate": "2026-01-24T01:02:02",
+      "owner": "Jessica Patel",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6541.02,
+      "description": "Nation behind beyond draw most maintain."
+    },
+    {
+      "id": "d93bf13b-68e0-480e-9ced-4e259b8493b0",
+      "name": "Synergistic disintermediate concept 17",
+      "status": "Inactive",
+      "createdDate": "2025-07-03T11:51:00",
+      "updatedDate": "2026-01-22T09:04:23",
+      "owner": "Sheryl Hoffman",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4009.27,
+      "description": "Best organization local his surface."
+    },
+    {
+      "id": "37dd60c1-9089-4553-9989-9edcbe8e84cb",
+      "name": "Business-focused value-added Internet solution 18",
+      "status": "Active",
+      "createdDate": "2025-12-04T17:49:26",
+      "updatedDate": "2026-01-20T15:54:49",
+      "owner": "Katherine Bowen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4328.21,
+      "description": "Already see help."
+    },
+    {
+      "id": "69b0bea5-41a8-4106-8b4a-2204c7f9bde9",
+      "name": "Operative tertiary function 19",
+      "status": "Pending",
+      "createdDate": "2025-06-24T07:21:12",
+      "updatedDate": "2026-02-15T04:04:13",
+      "owner": "Christina Dyer",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3381.81,
+      "description": "Military company perhaps for Mrs."
+    },
+    {
+      "id": "52c8814d-944e-43ae-8f55-a86596d8947d",
+      "name": "Progressive zero-defect conglomeration 20",
+      "status": "Active",
+      "createdDate": "2025-10-03T04:58:48",
+      "updatedDate": "2026-01-23T22:16:11",
+      "owner": "Stephanie Roberts",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9562.66,
+      "description": "Once education choice administration interesting staff."
+    },
+    {
+      "id": "4c50d82f-aa95-4659-99a8-6afb7bad10a6",
+      "name": "Total bottom-line attitude 21",
+      "status": "Completed",
+      "createdDate": "2025-12-12T17:24:50",
+      "updatedDate": "2026-01-22T23:37:32",
+      "owner": "Jonathan Sloan",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3069.52,
+      "description": "Rock start order."
+    },
+    {
+      "id": "3bdefe06-54ee-43e3-9c2d-eed7fd0af1a8",
+      "name": "Virtual scalable open architecture 22",
+      "status": "Pending",
+      "createdDate": "2025-04-21T19:51:12",
+      "updatedDate": "2026-02-01T22:04:10",
+      "owner": "Tara Moreno",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9032.16,
+      "description": "Opportunity talk doctor assume."
+    },
+    {
+      "id": "d6af6886-7708-49e3-b920-8a27e395770c",
+      "name": "Future-proofed reciprocal architecture 23",
+      "status": "Inactive",
+      "createdDate": "2025-09-20T07:53:06",
+      "updatedDate": "2026-01-25T01:25:20",
+      "owner": "Andrea Buck",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7497.48,
+      "description": "Right imagine shake sound return beautiful late."
+    },
+    {
+      "id": "377f2241-82e5-42f1-9379-27a36f22f770",
+      "name": "Organized executive initiative 24",
+      "status": "Pending",
+      "createdDate": "2025-11-10T07:28:13",
+      "updatedDate": "2026-02-08T12:25:57",
+      "owner": "Benjamin Edwards",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1328.99,
+      "description": "Body responsibility direction most worry during a."
+    },
+    {
+      "id": "f17b6204-b4f7-468d-a19c-564f82c2bdd0",
+      "name": "Multi-tiered interactive middleware 25",
+      "status": "Active",
+      "createdDate": "2025-12-30T11:23:21",
+      "updatedDate": "2026-02-06T15:39:44",
+      "owner": "Amber Briggs",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2593.62,
+      "description": "Structure argue experience under sign."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

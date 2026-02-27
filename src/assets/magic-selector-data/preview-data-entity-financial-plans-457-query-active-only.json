@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-active-only",
+  "totalCount": 1143,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "2bf051f4-3b22-46a2-897a-825e3c5aa5cf",
+      "name": "Robust analyzing array 1",
+      "status": "Inactive",
+      "createdDate": "2025-05-13T16:01:19",
+      "updatedDate": "2026-02-12T00:30:38",
+      "owner": "Julie Sanchez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6433.04,
+      "description": "Enjoy edge others home."
+    },
+    {
+      "id": "4f4acf70-d570-42d9-b06d-f4eb4e1741c6",
+      "name": "Reduced human-resource framework 2",
+      "status": "Inactive",
+      "createdDate": "2025-07-13T15:22:05",
+      "updatedDate": "2026-01-29T03:18:02",
+      "owner": "Bradley Hernandez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8988.7,
+      "description": "Sure fine environmental point at."
+    },
+    {
+      "id": "653791fa-f98d-4c3e-93de-ec6e909eef70",
+      "name": "Function-based upward-trending secured line 3",
+      "status": "Inactive",
+      "createdDate": "2025-12-22T16:36:38",
+      "updatedDate": "2026-02-12T19:31:18",
+      "owner": "Morgan Haynes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8230.24,
+      "description": "Health effect area themselves special one."
+    },
+    {
+      "id": "820c920a-7aea-4344-87e2-8751e504380b",
+      "name": "Face-to-face systemic encryption 4",
+      "status": "Completed",
+      "createdDate": "2025-08-03T08:21:56",
+      "updatedDate": "2026-01-24T07:43:09",
+      "owner": "Shannon Castillo",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7063.81,
+      "description": "Arrive other suffer lay."
+    },
+    {
+      "id": "902a5947-1f43-4e4e-b4f5-ed4102060d67",
+      "name": "Front-line discrete leverage 5",
+      "status": "Pending",
+      "createdDate": "2025-07-26T11:02:28",
+      "updatedDate": "2026-01-26T04:02:52",
+      "owner": "Jennifer Ward",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7906.44,
+      "description": "Various manage tell ten."
+    },
+    {
+      "id": "87987be9-0ea3-481f-be8f-24917ed4770e",
+      "name": "Synchronized homogeneous model 6",
+      "status": "Pending",
+      "createdDate": "2025-02-24T14:56:33",
+      "updatedDate": "2026-01-30T18:20:49",
+      "owner": "Anthony Conner",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9377.0,
+      "description": "Individual financial finally art."
+    },
+    {
+      "id": "ecb190e1-0860-4729-b9f9-673d6c52edcc",
+      "name": "Horizontal logistical time-frame 7",
+      "status": "Completed",
+      "createdDate": "2025-11-12T08:16:17",
+      "updatedDate": "2026-02-15T21:33:27",
+      "owner": "Alicia Holland",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2799.89,
+      "description": "Speak ten second laugh commercial."
+    },
+    {
+      "id": "380b49b4-dc3e-494b-a61c-605a71b91891",
+      "name": "Open-source background orchestration 8",
+      "status": "Inactive",
+      "createdDate": "2025-10-04T23:32:50",
+      "updatedDate": "2026-02-04T14:15:18",
+      "owner": "Robert Castillo",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1028.39,
+      "description": "Opportunity place option manager sure part stock decision."
+    },
+    {
+      "id": "29c428db-2f61-4d87-84b3-39b61a606c2d",
+      "name": "Focused systematic support 9",
+      "status": "Active",
+      "createdDate": "2025-11-19T22:29:01",
+      "updatedDate": "2026-01-27T03:17:25",
+      "owner": "Brandon Davis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7798.51,
+      "description": "Professional bad box treatment hair."
+    },
+    {
+      "id": "075f426d-b86e-4b77-8bd7-8c37d0ee588b",
+      "name": "Reverse-engineered client-driven contingency 10",
+      "status": "Inactive",
+      "createdDate": "2025-05-15T18:15:32",
+      "updatedDate": "2026-02-01T02:17:52",
+      "owner": "Emily Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3463.16,
+      "description": "Mind lawyer policy public commercial once affect happy."
+    },
+    {
+      "id": "260081cc-6aef-4b25-b79c-4b6d8d1356de",
+      "name": "Face-to-face impactful artificial intelligence 11",
+      "status": "Active",
+      "createdDate": "2025-08-06T16:50:02",
+      "updatedDate": "2026-01-27T14:33:39",
+      "owner": "Jacqueline Williams",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9071.21,
+      "description": "Form condition nice serve provide."
+    },
+    {
+      "id": "d0dd7989-5fff-47e3-88a2-beb238dd54f2",
+      "name": "Universal high-level firmware 12",
+      "status": "Pending",
+      "createdDate": "2025-10-16T10:55:12",
+      "updatedDate": "2026-02-05T16:25:05",
+      "owner": "Donna Aguilar",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2554.15,
+      "description": "Myself write decide similar stop economic professional."
+    },
+    {
+      "id": "589913dc-eaa8-4a35-8f84-baeffb1e5db6",
+      "name": "Organized radical framework 13",
+      "status": "Pending",
+      "createdDate": "2026-02-08T20:36:02",
+      "updatedDate": "2026-01-26T17:57:16",
+      "owner": "Kim Stanley",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8912.79,
+      "description": "Head director enjoy professor nature."
+    },
+    {
+      "id": "b1b73d3c-8147-4815-9f69-0b5b149636c2",
+      "name": "Reactive content-based service-desk 14",
+      "status": "Active",
+      "createdDate": "2025-12-12T20:19:02",
+      "updatedDate": "2026-02-08T08:04:55",
+      "owner": "Brittany Alvarez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4345.25,
+      "description": "Week conference however."
+    },
+    {
+      "id": "5aef5570-0f15-443f-aacc-5568f9fa3bda",
+      "name": "Open-source even-keeled superstructure 15",
+      "status": "Pending",
+      "createdDate": "2025-06-17T09:38:26",
+      "updatedDate": "2026-01-24T09:45:37",
+      "owner": "Donna Dalton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6051.49,
+      "description": "Property great order finally save environment concern wide."
+    },
+    {
+      "id": "520c3894-0dec-4ba4-9319-de1d239af695",
+      "name": "Horizontal even-keeled framework 16",
+      "status": "Active",
+      "createdDate": "2025-12-22T18:36:19",
+      "updatedDate": "2026-01-26T15:01:54",
+      "owner": "Jordan Taylor",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6713.04,
+      "description": "Decision town bit election piece."
+    },
+    {
+      "id": "4341bf8e-86f4-4e4b-ad78-9dc72fc068c1",
+      "name": "Reactive human-resource interface 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-02T01:07:43",
+      "updatedDate": "2026-02-15T16:55:29",
+      "owner": "Devon Evans",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1466.41,
+      "description": "After education relate."
+    },
+    {
+      "id": "93a14473-3f8a-4050-8e70-771e706d49c7",
+      "name": "Face-to-face interactive infrastructure 18",
+      "status": "Inactive",
+      "createdDate": "2025-05-10T08:56:50",
+      "updatedDate": "2026-01-24T07:18:56",
+      "owner": "Sonya Kaufman",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4447.31,
+      "description": "Involve protect about popular chance."
+    },
+    {
+      "id": "52b8d98c-ae32-46bc-a7bd-8d5dbbf78036",
+      "name": "Robust exuding utilization 19",
+      "status": "Pending",
+      "createdDate": "2025-08-28T15:31:19",
+      "updatedDate": "2026-01-21T19:39:53",
+      "owner": "Cheryl Sweeney",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7913.5,
+      "description": "Yourself daughter course throughout."
+    },
+    {
+      "id": "a15108fe-f18c-4f24-8aa8-2d39e63e41c3",
+      "name": "Exclusive object-oriented structure 20",
+      "status": "Pending",
+      "createdDate": "2025-03-09T02:05:19",
+      "updatedDate": "2026-02-09T15:11:45",
+      "owner": "Brenda Griffith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9148.11,
+      "description": "Mind help describe get."
+    },
+    {
+      "id": "4b672104-237b-42a0-9486-e183fe2f0452",
+      "name": "Function-based heuristic Graphic Interface 21",
+      "status": "Active",
+      "createdDate": "2025-09-23T10:33:59",
+      "updatedDate": "2026-02-01T02:49:37",
+      "owner": "Catherine Cruz",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9745.64,
+      "description": "Indeed my respond for visit site."
+    },
+    {
+      "id": "4460fe26-ab68-4e90-9e7c-27037fbbd9c0",
+      "name": "Devolved intangible monitoring 22",
+      "status": "Active",
+      "createdDate": "2026-02-11T10:20:19",
+      "updatedDate": "2026-01-20T20:29:39",
+      "owner": "Shaun Richardson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4803.32,
+      "description": "Agent month represent pick small character."
+    },
+    {
+      "id": "56588e95-ab5a-4f22-9e77-c58605cfd654",
+      "name": "Realigned mobile success 23",
+      "status": "Inactive",
+      "createdDate": "2025-05-17T04:11:54",
+      "updatedDate": "2026-02-06T16:53:52",
+      "owner": "Jordan Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6762.03,
+      "description": "Task market protect mother across very."
+    },
+    {
+      "id": "89c4d51d-8f45-4efd-8828-8e0935c39d62",
+      "name": "User-centric directional collaboration 24",
+      "status": "Completed",
+      "createdDate": "2025-06-07T20:33:53",
+      "updatedDate": "2026-02-08T06:36:01",
+      "owner": "Linda Barnes",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5220.23,
+      "description": "Fall history almost mind look professor pattern."
+    },
+    {
+      "id": "651ff4f0-faa7-4b65-84f9-72a51d0b8605",
+      "name": "Integrated tangible groupware 25",
+      "status": "Active",
+      "createdDate": "2025-05-13T19:45:51",
+      "updatedDate": "2026-02-12T19:54:03",
+      "owner": "Paul Payne",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6660.65,
+      "description": "Inside bring time eight respond arrive material."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

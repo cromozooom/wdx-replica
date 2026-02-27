@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-kycdocument",
+  "queryId": "query-active-only",
+  "totalCount": 274,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "f4d65ead-14c1-4bb8-995e-40536c4a7310",
+      "name": "Pre-emptive value-added conglomeration 1",
+      "status": "Active",
+      "createdDate": "2025-12-29T10:47:43",
+      "updatedDate": "2026-01-30T11:37:59",
+      "owner": "Kimberly Green",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7142.81,
+      "description": "Season write general before mission."
+    },
+    {
+      "id": "2e56168a-4558-497f-8555-7ddcc530ad2c",
+      "name": "Expanded optimizing service-desk 2",
+      "status": "Active",
+      "createdDate": "2026-02-12T19:35:21",
+      "updatedDate": "2026-02-16T13:27:41",
+      "owner": "John Powell",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 413.73,
+      "description": "Same some me time."
+    },
+    {
+      "id": "eed61883-8c18-4c6a-8539-674b3eb0bb89",
+      "name": "Polarized uniform function 3",
+      "status": "Inactive",
+      "createdDate": "2025-04-29T07:30:40",
+      "updatedDate": "2026-01-18T22:06:38",
+      "owner": "Andrew Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8719.4,
+      "description": "Water cost poor anyone director mother he."
+    },
+    {
+      "id": "84cb118b-ce94-43c4-9c31-07b3ddf34f5b",
+      "name": "Team-oriented secondary support 4",
+      "status": "Completed",
+      "createdDate": "2025-06-25T15:22:38",
+      "updatedDate": "2026-02-05T21:45:09",
+      "owner": "Sarah Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1636.67,
+      "description": "Detail industry tree cultural culture."
+    },
+    {
+      "id": "256ab539-7889-4742-addd-f9d84bb684f8",
+      "name": "Managed dynamic alliance 5",
+      "status": "Inactive",
+      "createdDate": "2025-06-19T19:25:30",
+      "updatedDate": "2026-02-11T00:23:23",
+      "owner": "Michael Singleton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9094.16,
+      "description": "Those trial appear."
+    },
+    {
+      "id": "a3bdbccf-d417-43f4-96a6-afcfd91e3636",
+      "name": "Proactive 6thgeneration benchmark 6",
+      "status": "Active",
+      "createdDate": "2025-03-03T03:47:26",
+      "updatedDate": "2026-02-15T15:50:08",
+      "owner": "Katie Mendoza DVM",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2060.13,
+      "description": "Statement vote chair."
+    },
+    {
+      "id": "0585aafe-ce26-446c-9fe8-fc13e5c4f086",
+      "name": "Advanced web-enabled project 7",
+      "status": "Inactive",
+      "createdDate": "2025-03-25T09:53:03",
+      "updatedDate": "2026-02-13T02:10:17",
+      "owner": "Michael Brady",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7869.98,
+      "description": "Stage production human its cut expert its have."
+    },
+    {
+      "id": "fbcbcdde-26cb-43db-931b-b5a4ae2a5a1f",
+      "name": "Configurable 5thgeneration function 8",
+      "status": "Inactive",
+      "createdDate": "2026-01-19T15:51:59",
+      "updatedDate": "2026-02-11T23:13:35",
+      "owner": "Anna Bradley",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7031.21,
+      "description": "Must environmental old us."
+    },
+    {
+      "id": "dd86f02e-9a57-4293-b741-037da1263caf",
+      "name": "Synergistic radical encoding 9",
+      "status": "Completed",
+      "createdDate": "2025-05-19T06:38:00",
+      "updatedDate": "2026-02-10T05:00:23",
+      "owner": "Leslie May",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2376.6,
+      "description": "Reflect hospital picture exactly."
+    },
+    {
+      "id": "7bb1552d-ddca-4b9f-939e-9e48a41ee38c",
+      "name": "Multi-layered directional open architecture 10",
+      "status": "Active",
+      "createdDate": "2025-07-28T13:07:35",
+      "updatedDate": "2026-02-07T18:45:23",
+      "owner": "Jimmy Ho",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5718.96,
+      "description": "Treat memory watch part seem information generation."
+    },
+    {
+      "id": "c6985ff4-b214-4c26-ba11-283a6c2fdf12",
+      "name": "Persevering 5thgeneration archive 11",
+      "status": "Completed",
+      "createdDate": "2025-09-20T10:26:30",
+      "updatedDate": "2026-01-23T21:58:56",
+      "owner": "Sherry Hayden",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7955.0,
+      "description": "Impact develop quite over rich positive."
+    },
+    {
+      "id": "fd8db7b3-c7cf-42c9-8750-bbf1e45970d5",
+      "name": "Focused multi-tasking success 12",
+      "status": "Completed",
+      "createdDate": "2025-02-25T07:44:26",
+      "updatedDate": "2026-02-08T18:01:07",
+      "owner": "Andrea Cox",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4875.01,
+      "description": "Major Congress office more tend throughout current."
+    },
+    {
+      "id": "5231def9-171d-4757-9d9b-511f023b6b10",
+      "name": "Implemented upward-trending open system 13",
+      "status": "Inactive",
+      "createdDate": "2025-09-05T15:35:23",
+      "updatedDate": "2026-01-28T15:29:53",
+      "owner": "Johnny Adams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 944.9,
+      "description": "Finally tree conference."
+    },
+    {
+      "id": "8101bd1b-e139-4256-b2a1-4d7ec3f3f7b6",
+      "name": "Distributed fault-tolerant portal 14",
+      "status": "Completed",
+      "createdDate": "2026-01-05T00:26:09",
+      "updatedDate": "2026-02-12T03:59:05",
+      "owner": "Jeffrey Doyle MD",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2589.61,
+      "description": "Decade task president in with sense difficult."
+    },
+    {
+      "id": "b03a6b01-f9af-4104-9b2a-74c59d4ed732",
+      "name": "Ameliorated human-resource matrices 15",
+      "status": "Completed",
+      "createdDate": "2025-12-18T18:19:34",
+      "updatedDate": "2026-02-03T06:05:39",
+      "owner": "Stephen Perry",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2370.76,
+      "description": "Bank treat similar."
+    },
+    {
+      "id": "f0abf01d-935a-49be-b191-919c4174e57a",
+      "name": "Expanded next generation migration 16",
+      "status": "Completed",
+      "createdDate": "2025-04-11T20:00:37",
+      "updatedDate": "2026-02-13T08:49:08",
+      "owner": "Emma Rivera",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5724.85,
+      "description": "Some who modern consider beautiful."
+    },
+    {
+      "id": "42cdf5fe-6e72-4eb4-a1ca-fdd9afe17c0b",
+      "name": "Profound modular help-desk 17",
+      "status": "Active",
+      "createdDate": "2025-12-15T12:27:08",
+      "updatedDate": "2026-01-19T05:11:16",
+      "owner": "Mr. Robert Hernandez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8321.47,
+      "description": "Page purpose political magazine score despite industry."
+    },
+    {
+      "id": "e29f8d2a-2719-4e0c-988a-f9612b201c4b",
+      "name": "Synergized tertiary product 18",
+      "status": "Completed",
+      "createdDate": "2025-06-01T14:59:09",
+      "updatedDate": "2026-02-03T09:34:31",
+      "owner": "Renee Harrington",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8964.4,
+      "description": "Rule personal role up remain minute."
+    },
+    {
+      "id": "a888f8e0-7a66-4e19-9a01-eff21b0b5ead",
+      "name": "Secured analyzing migration 19",
+      "status": "Inactive",
+      "createdDate": "2025-09-10T16:53:15",
+      "updatedDate": "2026-02-06T16:51:55",
+      "owner": "David Perry",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6376.61,
+      "description": "Suggest really before sell."
+    },
+    {
+      "id": "82f6d74c-bc17-420c-8775-d90c2a0c45e5",
+      "name": "Synergistic local flexibility 20",
+      "status": "Pending",
+      "createdDate": "2025-12-30T07:40:30",
+      "updatedDate": "2026-01-23T18:35:53",
+      "owner": "Christina Goodman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3887.05,
+      "description": "Role above trade always."
+    },
+    {
+      "id": "d07d29f3-89b7-4104-ad40-32acf0dad540",
+      "name": "Future-proofed bifurcated migration 21",
+      "status": "Completed",
+      "createdDate": "2025-08-02T08:55:25",
+      "updatedDate": "2026-02-01T21:21:00",
+      "owner": "Charles Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8977.58,
+      "description": "Care similar spend image turn."
+    },
+    {
+      "id": "d8fadf4b-c704-47f1-85a4-6cd3fa54f0e1",
+      "name": "Programmable heuristic utilization 22",
+      "status": "Active",
+      "createdDate": "2026-01-22T13:40:08",
+      "updatedDate": "2026-01-29T21:23:59",
+      "owner": "Lisa Freeman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6251.02,
+      "description": "Political five role."
+    },
+    {
+      "id": "c516a8c6-4136-47c5-9f7f-9863f6932631",
+      "name": "User-friendly zero tolerance model 23",
+      "status": "Pending",
+      "createdDate": "2025-05-10T23:00:44",
+      "updatedDate": "2026-02-11T04:53:36",
+      "owner": "Lauren Zavala",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4749.37,
+      "description": "Own their evidence return."
+    },
+    {
+      "id": "0e2888e5-7906-4d8c-ab76-26bb0d5ec8f0",
+      "name": "Integrated optimal flexibility 24",
+      "status": "Pending",
+      "createdDate": "2025-05-16T15:12:29",
+      "updatedDate": "2026-02-04T18:10:13",
+      "owner": "Lori Thompson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2109.86,
+      "description": "Peace music a attorney."
+    },
+    {
+      "id": "22b23121-d5e8-40b2-9d7a-2ac2e1e34803",
+      "name": "Switchable didactic interface 25",
+      "status": "Inactive",
+      "createdDate": "2025-04-13T18:00:19",
+      "updatedDate": "2026-01-27T16:31:34",
+      "owner": "Philip Elliott",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2275.44,
+      "description": "Away conference image process form thought."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

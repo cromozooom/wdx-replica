@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-all-records",
+  "totalCount": 159,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "84e3fd88-1870-4c9f-b0ef-0cf9001a5773",
+      "name": "Progressive zero tolerance core 1",
+      "status": "Active",
+      "createdDate": "2025-11-18T04:21:25",
+      "updatedDate": "2026-01-30T08:20:36",
+      "owner": "Amber Riley",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7407.23,
+      "description": "Think agent interview expect."
+    },
+    {
+      "id": "bb9df571-059b-4b39-80cd-40135505731a",
+      "name": "Synergistic empowering Graphic Interface 2",
+      "status": "Completed",
+      "createdDate": "2025-09-05T08:31:59",
+      "updatedDate": "2026-02-08T05:47:28",
+      "owner": "John May",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8669.48,
+      "description": "Service investment window woman."
+    },
+    {
+      "id": "8146dd2b-9864-4cb3-93d1-84c03efb9e46",
+      "name": "Public-key neutral project 3",
+      "status": "Active",
+      "createdDate": "2025-04-07T14:58:26",
+      "updatedDate": "2026-01-31T16:46:21",
+      "owner": "Timothy Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3764.35,
+      "description": "Indeed finally although decision bed past upon."
+    },
+    {
+      "id": "5b1393f6-c18d-45a5-8d33-87d9c18aba6c",
+      "name": "Digitized attitude-oriented focus group 4",
+      "status": "Active",
+      "createdDate": "2025-07-08T18:45:37",
+      "updatedDate": "2026-02-03T10:43:40",
+      "owner": "Willie Weber",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6950.43,
+      "description": "Game future memory not."
+    },
+    {
+      "id": "9ef8850a-6f01-49d0-ab94-055daa4ffa5f",
+      "name": "Triple-buffered even-keeled neural-net 5",
+      "status": "Pending",
+      "createdDate": "2025-04-20T18:31:17",
+      "updatedDate": "2026-01-30T20:16:00",
+      "owner": "Kristopher Campbell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3761.98,
+      "description": "Four hold perform begin what."
+    },
+    {
+      "id": "f302edd4-5b7b-46c0-b73d-ff85788a0973",
+      "name": "Assimilated even-keeled analyzer 6",
+      "status": "Completed",
+      "createdDate": "2025-05-28T11:19:25",
+      "updatedDate": "2026-01-27T17:50:46",
+      "owner": "Russell Wheeler",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9781.32,
+      "description": "Act serious former truth between collection."
+    },
+    {
+      "id": "74fbcc34-425f-4a5b-b600-78c6a02f50d6",
+      "name": "Multi-layered bandwidth-monitored instruction set 7",
+      "status": "Active",
+      "createdDate": "2025-12-31T12:24:59",
+      "updatedDate": "2026-01-26T14:44:04",
+      "owner": "Jeffrey Hale",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8143.5,
+      "description": "National door buy agent."
+    },
+    {
+      "id": "fd8b1ebe-22b2-4a1a-979d-cb212bec4c3b",
+      "name": "Universal web-enabled toolset 8",
+      "status": "Pending",
+      "createdDate": "2025-06-30T17:17:50",
+      "updatedDate": "2026-02-14T11:48:11",
+      "owner": "Jeremy Hanson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2233.44,
+      "description": "Benefit front whatever sound teacher glass product."
+    },
+    {
+      "id": "ebd27e46-d3d4-456e-a47a-697212e483d0",
+      "name": "Realigned client-server monitoring 9",
+      "status": "Completed",
+      "createdDate": "2025-10-04T02:51:25",
+      "updatedDate": "2026-02-16T22:04:30",
+      "owner": "Rachael Evans",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8418.21,
+      "description": "Leave research tonight assume race moment poor."
+    },
+    {
+      "id": "18c41268-5f72-45af-b8ff-0082afa490cf",
+      "name": "Open-architected fresh-thinking time-frame 10",
+      "status": "Inactive",
+      "createdDate": "2025-09-04T06:38:48",
+      "updatedDate": "2026-02-01T22:54:56",
+      "owner": "Daisy Saunders",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3423.99,
+      "description": "Speech drug manager mouth section."
+    },
+    {
+      "id": "a9978acd-4a74-4204-b554-1eba358a9e34",
+      "name": "Compatible optimal capability 11",
+      "status": "Completed",
+      "createdDate": "2025-07-17T08:55:24",
+      "updatedDate": "2026-02-10T12:12:16",
+      "owner": "Abigail Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7484.88,
+      "description": "Executive issue relate answer."
+    },
+    {
+      "id": "77704480-0409-4a81-9f8f-d796bb1e2614",
+      "name": "Innovative mission-critical instruction set 12",
+      "status": "Inactive",
+      "createdDate": "2025-02-20T13:30:18",
+      "updatedDate": "2026-02-02T10:24:50",
+      "owner": "Anna Hale",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3273.64,
+      "description": "Finally natural medical ever place beyond."
+    },
+    {
+      "id": "cb37e6dd-68ae-45d5-8591-264c06589271",
+      "name": "Customer-focused modular Graphic Interface 13",
+      "status": "Pending",
+      "createdDate": "2025-04-16T17:49:57",
+      "updatedDate": "2026-02-05T09:53:54",
+      "owner": "Deanna Short",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1621.59,
+      "description": "Management sort blood."
+    },
+    {
+      "id": "dad43350-e998-417f-8a3f-c63e504590e2",
+      "name": "Extended multi-state hierarchy 14",
+      "status": "Active",
+      "createdDate": "2025-12-09T17:42:41",
+      "updatedDate": "2026-02-11T19:17:26",
+      "owner": "Jesse Eaton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8712.04,
+      "description": "Player case actually seek."
+    },
+    {
+      "id": "3f240ea7-690c-42a4-8e4a-d9c0b0a761d5",
+      "name": "Digitized dynamic synergy 15",
+      "status": "Active",
+      "createdDate": "2025-02-23T02:54:22",
+      "updatedDate": "2026-02-10T10:58:39",
+      "owner": "Timothy Austin",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6130.61,
+      "description": "Camera clear catch concern."
+    },
+    {
+      "id": "5fbd5b66-540f-4b5e-9c77-ef6fa13868f0",
+      "name": "Pre-emptive 24hour alliance 16",
+      "status": "Completed",
+      "createdDate": "2025-07-12T09:39:37",
+      "updatedDate": "2026-02-15T06:13:38",
+      "owner": "Scott Hall",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1376.89,
+      "description": "Reflect suddenly college."
+    },
+    {
+      "id": "a4c7e73a-0bf1-4096-8441-927dbcdd6995",
+      "name": "Upgradable mobile collaboration 17",
+      "status": "Pending",
+      "createdDate": "2025-07-28T01:01:19",
+      "updatedDate": "2026-01-19T17:11:24",
+      "owner": "Mr. William Lyons MD",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6244.69,
+      "description": "Plant have care since wait probably receive."
+    },
+    {
+      "id": "4199514e-25b2-4d07-892b-6053d5146f16",
+      "name": "Object-based empowering approach 18",
+      "status": "Active",
+      "createdDate": "2026-01-21T11:57:32",
+      "updatedDate": "2026-02-10T08:12:06",
+      "owner": "Sonia Morgan",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8463.56,
+      "description": "Where side since field benefit teacher deal."
+    },
+    {
+      "id": "827a5424-885d-4e52-adea-04d18c9202bb",
+      "name": "Profit-focused stable frame 19",
+      "status": "Active",
+      "createdDate": "2025-02-27T08:20:47",
+      "updatedDate": "2026-02-07T22:21:46",
+      "owner": "David Spencer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3898.84,
+      "description": "Her property get carry run pressure."
+    },
+    {
+      "id": "3d35abd0-7db5-4b7d-8ea7-75bbccc4c19e",
+      "name": "Diverse full-range utilization 20",
+      "status": "Completed",
+      "createdDate": "2025-07-23T03:48:03",
+      "updatedDate": "2026-01-29T11:05:44",
+      "owner": "Tyler Scott",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8197.85,
+      "description": "Plant by tonight hotel buy surface dark."
+    },
+    {
+      "id": "6c487e11-ff65-4f4a-a86a-3cca2c3cb09a",
+      "name": "Quality-focused exuding extranet 21",
+      "status": "Completed",
+      "createdDate": "2025-06-23T13:13:09",
+      "updatedDate": "2026-02-10T03:39:00",
+      "owner": "Shannon Gould",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3311.65,
+      "description": "Girl color billion carry job help accept serious."
+    },
+    {
+      "id": "b8bb00e8-e35e-4a1f-b3fe-b928e6c04769",
+      "name": "Cloned incremental neural-net 22",
+      "status": "Pending",
+      "createdDate": "2025-10-17T09:31:40",
+      "updatedDate": "2026-02-15T12:23:21",
+      "owner": "William Miller",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5436.82,
+      "description": "View newspaper eye glass since population kitchen prepare."
+    },
+    {
+      "id": "b0e3cff5-19d1-4898-b022-99fdc5281e52",
+      "name": "Synergistic 24hour concept 23",
+      "status": "Inactive",
+      "createdDate": "2025-11-05T20:44:10",
+      "updatedDate": "2026-02-08T01:47:13",
+      "owner": "Amanda Dickerson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3866.11,
+      "description": "Bag employee really more radio hospital."
+    },
+    {
+      "id": "d92de4f0-1d69-4299-a63a-041efacd141b",
+      "name": "Monitored responsive utilization 24",
+      "status": "Inactive",
+      "createdDate": "2025-04-10T11:39:40",
+      "updatedDate": "2026-02-11T13:23:44",
+      "owner": "Johnny Allen",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8029.29,
+      "description": "Draw food feel drop method yard article."
+    },
+    {
+      "id": "ba7c7e5e-7595-494e-ac01-8082b8217f5e",
+      "name": "Managed full-range capability 25",
+      "status": "Completed",
+      "createdDate": "2025-10-26T22:47:32",
+      "updatedDate": "2026-01-24T18:14:58",
+      "owner": "Troy Beltran",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6466.45,
+      "description": "Network research unit animal this."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

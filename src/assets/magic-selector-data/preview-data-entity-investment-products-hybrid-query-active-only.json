@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 330,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "6ef973c6-6e81-4cc0-a00f-b4c9c7300a9a",
+      "name": "Digitized grid-enabled service-desk 1",
+      "status": "Active",
+      "createdDate": "2025-09-25T18:13:24",
+      "updatedDate": "2026-02-11T08:25:17",
+      "owner": "Randy Mitchell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8407.15,
+      "description": "Consider step somebody his hand home network."
+    },
+    {
+      "id": "a41cff7c-471e-4664-8fa9-22851f580665",
+      "name": "Business-focused 24/7 throughput 2",
+      "status": "Pending",
+      "createdDate": "2025-09-26T06:01:01",
+      "updatedDate": "2026-01-19T23:14:15",
+      "owner": "Jack Aguirre",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2124.95,
+      "description": "Everybody ground do get most."
+    },
+    {
+      "id": "db9ca46f-c35b-496f-a591-e797d18a8fc0",
+      "name": "Realigned actuating benchmark 3",
+      "status": "Completed",
+      "createdDate": "2025-02-23T12:23:55",
+      "updatedDate": "2026-02-11T16:22:25",
+      "owner": "Mark Gonzales",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 929.39,
+      "description": "Them billion section low street agree trial."
+    },
+    {
+      "id": "69613112-be73-4ef4-9359-841c48629078",
+      "name": "Decentralized coherent complexity 4",
+      "status": "Completed",
+      "createdDate": "2025-12-16T01:07:24",
+      "updatedDate": "2026-01-26T17:48:37",
+      "owner": "Anthony Olson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2313.21,
+      "description": "Paper good wind bill."
+    },
+    {
+      "id": "4fe2b810-67f7-45c7-b92c-1d4c1fb8c20c",
+      "name": "Optional user-facing moratorium 5",
+      "status": "Active",
+      "createdDate": "2025-07-29T08:21:52",
+      "updatedDate": "2026-02-02T05:45:57",
+      "owner": "Kayla Hendricks",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3646.37,
+      "description": "Time consumer imagine fill."
+    },
+    {
+      "id": "9a9d051b-1f29-489c-9700-671e62961fa8",
+      "name": "Monitored mobile artificial intelligence 6",
+      "status": "Completed",
+      "createdDate": "2025-03-10T07:43:42",
+      "updatedDate": "2026-01-24T06:20:46",
+      "owner": "Melanie Escobar",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7529.59,
+      "description": "Among point live."
+    },
+    {
+      "id": "9f81161d-0c15-43ee-8203-4d4b75d5893d",
+      "name": "Balanced impactful ability 7",
+      "status": "Completed",
+      "createdDate": "2025-11-24T05:41:13",
+      "updatedDate": "2026-01-31T17:24:41",
+      "owner": "Christopher Hoffman",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 599.89,
+      "description": "Key part international late protect foot."
+    },
+    {
+      "id": "7affce46-d4e4-49c9-9e25-b3ed608ce382",
+      "name": "Monitored zero-defect implementation 8",
+      "status": "Inactive",
+      "createdDate": "2025-11-15T12:34:30",
+      "updatedDate": "2026-02-04T23:32:49",
+      "owner": "Karen Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1470.52,
+      "description": "Past central voice serious."
+    },
+    {
+      "id": "d8ee1427-ad18-43ae-b4b6-45e926c92427",
+      "name": "Down-sized clear-thinking focus group 9",
+      "status": "Pending",
+      "createdDate": "2025-05-26T04:33:29",
+      "updatedDate": "2026-01-29T18:39:34",
+      "owner": "Matthew Randall",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5713.64,
+      "description": "Rather interesting five a."
+    },
+    {
+      "id": "60c5bf7c-2d5b-4514-b20b-770c1a506145",
+      "name": "Reactive eco-centric service-desk 10",
+      "status": "Inactive",
+      "createdDate": "2025-09-22T09:11:55",
+      "updatedDate": "2026-02-03T18:33:05",
+      "owner": "Tom Hernandez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5866.15,
+      "description": "As however himself."
+    },
+    {
+      "id": "9260311b-dabc-4669-abe8-cc00c2fa9de1",
+      "name": "Distributed hybrid functionalities 11",
+      "status": "Completed",
+      "createdDate": "2026-01-27T19:13:47",
+      "updatedDate": "2026-02-11T19:48:33",
+      "owner": "Lauren Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4782.13,
+      "description": "Thus close drive scene state themselves."
+    },
+    {
+      "id": "b8644a56-4741-42b5-b6cb-7deacb710b3b",
+      "name": "Face-to-face responsive toolset 12",
+      "status": "Inactive",
+      "createdDate": "2025-11-03T19:38:45",
+      "updatedDate": "2026-01-27T12:30:24",
+      "owner": "Bryan Blankenship",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1741.95,
+      "description": "Stand best sit speech get way write."
+    },
+    {
+      "id": "5800c775-8dcf-417a-b9fc-fde4f15729c1",
+      "name": "Devolved national Internet solution 13",
+      "status": "Inactive",
+      "createdDate": "2025-06-12T16:59:23",
+      "updatedDate": "2026-01-28T16:28:09",
+      "owner": "Cheryl Rogers",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6966.33,
+      "description": "Real seat himself development order how."
+    },
+    {
+      "id": "13d29a9e-f048-4b23-8acd-547f7935c9e4",
+      "name": "Quality-focused analyzing access 14",
+      "status": "Completed",
+      "createdDate": "2026-01-31T16:59:55",
+      "updatedDate": "2026-02-03T23:28:48",
+      "owner": "Michelle Miller",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2439.19,
+      "description": "Finally account gun while learn."
+    },
+    {
+      "id": "d3370102-bc48-4c9f-a1c5-6732f1e6d95a",
+      "name": "Open-architected 24hour flexibility 15",
+      "status": "Completed",
+      "createdDate": "2025-04-16T07:09:22",
+      "updatedDate": "2026-02-09T19:56:28",
+      "owner": "Meghan Jones",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3258.06,
+      "description": "Physical assume box manager."
+    },
+    {
+      "id": "cdf05287-ca03-46d4-9895-15ad873799f9",
+      "name": "Focused analyzing product 16",
+      "status": "Pending",
+      "createdDate": "2025-05-28T11:51:27",
+      "updatedDate": "2026-02-10T20:08:16",
+      "owner": "Jennifer Nelson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8082.89,
+      "description": "World either help threat song theory."
+    },
+    {
+      "id": "f541ce4b-1da8-4ffb-9fef-04e8163aebbe",
+      "name": "Universal reciprocal support 17",
+      "status": "Inactive",
+      "createdDate": "2025-07-20T00:44:38",
+      "updatedDate": "2026-02-01T15:37:43",
+      "owner": "Jimmy Ruiz",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4346.45,
+      "description": "Street religious economic himself."
+    },
+    {
+      "id": "802fca6f-200e-4265-9da9-7bbb6c2ca2cd",
+      "name": "Adaptive foreground info-mediaries 18",
+      "status": "Pending",
+      "createdDate": "2025-10-17T11:21:07",
+      "updatedDate": "2026-02-04T03:47:58",
+      "owner": "John Baldwin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7339.33,
+      "description": "Fall store kid forward expect down."
+    },
+    {
+      "id": "5c0320ac-4f5b-4c32-82c7-3e68e1d985d4",
+      "name": "Progressive asymmetric superstructure 19",
+      "status": "Inactive",
+      "createdDate": "2025-05-03T11:52:00",
+      "updatedDate": "2026-01-22T10:29:40",
+      "owner": "Michael Robinson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9259.4,
+      "description": "Phone statement what require."
+    },
+    {
+      "id": "647a9063-4876-4a73-8465-45486e3b68bc",
+      "name": "Re-engineered bottom-line flexibility 20",
+      "status": "Active",
+      "createdDate": "2025-02-28T11:50:56",
+      "updatedDate": "2026-02-02T05:38:09",
+      "owner": "Cynthia Owen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3931.41,
+      "description": "Impact agent expert give."
+    },
+    {
+      "id": "6bb1449f-35b5-4564-beaf-2190a618c44d",
+      "name": "Persistent regional utilization 21",
+      "status": "Active",
+      "createdDate": "2025-08-18T19:34:31",
+      "updatedDate": "2026-01-29T04:42:39",
+      "owner": "Bradley Webster",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6319.48,
+      "description": "Successful exactly new maybe."
+    },
+    {
+      "id": "1aa8a621-3962-4347-990d-7f42f19bbd37",
+      "name": "Object-based clear-thinking analyzer 22",
+      "status": "Pending",
+      "createdDate": "2025-07-16T04:34:54",
+      "updatedDate": "2026-02-04T19:57:47",
+      "owner": "Janet Farley",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3756.29,
+      "description": "Probably defense such loss."
+    },
+    {
+      "id": "e0b76278-9a44-42a2-9ade-c619d764b2b0",
+      "name": "Quality-focused 6thgeneration customer loyalty 23",
+      "status": "Completed",
+      "createdDate": "2026-01-28T08:57:44",
+      "updatedDate": "2026-01-27T22:27:36",
+      "owner": "Anthony Hughes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8872.45,
+      "description": "Begin something benefit husband."
+    },
+    {
+      "id": "d0bb8fbc-2213-4f34-bfbf-6e3b44013ccc",
+      "name": "Function-based uniform firmware 24",
+      "status": "Active",
+      "createdDate": "2025-11-10T15:44:01",
+      "updatedDate": "2026-01-30T03:22:26",
+      "owner": "James Wilson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1623.5,
+      "description": "Would war history consumer claim."
+    },
+    {
+      "id": "de38705c-4bef-4ca5-80cd-8594c5b7c184",
+      "name": "Operative discrete access 25",
+      "status": "Inactive",
+      "createdDate": "2026-01-03T18:02:20",
+      "updatedDate": "2026-02-06T03:28:46",
+      "owner": "Travis Gibbs",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8785.99,
+      "description": "New learn wonder thousand."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

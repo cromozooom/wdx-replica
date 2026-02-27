@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 769,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a44aa827-6063-43a8-bd06-c38bbc09536c",
+      "name": "Robust clear-thinking portal 1",
+      "status": "Pending",
+      "createdDate": "2025-11-19T16:31:22",
+      "updatedDate": "2026-02-05T17:41:04",
+      "owner": "Monica Henderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1186.66,
+      "description": "Significant heavy media story actually then."
+    },
+    {
+      "id": "4ae30d27-5460-49a4-bf16-f8707c82db07",
+      "name": "Phased fresh-thinking protocol 2",
+      "status": "Pending",
+      "createdDate": "2025-03-15T19:57:53",
+      "updatedDate": "2026-02-15T15:26:56",
+      "owner": "Joseph Washington",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3320.48,
+      "description": "Section nothing experience red service paper."
+    },
+    {
+      "id": "07531e6b-f0d6-464c-8701-7b78e16fea96",
+      "name": "Up-sized impactful hardware 3",
+      "status": "Completed",
+      "createdDate": "2025-10-05T11:58:10",
+      "updatedDate": "2026-02-08T04:48:33",
+      "owner": "Amy Alexander",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2749.27,
+      "description": "Mission blood establish close concern talk."
+    },
+    {
+      "id": "1079e634-f6c8-4951-9b77-9771e1b3e3f9",
+      "name": "Realigned multi-tasking benchmark 4",
+      "status": "Completed",
+      "createdDate": "2025-08-08T22:03:48",
+      "updatedDate": "2026-02-08T09:12:14",
+      "owner": "Dr. Christopher Martinez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 682.23,
+      "description": "Ground out us no inside identify right."
+    },
+    {
+      "id": "98266744-e451-4588-989e-65a63b49c679",
+      "name": "Configurable contextually-based service-desk 5",
+      "status": "Pending",
+      "createdDate": "2025-11-16T00:32:29",
+      "updatedDate": "2026-01-20T00:44:12",
+      "owner": "Ashley Gould",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2953.63,
+      "description": "Dream fly feel employee turn reason debate garden."
+    },
+    {
+      "id": "bb2ccc20-ec76-4bd0-adc0-a2a8800b4c8e",
+      "name": "Integrated motivating extranet 6",
+      "status": "Completed",
+      "createdDate": "2025-06-14T13:58:14",
+      "updatedDate": "2026-01-27T23:56:35",
+      "owner": "Brianna Nunez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6286.14,
+      "description": "Stage health debate note character listen either."
+    },
+    {
+      "id": "826ab9a6-f459-4358-a512-fde43d780140",
+      "name": "Decentralized non-volatile leverage 7",
+      "status": "Pending",
+      "createdDate": "2025-03-02T01:56:32",
+      "updatedDate": "2026-01-26T12:19:53",
+      "owner": "Angel Patterson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7900.93,
+      "description": "Method challenge industry wonder modern."
+    },
+    {
+      "id": "81a63a4e-483e-4393-9d80-9ba2b67f784f",
+      "name": "Cloned value-added synergy 8",
+      "status": "Completed",
+      "createdDate": "2026-01-16T13:36:15",
+      "updatedDate": "2026-02-17T03:31:49",
+      "owner": "Scott Watson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6924.34,
+      "description": "Consumer public mission board various."
+    },
+    {
+      "id": "850ca66f-5d80-4f42-b135-e4f2cc3d31f5",
+      "name": "Ergonomic motivating project 9",
+      "status": "Completed",
+      "createdDate": "2025-10-21T23:25:22",
+      "updatedDate": "2026-02-06T00:32:41",
+      "owner": "Matthew Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 206.17,
+      "description": "Read Congress visit study."
+    },
+    {
+      "id": "8a304c44-7d91-4279-a751-51a502cb03a9",
+      "name": "Cloned zero-defect challenge 10",
+      "status": "Pending",
+      "createdDate": "2025-05-24T20:23:54",
+      "updatedDate": "2026-02-01T01:38:40",
+      "owner": "Renee Faulkner",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7051.42,
+      "description": "Gas sound first sure partner Democrat society."
+    },
+    {
+      "id": "89209f9b-8aa4-42de-a79f-6304bdcdfdd9",
+      "name": "Devolved even-keeled customer loyalty 11",
+      "status": "Active",
+      "createdDate": "2026-02-16T09:07:32",
+      "updatedDate": "2026-02-15T09:10:42",
+      "owner": "Kara Morris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1141.78,
+      "description": "Morning well one prepare."
+    },
+    {
+      "id": "2925ada0-c2b5-4bf3-8480-44d12c81890d",
+      "name": "Exclusive dynamic software 12",
+      "status": "Inactive",
+      "createdDate": "2025-04-27T23:05:56",
+      "updatedDate": "2026-01-28T11:07:51",
+      "owner": "Alexis Myers",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8261.14,
+      "description": "Participant notice view as."
+    },
+    {
+      "id": "c0f13f87-fb5b-4993-a126-fad60a3061b9",
+      "name": "Total fault-tolerant orchestration 13",
+      "status": "Completed",
+      "createdDate": "2026-01-25T21:19:11",
+      "updatedDate": "2026-01-31T16:45:57",
+      "owner": "Michael Doyle",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9335.39,
+      "description": "Push people deep east."
+    },
+    {
+      "id": "4648f256-4c23-4427-95e4-3ba2bc4e0a49",
+      "name": "Monitored grid-enabled emulation 14",
+      "status": "Inactive",
+      "createdDate": "2025-12-11T23:28:12",
+      "updatedDate": "2026-01-19T01:57:21",
+      "owner": "Mr. Erik Lee II",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3350.72,
+      "description": "Democrat quality himself watch."
+    },
+    {
+      "id": "09b78519-ee86-44f4-a7d9-aeb06936ae1e",
+      "name": "Enterprise-wide next generation software 15",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T00:09:53",
+      "updatedDate": "2026-01-29T12:37:00",
+      "owner": "Kristen Byrd",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 332.32,
+      "description": "Election throughout country into different class three operation."
+    },
+    {
+      "id": "d81eefba-6c21-4afb-95b7-c690fd29b6bf",
+      "name": "Synergized tangible knowledge user 16",
+      "status": "Pending",
+      "createdDate": "2025-10-29T01:07:28",
+      "updatedDate": "2026-01-20T10:40:13",
+      "owner": "Michele Smith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5324.13,
+      "description": "Adult better company quite senior."
+    },
+    {
+      "id": "9ae17d26-4eb5-4318-ad52-a35e0377a7d3",
+      "name": "Customer-focused local frame 17",
+      "status": "Pending",
+      "createdDate": "2025-10-12T15:16:26",
+      "updatedDate": "2026-02-12T13:08:32",
+      "owner": "Tyler Brown",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6214.79,
+      "description": "Organization watch spring stay capital wall listen."
+    },
+    {
+      "id": "7c4ea851-6ff2-4243-8b89-650f66165aca",
+      "name": "Object-based web-enabled extranet 18",
+      "status": "Active",
+      "createdDate": "2025-05-26T10:32:53",
+      "updatedDate": "2026-01-20T04:43:26",
+      "owner": "Michael Cortez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9265.4,
+      "description": "Attorney term million easy ever."
+    },
+    {
+      "id": "f69fad33-bda7-48ce-bc97-0a3d446369c8",
+      "name": "Innovative fault-tolerant throughput 19",
+      "status": "Completed",
+      "createdDate": "2025-07-13T10:21:52",
+      "updatedDate": "2026-02-06T03:05:11",
+      "owner": "Jennifer Berger",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6692.6,
+      "description": "Become what whole skill ten concern."
+    },
+    {
+      "id": "f81a81ca-8d9d-4114-8ece-2cd99a25aaa6",
+      "name": "Monitored radical application 20",
+      "status": "Active",
+      "createdDate": "2025-05-10T17:08:43",
+      "updatedDate": "2026-02-03T19:55:02",
+      "owner": "Nicholas Watson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6035.37,
+      "description": "Old both of or conference down."
+    },
+    {
+      "id": "2e7e8dcb-ae30-4ef7-b560-62860d0da854",
+      "name": "Inverse next generation access 21",
+      "status": "Active",
+      "createdDate": "2025-06-30T13:42:52",
+      "updatedDate": "2026-02-11T22:24:48",
+      "owner": "Alexis Miller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4433.28,
+      "description": "Listen marriage charge short agent."
+    },
+    {
+      "id": "722c57d9-6236-4a6c-a353-bda544d04647",
+      "name": "Re-contextualized systemic success 22",
+      "status": "Pending",
+      "createdDate": "2025-03-09T21:02:45",
+      "updatedDate": "2026-02-09T01:53:55",
+      "owner": "Joseph Lee",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8622.12,
+      "description": "Food use improve sure out."
+    },
+    {
+      "id": "b64a45a9-7d44-4373-a527-522d77ad11c6",
+      "name": "Decentralized disintermediate alliance 23",
+      "status": "Completed",
+      "createdDate": "2025-06-04T18:13:50",
+      "updatedDate": "2026-02-02T17:01:17",
+      "owner": "Keith Woods",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7129.73,
+      "description": "Guy world why kid board current tell."
+    },
+    {
+      "id": "198285bb-4d17-4fec-9852-bae896ecd42e",
+      "name": "Fundamental secondary conglomeration 24",
+      "status": "Active",
+      "createdDate": "2025-02-17T12:56:37",
+      "updatedDate": "2026-01-23T21:43:53",
+      "owner": "Scott Gonzales",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1736.25,
+      "description": "Good ground rise."
+    },
+    {
+      "id": "a14a3d7f-bdf0-4630-a1b2-60063658ad26",
+      "name": "Reverse-engineered actuating throughput 25",
+      "status": "Inactive",
+      "createdDate": "2026-01-10T20:40:11",
+      "updatedDate": "2026-02-10T16:38:44",
+      "owner": "Sarah Evans",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4909.87,
+      "description": "Girl think mission into machine could."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

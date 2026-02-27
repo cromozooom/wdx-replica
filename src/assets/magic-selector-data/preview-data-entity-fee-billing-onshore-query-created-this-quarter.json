@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-feestatement",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1493,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "42e6cb41-8d35-4f1a-9911-53864a96c298",
+      "name": "Vision-oriented content-based application 1",
+      "status": "Active",
+      "createdDate": "2025-05-30T18:45:13",
+      "updatedDate": "2026-01-22T20:23:13",
+      "owner": "Jeremy Schultz",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8423.28,
+      "description": "Against pattern woman heart nor serve require."
+    },
+    {
+      "id": "2236d704-aca2-4376-bb89-c1ea4549dda1",
+      "name": "Progressive bandwidth-monitored model 2",
+      "status": "Pending",
+      "createdDate": "2025-03-23T17:54:36",
+      "updatedDate": "2026-01-31T14:52:06",
+      "owner": "Paul Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4073.47,
+      "description": "Wind worker actually imagine all agree."
+    },
+    {
+      "id": "5f2841fb-6a8e-40ce-a77d-da2993bb623e",
+      "name": "Operative bi-directional capability 3",
+      "status": "Completed",
+      "createdDate": "2025-07-02T00:20:59",
+      "updatedDate": "2026-01-24T06:36:45",
+      "owner": "Thomas Cox",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5533.76,
+      "description": "Pressure Mr office into."
+    },
+    {
+      "id": "6fa29aa3-aea3-4b00-b2e3-b1c3404da17f",
+      "name": "Inverse bi-directional structure 4",
+      "status": "Pending",
+      "createdDate": "2025-04-07T20:13:30",
+      "updatedDate": "2026-01-25T20:52:55",
+      "owner": "Anna Vazquez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2851.06,
+      "description": "After pull morning six cell."
+    },
+    {
+      "id": "3084c854-0f22-42a1-a60e-f7b7fc0af0fd",
+      "name": "Stand-alone dedicated process improvement 5",
+      "status": "Completed",
+      "createdDate": "2025-07-14T08:25:05",
+      "updatedDate": "2026-01-31T08:25:33",
+      "owner": "Cody Gonzalez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9619.95,
+      "description": "Cause everyone miss none wall."
+    },
+    {
+      "id": "029730b2-0936-46d4-9655-1906d5b48c3f",
+      "name": "Synchronized 24hour matrix 6",
+      "status": "Pending",
+      "createdDate": "2025-10-08T13:44:27",
+      "updatedDate": "2026-02-06T00:16:52",
+      "owner": "Craig Ramsey",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3206.18,
+      "description": "Half answer letter throughout computer enough audience."
+    },
+    {
+      "id": "e201cbb5-a369-4454-8cfb-fec30615ab18",
+      "name": "Implemented zero administration installation 7",
+      "status": "Inactive",
+      "createdDate": "2025-11-03T11:15:02",
+      "updatedDate": "2026-01-27T18:10:12",
+      "owner": "Andrew Gonzales",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8340.81,
+      "description": "Behind carry off debate finish water."
+    },
+    {
+      "id": "a9edb465-a803-4e81-abdd-5f974c4a720e",
+      "name": "Polarized maximized utilization 8",
+      "status": "Pending",
+      "createdDate": "2025-10-17T00:45:57",
+      "updatedDate": "2026-01-28T19:07:09",
+      "owner": "Gina Burns",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7513.79,
+      "description": "Paper career memory particular friend."
+    },
+    {
+      "id": "d2c88202-1fb8-4c61-b6d1-2c986bd826f7",
+      "name": "Assimilated object-oriented structure 9",
+      "status": "Pending",
+      "createdDate": "2026-01-19T10:16:36",
+      "updatedDate": "2026-01-27T20:58:28",
+      "owner": "Cheryl Dickerson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1114.29,
+      "description": "Staff down which business improve machine hot."
+    },
+    {
+      "id": "57defed5-4f46-4635-b07b-4f0daba7bc15",
+      "name": "Integrated radical open system 10",
+      "status": "Active",
+      "createdDate": "2025-04-05T20:51:25",
+      "updatedDate": "2026-02-14T22:08:17",
+      "owner": "Timothy Hines",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6085.76,
+      "description": "Particularly it thousand piece man feel."
+    },
+    {
+      "id": "992b731e-33d2-43cb-82fd-0b61594044fe",
+      "name": "Customizable bottom-line time-frame 11",
+      "status": "Pending",
+      "createdDate": "2025-10-06T21:18:57",
+      "updatedDate": "2026-01-25T12:47:41",
+      "owner": "Bill Morris",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4502.21,
+      "description": "Scene nearly reflect source physical."
+    },
+    {
+      "id": "419e09a0-5b0e-4bfb-be71-c5f6bcbfef3d",
+      "name": "Focused 5thgeneration budgetary management 12",
+      "status": "Pending",
+      "createdDate": "2026-01-04T00:48:33",
+      "updatedDate": "2026-01-26T21:32:25",
+      "owner": "Charlotte Campbell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1831.03,
+      "description": "Skill realize section significant."
+    },
+    {
+      "id": "1de23d6f-cf33-46a0-b67a-48783f8e36b9",
+      "name": "Up-sized bandwidth-monitored benchmark 13",
+      "status": "Pending",
+      "createdDate": "2025-10-04T08:24:56",
+      "updatedDate": "2026-01-20T15:34:20",
+      "owner": "Ronald Santos",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9422.54,
+      "description": "Always whether author trial recent service."
+    },
+    {
+      "id": "916481be-7484-4adf-a233-0d92e3501d8d",
+      "name": "Reduced tertiary Graphic Interface 14",
+      "status": "Active",
+      "createdDate": "2025-07-10T17:09:10",
+      "updatedDate": "2026-01-20T09:22:14",
+      "owner": "Matthew Rodriguez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4853.36,
+      "description": "Owner source year crime."
+    },
+    {
+      "id": "20f79640-36bb-4e5b-ab2d-3da1aa406e88",
+      "name": "Ameliorated tangible definition 15",
+      "status": "Active",
+      "createdDate": "2025-09-11T04:33:45",
+      "updatedDate": "2026-02-08T03:24:06",
+      "owner": "Emily Davis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5158.82,
+      "description": "Foreign writer necessary decade including red though."
+    },
+    {
+      "id": "466428ca-61d2-4470-8211-daead00eb7df",
+      "name": "Optional dynamic extranet 16",
+      "status": "Completed",
+      "createdDate": "2025-02-23T14:21:36",
+      "updatedDate": "2026-01-25T17:37:24",
+      "owner": "Danielle Moore",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7037.24,
+      "description": "Future available these next."
+    },
+    {
+      "id": "30352674-70b8-4754-8231-e13cedf0125b",
+      "name": "Multi-lateral systemic matrices 17",
+      "status": "Active",
+      "createdDate": "2025-12-26T09:45:15",
+      "updatedDate": "2026-01-23T14:43:07",
+      "owner": "Angela Rollins",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1689.99,
+      "description": "Sign camera people act player."
+    },
+    {
+      "id": "7548bc4b-b2ae-427f-a98e-609b61b51a78",
+      "name": "Open-architected systemic interface 18",
+      "status": "Pending",
+      "createdDate": "2025-03-21T07:18:11",
+      "updatedDate": "2026-01-21T16:27:21",
+      "owner": "Charles Hill",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1019.65,
+      "description": "Development put whether number."
+    },
+    {
+      "id": "1a6eb1a1-a7a5-49b7-94fd-7721acb8409e",
+      "name": "Organized non-volatile process improvement 19",
+      "status": "Inactive",
+      "createdDate": "2026-02-04T22:14:48",
+      "updatedDate": "2026-02-15T08:39:18",
+      "owner": "Brian Vasquez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1851.42,
+      "description": "Use serious present magazine light."
+    },
+    {
+      "id": "2b65c0b1-71a9-4a4c-a01d-a49b6bb4c199",
+      "name": "Reactive solution-oriented implementation 20",
+      "status": "Inactive",
+      "createdDate": "2025-02-28T07:42:35",
+      "updatedDate": "2026-01-22T08:02:39",
+      "owner": "Miguel Mercer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3257.2,
+      "description": "Address health letter while consumer white various."
+    },
+    {
+      "id": "07f4e731-0ef6-449a-b781-3b08f3a31f6f",
+      "name": "Progressive scalable approach 21",
+      "status": "Active",
+      "createdDate": "2025-10-10T14:57:51",
+      "updatedDate": "2026-01-30T00:23:11",
+      "owner": "Rachel Lynch",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5896.78,
+      "description": "Want certain bad general single."
+    },
+    {
+      "id": "9d5a53e9-aab1-4057-a028-56f1695040a0",
+      "name": "Realigned transitional productivity 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-19T10:34:22",
+      "updatedDate": "2026-01-28T23:03:18",
+      "owner": "Deborah Williamson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4520.44,
+      "description": "Challenge simple similar including find provide."
+    },
+    {
+      "id": "e9b981df-ffa0-4dd4-9900-9a8c8741f38b",
+      "name": "Enhanced national product 23",
+      "status": "Active",
+      "createdDate": "2025-07-14T20:26:38",
+      "updatedDate": "2026-01-31T04:55:46",
+      "owner": "Amanda Burnett",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5220.27,
+      "description": "Film around way agree edge."
+    },
+    {
+      "id": "de458476-bb12-4754-8f0b-1a3ab5e632f1",
+      "name": "Managed 4thgeneration matrix 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-29T22:21:46",
+      "updatedDate": "2026-01-20T21:11:23",
+      "owner": "Ryan White",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5100.66,
+      "description": "Space college agency such environment computer."
+    },
+    {
+      "id": "425df675-9456-409a-98b0-73245eb7c825",
+      "name": "Balanced holistic complexity 25",
+      "status": "Active",
+      "createdDate": "2025-11-22T09:03:50",
+      "updatedDate": "2026-02-09T13:27:04",
+      "owner": "Jason Cooley Jr.",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6846.12,
+      "description": "Street available despite wonder store enjoy."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

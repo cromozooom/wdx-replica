@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 292,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "f5393c61-0fd0-47eb-a1cd-1f2877a8f9e5",
+      "name": "Compatible mission-critical benchmark 1",
+      "status": "Completed",
+      "createdDate": "2025-03-10T20:13:26",
+      "updatedDate": "2026-02-09T09:22:01",
+      "owner": "Jon Alexander",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7483.95,
+      "description": "Never suffer half into team account."
+    },
+    {
+      "id": "060e926c-32f9-41d4-8b6c-5a40bc336b5b",
+      "name": "Synergized web-enabled framework 2",
+      "status": "Inactive",
+      "createdDate": "2025-07-18T16:34:42",
+      "updatedDate": "2026-02-13T11:24:06",
+      "owner": "Nicholas Villegas",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7463.4,
+      "description": "More each your room decade travel."
+    },
+    {
+      "id": "647ab02a-632a-4a92-8319-751543289b02",
+      "name": "Secured next generation pricing structure 3",
+      "status": "Pending",
+      "createdDate": "2026-02-16T01:57:27",
+      "updatedDate": "2026-02-03T20:04:57",
+      "owner": "Jessica Brady",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6021.63,
+      "description": "Commercial exist moment half."
+    },
+    {
+      "id": "a6723620-70ac-4a9e-918c-adc405f9fc02",
+      "name": "Compatible bi-directional definition 4",
+      "status": "Pending",
+      "createdDate": "2025-10-12T09:26:41",
+      "updatedDate": "2026-02-14T11:46:32",
+      "owner": "Robert Keller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9157.07,
+      "description": "Organization protect technology development skin."
+    },
+    {
+      "id": "9ec7e563-68d0-4200-858a-b255b1e32fa9",
+      "name": "Programmable directional complexity 5",
+      "status": "Inactive",
+      "createdDate": "2025-10-26T00:51:56",
+      "updatedDate": "2026-01-22T04:45:04",
+      "owner": "Austin Peters",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8740.61,
+      "description": "Event hospital customer will think mention."
+    },
+    {
+      "id": "dbb6865d-a3f0-4210-aeec-1a55e4c1ea77",
+      "name": "Mandatory discrete functionalities 6",
+      "status": "Active",
+      "createdDate": "2025-09-03T11:59:55",
+      "updatedDate": "2026-02-11T21:34:09",
+      "owner": "Melissa Price",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4401.03,
+      "description": "Article night value she."
+    },
+    {
+      "id": "e3f59bc7-692c-45bd-9ac0-dde20783596b",
+      "name": "Fully-configurable executive orchestration 7",
+      "status": "Completed",
+      "createdDate": "2025-05-06T16:38:16",
+      "updatedDate": "2026-02-05T08:23:23",
+      "owner": "Lauren Ross",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5481.7,
+      "description": "Particularly fast specific."
+    },
+    {
+      "id": "2d54d480-34d0-4b4c-8574-b143ed7f4a43",
+      "name": "Robust bandwidth-monitored algorithm 8",
+      "status": "Pending",
+      "createdDate": "2025-11-15T10:57:22",
+      "updatedDate": "2026-01-24T10:15:53",
+      "owner": "Ashley Burch",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1028.89,
+      "description": "Response day quality specific walk."
+    },
+    {
+      "id": "ccd8e7bf-8019-4aae-9f80-55eef1b599a1",
+      "name": "Organic reciprocal interface 9",
+      "status": "Inactive",
+      "createdDate": "2025-09-14T01:08:35",
+      "updatedDate": "2026-02-08T01:17:29",
+      "owner": "Wanda Moss",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4761.06,
+      "description": "Goal southern service."
+    },
+    {
+      "id": "7a7af371-c973-4cf9-93d0-b5844eef6793",
+      "name": "Re-contextualized explicit approach 10",
+      "status": "Inactive",
+      "createdDate": "2025-10-10T15:58:03",
+      "updatedDate": "2026-01-25T06:27:24",
+      "owner": "John Pierce",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4088.63,
+      "description": "Have science break though commercial little."
+    },
+    {
+      "id": "a0072b32-d26f-4504-ad18-7803c9d572c2",
+      "name": "User-friendly analyzing budgetary management 11",
+      "status": "Inactive",
+      "createdDate": "2025-03-14T20:13:36",
+      "updatedDate": "2026-02-10T01:33:14",
+      "owner": "Gary Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3249.83,
+      "description": "Sense rise blue stop question article operation."
+    },
+    {
+      "id": "ab7bfe91-2f2d-4ee3-93ef-fc6395005897",
+      "name": "Persevering fresh-thinking policy 12",
+      "status": "Active",
+      "createdDate": "2025-03-07T20:19:52",
+      "updatedDate": "2026-02-02T13:53:19",
+      "owner": "Jessica Wilson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2652.67,
+      "description": "Heart company option sister last say chair industry."
+    },
+    {
+      "id": "c30842b0-73af-4f22-b9bf-8a2cd114e1a1",
+      "name": "Vision-oriented modular Internet solution 13",
+      "status": "Completed",
+      "createdDate": "2025-09-14T08:53:17",
+      "updatedDate": "2026-02-07T19:49:46",
+      "owner": "Francisco Morgan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 276.52,
+      "description": "Early financial laugh statement difference."
+    },
+    {
+      "id": "689b7d69-1ed5-4bfb-951f-9a7c52e33950",
+      "name": "Synchronized tangible structure 14",
+      "status": "Completed",
+      "createdDate": "2025-07-10T21:01:19",
+      "updatedDate": "2026-02-17T04:34:50",
+      "owner": "Justin Acosta",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5425.8,
+      "description": "Better interview officer growth order room."
+    },
+    {
+      "id": "70d926eb-e5ea-4fac-bcc9-66ad5e0b6713",
+      "name": "Total static portal 15",
+      "status": "Active",
+      "createdDate": "2025-04-04T11:08:25",
+      "updatedDate": "2026-01-27T10:58:11",
+      "owner": "Melissa Peterson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 633.05,
+      "description": "Which kind hour free because firm."
+    },
+    {
+      "id": "86008223-65c1-4dec-b114-e93868724278",
+      "name": "Synergized bi-directional secured line 16",
+      "status": "Inactive",
+      "createdDate": "2025-08-07T03:18:04",
+      "updatedDate": "2026-02-02T08:54:56",
+      "owner": "Jermaine Turner",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1423.77,
+      "description": "Growth glass black interesting."
+    },
+    {
+      "id": "fb651076-582c-406a-b5f7-875b2120884d",
+      "name": "Digitized solution-oriented moderator 17",
+      "status": "Pending",
+      "createdDate": "2025-10-27T15:15:54",
+      "updatedDate": "2026-01-25T00:44:13",
+      "owner": "Michael Martinez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9981.97,
+      "description": "Full whole job edge agree individual."
+    },
+    {
+      "id": "d481090d-38d3-47a1-834f-0ccf91ec7942",
+      "name": "Operative system-worthy encryption 18",
+      "status": "Pending",
+      "createdDate": "2025-12-21T16:28:24",
+      "updatedDate": "2026-02-06T00:09:43",
+      "owner": "Samantha Lopez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9811.92,
+      "description": "I science human own single away senior think."
+    },
+    {
+      "id": "772055b6-f075-440e-ad75-099a074230c4",
+      "name": "Managed discrete middleware 19",
+      "status": "Completed",
+      "createdDate": "2025-12-16T06:34:34",
+      "updatedDate": "2026-01-19T05:03:27",
+      "owner": "Angela Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1033.18,
+      "description": "Law nearly fish radio but generation detail recently."
+    },
+    {
+      "id": "ba141270-b8d6-487d-b03e-3fa59d677c47",
+      "name": "Team-oriented non-volatile workforce 20",
+      "status": "Inactive",
+      "createdDate": "2026-01-18T19:19:45",
+      "updatedDate": "2026-02-12T21:15:43",
+      "owner": "Jennifer Townsend",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 608.01,
+      "description": "Thousand network four available."
+    },
+    {
+      "id": "62a47035-da8f-414c-bd82-6954e838ba64",
+      "name": "Enhanced bi-directional installation 21",
+      "status": "Active",
+      "createdDate": "2025-07-24T11:51:07",
+      "updatedDate": "2026-01-22T16:34:29",
+      "owner": "Brian Hudson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3646.78,
+      "description": "Eight eye create listen economic behind."
+    },
+    {
+      "id": "7e03d0b8-3b6e-4b35-8c2d-14cf364717c8",
+      "name": "Ameliorated optimizing implementation 22",
+      "status": "Pending",
+      "createdDate": "2025-09-13T13:08:49",
+      "updatedDate": "2026-02-02T17:08:31",
+      "owner": "David Taylor",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4622.28,
+      "description": "Yard worry wife fast yeah build."
+    },
+    {
+      "id": "65c4f6a6-346e-4491-97c6-6f54c8c7e5b0",
+      "name": "Reduced radical Graphical User Interface 23",
+      "status": "Inactive",
+      "createdDate": "2025-12-04T13:53:39",
+      "updatedDate": "2026-02-16T11:51:57",
+      "owner": "Andrew Wolfe",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2194.42,
+      "description": "People race to thought."
+    },
+    {
+      "id": "c74fd04a-bd9f-491d-8a44-f465369f9e3a",
+      "name": "Multi-tiered systematic standardization 24",
+      "status": "Completed",
+      "createdDate": "2025-12-31T21:52:47",
+      "updatedDate": "2026-02-14T12:06:13",
+      "owner": "Johnny Bauer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 654.4,
+      "description": "Common report statement two large gun nor."
+    },
+    {
+      "id": "5dd7c7b5-d035-40ad-b43d-c0332582b822",
+      "name": "Devolved asymmetric pricing structure 25",
+      "status": "Pending",
+      "createdDate": "2025-05-27T15:43:25",
+      "updatedDate": "2026-02-12T08:17:02",
+      "owner": "Michelle Leonard",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5241.65,
+      "description": "Leader paper image course prepare artist."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

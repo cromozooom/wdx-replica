@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 363,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "104eda18-f663-46cd-972d-5fa22a119dff",
+      "name": "Sharable user-facing installation 1",
+      "status": "Inactive",
+      "createdDate": "2025-05-26T09:27:43",
+      "updatedDate": "2026-02-16T04:33:18",
+      "owner": "Jill Miller",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3777.61,
+      "description": "Probably but lawyer travel election."
+    },
+    {
+      "id": "627f9b26-8c36-4282-abbc-588efe8df7a9",
+      "name": "Adaptive 24/7 moderator 2",
+      "status": "Completed",
+      "createdDate": "2025-06-03T07:21:43",
+      "updatedDate": "2026-02-06T11:56:50",
+      "owner": "Bryan Davidson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5977.21,
+      "description": "System director beyond half draw floor."
+    },
+    {
+      "id": "fbf206a8-d766-4759-b8a9-38621215a706",
+      "name": "Multi-layered hybrid open system 3",
+      "status": "Completed",
+      "createdDate": "2026-02-15T08:50:08",
+      "updatedDate": "2026-01-25T19:19:14",
+      "owner": "Joe Parks",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1325.51,
+      "description": "Movie major husband college surface game imagine."
+    },
+    {
+      "id": "017a44ab-d667-4722-aae4-efd6259af532",
+      "name": "De-engineered contextually-based architecture 4",
+      "status": "Pending",
+      "createdDate": "2025-04-11T18:42:58",
+      "updatedDate": "2026-01-27T02:27:01",
+      "owner": "Cheryl Mcguire",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5580.62,
+      "description": "Few occur technology first modern visit baby."
+    },
+    {
+      "id": "2486c7b4-c60c-4c76-84ec-038841f39d38",
+      "name": "Compatible heuristic software 5",
+      "status": "Inactive",
+      "createdDate": "2025-05-09T09:03:16",
+      "updatedDate": "2026-01-20T13:33:27",
+      "owner": "Cindy Garcia",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 417.59,
+      "description": "System four age office might each quite."
+    },
+    {
+      "id": "38a22414-f53e-4406-af19-17149ba37954",
+      "name": "Mandatory explicit service-desk 6",
+      "status": "Pending",
+      "createdDate": "2026-02-15T04:41:13",
+      "updatedDate": "2026-01-19T12:32:05",
+      "owner": "Ross Richardson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8812.67,
+      "description": "We us certainly join guess enough upon."
+    },
+    {
+      "id": "0050c021-db25-4cd3-a086-51610ec7977e",
+      "name": "Extended dedicated budgetary management 7",
+      "status": "Inactive",
+      "createdDate": "2025-09-04T02:42:36",
+      "updatedDate": "2026-02-06T21:56:55",
+      "owner": "Grace Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7316.2,
+      "description": "Mr sell any want."
+    },
+    {
+      "id": "98070c5d-5bc0-4293-9c1b-096bc8042d91",
+      "name": "Innovative homogeneous firmware 8",
+      "status": "Inactive",
+      "createdDate": "2025-10-03T04:12:15",
+      "updatedDate": "2026-01-19T21:41:22",
+      "owner": "Tonya Jackson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5687.21,
+      "description": "Site technology especially cold."
+    },
+    {
+      "id": "b1545bbf-ced8-4c81-bbf6-27ce8d8dac3f",
+      "name": "Multi-layered encompassing matrix 9",
+      "status": "Pending",
+      "createdDate": "2025-04-26T01:01:20",
+      "updatedDate": "2026-01-24T09:19:29",
+      "owner": "Deborah Bishop",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1251.97,
+      "description": "Class officer some half ok."
+    },
+    {
+      "id": "114185bf-0080-4ff3-bbda-0ec8be280f82",
+      "name": "Streamlined object-oriented circuit 10",
+      "status": "Pending",
+      "createdDate": "2025-09-17T23:10:38",
+      "updatedDate": "2026-01-29T14:05:38",
+      "owner": "Vanessa Ward",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6876.93,
+      "description": "Where our team yet term quite security."
+    },
+    {
+      "id": "a9e114e7-ac21-4f0c-9f45-44ffbf97a87e",
+      "name": "Re-engineered asynchronous system engine 11",
+      "status": "Inactive",
+      "createdDate": "2025-09-02T10:24:07",
+      "updatedDate": "2026-02-07T12:06:49",
+      "owner": "Steven Sanchez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8320.66,
+      "description": "Seek effect direction process."
+    },
+    {
+      "id": "5b7fd378-5299-47e3-8033-5fe2118dd66d",
+      "name": "Automated neutral methodology 12",
+      "status": "Completed",
+      "createdDate": "2025-03-15T16:46:35",
+      "updatedDate": "2026-02-01T07:39:04",
+      "owner": "Toni Villa",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2353.79,
+      "description": "Order when keep project actually."
+    },
+    {
+      "id": "c50aab68-4b7c-4d50-8148-8bb86ed1fc1d",
+      "name": "Right-sized bandwidth-monitored challenge 13",
+      "status": "Pending",
+      "createdDate": "2026-01-13T02:40:51",
+      "updatedDate": "2026-01-19T05:21:05",
+      "owner": "Christopher Colon",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9108.01,
+      "description": "Day work smile kind decade pay popular."
+    },
+    {
+      "id": "9f998411-e26d-4be7-996c-d03d3684825e",
+      "name": "Persistent multi-tasking definition 14",
+      "status": "Completed",
+      "createdDate": "2025-07-08T20:24:41",
+      "updatedDate": "2026-02-07T09:13:03",
+      "owner": "Christopher Massey",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3617.15,
+      "description": "Notice game various discuss exist agreement seem send."
+    },
+    {
+      "id": "93a41821-0699-4fe6-95b2-ffd9c3be2373",
+      "name": "Automated holistic strategy 15",
+      "status": "Pending",
+      "createdDate": "2025-04-23T14:04:29",
+      "updatedDate": "2026-02-10T14:41:51",
+      "owner": "Keith Schultz",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2513.72,
+      "description": "Under around report line."
+    },
+    {
+      "id": "8c3891d7-43d1-409e-b975-abdfaf75fd3d",
+      "name": "Intuitive bi-directional framework 16",
+      "status": "Active",
+      "createdDate": "2025-06-26T22:37:51",
+      "updatedDate": "2026-02-16T04:39:45",
+      "owner": "James Rivera",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 171.02,
+      "description": "Writer part point color last letter money."
+    },
+    {
+      "id": "86ad4b4e-9a8e-4075-9ed0-6c1cc29567be",
+      "name": "Enterprise-wide object-oriented algorithm 17",
+      "status": "Pending",
+      "createdDate": "2025-12-02T13:40:57",
+      "updatedDate": "2026-02-05T21:45:02",
+      "owner": "Paul Fuller",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5340.8,
+      "description": "Recognize tend can new like."
+    },
+    {
+      "id": "7a02493d-4d86-4650-915d-18718fac0610",
+      "name": "Realigned exuding algorithm 18",
+      "status": "Completed",
+      "createdDate": "2025-03-01T21:30:22",
+      "updatedDate": "2026-01-23T22:29:03",
+      "owner": "Jose Davis",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2191.92,
+      "description": "Street offer drug upon."
+    },
+    {
+      "id": "9213a7ec-d464-4c8e-8c6e-ad83761ca2ca",
+      "name": "Configurable clear-thinking Graphic Interface 19",
+      "status": "Completed",
+      "createdDate": "2025-05-11T14:37:43",
+      "updatedDate": "2026-01-29T01:09:05",
+      "owner": "Brittany Ruiz DVM",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 864.89,
+      "description": "Couple where PM though issue."
+    },
+    {
+      "id": "dc4d52c3-02ea-4338-ad9c-ad1f7292383f",
+      "name": "Phased dedicated attitude 20",
+      "status": "Active",
+      "createdDate": "2026-01-16T16:16:33",
+      "updatedDate": "2026-01-31T07:16:55",
+      "owner": "Brandon Romero",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1665.71,
+      "description": "I listen beyond poor lose."
+    },
+    {
+      "id": "e7740010-f8c5-4095-a92a-9f794ec12c01",
+      "name": "Fully-configurable real-time array 21",
+      "status": "Inactive",
+      "createdDate": "2025-06-25T21:53:48",
+      "updatedDate": "2026-01-30T22:54:18",
+      "owner": "Alex Baker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2561.32,
+      "description": "Keep star must before."
+    },
+    {
+      "id": "efad3a74-7a06-4d53-a438-9ccebcdcd137",
+      "name": "Diverse explicit process improvement 22",
+      "status": "Pending",
+      "createdDate": "2025-10-18T16:43:22",
+      "updatedDate": "2026-01-24T21:41:00",
+      "owner": "Deborah Campbell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1875.57,
+      "description": "Play difference marriage learn suggest bank."
+    },
+    {
+      "id": "c299bb18-8c48-4b58-9786-ece5c334cab5",
+      "name": "Realigned web-enabled benchmark 23",
+      "status": "Completed",
+      "createdDate": "2025-10-18T03:29:57",
+      "updatedDate": "2026-01-29T10:56:34",
+      "owner": "Christine James",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4316.03,
+      "description": "Car drive argue just type quite throughout."
+    },
+    {
+      "id": "ced926e3-93c5-4857-b4ba-3e989b11b554",
+      "name": "Progressive responsive moderator 24",
+      "status": "Completed",
+      "createdDate": "2025-06-23T13:54:49",
+      "updatedDate": "2026-01-24T17:32:40",
+      "owner": "Danielle Vargas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 217.75,
+      "description": "From air see."
+    },
+    {
+      "id": "f22cc25a-e2d4-4ff4-8dc6-2009e4145195",
+      "name": "Business-focused systemic access 25",
+      "status": "Completed",
+      "createdDate": "2025-07-20T15:41:27",
+      "updatedDate": "2026-01-30T09:57:42",
+      "owner": "John Flowers",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8974.37,
+      "description": "Artist unit dinner theory people imagine."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

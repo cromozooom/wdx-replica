@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 282,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "4f0a40ea-83a3-4093-8d5c-b5ca95068d1c",
+      "name": "Ergonomic system-worthy open system 1",
+      "status": "Active",
+      "createdDate": "2025-12-10T02:40:52",
+      "updatedDate": "2026-01-28T16:35:30",
+      "owner": "Michael Armstrong",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1575.78,
+      "description": "When gun stand course."
+    },
+    {
+      "id": "07f5774e-411a-450c-b1f1-45b7b4e2b03b",
+      "name": "User-friendly interactive encoding 2",
+      "status": "Active",
+      "createdDate": "2025-03-20T12:31:40",
+      "updatedDate": "2026-02-02T06:21:06",
+      "owner": "Mrs. Danielle Ramos",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9998.88,
+      "description": "Together carry decade here ahead."
+    },
+    {
+      "id": "4d88ce5b-36ca-4653-88d0-329d58ab5462",
+      "name": "Extended logistical application 3",
+      "status": "Pending",
+      "createdDate": "2025-08-29T08:32:42",
+      "updatedDate": "2026-01-18T15:55:51",
+      "owner": "Scott Scott",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3772.01,
+      "description": "Head stand customer such break building."
+    },
+    {
+      "id": "6324f6b3-9fc2-446e-93f6-4562400a2ed9",
+      "name": "Front-line solution-oriented methodology 4",
+      "status": "Active",
+      "createdDate": "2025-06-12T05:25:29",
+      "updatedDate": "2026-02-15T16:30:09",
+      "owner": "Carol Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4537.95,
+      "description": "Cut traditional they which there which including."
+    },
+    {
+      "id": "7859227c-c8f2-42e9-affa-2c47d7374516",
+      "name": "Organized background definition 5",
+      "status": "Pending",
+      "createdDate": "2025-10-26T22:10:05",
+      "updatedDate": "2026-01-19T04:43:49",
+      "owner": "Troy Silva",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1998.08,
+      "description": "Increase moment drug."
+    },
+    {
+      "id": "465b4811-ad15-4fb2-a33f-53d0859a05dc",
+      "name": "Synergized 4thgeneration knowledge user 6",
+      "status": "Pending",
+      "createdDate": "2025-12-22T12:59:01",
+      "updatedDate": "2026-02-03T14:21:49",
+      "owner": "Jessica Hess",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3114.94,
+      "description": "Fall likely whether exist magazine road effect."
+    },
+    {
+      "id": "958042d6-6fdf-43b4-9ecd-84e39632ea52",
+      "name": "Realigned directional groupware 7",
+      "status": "Active",
+      "createdDate": "2025-06-18T01:52:26",
+      "updatedDate": "2026-02-11T07:33:29",
+      "owner": "Elizabeth Sanchez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6660.48,
+      "description": "Happen often out quite single."
+    },
+    {
+      "id": "6e103fed-8d4c-4f4b-991b-9d6c61be58bd",
+      "name": "Fundamental attitude-oriented array 8",
+      "status": "Pending",
+      "createdDate": "2025-03-10T09:51:22",
+      "updatedDate": "2026-02-06T04:02:57",
+      "owner": "Michael Gonzalez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1259.8,
+      "description": "Design less nearly value."
+    },
+    {
+      "id": "ca0fa194-4cf1-4d49-9d7e-4ea0e59ad53a",
+      "name": "Horizontal content-based budgetary management 9",
+      "status": "Active",
+      "createdDate": "2025-05-20T10:20:14",
+      "updatedDate": "2026-01-29T00:11:29",
+      "owner": "Kathleen Molina",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1917.01,
+      "description": "Describe answer fish whatever long."
+    },
+    {
+      "id": "31c71e11-3fb3-47e1-a4ed-c96c34d17407",
+      "name": "Implemented directional capability 10",
+      "status": "Inactive",
+      "createdDate": "2025-02-28T10:18:40",
+      "updatedDate": "2026-01-24T19:05:07",
+      "owner": "Matthew Davis",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1185.4,
+      "description": "Reason glass fill stop three."
+    },
+    {
+      "id": "9f1e9bad-ba74-42f8-b47b-32e3c31c9a22",
+      "name": "Object-based web-enabled conglomeration 11",
+      "status": "Pending",
+      "createdDate": "2026-01-08T03:26:11",
+      "updatedDate": "2026-02-09T16:01:21",
+      "owner": "Mark Moore",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 566.75,
+      "description": "Environmental political few of chance maintain early important."
+    },
+    {
+      "id": "6b9667d2-4f29-4d70-a1ac-647d37c978e0",
+      "name": "Ameliorated tertiary productivity 12",
+      "status": "Completed",
+      "createdDate": "2025-02-28T18:16:39",
+      "updatedDate": "2026-02-14T06:11:14",
+      "owner": "Jose Scott",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1635.5,
+      "description": "Out ten leader already raise mind."
+    },
+    {
+      "id": "c9fcfb85-c164-4446-9ad0-fe10037c6663",
+      "name": "Implemented mobile focus group 13",
+      "status": "Inactive",
+      "createdDate": "2026-01-01T22:07:24",
+      "updatedDate": "2026-01-22T23:13:41",
+      "owner": "Anita Thompson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1556.79,
+      "description": "Right bag care white lay room author."
+    },
+    {
+      "id": "510f8998-48f0-485d-83f4-71e697ca78e0",
+      "name": "Reactive hybrid array 14",
+      "status": "Inactive",
+      "createdDate": "2025-02-28T22:13:00",
+      "updatedDate": "2026-02-11T05:18:46",
+      "owner": "John Lucero",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3684.2,
+      "description": "Election long individual."
+    },
+    {
+      "id": "617883d2-2e08-4595-83e6-6d701340d78e",
+      "name": "Universal mission-critical matrix 15",
+      "status": "Active",
+      "createdDate": "2025-09-29T07:28:47",
+      "updatedDate": "2026-02-17T09:26:41",
+      "owner": "Tammy Holmes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1086.8,
+      "description": "Term hour suffer make series sense."
+    },
+    {
+      "id": "005b468d-440f-489e-b7e2-473dd0f02a21",
+      "name": "Balanced bottom-line throughput 16",
+      "status": "Inactive",
+      "createdDate": "2025-11-06T11:33:25",
+      "updatedDate": "2026-02-08T14:36:21",
+      "owner": "Patrick Logan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3720.35,
+      "description": "Government every them situation try."
+    },
+    {
+      "id": "3965d8cb-2739-497a-837e-a2676750fa79",
+      "name": "Multi-layered multi-state hub 17",
+      "status": "Inactive",
+      "createdDate": "2025-07-23T01:03:08",
+      "updatedDate": "2026-02-03T04:32:28",
+      "owner": "Erika Colon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7558.88,
+      "description": "Perform eight from attention well."
+    },
+    {
+      "id": "02213f8b-035e-408f-aae7-5a09b738f534",
+      "name": "Centralized multi-state function 18",
+      "status": "Inactive",
+      "createdDate": "2025-09-16T19:17:33",
+      "updatedDate": "2026-02-05T10:44:00",
+      "owner": "Harold Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2977.26,
+      "description": "Represent pull part maybe head why up board."
+    },
+    {
+      "id": "0fa864a3-38db-43e9-ae16-fc5d62189acb",
+      "name": "Function-based clear-thinking open architecture 19",
+      "status": "Inactive",
+      "createdDate": "2025-06-24T03:49:47",
+      "updatedDate": "2026-02-10T07:46:09",
+      "owner": "Bryce Walker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2930.32,
+      "description": "Very receive evidence those stage report."
+    },
+    {
+      "id": "38b28bee-6682-4c46-b250-40ffe29447f6",
+      "name": "Operative grid-enabled customer loyalty 20",
+      "status": "Inactive",
+      "createdDate": "2025-11-01T14:19:58",
+      "updatedDate": "2026-02-01T21:17:27",
+      "owner": "Deanna Duarte",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9768.39,
+      "description": "Necessary front knowledge despite."
+    },
+    {
+      "id": "61b00a4b-209c-4b1d-b2f7-701533cda09d",
+      "name": "Switchable systematic paradigm 21",
+      "status": "Completed",
+      "createdDate": "2025-12-15T02:52:10",
+      "updatedDate": "2026-02-15T05:51:39",
+      "owner": "Clifford Wells",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4190.04,
+      "description": "Position try agency range mouth even country."
+    },
+    {
+      "id": "b5979a1e-c664-4e85-8ccb-1a9f64575260",
+      "name": "Balanced eco-centric knowledgebase 22",
+      "status": "Inactive",
+      "createdDate": "2025-03-12T23:48:30",
+      "updatedDate": "2026-02-08T22:38:38",
+      "owner": "Kimberly Duke",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9822.72,
+      "description": "Million pull hard particular."
+    },
+    {
+      "id": "ed534a6f-d6be-46a7-89b3-3e580881ac5c",
+      "name": "Organized bottom-line emulation 23",
+      "status": "Completed",
+      "createdDate": "2026-01-29T00:07:15",
+      "updatedDate": "2026-02-16T18:05:07",
+      "owner": "Amanda Mitchell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4451.05,
+      "description": "Movement despite kitchen official."
+    },
+    {
+      "id": "6c613f66-9dec-4ddf-bf7f-41a29f971593",
+      "name": "Adaptive intangible instruction set 24",
+      "status": "Completed",
+      "createdDate": "2025-10-08T02:19:12",
+      "updatedDate": "2026-02-04T18:02:30",
+      "owner": "Julie Marshall",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5868.23,
+      "description": "Blood knowledge certainly relationship author."
+    },
+    {
+      "id": "126e3ddd-595f-49eb-b6ee-c4c345a1af5b",
+      "name": "Inverse secondary ability 25",
+      "status": "Completed",
+      "createdDate": "2025-08-06T12:07:10",
+      "updatedDate": "2026-02-11T11:21:08",
+      "owner": "Becky Paul",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5315.7,
+      "description": "Staff determine staff without."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

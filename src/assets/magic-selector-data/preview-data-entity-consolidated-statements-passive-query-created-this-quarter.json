@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-statement",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 170,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a8f55c81-a9da-413d-a098-af148890ea5c",
+      "name": "Customer-focused bandwidth-monitored superstructure 1",
+      "status": "Active",
+      "createdDate": "2025-03-21T05:21:57",
+      "updatedDate": "2026-02-04T15:09:20",
+      "owner": "Scott Shelton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7250.02,
+      "description": "Something thing off space offer start."
+    },
+    {
+      "id": "8335d761-4962-4d22-8e0e-e018c4ed5f52",
+      "name": "Ameliorated mission-critical circuit 2",
+      "status": "Inactive",
+      "createdDate": "2025-07-23T00:18:36",
+      "updatedDate": "2026-01-22T05:53:32",
+      "owner": "Stacey Salinas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4476.57,
+      "description": "Appear bed quite."
+    },
+    {
+      "id": "2d960195-f111-405e-aa1f-8f068d3f101f",
+      "name": "Front-line user-facing archive 3",
+      "status": "Inactive",
+      "createdDate": "2025-06-04T01:56:37",
+      "updatedDate": "2026-02-10T02:00:40",
+      "owner": "Scott Nelson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2125.72,
+      "description": "What wind maybe meet certainly final."
+    },
+    {
+      "id": "ecb6689e-c4d2-485b-899a-75d2c6cf446d",
+      "name": "Optimized tangible attitude 4",
+      "status": "Completed",
+      "createdDate": "2025-11-20T00:47:15",
+      "updatedDate": "2026-02-15T09:33:52",
+      "owner": "Emily Hodge",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2511.06,
+      "description": "Hot can better."
+    },
+    {
+      "id": "72f69346-afe1-458d-9be4-63d014404479",
+      "name": "Expanded dedicated productivity 5",
+      "status": "Active",
+      "createdDate": "2025-06-20T23:41:59",
+      "updatedDate": "2026-01-20T02:11:41",
+      "owner": "Heather Bradford",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 352.2,
+      "description": "Site enough play section two he yard yes."
+    },
+    {
+      "id": "312a2831-a595-4d3e-a04b-8575bf9c4592",
+      "name": "Integrated leadingedge portal 6",
+      "status": "Inactive",
+      "createdDate": "2026-01-23T23:51:30",
+      "updatedDate": "2026-02-06T15:21:28",
+      "owner": "Adrian Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4725.41,
+      "description": "Guy film another less require serious."
+    },
+    {
+      "id": "12fea39c-4c2b-4cd0-b2b2-dce622fe930b",
+      "name": "Operative explicit array 7",
+      "status": "Active",
+      "createdDate": "2025-03-27T21:54:46",
+      "updatedDate": "2026-01-28T00:43:56",
+      "owner": "Jade Boyd",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8433.88,
+      "description": "Pass site manage probably specific wide."
+    },
+    {
+      "id": "022bb699-01fd-4c9d-97ea-df8785bd5cde",
+      "name": "Multi-tiered demand-driven capability 8",
+      "status": "Pending",
+      "createdDate": "2025-05-29T07:04:30",
+      "updatedDate": "2026-01-20T01:44:55",
+      "owner": "Dr. Hannah Shaw MD",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2529.22,
+      "description": "Language relate tree hard product."
+    },
+    {
+      "id": "deaf95aa-274b-4e5e-b768-3539b1cce09f",
+      "name": "Organic next generation algorithm 9",
+      "status": "Active",
+      "createdDate": "2025-08-14T09:01:54",
+      "updatedDate": "2026-02-05T07:44:05",
+      "owner": "Jade Greer",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3903.46,
+      "description": "Bar article sport stay black church."
+    },
+    {
+      "id": "87ad8ba9-6829-4810-86ea-279b96acb3cb",
+      "name": "Enterprise-wide motivating leverage 10",
+      "status": "Inactive",
+      "createdDate": "2025-06-28T19:55:59",
+      "updatedDate": "2026-02-06T10:50:53",
+      "owner": "Yolanda Rodriguez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3902.13,
+      "description": "Across information including product doctor message show."
+    },
+    {
+      "id": "f2b038bd-e875-4377-ae0d-8a5836a4de2b",
+      "name": "Reverse-engineered local matrices 11",
+      "status": "Active",
+      "createdDate": "2025-03-03T18:39:41",
+      "updatedDate": "2026-02-14T10:23:29",
+      "owner": "Vanessa Duncan",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9709.5,
+      "description": "Wrong face training without something."
+    },
+    {
+      "id": "3e0adda8-bd99-4c9f-9bc6-93f1597d8d81",
+      "name": "Visionary needs-based attitude 12",
+      "status": "Pending",
+      "createdDate": "2025-05-07T20:50:19",
+      "updatedDate": "2026-01-31T11:12:40",
+      "owner": "Nathan Mcbride PhD",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7677.06,
+      "description": "Social result already project speak financial especially happy."
+    },
+    {
+      "id": "e91782e8-7101-45b5-835d-c811d46c3120",
+      "name": "Organized demand-driven capacity 13",
+      "status": "Completed",
+      "createdDate": "2025-03-08T03:42:00",
+      "updatedDate": "2026-02-06T05:52:58",
+      "owner": "Kristina Wise",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8381.69,
+      "description": "Important foreign cell tax."
+    },
+    {
+      "id": "5f0ada71-8e19-4918-85ec-b54d7a253b17",
+      "name": "Upgradable contextually-based ability 14",
+      "status": "Pending",
+      "createdDate": "2025-09-17T11:04:35",
+      "updatedDate": "2026-02-16T11:34:42",
+      "owner": "Susan Webster",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8216.53,
+      "description": "Everything challenge form pressure order effect officer."
+    },
+    {
+      "id": "fd0ae029-2779-4af6-8ce4-2d2c699a176a",
+      "name": "Automated background interface 15",
+      "status": "Completed",
+      "createdDate": "2025-11-21T08:13:03",
+      "updatedDate": "2026-02-09T09:14:34",
+      "owner": "Tamara Foster",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 756.38,
+      "description": "Camera hospital eye protect part."
+    },
+    {
+      "id": "930c3810-6914-495a-bcd5-32c8405ebfb6",
+      "name": "Horizontal content-based synergy 16",
+      "status": "Completed",
+      "createdDate": "2025-10-16T16:23:44",
+      "updatedDate": "2026-01-21T07:45:57",
+      "owner": "Daniel Sanchez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2758.36,
+      "description": "Tv light vote often discuss measure head American."
+    },
+    {
+      "id": "968c2a10-6687-402b-998a-0f2529f0a53f",
+      "name": "Triple-buffered zero-defect customer loyalty 17",
+      "status": "Active",
+      "createdDate": "2025-10-30T18:51:03",
+      "updatedDate": "2026-02-09T08:36:08",
+      "owner": "Chad Wells",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2681.56,
+      "description": "Garden until score standard almost method."
+    },
+    {
+      "id": "80439e7c-7c37-49d4-bd9f-991958fc41e5",
+      "name": "Fully-configurable explicit conglomeration 18",
+      "status": "Inactive",
+      "createdDate": "2025-11-13T04:30:13",
+      "updatedDate": "2026-02-06T09:31:16",
+      "owner": "Lauren Morgan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 336.71,
+      "description": "Center response sea write tonight education guess so."
+    },
+    {
+      "id": "b8319a0a-c2cc-4feb-8f18-dc32c5857865",
+      "name": "Team-oriented clear-thinking groupware 19",
+      "status": "Inactive",
+      "createdDate": "2025-08-24T15:07:24",
+      "updatedDate": "2026-02-15T21:47:55",
+      "owner": "Austin Carey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3619.45,
+      "description": "Radio one range tend suggest."
+    },
+    {
+      "id": "75c2d455-6f0c-4172-b673-eb1492b98bfa",
+      "name": "Centralized 24/7 middleware 20",
+      "status": "Pending",
+      "createdDate": "2026-02-08T20:25:36",
+      "updatedDate": "2026-01-25T06:47:11",
+      "owner": "Brent Garcia",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7648.47,
+      "description": "Cost onto some win choice after discussion."
+    },
+    {
+      "id": "48766f64-c715-413a-a862-86c2c642a17b",
+      "name": "Organized demand-driven open architecture 21",
+      "status": "Pending",
+      "createdDate": "2025-07-18T23:31:20",
+      "updatedDate": "2026-02-02T10:02:35",
+      "owner": "Christian Washington",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6784.43,
+      "description": "Sound management matter action exist sell appear."
+    },
+    {
+      "id": "76c9dfa6-2bc3-4e10-ba91-5c00cea4e3d3",
+      "name": "Implemented dedicated knowledge user 22",
+      "status": "Inactive",
+      "createdDate": "2025-12-16T22:21:15",
+      "updatedDate": "2026-01-19T00:03:31",
+      "owner": "Ann Jones",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7742.32,
+      "description": "Small not including wish article coach very in."
+    },
+    {
+      "id": "7480f648-9478-4431-a858-c39bdf22a715",
+      "name": "User-centric demand-driven info-mediaries 23",
+      "status": "Pending",
+      "createdDate": "2025-07-17T02:27:30",
+      "updatedDate": "2026-01-22T17:40:06",
+      "owner": "Paul Taylor",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8591.27,
+      "description": "Number strong when late exist on."
+    },
+    {
+      "id": "559280c5-8a69-4be6-9463-ebbd63562b57",
+      "name": "Open-architected analyzing matrix 24",
+      "status": "Active",
+      "createdDate": "2025-09-07T09:43:44",
+      "updatedDate": "2026-01-30T13:07:06",
+      "owner": "Richard Marshall",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3441.38,
+      "description": "Mother radio real dinner space scientist."
+    },
+    {
+      "id": "ffb02949-f3a7-457a-b431-b2a5edb3a1cf",
+      "name": "Monitored secondary productivity 25",
+      "status": "Inactive",
+      "createdDate": "2025-12-21T09:19:17",
+      "updatedDate": "2026-01-22T00:20:00",
+      "owner": "Kyle Green",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4684.25,
+      "description": "Reflect thing beautiful."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1308,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "e8985d09-550e-4c38-a0d7-3e9dad0193cd",
+      "name": "Customer-focused homogeneous paradigm 1",
+      "status": "Pending",
+      "createdDate": "2025-08-18T16:46:42",
+      "updatedDate": "2026-02-13T21:53:56",
+      "owner": "James Sosa",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4332.96,
+      "description": "Speech hour food fear focus later notice base."
+    },
+    {
+      "id": "7d4b3267-c5b3-4c52-b4a1-9e01376f5195",
+      "name": "Front-line tertiary budgetary management 2",
+      "status": "Completed",
+      "createdDate": "2025-06-08T10:31:22",
+      "updatedDate": "2026-01-23T14:25:40",
+      "owner": "Christopher Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6615.06,
+      "description": "Bring soldier past heart simple."
+    },
+    {
+      "id": "03974622-9255-4db8-a21e-82ea23ce5986",
+      "name": "Cross-platform methodical architecture 3",
+      "status": "Active",
+      "createdDate": "2025-04-14T15:31:17",
+      "updatedDate": "2026-02-01T12:40:42",
+      "owner": "Aaron Krueger",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4434.97,
+      "description": "Wrong again moment history test none kind."
+    },
+    {
+      "id": "7760b9a5-3e08-4685-966c-426824be1412",
+      "name": "Upgradable methodical toolset 4",
+      "status": "Pending",
+      "createdDate": "2025-04-24T06:01:42",
+      "updatedDate": "2026-01-25T16:31:57",
+      "owner": "David Martin",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5687.78,
+      "description": "Western work across thing box peace condition."
+    },
+    {
+      "id": "7482ab02-59cb-448b-b561-59646efa1a0b",
+      "name": "Progressive value-added portal 5",
+      "status": "Active",
+      "createdDate": "2025-11-22T21:03:26",
+      "updatedDate": "2026-02-07T12:59:28",
+      "owner": "Christina Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6168.5,
+      "description": "Weight money entire system authority."
+    },
+    {
+      "id": "ae4bba27-b610-4bb5-8e02-82724e428674",
+      "name": "Team-oriented object-oriented project 6",
+      "status": "Pending",
+      "createdDate": "2025-09-27T21:23:22",
+      "updatedDate": "2026-01-20T19:06:20",
+      "owner": "Michael Sandoval",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 113.79,
+      "description": "Behind step born case performance direction."
+    },
+    {
+      "id": "c63221f5-b0c2-4d65-b1e5-674e6988f4d2",
+      "name": "Devolved eco-centric flexibility 7",
+      "status": "Completed",
+      "createdDate": "2025-03-28T00:27:06",
+      "updatedDate": "2026-01-20T07:09:44",
+      "owner": "Rachel Barker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9987.51,
+      "description": "Sign matter gun offer military century threat."
+    },
+    {
+      "id": "a582459c-27d6-4964-bd6b-9af0598cd5a1",
+      "name": "Devolved hybrid workforce 8",
+      "status": "Active",
+      "createdDate": "2025-10-31T19:34:32",
+      "updatedDate": "2026-01-21T12:12:41",
+      "owner": "Scott Conrad",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6944.11,
+      "description": "Action save what reflect within it."
+    },
+    {
+      "id": "3c5bf40a-50b7-428f-a99f-c8ddb189df22",
+      "name": "Enhanced multi-tasking hierarchy 9",
+      "status": "Inactive",
+      "createdDate": "2025-02-18T07:12:48",
+      "updatedDate": "2026-02-10T09:27:16",
+      "owner": "Elizabeth Montgomery",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7782.21,
+      "description": "Paper physical firm management accept Democrat."
+    },
+    {
+      "id": "431d3c52-331d-4d0b-b4e7-78e6a93bd02f",
+      "name": "Managed even-keeled moratorium 10",
+      "status": "Completed",
+      "createdDate": "2025-09-23T05:57:23",
+      "updatedDate": "2026-01-27T23:51:29",
+      "owner": "Sarah Lutz MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1115.79,
+      "description": "Here let word life."
+    },
+    {
+      "id": "c00c0161-0700-4c6b-ae6e-3e314bd499bf",
+      "name": "Business-focused 24hour archive 11",
+      "status": "Completed",
+      "createdDate": "2025-08-17T11:38:46",
+      "updatedDate": "2026-02-07T12:27:46",
+      "owner": "Lindsey Collins",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2106.53,
+      "description": "Him early police eat about magazine."
+    },
+    {
+      "id": "4f94d0ed-003b-4d5a-b9cf-7efb93523e56",
+      "name": "Mandatory directional toolset 12",
+      "status": "Completed",
+      "createdDate": "2025-05-18T00:07:16",
+      "updatedDate": "2026-02-11T01:15:54",
+      "owner": "Matthew Nguyen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1412.74,
+      "description": "Return pattern government well."
+    },
+    {
+      "id": "5c6d8584-43fd-4c07-a47a-0b6b4b57a5a3",
+      "name": "Profound holistic standardization 13",
+      "status": "Pending",
+      "createdDate": "2025-09-20T01:33:39",
+      "updatedDate": "2026-02-07T06:42:43",
+      "owner": "David Jenkins",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3158.23,
+      "description": "Game figure yet whom."
+    },
+    {
+      "id": "366b8148-f07f-4079-b42f-67b5744fb379",
+      "name": "Synergistic radical algorithm 14",
+      "status": "Inactive",
+      "createdDate": "2025-02-28T16:10:59",
+      "updatedDate": "2026-01-29T14:14:46",
+      "owner": "Matthew Schroeder",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8303.85,
+      "description": "Skill maybe fine whom."
+    },
+    {
+      "id": "16323558-00b8-4636-b641-08645a8f1d91",
+      "name": "Right-sized transitional capability 15",
+      "status": "Completed",
+      "createdDate": "2025-03-18T23:48:09",
+      "updatedDate": "2026-01-30T20:43:05",
+      "owner": "Kristen Green",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5134.47,
+      "description": "Rate power clearly."
+    },
+    {
+      "id": "8ba0cc1f-131c-4686-9418-24e85e29bb03",
+      "name": "Visionary 3rdgeneration Local Area Network 16",
+      "status": "Inactive",
+      "createdDate": "2025-05-03T01:51:29",
+      "updatedDate": "2026-01-30T10:05:11",
+      "owner": "Anna Oliver",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5259.25,
+      "description": "With later pull professor break."
+    },
+    {
+      "id": "69a4a547-0b45-4f98-9f7c-1e95f90bc7d3",
+      "name": "Fundamental encompassing pricing structure 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-29T22:21:55",
+      "updatedDate": "2026-02-08T20:03:38",
+      "owner": "Nicholas Tran",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9520.82,
+      "description": "View weight know."
+    },
+    {
+      "id": "facc0ff3-cc2c-4792-b5a0-fbc80ec23925",
+      "name": "Networked 24/7 array 18",
+      "status": "Active",
+      "createdDate": "2025-12-16T09:22:33",
+      "updatedDate": "2026-02-03T19:01:16",
+      "owner": "Thomas Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3387.45,
+      "description": "Us option collection create."
+    },
+    {
+      "id": "e801e5b9-874f-439d-8793-44a3721a3be7",
+      "name": "Re-engineered modular function 19",
+      "status": "Completed",
+      "createdDate": "2025-07-17T13:51:57",
+      "updatedDate": "2026-02-08T20:09:10",
+      "owner": "Lisa Johnson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 222.52,
+      "description": "Relationship accept according."
+    },
+    {
+      "id": "3f014700-6f42-43e5-b848-67816123dd0f",
+      "name": "Centralized user-facing middleware 20",
+      "status": "Active",
+      "createdDate": "2025-12-13T02:39:06",
+      "updatedDate": "2026-02-09T23:53:04",
+      "owner": "Nicole Sullivan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3696.35,
+      "description": "Thought program finally window other none line."
+    },
+    {
+      "id": "894d31a2-f89c-43bd-8fba-8cde4e3ff415",
+      "name": "Persistent explicit concept 21",
+      "status": "Inactive",
+      "createdDate": "2025-11-20T12:38:22",
+      "updatedDate": "2026-02-15T23:41:33",
+      "owner": "Karen Bishop",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9925.39,
+      "description": "Get American into."
+    },
+    {
+      "id": "1c22ee1a-d95b-4ed7-aa0c-0f71315f2798",
+      "name": "Self-enabling multi-tasking workforce 22",
+      "status": "Completed",
+      "createdDate": "2025-03-17T17:52:57",
+      "updatedDate": "2026-01-20T20:47:36",
+      "owner": "Steven Cohen",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1401.53,
+      "description": "Employee whether hour paper coach skin."
+    },
+    {
+      "id": "efe25fe9-6071-45f7-a931-15f03a13d3f7",
+      "name": "Customizable reciprocal matrices 23",
+      "status": "Inactive",
+      "createdDate": "2026-02-09T12:28:16",
+      "updatedDate": "2026-01-27T23:32:15",
+      "owner": "Darren Santos",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5230.03,
+      "description": "Fear pick speak Mr detail."
+    },
+    {
+      "id": "716848d2-3cf6-41ec-aca9-19d0a6bef53c",
+      "name": "Digitized hybrid knowledgebase 24",
+      "status": "Completed",
+      "createdDate": "2025-11-10T08:56:34",
+      "updatedDate": "2026-02-15T15:50:23",
+      "owner": "Stephanie Torres",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8523.9,
+      "description": "Talk strong evening during return."
+    },
+    {
+      "id": "5e456e28-8aed-4e5f-8558-a51dc5f96e2a",
+      "name": "Synchronized real-time algorithm 25",
+      "status": "Active",
+      "createdDate": "2025-02-22T18:16:04",
+      "updatedDate": "2026-01-24T17:34:59",
+      "owner": "Jaime Chen",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7509.79,
+      "description": "Scene wonder add well sea human."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

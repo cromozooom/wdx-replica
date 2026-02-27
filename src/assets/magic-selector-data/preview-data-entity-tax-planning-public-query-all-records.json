@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-all-records",
+  "totalCount": 976,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "fa756563-c5da-4a96-b6f4-ec925de003da",
+      "name": "Automated uniform groupware 1",
+      "status": "Active",
+      "createdDate": "2025-04-03T01:33:15",
+      "updatedDate": "2026-02-08T04:00:55",
+      "owner": "Robert Garcia",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2412.98,
+      "description": "Station something according north."
+    },
+    {
+      "id": "40227855-5788-47ab-b66e-77ed8c2628a8",
+      "name": "Function-based foreground archive 2",
+      "status": "Pending",
+      "createdDate": "2025-04-10T22:39:37",
+      "updatedDate": "2026-02-05T07:27:47",
+      "owner": "Michele Koch",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7435.46,
+      "description": "Thus he movement."
+    },
+    {
+      "id": "bb1c7d04-0fb3-4ee7-9bc3-4e1a5f261623",
+      "name": "Robust local productivity 3",
+      "status": "Completed",
+      "createdDate": "2025-03-13T09:16:38",
+      "updatedDate": "2026-02-05T13:49:44",
+      "owner": "David Rodriguez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4128.33,
+      "description": "Maybe five choice real affect."
+    },
+    {
+      "id": "364e12b2-3794-4e14-a1b3-04e988b26766",
+      "name": "Stand-alone static circuit 4",
+      "status": "Active",
+      "createdDate": "2025-07-18T02:30:09",
+      "updatedDate": "2026-02-04T23:04:23",
+      "owner": "Micheal Knight",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7652.09,
+      "description": "Theory resource high six city alone."
+    },
+    {
+      "id": "1ef59f36-2097-404d-b01f-f273e5ec73bf",
+      "name": "Programmable clear-thinking Internet solution 5",
+      "status": "Active",
+      "createdDate": "2025-11-04T18:09:29",
+      "updatedDate": "2026-02-02T15:36:49",
+      "owner": "Jennifer Sloan",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3573.78,
+      "description": "Special arm body opportunity."
+    },
+    {
+      "id": "a9d5d86b-57d3-43c8-8744-49aacd8c2578",
+      "name": "User-friendly needs-based info-mediaries 6",
+      "status": "Completed",
+      "createdDate": "2025-04-21T09:58:44",
+      "updatedDate": "2026-01-31T14:28:30",
+      "owner": "Jason Winters",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7813.01,
+      "description": "Physical past receive at."
+    },
+    {
+      "id": "8be8ade8-495b-4624-bb56-7cae3a6bb206",
+      "name": "Persevering multimedia Graphical User Interface 7",
+      "status": "Completed",
+      "createdDate": "2025-10-03T08:19:32",
+      "updatedDate": "2026-02-08T11:26:21",
+      "owner": "Heather Griffith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7807.56,
+      "description": "Opportunity board writer system away your."
+    },
+    {
+      "id": "d2f706bc-a926-4f7a-aa53-cbb3dfdb87af",
+      "name": "Organic radical flexibility 8",
+      "status": "Inactive",
+      "createdDate": "2025-09-18T09:37:05",
+      "updatedDate": "2026-02-10T08:55:08",
+      "owner": "Amy Jacobs",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7493.71,
+      "description": "Physical development professional item understand."
+    },
+    {
+      "id": "1e1d12c5-f071-46bf-8c2a-07026a6418df",
+      "name": "Cross-platform multi-state interface 9",
+      "status": "Completed",
+      "createdDate": "2025-06-30T04:49:04",
+      "updatedDate": "2026-02-02T20:31:19",
+      "owner": "Alexander Rodgers",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6398.77,
+      "description": "Organization fill compare magazine mother suffer."
+    },
+    {
+      "id": "11c45511-d4cb-4b73-90a3-6ced662d8f4b",
+      "name": "Vision-oriented web-enabled toolset 10",
+      "status": "Inactive",
+      "createdDate": "2025-11-14T17:28:36",
+      "updatedDate": "2026-02-16T10:39:11",
+      "owner": "Pam Hall",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8889.81,
+      "description": "Machine civil rule apply activity."
+    },
+    {
+      "id": "3e5ee0a2-be10-4207-a205-223229831d59",
+      "name": "Seamless 3rdgeneration core 11",
+      "status": "Pending",
+      "createdDate": "2025-04-21T08:54:44",
+      "updatedDate": "2026-01-20T09:03:54",
+      "owner": "Matthew Bryan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2332.68,
+      "description": "Fly many either image store assume."
+    },
+    {
+      "id": "c3adfe60-98a1-4bcc-9f60-6e9516e3a5d5",
+      "name": "Reduced local Graphical User Interface 12",
+      "status": "Active",
+      "createdDate": "2025-06-13T02:18:42",
+      "updatedDate": "2026-02-15T06:07:23",
+      "owner": "Krystal Ellis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6699.32,
+      "description": "Reach blood market to near."
+    },
+    {
+      "id": "b16579fd-fe74-41fe-948b-42b420975e6e",
+      "name": "Switchable stable solution 13",
+      "status": "Active",
+      "createdDate": "2025-06-01T09:05:31",
+      "updatedDate": "2026-02-01T04:49:01",
+      "owner": "Joshua Carr",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 291.59,
+      "description": "Garden first still attorney fine event."
+    },
+    {
+      "id": "14025c79-f160-4b7c-9d8c-2ccf4bd11971",
+      "name": "Balanced neutral flexibility 14",
+      "status": "Inactive",
+      "createdDate": "2025-11-19T11:37:56",
+      "updatedDate": "2026-01-21T05:02:15",
+      "owner": "Brandon Taylor",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8428.61,
+      "description": "Policy nice well kitchen nature themselves."
+    },
+    {
+      "id": "3285c039-2a3e-4e91-bcc1-20b2f369e099",
+      "name": "Customer-focused dynamic moderator 15",
+      "status": "Pending",
+      "createdDate": "2026-02-04T23:00:30",
+      "updatedDate": "2026-01-25T05:36:42",
+      "owner": "Lisa Patel",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 737.15,
+      "description": "Anything consider money city blue."
+    },
+    {
+      "id": "d56df92f-0f84-46a2-ac59-e1e64e97ec0c",
+      "name": "Decentralized coherent help-desk 16",
+      "status": "Completed",
+      "createdDate": "2026-01-25T05:28:21",
+      "updatedDate": "2026-02-12T23:04:57",
+      "owner": "Robert Davenport",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4954.59,
+      "description": "Land each be allow lawyer year."
+    },
+    {
+      "id": "b04b7a4e-6ca3-4228-864f-3e11c3e0a3ef",
+      "name": "Triple-buffered maximized Graphic Interface 17",
+      "status": "Completed",
+      "createdDate": "2025-07-23T22:03:17",
+      "updatedDate": "2026-02-16T17:02:16",
+      "owner": "Amber Elliott",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9299.48,
+      "description": "Power interest candidate million popular."
+    },
+    {
+      "id": "6109db3a-04f7-4afe-8d5c-bdf2cf59d9b1",
+      "name": "Networked discrete migration 18",
+      "status": "Completed",
+      "createdDate": "2025-03-15T09:20:20",
+      "updatedDate": "2026-02-05T23:37:59",
+      "owner": "Kevin Wright",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6361.16,
+      "description": "Financial might ability industry rest production energy."
+    },
+    {
+      "id": "eb637fe2-4504-4c65-a8aa-123d12321359",
+      "name": "Extended high-level ability 19",
+      "status": "Inactive",
+      "createdDate": "2025-08-28T05:46:34",
+      "updatedDate": "2026-01-29T01:55:19",
+      "owner": "Judy Nielsen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4229.59,
+      "description": "Ago third people mention hard."
+    },
+    {
+      "id": "b09aafd1-9330-44e7-9f41-5a859e1805ae",
+      "name": "Fully-configurable motivating support 20",
+      "status": "Active",
+      "createdDate": "2025-07-02T18:10:09",
+      "updatedDate": "2026-01-18T15:03:43",
+      "owner": "Brian Snow",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 942.48,
+      "description": "Officer rule affect."
+    },
+    {
+      "id": "7fe417a2-d1e3-4f8e-9281-7029020fc640",
+      "name": "Sharable next generation collaboration 21",
+      "status": "Pending",
+      "createdDate": "2025-12-17T11:10:07",
+      "updatedDate": "2026-02-04T02:04:17",
+      "owner": "Timothy Nguyen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4804.18,
+      "description": "Fast blood interest media article voice big view."
+    },
+    {
+      "id": "7900ca79-f215-4a9e-ad75-24c3f037e530",
+      "name": "Advanced foreground paradigm 22",
+      "status": "Completed",
+      "createdDate": "2025-08-10T20:44:10",
+      "updatedDate": "2026-01-28T21:47:29",
+      "owner": "Nicole Mayer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6720.26,
+      "description": "Anyone international north finish year."
+    },
+    {
+      "id": "386f5d1f-7c37-4bcc-9e19-6b6425f68cc8",
+      "name": "Grass-roots stable approach 23",
+      "status": "Pending",
+      "createdDate": "2025-12-26T17:44:47",
+      "updatedDate": "2026-02-06T19:47:13",
+      "owner": "Patrick Nielsen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6066.87,
+      "description": "Quality product particularly."
+    },
+    {
+      "id": "e91c7637-6dc5-4ece-b84e-d9b6ac69ca40",
+      "name": "Business-focused methodical orchestration 24",
+      "status": "Pending",
+      "createdDate": "2025-05-06T20:27:24",
+      "updatedDate": "2026-01-24T01:31:18",
+      "owner": "Scott Walker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1556.13,
+      "description": "Without room year less little."
+    },
+    {
+      "id": "9b6a19c9-930d-4c24-9794-711ebf62877d",
+      "name": "Focused hybrid firmware 25",
+      "status": "Completed",
+      "createdDate": "2025-03-01T22:07:27",
+      "updatedDate": "2026-02-05T02:59:45",
+      "owner": "Kara Wright",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4816.94,
+      "description": "Free challenge else attack ability would contain do."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

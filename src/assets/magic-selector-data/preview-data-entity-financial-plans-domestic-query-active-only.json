@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-active-only",
+  "totalCount": 314,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "97d2f8ae-3864-499b-8273-307f636da29a",
+      "name": "Up-sized content-based access 1",
+      "status": "Completed",
+      "createdDate": "2025-10-18T01:24:24",
+      "updatedDate": "2026-01-27T14:08:12",
+      "owner": "Michelle Soto",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3327.53,
+      "description": "World tax believe catch its interview."
+    },
+    {
+      "id": "2d7c027e-5f4c-4e6e-a03c-11eb44c8300f",
+      "name": "Universal even-keeled groupware 2",
+      "status": "Pending",
+      "createdDate": "2025-08-05T05:12:19",
+      "updatedDate": "2026-01-25T06:08:41",
+      "owner": "Jason Fox",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4921.64,
+      "description": "White improve degree foot and group option."
+    },
+    {
+      "id": "c5a73e6e-f87e-4b48-9c20-60390fb86e6c",
+      "name": "Organized multimedia utilization 3",
+      "status": "Completed",
+      "createdDate": "2025-09-20T14:48:04",
+      "updatedDate": "2026-01-31T05:43:22",
+      "owner": "Danielle Vincent",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 189.3,
+      "description": "Detail smile trial focus."
+    },
+    {
+      "id": "7794d626-bdf2-4818-b13d-1a05dd49f3c1",
+      "name": "Reactive secondary open architecture 4",
+      "status": "Inactive",
+      "createdDate": "2025-04-19T02:07:51",
+      "updatedDate": "2026-01-28T11:51:35",
+      "owner": "Anna Cantu",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2875.37,
+      "description": "Maintain police assume sense structure picture item."
+    },
+    {
+      "id": "d64ad3fb-1150-440f-bee8-9ab9a995a693",
+      "name": "Ameliorated clear-thinking analyzer 5",
+      "status": "Completed",
+      "createdDate": "2026-01-13T06:30:43",
+      "updatedDate": "2026-02-13T08:35:25",
+      "owner": "Philip Mcfarland",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5953.37,
+      "description": "Finally night painting training the method rise."
+    },
+    {
+      "id": "e8eca980-7ccf-4b39-9b99-b2524af60753",
+      "name": "Virtual leadingedge framework 6",
+      "status": "Inactive",
+      "createdDate": "2025-08-31T19:49:36",
+      "updatedDate": "2026-02-06T13:15:58",
+      "owner": "Glen Castillo",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 691.25,
+      "description": "Goal inside follow field father no."
+    },
+    {
+      "id": "a3301c2e-b175-4369-bd29-222f0fae3580",
+      "name": "Advanced value-added initiative 7",
+      "status": "Pending",
+      "createdDate": "2025-10-18T00:18:47",
+      "updatedDate": "2026-01-25T05:22:35",
+      "owner": "Patricia Mcgee",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9912.49,
+      "description": "Like those draw least remain for."
+    },
+    {
+      "id": "d7c4966d-9ced-4dde-81b4-19a7ba5f4efe",
+      "name": "Programmable analyzing policy 8",
+      "status": "Active",
+      "createdDate": "2025-07-10T04:49:51",
+      "updatedDate": "2026-01-27T20:54:06",
+      "owner": "Matthew Carr",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8241.58,
+      "description": "Air into catch resource by because total Republican."
+    },
+    {
+      "id": "eee22811-fe57-4103-83a4-7aa0b9cf51c9",
+      "name": "Profound 5thgeneration data-warehouse 9",
+      "status": "Pending",
+      "createdDate": "2025-12-02T18:05:42",
+      "updatedDate": "2026-02-17T05:29:02",
+      "owner": "Rachael Buchanan",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2929.34,
+      "description": "Easy whose order yourself fine."
+    },
+    {
+      "id": "f0cb7038-45ed-43e0-bee4-789f7e283b5a",
+      "name": "Compatible holistic matrices 10",
+      "status": "Completed",
+      "createdDate": "2025-02-21T11:28:25",
+      "updatedDate": "2026-02-09T18:44:25",
+      "owner": "Steven Cardenas",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6378.18,
+      "description": "Cut top chair professional."
+    },
+    {
+      "id": "6967eb1d-ebb2-423d-abd6-97e28c6a7884",
+      "name": "Secured high-level success 11",
+      "status": "Completed",
+      "createdDate": "2025-12-25T20:57:19",
+      "updatedDate": "2026-01-20T11:33:13",
+      "owner": "Monica Adams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 968.71,
+      "description": "Data trade national effect early."
+    },
+    {
+      "id": "03fe39bf-cf9a-4b7b-8501-b97ff4ada642",
+      "name": "Assimilated systematic hub 12",
+      "status": "Active",
+      "createdDate": "2025-08-06T00:22:15",
+      "updatedDate": "2026-01-24T20:10:30",
+      "owner": "Robert Peterson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 243.63,
+      "description": "Process sure success ok relationship."
+    },
+    {
+      "id": "11dc1b81-4004-4938-8931-23571b896c75",
+      "name": "Cross-platform dynamic flexibility 13",
+      "status": "Inactive",
+      "createdDate": "2025-11-17T20:30:09",
+      "updatedDate": "2026-01-28T15:48:11",
+      "owner": "Debra Bell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7990.62,
+      "description": "Discuss effect many cell it wind."
+    },
+    {
+      "id": "a1ef03c5-3603-4035-8fcb-ab037e4c9dd9",
+      "name": "Programmable impactful standardization 14",
+      "status": "Active",
+      "createdDate": "2025-04-30T08:57:14",
+      "updatedDate": "2026-01-19T17:15:04",
+      "owner": "Laurie Silva",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9064.49,
+      "description": "Opportunity while east million across and money carry."
+    },
+    {
+      "id": "ba04b308-a391-4cda-893e-f98deb9b7028",
+      "name": "Team-oriented hybrid moratorium 15",
+      "status": "Completed",
+      "createdDate": "2026-02-10T07:36:25",
+      "updatedDate": "2026-02-02T16:37:29",
+      "owner": "Julie Holt",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8206.4,
+      "description": "Next positive truth either."
+    },
+    {
+      "id": "c53512ef-8a9e-4403-b2d6-35e2ca554035",
+      "name": "Reactive bottom-line array 16",
+      "status": "Inactive",
+      "createdDate": "2025-11-16T07:04:42",
+      "updatedDate": "2026-01-19T01:33:04",
+      "owner": "Cheryl Ritter",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8044.78,
+      "description": "Worry mention only budget affect."
+    },
+    {
+      "id": "6ecf65d2-c0d3-431b-a2ec-d022de3ec6c7",
+      "name": "Extended attitude-oriented infrastructure 17",
+      "status": "Inactive",
+      "createdDate": "2025-05-11T05:52:59",
+      "updatedDate": "2026-01-28T22:54:04",
+      "owner": "Jeffery Hanson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8356.03,
+      "description": "Front expect how college class us six go."
+    },
+    {
+      "id": "00709f32-8352-4468-bb36-95e7786575b0",
+      "name": "Inverse regional customer loyalty 18",
+      "status": "Completed",
+      "createdDate": "2025-05-03T19:30:46",
+      "updatedDate": "2026-01-28T00:39:14",
+      "owner": "Casey Gray",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8701.43,
+      "description": "Well design bring win remember skill notice street."
+    },
+    {
+      "id": "9e32fc71-911f-4e2f-abf8-86980cce82a1",
+      "name": "Implemented scalable interface 19",
+      "status": "Inactive",
+      "createdDate": "2025-03-29T13:42:46",
+      "updatedDate": "2026-02-07T19:43:22",
+      "owner": "John Crawford",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4100.95,
+      "description": "Morning never deal live check soldier you tax."
+    },
+    {
+      "id": "958f9171-a8ac-421b-84e2-29d600c84a15",
+      "name": "User-friendly intermediate hierarchy 20",
+      "status": "Pending",
+      "createdDate": "2025-07-29T06:02:26",
+      "updatedDate": "2026-01-27T05:28:51",
+      "owner": "Amanda Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9428.86,
+      "description": "Which sit management finish difference moment."
+    },
+    {
+      "id": "ee35f71a-6cdc-4d87-94fc-7db3b84c2a15",
+      "name": "Devolved system-worthy analyzer 21",
+      "status": "Active",
+      "createdDate": "2025-07-05T06:08:49",
+      "updatedDate": "2026-02-03T06:47:25",
+      "owner": "Jerry Martin DVM",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8092.8,
+      "description": "Free education nation week some reach network."
+    },
+    {
+      "id": "3a343f7e-c336-49ef-802c-c4f224f56072",
+      "name": "Versatile regional neural-net 22",
+      "status": "Inactive",
+      "createdDate": "2025-04-03T04:43:29",
+      "updatedDate": "2026-02-09T06:23:48",
+      "owner": "Timothy Miranda",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5231.92,
+      "description": "Democratic house until soldier more sense."
+    },
+    {
+      "id": "23f1e8ff-3bc3-4819-9426-f00e23017f17",
+      "name": "Implemented reciprocal migration 23",
+      "status": "Completed",
+      "createdDate": "2025-08-19T17:01:26",
+      "updatedDate": "2026-02-08T16:30:34",
+      "owner": "Tina Ballard",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7235.12,
+      "description": "North member like miss building."
+    },
+    {
+      "id": "4e246dd1-4ddc-4a9b-aeb6-a800a17ca0b3",
+      "name": "Business-focused maximized methodology 24",
+      "status": "Completed",
+      "createdDate": "2026-02-02T14:01:28",
+      "updatedDate": "2026-02-12T16:18:59",
+      "owner": "Travis Cervantes",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9051.42,
+      "description": "Authority morning without increase."
+    },
+    {
+      "id": "62295f09-aad5-4c7f-a511-096a1fa5b37c",
+      "name": "Proactive didactic data-warehouse 25",
+      "status": "Inactive",
+      "createdDate": "2025-12-19T04:40:20",
+      "updatedDate": "2026-01-25T09:00:10",
+      "owner": "Vincent Thomas",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 619.09,
+      "description": "Sometimes look lawyer."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

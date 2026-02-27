@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-active-only",
+  "totalCount": 908,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "67af07db-4218-4d67-89e2-ca6099570e78",
+      "name": "Ameliorated incremental firmware 1",
+      "status": "Inactive",
+      "createdDate": "2025-11-08T12:41:55",
+      "updatedDate": "2026-02-12T20:46:28",
+      "owner": "Antonio Hernandez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1285.56,
+      "description": "Build majority chance picture into from."
+    },
+    {
+      "id": "1e6945fc-f69a-45ce-b342-9f5500d47839",
+      "name": "Managed eco-centric application 2",
+      "status": "Pending",
+      "createdDate": "2025-12-23T03:04:19",
+      "updatedDate": "2026-02-03T06:21:09",
+      "owner": "Joshua Acosta",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7363.14,
+      "description": "Citizen plant discussion most ball light its where."
+    },
+    {
+      "id": "95c7d276-27ec-40c5-91d8-cba52ecfdc69",
+      "name": "Object-based object-oriented moratorium 3",
+      "status": "Completed",
+      "createdDate": "2025-09-27T23:12:35",
+      "updatedDate": "2026-02-09T20:55:45",
+      "owner": "Rachael Gonzalez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3570.99,
+      "description": "Reduce agreement feel garden already section natural."
+    },
+    {
+      "id": "e91eed3d-5657-456a-82e2-0a7a6fd35ab5",
+      "name": "Down-sized mobile firmware 4",
+      "status": "Pending",
+      "createdDate": "2026-02-07T19:47:14",
+      "updatedDate": "2026-01-26T19:22:00",
+      "owner": "Haley Alvarado",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1979.65,
+      "description": "Hope meeting baby exactly."
+    },
+    {
+      "id": "1378eab6-73f6-445d-b9e4-0ec87476521d",
+      "name": "Multi-lateral logistical encryption 5",
+      "status": "Inactive",
+      "createdDate": "2025-05-09T12:44:36",
+      "updatedDate": "2026-01-24T08:58:18",
+      "owner": "Mrs. Christina Compton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9433.57,
+      "description": "Agent year us information might course true."
+    },
+    {
+      "id": "d2c28553-5544-4df7-8af4-71753cc8e90c",
+      "name": "Decentralized upward-trending hardware 6",
+      "status": "Inactive",
+      "createdDate": "2025-03-22T06:50:33",
+      "updatedDate": "2026-01-23T02:03:43",
+      "owner": "Connie Torres",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5226.61,
+      "description": "Conference attorney them size stage again."
+    },
+    {
+      "id": "0257fbba-538b-4e17-85e6-19f6df10047b",
+      "name": "Re-contextualized leadingedge alliance 7",
+      "status": "Pending",
+      "createdDate": "2025-10-23T01:18:00",
+      "updatedDate": "2026-02-12T16:58:30",
+      "owner": "Philip Parker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6158.77,
+      "description": "Wait own process moment."
+    },
+    {
+      "id": "05632382-3351-4eb0-8296-cef27b6c7374",
+      "name": "Multi-channeled grid-enabled policy 8",
+      "status": "Completed",
+      "createdDate": "2025-08-14T01:30:48",
+      "updatedDate": "2026-02-05T02:08:33",
+      "owner": "Thomas Beard",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8103.65,
+      "description": "Exactly form certainly other door."
+    },
+    {
+      "id": "46f75901-d483-4a1c-889f-0fc3a81eb4a6",
+      "name": "Enterprise-wide national model 9",
+      "status": "Active",
+      "createdDate": "2025-07-04T20:08:58",
+      "updatedDate": "2026-01-18T19:41:14",
+      "owner": "Philip Davis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7268.68,
+      "description": "Face whatever minute between hot about."
+    },
+    {
+      "id": "77f0026f-1ede-458d-ac3a-98dfefa6444b",
+      "name": "Visionary motivating contingency 10",
+      "status": "Completed",
+      "createdDate": "2025-08-21T15:09:02",
+      "updatedDate": "2026-01-20T20:17:11",
+      "owner": "Jamie Brown",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9611.85,
+      "description": "Film wonder order hope."
+    },
+    {
+      "id": "93aa69b7-5fca-4785-aca7-c5b2f6033ad4",
+      "name": "Visionary hybrid process improvement 11",
+      "status": "Pending",
+      "createdDate": "2025-07-29T21:57:51",
+      "updatedDate": "2026-02-15T06:06:16",
+      "owner": "Brendan Cooper",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 499.08,
+      "description": "Decision outside become answer."
+    },
+    {
+      "id": "fb21c13d-7579-4c28-a006-56f07d496e5a",
+      "name": "Total analyzing infrastructure 12",
+      "status": "Active",
+      "createdDate": "2025-05-05T05:18:25",
+      "updatedDate": "2026-01-27T12:06:45",
+      "owner": "Donna Chen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2804.58,
+      "description": "Office institution when."
+    },
+    {
+      "id": "c059efc2-8520-4f32-a4c9-e6864585cf0d",
+      "name": "Streamlined cohesive open architecture 13",
+      "status": "Pending",
+      "createdDate": "2026-01-23T14:17:07",
+      "updatedDate": "2026-02-16T16:34:40",
+      "owner": "James Martinez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3188.56,
+      "description": "Stage former beat price final simply."
+    },
+    {
+      "id": "5e72a32f-a366-499c-89ad-a300125848d0",
+      "name": "Proactive 24/7 hardware 14",
+      "status": "Active",
+      "createdDate": "2025-11-19T16:55:51",
+      "updatedDate": "2026-01-20T19:30:14",
+      "owner": "Melissa Hall",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7927.67,
+      "description": "Western million big general theory bad."
+    },
+    {
+      "id": "84cf3c8a-a023-4bd9-8b58-111026476237",
+      "name": "Future-proofed full-range access 15",
+      "status": "Pending",
+      "createdDate": "2025-03-16T10:06:59",
+      "updatedDate": "2026-02-01T19:34:48",
+      "owner": "Antonio Rios",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4190.94,
+      "description": "Cover especially result."
+    },
+    {
+      "id": "393bf1fd-211b-415f-8ae3-f58285ecd24b",
+      "name": "Visionary well-modulated encryption 16",
+      "status": "Inactive",
+      "createdDate": "2026-01-30T07:23:23",
+      "updatedDate": "2026-01-30T20:25:32",
+      "owner": "Amanda Sanchez MD",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2504.28,
+      "description": "Right drug class job heavy."
+    },
+    {
+      "id": "116478b5-719b-4ecf-a68f-00920930e68e",
+      "name": "Organized static success 17",
+      "status": "Active",
+      "createdDate": "2025-03-19T04:08:54",
+      "updatedDate": "2026-01-25T15:23:23",
+      "owner": "Sandra Simmons",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2246.66,
+      "description": "News southern lot pick opportunity."
+    },
+    {
+      "id": "78f8808c-89d7-4053-b62e-d13f93ce3793",
+      "name": "Phased global concept 18",
+      "status": "Inactive",
+      "createdDate": "2026-01-17T13:27:07",
+      "updatedDate": "2026-01-31T08:30:44",
+      "owner": "Caroline Cuevas",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2763.92,
+      "description": "Stay certainly opportunity above."
+    },
+    {
+      "id": "8e2f0aff-c7af-43e9-a867-bbad6983e263",
+      "name": "Implemented encompassing algorithm 19",
+      "status": "Pending",
+      "createdDate": "2025-03-21T03:28:04",
+      "updatedDate": "2026-02-08T13:57:38",
+      "owner": "Daniel Flynn",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5102.51,
+      "description": "Community action model leg ready save."
+    },
+    {
+      "id": "af6d6eeb-08c6-4cdd-ab5e-cc7663cc0e28",
+      "name": "Managed zero tolerance algorithm 20",
+      "status": "Completed",
+      "createdDate": "2025-08-13T22:15:32",
+      "updatedDate": "2026-01-26T04:26:58",
+      "owner": "Michael Calderon",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4808.35,
+      "description": "Former rate know against generation unit son."
+    },
+    {
+      "id": "98370cb0-d9b7-4957-95b6-b9a6399c8781",
+      "name": "Cross-platform 3rdgeneration data-warehouse 21",
+      "status": "Inactive",
+      "createdDate": "2025-06-06T17:11:54",
+      "updatedDate": "2026-01-29T15:31:47",
+      "owner": "Laura Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1570.97,
+      "description": "Never international participant."
+    },
+    {
+      "id": "36c57597-28e8-42a2-be39-6f4d94898724",
+      "name": "Operative dynamic portal 22",
+      "status": "Pending",
+      "createdDate": "2025-08-04T14:24:36",
+      "updatedDate": "2026-02-13T05:45:19",
+      "owner": "Sierra Gilbert",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5335.03,
+      "description": "Billion explain year collection nothing."
+    },
+    {
+      "id": "60f96965-9709-478f-ba69-a07b24893cd9",
+      "name": "Sharable reciprocal matrices 23",
+      "status": "Inactive",
+      "createdDate": "2025-05-11T22:24:58",
+      "updatedDate": "2026-02-02T13:55:07",
+      "owner": "William Keith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1161.8,
+      "description": "Whole series memory film couple."
+    },
+    {
+      "id": "16594737-64bc-4ca3-af2a-240d13563808",
+      "name": "Triple-buffered intangible algorithm 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-22T19:07:34",
+      "updatedDate": "2026-01-30T13:40:25",
+      "owner": "Michael Andrews",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 878.01,
+      "description": "Better difficult quality mother author."
+    },
+    {
+      "id": "572dee06-e02f-45cc-ae26-0098341e5b16",
+      "name": "Streamlined holistic conglomeration 25",
+      "status": "Pending",
+      "createdDate": "2025-12-24T13:55:05",
+      "updatedDate": "2026-01-24T10:46:51",
+      "owner": "Katrina Lewis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5214.54,
+      "description": "Coach season walk sport draw campaign must mind."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

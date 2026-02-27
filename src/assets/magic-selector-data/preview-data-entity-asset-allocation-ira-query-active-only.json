@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-active-only",
+  "totalCount": 634,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "8b784024-25c7-4451-b275-3262fd879adf",
+      "name": "Mandatory dedicated data-warehouse 1",
+      "status": "Active",
+      "createdDate": "2025-05-11T20:09:02",
+      "updatedDate": "2026-01-22T21:11:01",
+      "owner": "Kevin White",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2373.44,
+      "description": "Detail anyone lot."
+    },
+    {
+      "id": "079c108a-33ca-45a8-b153-c9e3491475fa",
+      "name": "Re-contextualized explicit paradigm 2",
+      "status": "Inactive",
+      "createdDate": "2025-04-16T07:31:07",
+      "updatedDate": "2026-02-10T18:07:54",
+      "owner": "Sabrina Reed",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2256.64,
+      "description": "Table between care mother audience rise approach."
+    },
+    {
+      "id": "1ecb2c4b-4d48-4c30-a7be-6483c8402aa0",
+      "name": "Visionary fresh-thinking open system 3",
+      "status": "Completed",
+      "createdDate": "2025-12-02T09:53:06",
+      "updatedDate": "2026-02-11T06:21:08",
+      "owner": "Kenneth Lawson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5080.51,
+      "description": "Two establish edge resource learn point."
+    },
+    {
+      "id": "75f6df9b-1482-43d5-895a-58f1e9c78f1b",
+      "name": "Compatible well-modulated synergy 4",
+      "status": "Completed",
+      "createdDate": "2025-07-23T07:44:48",
+      "updatedDate": "2026-02-03T17:46:08",
+      "owner": "Lisa Francis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2490.11,
+      "description": "Company past care organization standard state."
+    },
+    {
+      "id": "6b578d6b-ac8b-4222-bd0a-8b08768af36f",
+      "name": "Re-engineered dynamic info-mediaries 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T03:17:45",
+      "updatedDate": "2026-02-02T08:35:11",
+      "owner": "Emily Hall",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2513.56,
+      "description": "The poor let chair choose management quickly mouth."
+    },
+    {
+      "id": "c0641e31-b2cb-4376-8393-3afb784428eb",
+      "name": "Managed value-added leverage 6",
+      "status": "Active",
+      "createdDate": "2025-02-26T05:11:53",
+      "updatedDate": "2026-02-12T22:45:17",
+      "owner": "Andres Wheeler",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8009.73,
+      "description": "Always international despite write study."
+    },
+    {
+      "id": "6abdac17-8651-42eb-b16d-6f9717542ede",
+      "name": "Balanced web-enabled utilization 7",
+      "status": "Inactive",
+      "createdDate": "2025-10-01T06:43:58",
+      "updatedDate": "2026-01-30T20:09:27",
+      "owner": "Chelsea Ford",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4904.68,
+      "description": "Operation thank up speak although statement allow itself."
+    },
+    {
+      "id": "6a46e1f1-2502-4bb0-b885-019c6d910a64",
+      "name": "Synchronized incremental moratorium 8",
+      "status": "Completed",
+      "createdDate": "2026-02-06T08:15:07",
+      "updatedDate": "2026-01-25T07:33:05",
+      "owner": "Katherine Moore",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5903.28,
+      "description": "Standard suffer get grow."
+    },
+    {
+      "id": "0a25cbc3-76c9-44f2-8f79-392ac5a2201b",
+      "name": "Front-line logistical capacity 9",
+      "status": "Pending",
+      "createdDate": "2025-12-14T20:24:41",
+      "updatedDate": "2026-02-05T18:40:14",
+      "owner": "Carolyn Clark",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1203.97,
+      "description": "Bar place single product director condition."
+    },
+    {
+      "id": "6209537a-72c5-4788-87b4-2bc24a543ef7",
+      "name": "Fundamental modular core 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-19T02:41:54",
+      "updatedDate": "2026-02-08T09:03:10",
+      "owner": "David Craig",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4079.32,
+      "description": "Music growth remain about woman style parent."
+    },
+    {
+      "id": "fc134148-e021-4a2a-a50c-b372d66facd8",
+      "name": "Organic leadingedge synergy 11",
+      "status": "Completed",
+      "createdDate": "2026-01-01T13:30:21",
+      "updatedDate": "2026-01-28T01:08:35",
+      "owner": "Carol Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 814.01,
+      "description": "Accept we future wait effort road father."
+    },
+    {
+      "id": "2ff0ff2c-8923-48bf-a2e2-e32e387ce7b0",
+      "name": "Cross-group clear-thinking circuit 12",
+      "status": "Completed",
+      "createdDate": "2025-11-06T10:46:23",
+      "updatedDate": "2026-02-04T13:41:31",
+      "owner": "Steven Summers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 396.13,
+      "description": "Fine entire paper teacher big."
+    },
+    {
+      "id": "f132bbd2-241d-4927-8551-44bb00150f05",
+      "name": "Synergized grid-enabled workforce 13",
+      "status": "Active",
+      "createdDate": "2025-09-13T04:32:58",
+      "updatedDate": "2026-02-11T22:52:59",
+      "owner": "Stephen Holland",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5004.94,
+      "description": "Nice answer campaign really subject."
+    },
+    {
+      "id": "ddd830c5-a8f6-4149-83fc-b76d9a4560ae",
+      "name": "Sharable mission-critical focus group 14",
+      "status": "Pending",
+      "createdDate": "2025-02-21T14:54:14",
+      "updatedDate": "2026-02-04T06:12:38",
+      "owner": "Jordan Anderson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7617.45,
+      "description": "Always within peace trial back."
+    },
+    {
+      "id": "ee118505-7943-4490-859e-ec3c714f2fa3",
+      "name": "Synergized coherent middleware 15",
+      "status": "Pending",
+      "createdDate": "2025-07-07T22:12:37",
+      "updatedDate": "2026-01-25T23:27:43",
+      "owner": "Jason Fox MD",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8056.61,
+      "description": "True beautiful through guess national enjoy."
+    },
+    {
+      "id": "0a52c686-e95d-4af8-a310-15124ffbc064",
+      "name": "Innovative secondary challenge 16",
+      "status": "Inactive",
+      "createdDate": "2026-01-28T15:34:59",
+      "updatedDate": "2026-02-14T18:38:01",
+      "owner": "Crystal Rodriguez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1925.97,
+      "description": "Senior interview car guess."
+    },
+    {
+      "id": "10744dbd-8de1-4504-b459-f5260fa3d91f",
+      "name": "Vision-oriented incremental encoding 17",
+      "status": "Inactive",
+      "createdDate": "2025-10-16T08:27:16",
+      "updatedDate": "2026-02-05T08:08:17",
+      "owner": "Molly Molina",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1171.56,
+      "description": "Child might into little."
+    },
+    {
+      "id": "deb47d52-327c-4a8e-8afe-ccee85aa2abb",
+      "name": "Multi-tiered fresh-thinking initiative 18",
+      "status": "Pending",
+      "createdDate": "2025-05-14T04:13:32",
+      "updatedDate": "2026-02-14T10:09:22",
+      "owner": "Darryl Vang",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2650.15,
+      "description": "Store factor term win."
+    },
+    {
+      "id": "5b9e6efc-3023-467f-8d38-e25220462d6b",
+      "name": "Universal multimedia adapter 19",
+      "status": "Inactive",
+      "createdDate": "2025-12-22T05:38:37",
+      "updatedDate": "2026-02-15T13:48:02",
+      "owner": "Kathryn Andrade",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7833.75,
+      "description": "Describe effort actually live third its."
+    },
+    {
+      "id": "8026f5c4-4fb8-4fd1-8919-e144063c4e1a",
+      "name": "Expanded bottom-line help-desk 20",
+      "status": "Active",
+      "createdDate": "2026-02-11T18:34:33",
+      "updatedDate": "2026-02-10T13:49:22",
+      "owner": "Deborah Wright",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3143.38,
+      "description": "Voice military Mr guess fill."
+    },
+    {
+      "id": "200a0125-197c-4d96-96e3-65159611461f",
+      "name": "Configurable object-oriented workforce 21",
+      "status": "Inactive",
+      "createdDate": "2025-07-02T21:06:33",
+      "updatedDate": "2026-02-10T09:15:47",
+      "owner": "Brandon Smith IV",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3892.58,
+      "description": "Present defense life plant start believe."
+    },
+    {
+      "id": "78969ca8-dd0d-4fa4-bf3a-d15da73ef02d",
+      "name": "Down-sized executive open architecture 22",
+      "status": "Completed",
+      "createdDate": "2025-08-17T22:15:27",
+      "updatedDate": "2026-02-01T08:28:36",
+      "owner": "Stanley Hoffman",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9705.97,
+      "description": "Entire happy catch."
+    },
+    {
+      "id": "1c14aba4-1935-4a64-b826-7bac68606c5e",
+      "name": "Streamlined leadingedge moderator 23",
+      "status": "Inactive",
+      "createdDate": "2025-08-01T19:39:57",
+      "updatedDate": "2026-02-07T04:02:05",
+      "owner": "Anthony Collins",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2609.36,
+      "description": "Run card generation when together family now."
+    },
+    {
+      "id": "4585970e-5309-4efe-b6b3-9855043c3937",
+      "name": "Synchronized client-driven groupware 24",
+      "status": "Completed",
+      "createdDate": "2026-01-18T09:33:41",
+      "updatedDate": "2026-02-17T08:08:41",
+      "owner": "Leslie Gordon",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1091.47,
+      "description": "Account speech issue improve piece unit so."
+    },
+    {
+      "id": "4e2962ee-3048-4d63-84b5-487887dc3925",
+      "name": "Proactive holistic circuit 25",
+      "status": "Pending",
+      "createdDate": "2026-02-03T15:54:02",
+      "updatedDate": "2026-02-04T22:05:59",
+      "owner": "Jacob Patel",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3148.61,
+      "description": "Rich image lose I few."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

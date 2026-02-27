@@ -12,13 +12,13 @@ This simulates how a real API would work: incremental data loading for performan
 Requirements: pip install faker
 
 Usage:
-  python scripts/generate-mock-data.py          # Full dataset (local development - 408 forms)
+  python scripts/generate-mock-data.py          # Full dataset (local development - 1032 forms)
   python scripts/generate-mock-data.py --light  # Light dataset (Netlify builds - 24 forms)
   python scripts/generate-mock-data.py --scale  # Scale test (1300 forms, 800 entities, 1000+ queries)
   
 Modes:
   --light: Generates 24 forms with ~114 preview files (fast, for CI/CD)
-  default: Generates 408 forms (24 base × 17 variations) for local testing
+  default: Generates 1032 forms (24 base × 43 variations) for local testing
   --scale: Generates 1300 forms with 800+ entities for performance testing
 """
 
@@ -91,6 +91,7 @@ def generate_realistic_forms(limit=None):
     ]
     
     # Variations to create multiple instances of each base form
+    # 24 base forms × 43 variations = 1032 total forms (target: 1020+)
     variations = [
         ("", ""),  # No suffix (original)
         ("high-net-worth", "High Net Worth"),
@@ -109,6 +110,33 @@ def generate_realistic_forms(limit=None):
         ("nonprofit", "Non-Profit"),
         ("pension", "Pension"),
         ("sep", "SEP"),
+        # Additional variations to reach 1020+ target
+        ("simple-ira", "SIMPLE IRA"),
+        ("keogh", "Keogh"),
+        ("rollover-ira", "Rollover IRA"),
+        ("inherited-ira", "Inherited IRA"),
+        ("spousal-ira", "Spousal IRA"),
+        ("403b", "403(b)"),
+        ("457", "457"),
+        ("tsp", "TSP"),
+        ("esop", "ESOP"),
+        ("profit-sharing", "Profit Sharing"),
+        ("money-purchase", "Money Purchase"),
+        ("defined-benefit", "Defined Benefit"),
+        ("cash-balance", "Cash Balance"),
+        ("variable", "Variable"),
+        ("fixed", "Fixed"),
+        ("hybrid", "Hybrid"),
+        ("qualified", "Qualified"),
+        ("non-qualified", "Non-Qualified"),
+        ("domestic", "Domestic"),
+        ("international", "International"),
+        ("offshore", "Offshore"),
+        ("onshore", "Onshore"),
+        ("private", "Private"),
+        ("public", "Public"),
+        ("managed", "Managed"),
+        ("passive", "Passive"),
     ]
     
     form_definitions = []
@@ -244,6 +272,9 @@ def generate_form_metadata(form_summaries):
         # Create metadata entry
         total_records = sum(q["estimatedResults"] for q in queries) // 2  # Realistic overlap
         
+        # Use form_id to generate unique entity IDs for each variation
+        unique_entity_id = f"entity-{form_id.replace('-form', '')}"
+        
         metadata_dict[form_id] = {
             "id": form_id,
             "type": form_summary.get("type", "Form"),  # Include type from summary
@@ -251,7 +282,7 @@ def generate_form_metadata(form_summaries):
             "description": f"Comprehensive {form_summary['description'].lower()}",
             "category": form_summary["category"],
             "entityName": entity_name,
-            "entityId": f"entity-{entity_name.lower()}",
+            "entityId": unique_entity_id,
             "totalRecords": total_records,
             "lastUpdated": fake.date_time_between(start_date='-1d', end_date='now').isoformat(),
             "queries": queries
@@ -712,18 +743,18 @@ def generate_three_call_mock_data(mode='full'):
         target_processes = 6
         target_dashboards = 6
     elif mode == 'scale':
-        print("  >> Scale Test Mode: Generating 800 entities, 400 forms, 100 documents...")
-        target_entities = 800
+        print("  >> Scale Test Mode: Generating 900 entities, 400 forms, 60 documents...")
+        target_entities = 900
         target_forms = 400
-        target_documents = 100
-        target_processes = 50
-        target_dashboards = 20
+        target_documents = 60
+        target_processes = 60
+        target_dashboards = 250
     else:  # full
         target_entities = len(set(f["entityName"] for f in form_summaries))
-        target_forms = min(len(form_summaries), 408)
-        target_documents = 100
-        target_processes = 20
-        target_dashboards = 15
+        target_forms = min(len(form_summaries), 1032)
+        target_documents = 250
+        target_processes = 50
+        target_dashboards = 40
     
     dependency_graph = generate_dependency_graph(
         form_summaries,
@@ -790,7 +821,7 @@ if __name__ == "__main__":
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python scripts/generate-mock-data.py              # Full dataset (408 forms)
+  python scripts/generate-mock-data.py              # Full dataset (1032 forms)
   python scripts/generate-mock-data.py --light      # Light dataset (24 forms for Netlify)
   python scripts/generate-mock-data.py --scale      # Scale test (1300 forms, 800 entities, 1000 queries, 400 forms, 100 docs)
         """

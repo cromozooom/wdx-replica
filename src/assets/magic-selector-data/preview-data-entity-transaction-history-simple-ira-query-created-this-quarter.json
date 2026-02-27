@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1108,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "791afca5-7e6f-40d2-9ab7-7f4172d117d6",
+      "name": "Pre-emptive grid-enabled frame 1",
+      "status": "Completed",
+      "createdDate": "2025-03-16T04:31:24",
+      "updatedDate": "2026-02-11T09:46:12",
+      "owner": "Anthony Harvey",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1928.41,
+      "description": "Hundred growth while before goal."
+    },
+    {
+      "id": "e93b12bb-ae3c-44f0-ad04-176e5e61e586",
+      "name": "Visionary system-worthy analyzer 2",
+      "status": "Active",
+      "createdDate": "2025-11-15T19:16:12",
+      "updatedDate": "2026-01-22T16:13:07",
+      "owner": "Tommy Perez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9702.74,
+      "description": "Religious spring three major second."
+    },
+    {
+      "id": "7facba46-ba3f-43ad-83e7-f64a54af2af3",
+      "name": "Exclusive maximized time-frame 3",
+      "status": "Active",
+      "createdDate": "2025-09-21T03:51:44",
+      "updatedDate": "2026-01-31T16:08:09",
+      "owner": "Shane Myers",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 485.38,
+      "description": "Control most lay eight look end."
+    },
+    {
+      "id": "0051e374-063a-49d6-858b-7b734146a3b5",
+      "name": "Polarized stable policy 4",
+      "status": "Active",
+      "createdDate": "2026-01-16T05:45:39",
+      "updatedDate": "2026-02-12T21:53:37",
+      "owner": "Randy Martin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 811.48,
+      "description": "Pattern ground data human others smile item."
+    },
+    {
+      "id": "8321295b-3991-400f-841d-b26cf652c809",
+      "name": "Proactive static protocol 5",
+      "status": "Completed",
+      "createdDate": "2025-10-11T12:18:01",
+      "updatedDate": "2026-01-20T02:50:02",
+      "owner": "Jonathan Vargas",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9315.62,
+      "description": "Religious on experience professional their on."
+    },
+    {
+      "id": "ef3fed10-ccdb-44c5-9b1c-78b6e02c4353",
+      "name": "Right-sized systemic encoding 6",
+      "status": "Active",
+      "createdDate": "2025-05-13T06:28:28",
+      "updatedDate": "2026-01-22T19:07:46",
+      "owner": "Robert Murphy",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1460.89,
+      "description": "Deep field fish control all material."
+    },
+    {
+      "id": "7cb0d81e-8cd8-4e0c-a401-8e62cfeec5be",
+      "name": "Synergistic neutral infrastructure 7",
+      "status": "Completed",
+      "createdDate": "2025-08-01T22:06:30",
+      "updatedDate": "2026-02-17T05:52:01",
+      "owner": "Charles Savage",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2397.5,
+      "description": "Dream senior forward employee Democrat movement response."
+    },
+    {
+      "id": "ee198253-90ba-4e01-824f-6fd7ca737406",
+      "name": "Switchable methodical policy 8",
+      "status": "Completed",
+      "createdDate": "2025-08-21T08:57:14",
+      "updatedDate": "2026-01-25T16:11:23",
+      "owner": "Thomas Burke",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8887.13,
+      "description": "Future ago education Mrs."
+    },
+    {
+      "id": "5508096b-773b-484e-9fd8-5ba351fcfd6d",
+      "name": "Cross-platform even-keeled system engine 9",
+      "status": "Pending",
+      "createdDate": "2026-01-11T19:38:45",
+      "updatedDate": "2026-01-27T21:04:56",
+      "owner": "Jessica Ballard",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8728.94,
+      "description": "Policy physical city east able character discover."
+    },
+    {
+      "id": "1f594c84-88b5-4432-b49b-e4280731d864",
+      "name": "Virtual actuating support 10",
+      "status": "Pending",
+      "createdDate": "2025-09-30T03:25:07",
+      "updatedDate": "2026-01-25T07:47:11",
+      "owner": "Eric Jacobs",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6054.91,
+      "description": "Still trip college reduce."
+    },
+    {
+      "id": "93b19404-f90d-476e-93fb-ed6bd26f4d85",
+      "name": "Automated asynchronous Local Area Network 11",
+      "status": "Inactive",
+      "createdDate": "2025-05-27T06:56:48",
+      "updatedDate": "2026-01-25T18:36:22",
+      "owner": "Courtney Gordon",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5311.66,
+      "description": "Staff walk economy law."
+    },
+    {
+      "id": "c5954d19-08bf-4aa3-8348-1603ec67f8fc",
+      "name": "Pre-emptive systemic access 12",
+      "status": "Inactive",
+      "createdDate": "2025-05-15T09:57:31",
+      "updatedDate": "2026-02-15T00:44:17",
+      "owner": "Samuel Yates",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6975.42,
+      "description": "Market security common fall blood."
+    },
+    {
+      "id": "a6238390-67f0-4212-9e1c-f155c2c95349",
+      "name": "Configurable directional superstructure 13",
+      "status": "Pending",
+      "createdDate": "2025-07-20T06:08:23",
+      "updatedDate": "2026-02-04T05:52:39",
+      "owner": "Beth Rasmussen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5715.22,
+      "description": "Director single try ever talk check certain."
+    },
+    {
+      "id": "fea4570a-884f-4ce4-aa5a-2ce9377b6c79",
+      "name": "Profit-focused multi-tasking utilization 14",
+      "status": "Active",
+      "createdDate": "2025-03-15T09:49:29",
+      "updatedDate": "2026-02-08T03:43:54",
+      "owner": "Debbie Mann",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8228.23,
+      "description": "Possible simple reflect reach."
+    },
+    {
+      "id": "567ddbee-95c1-41dd-88b8-88492097ff83",
+      "name": "Universal exuding parallelism 15",
+      "status": "Pending",
+      "createdDate": "2025-03-01T07:18:33",
+      "updatedDate": "2026-01-25T11:01:05",
+      "owner": "Kathryn Jackson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2203.09,
+      "description": "Start travel six general."
+    },
+    {
+      "id": "c2f010c4-826c-4ab1-bd65-ea373af04c4b",
+      "name": "Distributed modular hardware 16",
+      "status": "Active",
+      "createdDate": "2025-11-25T09:15:10",
+      "updatedDate": "2026-02-14T22:12:27",
+      "owner": "Christopher Jacobs",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 514.02,
+      "description": "Six money tend often support direction city land."
+    },
+    {
+      "id": "98de329b-a9dc-4c11-a6b6-35508b92b794",
+      "name": "Front-line actuating encryption 17",
+      "status": "Pending",
+      "createdDate": "2025-03-03T14:06:59",
+      "updatedDate": "2026-01-31T18:35:47",
+      "owner": "Alexander Miller Jr.",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5219.31,
+      "description": "Alone do debate my."
+    },
+    {
+      "id": "b916fcab-0387-41c2-9d04-b7bebcb706c5",
+      "name": "Mandatory client-server capability 18",
+      "status": "Active",
+      "createdDate": "2025-09-08T16:18:58",
+      "updatedDate": "2026-01-21T19:54:37",
+      "owner": "Deborah Hardy",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7041.41,
+      "description": "Suddenly choice style soon least plan southern hand."
+    },
+    {
+      "id": "535f1623-4998-41b3-89c5-e0610bb9200c",
+      "name": "Multi-tiered interactive strategy 19",
+      "status": "Inactive",
+      "createdDate": "2026-01-12T01:17:32",
+      "updatedDate": "2026-01-25T04:30:06",
+      "owner": "Amanda Yates",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9670.96,
+      "description": "Consider within dog sound point require."
+    },
+    {
+      "id": "cb605d95-3547-44ac-8f38-037c6071cf12",
+      "name": "Self-enabling multi-state utilization 20",
+      "status": "Inactive",
+      "createdDate": "2025-05-30T15:20:47",
+      "updatedDate": "2026-01-28T12:22:04",
+      "owner": "Debbie Walker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3083.85,
+      "description": "Spring person her tell option agent sell."
+    },
+    {
+      "id": "061005b5-adb5-465b-8be6-1b417613d068",
+      "name": "Open-architected non-volatile software 21",
+      "status": "Inactive",
+      "createdDate": "2025-03-20T20:53:28",
+      "updatedDate": "2026-02-05T10:24:14",
+      "owner": "Stephanie Donovan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1030.58,
+      "description": "Choose worker research art."
+    },
+    {
+      "id": "eb351af0-6fd9-42b4-95af-9576b8e4b331",
+      "name": "Operative stable pricing structure 22",
+      "status": "Inactive",
+      "createdDate": "2025-03-16T03:51:18",
+      "updatedDate": "2026-01-29T02:02:55",
+      "owner": "Ian Ingram",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6125.76,
+      "description": "Mention wall financial available front half against."
+    },
+    {
+      "id": "8ce3221e-0341-4a0d-8b57-ceef202cdefe",
+      "name": "Profound fault-tolerant hardware 23",
+      "status": "Active",
+      "createdDate": "2025-08-10T11:17:36",
+      "updatedDate": "2026-02-05T16:54:55",
+      "owner": "Tara Jones",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7317.35,
+      "description": "Contain government military minute."
+    },
+    {
+      "id": "b8cdc4ab-de35-4a19-99fc-554cde642cfe",
+      "name": "Streamlined attitude-oriented productivity 24",
+      "status": "Active",
+      "createdDate": "2025-07-28T11:02:30",
+      "updatedDate": "2026-01-28T05:38:26",
+      "owner": "Jordan Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3105.54,
+      "description": "Work drive room consider dog account beyond."
+    },
+    {
+      "id": "8451f0a1-0b7e-413b-95ef-f62369ef9361",
+      "name": "Balanced asynchronous hub 25",
+      "status": "Active",
+      "createdDate": "2025-07-09T05:19:54",
+      "updatedDate": "2026-01-30T18:15:50",
+      "owner": "Mindy Gilbert",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8633.1,
+      "description": "So factor win risk."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

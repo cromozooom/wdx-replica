@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-all-records",
+  "totalCount": 173,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "1da74bb1-8d1d-40e6-8f88-3d31813e5c2d",
+      "name": "Intuitive responsive installation 1",
+      "status": "Pending",
+      "createdDate": "2025-03-15T09:31:56",
+      "updatedDate": "2026-01-24T10:38:39",
+      "owner": "Kristine Horton",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4543.99,
+      "description": "Wait letter couple walk."
+    },
+    {
+      "id": "32cef115-c5ee-47a9-8bba-b7614cbe3c45",
+      "name": "Upgradable transitional frame 2",
+      "status": "Completed",
+      "createdDate": "2025-05-21T11:55:03",
+      "updatedDate": "2026-02-06T20:35:10",
+      "owner": "Daniel Owen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 647.37,
+      "description": "Company soldier there board strong if factor."
+    },
+    {
+      "id": "1b36e0df-69c2-42e3-af0c-53f95c8cbcc8",
+      "name": "Realigned 24hour info-mediaries 3",
+      "status": "Active",
+      "createdDate": "2025-04-24T11:12:27",
+      "updatedDate": "2026-01-22T12:51:52",
+      "owner": "Brianna Watson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2087.26,
+      "description": "City share instead fine."
+    },
+    {
+      "id": "f25f58fd-1a3e-4407-94d7-86552f5045e1",
+      "name": "Centralized needs-based core 4",
+      "status": "Inactive",
+      "createdDate": "2025-09-09T23:37:37",
+      "updatedDate": "2026-01-20T11:02:40",
+      "owner": "Amy Wilson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6371.55,
+      "description": "Radio education use boy away."
+    },
+    {
+      "id": "fe4dbc2a-471c-4a4c-b61f-ab0b1c2565e7",
+      "name": "Distributed national success 5",
+      "status": "Completed",
+      "createdDate": "2026-02-03T08:44:08",
+      "updatedDate": "2026-02-01T13:12:27",
+      "owner": "Christopher Higgins",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3594.95,
+      "description": "Study early trial."
+    },
+    {
+      "id": "42133096-9d73-49af-acd6-af7cdb1b91e0",
+      "name": "Profit-focused exuding standardization 6",
+      "status": "Active",
+      "createdDate": "2025-04-25T06:41:59",
+      "updatedDate": "2026-02-07T17:36:55",
+      "owner": "Megan Foster",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5821.82,
+      "description": "Manager appear billion hit size region stand candidate."
+    },
+    {
+      "id": "a9aaa38c-600c-49cb-b899-84114d9e4914",
+      "name": "Networked eco-centric moratorium 7",
+      "status": "Pending",
+      "createdDate": "2025-10-04T12:54:02",
+      "updatedDate": "2026-02-04T00:25:59",
+      "owner": "Charles Andrade",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2111.96,
+      "description": "Realize impact themselves resource."
+    },
+    {
+      "id": "5035d04a-8bca-49a4-bfdb-4d3b9f147f8a",
+      "name": "Progressive 3rdgeneration application 8",
+      "status": "Pending",
+      "createdDate": "2025-05-09T10:36:02",
+      "updatedDate": "2026-01-21T05:55:24",
+      "owner": "John Walton",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7664.91,
+      "description": "Kitchen nearly movie lay high cup imagine north."
+    },
+    {
+      "id": "7766543c-f22e-4008-af2b-893969de468c",
+      "name": "Profound mobile functionalities 9",
+      "status": "Active",
+      "createdDate": "2025-03-26T21:25:50",
+      "updatedDate": "2026-02-15T04:54:50",
+      "owner": "Peter Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2605.44,
+      "description": "Bank group senior hot."
+    },
+    {
+      "id": "d9acb84a-5b07-4e5d-a1e2-cbfe82d64151",
+      "name": "Multi-layered non-volatile software 10",
+      "status": "Inactive",
+      "createdDate": "2025-12-31T02:37:54",
+      "updatedDate": "2026-01-29T13:41:01",
+      "owner": "Barbara Dixon",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7892.75,
+      "description": "Personal return else couple."
+    },
+    {
+      "id": "905ddcb4-7407-4fae-bcb7-a1f80b31a9c5",
+      "name": "Reverse-engineered uniform extranet 11",
+      "status": "Inactive",
+      "createdDate": "2026-02-05T09:14:37",
+      "updatedDate": "2026-02-09T01:56:25",
+      "owner": "Dr. James Diaz",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6860.21,
+      "description": "Piece eight weight other."
+    },
+    {
+      "id": "cf7d75ea-92a0-434a-a01e-8629ac6ef48f",
+      "name": "Re-contextualized directional standardization 12",
+      "status": "Active",
+      "createdDate": "2025-06-08T11:18:08",
+      "updatedDate": "2026-02-16T11:05:04",
+      "owner": "Jodi Jordan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 556.92,
+      "description": "Magazine medical senior door whether interview."
+    },
+    {
+      "id": "b2f3064f-ce67-4c7a-ada8-882d7a360bd4",
+      "name": "Expanded reciprocal Local Area Network 13",
+      "status": "Pending",
+      "createdDate": "2025-12-03T23:28:17",
+      "updatedDate": "2026-01-27T03:16:44",
+      "owner": "Kathy Lambert",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8591.03,
+      "description": "Happy maintain according scientist."
+    },
+    {
+      "id": "b04cf2bc-dd7a-434b-be67-18586656cc4f",
+      "name": "Upgradable context-sensitive extranet 14",
+      "status": "Active",
+      "createdDate": "2025-11-24T01:56:50",
+      "updatedDate": "2026-01-20T12:14:58",
+      "owner": "Gregory Sanchez Jr.",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1177.31,
+      "description": "Wind threat use."
+    },
+    {
+      "id": "bf44b253-fe52-4277-a509-8de9862e1549",
+      "name": "Right-sized logistical functionalities 15",
+      "status": "Inactive",
+      "createdDate": "2026-01-17T08:24:22",
+      "updatedDate": "2026-02-06T05:03:39",
+      "owner": "Debbie Cooper",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8730.82,
+      "description": "Rich life pattern authority he blood."
+    },
+    {
+      "id": "a0bdc71e-2c45-479c-9b07-59ff121518d4",
+      "name": "Streamlined bottom-line workforce 16",
+      "status": "Pending",
+      "createdDate": "2025-08-11T10:09:56",
+      "updatedDate": "2026-01-25T01:50:42",
+      "owner": "Katherine Singh",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2895.13,
+      "description": "Produce tree issue from manage blue leader thousand."
+    },
+    {
+      "id": "74ccdf53-5c28-44e4-b159-3ccf462865bb",
+      "name": "Cloned asymmetric archive 17",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T17:50:18",
+      "updatedDate": "2026-01-31T22:42:46",
+      "owner": "Renee Garcia",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8774.15,
+      "description": "Room ask right page."
+    },
+    {
+      "id": "7cf9a1a6-a1a7-4ac7-a2fd-3b1416971158",
+      "name": "Streamlined encompassing hub 18",
+      "status": "Pending",
+      "createdDate": "2026-01-11T10:55:33",
+      "updatedDate": "2026-01-19T07:52:28",
+      "owner": "Tina Anderson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9940.01,
+      "description": "Sell where back option follow sign capital."
+    },
+    {
+      "id": "6c2d4b62-0101-408a-830d-d92e7874c32e",
+      "name": "Focused empowering challenge 19",
+      "status": "Inactive",
+      "createdDate": "2025-12-11T07:20:16",
+      "updatedDate": "2026-02-14T01:17:44",
+      "owner": "Andre Black",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 664.13,
+      "description": "Whose stop admit win all night require."
+    },
+    {
+      "id": "702c3c13-93b4-4476-b539-36f73257b4a4",
+      "name": "Stand-alone analyzing algorithm 20",
+      "status": "Active",
+      "createdDate": "2025-05-09T22:13:31",
+      "updatedDate": "2026-01-29T09:49:02",
+      "owner": "Danielle Craig",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6858.91,
+      "description": "Eat right job."
+    },
+    {
+      "id": "b569e79e-ddf0-4161-a561-d9ef2f53b1d6",
+      "name": "Distributed multi-tasking extranet 21",
+      "status": "Inactive",
+      "createdDate": "2025-04-23T16:24:53",
+      "updatedDate": "2026-02-15T03:58:03",
+      "owner": "Tammy Short",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5251.29,
+      "description": "Address drop wall structure focus."
+    },
+    {
+      "id": "738dd2a5-5d9c-410c-9eb7-cdb67a895a6f",
+      "name": "Streamlined scalable hardware 22",
+      "status": "Completed",
+      "createdDate": "2025-09-26T00:31:07",
+      "updatedDate": "2026-02-17T03:05:48",
+      "owner": "Caleb Olson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7538.84,
+      "description": "Method edge crime imagine mention someone drop."
+    },
+    {
+      "id": "14ad2ac8-d6e8-4b2f-a795-34a3712be59f",
+      "name": "Right-sized needs-based installation 23",
+      "status": "Inactive",
+      "createdDate": "2025-10-11T14:23:56",
+      "updatedDate": "2026-02-06T08:12:28",
+      "owner": "John Hill",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1389.53,
+      "description": "Whether admit tend must smile with."
+    },
+    {
+      "id": "9a32ee13-74f5-4a96-a3d3-151b10cd4fba",
+      "name": "Advanced mobile Internet solution 24",
+      "status": "Active",
+      "createdDate": "2026-01-02T12:31:59",
+      "updatedDate": "2026-01-21T23:54:25",
+      "owner": "Kimberly Moss",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8520.57,
+      "description": "Color couple training because various run million."
+    },
+    {
+      "id": "fa8402ce-c7ff-4b3e-98b0-2022cb748774",
+      "name": "Reverse-engineered multimedia projection 25",
+      "status": "Inactive",
+      "createdDate": "2026-01-05T08:19:30",
+      "updatedDate": "2026-02-13T02:54:02",
+      "owner": "Nathaniel Robinson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8416.18,
+      "description": "Half hear middle consider despite wind."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

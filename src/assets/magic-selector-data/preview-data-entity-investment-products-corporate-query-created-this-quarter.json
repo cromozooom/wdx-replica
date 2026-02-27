@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 945,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3db5771e-1653-4709-8ea9-9849e39b3ef5",
+      "name": "Automated methodical Local Area Network 1",
+      "status": "Pending",
+      "createdDate": "2025-11-23T22:31:14",
+      "updatedDate": "2026-02-08T17:24:31",
+      "owner": "Mary Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4886.39,
+      "description": "Research style protect professional score hour."
+    },
+    {
+      "id": "e991fdc8-f68b-45aa-b755-c718067647fa",
+      "name": "Fundamental exuding Graphic Interface 2",
+      "status": "Pending",
+      "createdDate": "2026-02-09T02:24:35",
+      "updatedDate": "2026-02-09T18:33:07",
+      "owner": "Miranda Wood",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 101.07,
+      "description": "Family soon discussion."
+    },
+    {
+      "id": "4880bcd0-0dcf-4e1d-b1aa-9e5635196657",
+      "name": "Distributed demand-driven groupware 3",
+      "status": "Inactive",
+      "createdDate": "2025-04-25T23:57:03",
+      "updatedDate": "2026-01-22T15:06:34",
+      "owner": "Linda Berry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2589.02,
+      "description": "Away still really onto art head."
+    },
+    {
+      "id": "9ee799e7-b520-4d80-89ae-bcf931c56a6a",
+      "name": "Enhanced holistic project 4",
+      "status": "Inactive",
+      "createdDate": "2025-12-30T00:06:09",
+      "updatedDate": "2026-01-19T18:23:53",
+      "owner": "Lisa White",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3383.83,
+      "description": "Operation forward event."
+    },
+    {
+      "id": "82b8696f-ac6a-4498-a623-34c2197a35ce",
+      "name": "Inverse non-volatile policy 5",
+      "status": "Completed",
+      "createdDate": "2025-03-28T01:42:05",
+      "updatedDate": "2026-02-01T00:56:21",
+      "owner": "Alexander Medina",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1097.34,
+      "description": "What large purpose become set."
+    },
+    {
+      "id": "4c7dfb5b-1fcf-4daa-b2a8-9843937b43e6",
+      "name": "Progressive heuristic encoding 6",
+      "status": "Inactive",
+      "createdDate": "2025-07-13T15:31:11",
+      "updatedDate": "2026-02-13T04:14:36",
+      "owner": "Angela Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2560.39,
+      "description": "Region security religious his."
+    },
+    {
+      "id": "be291e46-dccf-45aa-9e8b-483d5a6ebec7",
+      "name": "Diverse foreground definition 7",
+      "status": "Active",
+      "createdDate": "2026-01-26T14:42:52",
+      "updatedDate": "2026-02-17T05:20:02",
+      "owner": "Michael Owens",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6336.96,
+      "description": "Involve production skill financial particular rule."
+    },
+    {
+      "id": "3fb3e7c7-d1a3-4b20-8b64-dfc699fadb9c",
+      "name": "Diverse encompassing challenge 8",
+      "status": "Inactive",
+      "createdDate": "2025-04-12T13:04:07",
+      "updatedDate": "2026-02-02T12:07:14",
+      "owner": "Audrey Mosley",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4872.01,
+      "description": "Available move especially teacher."
+    },
+    {
+      "id": "74de38c0-5586-4293-9ba0-2750fdb9865d",
+      "name": "Self-enabling neutral encryption 9",
+      "status": "Pending",
+      "createdDate": "2025-03-31T10:16:18",
+      "updatedDate": "2026-01-28T06:03:38",
+      "owner": "Rebecca Lee",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5894.13,
+      "description": "Face family activity all civil mother red."
+    },
+    {
+      "id": "936c93a3-573a-4b6d-b6d8-867a39ac0f6b",
+      "name": "Multi-layered mobile complexity 10",
+      "status": "Active",
+      "createdDate": "2025-11-21T10:08:35",
+      "updatedDate": "2026-02-12T08:59:50",
+      "owner": "Jerry Rogers",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4556.96,
+      "description": "Live impact add partner writer former."
+    },
+    {
+      "id": "4dd13f7e-9a7e-4bfa-8813-9d23d4ad8ef1",
+      "name": "Upgradable directional system engine 11",
+      "status": "Inactive",
+      "createdDate": "2025-12-28T17:40:19",
+      "updatedDate": "2026-01-23T02:21:22",
+      "owner": "Benjamin Mason",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2531.54,
+      "description": "Bad test focus interest."
+    },
+    {
+      "id": "a224af28-7206-46a4-9ca3-9d14af76419c",
+      "name": "Stand-alone uniform model 12",
+      "status": "Inactive",
+      "createdDate": "2026-02-05T07:38:43",
+      "updatedDate": "2026-02-11T03:53:42",
+      "owner": "Kevin Farrell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 709.9,
+      "description": "Record though need investment."
+    },
+    {
+      "id": "65ae87d8-28bc-46b8-abcc-352c17d6588e",
+      "name": "Organized homogeneous encoding 13",
+      "status": "Active",
+      "createdDate": "2025-07-31T02:37:59",
+      "updatedDate": "2026-02-02T15:49:13",
+      "owner": "Kevin Levy",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2070.55,
+      "description": "Maintain free high street."
+    },
+    {
+      "id": "395cf8fa-2e84-40e6-b33f-65513c04b98c",
+      "name": "Innovative modular time-frame 14",
+      "status": "Pending",
+      "createdDate": "2026-02-12T12:19:29",
+      "updatedDate": "2026-01-31T05:42:23",
+      "owner": "Susan Taylor",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1664.58,
+      "description": "Member sit sense under deep."
+    },
+    {
+      "id": "bfce80e5-8a63-48dd-8a86-0412b3be028b",
+      "name": "Multi-channeled optimizing hardware 15",
+      "status": "Pending",
+      "createdDate": "2025-03-19T19:28:34",
+      "updatedDate": "2026-02-14T23:10:32",
+      "owner": "Beth Thompson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3459.46,
+      "description": "Will again himself western city none main understand."
+    },
+    {
+      "id": "8b3c94ba-a41b-4c47-bf5b-16f25102bc1b",
+      "name": "Organic bottom-line application 16",
+      "status": "Pending",
+      "createdDate": "2025-09-15T08:13:53",
+      "updatedDate": "2026-02-15T02:46:46",
+      "owner": "Crystal Meyer",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 976.45,
+      "description": "Ground person set suffer pattern."
+    },
+    {
+      "id": "81cb0659-78db-44ae-ac2b-a2989655f1a8",
+      "name": "Operative asymmetric capability 17",
+      "status": "Inactive",
+      "createdDate": "2025-02-26T11:33:34",
+      "updatedDate": "2026-02-04T04:30:03",
+      "owner": "Andrew Aguilar",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9187.95,
+      "description": "Particular party food detail rock."
+    },
+    {
+      "id": "ab969494-2369-4069-8d32-8bd941f0ceb4",
+      "name": "Focused upward-trending core 18",
+      "status": "Completed",
+      "createdDate": "2025-07-13T03:36:57",
+      "updatedDate": "2026-02-01T22:48:19",
+      "owner": "Scott Jackson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6819.14,
+      "description": "Establish floor your century environment."
+    },
+    {
+      "id": "0a24d445-f899-450a-a085-808d8b10eeb0",
+      "name": "Sharable interactive capacity 19",
+      "status": "Completed",
+      "createdDate": "2025-04-05T01:43:04",
+      "updatedDate": "2026-01-21T07:15:31",
+      "owner": "Jonathan Mercer",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 178.61,
+      "description": "Receive describe field fact year."
+    },
+    {
+      "id": "25e75dd3-1554-473d-88d3-d85cbc97b047",
+      "name": "Inverse radical contingency 20",
+      "status": "Pending",
+      "createdDate": "2025-03-07T06:57:31",
+      "updatedDate": "2026-01-25T05:09:37",
+      "owner": "Stephanie Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3010.43,
+      "description": "Spend easy visit of nation."
+    },
+    {
+      "id": "7159a47e-8251-4455-8e4f-5dc736e2c41c",
+      "name": "Vision-oriented high-level hardware 21",
+      "status": "Completed",
+      "createdDate": "2025-02-28T07:35:18",
+      "updatedDate": "2026-02-15T11:53:16",
+      "owner": "Charles White",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1082.89,
+      "description": "Affect law effect citizen half."
+    },
+    {
+      "id": "6c5b96d9-0aad-4552-a836-011edbb6693b",
+      "name": "Persistent maximized encoding 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-30T23:52:06",
+      "updatedDate": "2026-01-25T04:31:50",
+      "owner": "Adrian Mcguire",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5156.36,
+      "description": "Partner almost camera glass trade produce democratic those."
+    },
+    {
+      "id": "ddfe1d9f-bfdc-49fa-8e16-92ed26fb1c0f",
+      "name": "Profound didactic emulation 23",
+      "status": "Active",
+      "createdDate": "2025-08-05T06:33:52",
+      "updatedDate": "2026-02-13T11:42:14",
+      "owner": "Timothy Cook",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8070.41,
+      "description": "Author give realize."
+    },
+    {
+      "id": "c80f07db-d3e9-49ba-9d05-02d909c332eb",
+      "name": "Team-oriented local function 24",
+      "status": "Inactive",
+      "createdDate": "2025-10-12T05:41:40",
+      "updatedDate": "2026-01-30T22:33:02",
+      "owner": "Timothy White",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7887.94,
+      "description": "Step game much."
+    },
+    {
+      "id": "d1402b43-4950-440e-b9cc-92e48aab836a",
+      "name": "Triple-buffered non-volatile orchestration 25",
+      "status": "Pending",
+      "createdDate": "2025-09-01T23:17:24",
+      "updatedDate": "2026-02-16T01:31:45",
+      "owner": "Melissa Riley",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9873.52,
+      "description": "Despite court home federal executive exactly."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

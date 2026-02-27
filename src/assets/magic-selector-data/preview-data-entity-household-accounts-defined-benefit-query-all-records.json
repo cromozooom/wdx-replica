@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-all-records",
+  "totalCount": 826,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ea8ee8c3-33fb-40f8-9824-9692b7e3df2e",
+      "name": "Object-based bottom-line capacity 1",
+      "status": "Active",
+      "createdDate": "2026-01-16T08:47:21",
+      "updatedDate": "2026-02-01T21:44:23",
+      "owner": "Charles Torres",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1162.97,
+      "description": "Establish yes record letter material bad red."
+    },
+    {
+      "id": "8072e4cc-b1fa-4fcb-92c5-715911cdc5ec",
+      "name": "Vision-oriented client-server core 2",
+      "status": "Inactive",
+      "createdDate": "2025-08-13T18:26:49",
+      "updatedDate": "2026-02-05T02:45:33",
+      "owner": "David Fisher",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2649.47,
+      "description": "Human could challenge south action."
+    },
+    {
+      "id": "c775e5fc-d3d8-43e6-8c4b-2ef6c20736a8",
+      "name": "Customer-focused impactful orchestration 3",
+      "status": "Active",
+      "createdDate": "2025-11-07T07:14:31",
+      "updatedDate": "2026-02-14T17:11:07",
+      "owner": "Matthew James",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2946.99,
+      "description": "Fight less first word."
+    },
+    {
+      "id": "73355f4e-3f0e-4e2f-84d5-9cb503c41cab",
+      "name": "Ameliorated uniform concept 4",
+      "status": "Completed",
+      "createdDate": "2025-10-09T16:57:20",
+      "updatedDate": "2026-02-05T18:33:55",
+      "owner": "Keith Ramirez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9941.51,
+      "description": "Energy amount best room their available."
+    },
+    {
+      "id": "a11dde2e-ed2b-47eb-9988-9f2ed48a069e",
+      "name": "Digitized optimizing array 5",
+      "status": "Pending",
+      "createdDate": "2025-11-21T16:11:13",
+      "updatedDate": "2026-01-31T19:00:00",
+      "owner": "Cassandra Rodriguez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4022.53,
+      "description": "Letter garden voice unit physical account growth."
+    },
+    {
+      "id": "abe3fc98-b04d-4d3f-bfe3-a1c39f700cc5",
+      "name": "Grass-roots solution-oriented capability 6",
+      "status": "Inactive",
+      "createdDate": "2025-11-23T19:42:56",
+      "updatedDate": "2026-01-30T19:48:31",
+      "owner": "Lori Anderson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2190.34,
+      "description": "Great prepare language whatever few throw."
+    },
+    {
+      "id": "4c6b2bea-dc35-4581-bc80-94675a781d79",
+      "name": "Re-contextualized even-keeled knowledge user 7",
+      "status": "Pending",
+      "createdDate": "2025-04-29T08:37:33",
+      "updatedDate": "2026-01-28T00:15:03",
+      "owner": "Kenneth Crawford",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1017.83,
+      "description": "Federal training attack."
+    },
+    {
+      "id": "8dce5d0a-711f-491d-9201-ee6ad62450fa",
+      "name": "Phased radical utilization 8",
+      "status": "Active",
+      "createdDate": "2025-04-23T20:18:52",
+      "updatedDate": "2026-01-20T07:59:09",
+      "owner": "Robin Garza",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7016.44,
+      "description": "Amount simply gun Republican drug interesting."
+    },
+    {
+      "id": "e42b5e30-a16c-459f-b027-9e94c8c1db72",
+      "name": "Sharable secondary analyzer 9",
+      "status": "Active",
+      "createdDate": "2025-04-21T01:36:11",
+      "updatedDate": "2026-01-23T02:33:55",
+      "owner": "Kevin Berry",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3642.97,
+      "description": "Key teach per weight."
+    },
+    {
+      "id": "8b7db5fb-8271-4fd1-abe6-9b30c71427ee",
+      "name": "Reverse-engineered upward-trending productivity 10",
+      "status": "Completed",
+      "createdDate": "2025-09-16T02:17:40",
+      "updatedDate": "2026-01-25T09:05:31",
+      "owner": "Abigail Williams MD",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4575.97,
+      "description": "Degree whatever knowledge."
+    },
+    {
+      "id": "3b4ec0cb-6688-41e8-a245-1a8fadc8b762",
+      "name": "Function-based attitude-oriented parallelism 11",
+      "status": "Inactive",
+      "createdDate": "2025-08-25T22:12:20",
+      "updatedDate": "2026-02-15T19:02:34",
+      "owner": "Gregory Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1077.21,
+      "description": "Every team likely something focus."
+    },
+    {
+      "id": "8e0f9cd9-2d30-4150-87c0-524cb7c0f209",
+      "name": "Front-line zero administration archive 12",
+      "status": "Completed",
+      "createdDate": "2025-03-21T00:09:14",
+      "updatedDate": "2026-01-18T19:50:20",
+      "owner": "Richard Anderson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1431.32,
+      "description": "Real office ok particular."
+    },
+    {
+      "id": "f9f9603d-ad97-4b06-af8d-e47f13ca0045",
+      "name": "Innovative context-sensitive paradigm 13",
+      "status": "Completed",
+      "createdDate": "2026-01-20T01:08:17",
+      "updatedDate": "2026-01-28T13:06:55",
+      "owner": "Claire Bailey",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3495.88,
+      "description": "Memory I so list weight executive already."
+    },
+    {
+      "id": "6276db26-1ca6-4386-9003-ec66bb0e866a",
+      "name": "Organic attitude-oriented project 14",
+      "status": "Completed",
+      "createdDate": "2025-12-13T01:38:06",
+      "updatedDate": "2026-02-09T07:54:42",
+      "owner": "Kimberly Mathis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5919.35,
+      "description": "Experience watch board deep kitchen front."
+    },
+    {
+      "id": "d2407398-785e-4cde-939c-669854a668fa",
+      "name": "Polarized grid-enabled intranet 15",
+      "status": "Active",
+      "createdDate": "2025-04-10T05:43:31",
+      "updatedDate": "2026-02-05T05:16:10",
+      "owner": "Samantha Robertson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 668.86,
+      "description": "Democrat like drug suggest want price Mrs."
+    },
+    {
+      "id": "60fa5ddc-5531-4a05-a998-3e00433774eb",
+      "name": "Open-source well-modulated strategy 16",
+      "status": "Active",
+      "createdDate": "2025-04-13T06:06:05",
+      "updatedDate": "2026-01-24T15:59:22",
+      "owner": "Wendy Nunez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9782.23,
+      "description": "Back like suggest however."
+    },
+    {
+      "id": "56bccc20-a295-4794-8429-92d60691bc6e",
+      "name": "Robust uniform archive 17",
+      "status": "Completed",
+      "createdDate": "2025-04-11T14:01:00",
+      "updatedDate": "2026-02-03T07:09:39",
+      "owner": "Matthew Maxwell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6632.92,
+      "description": "Court to sound our consider."
+    },
+    {
+      "id": "3309c8e1-4aca-4b21-a751-5ac176f5130d",
+      "name": "Future-proofed human-resource policy 18",
+      "status": "Active",
+      "createdDate": "2025-09-07T06:55:41",
+      "updatedDate": "2026-02-02T05:10:15",
+      "owner": "Juan Smith",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6964.5,
+      "description": "Life turn actually education pressure impact loss point."
+    },
+    {
+      "id": "7b077a4b-7443-478a-a0da-0a977fb7854c",
+      "name": "Optional 4thgeneration encryption 19",
+      "status": "Pending",
+      "createdDate": "2025-05-02T09:17:39",
+      "updatedDate": "2026-02-05T00:24:25",
+      "owner": "Benjamin Lopez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3985.23,
+      "description": "Big arrive organization stock character."
+    },
+    {
+      "id": "0c162703-43e4-4476-9a66-11e3154410dc",
+      "name": "Organic modular parallelism 20",
+      "status": "Active",
+      "createdDate": "2025-11-13T05:47:28",
+      "updatedDate": "2026-02-08T12:27:38",
+      "owner": "Robert Boyd",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1134.48,
+      "description": "Choose address know mind different six type."
+    },
+    {
+      "id": "35396026-db2a-4437-a2b8-3b0b5c266b47",
+      "name": "Switchable contextually-based project 21",
+      "status": "Completed",
+      "createdDate": "2025-12-23T18:38:34",
+      "updatedDate": "2026-01-23T06:45:17",
+      "owner": "Jeffrey Walsh",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3462.69,
+      "description": "General remember back even avoid."
+    },
+    {
+      "id": "ecea7b85-56f4-4268-b58d-25cbc2f49ff8",
+      "name": "Cross-platform system-worthy interface 22",
+      "status": "Active",
+      "createdDate": "2026-02-04T00:57:52",
+      "updatedDate": "2026-01-24T02:14:26",
+      "owner": "Gabriel Pittman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9233.23,
+      "description": "Executive relationship mean true tough something onto."
+    },
+    {
+      "id": "189164ec-c0ae-4dc4-8fd1-5c21c254f7f2",
+      "name": "Innovative dynamic implementation 23",
+      "status": "Pending",
+      "createdDate": "2025-05-05T21:33:48",
+      "updatedDate": "2026-02-11T04:44:22",
+      "owner": "Ashley Thornton",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7037.65,
+      "description": "Cost strategy one suggest camera decade."
+    },
+    {
+      "id": "5d986942-a888-4d29-bb55-9043a4774e70",
+      "name": "Centralized client-server info-mediaries 24",
+      "status": "Completed",
+      "createdDate": "2025-10-20T07:41:27",
+      "updatedDate": "2026-02-02T08:31:45",
+      "owner": "Sharon Torres",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 691.65,
+      "description": "Baby order spring."
+    },
+    {
+      "id": "0e9e7a25-fc4e-49bf-86aa-86c532374e00",
+      "name": "Pre-emptive leadingedge focus group 25",
+      "status": "Completed",
+      "createdDate": "2025-10-31T03:06:44",
+      "updatedDate": "2026-02-15T11:26:30",
+      "owner": "Brian Anderson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7668.95,
+      "description": "Area discuss not almost another also."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

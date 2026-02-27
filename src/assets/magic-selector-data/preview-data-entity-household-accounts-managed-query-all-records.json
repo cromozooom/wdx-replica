@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-all-records",
+  "totalCount": 134,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "03ef46c2-6574-4d28-b041-4f0f0dee5ce5",
+      "name": "Seamless incremental strategy 1",
+      "status": "Active",
+      "createdDate": "2025-03-01T08:15:30",
+      "updatedDate": "2026-01-31T03:07:57",
+      "owner": "Andrew Martinez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9797.32,
+      "description": "Pattern will you look wall doctor."
+    },
+    {
+      "id": "ccf092f4-f182-4fe1-bd17-a2918f20a52c",
+      "name": "Face-to-face mission-critical project 2",
+      "status": "Pending",
+      "createdDate": "2025-03-22T11:26:18",
+      "updatedDate": "2026-01-30T10:03:10",
+      "owner": "Brian Horne",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2635.8,
+      "description": "Protect blood network throughout."
+    },
+    {
+      "id": "d9a63e5b-5ff1-4931-a8be-b7eec68a6ba2",
+      "name": "Decentralized grid-enabled access 3",
+      "status": "Completed",
+      "createdDate": "2025-08-29T17:39:31",
+      "updatedDate": "2026-01-21T05:50:16",
+      "owner": "Jamie Orr",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4013.85,
+      "description": "Again indeed idea maybe two very necessary arm."
+    },
+    {
+      "id": "679b6b0e-0fb6-4c24-a13a-f102dd2d58d1",
+      "name": "Secured multimedia projection 4",
+      "status": "Pending",
+      "createdDate": "2025-02-24T02:08:40",
+      "updatedDate": "2026-02-04T19:44:23",
+      "owner": "Timothy Russell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3686.51,
+      "description": "Enough open this inside."
+    },
+    {
+      "id": "d5c88b9a-0d25-4d64-8080-14a3800d74f6",
+      "name": "Seamless logistical complexity 5",
+      "status": "Active",
+      "createdDate": "2026-01-30T21:46:02",
+      "updatedDate": "2026-02-02T16:23:08",
+      "owner": "Tyler Glenn",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6966.67,
+      "description": "Economy her say several play space."
+    },
+    {
+      "id": "5c548cbf-a8b8-4c84-83c7-eef601020fde",
+      "name": "Streamlined mission-critical extranet 6",
+      "status": "Pending",
+      "createdDate": "2025-11-19T21:39:19",
+      "updatedDate": "2026-01-20T14:47:51",
+      "owner": "Jennifer Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2591.82,
+      "description": "Similar state quality drive."
+    },
+    {
+      "id": "b849432f-c1bd-497c-9760-96f756dfc603",
+      "name": "De-engineered incremental support 7",
+      "status": "Inactive",
+      "createdDate": "2025-10-31T17:43:12",
+      "updatedDate": "2026-01-23T17:17:16",
+      "owner": "William Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6671.11,
+      "description": "Stand we rich ready."
+    },
+    {
+      "id": "f7471a09-729a-4b48-b3cd-c22c87110b4a",
+      "name": "Fully-configurable 24/7 interface 8",
+      "status": "Pending",
+      "createdDate": "2025-05-18T23:15:10",
+      "updatedDate": "2026-01-27T22:05:14",
+      "owner": "Tanya Morgan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3899.01,
+      "description": "Practice government animal because market mind."
+    },
+    {
+      "id": "83b76dd2-b2a2-4d54-ab4c-89d1db9c2d9a",
+      "name": "De-engineered neutral definition 9",
+      "status": "Pending",
+      "createdDate": "2025-03-14T00:48:59",
+      "updatedDate": "2026-01-20T22:33:16",
+      "owner": "Crystal Day",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9166.85,
+      "description": "Beyond away out look down not cold card."
+    },
+    {
+      "id": "7a2c8b66-088c-40eb-b125-e6edc2f688ac",
+      "name": "Persevering exuding challenge 10",
+      "status": "Pending",
+      "createdDate": "2025-07-03T11:16:58",
+      "updatedDate": "2026-01-18T19:50:29",
+      "owner": "Michael Kline",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1990.3,
+      "description": "Ability information risk place carry beautiful almost several."
+    },
+    {
+      "id": "3d138e02-218e-4bce-80b6-2a04880517c6",
+      "name": "Ameliorated modular artificial intelligence 11",
+      "status": "Completed",
+      "createdDate": "2025-11-01T11:37:53",
+      "updatedDate": "2026-02-12T06:19:54",
+      "owner": "Erin Parker",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5725.3,
+      "description": "Improve sometimes respond remember couple professional exist."
+    },
+    {
+      "id": "c0a2caea-ace4-4674-b5ad-0a1adface0c0",
+      "name": "Optimized system-worthy groupware 12",
+      "status": "Active",
+      "createdDate": "2026-02-01T23:37:02",
+      "updatedDate": "2026-01-30T11:07:40",
+      "owner": "Collin Jenkins",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3815.66,
+      "description": "Garden about word happy Mrs."
+    },
+    {
+      "id": "56b7a9ff-7904-41d3-b2a9-a3f9a099ab4a",
+      "name": "Pre-emptive multi-tasking model 13",
+      "status": "Pending",
+      "createdDate": "2026-02-10T00:37:46",
+      "updatedDate": "2026-01-25T21:40:48",
+      "owner": "Javier Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5310.39,
+      "description": "Option several actually right cultural miss parent."
+    },
+    {
+      "id": "961926de-e713-4cd0-9db4-19124a9196d9",
+      "name": "Progressive content-based definition 14",
+      "status": "Pending",
+      "createdDate": "2025-04-05T20:22:04",
+      "updatedDate": "2026-01-31T07:01:18",
+      "owner": "Amber Arroyo",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 888.03,
+      "description": "Two voice total sometimes."
+    },
+    {
+      "id": "086d21c6-85cd-4810-a817-3f61727019db",
+      "name": "Profound well-modulated emulation 15",
+      "status": "Pending",
+      "createdDate": "2025-07-16T10:21:51",
+      "updatedDate": "2026-01-20T08:27:56",
+      "owner": "Jaime Ramirez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4329.03,
+      "description": "Both expert have represent."
+    },
+    {
+      "id": "d2fcf531-e81f-4fe6-a3f7-c604456e0c69",
+      "name": "Switchable local interface 16",
+      "status": "Active",
+      "createdDate": "2025-10-20T04:01:18",
+      "updatedDate": "2026-01-27T14:27:44",
+      "owner": "Amanda Blake",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9328.89,
+      "description": "Across stage everybody."
+    },
+    {
+      "id": "c7519c1b-e35f-4960-9f22-961b93746c14",
+      "name": "Cross-group homogeneous artificial intelligence 17",
+      "status": "Pending",
+      "createdDate": "2025-08-15T12:19:11",
+      "updatedDate": "2026-02-12T12:03:44",
+      "owner": "Rebecca Fitzgerald",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8392.69,
+      "description": "View kid give source nation protect boy."
+    },
+    {
+      "id": "0ec79b88-fe53-4f4c-9947-e2cb6645817b",
+      "name": "Realigned didactic encoding 18",
+      "status": "Pending",
+      "createdDate": "2025-12-15T13:43:55",
+      "updatedDate": "2026-01-21T05:21:34",
+      "owner": "Alexandra Odonnell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3060.77,
+      "description": "Develop whether send agency may."
+    },
+    {
+      "id": "dae8e23c-2230-4266-9403-74c232bb38f6",
+      "name": "Organized dedicated implementation 19",
+      "status": "Completed",
+      "createdDate": "2025-03-20T21:16:26",
+      "updatedDate": "2026-01-24T00:27:21",
+      "owner": "Jennifer Henson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4562.17,
+      "description": "Sit science serious admit field professor."
+    },
+    {
+      "id": "0ec6abc2-bc5f-464f-aa1e-9e144c715db7",
+      "name": "Multi-tiered local hardware 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-11T16:16:47",
+      "updatedDate": "2026-02-14T05:54:21",
+      "owner": "Deborah Farmer",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5291.5,
+      "description": "Notice animal capital today drive city page develop."
+    },
+    {
+      "id": "4d7a4c51-696c-46d2-ab2a-4b3eae00a66f",
+      "name": "Visionary systemic intranet 21",
+      "status": "Inactive",
+      "createdDate": "2025-04-19T03:52:41",
+      "updatedDate": "2026-01-27T02:53:48",
+      "owner": "John Barajas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7651.35,
+      "description": "Let population trip former alone challenge ago."
+    },
+    {
+      "id": "b623b85e-18e1-4658-9bef-775b3732492d",
+      "name": "Persistent empowering open architecture 22",
+      "status": "Completed",
+      "createdDate": "2025-02-23T10:11:53",
+      "updatedDate": "2026-02-05T12:44:23",
+      "owner": "Susan Martinez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1306.87,
+      "description": "Simple nice door provide teacher."
+    },
+    {
+      "id": "23d58fd4-3396-45ed-9ab6-542f11004e04",
+      "name": "Persistent multi-state utilization 23",
+      "status": "Inactive",
+      "createdDate": "2025-05-20T14:02:51",
+      "updatedDate": "2026-01-31T13:27:21",
+      "owner": "John Graham",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1880.5,
+      "description": "Development shake like."
+    },
+    {
+      "id": "ca6c061c-7f88-4da8-bb33-876212c557fd",
+      "name": "Front-line composite process improvement 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-08T14:21:47",
+      "updatedDate": "2026-02-08T06:38:51",
+      "owner": "William Castillo",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5901.91,
+      "description": "Animal new note build how power."
+    },
+    {
+      "id": "d245b964-24bf-4d02-a335-2a2badeffdf5",
+      "name": "Versatile user-facing standardization 25",
+      "status": "Completed",
+      "createdDate": "2025-12-23T17:23:08",
+      "updatedDate": "2026-02-07T05:38:12",
+      "owner": "Lisa Martinez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6864.75,
+      "description": "Off paper stay on try quite."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

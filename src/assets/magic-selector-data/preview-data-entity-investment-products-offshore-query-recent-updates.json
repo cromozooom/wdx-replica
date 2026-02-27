@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-recent-updates",
+  "totalCount": 233,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b13be4a2-9fc1-4e16-a66a-446c8d46e13a",
+      "name": "Phased user-facing data-warehouse 1",
+      "status": "Inactive",
+      "createdDate": "2025-08-06T17:29:13",
+      "updatedDate": "2026-02-01T14:53:40",
+      "owner": "Jason Roberts",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1269.3,
+      "description": "Another size though another."
+    },
+    {
+      "id": "8b04b08e-b350-4b1c-9aaa-5882dc8a732c",
+      "name": "Enterprise-wide multi-tasking access 2",
+      "status": "Inactive",
+      "createdDate": "2025-09-23T06:28:49",
+      "updatedDate": "2026-02-07T09:33:34",
+      "owner": "James Brady",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6992.85,
+      "description": "Later others choice summer."
+    },
+    {
+      "id": "643dc930-5870-4064-b16c-a1abbc052c96",
+      "name": "Triple-buffered context-sensitive pricing structure 3",
+      "status": "Completed",
+      "createdDate": "2025-10-31T21:14:49",
+      "updatedDate": "2026-01-20T22:25:42",
+      "owner": "Courtney Walls",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5573.5,
+      "description": "Forward home develop environment."
+    },
+    {
+      "id": "52dc67ba-8cbc-465d-a5fa-11a2aa8596fc",
+      "name": "Expanded system-worthy website 4",
+      "status": "Completed",
+      "createdDate": "2026-01-07T06:58:50",
+      "updatedDate": "2026-02-10T22:26:14",
+      "owner": "David Parks",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6028.43,
+      "description": "Simply chance thus force."
+    },
+    {
+      "id": "3a33d97c-bac7-4bb5-b859-36500778593f",
+      "name": "Realigned exuding methodology 5",
+      "status": "Pending",
+      "createdDate": "2026-01-13T11:33:46",
+      "updatedDate": "2026-01-27T01:28:20",
+      "owner": "Kathy Beck",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 516.09,
+      "description": "Sell thank statement card."
+    },
+    {
+      "id": "f4ffe68f-3e8a-46fb-a083-87ade92ce911",
+      "name": "Profit-focused asymmetric emulation 6",
+      "status": "Inactive",
+      "createdDate": "2025-10-01T08:13:20",
+      "updatedDate": "2026-02-16T07:02:05",
+      "owner": "Melissa Woods",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2186.24,
+      "description": "Hold summer memory space."
+    },
+    {
+      "id": "f60165e1-1b3b-47df-b7aa-0b057f8af350",
+      "name": "Inverse homogeneous encoding 7",
+      "status": "Active",
+      "createdDate": "2025-05-11T21:30:59",
+      "updatedDate": "2026-01-27T00:01:43",
+      "owner": "Todd Martinez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3209.92,
+      "description": "Great record south clear to never."
+    },
+    {
+      "id": "8268f56a-fde0-497a-bd50-d5d6d6c5cbb4",
+      "name": "Implemented user-facing Internet solution 8",
+      "status": "Completed",
+      "createdDate": "2025-07-08T07:14:58",
+      "updatedDate": "2026-02-05T21:16:21",
+      "owner": "Mary Davis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8532.49,
+      "description": "Speak local medical guy election."
+    },
+    {
+      "id": "89fb1468-e1af-4bda-ab1b-b1e91339c10a",
+      "name": "Innovative optimizing archive 9",
+      "status": "Completed",
+      "createdDate": "2025-06-02T23:19:37",
+      "updatedDate": "2026-01-31T23:59:30",
+      "owner": "Elizabeth Graham",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7294.97,
+      "description": "Value laugh price skin in."
+    },
+    {
+      "id": "a505a3ae-b735-40c4-937b-d4ea354fe09c",
+      "name": "Extended real-time hub 10",
+      "status": "Active",
+      "createdDate": "2025-12-17T03:28:52",
+      "updatedDate": "2026-02-16T10:59:22",
+      "owner": "Joseph Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8057.7,
+      "description": "It region piece sit do American million."
+    },
+    {
+      "id": "f6a2e02a-e040-49c5-b502-1c7b5ba76b7f",
+      "name": "Multi-lateral multimedia hardware 11",
+      "status": "Completed",
+      "createdDate": "2025-05-31T07:25:23",
+      "updatedDate": "2026-01-27T11:51:14",
+      "owner": "Tina Fernandez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 967.77,
+      "description": "Their toward model among major social million must."
+    },
+    {
+      "id": "23e85d4b-7d7a-4ad0-a124-524f292058f6",
+      "name": "Operative global database 12",
+      "status": "Inactive",
+      "createdDate": "2025-04-18T15:13:35",
+      "updatedDate": "2026-02-15T01:02:42",
+      "owner": "Lisa Lawrence",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5517.87,
+      "description": "Happy image myself board."
+    },
+    {
+      "id": "ce7068e9-5254-4aa4-884f-7ce86c87a638",
+      "name": "Programmable multimedia projection 13",
+      "status": "Active",
+      "createdDate": "2026-01-28T14:21:18",
+      "updatedDate": "2026-02-03T21:02:01",
+      "owner": "Derrick Daniels",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6390.63,
+      "description": "True option song nothing."
+    },
+    {
+      "id": "6390671d-f01d-46a4-a1cf-2d76074f4504",
+      "name": "User-friendly discrete application 14",
+      "status": "Active",
+      "createdDate": "2025-04-19T19:15:31",
+      "updatedDate": "2026-02-15T07:49:59",
+      "owner": "Caitlyn Ramsey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1886.29,
+      "description": "Myself through vote."
+    },
+    {
+      "id": "bea56dd7-c74b-4b7b-9384-5f23e3988f95",
+      "name": "Focused fresh-thinking moratorium 15",
+      "status": "Completed",
+      "createdDate": "2025-05-26T08:27:45",
+      "updatedDate": "2026-02-17T05:13:37",
+      "owner": "Stephen Cordova",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8317.0,
+      "description": "Manager enjoy truth adult allow environment."
+    },
+    {
+      "id": "ad0e4a39-47f7-4d67-8ac3-c677f2ccff6f",
+      "name": "Reactive 24/7 software 16",
+      "status": "Inactive",
+      "createdDate": "2026-01-16T17:39:32",
+      "updatedDate": "2026-01-29T12:16:36",
+      "owner": "Mrs. Diana Harrison",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5215.41,
+      "description": "School soon free practice ball firm keep see."
+    },
+    {
+      "id": "76571adb-8da1-451b-9ae8-397c03123313",
+      "name": "Team-oriented human-resource throughput 17",
+      "status": "Pending",
+      "createdDate": "2025-08-08T04:46:19",
+      "updatedDate": "2026-02-02T19:44:33",
+      "owner": "Nicholas Harper",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4682.4,
+      "description": "Instead skin kid always him begin."
+    },
+    {
+      "id": "30071a8b-bbbf-4e89-a7a7-8534c6e5f57e",
+      "name": "Synchronized secondary migration 18",
+      "status": "Pending",
+      "createdDate": "2025-07-30T10:07:10",
+      "updatedDate": "2026-02-02T08:45:38",
+      "owner": "Virginia Williams",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 997.19,
+      "description": "Child wife specific participant effort few national level."
+    },
+    {
+      "id": "17c33bd3-dc1b-4c7f-9fe6-f896f24299ec",
+      "name": "Inverse real-time protocol 19",
+      "status": "Completed",
+      "createdDate": "2025-02-23T16:00:19",
+      "updatedDate": "2026-01-31T05:32:11",
+      "owner": "Curtis Vargas",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7948.05,
+      "description": "Also hot woman fight adult color."
+    },
+    {
+      "id": "196f2d3d-fcf4-4b54-b47b-40a3d9119945",
+      "name": "Profound zero tolerance process improvement 20",
+      "status": "Pending",
+      "createdDate": "2025-05-19T03:55:48",
+      "updatedDate": "2026-01-22T17:31:48",
+      "owner": "Eric Palmer",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3885.75,
+      "description": "Heart section during."
+    },
+    {
+      "id": "67f65b78-23a6-47e9-afe2-a963dbd2b23e",
+      "name": "Cross-group bottom-line algorithm 21",
+      "status": "Active",
+      "createdDate": "2025-09-19T17:25:30",
+      "updatedDate": "2026-02-07T01:36:01",
+      "owner": "Michael Miller",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7641.04,
+      "description": "Fact western notice use allow mother perform."
+    },
+    {
+      "id": "051ce800-d896-4354-bf9b-282e6a612817",
+      "name": "Persistent zero-defect alliance 22",
+      "status": "Pending",
+      "createdDate": "2026-01-25T19:30:32",
+      "updatedDate": "2026-02-08T02:16:28",
+      "owner": "Chris Burke",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2441.18,
+      "description": "Tend rate national team."
+    },
+    {
+      "id": "ed8071b2-8aab-4f62-8262-42a55f8b2772",
+      "name": "Object-based content-based neural-net 23",
+      "status": "Completed",
+      "createdDate": "2025-11-01T21:04:29",
+      "updatedDate": "2026-02-12T06:56:06",
+      "owner": "Dr. Guy Harper",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3567.54,
+      "description": "Spring success join level job."
+    },
+    {
+      "id": "01f77b90-8efb-4fbe-bb2d-e3e6f0c170a7",
+      "name": "Automated maximized concept 24",
+      "status": "Completed",
+      "createdDate": "2025-09-12T20:19:13",
+      "updatedDate": "2026-02-01T12:30:23",
+      "owner": "Joel Harris",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2602.6,
+      "description": "Star free with training save officer work until."
+    },
+    {
+      "id": "41817d47-c50e-4738-89bf-c0803877ef25",
+      "name": "Object-based 6thgeneration definition 25",
+      "status": "Active",
+      "createdDate": "2025-12-10T22:50:38",
+      "updatedDate": "2026-01-29T20:32:08",
+      "owner": "Rebecca Pena",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2059.44,
+      "description": "Happy agency chance accept future several."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-kycdocument",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 893,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "42e93ae4-d0af-48e5-8567-061c674aae45",
+      "name": "Switchable directional initiative 1",
+      "status": "Pending",
+      "createdDate": "2026-01-10T06:42:49",
+      "updatedDate": "2026-01-19T17:24:25",
+      "owner": "Paula Williams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7151.88,
+      "description": "Nice board statement vote seat second."
+    },
+    {
+      "id": "74b5465c-ca5f-48aa-ba6d-678e06407427",
+      "name": "Up-sized content-based benchmark 2",
+      "status": "Inactive",
+      "createdDate": "2025-06-30T19:15:23",
+      "updatedDate": "2026-02-03T10:17:57",
+      "owner": "Robert Jimenez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 241.06,
+      "description": "Hand really sport allow save I last."
+    },
+    {
+      "id": "d39232cf-d291-444c-9f6c-7e25633ba49f",
+      "name": "Face-to-face responsive monitoring 3",
+      "status": "Inactive",
+      "createdDate": "2025-09-18T03:53:43",
+      "updatedDate": "2026-02-15T10:51:47",
+      "owner": "Michael Sawyer",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1826.19,
+      "description": "Describe nor network pick personal line car."
+    },
+    {
+      "id": "f30f46e4-495e-420f-a2b7-fa349dff9b75",
+      "name": "Streamlined disintermediate access 4",
+      "status": "Active",
+      "createdDate": "2025-09-06T08:43:31",
+      "updatedDate": "2026-01-29T09:52:22",
+      "owner": "Jonathan Collins",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5563.83,
+      "description": "Buy growth decide current receive history decade."
+    },
+    {
+      "id": "025334ec-d29f-4b12-95cd-bcc062cecc9e",
+      "name": "Innovative executive access 5",
+      "status": "Pending",
+      "createdDate": "2025-06-23T05:55:16",
+      "updatedDate": "2026-02-11T20:58:16",
+      "owner": "Joshua Weiss",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9000.58,
+      "description": "Everything seem total marriage here that blood."
+    },
+    {
+      "id": "7f386b4a-108b-4277-9a9b-c516b9a0733a",
+      "name": "Multi-tiered scalable adapter 6",
+      "status": "Pending",
+      "createdDate": "2025-03-10T03:17:39",
+      "updatedDate": "2026-02-07T20:00:49",
+      "owner": "Michael Ray",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7904.34,
+      "description": "Yet maintain while billion commercial idea head talk."
+    },
+    {
+      "id": "648f6290-9a0c-4ec3-960a-7b0b3a1c192c",
+      "name": "Sharable multimedia ability 7",
+      "status": "Inactive",
+      "createdDate": "2025-10-15T23:50:58",
+      "updatedDate": "2026-02-02T15:20:26",
+      "owner": "Margaret Morris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8401.38,
+      "description": "Song forward information activity practice."
+    },
+    {
+      "id": "8522ae90-e7e9-48e1-b46a-53f11df52588",
+      "name": "Organic interactive knowledgebase 8",
+      "status": "Active",
+      "createdDate": "2025-02-25T01:18:22",
+      "updatedDate": "2026-02-17T02:41:59",
+      "owner": "Eric Acosta",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3257.19,
+      "description": "Drive American expect economy attention letter follow."
+    },
+    {
+      "id": "db5dec56-2f53-4400-a67b-b2d561a11cbc",
+      "name": "Synchronized logistical utilization 9",
+      "status": "Active",
+      "createdDate": "2026-02-10T06:58:04",
+      "updatedDate": "2026-02-12T21:56:04",
+      "owner": "Ashley Morales",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9007.74,
+      "description": "Study respond nor meeting short never."
+    },
+    {
+      "id": "9a61c2c1-8190-457c-82f5-97fb4a2d565d",
+      "name": "Ergonomic demand-driven policy 10",
+      "status": "Inactive",
+      "createdDate": "2025-05-04T08:07:58",
+      "updatedDate": "2026-02-01T23:53:23",
+      "owner": "Kristin Terry",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2171.08,
+      "description": "Care although hotel if again."
+    },
+    {
+      "id": "7ce5f9ba-0fd4-4cc6-b314-5e05956ce0d2",
+      "name": "Sharable incremental throughput 11",
+      "status": "Completed",
+      "createdDate": "2025-09-30T00:50:10",
+      "updatedDate": "2026-01-25T07:30:03",
+      "owner": "Allison Valenzuela",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7166.25,
+      "description": "Light painting tree late."
+    },
+    {
+      "id": "8e1e9125-b496-4de5-8ec9-3859ed81fdfa",
+      "name": "Profound intangible database 12",
+      "status": "Active",
+      "createdDate": "2025-07-07T09:18:17",
+      "updatedDate": "2026-02-16T12:06:08",
+      "owner": "Daniel Payne",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5193.94,
+      "description": "Lose score teacher modern term difference more."
+    },
+    {
+      "id": "6663c347-e892-4c6e-b34c-a45a23c5e63c",
+      "name": "Multi-tiered bandwidth-monitored info-mediaries 13",
+      "status": "Pending",
+      "createdDate": "2025-08-26T07:47:23",
+      "updatedDate": "2026-02-04T10:01:30",
+      "owner": "Nicholas Kim",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5659.36,
+      "description": "Office state certainly rate science Congress election."
+    },
+    {
+      "id": "f6cd2e05-d43b-4d2f-8b88-56668e24fb06",
+      "name": "Upgradable well-modulated success 14",
+      "status": "Active",
+      "createdDate": "2025-07-16T07:47:50",
+      "updatedDate": "2026-01-29T09:28:47",
+      "owner": "Krista Burke",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6754.66,
+      "description": "Car myself growth worker when."
+    },
+    {
+      "id": "b48579af-187d-4a14-be98-c45722a15dad",
+      "name": "Cloned systematic implementation 15",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T21:19:19",
+      "updatedDate": "2026-01-26T17:30:04",
+      "owner": "Devon Hardy",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4737.65,
+      "description": "Job quite source these agree artist garden."
+    },
+    {
+      "id": "c16894f7-fbce-462e-a06f-82d6f65a4aed",
+      "name": "Diverse 3rdgeneration matrix 16",
+      "status": "Completed",
+      "createdDate": "2026-01-31T10:59:46",
+      "updatedDate": "2026-02-08T19:34:08",
+      "owner": "Alexander Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5891.38,
+      "description": "Phone deal wear hold."
+    },
+    {
+      "id": "87b5107c-ed82-42d3-a4ef-fff60217769c",
+      "name": "Phased secondary encryption 17",
+      "status": "Active",
+      "createdDate": "2025-09-24T20:47:38",
+      "updatedDate": "2026-02-14T23:09:00",
+      "owner": "Joshua Flores",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6783.11,
+      "description": "Culture half suddenly ok reflect spring."
+    },
+    {
+      "id": "b714281c-e9f1-487c-9bd6-72607efc7727",
+      "name": "Customizable object-oriented open architecture 18",
+      "status": "Inactive",
+      "createdDate": "2025-12-09T19:01:32",
+      "updatedDate": "2026-01-23T12:32:06",
+      "owner": "Jessica Wagner",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4236.14,
+      "description": "Win guy gas."
+    },
+    {
+      "id": "ce857f19-9391-41f2-9ee2-959516e7051c",
+      "name": "Adaptive intermediate knowledge user 19",
+      "status": "Active",
+      "createdDate": "2026-01-31T16:07:34",
+      "updatedDate": "2026-02-04T14:32:51",
+      "owner": "Sarah Kim",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7425.84,
+      "description": "Them look piece husband."
+    },
+    {
+      "id": "66701b6d-01e9-4801-9fd8-546cea6b487e",
+      "name": "Quality-focused didactic synergy 20",
+      "status": "Inactive",
+      "createdDate": "2026-01-28T21:12:14",
+      "updatedDate": "2026-02-11T21:42:08",
+      "owner": "Joseph Gonzalez DDS",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8352.9,
+      "description": "Usually modern job how."
+    },
+    {
+      "id": "d5f3a73b-fa96-4efc-bb2f-dbde6847d6c5",
+      "name": "Virtual human-resource system engine 21",
+      "status": "Pending",
+      "createdDate": "2026-01-11T19:03:44",
+      "updatedDate": "2026-02-11T08:40:44",
+      "owner": "Michael Martinez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6319.05,
+      "description": "Onto positive policy animal."
+    },
+    {
+      "id": "b2d8c42d-6a2b-4cdf-972a-043facebcc7f",
+      "name": "Face-to-face 24hour customer loyalty 22",
+      "status": "Completed",
+      "createdDate": "2025-11-01T22:20:17",
+      "updatedDate": "2026-02-03T13:35:24",
+      "owner": "Erin Edwards",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7798.8,
+      "description": "North begin believe wall compare fund game."
+    },
+    {
+      "id": "41823e2f-8598-4c7c-a9bb-75c1359284e0",
+      "name": "Adaptive national open architecture 23",
+      "status": "Inactive",
+      "createdDate": "2026-02-12T08:05:58",
+      "updatedDate": "2026-02-06T05:21:39",
+      "owner": "Tyler Evans",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5574.0,
+      "description": "Foot between air food."
+    },
+    {
+      "id": "45b0a566-78f2-4354-890c-90c8b51715c2",
+      "name": "Proactive optimizing concept 24",
+      "status": "Inactive",
+      "createdDate": "2025-06-20T16:28:53",
+      "updatedDate": "2026-02-01T15:25:29",
+      "owner": "Stephen Jimenez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4448.24,
+      "description": "Material suddenly property let Democrat experience bar."
+    },
+    {
+      "id": "0f680cb3-5768-436b-b045-d5f04b8d8e5d",
+      "name": "Balanced asynchronous extranet 25",
+      "status": "Inactive",
+      "createdDate": "2025-07-17T05:47:26",
+      "updatedDate": "2026-01-19T17:21:12",
+      "owner": "Natalie White",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1330.45,
+      "description": "Same clearly old be scientist thousand."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

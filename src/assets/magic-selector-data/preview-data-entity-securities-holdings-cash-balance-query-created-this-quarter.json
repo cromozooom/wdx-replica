@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-security",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 740,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "86c4112e-6fb0-4139-b85e-59ec295d4568",
+      "name": "Cross-group mission-critical contingency 1",
+      "status": "Completed",
+      "createdDate": "2025-08-27T23:31:44",
+      "updatedDate": "2026-02-11T11:32:39",
+      "owner": "Brandy Ross",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7698.61,
+      "description": "Human newspaper computer my model security."
+    },
+    {
+      "id": "fed288b9-f340-4147-8551-7925f3ba2d7c",
+      "name": "Grass-roots bifurcated alliance 2",
+      "status": "Inactive",
+      "createdDate": "2025-07-14T02:56:33",
+      "updatedDate": "2026-02-14T21:00:50",
+      "owner": "Courtney Nguyen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5004.61,
+      "description": "Area himself move among."
+    },
+    {
+      "id": "11951589-89da-4ee9-b3af-142da793fa26",
+      "name": "Team-oriented directional conglomeration 3",
+      "status": "Pending",
+      "createdDate": "2025-06-07T14:00:02",
+      "updatedDate": "2026-02-09T02:29:13",
+      "owner": "Nichole Patterson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4362.39,
+      "description": "Beyond apply evening author particularly."
+    },
+    {
+      "id": "e062894d-2d96-476c-9448-baa86a1db56f",
+      "name": "Face-to-face uniform Graphic Interface 4",
+      "status": "Inactive",
+      "createdDate": "2025-04-02T10:58:52",
+      "updatedDate": "2026-02-03T18:00:03",
+      "owner": "Neil Reynolds",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2910.66,
+      "description": "Either authority people six crime."
+    },
+    {
+      "id": "b60ede3c-93ef-4ab3-9a0c-6b0f316131b8",
+      "name": "Fundamental methodical parallelism 5",
+      "status": "Completed",
+      "createdDate": "2025-02-19T14:38:11",
+      "updatedDate": "2026-02-11T03:52:29",
+      "owner": "Juan Kelly",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3164.4,
+      "description": "World make growth."
+    },
+    {
+      "id": "c5c62759-f552-4be5-9fcf-60c04462625a",
+      "name": "Ameliorated reciprocal emulation 6",
+      "status": "Completed",
+      "createdDate": "2025-11-18T14:55:08",
+      "updatedDate": "2026-01-20T15:00:40",
+      "owner": "Michelle Flores",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9972.91,
+      "description": "Politics collection with least at stuff middle."
+    },
+    {
+      "id": "88e2dd84-dcad-4950-817a-3eb9c2c47b5b",
+      "name": "Upgradable eco-centric focus group 7",
+      "status": "Inactive",
+      "createdDate": "2026-02-10T01:58:43",
+      "updatedDate": "2026-01-19T05:45:15",
+      "owner": "Meredith Parker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7434.47,
+      "description": "Against table nothing present arm recognize."
+    },
+    {
+      "id": "7132fb09-78d2-4133-bace-8039eef4c539",
+      "name": "Versatile actuating paradigm 8",
+      "status": "Pending",
+      "createdDate": "2025-05-16T22:01:39",
+      "updatedDate": "2026-01-21T09:03:13",
+      "owner": "Angela Figueroa",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4004.04,
+      "description": "Term different case they necessary message."
+    },
+    {
+      "id": "9a42a028-6acb-4b25-b983-5c5d06566116",
+      "name": "Reduced analyzing data-warehouse 9",
+      "status": "Inactive",
+      "createdDate": "2025-12-24T01:24:20",
+      "updatedDate": "2026-02-15T01:14:20",
+      "owner": "Karl Wise",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2346.5,
+      "description": "White need program best best Republican lose trip."
+    },
+    {
+      "id": "47c42fb0-9e12-4dcd-92a0-8c3dfee889b3",
+      "name": "Seamless discrete project 10",
+      "status": "Pending",
+      "createdDate": "2025-10-26T15:10:41",
+      "updatedDate": "2026-02-17T06:06:03",
+      "owner": "Matthew Strickland",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4253.81,
+      "description": "So from require drop."
+    },
+    {
+      "id": "6e7a20ed-7651-44d7-b4f6-76d86532f31c",
+      "name": "Progressive 3rdgeneration leverage 11",
+      "status": "Inactive",
+      "createdDate": "2025-08-08T04:35:54",
+      "updatedDate": "2026-01-24T13:57:36",
+      "owner": "Karen Bell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 461.16,
+      "description": "Ever Mr oil."
+    },
+    {
+      "id": "05a74d2f-6ffa-4ebe-bcda-9e5bdc2e1286",
+      "name": "Streamlined real-time productivity 12",
+      "status": "Active",
+      "createdDate": "2026-02-04T13:19:02",
+      "updatedDate": "2026-02-12T16:14:17",
+      "owner": "Derrick English",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5247.48,
+      "description": "Piece similar every call policy film."
+    },
+    {
+      "id": "1ff984a6-85f9-4834-9928-af340cf5d0b6",
+      "name": "Secured clear-thinking architecture 13",
+      "status": "Inactive",
+      "createdDate": "2025-09-03T07:18:51",
+      "updatedDate": "2026-02-10T04:30:03",
+      "owner": "Courtney Williams",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6466.48,
+      "description": "Kid also save baby especially."
+    },
+    {
+      "id": "c2dd1154-f770-4c90-9745-f6d73e847b4e",
+      "name": "Virtual upward-trending collaboration 14",
+      "status": "Completed",
+      "createdDate": "2025-12-20T06:39:14",
+      "updatedDate": "2026-02-10T19:15:26",
+      "owner": "Juan Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3399.53,
+      "description": "Ok forward imagine trip town health."
+    },
+    {
+      "id": "179178ca-a4d2-44e3-9a55-96b559520d02",
+      "name": "Organized actuating leverage 15",
+      "status": "Inactive",
+      "createdDate": "2025-10-22T10:32:49",
+      "updatedDate": "2026-02-15T16:21:13",
+      "owner": "Kari Hawkins",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9325.0,
+      "description": "Business could level front Mr most."
+    },
+    {
+      "id": "cc13f82f-7bcf-4c81-99bf-7a5f5568926a",
+      "name": "Mandatory fault-tolerant knowledge user 16",
+      "status": "Pending",
+      "createdDate": "2025-08-25T06:13:05",
+      "updatedDate": "2026-01-26T09:29:51",
+      "owner": "Ashley Bennett",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 524.29,
+      "description": "Grow other drive me."
+    },
+    {
+      "id": "7ac0fd02-60f1-40ff-8bb5-32f96820aaae",
+      "name": "Streamlined hybrid help-desk 17",
+      "status": "Active",
+      "createdDate": "2025-03-30T21:16:06",
+      "updatedDate": "2026-02-16T19:56:05",
+      "owner": "James Hess",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6726.0,
+      "description": "History perform experience fight new occur scientist."
+    },
+    {
+      "id": "cdece961-8f15-4656-aad2-945ddea75aa0",
+      "name": "Public-key intermediate adapter 18",
+      "status": "Completed",
+      "createdDate": "2025-04-28T05:02:26",
+      "updatedDate": "2026-01-28T17:36:51",
+      "owner": "Kristina Patrick",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8152.88,
+      "description": "Back free prepare general if."
+    },
+    {
+      "id": "3a596b2b-8a57-4ffb-825d-5b6672cf4077",
+      "name": "Robust maximized moratorium 19",
+      "status": "Pending",
+      "createdDate": "2025-10-10T03:14:47",
+      "updatedDate": "2026-01-30T12:36:44",
+      "owner": "Jacqueline Norman",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5596.17,
+      "description": "Gun return federal participant."
+    },
+    {
+      "id": "ce432ce4-4e1b-4198-9c47-731b4cf666f2",
+      "name": "Stand-alone scalable moderator 20",
+      "status": "Completed",
+      "createdDate": "2025-04-15T06:31:03",
+      "updatedDate": "2026-02-13T10:29:15",
+      "owner": "Brent Stokes",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1212.57,
+      "description": "Field deep police right."
+    },
+    {
+      "id": "b7211f3b-adc5-4440-8ba3-a5de8d7c84af",
+      "name": "Automated exuding Graphic Interface 21",
+      "status": "Completed",
+      "createdDate": "2025-04-09T11:34:26",
+      "updatedDate": "2026-01-25T02:48:12",
+      "owner": "Gary Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5451.75,
+      "description": "Region first quickly consider we information nothing box."
+    },
+    {
+      "id": "51fcbb58-e436-4369-abd0-e6a686f7ec58",
+      "name": "Up-sized foreground neural-net 22",
+      "status": "Completed",
+      "createdDate": "2025-08-18T03:47:50",
+      "updatedDate": "2026-01-30T20:45:15",
+      "owner": "Karen Baker",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 515.48,
+      "description": "Month moment reduce television senior education."
+    },
+    {
+      "id": "411beee1-c1af-480e-8dcd-c95857013f71",
+      "name": "Inverse background parallelism 23",
+      "status": "Pending",
+      "createdDate": "2026-01-16T01:17:37",
+      "updatedDate": "2026-02-12T01:47:05",
+      "owner": "Ryan Hicks",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3802.77,
+      "description": "Eat customer local cause fire minute whatever item."
+    },
+    {
+      "id": "13417d91-b0bd-47ca-a348-eb0e51fd03b8",
+      "name": "Expanded logistical service-desk 24",
+      "status": "Inactive",
+      "createdDate": "2025-11-25T20:09:14",
+      "updatedDate": "2026-02-05T04:39:42",
+      "owner": "Patricia Howard",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8134.61,
+      "description": "Maybe create federal people tough."
+    },
+    {
+      "id": "3b352f31-db3d-4192-a1a7-0c6c8d869511",
+      "name": "De-engineered empowering success 25",
+      "status": "Pending",
+      "createdDate": "2025-09-12T22:27:32",
+      "updatedDate": "2026-02-01T11:52:48",
+      "owner": "Jeanne Hull",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7694.49,
+      "description": "Understand lose food put change just figure."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

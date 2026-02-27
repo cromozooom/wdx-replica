@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-active-only",
+  "totalCount": 664,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "51f805ba-365e-4422-b833-7d14af8c66c6",
+      "name": "Profound even-keeled challenge 1",
+      "status": "Inactive",
+      "createdDate": "2025-07-11T02:32:59",
+      "updatedDate": "2026-02-02T12:35:10",
+      "owner": "Travis Chavez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1698.46,
+      "description": "Term mention series."
+    },
+    {
+      "id": "85766b6c-3a44-47e3-922a-0e6fcb1ea61f",
+      "name": "Intuitive bi-directional intranet 2",
+      "status": "Inactive",
+      "createdDate": "2025-11-01T21:04:04",
+      "updatedDate": "2026-02-03T07:38:42",
+      "owner": "Shannon Stout",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 931.16,
+      "description": "Officer audience remember style third whole."
+    },
+    {
+      "id": "cb15b5a8-a1ec-4af7-8b30-fa136d61ef52",
+      "name": "Inverse client-server protocol 3",
+      "status": "Inactive",
+      "createdDate": "2025-03-29T03:05:04",
+      "updatedDate": "2026-02-01T09:27:41",
+      "owner": "Karen Evans",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 778.98,
+      "description": "Memory billion meet where author factor enough."
+    },
+    {
+      "id": "217fa072-a5f4-463b-a3dd-913c29f6ff8d",
+      "name": "Extended bandwidth-monitored product 4",
+      "status": "Active",
+      "createdDate": "2025-06-20T16:01:31",
+      "updatedDate": "2026-02-14T23:47:39",
+      "owner": "Travis Oliver",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6271.15,
+      "description": "Administration husband agree."
+    },
+    {
+      "id": "b843ca5b-d3b8-4719-a0e2-7bf8a6b7f59f",
+      "name": "Optimized intangible open architecture 5",
+      "status": "Pending",
+      "createdDate": "2025-06-11T12:48:43",
+      "updatedDate": "2026-02-11T14:46:32",
+      "owner": "Katherine Mathis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8050.89,
+      "description": "Wear clearly relate bad Congress my me."
+    },
+    {
+      "id": "32addd2a-4164-4720-b891-689c3a8e2c2f",
+      "name": "Quality-focused composite firmware 6",
+      "status": "Completed",
+      "createdDate": "2025-10-29T10:23:20",
+      "updatedDate": "2026-02-07T12:15:21",
+      "owner": "Sandra Price",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8974.01,
+      "description": "Character room carry modern possible."
+    },
+    {
+      "id": "f6a4ddb0-6cca-4abd-a687-70431e655837",
+      "name": "Adaptive context-sensitive Graphic Interface 7",
+      "status": "Pending",
+      "createdDate": "2025-12-27T04:42:47",
+      "updatedDate": "2026-01-22T03:28:12",
+      "owner": "Thomas Benton",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4972.01,
+      "description": "Main practice idea next hot."
+    },
+    {
+      "id": "5024045a-44d9-4b63-87e5-07064803b1e1",
+      "name": "Polarized coherent methodology 8",
+      "status": "Active",
+      "createdDate": "2025-08-21T12:10:39",
+      "updatedDate": "2026-02-07T05:53:59",
+      "owner": "Mary May",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3889.8,
+      "description": "We help both today often full teacher."
+    },
+    {
+      "id": "ebd2db4a-e0f5-4508-9759-7c247578c1b3",
+      "name": "Re-engineered coherent neural-net 9",
+      "status": "Pending",
+      "createdDate": "2025-08-23T08:58:18",
+      "updatedDate": "2026-02-11T01:36:01",
+      "owner": "Seth Olson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1212.39,
+      "description": "Month heavy natural bit."
+    },
+    {
+      "id": "a1cef70b-6339-4ae9-ba1b-1fb38e2d006f",
+      "name": "Face-to-face eco-centric parallelism 10",
+      "status": "Pending",
+      "createdDate": "2025-11-12T07:05:00",
+      "updatedDate": "2026-01-23T01:20:48",
+      "owner": "Andrew Torres",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4103.74,
+      "description": "Safe human seek he."
+    },
+    {
+      "id": "4e8db98b-68ec-46a6-91bd-bc09cc3b1e2c",
+      "name": "Open-architected multimedia implementation 11",
+      "status": "Pending",
+      "createdDate": "2025-12-13T09:18:03",
+      "updatedDate": "2026-02-15T01:39:26",
+      "owner": "Amber Griffin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6056.33,
+      "description": "Bill fact help team."
+    },
+    {
+      "id": "1061ba97-a56c-4097-a659-a7b5bf6d32c2",
+      "name": "Enterprise-wide executive encryption 12",
+      "status": "Active",
+      "createdDate": "2026-02-02T05:53:21",
+      "updatedDate": "2026-01-20T02:11:50",
+      "owner": "Jason Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9561.32,
+      "description": "Seek recently deal security."
+    },
+    {
+      "id": "956e8d9b-0940-4dba-8ed0-4e15f17c8916",
+      "name": "Versatile solution-oriented budgetary management 13",
+      "status": "Inactive",
+      "createdDate": "2025-06-19T17:23:12",
+      "updatedDate": "2026-02-09T06:25:02",
+      "owner": "Rachel Miller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7765.32,
+      "description": "Development happen will nature avoid."
+    },
+    {
+      "id": "136a0f6d-3428-4804-9123-28f2f1608593",
+      "name": "Reduced hybrid success 14",
+      "status": "Completed",
+      "createdDate": "2025-07-05T15:53:53",
+      "updatedDate": "2026-01-26T22:05:33",
+      "owner": "Matthew Baker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8564.77,
+      "description": "Billion southern continue your."
+    },
+    {
+      "id": "31f7836e-6b50-4db9-aefc-5429e0c71cdc",
+      "name": "Phased reciprocal encryption 15",
+      "status": "Pending",
+      "createdDate": "2026-01-30T19:02:26",
+      "updatedDate": "2026-01-19T02:43:17",
+      "owner": "Christina King",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3585.28,
+      "description": "Car book worker start."
+    },
+    {
+      "id": "aa7f3d02-d42f-47b3-9095-a13a27b4f662",
+      "name": "Self-enabling value-added artificial intelligence 16",
+      "status": "Active",
+      "createdDate": "2025-05-10T13:39:48",
+      "updatedDate": "2026-01-23T13:21:31",
+      "owner": "Christina Harrington",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2255.7,
+      "description": "Admit memory white ball wonder reduce no."
+    },
+    {
+      "id": "30f5e617-6e17-41de-ac0e-4f5b4ed7359f",
+      "name": "Up-sized fresh-thinking archive 17",
+      "status": "Pending",
+      "createdDate": "2025-06-24T20:41:21",
+      "updatedDate": "2026-01-29T07:35:20",
+      "owner": "Joshua Morales",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9403.35,
+      "description": "Arm whatever relationship he around factor help."
+    },
+    {
+      "id": "559f2ea1-0ea1-462d-bbf3-2bfa6c409246",
+      "name": "User-centric well-modulated concept 18",
+      "status": "Inactive",
+      "createdDate": "2025-11-02T06:39:08",
+      "updatedDate": "2026-01-25T11:58:37",
+      "owner": "Elaine Murray",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6003.37,
+      "description": "Phone glass race attorney against hour loss."
+    },
+    {
+      "id": "356d33d7-99ed-403d-b1c5-8e46752b68d4",
+      "name": "Quality-focused dedicated matrices 19",
+      "status": "Inactive",
+      "createdDate": "2026-02-14T08:08:40",
+      "updatedDate": "2026-01-24T03:39:04",
+      "owner": "Scott Simon",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5064.09,
+      "description": "Big public fall gas of section least."
+    },
+    {
+      "id": "f822db10-2ad9-4aaf-820d-b99946293e20",
+      "name": "Reactive composite definition 20",
+      "status": "Pending",
+      "createdDate": "2025-02-23T15:55:48",
+      "updatedDate": "2026-02-01T03:11:14",
+      "owner": "Alexandra Johnson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9679.85,
+      "description": "Research doctor color."
+    },
+    {
+      "id": "872e890a-0f6b-42d5-9d03-ef9fd61eabd1",
+      "name": "Front-line regional utilization 21",
+      "status": "Completed",
+      "createdDate": "2025-12-06T06:04:39",
+      "updatedDate": "2026-01-25T02:08:47",
+      "owner": "Andrew Rodriguez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8454.17,
+      "description": "With west occur hope seven economy grow."
+    },
+    {
+      "id": "df0a125d-89cb-4090-beac-a8b2f9a473d3",
+      "name": "Re-engineered real-time middleware 22",
+      "status": "Active",
+      "createdDate": "2025-07-22T04:46:24",
+      "updatedDate": "2026-01-26T00:55:31",
+      "owner": "Dakota Padilla",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8115.94,
+      "description": "Although trade girl little as direction discuss than."
+    },
+    {
+      "id": "0ae9dd0e-1ca3-439b-9eb0-43afeaa6a797",
+      "name": "Visionary bandwidth-monitored help-desk 23",
+      "status": "Completed",
+      "createdDate": "2026-01-06T23:31:13",
+      "updatedDate": "2026-02-11T13:09:13",
+      "owner": "Erik Cisneros",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1844.56,
+      "description": "Trip seven voice government edge already."
+    },
+    {
+      "id": "dfe3db18-5c06-4d46-a322-285abed6ab24",
+      "name": "Cross-platform cohesive interface 24",
+      "status": "Pending",
+      "createdDate": "2025-05-26T09:19:35",
+      "updatedDate": "2026-01-28T19:55:19",
+      "owner": "John Clark",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 601.87,
+      "description": "Ago put agreement north."
+    },
+    {
+      "id": "9c7db68b-4753-4a61-a570-6c987db35a01",
+      "name": "Distributed needs-based throughput 25",
+      "status": "Active",
+      "createdDate": "2025-05-01T13:20:09",
+      "updatedDate": "2026-01-26T03:23:17",
+      "owner": "Lisa Rhodes",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4923.94,
+      "description": "Central avoid environmental house."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

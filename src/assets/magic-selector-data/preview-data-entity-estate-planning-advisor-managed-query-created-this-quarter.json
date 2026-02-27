@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 93,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "fa74a8a2-32a1-41eb-bad2-40dcefcbe173",
+      "name": "Innovative dedicated synergy 1",
+      "status": "Active",
+      "createdDate": "2025-08-13T13:21:48",
+      "updatedDate": "2026-01-24T19:25:10",
+      "owner": "Donald Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5011.57,
+      "description": "If develop way positive piece support."
+    },
+    {
+      "id": "c5c9373c-2be1-46c0-8e85-0ccc41a96dc1",
+      "name": "Enterprise-wide global forecast 2",
+      "status": "Completed",
+      "createdDate": "2025-09-28T18:07:51",
+      "updatedDate": "2026-01-31T10:18:58",
+      "owner": "Mr. Darren Bowman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7447.67,
+      "description": "Yet training spring already field director."
+    },
+    {
+      "id": "a8c8c5d4-8fb6-42d9-90a7-c926b942b4cd",
+      "name": "Ergonomic needs-based implementation 3",
+      "status": "Active",
+      "createdDate": "2025-03-08T21:24:07",
+      "updatedDate": "2026-02-12T15:38:40",
+      "owner": "Christine Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8790.97,
+      "description": "Child top site movie wife paper."
+    },
+    {
+      "id": "5f062284-e4f8-471c-8f97-200529cc6f9e",
+      "name": "Managed zero administration orchestration 4",
+      "status": "Inactive",
+      "createdDate": "2025-06-07T01:29:42",
+      "updatedDate": "2026-02-07T17:25:29",
+      "owner": "Alicia Hogan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8735.69,
+      "description": "Single exactly kind under."
+    },
+    {
+      "id": "0c1b3577-fb1e-4cb5-aec3-330f7164e690",
+      "name": "Re-contextualized incremental task-force 5",
+      "status": "Pending",
+      "createdDate": "2025-05-04T03:06:36",
+      "updatedDate": "2026-02-11T22:46:57",
+      "owner": "William Leach",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 871.58,
+      "description": "This meet ahead member."
+    },
+    {
+      "id": "49bace7d-c91f-4895-9bf9-d0ac6a98ce43",
+      "name": "Implemented empowering approach 6",
+      "status": "Completed",
+      "createdDate": "2025-04-13T13:29:11",
+      "updatedDate": "2026-02-14T04:40:13",
+      "owner": "Jessica Ryan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8188.33,
+      "description": "Responsibility direction science gas."
+    },
+    {
+      "id": "11b0ae70-6a67-4cdc-8dd5-31d6709b2925",
+      "name": "Focused systemic monitoring 7",
+      "status": "Inactive",
+      "createdDate": "2026-01-21T06:38:43",
+      "updatedDate": "2026-02-08T08:51:42",
+      "owner": "Dennis Morales",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7809.1,
+      "description": "Month recent allow possible."
+    },
+    {
+      "id": "fad89f76-53ac-4f76-b2a3-53550e9c15a4",
+      "name": "Streamlined bifurcated projection 8",
+      "status": "Inactive",
+      "createdDate": "2025-05-27T14:19:09",
+      "updatedDate": "2026-02-13T06:09:40",
+      "owner": "Shannon Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 280.06,
+      "description": "Product fly sign name positive assume stuff."
+    },
+    {
+      "id": "0472db64-dcec-449b-bb0e-0af8e04193c2",
+      "name": "Function-based 6thgeneration system engine 9",
+      "status": "Inactive",
+      "createdDate": "2025-06-17T01:07:59",
+      "updatedDate": "2026-01-19T19:09:31",
+      "owner": "Megan Carr",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6515.82,
+      "description": "Surface baby want degree."
+    },
+    {
+      "id": "5e9e6b1b-435c-4e06-ac82-b32c7f435edd",
+      "name": "Front-line non-volatile parallelism 10",
+      "status": "Active",
+      "createdDate": "2025-04-08T18:46:08",
+      "updatedDate": "2026-02-16T04:48:52",
+      "owner": "Ryan Baldwin PhD",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8899.6,
+      "description": "Yet low arrive suggest behavior."
+    },
+    {
+      "id": "71e13c78-fcef-4638-bbd5-6d3f45297873",
+      "name": "Self-enabling leadingedge collaboration 11",
+      "status": "Inactive",
+      "createdDate": "2025-05-26T01:44:21",
+      "updatedDate": "2026-02-15T11:21:15",
+      "owner": "Nicole Elliott",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6139.02,
+      "description": "Hand alone reality responsibility."
+    },
+    {
+      "id": "15b383ba-e73e-42e7-bac5-08774b8e8300",
+      "name": "Multi-layered multi-state interface 12",
+      "status": "Completed",
+      "createdDate": "2025-08-02T23:38:19",
+      "updatedDate": "2026-01-23T05:27:09",
+      "owner": "Edward Case",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2996.07,
+      "description": "Commercial social plant."
+    },
+    {
+      "id": "5e032e23-6da7-494b-acdf-332866c76e80",
+      "name": "Horizontal demand-driven artificial intelligence 13",
+      "status": "Completed",
+      "createdDate": "2025-06-10T15:37:32",
+      "updatedDate": "2026-01-26T08:58:31",
+      "owner": "Ann Richard",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5673.76,
+      "description": "Fast either whole around low."
+    },
+    {
+      "id": "9e22ff29-5664-43d7-8781-6bc573a0dd3c",
+      "name": "Ameliorated directional customer loyalty 14",
+      "status": "Pending",
+      "createdDate": "2025-07-16T23:23:31",
+      "updatedDate": "2026-02-01T05:32:59",
+      "owner": "Zachary Castillo",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8076.07,
+      "description": "Head reduce knowledge gas while personal much."
+    },
+    {
+      "id": "88f26985-af55-4726-86b3-acadb6878856",
+      "name": "Persistent high-level strategy 15",
+      "status": "Inactive",
+      "createdDate": "2025-04-26T09:30:19",
+      "updatedDate": "2026-02-16T15:29:58",
+      "owner": "George Gibson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2429.42,
+      "description": "Knowledge challenge reduce."
+    },
+    {
+      "id": "e77894fe-5ec5-446e-85bc-1b3f2f5dd804",
+      "name": "Adaptive human-resource productivity 16",
+      "status": "Completed",
+      "createdDate": "2025-05-28T10:26:16",
+      "updatedDate": "2026-02-07T16:26:51",
+      "owner": "Steven Sanchez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5925.4,
+      "description": "Kid experience bank energy age serve."
+    },
+    {
+      "id": "1ac6fd86-6cce-4584-8804-eda45ffba31a",
+      "name": "Mandatory non-volatile firmware 17",
+      "status": "Inactive",
+      "createdDate": "2025-12-31T05:32:15",
+      "updatedDate": "2026-01-31T20:57:18",
+      "owner": "Ashley Simmons",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9075.97,
+      "description": "Popular case kind evening else card fact."
+    },
+    {
+      "id": "c724aa16-6f4c-4c1b-b2dd-93b19be8ba33",
+      "name": "Synergistic regional circuit 18",
+      "status": "Completed",
+      "createdDate": "2026-02-16T06:41:09",
+      "updatedDate": "2026-02-08T02:22:24",
+      "owner": "Brian Morales",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1579.35,
+      "description": "Mention never individual color effect."
+    },
+    {
+      "id": "91fb559b-ad7b-420f-b66b-323c79130e5f",
+      "name": "Profit-focused multimedia algorithm 19",
+      "status": "Active",
+      "createdDate": "2026-02-07T13:14:50",
+      "updatedDate": "2026-01-30T11:29:54",
+      "owner": "Ricky Holmes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2655.77,
+      "description": "A light group."
+    },
+    {
+      "id": "ce91f5de-14f0-48b3-9e71-fbdc51fefff0",
+      "name": "Face-to-face multimedia paradigm 20",
+      "status": "Pending",
+      "createdDate": "2026-01-30T19:17:05",
+      "updatedDate": "2026-02-06T01:25:01",
+      "owner": "Kenneth Kirby",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1064.47,
+      "description": "Truth adult idea treatment hair seem."
+    },
+    {
+      "id": "73ca387c-7c4f-49f8-8c0f-31f8ce5b2cc0",
+      "name": "Organic executive interface 21",
+      "status": "Inactive",
+      "createdDate": "2025-09-23T00:56:50",
+      "updatedDate": "2026-02-16T00:16:20",
+      "owner": "Michelle Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6220.01,
+      "description": "Less light if hand."
+    },
+    {
+      "id": "1f720a3e-fc37-47ca-9ef1-b7dbc76944b6",
+      "name": "Expanded reciprocal support 22",
+      "status": "Completed",
+      "createdDate": "2025-12-09T20:27:51",
+      "updatedDate": "2026-02-04T05:41:00",
+      "owner": "Dean Garcia",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1649.18,
+      "description": "Among TV treat training charge nature nation."
+    },
+    {
+      "id": "fea46757-7d6a-4341-bb82-43d40e28f8d8",
+      "name": "Reduced zero tolerance infrastructure 23",
+      "status": "Pending",
+      "createdDate": "2025-03-28T05:40:05",
+      "updatedDate": "2026-01-23T09:50:40",
+      "owner": "Ashley Miller",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4793.43,
+      "description": "It company travel when adult thing."
+    },
+    {
+      "id": "4ff402da-05a8-4d30-a67a-0d13f05d069d",
+      "name": "Upgradable leadingedge Graphical User Interface 24",
+      "status": "Completed",
+      "createdDate": "2025-12-21T05:56:47",
+      "updatedDate": "2026-01-29T11:30:34",
+      "owner": "Carol Raymond",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 565.73,
+      "description": "Off interview particular very worker."
+    },
+    {
+      "id": "77a3a600-71b1-4830-bb00-b17c104fc05a",
+      "name": "Re-contextualized coherent concept 25",
+      "status": "Inactive",
+      "createdDate": "2025-03-15T18:05:45",
+      "updatedDate": "2026-01-23T04:15:19",
+      "owner": "Sarah Sherman",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8252.3,
+      "description": "Leave civil age eight today guy."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

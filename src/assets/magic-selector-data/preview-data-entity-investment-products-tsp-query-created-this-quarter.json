@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1097,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ec401f2c-f183-49c5-89bb-87eb55154f4a",
+      "name": "Synergized tertiary capability 1",
+      "status": "Inactive",
+      "createdDate": "2025-06-21T07:38:39",
+      "updatedDate": "2026-01-22T10:53:07",
+      "owner": "Matthew Martinez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1459.92,
+      "description": "Relationship professional laugh general charge style."
+    },
+    {
+      "id": "e1cebdc3-115b-427e-acef-386fdf695db1",
+      "name": "Up-sized bottom-line database 2",
+      "status": "Pending",
+      "createdDate": "2025-05-31T14:44:01",
+      "updatedDate": "2026-02-10T04:24:40",
+      "owner": "Dr. Stephanie Espinoza DVM",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6722.27,
+      "description": "Another decade pass both he writer space."
+    },
+    {
+      "id": "cea68fd4-631e-4a4c-ba6a-c60a7507dfe2",
+      "name": "Streamlined radical firmware 3",
+      "status": "Pending",
+      "createdDate": "2025-10-25T22:11:48",
+      "updatedDate": "2026-01-28T02:39:53",
+      "owner": "Sarah Munoz",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3270.16,
+      "description": "Research sea red group that development."
+    },
+    {
+      "id": "b4e04bdc-53a8-414d-9515-cdb87ce16671",
+      "name": "Multi-tiered exuding project 4",
+      "status": "Inactive",
+      "createdDate": "2025-12-09T12:27:16",
+      "updatedDate": "2026-01-28T19:15:19",
+      "owner": "Lee Vasquez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3553.68,
+      "description": "Easy answer lot argue."
+    },
+    {
+      "id": "aa5a3e49-694e-40d1-81b1-7b2f855e6b11",
+      "name": "Organized intermediate ability 5",
+      "status": "Completed",
+      "createdDate": "2025-06-21T07:05:10",
+      "updatedDate": "2026-02-09T02:31:04",
+      "owner": "Eddie Gaines",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5137.56,
+      "description": "Just thus group officer."
+    },
+    {
+      "id": "5cdb9741-7b1f-409e-aa33-3fcd367e4ac8",
+      "name": "Open-architected executive throughput 6",
+      "status": "Active",
+      "createdDate": "2025-11-19T10:38:30",
+      "updatedDate": "2026-02-14T21:33:09",
+      "owner": "Wendy Morris",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9567.38,
+      "description": "Building what nice alone."
+    },
+    {
+      "id": "521ba6a0-a94e-4889-a1f1-f3d2adadf27e",
+      "name": "Organized encompassing Graphic Interface 7",
+      "status": "Active",
+      "createdDate": "2025-06-20T08:21:21",
+      "updatedDate": "2026-01-24T07:29:43",
+      "owner": "Christopher Hill",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1050.63,
+      "description": "Thus wind like which environmental win bag."
+    },
+    {
+      "id": "6885202c-4c2e-4c87-bf9b-86522634dd58",
+      "name": "Face-to-face coherent adapter 8",
+      "status": "Pending",
+      "createdDate": "2025-12-29T06:15:20",
+      "updatedDate": "2026-01-23T12:02:04",
+      "owner": "Lori Torres",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1987.32,
+      "description": "Help organization a present story."
+    },
+    {
+      "id": "47618182-a7d0-4d1f-85f6-56df0eb702c6",
+      "name": "Networked hybrid application 9",
+      "status": "Active",
+      "createdDate": "2025-06-06T20:05:21",
+      "updatedDate": "2026-01-24T00:45:33",
+      "owner": "Jose Flores",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8885.38,
+      "description": "Call data friend man early hard next foreign."
+    },
+    {
+      "id": "c68e6d9f-8570-444f-bbf2-d9f54fac4341",
+      "name": "Up-sized holistic interface 10",
+      "status": "Inactive",
+      "createdDate": "2025-02-28T05:36:45",
+      "updatedDate": "2026-01-21T18:44:57",
+      "owner": "Dorothy House",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4071.1,
+      "description": "Organization subject reach message."
+    },
+    {
+      "id": "293c4880-9e27-4f9b-8e31-a65b7a30b18c",
+      "name": "User-centric executive moderator 11",
+      "status": "Pending",
+      "createdDate": "2025-12-21T08:42:06",
+      "updatedDate": "2026-02-16T14:42:11",
+      "owner": "Brandon Gonzales",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7125.22,
+      "description": "Trial quality pay rate money."
+    },
+    {
+      "id": "21d2f7cc-c188-4c2a-9114-6519866e3231",
+      "name": "Focused full-range projection 12",
+      "status": "Inactive",
+      "createdDate": "2025-08-22T10:53:28",
+      "updatedDate": "2026-02-12T14:06:50",
+      "owner": "Alexander Wyatt",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 181.14,
+      "description": "Peace system standard media trip necessary."
+    },
+    {
+      "id": "88474492-e9d5-4d6a-b631-dfca64a0a1c4",
+      "name": "Exclusive upward-trending access 13",
+      "status": "Inactive",
+      "createdDate": "2025-09-10T16:01:59",
+      "updatedDate": "2026-02-16T22:10:02",
+      "owner": "William Perez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1625.28,
+      "description": "Important focus rate time."
+    },
+    {
+      "id": "a0395de2-eaaa-4611-9b68-218c1e06b386",
+      "name": "Automated scalable benchmark 14",
+      "status": "Active",
+      "createdDate": "2025-05-22T19:00:47",
+      "updatedDate": "2026-02-15T21:52:33",
+      "owner": "Leslie Bailey",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4095.65,
+      "description": "Ago item own about he natural."
+    },
+    {
+      "id": "48279076-40d3-4e4f-8cf2-75f4f623ecb4",
+      "name": "Managed zero tolerance ability 15",
+      "status": "Active",
+      "createdDate": "2025-08-24T23:23:52",
+      "updatedDate": "2026-01-21T13:51:15",
+      "owner": "William Green",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1475.74,
+      "description": "Central report speech break."
+    },
+    {
+      "id": "69053aab-419f-4eec-ad21-715da2188afd",
+      "name": "Automated mission-critical knowledge user 16",
+      "status": "Active",
+      "createdDate": "2025-08-31T14:24:49",
+      "updatedDate": "2026-02-05T07:41:23",
+      "owner": "Richard Mahoney",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7578.67,
+      "description": "Focus skill late model story future."
+    },
+    {
+      "id": "13427743-cde4-48e5-9d99-42ecd7acca5b",
+      "name": "Sharable 6thgeneration extranet 17",
+      "status": "Inactive",
+      "createdDate": "2025-04-27T22:27:06",
+      "updatedDate": "2026-01-23T19:14:59",
+      "owner": "Daniel Durham",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9066.31,
+      "description": "And future couple me relate point."
+    },
+    {
+      "id": "a8d87570-1d4a-490d-a6c5-728b5587cefe",
+      "name": "User-friendly client-server moderator 18",
+      "status": "Inactive",
+      "createdDate": "2025-03-07T12:09:36",
+      "updatedDate": "2026-02-05T01:34:17",
+      "owner": "Justin Harris",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6344.91,
+      "description": "Raise consider sing."
+    },
+    {
+      "id": "557214be-6a18-4995-8f80-f4e3e5eae97e",
+      "name": "Robust secondary flexibility 19",
+      "status": "Inactive",
+      "createdDate": "2025-04-10T14:08:21",
+      "updatedDate": "2026-01-27T16:25:27",
+      "owner": "Jonathan Hernandez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1223.02,
+      "description": "Remember risk idea knowledge challenge someone standard."
+    },
+    {
+      "id": "2bc78e05-2518-4c49-8d4c-97f51bc4b4bd",
+      "name": "User-friendly directional definition 20",
+      "status": "Completed",
+      "createdDate": "2025-10-26T15:51:09",
+      "updatedDate": "2026-02-05T12:04:10",
+      "owner": "Michael Harris",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2302.53,
+      "description": "Approach represent little young indeed level."
+    },
+    {
+      "id": "9e2c8e52-fbbe-41d7-9713-f0fb533dd566",
+      "name": "Innovative coherent task-force 21",
+      "status": "Active",
+      "createdDate": "2025-03-03T16:44:40",
+      "updatedDate": "2026-02-06T15:35:35",
+      "owner": "Jimmy Marks",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2307.22,
+      "description": "Reality you let much example case."
+    },
+    {
+      "id": "61badbba-411e-4f11-ae68-1b55d9710e74",
+      "name": "Public-key encompassing interface 22",
+      "status": "Active",
+      "createdDate": "2025-06-13T10:13:11",
+      "updatedDate": "2026-01-20T04:31:00",
+      "owner": "David Burgess",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6092.43,
+      "description": "Fall attention husband value."
+    },
+    {
+      "id": "04874b48-73b9-4dbe-b724-62f8153cd7cf",
+      "name": "User-centric next generation analyzer 23",
+      "status": "Active",
+      "createdDate": "2026-02-02T03:24:59",
+      "updatedDate": "2026-02-06T08:33:10",
+      "owner": "Brian Ellis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5589.8,
+      "description": "Morning office personal occur."
+    },
+    {
+      "id": "8713866c-50e7-4fec-86ca-8fde34e0aae0",
+      "name": "Team-oriented zero tolerance matrix 24",
+      "status": "Completed",
+      "createdDate": "2025-07-28T18:54:22",
+      "updatedDate": "2026-01-28T16:53:12",
+      "owner": "Eric Olson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5800.65,
+      "description": "Blue much movement realize."
+    },
+    {
+      "id": "81f4d3fc-a236-4d18-99c0-691472f10e1a",
+      "name": "Vision-oriented human-resource firmware 25",
+      "status": "Inactive",
+      "createdDate": "2025-08-22T13:55:15",
+      "updatedDate": "2026-02-15T05:06:19",
+      "owner": "Jamie Mueller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3724.54,
+      "description": "Maintain nature them war."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

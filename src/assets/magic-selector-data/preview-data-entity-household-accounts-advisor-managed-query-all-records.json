@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-all-records",
+  "totalCount": 581,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "64542fdf-fc07-484c-b595-bd4eccaeed69",
+      "name": "Streamlined 4thgeneration product 1",
+      "status": "Completed",
+      "createdDate": "2025-08-02T08:10:50",
+      "updatedDate": "2026-02-09T04:20:10",
+      "owner": "Keith Velazquez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7510.1,
+      "description": "Until though sign."
+    },
+    {
+      "id": "968d39f2-8599-4d25-a8f5-6c5e8f26df54",
+      "name": "Universal foreground solution 2",
+      "status": "Pending",
+      "createdDate": "2025-10-03T14:26:54",
+      "updatedDate": "2026-02-06T13:17:25",
+      "owner": "Daniel Brooks",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1280.89,
+      "description": "Team film whom forward."
+    },
+    {
+      "id": "966cd3b3-529c-4220-a605-8fdef6a75876",
+      "name": "Focused modular attitude 3",
+      "status": "Active",
+      "createdDate": "2025-05-28T23:12:37",
+      "updatedDate": "2026-02-14T18:46:13",
+      "owner": "Maria Carter",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1200.79,
+      "description": "Set everybody training even find organization."
+    },
+    {
+      "id": "35f93d30-e4ff-4f46-823b-4d37608ab194",
+      "name": "User-friendly needs-based standardization 4",
+      "status": "Completed",
+      "createdDate": "2025-09-22T12:58:00",
+      "updatedDate": "2026-01-23T22:57:25",
+      "owner": "Robert Holloway",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7945.3,
+      "description": "Well success son four likely."
+    },
+    {
+      "id": "2c2b4aaa-6996-4eb2-9c07-499deab1acfc",
+      "name": "Business-focused dynamic methodology 5",
+      "status": "Completed",
+      "createdDate": "2025-07-01T13:21:45",
+      "updatedDate": "2026-01-20T18:50:05",
+      "owner": "Brandon Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2628.95,
+      "description": "Force improve main star whole same."
+    },
+    {
+      "id": "f10a0c8b-0a97-4274-a90a-602b8775333e",
+      "name": "Decentralized asymmetric ability 6",
+      "status": "Active",
+      "createdDate": "2025-10-31T15:32:11",
+      "updatedDate": "2026-02-07T22:21:29",
+      "owner": "Joseph Blackwell",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8101.3,
+      "description": "Short often tax choice ten enter."
+    },
+    {
+      "id": "52c56bf5-1e27-47f5-b220-b989506e37a6",
+      "name": "Multi-layered encompassing interface 7",
+      "status": "Completed",
+      "createdDate": "2025-03-17T20:22:46",
+      "updatedDate": "2026-02-05T23:14:48",
+      "owner": "Kathleen Mora",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7401.39,
+      "description": "Lay return PM light."
+    },
+    {
+      "id": "bbbaf668-a888-4e92-b1e6-1141363b07a8",
+      "name": "Vision-oriented user-facing process improvement 8",
+      "status": "Active",
+      "createdDate": "2025-09-14T22:19:00",
+      "updatedDate": "2026-01-27T17:20:06",
+      "owner": "Jamie Lester",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3821.87,
+      "description": "Job available money expect."
+    },
+    {
+      "id": "64a67b9c-acd6-4865-808a-62a9ca7af6ce",
+      "name": "Multi-lateral static flexibility 9",
+      "status": "Completed",
+      "createdDate": "2025-02-23T00:37:35",
+      "updatedDate": "2026-01-24T17:52:09",
+      "owner": "Jason Munoz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3233.31,
+      "description": "Remember life however."
+    },
+    {
+      "id": "a9909113-8370-48b9-a8ca-b824d799cbc4",
+      "name": "Horizontal demand-driven customer loyalty 10",
+      "status": "Completed",
+      "createdDate": "2025-06-19T09:09:20",
+      "updatedDate": "2026-01-22T21:33:10",
+      "owner": "Michael Hebert",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6289.65,
+      "description": "Bring entire office act treatment toward."
+    },
+    {
+      "id": "7656749c-5b29-4434-9507-9cdc863b3e99",
+      "name": "Compatible scalable conglomeration 11",
+      "status": "Inactive",
+      "createdDate": "2025-11-01T20:51:00",
+      "updatedDate": "2026-01-27T05:07:17",
+      "owner": "Jeremy Hudson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5546.52,
+      "description": "Could soldier business value individual strong area."
+    },
+    {
+      "id": "e8cdb9f3-bf6d-42b2-bbdc-4fc3567cd658",
+      "name": "Programmable tertiary algorithm 12",
+      "status": "Active",
+      "createdDate": "2025-05-15T18:19:43",
+      "updatedDate": "2026-01-19T17:55:30",
+      "owner": "Melissa Wilson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3375.84,
+      "description": "Method material forward."
+    },
+    {
+      "id": "5942de53-d040-4c74-a8d2-0d4186872281",
+      "name": "Visionary background contingency 13",
+      "status": "Active",
+      "createdDate": "2025-11-16T20:14:01",
+      "updatedDate": "2026-02-11T06:29:52",
+      "owner": "Michael Cherry",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6870.67,
+      "description": "Day million allow measure."
+    },
+    {
+      "id": "44d3b9e7-6e82-4416-8f0c-44caa1c7832b",
+      "name": "Open-architected demand-driven success 14",
+      "status": "Completed",
+      "createdDate": "2025-06-03T13:25:53",
+      "updatedDate": "2026-02-03T09:56:28",
+      "owner": "Wesley Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5701.69,
+      "description": "Camera reason prove agreement five course interesting."
+    },
+    {
+      "id": "503cde37-5a30-45ce-91dd-3f364ab8c868",
+      "name": "Visionary 6thgeneration project 15",
+      "status": "Completed",
+      "createdDate": "2025-10-28T13:24:52",
+      "updatedDate": "2026-01-20T12:37:00",
+      "owner": "Jessica Martin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6555.69,
+      "description": "Better follow building."
+    },
+    {
+      "id": "e71d1d7e-1421-4ba6-9ca2-3499379e15f6",
+      "name": "Right-sized hybrid Graphical User Interface 16",
+      "status": "Completed",
+      "createdDate": "2025-03-11T23:37:49",
+      "updatedDate": "2026-01-28T05:54:18",
+      "owner": "Megan Brown",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1643.19,
+      "description": "One point near travel she test."
+    },
+    {
+      "id": "79d83d06-af16-4bcd-be0f-0f6140b4844b",
+      "name": "Cross-group client-server task-force 17",
+      "status": "Inactive",
+      "createdDate": "2025-07-31T20:48:37",
+      "updatedDate": "2026-02-16T01:42:42",
+      "owner": "David Daugherty",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5715.66,
+      "description": "Reflect possible factor if performance make this player."
+    },
+    {
+      "id": "2d6b9b0d-5f23-41e4-8635-d198b86f02c6",
+      "name": "Object-based analyzing installation 18",
+      "status": "Active",
+      "createdDate": "2025-09-26T07:45:57",
+      "updatedDate": "2026-01-24T05:40:14",
+      "owner": "Debra Jacobson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 948.79,
+      "description": "About reason guess most."
+    },
+    {
+      "id": "05609c5f-41d6-4931-9886-909919211002",
+      "name": "Integrated client-server collaboration 19",
+      "status": "Active",
+      "createdDate": "2025-03-09T19:15:25",
+      "updatedDate": "2026-02-09T17:43:33",
+      "owner": "Amy Kim",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8846.82,
+      "description": "Mr usually before."
+    },
+    {
+      "id": "518c24f8-f804-4be8-b0a1-73c5aa4da498",
+      "name": "Devolved value-added monitoring 20",
+      "status": "Active",
+      "createdDate": "2025-08-08T01:02:40",
+      "updatedDate": "2026-02-01T07:39:17",
+      "owner": "Kristen Mclaughlin",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5956.73,
+      "description": "Position court financial foreign long state every."
+    },
+    {
+      "id": "2f8597c2-d88e-46b0-8835-0d8155bf2ba5",
+      "name": "Extended contextually-based hub 21",
+      "status": "Inactive",
+      "createdDate": "2026-01-31T15:20:20",
+      "updatedDate": "2026-02-15T10:18:55",
+      "owner": "Daniel Rodriguez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5031.36,
+      "description": "Keep central agreement guy cause turn population."
+    },
+    {
+      "id": "07afec54-dfcc-4e83-bd8f-e5bff46f23d6",
+      "name": "Implemented even-keeled intranet 22",
+      "status": "Active",
+      "createdDate": "2025-08-25T12:21:35",
+      "updatedDate": "2026-01-31T19:49:20",
+      "owner": "Kayla Davis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9364.77,
+      "description": "Me green today store story best school."
+    },
+    {
+      "id": "98514e87-4e4a-4f6f-8595-a2ae4e1adfe8",
+      "name": "Business-focused client-server framework 23",
+      "status": "Inactive",
+      "createdDate": "2026-02-15T06:27:05",
+      "updatedDate": "2026-01-25T12:45:03",
+      "owner": "Cameron Griffin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2998.57,
+      "description": "Product under possible finally question."
+    },
+    {
+      "id": "c3fccf3f-0952-4f9b-80ea-8d7a8f31534f",
+      "name": "Persistent methodical project 24",
+      "status": "Pending",
+      "createdDate": "2025-05-02T01:43:39",
+      "updatedDate": "2026-01-21T06:55:42",
+      "owner": "Jessica Jones",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4593.97,
+      "description": "Manage nature stuff street indicate story heavy."
+    },
+    {
+      "id": "bc516053-4d97-4272-b1e3-02b78aabc783",
+      "name": "Visionary content-based solution 25",
+      "status": "Active",
+      "createdDate": "2025-03-08T03:50:54",
+      "updatedDate": "2026-01-30T07:54:49",
+      "owner": "Anna Green",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4439.61,
+      "description": "Huge some available gun over recognize."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

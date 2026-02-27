@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 96,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "c933ae96-2966-4035-8810-88680e7d2d13",
+      "name": "Mandatory user-facing function 1",
+      "status": "Completed",
+      "createdDate": "2026-01-23T20:08:38",
+      "updatedDate": "2026-02-03T06:38:27",
+      "owner": "Joseph Baker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6891.21,
+      "description": "Laugh never west."
+    },
+    {
+      "id": "b63f8258-b518-4b20-9e75-d04952e15e45",
+      "name": "Persistent background success 2",
+      "status": "Completed",
+      "createdDate": "2025-10-04T21:14:06",
+      "updatedDate": "2026-01-29T23:20:53",
+      "owner": "Alyssa Howard",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4329.71,
+      "description": "Expert hundred military method."
+    },
+    {
+      "id": "eaa45a0d-908a-4cc6-a78a-9c94e02e3fd5",
+      "name": "Inverse optimal Internet solution 3",
+      "status": "Completed",
+      "createdDate": "2025-04-21T22:02:48",
+      "updatedDate": "2026-01-26T06:01:33",
+      "owner": "John Yates",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2693.46,
+      "description": "View option on necessary add order key."
+    },
+    {
+      "id": "358f6420-d625-4efd-8efa-6355458f096d",
+      "name": "Polarized tertiary open architecture 4",
+      "status": "Active",
+      "createdDate": "2025-09-29T10:06:42",
+      "updatedDate": "2026-01-22T17:41:02",
+      "owner": "Christina Tyler",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9389.22,
+      "description": "Store million economy purpose of sound."
+    },
+    {
+      "id": "c03b0f8d-d0a6-4791-b071-17d9978608ce",
+      "name": "Pre-emptive transitional synergy 5",
+      "status": "Completed",
+      "createdDate": "2025-10-21T16:22:57",
+      "updatedDate": "2026-02-08T18:11:48",
+      "owner": "Joseph Anderson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6516.4,
+      "description": "Avoid check relationship attention our alone."
+    },
+    {
+      "id": "57c437ab-bbd2-440d-9a28-ff866f6b8810",
+      "name": "Realigned zero administration artificial intelligence 6",
+      "status": "Inactive",
+      "createdDate": "2025-11-13T09:00:10",
+      "updatedDate": "2026-01-22T23:25:46",
+      "owner": "Amy Thompson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1689.14,
+      "description": "At defense month perhaps home focus enough."
+    },
+    {
+      "id": "c66119ee-b336-4551-b4be-99cd00d81a72",
+      "name": "Public-key didactic superstructure 7",
+      "status": "Completed",
+      "createdDate": "2025-12-22T01:51:08",
+      "updatedDate": "2026-02-07T05:47:14",
+      "owner": "Jimmy Gomez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7423.34,
+      "description": "Husband response word choose foreign hour."
+    },
+    {
+      "id": "047d02cb-0250-4a12-806e-abce1499ba0d",
+      "name": "Exclusive bi-directional knowledge user 8",
+      "status": "Active",
+      "createdDate": "2025-04-28T02:14:19",
+      "updatedDate": "2026-02-13T15:32:01",
+      "owner": "Robert Bailey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3149.53,
+      "description": "Need lay time level voice indicate hospital cell."
+    },
+    {
+      "id": "cafa0158-f5b8-4533-8009-93820f16173b",
+      "name": "Future-proofed composite benchmark 9",
+      "status": "Completed",
+      "createdDate": "2025-02-20T00:22:31",
+      "updatedDate": "2026-02-16T18:57:47",
+      "owner": "Kelly Hansen",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2460.28,
+      "description": "Sing threat somebody defense outside entire mean win."
+    },
+    {
+      "id": "1dc8e187-98c1-489f-8648-457ce2a733a5",
+      "name": "Managed discrete software 10",
+      "status": "Pending",
+      "createdDate": "2025-09-24T03:53:55",
+      "updatedDate": "2026-01-24T06:08:52",
+      "owner": "David James",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7457.38,
+      "description": "Expect continue arm test someone apply second."
+    },
+    {
+      "id": "08289e0b-8627-425a-9885-79161eb0fb29",
+      "name": "User-centric demand-driven archive 11",
+      "status": "Inactive",
+      "createdDate": "2025-12-15T20:55:14",
+      "updatedDate": "2026-01-29T06:27:52",
+      "owner": "Ronald Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 476.75,
+      "description": "Seem black property many budget you art."
+    },
+    {
+      "id": "e6eb3b46-7a18-45a5-9c15-6b781340d972",
+      "name": "Reactive cohesive secured line 12",
+      "status": "Completed",
+      "createdDate": "2026-01-03T12:17:49",
+      "updatedDate": "2026-02-13T02:58:53",
+      "owner": "Crystal Berry",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1611.09,
+      "description": "Institution thing sport onto prove first play."
+    },
+    {
+      "id": "0bab7d75-afe8-4565-a989-4c0d52bc8c29",
+      "name": "De-engineered zero tolerance project 13",
+      "status": "Completed",
+      "createdDate": "2025-08-31T22:00:33",
+      "updatedDate": "2026-01-25T22:23:22",
+      "owner": "Tracy Fitzgerald",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8560.69,
+      "description": "Suddenly prove decide property."
+    },
+    {
+      "id": "925fd3ea-7dde-47ea-9c6d-3b9a165e998e",
+      "name": "Secured composite infrastructure 14",
+      "status": "Inactive",
+      "createdDate": "2025-04-09T15:38:47",
+      "updatedDate": "2026-02-06T13:19:42",
+      "owner": "Olivia James",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4789.12,
+      "description": "One lot a agency store service hear."
+    },
+    {
+      "id": "78b7b173-58e8-4e99-8271-200d6d7ef2e7",
+      "name": "Advanced zero administration encoding 15",
+      "status": "Inactive",
+      "createdDate": "2025-04-20T20:12:22",
+      "updatedDate": "2026-02-01T00:10:59",
+      "owner": "James Sanchez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4247.02,
+      "description": "Gas data right south today space."
+    },
+    {
+      "id": "993ce2c0-f18e-477a-beec-d870f7ad5945",
+      "name": "Organized bifurcated contingency 16",
+      "status": "Pending",
+      "createdDate": "2025-12-27T21:53:35",
+      "updatedDate": "2026-01-27T07:17:28",
+      "owner": "Deanna Garcia",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2484.27,
+      "description": "Discuss American fish remember."
+    },
+    {
+      "id": "5a8b3af6-e736-46ae-b7ef-b80cd7a8664b",
+      "name": "Automated empowering collaboration 17",
+      "status": "Inactive",
+      "createdDate": "2025-09-16T21:38:46",
+      "updatedDate": "2026-02-09T21:57:50",
+      "owner": "Michael Arnold",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7142.63,
+      "description": "Into bar need military picture involve."
+    },
+    {
+      "id": "c2dc2572-14e2-4451-9517-2e5505e64d28",
+      "name": "Devolved scalable middleware 18",
+      "status": "Completed",
+      "createdDate": "2026-02-10T03:54:38",
+      "updatedDate": "2026-02-08T00:13:01",
+      "owner": "Tony Newton",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3944.97,
+      "description": "Many college just attention."
+    },
+    {
+      "id": "6463bf4f-2593-4515-b0fb-e7eb0f72787d",
+      "name": "Customer-focused heuristic methodology 19",
+      "status": "Pending",
+      "createdDate": "2025-03-14T02:25:42",
+      "updatedDate": "2026-01-18T17:14:24",
+      "owner": "Samantha Robinson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5264.41,
+      "description": "Other major network cup project trip."
+    },
+    {
+      "id": "065cacfa-8276-4288-8008-68545e2a4ede",
+      "name": "Profit-focused systematic standardization 20",
+      "status": "Completed",
+      "createdDate": "2025-09-15T13:30:44",
+      "updatedDate": "2026-01-30T01:09:30",
+      "owner": "Ryan King",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2615.78,
+      "description": "Avoid commercial sound another able seven."
+    },
+    {
+      "id": "29ee65d9-79e7-4760-9f33-1837de2b8e6b",
+      "name": "Devolved context-sensitive standardization 21",
+      "status": "Completed",
+      "createdDate": "2025-05-13T06:39:07",
+      "updatedDate": "2026-02-12T14:55:06",
+      "owner": "Jennifer Harris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 288.93,
+      "description": "Personal idea group author."
+    },
+    {
+      "id": "8ce328a2-5fa8-4773-bc92-be3e92973896",
+      "name": "Enterprise-wide leadingedge Graphic Interface 22",
+      "status": "Completed",
+      "createdDate": "2025-03-13T01:06:31",
+      "updatedDate": "2026-02-08T06:10:43",
+      "owner": "Alisha Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7382.69,
+      "description": "Raise everybody fight save night."
+    },
+    {
+      "id": "44019bc9-659a-47ea-9dd0-310022107378",
+      "name": "Integrated empowering productivity 23",
+      "status": "Pending",
+      "createdDate": "2026-02-01T22:35:29",
+      "updatedDate": "2026-01-31T13:32:05",
+      "owner": "Mary Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1733.51,
+      "description": "Foreign southern involve perform."
+    },
+    {
+      "id": "6aa7ed81-6ed5-4b34-89f8-33cceeb755ec",
+      "name": "Reactive demand-driven infrastructure 24",
+      "status": "Completed",
+      "createdDate": "2025-05-02T02:24:27",
+      "updatedDate": "2026-01-19T05:28:48",
+      "owner": "Kenneth Taylor",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6600.34,
+      "description": "Produce Mrs nearly development treat war create game."
+    },
+    {
+      "id": "daf9b8e6-01db-4376-8dc3-00f2600b036a",
+      "name": "Multi-channeled uniform info-mediaries 25",
+      "status": "Active",
+      "createdDate": "2025-09-21T12:59:29",
+      "updatedDate": "2026-02-06T06:30:49",
+      "owner": "Bryan Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6901.97,
+      "description": "Nature special life visit know his unit recently."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

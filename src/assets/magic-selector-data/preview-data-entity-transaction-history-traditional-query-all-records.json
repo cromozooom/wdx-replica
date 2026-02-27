@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-all-records",
+  "totalCount": 825,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "e88e9f86-df7f-4251-819b-55bf100fb183",
+      "name": "Up-sized encompassing alliance 1",
+      "status": "Pending",
+      "createdDate": "2025-10-18T18:48:08",
+      "updatedDate": "2026-02-12T02:13:40",
+      "owner": "Jacob Soto",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8015.96,
+      "description": "Pass actually detail only plan."
+    },
+    {
+      "id": "f79ebfcb-9331-4c43-97a2-dceda26ffafc",
+      "name": "Future-proofed intermediate moratorium 2",
+      "status": "Completed",
+      "createdDate": "2026-02-07T23:49:18",
+      "updatedDate": "2026-01-20T18:24:58",
+      "owner": "Joe Meza",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7625.59,
+      "description": "Rather down determine."
+    },
+    {
+      "id": "97438d21-133c-4075-81de-d1966372f38d",
+      "name": "Synergized executive forecast 3",
+      "status": "Inactive",
+      "createdDate": "2026-02-08T17:52:00",
+      "updatedDate": "2026-01-22T17:39:07",
+      "owner": "Monica David",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2661.05,
+      "description": "Bar personal feel unit guess chair such."
+    },
+    {
+      "id": "c010f544-a189-45d8-b30b-257921d29bbb",
+      "name": "Intuitive impactful approach 4",
+      "status": "Active",
+      "createdDate": "2025-11-18T18:47:49",
+      "updatedDate": "2026-01-30T06:26:42",
+      "owner": "John Martinez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6013.44,
+      "description": "Method girl live situation sit."
+    },
+    {
+      "id": "4f1bff99-c506-4fef-b06d-89b5a7784ba2",
+      "name": "Up-sized zero tolerance neural-net 5",
+      "status": "Pending",
+      "createdDate": "2025-11-26T13:18:44",
+      "updatedDate": "2026-02-14T05:04:01",
+      "owner": "Christine Lopez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2877.74,
+      "description": "Medical cut phone will."
+    },
+    {
+      "id": "6b74bb54-5fdf-4a42-a3a0-1b4f8df33d11",
+      "name": "Proactive 5thgeneration function 6",
+      "status": "Active",
+      "createdDate": "2025-12-01T07:08:41",
+      "updatedDate": "2026-01-26T21:52:15",
+      "owner": "Jesus Gillespie",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4416.66,
+      "description": "Yard letter ten name yet cup accept."
+    },
+    {
+      "id": "6ac5024b-4111-41ef-8419-ecc1e3f6609f",
+      "name": "Distributed explicit interface 7",
+      "status": "Pending",
+      "createdDate": "2025-02-17T20:19:18",
+      "updatedDate": "2026-01-28T13:23:50",
+      "owner": "Melissa Oconnor",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3671.35,
+      "description": "Simply wonder win me personal."
+    },
+    {
+      "id": "bb7a2c0d-5624-47c8-9f2b-e9ac41eeedd8",
+      "name": "Team-oriented user-facing neural-net 8",
+      "status": "Active",
+      "createdDate": "2025-07-15T20:50:08",
+      "updatedDate": "2026-02-16T05:14:35",
+      "owner": "Morgan Sutton",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2839.33,
+      "description": "Share race executive."
+    },
+    {
+      "id": "73fe684b-ba01-4682-9ee1-d268718e22a8",
+      "name": "Innovative dedicated model 9",
+      "status": "Pending",
+      "createdDate": "2025-12-07T11:08:11",
+      "updatedDate": "2026-02-13T17:08:16",
+      "owner": "Brenda Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 323.7,
+      "description": "Operation address pattern though."
+    },
+    {
+      "id": "1ddb72f2-7b2e-48ad-8fbd-ecc3cd8a6e67",
+      "name": "Front-line bottom-line analyzer 10",
+      "status": "Inactive",
+      "createdDate": "2025-04-05T04:23:44",
+      "updatedDate": "2026-02-01T16:30:14",
+      "owner": "Paul Castro",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7838.6,
+      "description": "Physical do customer learn."
+    },
+    {
+      "id": "5fe3887f-fadf-47aa-94d3-eda9fa2f2110",
+      "name": "Secured bottom-line strategy 11",
+      "status": "Pending",
+      "createdDate": "2025-05-02T13:02:37",
+      "updatedDate": "2026-02-15T04:55:21",
+      "owner": "Paul Morton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3238.52,
+      "description": "Environment wall according."
+    },
+    {
+      "id": "a71ba267-781c-4b64-8857-98ca375dea39",
+      "name": "User-centric asynchronous challenge 12",
+      "status": "Completed",
+      "createdDate": "2025-06-11T21:23:14",
+      "updatedDate": "2026-01-25T00:39:54",
+      "owner": "Chris Garrison",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3945.89,
+      "description": "Information fact reduce officer."
+    },
+    {
+      "id": "dfd0d32d-55fc-4e59-b81f-811a51c03978",
+      "name": "Monitored multi-state standardization 13",
+      "status": "Completed",
+      "createdDate": "2025-04-19T19:42:17",
+      "updatedDate": "2026-02-13T10:06:18",
+      "owner": "Michele Brady",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8561.06,
+      "description": "Chance too serve difficult."
+    },
+    {
+      "id": "fba4e7e3-1567-4d78-944e-b9b6b880ce5f",
+      "name": "Realigned interactive conglomeration 14",
+      "status": "Inactive",
+      "createdDate": "2026-01-06T16:20:33",
+      "updatedDate": "2026-02-10T15:16:51",
+      "owner": "Bethany Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3564.45,
+      "description": "Better world exactly role leader fund long."
+    },
+    {
+      "id": "be9770cf-771f-4570-bbac-661ad3caee43",
+      "name": "Reactive fresh-thinking protocol 15",
+      "status": "Inactive",
+      "createdDate": "2025-04-20T07:29:56",
+      "updatedDate": "2026-01-22T23:22:03",
+      "owner": "Kevin Woodward",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9871.6,
+      "description": "Issue identify spring person save."
+    },
+    {
+      "id": "a5e1e6ae-0414-43ad-83ca-8e9dbd72ee31",
+      "name": "Down-sized user-facing circuit 16",
+      "status": "Active",
+      "createdDate": "2025-07-01T17:39:04",
+      "updatedDate": "2026-01-27T04:59:34",
+      "owner": "Mr. Justin Bennett",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7909.52,
+      "description": "Defense buy ground design."
+    },
+    {
+      "id": "1a2e7b1d-e7c8-4541-ad5c-3a8888ab455d",
+      "name": "Devolved mission-critical frame 17",
+      "status": "Completed",
+      "createdDate": "2025-08-03T22:23:22",
+      "updatedDate": "2026-02-13T16:50:27",
+      "owner": "Cynthia George",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 277.47,
+      "description": "Reason chance traditional about gun music."
+    },
+    {
+      "id": "780003b5-88b4-45a9-ad8b-11bc5ab52035",
+      "name": "Persevering analyzing emulation 18",
+      "status": "Inactive",
+      "createdDate": "2025-11-07T08:19:05",
+      "updatedDate": "2026-02-15T06:54:37",
+      "owner": "Jason Christian",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1081.07,
+      "description": "Personal arrive sport south."
+    },
+    {
+      "id": "5b4799ef-9168-4aec-a7e4-f4b63c56a52d",
+      "name": "Managed value-added standardization 19",
+      "status": "Inactive",
+      "createdDate": "2025-10-23T02:18:12",
+      "updatedDate": "2026-02-15T11:11:27",
+      "owner": "Michael Gross",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1407.46,
+      "description": "Issue occur per home heavy skill."
+    },
+    {
+      "id": "06210282-f406-47dc-80c9-3bd45b80c8d3",
+      "name": "Diverse 5thgeneration open system 20",
+      "status": "Pending",
+      "createdDate": "2025-04-05T10:26:44",
+      "updatedDate": "2026-02-05T07:02:30",
+      "owner": "John Manning",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6514.37,
+      "description": "Born role rise human food stand establish."
+    },
+    {
+      "id": "b80948f6-432b-4246-8b42-7a62dfb72820",
+      "name": "Organized directional alliance 21",
+      "status": "Pending",
+      "createdDate": "2026-02-10T23:37:13",
+      "updatedDate": "2026-01-26T02:37:29",
+      "owner": "Katherine Brady MD",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3641.01,
+      "description": "Age school another fly least analysis."
+    },
+    {
+      "id": "08d796cc-365c-442c-8133-05c326e14d9c",
+      "name": "Sharable tertiary hub 22",
+      "status": "Completed",
+      "createdDate": "2025-05-06T14:02:51",
+      "updatedDate": "2026-01-29T22:01:13",
+      "owner": "Eric Robinson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3502.77,
+      "description": "Hold just yeah media drive."
+    },
+    {
+      "id": "d5ad1175-e7c7-4568-8a6d-c7a00668b701",
+      "name": "Quality-focused multimedia complexity 23",
+      "status": "Completed",
+      "createdDate": "2025-09-16T11:51:06",
+      "updatedDate": "2026-02-06T09:42:40",
+      "owner": "David Ford",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7707.74,
+      "description": "Money guess well college."
+    },
+    {
+      "id": "3af1039e-f934-4697-8740-7c1de11c2e76",
+      "name": "Reduced responsive projection 24",
+      "status": "Inactive",
+      "createdDate": "2026-01-22T16:21:51",
+      "updatedDate": "2026-02-02T00:46:46",
+      "owner": "Stephanie Rodriguez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2750.9,
+      "description": "Forward claim environmental serious."
+    },
+    {
+      "id": "3a031746-629d-4500-b465-659cde33e46f",
+      "name": "Re-engineered full-range hardware 25",
+      "status": "Completed",
+      "createdDate": "2025-05-21T05:02:41",
+      "updatedDate": "2026-02-13T05:27:24",
+      "owner": "Robert Elliott",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3026.73,
+      "description": "Attention nation require civil."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

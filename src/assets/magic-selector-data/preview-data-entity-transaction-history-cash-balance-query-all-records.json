@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-all-records",
+  "totalCount": 1456,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3be7b929-f887-4195-b6cc-94330d658d21",
+      "name": "Organized uniform adapter 1",
+      "status": "Completed",
+      "createdDate": "2025-07-05T11:21:39",
+      "updatedDate": "2026-01-25T21:50:58",
+      "owner": "Dr. Kristin Gonzalez DDS",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8935.35,
+      "description": "Listen more we."
+    },
+    {
+      "id": "dc118d5e-676e-4e79-ab31-7c143f312e10",
+      "name": "User-centric value-added interface 2",
+      "status": "Pending",
+      "createdDate": "2025-12-14T19:59:24",
+      "updatedDate": "2026-01-30T21:31:02",
+      "owner": "William Church",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6403.25,
+      "description": "Agent because security staff hospital."
+    },
+    {
+      "id": "8a6184f3-7282-4e67-9f99-9d455c62d784",
+      "name": "Sharable composite projection 3",
+      "status": "Pending",
+      "createdDate": "2025-08-14T09:13:08",
+      "updatedDate": "2026-01-18T11:45:20",
+      "owner": "Beth Mcdonald",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2337.95,
+      "description": "Cell game likely fast what chance."
+    },
+    {
+      "id": "976d5ee7-9e40-4f80-823b-c8da10eb1aa6",
+      "name": "Right-sized secondary utilization 4",
+      "status": "Inactive",
+      "createdDate": "2025-12-07T14:13:30",
+      "updatedDate": "2026-02-14T01:49:58",
+      "owner": "Kenneth Warren",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 690.33,
+      "description": "House development really."
+    },
+    {
+      "id": "52e5322e-700d-4f22-a8e4-e45a0f4b5cad",
+      "name": "Face-to-face object-oriented capacity 5",
+      "status": "Pending",
+      "createdDate": "2025-06-09T04:52:54",
+      "updatedDate": "2026-02-04T12:49:42",
+      "owner": "Kelsey Frazier",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6027.39,
+      "description": "Again improve home memory quickly catch."
+    },
+    {
+      "id": "d44156da-e5a1-4a6e-bde9-4cb86c6a867c",
+      "name": "Balanced real-time parallelism 6",
+      "status": "Active",
+      "createdDate": "2025-09-22T00:55:36",
+      "updatedDate": "2026-01-19T22:37:34",
+      "owner": "Kenneth Dickson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8755.93,
+      "description": "Key husband grow."
+    },
+    {
+      "id": "9347716b-9014-41c2-bddd-09eaf605dad2",
+      "name": "Ameliorated analyzing adapter 7",
+      "status": "Active",
+      "createdDate": "2025-06-03T21:33:44",
+      "updatedDate": "2026-01-20T05:23:04",
+      "owner": "Alison Edwards",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4546.09,
+      "description": "Civil million party expert within."
+    },
+    {
+      "id": "6b4e78eb-5071-487b-a08e-4764fae6971e",
+      "name": "Versatile non-volatile throughput 8",
+      "status": "Inactive",
+      "createdDate": "2025-05-07T20:27:01",
+      "updatedDate": "2026-02-12T17:59:51",
+      "owner": "Dana Meyer",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7790.31,
+      "description": "Sister nature identify."
+    },
+    {
+      "id": "8fe88ba0-2277-4e72-ac00-95f78b6b0b2b",
+      "name": "Right-sized clear-thinking synergy 9",
+      "status": "Inactive",
+      "createdDate": "2025-07-24T01:49:52",
+      "updatedDate": "2026-01-28T06:10:24",
+      "owner": "John Powers",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3529.84,
+      "description": "Establish these two number deal address."
+    },
+    {
+      "id": "30f487e8-3d76-4688-85d4-14e0925826d9",
+      "name": "Progressive 4thgeneration capability 10",
+      "status": "Completed",
+      "createdDate": "2025-07-09T04:48:27",
+      "updatedDate": "2026-01-31T15:50:57",
+      "owner": "Melanie Stanton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7400.16,
+      "description": "Less prevent go off to only maybe."
+    },
+    {
+      "id": "9953d418-8143-42cd-af9f-4038d8a44a25",
+      "name": "Open-source zero administration structure 11",
+      "status": "Pending",
+      "createdDate": "2025-11-21T18:17:51",
+      "updatedDate": "2026-02-05T12:55:36",
+      "owner": "Katie Davis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7190.01,
+      "description": "Agree machine attack smile."
+    },
+    {
+      "id": "df0d4510-a9c4-4732-a228-1a257c2e847c",
+      "name": "Stand-alone upward-trending artificial intelligence 12",
+      "status": "Completed",
+      "createdDate": "2025-05-06T02:34:12",
+      "updatedDate": "2026-01-29T03:11:21",
+      "owner": "Steven Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1929.08,
+      "description": "Protect politics seek teach number statement prevent."
+    },
+    {
+      "id": "2232de70-995b-4d52-abca-e31e957e2326",
+      "name": "Synergized composite structure 13",
+      "status": "Completed",
+      "createdDate": "2025-03-04T13:59:40",
+      "updatedDate": "2026-01-31T10:12:19",
+      "owner": "Bradley Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1514.57,
+      "description": "Ahead wide ago instead shoulder public establish."
+    },
+    {
+      "id": "d0eb77c0-70e7-46d7-bd10-34f2d6d3901b",
+      "name": "Distributed stable installation 14",
+      "status": "Inactive",
+      "createdDate": "2025-12-12T10:47:18",
+      "updatedDate": "2026-01-29T19:19:23",
+      "owner": "David Morse PhD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1237.11,
+      "description": "Know remember happy phone."
+    },
+    {
+      "id": "563dc89a-031a-4208-a1a8-3c6e3547fd5a",
+      "name": "Enterprise-wide object-oriented groupware 15",
+      "status": "Inactive",
+      "createdDate": "2025-07-10T23:45:14",
+      "updatedDate": "2026-02-13T02:58:15",
+      "owner": "Tina Jackson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2507.11,
+      "description": "Nice them hotel way."
+    },
+    {
+      "id": "29a0476b-8611-4a05-8d0d-824180150e45",
+      "name": "Proactive tertiary contingency 16",
+      "status": "Active",
+      "createdDate": "2025-11-28T15:06:45",
+      "updatedDate": "2026-02-13T07:12:03",
+      "owner": "Sarah Holland",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7497.85,
+      "description": "Threat relate reality season success us."
+    },
+    {
+      "id": "a2710f35-58c7-4808-bba5-1fc9151494d1",
+      "name": "Public-key exuding open system 17",
+      "status": "Completed",
+      "createdDate": "2025-08-23T02:58:18",
+      "updatedDate": "2026-01-29T20:26:51",
+      "owner": "Shawn Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5428.45,
+      "description": "Much important collection."
+    },
+    {
+      "id": "aaf59824-32f9-4e73-91cd-f72bfb6d251a",
+      "name": "Ameliorated cohesive architecture 18",
+      "status": "Pending",
+      "createdDate": "2025-10-23T20:49:53",
+      "updatedDate": "2026-02-12T06:07:03",
+      "owner": "Teresa Coleman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 256.71,
+      "description": "Raise foreign most maintain Mr."
+    },
+    {
+      "id": "b4dbd889-c9d1-4577-9eed-5ed3027ef515",
+      "name": "Expanded multimedia pricing structure 19",
+      "status": "Inactive",
+      "createdDate": "2026-01-10T14:24:54",
+      "updatedDate": "2026-01-27T04:14:42",
+      "owner": "Rebekah Velasquez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3232.96,
+      "description": "Stage southern call."
+    },
+    {
+      "id": "e2c39172-52e8-4a2f-a90d-b37a58e2c328",
+      "name": "Innovative homogeneous monitoring 20",
+      "status": "Active",
+      "createdDate": "2025-04-19T10:17:40",
+      "updatedDate": "2026-01-26T08:56:24",
+      "owner": "Benjamin Wood",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9613.03,
+      "description": "Carry song relate art treatment yes offer while."
+    },
+    {
+      "id": "75e3e30d-6dec-4e6e-b8d2-0ac313de129c",
+      "name": "Visionary intangible productivity 21",
+      "status": "Active",
+      "createdDate": "2025-03-18T08:29:07",
+      "updatedDate": "2026-02-06T09:04:34",
+      "owner": "Kyle Green",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2404.14,
+      "description": "Before couple do."
+    },
+    {
+      "id": "6f20f12e-0f76-4ce0-b57e-97bd8944afb4",
+      "name": "Assimilated heuristic framework 22",
+      "status": "Pending",
+      "createdDate": "2025-03-08T15:04:58",
+      "updatedDate": "2026-02-01T20:44:35",
+      "owner": "Paula Adams",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5331.61,
+      "description": "Big economy war home financial production."
+    },
+    {
+      "id": "88d2814e-5ea5-4903-8881-f0483b8835bd",
+      "name": "Up-sized impactful standardization 23",
+      "status": "Completed",
+      "createdDate": "2025-10-05T01:00:46",
+      "updatedDate": "2026-02-05T11:48:57",
+      "owner": "Madison Wiggins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9233.74,
+      "description": "Arrive indicate into soon."
+    },
+    {
+      "id": "bbd06914-6dd1-45af-aed5-2d03627a4437",
+      "name": "Networked client-driven success 24",
+      "status": "Pending",
+      "createdDate": "2025-02-17T11:04:46",
+      "updatedDate": "2026-02-09T04:39:52",
+      "owner": "Brittany Thompson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5345.0,
+      "description": "Turn exactly visit house contain only also."
+    },
+    {
+      "id": "2baa6496-791e-486d-bdce-57dd3ebb9091",
+      "name": "Virtual solution-oriented synergy 25",
+      "status": "Completed",
+      "createdDate": "2026-02-14T13:25:11",
+      "updatedDate": "2026-02-10T23:44:51",
+      "owner": "Dale Olson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5923.88,
+      "description": "Human hair college again decision."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

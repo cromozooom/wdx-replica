@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 318,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "f822d6b1-8a0c-42b5-9cd8-290b89519df6",
+      "name": "Realigned radical benchmark 1",
+      "status": "Inactive",
+      "createdDate": "2025-02-22T22:30:41",
+      "updatedDate": "2026-02-12T11:24:43",
+      "owner": "Justin Newman",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5954.82,
+      "description": "Stand their similar call green everyone."
+    },
+    {
+      "id": "9ab9b487-a853-4395-8475-2da049f5ddcf",
+      "name": "Synergistic tertiary toolset 2",
+      "status": "Active",
+      "createdDate": "2025-08-31T16:37:24",
+      "updatedDate": "2026-02-11T08:36:51",
+      "owner": "Marie Russell",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7417.17,
+      "description": "Camera let kid marriage exactly."
+    },
+    {
+      "id": "66425128-368d-4c9b-8a00-38d63be5001f",
+      "name": "Self-enabling content-based installation 3",
+      "status": "Active",
+      "createdDate": "2026-01-20T13:33:55",
+      "updatedDate": "2026-02-01T07:27:45",
+      "owner": "Martin Anderson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8744.87,
+      "description": "Shake miss art work many budget."
+    },
+    {
+      "id": "f7bb3705-e92f-4426-b936-e0430cb441e2",
+      "name": "Realigned actuating encoding 4",
+      "status": "Completed",
+      "createdDate": "2025-03-19T10:36:04",
+      "updatedDate": "2026-01-29T03:30:17",
+      "owner": "Elizabeth Garza",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2453.87,
+      "description": "World improve stuff property well."
+    },
+    {
+      "id": "17a8c9c7-060c-4ee9-891b-40fdbb42dd7a",
+      "name": "Organic clear-thinking customer loyalty 5",
+      "status": "Pending",
+      "createdDate": "2025-07-12T01:50:21",
+      "updatedDate": "2026-02-15T09:19:57",
+      "owner": "Nathaniel Williamson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7525.94,
+      "description": "Real know can late again none grow enough."
+    },
+    {
+      "id": "fdc127fe-7f14-4570-a1b8-9e976bde84bc",
+      "name": "Customer-focused 6thgeneration hardware 6",
+      "status": "Active",
+      "createdDate": "2026-02-10T15:36:25",
+      "updatedDate": "2026-01-18T12:02:57",
+      "owner": "Ann Ramirez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1412.06,
+      "description": "Middle decision myself above."
+    },
+    {
+      "id": "8ed4f5e9-f211-408d-98e6-a3cbbef394b9",
+      "name": "Quality-focused full-range matrix 7",
+      "status": "Pending",
+      "createdDate": "2025-03-07T09:07:51",
+      "updatedDate": "2026-01-31T02:17:03",
+      "owner": "David Bell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1720.63,
+      "description": "Never poor suggest official article."
+    },
+    {
+      "id": "1e9491b2-1089-4a01-a949-fcf16a833987",
+      "name": "Fundamental 3rdgeneration support 8",
+      "status": "Completed",
+      "createdDate": "2025-08-06T22:42:16",
+      "updatedDate": "2026-02-11T05:53:36",
+      "owner": "Shelly Stevens",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4218.45,
+      "description": "Response minute chair blue board again."
+    },
+    {
+      "id": "5e9a18da-095f-45d5-96ab-21c8d9626c32",
+      "name": "Automated fresh-thinking interface 9",
+      "status": "Active",
+      "createdDate": "2025-12-06T10:31:06",
+      "updatedDate": "2026-01-23T02:20:06",
+      "owner": "Katherine Carson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6737.86,
+      "description": "Seek mind per friend war enough good hundred."
+    },
+    {
+      "id": "d172ab38-6138-40fa-8981-c0972d0e3a61",
+      "name": "Sharable 6thgeneration extranet 10",
+      "status": "Inactive",
+      "createdDate": "2025-04-26T22:12:24",
+      "updatedDate": "2026-02-08T21:15:46",
+      "owner": "Kenneth Ibarra",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7707.36,
+      "description": "Speak group admit idea set evidence."
+    },
+    {
+      "id": "3a05de06-9bce-4969-8ced-b092a5373a46",
+      "name": "Switchable modular interface 11",
+      "status": "Active",
+      "createdDate": "2025-04-16T09:41:28",
+      "updatedDate": "2026-02-03T22:09:45",
+      "owner": "Briana Morris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2211.31,
+      "description": "Project during like trial picture answer."
+    },
+    {
+      "id": "9ac2cdcb-d21c-45f2-8caf-ef6ec3473179",
+      "name": "Polarized motivating focus group 12",
+      "status": "Inactive",
+      "createdDate": "2025-08-19T19:45:53",
+      "updatedDate": "2026-02-15T22:47:25",
+      "owner": "Jennifer Melton",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3407.89,
+      "description": "Fly sign wait."
+    },
+    {
+      "id": "c57bffa4-c604-455f-a2b7-4fd964652f89",
+      "name": "Polarized interactive implementation 13",
+      "status": "Completed",
+      "createdDate": "2025-12-24T11:26:24",
+      "updatedDate": "2026-02-02T01:42:54",
+      "owner": "Christine Holmes",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7178.49,
+      "description": "Chair civil money."
+    },
+    {
+      "id": "6311f339-d007-46d5-893d-b71ec4a19d5d",
+      "name": "Switchable zero-defect moderator 14",
+      "status": "Pending",
+      "createdDate": "2025-05-03T19:59:29",
+      "updatedDate": "2026-02-09T06:11:17",
+      "owner": "Dennis Blankenship",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 819.51,
+      "description": "Bring manage same."
+    },
+    {
+      "id": "f09dd13c-8f1e-4471-b0b8-200a358950e2",
+      "name": "Seamless methodical ability 15",
+      "status": "Active",
+      "createdDate": "2025-10-11T01:30:48",
+      "updatedDate": "2026-02-15T16:07:12",
+      "owner": "Kenneth Holden",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4497.68,
+      "description": "Professor for small couple pressure field tell."
+    },
+    {
+      "id": "44644a21-5fbb-44a4-879f-762bae260b95",
+      "name": "Cross-platform explicit flexibility 16",
+      "status": "Active",
+      "createdDate": "2025-08-13T19:23:42",
+      "updatedDate": "2026-02-06T19:54:41",
+      "owner": "Christopher Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1640.05,
+      "description": "Cost inside how resource phone."
+    },
+    {
+      "id": "d5084a6b-5e86-4a64-b29b-1d6f99368b61",
+      "name": "Total global open architecture 17",
+      "status": "Pending",
+      "createdDate": "2026-02-01T20:30:18",
+      "updatedDate": "2026-01-19T17:53:13",
+      "owner": "Kathleen Barnes",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5127.24,
+      "description": "Hand else win actually."
+    },
+    {
+      "id": "7b9048a3-b603-46ca-b3c0-9f604083ba92",
+      "name": "Extended motivating function 18",
+      "status": "Inactive",
+      "createdDate": "2025-09-12T02:24:04",
+      "updatedDate": "2026-02-11T07:30:11",
+      "owner": "Kimberly Perez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9271.9,
+      "description": "Real whole pick affect many."
+    },
+    {
+      "id": "a8a808e3-8368-4b21-b77f-1c85e4a9b6f1",
+      "name": "Multi-lateral human-resource pricing structure 19",
+      "status": "Pending",
+      "createdDate": "2026-02-07T20:11:17",
+      "updatedDate": "2026-02-05T16:11:00",
+      "owner": "Debbie Phillips",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9542.06,
+      "description": "Product sign nothing religious language above off."
+    },
+    {
+      "id": "9a9b808d-e2d6-4bf9-89e7-7a1b76f4fd5d",
+      "name": "Universal empowering alliance 20",
+      "status": "Active",
+      "createdDate": "2025-11-24T02:53:25",
+      "updatedDate": "2026-01-25T16:48:04",
+      "owner": "Amy Conner",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6700.26,
+      "description": "Success statement yeah girl country entire specific address."
+    },
+    {
+      "id": "511e04d9-2701-40a2-8654-bd9322c7b5d1",
+      "name": "Reactive intermediate access 21",
+      "status": "Inactive",
+      "createdDate": "2026-01-18T03:09:08",
+      "updatedDate": "2026-02-12T04:32:57",
+      "owner": "Jessica Savage DDS",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9966.54,
+      "description": "Interesting home inside."
+    },
+    {
+      "id": "9eb177f2-4885-4f72-ada9-3b54fea5d99f",
+      "name": "Fully-configurable directional matrix 22",
+      "status": "Completed",
+      "createdDate": "2026-01-28T06:02:49",
+      "updatedDate": "2026-01-28T10:40:19",
+      "owner": "Sherry Cruz",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3751.12,
+      "description": "Detail full tax trouble."
+    },
+    {
+      "id": "c5b590ab-3f1f-4099-a4af-218c55b789aa",
+      "name": "Horizontal logistical function 23",
+      "status": "Completed",
+      "createdDate": "2025-06-05T01:14:09",
+      "updatedDate": "2026-01-24T07:27:30",
+      "owner": "Sheena Fritz",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4359.35,
+      "description": "Under window professor church."
+    },
+    {
+      "id": "d7ec8400-6855-4e53-b029-c38b38321397",
+      "name": "User-friendly optimal standardization 24",
+      "status": "Active",
+      "createdDate": "2025-05-12T13:14:40",
+      "updatedDate": "2026-01-18T22:32:27",
+      "owner": "Sally Rivera",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 862.41,
+      "description": "Organization discussion always mind lay music society."
+    },
+    {
+      "id": "1c9ad9d3-9af0-48fe-b256-22b512a59f0d",
+      "name": "Organized solution-oriented function 25",
+      "status": "Completed",
+      "createdDate": "2026-02-06T10:01:16",
+      "updatedDate": "2026-01-25T08:48:04",
+      "owner": "Benjamin Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1588.07,
+      "description": "Available TV exist executive share music growth possible."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

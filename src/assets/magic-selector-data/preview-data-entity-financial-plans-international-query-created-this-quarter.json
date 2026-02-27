@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 53,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "9c44690b-723a-4cab-a559-2f1cf397d28b",
+      "name": "Optimized 24/7 service-desk 1",
+      "status": "Pending",
+      "createdDate": "2025-06-28T00:28:28",
+      "updatedDate": "2026-02-05T21:35:25",
+      "owner": "Victor Hall",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6417.77,
+      "description": "Task yet teacher him discussion."
+    },
+    {
+      "id": "957c43b8-f3b0-40df-89e6-ab700c012306",
+      "name": "Implemented client-server alliance 2",
+      "status": "Inactive",
+      "createdDate": "2025-09-20T13:51:53",
+      "updatedDate": "2026-01-26T07:36:03",
+      "owner": "Erica Elliott",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9233.38,
+      "description": "State find international everyone as throughout."
+    },
+    {
+      "id": "1fe59544-475e-4138-bc5a-9b8bf66c8e53",
+      "name": "Synchronized solution-oriented extranet 3",
+      "status": "Pending",
+      "createdDate": "2025-09-02T04:47:25",
+      "updatedDate": "2026-02-01T22:21:25",
+      "owner": "Eric Chang",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5194.35,
+      "description": "Will reduce stand major."
+    },
+    {
+      "id": "a3db05c0-7621-4d51-9677-ebed4b266d62",
+      "name": "Versatile tertiary firmware 4",
+      "status": "Active",
+      "createdDate": "2025-12-19T01:04:31",
+      "updatedDate": "2026-01-24T01:37:37",
+      "owner": "Dalton Conway",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7830.73,
+      "description": "Occur recognize tax marriage as anyone everyone."
+    },
+    {
+      "id": "e8cabd11-67d4-4c78-814c-1e4a556d0534",
+      "name": "Proactive intermediate utilization 5",
+      "status": "Completed",
+      "createdDate": "2025-07-09T09:32:06",
+      "updatedDate": "2026-02-09T19:04:03",
+      "owner": "Crystal Patton",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2000.8,
+      "description": "Red simply activity different."
+    },
+    {
+      "id": "bd83174f-881c-41fb-b503-2509188764af",
+      "name": "Object-based human-resource productivity 6",
+      "status": "Inactive",
+      "createdDate": "2025-03-29T20:41:31",
+      "updatedDate": "2026-02-04T04:21:05",
+      "owner": "Anna Figueroa",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1637.42,
+      "description": "Southern wife at high head southern."
+    },
+    {
+      "id": "8e5b3ef8-7c8e-4048-a4a5-c0e006238982",
+      "name": "Focused exuding help-desk 7",
+      "status": "Completed",
+      "createdDate": "2025-03-31T19:08:38",
+      "updatedDate": "2026-02-12T22:17:28",
+      "owner": "Amy Palmer",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5363.11,
+      "description": "Recently state early window coach."
+    },
+    {
+      "id": "06602498-4b1f-4704-b63b-9185717b1de1",
+      "name": "Polarized responsive function 8",
+      "status": "Active",
+      "createdDate": "2026-01-19T14:47:53",
+      "updatedDate": "2026-02-17T05:34:03",
+      "owner": "Brian Martin",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6439.22,
+      "description": "Student stand bad game trial political group recent."
+    },
+    {
+      "id": "f0a53ab8-e7c4-4f09-98e6-edf162274532",
+      "name": "Profit-focused interactive product 9",
+      "status": "Completed",
+      "createdDate": "2025-05-24T17:03:27",
+      "updatedDate": "2026-02-10T18:39:19",
+      "owner": "Michele Mckinney",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2708.85,
+      "description": "Sign be billion."
+    },
+    {
+      "id": "198bf3d5-c185-42c6-bd16-dd6665c39cfd",
+      "name": "Configurable modular budgetary management 10",
+      "status": "Active",
+      "createdDate": "2025-03-08T14:40:41",
+      "updatedDate": "2026-02-08T04:25:43",
+      "owner": "Jennifer Kelley",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3472.38,
+      "description": "Reality official expect."
+    },
+    {
+      "id": "91bf25fb-1bf3-436b-93bc-fd56c3bf535a",
+      "name": "Intuitive bottom-line interface 11",
+      "status": "Pending",
+      "createdDate": "2025-02-27T21:25:58",
+      "updatedDate": "2026-01-21T08:50:19",
+      "owner": "Ashley Moore",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2554.27,
+      "description": "Trade price stay level."
+    },
+    {
+      "id": "a35d42c1-bd0c-4915-b4c5-41587431a1d9",
+      "name": "Mandatory attitude-oriented task-force 12",
+      "status": "Completed",
+      "createdDate": "2025-11-02T21:40:10",
+      "updatedDate": "2026-01-26T19:02:30",
+      "owner": "Sydney Park",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8896.87,
+      "description": "Administration sit your plant."
+    },
+    {
+      "id": "c1d17c7b-4d45-48f2-8512-dc03cd55d309",
+      "name": "Customer-focused executive standardization 13",
+      "status": "Inactive",
+      "createdDate": "2026-01-04T12:54:10",
+      "updatedDate": "2026-01-31T14:48:48",
+      "owner": "Mr. Taylor Simpson MD",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6806.95,
+      "description": "International every upon experience whole history red."
+    },
+    {
+      "id": "89ff042e-38d2-49af-83df-78e9ad98c3ef",
+      "name": "Total zero administration product 14",
+      "status": "Completed",
+      "createdDate": "2025-07-16T17:13:28",
+      "updatedDate": "2026-02-02T06:55:08",
+      "owner": "Nicholas Williams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7470.96,
+      "description": "Exactly interview give between simply."
+    },
+    {
+      "id": "a14b1350-2f36-4809-960d-68b57c4dd146",
+      "name": "Distributed composite circuit 15",
+      "status": "Active",
+      "createdDate": "2025-07-27T13:29:57",
+      "updatedDate": "2026-02-06T15:31:41",
+      "owner": "Patricia Kirk",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6444.03,
+      "description": "Notice guess more husband."
+    },
+    {
+      "id": "d862dd49-3f10-490e-a072-1acf8603285f",
+      "name": "Pre-emptive optimizing architecture 16",
+      "status": "Pending",
+      "createdDate": "2025-10-02T07:04:35",
+      "updatedDate": "2026-02-12T09:34:06",
+      "owner": "Veronica Ramsey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2447.47,
+      "description": "Work care plant leave see each weight."
+    },
+    {
+      "id": "a3dbf4b2-bcaa-40c6-ac4b-872bef38b31e",
+      "name": "Fully-configurable 5thgeneration Graphic Interface 17",
+      "status": "Active",
+      "createdDate": "2025-05-23T02:19:48",
+      "updatedDate": "2026-01-20T12:58:58",
+      "owner": "John Cohen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4133.85,
+      "description": "Join bad write later beautiful."
+    },
+    {
+      "id": "318ec176-95a3-49ab-a8a3-fbfa60de1619",
+      "name": "Synergized high-level focus group 18",
+      "status": "Completed",
+      "createdDate": "2025-09-03T03:25:51",
+      "updatedDate": "2026-02-06T07:46:27",
+      "owner": "Dennis Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9013.98,
+      "description": "Friend off hot ok."
+    },
+    {
+      "id": "baadd934-49f2-4395-bef8-88c65b7bdea8",
+      "name": "Pre-emptive secondary customer loyalty 19",
+      "status": "Active",
+      "createdDate": "2025-03-21T01:13:54",
+      "updatedDate": "2026-01-31T03:02:24",
+      "owner": "Tina Lopez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9648.02,
+      "description": "Own lawyer important energy suffer image history."
+    },
+    {
+      "id": "b9a16c73-abcd-4614-985e-7a8bdd4c0029",
+      "name": "Extended zero tolerance analyzer 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-16T16:50:14",
+      "updatedDate": "2026-02-09T00:05:22",
+      "owner": "Heather Torres",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7184.41,
+      "description": "Loss they stock around bag."
+    },
+    {
+      "id": "354a079c-b171-4e44-9bc0-aa7a95e31468",
+      "name": "Innovative human-resource capacity 21",
+      "status": "Active",
+      "createdDate": "2025-06-18T18:07:54",
+      "updatedDate": "2026-01-30T22:40:11",
+      "owner": "Ashley Riley",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 843.56,
+      "description": "Purpose less stay."
+    },
+    {
+      "id": "2eec788c-8a24-4ebb-a77b-243ed8fd902a",
+      "name": "Phased bi-directional definition 22",
+      "status": "Pending",
+      "createdDate": "2025-10-14T13:50:30",
+      "updatedDate": "2026-02-12T06:18:13",
+      "owner": "Katherine Patel",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 349.05,
+      "description": "Operation everything decide artist."
+    },
+    {
+      "id": "5637544b-1ffa-4224-a118-f01e46b7b6eb",
+      "name": "Multi-layered exuding functionalities 23",
+      "status": "Completed",
+      "createdDate": "2025-03-22T17:11:56",
+      "updatedDate": "2026-01-18T23:00:40",
+      "owner": "Rebekah Bennett",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5431.75,
+      "description": "Wait into age figure."
+    },
+    {
+      "id": "486e6db0-f6a8-45a4-99eb-59fb7e912a6f",
+      "name": "Customizable high-level software 24",
+      "status": "Inactive",
+      "createdDate": "2025-03-10T11:42:40",
+      "updatedDate": "2026-02-10T04:38:14",
+      "owner": "Michael Hayes",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1481.88,
+      "description": "Give could begin son expect always win stuff."
+    },
+    {
+      "id": "ecd31c57-edfb-40d1-8fb0-db11fe93f022",
+      "name": "Synchronized secondary software 25",
+      "status": "Active",
+      "createdDate": "2025-07-11T17:21:16",
+      "updatedDate": "2026-02-16T03:23:23",
+      "owner": "Ashley Russell",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 201.45,
+      "description": "Morning place professional money."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

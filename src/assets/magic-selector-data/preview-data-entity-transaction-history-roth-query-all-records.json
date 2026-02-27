@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-all-records",
+  "totalCount": 964,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "5a5bc807-7b9e-4722-81fe-33e1597c34e3",
+      "name": "Total contextually-based hardware 1",
+      "status": "Pending",
+      "createdDate": "2025-06-19T09:37:33",
+      "updatedDate": "2026-02-07T07:03:26",
+      "owner": "Jason Green",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2182.27,
+      "description": "Huge ago believe create receive newspaper energy."
+    },
+    {
+      "id": "7b10c237-9b7b-431f-a5ad-913cac496fed",
+      "name": "Organized contextually-based paradigm 2",
+      "status": "Pending",
+      "createdDate": "2026-02-03T18:54:48",
+      "updatedDate": "2026-02-06T09:17:52",
+      "owner": "Bill Leon",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9054.54,
+      "description": "Late phone hundred condition determine decide."
+    },
+    {
+      "id": "f05b35e1-9720-48ac-8bd9-46bededef563",
+      "name": "Face-to-face systematic service-desk 3",
+      "status": "Active",
+      "createdDate": "2025-08-31T20:14:30",
+      "updatedDate": "2026-01-24T06:25:12",
+      "owner": "Melissa Ibarra",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6220.47,
+      "description": "Food onto wide study once wish."
+    },
+    {
+      "id": "3ca91f97-3e49-47dd-a8f4-be3d79dabad0",
+      "name": "Triple-buffered background project 4",
+      "status": "Active",
+      "createdDate": "2025-12-05T10:20:25",
+      "updatedDate": "2026-02-17T10:36:03",
+      "owner": "Kelly Gonzales",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7344.89,
+      "description": "Half organization place response drive event animal."
+    },
+    {
+      "id": "a83cd980-6450-4fd0-8ae6-714e7a6cf316",
+      "name": "Customer-focused attitude-oriented groupware 5",
+      "status": "Pending",
+      "createdDate": "2025-02-24T06:43:38",
+      "updatedDate": "2026-01-18T19:31:47",
+      "owner": "Miguel Holt",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3716.29,
+      "description": "Late somebody purpose author difference building gas."
+    },
+    {
+      "id": "8dc73b52-7904-43ab-83f8-26efa935887f",
+      "name": "Reduced incremental conglomeration 6",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T17:30:21",
+      "updatedDate": "2026-01-30T19:04:48",
+      "owner": "Angela Morrison",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9216.45,
+      "description": "Wind produce alone data central."
+    },
+    {
+      "id": "e3f04bcc-9856-4f4b-84c6-789dffbf7141",
+      "name": "Diverse fresh-thinking workforce 7",
+      "status": "Pending",
+      "createdDate": "2026-02-01T01:05:23",
+      "updatedDate": "2026-02-09T10:21:56",
+      "owner": "Victor Collins",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2079.88,
+      "description": "Shoulder ball my establish far."
+    },
+    {
+      "id": "1dc9907a-db20-4a06-8d4a-47e46bde42e1",
+      "name": "Seamless clear-thinking flexibility 8",
+      "status": "Active",
+      "createdDate": "2026-02-13T22:41:55",
+      "updatedDate": "2026-01-27T08:02:34",
+      "owner": "Jacqueline Whitaker",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2467.28,
+      "description": "Red be future produce final class."
+    },
+    {
+      "id": "cabd1af4-38b7-45dd-a0b7-6d3b9a2bc44e",
+      "name": "Universal static functionalities 9",
+      "status": "Inactive",
+      "createdDate": "2025-09-07T14:16:11",
+      "updatedDate": "2026-02-08T02:54:20",
+      "owner": "Brian Williams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9591.55,
+      "description": "Official remain design."
+    },
+    {
+      "id": "622da57e-0845-4207-90f8-8af9d825e61c",
+      "name": "Right-sized didactic challenge 10",
+      "status": "Completed",
+      "createdDate": "2025-10-12T14:30:08",
+      "updatedDate": "2026-01-30T06:27:23",
+      "owner": "Colton Miller",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9230.36,
+      "description": "Move air action throughout southern go off."
+    },
+    {
+      "id": "ead6e041-2ef5-4b6f-ab15-c0ba89b0696f",
+      "name": "Automated directional model 11",
+      "status": "Completed",
+      "createdDate": "2026-01-20T22:54:53",
+      "updatedDate": "2026-02-10T16:07:28",
+      "owner": "Michael Meadows",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4869.65,
+      "description": "Animal land expert decade place good material."
+    },
+    {
+      "id": "551cb7fa-90d8-4ccc-9faf-3bb32be96ea6",
+      "name": "Ameliorated bi-directional portal 12",
+      "status": "Pending",
+      "createdDate": "2025-06-27T19:21:47",
+      "updatedDate": "2026-02-08T15:39:02",
+      "owner": "Joel Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9577.23,
+      "description": "Painting determine first half sometimes."
+    },
+    {
+      "id": "812dc581-b59a-472a-bae4-c8382a270f16",
+      "name": "Versatile transitional hub 13",
+      "status": "Inactive",
+      "createdDate": "2025-10-24T02:36:20",
+      "updatedDate": "2026-01-29T01:54:32",
+      "owner": "Paula Patel",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6323.22,
+      "description": "Someone drive third fund perhaps."
+    },
+    {
+      "id": "7eb7a635-72b1-40c8-8329-3c53ff9442cb",
+      "name": "Cross-platform bifurcated product 14",
+      "status": "Completed",
+      "createdDate": "2025-07-13T08:22:30",
+      "updatedDate": "2026-02-06T16:57:11",
+      "owner": "Cynthia Price",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3291.69,
+      "description": "Action war watch choose month significant."
+    },
+    {
+      "id": "b816a73e-1e67-41f1-b64b-e3ade7417eb4",
+      "name": "Vision-oriented motivating structure 15",
+      "status": "Inactive",
+      "createdDate": "2025-05-31T14:27:37",
+      "updatedDate": "2026-02-04T08:49:55",
+      "owner": "Robert Gross",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 537.37,
+      "description": "Next blood piece."
+    },
+    {
+      "id": "d7b2db62-125d-4379-beaf-7d1bffbc5873",
+      "name": "Enhanced methodical support 16",
+      "status": "Completed",
+      "createdDate": "2025-10-11T22:08:31",
+      "updatedDate": "2026-01-28T22:39:18",
+      "owner": "Sherri Solomon",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7683.23,
+      "description": "Source owner after tend billion teach."
+    },
+    {
+      "id": "2aa80e11-30d1-4185-b468-df825ebb6c71",
+      "name": "Advanced leadingedge open system 17",
+      "status": "Completed",
+      "createdDate": "2025-09-03T01:45:09",
+      "updatedDate": "2026-01-28T06:12:16",
+      "owner": "Laura Edwards",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 634.35,
+      "description": "President push recognize along consider age."
+    },
+    {
+      "id": "393eb017-97b7-48de-add7-1bd18b3ccb31",
+      "name": "Robust needs-based intranet 18",
+      "status": "Inactive",
+      "createdDate": "2026-01-17T01:15:27",
+      "updatedDate": "2026-01-21T21:04:23",
+      "owner": "Beth Watson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7242.35,
+      "description": "Form what real ability area break."
+    },
+    {
+      "id": "7422b877-f36e-4a59-a5f4-dc2a9b604185",
+      "name": "Digitized actuating instruction set 19",
+      "status": "Inactive",
+      "createdDate": "2026-02-11T19:26:45",
+      "updatedDate": "2026-01-20T08:30:30",
+      "owner": "Beth Gonzalez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8509.48,
+      "description": "Hundred nothing under voice."
+    },
+    {
+      "id": "dc0973ee-186a-4ed0-9bdc-5bc044f4b2f4",
+      "name": "Sharable content-based leverage 20",
+      "status": "Inactive",
+      "createdDate": "2025-07-05T06:20:56",
+      "updatedDate": "2026-01-19T10:29:37",
+      "owner": "Sabrina Wilson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6099.5,
+      "description": "Style begin voice our start those couple."
+    },
+    {
+      "id": "e3465c08-ceea-429f-89ec-3c5343772739",
+      "name": "Expanded disintermediate complexity 21",
+      "status": "Completed",
+      "createdDate": "2025-06-29T16:54:11",
+      "updatedDate": "2026-01-21T22:49:13",
+      "owner": "Sarah Cook",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5374.14,
+      "description": "Close sound mouth per view."
+    },
+    {
+      "id": "0c454187-663f-4847-9b1a-a82e482a2960",
+      "name": "Distributed 5thgeneration open system 22",
+      "status": "Completed",
+      "createdDate": "2025-03-02T07:55:34",
+      "updatedDate": "2026-01-18T14:58:18",
+      "owner": "Peter Phillips",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4329.9,
+      "description": "Across argue time sing human wall."
+    },
+    {
+      "id": "a44a4fd4-d56b-4a07-bc4c-c4bca4ba02f8",
+      "name": "Polarized composite knowledgebase 23",
+      "status": "Inactive",
+      "createdDate": "2025-06-24T11:01:29",
+      "updatedDate": "2026-01-31T05:12:30",
+      "owner": "Jessica Mckee",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 666.94,
+      "description": "Image instead have."
+    },
+    {
+      "id": "e391af20-fa4f-4d14-add8-5c5c1b12c0b6",
+      "name": "Configurable disintermediate policy 24",
+      "status": "Inactive",
+      "createdDate": "2025-07-17T20:17:22",
+      "updatedDate": "2026-02-04T16:07:41",
+      "owner": "Cory Barker",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8794.15,
+      "description": "Space mention style camera inside box exist Mr."
+    },
+    {
+      "id": "53566be8-fa5c-4abf-a04b-b5f9c580c216",
+      "name": "Cross-platform object-oriented middleware 25",
+      "status": "Pending",
+      "createdDate": "2026-01-29T04:53:59",
+      "updatedDate": "2026-01-29T14:08:57",
+      "owner": "Melissa Cohen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8671.9,
+      "description": "Leader safe citizen white report."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

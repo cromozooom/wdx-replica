@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 1289,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a3f7f55c-fddf-477c-916e-c2ef9139f695",
+      "name": "Robust dedicated emulation 1",
+      "status": "Completed",
+      "createdDate": "2025-12-01T21:32:21",
+      "updatedDate": "2026-01-27T12:45:07",
+      "owner": "Erica Mason",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4221.55,
+      "description": "Security state stuff."
+    },
+    {
+      "id": "952dd815-98f1-4ac9-985e-54265658c785",
+      "name": "Automated context-sensitive middleware 2",
+      "status": "Completed",
+      "createdDate": "2025-07-10T06:45:20",
+      "updatedDate": "2026-01-27T15:20:46",
+      "owner": "Aaron Cruz",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4901.75,
+      "description": "Cell quickly get explain indeed good music fund."
+    },
+    {
+      "id": "25168eac-6399-40ba-a314-a8b4455e51c0",
+      "name": "Enhanced attitude-oriented matrix 3",
+      "status": "Pending",
+      "createdDate": "2025-06-13T12:32:26",
+      "updatedDate": "2026-02-03T10:34:16",
+      "owner": "Carol Woods",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5281.96,
+      "description": "Himself sign idea for piece cell."
+    },
+    {
+      "id": "d9bf3e62-cfbd-42f5-aaba-d84075c93387",
+      "name": "Right-sized attitude-oriented challenge 4",
+      "status": "Pending",
+      "createdDate": "2025-09-23T17:43:23",
+      "updatedDate": "2026-02-04T03:21:20",
+      "owner": "Darryl Rush",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5468.62,
+      "description": "Deal cup happen score game least every necessary."
+    },
+    {
+      "id": "a0a3e86c-55e9-40cd-9753-9caafa9d0076",
+      "name": "Networked logistical open architecture 5",
+      "status": "Active",
+      "createdDate": "2025-07-18T11:31:14",
+      "updatedDate": "2026-01-30T02:52:08",
+      "owner": "Christopher Rodriguez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5168.72,
+      "description": "Most least seem should probably government serve south."
+    },
+    {
+      "id": "4662391f-767f-49cd-a67c-e0d573c839bd",
+      "name": "Grass-roots background database 6",
+      "status": "Inactive",
+      "createdDate": "2025-11-16T15:49:04",
+      "updatedDate": "2026-02-14T19:40:36",
+      "owner": "Peter Rhodes",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9132.51,
+      "description": "Quality treat such single draw."
+    },
+    {
+      "id": "110ae7aa-fb00-49d7-8ab3-b3ddc37c54f6",
+      "name": "Visionary tertiary project 7",
+      "status": "Active",
+      "createdDate": "2025-08-25T18:37:40",
+      "updatedDate": "2026-02-12T07:18:58",
+      "owner": "Richard Carter",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5228.3,
+      "description": "Store current manager reveal everybody nice."
+    },
+    {
+      "id": "a49c16bd-fa6e-41d4-907e-7ce338fd888a",
+      "name": "Synergistic needs-based model 8",
+      "status": "Completed",
+      "createdDate": "2025-12-11T11:01:46",
+      "updatedDate": "2026-01-25T15:04:35",
+      "owner": "Matthew Williams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1572.9,
+      "description": "Thing Mrs center shake painting along successful."
+    },
+    {
+      "id": "d3f94ce0-5a1e-4c7c-9670-ce0f942c5bb1",
+      "name": "Persistent high-level hierarchy 9",
+      "status": "Active",
+      "createdDate": "2026-01-08T09:18:15",
+      "updatedDate": "2026-02-07T07:46:17",
+      "owner": "John Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2428.78,
+      "description": "Politics shake adult brother so without sing realize."
+    },
+    {
+      "id": "1b2c1aaa-9317-45e8-9d4d-e7b5e262406a",
+      "name": "Multi-lateral didactic pricing structure 10",
+      "status": "Completed",
+      "createdDate": "2025-03-31T09:08:35",
+      "updatedDate": "2026-01-23T07:16:22",
+      "owner": "Jesse Berger",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9184.66,
+      "description": "Same official growth why foot material."
+    },
+    {
+      "id": "fd7367d3-bdbd-41da-9807-8f14b2e1e541",
+      "name": "Proactive regional architecture 11",
+      "status": "Pending",
+      "createdDate": "2026-01-29T09:29:36",
+      "updatedDate": "2026-02-16T13:39:35",
+      "owner": "Tammy Mcbride",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4014.38,
+      "description": "Cut cultural benefit."
+    },
+    {
+      "id": "78182135-2ae6-43da-910d-3393b8bb2c82",
+      "name": "Operative background policy 12",
+      "status": "Active",
+      "createdDate": "2025-07-18T05:23:18",
+      "updatedDate": "2026-02-11T03:37:28",
+      "owner": "Jason Carpenter",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1913.61,
+      "description": "Line business wear how indeed true."
+    },
+    {
+      "id": "ddd3875a-ba46-4c05-8a78-56276c030d97",
+      "name": "Seamless bi-directional structure 13",
+      "status": "Active",
+      "createdDate": "2026-01-12T07:30:36",
+      "updatedDate": "2026-02-03T16:55:44",
+      "owner": "Bobby Shaw",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8237.38,
+      "description": "Our strategy your official under sister network."
+    },
+    {
+      "id": "9915e462-91cf-4d81-96dd-4c94cff3071a",
+      "name": "Organized asynchronous adapter 14",
+      "status": "Completed",
+      "createdDate": "2026-01-05T22:21:18",
+      "updatedDate": "2026-02-05T00:46:13",
+      "owner": "Stephen Calderon",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9506.16,
+      "description": "Less thus popular whatever offer name control."
+    },
+    {
+      "id": "af6b28b3-6989-4a65-819b-098b177be187",
+      "name": "Front-line clear-thinking hub 15",
+      "status": "Pending",
+      "createdDate": "2025-07-11T13:57:44",
+      "updatedDate": "2026-02-15T16:31:31",
+      "owner": "Sarah Robinson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6977.65,
+      "description": "She son attention human."
+    },
+    {
+      "id": "d13d66a1-657a-44b5-97d6-6ac7f7351e5d",
+      "name": "Switchable actuating definition 16",
+      "status": "Completed",
+      "createdDate": "2025-05-19T08:27:09",
+      "updatedDate": "2026-01-22T01:52:11",
+      "owner": "James Wilson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1088.76,
+      "description": "As PM grow for half similar great."
+    },
+    {
+      "id": "cf144b1e-67be-4841-a2ab-af9043674eff",
+      "name": "Upgradable multi-state utilization 17",
+      "status": "Completed",
+      "createdDate": "2025-08-07T12:05:21",
+      "updatedDate": "2026-01-24T06:44:43",
+      "owner": "Amy Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6018.35,
+      "description": "Cell direction quickly."
+    },
+    {
+      "id": "33af9eef-2e58-4acd-b5a6-9fb043397714",
+      "name": "Exclusive well-modulated projection 18",
+      "status": "Active",
+      "createdDate": "2025-08-02T04:44:58",
+      "updatedDate": "2026-02-02T18:06:47",
+      "owner": "Ashley Houston",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7371.35,
+      "description": "Not memory carry interesting."
+    },
+    {
+      "id": "195ed0db-b7cc-4fb6-993c-98b03867f9a8",
+      "name": "Compatible attitude-oriented middleware 19",
+      "status": "Active",
+      "createdDate": "2025-08-01T18:11:39",
+      "updatedDate": "2026-02-08T02:57:39",
+      "owner": "William Torres",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2696.19,
+      "description": "Sell everybody occur base weight."
+    },
+    {
+      "id": "85052207-7093-47b2-abc4-156fbd17e743",
+      "name": "Multi-tiered zero administration complexity 20",
+      "status": "Inactive",
+      "createdDate": "2026-01-23T20:35:41",
+      "updatedDate": "2026-02-11T17:29:04",
+      "owner": "Susan Owens",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5610.26,
+      "description": "Example act toward father such."
+    },
+    {
+      "id": "77871f0d-93dd-47fc-bc37-952b4bcc8b72",
+      "name": "Robust 24/7 analyzer 21",
+      "status": "Pending",
+      "createdDate": "2025-04-02T07:16:14",
+      "updatedDate": "2026-02-13T03:21:20",
+      "owner": "Joseph Robinson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 268.67,
+      "description": "Trip until economy grow either head these."
+    },
+    {
+      "id": "87ee3fd2-364c-4f53-b921-6cde2b78acff",
+      "name": "Profit-focused eco-centric process improvement 22",
+      "status": "Inactive",
+      "createdDate": "2025-03-11T00:13:10",
+      "updatedDate": "2026-01-19T02:55:51",
+      "owner": "Elizabeth Moore",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 160.66,
+      "description": "Family my kitchen street."
+    },
+    {
+      "id": "c55f46f5-45c6-4d29-baa7-ff0e77f315c5",
+      "name": "Robust radical contingency 23",
+      "status": "Completed",
+      "createdDate": "2026-01-10T13:40:53",
+      "updatedDate": "2026-01-29T12:50:35",
+      "owner": "Joseph Elliott",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3522.09,
+      "description": "Science out garden here store."
+    },
+    {
+      "id": "bf4ca9f2-2649-47e3-8d53-f3d8716a8be2",
+      "name": "Face-to-face contextually-based support 24",
+      "status": "Completed",
+      "createdDate": "2025-07-21T14:08:37",
+      "updatedDate": "2026-01-31T00:29:55",
+      "owner": "Regina Bishop",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3580.1,
+      "description": "Bed interview eye economic my."
+    },
+    {
+      "id": "72e39916-699b-4334-9658-0306f9fd5746",
+      "name": "Reactive empowering system engine 25",
+      "status": "Inactive",
+      "createdDate": "2025-07-04T04:39:21",
+      "updatedDate": "2026-02-15T22:41:43",
+      "owner": "April Kramer",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7696.73,
+      "description": "School two lead."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

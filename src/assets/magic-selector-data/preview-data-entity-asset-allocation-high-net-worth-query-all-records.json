@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-all-records",
+  "totalCount": 440,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3b56ab3e-2799-4a4f-b66e-16cb81156bcf",
+      "name": "Focused actuating capability 1",
+      "status": "Pending",
+      "createdDate": "2025-04-18T12:47:58",
+      "updatedDate": "2026-01-22T13:21:42",
+      "owner": "Leroy Williams",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 552.56,
+      "description": "Rule sell dog heart enjoy part."
+    },
+    {
+      "id": "b7b55291-fd1b-484a-9401-e4d84e73af75",
+      "name": "User-friendly holistic superstructure 2",
+      "status": "Active",
+      "createdDate": "2026-01-19T21:14:17",
+      "updatedDate": "2026-01-24T23:42:18",
+      "owner": "Alicia Ortiz",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3698.36,
+      "description": "Wonder story charge."
+    },
+    {
+      "id": "e8f37ba8-6393-4445-9761-3cde9ac73058",
+      "name": "Profit-focused fresh-thinking projection 3",
+      "status": "Completed",
+      "createdDate": "2025-12-12T13:39:56",
+      "updatedDate": "2026-02-11T08:47:39",
+      "owner": "Paula Jennings",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4859.08,
+      "description": "Walk relationship executive party thing identify."
+    },
+    {
+      "id": "d0e9ed85-fdb7-4f6e-a977-2d2092f331ec",
+      "name": "Optimized executive secured line 4",
+      "status": "Completed",
+      "createdDate": "2026-02-06T15:18:36",
+      "updatedDate": "2026-02-06T17:11:46",
+      "owner": "Monica Howell",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4177.14,
+      "description": "Production bed total."
+    },
+    {
+      "id": "69935e51-6c3c-4c3d-b7f8-9e9c03b6d518",
+      "name": "Open-source scalable application 5",
+      "status": "Completed",
+      "createdDate": "2025-09-09T11:28:26",
+      "updatedDate": "2026-01-24T11:37:15",
+      "owner": "Kimberly Schneider",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6649.02,
+      "description": "Catch necessary lay keep along certainly employee thus."
+    },
+    {
+      "id": "beda6134-872b-4e72-9395-86a15a50a84d",
+      "name": "Seamless web-enabled throughput 6",
+      "status": "Completed",
+      "createdDate": "2025-12-22T08:21:22",
+      "updatedDate": "2026-02-03T02:54:04",
+      "owner": "Javier Fields",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6129.05,
+      "description": "Institution fight develop process wife go."
+    },
+    {
+      "id": "5bbc1a0a-9388-4db8-9e30-b0edc4cca65b",
+      "name": "Reduced even-keeled moratorium 7",
+      "status": "Active",
+      "createdDate": "2026-01-01T07:27:41",
+      "updatedDate": "2026-01-29T05:27:24",
+      "owner": "Patricia Hudson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9537.24,
+      "description": "Cultural not send beat administration like especially."
+    },
+    {
+      "id": "4083a043-37ed-447f-b1a0-3de459aac74c",
+      "name": "Ergonomic zero tolerance moratorium 8",
+      "status": "Inactive",
+      "createdDate": "2026-02-03T04:24:31",
+      "updatedDate": "2026-02-12T09:55:12",
+      "owner": "Christopher Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8822.17,
+      "description": "Home water early some dinner."
+    },
+    {
+      "id": "286f5cd5-14a2-4004-96b5-1ae597d14cf4",
+      "name": "Mandatory 5thgeneration hardware 9",
+      "status": "Completed",
+      "createdDate": "2025-06-24T22:39:04",
+      "updatedDate": "2026-02-10T00:45:38",
+      "owner": "Johnathan Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7753.11,
+      "description": "Building risk happy top pattern."
+    },
+    {
+      "id": "0138b0b4-2d6f-4781-b849-a4a96241dcd8",
+      "name": "Ergonomic multi-state artificial intelligence 10",
+      "status": "Active",
+      "createdDate": "2025-04-28T07:00:18",
+      "updatedDate": "2026-02-11T08:22:32",
+      "owner": "Carla Herring",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8886.67,
+      "description": "Teach event doctor."
+    },
+    {
+      "id": "149f79dc-8a1c-4659-a57e-f63fe75c3e07",
+      "name": "Optimized context-sensitive challenge 11",
+      "status": "Completed",
+      "createdDate": "2025-07-05T07:26:53",
+      "updatedDate": "2026-01-22T09:20:10",
+      "owner": "Andrea Christian",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2367.18,
+      "description": "Individual western choice fire entire program."
+    },
+    {
+      "id": "2a6d4176-ec71-422d-857f-b0d8efd51624",
+      "name": "Assimilated empowering ability 12",
+      "status": "Pending",
+      "createdDate": "2025-05-19T07:25:08",
+      "updatedDate": "2026-02-09T23:01:30",
+      "owner": "Scott Olson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8820.35,
+      "description": "Blood size and stop benefit line speak."
+    },
+    {
+      "id": "df542280-c2b0-41e1-bf79-becd52491c8b",
+      "name": "Universal bi-directional utilization 13",
+      "status": "Pending",
+      "createdDate": "2025-07-05T05:47:22",
+      "updatedDate": "2026-01-22T16:27:28",
+      "owner": "Brian Miller",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9537.48,
+      "description": "Pick someone them decide one."
+    },
+    {
+      "id": "8e1f06d2-e808-4fb5-888d-38fdc6bb3cb6",
+      "name": "Future-proofed user-facing complexity 14",
+      "status": "Active",
+      "createdDate": "2025-06-21T17:30:35",
+      "updatedDate": "2026-01-25T20:55:29",
+      "owner": "Hector Perry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5260.27,
+      "description": "Fire civil today fight maybe tonight."
+    },
+    {
+      "id": "7b84757f-a523-406f-8c8b-0f1662f1402b",
+      "name": "Triple-buffered discrete success 15",
+      "status": "Pending",
+      "createdDate": "2026-01-19T20:14:10",
+      "updatedDate": "2026-02-03T15:41:34",
+      "owner": "John Mooney",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6511.01,
+      "description": "Finally sort early ability report less health form."
+    },
+    {
+      "id": "f5772059-fc29-439a-a331-e4d1bfe4c6f8",
+      "name": "Configurable intermediate time-frame 16",
+      "status": "Active",
+      "createdDate": "2025-05-08T09:45:46",
+      "updatedDate": "2026-01-21T04:53:37",
+      "owner": "Jerry Carter",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1895.53,
+      "description": "Star crime cover series natural."
+    },
+    {
+      "id": "635ae28e-4e4f-4563-b75f-b764eb820871",
+      "name": "Visionary fresh-thinking data-warehouse 17",
+      "status": "Pending",
+      "createdDate": "2025-10-22T11:10:45",
+      "updatedDate": "2026-01-27T10:03:39",
+      "owner": "Susan Walker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4210.85,
+      "description": "Agree message hospital attention age husband real."
+    },
+    {
+      "id": "92d2b698-a9cd-40d8-acb2-e36773293952",
+      "name": "Phased 24hour Internet solution 18",
+      "status": "Pending",
+      "createdDate": "2025-07-14T21:35:35",
+      "updatedDate": "2026-02-13T03:36:53",
+      "owner": "Mrs. Ana Reed",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1267.53,
+      "description": "Crime opportunity specific discover."
+    },
+    {
+      "id": "a271b9c6-7478-408a-af0c-c8245aa30d58",
+      "name": "Self-enabling discrete paradigm 19",
+      "status": "Inactive",
+      "createdDate": "2025-12-01T05:26:36",
+      "updatedDate": "2026-02-02T23:36:34",
+      "owner": "Faith Lane",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8766.09,
+      "description": "Role owner believe."
+    },
+    {
+      "id": "ef682cd4-239e-4726-832c-c08b9ef63093",
+      "name": "Expanded didactic initiative 20",
+      "status": "Pending",
+      "createdDate": "2025-05-26T15:54:38",
+      "updatedDate": "2026-01-20T10:26:37",
+      "owner": "Michael Willis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 515.54,
+      "description": "Style yard thank partner."
+    },
+    {
+      "id": "10948159-8597-4a73-bf57-68fd672a857b",
+      "name": "Operative didactic instruction set 21",
+      "status": "Pending",
+      "createdDate": "2025-09-14T00:02:12",
+      "updatedDate": "2026-02-06T16:17:48",
+      "owner": "Glen Calderon",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8178.5,
+      "description": "Here wait security happy me general."
+    },
+    {
+      "id": "6d3a6580-ddf0-4ce0-97d8-9bf951af25a0",
+      "name": "Robust even-keeled time-frame 22",
+      "status": "Active",
+      "createdDate": "2025-10-23T14:13:36",
+      "updatedDate": "2026-01-27T17:43:15",
+      "owner": "Bonnie Hodges",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5140.21,
+      "description": "Style kitchen expert cause machine land."
+    },
+    {
+      "id": "1eef4789-90e1-498d-b820-2d8d8c60ec0b",
+      "name": "Monitored global projection 23",
+      "status": "Completed",
+      "createdDate": "2025-05-20T08:34:09",
+      "updatedDate": "2026-02-12T09:47:03",
+      "owner": "Eric Fleming",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 286.39,
+      "description": "Instead free medical big ability pattern."
+    },
+    {
+      "id": "83cdb711-3b22-4f31-9609-725ec804640e",
+      "name": "Innovative global alliance 24",
+      "status": "Pending",
+      "createdDate": "2025-11-09T15:32:24",
+      "updatedDate": "2026-01-24T01:21:19",
+      "owner": "David Jones",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1224.11,
+      "description": "Fire total consumer level."
+    },
+    {
+      "id": "4163ff3c-519a-4a6f-97c5-f26fe709cfad",
+      "name": "Open-architected leadingedge paradigm 25",
+      "status": "Completed",
+      "createdDate": "2025-09-06T11:04:17",
+      "updatedDate": "2026-02-15T06:32:05",
+      "owner": "Sean Nunez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9652.72,
+      "description": "Well major simple successful sometimes."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-security",
+  "queryId": "query-all-records",
+  "totalCount": 1455,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3cfd5741-0001-4057-8375-4e90b79e3f56",
+      "name": "Fully-configurable leadingedge frame 1",
+      "status": "Pending",
+      "createdDate": "2025-10-06T05:11:32",
+      "updatedDate": "2026-02-02T03:46:17",
+      "owner": "Anne Glover",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4583.48,
+      "description": "Yet sometimes father career listen theory."
+    },
+    {
+      "id": "5116748e-4100-4495-9188-ffc00f1f9285",
+      "name": "Team-oriented upward-trending benchmark 2",
+      "status": "Inactive",
+      "createdDate": "2025-06-09T14:18:44",
+      "updatedDate": "2026-02-05T09:51:54",
+      "owner": "Robert Fischer",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6580.83,
+      "description": "Security per character wait appear."
+    },
+    {
+      "id": "9ece28b4-ced1-4fd2-bb59-9ebe6e9a4982",
+      "name": "Future-proofed zero tolerance hub 3",
+      "status": "Completed",
+      "createdDate": "2025-05-20T18:33:56",
+      "updatedDate": "2026-01-29T17:41:04",
+      "owner": "Samantha Hall",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9146.24,
+      "description": "Fund total executive fly ask bar."
+    },
+    {
+      "id": "c716181c-cd0c-407f-9d5c-3e90c5ed10ab",
+      "name": "Vision-oriented demand-driven groupware 4",
+      "status": "Active",
+      "createdDate": "2025-11-03T20:47:57",
+      "updatedDate": "2026-02-07T23:45:21",
+      "owner": "Joseph Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1202.45,
+      "description": "Price laugh would easy receive police most."
+    },
+    {
+      "id": "0496ffaa-806b-4699-abb3-76e1a83506b9",
+      "name": "Enterprise-wide human-resource knowledgebase 5",
+      "status": "Completed",
+      "createdDate": "2025-06-03T15:51:24",
+      "updatedDate": "2026-01-19T18:55:26",
+      "owner": "Jeffrey Thornton",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7280.61,
+      "description": "Learn art cause home."
+    },
+    {
+      "id": "a0530e6f-1037-4f19-b059-a8f47e4c51b0",
+      "name": "Multi-tiered client-driven utilization 6",
+      "status": "Pending",
+      "createdDate": "2025-03-12T18:26:20",
+      "updatedDate": "2026-01-27T03:03:13",
+      "owner": "Jeremy Holland",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3935.26,
+      "description": "Decade account surface himself social."
+    },
+    {
+      "id": "262fcf8e-33b8-4181-a28d-ac32213ce1e2",
+      "name": "Customer-focused radical superstructure 7",
+      "status": "Pending",
+      "createdDate": "2025-12-26T21:50:15",
+      "updatedDate": "2026-02-04T12:01:05",
+      "owner": "Mrs. Lindsey Chan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6313.75,
+      "description": "Business organization interesting sport maintain."
+    },
+    {
+      "id": "b65c5bca-8312-4d01-af7f-3eed374d6496",
+      "name": "Customer-focused mission-critical infrastructure 8",
+      "status": "Pending",
+      "createdDate": "2025-08-14T07:34:58",
+      "updatedDate": "2026-01-21T21:35:15",
+      "owner": "Laura Chan",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8717.53,
+      "description": "Congress career certainly ask each newspaper to."
+    },
+    {
+      "id": "1be2814a-bd6d-4c62-a7ab-6a83fe259c17",
+      "name": "Right-sized foreground access 9",
+      "status": "Completed",
+      "createdDate": "2025-07-30T17:09:14",
+      "updatedDate": "2026-01-29T15:57:24",
+      "owner": "Alan Martin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9470.82,
+      "description": "Especially wait blood owner since."
+    },
+    {
+      "id": "d0ed3b97-16b7-460a-a758-7f76d24cd550",
+      "name": "Robust dynamic forecast 10",
+      "status": "Active",
+      "createdDate": "2025-12-16T05:29:27",
+      "updatedDate": "2026-02-12T11:36:31",
+      "owner": "Paul Harrell",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3911.85,
+      "description": "Wind nice possible family spring wide let."
+    },
+    {
+      "id": "1b291243-0e05-47e2-bafc-2d9c0c4587f1",
+      "name": "Persevering analyzing frame 11",
+      "status": "Active",
+      "createdDate": "2025-12-26T02:53:01",
+      "updatedDate": "2026-01-22T11:00:10",
+      "owner": "Joy Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7030.77,
+      "description": "She rate development against your."
+    },
+    {
+      "id": "20a9a998-ecaa-47e8-8920-5679f506db2c",
+      "name": "Automated zero-defect customer loyalty 12",
+      "status": "Pending",
+      "createdDate": "2025-02-20T20:17:51",
+      "updatedDate": "2026-02-02T11:06:19",
+      "owner": "Sara Lee",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4622.88,
+      "description": "But physical each doctor trouble return deep space."
+    },
+    {
+      "id": "742c046f-4beb-4a3e-bc4e-b48da6e13fd8",
+      "name": "Integrated hybrid Graphical User Interface 13",
+      "status": "Active",
+      "createdDate": "2025-08-05T11:37:26",
+      "updatedDate": "2026-01-29T19:28:20",
+      "owner": "Jennifer Moore",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8677.24,
+      "description": "Bad star arrive world."
+    },
+    {
+      "id": "8c753625-67c0-4ca0-9b7d-ad8161dab3b9",
+      "name": "Innovative directional standardization 14",
+      "status": "Completed",
+      "createdDate": "2025-08-06T22:31:55",
+      "updatedDate": "2026-02-04T22:09:43",
+      "owner": "Christopher Barron Jr.",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3543.37,
+      "description": "Every event hair plant."
+    },
+    {
+      "id": "b0804dd9-9229-4be7-8377-5dfef25c0d79",
+      "name": "Triple-buffered fault-tolerant open architecture 15",
+      "status": "Pending",
+      "createdDate": "2026-01-24T10:25:33",
+      "updatedDate": "2026-01-27T00:30:02",
+      "owner": "Stephanie Mccullough",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5927.61,
+      "description": "Get anyone type statement capital everybody space major."
+    },
+    {
+      "id": "a2706649-21f7-4ef9-bb8c-32e9d517e26f",
+      "name": "Self-enabling background approach 16",
+      "status": "Active",
+      "createdDate": "2026-01-20T01:57:17",
+      "updatedDate": "2026-02-07T16:06:28",
+      "owner": "Heather Green",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8673.66,
+      "description": "Career production yet first player."
+    },
+    {
+      "id": "3667cf90-cfd4-40cf-8736-da4eb8851ea8",
+      "name": "Synergized encompassing structure 17",
+      "status": "Active",
+      "createdDate": "2025-05-28T23:07:39",
+      "updatedDate": "2026-01-18T17:46:20",
+      "owner": "Vicki Hampton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5031.11,
+      "description": "Management leader south actually outside statement."
+    },
+    {
+      "id": "4ca376a3-fb35-44a4-8f06-7db043625a32",
+      "name": "Fully-configurable upward-trending archive 18",
+      "status": "Inactive",
+      "createdDate": "2025-03-07T14:17:23",
+      "updatedDate": "2026-01-26T21:55:16",
+      "owner": "Eric Benton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1039.29,
+      "description": "Agent nor time summer measure democratic game."
+    },
+    {
+      "id": "9d82aa38-25e9-42e9-afdf-2dd15589c553",
+      "name": "Networked 6thgeneration toolset 19",
+      "status": "Pending",
+      "createdDate": "2025-03-11T07:36:25",
+      "updatedDate": "2026-02-15T10:25:53",
+      "owner": "Kimberly Lynch",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1010.05,
+      "description": "Seek upon media such participant great."
+    },
+    {
+      "id": "759e39a1-8792-4a6d-9683-3545779bcff4",
+      "name": "Optional bifurcated capacity 20",
+      "status": "Active",
+      "createdDate": "2026-01-20T13:31:59",
+      "updatedDate": "2026-02-10T03:29:51",
+      "owner": "Luis Brown",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2057.24,
+      "description": "Wide add clear."
+    },
+    {
+      "id": "8f989122-2431-4cb4-957c-8bd6db84aeb3",
+      "name": "Automated eco-centric emulation 21",
+      "status": "Inactive",
+      "createdDate": "2025-07-01T07:33:03",
+      "updatedDate": "2026-01-28T19:08:38",
+      "owner": "Benjamin Hooper",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2988.33,
+      "description": "Adult add physical somebody quite."
+    },
+    {
+      "id": "a0e7284c-ce7b-4b5c-970a-6ee047c71cc7",
+      "name": "Front-line needs-based monitoring 22",
+      "status": "Active",
+      "createdDate": "2025-03-10T18:03:24",
+      "updatedDate": "2026-01-30T12:42:30",
+      "owner": "John Walsh",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9725.32,
+      "description": "Side boy though gas drop paper."
+    },
+    {
+      "id": "16fafedb-b104-4e1f-91d5-03d177df9fb3",
+      "name": "Intuitive impactful budgetary management 23",
+      "status": "Active",
+      "createdDate": "2026-01-07T20:52:12",
+      "updatedDate": "2026-01-25T14:20:27",
+      "owner": "James Padilla",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5003.45,
+      "description": "Nearly social grow inside either but explain."
+    },
+    {
+      "id": "60dae41d-3571-4ac4-b034-b13017202d2d",
+      "name": "Enterprise-wide full-range challenge 24",
+      "status": "Active",
+      "createdDate": "2025-12-18T02:16:50",
+      "updatedDate": "2026-01-22T01:42:29",
+      "owner": "Danielle Olson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7301.36,
+      "description": "Military assume her run present task."
+    },
+    {
+      "id": "0ec6c146-583b-4827-aa7d-b6eba6df000c",
+      "name": "Cloned mission-critical parallelism 25",
+      "status": "Inactive",
+      "createdDate": "2025-06-14T09:54:43",
+      "updatedDate": "2026-01-19T19:03:19",
+      "owner": "Joseph Becker",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6106.32,
+      "description": "Argue watch significant seven."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

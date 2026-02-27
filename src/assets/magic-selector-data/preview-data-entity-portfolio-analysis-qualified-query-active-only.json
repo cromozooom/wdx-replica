@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-analysis",
+  "queryId": "query-active-only",
+  "totalCount": 178,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b7b3e9ef-da0d-41ac-930d-d89a3b01fc46",
+      "name": "Mandatory 24hour project 1",
+      "status": "Completed",
+      "createdDate": "2025-09-30T12:26:14",
+      "updatedDate": "2026-02-13T00:31:45",
+      "owner": "Brian Reynolds",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6900.04,
+      "description": "Feeling where bad power environment."
+    },
+    {
+      "id": "2337bafa-d1a9-4549-bd0b-90796acaf260",
+      "name": "Intuitive solution-oriented moderator 2",
+      "status": "Active",
+      "createdDate": "2025-07-26T16:09:31",
+      "updatedDate": "2026-01-20T06:58:41",
+      "owner": "Dana Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6529.67,
+      "description": "All attack agency serious unit."
+    },
+    {
+      "id": "a24603c9-6b6b-4c49-98c3-d3f54d90000b",
+      "name": "Extended systemic firmware 3",
+      "status": "Active",
+      "createdDate": "2025-11-01T23:17:16",
+      "updatedDate": "2026-01-24T19:14:03",
+      "owner": "Kelsey Hill",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9773.35,
+      "description": "Want give least another though."
+    },
+    {
+      "id": "d06aab7b-c84a-418e-aa1d-e42e7fa4e09a",
+      "name": "Managed systemic ability 4",
+      "status": "Completed",
+      "createdDate": "2025-06-18T01:26:03",
+      "updatedDate": "2026-01-31T21:05:55",
+      "owner": "Daniel Washington",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7536.57,
+      "description": "Large option laugh ten wear."
+    },
+    {
+      "id": "5214bc82-ce19-4ac4-833f-3ffd3eb58dd4",
+      "name": "Open-source static middleware 5",
+      "status": "Pending",
+      "createdDate": "2025-11-01T03:53:17",
+      "updatedDate": "2026-02-16T16:53:02",
+      "owner": "Oscar Simmons",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7773.53,
+      "description": "Office worry maintain official."
+    },
+    {
+      "id": "f86fcb9c-0a4c-4374-add8-b49a0cbb0a09",
+      "name": "Decentralized actuating matrices 6",
+      "status": "Active",
+      "createdDate": "2025-05-24T05:39:53",
+      "updatedDate": "2026-02-12T09:36:14",
+      "owner": "Shelby Hunter",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 218.24,
+      "description": "Will civil great affect attorney."
+    },
+    {
+      "id": "226e6d83-1c1d-485b-8aa3-a80da953fb00",
+      "name": "Adaptive actuating focus group 7",
+      "status": "Completed",
+      "createdDate": "2025-08-29T12:20:56",
+      "updatedDate": "2026-02-03T10:01:34",
+      "owner": "Christopher Perkins",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9516.3,
+      "description": "Story president source money."
+    },
+    {
+      "id": "438e65a8-5e3a-49e7-9ffe-ae3c270f0ffe",
+      "name": "Virtual multimedia algorithm 8",
+      "status": "Inactive",
+      "createdDate": "2025-02-20T22:43:49",
+      "updatedDate": "2026-01-23T10:08:05",
+      "owner": "Teresa Tyler",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 645.1,
+      "description": "Soon already situation moment force."
+    },
+    {
+      "id": "159537c9-5869-4b7d-80d9-2fd4d44141c9",
+      "name": "Public-key analyzing monitoring 9",
+      "status": "Active",
+      "createdDate": "2025-03-05T13:43:54",
+      "updatedDate": "2026-01-31T11:15:39",
+      "owner": "Sheri Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4768.06,
+      "description": "Level none view step recent three."
+    },
+    {
+      "id": "a0769f72-9b06-4e46-8803-d990327c7ea5",
+      "name": "Managed heuristic ability 10",
+      "status": "Inactive",
+      "createdDate": "2025-06-30T14:42:08",
+      "updatedDate": "2026-02-15T20:44:55",
+      "owner": "Joshua Miller",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5569.21,
+      "description": "Five still hold show reason cost."
+    },
+    {
+      "id": "c138ccfe-4062-4ac4-a3ac-ffcde8247958",
+      "name": "Focused system-worthy collaboration 11",
+      "status": "Completed",
+      "createdDate": "2025-05-26T01:21:16",
+      "updatedDate": "2026-02-15T12:36:04",
+      "owner": "Brooke Boyd",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2017.56,
+      "description": "Small mission trouble prove network."
+    },
+    {
+      "id": "9f400dde-2edc-42ef-8a5c-d530c01c8049",
+      "name": "Innovative holistic throughput 12",
+      "status": "Completed",
+      "createdDate": "2025-08-31T07:27:39",
+      "updatedDate": "2026-02-15T09:08:48",
+      "owner": "Kevin Ford",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3414.44,
+      "description": "First collection item strategy ability discover."
+    },
+    {
+      "id": "d5b7ed9a-e1e6-4e44-a76f-30e663288f59",
+      "name": "Centralized interactive project 13",
+      "status": "Pending",
+      "createdDate": "2025-06-23T18:03:10",
+      "updatedDate": "2026-02-02T01:02:52",
+      "owner": "Mr. Robert Mathews DVM",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 645.14,
+      "description": "Protect military adult realize I."
+    },
+    {
+      "id": "87258e9f-8558-48be-acc9-8bae2085ca4e",
+      "name": "Customer-focused actuating instruction set 14",
+      "status": "Active",
+      "createdDate": "2026-01-05T04:08:52",
+      "updatedDate": "2026-01-29T21:37:20",
+      "owner": "Theresa Carpenter",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8880.19,
+      "description": "Smile threat energy force above phone issue total."
+    },
+    {
+      "id": "71d38683-755a-4c87-a62c-4ca3ea16b87f",
+      "name": "Multi-layered web-enabled instruction set 15",
+      "status": "Pending",
+      "createdDate": "2025-06-11T05:36:28",
+      "updatedDate": "2026-01-31T16:07:55",
+      "owner": "Kevin Stewart",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 866.85,
+      "description": "Law usually me middle feeling meeting mind market."
+    },
+    {
+      "id": "a274f096-48aa-42a7-a36f-65ce067f4dd6",
+      "name": "Vision-oriented dynamic algorithm 16",
+      "status": "Completed",
+      "createdDate": "2026-01-18T13:25:33",
+      "updatedDate": "2026-01-29T07:12:46",
+      "owner": "Louis Lambert",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4985.8,
+      "description": "Me system seat perhaps."
+    },
+    {
+      "id": "5f6fd5a0-3606-41bf-bd87-bab5a41e9417",
+      "name": "Polarized context-sensitive process improvement 17",
+      "status": "Pending",
+      "createdDate": "2025-04-05T12:57:35",
+      "updatedDate": "2026-02-08T13:29:42",
+      "owner": "Amanda Allen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4914.58,
+      "description": "Music summer student page."
+    },
+    {
+      "id": "4b3c86f0-294f-4d4a-9d04-d52f79dabeda",
+      "name": "Proactive heuristic Graphic Interface 18",
+      "status": "Pending",
+      "createdDate": "2026-01-23T19:42:29",
+      "updatedDate": "2026-02-11T21:37:40",
+      "owner": "Linda Buck",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3031.05,
+      "description": "Free four suffer still tax."
+    },
+    {
+      "id": "dc4c58a4-352d-4eb6-b742-b0af6c9268b5",
+      "name": "Programmable radical framework 19",
+      "status": "Completed",
+      "createdDate": "2025-12-10T00:22:42",
+      "updatedDate": "2026-01-26T03:47:11",
+      "owner": "Whitney Davis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8849.87,
+      "description": "Cause bag sister quality nature."
+    },
+    {
+      "id": "d1c203e0-2058-45fa-827f-6ef0dcd59409",
+      "name": "Diverse global knowledge user 20",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T06:24:27",
+      "updatedDate": "2026-01-30T10:35:44",
+      "owner": "Holly Strickland",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5164.8,
+      "description": "Threat great door various structure reduce."
+    },
+    {
+      "id": "4b8953d9-f0d7-4d20-9e6b-0203cc403184",
+      "name": "Synergistic bifurcated emulation 21",
+      "status": "Inactive",
+      "createdDate": "2025-06-01T14:55:59",
+      "updatedDate": "2026-02-07T22:26:00",
+      "owner": "Michael Carey",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3716.73,
+      "description": "Tv character tree down."
+    },
+    {
+      "id": "53e9ae40-2f0e-4812-b60b-21bef086ab47",
+      "name": "Robust uniform toolset 22",
+      "status": "Inactive",
+      "createdDate": "2025-06-05T20:14:12",
+      "updatedDate": "2026-01-31T15:04:12",
+      "owner": "Kimberly Vargas",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6260.44,
+      "description": "Push each tough."
+    },
+    {
+      "id": "2057a448-27f8-4ab6-895c-d18cbfa39fc9",
+      "name": "Decentralized client-server monitoring 23",
+      "status": "Active",
+      "createdDate": "2025-10-05T11:04:34",
+      "updatedDate": "2026-02-16T12:32:19",
+      "owner": "Kelsey Delacruz",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7394.11,
+      "description": "Policy man once mouth speech another cold."
+    },
+    {
+      "id": "8de8c2a2-926a-4e7f-855e-5b500ef87be3",
+      "name": "Fully-configurable didactic artificial intelligence 24",
+      "status": "Active",
+      "createdDate": "2025-11-06T09:37:23",
+      "updatedDate": "2026-02-03T00:12:10",
+      "owner": "Kimberly Reed",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1142.62,
+      "description": "That bit child form."
+    },
+    {
+      "id": "bd84e52a-e0b4-4e09-8c9f-9eb0e43bd59c",
+      "name": "Cross-group encompassing archive 25",
+      "status": "Completed",
+      "createdDate": "2026-01-24T21:47:09",
+      "updatedDate": "2026-02-09T05:12:55",
+      "owner": "William Fowler",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1348.22,
+      "description": "Particularly with member kitchen scientist act company."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 683,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a3ceaab5-be1b-4728-8f3c-2f2ebaa632ab",
+      "name": "Realigned eco-centric analyzer 1",
+      "status": "Pending",
+      "createdDate": "2026-02-06T11:17:10",
+      "updatedDate": "2026-02-11T11:30:05",
+      "owner": "Jacob Drake",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3430.65,
+      "description": "Manager watch name for decision."
+    },
+    {
+      "id": "52395133-dc50-431c-849b-3745a0099156",
+      "name": "Exclusive system-worthy extranet 2",
+      "status": "Pending",
+      "createdDate": "2025-11-06T12:35:50",
+      "updatedDate": "2026-02-06T11:40:35",
+      "owner": "Michele Thomas",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4566.21,
+      "description": "Majority surface nor offer hard your water."
+    },
+    {
+      "id": "f5569f40-9bac-400e-bbc7-113f87c0a499",
+      "name": "Assimilated 24hour concept 3",
+      "status": "Completed",
+      "createdDate": "2025-03-01T19:22:37",
+      "updatedDate": "2026-02-10T06:21:34",
+      "owner": "James Macias",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4587.29,
+      "description": "Indicate beautiful TV serious charge where whether."
+    },
+    {
+      "id": "77a6eb74-3f66-485a-b016-adb9e8fe9aca",
+      "name": "Secured intangible benchmark 4",
+      "status": "Pending",
+      "createdDate": "2025-05-09T00:28:24",
+      "updatedDate": "2026-01-25T16:10:43",
+      "owner": "Aaron Ortega",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3638.11,
+      "description": "Sign finally every."
+    },
+    {
+      "id": "3d14475e-a66a-41b7-91cd-918086ecd19b",
+      "name": "Reactive zero administration archive 5",
+      "status": "Pending",
+      "createdDate": "2025-07-12T08:48:15",
+      "updatedDate": "2026-02-16T17:50:54",
+      "owner": "Jeff Gonzalez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9491.53,
+      "description": "Million officer join north machine."
+    },
+    {
+      "id": "f903b13f-26e3-4101-9716-7ca9c8be85ef",
+      "name": "Reverse-engineered national monitoring 6",
+      "status": "Completed",
+      "createdDate": "2025-04-01T14:29:09",
+      "updatedDate": "2026-02-05T03:04:22",
+      "owner": "Pamela Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2177.75,
+      "description": "Task receive hair debate source see."
+    },
+    {
+      "id": "17269d87-b505-414a-ba16-304857bb65c0",
+      "name": "Versatile upward-trending functionalities 7",
+      "status": "Active",
+      "createdDate": "2025-10-13T05:31:33",
+      "updatedDate": "2026-02-13T15:56:20",
+      "owner": "Gary Allen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6568.49,
+      "description": "General accept involve believe team time three difference."
+    },
+    {
+      "id": "fbe777bf-fa19-4ebb-b68f-c08095ccda82",
+      "name": "Distributed motivating service-desk 8",
+      "status": "Completed",
+      "createdDate": "2025-07-19T02:31:00",
+      "updatedDate": "2026-02-06T00:00:08",
+      "owner": "Joshua Rodriguez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3495.07,
+      "description": "Born voice price very within share."
+    },
+    {
+      "id": "5c42f7f6-162f-4331-90f6-c1d90b61644f",
+      "name": "Re-engineered system-worthy database 9",
+      "status": "Pending",
+      "createdDate": "2025-05-06T02:51:52",
+      "updatedDate": "2026-02-05T20:36:30",
+      "owner": "Samuel Roman",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4219.63,
+      "description": "Authority purpose citizen blood high."
+    },
+    {
+      "id": "45c9e7b7-022f-4e40-85c9-252e7c53ae76",
+      "name": "Open-source client-server project 10",
+      "status": "Pending",
+      "createdDate": "2026-01-25T02:41:24",
+      "updatedDate": "2026-02-04T09:00:05",
+      "owner": "Brittany Crawford",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9501.03,
+      "description": "Entire investment tell adult true lot before picture."
+    },
+    {
+      "id": "2a73e912-1b79-4b29-9a2f-b7b20ecc26f2",
+      "name": "Customizable 6thgeneration superstructure 11",
+      "status": "Pending",
+      "createdDate": "2025-07-31T19:58:23",
+      "updatedDate": "2026-02-13T20:39:51",
+      "owner": "Kenneth Lopez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3083.74,
+      "description": "Citizen add have best affect."
+    },
+    {
+      "id": "0253a55a-af41-49e6-b575-ea30b03acb71",
+      "name": "Assimilated contextually-based product 12",
+      "status": "Completed",
+      "createdDate": "2025-11-24T23:33:52",
+      "updatedDate": "2026-01-20T23:43:59",
+      "owner": "Leslie Hernandez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5321.72,
+      "description": "According particular scene blood."
+    },
+    {
+      "id": "8aec74ca-23a7-4961-82f2-0c9b6d74231d",
+      "name": "Ergonomic leadingedge contingency 13",
+      "status": "Completed",
+      "createdDate": "2025-06-13T19:45:52",
+      "updatedDate": "2026-01-20T02:32:11",
+      "owner": "Elijah Snyder",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5097.25,
+      "description": "Game camera president care food parent."
+    },
+    {
+      "id": "b3726061-caea-4fcd-aad7-4d4ab54bdeec",
+      "name": "Profit-focused executive access 14",
+      "status": "Pending",
+      "createdDate": "2025-04-11T09:21:16",
+      "updatedDate": "2026-01-30T22:39:04",
+      "owner": "Michael Nelson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3975.46,
+      "description": "Contain course good young cause they."
+    },
+    {
+      "id": "659053fa-ac92-483b-9dc1-4a9b2022b990",
+      "name": "Total radical portal 15",
+      "status": "Pending",
+      "createdDate": "2025-08-05T17:46:48",
+      "updatedDate": "2026-02-15T15:35:24",
+      "owner": "Kristi Bennett",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7957.03,
+      "description": "Fight point lose cell growth."
+    },
+    {
+      "id": "3b1553e3-b069-402a-b58c-2418a0e1b0ca",
+      "name": "Inverse upward-trending task-force 16",
+      "status": "Pending",
+      "createdDate": "2026-01-04T20:08:10",
+      "updatedDate": "2026-02-09T20:02:23",
+      "owner": "Samuel Gibbs",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6218.82,
+      "description": "Since card blue necessary."
+    },
+    {
+      "id": "034b6409-44f0-42de-8ebc-b6871779e1b0",
+      "name": "Quality-focused client-driven task-force 17",
+      "status": "Active",
+      "createdDate": "2026-02-11T12:45:53",
+      "updatedDate": "2026-02-02T05:44:05",
+      "owner": "Paula Hansen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9146.54,
+      "description": "Without reality throw star."
+    },
+    {
+      "id": "6350c8e1-c772-4bc5-adf4-1018dc0b1dc4",
+      "name": "Fundamental well-modulated Graphical User Interface 18",
+      "status": "Pending",
+      "createdDate": "2025-07-30T21:53:29",
+      "updatedDate": "2026-02-12T09:36:02",
+      "owner": "Alicia Patterson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6801.75,
+      "description": "Past conference significant what single consider."
+    },
+    {
+      "id": "684d9dc8-c6f0-4544-a0f7-916f777d5138",
+      "name": "Future-proofed discrete strategy 19",
+      "status": "Pending",
+      "createdDate": "2025-07-30T16:53:35",
+      "updatedDate": "2026-01-19T15:23:25",
+      "owner": "Nicole Martin",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2160.65,
+      "description": "Exist history choice real discussion."
+    },
+    {
+      "id": "44f2902a-1a9c-404e-98bf-d6249fe2d7ce",
+      "name": "Monitored empowering framework 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-20T15:21:44",
+      "updatedDate": "2026-02-16T07:35:20",
+      "owner": "Julie Lindsey",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7284.37,
+      "description": "Cell bed call these sport."
+    },
+    {
+      "id": "63c71b7c-43b5-4704-9845-b65637751832",
+      "name": "Total methodical superstructure 21",
+      "status": "Completed",
+      "createdDate": "2025-12-25T05:36:51",
+      "updatedDate": "2026-02-12T01:05:14",
+      "owner": "Garrett Wilson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8321.73,
+      "description": "Leave up girl military."
+    },
+    {
+      "id": "0c670f90-7ebb-49bd-ac79-eda2f4e27e5e",
+      "name": "Reverse-engineered responsive firmware 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-23T14:56:48",
+      "updatedDate": "2026-02-11T06:07:17",
+      "owner": "John Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1491.58,
+      "description": "Live break fly music."
+    },
+    {
+      "id": "47cbff2e-4b8c-4f85-858a-9d244b8295d2",
+      "name": "Programmable homogeneous secured line 23",
+      "status": "Active",
+      "createdDate": "2025-09-16T15:09:43",
+      "updatedDate": "2026-01-24T02:34:47",
+      "owner": "Kimberly Sanchez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2081.99,
+      "description": "Movie similar usually movie almost minute."
+    },
+    {
+      "id": "e386b586-49ce-4cf1-8bb0-5469a3a13135",
+      "name": "Reverse-engineered maximized moderator 24",
+      "status": "Completed",
+      "createdDate": "2025-12-09T03:29:18",
+      "updatedDate": "2026-01-21T02:09:02",
+      "owner": "Andrew Parsons",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7203.17,
+      "description": "Trouble population against follow reduce."
+    },
+    {
+      "id": "0ad66233-a90a-4d15-89bb-f921b66e1a17",
+      "name": "Cloned systemic secured line 25",
+      "status": "Inactive",
+      "createdDate": "2025-04-16T22:51:18",
+      "updatedDate": "2026-01-30T05:46:32",
+      "owner": "John Mcdowell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1706.97,
+      "description": "Poor pick shoulder what worker."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

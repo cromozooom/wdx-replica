@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-recent-updates",
+  "totalCount": 1234,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "25e63145-152b-4322-96f8-8bb0ebabf4f5",
+      "name": "Synchronized bandwidth-monitored structure 1",
+      "status": "Inactive",
+      "createdDate": "2025-09-20T00:29:08",
+      "updatedDate": "2026-01-26T22:40:52",
+      "owner": "Anthony Santos",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6566.93,
+      "description": "Media their ground."
+    },
+    {
+      "id": "aa964005-d0e7-49d7-aff2-86b74072536b",
+      "name": "Versatile homogeneous matrix 2",
+      "status": "Inactive",
+      "createdDate": "2026-02-09T21:25:08",
+      "updatedDate": "2026-02-15T07:41:36",
+      "owner": "Mary Kim",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1740.03,
+      "description": "Mind send summer so opportunity order."
+    },
+    {
+      "id": "53c4f285-042f-457f-a71d-4ea0a63a5473",
+      "name": "Customer-focused real-time Local Area Network 3",
+      "status": "Pending",
+      "createdDate": "2025-04-29T23:20:05",
+      "updatedDate": "2026-02-14T09:05:43",
+      "owner": "Victoria Campbell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9424.71,
+      "description": "Bed last continue box edge wonder."
+    },
+    {
+      "id": "8ce6e994-9e06-4d0d-abdc-c72e88004c33",
+      "name": "Upgradable transitional open system 4",
+      "status": "Active",
+      "createdDate": "2025-03-05T14:25:11",
+      "updatedDate": "2026-01-22T00:05:06",
+      "owner": "Frederick White",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2853.74,
+      "description": "Reveal raise building evening."
+    },
+    {
+      "id": "b7531396-0938-483c-81f2-04e674be8362",
+      "name": "Versatile explicit data-warehouse 5",
+      "status": "Pending",
+      "createdDate": "2025-11-24T13:25:28",
+      "updatedDate": "2026-01-29T11:26:08",
+      "owner": "Andrea Crosby",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4689.13,
+      "description": "Order local technology."
+    },
+    {
+      "id": "3dd06aa6-d03b-48a0-9b02-949497080231",
+      "name": "Adaptive client-driven standardization 6",
+      "status": "Inactive",
+      "createdDate": "2025-04-07T08:51:26",
+      "updatedDate": "2026-02-16T22:19:21",
+      "owner": "Corey Norman",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8640.77,
+      "description": "Quickly fall whose hour above billion second ready."
+    },
+    {
+      "id": "167ef00c-5d0a-4554-b000-ea009d69cc75",
+      "name": "Networked non-volatile frame 7",
+      "status": "Pending",
+      "createdDate": "2025-04-01T04:53:39",
+      "updatedDate": "2026-01-30T10:14:28",
+      "owner": "Melissa Cox",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8736.69,
+      "description": "Suggest country step region them west doctor."
+    },
+    {
+      "id": "d1f54a2d-a454-4e10-bb6c-0deef068500c",
+      "name": "Multi-tiered cohesive attitude 8",
+      "status": "Active",
+      "createdDate": "2026-01-17T13:01:36",
+      "updatedDate": "2026-02-06T03:06:05",
+      "owner": "Samantha Foster",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 921.58,
+      "description": "Meet adult partner hard might from."
+    },
+    {
+      "id": "ada9e556-ab89-4d0b-a681-4e09b9cebe41",
+      "name": "Vision-oriented dedicated ability 9",
+      "status": "Completed",
+      "createdDate": "2025-12-11T09:36:45",
+      "updatedDate": "2026-02-09T06:54:17",
+      "owner": "Jesse Fuentes",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3056.15,
+      "description": "Another blood prepare show growth through eight throughout."
+    },
+    {
+      "id": "2d084842-b808-4a7e-a0d8-6f28e2b213d4",
+      "name": "Focused mission-critical algorithm 10",
+      "status": "Inactive",
+      "createdDate": "2025-08-08T19:33:51",
+      "updatedDate": "2026-02-12T11:06:47",
+      "owner": "James Graham",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 324.85,
+      "description": "World west education force throughout among."
+    },
+    {
+      "id": "bb60ac85-88ea-4aa9-afe9-b4581b84e549",
+      "name": "Exclusive local instruction set 11",
+      "status": "Inactive",
+      "createdDate": "2025-07-05T08:53:20",
+      "updatedDate": "2026-02-03T12:29:21",
+      "owner": "Marissa Lee",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3628.63,
+      "description": "Left economy interview available deep."
+    },
+    {
+      "id": "ff4eeb4c-62d0-4706-b78a-a4d1259f3c5c",
+      "name": "User-friendly full-range array 12",
+      "status": "Pending",
+      "createdDate": "2025-07-27T15:15:58",
+      "updatedDate": "2026-01-22T07:52:34",
+      "owner": "Rebecca Hernandez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5170.48,
+      "description": "Painting arm class."
+    },
+    {
+      "id": "7b1fc376-708b-4a50-94dd-7fc3ae9abe3d",
+      "name": "Automated bandwidth-monitored utilization 13",
+      "status": "Active",
+      "createdDate": "2026-02-01T16:13:16",
+      "updatedDate": "2026-01-28T20:56:24",
+      "owner": "Rodney Lee",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3819.46,
+      "description": "Area particular teach court knowledge."
+    },
+    {
+      "id": "41f20478-d17d-4eab-a089-87a0e6c7c851",
+      "name": "Realigned tertiary protocol 14",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T16:40:01",
+      "updatedDate": "2026-01-20T19:57:36",
+      "owner": "Alfred Shaw",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7614.61,
+      "description": "Treat its call happen."
+    },
+    {
+      "id": "062e5e64-8b64-431b-bebc-6ff915ee31b5",
+      "name": "Public-key attitude-oriented Graphical User Interface 15",
+      "status": "Pending",
+      "createdDate": "2025-10-07T01:55:21",
+      "updatedDate": "2026-02-13T11:50:02",
+      "owner": "Rose Gilbert",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1548.17,
+      "description": "Summer partner hot action Mrs board speech."
+    },
+    {
+      "id": "08c843b8-a978-443c-a8c4-8c7f2fec8ff2",
+      "name": "Innovative object-oriented pricing structure 16",
+      "status": "Completed",
+      "createdDate": "2025-07-19T14:49:06",
+      "updatedDate": "2026-02-17T11:02:33",
+      "owner": "Christopher Hernandez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5260.33,
+      "description": "Mission item little option knowledge management human."
+    },
+    {
+      "id": "148ce6f4-10e7-42c1-98d7-6c3240254d63",
+      "name": "Advanced mission-critical projection 17",
+      "status": "Active",
+      "createdDate": "2025-09-01T05:05:31",
+      "updatedDate": "2026-02-12T22:28:37",
+      "owner": "Edgar Burns",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2451.52,
+      "description": "Need why sure marriage as city also collection."
+    },
+    {
+      "id": "33adfb4a-0ec1-46c2-9a86-9d4399b425ba",
+      "name": "Synchronized 24/7 data-warehouse 18",
+      "status": "Active",
+      "createdDate": "2025-11-24T16:40:35",
+      "updatedDate": "2026-01-31T03:36:11",
+      "owner": "Anthony Roach",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9462.99,
+      "description": "Make impact would whom above."
+    },
+    {
+      "id": "fba2e8b3-5edc-4cb7-906c-0b8e97bb40bf",
+      "name": "Polarized bottom-line intranet 19",
+      "status": "Completed",
+      "createdDate": "2025-06-26T17:38:06",
+      "updatedDate": "2026-02-11T01:51:19",
+      "owner": "Timothy Hernandez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8394.53,
+      "description": "Blood already think citizen newspaper south question training."
+    },
+    {
+      "id": "8781ffbc-8a59-4d0a-b418-b620b0006235",
+      "name": "Up-sized executive circuit 20",
+      "status": "Active",
+      "createdDate": "2026-01-22T14:15:06",
+      "updatedDate": "2026-02-10T04:33:27",
+      "owner": "Gabrielle Blevins",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 789.57,
+      "description": "Treat scene thing now economic."
+    },
+    {
+      "id": "697be378-361b-40fc-a74b-4f478d985641",
+      "name": "Adaptive dedicated array 21",
+      "status": "Completed",
+      "createdDate": "2025-12-31T06:59:17",
+      "updatedDate": "2026-02-06T21:29:06",
+      "owner": "Jason Nguyen DVM",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1499.18,
+      "description": "Pass suffer both peace news."
+    },
+    {
+      "id": "988a95bf-ed95-4ff8-999d-e64ca6160517",
+      "name": "Vision-oriented uniform functionalities 22",
+      "status": "Completed",
+      "createdDate": "2025-04-14T00:17:35",
+      "updatedDate": "2026-01-29T10:27:18",
+      "owner": "Stephanie Campbell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6253.24,
+      "description": "Hotel certain hold direction challenge rate."
+    },
+    {
+      "id": "4e30ca5c-6f04-4cce-91e0-98e8469265b8",
+      "name": "De-engineered local portal 23",
+      "status": "Inactive",
+      "createdDate": "2025-06-20T18:12:22",
+      "updatedDate": "2026-02-02T19:15:05",
+      "owner": "Caitlin Blankenship",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 245.01,
+      "description": "Could really focus carry data."
+    },
+    {
+      "id": "6b5ed982-f583-4766-8330-20b213840b09",
+      "name": "Multi-layered eco-centric capacity 24",
+      "status": "Pending",
+      "createdDate": "2025-10-04T20:48:43",
+      "updatedDate": "2026-02-14T07:38:50",
+      "owner": "Katie Mann",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9753.73,
+      "description": "Service age well large."
+    },
+    {
+      "id": "a8ed80a8-2ced-42cf-b743-4665f8a04646",
+      "name": "User-friendly 6thgeneration structure 25",
+      "status": "Inactive",
+      "createdDate": "2025-12-22T06:57:15",
+      "updatedDate": "2026-01-19T03:32:24",
+      "owner": "Chris Castro",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4989.64,
+      "description": "Out sport voice girl performance use real."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

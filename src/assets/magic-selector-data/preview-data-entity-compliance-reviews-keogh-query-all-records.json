@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-all-records",
+  "totalCount": 1386,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "dd2d266c-1975-4630-85c6-d7a16e633f3f",
+      "name": "Stand-alone mobile infrastructure 1",
+      "status": "Completed",
+      "createdDate": "2025-07-08T02:59:41",
+      "updatedDate": "2026-02-02T04:34:54",
+      "owner": "Ashley Miller",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5446.38,
+      "description": "Control so occur throw explain."
+    },
+    {
+      "id": "634857a7-26c7-4162-b7aa-f49e485a61a3",
+      "name": "Open-architected zero administration help-desk 2",
+      "status": "Pending",
+      "createdDate": "2025-03-09T00:28:23",
+      "updatedDate": "2026-02-04T16:29:59",
+      "owner": "Jason Vang",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5133.03,
+      "description": "Music decide team do anyone manage."
+    },
+    {
+      "id": "7eb705bc-1517-48fb-91c6-966c34809c89",
+      "name": "Grass-roots high-level attitude 3",
+      "status": "Inactive",
+      "createdDate": "2025-10-27T21:23:44",
+      "updatedDate": "2026-02-13T16:06:25",
+      "owner": "Andrea Zuniga",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8665.77,
+      "description": "Next always adult job."
+    },
+    {
+      "id": "425fc8af-8205-4d86-b62b-f92e03c4f150",
+      "name": "Quality-focused actuating secured line 4",
+      "status": "Completed",
+      "createdDate": "2025-05-03T03:28:36",
+      "updatedDate": "2026-02-04T14:04:45",
+      "owner": "Christine Lopez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 936.19,
+      "description": "Manager firm civil keep those five."
+    },
+    {
+      "id": "9aaed375-0109-4449-8eaf-03146f57ec90",
+      "name": "Synergized non-volatile data-warehouse 5",
+      "status": "Pending",
+      "createdDate": "2025-05-01T12:30:28",
+      "updatedDate": "2026-01-19T11:13:16",
+      "owner": "Sara Butler",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5425.21,
+      "description": "Yes statement top sound."
+    },
+    {
+      "id": "7ec1acf3-bbdf-48f7-b7d1-ad9551b2f2f0",
+      "name": "Switchable homogeneous customer loyalty 6",
+      "status": "Completed",
+      "createdDate": "2025-10-01T10:52:46",
+      "updatedDate": "2026-01-22T07:26:50",
+      "owner": "Renee Davis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5689.3,
+      "description": "Consumer society group."
+    },
+    {
+      "id": "b0ca50a4-6775-48c3-b4c5-fabc2c36fb84",
+      "name": "Object-based bottom-line neural-net 7",
+      "status": "Inactive",
+      "createdDate": "2026-02-06T02:58:45",
+      "updatedDate": "2026-01-28T22:54:43",
+      "owner": "Allen Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1381.51,
+      "description": "Money benefit late both country challenge."
+    },
+    {
+      "id": "a3e9b769-d817-4110-9fa9-542d861f163e",
+      "name": "Persevering coherent approach 8",
+      "status": "Active",
+      "createdDate": "2025-08-30T10:35:58",
+      "updatedDate": "2026-01-21T22:04:47",
+      "owner": "John Sullivan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 387.11,
+      "description": "Actually yourself receive out institution part these."
+    },
+    {
+      "id": "d3b1bcfe-8801-4b47-9b74-2f7253245e86",
+      "name": "Innovative local installation 9",
+      "status": "Active",
+      "createdDate": "2025-06-07T16:44:53",
+      "updatedDate": "2026-01-26T23:25:07",
+      "owner": "Ryan Evans",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7234.12,
+      "description": "Again pull nice usually forget."
+    },
+    {
+      "id": "a3cc381f-0526-4d4c-b000-c5ede835726d",
+      "name": "Multi-layered asymmetric help-desk 10",
+      "status": "Completed",
+      "createdDate": "2025-04-13T13:43:01",
+      "updatedDate": "2026-02-07T05:16:23",
+      "owner": "Caitlin Soto",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9232.02,
+      "description": "Everything thank beautiful best nice establish Mr."
+    },
+    {
+      "id": "a68c8a67-8a54-4e24-afa5-1d4f197ace04",
+      "name": "Open-source fault-tolerant productivity 11",
+      "status": "Active",
+      "createdDate": "2025-08-06T09:38:48",
+      "updatedDate": "2026-02-04T11:43:06",
+      "owner": "Shelly Donovan",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 330.67,
+      "description": "Ten agree candidate question boy establish grow."
+    },
+    {
+      "id": "6d6e0169-6454-4c8a-99c4-bbafb388dbb7",
+      "name": "Realigned neutral implementation 12",
+      "status": "Completed",
+      "createdDate": "2025-10-03T20:16:21",
+      "updatedDate": "2026-02-13T17:29:01",
+      "owner": "Laura Perez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3284.6,
+      "description": "Answer order else it detail step."
+    },
+    {
+      "id": "b4ae701f-caf3-403c-86fa-e7136656bb43",
+      "name": "Multi-channeled homogeneous software 13",
+      "status": "Inactive",
+      "createdDate": "2025-06-03T17:58:56",
+      "updatedDate": "2026-02-03T12:15:28",
+      "owner": "Micheal Finley",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6298.35,
+      "description": "Team suggest environment."
+    },
+    {
+      "id": "43405cdc-6566-4c52-bd1e-59d0bdf65ac9",
+      "name": "Versatile multi-tasking complexity 14",
+      "status": "Active",
+      "createdDate": "2025-03-20T00:10:25",
+      "updatedDate": "2026-01-28T16:01:32",
+      "owner": "Shane Herrera",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 907.24,
+      "description": "Far market heavy hair fund."
+    },
+    {
+      "id": "d49bba7c-34ab-4e61-a11c-5d38a1278b98",
+      "name": "Down-sized methodical superstructure 15",
+      "status": "Pending",
+      "createdDate": "2026-01-20T09:48:07",
+      "updatedDate": "2026-01-28T03:15:14",
+      "owner": "Joseph Rodriguez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2137.02,
+      "description": "Lose others every no."
+    },
+    {
+      "id": "754e911d-194c-4b04-815b-45f07df62f95",
+      "name": "Up-sized scalable throughput 16",
+      "status": "Active",
+      "createdDate": "2025-08-21T15:31:00",
+      "updatedDate": "2026-01-22T14:54:38",
+      "owner": "Jason Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8947.63,
+      "description": "Tend nothing within answer response law make."
+    },
+    {
+      "id": "af29872b-c9aa-440e-8194-bdc1f3b03afe",
+      "name": "Seamless composite contingency 17",
+      "status": "Active",
+      "createdDate": "2025-12-26T01:59:04",
+      "updatedDate": "2026-01-23T20:40:39",
+      "owner": "Robert Malone",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9123.64,
+      "description": "Six watch major."
+    },
+    {
+      "id": "466e3dd2-2ec4-487a-ad7e-9038a060e9d8",
+      "name": "Open-source scalable success 18",
+      "status": "Pending",
+      "createdDate": "2025-04-17T20:39:03",
+      "updatedDate": "2026-02-14T16:37:47",
+      "owner": "Steven Garcia",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6448.96,
+      "description": "Church management build ball quickly across."
+    },
+    {
+      "id": "4ec03d25-a026-4820-b359-68cd159d89dc",
+      "name": "Right-sized directional synergy 19",
+      "status": "Active",
+      "createdDate": "2025-07-28T21:33:00",
+      "updatedDate": "2026-02-02T06:20:19",
+      "owner": "Matthew Jimenez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6926.2,
+      "description": "Us its himself people itself government character."
+    },
+    {
+      "id": "4d5bc7ea-521f-4621-a5dc-f9fe0fc4f1c4",
+      "name": "Balanced secondary algorithm 20",
+      "status": "Inactive",
+      "createdDate": "2025-04-26T08:52:16",
+      "updatedDate": "2026-02-12T11:01:08",
+      "owner": "Alexandra Mora",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5161.53,
+      "description": "Baby world accept family open question occur."
+    },
+    {
+      "id": "70379589-b176-4a1d-91e8-6d2fadb4cabe",
+      "name": "Self-enabling multimedia access 21",
+      "status": "Pending",
+      "createdDate": "2025-04-26T18:49:41",
+      "updatedDate": "2026-02-08T19:12:57",
+      "owner": "Douglas Leblanc",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8708.39,
+      "description": "Responsibility beyond lead every along on."
+    },
+    {
+      "id": "b481ff6a-5c0c-4415-83b7-8070aed8a02f",
+      "name": "Down-sized incremental orchestration 22",
+      "status": "Pending",
+      "createdDate": "2025-04-08T03:48:27",
+      "updatedDate": "2026-02-11T09:06:10",
+      "owner": "Christopher Matthews DVM",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4031.21,
+      "description": "Here make amount your money wish else."
+    },
+    {
+      "id": "c464aa1b-1d2f-4276-8e05-fff62fdce9aa",
+      "name": "Robust stable ability 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-04T18:34:01",
+      "updatedDate": "2026-01-23T11:05:13",
+      "owner": "Brian Morales",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5963.9,
+      "description": "Culture send on note compare concern investment."
+    },
+    {
+      "id": "c36af2d8-cf19-4b98-b474-6242fd63efbc",
+      "name": "User-centric human-resource artificial intelligence 24",
+      "status": "Inactive",
+      "createdDate": "2026-01-27T04:43:29",
+      "updatedDate": "2026-02-06T22:29:45",
+      "owner": "Paul Velasquez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4019.63,
+      "description": "Want commercial themselves prepare administration police what top."
+    },
+    {
+      "id": "eb0a3830-bc7f-4c2d-a674-483dfa8feaf2",
+      "name": "Fully-configurable holistic project 25",
+      "status": "Active",
+      "createdDate": "2025-10-17T02:51:11",
+      "updatedDate": "2026-02-01T21:57:40",
+      "owner": "Haley Perez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6083.27,
+      "description": "Second fact land six."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

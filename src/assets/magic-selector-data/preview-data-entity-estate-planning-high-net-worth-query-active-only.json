@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-active-only",
+  "totalCount": 502,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3550db9b-e610-4cf3-a463-a23bc891de93",
+      "name": "Persistent impactful model 1",
+      "status": "Active",
+      "createdDate": "2025-04-05T06:50:29",
+      "updatedDate": "2026-02-01T16:52:27",
+      "owner": "George Mcknight",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9213.85,
+      "description": "Heart contain there in."
+    },
+    {
+      "id": "3dc53721-42c6-47a7-8253-5fe0d9640254",
+      "name": "Team-oriented grid-enabled interface 2",
+      "status": "Active",
+      "createdDate": "2025-11-09T18:46:32",
+      "updatedDate": "2026-01-23T07:08:51",
+      "owner": "Laura Murray",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7991.5,
+      "description": "Cultural talk after sign sea participant team."
+    },
+    {
+      "id": "332a7d27-e149-41a8-bf25-a3d8000ed030",
+      "name": "Cloned 4thgeneration initiative 3",
+      "status": "Active",
+      "createdDate": "2025-10-08T15:44:29",
+      "updatedDate": "2026-02-05T16:15:07",
+      "owner": "David Wilkerson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9557.94,
+      "description": "Bill that central thought."
+    },
+    {
+      "id": "682faf26-bc29-47f0-82e9-d64f9c86df14",
+      "name": "Universal 5thgeneration contingency 4",
+      "status": "Pending",
+      "createdDate": "2025-03-17T09:32:48",
+      "updatedDate": "2026-02-03T11:19:19",
+      "owner": "Daniel Carter",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8386.64,
+      "description": "High middle back gas act improve."
+    },
+    {
+      "id": "d4c20456-ded8-44eb-a916-3c7b46620be7",
+      "name": "Centralized national neural-net 5",
+      "status": "Inactive",
+      "createdDate": "2026-01-03T15:28:11",
+      "updatedDate": "2026-01-29T15:11:33",
+      "owner": "Justin Hernandez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6724.93,
+      "description": "Response gas significant woman size."
+    },
+    {
+      "id": "53da0828-c0b3-4e4c-af98-d129a24617ff",
+      "name": "Extended interactive productivity 6",
+      "status": "Pending",
+      "createdDate": "2025-12-13T10:06:50",
+      "updatedDate": "2026-02-03T04:02:31",
+      "owner": "Jacqueline Edwards",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6836.67,
+      "description": "Determine simple food possible world field."
+    },
+    {
+      "id": "f5395564-02b9-4602-bdb5-545113d73260",
+      "name": "Right-sized 24/7 Local Area Network 7",
+      "status": "Completed",
+      "createdDate": "2025-08-07T16:23:09",
+      "updatedDate": "2026-01-25T04:18:39",
+      "owner": "Catherine Reyes",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5547.67,
+      "description": "Understand deal miss better free."
+    },
+    {
+      "id": "a3d5c897-f8e5-4269-b3f9-64e6d6945f2e",
+      "name": "Customer-focused directional product 8",
+      "status": "Inactive",
+      "createdDate": "2025-11-16T23:24:02",
+      "updatedDate": "2026-02-16T16:30:27",
+      "owner": "Kristi Leon",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6062.48,
+      "description": "Very this personal rate forget available difficult student."
+    },
+    {
+      "id": "71bccd8b-1674-4f70-bad4-19cfcc5f3d0b",
+      "name": "Persevering local approach 9",
+      "status": "Completed",
+      "createdDate": "2025-06-30T13:05:06",
+      "updatedDate": "2026-01-28T01:05:21",
+      "owner": "Paul Rogers",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6238.08,
+      "description": "Either him throw wish issue might significant."
+    },
+    {
+      "id": "ab6d7ef4-8f01-4de1-9bd4-ad83c566ff76",
+      "name": "Optimized contextually-based paradigm 10",
+      "status": "Inactive",
+      "createdDate": "2025-04-06T22:16:20",
+      "updatedDate": "2026-02-13T02:48:01",
+      "owner": "Amanda Harrison",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5475.86,
+      "description": "Pay fear out tough recent around."
+    },
+    {
+      "id": "59ea2f60-e84a-467d-b372-8fb382c29e3f",
+      "name": "Proactive bandwidth-monitored solution 11",
+      "status": "Active",
+      "createdDate": "2025-07-09T22:44:22",
+      "updatedDate": "2026-01-31T08:30:54",
+      "owner": "Jesse Watson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8411.82,
+      "description": "Them difference us turn look."
+    },
+    {
+      "id": "038bdba6-1185-4e21-ab2f-19fbfbcc07f1",
+      "name": "Centralized clear-thinking policy 12",
+      "status": "Completed",
+      "createdDate": "2025-04-19T07:53:51",
+      "updatedDate": "2026-02-11T20:19:36",
+      "owner": "Michael Miller",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8946.15,
+      "description": "Ball hand choose present."
+    },
+    {
+      "id": "0737338d-8e5a-4b8b-80dc-ae1d787a2f47",
+      "name": "Enhanced asynchronous challenge 13",
+      "status": "Pending",
+      "createdDate": "2025-07-15T23:54:52",
+      "updatedDate": "2026-02-15T03:59:32",
+      "owner": "Steven Fisher",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6933.42,
+      "description": "Think eat specific kid prevent try."
+    },
+    {
+      "id": "1ceafbe7-6c90-43d0-81cd-8bf7c3bcc95b",
+      "name": "Adaptive system-worthy open architecture 14",
+      "status": "Pending",
+      "createdDate": "2025-07-01T13:13:43",
+      "updatedDate": "2026-02-05T21:53:38",
+      "owner": "Erin Allen",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5213.28,
+      "description": "Opportunity attorney boy during significant go certain."
+    },
+    {
+      "id": "232be6ed-06a2-4575-9dca-16902202d887",
+      "name": "Multi-lateral bottom-line functionalities 15",
+      "status": "Pending",
+      "createdDate": "2025-06-04T08:36:39",
+      "updatedDate": "2026-01-29T07:14:09",
+      "owner": "Megan Hays",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3581.81,
+      "description": "Including anyone add particularly."
+    },
+    {
+      "id": "7a52e6f2-285a-4d21-8ba4-be3446f893bd",
+      "name": "Persevering executive contingency 16",
+      "status": "Inactive",
+      "createdDate": "2025-07-06T05:40:06",
+      "updatedDate": "2026-02-15T23:18:19",
+      "owner": "Jennifer Rivera",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8242.71,
+      "description": "On arm only term use population simple."
+    },
+    {
+      "id": "ccb2ddc7-e814-4c8a-aa07-e83e3dfd5bc2",
+      "name": "Re-contextualized multi-state middleware 17",
+      "status": "Active",
+      "createdDate": "2025-12-18T01:30:30",
+      "updatedDate": "2026-02-02T02:06:59",
+      "owner": "Brenda Holt",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3693.98,
+      "description": "Rather design entire success find family tax participant."
+    },
+    {
+      "id": "fd503120-63f9-4e22-a175-46abec7e46d6",
+      "name": "Front-line multimedia policy 18",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T14:57:24",
+      "updatedDate": "2026-02-12T02:44:56",
+      "owner": "Christopher King",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 408.53,
+      "description": "Think light possible sound your."
+    },
+    {
+      "id": "e755a509-0146-42f6-887c-b66fc962a73e",
+      "name": "Vision-oriented user-facing help-desk 19",
+      "status": "Inactive",
+      "createdDate": "2025-04-23T00:55:58",
+      "updatedDate": "2026-02-09T04:02:28",
+      "owner": "Paul Mack",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8041.1,
+      "description": "Say next evidence even financial anything."
+    },
+    {
+      "id": "a80ecd6c-4465-41c1-a5cf-c73d141d1e8f",
+      "name": "Fundamental user-facing circuit 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-28T16:03:37",
+      "updatedDate": "2026-01-26T12:40:39",
+      "owner": "Steven Murray",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8524.29,
+      "description": "Must show wait difference budget rich that."
+    },
+    {
+      "id": "b6511ce9-ddd3-4d79-9f18-7d88d1115de1",
+      "name": "Total asynchronous analyzer 21",
+      "status": "Pending",
+      "createdDate": "2025-05-05T17:50:24",
+      "updatedDate": "2026-02-03T17:07:16",
+      "owner": "Lauren Jackson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1125.29,
+      "description": "Trip degree fly study at economic sing."
+    },
+    {
+      "id": "7d32e491-10fd-47aa-8f20-da901e1694b7",
+      "name": "Cross-platform local moratorium 22",
+      "status": "Active",
+      "createdDate": "2025-10-20T00:02:01",
+      "updatedDate": "2026-02-01T15:49:39",
+      "owner": "David Porter",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9368.13,
+      "description": "Player any consumer laugh decide."
+    },
+    {
+      "id": "de1cfa5c-1ae6-4c8d-86cf-d74bd2d4529e",
+      "name": "Persistent zero tolerance attitude 23",
+      "status": "Active",
+      "createdDate": "2025-06-01T23:54:41",
+      "updatedDate": "2026-02-07T09:03:15",
+      "owner": "Desiree Mueller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9863.35,
+      "description": "Natural view good might real price."
+    },
+    {
+      "id": "b1004795-8917-4279-b8a5-0af72eb8fac8",
+      "name": "Centralized coherent parallelism 24",
+      "status": "Active",
+      "createdDate": "2025-02-18T10:18:54",
+      "updatedDate": "2026-01-25T18:42:52",
+      "owner": "Sarah Alvarez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5186.64,
+      "description": "Federal speech must choice response."
+    },
+    {
+      "id": "b6dc8dfe-aa53-41e5-8c02-2a782f5c5174",
+      "name": "Devolved multi-tasking task-force 25",
+      "status": "Inactive",
+      "createdDate": "2025-03-08T12:31:36",
+      "updatedDate": "2026-02-02T10:50:38",
+      "owner": "Gregory Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1024.31,
+      "description": "Ten risk bank animal glass control west."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

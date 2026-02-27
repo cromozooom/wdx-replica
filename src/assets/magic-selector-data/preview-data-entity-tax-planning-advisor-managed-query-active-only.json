@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-active-only",
+  "totalCount": 659,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "36dde1c4-ce43-4841-8b10-f91aea630ea6",
+      "name": "Enhanced content-based access 1",
+      "status": "Active",
+      "createdDate": "2025-05-30T11:10:51",
+      "updatedDate": "2026-02-10T16:26:59",
+      "owner": "Sara Hoover",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8153.66,
+      "description": "Do agreement response ability growth."
+    },
+    {
+      "id": "a736b920-55bb-4b10-80c6-1445f3ccc557",
+      "name": "Exclusive composite workforce 2",
+      "status": "Pending",
+      "createdDate": "2025-07-27T01:20:00",
+      "updatedDate": "2026-02-08T18:44:42",
+      "owner": "Michael Morales",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 799.9,
+      "description": "Management market possible Mr court economy reflect."
+    },
+    {
+      "id": "6ebafe35-9b8f-4711-9957-e6569b0b21b9",
+      "name": "Organic multi-tasking customer loyalty 3",
+      "status": "Active",
+      "createdDate": "2025-06-11T15:23:51",
+      "updatedDate": "2026-01-25T03:44:24",
+      "owner": "Vernon Patton",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7391.64,
+      "description": "Skill none discover shake force."
+    },
+    {
+      "id": "14d9d66c-4546-4fa8-b728-289f0b52902a",
+      "name": "Diverse 4thgeneration help-desk 4",
+      "status": "Completed",
+      "createdDate": "2025-03-14T17:54:12",
+      "updatedDate": "2026-01-22T13:07:06",
+      "owner": "Laura Clarke",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8355.85,
+      "description": "Development interview card magazine thousand."
+    },
+    {
+      "id": "4ccb3e83-6256-4c19-830f-65f11ac8341e",
+      "name": "Configurable interactive parallelism 5",
+      "status": "Inactive",
+      "createdDate": "2025-09-02T09:11:01",
+      "updatedDate": "2026-01-30T05:07:42",
+      "owner": "Teresa Alvarado",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 776.04,
+      "description": "Result responsibility stuff ready."
+    },
+    {
+      "id": "501eeb8b-521d-4325-a23a-30e532de3acc",
+      "name": "Open-architected demand-driven complexity 6",
+      "status": "Completed",
+      "createdDate": "2025-12-02T08:58:23",
+      "updatedDate": "2026-02-02T18:23:57",
+      "owner": "Aimee Brooks",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8117.74,
+      "description": "It theory position summer notice happen event."
+    },
+    {
+      "id": "bf502212-c7f8-4b61-8847-4cfc191974a3",
+      "name": "Optimized motivating parallelism 7",
+      "status": "Completed",
+      "createdDate": "2025-06-24T05:23:44",
+      "updatedDate": "2026-02-08T19:43:57",
+      "owner": "Kelly Mccormick",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3238.1,
+      "description": "Artist TV ground with play decision knowledge body."
+    },
+    {
+      "id": "b3ec894a-0d85-4b41-8049-483886546c3c",
+      "name": "Upgradable object-oriented task-force 8",
+      "status": "Inactive",
+      "createdDate": "2025-08-18T21:27:29",
+      "updatedDate": "2026-01-23T01:34:36",
+      "owner": "Laurie Kelley",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9575.07,
+      "description": "Region possible decision line risk seven attack near."
+    },
+    {
+      "id": "6c43b07a-4438-4c7a-b5f2-d6bb2b7a0ab4",
+      "name": "Innovative didactic monitoring 9",
+      "status": "Completed",
+      "createdDate": "2025-10-05T23:26:08",
+      "updatedDate": "2026-02-16T03:03:48",
+      "owner": "Caroline Morrison",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3897.86,
+      "description": "Short central trouble home receive society mission."
+    },
+    {
+      "id": "bc267ee0-ac2a-44f9-bf5b-ca888c971c60",
+      "name": "Vision-oriented static circuit 10",
+      "status": "Completed",
+      "createdDate": "2025-07-26T05:51:30",
+      "updatedDate": "2026-02-06T12:47:04",
+      "owner": "Matthew Scott",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6262.94,
+      "description": "Loss act suffer quality address ground."
+    },
+    {
+      "id": "fcc6061e-0530-4652-a177-9fd56a68bf7a",
+      "name": "Front-line value-added open system 11",
+      "status": "Inactive",
+      "createdDate": "2025-02-23T00:11:53",
+      "updatedDate": "2026-02-04T11:50:53",
+      "owner": "Martin Singh",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7067.94,
+      "description": "Effort school probably forward."
+    },
+    {
+      "id": "5dc6bc5c-311c-42d0-8582-01bdec12d62e",
+      "name": "Polarized directional software 12",
+      "status": "Active",
+      "createdDate": "2025-12-30T11:45:53",
+      "updatedDate": "2026-02-09T14:58:33",
+      "owner": "Arthur Torres",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9210.72,
+      "description": "Tend traditional keep growth sport."
+    },
+    {
+      "id": "df2a1f86-360b-4acc-a70c-f85b5a3154ad",
+      "name": "Reverse-engineered heuristic productivity 13",
+      "status": "Inactive",
+      "createdDate": "2025-08-25T20:18:02",
+      "updatedDate": "2026-01-25T15:29:27",
+      "owner": "Terri Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1402.43,
+      "description": "Final represent any quickly."
+    },
+    {
+      "id": "9d64a0c4-c653-4738-9ed5-ac22f3991d9d",
+      "name": "Multi-tiered zero-defect capacity 14",
+      "status": "Completed",
+      "createdDate": "2025-05-22T17:19:01",
+      "updatedDate": "2026-01-22T11:16:44",
+      "owner": "Angela Jackson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1551.3,
+      "description": "Fund one crime fact indicate nation evidence."
+    },
+    {
+      "id": "f148bd28-6af6-4c47-9bbd-6e823c343c22",
+      "name": "Up-sized needs-based service-desk 15",
+      "status": "Active",
+      "createdDate": "2025-12-05T16:03:10",
+      "updatedDate": "2026-01-21T08:44:00",
+      "owner": "Sean Singh",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3234.23,
+      "description": "Reason box while such few send."
+    },
+    {
+      "id": "d99ae9d3-6db1-4888-aaa7-c6d767a78e50",
+      "name": "Switchable explicit standardization 16",
+      "status": "Inactive",
+      "createdDate": "2025-10-06T20:49:25",
+      "updatedDate": "2026-01-23T20:20:24",
+      "owner": "Joseph Gibbs",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4644.9,
+      "description": "Prove none room radio fire floor policy."
+    },
+    {
+      "id": "5c74301b-ea6c-4317-9eca-4d3a14f165b6",
+      "name": "Multi-channeled upward-trending time-frame 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-31T23:55:44",
+      "updatedDate": "2026-01-24T05:12:30",
+      "owner": "Eddie Wilson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6821.41,
+      "description": "Message recently ahead their indeed little require help."
+    },
+    {
+      "id": "bfb52385-60b6-4783-af15-8b61a2e155f4",
+      "name": "Re-engineered holistic definition 18",
+      "status": "Completed",
+      "createdDate": "2025-09-05T23:52:49",
+      "updatedDate": "2026-02-05T09:29:35",
+      "owner": "Antonio Chang",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4573.57,
+      "description": "Matter investment particularly alone."
+    },
+    {
+      "id": "e3f275ab-5fb4-4514-970b-314c60feb886",
+      "name": "Re-engineered reciprocal contingency 19",
+      "status": "Pending",
+      "createdDate": "2025-05-18T14:18:33",
+      "updatedDate": "2026-02-06T13:30:49",
+      "owner": "James Velez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1147.73,
+      "description": "Us end light Republican very hit avoid play."
+    },
+    {
+      "id": "3de3acea-63c0-4917-9d53-98ac53bf7a37",
+      "name": "Horizontal static definition 20",
+      "status": "Pending",
+      "createdDate": "2025-08-19T01:51:56",
+      "updatedDate": "2026-01-26T04:02:05",
+      "owner": "Shaun Mccall",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 344.89,
+      "description": "Modern nearly foot."
+    },
+    {
+      "id": "1892749c-8f41-4649-8d2d-d26ef9831a30",
+      "name": "Exclusive optimizing infrastructure 21",
+      "status": "Pending",
+      "createdDate": "2025-10-09T05:14:59",
+      "updatedDate": "2026-01-19T22:57:34",
+      "owner": "Shane Lucas",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6933.34,
+      "description": "Goal into or admit."
+    },
+    {
+      "id": "2a70ada1-374c-4002-8a52-619a0f918aa5",
+      "name": "Self-enabling national methodology 22",
+      "status": "Active",
+      "createdDate": "2026-02-06T01:51:43",
+      "updatedDate": "2026-01-28T20:42:31",
+      "owner": "Kara Hodge",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7490.65,
+      "description": "Himself daughter take plant before."
+    },
+    {
+      "id": "25f394b8-44b7-437c-b376-4058476299b8",
+      "name": "Enterprise-wide interactive approach 23",
+      "status": "Completed",
+      "createdDate": "2025-04-10T05:03:55",
+      "updatedDate": "2026-02-13T00:33:59",
+      "owner": "Robert Reyes",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6873.72,
+      "description": "These reduce product so authority despite."
+    },
+    {
+      "id": "3785fc86-3e60-4851-9bf9-de52ef9bffba",
+      "name": "Networked analyzing implementation 24",
+      "status": "Pending",
+      "createdDate": "2025-11-23T12:58:40",
+      "updatedDate": "2026-02-15T07:19:11",
+      "owner": "James Lucero",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 242.13,
+      "description": "Grow thousand trial may let race it."
+    },
+    {
+      "id": "cdc5cdcd-a896-4f20-8b25-1911c17fc56d",
+      "name": "Integrated background access 25",
+      "status": "Completed",
+      "createdDate": "2025-08-31T12:23:46",
+      "updatedDate": "2026-01-27T10:21:29",
+      "owner": "Heidi Ritter",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8303.22,
+      "description": "Account feeling city pretty some news."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

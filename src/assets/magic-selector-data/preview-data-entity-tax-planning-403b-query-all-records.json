@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-all-records",
+  "totalCount": 673,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "1eb28664-77ed-43dc-aa20-e3be2c71d118",
+      "name": "Switchable stable model 1",
+      "status": "Pending",
+      "createdDate": "2025-02-18T16:07:23",
+      "updatedDate": "2026-01-27T15:16:47",
+      "owner": "Eric Pham",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6583.05,
+      "description": "Soldier better begin smile."
+    },
+    {
+      "id": "56db069d-4f68-4c4d-a44a-32a630f2fe29",
+      "name": "Secured dedicated application 2",
+      "status": "Inactive",
+      "createdDate": "2025-04-23T13:53:44",
+      "updatedDate": "2026-01-21T03:37:24",
+      "owner": "Joseph Hernandez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2306.0,
+      "description": "Color Mr center bad off specific include production."
+    },
+    {
+      "id": "63ee9494-615d-40cf-96d5-33d920e17b2c",
+      "name": "Object-based optimal strategy 3",
+      "status": "Active",
+      "createdDate": "2025-10-14T16:28:59",
+      "updatedDate": "2026-02-10T04:07:29",
+      "owner": "Eric Dean",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7324.79,
+      "description": "Since group young teacher authority rate benefit."
+    },
+    {
+      "id": "1c63619e-d695-4c04-a7fc-f9fbbfd3439d",
+      "name": "Operative multi-state system engine 4",
+      "status": "Inactive",
+      "createdDate": "2025-08-28T03:26:19",
+      "updatedDate": "2026-02-12T00:51:52",
+      "owner": "Dustin Thompson Jr.",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 647.43,
+      "description": "Trip tend house fire thus."
+    },
+    {
+      "id": "f44ed568-9ac2-4327-8158-f6e0b0de50ad",
+      "name": "Profound impactful benchmark 5",
+      "status": "Pending",
+      "createdDate": "2025-11-22T21:24:35",
+      "updatedDate": "2026-01-21T03:55:44",
+      "owner": "Timothy Ruiz",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6510.89,
+      "description": "May fire certain lay."
+    },
+    {
+      "id": "0aca4fd0-e2fb-4c95-8739-4f060b65e5f4",
+      "name": "Pre-emptive cohesive forecast 6",
+      "status": "Completed",
+      "createdDate": "2025-12-05T04:57:34",
+      "updatedDate": "2026-02-12T08:42:09",
+      "owner": "Pamela Velasquez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7971.28,
+      "description": "Actually range produce course religious above buy."
+    },
+    {
+      "id": "af97d42e-3591-44d3-a6c8-61a3b21834bc",
+      "name": "Realigned didactic array 7",
+      "status": "Pending",
+      "createdDate": "2025-10-01T03:00:06",
+      "updatedDate": "2026-01-29T15:02:38",
+      "owner": "Kara Dixon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1690.5,
+      "description": "Including effort experience surface pattern black."
+    },
+    {
+      "id": "99b59b11-4ff4-4435-8de2-71b9b0dff2d4",
+      "name": "Multi-tiered transitional projection 8",
+      "status": "Pending",
+      "createdDate": "2025-04-12T09:59:12",
+      "updatedDate": "2026-02-04T03:22:35",
+      "owner": "Jacqueline Smith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1176.01,
+      "description": "Enough physical not score reality herself thing."
+    },
+    {
+      "id": "68144900-fafb-4339-888b-bb0c33e33374",
+      "name": "Upgradable zero administration portal 9",
+      "status": "Pending",
+      "createdDate": "2025-12-25T11:25:22",
+      "updatedDate": "2026-02-13T01:29:02",
+      "owner": "Courtney Williams",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4560.82,
+      "description": "Site they better chance least."
+    },
+    {
+      "id": "9f156718-c4eb-478b-af40-32a142004e12",
+      "name": "Intuitive next generation extranet 10",
+      "status": "Inactive",
+      "createdDate": "2025-10-06T02:29:21",
+      "updatedDate": "2026-02-01T08:16:39",
+      "owner": "John Gonzalez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 734.02,
+      "description": "Exactly usually food business news should appear above."
+    },
+    {
+      "id": "bcd7b773-be00-4fa3-ae43-570487cca0cb",
+      "name": "Persistent 4thgeneration emulation 11",
+      "status": "Inactive",
+      "createdDate": "2025-10-30T04:01:19",
+      "updatedDate": "2026-01-21T11:56:06",
+      "owner": "Andrew Garcia",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2510.42,
+      "description": "Field eat society eat owner fear parent."
+    },
+    {
+      "id": "c6927a29-52c3-402f-b0bc-604e7a4e8d85",
+      "name": "Cloned grid-enabled success 12",
+      "status": "Active",
+      "createdDate": "2025-12-15T22:04:04",
+      "updatedDate": "2026-02-05T11:46:20",
+      "owner": "Amber Ellis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 943.61,
+      "description": "Six away necessary."
+    },
+    {
+      "id": "fe610da2-25f1-4325-9ad1-0c921c6f206a",
+      "name": "Stand-alone asymmetric superstructure 13",
+      "status": "Inactive",
+      "createdDate": "2025-10-26T08:00:08",
+      "updatedDate": "2026-02-02T23:07:39",
+      "owner": "Lance Maxwell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6779.49,
+      "description": "Choose day that toward remain want contain."
+    },
+    {
+      "id": "5319625c-34d8-4883-a19b-494fc608b649",
+      "name": "Versatile contextually-based moratorium 14",
+      "status": "Inactive",
+      "createdDate": "2025-10-08T15:26:39",
+      "updatedDate": "2026-01-27T11:08:08",
+      "owner": "Jacob Friedman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8131.08,
+      "description": "So quality like analysis final table."
+    },
+    {
+      "id": "a43d30aa-285b-407f-8a2b-787e5a0a995a",
+      "name": "Operative well-modulated knowledge user 15",
+      "status": "Active",
+      "createdDate": "2025-10-18T22:22:39",
+      "updatedDate": "2026-01-27T01:06:36",
+      "owner": "Michael Velasquez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6277.22,
+      "description": "Audience growth interview exist throw decision kind."
+    },
+    {
+      "id": "1326ed8b-9318-4967-878c-57ff6d3b88c6",
+      "name": "Vision-oriented maximized approach 16",
+      "status": "Completed",
+      "createdDate": "2025-05-09T00:29:09",
+      "updatedDate": "2026-01-22T19:13:23",
+      "owner": "Jessica Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4828.01,
+      "description": "Card despite business these probably today."
+    },
+    {
+      "id": "ca731595-0173-46be-ac85-636b32b7b0f6",
+      "name": "Triple-buffered responsive migration 17",
+      "status": "Inactive",
+      "createdDate": "2025-09-05T14:52:03",
+      "updatedDate": "2026-02-16T10:36:50",
+      "owner": "Jessica Miller",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2003.35,
+      "description": "Difference against religious possible more hold weight nor."
+    },
+    {
+      "id": "5c0f3c6d-2074-4b13-a88a-85ac83859ff2",
+      "name": "Fundamental national portal 18",
+      "status": "Completed",
+      "createdDate": "2025-11-09T15:34:55",
+      "updatedDate": "2026-02-17T09:49:37",
+      "owner": "Tina Torres",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9129.53,
+      "description": "Seem Congress stuff also difference bring."
+    },
+    {
+      "id": "bdd44bd0-5c51-407e-946b-54688175e31c",
+      "name": "Inverse bandwidth-monitored hub 19",
+      "status": "Completed",
+      "createdDate": "2025-03-27T09:40:16",
+      "updatedDate": "2026-02-09T22:10:48",
+      "owner": "Clinton Jackson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7327.04,
+      "description": "Recent physical letter may to individual site."
+    },
+    {
+      "id": "14938195-a695-4e6e-9439-2c42453cc889",
+      "name": "Innovative 24hour budgetary management 20",
+      "status": "Pending",
+      "createdDate": "2025-06-06T18:12:46",
+      "updatedDate": "2026-02-07T12:45:18",
+      "owner": "Brittany Ford",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8018.17,
+      "description": "Early notice him message capital wind any nothing."
+    },
+    {
+      "id": "9d5aed43-f842-405d-b321-efe7df1a0cda",
+      "name": "Ameliorated human-resource concept 21",
+      "status": "Inactive",
+      "createdDate": "2025-03-02T19:36:45",
+      "updatedDate": "2026-02-06T07:01:22",
+      "owner": "Ms. Sheila Arellano",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2106.49,
+      "description": "Resource give pretty."
+    },
+    {
+      "id": "60e812c8-9be7-4bdf-9d52-a21b20132151",
+      "name": "Proactive fresh-thinking software 22",
+      "status": "Completed",
+      "createdDate": "2025-03-15T12:26:07",
+      "updatedDate": "2026-02-06T17:20:42",
+      "owner": "Robert Roth",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5510.51,
+      "description": "Note down half only ready."
+    },
+    {
+      "id": "3fdae168-4d1c-45a9-ad06-463770828341",
+      "name": "Function-based motivating encryption 23",
+      "status": "Completed",
+      "createdDate": "2025-12-25T13:22:48",
+      "updatedDate": "2026-01-22T02:42:06",
+      "owner": "Stephanie Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4281.56,
+      "description": "Back last cultural person strong suffer toward."
+    },
+    {
+      "id": "a8fd5f4b-919a-46af-9557-7de66da411ca",
+      "name": "Sharable tangible hub 24",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T00:20:17",
+      "updatedDate": "2026-01-22T15:10:18",
+      "owner": "Charles Lucas",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 623.66,
+      "description": "Song yeah work fact."
+    },
+    {
+      "id": "2506739e-cc97-4c0f-acad-302e5c510d4c",
+      "name": "Front-line bi-directional productivity 25",
+      "status": "Completed",
+      "createdDate": "2025-12-26T09:25:19",
+      "updatedDate": "2026-01-31T23:20:51",
+      "owner": "Rebecca Aguilar",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2768.42,
+      "description": "Where organization surface buy choose today consider."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

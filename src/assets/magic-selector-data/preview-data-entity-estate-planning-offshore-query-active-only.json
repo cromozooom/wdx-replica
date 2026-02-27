@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-active-only",
+  "totalCount": 873,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "14595c75-2d37-4443-a28e-4bada8a5476d",
+      "name": "Diverse responsive circuit 1",
+      "status": "Inactive",
+      "createdDate": "2025-08-27T10:38:51",
+      "updatedDate": "2026-01-19T19:00:30",
+      "owner": "Brandy Jordan",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4503.67,
+      "description": "Great boy protect."
+    },
+    {
+      "id": "4a930399-68bf-41fc-b77d-ea7118a4dc38",
+      "name": "Balanced impactful support 2",
+      "status": "Inactive",
+      "createdDate": "2025-07-07T14:44:03",
+      "updatedDate": "2026-02-17T06:02:11",
+      "owner": "Amanda Howard",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9190.03,
+      "description": "Himself attention experience knowledge remember."
+    },
+    {
+      "id": "d00f0761-8f11-4d35-9a2e-fb6fd8797a46",
+      "name": "Automated leadingedge interface 3",
+      "status": "Inactive",
+      "createdDate": "2025-12-21T01:49:14",
+      "updatedDate": "2026-01-28T23:16:03",
+      "owner": "Brad Martin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2228.72,
+      "description": "Reach board usually great site."
+    },
+    {
+      "id": "d6e1522a-b2d3-44e2-8737-198d7f7f07f0",
+      "name": "Quality-focused foreground benchmark 4",
+      "status": "Completed",
+      "createdDate": "2025-05-02T14:27:49",
+      "updatedDate": "2026-02-06T15:11:32",
+      "owner": "Jordan Sullivan",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7988.11,
+      "description": "Loss those space indeed write."
+    },
+    {
+      "id": "3ad495fa-c9a6-4db6-b762-4fe5358316be",
+      "name": "User-friendly systemic emulation 5",
+      "status": "Completed",
+      "createdDate": "2025-11-27T11:59:59",
+      "updatedDate": "2026-02-12T17:01:59",
+      "owner": "Shelby Brewer",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6543.27,
+      "description": "Medical involve cause at computer."
+    },
+    {
+      "id": "85caac65-3076-4d37-b5a4-299105dc9bcd",
+      "name": "Up-sized dynamic software 6",
+      "status": "Active",
+      "createdDate": "2025-08-17T15:30:49",
+      "updatedDate": "2026-02-12T14:08:47",
+      "owner": "David Osborne",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2563.06,
+      "description": "Evidence prove believe animal option around fund."
+    },
+    {
+      "id": "02f3ea2a-fd65-4d02-be72-5dee6fa3e443",
+      "name": "Cross-group real-time throughput 7",
+      "status": "Active",
+      "createdDate": "2026-01-14T06:41:59",
+      "updatedDate": "2026-02-11T19:59:21",
+      "owner": "Roberto White",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 512.75,
+      "description": "Report become between kind consumer ask that."
+    },
+    {
+      "id": "7cd11b7c-0014-416f-8c06-7b2802cb4628",
+      "name": "Object-based systematic attitude 8",
+      "status": "Completed",
+      "createdDate": "2025-05-29T22:11:02",
+      "updatedDate": "2026-02-03T13:07:33",
+      "owner": "Sarah Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8498.5,
+      "description": "Change thousand visit financial phone."
+    },
+    {
+      "id": "92abd0ad-984d-4487-9d7b-1dffa9ab096e",
+      "name": "Horizontal mobile architecture 9",
+      "status": "Inactive",
+      "createdDate": "2025-02-20T11:01:44",
+      "updatedDate": "2026-02-04T13:48:53",
+      "owner": "Angel Lawson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9428.41,
+      "description": "Investment soon sea soldier number help."
+    },
+    {
+      "id": "1446882e-7477-468f-a03e-78bdd877cd65",
+      "name": "Re-engineered 6thgeneration moratorium 10",
+      "status": "Active",
+      "createdDate": "2025-11-17T10:19:25",
+      "updatedDate": "2026-01-21T23:27:26",
+      "owner": "Terry Todd",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3405.47,
+      "description": "Art military value kind year choice ten."
+    },
+    {
+      "id": "d22a88be-329f-44ca-a7d0-00a99ff3b90a",
+      "name": "Profit-focused intermediate open architecture 11",
+      "status": "Active",
+      "createdDate": "2025-10-20T16:27:19",
+      "updatedDate": "2026-01-28T09:11:27",
+      "owner": "James Washington",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5183.79,
+      "description": "Or choice light middle season site will."
+    },
+    {
+      "id": "091a489c-226f-49d7-ba46-7ec80d9b9b10",
+      "name": "Diverse stable product 12",
+      "status": "Completed",
+      "createdDate": "2025-06-22T16:04:58",
+      "updatedDate": "2026-01-29T04:24:35",
+      "owner": "Molly Frank",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5625.73,
+      "description": "Every vote subject center beat."
+    },
+    {
+      "id": "4dfd7711-a3ef-4bca-b757-31e2bd4264ec",
+      "name": "Customer-focused optimizing solution 13",
+      "status": "Inactive",
+      "createdDate": "2025-07-18T09:45:40",
+      "updatedDate": "2026-02-17T04:47:27",
+      "owner": "Jake Atkinson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1511.61,
+      "description": "General data number decade."
+    },
+    {
+      "id": "b1da41bf-9ad3-42d8-bf85-2341016ce18a",
+      "name": "Ergonomic well-modulated array 14",
+      "status": "Active",
+      "createdDate": "2025-12-02T10:06:02",
+      "updatedDate": "2026-01-18T13:40:29",
+      "owner": "Megan Griffith",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 468.61,
+      "description": "Prevent Democrat page subject."
+    },
+    {
+      "id": "f2c20e49-07b7-46f6-9988-48fee81896d1",
+      "name": "Stand-alone web-enabled monitoring 15",
+      "status": "Inactive",
+      "createdDate": "2025-03-04T14:29:36",
+      "updatedDate": "2026-01-31T13:42:51",
+      "owner": "Tiffany Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8914.88,
+      "description": "Market first police way clearly a charge degree."
+    },
+    {
+      "id": "27d579db-4b51-4f9f-bb86-ade7d446771c",
+      "name": "Organized multi-state conglomeration 16",
+      "status": "Pending",
+      "createdDate": "2025-11-14T05:13:38",
+      "updatedDate": "2026-02-03T08:57:42",
+      "owner": "Adam Price",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4936.03,
+      "description": "Law life effort cause yard trial."
+    },
+    {
+      "id": "bd0d261d-9d76-4b22-a4c7-ae16406a48b2",
+      "name": "Devolved needs-based function 17",
+      "status": "Pending",
+      "createdDate": "2025-10-31T16:20:31",
+      "updatedDate": "2026-02-16T16:32:52",
+      "owner": "Angela Espinoza",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9078.7,
+      "description": "Fear turn call stop society impact section speak."
+    },
+    {
+      "id": "290113b1-ea49-4ccd-a1df-8db4327b20df",
+      "name": "Expanded composite complexity 18",
+      "status": "Inactive",
+      "createdDate": "2025-09-01T13:54:18",
+      "updatedDate": "2026-01-22T10:47:26",
+      "owner": "Jack Koch",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4641.18,
+      "description": "Management certain various."
+    },
+    {
+      "id": "d13f6a64-da4c-4a64-b36a-bd02f2c1ffe6",
+      "name": "Digitized 3rdgeneration portal 19",
+      "status": "Completed",
+      "createdDate": "2025-05-27T14:01:20",
+      "updatedDate": "2026-02-13T12:16:31",
+      "owner": "Scott Wright",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5035.1,
+      "description": "Position lot Mr current medical whole tough before."
+    },
+    {
+      "id": "91e6d8b4-1a26-45f2-a11d-f8ac5f3c8830",
+      "name": "Polarized motivating monitoring 20",
+      "status": "Pending",
+      "createdDate": "2025-04-06T23:48:44",
+      "updatedDate": "2026-02-10T06:28:07",
+      "owner": "Elizabeth Patterson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5238.25,
+      "description": "Tv care when place sister."
+    },
+    {
+      "id": "1d957611-c39d-4674-9271-a9c101be2d1a",
+      "name": "Switchable disintermediate firmware 21",
+      "status": "Completed",
+      "createdDate": "2025-03-20T01:28:31",
+      "updatedDate": "2026-01-24T14:04:28",
+      "owner": "Robert Hernandez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8347.86,
+      "description": "Adult four leg rather TV."
+    },
+    {
+      "id": "9bb26672-fba2-452c-bb6d-32027170ead1",
+      "name": "Virtual scalable moderator 22",
+      "status": "Pending",
+      "createdDate": "2025-04-29T09:36:26",
+      "updatedDate": "2026-02-07T08:42:04",
+      "owner": "Derrick Crawford",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7944.13,
+      "description": "Notice begin three for."
+    },
+    {
+      "id": "0fa0854e-29bd-4e7d-881c-47a423d12ee9",
+      "name": "Multi-lateral well-modulated model 23",
+      "status": "Completed",
+      "createdDate": "2025-11-06T21:47:46",
+      "updatedDate": "2026-02-15T14:58:26",
+      "owner": "Joseph Boyle",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5263.73,
+      "description": "Read stay better role turn truth."
+    },
+    {
+      "id": "a76184f5-5da5-4dd0-b44e-d38a5ce8a4e3",
+      "name": "Reduced hybrid framework 24",
+      "status": "Completed",
+      "createdDate": "2025-03-29T09:44:22",
+      "updatedDate": "2026-01-21T21:23:52",
+      "owner": "Mr. Brian Marshall PhD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 226.26,
+      "description": "Who buy father name go detail whatever off."
+    },
+    {
+      "id": "d812b3d9-ad61-4873-b547-4116c62fce28",
+      "name": "User-centric even-keeled website 25",
+      "status": "Inactive",
+      "createdDate": "2026-02-04T05:06:32",
+      "updatedDate": "2026-02-04T10:24:16",
+      "owner": "Jodi Short",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3875.4,
+      "description": "Certain image help indeed research."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

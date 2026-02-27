@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-recent-updates",
+  "totalCount": 103,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "8641ef1f-d426-4123-af70-18eb6a027590",
+      "name": "Compatible tangible product 1",
+      "status": "Inactive",
+      "createdDate": "2025-04-10T05:10:09",
+      "updatedDate": "2026-02-08T07:10:19",
+      "owner": "David Andrade",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8331.91,
+      "description": "Success accept especially price."
+    },
+    {
+      "id": "288d4188-d8f3-4ab7-9410-2bea43e0eac5",
+      "name": "Triple-buffered mobile website 2",
+      "status": "Active",
+      "createdDate": "2025-12-22T06:07:16",
+      "updatedDate": "2026-02-13T02:01:28",
+      "owner": "Robert Hunt",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1245.5,
+      "description": "Table close stock commercial road budget."
+    },
+    {
+      "id": "665aa6f4-0c87-493d-a8e3-6c8df96ea6b2",
+      "name": "De-engineered 5thgeneration paradigm 3",
+      "status": "Inactive",
+      "createdDate": "2025-03-11T00:21:46",
+      "updatedDate": "2026-01-29T07:58:18",
+      "owner": "Nichole Schmitt",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8132.23,
+      "description": "Actually draw room many."
+    },
+    {
+      "id": "b8f24e34-ccef-4a5f-a867-fcbfa20fa509",
+      "name": "Mandatory full-range throughput 4",
+      "status": "Completed",
+      "createdDate": "2025-08-11T14:16:01",
+      "updatedDate": "2026-01-19T20:33:53",
+      "owner": "Gabriel Arnold",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4415.98,
+      "description": "Call understand leg floor."
+    },
+    {
+      "id": "4e069481-189a-41b3-8b01-3c4a00c14cba",
+      "name": "Managed discrete pricing structure 5",
+      "status": "Active",
+      "createdDate": "2025-06-22T11:15:42",
+      "updatedDate": "2026-02-17T01:22:18",
+      "owner": "Virginia Marshall",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3160.42,
+      "description": "Nature threat develop family."
+    },
+    {
+      "id": "57971ce7-a805-48af-a317-df210e7046ce",
+      "name": "Optimized logistical superstructure 6",
+      "status": "Active",
+      "createdDate": "2025-07-22T14:07:19",
+      "updatedDate": "2026-01-26T16:19:09",
+      "owner": "Bryan Walker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1112.74,
+      "description": "His nothing contain knowledge book least."
+    },
+    {
+      "id": "cf462865-a16f-45b3-81c6-4146e8846759",
+      "name": "Progressive static capability 7",
+      "status": "Active",
+      "createdDate": "2026-02-13T21:50:35",
+      "updatedDate": "2026-01-26T08:26:51",
+      "owner": "Katherine Boyd",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 845.09,
+      "description": "Individual full peace art actually much."
+    },
+    {
+      "id": "a05e0724-7034-4531-832e-09216e934710",
+      "name": "Enterprise-wide radical leverage 8",
+      "status": "Inactive",
+      "createdDate": "2025-04-13T03:27:10",
+      "updatedDate": "2026-01-21T06:57:26",
+      "owner": "Candace Butler",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2422.83,
+      "description": "Wish and time paper."
+    },
+    {
+      "id": "9485d11c-f744-43e5-9b2e-8eecbab3caa0",
+      "name": "Multi-lateral reciprocal toolset 9",
+      "status": "Active",
+      "createdDate": "2026-01-14T00:22:41",
+      "updatedDate": "2026-01-23T12:34:06",
+      "owner": "Steven Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6302.91,
+      "description": "Past stop be story second exactly."
+    },
+    {
+      "id": "7d393992-78d8-41aa-be9d-cda356aee536",
+      "name": "Customizable multi-tasking database 10",
+      "status": "Pending",
+      "createdDate": "2026-01-30T22:15:00",
+      "updatedDate": "2026-02-06T19:35:22",
+      "owner": "Shannon Ramsey",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4118.88,
+      "description": "Teacher future figure east including."
+    },
+    {
+      "id": "c92b8fd2-9c36-408e-bcde-83c25ad9384d",
+      "name": "Enterprise-wide full-range ability 11",
+      "status": "Pending",
+      "createdDate": "2025-08-08T09:41:24",
+      "updatedDate": "2026-01-20T06:09:24",
+      "owner": "Kimberly Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 844.25,
+      "description": "Quickly though clearly once."
+    },
+    {
+      "id": "2c6082aa-caa2-4ca5-ad8e-877f7c9f5bf7",
+      "name": "Realigned systemic application 12",
+      "status": "Pending",
+      "createdDate": "2025-07-11T06:40:20",
+      "updatedDate": "2026-01-22T16:14:13",
+      "owner": "Ruben Holden",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6045.91,
+      "description": "Still prove put down method heart quality."
+    },
+    {
+      "id": "d5630b31-b49a-490d-86bf-8f748f1b0bdf",
+      "name": "Team-oriented next generation artificial intelligence 13",
+      "status": "Pending",
+      "createdDate": "2025-04-25T04:50:45",
+      "updatedDate": "2026-02-10T02:35:26",
+      "owner": "Steven Moreno",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4094.78,
+      "description": "Popular society occur life often later music."
+    },
+    {
+      "id": "0342dfb0-ed10-485b-8495-b9df4b138275",
+      "name": "Business-focused explicit interface 14",
+      "status": "Completed",
+      "createdDate": "2025-02-26T18:55:47",
+      "updatedDate": "2026-02-06T01:50:41",
+      "owner": "Amber Long",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 299.88,
+      "description": "Employee race attorney itself."
+    },
+    {
+      "id": "098f319d-b1ef-4be3-a272-1249c67ab75d",
+      "name": "Universal context-sensitive secured line 15",
+      "status": "Pending",
+      "createdDate": "2025-11-17T13:32:09",
+      "updatedDate": "2026-02-07T17:21:23",
+      "owner": "Keith Sullivan",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8356.05,
+      "description": "Painting peace interesting court yet lose Mr."
+    },
+    {
+      "id": "efc34fee-167b-4700-bdec-80722aa80a84",
+      "name": "Compatible national matrix 16",
+      "status": "Completed",
+      "createdDate": "2025-07-29T16:52:02",
+      "updatedDate": "2026-01-26T13:12:01",
+      "owner": "Anthony Nguyen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4760.45,
+      "description": "Talk computer myself hit media."
+    },
+    {
+      "id": "f2471a47-c704-4270-b572-9e7c14d46903",
+      "name": "Progressive national groupware 17",
+      "status": "Inactive",
+      "createdDate": "2026-01-10T22:57:24",
+      "updatedDate": "2026-02-08T15:30:25",
+      "owner": "Cynthia Fowler",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6465.24,
+      "description": "Decide option fact high race all face."
+    },
+    {
+      "id": "db6458dd-bd84-40df-af06-82cf647c6ac5",
+      "name": "Operative holistic website 18",
+      "status": "Completed",
+      "createdDate": "2025-04-17T20:32:23",
+      "updatedDate": "2026-01-29T13:26:13",
+      "owner": "James Lewis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2678.74,
+      "description": "Not amount man skill."
+    },
+    {
+      "id": "203355d9-a2ab-4290-a6eb-9990417a9a41",
+      "name": "Open-architected 4thgeneration migration 19",
+      "status": "Completed",
+      "createdDate": "2026-01-03T15:10:19",
+      "updatedDate": "2026-02-06T21:13:34",
+      "owner": "Victoria Olson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1842.8,
+      "description": "Save month on on community soon Democrat father."
+    },
+    {
+      "id": "1cc531f6-1b1f-407b-a16a-9c289f9f1bb9",
+      "name": "Universal eco-centric implementation 20",
+      "status": "Pending",
+      "createdDate": "2025-03-18T13:04:34",
+      "updatedDate": "2026-01-19T22:55:49",
+      "owner": "Olivia Murphy",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6125.6,
+      "description": "End style thank us drive reason."
+    },
+    {
+      "id": "9e255314-6784-4805-b48f-55bd7ec959aa",
+      "name": "Digitized discrete analyzer 21",
+      "status": "Active",
+      "createdDate": "2025-09-02T01:22:16",
+      "updatedDate": "2026-02-10T07:03:50",
+      "owner": "James Myers",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8261.52,
+      "description": "Interview party discussion already agent bed."
+    },
+    {
+      "id": "f59299a0-1b0c-4c72-a4f1-c3c9f647bc43",
+      "name": "Synchronized global superstructure 22",
+      "status": "Completed",
+      "createdDate": "2025-08-12T15:28:42",
+      "updatedDate": "2026-01-28T23:30:10",
+      "owner": "Tim Rojas",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6447.02,
+      "description": "Be much by practice pay."
+    },
+    {
+      "id": "7e37ef86-a802-4e37-8a19-2b49940d4ebf",
+      "name": "Optional transitional strategy 23",
+      "status": "Inactive",
+      "createdDate": "2026-01-29T04:30:29",
+      "updatedDate": "2026-02-02T04:13:33",
+      "owner": "Jacqueline Vega",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1493.41,
+      "description": "For authority pressure support store reveal choose."
+    },
+    {
+      "id": "d206c256-5f37-4836-9e4d-507b046bd796",
+      "name": "Implemented human-resource infrastructure 24",
+      "status": "Active",
+      "createdDate": "2025-03-05T14:40:20",
+      "updatedDate": "2026-02-03T15:21:36",
+      "owner": "Christian Robertson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 592.1,
+      "description": "Provide high across difference need."
+    },
+    {
+      "id": "8acd9298-8b5f-4772-bf51-b5cb1e916b6d",
+      "name": "Extended methodical knowledge user 25",
+      "status": "Active",
+      "createdDate": "2025-03-01T18:35:25",
+      "updatedDate": "2026-02-13T01:07:44",
+      "owner": "John Nguyen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7363.43,
+      "description": "Including floor institution push option decide shake."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

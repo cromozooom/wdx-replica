@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-regulatoryfiling",
+  "queryId": "query-active-only",
+  "totalCount": 1014,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "c2ea676f-43ba-40e4-951e-d245f4969537",
+      "name": "Enterprise-wide fresh-thinking analyzer 1",
+      "status": "Inactive",
+      "createdDate": "2025-09-15T20:16:29",
+      "updatedDate": "2026-02-16T08:31:17",
+      "owner": "Ms. Mary Vasquez MD",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 155.65,
+      "description": "Score three concern shoulder."
+    },
+    {
+      "id": "aec8b9ea-334b-4728-b90f-406be95f8e3d",
+      "name": "Total optimizing superstructure 2",
+      "status": "Inactive",
+      "createdDate": "2026-02-13T14:18:53",
+      "updatedDate": "2026-02-15T07:19:36",
+      "owner": "Penny Pearson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1690.06,
+      "description": "Study building everyone."
+    },
+    {
+      "id": "48ecdaa6-05b1-4aba-b55a-33fbfdfa90e2",
+      "name": "Realigned dedicated attitude 3",
+      "status": "Inactive",
+      "createdDate": "2025-02-20T18:29:14",
+      "updatedDate": "2026-02-06T09:52:21",
+      "owner": "Stephanie Lee",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7644.0,
+      "description": "Almost all your."
+    },
+    {
+      "id": "f21a47df-c90d-45da-9ef6-31858d1615b1",
+      "name": "Multi-layered intermediate concept 4",
+      "status": "Completed",
+      "createdDate": "2025-08-30T17:53:12",
+      "updatedDate": "2026-01-26T19:46:01",
+      "owner": "Amy Gilmore",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5544.18,
+      "description": "Trade control blue network."
+    },
+    {
+      "id": "3a22ce5e-e337-4390-9590-f6f727a9d399",
+      "name": "Reverse-engineered hybrid info-mediaries 5",
+      "status": "Pending",
+      "createdDate": "2025-03-21T06:22:33",
+      "updatedDate": "2026-02-08T00:38:01",
+      "owner": "Micheal Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 739.26,
+      "description": "Night school career seven attack call."
+    },
+    {
+      "id": "a21c575a-d234-4e2a-82b9-ccfca9c430e1",
+      "name": "Seamless executive approach 6",
+      "status": "Inactive",
+      "createdDate": "2025-07-06T00:40:51",
+      "updatedDate": "2026-02-16T02:26:11",
+      "owner": "Andre Hodges",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8413.99,
+      "description": "Deal rule student member in big cup."
+    },
+    {
+      "id": "48f7c924-53d2-458a-ab6f-80bd86d754e4",
+      "name": "Synergized cohesive secured line 7",
+      "status": "Inactive",
+      "createdDate": "2025-05-09T05:19:59",
+      "updatedDate": "2026-01-29T05:09:27",
+      "owner": "Walter Rose",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7717.73,
+      "description": "Success effort trip authority brother drive party human."
+    },
+    {
+      "id": "523bf3a9-f669-4814-945a-11f28b36bcf6",
+      "name": "Enterprise-wide demand-driven artificial intelligence 8",
+      "status": "Active",
+      "createdDate": "2025-09-09T21:50:35",
+      "updatedDate": "2026-01-29T03:26:04",
+      "owner": "Timothy Webb",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6519.3,
+      "description": "Money order model civil."
+    },
+    {
+      "id": "dd9cae97-188b-4dc6-a9c9-0056071825ac",
+      "name": "Visionary systemic structure 9",
+      "status": "Pending",
+      "createdDate": "2025-12-27T10:15:15",
+      "updatedDate": "2026-02-16T19:43:26",
+      "owner": "Jeffrey Harris",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9981.93,
+      "description": "Activity next choose deep."
+    },
+    {
+      "id": "38f2ac07-3890-4011-ae3f-3dced288741a",
+      "name": "Enhanced multimedia synergy 10",
+      "status": "Pending",
+      "createdDate": "2025-11-04T19:51:43",
+      "updatedDate": "2026-02-15T16:26:55",
+      "owner": "Seth Jackson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7576.37,
+      "description": "Wait yard control moment."
+    },
+    {
+      "id": "350d4f8b-8fef-4c11-be45-83409ca4b3fe",
+      "name": "Customizable empowering pricing structure 11",
+      "status": "Pending",
+      "createdDate": "2025-05-02T22:37:38",
+      "updatedDate": "2026-01-25T18:07:58",
+      "owner": "Lindsay Goodman",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4644.28,
+      "description": "Long example partner situation."
+    },
+    {
+      "id": "4360659e-084d-4a24-bca0-bd2aa45f237b",
+      "name": "Down-sized client-server infrastructure 12",
+      "status": "Completed",
+      "createdDate": "2025-03-22T02:05:02",
+      "updatedDate": "2026-01-21T15:37:09",
+      "owner": "Tiffany Solomon",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1708.97,
+      "description": "Analysis much responsibility close buy organization music."
+    },
+    {
+      "id": "ebb08ba0-b7cc-470d-ba94-23eb100905a2",
+      "name": "Expanded responsive portal 13",
+      "status": "Active",
+      "createdDate": "2025-03-05T06:25:26",
+      "updatedDate": "2026-01-31T07:52:13",
+      "owner": "Lynn Thompson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3441.0,
+      "description": "By plan soon tree yard."
+    },
+    {
+      "id": "384b03e5-946c-4ec5-b981-8e601c643e84",
+      "name": "Automated tangible moratorium 14",
+      "status": "Active",
+      "createdDate": "2025-11-28T03:06:31",
+      "updatedDate": "2026-01-19T06:58:57",
+      "owner": "Kevin Cox",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4546.86,
+      "description": "Watch your everyone."
+    },
+    {
+      "id": "c45cb949-f7c8-4d6a-99cf-c3776274dec4",
+      "name": "Customer-focused logistical hierarchy 15",
+      "status": "Active",
+      "createdDate": "2025-04-14T11:24:29",
+      "updatedDate": "2026-02-03T18:28:02",
+      "owner": "Christina Mcpherson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8696.08,
+      "description": "Reflect degree get believe skill."
+    },
+    {
+      "id": "653be00d-b52c-4eeb-8dd9-81c0e13a6b7a",
+      "name": "Profound incremental task-force 16",
+      "status": "Pending",
+      "createdDate": "2025-04-28T18:21:46",
+      "updatedDate": "2026-02-08T02:18:15",
+      "owner": "Ashley Schneider",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1214.49,
+      "description": "Past success example road."
+    },
+    {
+      "id": "f8531c98-6c51-451c-b2d4-a02ed41c47b8",
+      "name": "Inverse disintermediate knowledgebase 17",
+      "status": "Inactive",
+      "createdDate": "2025-10-17T10:49:19",
+      "updatedDate": "2026-01-28T05:01:47",
+      "owner": "Brian Allen",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5643.47,
+      "description": "Many note pass head much."
+    },
+    {
+      "id": "f5e5039d-66e0-4246-a2ab-c8deab968f5f",
+      "name": "Operative directional contingency 18",
+      "status": "Active",
+      "createdDate": "2025-11-24T02:45:10",
+      "updatedDate": "2026-02-10T02:13:27",
+      "owner": "Nicolas Sutton",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4075.44,
+      "description": "Table nature expert leave."
+    },
+    {
+      "id": "3bd90251-2dba-42f6-aa21-a1686110b35e",
+      "name": "Pre-emptive regional array 19",
+      "status": "Active",
+      "createdDate": "2025-03-30T20:16:40",
+      "updatedDate": "2026-01-28T14:09:54",
+      "owner": "Robert Thompson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5531.05,
+      "description": "Light no town happen."
+    },
+    {
+      "id": "f9d449ca-d460-40b0-890e-88c8c968b0b4",
+      "name": "Up-sized dedicated product 20",
+      "status": "Completed",
+      "createdDate": "2026-02-02T14:07:32",
+      "updatedDate": "2026-02-13T14:54:10",
+      "owner": "Jaclyn Franklin",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7477.57,
+      "description": "Prevent offer science season paper."
+    },
+    {
+      "id": "b87f338b-0bec-4e2c-9331-5533ab9d986e",
+      "name": "Pre-emptive coherent neural-net 21",
+      "status": "Inactive",
+      "createdDate": "2025-06-11T20:53:37",
+      "updatedDate": "2026-02-13T22:43:21",
+      "owner": "Raymond James",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8148.04,
+      "description": "Interesting should cup moment throw."
+    },
+    {
+      "id": "4d29ebc8-eeaf-4f55-9c2a-126bd7080bd2",
+      "name": "Future-proofed zero-defect monitoring 22",
+      "status": "Active",
+      "createdDate": "2025-07-31T17:13:11",
+      "updatedDate": "2026-01-19T08:22:59",
+      "owner": "Eric Mills",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2110.35,
+      "description": "Stock field Mrs make."
+    },
+    {
+      "id": "738795b3-394c-4232-9fb0-483c446aa4f9",
+      "name": "Optional optimal success 23",
+      "status": "Inactive",
+      "createdDate": "2025-06-08T23:51:31",
+      "updatedDate": "2026-01-23T21:58:46",
+      "owner": "Brittney Nelson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2671.82,
+      "description": "School off speech table make play."
+    },
+    {
+      "id": "b057c7d7-1791-4442-b2c4-be2271b9ac2f",
+      "name": "Team-oriented context-sensitive open architecture 24",
+      "status": "Completed",
+      "createdDate": "2025-07-16T19:45:18",
+      "updatedDate": "2026-02-17T09:17:48",
+      "owner": "Melanie Griffin",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3374.01,
+      "description": "Here leader start sell."
+    },
+    {
+      "id": "277e22fb-2de3-479e-b18c-ef317f34be24",
+      "name": "Total dedicated utilization 25",
+      "status": "Active",
+      "createdDate": "2025-11-24T01:35:24",
+      "updatedDate": "2026-02-03T23:44:54",
+      "owner": "Isaiah Vance",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4384.39,
+      "description": "Five speak send why market such."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

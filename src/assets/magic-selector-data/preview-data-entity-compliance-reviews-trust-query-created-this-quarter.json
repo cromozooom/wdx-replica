@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 518,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "757f2e9e-e047-430f-944c-a6d2d9ac112b",
+      "name": "Down-sized bottom-line groupware 1",
+      "status": "Pending",
+      "createdDate": "2025-09-19T17:36:15",
+      "updatedDate": "2026-02-06T12:12:33",
+      "owner": "Ricky Ross",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3237.62,
+      "description": "Anyone use identify life."
+    },
+    {
+      "id": "72e2c53e-c7f4-4b29-9396-7edc91d4ce06",
+      "name": "Progressive systematic project 2",
+      "status": "Active",
+      "createdDate": "2025-04-07T07:51:47",
+      "updatedDate": "2026-01-28T06:20:26",
+      "owner": "Jamie Jones",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7365.31,
+      "description": "Success say statement day beyond rise."
+    },
+    {
+      "id": "77e2d8fd-1aeb-4dfa-8122-6678d155e19f",
+      "name": "Secured empowering array 3",
+      "status": "Inactive",
+      "createdDate": "2025-05-24T23:04:12",
+      "updatedDate": "2026-02-07T13:14:22",
+      "owner": "Jennifer Price",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5393.18,
+      "description": "Senior friend almost industry player."
+    },
+    {
+      "id": "63c0371b-2ce1-4081-9626-f50f69a4cc5b",
+      "name": "Face-to-face hybrid open architecture 4",
+      "status": "Completed",
+      "createdDate": "2025-09-25T20:43:32",
+      "updatedDate": "2026-01-21T10:58:10",
+      "owner": "Brooke Meza",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2034.08,
+      "description": "Threat address reach consider production stage."
+    },
+    {
+      "id": "3cba01a3-cd34-49b7-a5dd-de807821a7f4",
+      "name": "Profit-focused background methodology 5",
+      "status": "Pending",
+      "createdDate": "2025-08-07T02:21:32",
+      "updatedDate": "2026-01-29T11:02:03",
+      "owner": "Jacob Hall",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3465.57,
+      "description": "Tree major both modern popular."
+    },
+    {
+      "id": "b7642682-0c9a-4707-94ed-f3817e0da7e6",
+      "name": "Centralized client-driven definition 6",
+      "status": "Inactive",
+      "createdDate": "2025-09-16T21:24:24",
+      "updatedDate": "2026-02-16T01:24:13",
+      "owner": "Michelle Yang",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4864.24,
+      "description": "Exactly say guy cold."
+    },
+    {
+      "id": "0f897634-61e3-4734-94d0-eaf1dc953e25",
+      "name": "Phased next generation migration 7",
+      "status": "Active",
+      "createdDate": "2026-01-21T19:37:24",
+      "updatedDate": "2026-02-07T04:28:58",
+      "owner": "Samuel Taylor",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6681.22,
+      "description": "Prove individual method."
+    },
+    {
+      "id": "4ca26dfe-64c3-461e-8a8e-2165d50aa359",
+      "name": "Multi-channeled interactive alliance 8",
+      "status": "Pending",
+      "createdDate": "2025-10-05T14:47:31",
+      "updatedDate": "2026-01-26T07:19:08",
+      "owner": "Scott Nguyen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3698.4,
+      "description": "Successful general the necessary machine."
+    },
+    {
+      "id": "297ee051-d21e-4475-bf84-974b57e48782",
+      "name": "Persistent value-added neural-net 9",
+      "status": "Active",
+      "createdDate": "2025-12-22T23:55:07",
+      "updatedDate": "2026-02-01T04:26:03",
+      "owner": "Carrie Bowers",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7337.77,
+      "description": "Everybody able amount this several each."
+    },
+    {
+      "id": "80439118-2340-43b8-a257-45620f5b95af",
+      "name": "Integrated stable parallelism 10",
+      "status": "Completed",
+      "createdDate": "2025-04-17T14:00:23",
+      "updatedDate": "2026-02-04T04:21:59",
+      "owner": "Nicole George",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 763.68,
+      "description": "Culture nothing accept six."
+    },
+    {
+      "id": "f2d80d4e-da03-4132-9e6f-61ffdca89d62",
+      "name": "Face-to-face hybrid capacity 11",
+      "status": "Pending",
+      "createdDate": "2026-01-30T16:12:33",
+      "updatedDate": "2026-01-29T18:53:26",
+      "owner": "Dana Vazquez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4844.84,
+      "description": "Never minute source finish lay when international mission."
+    },
+    {
+      "id": "f8f4036e-c20d-4837-91fb-66e2c05c4684",
+      "name": "Future-proofed global system engine 12",
+      "status": "Pending",
+      "createdDate": "2025-12-18T01:59:10",
+      "updatedDate": "2026-02-13T22:49:43",
+      "owner": "Margaret Green",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1376.27,
+      "description": "Collection avoid six wife between mean."
+    },
+    {
+      "id": "ca128e5a-56ff-4212-aae2-df7dd1f5a531",
+      "name": "Up-sized composite collaboration 13",
+      "status": "Active",
+      "createdDate": "2025-08-18T19:55:54",
+      "updatedDate": "2026-01-31T10:09:43",
+      "owner": "Brandi Delacruz",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3546.39,
+      "description": "Specific would financial piece situation power hot."
+    },
+    {
+      "id": "fa1336bb-e45f-4a78-9815-e75314966bb4",
+      "name": "Innovative clear-thinking moderator 14",
+      "status": "Active",
+      "createdDate": "2025-07-26T14:26:16",
+      "updatedDate": "2026-01-30T09:13:57",
+      "owner": "Dalton Long",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8313.19,
+      "description": "Consider black decade respond purpose ask."
+    },
+    {
+      "id": "7184ebde-630e-460d-979f-122b1e534fde",
+      "name": "Re-engineered zero tolerance capacity 15",
+      "status": "Completed",
+      "createdDate": "2025-04-21T20:27:12",
+      "updatedDate": "2026-02-06T00:19:28",
+      "owner": "Timothy Daniel",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6817.91,
+      "description": "Technology already water property give entire face pull."
+    },
+    {
+      "id": "d9633d45-6459-4ad2-99f5-f60d07b41e5a",
+      "name": "Synergistic heuristic extranet 16",
+      "status": "Completed",
+      "createdDate": "2025-12-30T19:27:04",
+      "updatedDate": "2026-01-31T11:14:01",
+      "owner": "Ryan Gregory",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7986.94,
+      "description": "Close until wind energy."
+    },
+    {
+      "id": "0b0b09f4-efb9-4ca3-98ee-f5ef5c07db68",
+      "name": "Total local analyzer 17",
+      "status": "Pending",
+      "createdDate": "2025-08-21T03:03:13",
+      "updatedDate": "2026-01-29T05:37:48",
+      "owner": "Bryan Mccarthy",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6771.19,
+      "description": "Skin not similar ask different once."
+    },
+    {
+      "id": "a666473f-e000-454c-8356-94a43dbaa917",
+      "name": "Triple-buffered multi-state functionalities 18",
+      "status": "Pending",
+      "createdDate": "2025-12-23T06:31:48",
+      "updatedDate": "2026-01-31T19:30:13",
+      "owner": "Sarah Chan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3678.97,
+      "description": "Back forward American early."
+    },
+    {
+      "id": "5eded618-28b0-48d4-bb7b-b9fc3108bd80",
+      "name": "Quality-focused eco-centric parallelism 19",
+      "status": "Pending",
+      "createdDate": "2025-08-17T11:17:59",
+      "updatedDate": "2026-02-07T19:44:05",
+      "owner": "Juan West",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5996.59,
+      "description": "Tree adult place skin health land game follow."
+    },
+    {
+      "id": "ad93e70e-48c8-439b-ad12-bcdb4481f98f",
+      "name": "Networked heuristic policy 20",
+      "status": "Active",
+      "createdDate": "2025-04-19T00:24:45",
+      "updatedDate": "2026-02-08T14:14:23",
+      "owner": "Michelle Aguilar",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5135.67,
+      "description": "Major lead stock performance."
+    },
+    {
+      "id": "1d9a6e05-0c5c-4ba6-8518-173930d8f00a",
+      "name": "Universal dedicated projection 21",
+      "status": "Completed",
+      "createdDate": "2025-08-02T20:49:00",
+      "updatedDate": "2026-01-31T22:16:06",
+      "owner": "James Obrien",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9207.16,
+      "description": "Strategy drug determine both statement measure less decide."
+    },
+    {
+      "id": "dcdd2115-7914-4895-b945-b8c58f50d6f2",
+      "name": "De-engineered tertiary hub 22",
+      "status": "Completed",
+      "createdDate": "2025-12-24T23:54:30",
+      "updatedDate": "2026-01-29T00:43:35",
+      "owner": "Zoe Kim",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1077.51,
+      "description": "Simple fine natural open through open."
+    },
+    {
+      "id": "81cda45f-aaf2-4be2-b88d-d2c474d115bd",
+      "name": "Stand-alone dedicated hub 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-28T09:55:53",
+      "updatedDate": "2026-01-18T22:56:50",
+      "owner": "Tiffany Perez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5189.47,
+      "description": "Not national conference include white place page name."
+    },
+    {
+      "id": "dff396f8-3242-4dd5-bd03-3dc11d5f2712",
+      "name": "Expanded dedicated implementation 24",
+      "status": "Inactive",
+      "createdDate": "2025-06-11T08:46:30",
+      "updatedDate": "2026-01-31T17:11:30",
+      "owner": "Joseph Clark",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1241.64,
+      "description": "Stage draw discover behind."
+    },
+    {
+      "id": "4207083a-01ec-4501-a2ba-0e33838b993c",
+      "name": "Optimized bifurcated hierarchy 25",
+      "status": "Pending",
+      "createdDate": "2025-11-22T20:42:36",
+      "updatedDate": "2026-02-16T18:31:10",
+      "owner": "Lorraine Baldwin",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4349.88,
+      "description": "Eat never brother far behind."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

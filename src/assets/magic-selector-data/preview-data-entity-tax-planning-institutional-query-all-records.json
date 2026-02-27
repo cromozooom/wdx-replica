@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-taxplan",
+  "queryId": "query-all-records",
+  "totalCount": 433,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3e72e5bc-be31-4d14-88ea-21f681eff928",
+      "name": "Fully-configurable responsive process improvement 1",
+      "status": "Active",
+      "createdDate": "2025-10-17T15:17:41",
+      "updatedDate": "2026-02-13T19:34:47",
+      "owner": "Stephanie Miller",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5012.96,
+      "description": "Your eat move leg."
+    },
+    {
+      "id": "60e35a88-23f7-4448-8677-e44bae7e5732",
+      "name": "Digitized tertiary knowledge user 2",
+      "status": "Active",
+      "createdDate": "2025-05-10T02:57:11",
+      "updatedDate": "2026-02-16T19:47:12",
+      "owner": "Austin George",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6644.65,
+      "description": "How so seven."
+    },
+    {
+      "id": "e8578fb0-7fe8-4380-bcf7-7a4f13e209a6",
+      "name": "Virtual leadingedge open architecture 3",
+      "status": "Pending",
+      "createdDate": "2025-07-13T10:15:15",
+      "updatedDate": "2026-01-23T16:10:49",
+      "owner": "Jasmine Nunez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5501.49,
+      "description": "Poor assume course live cold car protect view."
+    },
+    {
+      "id": "6e6cae9b-192f-4985-8ea5-5659c203e2ea",
+      "name": "Stand-alone national open architecture 4",
+      "status": "Completed",
+      "createdDate": "2026-01-05T09:00:09",
+      "updatedDate": "2026-01-19T03:26:50",
+      "owner": "Natalie Riddle",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8772.08,
+      "description": "Western onto give run finally project."
+    },
+    {
+      "id": "16de5408-6a69-4b49-adb5-8b54bfb8a1af",
+      "name": "Optional asynchronous encoding 5",
+      "status": "Active",
+      "createdDate": "2025-04-08T06:24:58",
+      "updatedDate": "2026-01-27T04:35:13",
+      "owner": "Jacob Wang",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2877.97,
+      "description": "Enter quite dark professor."
+    },
+    {
+      "id": "1dd4b9c5-6080-49e0-8a82-68bfe3792ea6",
+      "name": "Balanced eco-centric benchmark 6",
+      "status": "Completed",
+      "createdDate": "2025-10-10T11:19:23",
+      "updatedDate": "2026-02-01T08:56:09",
+      "owner": "Brent Mills",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2255.73,
+      "description": "Character arrive food art."
+    },
+    {
+      "id": "e423385b-6d10-4f1e-b2dd-f259954bf502",
+      "name": "Seamless national migration 7",
+      "status": "Inactive",
+      "createdDate": "2026-01-25T02:31:21",
+      "updatedDate": "2026-01-30T07:10:14",
+      "owner": "Jennifer Cook",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 409.09,
+      "description": "Decide arrive south other such."
+    },
+    {
+      "id": "0c3f2425-322a-42e0-b18f-62a053120d12",
+      "name": "Innovative dynamic infrastructure 8",
+      "status": "Completed",
+      "createdDate": "2025-07-02T15:39:35",
+      "updatedDate": "2026-01-27T03:55:44",
+      "owner": "Gregory Williams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3295.23,
+      "description": "Account these win usually."
+    },
+    {
+      "id": "2021bfd6-3c10-48f8-97d5-9aa7ffa81490",
+      "name": "Ameliorated disintermediate interface 9",
+      "status": "Active",
+      "createdDate": "2026-02-04T15:44:13",
+      "updatedDate": "2026-02-09T14:19:01",
+      "owner": "Donald Garcia",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8610.66,
+      "description": "Condition of relationship herself new long simply."
+    },
+    {
+      "id": "7c8a77fa-56b5-47fb-b966-66770e133da2",
+      "name": "Reactive eco-centric capability 10",
+      "status": "Completed",
+      "createdDate": "2025-11-17T19:59:33",
+      "updatedDate": "2026-01-27T09:38:50",
+      "owner": "Lisa Silva",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3085.61,
+      "description": "Take around item happy option thus."
+    },
+    {
+      "id": "5121c693-6973-4930-b5f9-28bfc293052a",
+      "name": "Profound bi-directional knowledge user 11",
+      "status": "Inactive",
+      "createdDate": "2025-07-04T10:46:18",
+      "updatedDate": "2026-02-16T06:36:18",
+      "owner": "Laura Moore",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2762.14,
+      "description": "Manage show material nice exist tonight."
+    },
+    {
+      "id": "7fed44bd-7441-4c5d-9ab3-d9f76839d9bb",
+      "name": "Re-contextualized logistical installation 12",
+      "status": "Active",
+      "createdDate": "2025-03-24T00:20:06",
+      "updatedDate": "2026-02-14T02:36:18",
+      "owner": "Daniel Martin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2674.98,
+      "description": "Single be stand join doctor."
+    },
+    {
+      "id": "2509115f-c823-48a4-b200-53376b8f3d22",
+      "name": "Devolved regional intranet 13",
+      "status": "Completed",
+      "createdDate": "2025-07-08T13:37:43",
+      "updatedDate": "2026-02-02T07:38:03",
+      "owner": "Kimberly Hodge",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8069.48,
+      "description": "Mouth car school agree show run early."
+    },
+    {
+      "id": "9ddc0a59-7784-4db6-b28b-580c26f875d1",
+      "name": "Vision-oriented mobile open architecture 14",
+      "status": "Active",
+      "createdDate": "2025-08-12T05:42:58",
+      "updatedDate": "2026-01-23T14:11:57",
+      "owner": "Alexandria Bailey",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2716.75,
+      "description": "Tree either thus treat manage deep."
+    },
+    {
+      "id": "e95dd1dc-cbd5-45a0-b6d1-5b3cf1d55909",
+      "name": "Public-key disintermediate artificial intelligence 15",
+      "status": "Pending",
+      "createdDate": "2025-02-18T06:27:58",
+      "updatedDate": "2026-01-31T19:53:06",
+      "owner": "Sherry Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7539.92,
+      "description": "Avoid customer interesting subject figure improve agent."
+    },
+    {
+      "id": "ac4b898c-fd05-440f-8dea-61fbef175d0d",
+      "name": "Customizable client-server adapter 16",
+      "status": "Active",
+      "createdDate": "2025-04-05T08:18:42",
+      "updatedDate": "2026-02-02T04:25:04",
+      "owner": "William Cowan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4461.75,
+      "description": "Phone involve heavy."
+    },
+    {
+      "id": "2a4fe9ca-d112-461f-bec3-fb86ad8cb28c",
+      "name": "Organized system-worthy function 17",
+      "status": "Inactive",
+      "createdDate": "2025-10-18T23:40:28",
+      "updatedDate": "2026-02-08T11:06:42",
+      "owner": "Tara Lambert",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6067.34,
+      "description": "Opportunity step break everything edge amount."
+    },
+    {
+      "id": "32e14477-b0eb-4827-92eb-e4769b406cc1",
+      "name": "Integrated grid-enabled standardization 18",
+      "status": "Pending",
+      "createdDate": "2026-02-08T22:18:36",
+      "updatedDate": "2026-01-29T09:10:23",
+      "owner": "Kristin Thomas",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4802.59,
+      "description": "Direction since official able expert discover under."
+    },
+    {
+      "id": "0c3abfe3-aaa6-4372-a799-63b79fbecb50",
+      "name": "Face-to-face value-added analyzer 19",
+      "status": "Active",
+      "createdDate": "2025-08-19T23:11:04",
+      "updatedDate": "2026-01-28T00:55:44",
+      "owner": "Brianna Burke",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 820.39,
+      "description": "Specific ever very address number fire treat."
+    },
+    {
+      "id": "f7150e6b-51d3-475f-82cc-dcee97ac98c0",
+      "name": "Persevering mission-critical synergy 20",
+      "status": "Completed",
+      "createdDate": "2026-01-13T10:35:15",
+      "updatedDate": "2026-01-20T23:43:38",
+      "owner": "Mrs. Brianna Carter",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9517.96,
+      "description": "Course agreement head small late."
+    },
+    {
+      "id": "27e154c9-eab0-4269-b152-a576c63eb7be",
+      "name": "Cross-group bi-directional superstructure 21",
+      "status": "Pending",
+      "createdDate": "2025-02-21T00:32:33",
+      "updatedDate": "2026-02-01T13:48:34",
+      "owner": "Vanessa Olson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5046.29,
+      "description": "Kitchen relate perhaps management let establish."
+    },
+    {
+      "id": "f2edfae3-843c-4ab9-bd3b-a02b7a67a635",
+      "name": "Progressive zero administration functionalities 22",
+      "status": "Inactive",
+      "createdDate": "2025-09-05T06:47:54",
+      "updatedDate": "2026-02-09T20:03:51",
+      "owner": "Jared Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6452.17,
+      "description": "Today total while dog."
+    },
+    {
+      "id": "fb6a537c-36bf-4ffd-a54b-cf14db80c0ea",
+      "name": "Ameliorated didactic firmware 23",
+      "status": "Pending",
+      "createdDate": "2025-03-22T05:30:19",
+      "updatedDate": "2026-02-09T03:25:34",
+      "owner": "Scott Hansen III",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1173.05,
+      "description": "Son paper method this gas worker effect than."
+    },
+    {
+      "id": "4155f065-51b9-4a13-b30a-be33ee6bba64",
+      "name": "Face-to-face tangible initiative 24",
+      "status": "Active",
+      "createdDate": "2025-07-07T17:42:27",
+      "updatedDate": "2026-01-22T08:49:51",
+      "owner": "Michael Patterson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4887.3,
+      "description": "Soldier prove cell space weight person."
+    },
+    {
+      "id": "3d8e64c3-1e57-4487-93bb-0bfbad01bc6c",
+      "name": "De-engineered demand-driven time-frame 25",
+      "status": "Inactive",
+      "createdDate": "2025-10-01T17:06:32",
+      "updatedDate": "2026-01-31T14:39:00",
+      "owner": "Jose Fitzgerald",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8857.61,
+      "description": "Bag himself serious well listen whom."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

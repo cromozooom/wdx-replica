@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-research",
+  "queryId": "query-active-only",
+  "totalCount": 775,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "e6ed7ad7-7839-429e-a6d8-54511f39e0d5",
+      "name": "Profound multimedia benchmark 1",
+      "status": "Completed",
+      "createdDate": "2025-10-12T09:57:38",
+      "updatedDate": "2026-01-23T12:44:21",
+      "owner": "Adrian Vaughn",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1371.52,
+      "description": "Soldier number push me property cut beat."
+    },
+    {
+      "id": "b54b5293-43f6-4215-b982-41c9266523ca",
+      "name": "Distributed client-server focus group 2",
+      "status": "Active",
+      "createdDate": "2026-01-30T04:49:11",
+      "updatedDate": "2026-01-23T15:55:21",
+      "owner": "Mr. Mike Cole",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9188.55,
+      "description": "Management radio professor top scene skill."
+    },
+    {
+      "id": "0485cad4-792b-4d27-bb64-0bb5ce1914d4",
+      "name": "Open-source 24/7 Graphical User Interface 3",
+      "status": "Inactive",
+      "createdDate": "2025-03-01T18:57:29",
+      "updatedDate": "2026-02-12T22:39:39",
+      "owner": "David Gentry",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6441.73,
+      "description": "Very skill campaign most rich work garden."
+    },
+    {
+      "id": "1f6f6e27-dfe7-4231-8996-36598366b961",
+      "name": "Stand-alone fault-tolerant migration 4",
+      "status": "Active",
+      "createdDate": "2026-01-21T17:01:38",
+      "updatedDate": "2026-02-05T12:28:25",
+      "owner": "Jason Todd",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9141.83,
+      "description": "From back ready consider position share continue."
+    },
+    {
+      "id": "2bbc5de4-3546-40f1-9a37-97fecfffef7a",
+      "name": "Organic modular intranet 5",
+      "status": "Active",
+      "createdDate": "2025-12-08T17:19:58",
+      "updatedDate": "2026-02-05T06:04:27",
+      "owner": "Amy Hawkins",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4699.58,
+      "description": "How degree allow news need carry build."
+    },
+    {
+      "id": "590dddf0-04e3-4738-a6a0-1854ac558b72",
+      "name": "Customer-focused interactive synergy 6",
+      "status": "Active",
+      "createdDate": "2026-02-05T22:01:45",
+      "updatedDate": "2026-02-06T07:04:37",
+      "owner": "Heather Moon",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6697.6,
+      "description": "Magazine beat while happy high would fund."
+    },
+    {
+      "id": "9a66d892-c92b-45e9-9402-cddb97f3ba6a",
+      "name": "Profound heuristic monitoring 7",
+      "status": "Completed",
+      "createdDate": "2025-03-12T22:45:14",
+      "updatedDate": "2026-02-11T01:59:11",
+      "owner": "Kristy Gibson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8991.85,
+      "description": "Relate law else another."
+    },
+    {
+      "id": "ffe039db-5559-4659-91c7-dc828b6bcf05",
+      "name": "Vision-oriented demand-driven instruction set 8",
+      "status": "Active",
+      "createdDate": "2025-07-18T06:09:44",
+      "updatedDate": "2026-01-30T11:30:41",
+      "owner": "Vanessa Velasquez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 560.99,
+      "description": "Indicate play purpose agreement green whatever do he."
+    },
+    {
+      "id": "d6375a6b-bc6e-424b-9852-47456eece743",
+      "name": "Organic multi-tasking collaboration 9",
+      "status": "Active",
+      "createdDate": "2025-10-03T00:09:53",
+      "updatedDate": "2026-02-07T23:55:00",
+      "owner": "Michael Goodwin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8029.64,
+      "description": "Peace gas couple."
+    },
+    {
+      "id": "ff89d3b2-1d72-4332-9c94-dcc9ae7a978d",
+      "name": "Quality-focused dedicated task-force 10",
+      "status": "Completed",
+      "createdDate": "2026-01-11T03:41:18",
+      "updatedDate": "2026-01-23T21:59:28",
+      "owner": "Michael Martinez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 782.53,
+      "description": "Although better he protect determine available fear."
+    },
+    {
+      "id": "7e60aa9c-f4b5-4e81-8190-ee54d1f646af",
+      "name": "User-centric incremental knowledgebase 11",
+      "status": "Active",
+      "createdDate": "2025-03-27T04:14:35",
+      "updatedDate": "2026-02-06T12:45:17",
+      "owner": "Monica Williams",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1666.86,
+      "description": "Work spring part focus seem consider will."
+    },
+    {
+      "id": "7db3416c-d78f-442d-841a-7a3288411d04",
+      "name": "Focused static algorithm 12",
+      "status": "Active",
+      "createdDate": "2026-02-14T03:15:25",
+      "updatedDate": "2026-01-28T04:39:25",
+      "owner": "Teresa Patterson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5324.44,
+      "description": "Crime tell minute manage."
+    },
+    {
+      "id": "b5d302b8-4816-4775-875b-47b8dfe293fe",
+      "name": "Intuitive static website 13",
+      "status": "Inactive",
+      "createdDate": "2025-11-01T00:55:48",
+      "updatedDate": "2026-01-22T17:37:16",
+      "owner": "Aaron Shepherd",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2634.1,
+      "description": "Paper court board season receive should suffer."
+    },
+    {
+      "id": "ecd5de79-e788-4cae-9656-9bfffd955bae",
+      "name": "Customer-focused well-modulated task-force 14",
+      "status": "Active",
+      "createdDate": "2026-01-19T06:51:18",
+      "updatedDate": "2026-01-21T02:52:32",
+      "owner": "Michele White",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3729.06,
+      "description": "Choice leader clearly ever lawyer however."
+    },
+    {
+      "id": "25b5e4a5-d1c6-4cda-9e57-3c74bbfb657a",
+      "name": "Fundamental actuating functionalities 15",
+      "status": "Completed",
+      "createdDate": "2025-07-29T06:26:12",
+      "updatedDate": "2026-02-07T16:03:04",
+      "owner": "Mario Wolf",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7025.71,
+      "description": "Skill through that later."
+    },
+    {
+      "id": "a248530b-bcff-4552-a73f-b4ad1b5af088",
+      "name": "Re-engineered grid-enabled Graphical User Interface 16",
+      "status": "Inactive",
+      "createdDate": "2025-04-27T20:25:03",
+      "updatedDate": "2026-02-01T17:57:04",
+      "owner": "Gregory Black",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6920.15,
+      "description": "Tax hear respond."
+    },
+    {
+      "id": "f61d9c2d-6f7f-434d-ae31-62ba456c4fa5",
+      "name": "Configurable explicit protocol 17",
+      "status": "Active",
+      "createdDate": "2025-09-19T19:53:41",
+      "updatedDate": "2026-01-21T11:23:09",
+      "owner": "Curtis Brown",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4574.99,
+      "description": "Customer heart apply well."
+    },
+    {
+      "id": "fa1d96fe-552b-48ee-9b32-c19018623bb4",
+      "name": "Adaptive directional middleware 18",
+      "status": "Inactive",
+      "createdDate": "2025-03-31T08:02:51",
+      "updatedDate": "2026-01-22T05:26:33",
+      "owner": "Michael Woods",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6195.53,
+      "description": "Economy Republican rule despite single."
+    },
+    {
+      "id": "87037550-3a80-490b-ac77-68948167ffc9",
+      "name": "Public-key grid-enabled hardware 19",
+      "status": "Completed",
+      "createdDate": "2025-03-21T11:54:45",
+      "updatedDate": "2026-01-28T07:04:54",
+      "owner": "Cody White",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9361.93,
+      "description": "Military image way itself why toward human information."
+    },
+    {
+      "id": "d1407b1e-da14-46c9-b16c-3e4dfe3e41b4",
+      "name": "Enhanced secondary project 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-11T00:41:46",
+      "updatedDate": "2026-01-22T02:57:30",
+      "owner": "Margaret Edwards",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 286.52,
+      "description": "White out a fly political."
+    },
+    {
+      "id": "046947e1-4240-468f-a017-d4425c8f5cd1",
+      "name": "Business-focused executive open system 21",
+      "status": "Active",
+      "createdDate": "2026-01-27T03:34:27",
+      "updatedDate": "2026-01-27T16:18:06",
+      "owner": "John Griffith",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9145.1,
+      "description": "Century more building young."
+    },
+    {
+      "id": "20ca079b-c6de-41b8-9fad-0275f513872c",
+      "name": "Pre-emptive even-keeled projection 22",
+      "status": "Active",
+      "createdDate": "2025-05-19T17:33:26",
+      "updatedDate": "2026-02-01T03:16:02",
+      "owner": "Aaron Munoz",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8515.19,
+      "description": "Might meeting along attention culture PM language."
+    },
+    {
+      "id": "ed283153-83f2-47ce-b211-4f3136403c4d",
+      "name": "Innovative composite knowledge user 23",
+      "status": "Completed",
+      "createdDate": "2025-05-01T18:10:38",
+      "updatedDate": "2026-01-20T17:54:45",
+      "owner": "Lisa Weaver",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2209.17,
+      "description": "Oil executive personal eye them ask military age."
+    },
+    {
+      "id": "7e114262-93de-4918-b00b-06948a8ecc60",
+      "name": "Decentralized logistical orchestration 24",
+      "status": "Pending",
+      "createdDate": "2025-11-03T17:46:57",
+      "updatedDate": "2026-02-06T04:47:31",
+      "owner": "Hannah Vega",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3536.11,
+      "description": "Whole design size small."
+    },
+    {
+      "id": "c3caa5a0-fcc3-4c2b-9f96-8d553e255b58",
+      "name": "Switchable bi-directional capability 25",
+      "status": "Active",
+      "createdDate": "2025-12-05T17:37:19",
+      "updatedDate": "2026-02-06T22:38:02",
+      "owner": "Heather Gray",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2502.19,
+      "description": "Six no trial per."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

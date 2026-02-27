@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 608,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3c83bd6f-2a7a-4fa1-b429-2b85e5de72c0",
+      "name": "Stand-alone directional forecast 1",
+      "status": "Pending",
+      "createdDate": "2025-03-26T15:53:14",
+      "updatedDate": "2026-02-08T06:08:53",
+      "owner": "Katie Rivera",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 145.38,
+      "description": "Fly central believe real wait."
+    },
+    {
+      "id": "23353892-8813-4f0e-9bf0-fa0881ffdab7",
+      "name": "Upgradable full-range analyzer 2",
+      "status": "Pending",
+      "createdDate": "2025-11-01T04:51:35",
+      "updatedDate": "2026-01-27T20:56:59",
+      "owner": "Kimberly Adams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5648.6,
+      "description": "Price kid step bring similar."
+    },
+    {
+      "id": "06411558-f833-42aa-9fea-26d5803499a4",
+      "name": "Diverse mission-critical knowledgebase 3",
+      "status": "Pending",
+      "createdDate": "2025-09-12T06:43:15",
+      "updatedDate": "2026-02-11T17:56:40",
+      "owner": "Teresa Martinez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2312.9,
+      "description": "Moment concern live drop group laugh."
+    },
+    {
+      "id": "c53605ea-1cf5-46f7-9d60-e55b2db4bc18",
+      "name": "Operative multi-state neural-net 4",
+      "status": "Completed",
+      "createdDate": "2026-02-08T14:19:07",
+      "updatedDate": "2026-01-21T07:15:23",
+      "owner": "Patrick Barrett Jr.",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6609.14,
+      "description": "Prepare voice herself walk."
+    },
+    {
+      "id": "18c39f6e-0340-478a-8b1f-af0dd95079d8",
+      "name": "Visionary client-driven concept 5",
+      "status": "Pending",
+      "createdDate": "2026-02-03T19:51:20",
+      "updatedDate": "2026-02-06T05:44:12",
+      "owner": "Madeline Wilkins",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5933.91,
+      "description": "Loss expect the throughout."
+    },
+    {
+      "id": "ce44f6d8-78ca-4d7d-87c3-ec567a3bbbfc",
+      "name": "Object-based exuding frame 6",
+      "status": "Completed",
+      "createdDate": "2025-05-19T04:49:20",
+      "updatedDate": "2026-01-29T11:27:44",
+      "owner": "James Love",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5606.69,
+      "description": "Program camera month energy drug despite pretty."
+    },
+    {
+      "id": "c4602458-aff7-4601-bfd0-dc08ce90e1b7",
+      "name": "Face-to-face analyzing budgetary management 7",
+      "status": "Active",
+      "createdDate": "2025-03-23T05:37:37",
+      "updatedDate": "2026-02-10T13:18:09",
+      "owner": "David Edwards",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2605.71,
+      "description": "Book visit central between yet writer responsibility."
+    },
+    {
+      "id": "938bd158-ac85-418d-8065-568f2790e974",
+      "name": "Organic local implementation 8",
+      "status": "Completed",
+      "createdDate": "2025-06-04T05:37:12",
+      "updatedDate": "2026-02-14T01:10:54",
+      "owner": "Raymond Franklin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7230.52,
+      "description": "Section economy step relate poor station."
+    },
+    {
+      "id": "79b841f4-5e31-43e6-bff4-527cbdc112cb",
+      "name": "Intuitive regional strategy 9",
+      "status": "Inactive",
+      "createdDate": "2025-09-10T19:26:51",
+      "updatedDate": "2026-01-19T10:08:10",
+      "owner": "Susan Green MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7507.38,
+      "description": "Truth expert catch month."
+    },
+    {
+      "id": "5eabb501-bdc5-4d9e-a3ec-f0b37369a56f",
+      "name": "Polarized tertiary infrastructure 10",
+      "status": "Completed",
+      "createdDate": "2025-08-19T14:42:05",
+      "updatedDate": "2026-02-15T04:01:49",
+      "owner": "Jeffrey Ferguson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2364.2,
+      "description": "Resource inside high ten."
+    },
+    {
+      "id": "e05eb05e-0a1d-4037-a47d-fa343a11c996",
+      "name": "Devolved next generation infrastructure 11",
+      "status": "Active",
+      "createdDate": "2025-10-26T23:58:34",
+      "updatedDate": "2026-02-15T13:53:46",
+      "owner": "Kyle Byrd",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6023.08,
+      "description": "List wall central worker daughter court."
+    },
+    {
+      "id": "56ba2cd9-45d0-4ff2-a888-73746d8460da",
+      "name": "Front-line fresh-thinking Graphic Interface 12",
+      "status": "Active",
+      "createdDate": "2026-01-03T22:20:27",
+      "updatedDate": "2026-01-25T12:35:33",
+      "owner": "Jonathan Walker",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6776.07,
+      "description": "Certainly wide push."
+    },
+    {
+      "id": "12243521-9759-411f-9e26-d297dc155653",
+      "name": "Reduced non-volatile middleware 13",
+      "status": "Inactive",
+      "createdDate": "2025-03-12T14:53:34",
+      "updatedDate": "2026-01-23T23:12:52",
+      "owner": "Adam Wood",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1564.28,
+      "description": "Realize down best water television could choose."
+    },
+    {
+      "id": "f53fb7d9-f2ff-41e1-8bc2-1a589d8ccb05",
+      "name": "Expanded multimedia solution 14",
+      "status": "Completed",
+      "createdDate": "2026-02-02T18:41:48",
+      "updatedDate": "2026-02-17T07:38:03",
+      "owner": "Amy Herring",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8365.02,
+      "description": "Today early again letter."
+    },
+    {
+      "id": "959c979a-52bf-4b83-bf41-6b5b35e42a53",
+      "name": "Proactive foreground adapter 15",
+      "status": "Active",
+      "createdDate": "2025-10-05T11:38:44",
+      "updatedDate": "2026-01-23T02:02:23",
+      "owner": "Melissa Arnold",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6999.28,
+      "description": "Happy after issue fast just."
+    },
+    {
+      "id": "9d05095d-de2d-4910-9ce7-bd58e66b2172",
+      "name": "De-engineered eco-centric workforce 16",
+      "status": "Completed",
+      "createdDate": "2025-04-30T22:12:03",
+      "updatedDate": "2026-01-30T15:24:04",
+      "owner": "Paul Evans",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5006.56,
+      "description": "Smile list discuss research."
+    },
+    {
+      "id": "3cea082c-e826-48dc-983b-3f59f1315e3b",
+      "name": "Persevering mission-critical focus group 17",
+      "status": "Active",
+      "createdDate": "2025-02-24T17:54:19",
+      "updatedDate": "2026-01-28T02:15:25",
+      "owner": "Patricia Fisher",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5193.19,
+      "description": "Here sit our rich civil."
+    },
+    {
+      "id": "1ab62e31-3d3c-45f9-89bc-d3852268c083",
+      "name": "Front-line asymmetric secured line 18",
+      "status": "Pending",
+      "createdDate": "2025-12-17T13:16:43",
+      "updatedDate": "2026-01-29T04:28:49",
+      "owner": "Christine Morrison",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6201.99,
+      "description": "Course different arrive soon financial these care."
+    },
+    {
+      "id": "6ce3f3cb-4f1b-4614-881c-17b0260bc9b7",
+      "name": "Exclusive system-worthy hardware 19",
+      "status": "Pending",
+      "createdDate": "2025-09-19T02:31:07",
+      "updatedDate": "2026-01-24T17:13:54",
+      "owner": "Laura Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3992.93,
+      "description": "Thousand theory work blood."
+    },
+    {
+      "id": "b473390d-fb8a-4fe0-9358-456f6d0e55fc",
+      "name": "Polarized maximized encryption 20",
+      "status": "Pending",
+      "createdDate": "2025-06-28T14:29:14",
+      "updatedDate": "2026-02-10T18:08:44",
+      "owner": "Alexandria Foster",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4307.12,
+      "description": "Fish great six deep policy phone."
+    },
+    {
+      "id": "5344734a-4acb-4ae1-a329-4106d2ea9b52",
+      "name": "Digitized 24/7 emulation 21",
+      "status": "Pending",
+      "createdDate": "2025-09-17T10:07:17",
+      "updatedDate": "2026-01-22T09:24:00",
+      "owner": "William Huynh",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1434.91,
+      "description": "Life us she rich."
+    },
+    {
+      "id": "8c7c814c-fc67-497e-97ab-32b30c4b5a13",
+      "name": "Polarized asynchronous service-desk 22",
+      "status": "Active",
+      "createdDate": "2025-07-23T08:29:03",
+      "updatedDate": "2026-02-14T05:52:03",
+      "owner": "Justin Marsh",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 746.48,
+      "description": "Place indeed claim picture role development."
+    },
+    {
+      "id": "900fd360-95c8-4f8b-acc6-b7ef4e7a3363",
+      "name": "Digitized stable process improvement 23",
+      "status": "Active",
+      "createdDate": "2026-02-05T16:54:24",
+      "updatedDate": "2026-01-29T06:49:04",
+      "owner": "Victoria Reed",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1701.13,
+      "description": "Center social order agreement yeah."
+    },
+    {
+      "id": "7e3f5e75-15ec-4596-a926-d1572720cf7f",
+      "name": "Exclusive intermediate functionalities 24",
+      "status": "Active",
+      "createdDate": "2025-06-28T15:34:40",
+      "updatedDate": "2026-02-14T13:09:33",
+      "owner": "Anna Melton",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2359.41,
+      "description": "Summer special everybody technology."
+    },
+    {
+      "id": "15743131-d026-42b8-88fb-55c2c4eb2c49",
+      "name": "Multi-channeled well-modulated success 25",
+      "status": "Inactive",
+      "createdDate": "2025-09-07T21:34:06",
+      "updatedDate": "2026-01-30T21:59:17",
+      "owner": "Todd Stewart",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5702.11,
+      "description": "Film parent hospital president quickly."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

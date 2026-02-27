@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-kycdocument",
+  "queryId": "query-active-only",
+  "totalCount": 715,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "c3acc0f9-b022-4cd1-9a06-9f01d445e74b",
+      "name": "Monitored static architecture 1",
+      "status": "Active",
+      "createdDate": "2025-09-06T17:00:04",
+      "updatedDate": "2026-02-01T08:10:30",
+      "owner": "Jacob Freeman",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 580.29,
+      "description": "None current radio service carry soon."
+    },
+    {
+      "id": "b100e2c2-a1ee-4611-8110-bbc3e69f418d",
+      "name": "Progressive analyzing open architecture 2",
+      "status": "Inactive",
+      "createdDate": "2025-03-18T18:17:20",
+      "updatedDate": "2026-02-01T05:53:17",
+      "owner": "Kelly Weaver",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1611.03,
+      "description": "Region future miss between American."
+    },
+    {
+      "id": "3d2a3755-039d-436a-85dc-8febd30b87d0",
+      "name": "Multi-tiered systematic workforce 3",
+      "status": "Active",
+      "createdDate": "2025-06-02T20:59:52",
+      "updatedDate": "2026-01-19T05:00:49",
+      "owner": "Melissa Kelly",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6472.32,
+      "description": "Drop performance try hotel chance."
+    },
+    {
+      "id": "57e8fa58-21ca-4f10-9e1b-b2ccf8352ff2",
+      "name": "Reverse-engineered foreground benchmark 4",
+      "status": "Pending",
+      "createdDate": "2025-07-21T11:38:24",
+      "updatedDate": "2026-02-08T03:06:54",
+      "owner": "Christina Roach",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7679.54,
+      "description": "Hot soldier everything forget expect."
+    },
+    {
+      "id": "8ef674bf-d4e7-4cbe-a9d9-58b9ae7de468",
+      "name": "Balanced asymmetric database 5",
+      "status": "Completed",
+      "createdDate": "2025-11-26T23:18:01",
+      "updatedDate": "2026-02-11T00:25:59",
+      "owner": "Nicholas Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7004.32,
+      "description": "Than box party body."
+    },
+    {
+      "id": "463f582e-067d-4f3e-84be-2ee4f23c85fb",
+      "name": "Cross-platform didactic hierarchy 6",
+      "status": "Completed",
+      "createdDate": "2025-08-26T03:54:49",
+      "updatedDate": "2026-02-12T02:50:13",
+      "owner": "Gabriel Mclaughlin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 546.48,
+      "description": "Enough area interest pick town common green."
+    },
+    {
+      "id": "9416238d-3ee0-48bf-8558-e363a9feee33",
+      "name": "Cloned zero administration adapter 7",
+      "status": "Inactive",
+      "createdDate": "2025-10-17T11:27:27",
+      "updatedDate": "2026-01-22T06:21:39",
+      "owner": "William Peterson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6446.43,
+      "description": "Walk spend travel civil."
+    },
+    {
+      "id": "7f1ade26-f684-4bf9-a12c-81dc2b5bf7b8",
+      "name": "Integrated analyzing access 8",
+      "status": "Pending",
+      "createdDate": "2025-03-21T23:05:34",
+      "updatedDate": "2026-01-18T12:02:16",
+      "owner": "Jerry Hickman",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3635.58,
+      "description": "Mother part civil finally since red."
+    },
+    {
+      "id": "df12cb49-4676-46ed-a24f-ca1bbe822627",
+      "name": "Focused 24/7 superstructure 9",
+      "status": "Pending",
+      "createdDate": "2025-08-03T19:20:52",
+      "updatedDate": "2026-02-01T09:41:07",
+      "owner": "Mr. Seth Small",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2359.12,
+      "description": "Generation sound memory son art."
+    },
+    {
+      "id": "9f43b0dd-497b-4028-bce3-857d42c06873",
+      "name": "Inverse zero tolerance challenge 10",
+      "status": "Completed",
+      "createdDate": "2025-10-28T12:14:02",
+      "updatedDate": "2026-01-27T16:46:40",
+      "owner": "Jonathan Rogers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4216.94,
+      "description": "Condition couple reveal reason."
+    },
+    {
+      "id": "df56b2a1-0413-4fd8-8912-78b5b59441a7",
+      "name": "Multi-channeled motivating website 11",
+      "status": "Pending",
+      "createdDate": "2025-05-04T10:51:06",
+      "updatedDate": "2026-01-27T11:36:47",
+      "owner": "Tara Reid",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5943.82,
+      "description": "Century above group never radio management."
+    },
+    {
+      "id": "7811e83c-b693-458a-8590-30b30025e04f",
+      "name": "User-friendly coherent algorithm 12",
+      "status": "Pending",
+      "createdDate": "2025-08-02T06:56:49",
+      "updatedDate": "2026-02-12T06:36:34",
+      "owner": "Erin Franklin",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6268.89,
+      "description": "Authority can hit around well peace none."
+    },
+    {
+      "id": "60c33b14-e172-4f96-ada1-4d0f33953fd1",
+      "name": "Streamlined full-range array 13",
+      "status": "Pending",
+      "createdDate": "2025-12-31T19:28:52",
+      "updatedDate": "2026-02-06T00:13:34",
+      "owner": "Sharon Lopez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7705.22,
+      "description": "Morning father government window watch."
+    },
+    {
+      "id": "99c7585e-851a-4088-95a5-59d3811d5b37",
+      "name": "Up-sized demand-driven emulation 14",
+      "status": "Completed",
+      "createdDate": "2025-10-10T15:06:10",
+      "updatedDate": "2026-02-11T00:42:54",
+      "owner": "James Smith",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6221.45,
+      "description": "Change task do hand sense."
+    },
+    {
+      "id": "be4e49bc-c536-43fc-b564-2519924b22b4",
+      "name": "Innovative zero-defect structure 15",
+      "status": "Completed",
+      "createdDate": "2025-08-22T21:27:10",
+      "updatedDate": "2026-02-15T10:16:23",
+      "owner": "Charles Harris",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4375.65,
+      "description": "Morning finish safe pull feeling business born."
+    },
+    {
+      "id": "09966e33-f444-4fb1-b53d-d7641350148d",
+      "name": "Reactive static benchmark 16",
+      "status": "Pending",
+      "createdDate": "2026-02-10T11:35:23",
+      "updatedDate": "2026-02-04T06:28:51",
+      "owner": "Dean Pena",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9400.78,
+      "description": "Policy often professional official ready place race pull."
+    },
+    {
+      "id": "0ddbea69-0a57-49d3-9b8f-5f489c96e9e8",
+      "name": "Enhanced attitude-oriented analyzer 17",
+      "status": "Completed",
+      "createdDate": "2025-10-27T23:05:54",
+      "updatedDate": "2026-01-19T21:20:14",
+      "owner": "Ricky Merritt",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7274.97,
+      "description": "The cell low bit."
+    },
+    {
+      "id": "141763f2-3bf4-4004-9f46-cceedbaaee05",
+      "name": "Automated tangible neural-net 18",
+      "status": "Pending",
+      "createdDate": "2025-04-10T15:48:01",
+      "updatedDate": "2026-02-14T01:04:16",
+      "owner": "William Martin",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4895.75,
+      "description": "Thing job all."
+    },
+    {
+      "id": "75f64542-18f4-4ad1-b83f-bac07b3dbe94",
+      "name": "Customizable cohesive core 19",
+      "status": "Pending",
+      "createdDate": "2025-03-30T13:18:51",
+      "updatedDate": "2026-02-01T05:52:42",
+      "owner": "Vincent Huynh",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2751.62,
+      "description": "Tough bank policy amount improve develop."
+    },
+    {
+      "id": "15314519-021c-4ff0-b8e3-dd50b23e8602",
+      "name": "Organic well-modulated productivity 20",
+      "status": "Pending",
+      "createdDate": "2025-08-25T12:38:56",
+      "updatedDate": "2026-02-05T23:52:47",
+      "owner": "Andrew Green",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7109.83,
+      "description": "Lose teacher religious heavy."
+    },
+    {
+      "id": "89f9d45c-f0c5-42f0-9897-eae7d1fea6c3",
+      "name": "Ameliorated 3rdgeneration system engine 21",
+      "status": "Active",
+      "createdDate": "2025-10-13T18:58:55",
+      "updatedDate": "2026-02-10T12:18:45",
+      "owner": "Christopher Hill",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4412.02,
+      "description": "Have he work amount method whole buy."
+    },
+    {
+      "id": "1c291de7-1db0-433e-a5e2-a3b110ecaa03",
+      "name": "Adaptive global system engine 22",
+      "status": "Completed",
+      "createdDate": "2025-06-21T02:21:59",
+      "updatedDate": "2026-01-27T04:00:37",
+      "owner": "Zachary Mullen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7359.41,
+      "description": "Green common forget but."
+    },
+    {
+      "id": "2f639a64-25e3-42b9-93bc-7206b23b2674",
+      "name": "Secured interactive utilization 23",
+      "status": "Completed",
+      "createdDate": "2025-11-22T09:43:38",
+      "updatedDate": "2026-02-14T19:04:16",
+      "owner": "Ronald Ward",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1088.43,
+      "description": "Commercial use administration."
+    },
+    {
+      "id": "808a9936-ee60-45bc-82f5-eff6429ef9e3",
+      "name": "Universal tangible archive 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-03T07:52:49",
+      "updatedDate": "2026-01-30T00:39:11",
+      "owner": "Elizabeth White",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 720.09,
+      "description": "Reduce history blue start nature list year change."
+    },
+    {
+      "id": "8d147c1d-0185-4194-94c1-503bab19f2bd",
+      "name": "Public-key multi-state implementation 25",
+      "status": "Inactive",
+      "createdDate": "2025-02-17T19:11:35",
+      "updatedDate": "2026-01-19T16:28:53",
+      "owner": "Brittany Chapman",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 339.3,
+      "description": "Sea play doctor forward let argue."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

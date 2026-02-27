@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 736,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "4770fa8a-a498-41cf-a367-675d769fd6e7",
+      "name": "Team-oriented neutral budgetary management 1",
+      "status": "Pending",
+      "createdDate": "2025-10-06T16:15:38",
+      "updatedDate": "2026-02-14T11:43:49",
+      "owner": "Micheal Cuevas",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5612.07,
+      "description": "Imagine hair growth senior."
+    },
+    {
+      "id": "65b12161-9bdc-4bd8-9a4e-13ba9affdb71",
+      "name": "Assimilated tangible structure 2",
+      "status": "Inactive",
+      "createdDate": "2025-02-18T06:00:45",
+      "updatedDate": "2026-02-08T11:06:45",
+      "owner": "Sharon Fry",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7158.15,
+      "description": "Officer now movement crime success personal."
+    },
+    {
+      "id": "c8d31321-acc7-4f30-9759-43b50d69b5b1",
+      "name": "Re-contextualized demand-driven encryption 3",
+      "status": "Inactive",
+      "createdDate": "2025-06-10T18:22:54",
+      "updatedDate": "2026-01-25T00:58:19",
+      "owner": "Mr. Scott Williamson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9620.11,
+      "description": "Nor large front method."
+    },
+    {
+      "id": "a66ec015-15f3-41c7-baae-e2d12f46e825",
+      "name": "Synchronized empowering capability 4",
+      "status": "Pending",
+      "createdDate": "2026-01-07T06:30:19",
+      "updatedDate": "2026-01-25T14:45:40",
+      "owner": "Susan Harper",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1629.83,
+      "description": "Community station anything exactly grow laugh listen."
+    },
+    {
+      "id": "cde03878-4381-4de4-9f00-a87799b2ca92",
+      "name": "Multi-layered zero administration infrastructure 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-13T05:05:14",
+      "updatedDate": "2026-02-12T03:16:58",
+      "owner": "Sarah Hebert",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7555.97,
+      "description": "Director present cold significant think become difference."
+    },
+    {
+      "id": "06f7adae-25f8-4333-82f7-f7552cf8e1fd",
+      "name": "Networked web-enabled standardization 6",
+      "status": "Active",
+      "createdDate": "2025-12-31T00:34:06",
+      "updatedDate": "2026-02-12T12:31:03",
+      "owner": "Carl Lewis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8239.28,
+      "description": "Economic system child analysis thought."
+    },
+    {
+      "id": "ee9f064b-ae67-4ec6-9a29-d00d48fd27c9",
+      "name": "Cloned full-range methodology 7",
+      "status": "Pending",
+      "createdDate": "2026-02-08T08:33:05",
+      "updatedDate": "2026-01-24T06:28:50",
+      "owner": "Andrea Morales",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9868.92,
+      "description": "Institution head for have."
+    },
+    {
+      "id": "a48a0a3e-93b5-4322-b92e-ae8a2b7165d0",
+      "name": "Front-line encompassing intranet 8",
+      "status": "Completed",
+      "createdDate": "2025-02-22T12:44:00",
+      "updatedDate": "2026-01-20T16:47:39",
+      "owner": "Justin Davis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4522.05,
+      "description": "Bill available into."
+    },
+    {
+      "id": "a2715599-b008-47c6-9b95-363909384a46",
+      "name": "Realigned exuding archive 9",
+      "status": "Inactive",
+      "createdDate": "2025-09-08T12:27:07",
+      "updatedDate": "2026-02-02T17:27:42",
+      "owner": "Paul Johnson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5139.48,
+      "description": "Order meet head letter none party stop."
+    },
+    {
+      "id": "8d0a5651-b868-4078-92ef-d79f80a22d81",
+      "name": "Open-source reciprocal array 10",
+      "status": "Pending",
+      "createdDate": "2026-01-23T01:27:45",
+      "updatedDate": "2026-02-09T02:38:36",
+      "owner": "Dakota Robinson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6532.42,
+      "description": "Third according already result support sound."
+    },
+    {
+      "id": "3a690f8d-48b5-49e3-9e0c-d3f0c1eec948",
+      "name": "Expanded demand-driven projection 11",
+      "status": "Completed",
+      "createdDate": "2025-03-25T12:49:04",
+      "updatedDate": "2026-02-01T07:31:02",
+      "owner": "Katherine Jenkins",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5558.88,
+      "description": "Assume with seem significant score rate."
+    },
+    {
+      "id": "2c75ff9a-2927-474f-ab81-08a738646c96",
+      "name": "De-engineered web-enabled architecture 12",
+      "status": "Completed",
+      "createdDate": "2025-12-13T12:54:15",
+      "updatedDate": "2026-01-30T09:11:21",
+      "owner": "Jack Glenn",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3926.23,
+      "description": "Factor daughter the hard son try method pick."
+    },
+    {
+      "id": "d002100e-d726-443d-9664-de41172c65e2",
+      "name": "Switchable zero-defect matrices 13",
+      "status": "Pending",
+      "createdDate": "2025-09-17T07:06:02",
+      "updatedDate": "2026-01-27T01:05:35",
+      "owner": "Lindsey Shaffer",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6523.23,
+      "description": "Edge offer radio."
+    },
+    {
+      "id": "a4301a8c-c675-47d0-98b7-c395d9c25e42",
+      "name": "Re-contextualized multimedia infrastructure 14",
+      "status": "Active",
+      "createdDate": "2025-04-27T19:34:27",
+      "updatedDate": "2026-02-11T21:48:16",
+      "owner": "Frank Stout",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8348.48,
+      "description": "Defense call everyone surface human smile manager."
+    },
+    {
+      "id": "d74435f1-3c2a-4918-ab2f-402638fbd21c",
+      "name": "Compatible static groupware 15",
+      "status": "Active",
+      "createdDate": "2025-04-05T14:28:11",
+      "updatedDate": "2026-02-01T07:29:56",
+      "owner": "Rickey Martin",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3633.52,
+      "description": "For catch last eye share."
+    },
+    {
+      "id": "466919a9-f7a8-4ef2-838c-4814a5dfb345",
+      "name": "Customizable systemic function 16",
+      "status": "Completed",
+      "createdDate": "2025-11-08T21:20:31",
+      "updatedDate": "2026-01-29T05:01:14",
+      "owner": "Kelly Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9780.08,
+      "description": "Rest by take which affect whom green."
+    },
+    {
+      "id": "d2de480d-cc6c-4a3f-a3d8-b4daff091287",
+      "name": "Proactive content-based emulation 17",
+      "status": "Completed",
+      "createdDate": "2025-05-10T05:37:33",
+      "updatedDate": "2026-02-09T12:13:28",
+      "owner": "Rachel Rhodes",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5737.43,
+      "description": "Late sense however listen anything."
+    },
+    {
+      "id": "2886b715-b06a-4a32-9420-e881a1ed0fd2",
+      "name": "Advanced empowering task-force 18",
+      "status": "Pending",
+      "createdDate": "2026-01-15T04:44:30",
+      "updatedDate": "2026-02-10T12:08:42",
+      "owner": "Michelle Hawkins",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8467.72,
+      "description": "Method field safe true executive yourself."
+    },
+    {
+      "id": "8a1a69d4-e18c-41cb-8cbe-f8e6ea59ebb7",
+      "name": "Expanded multi-state product 19",
+      "status": "Completed",
+      "createdDate": "2026-02-06T03:47:08",
+      "updatedDate": "2026-02-10T18:42:30",
+      "owner": "James Collins",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1143.8,
+      "description": "Nation economic wonder often ball your."
+    },
+    {
+      "id": "8f1ff8a5-9243-4f17-9843-3cd16fd4026e",
+      "name": "Extended heuristic analyzer 20",
+      "status": "Completed",
+      "createdDate": "2025-03-09T07:47:49",
+      "updatedDate": "2026-01-27T07:42:06",
+      "owner": "Rebecca Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9316.28,
+      "description": "Bag consider low executive avoid."
+    },
+    {
+      "id": "31b87182-80c1-4c02-b681-30bf4a7ea048",
+      "name": "Configurable asynchronous structure 21",
+      "status": "Pending",
+      "createdDate": "2025-02-25T03:26:37",
+      "updatedDate": "2026-02-03T18:27:26",
+      "owner": "Lisa Campbell",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5751.69,
+      "description": "A sell right help watch political."
+    },
+    {
+      "id": "3ee071a1-99a6-4022-8a48-db6b142c417f",
+      "name": "Multi-channeled human-resource secured line 22",
+      "status": "Completed",
+      "createdDate": "2025-06-05T23:46:57",
+      "updatedDate": "2026-02-04T05:39:55",
+      "owner": "Mary Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8286.18,
+      "description": "Something project option of teach commercial response race."
+    },
+    {
+      "id": "2fc3c8ce-088c-49ee-a311-1406b76a1278",
+      "name": "Grass-roots empowering application 23",
+      "status": "Active",
+      "createdDate": "2025-04-08T14:28:38",
+      "updatedDate": "2026-02-10T08:49:00",
+      "owner": "Alexis Aguilar",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4079.33,
+      "description": "Marriage kid act bag want."
+    },
+    {
+      "id": "4f736186-7c2c-4716-8c30-551e1460c008",
+      "name": "Integrated dynamic function 24",
+      "status": "Active",
+      "createdDate": "2025-04-17T17:09:26",
+      "updatedDate": "2026-02-03T23:23:36",
+      "owner": "Stephanie Holland",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2931.19,
+      "description": "Maybe training third cell rule about major concern."
+    },
+    {
+      "id": "e4c2e230-78ad-47f8-861f-e8a73c8e405f",
+      "name": "Object-based intermediate extranet 25",
+      "status": "Active",
+      "createdDate": "2025-02-27T23:40:56",
+      "updatedDate": "2026-02-04T04:24:10",
+      "owner": "Brian Porter",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9062.39,
+      "description": "Single fight history member economy feeling and maintain."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

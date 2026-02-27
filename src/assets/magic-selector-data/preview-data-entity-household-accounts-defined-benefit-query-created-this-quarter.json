@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1313,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "fd9c463b-41f8-4b0a-9d68-c1155cbff261",
+      "name": "Future-proofed content-based hub 1",
+      "status": "Active",
+      "createdDate": "2025-05-03T22:23:23",
+      "updatedDate": "2026-02-12T18:33:25",
+      "owner": "Elizabeth Simmons",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8039.52,
+      "description": "First nice yeah."
+    },
+    {
+      "id": "ff4073a3-9ed1-4ed7-b531-0bf271fd990c",
+      "name": "Open-architected system-worthy capability 2",
+      "status": "Active",
+      "createdDate": "2025-09-24T08:26:24",
+      "updatedDate": "2026-01-29T09:22:32",
+      "owner": "Nicole Potts",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2553.37,
+      "description": "Tree reduce final animal stage produce something."
+    },
+    {
+      "id": "1da94cea-e208-423f-a079-9b6fa943bc6f",
+      "name": "Adaptive object-oriented encoding 3",
+      "status": "Active",
+      "createdDate": "2025-10-05T04:18:27",
+      "updatedDate": "2026-02-13T18:58:10",
+      "owner": "Victor Rodriguez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5519.14,
+      "description": "They there at political."
+    },
+    {
+      "id": "f0ee63d4-4249-40a0-84f1-8bdde790d82f",
+      "name": "Extended impactful forecast 4",
+      "status": "Active",
+      "createdDate": "2025-05-17T15:29:11",
+      "updatedDate": "2026-01-27T21:34:36",
+      "owner": "Melissa Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8303.35,
+      "description": "Response threat information international skin thank."
+    },
+    {
+      "id": "d6e51798-17f6-4c42-a1da-cd90410c9250",
+      "name": "Pre-emptive clear-thinking implementation 5",
+      "status": "Pending",
+      "createdDate": "2025-10-22T11:51:41",
+      "updatedDate": "2026-01-28T11:18:56",
+      "owner": "Seth Ramirez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4863.46,
+      "description": "Enough grow financial begin smile."
+    },
+    {
+      "id": "57f0f730-2aca-45eb-be45-7268ce1d99da",
+      "name": "Enterprise-wide bi-directional monitoring 6",
+      "status": "Completed",
+      "createdDate": "2025-12-04T11:47:37",
+      "updatedDate": "2026-01-26T21:05:31",
+      "owner": "Joan Rodriguez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4324.71,
+      "description": "Perhaps necessary discover fall newspaper until."
+    },
+    {
+      "id": "60b9ef63-0232-41c7-80a7-9f7a2d893385",
+      "name": "Phased multi-state productivity 7",
+      "status": "Pending",
+      "createdDate": "2025-05-15T06:45:14",
+      "updatedDate": "2026-01-26T22:15:48",
+      "owner": "Adrienne Berry",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1535.36,
+      "description": "Modern respond PM exactly the off."
+    },
+    {
+      "id": "486d7235-ff8a-4c37-b966-b1a057c906e2",
+      "name": "Distributed content-based encoding 8",
+      "status": "Completed",
+      "createdDate": "2025-05-14T12:25:53",
+      "updatedDate": "2026-02-16T03:56:38",
+      "owner": "Anne Ho",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4570.21,
+      "description": "Statement them other street laugh six tax."
+    },
+    {
+      "id": "258ff98a-ec12-4f03-a1dd-615e299ecc15",
+      "name": "Centralized secondary instruction set 9",
+      "status": "Pending",
+      "createdDate": "2026-01-13T05:38:04",
+      "updatedDate": "2026-02-13T08:40:05",
+      "owner": "Thomas Bennett",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 899.72,
+      "description": "Read never former cell that under thought worker."
+    },
+    {
+      "id": "dd0de815-34e5-4058-a126-571b001271fa",
+      "name": "Innovative heuristic standardization 10",
+      "status": "Inactive",
+      "createdDate": "2025-08-15T06:56:18",
+      "updatedDate": "2026-02-07T22:07:42",
+      "owner": "Whitney Thomas",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4263.82,
+      "description": "Miss member finally."
+    },
+    {
+      "id": "a3f324a1-305e-4e6e-a284-bc580605f17b",
+      "name": "Cross-group motivating flexibility 11",
+      "status": "Inactive",
+      "createdDate": "2025-12-02T11:49:53",
+      "updatedDate": "2026-02-01T17:50:31",
+      "owner": "Alan Vega",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4650.18,
+      "description": "Six order series eight."
+    },
+    {
+      "id": "38204fda-bbfe-4884-8d03-321ae0fded63",
+      "name": "Multi-layered hybrid core 12",
+      "status": "Pending",
+      "createdDate": "2025-05-14T12:02:45",
+      "updatedDate": "2026-02-10T14:44:59",
+      "owner": "Jeffrey Lopez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8859.19,
+      "description": "Yet dog thought there try manager player."
+    },
+    {
+      "id": "ff7f1753-6922-44b0-9b7f-e4bf931424e4",
+      "name": "Expanded multi-state moratorium 13",
+      "status": "Inactive",
+      "createdDate": "2025-08-20T18:47:43",
+      "updatedDate": "2026-02-16T22:12:04",
+      "owner": "Steven Garcia",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 142.96,
+      "description": "Difficult lay role state make toward human often."
+    },
+    {
+      "id": "17bcdd5a-2781-4b4c-8d4c-d253356ac601",
+      "name": "Devolved composite time-frame 14",
+      "status": "Active",
+      "createdDate": "2025-06-03T14:39:08",
+      "updatedDate": "2026-01-21T10:41:36",
+      "owner": "Michael Pratt",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7548.16,
+      "description": "Sing sound author address she."
+    },
+    {
+      "id": "c2fd3251-3c24-4c84-ac3b-429050bc8d5b",
+      "name": "Visionary next generation model 15",
+      "status": "Inactive",
+      "createdDate": "2025-10-13T08:19:32",
+      "updatedDate": "2026-02-14T04:33:18",
+      "owner": "Michele Khan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8228.51,
+      "description": "Hear including learn cut great paper year."
+    },
+    {
+      "id": "d01acd00-c972-43c4-9751-fbbf802c6b6c",
+      "name": "Universal encompassing archive 16",
+      "status": "Completed",
+      "createdDate": "2025-05-28T14:48:53",
+      "updatedDate": "2026-02-10T07:02:21",
+      "owner": "Belinda Wilkinson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 197.71,
+      "description": "Piece interview tax argue other side."
+    },
+    {
+      "id": "eb11e9a0-90d4-4bcf-b2c8-a384eb4cadaf",
+      "name": "Compatible incremental access 17",
+      "status": "Active",
+      "createdDate": "2025-05-05T21:12:40",
+      "updatedDate": "2026-02-04T18:46:53",
+      "owner": "Mary Stanley",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2411.45,
+      "description": "Population scientist voice majority business."
+    },
+    {
+      "id": "e974b65a-8d71-462c-b14c-ecc2638fab65",
+      "name": "Synchronized interactive Internet solution 18",
+      "status": "Inactive",
+      "createdDate": "2025-07-10T14:01:06",
+      "updatedDate": "2026-01-25T08:50:42",
+      "owner": "Nancy Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1569.95,
+      "description": "Hospital usually whom left."
+    },
+    {
+      "id": "b8793c1e-4972-4b29-9a3b-11b9d3685d6c",
+      "name": "Business-focused explicit middleware 19",
+      "status": "Inactive",
+      "createdDate": "2025-10-27T06:22:17",
+      "updatedDate": "2026-02-15T07:48:23",
+      "owner": "Rhonda Juarez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8223.4,
+      "description": "Production better police certain."
+    },
+    {
+      "id": "411d25a9-75a6-4878-b66c-c771655864e0",
+      "name": "Robust dynamic website 20",
+      "status": "Pending",
+      "createdDate": "2025-04-25T05:47:04",
+      "updatedDate": "2026-01-21T07:29:46",
+      "owner": "Jeffrey Chandler",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4517.29,
+      "description": "Many suddenly give hour network blue risk radio."
+    },
+    {
+      "id": "d8172998-e756-410f-917f-eb75a8a0ba75",
+      "name": "Customizable static solution 21",
+      "status": "Inactive",
+      "createdDate": "2025-05-15T19:18:04",
+      "updatedDate": "2026-01-26T09:59:46",
+      "owner": "Kenneth Molina",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4313.31,
+      "description": "New no case."
+    },
+    {
+      "id": "d844690f-1d7a-478b-97f3-0d7ec4f12fa4",
+      "name": "Multi-lateral logistical emulation 22",
+      "status": "Inactive",
+      "createdDate": "2025-11-11T22:48:10",
+      "updatedDate": "2026-01-27T22:11:01",
+      "owner": "Zachary Howard",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8790.96,
+      "description": "Stand create day child important."
+    },
+    {
+      "id": "15a58b2e-f830-4a1d-ab6f-f8ea0744f68a",
+      "name": "Configurable static analyzer 23",
+      "status": "Inactive",
+      "createdDate": "2025-08-05T06:37:03",
+      "updatedDate": "2026-01-30T23:42:11",
+      "owner": "Joshua Nelson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8205.61,
+      "description": "Staff although tonight catch last."
+    },
+    {
+      "id": "afc3d52e-1a34-4d94-957f-7f43ccf01a90",
+      "name": "Cloned reciprocal orchestration 24",
+      "status": "Completed",
+      "createdDate": "2025-07-19T07:28:34",
+      "updatedDate": "2026-02-12T05:04:40",
+      "owner": "Joshua Lawrence",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1597.02,
+      "description": "Provide tell painting make fast sense."
+    },
+    {
+      "id": "1e17235a-7336-450f-91f0-2c8e123bb846",
+      "name": "Extended motivating extranet 25",
+      "status": "Pending",
+      "createdDate": "2025-08-24T07:01:37",
+      "updatedDate": "2026-02-04T05:00:59",
+      "owner": "William Francis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2746.51,
+      "description": "Despite film perhaps everything response."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

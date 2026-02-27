@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-recent-updates",
+  "totalCount": 1337,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "52e71249-61f5-46e6-80bb-a24af4564b69",
+      "name": "Multi-tiered intermediate access 1",
+      "status": "Completed",
+      "createdDate": "2025-12-02T01:04:19",
+      "updatedDate": "2026-01-29T21:31:54",
+      "owner": "Carol Cain",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8402.72,
+      "description": "Almost name company wide result professor look group."
+    },
+    {
+      "id": "9210f59b-8714-4eb3-8043-4fe442fe077a",
+      "name": "User-friendly clear-thinking function 2",
+      "status": "Completed",
+      "createdDate": "2025-04-04T06:26:46",
+      "updatedDate": "2026-02-13T08:54:31",
+      "owner": "Julia Hobbs",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3571.2,
+      "description": "Indicate show card player idea item test."
+    },
+    {
+      "id": "f5e97d33-1bfe-445f-9212-4a760fb4edcb",
+      "name": "Profit-focused background interface 3",
+      "status": "Inactive",
+      "createdDate": "2025-04-01T16:38:28",
+      "updatedDate": "2026-01-24T05:13:18",
+      "owner": "Laura Davis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1241.3,
+      "description": "Picture court actually dog always."
+    },
+    {
+      "id": "19ac2632-b3f5-4e69-b1b2-9168d0495f05",
+      "name": "Vision-oriented asymmetric structure 4",
+      "status": "Pending",
+      "createdDate": "2025-10-13T22:41:56",
+      "updatedDate": "2026-02-09T02:27:55",
+      "owner": "Jeremy Harrison",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 534.45,
+      "description": "Teach available long."
+    },
+    {
+      "id": "63e855bf-7e11-498a-810d-ae5b179b06cc",
+      "name": "User-friendly bifurcated secured line 5",
+      "status": "Inactive",
+      "createdDate": "2025-08-09T07:12:34",
+      "updatedDate": "2026-02-10T15:06:46",
+      "owner": "Tracy Jackson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9919.57,
+      "description": "Hold out city body involve better."
+    },
+    {
+      "id": "61740dd6-3792-497f-8938-cd0931585661",
+      "name": "Horizontal maximized framework 6",
+      "status": "Pending",
+      "createdDate": "2025-03-01T14:49:48",
+      "updatedDate": "2026-02-01T07:05:18",
+      "owner": "Ethan Myers",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7788.28,
+      "description": "American federal no specific movie."
+    },
+    {
+      "id": "872e8f41-538d-463f-8e1c-8aab4959bb7f",
+      "name": "Total hybrid customer loyalty 7",
+      "status": "Pending",
+      "createdDate": "2025-10-19T18:02:03",
+      "updatedDate": "2026-01-20T13:26:55",
+      "owner": "Cheryl Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2304.15,
+      "description": "Participant image amount world would author week."
+    },
+    {
+      "id": "60344b63-fa8b-425d-8113-680a31d7d770",
+      "name": "Switchable background project 8",
+      "status": "Active",
+      "createdDate": "2025-03-14T19:24:14",
+      "updatedDate": "2026-02-08T11:24:19",
+      "owner": "Anna Gill",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1311.04,
+      "description": "Friend material for seven."
+    },
+    {
+      "id": "5fdf9d97-3049-4eb6-bd1e-fb62671c63df",
+      "name": "Multi-tiered even-keeled info-mediaries 9",
+      "status": "Completed",
+      "createdDate": "2025-06-21T09:19:14",
+      "updatedDate": "2026-02-13T01:28:00",
+      "owner": "Ashley Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3286.56,
+      "description": "Natural program standard commercial seem especially."
+    },
+    {
+      "id": "ae8253a0-b22e-46f1-b7b0-5c57c69820c1",
+      "name": "Enterprise-wide transitional function 10",
+      "status": "Completed",
+      "createdDate": "2025-05-21T04:32:46",
+      "updatedDate": "2026-01-28T02:55:58",
+      "owner": "Diana Ware",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2726.17,
+      "description": "Interview work tend create issue maybe."
+    },
+    {
+      "id": "ab86c821-0165-4a44-bfa3-163029f32a82",
+      "name": "Compatible object-oriented complexity 11",
+      "status": "Pending",
+      "createdDate": "2025-03-20T06:27:35",
+      "updatedDate": "2026-02-11T04:10:36",
+      "owner": "Cathy Wallace",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3492.17,
+      "description": "Both outside only condition carry area tough."
+    },
+    {
+      "id": "14f34581-cc45-482c-a37c-9d85439a0f07",
+      "name": "Fundamental regional orchestration 12",
+      "status": "Pending",
+      "createdDate": "2025-03-16T09:46:08",
+      "updatedDate": "2026-01-19T14:43:58",
+      "owner": "Nicole Tran",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3740.37,
+      "description": "Deep girl decision voice."
+    },
+    {
+      "id": "45bbf7a4-62bf-4ec6-a72e-738b40be273c",
+      "name": "Intuitive upward-trending capacity 13",
+      "status": "Pending",
+      "createdDate": "2025-04-07T04:25:01",
+      "updatedDate": "2026-02-13T17:02:44",
+      "owner": "Janice Allen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9483.15,
+      "description": "Mr speak answer experience other."
+    },
+    {
+      "id": "d24eab63-b601-48ad-a2fb-226a7adadf5f",
+      "name": "Persevering non-volatile Graphic Interface 14",
+      "status": "Active",
+      "createdDate": "2025-02-22T00:25:39",
+      "updatedDate": "2026-02-03T04:52:43",
+      "owner": "Derek Russell",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1131.73,
+      "description": "Speech us rate."
+    },
+    {
+      "id": "73765df0-881b-455f-9b72-a2b02b05bf68",
+      "name": "Profound national array 15",
+      "status": "Completed",
+      "createdDate": "2025-08-10T15:35:43",
+      "updatedDate": "2026-02-08T12:21:35",
+      "owner": "Daniel Norris",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 965.85,
+      "description": "Though this explain lot risk ten American."
+    },
+    {
+      "id": "9bf941d9-19e7-4b0c-a848-a13b3a3e9076",
+      "name": "Inverse encompassing knowledge user 16",
+      "status": "Completed",
+      "createdDate": "2026-01-19T04:43:42",
+      "updatedDate": "2026-02-11T04:00:50",
+      "owner": "Tracey Kirk",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3410.71,
+      "description": "Goal view effort."
+    },
+    {
+      "id": "998e6591-3733-4187-af44-34f884a60ccf",
+      "name": "Grass-roots even-keeled standardization 17",
+      "status": "Active",
+      "createdDate": "2025-11-04T04:52:24",
+      "updatedDate": "2026-01-27T13:08:35",
+      "owner": "Lee Peters",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3867.62,
+      "description": "Mrs simply dog common nearly talk director."
+    },
+    {
+      "id": "96f551c5-5e61-48d5-bac2-912984f5f7e3",
+      "name": "Seamless multi-state emulation 18",
+      "status": "Pending",
+      "createdDate": "2025-10-15T10:48:56",
+      "updatedDate": "2026-01-26T11:57:54",
+      "owner": "Tracy Wilson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6267.26,
+      "description": "Throw catch address year amount art."
+    },
+    {
+      "id": "f8fbfce5-6900-4015-92cd-66dd5aa68932",
+      "name": "Innovative explicit software 19",
+      "status": "Pending",
+      "createdDate": "2025-10-21T21:51:50",
+      "updatedDate": "2026-02-15T08:18:54",
+      "owner": "Laura Copeland",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6509.81,
+      "description": "Simple natural wait able audience the itself room."
+    },
+    {
+      "id": "92566163-ff02-4b73-a4dc-a8a0c7eb2cf0",
+      "name": "User-centric system-worthy structure 20",
+      "status": "Completed",
+      "createdDate": "2026-02-13T22:01:47",
+      "updatedDate": "2026-01-27T10:13:20",
+      "owner": "Candice Allen",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7114.32,
+      "description": "Ability head share shoulder natural."
+    },
+    {
+      "id": "d1b1860c-043f-430b-bc8e-8cbc465f151a",
+      "name": "Switchable demand-driven adapter 21",
+      "status": "Inactive",
+      "createdDate": "2025-03-12T00:41:17",
+      "updatedDate": "2026-01-25T13:34:36",
+      "owner": "Ronald Wheeler",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2238.08,
+      "description": "Certain skin nature."
+    },
+    {
+      "id": "a1adce57-c660-40c1-acaa-591230d7c3a6",
+      "name": "Advanced fault-tolerant budgetary management 22",
+      "status": "Active",
+      "createdDate": "2025-08-30T16:54:08",
+      "updatedDate": "2026-02-08T12:50:36",
+      "owner": "Alexandra Hendricks",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5852.75,
+      "description": "Key consumer strong write."
+    },
+    {
+      "id": "0db428bc-35f4-4e07-b77e-090feebdbd6e",
+      "name": "Front-line reciprocal intranet 23",
+      "status": "Completed",
+      "createdDate": "2025-03-14T15:18:47",
+      "updatedDate": "2026-01-25T01:24:18",
+      "owner": "Glenn Decker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3482.99,
+      "description": "Weight movement anyone room."
+    },
+    {
+      "id": "5a697397-07dd-409a-977e-8cd78accebff",
+      "name": "Universal interactive application 24",
+      "status": "Pending",
+      "createdDate": "2025-11-30T18:40:27",
+      "updatedDate": "2026-02-13T03:54:44",
+      "owner": "Christopher Smith",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4971.08,
+      "description": "Similar exactly respond others catch surface."
+    },
+    {
+      "id": "8bf48166-206f-4642-9e33-184e02b49b51",
+      "name": "Open-architected optimal projection 25",
+      "status": "Completed",
+      "createdDate": "2025-04-01T04:17:59",
+      "updatedDate": "2026-02-14T08:33:27",
+      "owner": "Isaiah Sutton",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4627.17,
+      "description": "Debate consumer write growth."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

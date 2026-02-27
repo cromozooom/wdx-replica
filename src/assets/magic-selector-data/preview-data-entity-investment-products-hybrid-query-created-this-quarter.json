@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 423,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "e177c81f-24e7-49dc-af3f-7d8d21568254",
+      "name": "Programmable global adapter 1",
+      "status": "Pending",
+      "createdDate": "2025-09-16T19:49:03",
+      "updatedDate": "2026-02-11T21:56:20",
+      "owner": "Kimberly Velez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2130.88,
+      "description": "Point listen soon store cold young."
+    },
+    {
+      "id": "8be91bde-ef19-42af-b33d-91f76f1f6f86",
+      "name": "Secured dedicated knowledgebase 2",
+      "status": "Inactive",
+      "createdDate": "2026-02-11T06:22:07",
+      "updatedDate": "2026-02-16T13:39:39",
+      "owner": "Paul Garcia",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1440.96,
+      "description": "Fact discuss view available their opportunity."
+    },
+    {
+      "id": "b78a22f9-0bad-433b-b31f-628f63cb82f6",
+      "name": "Exclusive dynamic Graphic Interface 3",
+      "status": "Inactive",
+      "createdDate": "2025-05-25T22:51:07",
+      "updatedDate": "2026-01-29T22:58:38",
+      "owner": "Erin Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3792.73,
+      "description": "Visit religious move drug blue line per."
+    },
+    {
+      "id": "bf8f7963-dc87-4829-a154-967e540e0846",
+      "name": "Centralized logistical algorithm 4",
+      "status": "Inactive",
+      "createdDate": "2025-03-04T17:22:20",
+      "updatedDate": "2026-02-04T03:17:14",
+      "owner": "Kathryn Glover",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6967.57,
+      "description": "She hot project agreement."
+    },
+    {
+      "id": "a079eed2-4e80-4227-8d13-ce7936b7f7af",
+      "name": "Switchable disintermediate middleware 5",
+      "status": "Completed",
+      "createdDate": "2025-10-25T21:49:32",
+      "updatedDate": "2026-01-24T05:27:25",
+      "owner": "Daniel Wilcox",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2451.67,
+      "description": "Herself onto role difficult."
+    },
+    {
+      "id": "6697f4fe-f376-4e2f-a2f7-6d9cd8eacd89",
+      "name": "Decentralized interactive initiative 6",
+      "status": "Completed",
+      "createdDate": "2025-12-20T02:47:38",
+      "updatedDate": "2026-01-19T17:48:54",
+      "owner": "Brenda Torres",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3983.26,
+      "description": "Yes buy understand statement before."
+    },
+    {
+      "id": "29579b0c-ba12-4d7a-bd91-3ed9b4111908",
+      "name": "Ergonomic impactful superstructure 7",
+      "status": "Completed",
+      "createdDate": "2025-02-22T11:36:30",
+      "updatedDate": "2026-02-06T06:09:35",
+      "owner": "Angela Holder",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7531.57,
+      "description": "Small suggest represent."
+    },
+    {
+      "id": "62e5c1a8-d234-4895-a831-300d8a56074e",
+      "name": "Re-contextualized system-worthy circuit 8",
+      "status": "Pending",
+      "createdDate": "2025-12-22T09:54:28",
+      "updatedDate": "2026-02-03T07:21:55",
+      "owner": "Jennifer Williams",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4862.83,
+      "description": "Physical audience gas husband seven in area."
+    },
+    {
+      "id": "d55a0f9a-d81e-46c1-ac20-c18b36f70050",
+      "name": "Horizontal incremental flexibility 9",
+      "status": "Pending",
+      "createdDate": "2025-10-09T16:51:56",
+      "updatedDate": "2026-02-06T12:48:54",
+      "owner": "Micheal Long",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5109.84,
+      "description": "Manage since strategy expect rather."
+    },
+    {
+      "id": "624100fc-cf40-48f5-a58a-9dda6d0f59dd",
+      "name": "Future-proofed uniform hierarchy 10",
+      "status": "Completed",
+      "createdDate": "2025-04-30T17:56:22",
+      "updatedDate": "2026-02-11T21:19:36",
+      "owner": "Tiffany Dougherty",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2402.6,
+      "description": "Present street another beautiful throughout fire cell."
+    },
+    {
+      "id": "365c93e3-bf2a-4eca-8250-c7227b07bb00",
+      "name": "Profit-focused fault-tolerant database 11",
+      "status": "Active",
+      "createdDate": "2025-03-27T18:36:57",
+      "updatedDate": "2026-02-05T22:41:15",
+      "owner": "Michelle Thompson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 292.01,
+      "description": "Event worry describe may."
+    },
+    {
+      "id": "3eb557bc-be8c-40f2-8386-8e2c1a908a2a",
+      "name": "Multi-layered discrete algorithm 12",
+      "status": "Active",
+      "createdDate": "2025-09-13T01:02:35",
+      "updatedDate": "2026-02-15T14:26:22",
+      "owner": "Daniel Leach",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3812.15,
+      "description": "Beyond each government onto different west have."
+    },
+    {
+      "id": "ec5e8cc9-72f0-4f99-9b0f-1bd0635b2d27",
+      "name": "Profit-focused bottom-line project 13",
+      "status": "Inactive",
+      "createdDate": "2025-08-24T03:44:08",
+      "updatedDate": "2026-02-14T05:59:18",
+      "owner": "Kimberly Torres",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1474.27,
+      "description": "Change smile paper allow."
+    },
+    {
+      "id": "204934de-bd07-4942-9312-2cc237d22f54",
+      "name": "Business-focused web-enabled analyzer 14",
+      "status": "Completed",
+      "createdDate": "2025-06-29T17:47:01",
+      "updatedDate": "2026-01-18T19:59:02",
+      "owner": "Richard Fletcher",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1183.06,
+      "description": "Size machine nearly manage room wind road."
+    },
+    {
+      "id": "ee773377-b548-4272-9fee-c8ffe203bc84",
+      "name": "Profound national leverage 15",
+      "status": "Completed",
+      "createdDate": "2025-06-24T09:35:58",
+      "updatedDate": "2026-02-11T07:01:21",
+      "owner": "Robin Burns",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 885.39,
+      "description": "Major can party everything response."
+    },
+    {
+      "id": "88ee5c75-6a95-43cb-bf73-73dbe275c6e1",
+      "name": "Realigned tangible process improvement 16",
+      "status": "Active",
+      "createdDate": "2025-06-05T08:02:44",
+      "updatedDate": "2026-01-31T06:38:14",
+      "owner": "Christopher Schmidt",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2745.92,
+      "description": "High arm course military."
+    },
+    {
+      "id": "9089b08e-8c47-4421-bb98-e8bec6a74cb4",
+      "name": "Mandatory homogeneous help-desk 17",
+      "status": "Active",
+      "createdDate": "2025-12-13T14:20:23",
+      "updatedDate": "2026-01-21T05:11:04",
+      "owner": "Lauren Williams",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2516.77,
+      "description": "President break large sound method."
+    },
+    {
+      "id": "c01378eb-08e9-4d4c-863f-b32a35620992",
+      "name": "Face-to-face bottom-line approach 18",
+      "status": "Pending",
+      "createdDate": "2025-04-21T00:09:29",
+      "updatedDate": "2026-01-19T19:13:05",
+      "owner": "Katelyn Ward",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2485.82,
+      "description": "Task water tough edge fine."
+    },
+    {
+      "id": "f0eda63a-1d66-462d-9171-8fd4327a80d5",
+      "name": "Phased systemic project 19",
+      "status": "Active",
+      "createdDate": "2025-10-01T00:15:31",
+      "updatedDate": "2026-02-02T00:58:04",
+      "owner": "Christopher Key",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2877.06,
+      "description": "Late send management within give."
+    },
+    {
+      "id": "927285a6-ad64-40cc-95d6-98a7baa51ca3",
+      "name": "Adaptive radical firmware 20",
+      "status": "Inactive",
+      "createdDate": "2025-04-12T07:14:11",
+      "updatedDate": "2026-02-10T19:56:53",
+      "owner": "Cheryl Perez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9195.18,
+      "description": "Opportunity beyond skill hotel democratic."
+    },
+    {
+      "id": "92af47e4-f4c9-409b-9a8e-f7ea033be0a2",
+      "name": "Optimized transitional access 21",
+      "status": "Active",
+      "createdDate": "2025-06-19T21:34:50",
+      "updatedDate": "2026-02-01T15:50:56",
+      "owner": "Gregory Navarro",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4013.53,
+      "description": "Speech edge home pretty."
+    },
+    {
+      "id": "20140b8b-e3d3-45ca-a05c-0911ef19db16",
+      "name": "Virtual 5thgeneration encoding 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-21T00:51:33",
+      "updatedDate": "2026-02-16T16:06:22",
+      "owner": "Michael Burton",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3600.93,
+      "description": "Development one give."
+    },
+    {
+      "id": "a5e20543-c213-45c9-bd1b-e35e4a4f87c2",
+      "name": "Visionary maximized alliance 23",
+      "status": "Active",
+      "createdDate": "2026-02-01T14:28:44",
+      "updatedDate": "2026-02-15T13:46:19",
+      "owner": "Melissa Jackson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8750.89,
+      "description": "Morning water finally thought artist."
+    },
+    {
+      "id": "e8e740fb-a79e-45a6-a759-c2539dd8c88f",
+      "name": "Synergized executive system engine 24",
+      "status": "Pending",
+      "createdDate": "2025-06-14T15:48:54",
+      "updatedDate": "2026-02-08T13:50:21",
+      "owner": "Kimberly Day",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9550.24,
+      "description": "Check affect his ball citizen region should process."
+    },
+    {
+      "id": "94a385c9-6446-4ab0-89a0-5d71d10c50e6",
+      "name": "Compatible impactful hierarchy 25",
+      "status": "Completed",
+      "createdDate": "2025-08-17T22:08:57",
+      "updatedDate": "2026-02-04T22:20:35",
+      "owner": "Gregory Ward",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7474.53,
+      "description": "Trouble drive upon save."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

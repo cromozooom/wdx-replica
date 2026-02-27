@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 445,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "41dac6c4-d97f-49f4-bb6b-44768d8697e4",
+      "name": "Multi-tiered empowering algorithm 1",
+      "status": "Pending",
+      "createdDate": "2025-12-28T11:42:34",
+      "updatedDate": "2026-01-23T07:59:12",
+      "owner": "Sabrina Snyder",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1505.39,
+      "description": "While authority traditional reason."
+    },
+    {
+      "id": "6dd2da3b-6d00-430a-a274-fdfb9751f503",
+      "name": "Open-architected directional software 2",
+      "status": "Completed",
+      "createdDate": "2025-11-17T04:44:30",
+      "updatedDate": "2026-01-20T10:52:50",
+      "owner": "Andrew Wright",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3674.14,
+      "description": "Account control laugh each seek pressure."
+    },
+    {
+      "id": "7b3e5710-326b-4537-831f-4af331f35c86",
+      "name": "Adaptive responsive software 3",
+      "status": "Completed",
+      "createdDate": "2025-04-16T11:38:04",
+      "updatedDate": "2026-02-06T05:55:09",
+      "owner": "Zoe Cummings",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3340.48,
+      "description": "Moment pull material."
+    },
+    {
+      "id": "19c7c85a-c00b-4a4c-91f5-aab92e8ad433",
+      "name": "Visionary national solution 4",
+      "status": "Active",
+      "createdDate": "2025-08-19T13:39:52",
+      "updatedDate": "2026-01-20T06:10:57",
+      "owner": "Donna Ortega",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6191.39,
+      "description": "Expect seat student nature commercial stand tend clear."
+    },
+    {
+      "id": "feff4979-8901-41a6-9e51-760335655e9b",
+      "name": "Fundamental exuding middleware 5",
+      "status": "Active",
+      "createdDate": "2025-11-13T08:32:55",
+      "updatedDate": "2026-02-06T14:56:09",
+      "owner": "Sara Moore",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3309.1,
+      "description": "Floor school how."
+    },
+    {
+      "id": "3b339c1c-73ba-4e28-a008-16dd9a1d132b",
+      "name": "Optimized executive superstructure 6",
+      "status": "Active",
+      "createdDate": "2025-07-18T19:31:49",
+      "updatedDate": "2026-02-04T23:31:06",
+      "owner": "Marcus Mendoza",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2435.29,
+      "description": "Over get treat former method enough record toward."
+    },
+    {
+      "id": "b4e29b32-85c9-4932-8910-28c9a23d6179",
+      "name": "Stand-alone coherent process improvement 7",
+      "status": "Inactive",
+      "createdDate": "2025-10-04T23:59:35",
+      "updatedDate": "2026-02-08T13:42:17",
+      "owner": "Dr. Andrew Stephenson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9612.71,
+      "description": "Wide policy figure ready course education billion."
+    },
+    {
+      "id": "923fb7f7-f8db-45eb-811f-f8f40d59d0c5",
+      "name": "Synergized uniform methodology 8",
+      "status": "Completed",
+      "createdDate": "2025-03-04T09:04:26",
+      "updatedDate": "2026-02-03T15:00:51",
+      "owner": "Kara Perez DDS",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 957.78,
+      "description": "Miss and form dinner."
+    },
+    {
+      "id": "cc2831dc-ae01-4fb3-8ac1-fe57ccfadd61",
+      "name": "Balanced 24hour neural-net 9",
+      "status": "Inactive",
+      "createdDate": "2025-11-24T15:50:36",
+      "updatedDate": "2026-02-11T13:45:22",
+      "owner": "Michael Rosales",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5557.82,
+      "description": "Executive discuss month enough far."
+    },
+    {
+      "id": "89de34cb-c394-4037-b38d-c257ece7f9c8",
+      "name": "Devolved optimizing functionalities 10",
+      "status": "Active",
+      "createdDate": "2025-11-13T07:44:27",
+      "updatedDate": "2026-01-20T23:51:33",
+      "owner": "Brittany Dudley",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1448.45,
+      "description": "Western media sport after kind."
+    },
+    {
+      "id": "923deec2-3866-4187-8e72-7722b8c3fc74",
+      "name": "Re-contextualized clear-thinking approach 11",
+      "status": "Active",
+      "createdDate": "2025-03-20T07:13:52",
+      "updatedDate": "2026-02-07T05:47:12",
+      "owner": "Monica Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2493.78,
+      "description": "Author discuss structure wear fight."
+    },
+    {
+      "id": "29e6f6b6-a867-46af-a944-e15391ca3cf7",
+      "name": "Implemented next generation parallelism 12",
+      "status": "Completed",
+      "createdDate": "2025-11-21T07:07:57",
+      "updatedDate": "2026-01-19T07:13:41",
+      "owner": "Micheal Douglas",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7534.34,
+      "description": "Film key lawyer trouble fine more."
+    },
+    {
+      "id": "bec32f7e-6f36-4e8e-bd62-ddb92da82911",
+      "name": "Synergized reciprocal middleware 13",
+      "status": "Pending",
+      "createdDate": "2025-07-07T00:33:55",
+      "updatedDate": "2026-02-02T15:18:45",
+      "owner": "Cindy Contreras",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2926.37,
+      "description": "Evening production together cultural billion part oil impact."
+    },
+    {
+      "id": "aa76b760-b10c-4343-845b-c5809a879c4e",
+      "name": "Horizontal heuristic strategy 14",
+      "status": "Pending",
+      "createdDate": "2025-06-08T16:01:51",
+      "updatedDate": "2026-02-09T17:52:02",
+      "owner": "Larry Patton",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9987.08,
+      "description": "Figure treatment including Congress worker every."
+    },
+    {
+      "id": "1216056f-a579-4760-a773-3cc1a5bbc30d",
+      "name": "Proactive multi-state extranet 15",
+      "status": "Pending",
+      "createdDate": "2025-04-15T22:08:32",
+      "updatedDate": "2026-01-25T11:10:42",
+      "owner": "Tracy Ortega",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6116.83,
+      "description": "Foreign score identify reality among once."
+    },
+    {
+      "id": "ef56381a-b6bd-42e2-96fb-dccb450fec35",
+      "name": "Extended bottom-line installation 16",
+      "status": "Pending",
+      "createdDate": "2025-04-26T01:45:20",
+      "updatedDate": "2026-02-14T02:24:12",
+      "owner": "Joseph Anderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1474.76,
+      "description": "Put approach series rise some."
+    },
+    {
+      "id": "0301ed5f-993d-4e1d-b6ea-8034a6314974",
+      "name": "Open-architected heuristic moratorium 17",
+      "status": "Inactive",
+      "createdDate": "2025-03-14T16:35:32",
+      "updatedDate": "2026-02-04T01:30:11",
+      "owner": "Jeremy Hicks",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2499.37,
+      "description": "Charge attack carry oil firm region region."
+    },
+    {
+      "id": "9d3c271d-269d-4cd5-9c3a-23bc2e55f63b",
+      "name": "Operative impactful architecture 18",
+      "status": "Completed",
+      "createdDate": "2025-07-14T17:01:47",
+      "updatedDate": "2026-01-25T16:02:06",
+      "owner": "Sarah Sandoval",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2177.98,
+      "description": "Compare relate consider thought approach outside floor out."
+    },
+    {
+      "id": "884a35ed-6976-4815-931a-ff570c09a694",
+      "name": "Operative zero tolerance encryption 19",
+      "status": "Pending",
+      "createdDate": "2025-05-19T18:09:11",
+      "updatedDate": "2026-02-17T00:18:58",
+      "owner": "Kimberly Miller",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 848.85,
+      "description": "Any bring give only several candidate top business."
+    },
+    {
+      "id": "60541550-9897-4c31-b595-3fe12ae27814",
+      "name": "Advanced fresh-thinking solution 20",
+      "status": "Active",
+      "createdDate": "2025-10-12T20:28:23",
+      "updatedDate": "2026-02-04T19:56:22",
+      "owner": "Meagan Jensen",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2741.7,
+      "description": "Guess kitchen player use response will human."
+    },
+    {
+      "id": "79067a6c-fdf0-4faa-813c-f2ee8d6b90b0",
+      "name": "Expanded intangible flexibility 21",
+      "status": "Active",
+      "createdDate": "2026-02-14T06:50:52",
+      "updatedDate": "2026-01-23T05:33:36",
+      "owner": "Andrew Kramer",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7922.55,
+      "description": "Situation stand training Republican range home."
+    },
+    {
+      "id": "5e27637b-7a7a-40ec-9ea0-5f886cbd7f03",
+      "name": "Expanded asynchronous success 22",
+      "status": "Completed",
+      "createdDate": "2025-09-04T11:09:58",
+      "updatedDate": "2026-02-15T18:22:02",
+      "owner": "Victor Cunningham",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5130.41,
+      "description": "Memory sure minute war time letter property."
+    },
+    {
+      "id": "af4ec82f-74f9-44de-8b63-8fc7ad9f451f",
+      "name": "Sharable well-modulated access 23",
+      "status": "Active",
+      "createdDate": "2025-03-12T01:38:06",
+      "updatedDate": "2026-02-14T17:58:41",
+      "owner": "Nicole Aguirre",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 962.27,
+      "description": "Least information deal natural."
+    },
+    {
+      "id": "f64e3f66-a37f-46bb-bd17-539434acf215",
+      "name": "Automated foreground architecture 24",
+      "status": "Inactive",
+      "createdDate": "2025-03-18T02:53:31",
+      "updatedDate": "2026-01-28T08:56:19",
+      "owner": "Derek Guerra",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8964.23,
+      "description": "Agree month per their as position."
+    },
+    {
+      "id": "5c9e284f-fdd2-4654-9740-349d5362f70c",
+      "name": "Versatile intangible artificial intelligence 25",
+      "status": "Active",
+      "createdDate": "2025-10-13T01:04:31",
+      "updatedDate": "2026-02-10T10:53:46",
+      "owner": "Amy Parker",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2375.93,
+      "description": "Along statement with."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1477,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "772a255c-9032-4955-a0c2-d2ac93dbdd9d",
+      "name": "Total methodical customer loyalty 1",
+      "status": "Pending",
+      "createdDate": "2025-08-15T22:45:29",
+      "updatedDate": "2026-02-11T01:01:39",
+      "owner": "Adrian Walls",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9712.67,
+      "description": "Ten successful other."
+    },
+    {
+      "id": "f9d6a956-dc17-4b43-a8e7-6729fa983b7e",
+      "name": "Focused context-sensitive process improvement 2",
+      "status": "Completed",
+      "createdDate": "2026-01-23T08:46:16",
+      "updatedDate": "2026-01-31T09:53:19",
+      "owner": "Pamela Welch",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5105.76,
+      "description": "Fish kid south threat gas concern a box."
+    },
+    {
+      "id": "ed758b6f-2d4d-47cf-9c4e-bf081c315753",
+      "name": "Intuitive client-driven open architecture 3",
+      "status": "Active",
+      "createdDate": "2026-01-16T14:15:59",
+      "updatedDate": "2026-02-15T21:59:12",
+      "owner": "James Spencer",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1042.7,
+      "description": "Particularly month third able."
+    },
+    {
+      "id": "5cdd2833-3ae5-40de-93e2-9e4542e1d980",
+      "name": "Reverse-engineered user-facing circuit 4",
+      "status": "Pending",
+      "createdDate": "2025-10-04T23:08:25",
+      "updatedDate": "2026-02-06T01:39:04",
+      "owner": "Timothy Pennington",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8608.0,
+      "description": "Edge decide decide others."
+    },
+    {
+      "id": "08b986c5-105f-4a85-9854-4125dc2c2440",
+      "name": "Phased multi-state orchestration 5",
+      "status": "Pending",
+      "createdDate": "2025-09-20T19:47:51",
+      "updatedDate": "2026-01-23T16:33:00",
+      "owner": "Cody Sanders",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5356.82,
+      "description": "Leave somebody avoid audience son could police."
+    },
+    {
+      "id": "a644d404-142b-44ce-95aa-86ac7305b8f3",
+      "name": "Open-source human-resource help-desk 6",
+      "status": "Pending",
+      "createdDate": "2025-03-31T05:37:33",
+      "updatedDate": "2026-01-25T02:24:34",
+      "owner": "Brandon Harrington III",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1942.97,
+      "description": "Subject how thousand black door."
+    },
+    {
+      "id": "f2839576-b9d8-4033-89a7-f9d17859f7d5",
+      "name": "Fundamental regional project 7",
+      "status": "Pending",
+      "createdDate": "2025-03-24T05:32:08",
+      "updatedDate": "2026-02-09T17:47:24",
+      "owner": "Adam Rivera",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3301.76,
+      "description": "Call best agent."
+    },
+    {
+      "id": "1619da74-335e-4e29-8beb-458ac05e261e",
+      "name": "Synergistic dynamic flexibility 8",
+      "status": "Inactive",
+      "createdDate": "2025-04-25T21:03:41",
+      "updatedDate": "2026-01-27T15:32:25",
+      "owner": "James White",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9047.96,
+      "description": "Language policy father best view site discussion glass."
+    },
+    {
+      "id": "cab9112f-d0ab-4f5e-bc6c-0b71b6d115c3",
+      "name": "Future-proofed stable collaboration 9",
+      "status": "Inactive",
+      "createdDate": "2025-07-16T12:08:03",
+      "updatedDate": "2026-02-01T09:22:59",
+      "owner": "Katrina Daniel",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1525.28,
+      "description": "Fund issue article relate many usually field ago."
+    },
+    {
+      "id": "45d68a18-080a-4f7a-a326-4b6c625121ed",
+      "name": "Compatible global orchestration 10",
+      "status": "Inactive",
+      "createdDate": "2025-03-13T13:40:38",
+      "updatedDate": "2026-02-10T02:07:29",
+      "owner": "Frances Dorsey",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9297.84,
+      "description": "Fall project through partner appear explain within."
+    },
+    {
+      "id": "b7f2e9d3-923a-47ff-8aec-f7293384d503",
+      "name": "Intuitive human-resource knowledge user 11",
+      "status": "Active",
+      "createdDate": "2025-10-09T08:53:14",
+      "updatedDate": "2026-02-13T03:04:24",
+      "owner": "Justin Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1292.74,
+      "description": "Hold affect indicate find sing."
+    },
+    {
+      "id": "d22db9da-272b-455a-8075-110ce7d04e76",
+      "name": "Total upward-trending focus group 12",
+      "status": "Inactive",
+      "createdDate": "2026-01-21T00:30:41",
+      "updatedDate": "2026-02-14T03:18:50",
+      "owner": "Nathan Scott",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1058.02,
+      "description": "Trip join despite tough country finally."
+    },
+    {
+      "id": "c256deea-5a70-4563-8739-ef80e8bb3c6a",
+      "name": "Assimilated interactive circuit 13",
+      "status": "Pending",
+      "createdDate": "2025-08-20T10:45:00",
+      "updatedDate": "2026-02-05T19:35:30",
+      "owner": "Lori Baker",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7185.76,
+      "description": "Change name professional amount choose almost."
+    },
+    {
+      "id": "698bed5d-c3bc-4f16-bb13-fd2d342f92d0",
+      "name": "Mandatory multi-state data-warehouse 14",
+      "status": "Pending",
+      "createdDate": "2025-08-24T02:53:02",
+      "updatedDate": "2026-01-25T17:42:59",
+      "owner": "Todd York",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7968.69,
+      "description": "Turn physical white economic effect."
+    },
+    {
+      "id": "a2b676d8-2b20-4bf7-8219-9551d5b2bff8",
+      "name": "Right-sized even-keeled instruction set 15",
+      "status": "Active",
+      "createdDate": "2025-08-31T19:31:00",
+      "updatedDate": "2026-02-09T20:49:57",
+      "owner": "Jessica Eaton",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6008.75,
+      "description": "Vote son mouth small culture sell stuff."
+    },
+    {
+      "id": "74c56a9e-fe32-4aee-b81f-08776610123f",
+      "name": "Mandatory impactful knowledge user 16",
+      "status": "Active",
+      "createdDate": "2025-09-23T06:13:39",
+      "updatedDate": "2026-01-24T16:59:34",
+      "owner": "Mr. Jonathon Ward DVM",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1387.19,
+      "description": "Into easy follow teacher low usually."
+    },
+    {
+      "id": "29ccad51-0db5-4ad6-baaf-5a7fa652e216",
+      "name": "Balanced optimizing secured line 17",
+      "status": "Completed",
+      "createdDate": "2025-11-02T02:55:46",
+      "updatedDate": "2026-01-20T17:12:10",
+      "owner": "Douglas Cherry",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7491.24,
+      "description": "Couple stock dark it message."
+    },
+    {
+      "id": "5f998ca9-1049-415b-a02d-837ed412e22a",
+      "name": "Self-enabling demand-driven concept 18",
+      "status": "Completed",
+      "createdDate": "2025-04-08T16:27:38",
+      "updatedDate": "2026-01-26T06:59:26",
+      "owner": "Jonathan Colon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5890.92,
+      "description": "Involve raise type plant issue arrive organization."
+    },
+    {
+      "id": "f9057d80-2dc9-4a47-921a-9dcd22565a77",
+      "name": "Distributed motivating analyzer 19",
+      "status": "Inactive",
+      "createdDate": "2026-01-17T21:57:32",
+      "updatedDate": "2026-02-03T00:32:58",
+      "owner": "Danielle Lawson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5767.93,
+      "description": "Onto majority future since election indeed baby."
+    },
+    {
+      "id": "4b83abf8-f0d5-476b-9d8e-f353c9c909a5",
+      "name": "Operative client-driven open architecture 20",
+      "status": "Pending",
+      "createdDate": "2025-06-26T23:51:07",
+      "updatedDate": "2026-02-13T12:04:10",
+      "owner": "Brittany Roman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4349.08,
+      "description": "Dinner compare return compare."
+    },
+    {
+      "id": "fe7b46a2-0931-4f86-a0ff-7b7927a55f86",
+      "name": "Compatible systematic alliance 21",
+      "status": "Inactive",
+      "createdDate": "2025-05-13T02:50:04",
+      "updatedDate": "2026-02-09T22:10:49",
+      "owner": "Danielle Black",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7936.28,
+      "description": "Herself across next part sure be."
+    },
+    {
+      "id": "50bb32f2-cbe3-4bed-a7d9-bcb7c8ba1ca2",
+      "name": "Quality-focused tangible moderator 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-28T09:44:10",
+      "updatedDate": "2026-01-29T05:47:07",
+      "owner": "William Davenport",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 833.92,
+      "description": "Good necessary yet example get investment."
+    },
+    {
+      "id": "6b02d88a-ac34-4be7-96aa-b55a098861b5",
+      "name": "Organized national service-desk 23",
+      "status": "Pending",
+      "createdDate": "2025-08-04T13:52:33",
+      "updatedDate": "2026-01-30T20:34:10",
+      "owner": "Blake Robinson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3373.29,
+      "description": "As significant red."
+    },
+    {
+      "id": "69344e87-4b65-497a-a7c1-2ca547fa9306",
+      "name": "Face-to-face systematic core 24",
+      "status": "Active",
+      "createdDate": "2025-06-06T23:09:12",
+      "updatedDate": "2026-02-15T00:55:21",
+      "owner": "Maria Gamble",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9636.97,
+      "description": "Read doctor run something song south participant."
+    },
+    {
+      "id": "c8c32554-5942-4dc6-a921-6fbaa27fc5ee",
+      "name": "Pre-emptive bifurcated open system 25",
+      "status": "Active",
+      "createdDate": "2025-12-29T01:00:33",
+      "updatedDate": "2026-02-12T21:46:42",
+      "owner": "David Fox",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7784.11,
+      "description": "Exactly position compare what military education visit."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

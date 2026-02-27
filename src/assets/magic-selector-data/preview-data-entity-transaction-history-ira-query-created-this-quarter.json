@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 582,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "c35eee27-8878-43e3-92ea-69b79c33a135",
+      "name": "Organized 4thgeneration task-force 1",
+      "status": "Completed",
+      "createdDate": "2025-03-13T02:18:43",
+      "updatedDate": "2026-02-04T07:56:50",
+      "owner": "Karen Vasquez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3249.7,
+      "description": "Never still with ok."
+    },
+    {
+      "id": "3a5bfa70-810e-4c29-bc2e-22c99b774cc1",
+      "name": "User-centric contextually-based throughput 2",
+      "status": "Inactive",
+      "createdDate": "2025-07-03T16:18:06",
+      "updatedDate": "2026-02-12T01:32:19",
+      "owner": "John Davis",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5616.67,
+      "description": "Former social card trouble main soldier move."
+    },
+    {
+      "id": "741fc176-8f95-4a2f-a1ef-770ea62def26",
+      "name": "Polarized even-keeled process improvement 3",
+      "status": "Active",
+      "createdDate": "2025-12-24T07:08:52",
+      "updatedDate": "2026-02-02T11:55:40",
+      "owner": "Cindy Davis",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 368.02,
+      "description": "New yet candidate talk establish."
+    },
+    {
+      "id": "cc37b0a4-44eb-4a92-97d9-5e013f02ad52",
+      "name": "User-friendly zero tolerance complexity 4",
+      "status": "Inactive",
+      "createdDate": "2025-11-20T04:11:41",
+      "updatedDate": "2026-02-04T10:40:02",
+      "owner": "Michael Green",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3998.49,
+      "description": "Within thousand clearly describe mother."
+    },
+    {
+      "id": "a77d9c16-33d0-4e13-bdcb-030b7a53b206",
+      "name": "Business-focused local neural-net 5",
+      "status": "Pending",
+      "createdDate": "2025-10-17T04:03:12",
+      "updatedDate": "2026-02-15T09:27:21",
+      "owner": "Michelle Garrett",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6126.04,
+      "description": "Woman onto edge clearly message summer arrive."
+    },
+    {
+      "id": "5f600237-520b-4c8f-9460-b62f5df46c68",
+      "name": "Optimized real-time middleware 6",
+      "status": "Active",
+      "createdDate": "2025-05-01T15:15:01",
+      "updatedDate": "2026-02-10T14:02:35",
+      "owner": "Joseph Chambers",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3768.87,
+      "description": "Realize back employee treatment."
+    },
+    {
+      "id": "9a1bfbd6-f5a2-4674-b1ea-bc42a73e2290",
+      "name": "Vision-oriented optimizing function 7",
+      "status": "Inactive",
+      "createdDate": "2025-04-09T12:03:44",
+      "updatedDate": "2026-01-21T16:17:09",
+      "owner": "Mathew Moore",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6592.71,
+      "description": "Attack degree conference century table simple receive."
+    },
+    {
+      "id": "9d85a8d5-d328-425f-96db-d13da82ee82a",
+      "name": "Down-sized contextually-based hub 8",
+      "status": "Active",
+      "createdDate": "2025-03-17T04:10:03",
+      "updatedDate": "2026-01-30T08:04:41",
+      "owner": "Sharon Fuller",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1067.67,
+      "description": "Pay different store operation window party."
+    },
+    {
+      "id": "7cd14800-b8b2-43fc-9985-e59276a79128",
+      "name": "Cross-group multi-state orchestration 9",
+      "status": "Completed",
+      "createdDate": "2025-10-30T06:34:24",
+      "updatedDate": "2026-01-21T12:23:36",
+      "owner": "Linda Ramos",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3446.2,
+      "description": "Various at method quite."
+    },
+    {
+      "id": "f7a04d95-997b-406c-a625-ada7bc57a394",
+      "name": "Team-oriented leadingedge implementation 10",
+      "status": "Inactive",
+      "createdDate": "2025-06-14T06:57:04",
+      "updatedDate": "2026-02-10T08:51:54",
+      "owner": "Theresa Lane",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 379.1,
+      "description": "Yeah field tough."
+    },
+    {
+      "id": "77daddd6-361a-4d3c-bd8a-48bbbe12ec35",
+      "name": "Networked local contingency 11",
+      "status": "Completed",
+      "createdDate": "2025-05-09T16:28:49",
+      "updatedDate": "2026-01-21T21:00:06",
+      "owner": "Jason Bennett",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6584.89,
+      "description": "Individual about coach second."
+    },
+    {
+      "id": "33c58437-2c5b-47a5-9be8-6f163211ae83",
+      "name": "Balanced mission-critical model 12",
+      "status": "Pending",
+      "createdDate": "2025-07-03T04:46:18",
+      "updatedDate": "2026-02-13T20:53:30",
+      "owner": "James Acosta",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2175.12,
+      "description": "Simply own head once provide gas remain."
+    },
+    {
+      "id": "950f6de1-f20b-4818-b1aa-665b37c5afef",
+      "name": "Synchronized real-time infrastructure 13",
+      "status": "Pending",
+      "createdDate": "2025-07-18T05:59:43",
+      "updatedDate": "2026-01-21T15:37:57",
+      "owner": "Nancy Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8386.97,
+      "description": "Easy score piece water."
+    },
+    {
+      "id": "91430c8b-a45c-4af6-8964-98ae0aec8b1f",
+      "name": "Function-based intermediate productivity 14",
+      "status": "Active",
+      "createdDate": "2025-12-31T03:00:28",
+      "updatedDate": "2026-02-16T19:01:50",
+      "owner": "Brenda James",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9498.45,
+      "description": "Trip opportunity lot item."
+    },
+    {
+      "id": "9881a7bc-9c9d-42b1-bd46-940422acb7fc",
+      "name": "Networked 24hour website 15",
+      "status": "Inactive",
+      "createdDate": "2025-09-01T19:07:38",
+      "updatedDate": "2026-02-05T14:09:22",
+      "owner": "Matthew Shepherd",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 833.96,
+      "description": "His pretty air throw."
+    },
+    {
+      "id": "879f0814-63d8-4398-8340-ede2cb68f293",
+      "name": "Streamlined 5thgeneration superstructure 16",
+      "status": "Pending",
+      "createdDate": "2025-07-04T00:08:18",
+      "updatedDate": "2026-02-10T15:04:07",
+      "owner": "Brett Scott",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5486.95,
+      "description": "Church allow any number change decide."
+    },
+    {
+      "id": "13d0888c-9c42-4962-a150-67c719e31e2d",
+      "name": "Managed incremental parallelism 17",
+      "status": "Completed",
+      "createdDate": "2025-11-30T21:40:29",
+      "updatedDate": "2026-02-17T06:40:42",
+      "owner": "Marilyn Reilly",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3032.21,
+      "description": "Fear cut ball fact range."
+    },
+    {
+      "id": "6a8862ce-24ab-4b23-b4a5-9421c3d27e75",
+      "name": "Universal homogeneous superstructure 18",
+      "status": "Inactive",
+      "createdDate": "2025-05-12T04:41:05",
+      "updatedDate": "2026-01-31T14:39:11",
+      "owner": "Stephen Peterson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2486.7,
+      "description": "Country down although stay front."
+    },
+    {
+      "id": "aaf5776a-9ce6-4d78-90c7-52cdae49cbfe",
+      "name": "Pre-emptive holistic algorithm 19",
+      "status": "Active",
+      "createdDate": "2025-04-18T05:53:29",
+      "updatedDate": "2026-02-09T20:52:04",
+      "owner": "Lindsey Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3984.72,
+      "description": "Carry charge despite front."
+    },
+    {
+      "id": "4d6ac3d4-7673-4d8b-84c3-d3b6c5065988",
+      "name": "Operative non-volatile matrices 20",
+      "status": "Inactive",
+      "createdDate": "2025-08-22T21:27:59",
+      "updatedDate": "2026-01-19T13:29:32",
+      "owner": "Allen Pham",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7188.83,
+      "description": "Hot inside effect everyone."
+    },
+    {
+      "id": "2d581dc9-497b-4943-8721-a4e7ff247cd2",
+      "name": "Business-focused exuding projection 21",
+      "status": "Pending",
+      "createdDate": "2026-02-14T20:35:32",
+      "updatedDate": "2026-02-08T23:36:33",
+      "owner": "Nicole Moore",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3095.34,
+      "description": "Organization security race entire tell although west."
+    },
+    {
+      "id": "0fae8063-5a1e-457f-b2a2-b55690d0f510",
+      "name": "Assimilated transitional process improvement 22",
+      "status": "Inactive",
+      "createdDate": "2025-03-28T14:06:14",
+      "updatedDate": "2026-02-13T08:00:09",
+      "owner": "Sarah Kent",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4042.55,
+      "description": "Produce marriage with long same."
+    },
+    {
+      "id": "fa208a26-822a-4ac0-84dc-693a47bdd9c5",
+      "name": "Profound reciprocal customer loyalty 23",
+      "status": "Completed",
+      "createdDate": "2025-12-07T07:11:20",
+      "updatedDate": "2026-02-16T17:19:10",
+      "owner": "Janice Wiley",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 130.11,
+      "description": "Now approach car edge same difference animal wide."
+    },
+    {
+      "id": "67d0de34-298d-482a-ac21-0ed2f352d025",
+      "name": "Multi-lateral 5thgeneration orchestration 24",
+      "status": "Pending",
+      "createdDate": "2025-03-31T17:23:45",
+      "updatedDate": "2026-02-15T05:29:49",
+      "owner": "Terri Velez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5410.77,
+      "description": "Store common value only senior owner may."
+    },
+    {
+      "id": "9636e82d-404f-40e5-9271-cdc0eeffa6eb",
+      "name": "Networked 4thgeneration Local Area Network 25",
+      "status": "Active",
+      "createdDate": "2025-04-14T10:25:00",
+      "updatedDate": "2026-01-27T18:11:18",
+      "owner": "Hunter Crosby",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5198.18,
+      "description": "Life opportunity improve agree else both."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

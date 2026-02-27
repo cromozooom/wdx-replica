@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-active-only",
+  "totalCount": 804,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "ea7ab241-8690-4a6c-9693-d9c9f927a3be",
+      "name": "Persevering actuating initiative 1",
+      "status": "Completed",
+      "createdDate": "2025-09-08T20:23:18",
+      "updatedDate": "2026-01-27T02:33:49",
+      "owner": "Thomas Ferguson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1823.96,
+      "description": "Western church program dark leg already."
+    },
+    {
+      "id": "a32291a9-f464-43c4-ada8-f5348d76dc88",
+      "name": "Cloned uniform project 2",
+      "status": "Active",
+      "createdDate": "2025-06-09T02:55:11",
+      "updatedDate": "2026-02-08T20:16:56",
+      "owner": "Ruth Holmes",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 783.5,
+      "description": "Board remember fear day interview."
+    },
+    {
+      "id": "95dbe41a-3f52-4976-8cf2-9be27d108e82",
+      "name": "Business-focused value-added circuit 3",
+      "status": "Pending",
+      "createdDate": "2025-05-04T03:15:38",
+      "updatedDate": "2026-01-18T13:52:58",
+      "owner": "Robert Howard",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3769.34,
+      "description": "Pattern his number hit pass population."
+    },
+    {
+      "id": "de7c2049-41b7-41c3-8864-591c8fbb85a3",
+      "name": "Multi-tiered multi-tasking service-desk 4",
+      "status": "Pending",
+      "createdDate": "2025-03-14T10:58:21",
+      "updatedDate": "2026-02-11T20:19:02",
+      "owner": "Stephen Hardin",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5589.0,
+      "description": "Part yourself town number southern already."
+    },
+    {
+      "id": "e397c4f7-38a4-4012-ba39-7181a447d660",
+      "name": "Ameliorated optimizing website 5",
+      "status": "Pending",
+      "createdDate": "2025-03-02T03:44:48",
+      "updatedDate": "2026-02-01T14:40:36",
+      "owner": "Brent Pineda",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1805.31,
+      "description": "War be late language middle effort run."
+    },
+    {
+      "id": "7a2deaf5-06a7-461b-816e-2bece415fa25",
+      "name": "User-centric well-modulated utilization 6",
+      "status": "Pending",
+      "createdDate": "2025-05-22T19:05:26",
+      "updatedDate": "2026-01-22T10:22:51",
+      "owner": "Christopher Newman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8464.75,
+      "description": "Last ok give least a morning final."
+    },
+    {
+      "id": "58d5900e-5d44-4f97-ad03-1937d7d6af4e",
+      "name": "Exclusive needs-based capability 7",
+      "status": "Completed",
+      "createdDate": "2025-04-28T23:04:33",
+      "updatedDate": "2026-02-13T14:13:09",
+      "owner": "Carmen Porter",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6260.25,
+      "description": "Trip see image."
+    },
+    {
+      "id": "3a97977a-f543-4bfa-83da-f845c54b866f",
+      "name": "Total neutral focus group 8",
+      "status": "Completed",
+      "createdDate": "2025-09-29T02:18:12",
+      "updatedDate": "2026-01-20T00:16:16",
+      "owner": "Carlos Armstrong",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5081.55,
+      "description": "Financial court civil magazine follow relate."
+    },
+    {
+      "id": "5fa32de0-926a-4bcb-8dd0-f50d5e12b7db",
+      "name": "Cloned solution-oriented methodology 9",
+      "status": "Inactive",
+      "createdDate": "2025-07-15T16:26:22",
+      "updatedDate": "2026-01-20T22:27:04",
+      "owner": "Gary Hughes",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7304.58,
+      "description": "Play quite important bad."
+    },
+    {
+      "id": "f9817eb5-4f18-4169-9955-e608e73e202c",
+      "name": "Total tertiary database 10",
+      "status": "Active",
+      "createdDate": "2026-02-08T12:56:43",
+      "updatedDate": "2026-01-28T18:15:21",
+      "owner": "Brandon Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3974.58,
+      "description": "Player long office glass."
+    },
+    {
+      "id": "b68324f9-89b3-4d92-9d12-f56ca5ce528a",
+      "name": "Business-focused bi-directional initiative 11",
+      "status": "Inactive",
+      "createdDate": "2025-03-09T13:10:02",
+      "updatedDate": "2026-02-07T22:26:16",
+      "owner": "Sarah Cruz",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5569.73,
+      "description": "Life author much play listen."
+    },
+    {
+      "id": "86bef305-b1a3-4936-9554-f39f8c99f9d7",
+      "name": "Cloned static leverage 12",
+      "status": "Pending",
+      "createdDate": "2025-12-17T11:26:23",
+      "updatedDate": "2026-01-29T05:35:53",
+      "owner": "Grace Nguyen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7772.84,
+      "description": "Race yet fall market call board positive."
+    },
+    {
+      "id": "4a6adfa0-5608-421e-bd3a-a4ad6fc1f74e",
+      "name": "Implemented bi-directional infrastructure 13",
+      "status": "Inactive",
+      "createdDate": "2025-03-17T11:50:04",
+      "updatedDate": "2026-01-23T14:05:57",
+      "owner": "Lindsay Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1459.18,
+      "description": "South Congress baby spend."
+    },
+    {
+      "id": "daef0a53-36c5-4688-ae9b-19758b6e6180",
+      "name": "Organic content-based projection 14",
+      "status": "Completed",
+      "createdDate": "2025-03-13T06:48:07",
+      "updatedDate": "2026-02-13T01:39:33",
+      "owner": "Luis Robinson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3413.9,
+      "description": "Reach picture born store bit protect reveal."
+    },
+    {
+      "id": "89ce9205-3815-4b63-8877-f66d1e4c7822",
+      "name": "Expanded secondary database 15",
+      "status": "Completed",
+      "createdDate": "2025-08-17T12:32:48",
+      "updatedDate": "2026-01-30T13:17:04",
+      "owner": "Frank Clark",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1735.92,
+      "description": "Rate major rate technology still."
+    },
+    {
+      "id": "0497ee1f-c2fc-4081-b9c8-4c9761b6a78e",
+      "name": "Optimized bottom-line conglomeration 16",
+      "status": "Pending",
+      "createdDate": "2025-07-24T11:55:49",
+      "updatedDate": "2026-02-08T11:27:33",
+      "owner": "Dillon Long",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6338.96,
+      "description": "Adult president name measure stuff similar group."
+    },
+    {
+      "id": "a058f4f6-b265-409e-bc6a-2f991b41cef7",
+      "name": "Innovative neutral ability 17",
+      "status": "Completed",
+      "createdDate": "2026-02-02T10:06:39",
+      "updatedDate": "2026-02-08T20:12:01",
+      "owner": "Brenda Harris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5992.37,
+      "description": "Realize glass let them sport."
+    },
+    {
+      "id": "0f22b823-b877-4b55-8c2d-64a57724d9a9",
+      "name": "Multi-lateral bottom-line adapter 18",
+      "status": "Active",
+      "createdDate": "2025-04-29T14:15:33",
+      "updatedDate": "2026-02-15T23:39:07",
+      "owner": "Matthew Obrien",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4722.57,
+      "description": "Board history forget senior husband leave my."
+    },
+    {
+      "id": "9665375e-3fc1-4223-9751-bac6561eba9f",
+      "name": "Profit-focused neutral migration 19",
+      "status": "Active",
+      "createdDate": "2026-02-01T02:09:34",
+      "updatedDate": "2026-02-12T17:24:32",
+      "owner": "Jennifer Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4452.17,
+      "description": "Shoulder low serious also."
+    },
+    {
+      "id": "3f8b8d31-48f8-42de-9c39-88913cc10ffb",
+      "name": "Horizontal heuristic moratorium 20",
+      "status": "Active",
+      "createdDate": "2025-11-21T14:00:29",
+      "updatedDate": "2026-01-27T23:41:48",
+      "owner": "Claire Howard",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1671.06,
+      "description": "Do discussion improve science democratic."
+    },
+    {
+      "id": "4ce30688-29c4-4045-a270-7144b1031116",
+      "name": "Managed radical projection 21",
+      "status": "Pending",
+      "createdDate": "2025-11-18T10:37:32",
+      "updatedDate": "2026-01-23T16:54:09",
+      "owner": "Yvonne Pratt",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8118.45,
+      "description": "Agree ready war."
+    },
+    {
+      "id": "1f77c065-778a-4af5-b52d-1e8be597044e",
+      "name": "Triple-buffered bottom-line architecture 22",
+      "status": "Pending",
+      "createdDate": "2025-11-19T02:32:43",
+      "updatedDate": "2026-02-06T00:32:26",
+      "owner": "Michael Delgado",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1769.65,
+      "description": "Quite act between many trouble his us."
+    },
+    {
+      "id": "14eb01d4-a3dd-41b8-ab29-646e72f48e31",
+      "name": "Ergonomic multimedia superstructure 23",
+      "status": "Pending",
+      "createdDate": "2025-05-13T09:36:11",
+      "updatedDate": "2026-01-22T15:03:01",
+      "owner": "April Weiss",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8185.95,
+      "description": "Subject human amount candidate whether."
+    },
+    {
+      "id": "714e8ecb-1915-4d6d-b831-b383f032cba7",
+      "name": "Enterprise-wide leadingedge paradigm 24",
+      "status": "Completed",
+      "createdDate": "2025-10-01T00:16:47",
+      "updatedDate": "2026-01-23T09:09:05",
+      "owner": "Dana Collins",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8057.83,
+      "description": "No smile current town in program."
+    },
+    {
+      "id": "261150a9-7c2d-4980-a3a4-4c264162da12",
+      "name": "Realigned attitude-oriented Local Area Network 25",
+      "status": "Pending",
+      "createdDate": "2026-02-04T00:41:46",
+      "updatedDate": "2026-02-02T00:35:04",
+      "owner": "Samuel Garcia",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2463.55,
+      "description": "Town check upon short result most open."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

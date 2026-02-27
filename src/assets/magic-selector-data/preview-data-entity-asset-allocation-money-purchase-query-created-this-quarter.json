@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 510,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "06d1e80d-63a6-4a4f-8096-61cd5bbe1902",
+      "name": "Pre-emptive systematic implementation 1",
+      "status": "Active",
+      "createdDate": "2025-12-14T19:34:45",
+      "updatedDate": "2026-02-07T00:19:04",
+      "owner": "Matthew Howell",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4014.26,
+      "description": "Bit use camera evidence be."
+    },
+    {
+      "id": "1c2ce3da-b7c9-4bf1-83ea-c983549e7095",
+      "name": "Right-sized value-added process improvement 2",
+      "status": "Inactive",
+      "createdDate": "2025-12-11T08:11:56",
+      "updatedDate": "2026-02-17T05:13:54",
+      "owner": "Brent Green",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3543.42,
+      "description": "Responsibility article small cause rock opportunity this key."
+    },
+    {
+      "id": "5157b182-87ca-44e6-8a49-30f6d2af8cdf",
+      "name": "Versatile fresh-thinking forecast 3",
+      "status": "Inactive",
+      "createdDate": "2026-01-31T03:36:57",
+      "updatedDate": "2026-01-27T16:50:36",
+      "owner": "Stacie Perry",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4912.71,
+      "description": "Present two account paper physical learn."
+    },
+    {
+      "id": "663313df-6535-440f-a7ab-636287d116c8",
+      "name": "Virtual holistic hardware 4",
+      "status": "Completed",
+      "createdDate": "2025-12-22T06:11:30",
+      "updatedDate": "2026-01-20T17:44:58",
+      "owner": "Tracy Carroll",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4837.74,
+      "description": "Leave high idea five watch within front."
+    },
+    {
+      "id": "3ebbc26c-05db-40fd-9d3e-c2c371832dd3",
+      "name": "Extended 24hour circuit 5",
+      "status": "Inactive",
+      "createdDate": "2025-08-09T05:23:17",
+      "updatedDate": "2026-02-03T20:37:03",
+      "owner": "Melissa Curtis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1926.1,
+      "description": "Wife game boy poor tax consider television health."
+    },
+    {
+      "id": "ec61ba7d-b351-407a-92b8-a9d2e0507102",
+      "name": "Progressive logistical instruction set 6",
+      "status": "Pending",
+      "createdDate": "2025-09-29T11:55:17",
+      "updatedDate": "2026-01-20T20:04:53",
+      "owner": "Corey Wilson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1397.1,
+      "description": "Middle else another."
+    },
+    {
+      "id": "dee9e230-a72e-45ae-81a4-febc83de73d7",
+      "name": "Reduced fresh-thinking core 7",
+      "status": "Pending",
+      "createdDate": "2025-04-25T04:14:55",
+      "updatedDate": "2026-01-21T19:42:08",
+      "owner": "Rachel Thomas",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2818.22,
+      "description": "Source goal write hope probably."
+    },
+    {
+      "id": "c0db6928-a269-40fb-97b8-8d26d14ed301",
+      "name": "Devolved holistic adapter 8",
+      "status": "Completed",
+      "createdDate": "2025-07-14T19:24:41",
+      "updatedDate": "2026-01-19T15:55:40",
+      "owner": "Donna Ward",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8948.51,
+      "description": "Style professional boy course they wall appear."
+    },
+    {
+      "id": "26330a03-96be-4e4c-88ef-866546aaa52a",
+      "name": "Exclusive foreground encoding 9",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T08:11:00",
+      "updatedDate": "2026-02-05T02:51:44",
+      "owner": "Richard Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2566.03,
+      "description": "Service us impact able office administration person production."
+    },
+    {
+      "id": "33230b5d-7541-4897-b40f-67e5d4e4eb5f",
+      "name": "Managed global implementation 10",
+      "status": "Active",
+      "createdDate": "2025-08-01T18:09:44",
+      "updatedDate": "2026-02-04T07:24:29",
+      "owner": "Luis Bailey",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2368.52,
+      "description": "Later after simple also rich."
+    },
+    {
+      "id": "d07ce038-c2be-4685-ab98-2e7a948283b1",
+      "name": "Optimized content-based concept 11",
+      "status": "Pending",
+      "createdDate": "2025-07-23T04:56:30",
+      "updatedDate": "2026-02-03T20:35:33",
+      "owner": "Steven Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1112.33,
+      "description": "Name professor pattern memory."
+    },
+    {
+      "id": "99129825-bc40-42c7-9c98-c3005bde1a04",
+      "name": "Centralized mission-critical system engine 12",
+      "status": "Active",
+      "createdDate": "2025-04-07T13:42:04",
+      "updatedDate": "2026-01-21T21:18:53",
+      "owner": "Jean Sanders",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9155.55,
+      "description": "Toward some care sign already."
+    },
+    {
+      "id": "91a596ea-edfc-4363-8e82-c71433ab87b8",
+      "name": "Persevering empowering moratorium 13",
+      "status": "Inactive",
+      "createdDate": "2025-06-10T21:14:37",
+      "updatedDate": "2026-02-06T06:20:46",
+      "owner": "Jared Long",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3759.41,
+      "description": "Everyone with music appear school share south expect."
+    },
+    {
+      "id": "e5360b79-64b4-4dae-8c13-dfdd202af776",
+      "name": "Pre-emptive scalable groupware 14",
+      "status": "Completed",
+      "createdDate": "2025-09-01T04:08:34",
+      "updatedDate": "2026-01-24T19:52:32",
+      "owner": "Douglas Ramos",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6053.94,
+      "description": "Government Mr hot include style kind feeling."
+    },
+    {
+      "id": "9a7f1875-3bfc-48e6-9081-94bdba901c81",
+      "name": "Compatible leadingedge focus group 15",
+      "status": "Inactive",
+      "createdDate": "2025-08-04T23:13:04",
+      "updatedDate": "2026-02-17T00:47:31",
+      "owner": "Joseph Gates",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8758.51,
+      "description": "Recently use bit cause."
+    },
+    {
+      "id": "f0795adc-f26b-4970-a5d1-fc0ee9239a64",
+      "name": "Total neutral archive 16",
+      "status": "Active",
+      "createdDate": "2025-02-19T15:48:44",
+      "updatedDate": "2026-02-04T00:49:29",
+      "owner": "Shelly Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9770.0,
+      "description": "Measure all price full care truth inside."
+    },
+    {
+      "id": "402b76de-524d-4d63-ac70-87d7ab231c42",
+      "name": "Universal explicit open architecture 17",
+      "status": "Inactive",
+      "createdDate": "2025-08-06T03:42:24",
+      "updatedDate": "2026-01-26T10:13:59",
+      "owner": "Christopher Garcia",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7691.44,
+      "description": "Social stuff project middle tonight move get."
+    },
+    {
+      "id": "cfb8d16f-07b5-4ae4-b149-b1c6c6f30cea",
+      "name": "Automated foreground moratorium 18",
+      "status": "Active",
+      "createdDate": "2025-08-30T16:43:10",
+      "updatedDate": "2026-02-16T00:34:45",
+      "owner": "Claire Lam",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4781.96,
+      "description": "Leader property effect after one reality."
+    },
+    {
+      "id": "c9283bb0-9b8b-46a8-967f-9647c332c702",
+      "name": "Diverse static neural-net 19",
+      "status": "Inactive",
+      "createdDate": "2025-10-01T10:05:51",
+      "updatedDate": "2026-02-12T13:58:20",
+      "owner": "Jonathan Williamson DDS",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9729.65,
+      "description": "My Democrat despite hard."
+    },
+    {
+      "id": "53790a47-658f-4278-a71e-bd1d2a00f784",
+      "name": "Versatile tertiary toolset 20",
+      "status": "Active",
+      "createdDate": "2025-06-26T12:32:49",
+      "updatedDate": "2026-01-30T11:56:50",
+      "owner": "Tammie Norman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7659.4,
+      "description": "Yourself word fire dog remain."
+    },
+    {
+      "id": "2b860837-c5d5-4fc2-a615-39431a9c9f29",
+      "name": "Distributed 6thgeneration instruction set 21",
+      "status": "Active",
+      "createdDate": "2025-12-17T12:32:07",
+      "updatedDate": "2026-02-10T12:36:40",
+      "owner": "Marc Dunn",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7288.65,
+      "description": "Either policy maybe mission three evidence management example."
+    },
+    {
+      "id": "dee539ea-6522-457f-9ddd-4b987f615fe0",
+      "name": "Switchable mobile throughput 22",
+      "status": "Completed",
+      "createdDate": "2025-03-24T15:21:30",
+      "updatedDate": "2026-01-25T02:01:51",
+      "owner": "David Turner",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2602.52,
+      "description": "Or huge human door shake something star rest."
+    },
+    {
+      "id": "9a78c5f3-4326-479a-9262-f7f93cfa7f5f",
+      "name": "Total content-based capability 23",
+      "status": "Active",
+      "createdDate": "2025-05-03T06:41:20",
+      "updatedDate": "2026-02-01T14:28:46",
+      "owner": "Jorge Frye",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2517.64,
+      "description": "Could design chair follow time compare."
+    },
+    {
+      "id": "4865f258-1c37-4c35-8285-05cce83e4d91",
+      "name": "Decentralized local website 24",
+      "status": "Active",
+      "createdDate": "2025-12-01T15:42:30",
+      "updatedDate": "2026-02-04T16:38:13",
+      "owner": "William Moyer",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9952.02,
+      "description": "Man late brother system health issue."
+    },
+    {
+      "id": "dedfe09d-66a2-4833-b448-acf7e1e66796",
+      "name": "Customer-focused content-based middleware 25",
+      "status": "Completed",
+      "createdDate": "2025-02-27T11:55:51",
+      "updatedDate": "2026-02-08T22:51:46",
+      "owner": "Jill Ritter",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4252.22,
+      "description": "Health window what professional travel."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

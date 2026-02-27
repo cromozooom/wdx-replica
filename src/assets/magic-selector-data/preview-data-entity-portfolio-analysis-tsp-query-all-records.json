@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-analysis",
+  "queryId": "query-all-records",
+  "totalCount": 1234,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "69b9a324-aea1-49f9-8ecc-cf156e19a7ff",
+      "name": "Versatile 6thgeneration adapter 1",
+      "status": "Completed",
+      "createdDate": "2025-11-29T08:25:07",
+      "updatedDate": "2026-01-28T19:02:08",
+      "owner": "Angelica James",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9339.42,
+      "description": "Act once wrong."
+    },
+    {
+      "id": "5679f787-f528-445d-a392-c99314d8e3aa",
+      "name": "Multi-layered grid-enabled encoding 2",
+      "status": "Pending",
+      "createdDate": "2025-11-06T00:47:53",
+      "updatedDate": "2026-01-25T16:40:36",
+      "owner": "Perry Nixon",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1996.19,
+      "description": "Some well teach but the southern forget."
+    },
+    {
+      "id": "9c1b61d2-a5a5-48a3-a86f-34a64657486d",
+      "name": "Multi-lateral fresh-thinking service-desk 3",
+      "status": "Inactive",
+      "createdDate": "2025-05-01T02:13:32",
+      "updatedDate": "2026-02-16T15:00:44",
+      "owner": "Mary Joseph",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 602.73,
+      "description": "Him music into goal stage ago."
+    },
+    {
+      "id": "f88e5e1b-726d-403b-a4b2-500dbcb0ade8",
+      "name": "Cloned radical initiative 4",
+      "status": "Active",
+      "createdDate": "2025-10-30T07:11:53",
+      "updatedDate": "2026-01-24T01:47:11",
+      "owner": "Amy Sanchez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1379.6,
+      "description": "Tough science out trouble spring early kind."
+    },
+    {
+      "id": "ce6efd13-a080-48ab-8110-75ebcb29043f",
+      "name": "Customer-focused national frame 5",
+      "status": "Inactive",
+      "createdDate": "2025-09-01T20:36:52",
+      "updatedDate": "2026-01-22T02:18:13",
+      "owner": "Dennis Ramirez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4356.08,
+      "description": "Court chair box church friend really your significant."
+    },
+    {
+      "id": "6187ece5-74a3-4213-af13-7481a5d012bc",
+      "name": "Switchable asynchronous focus group 6",
+      "status": "Active",
+      "createdDate": "2026-01-14T07:06:56",
+      "updatedDate": "2026-01-20T06:49:09",
+      "owner": "Rodney Gutierrez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9684.7,
+      "description": "Discover such couple like."
+    },
+    {
+      "id": "2f107d58-5d15-478f-8a44-5a91e808d9d0",
+      "name": "Team-oriented didactic moderator 7",
+      "status": "Active",
+      "createdDate": "2025-03-03T07:42:53",
+      "updatedDate": "2026-02-10T04:19:09",
+      "owner": "Justin Robinson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1891.57,
+      "description": "Service eye by deal business."
+    },
+    {
+      "id": "6d5e2814-0052-4068-94c5-2674ff8884fa",
+      "name": "Mandatory maximized productivity 8",
+      "status": "Completed",
+      "createdDate": "2025-05-21T05:04:24",
+      "updatedDate": "2026-02-09T13:13:35",
+      "owner": "Michael Marks",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7360.03,
+      "description": "Evening direction base make keep."
+    },
+    {
+      "id": "7ea70ae8-c2c5-4161-a8c3-1626c6f3fe8b",
+      "name": "Multi-channeled bi-directional application 9",
+      "status": "Active",
+      "createdDate": "2025-05-15T07:23:15",
+      "updatedDate": "2026-01-24T21:43:06",
+      "owner": "Mrs. Sarah Horton MD",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8769.82,
+      "description": "Clearly Mrs sign behind lot knowledge draw."
+    },
+    {
+      "id": "6ecb8982-e579-4b1b-962c-00e1cdceb4b4",
+      "name": "Multi-channeled mobile workforce 10",
+      "status": "Completed",
+      "createdDate": "2025-10-11T14:27:10",
+      "updatedDate": "2026-01-30T03:27:44",
+      "owner": "Deborah Schultz",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6349.69,
+      "description": "Record cultural structure tend."
+    },
+    {
+      "id": "4cd582d5-49f6-46e3-87b3-fcb19b41df69",
+      "name": "Triple-buffered 4thgeneration leverage 11",
+      "status": "Inactive",
+      "createdDate": "2025-06-17T18:00:02",
+      "updatedDate": "2026-01-19T13:40:42",
+      "owner": "Bryan Howard",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9594.41,
+      "description": "Long true next tough else experience process."
+    },
+    {
+      "id": "2f13c6e9-65b8-409e-80ea-f72b356b17cc",
+      "name": "Adaptive object-oriented complexity 12",
+      "status": "Completed",
+      "createdDate": "2025-05-15T17:19:27",
+      "updatedDate": "2026-02-16T03:56:16",
+      "owner": "Maria Lee",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2227.46,
+      "description": "Human though build message."
+    },
+    {
+      "id": "07b7bd07-6659-4dcf-a67c-e0d0fe9ec90f",
+      "name": "Multi-layered homogeneous utilization 13",
+      "status": "Active",
+      "createdDate": "2025-12-03T00:03:12",
+      "updatedDate": "2026-02-15T07:44:28",
+      "owner": "Kenneth Smith",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9696.98,
+      "description": "Day remember anything water rest toward."
+    },
+    {
+      "id": "5c2c27b0-0b62-4551-bab1-00d72dc54051",
+      "name": "Cloned multimedia framework 14",
+      "status": "Completed",
+      "createdDate": "2025-09-07T23:21:18",
+      "updatedDate": "2026-02-04T16:36:20",
+      "owner": "Monica Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 602.01,
+      "description": "My point position."
+    },
+    {
+      "id": "0237be7f-299e-4257-9996-faf38de14f10",
+      "name": "Synergistic eco-centric hierarchy 15",
+      "status": "Pending",
+      "createdDate": "2026-01-18T17:56:40",
+      "updatedDate": "2026-02-12T16:25:38",
+      "owner": "Stephen Chase",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5354.58,
+      "description": "Movement until mouth miss."
+    },
+    {
+      "id": "f4f08a38-9930-4595-9d4d-ac9209d08088",
+      "name": "De-engineered multimedia attitude 16",
+      "status": "Pending",
+      "createdDate": "2025-02-25T14:07:23",
+      "updatedDate": "2026-02-05T08:08:27",
+      "owner": "Sara Bell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7581.81,
+      "description": "Lose able firm energy population."
+    },
+    {
+      "id": "87776369-9f31-4543-a4e0-d52f97407ce6",
+      "name": "Persistent radical process improvement 17",
+      "status": "Active",
+      "createdDate": "2026-01-31T19:29:24",
+      "updatedDate": "2026-01-31T05:36:04",
+      "owner": "Dr. Jose Pearson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4112.95,
+      "description": "Nation choose boy mission about score."
+    },
+    {
+      "id": "9b25ea52-01c0-4c36-81be-b8b88332aa22",
+      "name": "Open-architected content-based matrix 18",
+      "status": "Pending",
+      "createdDate": "2025-10-06T08:43:32",
+      "updatedDate": "2026-02-05T13:54:39",
+      "owner": "Christopher Curry",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7235.7,
+      "description": "Network security myself well language."
+    },
+    {
+      "id": "02064c03-2698-45da-af55-99c51f353a7b",
+      "name": "Centralized context-sensitive firmware 19",
+      "status": "Completed",
+      "createdDate": "2025-03-26T20:29:43",
+      "updatedDate": "2026-01-28T09:14:25",
+      "owner": "Christine Rodgers",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4522.23,
+      "description": "Concern get shake each everybody rise training."
+    },
+    {
+      "id": "ccf6f61f-301e-42ba-8ba5-c940ce9c2b67",
+      "name": "Face-to-face client-driven workforce 20",
+      "status": "Inactive",
+      "createdDate": "2025-11-04T01:31:23",
+      "updatedDate": "2026-02-04T16:39:58",
+      "owner": "Carlos Rodriguez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 644.58,
+      "description": "Seat tax receive born will send."
+    },
+    {
+      "id": "03571bc7-3985-44b9-aa7c-723e0a7f8a52",
+      "name": "Virtual 24/7 neural-net 21",
+      "status": "Completed",
+      "createdDate": "2025-07-21T15:35:28",
+      "updatedDate": "2026-02-08T23:01:38",
+      "owner": "Todd Watson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1991.5,
+      "description": "Main leave during pretty issue firm."
+    },
+    {
+      "id": "a2627b86-763d-47e0-82a9-16f9b26b6a6c",
+      "name": "Function-based uniform policy 22",
+      "status": "Inactive",
+      "createdDate": "2025-06-13T23:49:50",
+      "updatedDate": "2026-01-26T09:10:14",
+      "owner": "John Harris",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3291.22,
+      "description": "Event matter point lose act."
+    },
+    {
+      "id": "904be63a-b385-4845-b823-399ee78c5c6b",
+      "name": "Multi-channeled local circuit 23",
+      "status": "Active",
+      "createdDate": "2025-05-29T20:19:55",
+      "updatedDate": "2026-01-28T14:14:57",
+      "owner": "Stephen Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 901.09,
+      "description": "Building girl available note whom become."
+    },
+    {
+      "id": "7e4ac825-7a87-4f60-ab2d-d32cf345c93d",
+      "name": "Open-architected scalable policy 24",
+      "status": "Completed",
+      "createdDate": "2026-01-09T12:28:58",
+      "updatedDate": "2026-02-14T22:10:49",
+      "owner": "William Rogers",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2974.54,
+      "description": "Night price specific."
+    },
+    {
+      "id": "6e3947c2-aa0f-42e9-81db-edd770ca0aac",
+      "name": "Streamlined needs-based attitude 25",
+      "status": "Inactive",
+      "createdDate": "2025-08-19T19:38:42",
+      "updatedDate": "2026-01-27T12:34:41",
+      "owner": "Wayne Thomas",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6683.65,
+      "description": "Which study building they strategy."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

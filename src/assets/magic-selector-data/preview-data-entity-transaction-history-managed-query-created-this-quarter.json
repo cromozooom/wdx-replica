@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 456,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "0bd1a252-9d3a-4809-af74-c21342ee7a4b",
+      "name": "Fundamental dynamic database 1",
+      "status": "Pending",
+      "createdDate": "2025-03-27T12:19:09",
+      "updatedDate": "2026-02-03T19:27:06",
+      "owner": "Marie Mccormick",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5594.99,
+      "description": "Spend rock hope everything whom defense improve yeah."
+    },
+    {
+      "id": "8b89cc0b-ec22-4fd3-a00e-3986ebdafbf3",
+      "name": "Cloned clear-thinking collaboration 2",
+      "status": "Pending",
+      "createdDate": "2025-11-22T20:00:02",
+      "updatedDate": "2026-01-24T13:55:21",
+      "owner": "Christy Higgins",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6724.66,
+      "description": "Health method fact least international enter soon."
+    },
+    {
+      "id": "af4a5e16-31d3-4851-ac2d-46b0dbd8b259",
+      "name": "User-friendly multimedia website 3",
+      "status": "Completed",
+      "createdDate": "2025-04-27T02:42:16",
+      "updatedDate": "2026-02-04T04:10:59",
+      "owner": "Rebecca Bean",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5064.63,
+      "description": "Test can learn beautiful service all life clearly."
+    },
+    {
+      "id": "6db17e82-8927-4233-beaa-51b39c1337cd",
+      "name": "Expanded mobile function 4",
+      "status": "Completed",
+      "createdDate": "2025-12-21T13:56:36",
+      "updatedDate": "2026-02-15T16:15:53",
+      "owner": "John Ramirez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8826.71,
+      "description": "Well better nation author degree rather necessary."
+    },
+    {
+      "id": "db151024-1762-42e9-8c53-ee36544cc488",
+      "name": "Programmable explicit migration 5",
+      "status": "Active",
+      "createdDate": "2025-03-03T10:04:21",
+      "updatedDate": "2026-02-16T09:08:39",
+      "owner": "Joseph Daniels",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8216.31,
+      "description": "Official player simply response."
+    },
+    {
+      "id": "28458e3b-dce9-4072-95f0-d077061207f8",
+      "name": "Fundamental 3rdgeneration hierarchy 6",
+      "status": "Pending",
+      "createdDate": "2025-09-02T04:29:52",
+      "updatedDate": "2026-02-07T21:37:00",
+      "owner": "Kara Lane",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1285.29,
+      "description": "Market city research if draw role."
+    },
+    {
+      "id": "5d170fb3-75f4-455f-a701-da2fc1fd84df",
+      "name": "Down-sized solution-oriented capability 7",
+      "status": "Pending",
+      "createdDate": "2025-08-08T16:37:08",
+      "updatedDate": "2026-02-11T07:22:16",
+      "owner": "Carmen Dyer",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1653.91,
+      "description": "Go enough follow."
+    },
+    {
+      "id": "4633cd10-6e4c-4616-b4c7-2f0220460fd8",
+      "name": "Expanded multimedia productivity 8",
+      "status": "Active",
+      "createdDate": "2025-10-05T04:56:21",
+      "updatedDate": "2026-02-06T13:01:05",
+      "owner": "Deborah Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 899.5,
+      "description": "Tend side ever west area conference discover."
+    },
+    {
+      "id": "6463b011-26d9-4f12-b0bd-c23ff859c38c",
+      "name": "Synergistic full-range data-warehouse 9",
+      "status": "Pending",
+      "createdDate": "2025-08-14T01:45:45",
+      "updatedDate": "2026-01-28T11:54:44",
+      "owner": "Adrienne Strong",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3052.04,
+      "description": "Walk trade single true produce."
+    },
+    {
+      "id": "3dee7b96-4304-42b1-8221-5e49314794c9",
+      "name": "Digitized regional framework 10",
+      "status": "Completed",
+      "createdDate": "2025-11-09T04:34:39",
+      "updatedDate": "2026-02-01T22:49:02",
+      "owner": "Anna Perez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1806.43,
+      "description": "Many kitchen thought base usually fly."
+    },
+    {
+      "id": "6d67b33a-cb0a-4eec-818d-166883b3a865",
+      "name": "Adaptive web-enabled website 11",
+      "status": "Inactive",
+      "createdDate": "2025-09-02T12:07:50",
+      "updatedDate": "2026-02-14T05:08:17",
+      "owner": "Brittany Chase",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 291.42,
+      "description": "Long recent high war various."
+    },
+    {
+      "id": "61fea229-3793-415c-a37e-48ee8df0a158",
+      "name": "Switchable analyzing core 12",
+      "status": "Active",
+      "createdDate": "2025-05-20T18:12:19",
+      "updatedDate": "2026-02-05T04:05:48",
+      "owner": "Mary Briggs",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5331.54,
+      "description": "Ok region call agent."
+    },
+    {
+      "id": "ba38141e-a49b-4e7b-8db6-bcb9db26ec0b",
+      "name": "Organized attitude-oriented functionalities 13",
+      "status": "Inactive",
+      "createdDate": "2025-11-06T15:28:01",
+      "updatedDate": "2026-02-16T11:37:03",
+      "owner": "Wendy Lawrence",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3826.0,
+      "description": "Rate try door cover sound increase."
+    },
+    {
+      "id": "d5d2f7c9-a503-44da-8db1-d3660e29f571",
+      "name": "Object-based upward-trending knowledge user 14",
+      "status": "Inactive",
+      "createdDate": "2025-05-04T12:44:20",
+      "updatedDate": "2026-02-09T01:37:16",
+      "owner": "Kathy Mccall",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 312.89,
+      "description": "Dark compare federal ever significant film upon form."
+    },
+    {
+      "id": "9e0e4691-f231-4bd3-97c4-a370023421c6",
+      "name": "Cross-platform holistic complexity 15",
+      "status": "Pending",
+      "createdDate": "2025-03-29T14:38:22",
+      "updatedDate": "2026-01-23T12:19:46",
+      "owner": "Christine Yates",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6343.37,
+      "description": "Turn know fast seem."
+    },
+    {
+      "id": "94ddedd4-0aa0-4480-96cc-e3ea12ad6d69",
+      "name": "Multi-lateral cohesive success 16",
+      "status": "Active",
+      "createdDate": "2025-09-15T14:48:15",
+      "updatedDate": "2026-02-07T07:59:18",
+      "owner": "Michael Black",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5625.9,
+      "description": "Wall bit stop charge stay community."
+    },
+    {
+      "id": "cef1886f-2e3f-488d-8e8c-7b549791f585",
+      "name": "Balanced attitude-oriented extranet 17",
+      "status": "Pending",
+      "createdDate": "2025-05-28T03:21:19",
+      "updatedDate": "2026-01-18T23:30:13",
+      "owner": "Christina Palmer",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4079.91,
+      "description": "Toward require want threat government not physical."
+    },
+    {
+      "id": "0d00015d-1ef4-40e3-be0a-622c699103a9",
+      "name": "Organic maximized data-warehouse 18",
+      "status": "Pending",
+      "createdDate": "2025-11-23T22:34:40",
+      "updatedDate": "2026-02-03T07:41:58",
+      "owner": "Jason Gibbs",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4062.9,
+      "description": "Experience full eye per like real."
+    },
+    {
+      "id": "afe38047-36aa-46ed-9412-587fc3a09fec",
+      "name": "Programmable reciprocal analyzer 19",
+      "status": "Inactive",
+      "createdDate": "2025-10-28T20:37:58",
+      "updatedDate": "2026-01-27T04:35:35",
+      "owner": "David Jackson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7556.72,
+      "description": "Modern mind machine fear resource finally beautiful."
+    },
+    {
+      "id": "19155839-7528-4a8e-b4b7-915e8f4c6fe6",
+      "name": "Reactive needs-based superstructure 20",
+      "status": "Pending",
+      "createdDate": "2026-02-05T06:18:49",
+      "updatedDate": "2026-01-20T11:44:19",
+      "owner": "Danny Rice",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6031.49,
+      "description": "Member reach step decide minute conference."
+    },
+    {
+      "id": "c73b8564-e958-4117-8b4b-b5a9bb587fde",
+      "name": "Enhanced object-oriented time-frame 21",
+      "status": "Completed",
+      "createdDate": "2025-04-15T05:56:02",
+      "updatedDate": "2026-02-05T01:36:39",
+      "owner": "James Tran",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8190.12,
+      "description": "Once per pretty truth thank experience past."
+    },
+    {
+      "id": "def4dab8-df37-467f-93c6-6a6e6c27f6e1",
+      "name": "Reactive zero tolerance installation 22",
+      "status": "Inactive",
+      "createdDate": "2026-01-19T00:24:10",
+      "updatedDate": "2026-02-13T19:05:41",
+      "owner": "Ashley Welch",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3697.65,
+      "description": "Letter great director way book."
+    },
+    {
+      "id": "1aced0be-87ce-4868-a880-42e976073714",
+      "name": "Fully-configurable responsive task-force 23",
+      "status": "Active",
+      "createdDate": "2025-06-27T12:23:54",
+      "updatedDate": "2026-01-19T11:32:17",
+      "owner": "Mariah Gonzalez",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5844.18,
+      "description": "Water agreement she beyond professor."
+    },
+    {
+      "id": "9e2bd137-6eda-43d7-b955-bb9688a53f20",
+      "name": "Customer-focused client-server project 24",
+      "status": "Completed",
+      "createdDate": "2025-10-30T15:18:19",
+      "updatedDate": "2026-02-07T09:41:16",
+      "owner": "Nicole Delacruz",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5443.0,
+      "description": "Science standard mean central answer individual."
+    },
+    {
+      "id": "23bdf38f-3a5b-4026-8499-ab502b181d6f",
+      "name": "Robust static definition 25",
+      "status": "Active",
+      "createdDate": "2025-09-16T23:20:52",
+      "updatedDate": "2026-01-25T07:09:17",
+      "owner": "Malik Adams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5765.55,
+      "description": "Top director law mouth."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

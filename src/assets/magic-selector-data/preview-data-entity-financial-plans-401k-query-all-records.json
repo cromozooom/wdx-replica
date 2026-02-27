@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-all-records",
+  "totalCount": 1234,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "58a3d219-d803-4705-8ab5-64f170175e3a",
+      "name": "Progressive client-driven matrix 1",
+      "status": "Inactive",
+      "createdDate": "2025-07-25T11:46:46",
+      "updatedDate": "2026-02-14T22:11:00",
+      "owner": "Michael Liu",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6652.67,
+      "description": "Stock city high produce short."
+    },
+    {
+      "id": "49dba611-9212-4973-ab50-4b4e960e3291",
+      "name": "Multi-layered system-worthy superstructure 2",
+      "status": "Completed",
+      "createdDate": "2025-02-21T16:28:18",
+      "updatedDate": "2026-01-21T22:09:24",
+      "owner": "Kenneth Mcdowell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6805.94,
+      "description": "Current front federal bar respond force."
+    },
+    {
+      "id": "5e8c2f41-ea0d-44ca-ae26-c827c3289628",
+      "name": "Proactive bifurcated leverage 3",
+      "status": "Inactive",
+      "createdDate": "2026-01-16T01:22:50",
+      "updatedDate": "2026-02-04T19:00:53",
+      "owner": "David Anderson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8890.28,
+      "description": "Because control base blood the."
+    },
+    {
+      "id": "5f50f7d2-6cf6-4da2-a78d-4d4f2a101779",
+      "name": "Synergized homogeneous challenge 4",
+      "status": "Completed",
+      "createdDate": "2026-02-14T19:19:45",
+      "updatedDate": "2026-01-20T06:02:09",
+      "owner": "Sara Swanson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2136.31,
+      "description": "Fall fish yard night local town step husband."
+    },
+    {
+      "id": "1e46fe91-1883-4b31-9148-f06334afa517",
+      "name": "Multi-lateral foreground Local Area Network 5",
+      "status": "Inactive",
+      "createdDate": "2025-07-05T22:22:15",
+      "updatedDate": "2026-02-15T03:34:16",
+      "owner": "Joy Woods",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3768.35,
+      "description": "Also join wall what tree forward back space."
+    },
+    {
+      "id": "9544e9aa-b2ac-4f6b-b947-9579c65a5f7d",
+      "name": "Cross-platform reciprocal firmware 6",
+      "status": "Inactive",
+      "createdDate": "2025-06-20T11:06:04",
+      "updatedDate": "2026-02-07T10:54:49",
+      "owner": "Mr. John Turner MD",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8156.28,
+      "description": "Lose high heart read one send whom."
+    },
+    {
+      "id": "f1aed43a-e789-42a6-83e8-8c9ad0e3149d",
+      "name": "Open-source uniform website 7",
+      "status": "Inactive",
+      "createdDate": "2025-07-16T19:00:19",
+      "updatedDate": "2026-02-09T12:24:11",
+      "owner": "Savannah Hunt",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4841.96,
+      "description": "Business star partner."
+    },
+    {
+      "id": "1c8105fa-37db-4810-96e3-d4db79bac0be",
+      "name": "Multi-lateral reciprocal framework 8",
+      "status": "Pending",
+      "createdDate": "2025-07-31T02:13:07",
+      "updatedDate": "2026-01-20T22:46:15",
+      "owner": "Kenneth Hicks",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1014.97,
+      "description": "Skill himself walk TV."
+    },
+    {
+      "id": "1eb0eae4-b361-4dd2-a9eb-52204ef08e3e",
+      "name": "Switchable intangible help-desk 9",
+      "status": "Completed",
+      "createdDate": "2025-09-27T09:26:44",
+      "updatedDate": "2026-02-03T10:29:41",
+      "owner": "Samuel Cooper",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1941.79,
+      "description": "Animal better truth section theory behind remember."
+    },
+    {
+      "id": "aecc6be5-7ca7-4429-a079-bb7d1a4f7570",
+      "name": "Integrated non-volatile success 10",
+      "status": "Active",
+      "createdDate": "2025-08-09T07:44:11",
+      "updatedDate": "2026-02-14T09:14:37",
+      "owner": "Summer Bird",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6725.22,
+      "description": "Husband attention arrive win network senior knowledge."
+    },
+    {
+      "id": "97687fd2-d497-444a-b3d3-dd6f74afe5ab",
+      "name": "Robust global neural-net 11",
+      "status": "Pending",
+      "createdDate": "2025-09-02T02:04:32",
+      "updatedDate": "2026-02-09T16:11:21",
+      "owner": "Ronnie Kelley",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3218.57,
+      "description": "Whether throughout situation win west rock."
+    },
+    {
+      "id": "6e3240df-59bb-4f15-a41d-fc0f844caa80",
+      "name": "Enterprise-wide content-based paradigm 12",
+      "status": "Completed",
+      "createdDate": "2025-04-21T04:26:49",
+      "updatedDate": "2026-01-23T15:24:40",
+      "owner": "Ashley Ferguson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5485.91,
+      "description": "Mean country assume recently effect possible."
+    },
+    {
+      "id": "753d1f2b-31f8-4624-ad80-58422e422097",
+      "name": "Adaptive attitude-oriented migration 13",
+      "status": "Active",
+      "createdDate": "2025-06-18T05:02:39",
+      "updatedDate": "2026-02-08T05:43:18",
+      "owner": "Justin Beasley",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5370.6,
+      "description": "Once wide piece store."
+    },
+    {
+      "id": "b99711f3-84aa-4fb4-b35c-0d882fa253f4",
+      "name": "Persevering web-enabled paradigm 14",
+      "status": "Completed",
+      "createdDate": "2025-05-27T02:48:16",
+      "updatedDate": "2026-01-21T18:38:47",
+      "owner": "Jessica Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5078.83,
+      "description": "Treatment part couple network purpose where carry."
+    },
+    {
+      "id": "92e6a32b-1187-4da5-9be1-ccaad5eb4a0c",
+      "name": "Distributed contextually-based attitude 15",
+      "status": "Completed",
+      "createdDate": "2025-04-18T20:23:30",
+      "updatedDate": "2026-01-23T10:38:19",
+      "owner": "William Massey",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3001.77,
+      "description": "Understand industry whatever less officer attorney believe."
+    },
+    {
+      "id": "3e693928-2bf9-482a-a887-38fe6f10d433",
+      "name": "Synergized even-keeled parallelism 16",
+      "status": "Inactive",
+      "createdDate": "2025-05-18T01:59:38",
+      "updatedDate": "2026-01-21T06:17:00",
+      "owner": "Jennifer Walker",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4852.82,
+      "description": "Around approach carry none agency one debate reach."
+    },
+    {
+      "id": "9e5ac2a7-6909-4614-a479-34d1b347218a",
+      "name": "Focused tertiary installation 17",
+      "status": "Completed",
+      "createdDate": "2026-01-21T15:17:40",
+      "updatedDate": "2026-02-16T22:44:44",
+      "owner": "Jennifer Coleman",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4710.62,
+      "description": "Store husband meeting."
+    },
+    {
+      "id": "72d093e1-9d0e-4306-aa34-dae20ad5ecb5",
+      "name": "Persistent discrete matrix 18",
+      "status": "Active",
+      "createdDate": "2025-07-22T22:35:09",
+      "updatedDate": "2026-02-02T09:30:58",
+      "owner": "Michelle King",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1900.53,
+      "description": "Glass summer like between person."
+    },
+    {
+      "id": "7a6e0201-396f-4fac-b501-759627ae1ea5",
+      "name": "Horizontal 5thgeneration model 19",
+      "status": "Pending",
+      "createdDate": "2025-09-27T00:38:59",
+      "updatedDate": "2026-01-27T04:20:31",
+      "owner": "Michelle Duffy DVM",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3322.96,
+      "description": "Attorney movie send value amount."
+    },
+    {
+      "id": "3104ac0f-ecf6-48a7-8dc7-b89bb9138d8d",
+      "name": "Switchable encompassing success 20",
+      "status": "Active",
+      "createdDate": "2026-01-25T05:15:53",
+      "updatedDate": "2026-01-22T08:46:27",
+      "owner": "Kristin Crawford",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1591.93,
+      "description": "General allow gun lay fire good."
+    },
+    {
+      "id": "3e76377a-c730-4d42-a5d4-a6d4bddfedac",
+      "name": "Cross-group hybrid methodology 21",
+      "status": "Completed",
+      "createdDate": "2025-04-26T04:44:05",
+      "updatedDate": "2026-02-12T23:41:49",
+      "owner": "Walter Henry",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8421.64,
+      "description": "West recently task against tend Congress."
+    },
+    {
+      "id": "fd15d52e-c10f-4292-a7e3-cd51cef7e9cc",
+      "name": "Balanced 4thgeneration algorithm 22",
+      "status": "Active",
+      "createdDate": "2025-03-07T20:32:48",
+      "updatedDate": "2026-01-23T21:53:48",
+      "owner": "Pamela Elliott",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6483.25,
+      "description": "Must key act create good food among."
+    },
+    {
+      "id": "9398e738-b70b-43d6-a727-24f8e871f046",
+      "name": "Intuitive regional Graphic Interface 23",
+      "status": "Active",
+      "createdDate": "2025-11-01T10:00:05",
+      "updatedDate": "2026-01-28T14:46:08",
+      "owner": "Madison Mitchell",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9998.33,
+      "description": "Might government material resource paper reflect."
+    },
+    {
+      "id": "e078c3be-6f58-4fa5-9154-57a1a6d1bc3c",
+      "name": "Open-architected user-facing workforce 24",
+      "status": "Active",
+      "createdDate": "2026-02-06T21:26:24",
+      "updatedDate": "2026-01-23T05:43:41",
+      "owner": "Maria Briggs",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9582.2,
+      "description": "Leader get available take."
+    },
+    {
+      "id": "36ec7703-9e9f-46b8-91dc-35b00a3b4817",
+      "name": "Secured multimedia emulation 25",
+      "status": "Pending",
+      "createdDate": "2026-01-08T00:13:19",
+      "updatedDate": "2026-01-29T04:29:41",
+      "owner": "April Daniels",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 619.99,
+      "description": "Say policy or play."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

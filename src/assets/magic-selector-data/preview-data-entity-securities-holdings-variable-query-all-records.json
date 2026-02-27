@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-security",
+  "queryId": "query-all-records",
+  "totalCount": 1426,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b13ee314-aa41-4733-9ae6-255c56a9b69a",
+      "name": "Diverse executive help-desk 1",
+      "status": "Pending",
+      "createdDate": "2026-01-30T08:12:24",
+      "updatedDate": "2026-01-28T07:36:55",
+      "owner": "Emily Johnson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 118.51,
+      "description": "Against large effect true discussion night."
+    },
+    {
+      "id": "6df8cf4f-2f1f-4518-be0a-86b032b2a00d",
+      "name": "Virtual impactful open architecture 2",
+      "status": "Completed",
+      "createdDate": "2026-01-17T20:45:10",
+      "updatedDate": "2026-01-27T17:24:37",
+      "owner": "Laura Lee",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2802.02,
+      "description": "Certainly learn investment."
+    },
+    {
+      "id": "14706de8-a7f6-4ac8-99be-f57d5bdfd3ad",
+      "name": "Robust full-range system engine 3",
+      "status": "Active",
+      "createdDate": "2025-05-11T06:54:36",
+      "updatedDate": "2026-01-25T10:44:38",
+      "owner": "Cindy Perez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2046.57,
+      "description": "Within doctor idea decide."
+    },
+    {
+      "id": "d1ff360b-e856-4d48-90bf-a861038fc48b",
+      "name": "Self-enabling systematic leverage 4",
+      "status": "Inactive",
+      "createdDate": "2025-08-05T14:39:46",
+      "updatedDate": "2026-02-07T23:39:56",
+      "owner": "Lisa Marquez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 583.39,
+      "description": "Attack way street recently ability sure sort seem."
+    },
+    {
+      "id": "81a155f5-01e9-4f94-84a0-fc452f2f7c76",
+      "name": "Vision-oriented 5thgeneration product 5",
+      "status": "Inactive",
+      "createdDate": "2025-03-02T16:36:04",
+      "updatedDate": "2026-02-15T21:01:27",
+      "owner": "Chelsea Berger",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6641.45,
+      "description": "Student try course interview yeah will special."
+    },
+    {
+      "id": "cc45fa3e-6c2c-4f6f-84ce-de037d38df34",
+      "name": "Reactive cohesive Local Area Network 6",
+      "status": "Pending",
+      "createdDate": "2026-01-31T06:13:33",
+      "updatedDate": "2026-02-11T18:33:13",
+      "owner": "Gregory Perez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8479.88,
+      "description": "Artist painting thank war hospital say prepare."
+    },
+    {
+      "id": "37f4dce4-cfdf-41f2-8fb8-c1603046d560",
+      "name": "Extended real-time Internet solution 7",
+      "status": "Active",
+      "createdDate": "2025-05-18T06:17:05",
+      "updatedDate": "2026-02-04T19:56:17",
+      "owner": "Walter Macias",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8936.65,
+      "description": "Book interest training fact."
+    },
+    {
+      "id": "e3b8a69d-4a26-41d3-b9cd-7845d8f1233c",
+      "name": "Secured multi-state moderator 8",
+      "status": "Active",
+      "createdDate": "2025-10-12T17:27:53",
+      "updatedDate": "2026-01-26T21:19:25",
+      "owner": "Daryl Cunningham",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1057.43,
+      "description": "Career entire standard number quality population."
+    },
+    {
+      "id": "5c3a6650-b3f4-402a-bc43-2c2a8cdd20fe",
+      "name": "Intuitive global open architecture 9",
+      "status": "Pending",
+      "createdDate": "2025-09-12T07:29:04",
+      "updatedDate": "2026-02-17T02:47:07",
+      "owner": "Charles Ellison",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1152.77,
+      "description": "Indicate space tree thank first perhaps."
+    },
+    {
+      "id": "b952713e-6585-417a-af27-655d62fb2358",
+      "name": "Seamless client-server adapter 10",
+      "status": "Completed",
+      "createdDate": "2025-12-03T06:20:27",
+      "updatedDate": "2026-01-26T07:56:45",
+      "owner": "Brett Davis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6140.74,
+      "description": "Enough short consumer attack my soon realize."
+    },
+    {
+      "id": "5feaea32-deea-4516-a9f6-43450918e6fd",
+      "name": "Fundamental user-facing definition 11",
+      "status": "Completed",
+      "createdDate": "2025-04-29T07:24:57",
+      "updatedDate": "2026-02-12T08:27:04",
+      "owner": "Melissa Newton",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9896.11,
+      "description": "Positive boy attack program."
+    },
+    {
+      "id": "e18e6974-b7b2-4211-9960-1dc1d4853061",
+      "name": "Innovative coherent access 12",
+      "status": "Inactive",
+      "createdDate": "2025-06-01T20:21:18",
+      "updatedDate": "2026-02-15T18:14:53",
+      "owner": "Natalie Hinton",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 393.7,
+      "description": "Edge debate now public big analysis body central."
+    },
+    {
+      "id": "d76d2387-947b-41ac-8dda-90ed9c85fe97",
+      "name": "Innovative 24/7 leverage 13",
+      "status": "Inactive",
+      "createdDate": "2025-04-22T18:56:12",
+      "updatedDate": "2026-02-08T10:43:26",
+      "owner": "Cynthia David",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 489.19,
+      "description": "Painting somebody because quality surface matter."
+    },
+    {
+      "id": "2cc6bb41-b11a-42fd-bdd7-3df1e2a072a9",
+      "name": "Advanced bi-directional application 14",
+      "status": "Inactive",
+      "createdDate": "2025-09-13T13:13:52",
+      "updatedDate": "2026-01-22T11:23:39",
+      "owner": "Robert Smith",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7925.19,
+      "description": "Heart something star member watch college."
+    },
+    {
+      "id": "533257ec-8920-48b3-86de-e61ea71fa872",
+      "name": "Programmable neutral installation 15",
+      "status": "Active",
+      "createdDate": "2025-02-25T15:42:12",
+      "updatedDate": "2026-02-14T07:01:00",
+      "owner": "Carmen Anderson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4450.49,
+      "description": "Leave themselves of live administration."
+    },
+    {
+      "id": "304da2ab-f243-46c9-8f8c-71cdf476bce3",
+      "name": "Expanded contextually-based synergy 16",
+      "status": "Pending",
+      "createdDate": "2025-03-23T01:25:50",
+      "updatedDate": "2026-01-20T15:10:04",
+      "owner": "Ashley Adams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1379.06,
+      "description": "Standard strategy behavior state."
+    },
+    {
+      "id": "1e66670e-d2b1-405c-bdcb-96676cb3c678",
+      "name": "Automated global policy 17",
+      "status": "Pending",
+      "createdDate": "2025-06-14T23:52:27",
+      "updatedDate": "2026-01-28T03:39:58",
+      "owner": "Anita Hughes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8261.29,
+      "description": "Experience upon forward because already agree kid idea."
+    },
+    {
+      "id": "2ec40c96-6044-49ea-ac68-d3200bfa3413",
+      "name": "Down-sized system-worthy budgetary management 18",
+      "status": "Pending",
+      "createdDate": "2026-01-14T16:48:36",
+      "updatedDate": "2026-01-20T08:58:58",
+      "owner": "Megan Navarro",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4658.62,
+      "description": "Continue power analysis series marriage push TV."
+    },
+    {
+      "id": "fa204a69-d53d-4b58-96fd-db5a5a77ac2a",
+      "name": "Reactive bi-directional product 19",
+      "status": "Pending",
+      "createdDate": "2025-11-30T08:56:23",
+      "updatedDate": "2026-02-04T12:20:15",
+      "owner": "Courtney Torres",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5172.79,
+      "description": "Bed human likely every right under."
+    },
+    {
+      "id": "043a3ac8-1a05-463a-a4c0-9014432a242f",
+      "name": "Multi-channeled zero tolerance migration 20",
+      "status": "Completed",
+      "createdDate": "2025-03-03T03:30:34",
+      "updatedDate": "2026-02-04T12:28:03",
+      "owner": "Jason Hernandez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2532.41,
+      "description": "Fish paper away about today message."
+    },
+    {
+      "id": "66fef2bc-3c48-4352-99b0-69095cbcafdb",
+      "name": "Universal multimedia capability 21",
+      "status": "Pending",
+      "createdDate": "2025-09-08T18:22:53",
+      "updatedDate": "2026-01-19T18:21:13",
+      "owner": "Christopher Walters",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9312.51,
+      "description": "May response writer follow per ago."
+    },
+    {
+      "id": "56f8153e-8116-49bb-b194-2a6b2032a715",
+      "name": "Total discrete access 22",
+      "status": "Inactive",
+      "createdDate": "2025-08-24T08:23:01",
+      "updatedDate": "2026-01-27T14:32:14",
+      "owner": "Maria King",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6609.46,
+      "description": "Ok her moment safe visit clear the."
+    },
+    {
+      "id": "0165b174-4a88-4e09-a809-1a531fb2ee98",
+      "name": "Organic regional support 23",
+      "status": "Pending",
+      "createdDate": "2025-09-10T09:28:04",
+      "updatedDate": "2026-01-21T18:44:03",
+      "owner": "Christina Cummings",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7502.33,
+      "description": "Build upon as bring student sell."
+    },
+    {
+      "id": "ee116120-b5c4-4732-b838-ee035a64b59e",
+      "name": "De-engineered optimizing database 24",
+      "status": "Active",
+      "createdDate": "2026-02-10T11:04:11",
+      "updatedDate": "2026-02-10T01:49:51",
+      "owner": "Michele Patterson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3762.03,
+      "description": "Recognize beat possible use she himself or."
+    },
+    {
+      "id": "c07ad35f-ff56-40de-90fc-71956c28824e",
+      "name": "Synergized zero tolerance monitoring 25",
+      "status": "Inactive",
+      "createdDate": "2025-06-11T11:28:49",
+      "updatedDate": "2026-02-02T02:58:27",
+      "owner": "Mark Mcgee",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5092.15,
+      "description": "Something officer think money positive everyone."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

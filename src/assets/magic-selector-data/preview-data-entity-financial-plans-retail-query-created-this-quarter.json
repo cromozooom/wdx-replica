@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 149,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "6d3fda11-99c6-4bca-a364-970f58a3787b",
+      "name": "Robust scalable artificial intelligence 1",
+      "status": "Pending",
+      "createdDate": "2025-09-04T08:25:54",
+      "updatedDate": "2026-01-24T21:36:30",
+      "owner": "Elaine Holt",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1512.73,
+      "description": "My speech American industry key away argue southern."
+    },
+    {
+      "id": "eb7010a0-3f9f-4b8d-9deb-9d10949445dd",
+      "name": "Quality-focused multi-state pricing structure 2",
+      "status": "Pending",
+      "createdDate": "2025-12-23T23:45:44",
+      "updatedDate": "2026-02-08T08:31:54",
+      "owner": "Misty Franco",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6208.18,
+      "description": "Campaign budget book."
+    },
+    {
+      "id": "cc6a3883-fb1a-486f-805e-b6e36ca42bf3",
+      "name": "Operative directional productivity 3",
+      "status": "Active",
+      "createdDate": "2025-09-18T06:51:54",
+      "updatedDate": "2026-02-01T23:58:34",
+      "owner": "Nicholas Rojas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5822.15,
+      "description": "Town environmental sit."
+    },
+    {
+      "id": "76a4e5ed-6cf7-4ad6-a590-462162f35aa0",
+      "name": "Synergistic impactful alliance 4",
+      "status": "Pending",
+      "createdDate": "2026-01-30T00:38:24",
+      "updatedDate": "2026-01-21T05:54:48",
+      "owner": "Courtney Stone",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 616.52,
+      "description": "Tough another adult Republican quality."
+    },
+    {
+      "id": "64896ebd-727f-456d-b915-a4022a22ede8",
+      "name": "Public-key 3rdgeneration protocol 5",
+      "status": "Pending",
+      "createdDate": "2026-01-03T13:04:59",
+      "updatedDate": "2026-02-06T20:55:39",
+      "owner": "Melissa Rojas",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1098.2,
+      "description": "Forward important above stuff win."
+    },
+    {
+      "id": "47285ec4-e134-4ec9-ac8e-250cbe296b84",
+      "name": "Function-based transitional encoding 6",
+      "status": "Completed",
+      "createdDate": "2026-01-26T08:00:16",
+      "updatedDate": "2026-02-02T14:36:10",
+      "owner": "Cindy Ryan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6564.78,
+      "description": "Realize beautiful member game plant garden idea."
+    },
+    {
+      "id": "8d4c5d12-e861-4b45-9e12-8e8448aba4da",
+      "name": "Fully-configurable systematic ability 7",
+      "status": "Inactive",
+      "createdDate": "2026-01-24T21:29:34",
+      "updatedDate": "2026-02-04T01:11:01",
+      "owner": "Matthew Rasmussen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3914.93,
+      "description": "Hotel agent station."
+    },
+    {
+      "id": "fd6adfe6-b0be-4beb-9ca4-a759d3d4a960",
+      "name": "Configurable mission-critical neural-net 8",
+      "status": "Pending",
+      "createdDate": "2025-10-12T04:18:45",
+      "updatedDate": "2026-02-02T23:46:00",
+      "owner": "Adrienne Hernandez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1355.12,
+      "description": "Old exactly social."
+    },
+    {
+      "id": "fbdd068c-3211-452d-858c-a78fa4ccdd99",
+      "name": "Synergistic real-time product 9",
+      "status": "Pending",
+      "createdDate": "2025-09-10T13:53:41",
+      "updatedDate": "2026-02-02T20:32:57",
+      "owner": "William Morales",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9335.54,
+      "description": "Safe together drive."
+    },
+    {
+      "id": "4c83f8b9-3009-4f8a-9d64-7060aa3f667c",
+      "name": "Visionary optimizing orchestration 10",
+      "status": "Pending",
+      "createdDate": "2025-06-28T12:33:51",
+      "updatedDate": "2026-02-04T22:45:28",
+      "owner": "Christian Moore",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7861.87,
+      "description": "Western customer management quite."
+    },
+    {
+      "id": "5ae141ed-cb66-4dbe-9829-ec3983963dd7",
+      "name": "Ameliorated executive hardware 11",
+      "status": "Completed",
+      "createdDate": "2025-02-19T00:34:56",
+      "updatedDate": "2026-01-31T04:14:54",
+      "owner": "Kristine Lowery",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 908.21,
+      "description": "Paper court usually raise no interest."
+    },
+    {
+      "id": "fba33253-9e77-47ca-9809-41c4eabd7d8d",
+      "name": "Digitized zero tolerance database 12",
+      "status": "Completed",
+      "createdDate": "2025-08-09T03:05:48",
+      "updatedDate": "2026-02-03T02:39:37",
+      "owner": "Richard Santos",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4690.9,
+      "description": "Born public true question moment."
+    },
+    {
+      "id": "da9c6882-6c53-433a-8f5a-2dd19ca98920",
+      "name": "Multi-tiered global parallelism 13",
+      "status": "Active",
+      "createdDate": "2025-11-23T19:31:17",
+      "updatedDate": "2026-02-16T16:10:32",
+      "owner": "Dawn King",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9366.65,
+      "description": "Executive let teach admit painting."
+    },
+    {
+      "id": "b8c19e0a-e04c-4a67-95b3-3ef96e87051e",
+      "name": "De-engineered 4thgeneration portal 14",
+      "status": "Pending",
+      "createdDate": "2026-02-14T22:04:29",
+      "updatedDate": "2026-02-14T06:37:22",
+      "owner": "Michael Colon",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6458.0,
+      "description": "Water situation far."
+    },
+    {
+      "id": "d38d3600-25ae-473e-8b38-ccefb66628f8",
+      "name": "Phased didactic project 15",
+      "status": "Pending",
+      "createdDate": "2025-08-22T10:21:42",
+      "updatedDate": "2026-02-10T03:53:41",
+      "owner": "Michele Mcdonald",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2807.22,
+      "description": "Least produce daughter charge."
+    },
+    {
+      "id": "5c74eed1-c6e4-4095-bf26-793971a3b71a",
+      "name": "Managed maximized matrices 16",
+      "status": "Pending",
+      "createdDate": "2025-11-02T11:34:57",
+      "updatedDate": "2026-02-11T04:18:42",
+      "owner": "Regina Mills",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1220.7,
+      "description": "Give view partner else space."
+    },
+    {
+      "id": "930c8d70-dcab-469f-bc6f-4843bcc98bf3",
+      "name": "Open-source heuristic collaboration 17",
+      "status": "Active",
+      "createdDate": "2025-03-21T16:22:55",
+      "updatedDate": "2026-01-30T02:19:13",
+      "owner": "Karen Campbell",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1161.63,
+      "description": "Goal management someone attention."
+    },
+    {
+      "id": "e442c50d-a069-4276-98a8-3d240d64ca5a",
+      "name": "Intuitive grid-enabled customer loyalty 18",
+      "status": "Inactive",
+      "createdDate": "2025-09-30T06:14:18",
+      "updatedDate": "2026-01-31T13:51:05",
+      "owner": "Sean Jones",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4084.87,
+      "description": "Pretty ground catch region heavy road."
+    },
+    {
+      "id": "944fcf35-451d-450c-a6a3-f8bdb863a987",
+      "name": "Up-sized contextually-based hardware 19",
+      "status": "Completed",
+      "createdDate": "2025-05-13T04:51:53",
+      "updatedDate": "2026-01-22T04:42:15",
+      "owner": "Penny Williams",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1389.81,
+      "description": "Would be woman account can beautiful."
+    },
+    {
+      "id": "1f5378f8-1bd1-4530-861d-d56bebe516a4",
+      "name": "Mandatory cohesive data-warehouse 20",
+      "status": "Completed",
+      "createdDate": "2025-08-29T22:58:12",
+      "updatedDate": "2026-01-20T22:59:31",
+      "owner": "Lisa Medina",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4567.0,
+      "description": "Ever individual everybody few effort site fire travel."
+    },
+    {
+      "id": "66f0c629-dc8f-4eab-a190-980ac5012213",
+      "name": "Organized intermediate algorithm 21",
+      "status": "Completed",
+      "createdDate": "2025-12-09T05:39:53",
+      "updatedDate": "2026-02-01T10:51:49",
+      "owner": "Devin Roberts",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3900.34,
+      "description": "Southern mention tax set various."
+    },
+    {
+      "id": "04025b0f-1b74-4d40-b883-cbcd13915701",
+      "name": "Adaptive intermediate flexibility 22",
+      "status": "Pending",
+      "createdDate": "2025-10-01T03:28:57",
+      "updatedDate": "2026-02-03T10:06:04",
+      "owner": "Caroline Miller",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 714.43,
+      "description": "Hard see break officer point admit line."
+    },
+    {
+      "id": "5c867ecc-8551-44a7-9e82-3387c1dcee31",
+      "name": "Cloned multi-state hierarchy 23",
+      "status": "Pending",
+      "createdDate": "2025-08-22T16:53:22",
+      "updatedDate": "2026-02-03T21:33:32",
+      "owner": "Steven Patrick",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8510.45,
+      "description": "Consumer real seek sing stay remain."
+    },
+    {
+      "id": "a8b34b98-1d67-4126-b9c0-850bef8d5de5",
+      "name": "Reduced systemic leverage 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-29T17:40:52",
+      "updatedDate": "2026-02-12T23:48:37",
+      "owner": "Brandon Gilmore",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3703.49,
+      "description": "Report adult source for perhaps mother perform seven."
+    },
+    {
+      "id": "ffc1cd53-e6bb-4479-baba-1b45a16e9e55",
+      "name": "Monitored actuating conglomeration 25",
+      "status": "Active",
+      "createdDate": "2026-02-13T10:35:40",
+      "updatedDate": "2026-02-03T05:55:07",
+      "owner": "Charles Martin",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1448.75,
+      "description": "Second resource cut side."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

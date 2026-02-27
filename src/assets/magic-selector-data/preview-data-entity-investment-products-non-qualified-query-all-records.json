@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-all-records",
+  "totalCount": 223,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "37dc07cc-d4a6-4f0a-bafd-d25406402017",
+      "name": "Fundamental static application 1",
+      "status": "Completed",
+      "createdDate": "2025-07-12T14:33:38",
+      "updatedDate": "2026-02-16T18:06:12",
+      "owner": "Wesley Lee",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 704.31,
+      "description": "Address conference close treat government you."
+    },
+    {
+      "id": "24ec5677-45d8-4997-b485-0afb6368f974",
+      "name": "Visionary analyzing conglomeration 2",
+      "status": "Pending",
+      "createdDate": "2025-07-29T07:54:43",
+      "updatedDate": "2026-02-09T13:30:06",
+      "owner": "Bryan Hudson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5841.62,
+      "description": "Miss practice paper scene line."
+    },
+    {
+      "id": "2c5181a6-75b8-4ad2-a386-7c5e7fcc3643",
+      "name": "Triple-buffered system-worthy pricing structure 3",
+      "status": "Completed",
+      "createdDate": "2025-11-07T08:39:02",
+      "updatedDate": "2026-02-07T11:12:17",
+      "owner": "Jason Pugh",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6101.47,
+      "description": "Community half rock often."
+    },
+    {
+      "id": "fe44dc62-3d8c-4616-bc3e-c64b62bb297d",
+      "name": "Adaptive eco-centric leverage 4",
+      "status": "Inactive",
+      "createdDate": "2025-07-09T21:57:38",
+      "updatedDate": "2026-02-08T14:35:14",
+      "owner": "Brittany Townsend",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7439.99,
+      "description": "Skill travel range air when simple."
+    },
+    {
+      "id": "8e3bd25b-ecc8-4af9-9540-1394f4ce817f",
+      "name": "Proactive methodical monitoring 5",
+      "status": "Active",
+      "createdDate": "2025-04-18T04:20:49",
+      "updatedDate": "2026-01-19T18:03:23",
+      "owner": "Jacob Meyer II",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5398.17,
+      "description": "Economic go likely trip today court health."
+    },
+    {
+      "id": "78e1d47e-f24a-4072-a9b3-398260b7d08e",
+      "name": "Innovative real-time database 6",
+      "status": "Active",
+      "createdDate": "2025-12-03T14:04:35",
+      "updatedDate": "2026-01-18T17:24:30",
+      "owner": "Alex Marshall",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9766.97,
+      "description": "Lead tax she your bad can home water."
+    },
+    {
+      "id": "5f8f8f3d-7de4-4133-903d-d81d283056f7",
+      "name": "Object-based grid-enabled firmware 7",
+      "status": "Completed",
+      "createdDate": "2025-12-19T05:13:58",
+      "updatedDate": "2026-01-23T09:21:19",
+      "owner": "Brian Jackson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4150.45,
+      "description": "Note ok more approach today establish couple."
+    },
+    {
+      "id": "ea09a060-ca7b-4156-82f3-1e85bea428b7",
+      "name": "Stand-alone multimedia product 8",
+      "status": "Inactive",
+      "createdDate": "2026-01-22T10:49:56",
+      "updatedDate": "2026-01-25T18:13:12",
+      "owner": "Margaret Stewart",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7219.41,
+      "description": "Thought tell idea standard hope do."
+    },
+    {
+      "id": "b37cf365-7c26-4b7b-a047-b43c9d2c763f",
+      "name": "Advanced 6thgeneration budgetary management 9",
+      "status": "Completed",
+      "createdDate": "2025-09-15T21:19:32",
+      "updatedDate": "2026-01-24T03:15:51",
+      "owner": "David Harmon",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3667.4,
+      "description": "How western speech space."
+    },
+    {
+      "id": "3d2a9093-56ee-4166-918c-755ba1bc16d1",
+      "name": "Synergistic regional capacity 10",
+      "status": "Active",
+      "createdDate": "2025-10-20T09:05:28",
+      "updatedDate": "2026-01-20T23:25:26",
+      "owner": "Eric Bishop",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7214.33,
+      "description": "Attention her hospital add."
+    },
+    {
+      "id": "1f9012d1-d732-47d4-985e-85690876f389",
+      "name": "Progressive asynchronous functionalities 11",
+      "status": "Pending",
+      "createdDate": "2025-05-15T21:04:58",
+      "updatedDate": "2026-01-22T20:43:15",
+      "owner": "Raymond Gordon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6374.01,
+      "description": "Thing relationship language bank dream case fill."
+    },
+    {
+      "id": "f6074cbe-7645-4093-8321-863d521fb0c9",
+      "name": "Focused cohesive hierarchy 12",
+      "status": "Pending",
+      "createdDate": "2025-07-15T14:28:24",
+      "updatedDate": "2026-02-02T05:37:00",
+      "owner": "Javier Ross",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9582.5,
+      "description": "Avoid agency dream remember various send."
+    },
+    {
+      "id": "19e20a17-105c-4da5-b15c-2d033f6de150",
+      "name": "Optimized human-resource customer loyalty 13",
+      "status": "Active",
+      "createdDate": "2025-06-30T22:54:28",
+      "updatedDate": "2026-01-27T01:09:54",
+      "owner": "Vanessa Lucero",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9500.14,
+      "description": "Democrat old wear professional."
+    },
+    {
+      "id": "c08bbccc-2174-4d7d-acb3-e19bf3fb5c2e",
+      "name": "Expanded impactful adapter 14",
+      "status": "Completed",
+      "createdDate": "2026-01-17T04:41:37",
+      "updatedDate": "2026-01-20T15:44:08",
+      "owner": "Darius Chase",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 261.47,
+      "description": "Person management operation service."
+    },
+    {
+      "id": "420f83e8-9ec2-443d-abfa-6a6ebf5cfd22",
+      "name": "Operative hybrid analyzer 15",
+      "status": "Completed",
+      "createdDate": "2025-04-02T05:52:33",
+      "updatedDate": "2026-02-16T10:27:49",
+      "owner": "Edward Snyder",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4665.01,
+      "description": "Dinner upon value move high modern enter."
+    },
+    {
+      "id": "4b257b60-510e-4557-a857-d2f3008802ea",
+      "name": "Diverse foreground capability 16",
+      "status": "Pending",
+      "createdDate": "2025-08-16T08:13:49",
+      "updatedDate": "2026-02-01T08:51:20",
+      "owner": "Brett Adams",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1299.06,
+      "description": "Can else laugh."
+    },
+    {
+      "id": "c96d0c24-18c4-4e1b-ae29-5ce889de578c",
+      "name": "Open-source non-volatile frame 17",
+      "status": "Completed",
+      "createdDate": "2026-01-22T05:47:02",
+      "updatedDate": "2026-01-24T03:43:37",
+      "owner": "Jared Norris",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8804.75,
+      "description": "Trade daughter best usually body evidence stand."
+    },
+    {
+      "id": "8b2d3a33-97e0-46ef-a1f4-21010c1341c3",
+      "name": "Cloned radical service-desk 18",
+      "status": "Inactive",
+      "createdDate": "2025-11-29T08:00:06",
+      "updatedDate": "2026-02-11T17:46:40",
+      "owner": "Loretta Torres",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7620.17,
+      "description": "Party plant cause phone."
+    },
+    {
+      "id": "40a15ae3-fe20-4669-a451-94b6b25112b5",
+      "name": "Fundamental contextually-based support 19",
+      "status": "Active",
+      "createdDate": "2025-09-06T18:14:36",
+      "updatedDate": "2026-01-19T08:45:11",
+      "owner": "James Cox",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5690.99,
+      "description": "Serve another operation year offer eight."
+    },
+    {
+      "id": "b7230121-0931-499d-b021-c1300b849849",
+      "name": "Optimized uniform process improvement 20",
+      "status": "Completed",
+      "createdDate": "2025-09-01T17:47:28",
+      "updatedDate": "2026-01-19T20:20:02",
+      "owner": "Gina Clarke",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2863.26,
+      "description": "Not never apply person clearly point job worker."
+    },
+    {
+      "id": "c3477e43-9cac-426e-bab0-f4d1377b3ca6",
+      "name": "Front-line dedicated time-frame 21",
+      "status": "Active",
+      "createdDate": "2025-02-23T13:32:21",
+      "updatedDate": "2026-01-21T08:25:47",
+      "owner": "James Stone",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6394.65,
+      "description": "Along tree left his resource."
+    },
+    {
+      "id": "f9a66150-609a-4ef9-9bfd-a2f40e849664",
+      "name": "Organized web-enabled benchmark 22",
+      "status": "Active",
+      "createdDate": "2025-09-02T09:15:19",
+      "updatedDate": "2026-02-04T11:19:53",
+      "owner": "Melissa Rodriguez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6862.57,
+      "description": "Project start hotel appear yourself."
+    },
+    {
+      "id": "ca48f52c-9abe-4d5e-9fa7-6654dd9e9fd3",
+      "name": "Secured transitional info-mediaries 23",
+      "status": "Pending",
+      "createdDate": "2025-11-09T02:56:37",
+      "updatedDate": "2026-02-15T01:50:48",
+      "owner": "Jacob Lambert",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5089.43,
+      "description": "Force call house guy."
+    },
+    {
+      "id": "9d6dcbba-7814-4a2f-91de-639f2f354ae8",
+      "name": "Integrated intermediate capability 24",
+      "status": "Pending",
+      "createdDate": "2025-12-18T15:05:10",
+      "updatedDate": "2026-01-26T08:41:40",
+      "owner": "Diana Hernandez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3851.25,
+      "description": "Bed set year expect you thank."
+    },
+    {
+      "id": "5169955b-7884-4b45-bbc6-ef18746ddbc5",
+      "name": "Open-architected contextually-based framework 25",
+      "status": "Inactive",
+      "createdDate": "2025-12-23T02:32:25",
+      "updatedDate": "2026-02-03T07:21:10",
+      "owner": "Joseph Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2844.39,
+      "description": "Poor finally picture material oil charge I."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

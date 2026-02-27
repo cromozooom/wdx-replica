@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-compliancereview",
+  "queryId": "query-active-only",
+  "totalCount": 808,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "20812aca-149d-410f-b1d9-9769dc00fa8f",
+      "name": "Inverse homogeneous intranet 1",
+      "status": "Inactive",
+      "createdDate": "2025-05-12T18:51:20",
+      "updatedDate": "2026-01-19T02:17:15",
+      "owner": "Ms. Jeanette Hernandez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9196.51,
+      "description": "Forward tell talk pretty perform fall own."
+    },
+    {
+      "id": "a753c684-2d58-4798-93f5-5c8c29aaccc2",
+      "name": "Stand-alone fault-tolerant product 2",
+      "status": "Pending",
+      "createdDate": "2025-08-20T07:39:57",
+      "updatedDate": "2026-01-29T18:32:44",
+      "owner": "Colin Roman",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 495.8,
+      "description": "Television measure on large."
+    },
+    {
+      "id": "0a50df29-6401-4daf-97fb-b1bf86678e28",
+      "name": "Proactive 5thgeneration implementation 3",
+      "status": "Inactive",
+      "createdDate": "2025-07-29T06:21:14",
+      "updatedDate": "2026-01-21T23:00:11",
+      "owner": "John Sheppard",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4579.31,
+      "description": "Act either paper hand expect plant meet."
+    },
+    {
+      "id": "14663623-7b6c-4034-ba35-b6051bf0189f",
+      "name": "Total user-facing functionalities 4",
+      "status": "Completed",
+      "createdDate": "2025-07-27T13:04:53",
+      "updatedDate": "2026-02-14T16:55:25",
+      "owner": "Heather Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4748.63,
+      "description": "Compare senior finish leg collection no agent."
+    },
+    {
+      "id": "459a5032-a888-42f8-95b2-62df54fa1d7d",
+      "name": "Right-sized clear-thinking implementation 5",
+      "status": "Pending",
+      "createdDate": "2026-01-04T23:40:09",
+      "updatedDate": "2026-02-11T14:50:37",
+      "owner": "Jasmin Freeman",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3634.35,
+      "description": "Them wish owner other physical teacher say."
+    },
+    {
+      "id": "48c48e93-fd7e-49f8-b449-2749283d5711",
+      "name": "Pre-emptive coherent infrastructure 6",
+      "status": "Pending",
+      "createdDate": "2025-04-27T15:52:15",
+      "updatedDate": "2026-01-26T20:21:37",
+      "owner": "William Wagner",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2939.36,
+      "description": "Contain perform good check instead daughter."
+    },
+    {
+      "id": "211d57e7-b308-4bdc-8e50-b4f5bcecd2c4",
+      "name": "Customizable well-modulated conglomeration 7",
+      "status": "Pending",
+      "createdDate": "2025-06-09T18:49:42",
+      "updatedDate": "2026-01-22T15:02:18",
+      "owner": "Anthony Wilson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9737.47,
+      "description": "Lay important whose activity amount clearly tonight."
+    },
+    {
+      "id": "ec399642-303b-4796-83c9-908e6dc01375",
+      "name": "Assimilated value-added process improvement 8",
+      "status": "Pending",
+      "createdDate": "2025-10-10T22:53:22",
+      "updatedDate": "2026-02-07T05:10:02",
+      "owner": "Thomas Anderson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2089.52,
+      "description": "Name seem fund his cup use chance develop."
+    },
+    {
+      "id": "80438b77-ac78-40d3-a873-ccf646cc2ee5",
+      "name": "Self-enabling tangible model 9",
+      "status": "Inactive",
+      "createdDate": "2025-07-30T13:17:40",
+      "updatedDate": "2026-02-03T03:02:59",
+      "owner": "Scott Arellano",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 544.35,
+      "description": "Attorney charge shoulder vote."
+    },
+    {
+      "id": "f0ce9e40-54ac-465a-a777-3b941c25d7b0",
+      "name": "Enterprise-wide maximized framework 10",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T21:59:57",
+      "updatedDate": "2026-01-19T10:28:43",
+      "owner": "Tracey Riley",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8064.78,
+      "description": "Area live administration."
+    },
+    {
+      "id": "6038440b-fe96-4a4b-812f-e5783738c448",
+      "name": "Robust client-driven conglomeration 11",
+      "status": "Active",
+      "createdDate": "2025-09-16T22:36:00",
+      "updatedDate": "2026-01-21T09:33:16",
+      "owner": "Jessica Robbins",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4515.0,
+      "description": "Realize toward push figure."
+    },
+    {
+      "id": "5ba96df0-3087-407a-b991-d05144d3fefd",
+      "name": "Exclusive incremental software 12",
+      "status": "Pending",
+      "createdDate": "2025-12-30T09:38:26",
+      "updatedDate": "2026-02-15T23:53:40",
+      "owner": "Robert Humphrey",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5461.7,
+      "description": "Public pattern administration enough dark school race."
+    },
+    {
+      "id": "609a1cc6-a29e-44ca-88d4-93da5f978494",
+      "name": "Implemented 3rdgeneration time-frame 13",
+      "status": "Pending",
+      "createdDate": "2025-03-15T11:06:32",
+      "updatedDate": "2026-01-31T08:11:20",
+      "owner": "Valerie Castillo",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1156.41,
+      "description": "Get official strong back let determine."
+    },
+    {
+      "id": "d126fb97-1b58-473e-b689-122916559ec6",
+      "name": "Visionary context-sensitive customer loyalty 14",
+      "status": "Active",
+      "createdDate": "2025-10-14T03:54:09",
+      "updatedDate": "2026-02-14T21:42:49",
+      "owner": "Zachary Odom",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4244.73,
+      "description": "Scene mention health success I."
+    },
+    {
+      "id": "6ad2d4b1-0a14-4171-a61d-3353d2a0e4cc",
+      "name": "Expanded homogeneous firmware 15",
+      "status": "Inactive",
+      "createdDate": "2025-03-28T23:09:51",
+      "updatedDate": "2026-02-13T12:07:38",
+      "owner": "Mr. Jason Miller DDS",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4089.67,
+      "description": "Play policy maintain model continue throw continue."
+    },
+    {
+      "id": "ac7fb39c-749e-4b6e-8d50-9847adb1049c",
+      "name": "Ameliorated stable emulation 16",
+      "status": "Active",
+      "createdDate": "2025-09-29T02:15:27",
+      "updatedDate": "2026-02-08T02:09:18",
+      "owner": "Mark Hoffman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5850.06,
+      "description": "Air check room detail."
+    },
+    {
+      "id": "14aea321-7f6f-48c5-9b48-62ddf55f989a",
+      "name": "Function-based system-worthy algorithm 17",
+      "status": "Pending",
+      "createdDate": "2025-04-23T07:38:32",
+      "updatedDate": "2026-01-19T10:43:20",
+      "owner": "Cheyenne Cortez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2361.0,
+      "description": "Drug free child when family."
+    },
+    {
+      "id": "0fd3e7e8-1241-4548-ab48-348cea95ba44",
+      "name": "Phased zero administration alliance 18",
+      "status": "Pending",
+      "createdDate": "2025-11-11T06:25:52",
+      "updatedDate": "2026-02-07T14:54:32",
+      "owner": "Sarah Strong",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7063.3,
+      "description": "Assume per trip relationship road."
+    },
+    {
+      "id": "3c7cc53a-3c39-41fa-bbbd-5d0ea689e760",
+      "name": "Grass-roots disintermediate hardware 19",
+      "status": "Completed",
+      "createdDate": "2025-04-05T01:09:18",
+      "updatedDate": "2026-02-05T11:25:50",
+      "owner": "Brooke Good",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1110.28,
+      "description": "Key while give could picture."
+    },
+    {
+      "id": "eff0c5a9-81cb-4c86-9345-4b9bdfeecdec",
+      "name": "Down-sized zero tolerance synergy 20",
+      "status": "Completed",
+      "createdDate": "2025-06-06T16:37:36",
+      "updatedDate": "2026-02-01T16:11:21",
+      "owner": "Felicia Miller",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 8996.37,
+      "description": "Together two single particularly to."
+    },
+    {
+      "id": "29cb651f-d451-46e3-99da-6cecf26b6e92",
+      "name": "Reverse-engineered intermediate hierarchy 21",
+      "status": "Pending",
+      "createdDate": "2025-09-29T11:38:28",
+      "updatedDate": "2026-01-25T08:07:46",
+      "owner": "Jason Golden",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3077.92,
+      "description": "Mission future wrong how father help movie."
+    },
+    {
+      "id": "0ab9a0d8-b3a8-4ef8-b052-e07acfccbb1d",
+      "name": "Extended 5thgeneration open architecture 22",
+      "status": "Inactive",
+      "createdDate": "2025-05-21T06:22:54",
+      "updatedDate": "2026-01-26T21:45:44",
+      "owner": "Julia Bright",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3947.94,
+      "description": "Language offer imagine sport."
+    },
+    {
+      "id": "9e6f04e3-db6b-4c57-9053-b2906c4b1e62",
+      "name": "Team-oriented bandwidth-monitored frame 23",
+      "status": "Completed",
+      "createdDate": "2025-08-03T19:10:05",
+      "updatedDate": "2026-01-23T10:02:55",
+      "owner": "Mr. Matthew Zimmerman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7676.87,
+      "description": "Environmental change or have."
+    },
+    {
+      "id": "56f1df55-c391-4e96-9825-a827220908eb",
+      "name": "Synergistic holistic paradigm 24",
+      "status": "Inactive",
+      "createdDate": "2025-04-21T11:47:13",
+      "updatedDate": "2026-02-06T12:41:59",
+      "owner": "Denise Collins",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6891.62,
+      "description": "None game create husband pick defense."
+    },
+    {
+      "id": "77a11d53-b319-43a2-9240-d565095a1400",
+      "name": "Programmable high-level benchmark 25",
+      "status": "Completed",
+      "createdDate": "2025-10-29T06:23:40",
+      "updatedDate": "2026-02-16T11:48:01",
+      "owner": "Mary Webb",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6527.93,
+      "description": "Stop practice big why technology."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

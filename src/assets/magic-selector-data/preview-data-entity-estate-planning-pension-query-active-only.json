@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-active-only",
+  "totalCount": 183,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "439cdd13-68ff-48d2-9dc9-6af442049ec6",
+      "name": "Total user-facing portal 1",
+      "status": "Inactive",
+      "createdDate": "2025-04-06T11:12:13",
+      "updatedDate": "2026-02-14T11:18:07",
+      "owner": "Andrew Gutierrez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2601.17,
+      "description": "Suddenly heart decade go wear up factor."
+    },
+    {
+      "id": "1c789e39-9bc5-458f-a281-722bbc2ba965",
+      "name": "Open-source asymmetric encryption 2",
+      "status": "Inactive",
+      "createdDate": "2025-08-04T07:23:47",
+      "updatedDate": "2026-01-18T16:59:03",
+      "owner": "Mark Alvarado",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7975.45,
+      "description": "Tree certain interest main pressure."
+    },
+    {
+      "id": "498543ef-f1bf-49eb-b2ba-7e73cb6b5810",
+      "name": "Reduced hybrid secured line 3",
+      "status": "Pending",
+      "createdDate": "2026-02-12T21:00:16",
+      "updatedDate": "2026-01-19T05:10:13",
+      "owner": "Margaret Baker",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5547.09,
+      "description": "Me wide research international perhaps."
+    },
+    {
+      "id": "0ea4c0fe-7e43-4ebf-be5d-808100620b37",
+      "name": "Extended non-volatile productivity 4",
+      "status": "Inactive",
+      "createdDate": "2025-07-21T02:17:16",
+      "updatedDate": "2026-01-18T15:40:23",
+      "owner": "Lisa Duran",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7266.02,
+      "description": "Cultural miss me control later herself put."
+    },
+    {
+      "id": "31432ff6-c952-46d9-9c9f-efe08e578a26",
+      "name": "Multi-layered content-based migration 5",
+      "status": "Active",
+      "createdDate": "2026-02-13T19:35:41",
+      "updatedDate": "2026-02-09T17:12:12",
+      "owner": "Joy Cohen",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7294.28,
+      "description": "Half small check reduce left figure sort."
+    },
+    {
+      "id": "3983a574-cc8b-44bc-a777-ed3ab38ee9f3",
+      "name": "Fundamental well-modulated protocol 6",
+      "status": "Pending",
+      "createdDate": "2025-02-22T06:17:19",
+      "updatedDate": "2026-02-13T01:48:06",
+      "owner": "Lisa Hodge",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 269.99,
+      "description": "About cultural player."
+    },
+    {
+      "id": "93f4898a-e151-441c-9e12-72262ca19375",
+      "name": "Total user-facing product 7",
+      "status": "Inactive",
+      "createdDate": "2025-04-15T07:46:35",
+      "updatedDate": "2026-02-06T02:48:03",
+      "owner": "Rachel Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6151.61,
+      "description": "Never culture leg live begin investment friend office."
+    },
+    {
+      "id": "1b27b7e6-062d-4d31-9398-b015171e8809",
+      "name": "Assimilated 24/7 attitude 8",
+      "status": "Completed",
+      "createdDate": "2025-04-17T01:43:46",
+      "updatedDate": "2026-01-21T09:23:16",
+      "owner": "Christina Acosta",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8467.12,
+      "description": "Wall human win high dream."
+    },
+    {
+      "id": "31ef99bd-20bf-40ce-aab5-2dd6e875d41d",
+      "name": "Seamless object-oriented collaboration 9",
+      "status": "Pending",
+      "createdDate": "2026-01-09T19:37:28",
+      "updatedDate": "2026-01-22T04:38:00",
+      "owner": "Jerome Dunn",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9011.59,
+      "description": "Whose game listen weight."
+    },
+    {
+      "id": "bf3f6178-64e7-4354-80b9-15a80ba6c9f9",
+      "name": "Synergized needs-based workforce 10",
+      "status": "Completed",
+      "createdDate": "2025-04-30T00:05:32",
+      "updatedDate": "2026-02-16T14:19:24",
+      "owner": "Rebecca Barry",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9085.2,
+      "description": "Large Mr man assume."
+    },
+    {
+      "id": "49aca7f5-ca6b-494d-bc75-3c215870dd2f",
+      "name": "Proactive systematic benchmark 11",
+      "status": "Inactive",
+      "createdDate": "2025-07-09T22:21:15",
+      "updatedDate": "2026-02-09T06:50:58",
+      "owner": "Maria Pena",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1221.95,
+      "description": "Rule ago police poor human."
+    },
+    {
+      "id": "a2d56b6f-8f4e-4a7d-961c-498ef6adf515",
+      "name": "Right-sized dynamic project 12",
+      "status": "Inactive",
+      "createdDate": "2025-08-27T00:58:38",
+      "updatedDate": "2026-01-31T00:06:16",
+      "owner": "Jamie Erickson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5025.4,
+      "description": "Sea professional writer natural door."
+    },
+    {
+      "id": "de73d2cf-63d2-41ea-975c-9453e2c37f45",
+      "name": "Extended local initiative 13",
+      "status": "Pending",
+      "createdDate": "2025-07-16T00:06:40",
+      "updatedDate": "2026-02-07T22:01:11",
+      "owner": "Elizabeth Lopez",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1657.0,
+      "description": "Stand player city plant attorney big sure."
+    },
+    {
+      "id": "22575d05-2778-4fff-802e-f0d7649f977b",
+      "name": "Digitized zero administration circuit 14",
+      "status": "Completed",
+      "createdDate": "2025-07-02T21:12:16",
+      "updatedDate": "2026-02-02T02:00:38",
+      "owner": "Jesse Reynolds",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9663.13,
+      "description": "Nation remain close hundred natural sister."
+    },
+    {
+      "id": "cb31bbe0-380a-4a65-8562-fa84def5e93b",
+      "name": "Assimilated secondary portal 15",
+      "status": "Active",
+      "createdDate": "2025-07-31T23:28:18",
+      "updatedDate": "2026-02-05T00:20:57",
+      "owner": "Joshua Woods",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8463.24,
+      "description": "Serious thing training."
+    },
+    {
+      "id": "13a86bd3-56a8-4c38-b59c-f05de1107411",
+      "name": "Decentralized local secured line 16",
+      "status": "Pending",
+      "createdDate": "2025-03-06T00:20:47",
+      "updatedDate": "2026-01-31T20:46:44",
+      "owner": "Timothy Young",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5016.59,
+      "description": "Be your finally American able size."
+    },
+    {
+      "id": "348a9fa6-9dd6-4dfb-98c5-86d02a417995",
+      "name": "Profound directional open architecture 17",
+      "status": "Completed",
+      "createdDate": "2025-11-16T02:03:12",
+      "updatedDate": "2026-02-02T02:25:05",
+      "owner": "Victoria Duncan",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 2849.53,
+      "description": "Consider such on window fall."
+    },
+    {
+      "id": "136953dc-4d55-4255-9617-57fdc0098d4b",
+      "name": "Phased exuding encryption 18",
+      "status": "Active",
+      "createdDate": "2025-06-03T19:44:05",
+      "updatedDate": "2026-01-28T00:38:02",
+      "owner": "Charles Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1586.13,
+      "description": "Practice certain middle forget he plan their."
+    },
+    {
+      "id": "11e659d8-210f-417a-9402-4d22978965b4",
+      "name": "Universal solution-oriented array 19",
+      "status": "Inactive",
+      "createdDate": "2025-08-18T08:14:28",
+      "updatedDate": "2026-01-22T09:03:43",
+      "owner": "Laura Ayers",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3898.01,
+      "description": "Kitchen material spring peace international."
+    },
+    {
+      "id": "38eb4ef9-fc3f-42ab-aab8-4d3b4d1b62f5",
+      "name": "Future-proofed exuding encryption 20",
+      "status": "Pending",
+      "createdDate": "2025-03-08T11:11:52",
+      "updatedDate": "2026-02-14T14:15:48",
+      "owner": "Victoria Patel",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7152.67,
+      "description": "List draw authority interest own."
+    },
+    {
+      "id": "829bf432-e18d-4a49-9ffe-f6401b4f278c",
+      "name": "Function-based intangible time-frame 21",
+      "status": "Inactive",
+      "createdDate": "2025-09-04T13:33:18",
+      "updatedDate": "2026-02-14T02:36:58",
+      "owner": "Linda Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2864.1,
+      "description": "Happen require air Mr inside."
+    },
+    {
+      "id": "fa97d749-f434-49bc-9491-79e70fd3b2ab",
+      "name": "Cloned high-level complexity 22",
+      "status": "Inactive",
+      "createdDate": "2025-07-11T18:08:06",
+      "updatedDate": "2026-02-12T07:42:58",
+      "owner": "Cory Watts",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 194.79,
+      "description": "Foreign forget factor senior thing different."
+    },
+    {
+      "id": "d3251767-d8e4-421f-8354-038012a814df",
+      "name": "Horizontal demand-driven attitude 23",
+      "status": "Inactive",
+      "createdDate": "2025-09-09T02:33:33",
+      "updatedDate": "2026-02-15T10:32:09",
+      "owner": "Darryl Kelly",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 449.65,
+      "description": "Free your course thing."
+    },
+    {
+      "id": "d72f25c8-e943-47dc-ae5e-6ec98f04664b",
+      "name": "Persevering eco-centric concept 24",
+      "status": "Active",
+      "createdDate": "2025-05-20T23:21:02",
+      "updatedDate": "2026-02-12T21:21:55",
+      "owner": "Kara Carney",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8813.0,
+      "description": "Cut individual once our."
+    },
+    {
+      "id": "6ee6eb25-8c24-4d59-bf14-a24d2725eaa8",
+      "name": "Cross-group impactful customer loyalty 25",
+      "status": "Active",
+      "createdDate": "2025-12-27T18:32:24",
+      "updatedDate": "2026-01-30T06:56:13",
+      "owner": "Luke Meyer",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2373.14,
+      "description": "Thus baby animal drive loss friend."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

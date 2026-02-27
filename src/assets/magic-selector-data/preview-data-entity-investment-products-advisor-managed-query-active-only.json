@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 713,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "67c7cdc1-3d51-40a2-b676-33a5ddea2287",
+      "name": "Quality-focused value-added implementation 1",
+      "status": "Pending",
+      "createdDate": "2025-09-25T15:10:09",
+      "updatedDate": "2026-01-31T17:23:42",
+      "owner": "Cameron Smith",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 694.11,
+      "description": "Member find challenge though."
+    },
+    {
+      "id": "121277a7-eca8-40a8-b632-a2fcd657c0fd",
+      "name": "Object-based demand-driven secured line 2",
+      "status": "Completed",
+      "createdDate": "2025-03-10T01:26:20",
+      "updatedDate": "2026-01-24T11:12:12",
+      "owner": "Erica Dennis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9000.47,
+      "description": "We bank person back them respond law."
+    },
+    {
+      "id": "cc2106af-1315-4b0d-82b2-f67f17ccfb6f",
+      "name": "Implemented client-server secured line 3",
+      "status": "Inactive",
+      "createdDate": "2025-02-17T23:38:08",
+      "updatedDate": "2026-02-01T11:43:44",
+      "owner": "Shawn Hoffman",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3703.0,
+      "description": "However radio us personal impact like where."
+    },
+    {
+      "id": "87dca9c9-bd7b-4a89-baa5-197c83e2b40f",
+      "name": "Cross-platform zero administration open system 4",
+      "status": "Completed",
+      "createdDate": "2025-12-15T22:57:13",
+      "updatedDate": "2026-02-04T10:36:07",
+      "owner": "Joseph Vaughn",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3036.5,
+      "description": "Speak skin need color major democratic evidence."
+    },
+    {
+      "id": "76b01811-56e4-4cc1-a57d-fef142e348ba",
+      "name": "Stand-alone methodical initiative 5",
+      "status": "Completed",
+      "createdDate": "2025-11-02T19:58:02",
+      "updatedDate": "2026-02-05T05:02:01",
+      "owner": "Lawrence Knight",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 883.84,
+      "description": "Treatment better with experience region probably lead."
+    },
+    {
+      "id": "d6d18d24-d425-4ff1-b986-c9de80a802d8",
+      "name": "Triple-buffered needs-based focus group 6",
+      "status": "Pending",
+      "createdDate": "2025-09-14T11:05:52",
+      "updatedDate": "2026-02-05T00:48:43",
+      "owner": "Edward Mason",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1195.78,
+      "description": "Special company indeed quality."
+    },
+    {
+      "id": "28f13c4a-1e4b-4c35-923c-7e9a671c0676",
+      "name": "Networked maximized project 7",
+      "status": "Completed",
+      "createdDate": "2025-03-22T13:56:46",
+      "updatedDate": "2026-01-25T21:46:49",
+      "owner": "Charles Villegas",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6639.1,
+      "description": "Democratic measure bank."
+    },
+    {
+      "id": "1f063081-2662-4e21-a8a1-07346a75cfb8",
+      "name": "Implemented coherent throughput 8",
+      "status": "Pending",
+      "createdDate": "2026-01-28T14:31:06",
+      "updatedDate": "2026-02-09T08:07:53",
+      "owner": "Crystal Mcguire",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6420.25,
+      "description": "Pattern capital book fact."
+    },
+    {
+      "id": "03749eb8-b2ba-4e60-bf62-82fdfc8cca89",
+      "name": "Networked heuristic paradigm 9",
+      "status": "Active",
+      "createdDate": "2025-11-18T15:01:13",
+      "updatedDate": "2026-02-05T17:04:48",
+      "owner": "Henry Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8465.08,
+      "description": "Treatment against everything author part."
+    },
+    {
+      "id": "35d5f136-0ec4-449f-972b-e46d634ef541",
+      "name": "Function-based web-enabled utilization 10",
+      "status": "Pending",
+      "createdDate": "2025-10-02T13:03:17",
+      "updatedDate": "2026-02-08T17:06:58",
+      "owner": "Kelly Jensen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4912.89,
+      "description": "Sea debate medical force game Mr number."
+    },
+    {
+      "id": "559f3c96-8e36-4534-91f0-ea30ecaddb4c",
+      "name": "Multi-layered leadingedge flexibility 11",
+      "status": "Completed",
+      "createdDate": "2025-02-17T14:15:14",
+      "updatedDate": "2026-02-12T14:07:17",
+      "owner": "Deanna Bernard",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4447.58,
+      "description": "Pretty heavy life visit Congress people reach assume."
+    },
+    {
+      "id": "d618c888-76a2-4af6-8635-8a023fb4eb8c",
+      "name": "Optional needs-based standardization 12",
+      "status": "Completed",
+      "createdDate": "2026-01-31T08:42:07",
+      "updatedDate": "2026-01-26T14:37:27",
+      "owner": "Emily Chandler",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4332.84,
+      "description": "Floor prove gun affect me floor daughter short."
+    },
+    {
+      "id": "df7bac24-b058-4091-adce-510629331631",
+      "name": "Stand-alone composite moderator 13",
+      "status": "Pending",
+      "createdDate": "2025-10-07T21:57:44",
+      "updatedDate": "2026-01-31T18:29:23",
+      "owner": "Natalie Stokes",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2860.72,
+      "description": "Receive drive investment on true their."
+    },
+    {
+      "id": "d2d4d932-a555-4e3b-8450-4f1f90fb5fb6",
+      "name": "Grass-roots directional software 14",
+      "status": "Completed",
+      "createdDate": "2026-01-07T13:41:04",
+      "updatedDate": "2026-02-16T03:58:40",
+      "owner": "Christina Cooper",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8680.02,
+      "description": "Ten win project."
+    },
+    {
+      "id": "359effeb-1163-4afc-bca0-a4101894054f",
+      "name": "Upgradable intermediate time-frame 15",
+      "status": "Active",
+      "createdDate": "2025-07-29T12:43:57",
+      "updatedDate": "2026-02-05T02:03:38",
+      "owner": "Nathan Hancock",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4194.47,
+      "description": "Close main place rather."
+    },
+    {
+      "id": "d4674e48-970b-4a30-a3cd-ccb404be8bf4",
+      "name": "User-centric exuding complexity 16",
+      "status": "Completed",
+      "createdDate": "2025-05-10T19:04:13",
+      "updatedDate": "2026-02-03T10:34:40",
+      "owner": "Joshua Shepard",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4874.52,
+      "description": "Exist someone job significant director."
+    },
+    {
+      "id": "960a0392-e679-489b-b90f-509275806df8",
+      "name": "Sharable attitude-oriented model 17",
+      "status": "Active",
+      "createdDate": "2026-01-23T06:35:30",
+      "updatedDate": "2026-01-24T00:28:56",
+      "owner": "Amy Vasquez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9598.62,
+      "description": "Hotel social early."
+    },
+    {
+      "id": "091b8caa-397d-425f-8927-2ba080a9d52b",
+      "name": "Re-contextualized secondary emulation 18",
+      "status": "Inactive",
+      "createdDate": "2025-10-12T02:14:53",
+      "updatedDate": "2026-01-19T13:50:29",
+      "owner": "Rebecca Diaz",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5839.79,
+      "description": "Pressure hear response sometimes use."
+    },
+    {
+      "id": "9d0b189a-5d3f-483d-9350-e5cafa1b36ab",
+      "name": "Future-proofed discrete matrices 19",
+      "status": "Active",
+      "createdDate": "2025-03-21T10:28:39",
+      "updatedDate": "2026-01-24T23:41:45",
+      "owner": "Andrew Garcia",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8198.9,
+      "description": "Heart activity avoid instead past behind teach."
+    },
+    {
+      "id": "b95d89c8-da4b-40f0-a56b-1027afd20194",
+      "name": "Streamlined interactive structure 20",
+      "status": "Inactive",
+      "createdDate": "2025-12-03T03:14:09",
+      "updatedDate": "2026-01-20T15:33:17",
+      "owner": "Robert Cantu",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5382.09,
+      "description": "Consider technology over a prevent."
+    },
+    {
+      "id": "0c95bf60-e906-401c-9b73-763d1c373fbd",
+      "name": "Networked content-based moratorium 21",
+      "status": "Completed",
+      "createdDate": "2025-08-15T00:34:47",
+      "updatedDate": "2026-01-26T18:53:14",
+      "owner": "Laura Anderson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 781.35,
+      "description": "Window these return same."
+    },
+    {
+      "id": "ff1b1737-777b-4f25-9501-11cc438449bb",
+      "name": "Exclusive national software 22",
+      "status": "Inactive",
+      "createdDate": "2025-08-26T02:48:12",
+      "updatedDate": "2026-02-09T06:52:02",
+      "owner": "Kelly Walker",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3603.29,
+      "description": "Appear left look yet try week."
+    },
+    {
+      "id": "5f5328f5-2028-4753-b90a-46f8db340419",
+      "name": "Synergistic methodical implementation 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-29T10:57:53",
+      "updatedDate": "2026-01-29T15:04:10",
+      "owner": "Scott Leach",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9831.67,
+      "description": "Animal evening others him remember network."
+    },
+    {
+      "id": "05d65ce4-0e79-48b7-bd3b-9a4bbcb5b134",
+      "name": "Reverse-engineered client-server benchmark 24",
+      "status": "Active",
+      "createdDate": "2025-06-01T08:48:41",
+      "updatedDate": "2026-01-31T10:34:26",
+      "owner": "Kelly Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8431.62,
+      "description": "Mind community knowledge wonder age."
+    },
+    {
+      "id": "f0eebc02-ef49-4283-a224-19957909b6f7",
+      "name": "Public-key optimal knowledge user 25",
+      "status": "Active",
+      "createdDate": "2025-06-01T21:42:11",
+      "updatedDate": "2026-02-07T09:14:30",
+      "owner": "Miranda Bradley",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7615.07,
+      "description": "Gas everything box cultural interview."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1000,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "af0dd238-56b0-47be-87d9-6639c75966c4",
+      "name": "Networked solution-oriented help-desk 1",
+      "status": "Completed",
+      "createdDate": "2025-10-05T20:23:35",
+      "updatedDate": "2026-02-03T12:12:13",
+      "owner": "Jennifer Lee",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 800.88,
+      "description": "Sure drop experience vote action team form."
+    },
+    {
+      "id": "6a9572e9-79cc-43ef-932b-ac25175bb262",
+      "name": "De-engineered even-keeled matrices 2",
+      "status": "Pending",
+      "createdDate": "2025-03-20T00:34:39",
+      "updatedDate": "2026-01-21T11:05:30",
+      "owner": "Mr. Robert Mora",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6322.91,
+      "description": "Affect example others future pass management man."
+    },
+    {
+      "id": "bae07621-4ac6-4574-a2b4-1a93cef1b4dd",
+      "name": "Streamlined responsive data-warehouse 3",
+      "status": "Active",
+      "createdDate": "2025-06-09T14:35:25",
+      "updatedDate": "2026-01-25T02:49:23",
+      "owner": "Katelyn Lee",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2863.36,
+      "description": "Official forward assume."
+    },
+    {
+      "id": "12a5693f-ba17-4f9e-ab2c-44e6ca4f6223",
+      "name": "Proactive demand-driven data-warehouse 4",
+      "status": "Pending",
+      "createdDate": "2026-01-25T20:15:03",
+      "updatedDate": "2026-01-29T23:16:24",
+      "owner": "Matthew King",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6624.97,
+      "description": "Employee wonder event soldier much any."
+    },
+    {
+      "id": "5b3d111c-8f7c-4edd-b54c-0b105b6a12f5",
+      "name": "Managed bifurcated Graphic Interface 5",
+      "status": "Inactive",
+      "createdDate": "2026-01-01T02:43:24",
+      "updatedDate": "2026-02-02T16:46:01",
+      "owner": "Jonathan Thompson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6306.94,
+      "description": "Wife never for movie east."
+    },
+    {
+      "id": "2e647dc9-57dd-4ff1-9188-35c62017af73",
+      "name": "Programmable reciprocal open architecture 6",
+      "status": "Inactive",
+      "createdDate": "2025-11-05T14:01:40",
+      "updatedDate": "2026-01-19T09:45:11",
+      "owner": "Daniel Scott",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2561.74,
+      "description": "Company much TV beyond might me analysis."
+    },
+    {
+      "id": "c56dd90f-3a82-4bb1-99c8-72f627cdefb1",
+      "name": "Future-proofed clear-thinking capacity 7",
+      "status": "Inactive",
+      "createdDate": "2025-05-28T17:18:55",
+      "updatedDate": "2026-02-10T06:48:12",
+      "owner": "Danielle Leon",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4388.97,
+      "description": "Real field score."
+    },
+    {
+      "id": "25dde4d6-bbfd-48d5-84c0-f9a2a8f4cd63",
+      "name": "Networked upward-trending access 8",
+      "status": "Inactive",
+      "createdDate": "2025-04-16T10:44:06",
+      "updatedDate": "2026-01-26T03:51:33",
+      "owner": "Nicole Sloan",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4849.29,
+      "description": "Under she who seven bit."
+    },
+    {
+      "id": "f68c522a-daa6-458b-b2a6-c0436792cd4f",
+      "name": "Visionary bandwidth-monitored middleware 9",
+      "status": "Inactive",
+      "createdDate": "2026-01-02T20:23:00",
+      "updatedDate": "2026-02-13T16:40:24",
+      "owner": "Patrick Conrad",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1402.02,
+      "description": "Admit group result forward future particular."
+    },
+    {
+      "id": "8b1c8e59-8bbc-4605-9e1e-77f9b9bad508",
+      "name": "Stand-alone analyzing strategy 10",
+      "status": "Completed",
+      "createdDate": "2025-03-17T04:48:38",
+      "updatedDate": "2026-02-06T01:18:19",
+      "owner": "James Brown",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8085.61,
+      "description": "Energy after walk."
+    },
+    {
+      "id": "48eadc76-2b30-4b5b-8857-9f0ed556bc2a",
+      "name": "Cloned contextually-based capacity 11",
+      "status": "Pending",
+      "createdDate": "2026-02-11T13:39:55",
+      "updatedDate": "2026-01-21T12:01:02",
+      "owner": "Alyssa Mccall",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5960.33,
+      "description": "Kind trade him leave rich mother matter."
+    },
+    {
+      "id": "4a1aaf1d-0354-40b9-98e8-d90ffe30e3a9",
+      "name": "Horizontal 3rdgeneration Local Area Network 12",
+      "status": "Active",
+      "createdDate": "2025-06-14T18:51:01",
+      "updatedDate": "2026-02-15T13:07:54",
+      "owner": "Karen Lee",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5388.02,
+      "description": "Home total interest each treatment."
+    },
+    {
+      "id": "c461a554-6992-47ef-9a5b-5890b3132d11",
+      "name": "Proactive real-time website 13",
+      "status": "Pending",
+      "createdDate": "2025-09-02T05:17:48",
+      "updatedDate": "2026-02-08T19:40:04",
+      "owner": "Collin Burke",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8056.41,
+      "description": "Figure water behavior service boy."
+    },
+    {
+      "id": "fb8ee368-3d96-4e2f-9ca5-0a57babac869",
+      "name": "Right-sized multimedia migration 14",
+      "status": "Active",
+      "createdDate": "2025-02-21T17:40:34",
+      "updatedDate": "2026-02-15T11:51:24",
+      "owner": "Jeffrey Noble",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7419.04,
+      "description": "Position threat put space pass since American."
+    },
+    {
+      "id": "fd5ec1c0-5215-475f-9e30-349ef77efdee",
+      "name": "Synergized heuristic flexibility 15",
+      "status": "Pending",
+      "createdDate": "2025-11-04T11:27:25",
+      "updatedDate": "2026-01-26T05:37:47",
+      "owner": "Elizabeth Wade",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8024.9,
+      "description": "My girl remain road."
+    },
+    {
+      "id": "1d27ac43-de11-4585-99c9-eefbfe4dad24",
+      "name": "Function-based 6thgeneration challenge 16",
+      "status": "Pending",
+      "createdDate": "2025-12-05T01:37:00",
+      "updatedDate": "2026-02-09T05:37:50",
+      "owner": "Sandra Hanson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9131.46,
+      "description": "Evidence pull seem."
+    },
+    {
+      "id": "3109db14-37ab-4bfa-8329-52f72b2622b8",
+      "name": "Cross-group value-added definition 17",
+      "status": "Active",
+      "createdDate": "2025-11-16T00:49:14",
+      "updatedDate": "2026-02-15T10:15:44",
+      "owner": "Vicki Perez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6209.76,
+      "description": "Follow finish prepare feeling image audience strong."
+    },
+    {
+      "id": "3d3690be-6756-4710-a343-8113fee8abd8",
+      "name": "Extended systemic protocol 18",
+      "status": "Active",
+      "createdDate": "2025-11-10T22:39:20",
+      "updatedDate": "2026-01-26T12:36:32",
+      "owner": "Lori Lynch",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1555.59,
+      "description": "Ok space head."
+    },
+    {
+      "id": "ed47add4-eb9c-4f16-8c80-84be395bbcb8",
+      "name": "Distributed intermediate time-frame 19",
+      "status": "Completed",
+      "createdDate": "2025-04-19T17:54:38",
+      "updatedDate": "2026-01-26T13:04:47",
+      "owner": "David Lopez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8428.81,
+      "description": "City ready could choice admit."
+    },
+    {
+      "id": "3a11dcb5-0e41-48c6-bc54-86a89845f551",
+      "name": "Visionary methodical info-mediaries 20",
+      "status": "Pending",
+      "createdDate": "2025-02-24T12:19:15",
+      "updatedDate": "2026-02-09T20:06:22",
+      "owner": "Meghan Perry",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2363.33,
+      "description": "Than bag voice hand whole western."
+    },
+    {
+      "id": "6ce19b6e-1230-4ce3-801f-dd501328bb46",
+      "name": "Front-line full-range help-desk 21",
+      "status": "Completed",
+      "createdDate": "2026-01-21T11:16:46",
+      "updatedDate": "2026-01-21T16:47:55",
+      "owner": "Zachary Lynch",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 703.1,
+      "description": "Star hard improve teach."
+    },
+    {
+      "id": "7c076e51-d807-47d7-82f2-b6fdbbfb17cd",
+      "name": "Open-architected fault-tolerant structure 22",
+      "status": "Inactive",
+      "createdDate": "2025-11-08T11:03:09",
+      "updatedDate": "2026-01-25T14:29:40",
+      "owner": "Angel Mclaughlin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1356.48,
+      "description": "Republican try then national together doctor."
+    },
+    {
+      "id": "e0e1ad68-dd59-40f0-b41e-a2e457c90d25",
+      "name": "Implemented modular solution 23",
+      "status": "Pending",
+      "createdDate": "2025-11-02T19:30:36",
+      "updatedDate": "2026-01-29T21:24:28",
+      "owner": "Christopher Krueger",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 336.52,
+      "description": "These benefit behavior certainly difficult room agency those."
+    },
+    {
+      "id": "1bce05e5-779f-4d6d-be6e-9b8fe396daac",
+      "name": "Progressive web-enabled knowledge user 24",
+      "status": "Inactive",
+      "createdDate": "2025-07-06T03:40:41",
+      "updatedDate": "2026-02-01T22:50:22",
+      "owner": "Melissa Allison",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 551.14,
+      "description": "Significant check share different member."
+    },
+    {
+      "id": "5df5c37f-72b5-4c5a-b26e-95b49ab8e262",
+      "name": "Down-sized background capacity 25",
+      "status": "Pending",
+      "createdDate": "2026-02-09T11:25:18",
+      "updatedDate": "2026-02-03T19:06:30",
+      "owner": "Lisa Flynn",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3477.12,
+      "description": "Check painting board mother father possible."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

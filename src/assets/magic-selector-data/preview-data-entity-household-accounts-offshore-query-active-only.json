@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-household",
+  "queryId": "query-active-only",
+  "totalCount": 303,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "c1b44afc-c489-4f58-baec-dece6faac92c",
+      "name": "Fundamental real-time adapter 1",
+      "status": "Active",
+      "createdDate": "2025-03-23T12:47:24",
+      "updatedDate": "2026-02-01T14:43:54",
+      "owner": "Matthew Mccoy",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3541.09,
+      "description": "Rock article how stop group."
+    },
+    {
+      "id": "33d07f0d-23f4-4098-8b29-2823ed15514c",
+      "name": "Persevering holistic system engine 2",
+      "status": "Active",
+      "createdDate": "2025-11-17T20:40:15",
+      "updatedDate": "2026-02-04T09:39:55",
+      "owner": "Erica Rodriguez",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5762.5,
+      "description": "Total summer security check since number."
+    },
+    {
+      "id": "8a67b244-0a51-4187-ad1d-d4852cdafba2",
+      "name": "Horizontal explicit support 3",
+      "status": "Pending",
+      "createdDate": "2025-10-06T17:03:29",
+      "updatedDate": "2026-02-01T16:43:15",
+      "owner": "Judy Murphy",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4314.78,
+      "description": "Mother past together can parent name."
+    },
+    {
+      "id": "b2929fa6-33c2-4b0a-864d-93cca5cd149f",
+      "name": "Profound bifurcated complexity 4",
+      "status": "Pending",
+      "createdDate": "2025-08-08T08:05:58",
+      "updatedDate": "2026-02-07T01:12:49",
+      "owner": "Steven Jones",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8953.88,
+      "description": "Daughter sea tonight claim west reason plan miss."
+    },
+    {
+      "id": "b0946a62-8523-4560-93da-681a9ac953ed",
+      "name": "Distributed bi-directional forecast 5",
+      "status": "Inactive",
+      "createdDate": "2025-06-24T00:32:07",
+      "updatedDate": "2026-01-18T15:34:51",
+      "owner": "Nathaniel Bernard",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3709.56,
+      "description": "Campaign person tonight."
+    },
+    {
+      "id": "3b736240-28a2-4f57-94b9-a67c24e47432",
+      "name": "Right-sized executive encoding 6",
+      "status": "Active",
+      "createdDate": "2025-07-05T07:16:56",
+      "updatedDate": "2026-01-28T21:45:45",
+      "owner": "Charles Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 458.53,
+      "description": "Various everything field power."
+    },
+    {
+      "id": "cdcfb893-fafc-4aa7-b8f8-be3b43c5a625",
+      "name": "Focused optimal challenge 7",
+      "status": "Completed",
+      "createdDate": "2025-12-04T23:45:14",
+      "updatedDate": "2026-02-07T15:03:58",
+      "owner": "Leslie Rogers DDS",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8749.05,
+      "description": "Pay part determine determine."
+    },
+    {
+      "id": "d24153f2-d3f7-4fa1-bbe4-96261712841c",
+      "name": "Centralized intangible circuit 8",
+      "status": "Completed",
+      "createdDate": "2025-08-23T22:18:57",
+      "updatedDate": "2026-01-30T19:06:55",
+      "owner": "Michael Ryan",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8609.98,
+      "description": "Stop on baby set song."
+    },
+    {
+      "id": "86840daf-97a8-4ae6-9324-141b92f4f176",
+      "name": "Configurable real-time protocol 9",
+      "status": "Inactive",
+      "createdDate": "2025-12-28T01:26:16",
+      "updatedDate": "2026-02-12T23:54:05",
+      "owner": "James Edwards",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6628.56,
+      "description": "Investment dark my result everyone your."
+    },
+    {
+      "id": "007f81b3-7b35-4e51-a11d-f19cc0c7d7bb",
+      "name": "Multi-layered 24/7 methodology 10",
+      "status": "Active",
+      "createdDate": "2025-08-14T07:11:48",
+      "updatedDate": "2026-01-26T12:21:30",
+      "owner": "Albert Daniel",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6317.54,
+      "description": "Recognize success which should stand charge debate."
+    },
+    {
+      "id": "62471edc-92fb-4144-a910-a6f0ba145481",
+      "name": "Reactive system-worthy functionalities 11",
+      "status": "Inactive",
+      "createdDate": "2025-10-09T12:16:23",
+      "updatedDate": "2026-02-05T12:26:14",
+      "owner": "Keith Benson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1879.6,
+      "description": "For different share kitchen red."
+    },
+    {
+      "id": "95cfd508-0968-4fc7-bb03-0ccc59708b8e",
+      "name": "Diverse foreground extranet 12",
+      "status": "Inactive",
+      "createdDate": "2025-12-01T13:39:50",
+      "updatedDate": "2026-02-06T13:07:51",
+      "owner": "Laura Herrera DDS",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2396.72,
+      "description": "Truth growth here along when tell."
+    },
+    {
+      "id": "7d67eda8-2955-442d-9363-3653ff3ab9be",
+      "name": "Total needs-based focus group 13",
+      "status": "Completed",
+      "createdDate": "2025-10-06T17:30:17",
+      "updatedDate": "2026-01-24T12:13:49",
+      "owner": "Tara Cole",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3250.05,
+      "description": "Son thank else dog argue."
+    },
+    {
+      "id": "c95bdba0-d754-48d6-95ee-8408677b2496",
+      "name": "Reverse-engineered eco-centric project 14",
+      "status": "Pending",
+      "createdDate": "2025-05-22T22:55:52",
+      "updatedDate": "2026-01-24T09:49:51",
+      "owner": "Charles Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2959.97,
+      "description": "Matter organization affect effort already test."
+    },
+    {
+      "id": "19595321-cc29-4645-9e60-1ad91f2451aa",
+      "name": "Vision-oriented modular capacity 15",
+      "status": "Pending",
+      "createdDate": "2025-12-11T17:09:33",
+      "updatedDate": "2026-01-29T19:32:26",
+      "owner": "Tony Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6321.21,
+      "description": "Outside idea audience magazine research local nothing."
+    },
+    {
+      "id": "71bc1add-f08b-42f1-a2b3-4ddd5b8cf69b",
+      "name": "Open-architected stable benchmark 16",
+      "status": "Pending",
+      "createdDate": "2025-05-21T08:23:08",
+      "updatedDate": "2026-01-27T23:24:21",
+      "owner": "Emma Nelson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2994.06,
+      "description": "Money stage road any."
+    },
+    {
+      "id": "e9dbbabc-a128-4b17-9242-ad0bc572fb5f",
+      "name": "Decentralized high-level installation 17",
+      "status": "Inactive",
+      "createdDate": "2025-09-03T16:32:10",
+      "updatedDate": "2026-02-11T11:30:12",
+      "owner": "David Woods",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8478.66,
+      "description": "Account a network concern only more performance."
+    },
+    {
+      "id": "944dba3c-efe5-4017-9dd6-3dd2c9e2be82",
+      "name": "Digitized maximized budgetary management 18",
+      "status": "Active",
+      "createdDate": "2025-07-17T15:19:28",
+      "updatedDate": "2026-02-08T09:02:23",
+      "owner": "Jessica Stein",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9439.66,
+      "description": "Ground upon occur hope always national base."
+    },
+    {
+      "id": "1e6bd200-cc71-4479-828c-ab058776ec1d",
+      "name": "Pre-emptive even-keeled capability 19",
+      "status": "Pending",
+      "createdDate": "2025-08-01T23:49:06",
+      "updatedDate": "2026-02-01T00:28:43",
+      "owner": "Donald Jones",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4623.61,
+      "description": "Computer character effect."
+    },
+    {
+      "id": "50fa6c9d-90c4-4857-b744-04eaaa1833e0",
+      "name": "Reduced multi-state protocol 20",
+      "status": "Pending",
+      "createdDate": "2025-09-04T07:31:49",
+      "updatedDate": "2026-01-24T09:55:29",
+      "owner": "Renee Foley DVM",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2624.37,
+      "description": "Down case remain over along."
+    },
+    {
+      "id": "1413a036-111f-44c1-8922-3ad469bbed9b",
+      "name": "Digitized incremental infrastructure 21",
+      "status": "Active",
+      "createdDate": "2025-05-12T01:36:41",
+      "updatedDate": "2026-02-14T02:24:46",
+      "owner": "Jose Howell",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2096.98,
+      "description": "Bag total world."
+    },
+    {
+      "id": "363161d9-802d-422a-9b35-98c2cf2b3fa9",
+      "name": "Optional 24hour open architecture 22",
+      "status": "Pending",
+      "createdDate": "2025-08-17T22:32:20",
+      "updatedDate": "2026-02-04T00:31:05",
+      "owner": "Larry Bell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 652.95,
+      "description": "Through take animal choice ground wait decide."
+    },
+    {
+      "id": "7fde94de-5dda-4b9a-9089-f307cc8e4fdb",
+      "name": "Networked next generation encoding 23",
+      "status": "Pending",
+      "createdDate": "2025-06-21T21:25:14",
+      "updatedDate": "2026-01-25T14:59:44",
+      "owner": "Adam Maldonado",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9694.86,
+      "description": "Security group tax person."
+    },
+    {
+      "id": "d6135ece-753f-436b-9424-ddd53d71e85c",
+      "name": "Public-key demand-driven hardware 24",
+      "status": "Completed",
+      "createdDate": "2025-11-11T20:59:23",
+      "updatedDate": "2026-02-07T08:02:57",
+      "owner": "Stacey Harris",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4099.38,
+      "description": "Would article always goal much president."
+    },
+    {
+      "id": "a5b1b7b4-c68a-4753-9c2d-a22f4f2bc136",
+      "name": "Secured real-time toolset 25",
+      "status": "Pending",
+      "createdDate": "2025-07-29T20:53:03",
+      "updatedDate": "2026-01-30T14:34:09",
+      "owner": "Christopher Rangel",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9207.66,
+      "description": "Your positive experience affect use make."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

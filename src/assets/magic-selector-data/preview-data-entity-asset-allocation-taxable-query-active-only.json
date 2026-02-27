@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-assetallocation",
+  "queryId": "query-active-only",
+  "totalCount": 184,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "4b89d8b6-dce0-41e2-9cd8-a27aedd36ca2",
+      "name": "Business-focused bandwidth-monitored neural-net 1",
+      "status": "Active",
+      "createdDate": "2025-05-26T09:18:34",
+      "updatedDate": "2026-01-30T10:29:40",
+      "owner": "Jamie Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8997.85,
+      "description": "Statement scene must happen red."
+    },
+    {
+      "id": "24970416-e4d5-4064-b9ba-b9727d7d3bcf",
+      "name": "Mandatory dedicated budgetary management 2",
+      "status": "Completed",
+      "createdDate": "2025-08-14T11:02:22",
+      "updatedDate": "2026-02-11T22:31:04",
+      "owner": "Karen Long",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2892.86,
+      "description": "Build pressure medical use back least teacher."
+    },
+    {
+      "id": "3cdef5de-2ecb-40dc-be9f-0a167d1b435c",
+      "name": "Inverse modular solution 3",
+      "status": "Pending",
+      "createdDate": "2025-02-21T00:39:06",
+      "updatedDate": "2026-01-19T00:31:33",
+      "owner": "Chad Blair",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8698.31,
+      "description": "Think available eye company visit."
+    },
+    {
+      "id": "48765869-5339-4375-863b-93a39aec363b",
+      "name": "Networked stable system engine 4",
+      "status": "Completed",
+      "createdDate": "2025-10-09T19:55:58",
+      "updatedDate": "2026-02-01T21:01:22",
+      "owner": "Alan Meyer",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8089.05,
+      "description": "Short cup sell ago southern there person."
+    },
+    {
+      "id": "bd06d969-35d3-4e9e-94d8-a9387732ef6b",
+      "name": "Switchable holistic attitude 5",
+      "status": "Pending",
+      "createdDate": "2025-11-15T03:50:51",
+      "updatedDate": "2026-01-26T10:22:58",
+      "owner": "Kathleen Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9814.48,
+      "description": "You person from."
+    },
+    {
+      "id": "39eb522e-9923-42d0-87af-acc9721405fd",
+      "name": "Multi-tiered actuating project 6",
+      "status": "Completed",
+      "createdDate": "2025-09-28T04:03:57",
+      "updatedDate": "2026-01-31T20:27:42",
+      "owner": "Daniel Joyce",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7169.77,
+      "description": "Enter major court air half."
+    },
+    {
+      "id": "8a15afec-c07e-4e2e-a10b-d2de2f6ead1d",
+      "name": "Customer-focused encompassing infrastructure 7",
+      "status": "Active",
+      "createdDate": "2025-06-21T12:40:08",
+      "updatedDate": "2026-02-15T12:24:42",
+      "owner": "Traci Owens",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8985.25,
+      "description": "Born training recognize tax notice again."
+    },
+    {
+      "id": "29d2b1f8-1d01-4f29-b3c2-dc04431dd3f5",
+      "name": "Business-focused maximized implementation 8",
+      "status": "Inactive",
+      "createdDate": "2026-02-11T20:14:02",
+      "updatedDate": "2026-02-16T09:52:33",
+      "owner": "Teresa Johnson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6063.97,
+      "description": "Investment kid treat measure."
+    },
+    {
+      "id": "d446d006-c575-4cf3-9da1-510fb2b1969b",
+      "name": "Advanced actuating portal 9",
+      "status": "Active",
+      "createdDate": "2025-10-14T22:28:01",
+      "updatedDate": "2026-02-09T14:42:16",
+      "owner": "Lisa Terry",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7830.17,
+      "description": "Over control along long on goal term."
+    },
+    {
+      "id": "84934cfa-47fb-42df-bdd5-c96720654689",
+      "name": "Team-oriented client-server framework 10",
+      "status": "Active",
+      "createdDate": "2026-01-10T06:51:05",
+      "updatedDate": "2026-02-15T09:46:43",
+      "owner": "Jennifer Conway",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9197.03,
+      "description": "Edge range friend list be ten and."
+    },
+    {
+      "id": "81d384e9-6e2f-4e28-8cc1-285fe75626ae",
+      "name": "Synchronized disintermediate forecast 11",
+      "status": "Active",
+      "createdDate": "2026-01-19T21:33:41",
+      "updatedDate": "2026-01-31T20:10:43",
+      "owner": "Nicole Miller",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3770.88,
+      "description": "Explain design eat trade fact author office."
+    },
+    {
+      "id": "575f2bd0-d0f7-4215-ba3c-7a87d119335f",
+      "name": "Realigned client-driven concept 12",
+      "status": "Completed",
+      "createdDate": "2025-12-16T04:18:50",
+      "updatedDate": "2026-02-02T03:30:57",
+      "owner": "Brandi Nunez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 935.88,
+      "description": "Goal first identify prove."
+    },
+    {
+      "id": "40bccbea-2fbb-4689-9b24-a15c6776b63a",
+      "name": "Future-proofed secondary array 13",
+      "status": "Completed",
+      "createdDate": "2026-02-06T03:19:00",
+      "updatedDate": "2026-02-11T03:29:47",
+      "owner": "Joel Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3670.12,
+      "description": "Carry reach name cell popular our."
+    },
+    {
+      "id": "32f2773f-d429-4509-a5ee-65bb2fab1e0f",
+      "name": "Pre-emptive user-facing hardware 14",
+      "status": "Active",
+      "createdDate": "2025-04-20T16:28:10",
+      "updatedDate": "2026-02-14T21:57:25",
+      "owner": "Rebecca Villarreal",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8676.27,
+      "description": "State difficult pretty figure few yes treatment."
+    },
+    {
+      "id": "4859e94b-ba99-4bb0-8036-dc9c7fd060c4",
+      "name": "Configurable disintermediate Internet solution 15",
+      "status": "Completed",
+      "createdDate": "2025-06-06T18:28:26",
+      "updatedDate": "2026-01-21T22:18:09",
+      "owner": "Terrence Melendez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3519.55,
+      "description": "Six contain office wide truth."
+    },
+    {
+      "id": "ce213db1-9475-4b5e-b46e-845ce8692664",
+      "name": "Sharable interactive interface 16",
+      "status": "Inactive",
+      "createdDate": "2025-03-23T22:25:28",
+      "updatedDate": "2026-02-13T16:10:40",
+      "owner": "Kim Williams",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5399.99,
+      "description": "Do film type wall to her material."
+    },
+    {
+      "id": "ff3bb8bc-7904-4390-a66f-9182aac7a49a",
+      "name": "Cross-group national emulation 17",
+      "status": "Active",
+      "createdDate": "2025-11-11T18:41:19",
+      "updatedDate": "2026-02-04T19:38:45",
+      "owner": "Thomas Beltran",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1354.11,
+      "description": "Population tough sit us let almost production."
+    },
+    {
+      "id": "1e96d37b-be0e-4074-aad7-5e9a95d06d19",
+      "name": "Enterprise-wide multimedia matrices 18",
+      "status": "Active",
+      "createdDate": "2025-02-28T07:54:32",
+      "updatedDate": "2026-02-02T12:10:06",
+      "owner": "Regina Montgomery",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9019.28,
+      "description": "Instead address bill upon about."
+    },
+    {
+      "id": "ca6d81e7-ec03-4e82-9856-b569b9db04e4",
+      "name": "Profit-focused didactic extranet 19",
+      "status": "Active",
+      "createdDate": "2025-06-09T07:34:21",
+      "updatedDate": "2026-01-24T06:58:39",
+      "owner": "Jennifer Lee",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7250.33,
+      "description": "Now whole whose recently many."
+    },
+    {
+      "id": "09883b12-6097-4039-9829-24e639cda612",
+      "name": "Extended client-driven paradigm 20",
+      "status": "Pending",
+      "createdDate": "2025-10-10T14:00:11",
+      "updatedDate": "2026-01-26T00:10:29",
+      "owner": "Christopher Hill",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2132.01,
+      "description": "Produce mouth plant talk."
+    },
+    {
+      "id": "a76edb89-5413-4d68-9941-6b50fed279b7",
+      "name": "Team-oriented regional infrastructure 21",
+      "status": "Completed",
+      "createdDate": "2025-09-23T20:36:58",
+      "updatedDate": "2026-01-25T18:42:51",
+      "owner": "Jennifer Robbins",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6077.19,
+      "description": "Toward top person Democrat art check."
+    },
+    {
+      "id": "ee31fb59-8682-41c2-aba8-9fb6fd1ff9ed",
+      "name": "Function-based user-facing forecast 22",
+      "status": "Active",
+      "createdDate": "2025-11-21T14:32:30",
+      "updatedDate": "2026-02-07T03:25:02",
+      "owner": "Patricia Bennett",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 362.57,
+      "description": "Itself beautiful everybody Mrs language just."
+    },
+    {
+      "id": "9f613a14-bcce-48f6-8bad-b3dc0a5d078f",
+      "name": "Proactive upward-trending service-desk 23",
+      "status": "Completed",
+      "createdDate": "2025-06-13T13:47:21",
+      "updatedDate": "2026-02-15T22:32:40",
+      "owner": "Jeffrey Miller",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 6522.27,
+      "description": "North field break cause."
+    },
+    {
+      "id": "91b83ec0-8676-4c30-b931-c04cf236611c",
+      "name": "Re-engineered transitional interface 24",
+      "status": "Active",
+      "createdDate": "2025-06-04T00:31:54",
+      "updatedDate": "2026-02-14T15:41:16",
+      "owner": "Rebecca Jackson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4407.78,
+      "description": "Week rule add economy."
+    },
+    {
+      "id": "452193b4-0360-4420-84d4-9309cceebcaa",
+      "name": "Decentralized client-driven benchmark 25",
+      "status": "Inactive",
+      "createdDate": "2025-10-19T16:23:40",
+      "updatedDate": "2026-02-16T14:53:18",
+      "owner": "Jessica Thompson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3233.87,
+      "description": "Keep explain guess child really maintain art."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

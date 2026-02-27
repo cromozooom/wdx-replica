@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-beneficiary",
+  "queryId": "query-all-records",
+  "totalCount": 94,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "faef783e-03c7-4abc-8a15-43889336109d",
+      "name": "Organized encompassing capability 1",
+      "status": "Inactive",
+      "createdDate": "2026-01-18T16:11:04",
+      "updatedDate": "2026-02-05T06:48:14",
+      "owner": "Debbie Li",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9099.46,
+      "description": "Sit actually baby."
+    },
+    {
+      "id": "47f72d84-b4ca-4f18-acb0-599263e8b22d",
+      "name": "Reverse-engineered methodical analyzer 2",
+      "status": "Inactive",
+      "createdDate": "2025-11-16T05:10:41",
+      "updatedDate": "2026-02-08T22:27:50",
+      "owner": "Jay Mitchell",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4961.31,
+      "description": "Various yard evening through likely weight."
+    },
+    {
+      "id": "36c4878d-b553-4646-8718-475401e12885",
+      "name": "Future-proofed system-worthy workforce 3",
+      "status": "Inactive",
+      "createdDate": "2025-02-19T15:44:23",
+      "updatedDate": "2026-01-26T14:21:13",
+      "owner": "Mrs. Danielle Holmes",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3191.13,
+      "description": "Plan bag item result picture possible."
+    },
+    {
+      "id": "195ce24b-3426-484a-b90f-4591de1b065d",
+      "name": "Balanced 24/7 definition 4",
+      "status": "Pending",
+      "createdDate": "2025-12-21T10:21:57",
+      "updatedDate": "2026-02-01T18:53:01",
+      "owner": "Randy Reed",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 6783.58,
+      "description": "Kid economy no admit magazine father."
+    },
+    {
+      "id": "d7374f7b-6ef7-4c71-8767-a1a9dffb89d9",
+      "name": "Integrated 24hour utilization 5",
+      "status": "Pending",
+      "createdDate": "2025-02-28T10:10:42",
+      "updatedDate": "2026-02-01T15:27:55",
+      "owner": "Michelle Walton",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5531.57,
+      "description": "Throughout happy production edge nature."
+    },
+    {
+      "id": "2f2b0184-1262-4446-ab91-321161559cf6",
+      "name": "Function-based attitude-oriented parallelism 6",
+      "status": "Completed",
+      "createdDate": "2026-01-31T05:07:39",
+      "updatedDate": "2026-02-06T20:16:17",
+      "owner": "Nicole Anderson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5336.94,
+      "description": "Part its doctor girl."
+    },
+    {
+      "id": "088c9230-c3cd-4439-8a43-58d19de80bd3",
+      "name": "Profound didactic forecast 7",
+      "status": "Active",
+      "createdDate": "2026-01-29T08:33:55",
+      "updatedDate": "2026-01-25T18:53:55",
+      "owner": "Dr. Michelle Davis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3273.65,
+      "description": "Church by rather."
+    },
+    {
+      "id": "84da4ae1-14c3-43cb-a076-1ce7b76053f1",
+      "name": "Reactive interactive matrices 8",
+      "status": "Pending",
+      "createdDate": "2025-07-13T06:24:52",
+      "updatedDate": "2026-01-18T18:20:30",
+      "owner": "Michelle Blackburn",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7288.42,
+      "description": "Weight picture full then why your."
+    },
+    {
+      "id": "1f96bed1-0848-4454-8a8f-3ce1aabcc8cb",
+      "name": "User-friendly attitude-oriented product 9",
+      "status": "Active",
+      "createdDate": "2025-10-02T20:32:42",
+      "updatedDate": "2026-01-31T00:57:45",
+      "owner": "Kevin Cantu",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2141.68,
+      "description": "Might tell already word."
+    },
+    {
+      "id": "b98ab645-dabc-4143-9f2d-210333595d14",
+      "name": "Assimilated fresh-thinking middleware 10",
+      "status": "Pending",
+      "createdDate": "2025-03-22T22:06:00",
+      "updatedDate": "2026-01-18T19:52:33",
+      "owner": "Janet Baxter",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 309.54,
+      "description": "Difficult among federal senior."
+    },
+    {
+      "id": "741022a9-0562-401c-a35e-1ede436a07af",
+      "name": "Vision-oriented regional help-desk 11",
+      "status": "Inactive",
+      "createdDate": "2025-03-12T10:47:20",
+      "updatedDate": "2026-01-22T07:45:54",
+      "owner": "Lisa Martin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3257.5,
+      "description": "Second floor interest really."
+    },
+    {
+      "id": "4f67f98c-4774-4a2c-ba48-72607377e40a",
+      "name": "Reverse-engineered well-modulated function 12",
+      "status": "Inactive",
+      "createdDate": "2025-05-30T05:11:22",
+      "updatedDate": "2026-02-02T18:44:43",
+      "owner": "Dr. Rebecca Lewis",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2242.2,
+      "description": "Western hotel her wish."
+    },
+    {
+      "id": "8c528d0b-3165-41b2-a072-7f3fb4a33633",
+      "name": "Robust heuristic project 13",
+      "status": "Completed",
+      "createdDate": "2025-11-25T02:53:33",
+      "updatedDate": "2026-02-09T21:50:59",
+      "owner": "Ronald Oliver",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6003.28,
+      "description": "Deal affect day successful."
+    },
+    {
+      "id": "65c5de63-6fd1-4fef-bfc1-c049f9d38001",
+      "name": "Customizable web-enabled functionalities 14",
+      "status": "Active",
+      "createdDate": "2025-04-22T20:29:09",
+      "updatedDate": "2026-01-28T17:40:16",
+      "owner": "Richard Christensen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9504.04,
+      "description": "Form magazine song edge carry."
+    },
+    {
+      "id": "7656da23-c18a-4641-978f-3ff45f122741",
+      "name": "Multi-tiered maximized forecast 15",
+      "status": "Completed",
+      "createdDate": "2025-02-20T01:42:20",
+      "updatedDate": "2026-01-31T10:48:40",
+      "owner": "Kathy Frederick",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9498.52,
+      "description": "Lead suddenly least like same consumer."
+    },
+    {
+      "id": "6650cff4-dd1d-4988-bab9-0fe26ebcc541",
+      "name": "Synergized radical neural-net 16",
+      "status": "Active",
+      "createdDate": "2025-06-05T10:47:58",
+      "updatedDate": "2026-01-22T01:59:55",
+      "owner": "Amy Hodges",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3636.78,
+      "description": "Media red picture allow."
+    },
+    {
+      "id": "0f02cc74-4d6f-41e1-bcab-e3f1ea0dd1ed",
+      "name": "Public-key eco-centric definition 17",
+      "status": "Completed",
+      "createdDate": "2026-02-16T00:49:50",
+      "updatedDate": "2026-02-05T17:00:22",
+      "owner": "Dawn Walker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7917.31,
+      "description": "Ground ever woman baby."
+    },
+    {
+      "id": "b961b380-2381-4788-82d5-a64713634747",
+      "name": "Exclusive solution-oriented pricing structure 18",
+      "status": "Inactive",
+      "createdDate": "2025-04-18T10:56:24",
+      "updatedDate": "2026-01-29T22:50:45",
+      "owner": "Luis Woodward",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 596.25,
+      "description": "Across prepare amount with."
+    },
+    {
+      "id": "622c01aa-879a-432c-acfa-5fd7a579521e",
+      "name": "Persistent optimal analyzer 19",
+      "status": "Pending",
+      "createdDate": "2025-11-26T22:37:05",
+      "updatedDate": "2026-01-27T15:11:25",
+      "owner": "Susan Jacobs",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2805.26,
+      "description": "Option close old training."
+    },
+    {
+      "id": "0bd4522f-d35a-4ec6-9e70-236a60cd150a",
+      "name": "Intuitive local contingency 20",
+      "status": "Active",
+      "createdDate": "2025-06-04T13:45:24",
+      "updatedDate": "2026-01-20T05:50:29",
+      "owner": "Amy Gregory",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5655.83,
+      "description": "Argue sometimes suggest sign."
+    },
+    {
+      "id": "c80afa22-bc75-4b86-b76d-8745133191ba",
+      "name": "Public-key 24/7 portal 21",
+      "status": "Completed",
+      "createdDate": "2025-11-19T17:03:39",
+      "updatedDate": "2026-02-10T22:05:37",
+      "owner": "Paula Mcpherson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1196.82,
+      "description": "Too arm want current."
+    },
+    {
+      "id": "55deda5b-c0a6-46e5-a598-7620ce70838a",
+      "name": "Synergistic multimedia ability 22",
+      "status": "Pending",
+      "createdDate": "2025-12-13T13:34:08",
+      "updatedDate": "2026-02-14T15:19:11",
+      "owner": "Jennifer Smith",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8133.43,
+      "description": "Your their think left record chance."
+    },
+    {
+      "id": "b0453900-f743-4817-a73d-3a939c4fcfa9",
+      "name": "Self-enabling dedicated toolset 23",
+      "status": "Inactive",
+      "createdDate": "2025-03-16T19:52:35",
+      "updatedDate": "2026-02-09T17:13:42",
+      "owner": "Dawn Marquez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2982.4,
+      "description": "Career spend stand pick."
+    },
+    {
+      "id": "703d8a54-22f9-41f1-84f5-5f099343cd08",
+      "name": "Distributed hybrid support 24",
+      "status": "Pending",
+      "createdDate": "2025-09-09T02:23:13",
+      "updatedDate": "2026-02-12T23:28:24",
+      "owner": "Daniel Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6064.99,
+      "description": "One military anyone break avoid nature deep also."
+    },
+    {
+      "id": "898b426a-5429-4341-bfe5-ac1a73986d25",
+      "name": "Programmable secondary toolset 25",
+      "status": "Pending",
+      "createdDate": "2025-04-20T21:30:28",
+      "updatedDate": "2026-01-28T19:13:20",
+      "owner": "Duane Lewis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2154.76,
+      "description": "Member put Republican another behind."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

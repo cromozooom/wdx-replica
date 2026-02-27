@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-active-only",
+  "totalCount": 231,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "7b7124f5-6d9d-450c-ba1f-5c233531f411",
+      "name": "Grass-roots web-enabled customer loyalty 1",
+      "status": "Pending",
+      "createdDate": "2025-04-07T23:31:04",
+      "updatedDate": "2026-02-14T10:47:03",
+      "owner": "Scott Henderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4920.91,
+      "description": "Six still be edge seat social wrong degree."
+    },
+    {
+      "id": "a74dae7b-bc2e-4b1b-977c-aa4cf2c852cd",
+      "name": "Stand-alone exuding website 2",
+      "status": "Active",
+      "createdDate": "2025-02-19T19:20:12",
+      "updatedDate": "2026-01-27T11:51:14",
+      "owner": "James Anderson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3813.75,
+      "description": "When miss actually black never three both get."
+    },
+    {
+      "id": "8597fb53-1db9-49f3-99fc-6f86f653869b",
+      "name": "Assimilated clear-thinking strategy 3",
+      "status": "Pending",
+      "createdDate": "2025-10-08T00:30:45",
+      "updatedDate": "2026-02-14T22:56:17",
+      "owner": "Brenda Moran",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5664.13,
+      "description": "Trade represent heavy ability interest."
+    },
+    {
+      "id": "e217ef5f-9729-4779-b57b-57c2dca8ca6a",
+      "name": "Polarized contextually-based middleware 4",
+      "status": "Completed",
+      "createdDate": "2025-03-21T02:14:52",
+      "updatedDate": "2026-01-24T10:36:50",
+      "owner": "Shawn Vega",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9040.93,
+      "description": "Thought throw treatment although cold myself order."
+    },
+    {
+      "id": "dbc5c494-6167-473d-9e8b-d92ed95beee0",
+      "name": "Up-sized mission-critical flexibility 5",
+      "status": "Inactive",
+      "createdDate": "2025-04-22T07:37:10",
+      "updatedDate": "2026-01-30T05:51:37",
+      "owner": "Angela Scott",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 569.01,
+      "description": "Success word significant so soon seem second."
+    },
+    {
+      "id": "05628d04-ed24-4c38-b190-5ede3554d4b6",
+      "name": "Profound eco-centric standardization 6",
+      "status": "Completed",
+      "createdDate": "2025-02-28T11:15:01",
+      "updatedDate": "2026-02-14T00:17:26",
+      "owner": "Cynthia Bailey",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9522.54,
+      "description": "Mission education order guess ok point."
+    },
+    {
+      "id": "c477d04d-de6e-4b38-86e1-1ce91ba6108a",
+      "name": "Phased next generation paradigm 7",
+      "status": "Pending",
+      "createdDate": "2025-06-13T14:40:06",
+      "updatedDate": "2026-01-21T06:40:22",
+      "owner": "Johnny Montgomery",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6365.51,
+      "description": "Health team season."
+    },
+    {
+      "id": "fdbbb26b-c20b-4bfe-bb24-0e8e9c41daa7",
+      "name": "Realigned secondary solution 8",
+      "status": "Completed",
+      "createdDate": "2025-10-16T20:49:49",
+      "updatedDate": "2026-02-12T23:35:49",
+      "owner": "Mary Garcia",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4130.47,
+      "description": "Common face south heavy human catch."
+    },
+    {
+      "id": "7832cc30-18b8-471b-a4d7-2f7d2209a3cc",
+      "name": "Cloned bi-directional task-force 9",
+      "status": "Active",
+      "createdDate": "2026-02-11T04:30:30",
+      "updatedDate": "2026-01-20T11:29:50",
+      "owner": "Gary Little",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3408.71,
+      "description": "Act green old better good prove movie represent."
+    },
+    {
+      "id": "80b6cef3-7a59-4932-9914-ef58aa82a488",
+      "name": "Persevering incremental success 10",
+      "status": "Inactive",
+      "createdDate": "2026-02-13T02:20:47",
+      "updatedDate": "2026-02-09T08:15:45",
+      "owner": "William Branch",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7744.9,
+      "description": "Several western nice call despite."
+    },
+    {
+      "id": "2c29fde0-f608-443e-bd4f-38a9cdff9e70",
+      "name": "Managed 5thgeneration encryption 11",
+      "status": "Inactive",
+      "createdDate": "2025-04-21T08:54:56",
+      "updatedDate": "2026-02-10T09:58:26",
+      "owner": "Donna Manning",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6033.32,
+      "description": "Low debate standard line."
+    },
+    {
+      "id": "c82fa94e-a42a-4184-acc7-9f20e265abd3",
+      "name": "Multi-channeled disintermediate algorithm 12",
+      "status": "Completed",
+      "createdDate": "2025-08-17T19:11:20",
+      "updatedDate": "2026-01-26T16:45:26",
+      "owner": "Julia Ramirez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2671.22,
+      "description": "Need particular white yeah last."
+    },
+    {
+      "id": "7270594b-4e4e-440a-8c75-8b429bf9a918",
+      "name": "Reactive context-sensitive monitoring 13",
+      "status": "Pending",
+      "createdDate": "2025-04-10T06:52:14",
+      "updatedDate": "2026-01-26T05:13:57",
+      "owner": "Corey Johnson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 207.94,
+      "description": "Early able why federal mother market generation west."
+    },
+    {
+      "id": "56fb196d-50a4-4fe2-803d-70287337c342",
+      "name": "Multi-layered bandwidth-monitored budgetary management 14",
+      "status": "Completed",
+      "createdDate": "2025-12-09T12:34:59",
+      "updatedDate": "2026-01-29T08:27:14",
+      "owner": "Douglas Thompson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 839.21,
+      "description": "Each appear three green treat sometimes outside."
+    },
+    {
+      "id": "6755018b-b5c6-4ac9-b341-e25c33033e98",
+      "name": "Up-sized executive hub 15",
+      "status": "Pending",
+      "createdDate": "2025-07-25T12:53:55",
+      "updatedDate": "2026-02-05T18:38:27",
+      "owner": "James Glover",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7085.06,
+      "description": "Beat three claim safe like."
+    },
+    {
+      "id": "2436bbc9-e170-41cc-b000-8eeee3b60779",
+      "name": "Future-proofed zero tolerance approach 16",
+      "status": "Completed",
+      "createdDate": "2025-09-01T16:10:34",
+      "updatedDate": "2026-02-08T09:57:27",
+      "owner": "Karen Gonzalez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 223.7,
+      "description": "Son region politics Republican stuff science month."
+    },
+    {
+      "id": "a1778dbc-cab8-457b-a353-b44986dea9a5",
+      "name": "Team-oriented next generation projection 17",
+      "status": "Pending",
+      "createdDate": "2025-09-25T02:39:18",
+      "updatedDate": "2026-01-29T01:26:36",
+      "owner": "Kenneth James PhD",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5022.38,
+      "description": "Research could result majority."
+    },
+    {
+      "id": "bf8466c6-a59b-4867-8232-b513fd8b2581",
+      "name": "Networked logistical alliance 18",
+      "status": "Inactive",
+      "createdDate": "2025-06-04T08:20:19",
+      "updatedDate": "2026-01-19T19:37:16",
+      "owner": "Sandra Johnson",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5411.41,
+      "description": "Matter help southern onto."
+    },
+    {
+      "id": "224dfa55-84f9-4279-a2c4-29838dcefce8",
+      "name": "Self-enabling human-resource support 19",
+      "status": "Active",
+      "createdDate": "2025-12-22T02:45:21",
+      "updatedDate": "2026-01-21T04:32:06",
+      "owner": "Gary Stevens",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4479.29,
+      "description": "Consumer power mouth leader check later."
+    },
+    {
+      "id": "fb8d3c70-f231-4c1f-9abf-674eea2f7262",
+      "name": "Ergonomic zero administration protocol 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-28T14:42:53",
+      "updatedDate": "2026-02-05T20:18:40",
+      "owner": "Edward Martin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2359.6,
+      "description": "Democrat major describe nothing news cause team."
+    },
+    {
+      "id": "4f0402d8-d4e3-4c4e-b8c3-253ea9de6e3b",
+      "name": "Up-sized methodical hub 21",
+      "status": "Completed",
+      "createdDate": "2026-02-12T22:58:02",
+      "updatedDate": "2026-02-06T23:42:37",
+      "owner": "Anthony Gould",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6567.92,
+      "description": "Time century cultural ago stuff instead."
+    },
+    {
+      "id": "b4bfdc18-fa5f-4c2e-b264-8d5b51e83180",
+      "name": "Synergistic scalable customer loyalty 22",
+      "status": "Completed",
+      "createdDate": "2025-07-27T03:14:06",
+      "updatedDate": "2026-02-09T08:17:50",
+      "owner": "Justin Gomez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1531.61,
+      "description": "Low relationship company thank rather."
+    },
+    {
+      "id": "8fc87658-ed1b-454d-b63c-ca85245389ab",
+      "name": "Virtual intermediate artificial intelligence 23",
+      "status": "Inactive",
+      "createdDate": "2025-02-24T22:12:01",
+      "updatedDate": "2026-01-31T19:48:22",
+      "owner": "Thomas Chapman",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3546.07,
+      "description": "Any hope court forget."
+    },
+    {
+      "id": "0395d097-f91a-4e80-a85c-9465d0ef430c",
+      "name": "Assimilated explicit functionalities 24",
+      "status": "Inactive",
+      "createdDate": "2026-01-19T23:34:21",
+      "updatedDate": "2026-02-17T06:41:19",
+      "owner": "Lisa Caldwell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 227.83,
+      "description": "Join young question indeed believe marriage."
+    },
+    {
+      "id": "523aaf1e-71ca-450d-aa3a-a82a081109e9",
+      "name": "Realigned maximized algorithm 25",
+      "status": "Pending",
+      "createdDate": "2025-06-21T19:04:11",
+      "updatedDate": "2026-01-18T17:51:27",
+      "owner": "Makayla Miller",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6571.47,
+      "description": "Better store hear continue term like."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

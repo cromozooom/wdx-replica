@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 64,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "49bae4b8-3659-4cfb-8e5f-5c1476b51fe5",
+      "name": "Ameliorated mission-critical challenge 1",
+      "status": "Completed",
+      "createdDate": "2025-03-14T09:48:57",
+      "updatedDate": "2026-01-27T08:01:09",
+      "owner": "Laura Walker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5962.67,
+      "description": "Role take investment western."
+    },
+    {
+      "id": "2c79ece1-6b9f-4f55-9904-3b363f6679e3",
+      "name": "Persevering multi-tasking moratorium 2",
+      "status": "Completed",
+      "createdDate": "2025-12-21T02:03:34",
+      "updatedDate": "2026-02-08T01:41:02",
+      "owner": "Jennifer Chang DVM",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3567.54,
+      "description": "American buy position piece lot."
+    },
+    {
+      "id": "5ce8a580-b1d5-44cd-9cc8-c217902ba34a",
+      "name": "Networked actuating monitoring 3",
+      "status": "Active",
+      "createdDate": "2025-05-04T10:36:59",
+      "updatedDate": "2026-01-27T10:15:25",
+      "owner": "Eric Leon",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6209.15,
+      "description": "Want rest interview case."
+    },
+    {
+      "id": "3c44ce4f-e3f9-4efe-be35-05463dd116aa",
+      "name": "Customer-focused directional frame 4",
+      "status": "Pending",
+      "createdDate": "2025-12-29T03:14:38",
+      "updatedDate": "2026-01-31T21:30:54",
+      "owner": "Laura Contreras",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6938.73,
+      "description": "Approach memory someone least year all shoulder."
+    },
+    {
+      "id": "93587791-f118-4166-943a-9d33addee4ff",
+      "name": "Multi-layered radical synergy 5",
+      "status": "Completed",
+      "createdDate": "2025-04-17T08:02:18",
+      "updatedDate": "2026-01-22T10:41:43",
+      "owner": "Stephen Terry",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 9560.28,
+      "description": "Much just political land much."
+    },
+    {
+      "id": "81fbbc23-9d2d-42f1-beab-4c7a9fb3384b",
+      "name": "Decentralized well-modulated leverage 6",
+      "status": "Pending",
+      "createdDate": "2025-07-21T16:55:10",
+      "updatedDate": "2026-02-16T20:27:07",
+      "owner": "James Smith",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 684.62,
+      "description": "Quite field even goal bank."
+    },
+    {
+      "id": "aa771548-2a9c-41d7-aa2e-054165fb7262",
+      "name": "Secured user-facing core 7",
+      "status": "Inactive",
+      "createdDate": "2025-05-26T23:25:16",
+      "updatedDate": "2026-02-10T06:08:33",
+      "owner": "Scott Hodges",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 2304.31,
+      "description": "Really apply why free my senior."
+    },
+    {
+      "id": "752aec2a-4df2-4a3c-b02c-6907b2cfde75",
+      "name": "De-engineered interactive artificial intelligence 8",
+      "status": "Completed",
+      "createdDate": "2025-07-10T07:29:39",
+      "updatedDate": "2026-02-01T16:07:14",
+      "owner": "Jason Butler",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4202.79,
+      "description": "Owner school fast raise for require girl."
+    },
+    {
+      "id": "74095347-a26e-4173-bcc1-99debec9d057",
+      "name": "Total intangible task-force 9",
+      "status": "Pending",
+      "createdDate": "2025-08-06T17:16:18",
+      "updatedDate": "2026-01-24T17:37:15",
+      "owner": "Amy Palmer",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2229.92,
+      "description": "Each five foot everything."
+    },
+    {
+      "id": "2569f40a-be45-4563-8ff0-6ce78e91b4bf",
+      "name": "De-engineered responsive standardization 10",
+      "status": "Active",
+      "createdDate": "2025-05-22T11:21:27",
+      "updatedDate": "2026-02-14T03:18:13",
+      "owner": "Aimee Porter",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 731.44,
+      "description": "Teach different these so teacher."
+    },
+    {
+      "id": "599522bc-49f3-42ec-9159-acca5755edf6",
+      "name": "Optimized scalable concept 11",
+      "status": "Completed",
+      "createdDate": "2025-08-03T02:10:30",
+      "updatedDate": "2026-01-24T07:07:59",
+      "owner": "Brian Welch",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 6193.91,
+      "description": "Surface any reason provide east specific."
+    },
+    {
+      "id": "0749ef1c-5312-4c7c-aace-bafb3a21d1e3",
+      "name": "Universal local definition 12",
+      "status": "Active",
+      "createdDate": "2025-12-27T01:33:20",
+      "updatedDate": "2026-01-19T13:50:44",
+      "owner": "William Thomas",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 235.13,
+      "description": "Matter gun send."
+    },
+    {
+      "id": "271ef327-ca29-4a98-a89f-e51ea2d1e9bd",
+      "name": "Triple-buffered responsive strategy 13",
+      "status": "Inactive",
+      "createdDate": "2025-05-23T12:20:07",
+      "updatedDate": "2026-02-11T10:58:32",
+      "owner": "Hannah Lopez",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3819.06,
+      "description": "Everything follow concern money but center environment."
+    },
+    {
+      "id": "e290c0a2-69a0-4e63-b957-551a35d28aed",
+      "name": "Horizontal optimal collaboration 14",
+      "status": "Active",
+      "createdDate": "2025-03-14T14:30:38",
+      "updatedDate": "2026-01-25T08:32:43",
+      "owner": "Cody Hurst",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7092.52,
+      "description": "Sport fact short cultural pretty likely our million."
+    },
+    {
+      "id": "92c4a397-6315-4a69-928e-450d2a66ee04",
+      "name": "Total grid-enabled database 15",
+      "status": "Pending",
+      "createdDate": "2025-11-08T05:30:39",
+      "updatedDate": "2026-01-25T22:39:30",
+      "owner": "Carla Rivera",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9132.97,
+      "description": "Increase true hold loss at approach."
+    },
+    {
+      "id": "26f0343c-836b-41a2-a4bc-d7565e61d38e",
+      "name": "Proactive neutral application 16",
+      "status": "Completed",
+      "createdDate": "2025-10-24T18:54:59",
+      "updatedDate": "2026-02-05T17:30:14",
+      "owner": "Todd Maldonado",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1810.32,
+      "description": "Modern particularly color million east fact clearly."
+    },
+    {
+      "id": "fce80369-79ab-4acc-94fc-019158ea3367",
+      "name": "Total upward-trending time-frame 17",
+      "status": "Active",
+      "createdDate": "2025-08-16T10:45:15",
+      "updatedDate": "2026-01-19T14:32:37",
+      "owner": "Scott Francis",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 5247.47,
+      "description": "Character something you."
+    },
+    {
+      "id": "dcfb8a71-d11e-40a9-abb3-ddcad096df12",
+      "name": "Public-key responsive paradigm 18",
+      "status": "Inactive",
+      "createdDate": "2025-02-20T14:09:24",
+      "updatedDate": "2026-01-19T14:43:47",
+      "owner": "Anthony Burton",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7183.25,
+      "description": "Product cover act."
+    },
+    {
+      "id": "ef608c89-1605-4249-88b8-a2185bcd93c2",
+      "name": "Monitored contextually-based leverage 19",
+      "status": "Active",
+      "createdDate": "2025-07-25T20:32:41",
+      "updatedDate": "2026-02-04T19:01:31",
+      "owner": "Joshua Taylor",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 271.61,
+      "description": "Watch add campaign movie quality Mrs range."
+    },
+    {
+      "id": "e00e8623-24f6-4f7a-bf75-f30aca8f3d89",
+      "name": "Down-sized next generation algorithm 20",
+      "status": "Pending",
+      "createdDate": "2025-09-23T23:59:00",
+      "updatedDate": "2026-02-07T19:19:47",
+      "owner": "Derek Clark",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3683.97,
+      "description": "Drop might why early."
+    },
+    {
+      "id": "a314a139-728f-45d5-aa1e-40219e779c3a",
+      "name": "Function-based exuding website 21",
+      "status": "Pending",
+      "createdDate": "2025-06-09T21:37:37",
+      "updatedDate": "2026-02-07T00:58:34",
+      "owner": "Thomas Fox",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9664.13,
+      "description": "Drop may almost draw."
+    },
+    {
+      "id": "9cf5a21a-eef3-45c3-bd89-6f22f02c1c07",
+      "name": "Optimized modular Graphic Interface 22",
+      "status": "Inactive",
+      "createdDate": "2025-05-09T22:57:17",
+      "updatedDate": "2026-01-23T10:38:34",
+      "owner": "Steven Jones",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7901.29,
+      "description": "White bag care stock."
+    },
+    {
+      "id": "08570bb9-712f-4a8e-895d-869088a62dbe",
+      "name": "Persevering interactive utilization 23",
+      "status": "Inactive",
+      "createdDate": "2025-08-25T17:20:36",
+      "updatedDate": "2026-02-11T00:37:54",
+      "owner": "James Morse",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3551.6,
+      "description": "Hit population few himself option response how."
+    },
+    {
+      "id": "b4f8ca58-10aa-4c91-a84e-f96ca19489ec",
+      "name": "Pre-emptive bottom-line Internet solution 24",
+      "status": "Pending",
+      "createdDate": "2026-01-24T20:35:58",
+      "updatedDate": "2026-01-30T05:14:47",
+      "owner": "Lucas Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9858.16,
+      "description": "Either something suddenly could image choose physical."
+    },
+    {
+      "id": "ee6e1906-6cac-4a4e-97b8-d7f65608d0a9",
+      "name": "Reverse-engineered dedicated toolset 25",
+      "status": "Completed",
+      "createdDate": "2026-01-30T09:15:37",
+      "updatedDate": "2026-01-28T08:11:23",
+      "owner": "Sharon Harrison",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 8924.24,
+      "description": "Organization pick drop across about form fine."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

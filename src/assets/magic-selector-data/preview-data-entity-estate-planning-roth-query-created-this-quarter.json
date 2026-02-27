@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-created-this-quarter",
+  "totalCount": 1275,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "f76f0332-2f47-4b15-b3f1-45abe4d3819b",
+      "name": "Vision-oriented needs-based ability 1",
+      "status": "Active",
+      "createdDate": "2025-03-27T10:48:07",
+      "updatedDate": "2026-02-16T00:43:48",
+      "owner": "Laura Jones",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6939.02,
+      "description": "Around network race street loss name."
+    },
+    {
+      "id": "8bed4967-94ce-4aae-8049-c3ed07324dd5",
+      "name": "Function-based web-enabled hardware 2",
+      "status": "Pending",
+      "createdDate": "2025-05-31T11:05:20",
+      "updatedDate": "2026-02-02T05:02:56",
+      "owner": "Misty Patterson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2174.05,
+      "description": "Garden peace notice along difficult."
+    },
+    {
+      "id": "ac772001-c83b-4c8b-b4f0-1f583e30c4a8",
+      "name": "Phased incremental application 3",
+      "status": "Inactive",
+      "createdDate": "2025-04-15T19:23:03",
+      "updatedDate": "2026-02-03T20:27:11",
+      "owner": "Ronald Haynes",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3287.4,
+      "description": "Against trade fill lead contain message a."
+    },
+    {
+      "id": "ceffe560-0d4f-492d-8295-3f20666a936e",
+      "name": "Customer-focused tangible architecture 4",
+      "status": "Active",
+      "createdDate": "2026-01-14T13:43:36",
+      "updatedDate": "2026-01-23T10:31:05",
+      "owner": "Pedro Russell",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1618.82,
+      "description": "Much history Mr southern paper."
+    },
+    {
+      "id": "6f0eb704-232c-4860-a463-b38a8f2a9578",
+      "name": "Visionary secondary knowledgebase 5",
+      "status": "Active",
+      "createdDate": "2025-09-03T15:32:24",
+      "updatedDate": "2026-02-14T23:40:02",
+      "owner": "Jacob Ramirez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1804.27,
+      "description": "Pattern student subject beyond."
+    },
+    {
+      "id": "af60d592-1119-4f5f-9ddc-2f7128ff0033",
+      "name": "Multi-layered demand-driven matrix 6",
+      "status": "Completed",
+      "createdDate": "2026-01-16T14:31:20",
+      "updatedDate": "2026-02-10T15:42:37",
+      "owner": "David Reyes",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4534.63,
+      "description": "Indicate last soon each."
+    },
+    {
+      "id": "a4f05527-a192-4b85-aee7-fa8d194a5db3",
+      "name": "Triple-buffered mission-critical time-frame 7",
+      "status": "Pending",
+      "createdDate": "2025-04-21T12:44:13",
+      "updatedDate": "2026-01-29T07:29:50",
+      "owner": "Alexandria Goodman",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7153.56,
+      "description": "Else memory name possible back."
+    },
+    {
+      "id": "22db4468-285a-4b6f-9540-bc6e8d1fc2e0",
+      "name": "De-engineered methodical Internet solution 8",
+      "status": "Inactive",
+      "createdDate": "2025-11-07T06:29:16",
+      "updatedDate": "2026-02-04T02:52:02",
+      "owner": "Angela Little",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 9141.98,
+      "description": "War best charge make four."
+    },
+    {
+      "id": "78dc8fc4-ee7d-4a5e-a8b5-a57201053e68",
+      "name": "Secured modular ability 9",
+      "status": "Pending",
+      "createdDate": "2025-07-13T17:34:43",
+      "updatedDate": "2026-02-17T01:28:28",
+      "owner": "John Gardner",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1037.56,
+      "description": "Television couple network budget keep here."
+    },
+    {
+      "id": "483733a6-6fb8-46a2-8312-07bd6e2253a2",
+      "name": "Team-oriented encompassing protocol 10",
+      "status": "Active",
+      "createdDate": "2025-08-14T17:39:12",
+      "updatedDate": "2026-02-07T13:06:16",
+      "owner": "Martin Wilkerson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8181.34,
+      "description": "They appear bed might art material."
+    },
+    {
+      "id": "f6873ef9-df64-4f25-9968-ce71b29c5389",
+      "name": "Profound grid-enabled standardization 11",
+      "status": "Pending",
+      "createdDate": "2025-12-08T05:32:39",
+      "updatedDate": "2026-01-19T09:12:27",
+      "owner": "Wendy Griffin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 708.83,
+      "description": "Next democratic nearly market evidence look."
+    },
+    {
+      "id": "a644037b-1d3d-4bfa-a997-466e71a7d653",
+      "name": "Ameliorated solution-oriented workforce 12",
+      "status": "Completed",
+      "createdDate": "2025-11-18T09:28:50",
+      "updatedDate": "2026-02-07T01:05:57",
+      "owner": "Shaun Marks",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9297.26,
+      "description": "Wear position individual data green thing live goal."
+    },
+    {
+      "id": "0ddf4b62-bd8b-4fdb-9112-84efbb4aa2e2",
+      "name": "Ergonomic maximized methodology 13",
+      "status": "Inactive",
+      "createdDate": "2025-09-21T08:55:12",
+      "updatedDate": "2026-02-11T14:19:30",
+      "owner": "Bryan Richardson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1347.19,
+      "description": "Whether scene black."
+    },
+    {
+      "id": "4f9f6161-bbcc-47c0-afc9-481cf973a714",
+      "name": "Distributed responsive knowledgebase 14",
+      "status": "Pending",
+      "createdDate": "2025-04-28T23:23:47",
+      "updatedDate": "2026-02-12T01:49:01",
+      "owner": "Michael Schmidt",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7864.59,
+      "description": "Meet learn them yard next different live."
+    },
+    {
+      "id": "837d2c40-8db4-427e-9589-daeaa92deb3c",
+      "name": "Ameliorated regional focus group 15",
+      "status": "Active",
+      "createdDate": "2025-09-17T13:29:05",
+      "updatedDate": "2026-01-24T15:52:55",
+      "owner": "Tracy Jackson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5372.64,
+      "description": "Difficult analysis now cell."
+    },
+    {
+      "id": "b754b22b-d220-450f-b936-823b6fc6873f",
+      "name": "Multi-lateral user-facing alliance 16",
+      "status": "Inactive",
+      "createdDate": "2026-02-10T06:06:35",
+      "updatedDate": "2026-02-10T20:51:11",
+      "owner": "Sherry Garcia",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2975.78,
+      "description": "Good could performance table say direction."
+    },
+    {
+      "id": "584e0b7e-36f7-43ab-bf8f-886b591cc778",
+      "name": "Integrated local functionalities 17",
+      "status": "Active",
+      "createdDate": "2025-08-16T22:03:15",
+      "updatedDate": "2026-01-31T01:26:02",
+      "owner": "Jason Jones",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 739.23,
+      "description": "Policy medical four court determine him."
+    },
+    {
+      "id": "8723675f-8fc4-4d79-9fc1-d83d02d41407",
+      "name": "Persevering modular knowledgebase 18",
+      "status": "Active",
+      "createdDate": "2025-11-29T22:08:58",
+      "updatedDate": "2026-02-02T18:09:02",
+      "owner": "Melissa Butler DDS",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4132.78,
+      "description": "Treat should through month since."
+    },
+    {
+      "id": "2ac84503-414f-42ee-9634-e68c641b2772",
+      "name": "Configurable fault-tolerant attitude 19",
+      "status": "Pending",
+      "createdDate": "2025-02-22T22:01:37",
+      "updatedDate": "2026-01-26T06:02:50",
+      "owner": "Tonya Spencer",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1012.57,
+      "description": "Tv ready TV including inside surface."
+    },
+    {
+      "id": "300a4093-ab07-4ebd-9a11-31f025318115",
+      "name": "Intuitive holistic capability 20",
+      "status": "Pending",
+      "createdDate": "2025-10-29T12:33:41",
+      "updatedDate": "2026-02-07T08:50:41",
+      "owner": "Stephanie Wilson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5482.71,
+      "description": "Civil within direction short later."
+    },
+    {
+      "id": "1a8cd27e-3dbe-4ed6-81cb-e6c32d8da33b",
+      "name": "Cloned multimedia budgetary management 21",
+      "status": "Pending",
+      "createdDate": "2025-05-18T17:35:59",
+      "updatedDate": "2026-01-29T20:48:45",
+      "owner": "Mario Gallagher",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3602.16,
+      "description": "Material finally speech president mind recently."
+    },
+    {
+      "id": "efbcba8a-e724-46ba-a2de-19edf6346d5c",
+      "name": "Virtual stable infrastructure 22",
+      "status": "Completed",
+      "createdDate": "2025-11-08T05:20:14",
+      "updatedDate": "2026-02-10T19:40:40",
+      "owner": "Nichole Berg",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5687.7,
+      "description": "Team event senior attack continue air eye."
+    },
+    {
+      "id": "a8cf6c0c-a0ba-4aad-b726-e1c83d693bd7",
+      "name": "Cross-platform maximized throughput 23",
+      "status": "Inactive",
+      "createdDate": "2025-06-15T19:14:53",
+      "updatedDate": "2026-02-06T19:51:06",
+      "owner": "Zachary Williams",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8733.94,
+      "description": "Somebody thought between discussion sign remain."
+    },
+    {
+      "id": "e9d2e25a-c6ca-45dc-a714-81bbd4d53654",
+      "name": "Devolved optimizing focus group 24",
+      "status": "Inactive",
+      "createdDate": "2025-12-06T02:29:46",
+      "updatedDate": "2026-02-15T22:51:55",
+      "owner": "Tony Brown",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 650.99,
+      "description": "Reach blood east part."
+    },
+    {
+      "id": "a09fd54a-077a-44f7-b9d0-d919abcdf657",
+      "name": "Optional dynamic success 25",
+      "status": "Active",
+      "createdDate": "2025-04-12T12:45:30",
+      "updatedDate": "2026-02-17T05:58:49",
+      "owner": "Dakota Mcdonald",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3989.73,
+      "description": "Movie along debate house."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

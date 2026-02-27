@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-financialplan",
+  "queryId": "query-recent-updates",
+  "totalCount": 333,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "89023e42-fa96-4be3-b756-b7e956b9f780",
+      "name": "Universal explicit methodology 1",
+      "status": "Inactive",
+      "createdDate": "2026-02-14T07:07:14",
+      "updatedDate": "2026-01-28T15:28:49",
+      "owner": "Christina Hall",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3532.44,
+      "description": "Management pattern value per."
+    },
+    {
+      "id": "69c252b9-1169-4236-bc7d-181eeb917d49",
+      "name": "Polarized human-resource superstructure 2",
+      "status": "Pending",
+      "createdDate": "2025-09-03T00:33:13",
+      "updatedDate": "2026-02-17T10:08:27",
+      "owner": "Stephanie Shea",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 1644.1,
+      "description": "Young official glass position brother."
+    },
+    {
+      "id": "9dfdf4bb-a6ae-4fc1-8e65-362c01e82ef3",
+      "name": "Synchronized tertiary concept 3",
+      "status": "Inactive",
+      "createdDate": "2025-05-13T02:22:04",
+      "updatedDate": "2026-02-09T10:41:29",
+      "owner": "Tammy Nichols",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 6448.29,
+      "description": "Campaign example seem tend."
+    },
+    {
+      "id": "b7a6bad5-c6c0-47bb-aaf5-736429d7c483",
+      "name": "Function-based encompassing policy 4",
+      "status": "Pending",
+      "createdDate": "2025-11-12T23:40:46",
+      "updatedDate": "2026-01-22T11:20:33",
+      "owner": "Robert Fletcher",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 819.1,
+      "description": "Over investment live management join middle."
+    },
+    {
+      "id": "1773024e-9ae8-4f79-910a-e049c5a16823",
+      "name": "Integrated global migration 5",
+      "status": "Active",
+      "createdDate": "2025-07-13T20:47:09",
+      "updatedDate": "2026-01-29T06:14:34",
+      "owner": "Carol Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 821.9,
+      "description": "Cell as knowledge evidence painting away."
+    },
+    {
+      "id": "db543e8c-7653-4950-8a5b-763c68888e5b",
+      "name": "Open-architected object-oriented orchestration 6",
+      "status": "Active",
+      "createdDate": "2025-05-11T19:46:44",
+      "updatedDate": "2026-02-13T00:05:48",
+      "owner": "Tommy Price",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9230.52,
+      "description": "Either all great indeed sign back knowledge."
+    },
+    {
+      "id": "0225c7d2-de11-4e46-bae0-0bc083676be7",
+      "name": "Versatile stable throughput 7",
+      "status": "Completed",
+      "createdDate": "2025-07-27T10:48:35",
+      "updatedDate": "2026-02-10T04:23:40",
+      "owner": "Brenda Robinson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 877.08,
+      "description": "Trouble maybe kind imagine wait."
+    },
+    {
+      "id": "78f95b53-1a2d-4f4b-9bce-15386230f72f",
+      "name": "Diverse 6thgeneration time-frame 8",
+      "status": "Pending",
+      "createdDate": "2025-10-02T20:51:46",
+      "updatedDate": "2026-02-08T21:50:34",
+      "owner": "Charles Ayala",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3903.73,
+      "description": "Travel message over already."
+    },
+    {
+      "id": "2c39db2e-aecc-4b8c-8f04-7cd0e1babf6d",
+      "name": "Profound zero administration leverage 9",
+      "status": "Pending",
+      "createdDate": "2025-06-17T22:25:00",
+      "updatedDate": "2026-02-17T09:51:15",
+      "owner": "Sarah Schmidt",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3471.77,
+      "description": "Church write type office hospital western according."
+    },
+    {
+      "id": "f1ffc213-27cd-4cdb-b4c2-3c4a67ca5ae6",
+      "name": "Integrated well-modulated conglomeration 10",
+      "status": "Completed",
+      "createdDate": "2025-09-27T08:20:33",
+      "updatedDate": "2026-02-08T19:40:52",
+      "owner": "Michele Thompson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8414.87,
+      "description": "Speech pressure find scientist fine land."
+    },
+    {
+      "id": "fc3ac16d-089d-4c2d-b925-c82edc54dc08",
+      "name": "Proactive value-added moratorium 11",
+      "status": "Completed",
+      "createdDate": "2025-04-20T20:07:42",
+      "updatedDate": "2026-01-29T20:32:59",
+      "owner": "Angela Anderson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9055.25,
+      "description": "Course local much finish."
+    },
+    {
+      "id": "8394146e-9824-4d46-bc8d-f527e16544cd",
+      "name": "Expanded tertiary application 12",
+      "status": "Inactive",
+      "createdDate": "2025-06-01T14:23:04",
+      "updatedDate": "2026-02-02T21:33:25",
+      "owner": "Joshua Wilson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5485.37,
+      "description": "Interest better others test."
+    },
+    {
+      "id": "442e0684-1461-4a5d-94cf-77e8f52b5b84",
+      "name": "Profit-focused leadingedge moratorium 13",
+      "status": "Pending",
+      "createdDate": "2025-06-24T00:35:12",
+      "updatedDate": "2026-01-24T06:20:56",
+      "owner": "Dawn Ward",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 3419.33,
+      "description": "Specific example occur affect politics remember forget road."
+    },
+    {
+      "id": "8b63de36-3376-4f8c-8270-597be7066b9b",
+      "name": "Up-sized systemic adapter 14",
+      "status": "Completed",
+      "createdDate": "2025-06-16T02:40:43",
+      "updatedDate": "2026-01-29T18:20:55",
+      "owner": "Natalie Austin",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 2627.21,
+      "description": "Adult student wear memory focus husband rest."
+    },
+    {
+      "id": "b30fe0e8-0a34-49ac-817b-984746a86813",
+      "name": "Profound responsive approach 15",
+      "status": "Inactive",
+      "createdDate": "2025-04-20T14:29:59",
+      "updatedDate": "2026-01-31T21:09:56",
+      "owner": "Matthew Carter",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 7196.93,
+      "description": "Agent environmental I yes."
+    },
+    {
+      "id": "65069e3e-3caf-45ed-bf94-bd153c28abcf",
+      "name": "Managed incremental application 16",
+      "status": "Pending",
+      "createdDate": "2025-04-15T04:22:38",
+      "updatedDate": "2026-01-18T23:19:08",
+      "owner": "Shawn Johns",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2054.42,
+      "description": "Management north audience miss authority too behavior."
+    },
+    {
+      "id": "0ee8aff2-d48a-412a-b91b-b23c4ca51bb8",
+      "name": "Stand-alone web-enabled concept 17",
+      "status": "Completed",
+      "createdDate": "2025-04-15T14:17:37",
+      "updatedDate": "2026-01-21T20:05:32",
+      "owner": "Sean Garcia",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7526.9,
+      "description": "Health finally relationship song event realize economic."
+    },
+    {
+      "id": "baf4633d-db83-4778-8710-e6244e8ab255",
+      "name": "Switchable methodical benchmark 18",
+      "status": "Completed",
+      "createdDate": "2025-11-24T09:15:11",
+      "updatedDate": "2026-02-07T05:13:35",
+      "owner": "Sean Hughes",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1206.36,
+      "description": "Person response else land body."
+    },
+    {
+      "id": "e3487a2f-0866-4a13-a408-ec95e37df408",
+      "name": "Mandatory directional productivity 19",
+      "status": "Completed",
+      "createdDate": "2026-01-09T03:45:37",
+      "updatedDate": "2026-02-05T10:37:04",
+      "owner": "Trevor Davis",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1233.82,
+      "description": "Public sea then trial improve stop."
+    },
+    {
+      "id": "c38da970-6d10-40b4-9c2f-1615f2e98ac2",
+      "name": "Configurable composite success 20",
+      "status": "Active",
+      "createdDate": "2025-06-19T04:38:07",
+      "updatedDate": "2026-02-14T12:00:29",
+      "owner": "Brooke Brown",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7785.24,
+      "description": "Particular weight suffer even chair phone."
+    },
+    {
+      "id": "dd83865d-c70b-4724-a428-2e0da5a87bf3",
+      "name": "Extended intermediate access 21",
+      "status": "Inactive",
+      "createdDate": "2025-04-25T07:14:23",
+      "updatedDate": "2026-01-23T11:43:26",
+      "owner": "Kaitlyn Baker",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5365.09,
+      "description": "Could memory in issue tend know management."
+    },
+    {
+      "id": "d07312b8-1d60-48a4-a7da-6f5d92f7e1de",
+      "name": "Persistent bi-directional paradigm 22",
+      "status": "Active",
+      "createdDate": "2025-09-27T05:15:32",
+      "updatedDate": "2026-02-13T10:18:22",
+      "owner": "Andrew Coleman",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8839.58,
+      "description": "Should yard country over make article."
+    },
+    {
+      "id": "016f795d-aaa8-4452-b548-96aa5f591a57",
+      "name": "Seamless modular structure 23",
+      "status": "Inactive",
+      "createdDate": "2025-08-24T03:20:41",
+      "updatedDate": "2026-02-13T20:36:18",
+      "owner": "Melissa Davis",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 1349.12,
+      "description": "For government heavy actually tonight dog big book."
+    },
+    {
+      "id": "ffa573c6-80fd-4c23-9f20-9fd7b389f52d",
+      "name": "Front-line scalable conglomeration 24",
+      "status": "Completed",
+      "createdDate": "2025-03-12T23:21:14",
+      "updatedDate": "2026-02-06T09:11:28",
+      "owner": "Joseph Randolph",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 237.49,
+      "description": "Here writer box player listen door."
+    },
+    {
+      "id": "8aa5d3e7-e878-4226-a207-ddaad17f2383",
+      "name": "Ergonomic human-resource analyzer 25",
+      "status": "Pending",
+      "createdDate": "2025-04-28T20:03:51",
+      "updatedDate": "2026-02-16T02:30:01",
+      "owner": "Julia Alexander",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7575.99,
+      "description": "Force wide feeling medical song voice name."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-all-records",
+  "totalCount": 1333,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "d78520f2-c6e3-4700-8254-fe8461130ed3",
+      "name": "Seamless executive approach 1",
+      "status": "Inactive",
+      "createdDate": "2025-09-11T19:09:04",
+      "updatedDate": "2026-02-10T20:49:24",
+      "owner": "Jimmy Brown",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 9581.49,
+      "description": "Per low sound."
+    },
+    {
+      "id": "b9fe53b3-b6e8-4b39-a97e-9d36b95cbe60",
+      "name": "Customer-focused stable core 2",
+      "status": "Pending",
+      "createdDate": "2025-09-16T07:03:52",
+      "updatedDate": "2026-01-22T16:51:28",
+      "owner": "Marie King",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8927.77,
+      "description": "Thus finish Republican local physical."
+    },
+    {
+      "id": "23614a81-b857-4e5a-ba4d-74fe46b1c622",
+      "name": "Automated systemic methodology 3",
+      "status": "Active",
+      "createdDate": "2025-04-20T16:32:30",
+      "updatedDate": "2026-01-28T19:37:48",
+      "owner": "Barbara Hansen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3095.37,
+      "description": "Scientist bag company resource."
+    },
+    {
+      "id": "8fed1c8d-fb48-4b86-8755-3933090cfb47",
+      "name": "Future-proofed user-facing methodology 4",
+      "status": "Completed",
+      "createdDate": "2026-01-05T23:25:10",
+      "updatedDate": "2026-02-10T00:30:56",
+      "owner": "Tamara Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4213.43,
+      "description": "Could two improve front many."
+    },
+    {
+      "id": "ce393ae4-a456-481b-b112-906f0910da4e",
+      "name": "Networked solution-oriented emulation 5",
+      "status": "Inactive",
+      "createdDate": "2026-01-23T19:02:18",
+      "updatedDate": "2026-02-14T15:47:38",
+      "owner": "Mackenzie Weber",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9907.04,
+      "description": "Serious rise hotel as entire western floor include."
+    },
+    {
+      "id": "0b3e9982-95c0-49fe-bd6f-48c84d4ff6cf",
+      "name": "Networked homogeneous capacity 6",
+      "status": "Pending",
+      "createdDate": "2025-07-22T15:07:18",
+      "updatedDate": "2026-02-12T13:12:28",
+      "owner": "Leslie Fuentes",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1769.49,
+      "description": "Similar ability no special music seat."
+    },
+    {
+      "id": "1114862d-a0a7-4191-9396-68565fba1c6e",
+      "name": "Proactive system-worthy projection 7",
+      "status": "Completed",
+      "createdDate": "2025-03-16T21:20:04",
+      "updatedDate": "2026-02-16T12:16:44",
+      "owner": "Madison Baker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6411.58,
+      "description": "Personal wind course foreign follow report."
+    },
+    {
+      "id": "5a6d1592-f1b0-4f5d-8c88-9ec6df966eff",
+      "name": "User-friendly modular task-force 8",
+      "status": "Completed",
+      "createdDate": "2025-05-10T23:02:22",
+      "updatedDate": "2026-02-13T17:50:47",
+      "owner": "Amber Henderson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4132.07,
+      "description": "See else not probably government car happen."
+    },
+    {
+      "id": "51999ee4-c85d-4ab6-a581-38bd3ce47977",
+      "name": "Mandatory interactive core 9",
+      "status": "Pending",
+      "createdDate": "2025-07-14T19:33:01",
+      "updatedDate": "2026-01-29T02:24:10",
+      "owner": "Betty Thompson",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3602.13,
+      "description": "Course pretty despite these."
+    },
+    {
+      "id": "d1b17454-c314-4cf9-adfd-1607591e223b",
+      "name": "Phased eco-centric workforce 10",
+      "status": "Inactive",
+      "createdDate": "2025-06-22T22:18:58",
+      "updatedDate": "2026-01-19T19:22:09",
+      "owner": "Troy Johnson",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3895.48,
+      "description": "Increase group somebody Democrat nature."
+    },
+    {
+      "id": "74d9acbc-2b3f-4ae5-b043-d210fc939f2b",
+      "name": "Versatile hybrid help-desk 11",
+      "status": "Active",
+      "createdDate": "2025-03-04T13:51:25",
+      "updatedDate": "2026-01-21T03:57:17",
+      "owner": "Trevor Bryant",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 8281.21,
+      "description": "Record listen hospital out light."
+    },
+    {
+      "id": "b62a6e86-98e6-4504-bda3-0d0d757a1d61",
+      "name": "Down-sized 24/7 flexibility 12",
+      "status": "Completed",
+      "createdDate": "2025-11-06T16:49:40",
+      "updatedDate": "2026-02-03T13:25:32",
+      "owner": "Claire Vargas",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 305.82,
+      "description": "Important staff car well."
+    },
+    {
+      "id": "28dcf178-2ba7-47fe-bdff-fcf3482c2d4c",
+      "name": "Cloned web-enabled initiative 13",
+      "status": "Pending",
+      "createdDate": "2026-01-29T02:55:25",
+      "updatedDate": "2026-02-06T18:33:13",
+      "owner": "Mary Smith",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4133.46,
+      "description": "Opportunity sing wonder collection including authority."
+    },
+    {
+      "id": "7c69eb17-d470-4365-981c-1b3bab8da5c4",
+      "name": "Switchable solution-oriented artificial intelligence 14",
+      "status": "Completed",
+      "createdDate": "2026-01-26T21:22:57",
+      "updatedDate": "2026-02-08T04:43:47",
+      "owner": "Bryan Carpenter",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 8099.72,
+      "description": "Southern agent power analysis short law."
+    },
+    {
+      "id": "db137e8a-e79c-444e-805b-f08675d40a1c",
+      "name": "Optimized empowering emulation 15",
+      "status": "Completed",
+      "createdDate": "2025-08-14T17:26:55",
+      "updatedDate": "2026-02-15T21:21:32",
+      "owner": "Paula Reynolds",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4199.83,
+      "description": "Care conference provide like near off have."
+    },
+    {
+      "id": "9c1b1a40-0c04-498a-a57f-34794484078d",
+      "name": "Multi-channeled radical flexibility 16",
+      "status": "Active",
+      "createdDate": "2025-08-16T08:39:12",
+      "updatedDate": "2026-01-20T12:39:06",
+      "owner": "Andrew Moore",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 8015.69,
+      "description": "Together about high single attorney."
+    },
+    {
+      "id": "8d8deea0-24d3-4b82-9046-2045d06c7b68",
+      "name": "Realigned high-level synergy 17",
+      "status": "Active",
+      "createdDate": "2025-04-11T21:26:18",
+      "updatedDate": "2026-01-19T04:27:18",
+      "owner": "Lindsay Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 288.55,
+      "description": "Whom kind ago itself technology."
+    },
+    {
+      "id": "4cac4abc-ea11-444a-9a53-c30aa96dae55",
+      "name": "Enhanced asymmetric portal 18",
+      "status": "Pending",
+      "createdDate": "2025-06-03T06:47:50",
+      "updatedDate": "2026-01-28T06:07:56",
+      "owner": "Tammy Morris",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 7063.07,
+      "description": "Reduce blue want phone law college."
+    },
+    {
+      "id": "07b7a4ba-b546-42f1-ba55-bda0afaade2c",
+      "name": "Synchronized solution-oriented structure 19",
+      "status": "Inactive",
+      "createdDate": "2026-02-05T15:49:18",
+      "updatedDate": "2026-02-03T16:40:24",
+      "owner": "Carla Patel",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7094.15,
+      "description": "Simply data ask total special probably."
+    },
+    {
+      "id": "410c991d-ca15-45da-82f9-29587638d73e",
+      "name": "Exclusive demand-driven database 20",
+      "status": "Completed",
+      "createdDate": "2025-10-12T10:53:04",
+      "updatedDate": "2026-02-11T18:16:14",
+      "owner": "Jason Hudson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 798.99,
+      "description": "Class sea record dream last."
+    },
+    {
+      "id": "d337a0bf-e30f-4046-89d7-6bc8268f2402",
+      "name": "Fundamental multimedia function 21",
+      "status": "Pending",
+      "createdDate": "2025-05-17T07:17:53",
+      "updatedDate": "2026-01-27T12:54:27",
+      "owner": "Cody Fernandez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9756.48,
+      "description": "As together develop probably sound wonder."
+    },
+    {
+      "id": "50e75ce6-a82c-4d16-8c04-1374efccc296",
+      "name": "Open-source 24hour moderator 22",
+      "status": "Completed",
+      "createdDate": "2025-02-21T02:20:03",
+      "updatedDate": "2026-02-01T10:27:53",
+      "owner": "Drew Morgan",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 3180.63,
+      "description": "Establish possible feel push goal sound money."
+    },
+    {
+      "id": "b2412ab3-e165-4fc2-9c86-3c0f3167e93b",
+      "name": "Robust mobile workforce 23",
+      "status": "Active",
+      "createdDate": "2025-10-30T04:55:34",
+      "updatedDate": "2026-02-07T08:56:28",
+      "owner": "William Olsen",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8652.56,
+      "description": "Exist significant girl seek election piece read."
+    },
+    {
+      "id": "817b8e84-96a1-452c-8cf3-17dfdee12da3",
+      "name": "Optional exuding database 24",
+      "status": "Active",
+      "createdDate": "2025-04-17T18:50:21",
+      "updatedDate": "2026-02-02T04:04:38",
+      "owner": "Amanda Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 924.34,
+      "description": "Hard vote generation reduce still."
+    },
+    {
+      "id": "538f253a-3083-4e34-86b7-96839a00ae32",
+      "name": "Operative eco-centric conglomeration 25",
+      "status": "Inactive",
+      "createdDate": "2025-08-06T23:57:58",
+      "updatedDate": "2026-02-14T02:27:13",
+      "owner": "Thomas Sims",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1437.11,
+      "description": "Late choose available cost town near."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

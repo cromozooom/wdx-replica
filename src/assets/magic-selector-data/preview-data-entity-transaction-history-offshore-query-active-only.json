@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-active-only",
+  "totalCount": 1457,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "0ac5cedd-9c3e-4196-9d9f-6ad5d4aec0de",
+      "name": "Open-architected encompassing success 1",
+      "status": "Active",
+      "createdDate": "2025-06-12T02:47:07",
+      "updatedDate": "2026-02-01T10:55:43",
+      "owner": "Darius Shaw",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 625.98,
+      "description": "Include lead debate president risk beautiful."
+    },
+    {
+      "id": "fad96d55-bcd2-4fdb-a1a8-b5f0445e0db6",
+      "name": "Versatile web-enabled frame 2",
+      "status": "Pending",
+      "createdDate": "2025-11-19T18:06:01",
+      "updatedDate": "2026-01-31T02:28:05",
+      "owner": "Rachel Rasmussen",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 1930.78,
+      "description": "Finally because choose matter."
+    },
+    {
+      "id": "b9d358e7-ae0a-453e-b9bb-8356ce7187fb",
+      "name": "Multi-layered logistical capacity 3",
+      "status": "Inactive",
+      "createdDate": "2025-09-25T01:10:04",
+      "updatedDate": "2026-02-05T14:46:04",
+      "owner": "Dawn Williams",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 4494.19,
+      "description": "Fall financial expect scene."
+    },
+    {
+      "id": "e9bfc5b6-6d7b-48b0-818c-1724c87ca3d0",
+      "name": "Team-oriented discrete ability 4",
+      "status": "Active",
+      "createdDate": "2025-05-27T21:20:33",
+      "updatedDate": "2026-01-24T11:36:32",
+      "owner": "Cody Cole",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9171.48,
+      "description": "Bank wear Republican second say charge."
+    },
+    {
+      "id": "d48f67cc-ea7a-4f05-a5ce-79bae18310b8",
+      "name": "Profit-focused didactic task-force 5",
+      "status": "Active",
+      "createdDate": "2025-04-14T05:15:53",
+      "updatedDate": "2026-02-11T10:37:04",
+      "owner": "Elizabeth Peterson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1058.29,
+      "description": "Join everything population."
+    },
+    {
+      "id": "efe8fa9b-6706-4ea7-a4cc-9fd94dd228e0",
+      "name": "Right-sized upward-trending benchmark 6",
+      "status": "Completed",
+      "createdDate": "2026-01-13T00:12:08",
+      "updatedDate": "2026-02-11T05:46:20",
+      "owner": "Sean Parker",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 286.7,
+      "description": "Police event with low for from knowledge road."
+    },
+    {
+      "id": "365b0b0c-9bea-44e9-8424-9feb004fd425",
+      "name": "Compatible client-driven interface 7",
+      "status": "Inactive",
+      "createdDate": "2026-01-14T04:57:11",
+      "updatedDate": "2026-02-10T16:03:44",
+      "owner": "Kathryn Esparza",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4080.32,
+      "description": "May mouth top most citizen remember capital somebody."
+    },
+    {
+      "id": "165c2a25-6a67-4869-a8fb-432cd4df871b",
+      "name": "Fully-configurable clear-thinking support 8",
+      "status": "Inactive",
+      "createdDate": "2025-07-01T04:50:45",
+      "updatedDate": "2026-02-10T18:59:33",
+      "owner": "Maria Hamilton",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 8898.84,
+      "description": "Wife color believe fight lay."
+    },
+    {
+      "id": "f7f04e21-cbaf-4186-845e-b85603c9f66a",
+      "name": "Down-sized demand-driven strategy 9",
+      "status": "Active",
+      "createdDate": "2025-03-02T12:54:04",
+      "updatedDate": "2026-01-29T20:31:22",
+      "owner": "Dr. Cassandra Lam",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1866.64,
+      "description": "Water sure toward bring."
+    },
+    {
+      "id": "98b15f8d-df97-47a1-9fdb-6a71c9563f2e",
+      "name": "Compatible web-enabled data-warehouse 10",
+      "status": "Inactive",
+      "createdDate": "2025-09-23T21:22:21",
+      "updatedDate": "2026-01-27T02:16:33",
+      "owner": "Michael Wright",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3412.63,
+      "description": "Commercial role claim child."
+    },
+    {
+      "id": "71d78570-f5a4-4067-99ad-871230d788d9",
+      "name": "Proactive national model 11",
+      "status": "Inactive",
+      "createdDate": "2025-12-19T12:13:00",
+      "updatedDate": "2026-02-17T10:49:40",
+      "owner": "Beth Rios",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 6056.72,
+      "description": "World art station seem."
+    },
+    {
+      "id": "36c00dfd-3bb9-4347-8975-4cff5f929646",
+      "name": "User-friendly interactive website 12",
+      "status": "Active",
+      "createdDate": "2026-01-11T01:56:43",
+      "updatedDate": "2026-02-15T11:27:07",
+      "owner": "Heather Moore",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 9435.59,
+      "description": "Right either add green."
+    },
+    {
+      "id": "df4767bb-f3c2-4c8a-b581-2629e0b31213",
+      "name": "Public-key well-modulated hardware 13",
+      "status": "Pending",
+      "createdDate": "2025-12-21T18:33:40",
+      "updatedDate": "2026-02-08T12:40:44",
+      "owner": "Kristen Rodriguez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 5013.92,
+      "description": "Range difference mind."
+    },
+    {
+      "id": "df069f4e-ac97-4fa5-b06f-3c20a60e5020",
+      "name": "Switchable foreground toolset 14",
+      "status": "Completed",
+      "createdDate": "2025-04-06T22:46:18",
+      "updatedDate": "2026-02-13T22:33:52",
+      "owner": "Mrs. Abigail Hall DVM",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 3031.64,
+      "description": "Both detail foreign."
+    },
+    {
+      "id": "6e8f33ea-0a73-45b6-a3a0-4b8766826761",
+      "name": "Seamless maximized archive 15",
+      "status": "Active",
+      "createdDate": "2025-07-09T07:21:42",
+      "updatedDate": "2026-02-15T09:55:12",
+      "owner": "Amber Ramsey",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2981.91,
+      "description": "The different safe author move sure light."
+    },
+    {
+      "id": "65ac39fd-99d5-46e9-aa70-7c038301da57",
+      "name": "Reduced object-oriented task-force 16",
+      "status": "Completed",
+      "createdDate": "2025-11-21T13:51:18",
+      "updatedDate": "2026-01-21T06:35:19",
+      "owner": "Teresa Bishop",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2851.37,
+      "description": "Stay section next out collection forget court."
+    },
+    {
+      "id": "cdd9f90d-1ffb-416c-9bd7-c7f445cee69e",
+      "name": "Implemented non-volatile Local Area Network 17",
+      "status": "Inactive",
+      "createdDate": "2025-10-14T16:58:20",
+      "updatedDate": "2026-02-15T12:45:22",
+      "owner": "Lance Bates",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 1139.05,
+      "description": "Just recent other risk production safe key."
+    },
+    {
+      "id": "159073df-9ce3-4e40-9ebd-b2f5c4b498ff",
+      "name": "Proactive coherent superstructure 18",
+      "status": "Active",
+      "createdDate": "2025-12-28T11:16:02",
+      "updatedDate": "2026-02-13T15:43:07",
+      "owner": "Denise Jacobs",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 975.94,
+      "description": "Begin recent trial range."
+    },
+    {
+      "id": "bc57c4aa-a5ef-4acb-8287-efda75ba836f",
+      "name": "Cloned demand-driven instruction set 19",
+      "status": "Pending",
+      "createdDate": "2025-03-06T22:43:28",
+      "updatedDate": "2026-02-13T17:03:19",
+      "owner": "Tracy Robinson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 4441.15,
+      "description": "Commercial network new thought seven."
+    },
+    {
+      "id": "996028fa-109b-4548-b2b4-553eb21064e3",
+      "name": "Upgradable multi-tasking policy 20",
+      "status": "Pending",
+      "createdDate": "2025-06-21T05:14:12",
+      "updatedDate": "2026-02-05T07:29:29",
+      "owner": "Joshua Cunningham",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4148.32,
+      "description": "Focus few task I military."
+    },
+    {
+      "id": "d0079faf-4d0f-4420-a903-d91583ececec",
+      "name": "Self-enabling regional emulation 21",
+      "status": "Pending",
+      "createdDate": "2026-01-22T02:05:19",
+      "updatedDate": "2026-02-04T21:02:59",
+      "owner": "Michael Cervantes",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 504.89,
+      "description": "Of east pass western college industry process financial."
+    },
+    {
+      "id": "30226820-f685-4d56-b34f-d47b0a2e8370",
+      "name": "Right-sized coherent database 22",
+      "status": "Pending",
+      "createdDate": "2025-11-21T17:05:36",
+      "updatedDate": "2026-01-29T00:24:42",
+      "owner": "Darlene Lewis",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4369.55,
+      "description": "Source method strategy easy run soon happy single."
+    },
+    {
+      "id": "7d36f42c-f2d0-4451-b91f-10a3b1bb12b1",
+      "name": "User-friendly real-time capacity 23",
+      "status": "Completed",
+      "createdDate": "2026-01-09T06:11:44",
+      "updatedDate": "2026-02-14T20:09:00",
+      "owner": "Lindsey Rivera",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2637.78,
+      "description": "Beautiful top meeting year tough number point."
+    },
+    {
+      "id": "1a5d84dd-3737-41ae-89ff-88b7125d8b5d",
+      "name": "Persevering contextually-based toolset 24",
+      "status": "Active",
+      "createdDate": "2025-06-20T04:18:13",
+      "updatedDate": "2026-01-31T01:47:05",
+      "owner": "Sheri Daniel",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 5847.31,
+      "description": "My look fight including short cold soon research."
+    },
+    {
+      "id": "f146e80b-d959-476d-af5e-11a7fd9511ec",
+      "name": "Managed encompassing projection 25",
+      "status": "Pending",
+      "createdDate": "2025-10-31T12:20:54",
+      "updatedDate": "2026-01-23T08:17:45",
+      "owner": "Maureen Kent",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9226.5,
+      "description": "Police after read help owner this bank."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

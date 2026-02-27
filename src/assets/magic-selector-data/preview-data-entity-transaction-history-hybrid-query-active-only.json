@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-transaction",
+  "queryId": "query-active-only",
+  "totalCount": 431,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "b7e75e77-c6f8-4c51-9c3e-2d52de4a4a88",
+      "name": "Ergonomic analyzing database 1",
+      "status": "Active",
+      "createdDate": "2025-04-21T03:08:06",
+      "updatedDate": "2026-02-14T19:53:59",
+      "owner": "Emily Cole",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 3681.85,
+      "description": "Year class out."
+    },
+    {
+      "id": "b3236b39-4a07-4db1-9fc9-9ece13b907e8",
+      "name": "Advanced background strategy 2",
+      "status": "Active",
+      "createdDate": "2025-10-18T13:00:44",
+      "updatedDate": "2026-02-04T17:44:49",
+      "owner": "Katherine Martin",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6675.04,
+      "description": "Fill successful team concern expect who month."
+    },
+    {
+      "id": "b83834bd-2ca2-4fb5-b17a-c0193252614c",
+      "name": "Customer-focused asynchronous concept 3",
+      "status": "Completed",
+      "createdDate": "2025-10-04T06:27:19",
+      "updatedDate": "2026-02-11T12:55:25",
+      "owner": "Allison Peters",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2952.32,
+      "description": "Simple force nothing project project."
+    },
+    {
+      "id": "1bfccc7f-d7ae-448d-b7ca-e3fe49b2683d",
+      "name": "Proactive asymmetric firmware 4",
+      "status": "Completed",
+      "createdDate": "2025-09-07T03:23:25",
+      "updatedDate": "2026-01-25T05:23:15",
+      "owner": "Susan Lyons",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6700.85,
+      "description": "Take interesting under thought might."
+    },
+    {
+      "id": "e2caa07d-39dd-4acf-8e58-a4befe28350d",
+      "name": "Assimilated client-driven matrices 5",
+      "status": "Completed",
+      "createdDate": "2025-08-14T07:37:13",
+      "updatedDate": "2026-02-12T19:39:39",
+      "owner": "Dylan Brown",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5829.42,
+      "description": "Particularly over act."
+    },
+    {
+      "id": "5c97b12b-4a9e-4d36-b8f4-05ab38a945f0",
+      "name": "Business-focused even-keeled superstructure 6",
+      "status": "Active",
+      "createdDate": "2025-10-07T07:01:49",
+      "updatedDate": "2026-02-03T00:22:46",
+      "owner": "Amy Lynch",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 5130.86,
+      "description": "Several local song happy charge say."
+    },
+    {
+      "id": "f99ed0ab-d25f-46b3-a0bd-4df618232f15",
+      "name": "Front-line client-driven complexity 7",
+      "status": "Inactive",
+      "createdDate": "2025-06-17T15:07:21",
+      "updatedDate": "2026-02-04T22:41:17",
+      "owner": "Maria Johnson",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 6326.65,
+      "description": "Foreign speech there."
+    },
+    {
+      "id": "f510f6f3-562d-49b6-9bb8-55cb5254e032",
+      "name": "Monitored uniform focus group 8",
+      "status": "Inactive",
+      "createdDate": "2025-07-28T12:55:41",
+      "updatedDate": "2026-02-13T07:47:25",
+      "owner": "Kyle Jones",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 4451.7,
+      "description": "Car deep candidate more notice truth who activity."
+    },
+    {
+      "id": "3e81af5e-556c-4160-b01e-45f8a0b19c97",
+      "name": "Adaptive high-level contingency 9",
+      "status": "Active",
+      "createdDate": "2026-01-21T03:22:34",
+      "updatedDate": "2026-01-20T23:09:31",
+      "owner": "Rebecca Hill",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 6789.39,
+      "description": "Issue vote voice option late building scientist sea."
+    },
+    {
+      "id": "1f926672-f0f1-4fe1-8230-f3414b6822e6",
+      "name": "Persevering methodical synergy 10",
+      "status": "Pending",
+      "createdDate": "2025-06-03T21:20:25",
+      "updatedDate": "2026-01-24T17:16:11",
+      "owner": "Jenny Banks",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5871.0,
+      "description": "Prove reach home feeling scene those much voice."
+    },
+    {
+      "id": "bd85db04-de39-461d-9326-fc7469795e4c",
+      "name": "Ameliorated multimedia moratorium 11",
+      "status": "Pending",
+      "createdDate": "2025-03-02T22:55:41",
+      "updatedDate": "2026-02-04T04:21:12",
+      "owner": "Krystal Rodriguez",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 4450.87,
+      "description": "Smile wife how employee difficult day hospital."
+    },
+    {
+      "id": "e6bb9e9f-f98c-475e-a1e5-9e61ba44144d",
+      "name": "Implemented solution-oriented synergy 12",
+      "status": "Pending",
+      "createdDate": "2025-10-08T02:56:45",
+      "updatedDate": "2026-01-24T13:06:01",
+      "owner": "Brian Brown",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7783.73,
+      "description": "Suggest instead image recent answer."
+    },
+    {
+      "id": "b687e22d-1b01-42b5-9a54-dc406b1ad421",
+      "name": "Universal transitional intranet 13",
+      "status": "Active",
+      "createdDate": "2025-03-13T17:31:16",
+      "updatedDate": "2026-02-02T09:10:15",
+      "owner": "Kyle Oliver",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 2410.01,
+      "description": "Argue yet science field wait officer approach."
+    },
+    {
+      "id": "af468cca-d773-4126-afbe-fdd8b6d4b8e2",
+      "name": "Centralized heuristic moratorium 14",
+      "status": "Inactive",
+      "createdDate": "2025-11-24T09:17:26",
+      "updatedDate": "2026-02-02T12:09:57",
+      "owner": "Kelsey Harris",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4626.3,
+      "description": "Agreement single among how sister common avoid."
+    },
+    {
+      "id": "8b4ed136-d77e-4d26-af5a-e1314450255a",
+      "name": "Reactive tangible help-desk 15",
+      "status": "Inactive",
+      "createdDate": "2025-08-23T04:30:59",
+      "updatedDate": "2026-02-03T13:44:47",
+      "owner": "Cassandra Lee",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 4643.54,
+      "description": "Enjoy more company anyone painting goal book."
+    },
+    {
+      "id": "f98dfd57-9bdf-4d66-bba0-b47b313345eb",
+      "name": "Right-sized non-volatile array 16",
+      "status": "Pending",
+      "createdDate": "2025-09-04T02:17:36",
+      "updatedDate": "2026-02-14T07:55:49",
+      "owner": "Jose Gonzalez",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1496.15,
+      "description": "True physical real miss cup check few your."
+    },
+    {
+      "id": "d82ad90f-b343-4acd-b143-e5845e944003",
+      "name": "Compatible directional neural-net 17",
+      "status": "Active",
+      "createdDate": "2025-03-31T18:14:59",
+      "updatedDate": "2026-01-24T04:13:16",
+      "owner": "Lindsay Delgado",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5571.85,
+      "description": "College listen fear miss down skin which."
+    },
+    {
+      "id": "9b4b38e5-4394-4791-895c-1e5fd84d2f39",
+      "name": "User-friendly global service-desk 18",
+      "status": "Completed",
+      "createdDate": "2025-12-24T23:04:40",
+      "updatedDate": "2026-01-26T15:06:48",
+      "owner": "Daniel Snyder",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 3373.08,
+      "description": "Sound deal central owner too late thousand."
+    },
+    {
+      "id": "73c0d796-2e49-4a07-9ead-d11aaf9151fb",
+      "name": "Versatile asymmetric knowledge user 19",
+      "status": "Active",
+      "createdDate": "2025-09-08T04:48:56",
+      "updatedDate": "2026-01-30T18:22:41",
+      "owner": "Lisa Martin",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5174.68,
+      "description": "Would any because every southern product pretty environment."
+    },
+    {
+      "id": "c42260ce-e6c2-4538-825e-d808ea27290a",
+      "name": "Multi-lateral content-based productivity 20",
+      "status": "Pending",
+      "createdDate": "2025-06-28T20:57:11",
+      "updatedDate": "2026-01-21T18:42:24",
+      "owner": "Barbara Marquez",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 9618.6,
+      "description": "Among price doctor detail in change."
+    },
+    {
+      "id": "05abbfb5-e8fc-473b-9196-3b1e8ee4f426",
+      "name": "Operative didactic portal 21",
+      "status": "Inactive",
+      "createdDate": "2026-01-14T17:42:05",
+      "updatedDate": "2026-02-02T17:53:14",
+      "owner": "Amber Scott",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 1546.37,
+      "description": "Wall she picture today require look."
+    },
+    {
+      "id": "84b8c052-b0c4-4727-ac59-b2dbd6b9181d",
+      "name": "Self-enabling human-resource info-mediaries 22",
+      "status": "Pending",
+      "createdDate": "2025-06-23T16:13:52",
+      "updatedDate": "2026-02-08T03:58:26",
+      "owner": "Stephanie Thomas",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2141.39,
+      "description": "Shake even reflect investment."
+    },
+    {
+      "id": "fbf4bfa9-47a0-48f0-a737-b142fadee932",
+      "name": "Automated mobile collaboration 23",
+      "status": "Pending",
+      "createdDate": "2025-04-25T05:51:41",
+      "updatedDate": "2026-02-03T08:22:08",
+      "owner": "David Smith",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 2135.25,
+      "description": "Fear single call condition today finish yard."
+    },
+    {
+      "id": "5031e5c8-0eff-4559-85f2-06e0dedb6249",
+      "name": "Seamless full-range capability 24",
+      "status": "Completed",
+      "createdDate": "2025-04-05T07:25:13",
+      "updatedDate": "2026-01-18T14:50:57",
+      "owner": "Daniel Fowler",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 3189.57,
+      "description": "Doctor magazine collection central."
+    },
+    {
+      "id": "76ef920e-7342-44cf-acd4-2dbb6cd1980b",
+      "name": "Proactive cohesive knowledge user 25",
+      "status": "Inactive",
+      "createdDate": "2026-01-15T12:52:11",
+      "updatedDate": "2026-01-22T01:51:46",
+      "owner": "Michael Mcdaniel",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 4611.58,
+      "description": "Would business price head fire ahead."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

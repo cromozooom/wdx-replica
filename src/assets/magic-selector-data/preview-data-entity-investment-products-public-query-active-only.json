@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-product",
+  "queryId": "query-active-only",
+  "totalCount": 1404,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "a863bc86-1817-415c-a251-8a4e74dd03f4",
+      "name": "Optional reciprocal definition 1",
+      "status": "Active",
+      "createdDate": "2025-08-03T09:36:46",
+      "updatedDate": "2026-01-27T02:04:58",
+      "owner": "Eric Fisher",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2420.37,
+      "description": "Model lead color against staff."
+    },
+    {
+      "id": "473419a9-478f-4cfa-a9f6-8da907b282cb",
+      "name": "Business-focused solution-oriented attitude 2",
+      "status": "Pending",
+      "createdDate": "2025-07-16T21:59:08",
+      "updatedDate": "2026-02-06T04:37:02",
+      "owner": "Joseph Mahoney",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 8403.55,
+      "description": "Something indicate theory value fast thank matter."
+    },
+    {
+      "id": "1a977811-47a7-401b-a228-843aa53b10a6",
+      "name": "Future-proofed uniform instruction set 3",
+      "status": "Pending",
+      "createdDate": "2025-05-04T10:16:53",
+      "updatedDate": "2026-01-22T00:56:41",
+      "owner": "Keith Young",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 2531.61,
+      "description": "Benefit state never experience."
+    },
+    {
+      "id": "4ad23f93-ae1b-47b8-9f23-e703c35b5aaf",
+      "name": "Pre-emptive high-level service-desk 4",
+      "status": "Inactive",
+      "createdDate": "2025-05-16T06:13:37",
+      "updatedDate": "2026-02-14T12:32:35",
+      "owner": "Christopher Young",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 9261.86,
+      "description": "Respond pull general reality allow."
+    },
+    {
+      "id": "4a044f2d-2460-4e09-8e03-c47cfde869d2",
+      "name": "Robust mission-critical middleware 5",
+      "status": "Completed",
+      "createdDate": "2025-08-08T06:18:52",
+      "updatedDate": "2026-02-11T19:35:51",
+      "owner": "Maureen Castro",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 4281.12,
+      "description": "Most let former serious behind family."
+    },
+    {
+      "id": "a692204b-19a8-4f2f-bab9-46bd5adf5209",
+      "name": "Innovative bi-directional success 6",
+      "status": "Completed",
+      "createdDate": "2026-01-07T07:59:39",
+      "updatedDate": "2026-01-21T10:46:55",
+      "owner": "Vincent Thompson",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 9415.0,
+      "description": "Talk final season beyond."
+    },
+    {
+      "id": "e4ad5c81-21e5-42e0-bcc2-b3d3b4bbe384",
+      "name": "Mandatory even-keeled standardization 7",
+      "status": "Active",
+      "createdDate": "2025-11-30T22:24:03",
+      "updatedDate": "2026-02-11T05:57:58",
+      "owner": "Kyle Mata",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6458.4,
+      "description": "Reflect tough every matter point."
+    },
+    {
+      "id": "5d049fe1-3026-4c98-a4fb-0ce8a21c2327",
+      "name": "Secured bifurcated service-desk 8",
+      "status": "Pending",
+      "createdDate": "2025-03-12T11:26:21",
+      "updatedDate": "2026-02-03T22:44:23",
+      "owner": "Ashley Lucero",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 5724.42,
+      "description": "Shake air floor simple key."
+    },
+    {
+      "id": "93ef6117-bb73-43eb-847e-775918d84d33",
+      "name": "Up-sized modular array 9",
+      "status": "Inactive",
+      "createdDate": "2026-02-06T02:13:49",
+      "updatedDate": "2026-01-29T16:02:20",
+      "owner": "Amy Davis",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 7582.91,
+      "description": "Ago down least other here enjoy through."
+    },
+    {
+      "id": "728f8765-c9a0-4a25-8d41-2a7fdf7c26a4",
+      "name": "Streamlined non-volatile pricing structure 10",
+      "status": "Pending",
+      "createdDate": "2026-01-07T14:40:50",
+      "updatedDate": "2026-02-04T03:38:22",
+      "owner": "Carolyn Glover",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 4070.79,
+      "description": "Another major effect oil necessary."
+    },
+    {
+      "id": "a46fb073-c2c7-4356-9609-3dcb2bcc1761",
+      "name": "Function-based fault-tolerant interface 11",
+      "status": "Completed",
+      "createdDate": "2025-11-22T10:58:39",
+      "updatedDate": "2026-02-12T23:49:01",
+      "owner": "Joshua Douglas",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 5487.22,
+      "description": "My environment through result."
+    },
+    {
+      "id": "287e161a-0a3f-443f-a2f5-3b9e0a07358e",
+      "name": "Intuitive responsive orchestration 12",
+      "status": "Active",
+      "createdDate": "2026-02-02T05:58:08",
+      "updatedDate": "2026-02-07T16:26:53",
+      "owner": "Shawn Anderson",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 3120.78,
+      "description": "Leave risk treat."
+    },
+    {
+      "id": "61d223e4-003c-4382-ba6e-661fb5a9e378",
+      "name": "Fundamental motivating structure 13",
+      "status": "Inactive",
+      "createdDate": "2025-11-16T10:01:35",
+      "updatedDate": "2026-02-12T18:13:06",
+      "owner": "Rhonda Burke",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7595.12,
+      "description": "Window quickly better report letter benefit."
+    },
+    {
+      "id": "090f46a2-fe81-4277-a8d9-e7a7d2474eb3",
+      "name": "Up-sized multi-state middleware 14",
+      "status": "Active",
+      "createdDate": "2025-02-28T20:16:28",
+      "updatedDate": "2026-02-05T07:59:11",
+      "owner": "Michelle Snyder",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 5313.96,
+      "description": "Develop page within popular fear city particularly."
+    },
+    {
+      "id": "b6cb079f-fe57-406b-9466-030f167f7e9d",
+      "name": "Business-focused radical forecast 15",
+      "status": "Pending",
+      "createdDate": "2025-05-11T10:45:43",
+      "updatedDate": "2026-01-24T18:53:59",
+      "owner": "Megan Meyer",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8942.19,
+      "description": "Number so among."
+    },
+    {
+      "id": "5f3de4d9-f0d1-4e51-a2b5-255b3ae0ea61",
+      "name": "Persistent asynchronous protocol 16",
+      "status": "Pending",
+      "createdDate": "2025-03-24T16:43:51",
+      "updatedDate": "2026-02-11T13:39:30",
+      "owner": "Michael Young",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 8516.7,
+      "description": "Under minute fall own but yourself eat process."
+    },
+    {
+      "id": "31eb035b-1565-40b2-abff-191ca0afcd58",
+      "name": "Configurable holistic pricing structure 17",
+      "status": "Completed",
+      "createdDate": "2025-10-16T04:09:02",
+      "updatedDate": "2026-01-25T10:13:22",
+      "owner": "Scott Brown",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5886.75,
+      "description": "Leg young administration quite minute morning crime."
+    },
+    {
+      "id": "4623af48-2e6b-4660-a75d-db458087f055",
+      "name": "Fundamental leadingedge standardization 18",
+      "status": "Pending",
+      "createdDate": "2025-07-06T08:58:19",
+      "updatedDate": "2026-02-10T19:37:36",
+      "owner": "Robert Sandoval",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 1593.77,
+      "description": "Network everyone debate himself."
+    },
+    {
+      "id": "566de393-7e5d-4232-9095-94754744fb38",
+      "name": "Function-based national task-force 19",
+      "status": "Inactive",
+      "createdDate": "2025-05-06T17:33:58",
+      "updatedDate": "2026-02-10T13:00:49",
+      "owner": "Dana Jones",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 7774.18,
+      "description": "General then lead line."
+    },
+    {
+      "id": "d09a34d5-49dc-4947-a6bd-0aea639ef458",
+      "name": "Reverse-engineered upward-trending neural-net 20",
+      "status": "Inactive",
+      "createdDate": "2025-06-21T19:16:31",
+      "updatedDate": "2026-02-01T06:37:24",
+      "owner": "Jennifer Stout",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 5832.31,
+      "description": "Interview there both baby herself woman other value."
+    },
+    {
+      "id": "ed1a407f-caa1-4b28-b2f5-c1b9f0cdb163",
+      "name": "Stand-alone leadingedge protocol 21",
+      "status": "Pending",
+      "createdDate": "2025-07-01T07:52:35",
+      "updatedDate": "2026-01-21T18:34:44",
+      "owner": "James Vance",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 8716.0,
+      "description": "Now modern around manage."
+    },
+    {
+      "id": "f403f46c-e854-417f-81a4-c40f49c39836",
+      "name": "Sharable interactive hub 22",
+      "status": "Inactive",
+      "createdDate": "2025-11-27T11:06:56",
+      "updatedDate": "2026-01-23T04:21:37",
+      "owner": "Alex Heath",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 266.63,
+      "description": "We mind friend man grow father player source."
+    },
+    {
+      "id": "71c5dcef-b030-4e98-a9ad-a4aa867fdcf4",
+      "name": "Implemented interactive time-frame 23",
+      "status": "Active",
+      "createdDate": "2026-01-08T21:36:03",
+      "updatedDate": "2026-01-21T19:40:42",
+      "owner": "Jonathan Cantrell",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 133.17,
+      "description": "Place sign each personal value structure."
+    },
+    {
+      "id": "d83b19ee-b9f4-4389-9de0-5af012e3e221",
+      "name": "Synergistic demand-driven analyzer 24",
+      "status": "Completed",
+      "createdDate": "2025-04-28T17:05:17",
+      "updatedDate": "2026-01-18T23:13:31",
+      "owner": "Robert Schultz",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 2928.05,
+      "description": "Quality assume inside us around necessary oil page."
+    },
+    {
+      "id": "2bc8dd5d-0eaf-4d64-a7a9-21a30283eca4",
+      "name": "Re-contextualized zero administration matrix 25",
+      "status": "Inactive",
+      "createdDate": "2025-07-24T18:06:54",
+      "updatedDate": "2026-02-10T15:16:44",
+      "owner": "Dominic Jordan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 1281.71,
+      "description": "Director never yet know rock sing."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}

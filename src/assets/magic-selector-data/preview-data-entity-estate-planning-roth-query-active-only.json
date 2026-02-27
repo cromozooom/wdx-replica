@@ -1,0 +1,381 @@
+{
+  "entityId": "entity-estateplan",
+  "queryId": "query-active-only",
+  "totalCount": 174,
+  "pageSize": 25,
+  "currentPage": 1,
+  "records": [
+    {
+      "id": "3c61cbd1-b21a-40d4-bad3-64da9f034576",
+      "name": "Persistent bottom-line adapter 1",
+      "status": "Active",
+      "createdDate": "2025-09-24T23:59:04",
+      "updatedDate": "2026-02-10T07:33:20",
+      "owner": "Sara Becker",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 877.32,
+      "description": "Garden whether imagine place."
+    },
+    {
+      "id": "1380fe9d-6164-4c08-8302-b50c546a3684",
+      "name": "Self-enabling content-based service-desk 2",
+      "status": "Active",
+      "createdDate": "2025-03-07T19:11:44",
+      "updatedDate": "2026-02-14T21:17:19",
+      "owner": "Thomas Arnold",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 682.7,
+      "description": "Body morning former."
+    },
+    {
+      "id": "1093e2da-5bdb-4723-b01b-00c33f8ff0cb",
+      "name": "Stand-alone logistical model 3",
+      "status": "Pending",
+      "createdDate": "2025-10-01T22:31:44",
+      "updatedDate": "2026-02-11T02:28:48",
+      "owner": "James Bryant",
+      "type": "Basic",
+      "category": "Type B",
+      "value": 735.76,
+      "description": "Area require blue enjoy toward fast single."
+    },
+    {
+      "id": "42b4c0f7-56be-4aff-8e48-d1aa9292bc0a",
+      "name": "Inverse neutral help-desk 4",
+      "status": "Pending",
+      "createdDate": "2025-11-28T05:52:49",
+      "updatedDate": "2026-01-25T19:06:42",
+      "owner": "Allen Park",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 9314.16,
+      "description": "Travel party player beautiful establish."
+    },
+    {
+      "id": "5733e2e8-b1c2-42cb-90b8-7851cf083fba",
+      "name": "Switchable interactive portal 5",
+      "status": "Active",
+      "createdDate": "2025-11-05T05:45:29",
+      "updatedDate": "2026-01-22T18:41:54",
+      "owner": "Jonathan Floyd",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 229.12,
+      "description": "Poor trouble necessary vote worker know according."
+    },
+    {
+      "id": "9eca52a2-7170-41b0-83fb-152f8b90fc11",
+      "name": "Devolved logistical support 6",
+      "status": "Pending",
+      "createdDate": "2025-05-28T08:21:00",
+      "updatedDate": "2026-01-28T07:15:34",
+      "owner": "Melissa Owen",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 702.56,
+      "description": "Off different live."
+    },
+    {
+      "id": "11e3e1c2-2f3a-4fe0-9077-9c2fdb57a624",
+      "name": "Customizable eco-centric neural-net 7",
+      "status": "Completed",
+      "createdDate": "2025-08-15T01:02:14",
+      "updatedDate": "2026-02-01T11:00:21",
+      "owner": "Claire Wright",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 2845.51,
+      "description": "Seem draw art cultural edge anyone."
+    },
+    {
+      "id": "286e4cce-8333-434d-a173-331400a5baae",
+      "name": "Re-engineered didactic attitude 8",
+      "status": "Completed",
+      "createdDate": "2025-09-22T23:08:23",
+      "updatedDate": "2026-01-26T08:08:35",
+      "owner": "Lauren Ryan",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 2325.5,
+      "description": "Will enter ever."
+    },
+    {
+      "id": "6b2c9488-92ce-4e63-aeaf-ff79c06006bd",
+      "name": "Implemented non-volatile capability 9",
+      "status": "Active",
+      "createdDate": "2025-06-01T01:34:32",
+      "updatedDate": "2026-01-23T21:55:15",
+      "owner": "Lori Herrera",
+      "type": "Premium",
+      "category": "Type A",
+      "value": 240.44,
+      "description": "Outside institution alone southern on."
+    },
+    {
+      "id": "36defdcc-e19e-4cc3-8d4a-113cdefa46d3",
+      "name": "Versatile full-range knowledge user 10",
+      "status": "Completed",
+      "createdDate": "2025-12-31T14:05:36",
+      "updatedDate": "2026-02-01T02:53:52",
+      "owner": "Alyssa Thompson",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7187.61,
+      "description": "Purpose teach type large particularly policy."
+    },
+    {
+      "id": "d554037a-6aeb-42a5-b41e-275e7b0022f1",
+      "name": "Optional impactful application 11",
+      "status": "Pending",
+      "createdDate": "2025-12-11T21:06:23",
+      "updatedDate": "2026-02-16T05:58:32",
+      "owner": "Jeremy Frey",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6787.94,
+      "description": "Interesting assume product month arrive."
+    },
+    {
+      "id": "24b8e4ab-dc54-47dd-8ea1-9b34f8e39f1e",
+      "name": "Balanced holistic open architecture 12",
+      "status": "Pending",
+      "createdDate": "2025-10-29T17:51:15",
+      "updatedDate": "2026-01-28T02:33:43",
+      "owner": "Mrs. Laurie Bradley",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 1224.41,
+      "description": "Worker treat care only while administration various which."
+    },
+    {
+      "id": "c8046d94-a731-488e-8463-487c5e34dce3",
+      "name": "Grass-roots client-driven capacity 13",
+      "status": "Inactive",
+      "createdDate": "2025-06-25T10:37:53",
+      "updatedDate": "2026-01-25T05:15:28",
+      "owner": "Cynthia Johnson",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 9161.6,
+      "description": "Between house always themselves item."
+    },
+    {
+      "id": "942bc184-b95e-4993-a8c1-1da291075923",
+      "name": "User-centric logistical concept 14",
+      "status": "Active",
+      "createdDate": "2026-01-26T23:19:03",
+      "updatedDate": "2026-01-30T20:58:08",
+      "owner": "Wendy Gaines",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 3057.69,
+      "description": "Beyond old too."
+    },
+    {
+      "id": "7f9b4bab-ab01-496f-89c9-3973f9643571",
+      "name": "Integrated next generation complexity 15",
+      "status": "Pending",
+      "createdDate": "2025-05-10T14:04:49",
+      "updatedDate": "2026-01-27T15:35:31",
+      "owner": "Andrea Dean",
+      "type": "Basic",
+      "category": "Type A",
+      "value": 7456.39,
+      "description": "Also yes sure husband pressure."
+    },
+    {
+      "id": "1550b248-0ee7-439c-a378-c50b428498e6",
+      "name": "Virtual exuding alliance 16",
+      "status": "Pending",
+      "createdDate": "2025-11-03T11:21:01",
+      "updatedDate": "2026-02-02T23:53:05",
+      "owner": "Adam Contreras",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 7022.83,
+      "description": "Protect pass man assume though."
+    },
+    {
+      "id": "aab7cfbf-9b01-4e7d-bf9d-6da9b64c4797",
+      "name": "Advanced non-volatile Graphic Interface 17",
+      "status": "Completed",
+      "createdDate": "2025-02-21T21:21:05",
+      "updatedDate": "2026-01-22T11:27:58",
+      "owner": "Dustin Velez",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 4767.09,
+      "description": "Occur away foot sign begin include develop."
+    },
+    {
+      "id": "4b8b00c3-7847-4631-96d6-d6e865183995",
+      "name": "Exclusive heuristic Local Area Network 18",
+      "status": "Pending",
+      "createdDate": "2025-03-02T12:30:59",
+      "updatedDate": "2026-01-20T21:27:32",
+      "owner": "Ann Garner",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 7299.73,
+      "description": "View door lot energy case."
+    },
+    {
+      "id": "75dce8b2-e01e-4b04-924f-b4c1fc3edcbb",
+      "name": "Assimilated user-facing synergy 19",
+      "status": "Inactive",
+      "createdDate": "2025-04-07T00:53:35",
+      "updatedDate": "2026-02-12T20:05:54",
+      "owner": "Olivia Gonzalez",
+      "type": "Standard",
+      "category": "Type C",
+      "value": 7008.68,
+      "description": "East commercial father sell remember task must."
+    },
+    {
+      "id": "b578f967-bcb1-4d2d-8963-6a5f4385a481",
+      "name": "Adaptive content-based moratorium 20",
+      "status": "Inactive",
+      "createdDate": "2025-03-12T20:23:27",
+      "updatedDate": "2026-02-11T07:05:41",
+      "owner": "Yvonne Brooks",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 6912.59,
+      "description": "Reach beyond sign mouth."
+    },
+    {
+      "id": "18485aeb-3759-4eda-9c4c-cbd76417712f",
+      "name": "Versatile maximized core 21",
+      "status": "Completed",
+      "createdDate": "2025-03-10T06:10:38",
+      "updatedDate": "2026-02-08T14:35:57",
+      "owner": "Joshua Craig",
+      "type": "Basic",
+      "category": "Type C",
+      "value": 6740.32,
+      "description": "Man thank smile list enjoy."
+    },
+    {
+      "id": "76405997-eb63-4696-8dbe-5c280d5cf17c",
+      "name": "Sharable hybrid alliance 22",
+      "status": "Pending",
+      "createdDate": "2025-09-17T17:13:08",
+      "updatedDate": "2026-01-22T03:14:10",
+      "owner": "Miranda Shannon",
+      "type": "Standard",
+      "category": "Type A",
+      "value": 5758.23,
+      "description": "Run movie shake front lead statement effort."
+    },
+    {
+      "id": "3f663bf1-de6b-4b62-b58a-a4daac560ce2",
+      "name": "Diverse non-volatile neural-net 23",
+      "status": "Pending",
+      "createdDate": "2025-12-25T22:52:03",
+      "updatedDate": "2026-02-04T16:20:37",
+      "owner": "Diane Nichols",
+      "type": "Premium",
+      "category": "Type C",
+      "value": 3689.56,
+      "description": "Friend write policy under executive whom threat."
+    },
+    {
+      "id": "826fccb8-8dae-4ee8-a544-6fccc092090f",
+      "name": "Configurable multimedia success 24",
+      "status": "Inactive",
+      "createdDate": "2025-10-31T20:55:07",
+      "updatedDate": "2026-01-21T03:22:36",
+      "owner": "Karl Johnson",
+      "type": "Standard",
+      "category": "Type B",
+      "value": 1862.75,
+      "description": "Form anything debate fast treatment onto price decide."
+    },
+    {
+      "id": "e3257d31-f2f4-4eef-8d2e-f3a8acaa531a",
+      "name": "Polarized logistical intranet 25",
+      "status": "Pending",
+      "createdDate": "2025-08-04T16:54:08",
+      "updatedDate": "2026-02-05T14:31:06",
+      "owner": "Anthony Clarke",
+      "type": "Premium",
+      "category": "Type B",
+      "value": 7045.82,
+      "description": "Career article toward up."
+    }
+  ],
+  "schema": [
+    {
+      "fieldName": "id",
+      "displayName": "Id",
+      "dataType": "string",
+      "isKey": true,
+      "isRequired": true
+    },
+    {
+      "fieldName": "name",
+      "displayName": "Name",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": true
+    },
+    {
+      "fieldName": "createdDate",
+      "displayName": "Createddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "updatedDate",
+      "displayName": "Updateddate",
+      "dataType": "date",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "owner",
+      "displayName": "Owner",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "type",
+      "displayName": "Type",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "category",
+      "displayName": "Category",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "value",
+      "displayName": "Value",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    },
+    {
+      "fieldName": "description",
+      "displayName": "Description",
+      "dataType": "string",
+      "isKey": false,
+      "isRequired": false
+    }
+  ]
+}
