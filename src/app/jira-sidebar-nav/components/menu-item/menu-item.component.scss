@@ -1,0 +1,91 @@
+// Menu Item Styles (T032, T082)
+// Part of the Jira-style hierarchical navigation sidebar feature
+
+@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../variables";
+@import "../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../../../node_modules/bootstrap/scss/mixins";
+
+:host {
+  width: 100%;
+  display: flex;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  transition: background-color 150ms ease;
+  position: relative;
+  min-height: 36px;
+}
+
+// Expansion Icon
+.expansion-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 150ms ease;
+
+  &.expanded {
+    transform: rotate(0deg);
+  }
+}
+
+// Item Icon (FontAwesome)
+.item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+// Item Label (T082: Label truncation with ellipsis)
+.item-label {
+  flex: 1;
+  min-width: 0; // Required for text-overflow to work in flexbox
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  .item-link,
+  .item-text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .item-link.active {
+    color: $primary; // Use SCSS variable, not CSS var
+  }
+}
+
+// Badge
+.item-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+// Edit mode actions (T054, FR-016, FR-017)
+.edit-actions {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.menu-item:hover .edit-actions {
+  opacity: 1;
+}

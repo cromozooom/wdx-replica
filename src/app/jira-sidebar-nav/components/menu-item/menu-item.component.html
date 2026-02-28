@@ -1,0 +1,102 @@
+<!-- Menu Item Template (T029, T082) -->
+<!-- [disabled]="hasChildrenActive" -->
+<button
+  class="menu-item align-items-stretch w-100 border-0 padding-top-0"
+  [class.activeL0]="isActive && level === 0"
+  [class.active]="isActive"
+  [class]="
+    hasChildrenActive
+      ? 'item-has-children-active'
+      : hasChildren
+        ? 'item-has-children'
+        : ''
+  "
+  [style.padding-left]="getIndentPadding()"
+  (click)="onClick($event)"
+  [attr.title]="item.label"
+>
+  <!-- Label with truncation (T082, FR-031) -->
+  <!-- Icon -->
+  <div class="d-flex align-items-center flex-grow-1">
+    <div
+      class="d-flex align-items-center gap-1"
+      [class]="
+        isActive && level !== 0
+          ? 'tree-active px-2 rounded-pill py-1'
+          : 'tree-notActive px-2 rounded-pill py-1'
+      "
+    >
+      @if (item.icon && level === 0) {
+        <!-- [class.py-4]="isLevel0" -->
+        <small
+          class="d-flex align-items-center justify-content-center"
+          style="min-width: 1.2rem; font-size: 80%"
+          [attr.aria-hidden]="true"
+        >
+          <i [class]="item.icon"></i>
+        </small>
+      }
+      <span
+        class="item-label d-flex align-items-center"
+        [attr.title]="item.label"
+      >
+        <span class="">{{ item.label }}</span>
+      </span>
+    </div>
+  </div>
+  <!-- Badge (if metadata.badgeCount exists) -->
+  @if (
+    item.metadata && item.metadata.badgeCount && item.metadata.badgeCount > 0
+  ) {
+    <span class="item-badge">
+      {{ item.metadata.badgeCount }}
+    </span>
+  }
+
+  <div class="d-flex align-items-stretch pe-2">
+    <!-- Edit Mode Actions (T054, FR-016, FR-017) -->
+    @if (isEditMode) {
+      <div ngbDropdown container="body" class="ms-auto d-flex flex-grow-1">
+        <button
+          ngbDropdownToggle
+          type="button"
+          class="btn btn-outline-on-primary border-0 btn-sm rounded-0 my-2"
+          (click)="onDropdownToggle($event)"
+          title="More actions"
+        >
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem (click)="onEditClick($event)">
+            <i class="fas fa-edit me-3"></i>Edit
+          </button>
+          <button ngbDropdownItem (click)="onAddChildClick($event)">
+            <i class="fas fa-plus me-3"></i>Add Child
+          </button>
+          <button ngbDropdownItem (click)="onDeleteClick($event)">
+            <i class="fas fa-trash me-3"></i>Delete
+          </button>
+        </div>
+      </div>
+    }
+
+    <!-- Expansion Icon (if has children) -->
+    @if (hasChildren) {
+      <button
+        class="btn btn-outline-on-primary border-0 btn-sm d-flex align-items-center justify-content-center text-decoration-none my-2"
+        style="width: 1.3rem"
+        [class.rounded-0]="isEditMode"
+        [class.expanded]="isExpanded"
+        (click)="onToggleExpansion($event)"
+        role="button"
+        [disabled]="hasChildrenActive"
+        [attr.aria-expanded]="isExpanded"
+        [attr.aria-label]="isExpanded ? 'Collapse' : 'Expand'"
+      >
+        <i
+          [class]="isExpanded ? 'fas fa-chevron-down' : 'fas fa-chevron-right'"
+        ></i>
+      </button>
+    }
+  </div>
+</button>

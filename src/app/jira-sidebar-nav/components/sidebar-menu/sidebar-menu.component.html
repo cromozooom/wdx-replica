@@ -1,0 +1,121 @@
+<!-- Sidebar Menu Template (T028) -->
+<div class="d-flex overflow-hidden flex-column flex-grow-1">
+  <div
+    class="scroll_custom_1 d-flex flex-column flex-grow-1 overflow-y-scroll w-100"
+  >
+    <!-- Add Menu Buttons (T064) -->
+    @if (isEditMode) {
+      <div class="d-flex p-2 border-bottom shadow-sm">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn btn-sm btn-primary"
+            (click)="onAddRootItemClick()"
+            title="Add new root-level menu item"
+          >
+            <i class="fas fa-plus me-2"></i>
+            Item
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-primary"
+            (click)="onAddSubmenuClick(null)"
+            aria-label="Add multi-level submenu"
+          >
+            <i class="fas fa-sitemap me-2"></i>
+            Hierarchy
+          </button>
+        </div>
+      </div>
+    }
+    <!-- Recursive Menu Template -->
+    <ng-template
+      #recursiveList
+      let-items="items"
+      let-parent="parent"
+      let-level="level"
+    >
+      @for (item of items; track trackByItemId($index, item)) {
+        <li
+          class="menu-tree-node py-0 my-0"
+          [class]="'level-' + getLevel(item)"
+          [class.li-has-tree-inside]="hasTreeInside(item)"
+          [class.li-has-expanded-ul]="hasExpandedChildren(item)"
+          [class.li-has-open-sibling-after]="hasOpenSiblingAfter(item)"
+          cdkDrag
+          [cdkDragData]="item"
+          [cdkDragDisabled]="!isEditMode"
+        >
+          <!-- Menu Item Component -->
+          <app-menu-item
+            [item]="item"
+            [level]="getLevel(item)"
+            [isActive]="activeItemId === item.id"
+            [hasChildren]="hasChildren(item)"
+            [hasChildrenActive]="hasActiveDescendant(item)"
+            [isExpanded]="isExpanded(item.id)"
+            [isEditMode]="isEditMode"
+            (itemClicked)="onItemClick($event)"
+            (expansionToggled)="toggleNode(item)"
+            (editRequested)="onEditClick($event)"
+            (deleteRequested)="onDeleteClick($event)"
+            (addChildRequested)="onAddChildClick($event)"
+          ></app-menu-item>
+
+          <!-- Recursive Children -->
+          @if (hasChildren(item) && isExpanded(item.id)) {
+            <ul
+              class="menu-tree nested-level d-flex flex-column gap-0 border-danger"
+              [class]="
+                isListExpanded(item.children)
+                  ? 'ul-is-expanded'
+                  : hasActiveItemInList(item.children)
+                    ? 'ul-has-activeItem'
+                    : ''
+              "
+              cdkDropList
+              [cdkDropListData]="{ items: item.children, parent: item }"
+              (cdkDropListDropped)="onDrop($event)"
+              [cdkDropListDisabled]="!isEditMode"
+              [cdkDropListConnectedTo]="[]"
+            >
+              <!-- Recursive call -->
+              <ng-container
+                *ngTemplateOutlet="
+                  recursiveList;
+                  context: {
+                    items: item.children,
+                    parent: item,
+                    level: level + 1,
+                  }
+                "
+              ></ng-container>
+            </ul>
+          }
+        </li>
+      }
+    </ng-template>
+
+    <nav
+      class="xxx_sidebar-menu w-100 xxbg-primary text-white"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      <ul
+        class="menu-tree root-level"
+        cdkDropList
+        [cdkDropListData]="{ items: menuItems, parent: null }"
+        (cdkDropListDropped)="onDrop($event)"
+        [cdkDropListDisabled]="!isEditMode"
+      >
+        <!-- Initialize recursive template -->
+        <ng-container
+          *ngTemplateOutlet="
+            recursiveList;
+            context: { items: menuItems, parent: null, level: 0 }
+          "
+        ></ng-container>
+      </ul>
+    </nav>
+  </div>
+</div>

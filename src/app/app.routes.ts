@@ -46,6 +46,20 @@ export const routes: Routes = [
       ),
   },
   {
+    path: "jira-sidebar-nav",
+    loadChildren: () =>
+      import("./jira-sidebar-nav/jira-sidebar-nav.routes").then(
+        (m) => m.JIRA_SIDEBAR_NAV_ROUTES,
+      ),
+  },
+  {
+    path: "menu-demo",
+    loadChildren: () =>
+      import("./jira-sidebar-nav/jira-sidebar-nav.routes").then(
+        (m) => m.JIRA_SIDEBAR_NAV_ROUTES,
+      ),
+  },
+  {
     path: "jsoneditor-scroll-demo",
     loadChildren: () =>
       import("./jsoneditor-scroll-demo/jsoneditor-scroll-demo.routes").then(

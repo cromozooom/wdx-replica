@@ -81,6 +81,7 @@
 @import "ngx-diff.scss";
 @import "../node_modules/@ng-select/ng-select/themes/default.theme.css";
 @import "offcanvas-z-index.scss";
+@import "menuTree.scss";
 
 // ng-select dark theme - responds to Bootstrap's data-bs-theme
 [data-bs-theme="dark"] {
@@ -452,6 +453,76 @@ p:last-child {
 //   // box-shadow: 0 1px 0 rgba(0, 0, 0, .06);
 // }
 
+// Offcanvas customization
+.offcanvas-large {
+  width: 600px !important;
+  max-width: 90vw !important;
+}
+
+.offcanvas-footer {
+  background-color: var(--bs-body-bg);
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
 // body * {
 //   outline: 1px solid red;
 // }
+
+// Custom button for use on primary background cards
+.btn-on-primary {
+  @include button-variant(
+    color-contrast($primary),
+    // background
+    color-contrast($primary),
+    // border
+    $primary,
+    // color (text)
+    shade-color(color-contrast($primary), 10%),
+    // hover-background
+    shade-color(color-contrast($primary), 15%),
+    // hover-border
+    $primary,
+    // hover-color
+    shade-color(color-contrast($primary), 15%),
+    // active-background
+    shade-color(color-contrast($primary), 20%),
+    // active-border
+    $primary // active-color
+  );
+}
+.btn-outline-on-primary {
+  @include button-variant(
+    // color-contrast($primary),
+    transparent,
+    // border
+    transparent,
+    // color
+    color-contrast($primary),
+    // hover bg
+    tint-color($primary, 20%),
+    // hover-border-background
+    red,
+    // hover-border
+    color-contrast($primary),
+    // hover-color
+    shade-color(color-contrast($primary), 15%),
+    // active-background
+    shade-color(color-contrast($primary), 20%),
+    // active-border
+    $primary // active-color
+  );
+}
+
+.xbtn-outline-on-primary {
+  @include button-outline-variant(
+    color-contrast($primary),
+    // color
+    $primary,
+    // color-hover (text when active)
+    color-contrast($primary),
+    // active-background
+    color-contrast($primary) // active-border
+  );
+}

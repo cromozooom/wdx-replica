@@ -1,0 +1,39 @@
+<ng-select
+  [items]="icons"
+  [bindLabel]="'label'"
+  [bindValue]="'cssClass'"
+  [(ngModel)]="selectedIcon"
+  (change)="onIconSelect($any($event))"
+  [searchFn]="customSearchFn"
+  [clearable]="true"
+  [searchable]="true"
+  placeholder="Search icons..."
+  groupBy="category"
+  notFoundText="No icons found"
+>
+  <!-- Custom option template with icon preview -->
+  <ng-template ng-option-tmp let-item="item" let-index="index">
+    <div class="icon-option d-flex align-items-center">
+      <i
+        [class]="item.cssClass"
+        class="me-2"
+        style="width: 20px; text-align: center"
+      ></i>
+      <span>{{ item.label }}</span>
+      <span class="text-muted ms-auto small">{{ item.cssClass }}</span>
+    </div>
+  </ng-template>
+
+  <!-- Custom label template (selected value) -->
+  <ng-template ng-label-tmp let-item="item">
+    <div class="icon-label d-flex align-items-center">
+      <i [class]="item.cssClass" class="me-2"></i>
+      <span>{{ item.label }}</span>
+    </div>
+  </ng-template>
+
+  <!-- Group header template (category) -->
+  <ng-template ng-optgroup-tmp let-item="item">
+    <strong>{{ item.category }}</strong>
+  </ng-template>
+</ng-select>

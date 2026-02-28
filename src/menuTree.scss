@@ -1,0 +1,169 @@
+// Helper function to replace # with %23 for Data URIs
+@function svg-url-color($color) {
+  $color-str: inspect($color);
+  @if str-index($color-str, "#") == 1 {
+    @return "%23" + str-slice($color-str, 2);
+  }
+  @return $color;
+}
+
+@mixin tree-connector(
+  $curve-color: red,
+  $top-line-color: blue,
+  $full-line-color: pink,
+  $curve-position: "below"
+) {
+  $curve: svg-url-color($curve-color);
+  $top: svg-url-color($top-line-color);
+  $full: svg-url-color($full-line-color);
+
+  // If full-line-color is 'none', we omit the stroke-width or set opacity to 0
+  // $full-stroke: if($full-line-color == none, 0, 1);
+  $stroke: 2;
+
+  @if $curve-position == "above" {
+    // Curve above
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='40' viewBox='0 0 12 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0L0.999998 40' stroke='#{$full}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1.02126 9.86403C1.02126 11.1814 1.28073 12.4858 1.78486 13.7029C2.28898 14.92 3.0279 16.0258 3.95941 16.9574C4.89092 17.8889 5.99678 18.6278 7.21385 19.1319C8.43093 19.636 9.73538 19.8955 11.0527 19.8955' stroke='#{$curve}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1 0L1 10' stroke='#{$top}' stroke-width='#{$stroke}'/%3E%3C/svg%3E");
+  }
+
+  @if $curve-position == "below" {
+    // Curve below
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='40' viewBox='0 0 12 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.02126 9.86403C1.02126 11.1814 1.28073 12.4858 1.78486 13.7029C2.28898 14.92 3.0279 16.0258 3.95941 16.9574C4.89092 17.8889 5.99678 18.6278 7.21385 19.1319C8.43093 19.636 9.73538 19.8955 11.0527 19.8955' stroke='#{$curve}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1 0L0.999998 40' stroke='#{$full}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1 0L1 10' stroke='#{$top}' stroke-width='#{$stroke}'/%3E%3C/svg%3E");
+  }
+  background-repeat: no-repeat;
+}
+
+.menu-item {
+  color: color-contrast(shade-color($primary, 20%));
+  background-color: shade-color($primary, 20%);
+  &[disabled] {
+    cursor: not-allowed;
+  }
+}
+
+// .ul-is-expanded {
+//   .menu-item {
+//     &.item-has-children {
+//       color: color-contrast(shade-color($primary, 10%));
+//       background-color: shade-color($primary, 10%);
+//     }
+//   }
+// }
+
+.ul-has-activeItem {
+  .menu-item {
+    color: color-contrast(shade-color($primary, 30%));
+    background-color: shade-color($primary, 30%);
+  }
+}
+
+// .ul-is-expanded {
+//   .menu-item {
+//     color: color-contrast(shade-color($primary, 5%));
+//     background-color: shade-color($primary, 5%);
+//   }
+// }
+// .menu-item.item-has-children {
+//   color: color-contrast(shade-color($primary, 10%));
+//   background-image: linear-gradient(
+//     to bottom,
+//     shade-color($primary, 30%),
+//     shade-color($primary, 10%)
+//   );
+// }
+
+.li-has-expanded-ul {
+  .menu-item.item-has-children-active {
+    color: color-contrast(shade-color($primary, 0%));
+    background-color: shade-color($primary, 0%);
+  }
+  .menu-item {
+    color: color-contrast(shade-color($primary, 30%));
+    background-color: shade-color($primary, 30%);
+  }
+}
+
+.level-0 .item-has-children-active {
+  color: color-contrast(shade-color($primary, 0%));
+  background-color: shade-color($primary, 0%);
+}
+
+.menu-item.activeL0 {
+  color: color-contrast(shade-color($primary, 0%));
+  background-color: shade-color($primary, 0%);
+}
+
+.li-has-tree-inside {
+  border-top: 1px solid shade-color($primary, 40%) !important;
+  border-bottom: 1px solid shade-color($primary, 40%) !important;
+  // li:first-child {
+  // }
+  // li:last-child {
+  // }
+}
+.nested-level {
+  li button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 10px -2px;
+  }
+  li button.menu-item {
+    &:before {
+      @include tree-connector(
+        tint-color($primary, 30%),
+        tint-color($primary, 30%),
+        tint-color($primary, 30%)
+      );
+    }
+    &.active:before {
+      @include tree-connector(
+        tint-color($primary, 80%),
+        tint-color($primary, 80%),
+        tint-color($primary, 30%),
+        "above"
+      );
+    }
+  }
+  li.li-has-open-sibling-after {
+    button.menu-item:before {
+      @include tree-connector(
+        tint-color($primary, 30%),
+        tint-color($primary, 80%),
+        tint-color($primary, 80%)
+      );
+    }
+  }
+  li:last-child {
+    button.menu-item:before {
+      @include tree-connector(
+        tint-color($primary, 30%),
+        tint-color($primary, 30%),
+        transparent
+      );
+    }
+    button.menu-item.active:before {
+      @include tree-connector(
+        tint-color($primary, 80%),
+        tint-color($primary, 80%),
+        transparent
+      );
+    }
+  }
+}
+
+.tree-notActive {
+  border: 2px solid transparent;
+}
+.tree-active {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid tint-color($primary, 80%);
+}
+
+.tree-bg {
+  background-color: shade-color($primary, 20%);
+}

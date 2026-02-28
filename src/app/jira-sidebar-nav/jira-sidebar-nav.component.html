@@ -1,0 +1,62 @@
+<div class="w-100 flex-grow-1 d-flex flex-column overflow-hidden">
+  <header class="d-flex gap-2 py-2 border-bottom">
+    <!-- Sidebar Toggle Button -->
+    <app-sidebar-toggle
+      [isLocked]="isLocked()"
+      [disabled]="isEditMode()"
+      (toggleClicked)="toggleLock()"
+      (mouseEnter)="onSidebarMouseEnter()"
+      (mouseLeave)="onSidebarMouseLeave()"
+    ></app-sidebar-toggle>
+    <button
+      type="button"
+      class="btn btn-sm btn-outline-secondary"
+      (click)="toggleEditMode()"
+    >
+      <i [class]="isEditMode() ? 'fas fa-eye' : 'fas fa-edit'" class="me-1"></i>
+      {{ isEditMode() ? "Exit Edit Mode" : "Enter Edit Mode" }}
+    </button>
+  </header>
+  <div class="d-flex flex-grow-1 overflow-hidden">
+    <!-- [style.width.px]="currentWidth()" -->
+    <aside
+      class="d-flex overflow-hidden jira-sidebar-container border-end tree-bg"
+      [class.locked]="isLocked()"
+      [class.hidden]="visibilityMode() === 'hidden'"
+      [class.visible]="
+        visibilityMode() === 'temporary_visible' ||
+        visibilityMode() === 'locked_visible'
+      "
+      (mouseenter)="onSidebarMouseEnter()"
+      (mouseleave)="onSidebarMouseLeave()"
+    >
+      <app-sidebar-menu
+        [menuItems]="menuItems()"
+        [expandedNodeIds]="expandedNodeIds()"
+        [activeItemId]="activeItemId()"
+        [isEditMode]="isEditMode()"
+        (itemClicked)="onItemClicked($event)"
+        (nodeToggled)="onNodeToggled($event)"
+        (editRequested)="openEditDialog($event)"
+        (deleteRequested)="openDeleteDialog($event)"
+        (addSubmenuRequested)="openAddSubmenuDialog($event)"
+        (addChildRequested)="createMenuItem($event)"
+        (addRootItemRequested)="createMenuItem()"
+        (itemDropped)="onItemDropped($event)"
+      ></app-sidebar-menu>
+    </aside>
+
+    <!-- <aside
+      class="d-flex flex-grow-1 overflow-hidden jira-sidebar-container border-end"
+    >
+
+    </aside> -->
+    <main class="d-flex flex-grow-1 overflow-auto">
+      <div class="w-100" [class.mainMaxWidth]="isLocked()">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Jira Sidebar Navigation Container (T027) -->

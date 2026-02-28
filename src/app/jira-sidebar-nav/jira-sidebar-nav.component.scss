@@ -1,0 +1,113 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  --sideminSize: 0.8rem;
+  --sidemaxSize: 280px;
+}
+
+.mainMaxWidth {
+  max-width: calc(100vw - var(--sidemaxSize));
+}
+
+// Jira Sidebar Container Styles (T031)
+// Part of the Jira-style hierarchical navigation sidebar feature
+
+.jira-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+
+  // Smooth width transition (SC-005: <300ms)
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // Box shadow when expanded
+  &.visible {
+    width: var(--sidemaxSize) !important;
+    max-width: var(--sidemaxSize) !important;
+  }
+
+  // Hidden state (20px strip)
+  &.hidden {
+    width: var(--sideminSize) !important;
+    cursor: pointer;
+
+    app-sidebar-menu,
+    app-sidebar-toggle,
+    .edit-mode-controls {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: red;
+    }
+  }
+
+  // Visible states (280px)
+  &.visible {
+    width: var(--sidemaxSize) !important;
+    max-width: var(--sidemaxSize) !important;
+
+    app-sidebar-menu,
+    app-sidebar-toggle,
+    .edit-mode-controls {
+      opacity: 1;
+      pointer-events: auto;
+      transition: opacity 150ms ease-in;
+    }
+  }
+}
+
+// Locked state styling
+.locked {
+  app-sidebar-toggle {
+    .sidebar-toggle-btn {
+      background-color: #0052cc;
+      color: white;
+
+      &:hover {
+        background-color: #0747a6;
+      }
+    }
+  }
+}
+
+// Edit Mode Controls
+.edit-mode-controls {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+
+  .btn {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+// Edit mode controls styling (T056)
+.edit-mode-controls {
+  border-top: 1px solid #e0e0e0;
+  background-color: #fafafa;
+
+  .btn {
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+// Sidebar Toggle Position
+_app-sidebar-toggle {
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #dfe1e6;
+}
