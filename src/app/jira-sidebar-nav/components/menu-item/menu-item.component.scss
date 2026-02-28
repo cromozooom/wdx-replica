@@ -16,32 +16,12 @@
   display: none;
 }
 
-.menu-item.has-children-active {
-  color: color-contrast(shade-color($primary, 10%));
-  background-color: shade-color($primary, 10%);
-}
-
 .menu-item {
   display: flex;
   align-items: center;
-  cursor: pointer;
   transition: background-color 150ms ease;
   position: relative;
   min-height: 36px;
-  background-color: $primary; // Use SCSS variable, not CSS var
-  color: color-contrast($primary);
-
-  // Hover state (FR-007: 100-200ms delay handled in TS)
-  &:hover {
-    color: color-contrast(shade-color($primary, 20%));
-    background-color: shade-color($primary, 20%);
-  }
-
-  // Active state (FR-004)
-  &.active {
-    color: color-contrast(tint-color($primary, 0%));
-    background-color: tint-color($primary, 20%);
-  }
 }
 
 // Expansion Icon
@@ -50,7 +30,6 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  cursor: pointer;
   transition: transform 150ms ease;
 
   &.expanded {

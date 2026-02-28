@@ -111,7 +111,7 @@ export class MenuItemComponent {
    * Calculate indentation padding.
    */
   getIndentPadding(): string {
-    return `${this.level * 24}px`;
+    return `${this.level * 20}px`;
   }
 
   /**

@@ -81,6 +81,7 @@
 @import "ngx-diff.scss";
 @import "../node_modules/@ng-select/ng-select/themes/default.theme.css";
 @import "offcanvas-z-index.scss";
+@import "menuTree.scss";
 
 // ng-select dark theme - responds to Bootstrap's data-bs-theme
 [data-bs-theme="dark"] {

@@ -1,5 +1,5 @@
 <!-- Sidebar Menu Template (T028) -->
-<div class="d-flex overflow-hidden flex-column w-100 flex-grow-1">
+<div class="d-flex overflow-hidden flex-column flex-grow-1">
   <div
     class="scroll_custom_1 d-flex flex-column flex-grow-1 overflow-y-scroll w-100"
   >
@@ -28,6 +28,74 @@
         </div>
       </div>
     }
+    <!-- Recursive Menu Template -->
+    <ng-template
+      #recursiveList
+      let-items="items"
+      let-parent="parent"
+      let-level="level"
+    >
+      @for (item of items; track trackByItemId($index, item)) {
+        <li
+          class="menu-tree-node py-0 my-0"
+          [class]="'level-' + getLevel(item)"
+          [class.li-has-tree-inside]="hasTreeInside(item)"
+          [class.li-has-expanded-ul]="hasExpandedChildren(item)"
+          [class.li-has-open-sibling-after]="hasOpenSiblingAfter(item)"
+          cdkDrag
+          [cdkDragData]="item"
+          [cdkDragDisabled]="!isEditMode"
+        >
+          <!-- Menu Item Component -->
+          <app-menu-item
+            [item]="item"
+            [level]="getLevel(item)"
+            [isActive]="activeItemId === item.id"
+            [hasChildren]="hasChildren(item)"
+            [hasChildrenActive]="hasActiveDescendant(item)"
+            [isExpanded]="isExpanded(item.id)"
+            [isEditMode]="isEditMode"
+            (itemClicked)="onItemClick($event)"
+            (expansionToggled)="toggleNode(item)"
+            (editRequested)="onEditClick($event)"
+            (deleteRequested)="onDeleteClick($event)"
+            (addChildRequested)="onAddChildClick($event)"
+          ></app-menu-item>
+
+          <!-- Recursive Children -->
+          @if (hasChildren(item) && isExpanded(item.id)) {
+            <ul
+              class="menu-tree nested-level d-flex flex-column gap-0 border-danger"
+              [class]="
+                isListExpanded(item.children)
+                  ? 'ul-is-expanded'
+                  : hasActiveItemInList(item.children)
+                    ? 'ul-has-activeItem'
+                    : ''
+              "
+              cdkDropList
+              [cdkDropListData]="{ items: item.children, parent: item }"
+              (cdkDropListDropped)="onDrop($event)"
+              [cdkDropListDisabled]="!isEditMode"
+              [cdkDropListConnectedTo]="[]"
+            >
+              <!-- Recursive call -->
+              <ng-container
+                *ngTemplateOutlet="
+                  recursiveList;
+                  context: {
+                    items: item.children,
+                    parent: item,
+                    level: level + 1,
+                  }
+                "
+              ></ng-container>
+            </ul>
+          }
+        </li>
+      }
+    </ng-template>
+
     <nav
       class="xxx_sidebar-menu w-100 xxbg-primary text-white"
       role="navigation"
@@ -40,188 +108,13 @@
         (cdkDropListDropped)="onDrop($event)"
         [cdkDropListDisabled]="!isEditMode"
       >
-        @for (item of menuItems; track trackByItemId($index, item)) {
-          <li
-            class="menu-tree-node"
-            cdkDrag
-            [cdkDragData]="item"
-            [cdkDragDisabled]="!isEditMode"
-          >
-            <!-- Menu Item Component -->
-            <app-menu-item
-              [item]="item"
-              [level]="0"
-              [isActive]="activeItemId === item.id"
-              [hasChildren]="hasChildren(item)"
-              [hasChildrenActive]="hasActiveDescendant(item)"
-              [isExpanded]="isExpanded(item.id)"
-              [isEditMode]="isEditMode"
-              (itemClicked)="onItemClick($event)"
-              (expansionToggled)="toggleNode(item)"
-              (editRequested)="onEditClick($event)"
-              (deleteRequested)="onDeleteClick($event)"
-              (addChildRequested)="onAddChildClick($event)"
-            ></app-menu-item>
-
-            <!-- Recursive Children -->
-            @if (hasChildren(item) && isExpanded(item.id)) {
-              <ul
-                class="menu-tree nested-level"
-                cdkDropList
-                [cdkDropListData]="{ items: item.children, parent: item }"
-                (cdkDropListDropped)="onDrop($event)"
-                [cdkDropListDisabled]="!isEditMode"
-                [cdkDropListConnectedTo]="[]"
-              >
-                @for (
-                  child of item.children;
-                  track trackByItemId($index, child)
-                ) {
-                  <li
-                    class="menu-tree-node"
-                    cdkDrag
-                    [cdkDragData]="child"
-                    [cdkDragDisabled]="!isEditMode"
-                  >
-                    <app-menu-item
-                      [item]="child"
-                      [level]="1"
-                      [isActive]="activeItemId === child.id"
-                      [hasChildren]="hasChildren(child)"
-                      [hasChildrenActive]="hasActiveDescendant(child)"
-                      [isExpanded]="isExpanded(child.id)"
-                      [isEditMode]="isEditMode"
-                      (itemClicked)="onItemClick($event)"
-                      (expansionToggled)="toggleNode(child)"
-                      (editRequested)="onEditClick($event)"
-                      (deleteRequested)="onDeleteClick($event)"
-                      (addChildRequested)="onAddChildClick($event)"
-                    ></app-menu-item>
-
-                    <!-- Level 2 Children -->
-                    @if (hasChildren(child) && isExpanded(child.id)) {
-                      <ul class="menu-tree nested-level">
-                        @for (
-                          grandchild of child.children;
-                          track trackByItemId($index, grandchild)
-                        ) {
-                          <li class="menu-tree-node">
-                            <app-menu-item
-                              [item]="grandchild"
-                              [level]="2"
-                              [isActive]="activeItemId === grandchild.id"
-                              [hasChildren]="hasChildren(grandchild)"
-                              [hasChildrenActive]="
-                                hasActiveDescendant(grandchild)
-                              "
-                              [isExpanded]="isExpanded(grandchild.id)"
-                              [isEditMode]="isEditMode"
-                              (itemClicked)="onItemClick($event)"
-                              (expansionToggled)="toggleNode(grandchild)"
-                              (editRequested)="onEditClick($event)"
-                              (deleteRequested)="onDeleteClick($event)"
-                              (addChildRequested)="onAddChildClick($event)"
-                            ></app-menu-item>
-
-                            <!-- Level 3 Children -->
-                            @if (
-                              hasChildren(grandchild) &&
-                              isExpanded(grandchild.id)
-                            ) {
-                              <ul class="menu-tree nested-level">
-                                @for (
-                                  greatgrandchild of grandchild.children;
-                                  track trackByItemId($index, greatgrandchild)
-                                ) {
-                                  <li class="menu-tree-node">
-                                    <app-menu-item
-                                      [item]="greatgrandchild"
-                                      [level]="3"
-                                      [isActive]="
-                                        activeItemId === greatgrandchild.id
-                                      "
-                                      [hasChildren]="
-                                        hasChildren(greatgrandchild)
-                                      "
-                                      [hasChildrenActive]="
-                                        hasActiveDescendant(greatgrandchild)
-                                      "
-                                      [isExpanded]="
-                                        isExpanded(greatgrandchild.id)
-                                      "
-                                      [isEditMode]="isEditMode"
-                                      (itemClicked)="onItemClick($event)"
-                                      (expansionToggled)="
-                                        toggleNode(greatgrandchild)
-                                      "
-                                      (editRequested)="onEditClick($event)"
-                                      (deleteRequested)="onDeleteClick($event)"
-                                      (addChildRequested)="
-                                        onAddChildClick($event)
-                                      "
-                                    ></app-menu-item>
-
-                                    <!-- Level 4 Children (max depth) -->
-                                    @if (
-                                      hasChildren(greatgrandchild) &&
-                                      isExpanded(greatgrandchild.id)
-                                    ) {
-                                      <ul class="menu-tree nested-level">
-                                        @for (
-                                          level5 of greatgrandchild.children;
-                                          track trackByItemId($index, level5)
-                                        ) {
-                                          <li class="menu-tree-node">
-                                            <app-menu-item
-                                              [item]="level5"
-                                              [level]="4"
-                                              [isActive]="
-                                                activeItemId === level5.id
-                                              "
-                                              [hasChildren]="
-                                                hasChildren(level5)
-                                              "
-                                              [hasChildrenActive]="
-                                                hasActiveDescendant(level5)
-                                              "
-                                              [isExpanded]="
-                                                isExpanded(level5.id)
-                                              "
-                                              [isEditMode]="isEditMode"
-                                              (itemClicked)="
-                                                onItemClick($event)
-                                              "
-                                              (expansionToggled)="
-                                                toggleNode(level5)
-                                              "
-                                              (editRequested)="
-                                                onEditClick($event)
-                                              "
-                                              (deleteRequested)="
-                                                onDeleteClick($event)
-                                              "
-                                              (addChildRequested)="
-                                                onAddChildClick($event)
-                                              "
-                                            ></app-menu-item>
-                                          </li>
-                                        }
-                                      </ul>
-                                    }
-                                  </li>
-                                }
-                              </ul>
-                            }
-                          </li>
-                        }
-                      </ul>
-                    }
-                  </li>
-                }
-              </ul>
-            }
-          </li>
-        }
+        <!-- Initialize recursive template -->
+        <ng-container
+          *ngTemplateOutlet="
+            recursiveList;
+            context: { items: menuItems, parent: null, level: 0 }
+          "
+        ></ng-container>
       </ul>
     </nav>
   </div>

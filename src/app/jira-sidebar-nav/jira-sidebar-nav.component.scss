@@ -8,6 +8,10 @@
   --sidemaxSize: 280px;
 }
 
+.mainMaxWidth {
+  max-width: calc(100vw - var(--sidemaxSize));
+}
+
 // Jira Sidebar Container Styles (T031)
 // Part of the Jira-style hierarchical navigation sidebar feature
 
@@ -23,6 +27,8 @@
 
   // Box shadow when expanded
   &.visible {
+    width: var(--sidemaxSize) !important;
+    max-width: var(--sidemaxSize) !important;
   }
 
   // Hidden state (20px strip)

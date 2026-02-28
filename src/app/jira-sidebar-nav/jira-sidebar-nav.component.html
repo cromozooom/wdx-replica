@@ -20,13 +20,9 @@
   <div class="d-flex flex-grow-1 overflow-hidden">
     <!-- [style.width.px]="currentWidth()" -->
     <aside
-      class="d-flex overflow-hidden jira-sidebar-container border-end"
+      class="d-flex overflow-hidden jira-sidebar-container border-end tree-bg"
       [class.locked]="isLocked()"
       [class.hidden]="visibilityMode() === 'hidden'"
-      [class.flex-grow-1]="
-        visibilityMode() === 'temporary_visible' ||
-        visibilityMode() === 'locked_visible'
-      "
       [class.visible]="
         visibilityMode() === 'temporary_visible' ||
         visibilityMode() === 'locked_visible'
@@ -55,8 +51,10 @@
     >
 
     </aside> -->
-    <main class="flex-grow-1 overflow-auto">
-      <router-outlet></router-outlet>
+    <main class="d-flex flex-grow-1 overflow-auto">
+      <div class="w-100" [class.mainMaxWidth]="isLocked()">
+        <router-outlet></router-outlet>
+      </div>
     </main>
   </div>
 </div>
