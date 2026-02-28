@@ -1,0 +1,104 @@
+<!-- Reusable Editor Template -->
+<ng-template #editorTemplate let-context>
+  <div class="controls-bar">
+    <div class="d-flex">
+      <div class="d-flex">
+        <label
+          class="sr-only"
+          [attr.for]="
+            context.isModal ? 'modalScenarioSelect' : 'scenarioSelect'
+          "
+          >Test Scenario:</label
+        >
+        <select
+          [id]="context.isModal ? 'modalScenarioSelect' : 'scenarioSelect'"
+          [(ngModel)]="selectedScenarioId"
+          (change)="onScenarioChange(context.isModal)"
+          class="form-select"
+        >
+          <option *ngFor="let scenario of scenarios" [value]="scenario.id">
+            {{ scenario.label }}
+          </option>
+        </select>
+      </div>
+      <button
+        *ngIf="!context.isModal"
+        type="button"
+        class="btn btn-sm btn-outline-primary ms-2"
+        (click)="openFullscreen()"
+        title="Open in fullscreen"
+      >
+        <i class="fas fa-expand"></i> Fullscreen
+      </button>
+    </div>
+    <p class="my-2" *ngIf="currentScenario">
+      @if (minHeight > 0 && !context.isModal) {
+        <span
+          class="me-2 rounded px-2 py-1 bg-warning-subtle text-warning-emphasis"
+          >{{ minHeight }}</span
+        >
+      }
+      <span class="rounded px-2 py-1 bg-info-subtle text-info-emphasis">{{
+        currentScenario.editorMode
+      }}</span>
+      <small class="text-muted ms-2">{{ currentScenario.description }}</small>
+    </p>
+    <button
+      *ngIf="isModified && !context.isModal"
+      class="reset-button"
+      (click)="resetContent()"
+      type="button"
+    >
+      Reset
+    </button>
+  </div>
+  <div
+    #editorContainerRef
+    class="jsoneditor-container rounded border"
+    [ngClass]="currentScenario?.containerClass"
+    [style.min-height]="
+      minHeight > 0 && !context.isModal ? minHeight + 'vh' : 'auto'
+    "
+  ></div>
+</ng-template>
+
+<!-- Main View -->
+<ng-container
+  *ngTemplateOutlet="
+    editorTemplate;
+    context: { $implicit: { isModal: false, editorId: 'mainEditorContainer' } }
+  "
+></ng-container>
+
+<!-- Fullscreen Modal -->
+<ng-template #fullscreenModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">
+      Fullscreen Editor - {{ currentScenario?.label }}
+    </h5>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.close()"
+    ></button>
+  </div>
+  <div class="modal-body p-1 d-flex flex-column">
+    <ng-container
+      *ngTemplateOutlet="
+        editorTemplate;
+        context: {
+          $implicit: { isModal: true, editorId: 'modalEditorContainer' },
+        }
+      "
+    ></ng-container>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">
+      Cancel
+    </button>
+    <button type="button" class="btn btn-primary" (click)="modal.close()">
+      Apply Changes
+    </button>
+  </div>
+</ng-template>
