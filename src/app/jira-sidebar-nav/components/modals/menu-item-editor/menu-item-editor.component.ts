@@ -12,7 +12,7 @@ import {
   FormGroup,
   Validators,
 } from "@angular/forms";
-import { NgbActiveOffcanvas } from "@ng-bootstrap/ng-bootstrap";
+import { NgbActiveOffcanvas, NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { MenuItem } from "../../../models/menu-item.interface";
 import { IconPickerComponent } from "../../icon-picker/icon-picker.component.js";
 
@@ -32,6 +32,7 @@ import { IconPickerComponent } from "../../icon-picker/icon-picker.component.js"
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, IconPickerComponent],
   templateUrl: "./menu-item-editor.component.html",
+  styleUrl: "./menu-item-editor.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MenuItemEditorComponent implements OnInit {
@@ -39,11 +40,6 @@ export class MenuItemEditorComponent implements OnInit {
    * Menu item to edit. Undefined for new item creation.
    */
   @Input() menuItem?: MenuItem;
-
-  /**
-   * Parent menu item when adding a child. Used for content config transfer.
-   */
-  @Input() parentItem?: MenuItem;
 
   /**
    * Reactive form for menu item editing.
@@ -54,6 +50,11 @@ export class MenuItemEditorComponent implements OnInit {
    * Offcanvas instance for closing/dismissing.
    */
   private readonly activeOffcanvas = inject(NgbActiveOffcanvas);
+
+  /**
+   * Modal service for confirmation dialogs.
+   */
+  private readonly modalService = inject(NgbModal);
 
   /**
    * Form builder injection.
@@ -90,13 +91,6 @@ export class MenuItemEditorComponent implements OnInit {
           : this.form.get("contentConfig")?.value,
       });
     } else {
-      // Check if parent has contentConfig to transfer
-      if (this.parentItem?.contentConfig) {
-        this.form.patchValue({
-          contentConfig: JSON.stringify(this.parentItem.contentConfig, null, 2),
-        });
-      }
-
       // For new items, update widgetName to match label when it changes
       this.form.get("label")?.valueChanges.subscribe((label) => {
         try {
@@ -202,5 +196,61 @@ export class MenuItemEditorComponent implements OnInit {
    */
   get isValid(): boolean {
     return this.form.valid && this.contentConfigError === null;
+  }
+
+  /**
+   * Copy content configuration to clipboard.
+   */
+  async copyConfig(): Promise<void> {
+    const config = this.form.get("contentConfig")?.value;
+    if (!config) {
+      alert("No configuration to copy");
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(config);
+      // Could show a toast notification here
+      console.log("Configuration copied to clipboard");
+    } catch (err) {
+      console.error("Failed to copy:", err);
+      alert("Failed to copy configuration to clipboard");
+    }
+  }
+
+  /**
+   * Paste content configuration from clipboard with confirmation.
+   */
+  async pasteConfig(confirmModal: any): Promise<void> {
+    try {
+      const clipboardText = await navigator.clipboard.readText();
+
+      if (!clipboardText || clipboardText.trim() === "") {
+        alert("Clipboard is empty");
+        return;
+      }
+
+      // Validate JSON
+      try {
+        JSON.parse(clipboardText);
+      } catch (e) {
+        alert("Clipboard does not contain valid JSON");
+        return;
+      }
+
+      // Open confirmation modal
+      this.modalService.open(confirmModal, { centered: true }).result.then(
+        () => {
+          // User confirmed - paste the config
+          this.form.patchValue({ contentConfig: clipboardText });
+        },
+        () => {
+          // User cancelled - do nothing
+        },
+      );
+    } catch (err) {
+      console.error("Failed to read clipboard:", err);
+      alert("Failed to read from clipboard. Please check browser permissions.");
+    }
   }
 }

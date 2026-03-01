@@ -353,27 +353,14 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
    * @param parentItem - Optional parent item (for creating child items)
    */
   async createMenuItem(parentItem?: MenuItem): Promise<void> {
-    // Check if parent will lose its content config
-    if (
-      parentItem &&
-      parentItem.contentConfig &&
-      (!parentItem.children || parentItem.children.length === 0)
-    ) {
-      const confirmed = await this.confirmContentTransfer(parentItem);
-      if (!confirmed) {
-        return; // User cancelled
-      }
-    }
-
     const offcanvasRef = this.offcanvasService.open(MenuItemEditorComponent, {
       position: "end",
       backdrop: "static",
       panelClass: "offcanvas-large",
     });
 
-    // Pass undefined to create new item, and parentItem for content transfer
+    // Pass undefined to create new item
     offcanvasRef.componentInstance.menuItem = undefined;
-    offcanvasRef.componentInstance.parentItem = parentItem;
 
     try {
       const result: Partial<MenuItem> = await offcanvasRef.result;
@@ -391,7 +378,7 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
         ...(result.contentConfig && { contentConfig: result.contentConfig }),
       };
 
-      // Add item via service (content transfer happens automatically)
+      // Add item via service
       this.menuDataService.addItem(newItem, parentItem?.id);
     } catch (error) {
       // User cancelled or dismissed modal
@@ -458,18 +445,6 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
    * @param parentItem - Optional parent item to nest under (null for root level)
    */
   async openAddSubmenuDialog(parentItem: MenuItem | null): Promise<void> {
-    // Check if parent will lose its content config
-    if (
-      parentItem &&
-      parentItem.contentConfig &&
-      (!parentItem.children || parentItem.children.length === 0)
-    ) {
-      const confirmed = await this.confirmContentTransfer(parentItem);
-      if (!confirmed) {
-        return; // User cancelled
-      }
-    }
-
     const offcanvasRef = this.offcanvasService.open(AddSubmenuComponent, {
       position: "end",
       backdrop: "static",
@@ -481,42 +456,11 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
     try {
       const result: MenuItem = await offcanvasRef.result;
 
-      // Add submenu hierarchy via service (content transfer happens automatically)
+      // Add submenu hierarchy via service
       this.menuDataService.addSubmenu(parentItem?.id || null, result);
     } catch (error) {
       // User cancelled or dismissed modal
     }
-  }
-
-  /**
-   * Show confirmation dialog before transferring content configuration.
-   *
-   * @param parentItem - The parent item that will lose its content
-   * @returns Promise<boolean> - true if user confirmed, false if cancelled
-   */
-  private async confirmContentTransfer(parentItem: MenuItem): Promise<boolean> {
-    return new Promise((resolve) => {
-      const widgetName =
-        parentItem.contentConfig?.settings?.["widgetName"] || "N/A";
-      const apiEndpoint =
-        parentItem.contentConfig?.settings?.["apiEndpoint"] || "N/A";
-
-      const message =
-        `⚠️ Content Configuration Transfer\n\n` +
-        `The item "${parentItem.label}" currently has content configuration:\n` +
-        `• Widget: ${widgetName}\n` +
-        `• API: ${apiEndpoint}\n\n` +
-        `Adding a child will automatically:\n` +
-        `✓ Transfer this configuration to the first child\n` +
-        `✓ Convert "${parentItem.label}" into a container (no content)\n\n` +
-        `Continue?`;
-
-      if (confirm(message)) {
-        resolve(true);
-      } else {
-        resolve(false);
-      }
-    });
   }
 
   /**
