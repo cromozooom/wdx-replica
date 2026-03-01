@@ -61,6 +61,9 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
   // Timer subscription for auto-hide
   private autoHideSubscription?: Subscription;
 
+  // Settings
+  private autoSelectFirstChild = false;
+
   // Computed signals from service
   protected readonly menuItems = this.menuDataService.rootItems;
   protected readonly isLocked = this.menuDataService.isSidebarLocked;
@@ -85,6 +88,24 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     // State is already initialized by MenuDataService
+
+    // Load settings from localStorage
+    this.loadSettings();
+  }
+
+  /**
+   * Load settings from localStorage.
+   */
+  private loadSettings(): void {
+    const savedSettings = localStorage.getItem("jira-sidebar-settings");
+    if (savedSettings) {
+      try {
+        const settings = JSON.parse(savedSettings);
+        this.autoSelectFirstChild = settings.autoSelectFirstChild || false;
+      } catch (e) {
+        console.error("Failed to load settings:", e);
+      }
+    }
   }
 
   ngOnDestroy(): void {
@@ -149,6 +170,17 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
     // Pass current menu items
     offcanvasRef.componentInstance.menuItems = this.menuItems();
 
+    // Subscribe to settings changes
+    offcanvasRef.componentInstance.settingsChanged.subscribe(
+      (settings: { autoSelectFirstChild: boolean }) => {
+        this.autoSelectFirstChild = settings.autoSelectFirstChild;
+        console.log(
+          "[SETTINGS] Auto-select first child:",
+          this.autoSelectFirstChild,
+        );
+      },
+    );
+
     try {
       const reorderedItems: MenuItem[] = await offcanvasRef.result;
 
@@ -173,7 +205,8 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
    * Handle item click for navigation (T034).
    *
    * Behavior:
-   * - Parent nodes (with children): Toggle expansion only
+   * - Parent nodes (with children): Toggle expansion
+   *   - If auto-select setting is ON: Also navigate to first child
    * - Leaf nodes (no children): Navigate to content and set active
    */
   onItemClicked(itemId: string): void {
@@ -184,9 +217,21 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
       return;
     }
 
-    // If item has children, just toggle expansion (parent node behavior)
+    // If item has children, toggle expansion (parent node behavior)
     if (item.children && item.children.length > 0) {
       this.menuDataService.toggleNodeExpansion(itemId);
+
+      // If auto-select setting is enabled, navigate to first child
+      if (this.autoSelectFirstChild) {
+        const firstChild = item.children[0];
+        if (firstChild) {
+          console.log(
+            `[AUTO-SELECT] Navigating to first child: ${firstChild.label}`,
+          );
+          this.menuDataService.setActiveItem(firstChild.id);
+          this.router.navigate(["/menu-demo/item", firstChild.id]);
+        }
+      }
     } else {
       // Leaf node: Navigate to content
       this.menuDataService.setActiveItem(itemId);

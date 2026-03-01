@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, inject } from "@angular/core";
 import { CommonModule, DOCUMENT } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 import {
   CdkDrag,
   CdkDragHandle,
@@ -9,26 +10,42 @@ import {
   moveItemInArray,
   transferArrayItem,
 } from "@angular/cdk/drag-drop";
-import { NgbActiveOffcanvas } from "@ng-bootstrap/ng-bootstrap";
+import { NgbActiveOffcanvas, NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 import { MenuItem } from "../../../models";
 
 /**
- * Menu Reorder Offcanvas Component.
- * Provides drag-and-drop interface for reordering menu items with smooth CDK animations.
+ * Menu Settings Offcanvas Component.
+ * Provides drag-and-drop reordering and menu behavior settings.
  */
 @Component({
   selector: "app-menu-reorder-offcanvas",
   standalone: true,
-  imports: [CommonModule, CdkDropList, CdkDrag, CdkDragHandle],
+  imports: [
+    CommonModule,
+    FormsModule,
+    NgbNavModule,
+    CdkDropList,
+    CdkDrag,
+    CdkDragHandle,
+  ],
   templateUrl: "./menu-reorder-offcanvas.component.html",
   styleUrl: "./menu-reorder-offcanvas.component.scss",
 })
 export class MenuReorderOffcanvasComponent {
   @Input() menuItems: MenuItem[] = [];
   @Output() menuReordered = new EventEmitter<MenuItem[]>();
+  @Output() settingsChanged = new EventEmitter<{
+    autoSelectFirstChild: boolean;
+  }>();
 
   activeOffcanvas = inject(NgbActiveOffcanvas);
   private document = inject(DOCUMENT);
+
+  // Active tab ID
+  activeTab = 1; // 1 = Reorder, 2 = Settings
+
+  // Settings
+  autoSelectFirstChild = false;
 
   // IDs for connected drop lists (built from menu tree)
   dropTargetIds: string[] = [];
@@ -49,6 +66,34 @@ export class MenuReorderOffcanvasComponent {
 
     // Build drop target IDs
     this.prepareDragDrop(this.menuItems);
+
+    // Load settings from localStorage
+    this.loadSettings();
+  }
+
+  /**
+   * Load settings from localStorage.
+   */
+  loadSettings(): void {
+    const savedSettings = localStorage.getItem("jira-sidebar-settings");
+    if (savedSettings) {
+      try {
+        const settings = JSON.parse(savedSettings);
+        this.autoSelectFirstChild = settings.autoSelectFirstChild || false;
+      } catch (e) {
+        console.error("Failed to load settings:", e);
+      }
+    }
+  }
+
+  /**
+   * Save settings to localStorage and emit change.
+   */
+  saveSettings(): void {
+    const settings = { autoSelectFirstChild: this.autoSelectFirstChild };
+    localStorage.setItem("jira-sidebar-settings", JSON.stringify(settings));
+    this.settingsChanged.emit(settings);
+    console.log("Settings saved:", settings);
   }
 
   /**
