@@ -72,9 +72,11 @@
           <button ngbDropdownItem (click)="onEditClick($event)">
             <i class="fas fa-edit me-3"></i>Edit
           </button>
-          <button ngbDropdownItem (click)="onAddChildClick($event)">
-            <i class="fas fa-plus me-3"></i>Add Child
-          </button>
+          @if (level < 1) {
+            <button ngbDropdownItem (click)="onAddChildClick($event)">
+              <i class="fas fa-plus me-3"></i>Add Child
+            </button>
+          }
           <button ngbDropdownItem (click)="onDeleteClick($event)">
             <i class="fas fa-trash me-3"></i>Delete
           </button>

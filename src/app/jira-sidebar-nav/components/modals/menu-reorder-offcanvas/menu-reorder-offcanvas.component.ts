@@ -1,46 +1,51 @@
-import {
-  Component,
-  Input,
-  Output,
-  EventEmitter,
-  inject,
-  PLATFORM_ID,
-} from "@angular/core";
-import { CommonModule, DOCUMENT, isPlatformBrowser } from "@angular/common";
+import { Component, Input, Output, EventEmitter, inject } from "@angular/core";
+import { CommonModule, DOCUMENT } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 import {
   CdkDrag,
+  CdkDragHandle,
   CdkDropList,
   CdkDragDrop,
   CdkDragMove,
+  moveItemInArray,
+  transferArrayItem,
 } from "@angular/cdk/drag-drop";
-import { NgbActiveOffcanvas } from "@ng-bootstrap/ng-bootstrap";
+import { NgbActiveOffcanvas, NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 import { MenuItem } from "../../../models";
 
-interface DropInfo {
-  targetId: string;
-  action?: "before" | "after" | "inside";
-}
-
 /**
- * Menu Reorder Offcanvas Component.
- * Provides drag-and-drop interface for reordering menu items.
- * Based on StackBlitz working pattern.
+ * Menu Settings Offcanvas Component.
+ * Provides drag-and-drop reordering and menu behavior settings.
  */
 @Component({
   selector: "app-menu-reorder-offcanvas",
   standalone: true,
-  imports: [CommonModule, CdkDropList, CdkDrag],
+  imports: [
+    CommonModule,
+    FormsModule,
+    NgbNavModule,
+    CdkDropList,
+    CdkDrag,
+    CdkDragHandle,
+  ],
   templateUrl: "./menu-reorder-offcanvas.component.html",
   styleUrl: "./menu-reorder-offcanvas.component.scss",
-  // Using default ViewEncapsulation.Emulated for proper style scoping
 })
 export class MenuReorderOffcanvasComponent {
   @Input() menuItems: MenuItem[] = [];
   @Output() menuReordered = new EventEmitter<MenuItem[]>();
+  @Output() settingsChanged = new EventEmitter<{
+    autoSelectFirstChild: boolean;
+  }>();
 
   activeOffcanvas = inject(NgbActiveOffcanvas);
   private document = inject(DOCUMENT);
-  private platformId = inject(PLATFORM_ID);
+
+  // Active tab ID
+  activeTab = 1; // 1 = Reorder, 2 = Settings
+
+  // Settings
+  autoSelectFirstChild = false;
 
   // IDs for connected drop lists (built from menu tree)
   dropTargetIds: string[] = [];
@@ -48,224 +53,222 @@ export class MenuReorderOffcanvasComponent {
   // Lookup map for quick node access by ID
   nodeLookup: { [key: string]: MenuItem } = {};
 
-  // Current drag-drop action info
-  dropActionTodo: DropInfo | null = null;
-
-  // Debounce timer for dragMoved
-  private dragMoveTimer: any = null;
+  // Track last mouse position during drag
+  private lastMouseX = 0;
+  private lastMouseY = 0;
 
   ngOnInit(): void {
     // Deep clone menu items to avoid mutating original
     this.menuItems = JSON.parse(JSON.stringify(this.menuItems));
+
+    // Initialize children arrays to ensure drop zones work
+    this.initializeChildren(this.menuItems);
+
+    // Build drop target IDs
     this.prepareDragDrop(this.menuItems);
+
+    // Load settings from localStorage
+    this.loadSettings();
   }
 
   /**
-   * Build drop target IDs and node lookup map.
-   * Based on StackBlitz prepareDragDrop() method.
+   * Load settings from localStorage.
    */
-  prepareDragDrop(nodes: MenuItem[]): void {
+  loadSettings(): void {
+    const savedSettings = localStorage.getItem("jira-sidebar-settings");
+    if (savedSettings) {
+      try {
+        const settings = JSON.parse(savedSettings);
+        this.autoSelectFirstChild = settings.autoSelectFirstChild || false;
+      } catch (e) {
+        console.error("Failed to load settings:", e);
+      }
+    }
+  }
+
+  /**
+   * Save settings to localStorage and emit change.
+   */
+  saveSettings(): void {
+    const settings = { autoSelectFirstChild: this.autoSelectFirstChild };
+    localStorage.setItem("jira-sidebar-settings", JSON.stringify(settings));
+    this.settingsChanged.emit(settings);
+    console.log("Settings saved:", settings);
+  }
+
+  /**
+   * Initialize children arrays for all nodes.
+   */
+  initializeChildren(nodes: MenuItem[]): void {
     nodes.forEach((node) => {
-      this.dropTargetIds.push(node.id);
-      this.nodeLookup[node.id] = node;
-      if (node.children && node.children.length > 0) {
-        this.prepareDragDrop(node.children);
+      if (!node.children) {
+        node.children = [];
+      }
+      if (node.children.length > 0) {
+        this.initializeChildren(node.children);
       }
     });
   }
 
   /**
-   * Handle drag move event to determine drop action (before/after/inside).
-   * Debounced to improve performance.
+   * Build drop target IDs including children drop zones.
    */
-  dragMoved(event: CdkDragMove): void {
-    if (!isPlatformBrowser(this.platformId)) {
-      return;
-    }
+  prepareDragDrop(nodes: MenuItem[]): void {
+    // Clear and rebuild
+    this.dropTargetIds = [];
 
-    // Clear previous timer
-    if (this.dragMoveTimer) {
-      clearTimeout(this.dragMoveTimer);
-    }
+    // Add root drop list
+    this.dropTargetIds.push("root");
 
-    // Debounce to 50ms
-    this.dragMoveTimer = setTimeout(() => {
-      const element = this.document.elementFromPoint(
-        event.pointerPosition.x,
-        event.pointerPosition.y,
-      );
-
-      if (!element) {
-        this.clearDragInfo();
-        return;
+    nodes.forEach((node) => {
+      // Only add children list if node is expanded (only in DOM when expanded)
+      if (node.expanded && node.children && node.children.length > 0) {
+        this.dropTargetIds.push("children-" + node.id + "-list");
       }
 
-      const container = element.classList.contains("node-item")
-        ? element
-        : element.closest(".node-item");
+      this.nodeLookup[node.id] = node;
 
-      if (!container) {
-        this.clearDragInfo();
-        return;
+      if (node.children && node.children.length > 0) {
+        this.prepareDragDrop(node.children);
       }
+    });
 
-      this.dropActionTodo = {
-        targetId: container.getAttribute("data-id") || "",
-      };
-
-      const targetRect = container.getBoundingClientRect();
-      const oneThird = targetRect.height / 3;
-
-      if (event.pointerPosition.y - targetRect.top < oneThird) {
-        // Drop before
-        this.dropActionTodo.action = "before";
-      } else if (event.pointerPosition.y - targetRect.top > 2 * oneThird) {
-        // Drop after
-        this.dropActionTodo.action = "after";
-      } else {
-        // Drop inside (as child)
-        this.dropActionTodo.action = "inside";
-      }
-
-      this.showDragInfo();
-    }, 50);
+    console.log("🎯 Drop targets built:", this.dropTargetIds.length, "zones", {
+      sample: this.dropTargetIds.slice(0, 10),
+    });
   }
 
   /**
-   * Handle drop event.
+   * Track mouse position during drag
+   */
+  onDragMoved(event: CdkDragMove): void {
+    this.lastMouseX = event.pointerPosition.x;
+    this.lastMouseY = event.pointerPosition.y;
+  }
+
+  /**
+   * Reset state when drag starts
+   */
+  onDragStarted(): void {
+    this.lastMouseX = 0;
+    this.lastMouseY = 0;
+    console.log("🍬 Drag started");
+  }
+
+  /**
+   * Handle drop event - check if drop is on right half (child) or left half (reorder)
    */
   drop(event: CdkDragDrop<MenuItem[]>): void {
-    if (!this.dropActionTodo) {
-      return;
-    }
+    console.log("🎯 Drop event:", {
+      from: event.previousContainer.id,
+      to: event.container.id,
+      previousIndex: event.previousIndex,
+      currentIndex: event.currentIndex,
+      lastMouseX: this.lastMouseX,
+    });
 
-    const draggedItemId = event.item.data as string;
-    const parentItemId = event.previousContainer.id;
-    const targetListId = this.getParentNodeId(
-      this.dropActionTodo.targetId,
-      this.menuItems,
-      "main",
-    );
+    // Get the container bounds to determine if drop is on right or left half
+    const containerBounds = this.document
+      .querySelector(".root-drop-list")
+      ?.getBoundingClientRect();
 
-    console.log(
-      "\nMoving\n[" + draggedItemId + "] from list [" + parentItemId + "]",
-      "\n[" +
-        this.dropActionTodo.action +
-        "]\n[" +
-        this.dropActionTodo.targetId +
-        "] from list [" +
-        targetListId +
-        "]",
-    );
+    if (containerBounds) {
+      const containerWidth = containerBounds.width;
+      const containerLeft = containerBounds.left;
+      const relativeX = this.lastMouseX - containerLeft;
+      const isRightHalf = relativeX > containerWidth / 2;
 
-    const draggedItem = this.nodeLookup[draggedItemId];
+      console.log("📏 Drop position analysis:", {
+        containerWidth,
+        containerLeft,
+        mouseX: this.lastMouseX,
+        relativeX,
+        isRightHalf,
+      });
 
-    const oldItemContainer =
-      parentItemId !== "main"
-        ? this.nodeLookup[parentItemId].children || []
-        : this.menuItems;
+      // If dropped on right half, add as child to the item at currentIndex - 1
+      if (isRightHalf && event.container.id === "root") {
+        const targetIndex = event.currentIndex > 0 ? event.currentIndex - 1 : 0;
+        const targetNode = this.menuItems[targetIndex];
 
-    const newContainer =
-      targetListId && targetListId !== "main"
-        ? this.nodeLookup[targetListId].children || []
-        : this.menuItems;
+        if (targetNode) {
+          // Initialize children array if needed
+          if (!targetNode.children) {
+            targetNode.children = [];
+          }
 
-    // Remove from old position
-    const oldIndex = oldItemContainer.findIndex(
-      (c: MenuItem) => c.id === draggedItemId,
-    );
-    oldItemContainer.splice(oldIndex, 1);
+          // Transfer the item
+          transferArrayItem(
+            event.previousContainer.data,
+            targetNode.children,
+            event.previousIndex,
+            targetNode.children.length,
+          );
 
-    // Insert at new position
-    switch (this.dropActionTodo.action) {
-      case "before":
-      case "after":
-        const targetIndex = newContainer.findIndex(
-          (c: MenuItem) => c.id === this.dropActionTodo!.targetId,
-        );
-        if (this.dropActionTodo.action === "before") {
-          newContainer.splice(targetIndex, 0, draggedItem);
-        } else {
-          newContainer.splice(targetIndex + 1, 0, draggedItem);
-        }
-        break;
+          // Expand the parent to show the new child
+          if (!targetNode.expanded) {
+            targetNode.expanded = true;
+          }
 
-      case "inside":
-        const targetNode = this.nodeLookup[this.dropActionTodo.targetId];
-        if (!targetNode.children) {
-          targetNode.children = [];
-        }
-        targetNode.children.push(draggedItem);
-        targetNode.expanded = true;
-        break;
-    }
+          // Rebuild drop targets
+          this.prepareDragDrop(this.menuItems);
 
-    this.clearDragInfo(true);
-  }
-
-  /**
-   * Find parent node ID for a given node.
-   */
-  getParentNodeId(
-    id: string,
-    nodesToSearch: MenuItem[],
-    parentId: string,
-  ): string | null {
-    for (const node of nodesToSearch) {
-      if (node.id === id) {
-        return parentId;
-      }
-      if (node.children && node.children.length > 0) {
-        const ret = this.getParentNodeId(id, node.children, node.id);
-        if (ret) {
-          return ret;
+          console.log("✅ Item added as child to:", targetNode.label);
+          return;
         }
       }
     }
-    return null;
-  }
 
-  /**
-   * Show drag info visual indicators.
-   */
-  showDragInfo(): void {
-    this.clearDragInfo();
-    if (this.dropActionTodo && isPlatformBrowser(this.platformId)) {
-      const element = this.document.getElementById(
-        "node-" + this.dropActionTodo.targetId,
+    // Normal drop behavior (left half or no right-half target)
+    if (event.previousContainer === event.container) {
+      // Same list - just reorder
+      moveItemInArray(
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex,
       );
-      if (element) {
-        element.classList.add("drop-" + this.dropActionTodo.action);
+    } else {
+      // Different list - transfer item
+      transferArrayItem(
+        event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex,
+      );
+
+      // If dropped into a children zone, expand the parent
+      if (event.container.id.startsWith("children-")) {
+        // Extract parent ID (handles "children-X" and "children-X-list")
+        const parentId = event.container.id
+          .replace("children-", "")
+          .replace("-list", "");
+        const parent = this.nodeLookup[parentId];
+        if (parent) {
+          if (!parent.expanded) {
+            parent.expanded = true;
+            // Rebuild drop targets since we just expanded a node
+            this.prepareDragDrop(this.menuItems);
+          }
+          console.log("✅ Item added as child to:", parent.label);
+        }
       }
     }
+
+    console.log("Item moved:", {
+      from: event.previousContainer.id,
+      to: event.container.id,
+      previousIndex: event.previousIndex,
+      currentIndex: event.currentIndex,
+    });
   }
 
   /**
-   * Clear drag info visual indicators.
-   */
-  clearDragInfo(dropped = false): void {
-    if (dropped) {
-      this.dropActionTodo = null;
-    }
-
-    if (isPlatformBrowser(this.platformId)) {
-      this.document
-        .querySelectorAll(".drop-before")
-        .forEach((element) => element.classList.remove("drop-before"));
-      this.document
-        .querySelectorAll(".drop-after")
-        .forEach((element) => element.classList.remove("drop-after"));
-      this.document
-        .querySelectorAll(".drop-inside")
-        .forEach((element) => element.classList.remove("drop-inside"));
-    }
-  }
-
-  /**
-   * Toggle node expansion.
+   * Toggle node expansion and rebuild drop targets.
    */
   toggleExpansion(node: MenuItem): void {
     node.expanded = !node.expanded;
+    // Rebuild drop target IDs to include/exclude the expanded children list
+    this.prepareDragDrop(this.menuItems);
   }
 
   /**

@@ -1,3 +1,6 @@
+/* Menu Reorder Offcanvas - CDK Drag & Drop Styles */
+/* Follows Angular Material CDK default styling patterns */
+
 :host {
   width: 100%;
   display: flex;
@@ -6,145 +9,178 @@
   overflow: hidden;
 }
 
-/* Menu Reorder Offcanvas Styles */
-/* Based on StackBlitz working example */
+/* ==================== CDK DRAG & DROP ANIMATIONS ==================== */
 
-/* Drag placeholder - show as semi-transparent to maintain layout */
-::ng-deep .cdk-drag-placeholder {
-  opacity: 0.4;
-  border: 2px dashed #adb5bd;
-  background-color: #f8f9fa;
-
-  .node-title {
-    visibility: hidden;
-  }
-}
-
-/* Drag preview styling */
+/* Drag Preview - follows CDK default shadow */
 ::ng-deep .cdk-drag-preview {
   box-sizing: border-box;
+  border-radius: 4px;
   box-shadow:
-    0 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0 5px 5px -3px rgba(0, 0, 0, 0.2),
     0 8px 10px 1px rgba(0, 0, 0, 0.14),
     0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  background: #fff;
-  opacity: 0.8;
+}
+
+/* Custom Drag Preview - simplified clean element */
+.drag-preview-item {
+  padding: 12px 16px;
+  background: white;
   border-radius: 4px;
-  max-width: 400px;
-  width: auto;
-
-  // Hide nested children in the preview - only show the dragged item
-  .node-children {
-    display: none !important;
-  }
-
-  // Ensure preview only shows single node title
-  .node-item {
-    .node-title {
-      margin: 0;
-    }
-  }
-}
-
-/* Drop position indicators */
-::ng-deep .drop-inside {
-  border: 2px solid #007bff !important;
-  background-color: rgba(0, 123, 255, 0.05);
-}
-
-::ng-deep .drop-before {
-  border-top: 3px solid #007bff !important;
-}
-
-::ng-deep .drop-after {
-  border-bottom: 3px solid #007bff !important;
-}
-
-/* Node styling */
-.node-title {
-  // padding: 12px 15px;
-  // margin: 5px 0;
-  // background: #f8f9fa;
-  cursor: grab;
-  // border-radius: 4px;
-  transition: all 0.2s ease;
   display: flex;
   align-items: center;
-  // border: 1px solid #dee2e6;
+  font-size: 14px;
+  white-space: nowrap;
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-  &:hover {
-    background: #e9ecef;
-    border-color: #adb5bd;
-  }
+/* Placeholder - invisible by default (CDK pattern) */
+::ng-deep .cdk-drag-placeholder {
+  opacity: 0;
+  background: #e3f2fd;
+  border: 2px dashed #2196f3;
+  border-radius: 4px;
+  min-height: 48px;
+}
+
+/* Drag animation - smooth transform transition */
+::ng-deep .cdk-drag-animating {
+  transition: transform 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Other items in the list animate smoothly when making space */
+::ng-deep .cdk-drop-list-dragging .cdk-drag:not(.cdk-drag-placeholder) {
+  transition: transform 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ==================== NODE STYLING ==================== */
+
+.node-item {
+  position: relative;
+}
+
+.node-title {
+  // cursor: grab;
+  user-select: none;
 
   &:active {
     cursor: grabbing;
   }
 }
 
-.expansion-toggle {
-  display: inline-block;
-  width: 20px;
-  text-align: center;
-  // font-weight: bold;
-  // margin-right: 8px;
-  color: #6c757d;
-  user-select: none;
-}
+/* ==================== DROP ZONES ==================== */
 
-.node-label {
-  flex: 1;
-  // font-weight: 500;
-}
+/* Drop INTO zone - appears on right side of each item */
+.drop-into-zone {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 35%; /* Wider zone - matches the red area in diagram */
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: all 200ms ease;
+  z-index: 1; /* Lower z-index - purely visual */
+  pointer-events: none; /* Don't intercept drag events */
 
-.item-notes {
-  // margin-left: 20px;
-  // color: #adb5bd;
-  // font-size: 0.875rem;
-}
+  /* Subtle background hint - always visible */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to left, rgba(33, 150, 243, 0.02), transparent);
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
 
-/* Node children (nested items) */
-.node-children {
-  position: relative;
-  transition: height 0.2s;
-  // margin-left: 40px;
-  // margin-top: 5px;
-  // padding-left: 15px;
-  // border-left: 2px solid #dee2e6;
-}
+  &:hover::before {
+    opacity: 1;
+  }
 
-.root-drop-list {
-  min-height: 200px;
-}
+  /* Icon hint */
+  .drop-into-icon {
+    opacity: 0;
+    color: #6c757d;
+    font-size: 14px;
+    transition: all 200ms ease;
+    position: relative;
+    z-index: 1;
+  }
 
-/* Dragging state */
-::ng-deep .cdk-drag-animating {
-  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
-}
+  /* Show icon on hover */
+  &:hover .drop-into-icon {
+    opacity: 0.3;
+  }
 
-::ng-deep
-  .node-children.cdk-drop-list-dragging
-  .node-item:not(.cdk-drag-placeholder) {
-  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
-}
+  /* Highlight when receiving drag */
+  &.cdk-drop-list-receiving {
+    background: linear-gradient(to left, rgba(33, 150, 243, 0.15), transparent);
+    border-right: 3px solid #2196f3;
 
-/* Prevent layout shift during drag */
-::ng-deep .cdk-drag {
-  transition: transform 0s;
+    &::before {
+      opacity: 0;
+    }
 
-  &.cdk-drag-animating {
-    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+    .drop-into-icon {
+      opacity: 1 !important;
+      color: #2196f3;
+      transform: scale(1.3);
+    }
+  }
+
+  /* Enhanced visibility when in child-drop mode */
+  &.child-mode-active {
+    background: linear-gradient(to left, rgba(33, 150, 243, 0.12), transparent);
+    border-right: 2px solid rgba(33, 150, 243, 0.4);
+
+    &::before {
+      opacity: 1;
+      background: linear-gradient(
+        to left,
+        rgba(33, 150, 243, 0.08),
+        transparent
+      );
+    }
+
+    .drop-into-icon {
+      opacity: 0.7 !important;
+      color: #2196f3;
+    }
+
+    &.cdk-drop-list-receiving {
+      background: linear-gradient(
+        to left,
+        rgba(33, 150, 243, 0.25),
+        transparent
+      );
+      border-right: 4px solid #2196f3;
+
+      .drop-into-icon {
+        opacity: 1 !important;
+        transform: scale(1.5);
+      }
+    }
   }
 }
 
-/* Ensure drop list doesn't cause layout issues */
-::ng-deep .cdk-drop-list {
-  display: block;
-  overflow: visible;
+/* Show ALL drop zone icons when dragging is active */
+::ng-deep .cdk-drop-list-dragging .drop-into-icon {
+  opacity: 0.5 !important;
 }
 
-/* Icon styling */
-.node-title i {
-  // font-size: 0.875rem;
-  // color: #6c757d;
+/* Enhance visibility when dragging */
+::ng-deep .cdk-drop-list-dragging .drop-into-zone::before {
+  opacity: 0.5;
+}
+
+/* Root drop list */
+.root-drop-list {
+  /* Highlight when receiving drag */
+  &.cdk-drop-list-receiving {
+    background-color: rgba(33, 150, 243, 0.02);
+  }
 }
