@@ -6,6 +6,7 @@ import {
   Output,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { NgbTooltip } from "@ng-bootstrap/ng-bootstrap";
 
 /**
  * Sidebar toggle component (Dumb Component).
@@ -16,7 +17,7 @@ import { CommonModule } from "@angular/common";
 @Component({
   selector: "app-sidebar-toggle",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgbTooltip],
   templateUrl: "./sidebar-toggle.component.html",
   styleUrl: "./sidebar-toggle.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
