@@ -10,6 +10,8 @@
 :host {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .dropdown-toggle::after {
@@ -18,10 +20,11 @@
 
 .menu-item {
   display: flex;
+  flex-grow: 1;
   align-items: center;
   transition: background-color 150ms ease;
   position: relative;
-  min-height: 36px;
+  // outline: 1px solid red;
 }
 
 // Expansion Icon

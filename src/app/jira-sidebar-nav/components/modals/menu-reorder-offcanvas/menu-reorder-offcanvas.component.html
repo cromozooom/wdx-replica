@@ -1,0 +1,109 @@
+<!-- Menu Reorder Offcanvas -->
+<div class="offcanvas-header border-bottom">
+  <h5 class="offcanvas-title">Reorder Menu Items</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="cancel()"
+  ></button>
+</div>
+
+<div class="offcanvas-body overflow-y-scroll">
+  <div class="mb-3 alert alert-info">
+    <i class="fas fa-info-circle me-2"></i>
+    <strong>Drag and drop</strong> items to reorder. Drop position indicators:
+    <!-- <ul class="mb-0 mt-2 small">
+      <li><span class="text-primary">Top border</span> - Insert before</li>
+      <li><span class="text-primary">Bottom border</span> - Insert after</li>
+      <li><span class="text-primary">Full border</span> - Add as child</li>
+    </ul> -->
+  </div>
+
+  <!-- Recursive Node Template -->
+  <ng-template #tmplNode let-node="node">
+    <div
+      class="node-item"
+      [attr.data-id]="node.id"
+      [attr.id]="'node-' + node.id"
+    >
+      <div class="node-title" (click)="toggleExpansion(node)">
+        <span class="expansion-toggle">
+          @if (node.children?.length) {
+            {{ node.expanded ? "−" : "+" }}
+          } @else {
+            &nbsp;&nbsp;&nbsp;
+          }
+        </span>
+        <i [class]="node.icon || 'fas fa-circle'" class="me-2"></i>
+        <span class="node-label">{{ node.label }}</span>
+        @if (node.children?.length) {
+          <span class="item-notes">
+            ({{ node.children.length }}{{ node.expanded ? ", expanded" : "" }})
+          </span>
+        }
+      </div>
+
+      @if (node.expanded && node.children?.length) {
+        <div
+          class="node-children"
+          cdkDropList
+          [cdkDropListData]="node.children"
+          [id]="node.id"
+          [cdkDropListConnectedTo]="dropTargetIds"
+          (cdkDropListDropped)="drop($event)"
+          [cdkDropListSortingDisabled]="true"
+        >
+          @for (child of node.children; track child.id) {
+            <div
+              cdkDrag
+              [cdkDragData]="child.id"
+              (cdkDragMoved)="dragMoved($event)"
+            >
+              <ng-container
+                *ngTemplateOutlet="tmplNode; context: { node: child }"
+              ></ng-container>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </ng-template>
+
+  <!-- Root Level Drop List -->
+  <div
+    cdkDropList
+    [cdkDropListData]="menuItems"
+    [id]="'main'"
+    [cdkDropListConnectedTo]="dropTargetIds"
+    (cdkDropListDropped)="drop($event)"
+    [cdkDropListSortingDisabled]="true"
+    class="root-drop-list"
+  >
+    @for (node of menuItems; track node.id) {
+      <div cdkDrag [cdkDragData]="node.id" (cdkDragMoved)="dragMoved($event)">
+        <ng-container
+          *ngTemplateOutlet="tmplNode; context: { node: node }"
+        ></ng-container>
+      </div>
+    }
+  </div>
+
+  <!-- Debug Info (optional, can be removed) -->
+  @if (dropActionTodo) {
+    <div class="mt-3 p-2 bg-light border rounded small">
+      <strong>Current drag action:</strong>
+      <pre class="mb-0">{{ dropActionTodo | json }}</pre>
+    </div>
+  }
+</div>
+
+<div class="offcanvas-footer border-top p-3 d-flex gap-2 justify-content-end">
+  <button type="button" class="btn btn-secondary" (click)="cancel()">
+    Cancel
+  </button>
+  <button type="button" class="btn btn-primary" (click)="save()">
+    <i class="fas fa-save me-2"></i>
+    Save Changes
+  </button>
+</div>

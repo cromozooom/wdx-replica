@@ -14,7 +14,6 @@ import { NgbModal, NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
 import { MenuDataService } from "./services/menu-data.service";
 import { MenuItem } from "./models/menu-item.interface";
 import { SidebarVisibilityMode } from "./models";
-import { DragDropContext } from "./models/drag-drop.interface";
 import { SidebarMenuComponent } from "./components/sidebar-menu/sidebar-menu.component";
 import { SidebarToggleComponent } from "./components/sidebar-toggle/sidebar-toggle.component";
 import { MenuItemEditorComponent } from "./components/modals/menu-item-editor/menu-item-editor.component";
@@ -23,6 +22,7 @@ import {
   DeleteConfirmationResult,
 } from "./components/modals/delete-confirmation/delete-confirmation.component";
 import { AddSubmenuComponent } from "./components/modals/add-submenu/add-submenu.component";
+import { MenuReorderOffcanvasComponent } from "./components/modals/menu-reorder-offcanvas/menu-reorder-offcanvas.component";
 
 /**
  * Container component for jira-sidebar-nav feature (Smart Component).
@@ -134,6 +134,35 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
   }
 
   /**
+   * Open menu reorder offcanvas to drag-and-drop reorder menu items.
+   */
+  async openReorderOffcanvas(): Promise<void> {
+    const offcanvasRef = this.offcanvasService.open(
+      MenuReorderOffcanvasComponent,
+      {
+        position: "end",
+        backdrop: "static",
+        panelClass: "offcanvas-large",
+      },
+    );
+
+    // Pass current menu items
+    offcanvasRef.componentInstance.menuItems = this.menuItems();
+
+    try {
+      const reorderedItems: MenuItem[] = await offcanvasRef.result;
+
+      // Update the menu structure with reordered items
+      this.menuDataService.setRootItems(reorderedItems);
+
+      console.log("[REORDER] Menu items reordered successfully");
+    } catch (error) {
+      // User cancelled
+      console.log("[REORDER] Menu reorder cancelled");
+    }
+  }
+
+  /**
    * Handle node expansion toggle (T024).
    */
   onNodeToggled(event: { itemId: string; expanded: boolean }): void {
@@ -162,40 +191,6 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
       // Leaf node: Navigate to content
       this.menuDataService.setActiveItem(itemId);
       this.router.navigate(["/menu-demo/item", itemId]);
-    }
-  }
-
-  /**
-   * Handle drag-drop event (T052, FR-019).
-   * Implements special merge logic when both items have contentConfig.
-   */
-  onItemDropped(context: DragDropContext): void {
-    const { draggedItem, targetParent } = context;
-
-    // Check if both dragged item and target have contentConfig
-    if (
-      draggedItem.contentConfig &&
-      targetParent?.contentConfig &&
-      (!targetParent.children || targetParent.children.length === 0)
-    ) {
-      // Special merge: both keep their content
-      console.log(
-        `[DragDrop] Merging "${draggedItem.label}" into "${targetParent.label}" with content preservation`,
-      );
-      this.menuDataService.mergeItemsWithConfig(
-        draggedItem.id,
-        targetParent.id,
-      );
-    } else if (targetParent) {
-      // Regular move to new parent
-      this.menuDataService.moveItem(
-        draggedItem.id,
-        targetParent.id,
-        context.targetIndex,
-      );
-    } else {
-      // Move to root level
-      this.menuDataService.moveItem(draggedItem.id, null, context.targetIndex);
     }
   }
 

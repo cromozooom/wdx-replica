@@ -378,41 +378,69 @@ export class MenuDataService {
     newParentId: string | null,
     newIndex: number,
   ): boolean {
+    console.log("🔧 [MenuDataService] moveItem called:", {
+      itemId,
+      newParentId: newParentId || "ROOT",
+      newIndex,
+    });
+
     const currentStructure = this.menuStructureSignal();
     const newRootItems = MenuTreeUtils.cloneItems(currentStructure.rootItems);
 
     // Find item and remove from old location
     const item = this.findItemInTree(itemId, newRootItems);
     if (!item) {
-      console.error(`[MenuDataService] Item not found: ${itemId}`);
+      console.error(`❌ [MenuDataService] Item not found: ${itemId}`);
       return false;
     }
 
+    console.log("📦 [MenuDataService] Item found:", {
+      id: item.id,
+      label: item.label,
+      hasChildren: !!(item.children && item.children.length > 0),
+    });
+
     // Remove from old location
     if (!this.removeItemFromTree(itemId, newRootItems)) {
+      console.error(
+        `❌ [MenuDataService] Failed to remove item from tree: ${itemId}`,
+      );
       return false;
     }
+
+    console.log("✂️ [MenuDataService] Item removed from old location");
 
     // Add to new location
     if (newParentId === null) {
       // Insert at root
+      console.log(`⬆️ [MenuDataService] Inserting at root, index ${newIndex}`);
       newRootItems.splice(newIndex, 0, item);
     } else {
       const newParent = this.findItemInTree(newParentId, newRootItems);
       if (!newParent) {
-        console.error(`[MenuDataService] New parent not found: ${newParentId}`);
+        console.error(
+          `❌ [MenuDataService] New parent not found: ${newParentId}`,
+        );
         return false;
       }
 
+      console.log(`➡️ [MenuDataService] Moving to parent:`, {
+        parentId: newParent.id,
+        parentLabel: newParent.label,
+        targetIndex: newIndex,
+      });
+
       // Check for circular reference
       if (MenuTreeUtils.wouldCreateCircularReference(item, newParent)) {
-        console.error("[MenuDataService] Move would create circular reference");
+        console.error(
+          "❌ [MenuDataService] Move would create circular reference",
+        );
         return false;
       }
 
       // Check depth
       if (MenuTreeUtils.wouldExceedMaxDepth(newParent, item, newRootItems)) {
-        console.error("[MenuDataService] Move would exceed maximum depth");
+        console.error("❌ [MenuDataService] Move would exceed maximum depth");
         return false;
       }
 
@@ -426,14 +454,18 @@ export class MenuDataService {
         item.contentConfig = { ...newParent.contentConfig };
         delete newParent.contentConfig;
         console.log(
-          `[MenuDataService] Transferred contentConfig from "${newParent.label}" to "${item.label}" during move`,
+          `🔄 [MenuDataService] Transferred contentConfig from "${newParent.label}" to "${item.label}" during move`,
         );
       }
 
       newParent.children.splice(newIndex, 0, item);
+      console.log(
+        `✅ [MenuDataService] Item inserted at index ${newIndex} in parent "${newParent.label}"`,
+      );
     }
 
     this.updateMenuStructure(newRootItems);
+    console.log("💾 [MenuDataService] Menu structure updated and saved");
     return true;
   }
 
@@ -610,6 +642,28 @@ export class MenuDataService {
   }
 
   // ========== PRIVATE HELPERS ==========
+
+  /**
+   * Reorder menu items (from drag-drop editor).
+   *
+   * @param newRootItems New ordered menu items (replacing entire structure)
+   * @returns true if successful, false otherwise
+   */
+  setRootItems(newRootItems: MenuItem[]): boolean {
+    try {
+      // Clone for immutability
+      const clonedItems = MenuTreeUtils.cloneItems(newRootItems);
+
+      // Update structure (will validate and rebuild maps)
+      this.updateMenuStructure(clonedItems);
+
+      console.log("[MenuDataService] Root items updated successfully");
+      return true;
+    } catch (error) {
+      console.error("[MenuDataService] Failed to set root items:", error);
+      return false;
+    }
+  }
 
   /**
    * Update menu structure and recalculate derived data.

@@ -38,7 +38,7 @@ export class MenuMockDataService {
       {
         id: "2",
         label: "Bulk And Breaches",
-        icon: "fas fa-bullseye-pointer",
+        icon: "fas fa-satellite-dish",
         routerLink: "/wealth/bulk-and-breaches",
         order: 1,
         contentConfig: {

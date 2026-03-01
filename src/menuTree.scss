@@ -13,6 +13,10 @@
   $full-line-color: pink,
   $curve-position: "below"
 ) {
+  $width: 12px;
+  $height: 40px;
+  $width: 15px;
+  $height: 50px;
   $curve: svg-url-color($curve-color);
   $top: svg-url-color($top-line-color);
   $full: svg-url-color($full-line-color);
@@ -23,12 +27,12 @@
 
   @if $curve-position == "above" {
     // Curve above
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='40' viewBox='0 0 12 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0L0.999998 40' stroke='#{$full}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1.02126 9.86403C1.02126 11.1814 1.28073 12.4858 1.78486 13.7029C2.28898 14.92 3.0279 16.0258 3.95941 16.9574C4.89092 17.8889 5.99678 18.6278 7.21385 19.1319C8.43093 19.636 9.73538 19.8955 11.0527 19.8955' stroke='#{$curve}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1 0L1 10' stroke='#{$top}' stroke-width='#{$stroke}'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='#{$width}' height='#{$height}' viewBox='0 0 12 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0L0.999998 40' stroke='#{$full}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1.02126 9.86403C1.02126 11.1814 1.28073 12.4858 1.78486 13.7029C2.28898 14.92 3.0279 16.0258 3.95941 16.9574C4.89092 17.8889 5.99678 18.6278 7.21385 19.1319C8.43093 19.636 9.73538 19.8955 11.0527 19.8955' stroke='#{$curve}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1 0L1 10' stroke='#{$top}' stroke-width='#{$stroke}'/%3E%3C/svg%3E");
   }
 
   @if $curve-position == "below" {
     // Curve below
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='40' viewBox='0 0 12 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.02126 9.86403C1.02126 11.1814 1.28073 12.4858 1.78486 13.7029C2.28898 14.92 3.0279 16.0258 3.95941 16.9574C4.89092 17.8889 5.99678 18.6278 7.21385 19.1319C8.43093 19.636 9.73538 19.8955 11.0527 19.8955' stroke='#{$curve}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1 0L0.999998 40' stroke='#{$full}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1 0L1 10' stroke='#{$top}' stroke-width='#{$stroke}'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='#{$width}' height='#{$height}' viewBox='0 0 12 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.02126 9.86403C1.02126 11.1814 1.28073 12.4858 1.78486 13.7029C2.28898 14.92 3.0279 16.0258 3.95941 16.9574C4.89092 17.8889 5.99678 18.6278 7.21385 19.1319C8.43093 19.636 9.73538 19.8955 11.0527 19.8955' stroke='#{$curve}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1 0L0.999998 40' stroke='#{$full}' stroke-width='#{$stroke}'/%3E%3Cpath d='M1 0L1 10' stroke='#{$top}' stroke-width='#{$stroke}'/%3E%3C/svg%3E");
   }
   background-repeat: no-repeat;
 }
@@ -110,7 +114,7 @@
     width: 40px;
     height: 100%;
     background-repeat: no-repeat;
-    background-position: calc(var(--left-indent) - 10px) -2px;
+    background-position: calc(var(--left-indent) - 14px) -5px;
   }
   li button.menu-item {
     &:before {

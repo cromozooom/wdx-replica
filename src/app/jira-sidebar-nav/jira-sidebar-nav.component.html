@@ -16,6 +16,17 @@
       <i [class]="isEditMode() ? 'fas fa-eye' : 'fas fa-edit'" class="me-1"></i>
       {{ isEditMode() ? "Exit Edit Mode" : "Enter Edit Mode" }}
     </button>
+    @if (isEditMode()) {
+      <button
+        type="button"
+        class="btn btn-sm btn-primary"
+        (click)="openReorderOffcanvas()"
+        title="Open drag-and-drop menu reorder editor"
+      >
+        <i class="fas fa-arrows-alt me-1"></i>
+        Reorder Menu
+      </button>
+    }
   </header>
   <div class="d-flex flex-grow-1 overflow-hidden">
     <!-- [style.width.px]="currentWidth()" -->
@@ -42,7 +53,6 @@
         (addSubmenuRequested)="openAddSubmenuDialog($event)"
         (addChildRequested)="createMenuItem($event)"
         (addRootItemRequested)="createMenuItem()"
-        (itemDropped)="onItemDropped($event)"
       ></app-sidebar-menu>
     </aside>
 

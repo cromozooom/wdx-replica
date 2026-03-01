@@ -20,7 +20,7 @@
   <!-- Icon -->
   <div class="d-flex align-items-center flex-grow-1">
     <div
-      class="d-flex align-items-center gap-1"
+      class="d-flex align-items-center gap-2"
       [class]="
         isActive && level !== 0
           ? 'tree-active px-2 rounded-pill py-1'
@@ -33,6 +33,7 @@
           class="d-flex align-items-center justify-content-center"
           style="min-width: 1.2rem; font-size: 80%"
           [attr.aria-hidden]="true"
+          [class]="isActive || hasChildrenActive ? '' : 'opacity-50'"
         >
           <i [class]="item.icon"></i>
         </small>
