@@ -206,7 +206,7 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
    *
    * Behavior:
    * - Parent nodes (with children): Toggle expansion
-   *   - If auto-select setting is ON: Also navigate to first child
+   *   - If auto-select setting is ON AND node was closed AND no child is active: Navigate to first child
    * - Leaf nodes (no children): Navigate to content and set active
    */
   onItemClicked(itemId: string): void {
@@ -219,17 +219,30 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
 
     // If item has children, toggle expansion (parent node behavior)
     if (item.children && item.children.length > 0) {
+      // Check if node is currently closed (before toggling)
+      const wasClosedBeforeToggle = !item.expanded;
+
       this.menuDataService.toggleNodeExpansion(itemId);
 
-      // If auto-select setting is enabled, navigate to first child
-      if (this.autoSelectFirstChild) {
-        const firstChild = item.children[0];
-        if (firstChild) {
+      // Auto-select only if: setting is ON, node was closed, AND no child is currently active
+      if (this.autoSelectFirstChild && wasClosedBeforeToggle) {
+        const activeItemId = this.menuDataService.activeItem()?.id;
+        const hasActiveChild = this.isChildActive(item, activeItemId);
+
+        // Only auto-select if no child is already active
+        if (!hasActiveChild) {
+          const firstChild = item.children[0];
+          if (firstChild) {
+            console.log(
+              `[AUTO-SELECT] Navigating to first child: ${firstChild.label}`,
+            );
+            this.menuDataService.setActiveItem(firstChild.id);
+            this.router.navigate(["/menu-demo/item", firstChild.id]);
+          }
+        } else {
           console.log(
-            `[AUTO-SELECT] Navigating to first child: ${firstChild.label}`,
+            `[AUTO-SELECT] Skipped - child already active in this tree`,
           );
-          this.menuDataService.setActiveItem(firstChild.id);
-          this.router.navigate(["/menu-demo/item", firstChild.id]);
         }
       }
     } else {
@@ -237,6 +250,30 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
       this.menuDataService.setActiveItem(itemId);
       this.router.navigate(["/menu-demo/item", itemId]);
     }
+  }
+
+  /**
+   * Check if the active item is a descendant of the given parent item.
+   */
+  private isChildActive(
+    parent: MenuItem,
+    activeItemId: string | null | undefined,
+  ): boolean {
+    if (!activeItemId || !parent.children) {
+      return false;
+    }
+
+    // Recursively check all children
+    for (const child of parent.children) {
+      if (child.id === activeItemId) {
+        return true;
+      }
+      if (child.children && this.isChildActive(child, activeItemId)) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   /**
