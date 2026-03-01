@@ -204,15 +204,11 @@ export class MenuDataService {
       // Find parent and add as child
       const parent = this.findItemInTree(parentId, newRootItems);
       if (!parent) {
-        console.error(`[MenuDataService] Parent item not found: ${parentId}`);
         return false;
       }
 
       // Check if adding would exceed max depth
       if (MenuTreeUtils.wouldExceedMaxDepth(parent, item, newRootItems)) {
-        console.error(
-          "[MenuDataService] Adding item would exceed maximum depth",
-        );
         return false;
       }
 
@@ -225,9 +221,6 @@ export class MenuDataService {
       if (parent.children.length === 0 && parent.contentConfig) {
         item.contentConfig = { ...parent.contentConfig };
         delete parent.contentConfig;
-        console.log(
-          `[MenuDataService] Transferred contentConfig from parent "${parent.label}" to child "${item.label}"`,
-        );
       }
 
       parent.children.push(item);
@@ -265,7 +258,6 @@ export class MenuDataService {
       // Find parent and add as child
       const parent = this.findItemInTree(parentId, newRootItems);
       if (!parent) {
-        console.error(`[MenuDataService] Parent item not found: ${parentId}`);
         return false;
       }
 
@@ -273,9 +265,6 @@ export class MenuDataService {
       if (
         MenuTreeUtils.wouldExceedMaxDepth(parent, nestedStructure, newRootItems)
       ) {
-        console.error(
-          "[MenuDataService] Adding submenu would exceed maximum depth",
-        );
         return false;
       }
 
@@ -287,9 +276,6 @@ export class MenuDataService {
       // and has contentConfig, remove it (transfer is handled in the form)
       if (parent.children.length === 0 && parent.contentConfig) {
         delete parent.contentConfig;
-        console.log(
-          `[MenuDataService] Removed contentConfig from parent "${parent.label}" (transferred via form)`,
-        );
       }
 
       parent.children.push(nestedStructure);
@@ -313,7 +299,6 @@ export class MenuDataService {
 
     const item = this.findItemInTree(itemId, newRootItems);
     if (!item) {
-      console.error(`[MenuDataService] Item not found: ${itemId}`);
       return false;
     }
 
@@ -322,7 +307,6 @@ export class MenuDataService {
 
     // Validate label if updated
     if (updates.label && updates.label.trim().length === 0) {
-      console.error("[MenuDataService] Label cannot be empty");
       return false;
     }
 
@@ -361,7 +345,6 @@ export class MenuDataService {
       }
     }
 
-    console.error(`[MenuDataService] Item not found for deletion: ${itemId}`);
     return false;
   }
 
@@ -378,69 +361,37 @@ export class MenuDataService {
     newParentId: string | null,
     newIndex: number,
   ): boolean {
-    console.log("🔧 [MenuDataService] moveItem called:", {
-      itemId,
-      newParentId: newParentId || "ROOT",
-      newIndex,
-    });
-
     const currentStructure = this.menuStructureSignal();
     const newRootItems = MenuTreeUtils.cloneItems(currentStructure.rootItems);
 
     // Find item and remove from old location
     const item = this.findItemInTree(itemId, newRootItems);
     if (!item) {
-      console.error(`❌ [MenuDataService] Item not found: ${itemId}`);
       return false;
     }
-
-    console.log("📦 [MenuDataService] Item found:", {
-      id: item.id,
-      label: item.label,
-      hasChildren: !!(item.children && item.children.length > 0),
-    });
 
     // Remove from old location
     if (!this.removeItemFromTree(itemId, newRootItems)) {
-      console.error(
-        `❌ [MenuDataService] Failed to remove item from tree: ${itemId}`,
-      );
       return false;
     }
-
-    console.log("✂️ [MenuDataService] Item removed from old location");
 
     // Add to new location
     if (newParentId === null) {
       // Insert at root
-      console.log(`⬆️ [MenuDataService] Inserting at root, index ${newIndex}`);
       newRootItems.splice(newIndex, 0, item);
     } else {
       const newParent = this.findItemInTree(newParentId, newRootItems);
       if (!newParent) {
-        console.error(
-          `❌ [MenuDataService] New parent not found: ${newParentId}`,
-        );
         return false;
       }
 
-      console.log(`➡️ [MenuDataService] Moving to parent:`, {
-        parentId: newParent.id,
-        parentLabel: newParent.label,
-        targetIndex: newIndex,
-      });
-
       // Check for circular reference
       if (MenuTreeUtils.wouldCreateCircularReference(item, newParent)) {
-        console.error(
-          "❌ [MenuDataService] Move would create circular reference",
-        );
         return false;
       }
 
       // Check depth
       if (MenuTreeUtils.wouldExceedMaxDepth(newParent, item, newRootItems)) {
-        console.error("❌ [MenuDataService] Move would exceed maximum depth");
         return false;
       }
 
@@ -453,19 +404,12 @@ export class MenuDataService {
       if (newParent.children.length === 0 && newParent.contentConfig) {
         item.contentConfig = { ...newParent.contentConfig };
         delete newParent.contentConfig;
-        console.log(
-          `🔄 [MenuDataService] Transferred contentConfig from "${newParent.label}" to "${item.label}" during move`,
-        );
       }
 
       newParent.children.splice(newIndex, 0, item);
-      console.log(
-        `✅ [MenuDataService] Item inserted at index ${newIndex} in parent "${newParent.label}"`,
-      );
     }
 
     this.updateMenuStructure(newRootItems);
-    console.log("💾 [MenuDataService] Menu structure updated and saved");
     return true;
   }
 
@@ -489,29 +433,21 @@ export class MenuDataService {
     const targetItem = this.findItemInTree(targetItemId, newRootItems);
 
     if (!draggedItem || !targetItem) {
-      console.error("[MenuDataService] Items not found for merge");
       return false;
     }
 
     // Check for circular reference
     if (MenuTreeUtils.wouldCreateCircularReference(draggedItem, targetItem)) {
-      console.error("[MenuDataService] Merge would create circular reference");
       return false;
     }
 
     // Both must have contentConfig for this operation
     if (!draggedItem.contentConfig || !targetItem.contentConfig) {
-      console.error(
-        "[MenuDataService] Both items must have contentConfig for merge",
-      );
       return false;
     }
 
     // Target must not already have children
     if (targetItem.children && targetItem.children.length > 0) {
-      console.error(
-        "[MenuDataService] Target already has children, cannot merge",
-      );
       return false;
     }
 
@@ -535,10 +471,6 @@ export class MenuDataService {
     delete targetItem.contentConfig;
     targetItem.children = [originalContentChild, draggedItem];
     targetItem.expanded = true; // Auto-expand to show new structure
-
-    console.log(
-      `[MenuDataService] Merged "${draggedItem.label}" into "${targetItem.label}" with original content preserved`,
-    );
 
     this.updateMenuStructure(newRootItems);
     return true;
@@ -657,10 +589,8 @@ export class MenuDataService {
       // Update structure (will validate and rebuild maps)
       this.updateMenuStructure(clonedItems);
 
-      console.log("[MenuDataService] Root items updated successfully");
       return true;
     } catch (error) {
-      console.error("[MenuDataService] Failed to set root items:", error);
       return false;
     }
   }

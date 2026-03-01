@@ -93,7 +93,6 @@ export class MenuReorderOffcanvasComponent {
     const settings = { autoSelectFirstChild: this.autoSelectFirstChild };
     localStorage.setItem("jira-sidebar-settings", JSON.stringify(settings));
     this.settingsChanged.emit(settings);
-    console.log("Settings saved:", settings);
   }
 
   /**
@@ -132,10 +131,6 @@ export class MenuReorderOffcanvasComponent {
         this.prepareDragDrop(node.children);
       }
     });
-
-    console.log("🎯 Drop targets built:", this.dropTargetIds.length, "zones", {
-      sample: this.dropTargetIds.slice(0, 10),
-    });
   }
 
   /**
@@ -152,21 +147,12 @@ export class MenuReorderOffcanvasComponent {
   onDragStarted(): void {
     this.lastMouseX = 0;
     this.lastMouseY = 0;
-    console.log("🍬 Drag started");
   }
 
   /**
    * Handle drop event - check if drop is on right half (child) or left half (reorder)
    */
   drop(event: CdkDragDrop<MenuItem[]>): void {
-    console.log("🎯 Drop event:", {
-      from: event.previousContainer.id,
-      to: event.container.id,
-      previousIndex: event.previousIndex,
-      currentIndex: event.currentIndex,
-      lastMouseX: this.lastMouseX,
-    });
-
     // Get the container bounds to determine if drop is on right or left half
     const containerBounds = this.document
       .querySelector(".root-drop-list")
@@ -177,14 +163,6 @@ export class MenuReorderOffcanvasComponent {
       const containerLeft = containerBounds.left;
       const relativeX = this.lastMouseX - containerLeft;
       const isRightHalf = relativeX > containerWidth / 2;
-
-      console.log("📏 Drop position analysis:", {
-        containerWidth,
-        containerLeft,
-        mouseX: this.lastMouseX,
-        relativeX,
-        isRightHalf,
-      });
 
       // If dropped on right half, add as child to the item at currentIndex - 1
       if (isRightHalf && event.container.id === "root") {
@@ -213,7 +191,6 @@ export class MenuReorderOffcanvasComponent {
           // Rebuild drop targets
           this.prepareDragDrop(this.menuItems);
 
-          console.log("✅ Item added as child to:", targetNode.label);
           return;
         }
       }
@@ -249,17 +226,9 @@ export class MenuReorderOffcanvasComponent {
             // Rebuild drop targets since we just expanded a node
             this.prepareDragDrop(this.menuItems);
           }
-          console.log("✅ Item added as child to:", parent.label);
         }
       }
     }
-
-    console.log("Item moved:", {
-      from: event.previousContainer.id,
-      to: event.container.id,
-      previousIndex: event.previousIndex,
-      currentIndex: event.currentIndex,
-    });
   }
 
   /**

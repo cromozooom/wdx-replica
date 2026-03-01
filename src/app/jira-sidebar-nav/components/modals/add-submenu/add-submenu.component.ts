@@ -71,19 +71,12 @@ export class AddSubmenuComponent implements OnInit {
   ngOnInit(): void {
     // If parent has contentConfig, pre-populate it for transfer
     if (this.parentItem?.contentConfig) {
-      console.log(
-        "[AddSubmenu] Parent has contentConfig:",
-        this.parentItem.contentConfig,
-      );
       const contentConfigJson = JSON.stringify(
         this.parentItem.contentConfig,
         null,
         2,
       );
       this.form.patchValue({ contentConfig: contentConfigJson });
-      console.log("[AddSubmenu] Form patched with:", contentConfigJson);
-    } else {
-      console.log("[AddSubmenu] No parent contentConfig found");
     }
   }
 

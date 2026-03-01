@@ -10,7 +10,12 @@
 </div>
 
 <!-- Navigation Tabs -->
-<ul ngbNav #nav="ngbNav" [(activeId)]="activeTab" class="nav-tabs px-3 pt-2">
+<ul
+  ngbNav
+  #nav="ngbNav"
+  [(activeId)]="activeTab"
+  class="nav-tabs px-3 pt-2 mb-1"
+>
   <li [ngbNavItem]="1">
     <button ngbNavLink>
       <i class="fas fa-grip-lines me-2"></i>
@@ -18,7 +23,7 @@
     </button>
     <ng-template ngbNavContent>
       <!-- REORDER TAB CONTENT -->
-      <div class="p-0">
+      <div class="p-0 w-100">
         <div class="bg-info-subtle text-info-emphasis p-3 sticky-top">
           <i class="fas fa-info-circle me-2"></i>
           <strong>Drag and drop</strong> items to reorder. Drop on right half to
@@ -32,17 +37,21 @@
             <div
               class="node-title d-flex align-items-center bg-white border-bottom position-relative"
             >
-              <span
-                class="expansion-toggle me-2 text-muted fw-bold"
+              <small
+                class="expansion-toggle me-2 text-muted"
                 style="width: 20px; text-align: center; user-select: none"
                 (click)="toggleExpansion(node)"
               >
                 @if (node.children?.length) {
-                  {{ node.expanded ? "−" : "+" }}
+                  @if (node.expanded) {
+                    <i class="fas fa-chevron-down"></i>
+                  } @else {
+                    <i class="fas fa-chevron-right"></i>
+                  }
                 } @else {
-                  &nbsp;&nbsp;&nbsp;
+                  <i class="far fa-circle opacity-25"></i>
                 }
-              </span>
+              </small>
               <div
                 class="rounded px-3 me-2 py-3"
                 cdkDragHandle
@@ -119,7 +128,7 @@
           [id]="'root'"
           [cdkDropListConnectedTo]="dropTargetIds"
           (cdkDropListDropped)="drop($event)"
-          class="root-drop-list border bg-white p-2 position-relative"
+          class="root-drop-list bg-white p-2 position-relative"
           style="min-height: 200px"
         >
           @for (node of menuItems; track node.id) {
@@ -183,14 +192,10 @@
             <strong>Auto-select first child</strong>
             <div class="text-muted small mt-1">
               When enabled, clicking on a parent item will expand it AND
-              automatically select the first child item.
+              automatically select the first child item if the item is not
+              expanded and doesn't have any selected child.
             </div>
           </label>
-        </div>
-
-        <div class="alert alert-info small mb-0">
-          <i class="fas fa-info-circle me-2"></i>
-          Settings are saved automatically and persist across sessions.
         </div>
       </div>
       <!-- END SETTINGS TAB CONTENT -->
