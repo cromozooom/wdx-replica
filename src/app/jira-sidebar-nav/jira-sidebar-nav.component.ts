@@ -174,10 +174,6 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
     offcanvasRef.componentInstance.settingsChanged.subscribe(
       (settings: { autoSelectFirstChild: boolean }) => {
         this.autoSelectFirstChild = settings.autoSelectFirstChild;
-        console.log(
-          "[SETTINGS] Auto-select first child:",
-          this.autoSelectFirstChild,
-        );
       },
     );
 
@@ -186,11 +182,8 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
 
       // Update the menu structure with reordered items
       this.menuDataService.setRootItems(reorderedItems);
-
-      console.log("[REORDER] Menu items reordered successfully");
     } catch (error) {
       // User cancelled
-      console.log("[REORDER] Menu reorder cancelled");
     }
   }
 
@@ -213,7 +206,6 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
     const item = this.menuDataService.getItemById(itemId);
 
     if (!item) {
-      console.warn(`Item not found: ${itemId}`);
       return;
     }
 
@@ -233,16 +225,9 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
         if (!hasActiveChild) {
           const firstChild = item.children[0];
           if (firstChild) {
-            console.log(
-              `[AUTO-SELECT] Navigating to first child: ${firstChild.label}`,
-            );
             this.menuDataService.setActiveItem(firstChild.id);
             this.router.navigate(["/menu-demo/item", firstChild.id]);
           }
-        } else {
-          console.log(
-            `[AUTO-SELECT] Skipped - child already active in this tree`,
-          );
         }
       }
     } else {
@@ -320,13 +305,10 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
         ...(result.contentConfig && { contentConfig: result.contentConfig }),
       };
 
-      console.log("[CREATE] New item contentConfig:", newItem.contentConfig);
-
       // Add item via service (content transfer happens automatically)
       this.menuDataService.addItem(newItem, parentItem?.id);
     } catch (error) {
       // User cancelled or dismissed modal
-      console.log("Create cancelled");
     }
   }
 
@@ -354,11 +336,9 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
         ...(result.contentConfig && { contentConfig: result.contentConfig }),
       };
 
-      console.log("[EDIT] Updating item with:", updates);
       this.menuDataService.updateItem(menuItem.id, updates);
     } catch (error) {
       // User cancelled or dismissed modal
-      console.log("Edit cancelled");
     }
   }
 
@@ -383,7 +363,6 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
       this.menuDataService.deleteItem(menuItem.id);
     } catch (error) {
       // User cancelled or dismissed modal
-      console.log("Delete cancelled");
     }
   }
 
@@ -393,17 +372,12 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
    * @param parentItem - Optional parent item to nest under (null for root level)
    */
   async openAddSubmenuDialog(parentItem: MenuItem | null): Promise<void> {
-    console.log("[AddSubmenuDialog] Opening with parentItem:", parentItem);
-
     // Check if parent will lose its content config
     if (
       parentItem &&
       parentItem.contentConfig &&
       (!parentItem.children || parentItem.children.length === 0)
     ) {
-      console.log(
-        "[AddSubmenuDialog] Parent has contentConfig, showing confirmation",
-      );
       const confirmed = await this.confirmContentTransfer(parentItem);
       if (!confirmed) {
         return; // User cancelled
@@ -417,10 +391,6 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
     });
 
     offcanvasRef.componentInstance.parentItem = parentItem;
-    console.log(
-      "[AddSubmenuDialog] Offcanvas component parentItem set to:",
-      offcanvasRef.componentInstance.parentItem,
-    );
 
     try {
       const result: MenuItem = await offcanvasRef.result;
@@ -429,7 +399,6 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
       this.menuDataService.addSubmenu(parentItem?.id || null, result);
     } catch (error) {
       // User cancelled or dismissed modal
-      console.log("Add submenu cancelled");
     }
   }
 

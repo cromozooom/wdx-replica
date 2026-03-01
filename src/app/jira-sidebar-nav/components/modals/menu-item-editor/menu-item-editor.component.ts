@@ -92,10 +92,6 @@ export class MenuItemEditorComponent implements OnInit {
     } else {
       // Check if parent has contentConfig to transfer
       if (this.parentItem?.contentConfig) {
-        console.log(
-          "[MenuItemEditor] Parent has contentConfig, transferring:",
-          this.parentItem.contentConfig,
-        );
         this.form.patchValue({
           contentConfig: JSON.stringify(this.parentItem.contentConfig, null, 2),
         });
@@ -152,10 +148,8 @@ export class MenuItemEditorComponent implements OnInit {
     try {
       const contentConfig = JSON.parse(formValue.contentConfig);
       result.contentConfig = contentConfig;
-      console.log("[MODAL] Saving contentConfig:", contentConfig);
     } catch (e) {
       // If invalid JSON, don't include contentConfig
-      console.error("Invalid contentConfig JSON:", e);
     }
 
     // Include ID if editing existing item
@@ -163,7 +157,6 @@ export class MenuItemEditorComponent implements OnInit {
       result.id = this.menuItem.id;
     }
 
-    console.log("[MODAL] Final result:", result);
     this.activeOffcanvas.close(result);
   }
 

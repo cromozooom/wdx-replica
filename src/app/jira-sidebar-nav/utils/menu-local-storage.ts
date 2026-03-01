@@ -54,10 +54,6 @@ export class MenuLocalStorage {
       const data = localStorage.getItem(this.KEYS.MENU_STRUCTURE);
       return data ? JSON.parse(data) : null;
     } catch (error) {
-      console.error(
-        "[MenuLocalStorage] Failed to parse menu structure from localStorage",
-        error,
-      );
       return null;
     }
   }
@@ -98,10 +94,6 @@ export class MenuLocalStorage {
       const data = localStorage.getItem(this.KEYS.EXPANDED_NODES);
       return data ? JSON.parse(data) : [];
     } catch (error) {
-      console.error(
-        "[MenuLocalStorage] Failed to parse expanded nodes from localStorage",
-        error,
-      );
       return [];
     }
   }
@@ -142,10 +134,6 @@ export class MenuLocalStorage {
       const data = localStorage.getItem(this.KEYS.SIDEBAR_LOCKED);
       return data ? JSON.parse(data) : false;
     } catch (error) {
-      console.error(
-        "[MenuLocalStorage] Failed to parse sidebar locked state from localStorage",
-        error,
-      );
       return false;
     }
   }
@@ -186,10 +174,6 @@ export class MenuLocalStorage {
       const data = localStorage.getItem(this.KEYS.SIDEBAR_WIDTH);
       return data ? JSON.parse(data) : 20;
     } catch (error) {
-      console.error(
-        "[MenuLocalStorage] Failed to parse sidebar width from localStorage",
-        error,
-      );
       return 20;
     }
   }
@@ -230,10 +214,6 @@ export class MenuLocalStorage {
       const data = localStorage.getItem(this.KEYS.METADATA);
       return data ? JSON.parse(data) : null;
     } catch (error) {
-      console.error(
-        "[MenuLocalStorage] Failed to parse metadata from localStorage",
-        error,
-      );
       return null;
     }
   }
