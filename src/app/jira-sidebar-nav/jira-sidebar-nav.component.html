@@ -3,8 +3,10 @@
     <!-- Sidebar Toggle Button -->
     <app-sidebar-toggle
       [isLocked]="isLocked()"
+      [lockMenuEnabled]="lockMenuEnabled"
+      [alwaysShowMenu]="alwaysShowMenu"
       [disabled]="isEditMode()"
-      (toggleClicked)="toggleLock()"
+      (toggleClicked)="onToggleClicked()"
       (mouseEnter)="onSidebarMouseEnter()"
       (mouseLeave)="onSidebarMouseLeave()"
     ></app-sidebar-toggle>
@@ -38,6 +40,8 @@
         visibilityMode() === 'temporary_visible' ||
         visibilityMode() === 'locked_visible'
       "
+      [class.always-visible]="visibilityMode() === 'always_visible'"
+      [class.icons-only]="visibilityMode() === 'first_level_only'"
       (mouseenter)="onSidebarMouseEnter()"
       (mouseleave)="onSidebarMouseLeave()"
     >
@@ -46,6 +50,7 @@
         [expandedNodeIds]="expandedNodeIds()"
         [activeItemId]="activeItemId()"
         [isEditMode]="isEditMode()"
+        [isIconsOnlyMode]="isIconsOnlyMode"
         (itemClicked)="onItemClicked($event)"
         (nodeToggled)="onNodeToggled($event)"
         (editRequested)="openEditDialog($event)"
@@ -62,7 +67,7 @@
 
     </aside> -->
     <main class="d-flex flex-grow-1 overflow-auto">
-      <div class="w-100" [class.mainMaxWidth]="isLocked()">
+      <div class="w-100" [class.mainMaxWidth]="isLocked() && !isIconsOnlyMode">
         <router-outlet></router-outlet>
       </div>
     </main>

@@ -1,0 +1,25 @@
+<!-- Menu Children Overlay - Tooltip-like display for children in icons-only mode -->
+<div
+  class="menu-children-overlay"
+  [style.top.px]="topPosition"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+>
+  <div
+    class="overlay-content d-flex flex-column gap-1 border rounded shadow-sm bg-body p-1"
+  >
+    @for (child of children; track child.id) {
+      <div
+        class="rounded-1 overlay-item d-flex align-items-center px-2 py-1 pointer"
+        [class.active]="child.id === activeItemId"
+        (click)="onChildClick(child.id)"
+      >
+        <i [class]="child.icon || 'fas fa-circle'" class="me-2"></i>
+        <span class="overlay-item-label">{{ child.label }}</span>
+        @if (child.children?.length) {
+          <i class="fas fa-chevron-right ms-auto text-muted small"></i>
+        }
+      </div>
+    }
+  </div>
+</div>

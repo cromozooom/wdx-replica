@@ -61,6 +61,32 @@
       transition: opacity 150ms ease-in;
     }
   }
+
+  // Always visible mode (when lock menu is disabled, always show full menu)
+  &.always-visible {
+    width: var(--sidemaxSize) !important;
+    max-width: var(--sidemaxSize) !important;
+
+    app-sidebar-menu,
+    app-sidebar-toggle,
+    .edit-mode-controls {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  // Icons only mode (when lock menu is disabled, show only first level)
+  &.icons-only {
+    width: 2.8rem !important;
+    max-width: 2.8rem !important;
+
+    app-sidebar-menu,
+    app-sidebar-toggle,
+    .edit-mode-controls {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
 }
 
 // Locked state styling

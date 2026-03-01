@@ -36,6 +36,8 @@ export class MenuReorderOffcanvasComponent {
   @Output() menuReordered = new EventEmitter<MenuItem[]>();
   @Output() settingsChanged = new EventEmitter<{
     autoSelectFirstChild: boolean;
+    lockMenuEnabled: boolean;
+    alwaysShowMenu: boolean;
   }>();
 
   activeOffcanvas = inject(NgbActiveOffcanvas);
@@ -46,6 +48,8 @@ export class MenuReorderOffcanvasComponent {
 
   // Settings
   autoSelectFirstChild = false;
+  lockMenuEnabled = true; // Default to current behavior (lock/unlock button)
+  alwaysShowMenu = true; // Default to always show when lockMenu is disabled
 
   // IDs for connected drop lists (built from menu tree)
   dropTargetIds: string[] = [];
@@ -80,6 +84,14 @@ export class MenuReorderOffcanvasComponent {
       try {
         const settings = JSON.parse(savedSettings);
         this.autoSelectFirstChild = settings.autoSelectFirstChild || false;
+        this.lockMenuEnabled =
+          settings.lockMenuEnabled !== undefined
+            ? settings.lockMenuEnabled
+            : true;
+        this.alwaysShowMenu =
+          settings.alwaysShowMenu !== undefined
+            ? settings.alwaysShowMenu
+            : true;
       } catch (e) {
         console.error("Failed to load settings:", e);
       }
@@ -90,7 +102,11 @@ export class MenuReorderOffcanvasComponent {
    * Save settings to localStorage and emit change.
    */
   saveSettings(): void {
-    const settings = { autoSelectFirstChild: this.autoSelectFirstChild };
+    const settings = {
+      autoSelectFirstChild: this.autoSelectFirstChild,
+      lockMenuEnabled: this.lockMenuEnabled,
+      alwaysShowMenu: this.alwaysShowMenu,
+    };
     localStorage.setItem("jira-sidebar-settings", JSON.stringify(settings));
     this.settingsChanged.emit(settings);
   }

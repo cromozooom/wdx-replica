@@ -92,3 +92,54 @@
 .menu-item:hover .edit-actions {
   opacity: 1;
 }
+
+// Children menu tooltip styles (for icons-only mode)
+::ng-deep .children-menu-tooltip {
+  opacity: 1 !important;
+
+  .tooltip-inner {
+    padding: $spacer / 2;
+    max-width: 280px;
+    background-color: var(--bs-body-bg, #fff);
+    color: var(--bs-body-text);
+    box-shadow: var(--bs-box-shadow);
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+  }
+
+  // Hide/adjust arrow color
+  .tooltip-arrow {
+    display: none;
+  }
+
+  .children-menu-content {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .menu-child-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 100ms ease;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: var(--bs-light);
+    }
+
+    &.active {
+      color: color-contrast(shade-color($primary, 10%));
+      background-color: shade-color($primary, 10%);
+    }
+
+    .child-label {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    i {
+      flex-shrink: 0;
+    }
+  }
+}

@@ -69,4 +69,18 @@ export enum SidebarVisibilityMode {
    * Ignores auto-hide timers until unlocked (FR-011).
    */
   LOCKED_VISIBLE = "locked_visible",
+
+  /**
+   * Always visible - full menu is always shown at 280px.
+   * Used when lock menu is disabled and "Always Show" is selected.
+   * No lock/unlock button, replaced with Always/Icons toggle.
+   */
+  ALWAYS_VISIBLE = "always_visible",
+
+  /**
+   * First level only - sidebar shows only icons and first-level items (~60px width).
+   * Children revealed in tooltip-like overlay on hover.
+   * Used when lock menu is disabled and "Icons Only" is selected.
+   */
+  FIRST_LEVEL_ONLY = "first_level_only",
 }
