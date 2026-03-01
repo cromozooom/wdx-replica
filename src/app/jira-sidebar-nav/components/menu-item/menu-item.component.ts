@@ -4,6 +4,7 @@ import {
   EventEmitter,
   Input,
   Output,
+  signal,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import {
@@ -11,6 +12,7 @@ import {
   NgbDropdownToggle,
   NgbDropdownMenu,
   NgbDropdownItem,
+  NgbTooltip,
 } from "@ng-bootstrap/ng-bootstrap";
 import { MenuItem } from "../../models";
 
@@ -29,6 +31,7 @@ import { MenuItem } from "../../models";
     NgbDropdownToggle,
     NgbDropdownMenu,
     NgbDropdownItem,
+    NgbTooltip,
   ],
   templateUrl: "./menu-item.component.html",
   styleUrl: "./menu-item.component.scss",
@@ -54,6 +57,12 @@ export class MenuItemComponent {
   isActive: boolean = false;
 
   /**
+   * ID of the currently active item (global state for overlay).
+   */
+  @Input()
+  activeItemId: string | null = null;
+
+  /**
    * Whether this item has children.
    */
   @Input()
@@ -76,6 +85,12 @@ export class MenuItemComponent {
    */
   @Input()
   isEditMode: boolean = false;
+
+  /**
+   * Whether icons-only mode is active (FIRST_LEVEL_ONLY visibility).
+   */
+  @Input()
+  isIconsOnlyMode: boolean = false;
 
   /**
    * Emitted when user clicks the item.
@@ -107,11 +122,30 @@ export class MenuItemComponent {
   @Output()
   addChildRequested = new EventEmitter<MenuItem>();
 
+  // Tooltip reference for icons-only mode
+  private tooltipRef: any = null;
+  private hideTooltipTimeout?: number;
+
   /**
    * Calculate indentation padding.
    */
   getIndentPadding(): string {
     return `${this.level * 20}px`;
+  }
+
+  /**
+   * Should enable tooltip for icons-only mode.
+   */
+  get shouldEnableTooltip(): boolean {
+    return this.isIconsOnlyMode && this.level === 0 && this.hasChildren;
+  }
+
+  /**
+   * Should show expansion chevron.
+   * Hidden in icons-only mode for level 0 items.
+   */
+  get shouldShowChevron(): boolean {
+    return this.hasChildren && !(this.isIconsOnlyMode && this.level === 0);
   }
 
   /**
@@ -167,5 +201,69 @@ export class MenuItemComponent {
    */
   onDropdownToggle(event: MouseEvent): void {
     event.stopPropagation();
+  }
+
+  /**
+   * Handle mouse enter on item (for icons-only tooltip).
+   */
+  onItemMouseEnter(event: MouseEvent, tooltip?: any): void {
+    if (this.shouldEnableTooltip && tooltip) {
+      // Clear any pending hide timeout
+      if (this.hideTooltipTimeout) {
+        window.clearTimeout(this.hideTooltipTimeout);
+        this.hideTooltipTimeout = undefined;
+      }
+      this.tooltipRef = tooltip;
+      tooltip.open();
+    }
+  }
+
+  /**
+   * Handle mouse leave on item (for icons-only tooltip).
+   */
+  onItemMouseLeave(tooltip?: any): void {
+    if (this.shouldEnableTooltip && tooltip) {
+      // Delay hiding to allow moving into tooltip
+      this.hideTooltipTimeout = window.setTimeout(() => {
+        tooltip.close();
+      }, 100);
+    }
+  }
+
+  /**
+   * Handle child click from tooltip.
+   */
+  onTooltipChildClick(childId: string, tooltip?: any): void {
+    this.itemClicked.emit(childId);
+    if (tooltip) {
+      tooltip.close();
+    }
+    if (this.hideTooltipTimeout) {
+      window.clearTimeout(this.hideTooltipTimeout);
+      this.hideTooltipTimeout = undefined;
+    }
+  }
+
+  /**
+   * Handle tooltip content mouse leave.
+   */
+  onTooltipMouseLeave(tooltip?: any): void {
+    if (tooltip) {
+      tooltip.close();
+    }
+    if (this.hideTooltipTimeout) {
+      window.clearTimeout(this.hideTooltipTimeout);
+      this.hideTooltipTimeout = undefined;
+    }
+  }
+
+  /**
+   * Handle tooltip content mouse enter (cancel hide timeout).
+   */
+  onTooltipMouseEnter(): void {
+    if (this.hideTooltipTimeout) {
+      window.clearTimeout(this.hideTooltipTimeout);
+      this.hideTooltipTimeout = undefined;
+    }
   }
 }

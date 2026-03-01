@@ -1,19 +1,27 @@
 <!-- Menu Item Template (T029, T082) -->
 <!-- [disabled]="hasChildrenActive" -->
 <button
-  class="menu-item align-items-stretch w-100 border-0 padding-top-0"
+  class="menu-item w-100 border-0 padding-top-0"
   [class.activeL0]="isActive && level === 0"
   [class.active]="isActive"
-  [class]="
-    hasChildrenActive
-      ? 'item-has-children-active'
-      : hasChildren
-        ? 'item-has-children'
-        : ''
-  "
+  [ngClass]="{
+    'item-has-children-active': hasChildrenActive,
+    'item-has-children': hasChildren && !hasChildrenActive,
+    'justify-content-center': isIconsOnlyMode && level === 0,
+    'align-items-stretch': !(isIconsOnlyMode && level === 0),
+  }"
   [style.padding-left]="getIndentPadding()"
   [style.--left-indent]="getIndentPadding()"
   (click)="onClick($event)"
+  [ngbTooltip]="shouldEnableTooltip ? childrenTooltip : null"
+  [autoClose]="false"
+  triggers="manual"
+  #t="ngbTooltip"
+  placement="end"
+  container="body"
+  tooltipClass="children-menu-tooltip"
+  (mouseenter)="onItemMouseEnter($event, t)"
+  (mouseleave)="onItemMouseLeave(t)"
   [attr.title]="item.label"
 >
   <!-- Label with truncation (T082, FR-031) -->
@@ -28,6 +36,7 @@
             ? 'ms-1 tree-active px-3 rounded-pill py-1'
             : 'ms-1 tree-notActive px-3 rounded-pill py-1'
       "
+      [class.justify-content-center]="isIconsOnlyMode && level === 0"
     >
       @if (item.icon && level === 0) {
         <!-- [class.py-4]="isLevel0" -->
@@ -41,12 +50,14 @@
           <i [class]="item.icon"></i>
         </small>
       }
-      <span
-        class="item-label d-flex align-items-center"
-        [attr.title]="item.label"
-      >
-        <span class="">{{ item.label }}</span>
-      </span>
+      @if (!(isIconsOnlyMode && level === 0)) {
+        <span
+          class="item-label d-flex align-items-center"
+          [attr.title]="item.label"
+        >
+          <span class="">{{ item.label }}</span>
+        </span>
+      }
     </div>
   </div>
   <!-- Badge (if metadata.badgeCount exists) -->
@@ -58,7 +69,7 @@
     </span>
   }
 
-  <div class="d-flex align-items-stretch pe-2">
+  <div class="d-flex align-items-stretch">
     <!-- Edit Mode Actions (T054, FR-016, FR-017) -->
     @if (isEditMode) {
       <div ngbDropdown container="body" class="ms-auto d-flex flex-grow-1">
@@ -88,9 +99,9 @@
     }
 
     <!-- Expansion Icon (if has children) -->
-    @if (hasChildren) {
+    @if (shouldShowChevron) {
       <button
-        class="btn btn-outline-on-primary border-0 btn-sm d-flex align-items-center justify-content-center text-decoration-none my-2"
+        class="me-2 btn btn-outline-on-primary border-0 btn-sm d-flex align-items-center justify-content-center text-decoration-none my-2"
         style="width: 1.3rem"
         [class.rounded-0]="isEditMode"
         [class.expanded]="isExpanded"
@@ -107,3 +118,26 @@
     }
   </div>
 </button>
+
+<!-- Children Tooltip Template for Icons-Only Mode -->
+<ng-template #childrenTooltip>
+  <div
+    class="children-menu-content bg-body p-0 m-0 d-flex flex-column gap-1"
+    (mouseenter)="onTooltipMouseEnter()"
+    (mouseleave)="onTooltipMouseLeave(t)"
+  >
+    @for (child of item.children; track child.id) {
+      <div
+        class="rounded-1 menu-child-item d-flex align-items-center gap-2 px-3 py-2 pointer justify-content-start"
+        [class.active]="activeItemId === child.id"
+        (click)="onTooltipChildClick(child.id, t)"
+      >
+        <i [class]="child.icon || 'fas fa-circle'" class="me-2"></i>
+        <span class="child-label text-start">{{ child.label }}</span>
+        @if (child.children && child.children.length > 0) {
+          <i class="fas fa-chevron-right ms-auto text-muted small"></i>
+        }
+      </div>
+    }
+  </div>
+</ng-template>

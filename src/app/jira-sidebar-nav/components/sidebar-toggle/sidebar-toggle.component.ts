@@ -10,7 +10,7 @@ import { NgbTooltip } from "@ng-bootstrap/ng-bootstrap";
 
 /**
  * Sidebar toggle component (Dumb Component).
- * Renders lock/unlock button for sidebar.
+ * Renders lock/unlock button OR always/icons toggle based on settings.
  *
  * @see specs/001-jira-sidebar-nav/contracts/component-interfaces.md for API
  */
@@ -24,10 +24,24 @@ import { NgbTooltip } from "@ng-bootstrap/ng-bootstrap";
 })
 export class SidebarToggleComponent {
   /**
-   * Whether sidebar is locked.
+   * Whether sidebar is locked (used when lockMenuEnabled is true).
    */
   @Input()
   isLocked: boolean = false;
+
+  /**
+   * Whether lock menu mode is enabled.
+   * True = show lock/unlock button, False = show always/icons toggle.
+   */
+  @Input()
+  lockMenuEnabled: boolean = true;
+
+  /**
+   * Whether menu is in "always show" mode (used when lockMenuEnabled is false).
+   * True = full menu always visible, False = icons only mode.
+   */
+  @Input()
+  alwaysShowMenu: boolean = true;
 
   /**
    * Whether the toggle button is disabled (e.g., in edit mode).
@@ -75,9 +89,24 @@ export class SidebarToggleComponent {
   }
 
   /**
-   * Get tooltip text based on lock state.
+   * Get tooltip text based on current mode and state.
    */
   getTooltipText(): string {
-    return this.isLocked ? "Unlock sidebar" : "Lock sidebar open";
+    if (this.lockMenuEnabled) {
+      return this.isLocked ? "Unlock sidebar" : "Lock sidebar open";
+    } else {
+      return this.alwaysShowMenu ? "Show icons only" : "Show full menu";
+    }
+  }
+
+  /**
+   * Get short status text for tooltip badge.
+   */
+  getStatusText(): string {
+    if (this.lockMenuEnabled) {
+      return this.isLocked ? "Locked" : "Unlocked";
+    } else {
+      return this.alwaysShowMenu ? "Full Menu" : "Icons Only";
+    }
   }
 }

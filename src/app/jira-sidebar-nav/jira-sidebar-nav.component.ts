@@ -62,7 +62,14 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
   private autoHideSubscription?: Subscription;
 
   // Settings
-  private autoSelectFirstChild = false;
+  protected autoSelectFirstChild = false;
+  protected lockMenuEnabled = true; // Default to current behavior
+  protected alwaysShowMenu = true; // Default to always show when lockMenu is disabled
+
+  // Computed property for icons-only mode
+  protected get isIconsOnlyMode(): boolean {
+    return !this.lockMenuEnabled && !this.alwaysShowMenu;
+  }
 
   // Computed signals from service
   protected readonly menuItems = this.menuDataService.rootItems;
@@ -91,6 +98,9 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
 
     // Load settings from localStorage
     this.loadSettings();
+
+    // Apply initial visibility mode based on loaded settings
+    this.applyVisibilityMode();
   }
 
   /**
@@ -102,6 +112,14 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
       try {
         const settings = JSON.parse(savedSettings);
         this.autoSelectFirstChild = settings.autoSelectFirstChild || false;
+        this.lockMenuEnabled =
+          settings.lockMenuEnabled !== undefined
+            ? settings.lockMenuEnabled
+            : true;
+        this.alwaysShowMenu =
+          settings.alwaysShowMenu !== undefined
+            ? settings.alwaysShowMenu
+            : true;
       } catch (e) {
         console.error("Failed to load settings:", e);
       }
@@ -121,10 +139,69 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
   }
 
   /**
+   * Handle toggle button click - behavior depends on lockMenuEnabled setting.
+   */
+  onToggleClicked(): void {
+    if (this.lockMenuEnabled) {
+      // Lock/unlock mode: toggle lock state
+      this.toggleLock();
+    } else {
+      // Always/Icons mode: toggle between always show and icons only
+      this.alwaysShowMenu = !this.alwaysShowMenu;
+      // Save settings
+      this.saveCurrentSettings();
+      // Apply visibility mode based on alwaysShowMenu
+      this.applyVisibilityMode();
+    }
+  }
+
+  /**
+   * Apply visibility mode based on current settings.
+   */
+  private applyVisibilityMode(): void {
+    if (this.lockMenuEnabled) {
+      // Lock mode: use current lock state (locked or temporary visible)
+      if (this.isLocked()) {
+        this.menuDataService.setSidebarVisibility(
+          SidebarVisibilityMode.LOCKED_VISIBLE,
+        );
+      } else {
+        this.menuDataService.setSidebarVisibility(
+          SidebarVisibilityMode.TEMPORARY_VISIBLE,
+        );
+      }
+    } else {
+      // Always/Icons mode: apply based on alwaysShowMenu setting
+      if (this.alwaysShowMenu) {
+        this.menuDataService.setSidebarVisibility(
+          SidebarVisibilityMode.ALWAYS_VISIBLE,
+        );
+      } else {
+        this.menuDataService.setSidebarVisibility(
+          SidebarVisibilityMode.FIRST_LEVEL_ONLY,
+        );
+      }
+    }
+  }
+
+  /**
+   * Save current settings to localStorage.
+   */
+  private saveCurrentSettings(): void {
+    const settings = {
+      autoSelectFirstChild: this.autoSelectFirstChild,
+      lockMenuEnabled: this.lockMenuEnabled,
+      alwaysShowMenu: this.alwaysShowMenu,
+    };
+    localStorage.setItem("jira-sidebar-settings", JSON.stringify(settings));
+  }
+
+  /**
    * Expand sidebar on hover (T022, FR-007).
+   * Only applies in lock mode, not in always/icons mode.
    */
   expandSidebar(): void {
-    if (!this.isLocked()) {
+    if (this.lockMenuEnabled && !this.isLocked()) {
       this.menuDataService.setSidebarVisibility(
         SidebarVisibilityMode.TEMPORARY_VISIBLE,
       );
@@ -133,9 +210,10 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
 
   /**
    * Collapse sidebar after timer (T022, FR-008).
+   * Only applies in lock mode, not in always/icons mode.
    */
   collapseSidebar(): void {
-    if (!this.isLocked()) {
+    if (this.lockMenuEnabled && !this.isLocked()) {
       this.menuDataService.setSidebarVisibility(SidebarVisibilityMode.HIDDEN);
     }
   }
@@ -172,8 +250,16 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
 
     // Subscribe to settings changes
     offcanvasRef.componentInstance.settingsChanged.subscribe(
-      (settings: { autoSelectFirstChild: boolean }) => {
+      (settings: {
+        autoSelectFirstChild: boolean;
+        lockMenuEnabled: boolean;
+        alwaysShowMenu: boolean;
+      }) => {
         this.autoSelectFirstChild = settings.autoSelectFirstChild;
+        this.lockMenuEnabled = settings.lockMenuEnabled;
+        this.alwaysShowMenu = settings.alwaysShowMenu;
+        // Apply visibility mode when settings change
+        this.applyVisibilityMode();
       },
     );
 

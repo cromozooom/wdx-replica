@@ -1,0 +1,60 @@
+@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../variables";
+@import "../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../../../node_modules/bootstrap/scss/mixins";
+
+// Menu Children Overlay Styles
+// Tooltip-like overlay for showing children in icons-only mode
+
+.menu-children-overlay {
+  position: fixed;
+  left: 2.6rem; // Position right after the icons-only sidebar
+  z-index: 1100; // Above sidebar
+  min-width: 220px;
+  max-width: 280px;
+  animation: fadeIn 150ms ease-in;
+
+  .overlay-content {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .overlay-item {
+    cursor: pointer;
+    transition: background-color 100ms ease;
+    white-space: nowrap;
+    color: $primary;
+
+    &:hover {
+      background-color: tint-color($primary, 80%);
+      color: color-contrast(tint-color($primary, 80%));
+    }
+
+    &.active {
+      background-color: $primary;
+      color: color-contrast(shade-color($primary, 20%));
+    }
+
+    .overlay-item-label {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    i {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

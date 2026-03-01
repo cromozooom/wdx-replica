@@ -1,7 +1,7 @@
 <!-- Sidebar Menu Template (T028) -->
 <div class="d-flex overflow-hidden flex-column flex-grow-1">
   <div
-    class="scroll_custom_1 d-flex flex-column flex-grow-1 overflow-y-scroll w-100"
+    class="scroll_custom_1 d-flex flex-column flex-grow-1 overflow-y-auto w-100"
   >
     <!-- Add Menu Buttons (T064) -->
     @if (isEditMode) {
@@ -48,10 +48,12 @@
             [item]="item"
             [level]="getLevel(item)"
             [isActive]="activeItemId === item.id"
+            [activeItemId]="activeItemId"
             [hasChildren]="hasChildren(item)"
             [hasChildrenActive]="hasActiveDescendant(item)"
             [isExpanded]="isExpanded(item.id)"
             [isEditMode]="isEditMode"
+            [isIconsOnlyMode]="isIconsOnlyMode"
             (itemClicked)="onItemClick($event)"
             (expansionToggled)="toggleNode(item)"
             (editRequested)="onEditClick($event)"
@@ -59,8 +61,8 @@
             (addChildRequested)="onAddChildClick($event)"
           ></app-menu-item>
 
-          <!-- Recursive Children -->
-          @if (hasChildren(item) && isExpanded(item.id)) {
+          <!-- Recursive Children (disabled in icons-only mode) -->
+          @if (!isIconsOnlyMode && hasChildren(item) && isExpanded(item.id)) {
             <ul
               class="menu-tree nested-level d-flex flex-column gap-0 border-danger"
               [class]="

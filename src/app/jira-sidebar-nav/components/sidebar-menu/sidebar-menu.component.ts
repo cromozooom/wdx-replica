@@ -52,6 +52,12 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
   isEditMode: boolean = false;
 
   /**
+   * Whether icons-only mode is active (FIRST_LEVEL_ONLY visibility).
+   */
+  @Input()
+  isIconsOnlyMode: boolean = false;
+
+  /**
    * Emitted when user clicks a menu item.
    */
   @Output()

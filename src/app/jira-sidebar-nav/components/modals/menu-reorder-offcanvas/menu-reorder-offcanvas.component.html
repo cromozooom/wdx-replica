@@ -197,6 +197,63 @@
             </div>
           </label>
         </div>
+
+        <!-- Lock menu toggle -->
+        <div class="form-check form-switch mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="lockMenuEnabled"
+            [(ngModel)]="lockMenuEnabled"
+            (change)="saveSettings()"
+          />
+          <label class="form-check-label" for="lockMenuEnabled">
+            <strong>Enable lock/unlock button</strong>
+            <div class="text-muted small mt-1">
+              <strong>When enabled:</strong> Menu uses lock/unlock button
+              (current behavior). <br /><strong>When disabled:</strong> Lock
+              button is replaced with a toggle that switches between:
+              <ul class="mb-0 mt-1">
+                <li>
+                  <strong>Always Show</strong> - Full menu is always visible
+                </li>
+                <li>
+                  <strong>Icons Only</strong> - Only first level visible; hover
+                  icons to reveal children in tooltip
+                </li>
+              </ul>
+            </div>
+          </label>
+        </div>
+
+        <!-- Always show menu toggle (only visible when lock menu is disabled) -->
+        @if (!lockMenuEnabled) {
+          <div class="form-check form-switch mb-3 ms-4">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="alwaysShowMenu"
+              [(ngModel)]="alwaysShowMenu"
+              (change)="saveSettings()"
+            />
+            <label class="form-check-label" for="alwaysShowMenu">
+              <strong>Always show full menu</strong>
+              <div class="text-muted small mt-1">
+                <strong>When enabled:</strong> Full menu is always visible
+                (280px width). <br /><strong>When disabled:</strong> Icons only
+                mode - sidebar shows only icons (~60px width), hover to reveal
+                children in tooltip.
+              </div>
+            </label>
+          </div>
+        }
+
+        <div class="alert alert-info small mb-0">
+          <i class="fas fa-info-circle me-2"></i>
+          Settings are saved automatically and persist across sessions.
+        </div>
       </div>
       <!-- END SETTINGS TAB CONTENT -->
     </ng-template>
