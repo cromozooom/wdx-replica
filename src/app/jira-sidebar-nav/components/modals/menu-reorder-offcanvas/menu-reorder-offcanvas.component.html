@@ -9,8 +9,8 @@
   ></button>
 </div>
 
-<div class="offcanvas-body overflow-y-scroll">
-  <div class="mb-3 alert alert-info">
+<div class="offcanvas-body p-0 overflow-y-scroll">
+  <div class="bg-info-subtle text-info-emphasis p-3 sticky-top">
     <i class="fas fa-info-circle me-2"></i>
     <strong>Drag and drop</strong> items to reorder. Drop position indicators:
     <!-- <ul class="mb-0 mt-2 small">
@@ -27,18 +27,21 @@
       [attr.data-id]="node.id"
       [attr.id]="'node-' + node.id"
     >
-      <div class="node-title" (click)="toggleExpansion(node)">
-        <span class="expansion-toggle">
+      <div
+        class="node-title px-2 py-3 my-2 rounded border"
+        (click)="toggleExpansion(node)"
+      >
+        <span class="expansion-toggle me-3">
           @if (node.children?.length) {
             {{ node.expanded ? "−" : "+" }}
           } @else {
             &nbsp;&nbsp;&nbsp;
           }
         </span>
-        <i [class]="node.icon || 'fas fa-circle'" class="me-2"></i>
+        <i [class]="node.icon || 'fas fa-circle'" class="me-3"></i>
         <span class="node-label">{{ node.label }}</span>
         @if (node.children?.length) {
-          <span class="item-notes">
+          <span class="item-notes ms-2">
             ({{ node.children.length }}{{ node.expanded ? ", expanded" : "" }})
           </span>
         }
@@ -46,7 +49,7 @@
 
       @if (node.expanded && node.children?.length) {
         <div
-          class="node-children"
+          class="node-children ms-2 mt-1 ps-2 border-start"
           cdkDropList
           [cdkDropListData]="node.children"
           [id]="node.id"
@@ -78,7 +81,7 @@
     [cdkDropListConnectedTo]="dropTargetIds"
     (cdkDropListDropped)="drop($event)"
     [cdkDropListSortingDisabled]="true"
-    class="root-drop-list"
+    class="root-drop-list px-2"
   >
     @for (node of menuItems; track node.id) {
       <div cdkDrag [cdkDragData]="node.id" (cdkDragMoved)="dragMoved($event)">
@@ -98,12 +101,13 @@
   }
 </div>
 
-<div class="offcanvas-footer border-top p-3 d-flex gap-2 justify-content-end">
+<div
+  class="offcanvas-footer border-top p-2 d-flex gap-2 justify-content-between"
+>
   <button type="button" class="btn btn-secondary" (click)="cancel()">
     Cancel
   </button>
   <button type="button" class="btn btn-primary" (click)="save()">
-    <i class="fas fa-save me-2"></i>
     Save Changes
   </button>
 </div>
