@@ -170,6 +170,15 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
    * Implements special merge logic when both items have contentConfig.
    */
   onItemDropped(context: DragDropContext): void {
+    console.log("📥 onItemDropped received in parent component:", {
+      draggedItem: context.draggedItem.label,
+      dropType: context.dropType,
+      originalParent: context.originalParent?.label || "ROOT",
+      targetParent: context.targetParent?.label || "ROOT",
+      originalIndex: context.originalIndex,
+      targetIndex: context.targetIndex,
+    });
+
     const { draggedItem, targetParent } = context;
 
     // Check if both dragged item and target have contentConfig
@@ -180,22 +189,31 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
     ) {
       // Special merge: both keep their content
       console.log(
-        `[DragDrop] Merging "${draggedItem.label}" into "${targetParent.label}" with content preservation`,
+        `🔀 [DragDrop] Merging "${draggedItem.label}" into "${targetParent.label}" with content preservation`,
       );
       this.menuDataService.mergeItemsWithConfig(
         draggedItem.id,
         targetParent.id,
       );
+      console.log("✅ Merge completed");
     } else if (targetParent) {
       // Regular move to new parent
+      console.log(
+        `➡️ [DragDrop] Moving "${draggedItem.label}" to parent "${targetParent.label}" at index ${context.targetIndex}`,
+      );
       this.menuDataService.moveItem(
         draggedItem.id,
         targetParent.id,
         context.targetIndex,
       );
+      console.log("✅ Move to parent completed");
     } else {
       // Move to root level
+      console.log(
+        `⬆️ [DragDrop] Moving "${draggedItem.label}" to ROOT level at index ${context.targetIndex}`,
+      );
       this.menuDataService.moveItem(draggedItem.id, null, context.targetIndex);
+      console.log("✅ Move to root completed");
     }
   }
 

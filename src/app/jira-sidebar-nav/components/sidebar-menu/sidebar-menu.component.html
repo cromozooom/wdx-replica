@@ -74,10 +74,11 @@
                     : ''
               "
               cdkDropList
+              [id]="getDropListId(item)"
               [cdkDropListData]="{ items: item.children, parent: item }"
               (cdkDropListDropped)="onDrop($event)"
               [cdkDropListDisabled]="!isEditMode"
-              [cdkDropListConnectedTo]="[]"
+              [cdkDropListConnectedTo]="allDropListIds"
             >
               <!-- Recursive call -->
               <ng-container
@@ -104,9 +105,11 @@
       <ul
         class="menu-tree root-level"
         cdkDropList
+        id="drop-list-root"
         [cdkDropListData]="{ items: menuItems, parent: null }"
         (cdkDropListDropped)="onDrop($event)"
         [cdkDropListDisabled]="!isEditMode"
+        [cdkDropListConnectedTo]="allDropListIds"
       >
         <!-- Initialize recursive template -->
         <ng-container

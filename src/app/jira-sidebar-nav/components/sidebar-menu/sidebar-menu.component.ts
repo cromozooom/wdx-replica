@@ -113,14 +113,21 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
    */
   private itemLevelMap = new Map<string, number>();
 
+  /**
+   * Array of all drop list IDs for connecting nested drag-drop lists.
+   */
+  allDropListIds: string[] = [];
+
   ngOnInit(): void {
     // Component initialized
     this.buildLevelMap();
+    this.buildDropListIds();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes["menuItems"]) {
       this.buildLevelMap();
+      this.buildDropListIds();
     }
   }
 
@@ -152,6 +159,36 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
    */
   getLevel(item: MenuItem): number {
     return this.itemLevelMap.get(item.id) ?? 0;
+  }
+
+  /**
+   * Build list of all drop list IDs for connecting nested drag-drop.
+   */
+  private buildDropListIds(): void {
+    this.allDropListIds = ["drop-list-root"];
+    this.collectDropListIds(this.menuItems);
+  }
+
+  /**
+   * Recursively collect all drop list IDs from menu items.
+   */
+  private collectDropListIds(items: MenuItem[]): void {
+    if (!items) {
+      return;
+    }
+    for (const item of items) {
+      if (item.children && item.children.length > 0) {
+        this.allDropListIds.push(`drop-list-${item.id}`);
+        this.collectDropListIds(item.children);
+      }
+    }
+  }
+
+  /**
+   * Get drop list ID for a menu item.
+   */
+  getDropListId(item: MenuItem): string {
+    return `drop-list-${item.id}`;
   }
 
   /**
@@ -398,13 +435,38 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
    * Detects drop type and emits appropriate context.
    */
   onDrop(event: CdkDragDrop<any>): void {
+    console.log("🎯 onDrop triggered", {
+      previousContainer: event.previousContainer.id,
+      currentContainer: event.container.id,
+      previousIndex: event.previousIndex,
+      currentIndex: event.currentIndex,
+      isSameContainer: event.previousContainer === event.container,
+    });
+
     if (!this.isEditMode) {
+      console.log("⚠️ Drag-drop blocked: Edit mode is disabled");
       return; // Drag-drop only enabled in edit mode
     }
 
     const draggedItem: MenuItem = event.item.data;
     const dropContainer = event.container.data;
     const dragContainer = event.previousContainer.data;
+
+    console.log("📦 Drop event details:", {
+      draggedItem: { id: draggedItem.id, label: draggedItem.label },
+      dragContainer: {
+        parent: dragContainer.parent
+          ? { id: dragContainer.parent.id, label: dragContainer.parent.label }
+          : "ROOT",
+        itemCount: dragContainer.items?.length,
+      },
+      dropContainer: {
+        parent: dropContainer.parent
+          ? { id: dropContainer.parent.id, label: dropContainer.parent.label }
+          : "ROOT",
+        itemCount: dropContainer.items?.length,
+      },
+    });
 
     // Determine if this is a reorder or move operation
     if (event.previousContainer === event.container) {
@@ -417,7 +479,14 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
         targetIndex: event.currentIndex,
         dropType: DropType.REORDER_SIBLING,
       };
+      console.log("🔄 REORDER operation:", {
+        item: draggedItem.label,
+        parent: context.targetParent ? context.targetParent.label : "ROOT",
+        from: event.previousIndex,
+        to: event.currentIndex,
+      });
       this.itemDropped.emit(context);
+      console.log("✅ itemDropped event emitted");
     } else {
       // Different container - move
       const context: DragDropContext = {
@@ -428,7 +497,17 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
         targetIndex: event.currentIndex,
         dropType: DropType.MOVE_TO_CHILD,
       };
+      console.log("🚀 MOVE operation:", {
+        item: draggedItem.label,
+        fromParent: context.originalParent
+          ? context.originalParent.label
+          : "ROOT",
+        toParent: context.targetParent ? context.targetParent.label : "ROOT",
+        fromIndex: event.previousIndex,
+        toIndex: event.currentIndex,
+      });
       this.itemDropped.emit(context);
+      console.log("✅ itemDropped event emitted");
     }
   }
 
