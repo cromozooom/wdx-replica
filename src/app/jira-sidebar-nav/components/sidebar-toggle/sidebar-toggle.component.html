@@ -1,17 +1,79 @@
 <!-- Sidebar Toggle Template (T030) -->
 <button
   type="button"
-  class="btn btn-link text-decoration-none d-flex gap-2 px-1 align-items-center sidebar-toggle"
+  class="btn btn-link text-decoration-none p-0 d-flex gap-2 align-items-center"
   [class.locked]="isLocked"
   [disabled]="disabled"
   (click)="onToggle()"
   (mouseenter)="onMouseEnter()"
   (mouseleave)="onMouseLeave()"
   [attr.aria-label]="getTooltipText()"
+  placement="bottom"
+  [ngbTooltip]="isLocked ? 'Locked' : 'Unlocked'"
   [attr.title]="getTooltipText()"
 >
-  <i [class]="isLocked ? 'fas fa-lock' : 'fas fa-lock-open'"></i>
-  <span>
+  <svg
+    height="26"
+    viewBox="0 0 30 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      width="30"
+      height="17"
+      rx="8.5"
+      [style.fill]="!isLocked ? 'var(--50)' : 'var(--50)'"
+      [style.opacity]="!isLocked ? 0.2 : 1"
+    />
+    />
+    <circle
+      cx="21.5"
+      cy="8.5"
+      r="6.5"
+      [style.fill]="isLocked ? 'var(--ink-50)' : 'var(--50)'"
+    />
+    <line
+      x1="11"
+      y1="6"
+      x2="7"
+      y2="6"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      [style.stroke]="isLocked ? 'var(--ink-50)' : 'var(--23)'"
+    />
+    <line
+      x1="11"
+      y1="9"
+      x2="7"
+      y2="9"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      [style.stroke]="isLocked ? 'var(--ink-50)' : 'var(--23)'"
+    />
+    <line
+      x1="11"
+      y1="12"
+      x2="7"
+      y2="12"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      [style.stroke]="isLocked ? 'var(--ink-50)' : 'var(--23)'"
+    />
+    @if (isLocked) {
+      <path
+        d="M21.5 4C22.8807 4 24 5.11929 24 6.5V8.08691C24.5823 8.29297 25 8.84707 25 9.5V11.5C25 12.3284 24.3284 13 23.5 13H19.5C18.6716 13 18 12.3284 18 11.5V9.5C18 8.84707 18.4177 8.29297 19 8.08691V6.5C19 5.11929 20.1193 4 21.5 4ZM19.5 9C19.2239 9 19 9.22386 19 9.5V11.5C19 11.7761 19.2239 12 19.5 12H23.5C23.7761 12 24 11.7761 24 11.5V9.5C24 9.22386 23.7761 9 23.5 9H19.5ZM21.5 5C20.6716 5 20 5.67157 20 6.5V8H23V6.5C23 5.67157 22.3284 5 21.5 5Z"
+        [style.fill]="!isLocked ? 'var(--ink-50)' : 'var(--50)'"
+      />
+    } @else {
+      <path
+        d="M22.1911 4C23.5718 4 24.6911 5.11929 24.6911 6.5H23.6911C23.6911 5.67157 23.0195 5 22.1911 5C21.3627 5 20.6911 5.67157 20.6911 6.5V7.43945L24.2057 8.28223C25.0111 8.47535 25.508 9.28439 25.3151 10.0898L24.8483 12.0352C24.6552 12.8405 23.8461 13.3373 23.0407 13.1445L19.1501 12.2119C18.3447 12.0187 17.8486 11.2088 18.0417 10.4033L18.5075 8.45898C18.6498 7.86513 19.1273 7.43953 19.6911 7.33398V6.5C19.6911 5.11929 20.8104 4 22.1911 4ZM20.0827 8.32227C19.8143 8.25794 19.5447 8.42308 19.4801 8.69141L19.0143 10.6367C18.95 10.9052 19.115 11.1748 19.3835 11.2393L23.2731 12.1719C23.5416 12.2362 23.8123 12.0703 23.8766 11.8018L24.3424 9.85742C24.4068 9.58888 24.2409 9.31826 23.9723 9.25391L20.0827 8.32227Z"
+        [style.fill]="!isLocked ? 'var(--ink-50)' : 'var(--50)'"
+      />
+    }
+  </svg>
+
+  <!-- <i [class]="isLocked ? 'fas fa-lock' : 'fas fa-lock-open'"></i> -->
+  <span class="sr-only">
     {{ isLocked ? "locked" : "unlocked" }}
   </span>
 </button>
