@@ -1,5 +1,5 @@
 <!-- Menu Reorder Offcanvas -->
-<div class="offcanvas-header border-bottom">
+<div class="offcanvas-header p-2 border-bottom">
   <h5 class="offcanvas-title">Reorder Menu Items</h5>
   <button
     type="button"
@@ -22,50 +22,76 @@
 
   <!-- Recursive Node Template -->
   <ng-template #tmplNode let-node="node">
-    <div
-      class="node-item"
-      [attr.data-id]="node.id"
-      [attr.id]="'node-' + node.id"
-    >
+    <div class="node-item" [attr.data-id]="node.id">
+      <!-- Draggable item content -->
       <div
-        class="node-title px-2 py-3 my-2 rounded border"
-        (click)="toggleExpansion(node)"
+        class="node-title d-flex align-items-center bg-white border-bottom position-relative"
       >
-        <span class="expansion-toggle me-3">
+        <span
+          class="expansion-toggle me-2 text-muted fw-bold"
+          style="width: 20px; text-align: center; user-select: none"
+          (click)="toggleExpansion(node)"
+        >
           @if (node.children?.length) {
             {{ node.expanded ? "−" : "+" }}
           } @else {
             &nbsp;&nbsp;&nbsp;
           }
         </span>
-        <i [class]="node.icon || 'fas fa-circle'" class="me-3"></i>
-        <span class="node-label">{{ node.label }}</span>
+        <div class="rounded px-3 me-2 py-3" cdkDragHandle style="cursor: grab">
+          <i class="fas fa-ellipsis-vertical"></i>
+        </div>
+
+        <i
+          [class]="node.icon || 'fas fa-circle'"
+          class="me-2 text-muted small"
+        ></i>
+        <span class="node-label flex-fill">{{ node.label }}</span>
         @if (node.children?.length) {
-          <span class="item-notes ms-2">
+          <span class="item-notes ms-3 text-muted small">
             ({{ node.children.length }}{{ node.expanded ? ", expanded" : "" }})
           </span>
         }
+
+        <!-- Drop into this item zone (visual indicator only) -->
+        @if (false) {
+          <div class="drop-into-zone" [attr.data-node-id]="node.id">
+            <i class="fas fa-level-down-alt drop-into-icon"></i>
+          </div>
+        }
       </div>
 
+      <!-- Expanded Children List -->
       @if (node.expanded && node.children?.length) {
         <div
-          class="node-children ms-2 mt-1 ps-2 border-start"
+          class="node-children-list ms-5 ps-3 border-start"
           cdkDropList
           [cdkDropListData]="node.children"
-          [id]="node.id"
+          [id]="'children-' + node.id + '-list'"
           [cdkDropListConnectedTo]="dropTargetIds"
           (cdkDropListDropped)="drop($event)"
-          [cdkDropListSortingDisabled]="true"
         >
           @for (child of node.children; track child.id) {
             <div
               cdkDrag
-              [cdkDragData]="child.id"
-              (cdkDragMoved)="dragMoved($event)"
+              [cdkDragData]="child"
+              (cdkDragStarted)="onDragStarted()"
+              (cdkDragMoved)="onDragMoved($event)"
             >
               <ng-container
                 *ngTemplateOutlet="tmplNode; context: { node: child }"
               ></ng-container>
+
+              <!-- Custom Drag Preview -->
+              <div *cdkDragPreview class="drag-preview-item">
+                <i [class]="child.icon || 'fas fa-circle'" class="me-2"></i>
+                {{ child.label }}
+                @if (child.children?.length) {
+                  <span class="ms-2 text-muted small"
+                    >({{ child.children?.length }})</span
+                  >
+                }
+              </div>
             </div>
           }
         </div>
@@ -77,26 +103,42 @@
   <div
     cdkDropList
     [cdkDropListData]="menuItems"
-    [id]="'main'"
+    [id]="'root'"
     [cdkDropListConnectedTo]="dropTargetIds"
     (cdkDropListDropped)="drop($event)"
-    [cdkDropListSortingDisabled]="true"
-    class="root-drop-list px-2"
+    class="root-drop-list border bg-white p-2 position-relative"
+    style="min-height: 200px"
   >
     @for (node of menuItems; track node.id) {
-      <div cdkDrag [cdkDragData]="node.id" (cdkDragMoved)="dragMoved($event)">
+      <div
+        cdkDrag
+        [cdkDragData]="node"
+        (cdkDragStarted)="onDragStarted()"
+        (cdkDragMoved)="onDragMoved($event)"
+      >
         <ng-container
           *ngTemplateOutlet="tmplNode; context: { node: node }"
         ></ng-container>
+
+        <!-- Custom Drag Preview -->
+        <div *cdkDragPreview class="drag-preview-item">
+          <i [class]="node.icon || 'fas fa-circle'" class="me-2"></i>
+          {{ node.label }}
+          @if (node.children?.length) {
+            <span class="ms-2 text-muted small"
+              >({{ node.children?.length }})</span
+            >
+          }
+        </div>
       </div>
     }
   </div>
 
   <!-- Debug Info (optional, can be removed) -->
-  @if (dropActionTodo) {
+  @if (false) {
     <div class="mt-3 p-2 bg-light border rounded small">
-      <strong>Current drag action:</strong>
-      <pre class="mb-0">{{ dropActionTodo | json }}</pre>
+      <strong>Drop targets:</strong>
+      <pre class="mb-0">{{ dropTargetIds | json }}</pre>
     </div>
   }
 </div>
