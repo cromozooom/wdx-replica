@@ -7,14 +7,10 @@ import {
   OnChanges,
   SimpleChanges,
   Output,
-  inject,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { CdkDrag, CdkDropList, CdkDragDrop } from "@angular/cdk/drag-drop";
 import { MenuItem } from "../../models";
-import { DragDropContext, DropType } from "../../models/drag-drop.interface";
 import { MenuItemComponent } from "../menu-item/menu-item.component";
-import { MenuValidationService } from "../../services/menu-validation.service";
 
 /**
  * Sidebar menu component (Dumb Component).
@@ -25,7 +21,7 @@ import { MenuValidationService } from "../../services/menu-validation.service";
 @Component({
   selector: "app-sidebar-menu",
   standalone: true,
-  imports: [CommonModule, MenuItemComponent, CdkDropList, CdkDrag],
+  imports: [CommonModule, MenuItemComponent],
   templateUrl: "./sidebar-menu.component.html",
   styleUrl: "./sidebar-menu.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -98,36 +94,17 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
   addRootItemRequested = new EventEmitter<void>();
 
   /**
-   * Emitted when user drops an item (drag-drop) (T052, FR-019).
-   */
-  @Output()
-  itemDropped = new EventEmitter<DragDropContext>();
-
-  /**
-   * Inject validation service for drag-drop checks.
-   */
-  private readonly validationService = inject(MenuValidationService);
-
-  /**
    * Map of item IDs to their depth levels.
    */
   private itemLevelMap = new Map<string, number>();
 
-  /**
-   * Array of all drop list IDs for connecting nested drag-drop lists.
-   */
-  allDropListIds: string[] = [];
-
   ngOnInit(): void {
-    // Component initialized
     this.buildLevelMap();
-    this.buildDropListIds();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes["menuItems"]) {
       this.buildLevelMap();
-      this.buildDropListIds();
     }
   }
 
@@ -159,36 +136,6 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
    */
   getLevel(item: MenuItem): number {
     return this.itemLevelMap.get(item.id) ?? 0;
-  }
-
-  /**
-   * Build list of all drop list IDs for connecting nested drag-drop.
-   */
-  private buildDropListIds(): void {
-    this.allDropListIds = ["drop-list-root"];
-    this.collectDropListIds(this.menuItems);
-  }
-
-  /**
-   * Recursively collect all drop list IDs from menu items.
-   */
-  private collectDropListIds(items: MenuItem[]): void {
-    if (!items) {
-      return;
-    }
-    for (const item of items) {
-      if (item.children && item.children.length > 0) {
-        this.allDropListIds.push(`drop-list-${item.id}`);
-        this.collectDropListIds(item.children);
-      }
-    }
-  }
-
-  /**
-   * Get drop list ID for a menu item.
-   */
-  getDropListId(item: MenuItem): string {
-    return `drop-list-${item.id}`;
   }
 
   /**
@@ -429,135 +376,4 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
   onAddRootItemClick(): void {
     this.addRootItemRequested.emit();
   }
-
-  /**
-   * Handle drag-drop event (T052, FR-019).
-   * Detects drop type and emits appropriate context.
-   */
-  onDrop(event: CdkDragDrop<any>): void {
-    console.log("🎯 onDrop triggered", {
-      previousContainer: event.previousContainer.id,
-      currentContainer: event.container.id,
-      previousIndex: event.previousIndex,
-      currentIndex: event.currentIndex,
-      isSameContainer: event.previousContainer === event.container,
-    });
-
-    if (!this.isEditMode) {
-      console.log("⚠️ Drag-drop blocked: Edit mode is disabled");
-      return; // Drag-drop only enabled in edit mode
-    }
-
-    const draggedItem: MenuItem = event.item.data;
-    const dropContainer = event.container.data;
-    const dragContainer = event.previousContainer.data;
-
-    console.log("📦 Drop event details:", {
-      draggedItem: { id: draggedItem.id, label: draggedItem.label },
-      dragContainer: {
-        parent: dragContainer.parent
-          ? { id: dragContainer.parent.id, label: dragContainer.parent.label }
-          : "ROOT",
-        itemCount: dragContainer.items?.length,
-      },
-      dropContainer: {
-        parent: dropContainer.parent
-          ? { id: dropContainer.parent.id, label: dropContainer.parent.label }
-          : "ROOT",
-        itemCount: dropContainer.items?.length,
-      },
-    });
-
-    // Determine if this is a reorder or move operation
-    if (event.previousContainer === event.container) {
-      // Same container - reorder
-      const context: DragDropContext = {
-        draggedItem,
-        originalParent: dragContainer.parent || null,
-        originalIndex: event.previousIndex,
-        targetParent: dropContainer.parent || null,
-        targetIndex: event.currentIndex,
-        dropType: DropType.REORDER_SIBLING,
-      };
-      console.log("🔄 REORDER operation:", {
-        item: draggedItem.label,
-        parent: context.targetParent ? context.targetParent.label : "ROOT",
-        from: event.previousIndex,
-        to: event.currentIndex,
-      });
-      this.itemDropped.emit(context);
-      console.log("✅ itemDropped event emitted");
-    } else {
-      // Different container - move
-      const context: DragDropContext = {
-        draggedItem,
-        originalParent: dragContainer.parent || null,
-        originalIndex: event.previousIndex,
-        targetParent: dropContainer.parent || null,
-        targetIndex: event.currentIndex,
-        dropType: DropType.MOVE_TO_CHILD,
-      };
-      console.log("🚀 MOVE operation:", {
-        item: draggedItem.label,
-        fromParent: context.originalParent
-          ? context.originalParent.label
-          : "ROOT",
-        toParent: context.targetParent ? context.targetParent.label : "ROOT",
-        fromIndex: event.previousIndex,
-        toIndex: event.currentIndex,
-      });
-      this.itemDropped.emit(context);
-      console.log("✅ itemDropped event emitted");
-    }
-  }
-
-  /**
-   * Handle drop onto a specific menu item.
-   * Used when dropping one item directly onto another.
-   */
-  onDropOntoItem(draggedItem: MenuItem, targetItem: MenuItem): void {
-    if (!this.isEditMode) {
-      return;
-    }
-
-    // Check if both have contentConfig - special merge logic
-    if (draggedItem.contentConfig && targetItem.contentConfig) {
-      const context: DragDropContext = {
-        draggedItem,
-        originalParent: null, // Will be determined by service
-        originalIndex: 0,
-        targetParent: targetItem,
-        targetIndex: 0,
-        dropType: DropType.MOVE_TO_CHILD,
-      };
-      this.itemDropped.emit(context);
-    } else {
-      // Regular drop - make dragged item a child of target
-      const context: DragDropContext = {
-        draggedItem,
-        originalParent: null,
-        originalIndex: 0,
-        targetParent: targetItem,
-        targetIndex: targetItem.children?.length || 0,
-        dropType: DropType.MOVE_TO_CHILD,
-      };
-      this.itemDropped.emit(context);
-    }
-  }
-
-  /**
-   * Predicate for cdkDropList to prevent invalid drops (T053).
-   */
-  canDrop = (
-    drag: CdkDrag<MenuItem>,
-    drop: CdkDropList<MenuItem[]>,
-  ): boolean => {
-    const draggedItem = drag.data;
-    const targetParent = (drop.data as any).parent || null;
-
-    return !this.validationService.wouldCreateCircularReference(
-      draggedItem,
-      targetParent,
-    );
-  };
 }

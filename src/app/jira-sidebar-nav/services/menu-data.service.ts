@@ -644,6 +644,28 @@ export class MenuDataService {
   // ========== PRIVATE HELPERS ==========
 
   /**
+   * Reorder menu items (from drag-drop editor).
+   *
+   * @param newRootItems New ordered menu items (replacing entire structure)
+   * @returns true if successful, false otherwise
+   */
+  setRootItems(newRootItems: MenuItem[]): boolean {
+    try {
+      // Clone for immutability
+      const clonedItems = MenuTreeUtils.cloneItems(newRootItems);
+
+      // Update structure (will validate and rebuild maps)
+      this.updateMenuStructure(clonedItems);
+
+      console.log("[MenuDataService] Root items updated successfully");
+      return true;
+    } catch (error) {
+      console.error("[MenuDataService] Failed to set root items:", error);
+      return false;
+    }
+  }
+
+  /**
    * Update menu structure and recalculate derived data.
    */
   private updateMenuStructure(newRootItems: MenuItem[]): void {

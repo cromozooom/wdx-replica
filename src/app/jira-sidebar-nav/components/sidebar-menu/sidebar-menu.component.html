@@ -42,9 +42,6 @@
           [class.li-has-tree-inside]="hasTreeInside(item)"
           [class.li-has-expanded-ul]="hasExpandedChildren(item)"
           [class.li-has-open-sibling-after]="hasOpenSiblingAfter(item)"
-          cdkDrag
-          [cdkDragData]="item"
-          [cdkDragDisabled]="!isEditMode"
         >
           <!-- Menu Item Component -->
           <app-menu-item
@@ -73,12 +70,6 @@
                     ? 'ul-has-activeItem'
                     : ''
               "
-              cdkDropList
-              [id]="getDropListId(item)"
-              [cdkDropListData]="{ items: item.children, parent: item }"
-              (cdkDropListDropped)="onDrop($event)"
-              [cdkDropListDisabled]="!isEditMode"
-              [cdkDropListConnectedTo]="allDropListIds"
             >
               <!-- Recursive call -->
               <ng-container
@@ -102,15 +93,7 @@
       role="navigation"
       aria-label="Main navigation"
     >
-      <ul
-        class="menu-tree root-level"
-        cdkDropList
-        id="drop-list-root"
-        [cdkDropListData]="{ items: menuItems, parent: null }"
-        (cdkDropListDropped)="onDrop($event)"
-        [cdkDropListDisabled]="!isEditMode"
-        [cdkDropListConnectedTo]="allDropListIds"
-      >
+      <ul class="menu-tree root-level">
         <!-- Initialize recursive template -->
         <ng-container
           *ngTemplateOutlet="

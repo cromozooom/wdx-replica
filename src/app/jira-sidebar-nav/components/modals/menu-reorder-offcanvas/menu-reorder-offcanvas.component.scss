@@ -1,0 +1,154 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Menu Reorder Offcanvas Styles */
+/* Based on StackBlitz working example */
+
+.offcanvas-footer {
+  background-color: #f8f9fa;
+}
+
+/* Drag placeholder - show as semi-transparent to maintain layout */
+::ng-deep .cdk-drag-placeholder {
+  opacity: 0.4;
+  border: 2px dashed #adb5bd;
+  background-color: #f8f9fa;
+
+  .node-title {
+    visibility: hidden;
+  }
+}
+
+/* Drag preview styling */
+::ng-deep .cdk-drag-preview {
+  box-sizing: border-box;
+  box-shadow:
+    0 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  opacity: 0.8;
+  border-radius: 4px;
+  max-width: 400px;
+  width: auto;
+
+  // Hide nested children in the preview - only show the dragged item
+  .node-children {
+    display: none !important;
+  }
+
+  // Ensure preview only shows single node title
+  .node-item {
+    .node-title {
+      margin: 0;
+    }
+  }
+}
+
+/* Drop position indicators */
+::ng-deep .drop-inside {
+  border: 2px solid #007bff !important;
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+::ng-deep .drop-before {
+  border-top: 3px solid #007bff !important;
+}
+
+::ng-deep .drop-after {
+  border-bottom: 3px solid #007bff !important;
+}
+
+/* Node styling */
+.node-title {
+  padding: 12px 15px;
+  margin: 5px 0;
+  background: #f8f9fa;
+  cursor: grab;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dee2e6;
+
+  &:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.expansion-toggle {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 8px;
+  color: #6c757d;
+  user-select: none;
+}
+
+.node-label {
+  flex: 1;
+  font-weight: 500;
+}
+
+.item-notes {
+  margin-left: 20px;
+  color: #adb5bd;
+  font-size: 0.875rem;
+}
+
+/* Node children (nested items) */
+.node-children {
+  position: relative;
+  transition: height 0.2s;
+  margin-left: 40px;
+  margin-top: 5px;
+  padding-left: 15px;
+  border-left: 2px solid #dee2e6;
+}
+
+.root-drop-list {
+  min-height: 200px;
+}
+
+/* Dragging state */
+::ng-deep .cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+::ng-deep
+  .node-children.cdk-drop-list-dragging
+  .node-item:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Prevent layout shift during drag */
+::ng-deep .cdk-drag {
+  transition: transform 0s;
+
+  &.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Ensure drop list doesn't cause layout issues */
+::ng-deep .cdk-drop-list {
+  display: block;
+  overflow: visible;
+}
+
+/* Icon styling */
+.node-title i {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
