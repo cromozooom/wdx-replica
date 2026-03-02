@@ -67,7 +67,10 @@
 
     </aside> -->
     <main class="d-flex flex-grow-1 overflow-auto">
-      <div class="w-100" [class.mainMaxWidth]="isLocked() && !isIconsOnlyMode">
+      <div
+        class="w-100 d-flex"
+        [class.mainMaxWidth]="isLocked() && !isIconsOnlyMode"
+      >
         <router-outlet></router-outlet>
       </div>
     </main>

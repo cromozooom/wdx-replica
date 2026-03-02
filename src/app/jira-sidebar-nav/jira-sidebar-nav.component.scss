@@ -29,6 +29,7 @@
   &.visible {
     width: var(--sidemaxSize) !important;
     max-width: var(--sidemaxSize) !important;
+    min-width: var(--sidemaxSize) !important;
   }
 
   // Hidden state (20px strip)

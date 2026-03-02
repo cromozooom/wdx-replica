@@ -8,8 +8,9 @@ import {
   OnInit,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { Router, RouterOutlet } from "@angular/router";
+import { Router, RouterOutlet, NavigationEnd } from "@angular/router";
 import { Subscription, timer } from "rxjs";
+import { filter } from "rxjs/operators";
 import { NgbModal, NgbOffcanvas } from "@ng-bootstrap/ng-bootstrap";
 import { MenuDataService } from "./services/menu-data.service";
 import { MenuItem } from "./models/menu-item.interface";
@@ -62,6 +63,9 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
   // Timer subscription for auto-hide
   private autoHideSubscription?: Subscription;
 
+  // Router events subscription for syncing active item with browser navigation
+  private routerSubscription?: Subscription;
+
   // Settings
   protected autoSelectFirstChild = false;
   protected lockMenuEnabled = true; // Default to current behavior
@@ -102,6 +106,9 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
 
     // Apply initial visibility mode based on loaded settings
     this.applyVisibilityMode();
+
+    // Subscribe to router events to sync active item with browser navigation
+    this.setupRouterSync();
   }
 
   /**
@@ -127,9 +134,81 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
     }
   }
 
+  /**
+   * Setup router event listener to sync active item with browser back/forward navigation.
+   */
+  private setupRouterSync(): void {
+    this.routerSubscription = this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        // Extract item ID from URL (pattern: /menu-demo/item/:id)
+        const urlSegments = event.urlAfterRedirects.split("/");
+        const itemIndex = urlSegments.indexOf("item");
+
+        if (itemIndex !== -1 && itemIndex + 1 < urlSegments.length) {
+          const itemId = urlSegments[itemIndex + 1];
+
+          // Only update if the item exists and is different from current active
+          const item = this.menuDataService.getItemById(itemId);
+          if (item && this.activeItemId() !== itemId) {
+            this.menuDataService.setActiveItem(itemId);
+
+            // Also expand all parent nodes to make the item visible
+            this.expandParentNodes(itemId);
+          }
+        }
+      });
+  }
+
+  /**
+   * Expand all parent nodes of the given item to make it visible in the tree.
+   */
+  private expandParentNodes(itemId: string): void {
+    const parents = this.findParentChain(itemId);
+    parents.forEach((parentId) => {
+      const parent = this.menuDataService.getItemById(parentId);
+      if (parent && !parent.expanded) {
+        this.menuDataService.toggleNodeExpansion(parentId);
+      }
+    });
+  }
+
+  /**
+   * Find all parent IDs in the chain from root to the given item.
+   */
+  private findParentChain(itemId: string): string[] {
+    const chain: string[] = [];
+
+    const findParent = (
+      items: MenuItem[],
+      targetId: string,
+      currentChain: string[],
+    ): boolean => {
+      for (const item of items) {
+        if (item.id === targetId) {
+          chain.push(...currentChain);
+          return true;
+        }
+
+        if (item.children && item.children.length > 0) {
+          if (findParent(item.children, targetId, [...currentChain, item.id])) {
+            return true;
+          }
+        }
+      }
+      return false;
+    };
+
+    findParent(this.menuItems(), itemId, []);
+    return chain;
+  }
+
   ngOnDestroy(): void {
     // Clean up auto-hide timer subscription if active
     this.autoHideSubscription?.unsubscribe();
+
+    // Clean up router events subscription
+    this.routerSubscription?.unsubscribe();
   }
 
   /**
