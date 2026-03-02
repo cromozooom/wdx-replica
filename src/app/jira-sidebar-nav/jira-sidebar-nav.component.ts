@@ -23,6 +23,7 @@ import {
 } from "./components/modals/delete-confirmation/delete-confirmation.component";
 import { AddSubmenuComponent } from "./components/modals/add-submenu/add-submenu.component";
 import { MenuReorderOffcanvasComponent } from "./components/modals/menu-reorder-offcanvas/menu-reorder-offcanvas.component";
+import { ConfigInheritanceModalComponent } from "./components/modals/config-inheritance-modal/config-inheritance-modal.component";
 
 /**
  * Container component for jira-sidebar-nav feature (Smart Component).
@@ -353,6 +354,31 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
    * @param parentItem - Optional parent item (for creating child items)
    */
   async createMenuItem(parentItem?: MenuItem): Promise<void> {
+    let configInheritorName: string | null = null;
+
+    // Check if parent has config and no children - need to preserve config
+    if (
+      parentItem &&
+      parentItem.contentConfig &&
+      (!parentItem.children || parentItem.children.length === 0)
+    ) {
+      // Show modal to get name for config inheritor child
+      const modalRef = this.modalService.open(ConfigInheritanceModalComponent, {
+        centered: true,
+        backdrop: "static",
+      });
+
+      modalRef.componentInstance.parentLabel = parentItem.label;
+      modalRef.componentInstance.defaultChildName = `${parentItem.label} (Config)`;
+
+      try {
+        configInheritorName = await modalRef.result;
+      } catch (error) {
+        // User cancelled - don't proceed with creating child
+        return;
+      }
+    }
+
     const offcanvasRef = this.offcanvasService.open(MenuItemEditorComponent, {
       position: "end",
       backdrop: "static",
@@ -365,20 +391,46 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
     try {
       const result: Partial<MenuItem> = await offcanvasRef.result;
 
-      // Generate unique ID
+      // Generate unique ID for the new item
       const newId = `item-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 
       const newItem: MenuItem = {
         id: newId,
         label: result.label!,
         icon: result.icon,
-        order: 0,
+        order: configInheritorName ? 1 : 0, // If config child exists, this becomes second
         expanded: false,
         // Include contentConfig from the form if provided
         ...(result.contentConfig && { contentConfig: result.contentConfig }),
       };
 
-      // Add item via service
+      // If we need to create a config inheritor child, add it first (index 0)
+      if (configInheritorName && parentItem) {
+        // Create child item with inherited configuration
+        const configChildId = `item-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+
+        const configChild: MenuItem = {
+          id: configChildId,
+          label: configInheritorName,
+          icon: parentItem.icon,
+          order: 0, // Always first child
+          expanded: false,
+          contentConfig: parentItem.contentConfig,
+        };
+
+        // Add config child to the parent first
+        this.menuDataService.addItem(configChild, parentItem.id);
+
+        // Remove contentConfig from parent (now inherited by child)
+        if (parentItem.contentConfig) {
+          // Update the parent to remove contentConfig
+          this.menuDataService.updateItem(parentItem.id, {
+            contentConfig: undefined,
+          });
+        }
+      }
+
+      // Add the user's new item after config child (if it exists)
       this.menuDataService.addItem(newItem, parentItem?.id);
     } catch (error) {
       // User cancelled or dismissed modal
