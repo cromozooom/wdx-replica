@@ -164,6 +164,13 @@
   }
 }
 
+.menu-item:has(.tree-notActive) {
+  &:hover {
+    color: color-contrast(tint-color($primary, 10%));
+    background-color: tint-color($primary, 10%);
+  }
+}
+
 .tree-notActive {
   border: 2px solid transparent;
 }

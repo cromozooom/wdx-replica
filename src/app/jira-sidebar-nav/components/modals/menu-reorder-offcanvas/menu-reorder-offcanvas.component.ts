@@ -543,17 +543,35 @@ export class MenuReorderOffcanvasComponent {
       );
 
       if (parentIndex !== -1) {
-        // Insert config child right after the parent
+        // Insert config child right after the parent (index 0 for children)
         this.flatItems.splice(parentIndex + 1, 0, configChild);
 
         // Update hasChildren flag for parent
         this.flatItems[parentIndex].hasChildren = true;
 
+        // Update order properties for all children of this parent
+        // to ensure config child is always first
+        const parentLevel = this.flatItems[parentIndex].level;
+        let childOrder = 0;
+        for (let i = parentIndex + 1; i < this.flatItems.length; i++) {
+          const item = this.flatItems[i];
+
+          // Stop when we reach an item that's not a child
+          if (item.level <= parentLevel) {
+            break;
+          }
+
+          // Only update direct children (not grandchildren)
+          if (item.level === parentLevel + 1) {
+            item.item.order = childOrder++;
+          }
+        }
+
         // Update parent IDs again to ensure everything is correct
         this.updateParentIds();
 
         console.log(
-          "  ✅ Added config child:",
+          "  ✅ Added config child at index 0:",
           configChild.item.label,
           "under",
           targetParentForRightHalf.item.label,
