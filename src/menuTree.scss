@@ -43,6 +43,10 @@
   &[disabled] {
     cursor: not-allowed;
   }
+  &:hover {
+    color: color-contrast(tint-color($primary, 10%));
+    background-color: tint-color($primary, 10%);
+  }
 }
 
 // .ul-is-expanded {
