@@ -33,8 +33,8 @@
         level === 0
           ? 'px-1 py-3 '
           : isActive
-            ? 'ms-1 tree-active px-3 rounded-pill py-1'
-            : 'ms-1 tree-notActive px-3 rounded-pill py-1'
+            ? 'ms-1 tree-active px-2 rounded-pill py-1 my-1 opacity-75'
+            : 'ms-1 tree-notActive px-2 rounded-pill py-1 my-1 opacity-75'
       "
       [class.justify-content-center]="isIconsOnlyMode && level === 0"
     >
@@ -42,8 +42,9 @@
         <!-- [class.py-4]="isLevel0" -->
         <small
           class="d-flex align-items-center justify-content-center"
-          style="min-width: 1.2rem; font-size: 80%"
+          style="min-width: 1.2rem"
           [attr.aria-hidden]="true"
+          [style.font-size]="level === 0 ? '80%' : '50%'"
           [class.ms-1]="level === 0"
           [class]="isActive || hasChildrenActive ? '' : 'opacity-50'"
         >
@@ -55,7 +56,9 @@
           class="item-label d-flex align-items-center"
           [attr.title]="item.label"
         >
-          <span class="">{{ item.label }}</span>
+          <span class="" [style.font-size]="level === 0 ? '100%' : '80%'">{{
+            item.label
+          }}</span>
         </span>
       }
     </div>

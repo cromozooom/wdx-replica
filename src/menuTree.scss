@@ -1,3 +1,23 @@
+$main: $primary;
+// $main: hsl(50, 10%, 95%);
+
+// Primary color shades and tints
+$shades: (
+  0%: $main,
+  10%: shade-color($main, 10%),
+  20%: shade-color($main, 20%),
+  30%: shade-color($main, 30%),
+  40%: shade-color($main, 40%),
+);
+
+$tints: (
+  10%: tint-color($main, 10%),
+  20%: tint-color($main, 20%),
+  30%: tint-color($main, 30%),
+  40%: tint-color($main, 40%),
+  80%: tint-color($main, 40%),
+);
+
 // Helper function to replace # with %23 for Data URIs
 @function svg-url-color($color) {
   $color-str: inspect($color);
@@ -38,76 +58,48 @@
 }
 
 .menu-item {
-  color: color-contrast(shade-color($primary, 20%));
-  background-color: shade-color($primary, 20%);
+  color: color-contrast(map-get($shades, 20%));
+  background-color: map-get($shades, 20%);
   &[disabled] {
     cursor: not-allowed;
   }
   &:hover {
-    color: color-contrast(tint-color($primary, 10%));
-    background-color: tint-color($primary, 10%);
+    color: color-contrast(map-get($tints, 10%));
+    background-color: map-get($tints, 10%);
   }
 }
-
-// .ul-is-expanded {
-//   .menu-item {
-//     &.item-has-children {
-//       color: color-contrast(shade-color($primary, 10%));
-//       background-color: shade-color($primary, 10%);
-//     }
-//   }
-// }
 
 .ul-has-activeItem {
   .menu-item {
-    color: color-contrast(shade-color($primary, 30%));
-    background-color: shade-color($primary, 30%);
+    color: color-contrast(map-get($shades, 30%));
+    background-color: map-get($shades, 30%);
   }
 }
 
-// .ul-is-expanded {
-//   .menu-item {
-//     color: color-contrast(shade-color($primary, 5%));
-//     background-color: shade-color($primary, 5%);
-//   }
-// }
-// .menu-item.item-has-children {
-//   color: color-contrast(shade-color($primary, 10%));
-//   background-image: linear-gradient(
-//     to bottom,
-//     shade-color($primary, 30%),
-//     shade-color($primary, 10%)
-//   );
-// }
-
 .li-has-expanded-ul {
   .menu-item.item-has-children-active {
-    color: color-contrast(shade-color($primary, 0%));
-    background-color: shade-color($primary, 0%);
+    color: color-contrast(map-get($shades, 0%));
+    background-color: map-get($shades, 0%);
   }
   .menu-item {
-    color: color-contrast(shade-color($primary, 30%));
-    background-color: shade-color($primary, 30%);
+    color: color-contrast(map-get($shades, 30%));
+    background-color: map-get($shades, 30%);
   }
 }
 
 .level-0 .item-has-children-active {
-  color: color-contrast(shade-color($primary, 0%));
-  background-color: shade-color($primary, 0%);
+  color: color-contrast(map-get($shades, 0%));
+  background-color: map-get($shades, 0%);
 }
 
 .menu-item.activeL0 {
-  color: color-contrast(shade-color($primary, 0%));
-  background-color: shade-color($primary, 0%);
+  color: color-contrast(map-get($shades, 0%));
+  background-color: map-get($shades, 0%);
 }
 
 .li-has-tree-inside {
-  border-top: 1px solid shade-color($primary, 40%) !important;
-  border-bottom: 1px solid shade-color($primary, 40%) !important;
-  // li:first-child {
-  // }
-  // li:last-child {
-  // }
+  border-top: 1px solid map-get($shades, 40%) !important;
+  border-bottom: 1px solid map-get($shades, 40%) !important;
 }
 .nested-level {
   li button:before {
@@ -123,16 +115,16 @@
   li button.menu-item {
     &:before {
       @include tree-connector(
-        tint-color($primary, 30%),
-        tint-color($primary, 30%),
-        tint-color($primary, 30%)
+        map-get($tints, 30%),
+        map-get($tints, 30%),
+        map-get($tints, 30%)
       );
     }
     &.active:before {
       @include tree-connector(
-        tint-color($primary, 80%),
-        tint-color($primary, 80%),
-        tint-color($primary, 30%),
+        map-get($tints, 80%),
+        map-get($tints, 80%),
+        map-get($tints, 30%),
         "above"
       );
     }
@@ -140,24 +132,24 @@
   li.li-has-open-sibling-after {
     button.menu-item:before {
       @include tree-connector(
-        tint-color($primary, 30%),
-        tint-color($primary, 80%),
-        tint-color($primary, 80%)
+        map-get($tints, 30%),
+        map-get($tints, 80%),
+        map-get($tints, 80%)
       );
     }
   }
   li:last-child {
     button.menu-item:before {
       @include tree-connector(
-        tint-color($primary, 30%),
-        tint-color($primary, 30%),
+        map-get($tints, 30%),
+        map-get($tints, 30%),
         transparent
       );
     }
     button.menu-item.active:before {
       @include tree-connector(
-        tint-color($primary, 80%),
-        tint-color($primary, 80%),
+        map-get($tints, 80%),
+        map-get($tints, 80%),
         transparent
       );
     }
@@ -166,8 +158,8 @@
 
 .menu-item:has(.tree-notActive) {
   &:hover {
-    color: color-contrast(tint-color($primary, 10%));
-    background-color: tint-color($primary, 10%);
+    color: color-contrast(map-get($tints, 10%));
+    background-color: map-get($tints, 10%);
   }
 }
 
@@ -176,9 +168,9 @@
 }
 .tree-active {
   background: rgba(255, 255, 255, 0.15);
-  border: 2px solid tint-color($primary, 80%);
+  border: 2px solid map-get($tints, 80%);
 }
 
 .tree-bg {
-  background-color: shade-color($primary, 20%);
+  background-color: map-get($shades, 20%);
 }
