@@ -91,18 +91,18 @@
 }
 
 // Locked state styling
-.locked {
-  app-sidebar-toggle {
-    .sidebar-toggle-btn {
-      background-color: #0052cc;
-      color: white;
+// .locked {
+//   app-sidebar-toggle {
+//     .sidebar-toggle-btn {
+//       background-color: #0052cc;
+//       color: white;
 
-      &:hover {
-        background-color: #0747a6;
-      }
-    }
-  }
-}
+//       &:hover {
+//         background-color: #0747a6;
+//       }
+//     }
+//   }
+// }
 
 // Edit Mode Controls
 .edit-mode-controls {
