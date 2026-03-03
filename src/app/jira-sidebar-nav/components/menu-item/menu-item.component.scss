@@ -94,28 +94,33 @@
 }
 
 // Children menu tooltip styles (for icons-only mode)
-::ng-deep .children-menu-tooltip {
-  opacity: 1 !important;
+// ::ng-deep .children-menu-tooltip {
+//   opacity: 1 !important;
 
-  .tooltip-inner {
-    padding: $spacer / 2;
-    max-width: 280px;
-    background-color: var(--bs-body-bg, #fff);
-    color: var(--bs-body-text);
-    box-shadow: var(--bs-box-shadow);
-    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
-  }
+//   .tooltip-inner {
+//     padding: $spacer / 2;
+//     max-width: 280px;
+//     background-color: var(--bs-body-bg, #fff);
+//     color: var(--bs-body-text);
+//     box-shadow: var(--bs-box-shadow);
+//     border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+//   }
 
-  // Hide/adjust arrow color
-  .tooltip-arrow {
-    display: none;
-  }
+//   // Hide/adjust arrow color
+//   .tooltip-arrow {
+//     // display: none;
+//     border-color: white;
+//     background-color: white;
+//   }
 
-  .children-menu-content {
-    max-height: 400px;
-    overflow-y: auto;
-  }
+//   .children-menu-content {
+//     max-height: 400px;
+//     overflow-y: auto;
+//   }
 
+// }
+
+::ng-deep {
   .menu-child-item {
     display: flex;
     align-items: center;
@@ -123,8 +128,11 @@
     transition: background-color 100ms ease;
     white-space: nowrap;
 
+    background-color: color-contrast($primary);
+    color: $primary;
     &:hover {
-      background-color: var(--bs-light);
+      background-color: tint-color($primary, 80%);
+      color: color-contrast(tint-color($primary, 80%));
     }
 
     &.active {
@@ -140,6 +148,32 @@
 
     i {
       flex-shrink: 0;
+    }
+  }
+  .secondaryMenu-tooltip {
+    opacity: 1 !important;
+
+    // Stack drop-shadows: border first (sharp, opaque), then soft shadow
+    filter: drop-shadow(0 0 0.5px hsl(0, 0%, 0%, 0.5))
+      // Border effect - no blur offset, small spread
+      drop-shadow(0 2px 4px hsl(0, 0%, 0%, 0.1)); // Soft shadow
+
+    .tooltip-inner {
+      background-color: white;
+      // font-size: 125%;
+    }
+
+    &.bs-tooltip-end .tooltip-arrow::before {
+      border-right-color: white;
+    }
+    &.bs-tooltip-start .tooltip-arrow::before {
+      border-left-color: white;
+    }
+    &.bs-tooltip-top .tooltip-arrow::before {
+      border-top-color: white;
+    }
+    &.bs-tooltip-bottom .tooltip-arrow::before {
+      border-bottom-color: white;
     }
   }
 }

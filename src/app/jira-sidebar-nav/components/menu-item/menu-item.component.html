@@ -23,6 +23,7 @@
   (mouseenter)="onItemMouseEnter($event, t)"
   (mouseleave)="onItemMouseLeave(t)"
   [attr.title]="item.label"
+  tooltipClass="secondaryMenu-tooltip"
 >
   <!-- Label with truncation (T082, FR-031) -->
   <!-- Icon -->
@@ -44,7 +45,7 @@
           class="d-flex align-items-center justify-content-center"
           style="min-width: 1.2rem"
           [attr.aria-hidden]="true"
-          [style.font-size]="level === 0 ? '80%' : '50%'"
+          [style.font-size]="level === 0 ? '80%' : '70%'"
           [class.ms-1]="level === 0"
           [class]="isActive || hasChildrenActive ? '' : 'opacity-50'"
         >
@@ -125,7 +126,7 @@
 <!-- Children Tooltip Template for Icons-Only Mode -->
 <ng-template #childrenTooltip>
   <div
-    class="children-menu-content bg-body p-0 m-0 d-flex flex-column gap-1"
+    class="children-menu-content bg-body px-0 py-1 m-0 d-flex flex-column gap-1"
     (mouseenter)="onTooltipMouseEnter()"
     (mouseleave)="onTooltipMouseLeave(t)"
   >
