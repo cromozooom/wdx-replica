@@ -23,7 +23,6 @@
   (mouseenter)="onItemMouseEnter($event, t)"
   (mouseleave)="onItemMouseLeave(t)"
   [attr.title]="item.label"
-  tooltipClass="secondaryMenu-tooltip"
 >
   <!-- Label with truncation (T082, FR-031) -->
   <!-- Icon -->
@@ -73,70 +72,74 @@
     </span>
   }
 
-  <div class="d-flex align-items-stretch">
-    <!-- Edit Mode Actions (T054, FR-016, FR-017) -->
-    @if (isEditMode) {
-      <div ngbDropdown container="body" class="ms-auto d-flex flex-grow-1">
-        <button
-          ngbDropdownToggle
-          type="button"
-          class="btn btn-outline-on-primary border-0 btn-sm rounded-0 my-2"
-          (click)="onDropdownToggle($event)"
-          title="More actions"
-        >
-          <i class="fas fa-ellipsis-v"></i>
-        </button>
-        <div ngbDropdownMenu>
-          <button ngbDropdownItem (click)="onEditClick($event)">
-            <i class="fas fa-edit me-3"></i>Edit
+  @if (isEditMode || shouldShowChevron) {
+    <div class="d-flex align-items-stretch">
+      <!-- Edit Mode Actions (T054, FR-016, FR-017) -->
+      @if (isEditMode) {
+        <div ngbDropdown container="body" class="ms-auto d-flex flex-grow-1">
+          <button
+            ngbDropdownToggle
+            type="button"
+            class="btn btn-outline-on-primary border-0 btn-sm rounded-0 my-2"
+            (click)="onDropdownToggle($event)"
+            title="More actions"
+          >
+            <i class="fas fa-ellipsis-v"></i>
           </button>
-          @if (level < 1) {
-            <button ngbDropdownItem (click)="onAddChildClick($event)">
-              <i class="fas fa-plus me-3"></i>Add Child
+          <div ngbDropdownMenu>
+            <button ngbDropdownItem (click)="onEditClick($event)">
+              <i class="fas fa-edit me-3"></i>Edit
             </button>
-          }
-          <button ngbDropdownItem (click)="onDeleteClick($event)">
-            <i class="fas fa-trash me-3"></i>Delete
-          </button>
+            @if (level < 1) {
+              <button ngbDropdownItem (click)="onAddChildClick($event)">
+                <i class="fas fa-plus me-3"></i>Add Child
+              </button>
+            }
+            <button ngbDropdownItem (click)="onDeleteClick($event)">
+              <i class="fas fa-trash me-3"></i>Delete
+            </button>
+          </div>
         </div>
-      </div>
-    }
+      }
 
-    <!-- Expansion Icon (if has children) -->
-    @if (shouldShowChevron) {
-      <button
-        class="me-2 btn btn-outline-on-primary border-0 btn-sm d-flex align-items-center justify-content-center text-decoration-none my-2"
-        style="width: 1.3rem"
-        [class.rounded-0]="isEditMode"
-        [class.expanded]="isExpanded"
-        (click)="onToggleExpansion($event)"
-        role="button"
-        [disabled]="hasChildrenActive"
-        [attr.aria-expanded]="isExpanded"
-        [attr.aria-label]="isExpanded ? 'Collapse' : 'Expand'"
-      >
-        <i
-          [class]="isExpanded ? 'fas fa-chevron-down' : 'fas fa-chevron-right'"
-        ></i>
-      </button>
-    }
-  </div>
+      <!-- Expansion Icon (if has children) -->
+      @if (shouldShowChevron) {
+        <button
+          class="me-2 btn btn-outline-on-primary border-0 btn-sm d-flex align-items-center justify-content-center text-decoration-none my-2"
+          style="width: 1.3rem"
+          [class.rounded-0]="isEditMode"
+          [class.expanded]="isExpanded"
+          (click)="onToggleExpansion($event)"
+          role="button"
+          [disabled]="hasChildrenActive"
+          [attr.aria-expanded]="isExpanded"
+          [attr.aria-label]="isExpanded ? 'Collapse' : 'Expand'"
+        >
+          <i
+            [class]="
+              isExpanded ? 'fas fa-chevron-down' : 'fas fa-chevron-right'
+            "
+          ></i>
+        </button>
+      }
+    </div>
+  }
 </button>
 
 <!-- Children Tooltip Template for Icons-Only Mode -->
 <ng-template #childrenTooltip>
   <div
-    class="children-menu-content bg-body px-0 py-1 m-0 d-flex flex-column gap-1"
+    class="children-menu-content bg-body px-0 py-2 m-0 d-flex flex-column gap-1 rounded"
     (mouseenter)="onTooltipMouseEnter()"
     (mouseleave)="onTooltipMouseLeave(t)"
   >
     @for (child of item.children; track child.id) {
       <div
-        class="rounded-1 menu-child-item d-flex align-items-center gap-2 px-3 py-2 pointer justify-content-start"
+        class="rounded-1 menu-child-item mx-2 d-flex align-items-center gap-2 px-3 py-2 pointer justify-content-start"
         [class.active]="activeItemId === child.id"
         (click)="onTooltipChildClick(child.id, t)"
       >
-        <i [class]="child.icon || 'fas fa-circle'" class="me-2"></i>
+        <i [class]="child.icon || 'fas fa-tag'" class="me-2"></i>
         <span class="child-label text-start">{{ child.label }}</span>
         @if (child.children && child.children.length > 0) {
           <i class="fas fa-chevron-right ms-auto text-muted small"></i>

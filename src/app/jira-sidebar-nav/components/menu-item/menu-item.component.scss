@@ -93,34 +93,11 @@
   opacity: 1;
 }
 
-// Children menu tooltip styles (for icons-only mode)
-// ::ng-deep .children-menu-tooltip {
-//   opacity: 1 !important;
-
-//   .tooltip-inner {
-//     padding: $spacer / 2;
-//     max-width: 280px;
-//     background-color: var(--bs-body-bg, #fff);
-//     color: var(--bs-body-text);
-//     box-shadow: var(--bs-box-shadow);
-//     border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
-//   }
-
-//   // Hide/adjust arrow color
-//   .tooltip-arrow {
-//     // display: none;
-//     border-color: white;
-//     background-color: white;
-//   }
-
-//   .children-menu-content {
-//     max-height: 400px;
-//     overflow-y: auto;
-//   }
-
-// }
-
 ::ng-deep {
+  .children-menu-content {
+    max-height: 50vh;
+    overflow-y: auto;
+  }
   .menu-child-item {
     display: flex;
     align-items: center;
@@ -150,16 +127,21 @@
       flex-shrink: 0;
     }
   }
-  .secondaryMenu-tooltip {
+  .children-menu-tooltip {
     opacity: 1 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 
     // Stack drop-shadows: border first (sharp, opaque), then soft shadow
     filter: drop-shadow(0 0 0.5px hsl(0, 0%, 0%, 0.5))
       // Border effect - no blur offset, small spread
       drop-shadow(0 2px 4px hsl(0, 0%, 0%, 0.1)); // Soft shadow
 
+    border-radius: var(--bs-border-radius-sm);
     .tooltip-inner {
       background-color: white;
+      padding: 0 !important;
+      border-radius: var(--bs-border-radius-sm);
       // font-size: 125%;
     }
 
