@@ -54,6 +54,7 @@
             [isExpanded]="isExpanded(item.id)"
             [isEditMode]="isEditMode"
             [isIconsOnlyMode]="isIconsOnlyMode"
+            [hideChildIcons]="hideChildIcons"
             (itemClicked)="onItemClick($event)"
             (expansionToggled)="toggleNode(item)"
             (editRequested)="onEditClick($event)"

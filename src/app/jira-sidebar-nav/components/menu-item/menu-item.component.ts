@@ -93,6 +93,12 @@ export class MenuItemComponent {
   isIconsOnlyMode: boolean = false;
 
   /**
+   * Whether to hide icons on child levels (levels > 0).
+   */
+  @Input()
+  hideChildIcons: boolean = false;
+
+  /**
    * Emitted when user clicks the item.
    */
   @Output()

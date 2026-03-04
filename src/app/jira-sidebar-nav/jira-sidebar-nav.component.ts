@@ -70,6 +70,7 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
   protected autoSelectFirstChild = false;
   protected lockMenuEnabled = true; // Default to current behavior
   protected alwaysShowMenu = true; // Default to always show when lockMenu is disabled
+  protected hideChildIcons = false; // Default to showing all icons
 
   // Computed property for icons-only mode
   protected get isIconsOnlyMode(): boolean {
@@ -128,6 +129,7 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
           settings.alwaysShowMenu !== undefined
             ? settings.alwaysShowMenu
             : true;
+        this.hideChildIcons = settings.hideChildIcons || false;
       } catch (e) {
         console.error("Failed to load settings:", e);
       }
@@ -334,10 +336,12 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
         autoSelectFirstChild: boolean;
         lockMenuEnabled: boolean;
         alwaysShowMenu: boolean;
+        hideChildIcons: boolean;
       }) => {
         this.autoSelectFirstChild = settings.autoSelectFirstChild;
         this.lockMenuEnabled = settings.lockMenuEnabled;
         this.alwaysShowMenu = settings.alwaysShowMenu;
+        this.hideChildIcons = settings.hideChildIcons;
         // Apply visibility mode when settings change
         this.applyVisibilityMode();
       },

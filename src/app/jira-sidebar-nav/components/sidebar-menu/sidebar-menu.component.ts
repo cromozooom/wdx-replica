@@ -58,6 +58,12 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
   isIconsOnlyMode: boolean = false;
 
   /**
+   * Whether to hide icons on child levels (levels > 0).
+   */
+  @Input()
+  hideChildIcons: boolean = false;
+
+  /**
    * Emitted when user clicks a menu item.
    */
   @Output()
