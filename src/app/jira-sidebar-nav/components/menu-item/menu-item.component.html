@@ -1,14 +1,19 @@
 <!-- Menu Item Template (T029, T082) -->
 <!-- [disabled]="hasChildrenActive" -->
 <button
-  class="menu-item w-100 border-0 padding-top-0"
+  class="flex-grow-1 d-flex menu-item border-0 padding-top-0"
   [class.activeL0]="isActive && level === 0"
   [class.active]="isActive"
+  [class.visibleDisabled]="isActive && level !== 0"
   [ngClass]="{
     'item-has-children-active': hasChildrenActive,
     'item-has-children': hasChildren && !hasChildrenActive,
-    'justify-content-center': isIconsOnlyMode && level === 0,
-    'align-items-stretch': !(isIconsOnlyMode && level === 0),
+    'justify-content-center':
+      (isIconsOnlyMode && level === 0) || (isAutoHidden && level === 0),
+    'align-items-stretch': !(
+      (isIconsOnlyMode && level === 0) ||
+      (isAutoHidden && level === 0)
+    ),
   }"
   [style.padding-left]="getIndentPadding()"
   [style.--left-indent]="getIndentPadding()"
@@ -26,41 +31,51 @@
 >
   <!-- Label with truncation (T082, FR-031) -->
   <!-- Icon -->
-  <div class="d-flex align-items-center flex-grow-1">
+  <div class="d-flex align-items-center flex-grow-1 overflow-hidden">
     <div
-      class="d-flex align-items-center gap-2"
-      [class]="
-        level === 0
-          ? 'px-1 py-3 '
-          : isActive
-            ? 'ms-1 tree-active px-2 rounded-pill py-1 my-1 opacity-75'
-            : 'ms-1 tree-notActive px-2 rounded-pill py-1 my-1 opacity-75'
+      class="d-flex flex-grow-1 overflow-hidden align-items-center gap-2 pe-1"
+      [class.justify-content-center]="
+        (isIconsOnlyMode && level === 0) || (isAutoHidden && level === 0)
       "
-      [class.justify-content-center]="isIconsOnlyMode && level === 0"
     >
-      @if (item.icon && level === 0) {
-        <!-- [class.py-4]="isLevel0" -->
-        <small
-          class="d-flex align-items-center justify-content-center"
-          style="min-width: 1.2rem"
-          [attr.aria-hidden]="true"
-          [style.font-size]="level === 0 ? '80%' : '70%'"
-          [class.ms-1]="level === 0"
-          [class]="isActive || hasChildrenActive ? '' : 'opacity-50'"
-        >
-          <i [class]="item.icon"></i>
-        </small>
-      }
-      @if (!(isIconsOnlyMode && level === 0)) {
-        <span
-          class="item-label d-flex align-items-center"
-          [attr.title]="item.label"
-        >
-          <span class="" [style.font-size]="level === 0 ? '100%' : '80%'">{{
-            item.label
-          }}</span>
-        </span>
-      }
+      <div
+        class="d-flex gap-2 align-items-center oveerflow-hidden max-w-100"
+        [class]="
+          level === 0
+            ? 'px-1 py-3 '
+            : isActive
+              ? 'ms-1 tree-active ps-2 pe-3 rounded-pill py-1 my-1 xopacity-75'
+              : 'ms-1 tree-notActive ps-2 pe-3 rounded-pill py-1 my-1 xopacity-75'
+        "
+      >
+        @if (item.icon && !(hideChildIcons && level > 0)) {
+          <!-- [class.py-4]="isLevel0" -->
+          <small
+            class="d-flex align-items-center justify-content-center"
+            style="min-width: 1.2rem"
+            [attr.aria-hidden]="true"
+            [style.font-size]="level === 0 ? '80%' : '70%'"
+            [class.ms-1]="level === 0"
+            [class]="isActive || hasChildrenActive ? '' : 'opacity-50'"
+          >
+            <i [class]="item.icon"></i>
+          </small>
+        }
+        @if (
+          !(isIconsOnlyMode && level === 0) && !(isAutoHidden && level === 0)
+        ) {
+          <span
+            class="item-label d-flex align-items-center overflow-hidden"
+            [attr.title]="item.label"
+          >
+            <span
+              class="text-truncate"
+              [style.font-size]="level === 0 ? '100%' : '80%'"
+              >{{ item.label }}</span
+            >
+          </span>
+        }
+      </div>
     </div>
   </div>
   <!-- Badge (if metadata.badgeCount exists) -->
@@ -139,7 +154,9 @@
         [class.active]="activeItemId === child.id"
         (click)="onTooltipChildClick(child.id, t)"
       >
-        <i [class]="child.icon || 'fas fa-tag'" class="me-2"></i>
+        @if (!hideChildIcons) {
+          <i [class]="child.icon || 'fas fa-tag'" class="me-2"></i>
+        }
         <span class="child-label text-start">{{ child.label }}</span>
         @if (child.children && child.children.length > 0) {
           <i class="fas fa-chevron-right ms-auto text-muted small"></i>

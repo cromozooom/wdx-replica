@@ -55,6 +55,7 @@ export class MenuReorderOffcanvasComponent {
     autoSelectFirstChild: boolean;
     lockMenuEnabled: boolean;
     alwaysShowMenu: boolean;
+    hideChildIcons: boolean;
   }>();
 
   activeOffcanvas = inject(NgbActiveOffcanvas);
@@ -68,6 +69,7 @@ export class MenuReorderOffcanvasComponent {
   autoSelectFirstChild = false;
   lockMenuEnabled = true; // Default to current behavior (lock/unlock button)
   alwaysShowMenu = true; // Default to always show when lockMenu is disabled
+  hideChildIcons = false; // Default to showing all icons
 
   // Flat array for drag-drop
   flatItems: FlatMenuItem[] = [];
@@ -249,6 +251,7 @@ export class MenuReorderOffcanvasComponent {
           settings.alwaysShowMenu !== undefined
             ? settings.alwaysShowMenu
             : true;
+        this.hideChildIcons = settings.hideChildIcons || false;
       } catch (e) {
         console.error("Failed to load settings:", e);
       }
@@ -263,6 +266,7 @@ export class MenuReorderOffcanvasComponent {
       autoSelectFirstChild: this.autoSelectFirstChild,
       lockMenuEnabled: this.lockMenuEnabled,
       alwaysShowMenu: this.alwaysShowMenu,
+      hideChildIcons: this.hideChildIcons,
     };
     localStorage.setItem("jira-sidebar-settings", JSON.stringify(settings));
     this.settingsChanged.emit(settings);

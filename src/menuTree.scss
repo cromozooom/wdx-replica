@@ -4,6 +4,8 @@ $main: $primary;
 // Primary color shades and tints
 $shades: (
   0%: $main,
+  1%: shade-color($main, 1%),
+  5%: shade-color($main, 5%),
   10%: shade-color($main, 10%),
   20%: shade-color($main, 20%),
   30%: shade-color($main, 30%),
@@ -11,11 +13,14 @@ $shades: (
 );
 
 $tints: (
+  0%: $main,
+  1%: tint-color($main, 1%),
+  5%: tint-color($main, 5%),
   10%: tint-color($main, 10%),
   20%: tint-color($main, 20%),
   30%: tint-color($main, 30%),
   40%: tint-color($main, 40%),
-  80%: tint-color($main, 40%),
+  80%: tint-color($main, 80%),
 );
 
 // Helper function to replace # with %23 for Data URIs
@@ -62,10 +67,6 @@ $tints: (
   background-color: map-get($shades, 20%);
   &[disabled] {
     cursor: not-allowed;
-  }
-  &:hover {
-    color: color-contrast(map-get($tints, 10%));
-    background-color: map-get($tints, 10%);
   }
 }
 
@@ -156,10 +157,16 @@ $tints: (
   }
 }
 
-.menu-item:has(.tree-notActive) {
+.menu-item {
   &:hover {
-    color: color-contrast(map-get($tints, 10%));
-    background-color: map-get($tints, 10%);
+    color: color-contrast(map-get($tints, 0%));
+    background-color: map-get($tints, 0%);
+  }
+  &:has(.tree-notActive) {
+    &:hover {
+      color: color-contrast(map-get($tints, 0%));
+      background-color: map-get($tints, 0%);
+    }
   }
 }
 

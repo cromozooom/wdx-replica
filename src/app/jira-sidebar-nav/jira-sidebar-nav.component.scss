@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   flex-grow: 1;
-  --sideminSize: 0.8rem;
+  --sideminSize: 2.8rem; // Icon width - shows icons when autohidden
   --sidemaxSize: 280px;
 }
 
@@ -32,20 +32,48 @@
     min-width: var(--sidemaxSize) !important;
   }
 
-  // Hidden state (20px strip)
+  // Hidden state (2.8rem - shows icons only)
   &.hidden {
     width: var(--sideminSize) !important;
-    cursor: pointer;
 
-    app-sidebar-menu,
+    // Show icons, hide text and other controls
+    app-sidebar-menu {
+      opacity: 1; // Keep icons visible
+      pointer-events: auto;
+
+      // Hide all nested levels - only show level-0
+      .nested-level,
+      li:not(.level-0) {
+        display: none !important;
+      }
+    }
+
     app-sidebar-toggle,
     .edit-mode-controls {
       opacity: 0;
       pointer-events: none;
     }
 
+    // Expand on hover
     &:hover {
-      background-color: red;
+      width: var(--sidemaxSize) !important;
+      transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      app-sidebar-menu {
+        // Show nested levels on hover
+        .nested-level,
+        li:not(.level-0) {
+          display: block !important;
+        }
+      }
+
+      app-sidebar-menu,
+      app-sidebar-toggle,
+      .edit-mode-controls {
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity 250ms ease-in-out;
+      }
     }
   }
 

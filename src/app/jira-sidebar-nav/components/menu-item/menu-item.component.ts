@@ -93,6 +93,18 @@ export class MenuItemComponent {
   isIconsOnlyMode: boolean = false;
 
   /**
+   * Whether to hide icons on child levels (levels > 0).
+   */
+  @Input()
+  hideChildIcons: boolean = false;
+
+  /**
+   * Whether the menu is in autohide/hidden state (showing only icons).
+   */
+  @Input()
+  isAutoHidden: boolean = false;
+
+  /**
    * Emitted when user clicks the item.
    */
   @Output()
@@ -143,9 +155,14 @@ export class MenuItemComponent {
   /**
    * Should show expansion chevron.
    * Hidden in icons-only mode for level 0 items.
+   * Hidden in autohide state for level 0 items.
    */
   get shouldShowChevron(): boolean {
-    return this.hasChildren && !(this.isIconsOnlyMode && this.level === 0);
+    return (
+      this.hasChildren &&
+      !(this.isIconsOnlyMode && this.level === 0) &&
+      !(this.isAutoHidden && this.level === 0)
+    );
   }
 
   /**
