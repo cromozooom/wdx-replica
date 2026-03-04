@@ -55,6 +55,7 @@
             [isEditMode]="isEditMode"
             [isIconsOnlyMode]="isIconsOnlyMode"
             [hideChildIcons]="hideChildIcons"
+            [isAutoHidden]="isAutoHidden"
             (itemClicked)="onItemClick($event)"
             (expansionToggled)="toggleNode(item)"
             (editRequested)="onEditClick($event)"
@@ -62,8 +63,13 @@
             (addChildRequested)="onAddChildClick($event)"
           ></app-menu-item>
 
-          <!-- Recursive Children (disabled in icons-only mode) -->
-          @if (!isIconsOnlyMode && hasChildren(item) && isExpanded(item.id)) {
+          <!-- Recursive Children (disabled in icons-only mode and autohidden state) -->
+          @if (
+            !isIconsOnlyMode &&
+            !isAutoHidden &&
+            hasChildren(item) &&
+            isExpanded(item.id)
+          ) {
             <ul
               class="menu-tree nested-level d-flex flex-column gap-0 border-danger"
               [class]="

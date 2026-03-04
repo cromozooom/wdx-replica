@@ -52,6 +52,7 @@
         [isEditMode]="isEditMode()"
         [isIconsOnlyMode]="isIconsOnlyMode"
         [hideChildIcons]="hideChildIcons"
+        [isAutoHidden]="visibilityMode() === 'hidden'"
         (itemClicked)="onItemClicked($event)"
         (nodeToggled)="onNodeToggled($event)"
         (editRequested)="openEditDialog($event)"

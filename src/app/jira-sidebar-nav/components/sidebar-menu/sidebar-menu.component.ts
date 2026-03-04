@@ -64,6 +64,12 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
   hideChildIcons: boolean = false;
 
   /**
+   * Whether the menu is in autohide/hidden state (showing only icons).
+   */
+  @Input()
+  isAutoHidden: boolean = false;
+
+  /**
    * Emitted when user clicks a menu item.
    */
   @Output()
