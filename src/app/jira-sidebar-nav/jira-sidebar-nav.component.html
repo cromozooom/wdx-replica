@@ -29,6 +29,19 @@
         Settings
       </button>
     }
+
+    <!-- move theme selector here -->
+    <div class="ms-auto">
+      <select
+        name="theme"
+        class="form-select form-select-sm"
+        [(ngModel)]="selectedTheme"
+      >
+        <option value="white">White</option>
+        <option value="primary">Primary</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
   </header>
   <div class="d-flex flex-grow-1 overflow-hidden">
     <!-- [style.width.px]="currentWidth()" -->
@@ -53,6 +66,7 @@
         [isIconsOnlyMode]="isIconsOnlyMode"
         [hideChildIcons]="hideChildIcons"
         [isAutoHidden]="visibilityMode() === 'hidden'"
+        [theme]="selectedTheme()"
         (itemClicked)="onItemClicked($event)"
         (nodeToggled)="onNodeToggled($event)"
         (editRequested)="openEditDialog($event)"

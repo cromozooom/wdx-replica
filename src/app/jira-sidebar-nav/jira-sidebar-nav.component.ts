@@ -6,8 +6,10 @@ import {
   inject,
   OnDestroy,
   OnInit,
+  signal,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 import { Router, RouterOutlet, NavigationEnd } from "@angular/router";
 import { Subscription, timer } from "rxjs";
 import { filter } from "rxjs/operators";
@@ -39,6 +41,7 @@ import { ConfigInheritanceModalComponent } from "./components/modals/config-inhe
   standalone: true,
   imports: [
     CommonModule,
+    FormsModule,
     RouterOutlet,
     SidebarMenuComponent,
     SidebarToggleComponent,
@@ -72,6 +75,9 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
   protected alwaysShowMenu = true; // Default to always show when lockMenu is disabled
   protected hideChildIcons = false; // Default to showing all icons
 
+  // Theme selection
+  protected selectedTheme = signal<"white" | "primary" | "dark">("primary");
+
   // Computed property for icons-only mode
   protected get isIconsOnlyMode(): boolean {
     return !this.lockMenuEnabled && !this.alwaysShowMenu;
@@ -97,6 +103,12 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
   constructor() {
     // Setup auto-hide timer (T026)
     this.setupAutoHideTimer();
+
+    // Save theme to localStorage whenever it changes
+    effect(() => {
+      const theme = this.selectedTheme();
+      localStorage.setItem("jira-sidebar-theme", theme);
+    });
   }
 
   ngOnInit(): void {
@@ -133,6 +145,17 @@ export class JiraSidebarNavComponent implements OnInit, OnDestroy {
       } catch (e) {
         console.error("Failed to load settings:", e);
       }
+    }
+
+    // Load theme preference
+    const savedTheme = localStorage.getItem("jira-sidebar-theme");
+    if (
+      savedTheme &&
+      (savedTheme === "white" ||
+        savedTheme === "primary" ||
+        savedTheme === "dark")
+    ) {
+      this.selectedTheme.set(savedTheme);
     }
   }
 

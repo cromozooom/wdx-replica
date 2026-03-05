@@ -70,6 +70,12 @@ export class SidebarMenuComponent implements OnInit, OnChanges {
   isAutoHidden: boolean = false;
 
   /**
+   * Theme to apply to the menu tree (white, primary, or dark).
+   */
+  @Input()
+  theme: "white" | "primary" | "dark" = "white";
+
+  /**
    * Emitted when user clicks a menu item.
    */
   @Output()
