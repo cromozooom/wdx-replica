@@ -1,29 +1,215 @@
 $main: $primary;
-// $main: hsl(50, 10%, 95%);
+$main: hsl(0, 0%, 100%);
+$main: hsl(0, 0%, 0%);
 
 // Primary color shades and tints
-$shades: (
+$shadesFill: (
   0%: $main,
   1%: shade-color($main, 1%),
   5%: shade-color($main, 5%),
   10%: shade-color($main, 10%),
+  15%: shade-color($main, 15%),
   20%: shade-color($main, 20%),
+  25%: shade-color($main, 25%),
   30%: shade-color($main, 30%),
+  35%: shade-color($main, 35%),
   40%: shade-color($main, 40%),
+  50%: shade-color($main, 50%),
+  55%: shade-color($main, 55%),
+  60%: shade-color($main, 60%),
+  65%: shade-color($main, 65%),
+  70%: shade-color($main, 70%),
+  75%: shade-color($main, 75%),
+  80%: shade-color($main, 80%),
 );
 
-$tints: (
+$tintsFill: (
   0%: $main,
   1%: tint-color($main, 1%),
   5%: tint-color($main, 5%),
   10%: tint-color($main, 10%),
+  15%: tint-color($main, 15%),
   20%: tint-color($main, 20%),
+  25%: tint-color($main, 25%),
   30%: tint-color($main, 30%),
+  35%: tint-color($main, 35%),
   40%: tint-color($main, 40%),
+  50%: tint-color($main, 50%),
+  55%: tint-color($main, 55%),
+  60%: tint-color($main, 60%),
+  65%: tint-color($main, 65%),
+  70%: tint-color($main, 70%),
+  75%: tint-color($main, 75%),
   80%: tint-color($main, 80%),
 );
 
-// Helper function to replace # with %23 for Data URIs
+$theme: "white";
+$theme: "primary";
+$theme: "dark";
+
+@if $theme == "white" {
+  $shades: $shadesFill !global;
+  $treeBg: map-get($shades, 0%) !global;
+  // Treeline connector colors
+  $normalStroke: map-get($shades, 15%) !global;
+  $activeStroke: map-get($shades, 50%) !global;
+
+  // item normal state colors
+  $itemColor: color-contrast(map-get($shades, 0%)) !global;
+  $itemBgColor: map-get($shades, 0%) !global;
+
+  // ul item with active state inside colors
+  $ulItemWithActiveColor: color-contrast(map-get($shades, 0%)) !global;
+  $ulItemWithActiveBgColor: map-get($shades, 5%) !global;
+
+  // li item with active state inside colors
+  $liItemWithActiveColor: color-contrast(map-get($shades, 10%)) !global;
+  $liItemWithActiveBgColor: map-get($shades, 10%) !global;
+
+  // li item expanded but no active inside colors
+  $liItemExpandedColor: color-contrast(map-get($shades, 0%)) !global;
+  $liItemExpandedBgColor: map-get($shades, 5%) !global;
+
+  // level 0 item has children active colors
+  $level0ItemHasChildrenActiveColor: color-contrast(
+    map-get($shades, 20%)
+  ) !global;
+  $level0ItemHasChildrenActiveBgColor: map-get($shades, 20%) !global;
+
+  // level 0 item active colors
+  $l0itemActiveColor: color-contrast(map-get($shades, 20%)) !global;
+  $l0itemActiveBgColor: map-get($shades, 20%) !global;
+
+  // item hover colors
+  $itemHoverColor: color-contrast(map-get($shades, 5%)) !global;
+  $itemHoverBgColor: map-get($shades, 5%) !global;
+
+  // Active pill L1 colors
+  $l1ActiveBorderColor: map-get($shades, 50%) !global;
+  $l1ActiveBg: map-get($shades, 0%) !global;
+  $l1ActiveColor: color-contrast($l1ActiveBg) !global;
+
+  // Treeline connector colors
+  $itemHasTreeNotActiveHoverColor: color-contrast(
+    map-get($shades, 15%)
+  ) !global;
+  $itemHasTreeNotActiveHoverBgColor: map-get($shades, 15%) !global;
+
+  // Helper function to replace # with %23 for Data URIs
+  $btnColor: color-contrast(map-get($shades, 5%)) !global;
+  $btnBgHover: map-get($shades, 5%) !global;
+  $btnHoverColor: shade-color($btnColor, 15%) !global;
+  $btnActiveColor: shade-color($btnColor, 15%) !global;
+} @else if $theme == "dark" {
+  $shades: $tintsFill !global;
+  $treeBg: map-get($shades, 0%) !global;
+  // Treeline connector colors
+  $normalStroke: map-get($shades, 15%) !global;
+  $activeStroke: map-get($shades, 50%) !global;
+
+  // item normal state colors
+  $itemColor: color-contrast(map-get($shades, 0%)) !global;
+  $itemBgColor: map-get($shades, 0%) !global;
+
+  // ul item with active state inside colors
+  $ulItemWithActiveColor: color-contrast(map-get($shades, 0%)) !global;
+  $ulItemWithActiveBgColor: map-get($shades, 5%) !global;
+
+  // li item with active state inside colors
+  $liItemWithActiveColor: color-contrast(map-get($shades, 10%)) !global;
+  $liItemWithActiveBgColor: map-get($shades, 10%) !global;
+
+  // li item expanded but no active inside colors
+  $liItemExpandedColor: color-contrast(map-get($shades, 0%)) !global;
+  $liItemExpandedBgColor: map-get($shades, 5%) !global;
+
+  // level 0 item has children active colors
+  $level0ItemHasChildrenActiveColor: color-contrast(
+    map-get($shades, 20%)
+  ) !global;
+  $level0ItemHasChildrenActiveBgColor: map-get($shades, 20%) !global;
+
+  // level 0 item active colors
+  $l0itemActiveColor: color-contrast(map-get($shades, 20%)) !global;
+  $l0itemActiveBgColor: map-get($shades, 20%) !global;
+
+  // item hover colors
+  $itemHoverColor: color-contrast(map-get($shades, 5%)) !global;
+  $itemHoverBgColor: map-get($shades, 5%) !global;
+
+  // Active pill L1 colors
+  $l1ActiveBorderColor: map-get($shades, 50%) !global;
+  $l1ActiveBg: map-get($shades, 0%) !global;
+  $l1ActiveColor: color-contrast($l1ActiveBg) !global;
+
+  // Treeline connector colors
+  $itemHasTreeNotActiveHoverColor: color-contrast(
+    map-get($shades, 15%)
+  ) !global;
+  $itemHasTreeNotActiveHoverBgColor: map-get($shades, 15%) !global;
+
+  // Helper function to replace # with %23 for Data URIs
+  $btnColor: color-contrast(map-get($shades, 5%)) !global;
+  $btnBgHover: map-get($shades, 5%) !global;
+  $btnHoverColor: shade-color($btnColor, 15%) !global;
+  $btnActiveColor: shade-color($btnColor, 15%) !global;
+} @else if $theme == "primary" {
+  $shades: $shadesFill !global;
+  $treeBg: map-get($shades, 0%) !global;
+  // Treeline connector colors
+  $normalStroke: map-get($shades, 15%) !global;
+  $activeStroke: map-get($shades, 50%) !global;
+
+  // item normal state colors
+  $itemColor: color-contrast(map-get($shades, 0%)) !global;
+  $itemBgColor: map-get($shades, 0%) !global;
+
+  // ul item with active state inside colors
+  $ulItemWithActiveColor: color-contrast(map-get($shades, 0%)) !global;
+  $ulItemWithActiveBgColor: map-get($shades, 5%) !global;
+
+  // li item with active state inside colors
+  $liItemWithActiveColor: color-contrast(map-get($shades, 10%)) !global;
+  $liItemWithActiveBgColor: map-get($shades, 10%) !global;
+
+  // li item expanded but no active inside colors
+  $liItemExpandedColor: color-contrast(map-get($shades, 0%)) !global;
+  $liItemExpandedBgColor: map-get($shades, 5%) !global;
+
+  // level 0 item has children active colors
+  $level0ItemHasChildrenActiveColor: color-contrast(
+    map-get($shades, 20%)
+  ) !global;
+  $level0ItemHasChildrenActiveBgColor: map-get($shades, 20%) !global;
+
+  // level 0 item active colors
+  $l0itemActiveColor: color-contrast(map-get($shades, 20%)) !global;
+  $l0itemActiveBgColor: map-get($shades, 20%) !global;
+
+  // item hover colors
+  $itemHoverColor: color-contrast(map-get($shades, 5%)) !global;
+  $itemHoverBgColor: map-get($shades, 5%) !global;
+
+  // Active pill L1 colors
+  $l1ActiveBorderColor: map-get($shades, 50%) !global;
+  $l1ActiveBg: map-get($shades, 0%) !global;
+  $l1ActiveColor: color-contrast($l1ActiveBg) !global;
+
+  // Treeline connector colors
+  $itemHasTreeNotActiveHoverColor: color-contrast(
+    map-get($shades, 15%)
+  ) !global;
+  $itemHasTreeNotActiveHoverBgColor: map-get($shades, 15%) !global;
+
+  // Helper function to replace # with %23 for Data URIs
+  $btnColor: color-contrast(map-get($shades, 5%)) !global;
+  $btnBgHover: map-get($shades, 5%) !global;
+  $btnHoverColor: shade-color($btnColor, 15%) !global;
+  $btnActiveColor: shade-color($btnColor, 15%) !global;
+} @else {
+  @error "Unsupported theme: #{$theme}";
+}
+
 @function svg-url-color($color) {
   $color-str: inspect($color);
   @if str-index($color-str, "#") == 1 {
@@ -63,8 +249,8 @@ $tints: (
 }
 
 .menu-item {
-  color: color-contrast(map-get($shades, 20%));
-  background-color: map-get($shades, 20%);
+  color: $itemColor;
+  background-color: $itemBgColor;
   &[disabled] {
     cursor: not-allowed;
   }
@@ -72,35 +258,48 @@ $tints: (
 
 .ul-has-activeItem {
   .menu-item {
-    color: color-contrast(map-get($shades, 30%));
-    background-color: map-get($shades, 30%);
+    color: $ulItemWithActiveColor;
+    background-color: $ulItemWithActiveBgColor;
   }
 }
 
 .li-has-expanded-ul {
   .menu-item.item-has-children-active {
-    color: color-contrast(map-get($shades, 0%));
-    background-color: map-get($shades, 0%);
+    color: $liItemWithActiveColor;
+    background-color: $liItemWithActiveBgColor;
   }
   .menu-item {
-    color: color-contrast(map-get($shades, 30%));
-    background-color: map-get($shades, 30%);
+    color: $liItemExpandedColor;
+    background-color: $liItemExpandedBgColor;
   }
 }
 
 .level-0 .item-has-children-active {
-  color: color-contrast(map-get($shades, 0%));
-  background-color: map-get($shades, 0%);
+  color: $level0ItemHasChildrenActiveColor;
+  background-color: $level0ItemHasChildrenActiveBgColor;
 }
 
 .menu-item.activeL0 {
-  color: color-contrast(map-get($shades, 0%));
-  background-color: map-get($shades, 0%);
+  color: $l0itemActiveColor;
+  background-color: $l0itemActiveBgColor;
 }
 
 .li-has-tree-inside {
   border-top: 1px solid map-get($shades, 40%) !important;
   border-bottom: 1px solid map-get($shades, 40%) !important;
+}
+
+.menu-item {
+  &:hover {
+    color: $itemHoverColor;
+    background-color: $itemHoverBgColor;
+  }
+  &:has(.tree-notActive) {
+    &:hover {
+      color: $itemHasTreeNotActiveHoverColor;
+      background-color: $itemHasTreeNotActiveHoverBgColor;
+    }
+  }
 }
 .nested-level {
   li button:before {
@@ -115,57 +314,28 @@ $tints: (
   }
   li button.menu-item {
     &:before {
-      @include tree-connector(
-        map-get($tints, 30%),
-        map-get($tints, 30%),
-        map-get($tints, 30%)
-      );
+      @include tree-connector($normalStroke, $normalStroke, $normalStroke);
     }
     &.active:before {
       @include tree-connector(
-        map-get($tints, 80%),
-        map-get($tints, 80%),
-        map-get($tints, 30%),
+        $activeStroke,
+        $activeStroke,
+        $normalStroke,
         "above"
       );
     }
   }
   li.li-has-open-sibling-after {
     button.menu-item:before {
-      @include tree-connector(
-        map-get($tints, 30%),
-        map-get($tints, 80%),
-        map-get($tints, 80%)
-      );
+      @include tree-connector($normalStroke, $activeStroke, $activeStroke);
     }
   }
   li:last-child {
     button.menu-item:before {
-      @include tree-connector(
-        map-get($tints, 30%),
-        map-get($tints, 30%),
-        transparent
-      );
+      @include tree-connector($normalStroke, $normalStroke, transparent);
     }
     button.menu-item.active:before {
-      @include tree-connector(
-        map-get($tints, 80%),
-        map-get($tints, 80%),
-        transparent
-      );
-    }
-  }
-}
-
-.menu-item {
-  &:hover {
-    color: color-contrast(map-get($tints, 0%));
-    background-color: map-get($tints, 0%);
-  }
-  &:has(.tree-notActive) {
-    &:hover {
-      color: color-contrast(map-get($tints, 0%));
-      background-color: map-get($tints, 0%);
+      @include tree-connector($activeStroke, $activeStroke, transparent);
     }
   }
 }
@@ -174,10 +344,33 @@ $tints: (
   border: 2px solid transparent;
 }
 .tree-active {
-  background: rgba(255, 255, 255, 0.15);
-  border: 2px solid map-get($tints, 80%);
+  background: $l1ActiveBg;
+  border: 2px solid $l1ActiveBorderColor;
 }
 
 .tree-bg {
-  background-color: map-get($shades, 20%);
+  background-color: $treeBg;
+}
+
+.btn-outline-on-tree {
+  @include button-variant(
+    // color-contrast($primary),
+    transparent,
+    // border
+    transparent,
+    // color
+    $btnColor,
+    // hover bg
+    $btnBgHover,
+    // hover-border-background
+    $btnBgHover,
+    // hover-border
+    $btnColor,
+    // hover-color
+    $btnHoverColor,
+    // active-background
+    $btnActiveColor,
+    // active-border
+    $primary // active-color
+  );
 }

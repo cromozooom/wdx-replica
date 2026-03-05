@@ -95,7 +95,7 @@
           <button
             ngbDropdownToggle
             type="button"
-            class="btn btn-outline-on-primary border-0 btn-sm rounded-0 my-2"
+            class="btn btn-outline-on-tree border-0 btn-sm rounded-0 my-2"
             (click)="onDropdownToggle($event)"
             title="More actions"
           >
@@ -119,14 +119,14 @@
 
       <!-- Expansion Icon (if has children) -->
       @if (shouldShowChevron) {
+        <!-- [disabled]="hasChildrenActive" -->
         <button
-          class="me-2 btn btn-outline-on-primary border-0 btn-sm d-flex align-items-center justify-content-center text-decoration-none my-2"
+          class="me-2 btn btn-outline-on-tree border-0 btn-sm d-flex align-items-center justify-content-center text-decoration-none my-2"
           style="width: 1.3rem"
           [class.rounded-0]="isEditMode"
           [class.expanded]="isExpanded"
           (click)="onToggleExpansion($event)"
           role="button"
-          [disabled]="hasChildrenActive"
           [attr.aria-expanded]="isExpanded"
           [attr.aria-label]="isExpanded ? 'Collapse' : 'Expand'"
         >
