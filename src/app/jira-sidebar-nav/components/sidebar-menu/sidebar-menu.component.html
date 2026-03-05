@@ -1,7 +1,12 @@
 <!-- Sidebar Menu Template (T028) -->
-<div class="d-flex overflow-hidden flex-column flex-grow-1">
+<div
+  class="d-flex overflow-hidden flex-column flex-grow-1"
+  [class.theme-white]="theme === 'white'"
+  [class.theme-primary]="theme === 'primary'"
+  [class.theme-dark]="theme === 'dark'"
+>
   <div
-    class="scroll_custom_1 d-flex flex-column flex-grow-1 overflow-y-auto w-100"
+    class="scroll_custom_1 d-flex flex-column flex-grow-1 overflow-y-auto w-100 tree-bg"
   >
     <!-- Add Menu Buttons (T064) -->
     @if (isEditMode) {
