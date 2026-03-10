@@ -145,17 +145,17 @@ allowed. Document integrity maintained.
 
 ### Implementation for User Story 2
 
-- [ ] T035 [US2] Configure pill node atom property to true in pill-node.ts
+- [x] T035 [US2] Configure pill node atom property to true in pill-node.ts
       schema per FR-007
-- [ ] T036 [US2] Implement atomic deletion behavior in pill-command.ts for
+- [x] T036 [US2] Implement atomic deletion behavior in pill-command.ts for
       backspace/delete keys per FR-008 and FR-020
-- [ ] T037 [US2] Add selection behavior that highlights entire pill on click per
+- [x] T037 [US2] Add selection behavior that highlights entire pill on click per
       Acceptance Scenario 2
-- [ ] T038 [US2] Prevent cursor positioning inside pill (treat as single object)
+- [x] T038 [US2] Prevent cursor positioning inside pill (treat as single object)
       per FR-007
-- [ ] T039 [US2] Add keyboard handling to prevent typing inside pills per
+- [x] T039 [US2] Add keyboard handling to prevent typing inside pills per
       Acceptance Scenario 4
-- [ ] T040 [US2] Verify regular text can be typed before/after pills without
+- [x] T040 [US2] Verify regular text can be typed before/after pills without
       affecting integrity per FR-009
 
 **Checkpoint**: Pills are now protected atomic objects - partial deletion and
@@ -174,22 +174,22 @@ highlights. Click pill → field selector menu appears. Verify visual distinctio
 
 ### Implementation for User Story 4
 
-- [ ] T041 [P] [US4] Implement arrow key navigation handler in pill-command.ts
+- [x] T041 [P] [US4] Implement arrow key navigation handler in pill-command.ts
       to detect pill boundary crossing and add visual highlight (no auto-menu)
       per FR-021
-- [ ] T042 [US4] Add visual highlight state to pill when cursor adjacent (CSS
+- [x] T042 [US4] Add visual highlight state to pill when cursor adjacent (CSS
       class toggle) per Acceptance Scenario 2
-- [ ] T043 [US4] Configure Variable Selector menu to appear on pill click per
+- [x] T043 [US4] Configure Variable Selector menu to appear on pill click per
       FR-022
-- [ ] T044 [US4] Update pill click handler to trigger field selector with
+- [x] T044 [US4] Update pill click handler to trigger field selector with
       current pill selected per Acceptance Scenario 3
-- [ ] T045 [US4] Enable field search and replacement when pill clicked
+- [x] T045 [US4] Enable field search and replacement when pill clicked
       (click-to-edit pattern) per FR-022
-- [ ] T046 [P] [US4] Enhance pill styling with distinct background color
+- [x] T046 [P] [US4] Enhance pill styling with distinct background color
       (#E3F2FD) and border in template-editor.component.scss per FR-023
-- [ ] T047 [US4] Add hover state styling to pills for better affordance per
+- [x] T047 [US4] Add hover state styling to pills for better affordance per
       Acceptance Scenario 4
-- [ ] T048 [US4] Prevent paste trigger characters from auto-opening menu
+- [x] T048 [US4] Prevent paste trigger characters from auto-opening menu
       (literal text insertion) per FR-024 and Edge Cases
 
 **Checkpoint**: Advanced pill interactions complete - quick field swapping

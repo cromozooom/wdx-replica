@@ -1,0 +1,51 @@
+<div class="container py-4">
+  <div class="mb-4">
+    <h1 class="h2 mb-2">Intelligent Template Assistant</h1>
+    <p class="text-muted mb-0">Create templates with dynamic data fields</p>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <!-- Template Editor -->
+          <div class="mb-4">
+            <h2 class="h5 mb-2">Template Editor</h2>
+            <p class="text-muted small mb-3">
+              Type <span [innerText]="openingBraces"></span> to insert a data
+              field pill.
+            </p>
+
+            <app-template-editor
+              #editor
+              [content]="currentContent()"
+              [availableFields]="availableFields()"
+              (contentChange)="onContentChange($event)"
+              (pillInserted)="onPillInserted($event)"
+              (pillTrigger)="onPillTrigger($event)"
+              (pillClicked)="onPillClicked($event)"
+            ></app-template-editor>
+          </div>
+
+          <!-- Field Selector -->
+          <app-data-field-selector
+            [availableFields]="availableFields()"
+            [visible]="fieldSelectorVisible()"
+            [position]="fieldSelectorPosition()"
+            (fieldSelected)="onFieldSelected($event)"
+            (closed)="closeFieldSelector()"
+          ></app-data-field-selector>
+
+          <!-- Actions -->
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary" (click)="saveTemplate()">
+              Save Template
+            </button>
+            <button class="btn btn-outline-secondary" (click)="clearTemplate()">
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

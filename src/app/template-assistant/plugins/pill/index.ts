@@ -7,6 +7,7 @@ export { pillNode } from "./pill-node";
 export { pillInputRule } from "./pill-inputrule";
 export { insertPillCommand, deletePillCommand } from "./pill-command";
 export { pillMarkdownPlugin } from "./pill-markdown";
+export { pillKeymap } from "./pill-keymap";
 
 /**
  * Complete pill plugin for Milkdown.
@@ -16,11 +17,13 @@ import { pillNode } from "./pill-node";
 import { pillInputRule } from "./pill-inputrule";
 import { insertPillCommand, deletePillCommand } from "./pill-command";
 import { pillMarkdownPlugin } from "./pill-markdown";
+import { pillKeymap } from "./pill-keymap";
 
 export const pillPlugin = [
   pillNode,
   pillInputRule,
   insertPillCommand,
   deletePillCommand,
+  pillKeymap,
   ...pillMarkdownPlugin,
 ];

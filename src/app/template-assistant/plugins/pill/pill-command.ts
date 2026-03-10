@@ -12,7 +12,7 @@ import { Selection } from "@milkdown/prose/state";
  */
 export const insertPillCommand = $command(
   "insertPill",
-  () => (fieldId?: string) => (state: any, dispatch: any) => {
+  (ctx) => (fieldId?: string) => (state: any, dispatch: any) => {
     const { schema, tr } = state;
     const pillType = schema.nodes["pill"];
 
@@ -37,7 +37,7 @@ export const insertPillCommand = $command(
  */
 export const deletePillCommand = $command(
   "deletePill",
-  () => () => (state: any, dispatch: any) => {
+  (ctx) => () => (state: any, dispatch: any) => {
     const { tr, selection } = state;
     const { $from } = selection;
 

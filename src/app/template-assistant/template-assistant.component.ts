@@ -3,7 +3,7 @@
  * Container component for Intelligent Template Assistant feature.
  */
 
-import { Component, OnInit, signal } from "@angular/core";
+import { Component, OnInit, signal, ViewChild } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { TemplateEditorComponent } from "./components/template-editor/template-editor.component";
 import { DataFieldSelectorComponent } from "./components/data-field-selector/data-field-selector.component";
@@ -15,144 +15,13 @@ import { DocumentTemplate, DataField } from "./models";
   selector: "app-template-assistant",
   standalone: true,
   imports: [CommonModule, TemplateEditorComponent, DataFieldSelectorComponent],
-  template: `
-    <div class="template-assistant-container">
-      <div class="header">
-        <h1>Intelligent Template Assistant</h1>
-        <p class="subtitle">Create templates with dynamic data fields</p>
-      </div>
-
-      <div class="content">
-        <!-- Template Editor -->
-        <div class="editor-section">
-          <h2>Template Editor</h2>
-          <p class="instructions">
-            Type <strong>{{</strong> to insert a data field pill. Click pills to
-            edit them.
-          </p>
-
-          <app-template-editor
-            [content]="currentContent()"
-            [availableFields]="availableFields()"
-            (contentChange)="onContentChange($event)"
-            (pillInserted)="onPillInserted($event)"
-          />
-        </div>
-
-        <!-- Field Selector -->
-        <app-data-field-selector
-          [availableFields]="availableFields()"
-          [visible]="fieldSelectorVisible()"
-          [position]="fieldSelectorPosition()"
-          (fieldSelected)="onFieldSelected($event)"
-          (closed)="closeFieldSelector()"
-        />
-
-        <!-- Actions -->
-        <div class="actions">
-          <button class="btn btn-primary" (click)="saveTemplate()">
-            Save Template
-          </button>
-          <button class="btn btn-secondary" (click)="clearTemplate()">
-            Clear
-          </button>
-        </div>
-      </div>
-    </div>
-  `,
-  styles: [
-    `
-      .template-assistant-container {
-        padding: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .header {
-        margin-bottom: 2rem;
-
-        h1 {
-          color: #333;
-          margin: 0 0 0.5rem 0;
-          font-size: 28px;
-        }
-
-        .subtitle {
-          color: #666;
-          margin: 0;
-          font-size: 16px;
-        }
-      }
-
-      .content {
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-      }
-
-      .editor-section {
-        margin-bottom: 2rem;
-
-        h2 {
-          font-size: 20px;
-          color: #333;
-          margin: 0 0 0.5rem 0;
-        }
-
-        .instructions {
-          color: #666;
-          font-size: 14px;
-          margin: 0 0 1rem 0;
-        }
-      }
-
-      .actions {
-        display: flex;
-        gap: 1rem;
-        margin-top: 1.5rem;
-
-        .btn {
-          padding: 10px 24px;
-          border: none;
-          border-radius: 4px;
-          font-size: 14px;
-          font-weight: 500;
-          cursor: pointer;
-          transition: all 0.2s ease;
-
-          &:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-          }
-
-          &:active {
-            transform: translateY(0);
-          }
-        }
-
-        .btn-primary {
-          background-color: #1976d2;
-          color: #fff;
-
-          &:hover {
-            background-color: #1565c0;
-          }
-        }
-
-        .btn-secondary {
-          background-color: #f5f5f5;
-          color: #333;
-
-          &:hover {
-            background-color: #e0e0e0;
-          }
-        }
-      }
-    `,
-  ],
+  templateUrl: "./template-assistant.component.html",
+  styleUrls: ["./template-assistant.component.scss"],
 })
 export class TemplateAssistantComponent implements OnInit {
+  @ViewChild("editor") editorComponent!: TemplateEditorComponent;
+
+  openingBraces = "{{";
   // State
   currentContent = signal<string>("");
   availableFields = signal<DataField[]>([]);
@@ -161,6 +30,9 @@ export class TemplateAssistantComponent implements OnInit {
     top: 0,
     left: 0,
   });
+  pillBeingReplaced = signal<{ fieldId: string; position: number } | null>(
+    null,
+  );
 
   constructor(
     private fieldRegistry: DataFieldRegistryService,
@@ -188,15 +60,75 @@ export class TemplateAssistantComponent implements OnInit {
     });
   }
 
+  onPillTrigger(event: { position: number }): void {
+    console.log("Opening field selector at position:", event.position);
+
+    // Clear any pill being replaced (this is a new insertion)
+    this.pillBeingReplaced.set(null);
+
+    // Calculate position for field selector dropdown
+    // For now, show it centered on screen
+    this.fieldSelectorPosition.set({
+      top: 200,
+      left: 400,
+    });
+
+    this.fieldSelectorVisible.set(true);
+  }
+
+  onPillClicked(event: { fieldId: string; position: number }): void {
+    console.log("Pill clicked:", event.fieldId, "at position:", event.position);
+
+    // Store which pill is being replaced
+    this.pillBeingReplaced.set(event);
+
+    // Show field selector
+    this.fieldSelectorPosition.set({
+      top: 200,
+      left: 400,
+    });
+
+    this.fieldSelectorVisible.set(true);
+  }
+
   onPillInserted(field: DataField): void {
     console.log("Pill inserted:", field);
     this.closeFieldSelector();
   }
 
   onFieldSelected(field: DataField): void {
-    console.log("Field selected:", field);
-    // Insert pill into editor
-    // This will be handled by editor component
+    console.log("TemplateAssistant: Field selected:", field);
+    console.log("TemplateAssistant: Editor component:", this.editorComponent);
+
+    const pillToReplace = this.pillBeingReplaced();
+
+    if (this.editorComponent) {
+      if (pillToReplace) {
+        // Replace existing pill
+        console.log(
+          "TemplateAssistant: Replacing pill:",
+          pillToReplace.fieldId,
+          "with:",
+          field.id,
+        );
+        this.editorComponent.replacePill(
+          pillToReplace.fieldId,
+          field,
+          pillToReplace.position,
+        );
+      } else {
+        // Insert new pill
+        console.log("TemplateAssistant: Inserting new pill:", field.id);
+        this.editorComponent.insertPill(field);
+      }
+      console.log("TemplateAssistant: Operation completed");
+    } else {
+      console.error("TemplateAssistant: Editor component not available!");
+    }
+
+    // Clear pill being replaced and close field selector
+    this.pillBeingReplaced.set(null);
+    this.closeFieldSelector();
   }
 
   closeFieldSelector(): void {
