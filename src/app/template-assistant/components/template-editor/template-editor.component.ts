@@ -25,14 +25,33 @@ import { commonmark } from "@milkdown/preset-commonmark";
 import { gfm } from "@milkdown/preset-gfm";
 import { history } from "@milkdown/plugin-history";
 import { cursor } from "@milkdown/plugin-cursor";
+import { trailing } from "@milkdown/plugin-trailing";
 
 import { listener, listenerCtx } from "@milkdown/plugin-listener";
+import {
+  toggleStrongCommand,
+  toggleEmphasisCommand,
+  toggleInlineCodeCommand,
+  wrapInHeadingCommand,
+  wrapInBulletListCommand,
+  wrapInOrderedListCommand,
+  wrapInBlockquoteCommand,
+  insertImageCommand,
+  createCodeBlockCommand,
+  insertHrCommand,
+  turnIntoTextCommand,
+} from "@milkdown/preset-commonmark";
+import {
+  toggleStrikethroughCommand,
+  insertTableCommand,
+} from "@milkdown/preset-gfm";
 import {
   pillNode,
   pillInputRule,
   insertPillCommand,
   deletePillCommand,
   pillKeymap,
+  pillParser,
 } from "../../plugins/pill";
 import { DataField } from "../../models";
 
@@ -45,8 +64,33 @@ import { DataField } from "../../models";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
-  @Input() content = "";
-  @Input() availableFields: DataField[] = [];
+  private _content = "";
+  private _availableFields: DataField[] = [];
+
+  @Input()
+  set content(value: string) {
+    this._content = value;
+    // Update editor if already initialized and content actually changed
+    if (this.editor && value !== this.getContent()) {
+      this.setContent(value);
+    }
+  }
+  get content(): string {
+    return this._content;
+  }
+
+  get availableFields(): DataField[] {
+    return this._availableFields;
+  }
+
+  @Input()
+  set availableFields(fields: DataField[]) {
+    this._availableFields = fields;
+    // Validate pills when fields change
+    if (this.editor) {
+      this.validatePills();
+    }
+  }
   @Input() readonly = false;
 
   @Output() contentChange = new EventEmitter<string>();
@@ -98,6 +142,8 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         .use(gfm)
         .use(history)
         .use(cursor)
+        .use(trailing)
+        .use(pillParser)
         .use(pillNode)
         .use(pillInputRule)
         .use(insertPillCommand)
@@ -120,6 +166,8 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
           this.contentChangeTimeout = setTimeout(() => {
             this.ngZone.run(() => {
               this.contentChange.emit(markdown);
+              // Validate pills after content change
+              this.validatePills();
             });
           }, 300);
         });
@@ -129,6 +177,9 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
       if (this.content) {
         this.setContent(this.content);
       }
+
+      // Validate pills after content is set
+      setTimeout(() => this.validatePills(), 100);
 
       // Listen for pill trigger event
       document.addEventListener("pill-trigger", this.handlePillTrigger);
@@ -202,6 +253,122 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
 
     console.log("TemplateEditor: Emitting pillInserted event");
     this.pillInserted.emit(field);
+  }
+
+  /**
+   * Toolbar methods for formatting
+   */
+  toggleBold(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(toggleStrongCommand.key);
+    });
+  }
+
+  toggleItalic(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(toggleEmphasisCommand.key);
+    });
+  }
+
+  toggleCode(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(toggleInlineCodeCommand.key);
+    });
+  }
+
+  applyHeading(level: number): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(wrapInHeadingCommand.key, level);
+    });
+  }
+
+  applyParagraph(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(turnIntoTextCommand.key);
+    });
+  }
+
+  applyBulletList(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(wrapInBulletListCommand.key);
+    });
+  }
+
+  applyOrderedList(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(wrapInOrderedListCommand.key);
+    });
+  }
+
+  applyBlockquote(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(wrapInBlockquoteCommand.key);
+    });
+  }
+
+  toggleStrikethrough(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(toggleStrikethroughCommand.key);
+    });
+  }
+
+  insertTable(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(insertTableCommand.key, { row: 3, col: 3 });
+    });
+  }
+
+  insertImage(): void {
+    const url = prompt("Enter image URL:");
+    const alt = prompt("Enter image alt text (optional):");
+    if (url) {
+      this.editor?.action((ctx) => {
+        ctx.get(commandsCtx).call(insertImageCommand.key, {
+          src: url,
+          alt: alt || "",
+          title: alt || "",
+        });
+      });
+    }
+  }
+
+  insertCodeBlock(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(createCodeBlockCommand.key);
+    });
+  }
+
+  insertHorizontalRule(): void {
+    this.editor?.action((ctx) => {
+      ctx.get(commandsCtx).call(insertHrCommand.key);
+    });
+  }
+
+  /**
+   * Validate all pills in the editor and mark invalid ones.
+   * Invalid pills are those whose fieldId doesn't exist in availableFields.
+   */
+  private validatePills(): void {
+    if (!this.editorElement) return;
+
+    // Get all pill nodes from the DOM
+    const pillNodes =
+      this.editorElement.nativeElement.querySelectorAll(".pill-node");
+
+    // Create a set of valid field IDs for quick lookup
+    const validFieldIds = new Set(this._availableFields.map((f) => f.id));
+
+    pillNodes.forEach((pill: Element) => {
+      const fieldId = pill.getAttribute("data-field-id");
+
+      if (fieldId && !validFieldIds.has(fieldId)) {
+        // Invalid field - add warning class
+        pill.classList.add("pill-invalid");
+      } else {
+        // Valid field - remove warning class if present
+        pill.classList.remove("pill-invalid");
+      }
+    });
   }
 
   /**
@@ -288,5 +455,7 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         view.dispatch(tr);
       }
     });
+    // Validate pills after content is set
+    setTimeout(() => this.validatePills(), 100);
   }
 }

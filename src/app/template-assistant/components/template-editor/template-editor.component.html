@@ -1,3 +1,157 @@
-<div class="border rounded p-3 bg-white" style="min-height: 300px">
-  <div #editorRef class="milkdown"></div>
+<div
+  class="border rounded bg-white flex-grow-1 d-flex flex-column overflow-hidden"
+>
+  <!-- Formatting Toolbar -->
+  <div
+    class="editor-toolbar border-bottom p-2 d-flex gap-2 align-items-center flex-wrap"
+  >
+    <!-- Heading buttons -->
+    <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyParagraph()"
+        title="Paragraph (convert to normal text)"
+      >
+        P
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyHeading(1)"
+        title="Heading 1"
+      >
+        H1
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyHeading(2)"
+        title="Heading 2"
+      >
+        H2
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyHeading(3)"
+        title="Heading 3"
+      >
+        H3
+      </button>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <!-- Text formatting -->
+    <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="toggleBold()"
+        title="Bold (Ctrl+B)"
+      >
+        <strong>B</strong>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="toggleItalic()"
+        title="Italic (Ctrl+I)"
+      >
+        <em>I</em>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="toggleStrikethrough()"
+        title="Strikethrough"
+      >
+        <s>S</s>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="toggleCode()"
+        title="Inline Code"
+      >
+        <code>&lt;/&gt;</code>
+      </button>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <!-- Lists & Blocks -->
+    <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyBulletList()"
+        title="Bullet List"
+      >
+        • List
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyOrderedList()"
+        title="Numbered List"
+      >
+        1. List
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyBlockquote()"
+        title="Blockquote"
+      >
+        " Quote
+      </button>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <!-- Insert elements -->
+    <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="insertTable()"
+        title="Insert Table (3x3)"
+      >
+        ⊞ Table
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="insertImage()"
+        title="Insert Image"
+      >
+        🖼 Image
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="insertCodeBlock()"
+        title="Code Block"
+      >
+        &lt;/&gt; Code
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="insertHorizontalRule()"
+        title="Horizontal Divider"
+      >
+        ― HR
+      </button>
+    </div>
+  </div>
+
+  <!-- Editor -->
+  <div class="flex-grow-1 d-flex overflow-hidden">
+    <div #syncScrollEditor data-scroll-editor class="overflow-auto w-100">
+      <div #editorRef class="milkdown p-3"></div>
+    </div>
+  </div>
 </div>

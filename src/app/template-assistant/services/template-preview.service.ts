@@ -19,15 +19,39 @@ export class TemplatePreviewService {
   /**
    * Interpolate template markdown with customer data.
    * Replaces {{field_id}} placeholders with formatted values.
+   * Handles escaped underscores from markdown serialization.
    */
   interpolate(
     markdown: string,
     customerData: CustomerRecord,
     fields: DataField[],
   ): string {
-    return markdown.replace(/\{\{(\w+)\}\}/g, (match, fieldId) => {
+    console.log("Preview interpolation:", {
+      markdown,
+      hasData: !!customerData,
+      dataKeys: customerData ? Object.keys(customerData) : [],
+      fieldsCount: fields.length,
+    });
+
+    // First unescape any escaped underscores in field placeholders
+    // Markdown serializers often escape _ to \_ to prevent italic formatting
+    const unescaped = markdown.replace(/\{\{([^}]+)\}\}/g, (match, fieldId) => {
+      // Remove backslash escapes from field ID
+      const cleanFieldId = fieldId.replace(/\\/g, "");
+      console.log(`Unescaping: ${fieldId} → ${cleanFieldId}`);
+      return `{{${cleanFieldId}}}`;
+    });
+
+    // Now interpolate with clean field IDs
+    return unescaped.replace(/\{\{([^}]+)\}\}/g, (match, fieldId) => {
       const field = fields.find((f) => f.id === fieldId);
       const value = customerData[fieldId];
+
+      console.log(`Interpolating ${fieldId}:`, {
+        found: !!field,
+        value,
+        fieldLabel: field?.label,
+      });
 
       if (value === null || value === undefined) {
         return "(Not Available)";

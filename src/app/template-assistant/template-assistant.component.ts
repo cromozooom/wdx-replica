@@ -3,10 +3,19 @@
  * Container component for Intelligent Template Assistant feature.
  */
 
-import { Component, OnInit, signal, ViewChild } from "@angular/core";
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  signal,
+  ViewChild,
+  effect,
+  ElementRef,
+} from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { TemplateEditorComponent } from "./components/template-editor/template-editor.component";
 import { DataFieldSelectorComponent } from "./components/data-field-selector/data-field-selector.component";
+import { TemplatePreviewComponent } from "./components/template-preview/template-preview.component";
 import { DataFieldRegistryService } from "./services/data-field-registry.service";
 import { TemplateStorageService } from "./services/template-storage.service";
 import { DocumentTemplate, DataField } from "./models";
@@ -14,17 +23,27 @@ import { DocumentTemplate, DataField } from "./models";
 @Component({
   selector: "app-template-assistant",
   standalone: true,
-  imports: [CommonModule, TemplateEditorComponent, DataFieldSelectorComponent],
+  imports: [
+    CommonModule,
+    TemplateEditorComponent,
+    DataFieldSelectorComponent,
+    TemplatePreviewComponent,
+  ],
   templateUrl: "./template-assistant.component.html",
   styleUrls: ["./template-assistant.component.scss"],
 })
-export class TemplateAssistantComponent implements OnInit {
+export class TemplateAssistantComponent implements OnInit, OnDestroy {
   @ViewChild("editor") editorComponent!: TemplateEditorComponent;
+  @ViewChild("fileUpload") fileUploadInput!: ElementRef<HTMLInputElement>;
 
   openingBraces = "{{";
   // State
   currentContent = signal<string>("");
   availableFields = signal<DataField[]>([]);
+  scrollSyncEnabled = signal<boolean>(false);
+  private isScrolling = false;
+  private editorScrollEl: HTMLElement | null = null;
+  private previewScrollEl: HTMLElement | null = null;
   fieldSelectorVisible = signal<boolean>(false);
   fieldSelectorPosition = signal<{ top: number; left: number }>({
     top: 0,
@@ -34,19 +53,156 @@ export class TemplateAssistantComponent implements OnInit {
     null,
   );
 
+  // Template selection
+  savedTemplates = signal<DocumentTemplate[]>([]);
+  selectedTemplateId = signal<string | null>(null);
+
   constructor(
     private fieldRegistry: DataFieldRegistryService,
     private templateStorage: TemplateStorageService,
-  ) {}
+  ) {
+    // Reactively update available fields when registry loads them
+    effect(() => {
+      const fields = this.fieldRegistry.fields$();
+      if (fields.length > 0) {
+        this.availableFields.set(fields);
+      }
+    });
+  }
 
   ngOnInit(): void {
-    // Load available fields
-    this.availableFields.set(this.fieldRegistry.getAll());
+    // Load all saved templates
+    this.loadSavedTemplates();
 
     // Load auto-saved draft if exists
     const draft = this.templateStorage.loadAutosave();
     if (draft?.content) {
       this.currentContent.set(draft.content);
+    }
+
+    // Set up scroll sync after view init
+    setTimeout(() => this.setupScrollSync(), 100);
+  }
+
+  ngOnDestroy(): void {
+    this.removeScrollListeners();
+  }
+
+  toggleScrollSync(): void {
+    this.scrollSyncEnabled.update((enabled) => !enabled);
+    if (this.scrollSyncEnabled()) {
+      this.setupScrollSync();
+    } else {
+      this.removeScrollListeners();
+    }
+  }
+
+  private setupScrollSync(): void {
+    if (!this.scrollSyncEnabled()) {
+      return;
+    }
+
+    // Query for scroll containers in child components
+    // Using a slight delay to ensure DOM is ready
+    setTimeout(() => {
+      const editorContainer = document.querySelector(
+        "[data-scroll-editor]",
+      ) as HTMLElement;
+      const previewContainer = document.querySelector(
+        "[data-scroll-preview]",
+      ) as HTMLElement;
+
+      if (!editorContainer || !previewContainer) {
+        console.warn("Scroll containers not found");
+        return;
+      }
+
+      this.editorScrollEl = editorContainer;
+      this.previewScrollEl = previewContainer;
+
+      // Remove existing listeners first
+      this.removeScrollListeners();
+
+      // Add scroll listeners
+      this.editorScrollEl.addEventListener("scroll", this.onEditorScroll);
+      this.previewScrollEl.addEventListener("scroll", this.onPreviewScroll);
+    }, 100);
+  }
+
+  private removeScrollListeners(): void {
+    if (this.editorScrollEl && this.previewScrollEl) {
+      this.editorScrollEl.removeEventListener("scroll", this.onEditorScroll);
+      this.previewScrollEl.removeEventListener("scroll", this.onPreviewScroll);
+    }
+  }
+
+  private onEditorScroll = (): void => {
+    if (
+      this.isScrolling ||
+      !this.scrollSyncEnabled() ||
+      !this.editorScrollEl ||
+      !this.previewScrollEl
+    ) {
+      return;
+    }
+
+    this.isScrolling = true;
+    const scrollPercentage =
+      this.editorScrollEl.scrollTop /
+      (this.editorScrollEl.scrollHeight - this.editorScrollEl.clientHeight);
+    this.previewScrollEl.scrollTop =
+      scrollPercentage *
+      (this.previewScrollEl.scrollHeight - this.previewScrollEl.clientHeight);
+
+    setTimeout(() => {
+      this.isScrolling = false;
+    }, 50);
+  };
+
+  private onPreviewScroll = (): void => {
+    if (
+      this.isScrolling ||
+      !this.scrollSyncEnabled() ||
+      !this.editorScrollEl ||
+      !this.previewScrollEl
+    ) {
+      return;
+    }
+
+    this.isScrolling = true;
+    const scrollPercentage =
+      this.previewScrollEl.scrollTop /
+      (this.previewScrollEl.scrollHeight - this.previewScrollEl.clientHeight);
+    this.editorScrollEl.scrollTop =
+      scrollPercentage *
+      (this.editorScrollEl.scrollHeight - this.editorScrollEl.clientHeight);
+
+    setTimeout(() => {
+      this.isScrolling = false;
+    }, 50);
+  };
+
+  async loadSavedTemplates(): Promise<void> {
+    const templates = await this.templateStorage.loadAll();
+    this.savedTemplates.set(templates);
+  }
+
+  async loadTemplate(templateId: string): Promise<void> {
+    const template = await this.templateStorage.load(templateId);
+    if (template) {
+      this.currentContent.set(template.content);
+      this.selectedTemplateId.set(templateId);
+    }
+  }
+
+  async deleteTemplate(templateId: string): Promise<void> {
+    if (confirm("Are you sure you want to delete this template?")) {
+      await this.templateStorage.delete(templateId);
+      await this.loadSavedTemplates();
+      if (this.selectedTemplateId() === templateId) {
+        this.selectedTemplateId.set(null);
+        this.currentContent.set("");
+      }
     }
   }
 
@@ -135,26 +291,119 @@ export class TemplateAssistantComponent implements OnInit {
     this.fieldSelectorVisible.set(false);
   }
 
-  saveTemplate(): void {
+  async saveTemplate(): Promise<void> {
+    const selectedId = this.selectedTemplateId();
+    const templateName = prompt(
+      "Enter template name:",
+      selectedId
+        ? this.savedTemplates().find((t) => t.id === selectedId)?.name
+        : `Template ${new Date().toLocaleDateString()}`,
+    );
+
+    if (!templateName) {
+      return; // User cancelled
+    }
+
     const template: DocumentTemplate = {
-      id: crypto.randomUUID(),
-      name: `Template ${new Date().toLocaleString()}`,
+      id: selectedId || crypto.randomUUID(),
+      name: templateName,
       content: this.currentContent(),
-      createdAt: new Date().toISOString(),
+      createdAt: selectedId
+        ? this.savedTemplates().find((t) => t.id === selectedId)?.createdAt ||
+          new Date().toISOString()
+        : new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       version: 1,
     };
 
-    this.templateStorage.save(template);
+    await this.templateStorage.save(template);
     this.templateStorage.clearAutosave();
+    await this.loadSavedTemplates();
+    this.selectedTemplateId.set(template.id);
 
-    alert("Template saved successfully!");
+    alert(`Template "${templateName}" saved successfully!`);
   }
 
   clearTemplate(): void {
     if (confirm("Are you sure you want to clear the template?")) {
       this.currentContent.set("");
+      this.selectedTemplateId.set(null);
       this.templateStorage.clearAutosave();
     }
+  }
+
+  downloadTemplate(): void {
+    const selectedId = this.selectedTemplateId();
+    const template: DocumentTemplate = {
+      id: selectedId || crypto.randomUUID(),
+      name: selectedId
+        ? this.savedTemplates().find((t) => t.id === selectedId)?.name ||
+          "Untitled Template"
+        : "Untitled Template",
+      content: this.currentContent(),
+      createdAt: selectedId
+        ? this.savedTemplates().find((t) => t.id === selectedId)?.createdAt ||
+          new Date().toISOString()
+        : new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+      version: 1,
+    };
+
+    const dataStr = JSON.stringify(template, null, 2);
+    const dataBlob = new Blob([dataStr], { type: "application/json" });
+    const url = URL.createObjectURL(dataBlob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `${template.name.replace(/[^a-z0-9]/gi, "_").toLowerCase()}.json`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }
+
+  triggerFileUpload(): void {
+    this.fileUploadInput?.nativeElement?.click();
+  }
+
+  handleFileUpload(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    if (!input.files || input.files.length === 0) {
+      return;
+    }
+
+    const file = input.files[0];
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+      try {
+        const content = e.target?.result as string;
+        const template: DocumentTemplate = JSON.parse(content);
+
+        // Validate template structure
+        if (!template.content || !template.name) {
+          alert("Invalid template file format");
+          return;
+        }
+
+        // Load the template content
+        this.currentContent.set(template.content);
+        this.selectedTemplateId.set(null); // Treat as new template
+
+        alert(
+          `Template "${template.name}" loaded successfully!\nClick "Save Template" to add it to your saved templates.`,
+        );
+      } catch (error) {
+        console.error("Error parsing template file:", error);
+        alert(
+          "Failed to load template. Please ensure the file is a valid template JSON.",
+        );
+      }
+    };
+
+    reader.readAsText(file);
+
+    // Reset input so the same file can be uploaded again
+    input.value = "";
   }
 }

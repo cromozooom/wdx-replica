@@ -24,9 +24,16 @@ export class CustomerDataService {
       const response = await fetch(
         "assets/templates/sample-customer-data.json",
       );
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
       const data = await response.json();
-      this.customers$.set(data.customers || []);
+      const customers = data.customers || [];
+      this.customers$.set(customers);
       this.dataLoaded = true;
+      console.log(`✓ Loaded ${customers.length} customers from JSON`);
       return this.customers$();
     } catch (error) {
       console.error("Failed to load customer data:", error);
@@ -45,7 +52,7 @@ export class CustomerDataService {
    * Get customer by ID.
    */
   getById(id: string): CustomerRecord | undefined {
-    return this.customers$().find((c) => c.id === id);
+    return this.customers$().find((c) => c["id"] === id);
   }
 
   /**
@@ -54,7 +61,7 @@ export class CustomerDataService {
   search(query: string): CustomerRecord[] {
     const lowerQuery = query.toLowerCase();
     return this.customers$().filter((c) =>
-      c.full_name?.toLowerCase().includes(lowerQuery),
+      c["full_name"]?.toLowerCase().includes(lowerQuery),
     );
   }
 }
