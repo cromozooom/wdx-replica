@@ -21,21 +21,21 @@ implementation and testing
 
 **Purpose**: Project initialization and Milkdown dependency installation
 
-- [ ] T001 Install Milkdown dependencies (core, preset-commonmark, preset-gfm,
+- [x] T001 Install Milkdown dependencies (core, preset-commonmark, preset-gfm,
       plugins) per quickstart.md Phase 1.1
-- [ ] T002 Create feature module directory structure at
+- [x] T002 Create feature module directory structure at
       src/app/template-assistant/ per plan.md Project Structure
-- [ ] T003 [P] Create TypeScript model interfaces in
+- [x] T003 [P] Create TypeScript model interfaces in
       src/app/template-assistant/models/template.model.ts
-- [ ] T004 [P] Create TypeScript model interfaces in
+- [x] T004 [P] Create TypeScript model interfaces in
       src/app/template-assistant/models/data-field.model.ts
-- [ ] T005 [P] Create TypeScript model interfaces in
+- [x] T005 [P] Create TypeScript model interfaces in
       src/app/template-assistant/models/customer-record.model.ts
-- [ ] T006 [P] Create TypeScript model interfaces in
+- [x] T006 [P] Create TypeScript model interfaces in
       src/app/template-assistant/models/merged-document.model.ts
-- [ ] T007 [P] Create TypeScript model interfaces in
+- [x] T007 [P] Create TypeScript model interfaces in
       src/app/template-assistant/models/field-format.model.ts
-- [ ] T008 Create model barrel export in
+- [x] T008 Create model barrel export in
       src/app/template-assistant/models/index.ts
 
 ---
