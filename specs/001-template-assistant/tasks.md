@@ -47,36 +47,36 @@ depend on
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T009 [P] Create pill node schema with atomic property in
+- [x] T009 [P] Create pill node schema with atomic property in
       src/app/template-assistant/plugins/pill/pill-node.ts
-- [ ] T010 [P] Create pill input rule for trigger character `{{` in
+- [x] T010 [P] Create pill input rule for trigger character `{{` in
       src/app/template-assistant/plugins/pill/pill-inputrule.ts
-- [ ] T011 [P] Create pill command utilities (insert, delete) in
+- [x] T011 [P] Create pill command utilities (insert, delete) in
       src/app/template-assistant/plugins/pill/pill-command.ts
-- [ ] T012 [P] Create pill markdown serialization in
+- [x] T012 [P] Create pill markdown serialization in
       src/app/template-assistant/plugins/pill/pill-markdown.ts
-- [ ] T013 Compose pill plugin exports in
+- [x] T013 Compose pill plugin exports in
       src/app/template-assistant/plugins/pill/index.ts
-- [ ] T014 [P] Create TemplateStorageService for localStorage CRUD in
+- [x] T014 [P] Create TemplateStorageService for localStorage CRUD in
       src/app/template-assistant/services/template-storage.service.ts
-- [ ] T015 [P] Create DataFieldRegistryService with 20-30 wealth management
+- [x] T015 [P] Create DataFieldRegistryService with 20-30 wealth management
       field definitions (Account Number, Balance, Portfolio Value, Investment
       Advisor, Client Since Date, Risk Profile, Annual Income, Net Worth,
       Contact Phone/Email, Address fields, Tax ID, etc.) in
       src/app/template-assistant/services/data-field-registry.service.ts
-- [ ] T016 [P] Create TemplatePreviewService for template interpolation in
+- [x] T016 [P] Create TemplatePreviewService for template interpolation in
       src/app/template-assistant/services/template-preview.service.ts
-- [ ] T017 [P] Create CustomerDataService that returns sample wealth management
+- [x] T017 [P] Create CustomerDataService that returns sample wealth management
       data from JSON file (MVP uses sample data only, AG-Grid integration
       deferred) in src/app/template-assistant/services/customer-data.service.ts
-- [ ] T018 Create sample wealth management customer data JSON with 20-30 fields
+- [x] T018 Create sample wealth management customer data JSON with 20-30 fields
       (Full Name, Date of Birth, Sort Code, Account Number, Balance, Portfolio
       Value, Advisor Name, Client Since, Risk Profile, Income, Net Worth,
       Contact details, Address, Tax ID, etc.) in
       src/assets/templates/sample-customer-data.json
-- [ ] T019 Create feature routing configuration in
+- [x] T019 Create feature routing configuration in
       src/app/template-assistant/template-assistant.routes.ts
-- [ ] T020 Register lazy-loaded route in src/app/app.routes.ts for
+- [x] T020 Register lazy-loaded route in src/app/app.routes.ts for
       /template-assistant path
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in
