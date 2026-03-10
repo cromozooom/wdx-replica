@@ -95,38 +95,38 @@ can be saved and contains both static text and field placeholders.
 
 ### Implementation for User Story 1
 
-- [ ] T021 [P] [US1] Create TemplateEditorComponent with Milkdown initialization
+- [x] T021 [P] [US1] Create TemplateEditorComponent with Milkdown initialization
       in
       src/app/template-assistant/components/template-editor/template-editor.component.ts
-- [ ] T022 [P] [US1] Create TemplateEditorComponent template with editor
+- [x] T022 [P] [US1] Create TemplateEditorComponent template with editor
       container in
       src/app/template-assistant/components/template-editor/template-editor.component.html
-- [ ] T023 [P] [US1] Create TemplateEditorComponent styles with Milkdown theme
+- [x] T023 [P] [US1] Create TemplateEditorComponent styles with Milkdown theme
       in
       src/app/template-assistant/components/template-editor/template-editor.component.scss
-- [ ] T024 [US1] Implement Milkdown editor initialization with
+- [x] T024 [US1] Implement Milkdown editor initialization with
       NgZone.runOutsideAngular() per quickstart.md Phase 5
-- [ ] T025 [US1] Integrate pill plugin with trigger character `{{` detection
+- [x] T025 [US1] Integrate pill plugin with trigger character `{{` detection
       into editor configuration
-- [ ] T026 [US1] Implement pill insertion handler that shows field selector menu
+- [x] T026 [US1] Implement pill insertion handler that shows field selector menu
       when trigger typed
-- [ ] T027 [P] [US1] Create DataFieldSelectorComponent with searchable field
+- [x] T027 [P] [US1] Create DataFieldSelectorComponent with searchable field
       list in
       src/app/template-assistant/components/data-field-selector/data-field-selector.component.ts
-- [ ] T028 [P] [US1] Create DataFieldSelectorComponent template with dropdown
+- [x] T028 [P] [US1] Create DataFieldSelectorComponent template with dropdown
       menu in
       src/app/template-assistant/components/data-field-selector/data-field-selector.component.html
-- [ ] T029 [P] [US1] Create DataFieldSelectorComponent styles in
+- [x] T029 [P] [US1] Create DataFieldSelectorComponent styles in
       src/app/template-assistant/components/data-field-selector/data-field-selector.component.scss
-- [ ] T030 [US1] Wire field selector to editor trigger events with @Input
+- [x] T030 [US1] Wire field selector to editor trigger events with @Input
       availableFields and @Output fieldSelected
-- [ ] T031 [US1] Implement pill visual rendering with background color and
+- [x] T031 [US1] Implement pill visual rendering with background color and
       border per FR-006 and FR-023
-- [ ] T032 [US1] Add markdown serialization to convert pills to {{field_id}}
+- [x] T032 [US1] Add markdown serialization to convert pills to {{field_id}}
       syntax for storage
-- [ ] T033 [US1] Implement contentChange event emitter with 300ms debounce per
+- [x] T033 [US1] Implement contentChange event emitter with 300ms debounce per
       contracts
-- [ ] T034 [US1] Add programmatic focus(), insertPill(), getContent(),
+- [x] T034 [US1] Addprogrammatic focus(), insertPill(), getContent(),
       setContent() methods per contracts
 
 **Checkpoint**: At this point, analysts can create templates with text + data

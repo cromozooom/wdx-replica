@@ -11,7 +11,7 @@ import { $inputRule } from "@milkdown/utils";
  */
 export const pillInputRule = $inputRule((ctx) => ({
   match: /\{\{$/,
-  handler: (state, match, start, end) => {
+  handler: (state: any, match: any, start: number, end: number) => {
     // Remove the trigger characters
     const tr = state.tr.delete(start, end);
 
@@ -23,4 +23,6 @@ export const pillInputRule = $inputRule((ctx) => ({
 
     return tr;
   },
+  inCode: false,
+  inCodeMark: false,
 }));
