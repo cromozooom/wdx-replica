@@ -232,8 +232,13 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
   /**
    * Programmatically insert a pill node.
    */
-  insertPill(field: DataField): void {
-    console.log("TemplateEditor: insertPill called with field:", field);
+  insertPill(field: DataField, position?: number | null): void {
+    console.log(
+      "TemplateEditor: insertPill called with field:",
+      field,
+      "at position:",
+      position,
+    );
 
     this.editor?.action((ctx) => {
       console.log("TemplateEditor: Calling command through commandsCtx...");
@@ -243,8 +248,13 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         console.log(
           "TemplateEditor: Calling insertPill with fieldId:",
           field.id,
+          "position:",
+          position,
         );
-        const result = commands.call(insertPillCommand.key, field.id);
+        const result = commands.call(insertPillCommand.key, {
+          fieldId: field.id,
+          position,
+        });
         console.log("TemplateEditor: Command result:", result);
       } catch (error) {
         console.error("TemplateEditor: Error calling command:", error);

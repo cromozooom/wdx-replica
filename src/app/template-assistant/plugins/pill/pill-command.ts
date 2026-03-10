@@ -8,27 +8,66 @@ import { Selection } from "@milkdown/prose/state";
 
 /**
  * Insert pill command.
- * Inserts a pill node at the current cursor position.
+ * Inserts a pill node at the specified position or current cursor position.
  */
 export const insertPillCommand = $command(
   "insertPill",
-  (ctx) => (fieldId?: string) => (state: any, dispatch: any) => {
-    const { schema, tr } = state;
-    const pillType = schema.nodes["pill"];
+  (ctx) =>
+    (params?: { fieldId?: string; position?: number | null } | string) =>
+    (state: any, dispatch: any) => {
+      const { schema, tr } = state;
+      const pillType = schema.nodes["pill"];
 
-    if (!pillType || !fieldId) {
-      return false;
-    }
+      // Handle both old string format and new object format for backward compatibility
+      let fieldId: string | undefined;
+      let position: number | null | undefined;
 
-    const pill = pillType.create({ fieldId });
-    const transaction = tr.replaceSelectionWith(pill);
+      if (typeof params === "string") {
+        fieldId = params;
+        position = null;
+      } else if (params && typeof params === "object") {
+        fieldId = params.fieldId;
+        position = params.position;
+      }
 
-    if (dispatch) {
-      dispatch(transaction);
-    }
+      if (!pillType || !fieldId) {
+        console.error("insertPillCommand: Missing pillType or fieldId", {
+          pillType,
+          fieldId,
+        });
+        return false;
+      }
 
-    return true;
-  },
+      console.log(
+        "insertPillCommand: Creating pill with fieldId:",
+        fieldId,
+        "at position:",
+        position,
+      );
+
+      const pill = pillType.create({ fieldId });
+
+      let transaction;
+      if (position !== null && position !== undefined) {
+        // Insert at specific position
+        console.log(
+          "insertPillCommand: Inserting at specific position:",
+          position,
+        );
+        transaction = tr.insert(position, pill);
+      } else {
+        // Replace current selection
+        console.log("insertPillCommand: Replacing selection");
+        transaction = tr.replaceSelectionWith(pill);
+      }
+
+      if (dispatch) {
+        dispatch(transaction);
+        console.log("insertPillCommand: Transaction dispatched successfully");
+      }
+
+      return true;
+    },
 );
 
 /**

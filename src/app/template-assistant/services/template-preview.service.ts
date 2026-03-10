@@ -54,7 +54,7 @@ export class TemplatePreviewService {
       });
 
       if (value === null || value === undefined) {
-        return "(Not Available)";
+        return '<span class="field-not-available">(Not Available)</span>';
       }
 
       return this.formatValue(value, field);

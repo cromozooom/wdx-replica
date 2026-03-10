@@ -24,6 +24,12 @@
 .preview-content {
   // Natural text wrapping for long content
   // white-space: pre-wrap;
+  width: 100%;
+
+  // Mobile viewport simulation
+  &.viewport-mobile {
+    max-width: 500px;
+  }
 
   // Email-like paragraph spacing
   ::ng-deep p {
@@ -47,13 +53,41 @@
   }
 
   // Heading styles - keep consistent with body text for email templates
+  $font-size-base: 0.8rem; // Assumes the browser default, typically `16px`
+  $font-size-sm: $font-size-base * 0.875;
+  $font-size-lg: $font-size-base * 1.25;
+
+  $h1-font-size: $font-size-base * 1.38;
+  $h2-font-size: $font-size-base * 1.29;
+  $h3-font-size: $font-size-base * 1.21;
+  $h4-font-size: $font-size-base * 1.13;
+  $h5-font-size: $font-size-base * 1.06;
+  $h6-font-size: $font-size-base;
+
+  ::ng-deep h1 {
+    font-size: $h1-font-size;
+  }
+  ::ng-deep h2 {
+    font-size: $h2-font-size;
+  }
+  ::ng-deep h3 {
+    font-size: $h3-font-size;
+  }
+  ::ng-deep h4 {
+    font-size: $h4-font-size;
+  }
+  ::ng-deep h5 {
+    font-size: $h5-font-size;
+  }
+  ::ng-deep h6 {
+    font-size: $h6-font-size;
+  }
   ::ng-deep h1,
   ::ng-deep h2,
   ::ng-deep h3,
   ::ng-deep h4,
   ::ng-deep h5,
   ::ng-deep h6 {
-    font-size: 1rem;
     font-weight: bold;
     margin: 0.5em 0;
     line-height: 1.4;
@@ -118,6 +152,24 @@
     border: none;
     border-top: 1px solid #dee2e6;
     margin: 1em 0;
+  }
+
+  // Field not available styling
+  ::ng-deep .field-not-available {
+    color: #dc3545;
+    font-style: italic;
+    background-color: #fff3cd;
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid #ffc107;
+    font-size: 0.9em;
+  }
+}
+
+.preview-content.viewport-mobile {
+  // Ensure mobile viewport nested styles work correctly
+  ::ng-deep * {
+    max-width: 100%;
   }
 }
 

@@ -19,6 +19,8 @@ import { TemplatePreviewService } from "../../services/template-preview.service"
 import { CustomerDataService } from "../../services/customer-data.service";
 import { CustomerRecord, DataField } from "../../models";
 
+const VIEWPORT_STORAGE_KEY = "wdx-preview-viewport";
+
 @Component({
   selector: "app-template-preview",
   standalone: true,
@@ -77,6 +79,13 @@ export class TemplatePreviewComponent implements OnInit {
     { value: "minimal", label: "Minimal" },
   ];
 
+  // Viewport selection
+  protected selectedViewport = signal<string>("desktop");
+  protected availableViewports = [
+    { value: "desktop", label: "Desktop" },
+    { value: "mobile", label: "Mobile" },
+  ];
+
   // Computed preview HTML
   protected renderedHtml = computed(() => {
     return this.interpolateAndRender(
@@ -99,6 +108,9 @@ export class TemplatePreviewComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<void> {
+    // Load viewport preference from localStorage
+    this.loadViewportPreference();
+
     // Load all customer data from JSON
     const customers = await this.customerDataService.loadCustomers();
     if (customers && customers.length > 0) {
@@ -129,6 +141,39 @@ export class TemplatePreviewComponent implements OnInit {
    */
   changeTheme(theme: string): void {
     this.selectedTheme.set(theme);
+  }
+
+  /**
+   * Change preview viewport
+   */
+  changeViewport(viewport: string): void {
+    this.selectedViewport.set(viewport);
+    this.saveViewportPreference();
+  }
+
+  /**
+   * Load viewport preference from localStorage.
+   */
+  private loadViewportPreference(): void {
+    try {
+      const stored = localStorage.getItem(VIEWPORT_STORAGE_KEY);
+      if (stored && (stored === "desktop" || stored === "mobile")) {
+        this.selectedViewport.set(stored);
+      }
+    } catch (error) {
+      console.error("Failed to load viewport preference:", error);
+    }
+  }
+
+  /**
+   * Save viewport preference to localStorage.
+   */
+  private saveViewportPreference(): void {
+    try {
+      localStorage.setItem(VIEWPORT_STORAGE_KEY, this.selectedViewport());
+    } catch (error) {
+      console.error("Failed to save viewport preference:", error);
+    }
   }
   /**
    * Interpolate template markdown with customer data and convert to HTML.

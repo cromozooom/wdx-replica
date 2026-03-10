@@ -20,6 +20,8 @@ import { DataFieldRegistryService } from "./services/data-field-registry.service
 import { TemplateStorageService } from "./services/template-storage.service";
 import { DocumentTemplate, DataField } from "./models";
 
+const SCROLL_SYNC_STORAGE_KEY = "wdx-scroll-sync-enabled";
+
 @Component({
   selector: "app-template-assistant",
   standalone: true,
@@ -52,6 +54,7 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   pillBeingReplaced = signal<{ fieldId: string; position: number } | null>(
     null,
   );
+  pillInsertPosition = signal<number | null>(null);
 
   // Template selection
   savedTemplates = signal<DocumentTemplate[]>([]);
@@ -71,6 +74,9 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    // Load scroll sync preference from localStorage
+    this.loadScrollSyncPreference();
+
     // Load all saved templates
     this.loadSavedTemplates();
 
@@ -80,8 +86,9 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
       this.currentContent.set(draft.content);
     }
 
-    // Set up scroll sync after view init
-    setTimeout(() => this.setupScrollSync(), 100);
+    // Set up scroll sync after view init if enabled
+    // Increased timeout to ensure child components are fully rendered
+    setTimeout(() => this.setupScrollSync(), 500);
   }
 
   ngOnDestroy(): void {
@@ -90,6 +97,10 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
 
   toggleScrollSync(): void {
     this.scrollSyncEnabled.update((enabled) => !enabled);
+
+    // Save preference to localStorage
+    this.saveScrollSyncPreference();
+
     if (this.scrollSyncEnabled()) {
       this.setupScrollSync();
     } else {
@@ -97,10 +108,44 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
     }
   }
 
+  /**
+   * Load scroll sync preference from localStorage.
+   */
+  private loadScrollSyncPreference(): void {
+    try {
+      const stored = localStorage.getItem(SCROLL_SYNC_STORAGE_KEY);
+      if (stored !== null) {
+        const enabled = stored === "true";
+        this.scrollSyncEnabled.set(enabled);
+        console.log("Scroll sync preference loaded:", enabled);
+      }
+    } catch (error) {
+      console.error("Failed to load scroll sync preference:", error);
+    }
+  }
+
+  /**
+   * Save scroll sync preference to localStorage.
+   */
+  private saveScrollSyncPreference(): void {
+    try {
+      localStorage.setItem(
+        SCROLL_SYNC_STORAGE_KEY,
+        String(this.scrollSyncEnabled()),
+      );
+      console.log("Scroll sync preference saved:", this.scrollSyncEnabled());
+    } catch (error) {
+      console.error("Failed to save scroll sync preference:", error);
+    }
+  }
+
   private setupScrollSync(): void {
     if (!this.scrollSyncEnabled()) {
+      console.log("Scroll sync is disabled, skipping setup");
       return;
     }
+
+    console.log("Setting up scroll sync...");
 
     // Query for scroll containers in child components
     // Using a slight delay to ensure DOM is ready
@@ -113,10 +158,18 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
       ) as HTMLElement;
 
       if (!editorContainer || !previewContainer) {
-        console.warn("Scroll containers not found");
+        console.warn("Scroll containers not found, retrying in 500ms...");
+        console.log("Editor container:", editorContainer);
+        console.log("Preview container:", previewContainer);
+
+        // Retry once more with longer delay
+        setTimeout(() => {
+          this.setupScrollSync();
+        }, 500);
         return;
       }
 
+      console.log("Scroll containers found, adding listeners");
       this.editorScrollEl = editorContainer;
       this.previewScrollEl = previewContainer;
 
@@ -126,6 +179,8 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
       // Add scroll listeners
       this.editorScrollEl.addEventListener("scroll", this.onEditorScroll);
       this.previewScrollEl.addEventListener("scroll", this.onPreviewScroll);
+
+      console.log("Scroll sync successfully enabled");
     }, 100);
   }
 
@@ -219,6 +274,9 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   onPillTrigger(event: { position: number }): void {
     console.log("Opening field selector at position:", event.position);
 
+    // Store the insertion position
+    this.pillInsertPosition.set(event.position);
+
     // Clear any pill being replaced (this is a new insertion)
     this.pillBeingReplaced.set(null);
 
@@ -237,6 +295,9 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
 
     // Store which pill is being replaced
     this.pillBeingReplaced.set(event);
+
+    // Clear insert position (this is a replacement, not a new insert)
+    this.pillInsertPosition.set(null);
 
     // Show field selector
     this.fieldSelectorPosition.set({
@@ -273,22 +334,31 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
           pillToReplace.position,
         );
       } else {
-        // Insert new pill
-        console.log("TemplateAssistant: Inserting new pill:", field.id);
-        this.editorComponent.insertPill(field);
+        // Insert new pill at stored position
+        const position = this.pillInsertPosition();
+        console.log(
+          "TemplateAssistant: Inserting new pill at position:",
+          position,
+          "field:",
+          field.id,
+        );
+        this.editorComponent.insertPill(field, position);
       }
       console.log("TemplateAssistant: Operation completed");
     } else {
       console.error("TemplateAssistant: Editor component not available!");
     }
 
-    // Clear pill being replaced and close field selector
+    // Clear pill being replaced and insert position, then close field selector
     this.pillBeingReplaced.set(null);
+    this.pillInsertPosition.set(null);
     this.closeFieldSelector();
   }
 
   closeFieldSelector(): void {
     this.fieldSelectorVisible.set(false);
+    this.pillBeingReplaced.set(null);
+    this.pillInsertPosition.set(null);
   }
 
   async saveTemplate(): Promise<void> {

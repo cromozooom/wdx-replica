@@ -1,91 +1,103 @@
-<div class="flex-grow-1 d-flex overflow-hidden">
-  <div class="w-50 d-flex flex-column overflow-hidden">
-    <!-- Template Selector -->
-    <div class="p-2 border-bottom">
-      <div class="d-flex gap-2 align-items-center">
-        <label class="form-label mb-0 fw-semibold" style="min-width: 120px"
-          >Saved Templates:</label
-        >
-        <select
-          class="form-select form-select-sm"
-          (change)="loadTemplate($any($event.target).value)"
-          [value]="selectedTemplateId() || ''"
-        >
-          <option value="">-- New Template --</option>
-          <option
-            *ngFor="let template of savedTemplates()"
-            [value]="template.id"
+<div class="flex-grow-1 d-flex flex-column overflow-hidden">
+  <div class="flex-grow-1 d-flex overflow-hidden">
+    <div class="w-50 d-flex flex-column overflow-hidden">
+      <!-- Template Selector -->
+      <div class="p-2 border-bottom">
+        <div class="d-flex gap-2 align-items-center">
+          <label class="form-label mb-0 fw-semibold" style="min-width: 120px"
+            >Saved Templates:</label
           >
-            {{ template.name || "Untitled Template" }} ({{
-              template.updatedAt | date: "short"
-            }})
-          </option>
-        </select>
-        <button
-          *ngIf="selectedTemplateId()"
-          class="btn btn-sm btn-outline-danger"
-          (click)="deleteTemplate(selectedTemplateId()!)"
-          title="Delete selected template"
-        >
-          Delete
-        </button>
-        <div class="form-check form-switch ms-auto">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="scrollSyncToggle"
-            [checked]="scrollSyncEnabled()"
-            (change)="toggleScrollSync()"
-          />
-          <label class="form-check-label" for="scrollSyncToggle">
-            Sync Scroll
-          </label>
+          <select
+            class="form-select form-select-sm"
+            (change)="loadTemplate($any($event.target).value)"
+            [value]="selectedTemplateId() || ''"
+          >
+            <option value="">-- New Template --</option>
+            <option
+              *ngFor="let template of savedTemplates()"
+              [value]="template.id"
+            >
+              {{ template.name || "Untitled Template" }} ({{
+                template.updatedAt | date: "short"
+              }})
+            </option>
+          </select>
+          <button
+            *ngIf="selectedTemplateId()"
+            class="btn btn-sm btn-outline-danger"
+            (click)="deleteTemplate(selectedTemplateId()!)"
+            title="Delete selected template"
+          >
+            Delete
+          </button>
+          <div class="form-check form-switch ms-auto">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="scrollSyncToggle"
+              [checked]="scrollSyncEnabled()"
+              (change)="toggleScrollSync()"
+            />
+            <label class="form-check-label" for="scrollSyncToggle">
+              Sync Scroll
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="p-2 flex-grow-1 d-flex flex-column overflow-hidden">
-      <app-template-editor
-        #editor
-        [content]="currentContent()"
-        [availableFields]="availableFields()"
-        (contentChange)="onContentChange($event)"
-        (pillInserted)="onPillInserted($event)"
-        (pillTrigger)="onPillTrigger($event)"
-        (pillClicked)="onPillClicked($event)"
-      ></app-template-editor>
-      <!-- Field Selector -->
-      <app-data-field-selector
-        [availableFields]="availableFields()"
-        [visible]="fieldSelectorVisible()"
-        [position]="fieldSelectorPosition()"
-        (fieldSelected)="onFieldSelected($event)"
-        (closed)="closeFieldSelector()"
-      ></app-data-field-selector>
+      <div class="p-2 flex-grow-1 d-flex flex-column overflow-hidden">
+        <app-template-editor
+          #editor
+          [content]="currentContent()"
+          [availableFields]="availableFields()"
+          (contentChange)="onContentChange($event)"
+          (pillInserted)="onPillInserted($event)"
+          (pillTrigger)="onPillTrigger($event)"
+          (pillClicked)="onPillClicked($event)"
+        ></app-template-editor>
+        <!-- Field Selector -->
+        <app-data-field-selector
+          [availableFields]="availableFields()"
+          [visible]="fieldSelectorVisible()"
+          [position]="fieldSelectorPosition()"
+          (fieldSelected)="onFieldSelected($event)"
+          (closed)="closeFieldSelector()"
+        ></app-data-field-selector>
+      </div>
     </div>
-
-    <div class="d-flex gap-2 mt-3">
-      <button class="btn btn-primary" (click)="saveTemplate()">
-        💾 Save Template
-      </button>
-      <button
-        class="btn btn-outline-primary"
-        (click)="downloadTemplate()"
-        title="Download as JSON file"
-      >
-        ⬇️ Download
-      </button>
-      <button
-        class="btn btn-outline-primary"
-        (click)="triggerFileUpload()"
-        title="Upload JSON file"
-      >
-        ⬆️ Upload
-      </button>
-      <button class="btn btn-outline-secondary" (click)="clearTemplate()">
-        Clear
-      </button>
+    <div class="w-50 d-flex flex-column overflow-hidden">
+      <app-template-preview
+        [markdown]="currentContent()"
+        [customerData]="null"
+        [fields]="availableFields()"
+      ></app-template-preview>
+    </div>
+  </div>
+  <div>
+    <div class="border-top d-flex gap-2 p-2 justify-content-between">
+      <div>
+        <button class="btn btn-outline-secondary" (click)="clearTemplate()">
+          Clear
+        </button>
+      </div>
+      <div class="btn-group">
+        <button
+          class="btn btn-outline-primary"
+          (click)="downloadTemplate()"
+          title="Download as JSON file"
+        >
+          Download
+        </button>
+        <button
+          class="btn btn-outline-primary"
+          (click)="triggerFileUpload()"
+          title="Upload JSON file"
+        >
+          Upload
+        </button>
+        <button class="btn btn-primary" (click)="saveTemplate()">Save</button>
+      </div>
 
       <!-- Hidden file input -->
       <input
@@ -96,12 +108,5 @@
         (change)="handleFileUpload($event)"
       />
     </div>
-  </div>
-  <div class="w-50 d-flex flex-column overflow-hidden">
-    <app-template-preview
-      [markdown]="currentContent()"
-      [customerData]="null"
-      [fields]="availableFields()"
-    ></app-template-preview>
   </div>
 </div>
