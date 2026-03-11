@@ -5,40 +5,40 @@
   <div
     class="editor-toolbar border-bottom p-2 d-flex gap-2 align-items-center flex-wrap"
   >
-    <!-- Heading buttons -->
-    <div class="btn-group btn-group-sm" role="group">
+    <!-- Heading dropdown -->
+    <div ngbDropdown class="btn-group btn-group-sm">
       <button
         type="button"
         class="btn btn-outline-secondary"
-        (click)="applyParagraph()"
-        title="Paragraph (convert to normal text)"
+        ngbDropdownToggle
+        title="Text Format"
       >
-        <i class="fa-solid fa-paragraph"></i>
+        <i class="fa-solid fa-text-height"></i>
       </button>
-      <button
-        type="button"
-        class="btn btn-outline-secondary d-flex gap-1 align-items-center"
-        (click)="applyHeading(1)"
-        title="Heading 1"
-      >
-        <i class="fa-solid fa-heading"></i>1
-      </button>
-      <button
-        type="button"
-        class="btn btn-outline-secondary d-flex gap-1 align-items-center"
-        (click)="applyHeading(2)"
-        title="Heading 2"
-      >
-        <i class="fa-solid fa-heading"></i>2
-      </button>
-      <button
-        type="button"
-        class="btn btn-outline-secondary d-flex gap-1 align-items-center"
-        (click)="applyHeading(3)"
-        title="Heading 3"
-      >
-        <i class="fa-solid fa-heading"></i>3
-      </button>
+      <div ngbDropdownMenu>
+        <button ngbDropdownItem type="button" (click)="applyParagraph()">
+          <i class="fa-solid fa-paragraph me-2"></i>Paragraph
+        </button>
+        <div class="dropdown-divider"></div>
+        <button ngbDropdownItem type="button" (click)="applyHeading(1)">
+          <i class="fa-solid fa-heading me-2"></i>Heading 1
+        </button>
+        <button ngbDropdownItem type="button" (click)="applyHeading(2)">
+          <i class="fa-solid fa-heading me-2"></i>Heading 2
+        </button>
+        <button ngbDropdownItem type="button" (click)="applyHeading(3)">
+          <i class="fa-solid fa-heading me-2"></i>Heading 3
+        </button>
+        <button ngbDropdownItem type="button" (click)="applyHeading(4)">
+          <i class="fa-solid fa-heading me-2"></i>Heading 4
+        </button>
+        <button ngbDropdownItem type="button" (click)="applyHeading(5)">
+          <i class="fa-solid fa-heading me-2"></i>Heading 5
+        </button>
+        <button ngbDropdownItem type="button" (click)="applyHeading(6)">
+          <i class="fa-solid fa-heading me-2"></i>Heading 6
+        </button>
+      </div>
     </div>
 
     <div class="toolbar-divider"></div>
@@ -64,18 +64,56 @@
       <button
         type="button"
         class="btn btn-outline-secondary"
+        (click)="toggleUnderline()"
+        title="Underline (Ctrl+U)"
+      >
+        <i class="fa-solid fa-underline"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
         (click)="toggleStrikethrough()"
         title="Strikethrough"
       >
         <i class="fa-solid fa-strikethrough"></i>
       </button>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <!-- Text Alignment -->
+    <div class="btn-group btn-group-sm" role="group">
       <button
         type="button"
         class="btn btn-outline-secondary"
-        (click)="toggleCode()"
-        title="Inline Code"
+        (click)="applyAlignment('left')"
+        title="Align Left"
       >
-        <i class="fa-solid fa-code"></i>
+        <i class="fa-solid fa-align-left"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyAlignment('center')"
+        title="Align Center"
+      >
+        <i class="fa-solid fa-align-center"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyAlignment('right')"
+        title="Align Right"
+      >
+        <i class="fa-solid fa-align-right"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyAlignment('justify')"
+        title="Align Justify"
+      >
+        <i class="fa-solid fa-align-justify"></i>
       </button>
     </div>
 
@@ -113,6 +151,14 @@
 
     <!-- Insert elements -->
     <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="toggleCode()"
+        title="Inline Code"
+      >
+        <i class="fa-solid fa-code"></i>
+      </button>
       <button
         type="button"
         class="btn btn-outline-secondary"

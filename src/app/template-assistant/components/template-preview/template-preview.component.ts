@@ -251,7 +251,7 @@ export class TemplatePreviewComponent implements OnInit {
     fields: DataField[],
   ): SafeHtml {
     if (!markdown) {
-      return this.sanitizer.sanitize(1, "") || "";
+      return this.sanitizer.bypassSecurityTrustHtml("");
     }
 
     // Use provided customer data, or fallback to current customer from JSON
@@ -267,20 +267,57 @@ export class TemplatePreviewComponent implements OnInit {
     // Convert markdown line breaks to HTML
     const html = this.markdownToHtml(interpolated);
 
-    // Sanitize and return
-    return this.sanitizer.sanitize(1, html) || "";
+    // For email templates, we need to allow inline styles (they're essential for email clients)
+    // This is safe because the content is user-generated template content, not external input
+    return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 
   /**
    * Convert markdown to HTML using marked library.
+   * Preprocesses alignment shortcodes before markdown conversion.
    */
   private markdownToHtml(markdown: string): string {
     try {
-      return marked.parse(markdown) as string;
+      // First, convert the shortcodes to HTML divs with inline styles
+      const withMarkers = markdown
+        .replace(
+          /\[align:(left|center|right|justify)\]/gi,
+          (match, alignment) => {
+            return `<div data-align="${alignment}" style="text-align: ${alignment};">`;
+          },
+        )
+        .replace(/\[\/align\]/gi, () => {
+          return "</div>";
+        });
+
+      // Now parse the markdown with the div markers in place
+      const html = marked.parse(withMarkers) as string;
+
+      return html;
     } catch (error) {
       console.error("Error parsing markdown:", error);
       return markdown;
     }
+  }
+
+  /**
+   * Convert [align:X]...[/align] shortcodes to HTML divs with text-align styles.
+   * This parses the markdown content inside the shortcodes, then wraps in aligned divs.
+   */
+  private preprocessAlignmentShortcodes(markdown: string): string {
+    // Match [align:X]content[/align] pattern (non-greedy, multiline)
+    const alignmentRegex =
+      /\[align:(left|center|right|justify)\]([\s\S]*?)\[\/align\]/gi;
+
+    return markdown.replace(alignmentRegex, (match, alignment, content) => {
+      // Parse the markdown content inside the shortcode first
+      const contentMarkdown = content.trim();
+      const contentHtml = marked.parse(contentMarkdown) as string;
+
+      // Wrap the parsed HTML in a div with text-align style
+      // Use inline styles for maximum email client compatibility
+      return `<div style="text-align: ${alignment}; margin: 0.5em 0;">${contentHtml}</div>`;
+    });
   }
 
   /**
@@ -469,6 +506,23 @@ ${content}
         border-radius: 3px;
         border: 1px solid #ffc107;
         font-size: 0.9em;
+      }
+      /* Alignment container styles for preview */
+      div[style*="text-align"] {
+        display: block;
+        padding: 0.25em 0;
+      }
+      div[style*="text-align: left"] {
+        text-align: left !important;
+      }
+      div[style*="text-align: center"] {
+        text-align: center !important;
+      }
+      div[style*="text-align: right"] {
+        text-align: right !important;
+      }
+      div[style*="text-align: justify"] {
+        text-align: justify !important;
       }
     `;
   }

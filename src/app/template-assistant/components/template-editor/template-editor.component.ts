@@ -12,6 +12,7 @@ import {
   signal,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { NgbDropdownModule } from "@ng-bootstrap/ng-bootstrap";
 import {
   Editor,
   rootCtx,
@@ -53,12 +54,18 @@ import {
   pillKeymap,
   pillParser,
 } from "../../plugins/pill";
+import {
+  alignmentParser,
+  alignmentContainerNode,
+  setAlignmentCommand,
+  removeAlignmentCommand,
+} from "../../plugins/alignment";
 import { DataField } from "../../models";
 
 @Component({
   selector: "app-template-editor",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgbDropdownModule],
   templateUrl: "./template-editor.component.html",
   styleUrls: ["./template-editor.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -146,6 +153,10 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         .use(insertPillCommand)
         .use(deletePillCommand)
         .use(pillKeymap)
+        .use(alignmentParser)
+        .use(alignmentContainerNode)
+        .use(setAlignmentCommand)
+        .use(removeAlignmentCommand)
         .use(listener)
         .create();
 
@@ -295,6 +306,42 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
     });
   }
 
+  toggleUnderline(): void {
+    // Note: Underline is not part of standard Markdown.
+    // This wraps selected text in HTML <u> tags.
+    this.editor?.action((ctx) => {
+      const view = ctx.get(editorViewCtx);
+      const { state } = view;
+      const { selection, tr } = state;
+      const { from, to } = selection;
+
+      if (from === to) return; // No selection
+
+      const selectedText = state.doc.textBetween(from, to);
+
+      // Check if already underlined
+      if (selectedText.startsWith("<u>") && selectedText.endsWith("</u>")) {
+        // Remove underline
+        const unwrappedText = selectedText.slice(3, -4);
+        const transaction = tr.replaceWith(
+          from,
+          to,
+          state.schema.text(unwrappedText),
+        );
+        view.dispatch(transaction);
+      } else {
+        // Add underline
+        const underlinedText = `<u>${selectedText}</u>`;
+        const transaction = tr.replaceWith(
+          from,
+          to,
+          state.schema.text(underlinedText),
+        );
+        view.dispatch(transaction);
+      }
+    });
+  }
+
   insertTable(): void {
     const rows = prompt("Enter number of rows:", "3");
     const cols = prompt("Enter number of columns:", "3");
@@ -349,6 +396,138 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
   insertHorizontalRule(): void {
     this.editor?.action((ctx) => {
       ctx.get(commandsCtx).call(insertHrCommand.key);
+    });
+  }
+
+  /**
+   * Apply text alignment using ProseMirror alignment container nodes.
+   * Creates an alignment container that wraps the selected content.
+   */
+  applyAlignment(alignment: "left" | "center" | "right" | "justify"): void {
+    this.editor?.action((ctx) => {
+      const view = ctx.get(editorViewCtx);
+      const { state } = view;
+      const { schema, selection } = state;
+      const { $from, $to } = selection;
+
+      // Get the alignment container node type
+      const alignmentContainerType = schema.nodes["alignmentContainer"];
+      if (!alignmentContainerType) {
+        console.error("alignmentContainer node type not found in schema");
+        return;
+      }
+
+      // Check if we're already inside an alignment container
+      let depth = $from.depth;
+      let existingAlignmentDepth = -1;
+
+      while (depth > 0) {
+        const node = $from.node(depth);
+        if (node.type === alignmentContainerType) {
+          existingAlignmentDepth = depth;
+          break;
+        }
+        depth--;
+      }
+
+      if (existingAlignmentDepth > 0) {
+        // Already in an alignment container
+        const existingNode = $from.node(existingAlignmentDepth);
+        const currentAlignment = existingNode.attrs["alignment"];
+
+        if (currentAlignment === alignment) {
+          // Same alignment - unwrap (remove alignment)
+          const nodePos = $from.before(existingAlignmentDepth);
+          const nodeEndPos = $from.after(existingAlignmentDepth);
+
+          // Extract the content from inside the alignment container
+          const slice = state.doc.slice(nodePos + 1, nodeEndPos - 1);
+          const tr = state.tr.replaceRange(nodePos, nodeEndPos, slice);
+          view.dispatch(tr);
+        } else {
+          // Different alignment - update the attribute
+          console.log(
+            `Changing alignment from ${currentAlignment} to ${alignment}`,
+          );
+          const nodePos = $from.before(existingAlignmentDepth);
+          const tr = state.tr.setNodeMarkup(nodePos, null, { alignment });
+          view.dispatch(tr);
+        }
+      } else {
+        // Not in an alignment container - wrap the current block
+        const range = $from.blockRange($to);
+
+        if (!range) {
+          console.warn("No valid block range for alignment");
+          return;
+        }
+
+        // Use ProseMirror's wrap command logic
+        const wrapping = alignmentContainerType.contentMatch.findWrapping(
+          state.doc.resolve(range.start).parent.type,
+        );
+
+        if (wrapping) {
+          // Can wrap directly
+          const tr = state.tr.wrap(range, [
+            { type: alignmentContainerType, attrs: { alignment } },
+          ]);
+          view.dispatch(tr);
+        } else {
+          // Create alignment container and move content into it
+          const slice = state.doc.slice(range.start, range.end);
+          const alignmentNode = alignmentContainerType.create(
+            { alignment },
+            slice.content,
+          );
+
+          // Replace the range with the alignment container
+          const tr = state.tr.replaceRangeWith(
+            range.start,
+            range.end,
+            alignmentNode,
+          );
+          view.dispatch(tr);
+        }
+      }
+    });
+  }
+
+  /**
+   * Remove alignment (unwrap from alignment container).
+   * This is now handled by clicking the same alignment button again.
+   */
+  removeAlignment(): void {
+    this.editor?.action((ctx) => {
+      const view = ctx.get(editorViewCtx);
+      const { state } = view;
+      const { schema, selection } = state;
+      const { $from } = selection;
+
+      const alignmentContainerType = schema.nodes["alignmentContainer"];
+      if (!alignmentContainerType) return;
+
+      // Find if we're inside an alignment container
+      let depth = $from.depth;
+      let alignmentDepth = -1;
+
+      while (depth > 0) {
+        const node = $from.node(depth);
+        if (node.type === alignmentContainerType) {
+          alignmentDepth = depth;
+          break;
+        }
+        depth--;
+      }
+
+      if (alignmentDepth > 0) {
+        // Unwrap the alignment container
+        const nodePos = $from.before(alignmentDepth);
+        const nodeEndPos = $from.after(alignmentDepth);
+        const slice = state.doc.slice(nodePos + 1, nodeEndPos - 1);
+        const tr = state.tr.replaceRange(nodePos, nodeEndPos, slice);
+        view.dispatch(tr);
+      }
     });
   }
 
@@ -433,7 +612,9 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
     let markdown = "";
     this.editor?.action((ctx) => {
       const serializer = ctx.get(serializerCtx);
-      markdown = serializer(ctx.get(editorViewCtx).state.doc);
+      const doc = ctx.get(editorViewCtx).state.doc;
+
+      markdown = serializer(doc);
     });
     return markdown;
   }
