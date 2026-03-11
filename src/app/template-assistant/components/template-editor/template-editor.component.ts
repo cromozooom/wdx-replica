@@ -12,6 +12,7 @@ import {
   signal,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { NgbDropdownModule } from "@ng-bootstrap/ng-bootstrap";
 import {
   Editor,
   rootCtx,
@@ -58,7 +59,7 @@ import { DataField } from "../../models";
 @Component({
   selector: "app-template-editor",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgbDropdownModule],
   templateUrl: "./template-editor.component.html",
   styleUrls: ["./template-editor.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -292,6 +293,42 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
   toggleStrikethrough(): void {
     this.editor?.action((ctx) => {
       ctx.get(commandsCtx).call(toggleStrikethroughCommand.key);
+    });
+  }
+
+  toggleUnderline(): void {
+    // Note: Underline is not part of standard Markdown.
+    // This wraps selected text in HTML <u> tags.
+    this.editor?.action((ctx) => {
+      const view = ctx.get(editorViewCtx);
+      const { state } = view;
+      const { selection, tr } = state;
+      const { from, to } = selection;
+
+      if (from === to) return; // No selection
+
+      const selectedText = state.doc.textBetween(from, to);
+
+      // Check if already underlined
+      if (selectedText.startsWith("<u>") && selectedText.endsWith("</u>")) {
+        // Remove underline
+        const unwrappedText = selectedText.slice(3, -4);
+        const transaction = tr.replaceWith(
+          from,
+          to,
+          state.schema.text(unwrappedText),
+        );
+        view.dispatch(transaction);
+      } else {
+        // Add underline
+        const underlinedText = `<u>${selectedText}</u>`;
+        const transaction = tr.replaceWith(
+          from,
+          to,
+          state.schema.text(underlinedText),
+        );
+        view.dispatch(transaction);
+      }
     });
   }
 
