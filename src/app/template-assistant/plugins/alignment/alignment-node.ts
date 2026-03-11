@@ -56,13 +56,6 @@ export const alignmentContainerNode = $node("alignmentContainer", () => ({
     runner: (state: any, node: any) => {
       const alignment = node.attrs.alignment || "left";
 
-      console.log(
-        "🔴 toMarkdown CALLED for alignment:",
-        alignment,
-        "children:",
-        node.content.childCount,
-      );
-
       // Create proper mdast 'html' nodes for the shortcodes
       state.addNode("html", undefined, `[align:${alignment}]`);
 
@@ -71,8 +64,6 @@ export const alignmentContainerNode = $node("alignmentContainer", () => ({
 
       // Close with html node
       state.addNode("html", undefined, `[/align]`);
-
-      console.log("🔴 toMarkdown FINISHED for alignment:", alignment);
     },
   },
 }));

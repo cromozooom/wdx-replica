@@ -278,37 +278,20 @@ export class TemplatePreviewComponent implements OnInit {
    */
   private markdownToHtml(markdown: string): string {
     try {
-      // Log the incoming markdown to check if shortcodes are present
-      if (markdown.includes("[align:")) {
-        console.log(
-          "🎨 Markdown contains alignment shortcodes:",
-          markdown.substring(0, 200),
-        );
-      }
-
       // First, convert the shortcodes to HTML divs with inline styles
       const withMarkers = markdown
         .replace(
           /\[align:(left|center|right|justify)\]/gi,
           (match, alignment) => {
-            console.log(`🎨 Replacing [align:${alignment}] with styled div`);
             return `<div data-align="${alignment}" style="text-align: ${alignment};">`;
           },
         )
         .replace(/\[\/align\]/gi, () => {
-          console.log("🎨 Replacing [/align] with </div>");
           return "</div>";
         });
 
-      console.log(
-        "🎨 After shortcode replacement:",
-        withMarkers.substring(0, 300),
-      );
-
       // Now parse the markdown with the div markers in place
       const html = marked.parse(withMarkers) as string;
-
-      console.log("🎨 Processed HTML preview:", html.substring(0, 300));
 
       return html;
     } catch (error) {
@@ -326,18 +309,7 @@ export class TemplatePreviewComponent implements OnInit {
     const alignmentRegex =
       /\[align:(left|center|right|justify)\]([\s\S]*?)\[\/align\]/gi;
 
-    // Check if there are any alignment shortcodes
-    const hasAlignments = alignmentRegex.test(markdown);
-    if (hasAlignments) {
-      console.log("🎨 Found alignment shortcodes in markdown");
-    }
-
-    // Reset regex after test
-    alignmentRegex.lastIndex = 0;
-
     return markdown.replace(alignmentRegex, (match, alignment, content) => {
-      console.log(`🎨 Processing alignment: ${alignment}`);
-
       // Parse the markdown content inside the shortcode first
       const contentMarkdown = content.trim();
       const contentHtml = marked.parse(contentMarkdown) as string;

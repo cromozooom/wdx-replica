@@ -165,24 +165,12 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         const listenerPlugin = ctx.get(listenerCtx);
 
         listenerPlugin.markdownUpdated((ctx, markdown) => {
-          console.log(
-            "🔄 markdownUpdated event fired, markdown length:",
-            markdown.length,
-          );
-
-          if (markdown.includes("[align:")) {
-            console.log("✅ markdownUpdated: Contains [align:] shortcodes");
-          } else {
-            console.log("❌ markdownUpdated: NO [align:] shortcodes");
-          }
-
           if (this.contentChangeTimeout) {
             clearTimeout(this.contentChangeTimeout);
           }
 
           this.contentChangeTimeout = setTimeout(() => {
             this.ngZone.run(() => {
-              console.log("⬆️ Emitting markdown to parent component");
               this.contentChange.emit(markdown);
               // Validate pills after content change
               this.validatePills();
@@ -449,7 +437,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
 
         if (currentAlignment === alignment) {
           // Same alignment - unwrap (remove alignment)
-          console.log(`Removing ${alignment} alignment`);
           const nodePos = $from.before(existingAlignmentDepth);
           const nodeEndPos = $from.after(existingAlignmentDepth);
 
@@ -475,8 +462,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
           return;
         }
 
-        console.log(`Applying ${alignment} alignment to block`);
-
         // Use ProseMirror's wrap command logic
         const wrapping = alignmentContainerType.contentMatch.findWrapping(
           state.doc.resolve(range.start).parent.type,
@@ -484,14 +469,12 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
 
         if (wrapping) {
           // Can wrap directly
-          console.log("Using wrap method");
           const tr = state.tr.wrap(range, [
             { type: alignmentContainerType, attrs: { alignment } },
           ]);
           view.dispatch(tr);
         } else {
           // Create alignment container and move content into it
-          console.log("Using manual node creation");
           const slice = state.doc.slice(range.start, range.end);
           const alignmentNode = alignmentContainerType.create(
             { alignment },
@@ -631,24 +614,7 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
       const serializer = ctx.get(serializerCtx);
       const doc = ctx.get(editorViewCtx).state.doc;
 
-      console.log(
-        "📝 getContent() called, doc has",
-        doc.childCount,
-        "top-level nodes",
-      );
-
       markdown = serializer(doc);
-
-      console.log("📝 Serialized markdown length:", markdown.length);
-
-      // Log if alignment shortcodes are present in serialized markdown
-      if (markdown.includes("[align:")) {
-        console.log("✅ Alignment shortcodes found in serialized markdown");
-        console.log("First 500 chars:", markdown.substring(0, 500));
-      } else {
-        console.log("❌ NO alignment shortcodes in serialized markdown");
-        console.log("First 500 chars:", markdown.substring(0, 500));
-      }
     });
     return markdown;
   }
