@@ -43,8 +43,11 @@ Word documents into email. Email clients have severe limitations:
 - ⚠️ No background images (unreliable)
 - ⚠️ No external stylesheets
 
-Keep templates simple: headings, paragraphs, alignment, lists, tables. If it
-needs complex layout or graphics, use a professional email design tool instead.
+**This is a professional email builder focused on reliability and compatibility
+across all email clients and devices.** We start with solid foundations
+(headings, paragraphs, alignment, lists, tables, data merging) and will expand
+features over time based on real-world needs. Complex layouts may come in future
+releases as we validate email client support.
 
 ```markdown
 [align:center]
