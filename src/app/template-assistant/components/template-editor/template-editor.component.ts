@@ -73,10 +73,17 @@ import { DataField } from "../../models";
 export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
   private _content = "";
   private _availableFields: DataField[] = [];
+  private isUserTyping = false;
+  private userTypingTimeout: any;
 
   @Input()
   set content(value: string) {
     this._content = value;
+    // Don't update editor content while user is actively typing
+    // This prevents cursor jumping to end
+    if (this.isUserTyping) {
+      return;
+    }
     // Update editor if already initialized and content actually changed
     if (this.editor && value !== this.getContent()) {
       this.setContent(value);
@@ -127,6 +134,9 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
     if (this.contentChangeTimeout) {
       clearTimeout(this.contentChangeTimeout);
     }
+    if (this.userTypingTimeout) {
+      clearTimeout(this.userTypingTimeout);
+    }
     document.removeEventListener("pill-trigger", this.handlePillTrigger);
     this.editorElement?.nativeElement?.removeEventListener(
       "click",
@@ -165,6 +175,17 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         const listenerPlugin = ctx.get(listenerCtx);
 
         listenerPlugin.markdownUpdated((ctx, markdown) => {
+          // Mark that user is typing
+          this.isUserTyping = true;
+
+          // Reset user typing flag after 1 second of no changes
+          if (this.userTypingTimeout) {
+            clearTimeout(this.userTypingTimeout);
+          }
+          this.userTypingTimeout = setTimeout(() => {
+            this.isUserTyping = false;
+          }, 1000);
+
           if (this.contentChangeTimeout) {
             clearTimeout(this.contentChangeTimeout);
           }
