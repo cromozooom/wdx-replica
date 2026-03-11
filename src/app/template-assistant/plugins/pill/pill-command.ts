@@ -38,32 +38,19 @@ export const insertPillCommand = $command(
         return false;
       }
 
-      console.log(
-        "insertPillCommand: Creating pill with fieldId:",
-        fieldId,
-        "at position:",
-        position,
-      );
-
       const pill = pillType.create({ fieldId });
 
       let transaction;
       if (position !== null && position !== undefined) {
         // Insert at specific position
-        console.log(
-          "insertPillCommand: Inserting at specific position:",
-          position,
-        );
         transaction = tr.insert(position, pill);
       } else {
         // Replace current selection
-        console.log("insertPillCommand: Replacing selection");
         transaction = tr.replaceSelectionWith(pill);
       }
 
       if (dispatch) {
         dispatch(transaction);
-        console.log("insertPillCommand: Transaction dispatched successfully");
       }
 
       return true;

@@ -26,19 +26,11 @@ export class TemplatePreviewService {
     customerData: CustomerRecord,
     fields: DataField[],
   ): string {
-    console.log("Preview interpolation:", {
-      markdown,
-      hasData: !!customerData,
-      dataKeys: customerData ? Object.keys(customerData) : [],
-      fieldsCount: fields.length,
-    });
-
     // First unescape any escaped underscores in field placeholders
     // Markdown serializers often escape _ to \_ to prevent italic formatting
     const unescaped = markdown.replace(/\{\{([^}]+)\}\}/g, (match, fieldId) => {
       // Remove backslash escapes from field ID
       const cleanFieldId = fieldId.replace(/\\/g, "");
-      console.log(`Unescaping: ${fieldId} → ${cleanFieldId}`);
       return `{{${cleanFieldId}}}`;
     });
 
@@ -46,12 +38,6 @@ export class TemplatePreviewService {
     return unescaped.replace(/\{\{([^}]+)\}\}/g, (match, fieldId) => {
       const field = fields.find((f) => f.id === fieldId);
       const value = customerData[fieldId];
-
-      console.log(`Interpolating ${fieldId}:`, {
-        found: !!field,
-        value,
-        fieldLabel: field?.label,
-      });
 
       if (value === null || value === undefined) {
         return '<span class="field-not-available">(Not Available)</span>';

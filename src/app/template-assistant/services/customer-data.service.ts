@@ -33,7 +33,6 @@ export class CustomerDataService {
       const customers = data.customers || [];
       this.customers$.set(customers);
       this.dataLoaded = true;
-      console.log(`✓ Loaded ${customers.length} customers from JSON`);
       return this.customers$();
     } catch (error) {
       console.error("Failed to load customer data:", error);

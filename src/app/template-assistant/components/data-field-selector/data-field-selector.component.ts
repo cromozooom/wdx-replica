@@ -78,10 +78,8 @@ export class DataFieldSelectorComponent {
   }
 
   selectField(field: DataField): void {
-    console.log("DataFieldSelector: Field clicked:", field);
     this.fieldSelected.emit(field);
     this.searchQuery.set("");
-    console.log("DataFieldSelector: Field selection event emitted");
   }
 
   close(): void {

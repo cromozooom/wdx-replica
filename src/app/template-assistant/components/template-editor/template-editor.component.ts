@@ -130,9 +130,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
 
   private async initEditor(): Promise<void> {
     try {
-      console.log("Initializing Milkdown editor...");
-      console.log("Editor element:", this.editorElement.nativeElement);
-
       this.editor = await Editor.make()
         .config((ctx) => {
           ctx.set(rootCtx, this.editorElement.nativeElement);
@@ -151,8 +148,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         .use(pillKeymap)
         .use(listener)
         .create();
-
-      console.log("Milkdown editor created successfully");
 
       // Listen for content changes with 300ms debounce
       this.editor.action((ctx) => {
@@ -189,8 +184,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         "click",
         this.handlePillClick,
       );
-
-      console.log("Editor initialized and ready");
     } catch (error) {
       console.error("Failed to initialize Milkdown editor:", error);
       console.error("Error details:", error);
@@ -201,7 +194,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
     // Emit event to show field selector
     this.ngZone.run(() => {
       const position = (event as CustomEvent).detail?.position || 0;
-      console.log("Pill trigger detected at position:", position);
       this.pillTrigger.emit({ position });
     });
   };
@@ -214,8 +206,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
       const fieldId = target.getAttribute("data-field-id");
 
       if (fieldId) {
-        console.log("Pill clicked:", fieldId);
-
         // Get the position of the clicked pill in the document
         this.editor?.action((ctx) => {
           const view = ctx.get(editorViewCtx);
@@ -233,35 +223,18 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
    * Programmatically insert a pill node.
    */
   insertPill(field: DataField, position?: number | null): void {
-    console.log(
-      "TemplateEditor: insertPill called with field:",
-      field,
-      "at position:",
-      position,
-    );
-
     this.editor?.action((ctx) => {
-      console.log("TemplateEditor: Calling command through commandsCtx...");
       try {
         const commands = ctx.get(commandsCtx);
-        console.log("TemplateEditor: Commands context:", commands);
-        console.log(
-          "TemplateEditor: Calling insertPill with fieldId:",
-          field.id,
-          "position:",
-          position,
-        );
-        const result = commands.call(insertPillCommand.key, {
+        commands.call(insertPillCommand.key, {
           fieldId: field.id,
           position,
         });
-        console.log("TemplateEditor: Command result:", result);
       } catch (error) {
         console.error("TemplateEditor: Error calling command:", error);
       }
     });
 
-    console.log("TemplateEditor: Emitting pillInserted event");
     this.pillInserted.emit(field);
   }
 
@@ -410,12 +383,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
    * Replace an existing pill node with a new one.
    */
   replacePill(oldFieldId: string, newField: DataField, position: number): void {
-    console.log("TemplateEditor: replacePill called", {
-      oldFieldId,
-      newField,
-      position,
-    });
-
     this.editor?.action((ctx) => {
       try {
         const view = ctx.get(editorViewCtx);
@@ -438,7 +405,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
           const transaction = tr.replaceWith(deleteFrom, deleteTo, newPill);
 
           view.dispatch(transaction);
-          console.log("TemplateEditor: Pill replaced successfully");
         } else {
           console.error("TemplateEditor: No pill found at position", position);
         }
@@ -447,7 +413,6 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
       }
     });
 
-    console.log("TemplateEditor: Emitting pillInserted event");
     this.pillInserted.emit(newField);
   }
 

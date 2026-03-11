@@ -44,12 +44,7 @@ export class DataFieldRegistryService {
         const fields = keys.map((key) => this.createFieldFromKey(key));
         this.fields$.set(fields);
         this.dataLoaded = true;
-        console.log(
-          `✓ Loaded ${fields.length} fields from JSON:`,
-          fields.map((f) => f.id).join(", "),
-        );
       } else {
-        console.warn("No customers found in JSON data");
         this.fields$.set([]);
       }
     } catch (error) {

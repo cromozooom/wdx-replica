@@ -116,7 +116,6 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
    */
   onTabChange(): void {
     if (this.scrollSyncEnabled()) {
-      console.log("Tab changed, re-triggering scroll sync...");
       setTimeout(() => {
         this.setupScrollSync();
       }, 200);
@@ -132,7 +131,6 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
       if (stored !== null) {
         const enabled = stored === "true";
         this.scrollSyncEnabled.set(enabled);
-        console.log("Scroll sync preference loaded:", enabled);
       }
     } catch (error) {
       console.error("Failed to load scroll sync preference:", error);
@@ -148,7 +146,6 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
         SCROLL_SYNC_STORAGE_KEY,
         String(this.scrollSyncEnabled()),
       );
-      console.log("Scroll sync preference saved:", this.scrollSyncEnabled());
     } catch (error) {
       console.error("Failed to save scroll sync preference:", error);
     }
@@ -156,11 +153,8 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
 
   private setupScrollSync(): void {
     if (!this.scrollSyncEnabled()) {
-      console.log("Scroll sync is disabled, skipping setup");
       return;
     }
-
-    console.log("Setting up scroll sync...");
 
     // Query for scroll containers in child components
     // Using a slight delay to ensure DOM is ready
@@ -179,22 +173,12 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
       ) as HTMLElement;
 
       if (!editorContainer) {
-        console.warn("Editor container not found, retrying in 500ms...");
-        console.log("Editor container:", editorContainer);
-
         // Retry once more with longer delay
         setTimeout(() => {
           this.setupScrollSync();
         }, 500);
         return;
       }
-
-      console.log("Editor container found");
-      console.log("Preview containers:", {
-        html: !!previewContainer,
-        markdown: !!mdPreviewContainer,
-        htmlWithVariables: !!htmlPreviewContainer,
-      });
 
       this.editorScrollEl = editorContainer;
       this.previewScrollEl = previewContainer;
@@ -225,8 +209,6 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
           this.onHtmlPreviewScroll,
         );
       }
-
-      console.log("Scroll sync successfully enabled");
     }, 100);
   }
 
@@ -357,8 +339,6 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   }
 
   onPillTrigger(event: { position: number }): void {
-    console.log("Opening field selector at position:", event.position);
-
     // Store the insertion position
     this.pillInsertPosition.set(event.position);
 
@@ -376,8 +356,6 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   }
 
   onPillClicked(event: { fieldId: string; position: number }): void {
-    console.log("Pill clicked:", event.fieldId, "at position:", event.position);
-
     // Store which pill is being replaced
     this.pillBeingReplaced.set(event);
 
@@ -394,25 +372,15 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   }
 
   onPillInserted(field: DataField): void {
-    console.log("Pill inserted:", field);
     this.closeFieldSelector();
   }
 
   onFieldSelected(field: DataField): void {
-    console.log("TemplateAssistant: Field selected:", field);
-    console.log("TemplateAssistant: Editor component:", this.editorComponent);
-
     const pillToReplace = this.pillBeingReplaced();
 
     if (this.editorComponent) {
       if (pillToReplace) {
         // Replace existing pill
-        console.log(
-          "TemplateAssistant: Replacing pill:",
-          pillToReplace.fieldId,
-          "with:",
-          field.id,
-        );
         this.editorComponent.replacePill(
           pillToReplace.fieldId,
           field,
@@ -421,15 +389,8 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
       } else {
         // Insert new pill at stored position
         const position = this.pillInsertPosition();
-        console.log(
-          "TemplateAssistant: Inserting new pill at position:",
-          position,
-          "field:",
-          field.id,
-        );
         this.editorComponent.insertPill(field, position);
       }
-      console.log("TemplateAssistant: Operation completed");
     } else {
       console.error("TemplateAssistant: Editor component not available!");
     }
