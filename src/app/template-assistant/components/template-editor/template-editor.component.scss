@@ -368,4 +368,28 @@
       position: absolute;
     }
   }
+
+  // Alignment container styling (outside .milkdown to ensure it applies)
+  ::ng-deep .alignment-container {
+    &.alignment-left {
+      text-align: left !important;
+    }
+
+    &.alignment-center {
+      text-align: center !important;
+    }
+
+    &.alignment-right {
+      text-align: right !important;
+    }
+
+    &.alignment-justify {
+      text-align: justify !important;
+    }
+
+    // Ensure child content inherits alignment
+    * {
+      text-align: inherit;
+    }
+  }
 }

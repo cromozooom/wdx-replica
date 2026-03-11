@@ -54,6 +54,12 @@ import {
   pillKeymap,
   pillParser,
 } from "../../plugins/pill";
+import {
+  alignmentParser,
+  alignmentContainerNode,
+  setAlignmentCommand,
+  removeAlignmentCommand,
+} from "../../plugins/alignment";
 import { DataField } from "../../models";
 
 @Component({
@@ -147,6 +153,10 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         .use(insertPillCommand)
         .use(deletePillCommand)
         .use(pillKeymap)
+        .use(alignmentParser)
+        .use(alignmentContainerNode)
+        .use(setAlignmentCommand)
+        .use(removeAlignmentCommand)
         .use(listener)
         .create();
 
@@ -155,12 +165,24 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
         const listenerPlugin = ctx.get(listenerCtx);
 
         listenerPlugin.markdownUpdated((ctx, markdown) => {
+          console.log(
+            "🔄 markdownUpdated event fired, markdown length:",
+            markdown.length,
+          );
+
+          if (markdown.includes("[align:")) {
+            console.log("✅ markdownUpdated: Contains [align:] shortcodes");
+          } else {
+            console.log("❌ markdownUpdated: NO [align:] shortcodes");
+          }
+
           if (this.contentChangeTimeout) {
             clearTimeout(this.contentChangeTimeout);
           }
 
           this.contentChangeTimeout = setTimeout(() => {
             this.ngZone.run(() => {
+              console.log("⬆️ Emitting markdown to parent component");
               this.contentChange.emit(markdown);
               // Validate pills after content change
               this.validatePills();
@@ -390,6 +412,143 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
   }
 
   /**
+   * Apply text alignment using ProseMirror alignment container nodes.
+   * Creates an alignment container that wraps the selected content.
+   */
+  applyAlignment(alignment: "left" | "center" | "right" | "justify"): void {
+    this.editor?.action((ctx) => {
+      const view = ctx.get(editorViewCtx);
+      const { state } = view;
+      const { schema, selection } = state;
+      const { $from, $to } = selection;
+
+      // Get the alignment container node type
+      const alignmentContainerType = schema.nodes["alignmentContainer"];
+      if (!alignmentContainerType) {
+        console.error("alignmentContainer node type not found in schema");
+        return;
+      }
+
+      // Check if we're already inside an alignment container
+      let depth = $from.depth;
+      let existingAlignmentDepth = -1;
+
+      while (depth > 0) {
+        const node = $from.node(depth);
+        if (node.type === alignmentContainerType) {
+          existingAlignmentDepth = depth;
+          break;
+        }
+        depth--;
+      }
+
+      if (existingAlignmentDepth > 0) {
+        // Already in an alignment container
+        const existingNode = $from.node(existingAlignmentDepth);
+        const currentAlignment = existingNode.attrs["alignment"];
+
+        if (currentAlignment === alignment) {
+          // Same alignment - unwrap (remove alignment)
+          console.log(`Removing ${alignment} alignment`);
+          const nodePos = $from.before(existingAlignmentDepth);
+          const nodeEndPos = $from.after(existingAlignmentDepth);
+
+          // Extract the content from inside the alignment container
+          const slice = state.doc.slice(nodePos + 1, nodeEndPos - 1);
+          const tr = state.tr.replaceRange(nodePos, nodeEndPos, slice);
+          view.dispatch(tr);
+        } else {
+          // Different alignment - update the attribute
+          console.log(
+            `Changing alignment from ${currentAlignment} to ${alignment}`,
+          );
+          const nodePos = $from.before(existingAlignmentDepth);
+          const tr = state.tr.setNodeMarkup(nodePos, null, { alignment });
+          view.dispatch(tr);
+        }
+      } else {
+        // Not in an alignment container - wrap the current block
+        const range = $from.blockRange($to);
+
+        if (!range) {
+          console.warn("No valid block range for alignment");
+          return;
+        }
+
+        console.log(`Applying ${alignment} alignment to block`);
+
+        // Use ProseMirror's wrap command logic
+        const wrapping = alignmentContainerType.contentMatch.findWrapping(
+          state.doc.resolve(range.start).parent.type,
+        );
+
+        if (wrapping) {
+          // Can wrap directly
+          console.log("Using wrap method");
+          const tr = state.tr.wrap(range, [
+            { type: alignmentContainerType, attrs: { alignment } },
+          ]);
+          view.dispatch(tr);
+        } else {
+          // Create alignment container and move content into it
+          console.log("Using manual node creation");
+          const slice = state.doc.slice(range.start, range.end);
+          const alignmentNode = alignmentContainerType.create(
+            { alignment },
+            slice.content,
+          );
+
+          // Replace the range with the alignment container
+          const tr = state.tr.replaceRangeWith(
+            range.start,
+            range.end,
+            alignmentNode,
+          );
+          view.dispatch(tr);
+        }
+      }
+    });
+  }
+
+  /**
+   * Remove alignment (unwrap from alignment container).
+   * This is now handled by clicking the same alignment button again.
+   */
+  removeAlignment(): void {
+    this.editor?.action((ctx) => {
+      const view = ctx.get(editorViewCtx);
+      const { state } = view;
+      const { schema, selection } = state;
+      const { $from } = selection;
+
+      const alignmentContainerType = schema.nodes["alignmentContainer"];
+      if (!alignmentContainerType) return;
+
+      // Find if we're inside an alignment container
+      let depth = $from.depth;
+      let alignmentDepth = -1;
+
+      while (depth > 0) {
+        const node = $from.node(depth);
+        if (node.type === alignmentContainerType) {
+          alignmentDepth = depth;
+          break;
+        }
+        depth--;
+      }
+
+      if (alignmentDepth > 0) {
+        // Unwrap the alignment container
+        const nodePos = $from.before(alignmentDepth);
+        const nodeEndPos = $from.after(alignmentDepth);
+        const slice = state.doc.slice(nodePos + 1, nodeEndPos - 1);
+        const tr = state.tr.replaceRange(nodePos, nodeEndPos, slice);
+        view.dispatch(tr);
+      }
+    });
+  }
+
+  /**
    * Validate all pills in the editor and mark invalid ones.
    * Invalid pills are those whose fieldId doesn't exist in availableFields.
    */
@@ -470,7 +629,26 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
     let markdown = "";
     this.editor?.action((ctx) => {
       const serializer = ctx.get(serializerCtx);
-      markdown = serializer(ctx.get(editorViewCtx).state.doc);
+      const doc = ctx.get(editorViewCtx).state.doc;
+
+      console.log(
+        "📝 getContent() called, doc has",
+        doc.childCount,
+        "top-level nodes",
+      );
+
+      markdown = serializer(doc);
+
+      console.log("📝 Serialized markdown length:", markdown.length);
+
+      // Log if alignment shortcodes are present in serialized markdown
+      if (markdown.includes("[align:")) {
+        console.log("✅ Alignment shortcodes found in serialized markdown");
+        console.log("First 500 chars:", markdown.substring(0, 500));
+      } else {
+        console.log("❌ NO alignment shortcodes in serialized markdown");
+        console.log("First 500 chars:", markdown.substring(0, 500));
+      }
     });
     return markdown;
   }

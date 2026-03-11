@@ -81,6 +81,44 @@
 
     <div class="toolbar-divider"></div>
 
+    <!-- Text Alignment -->
+    <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyAlignment('left')"
+        title="Align Left"
+      >
+        <i class="fa-solid fa-align-left"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyAlignment('center')"
+        title="Align Center"
+      >
+        <i class="fa-solid fa-align-center"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyAlignment('right')"
+        title="Align Right"
+      >
+        <i class="fa-solid fa-align-right"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyAlignment('justify')"
+        title="Align Justify"
+      >
+        <i class="fa-solid fa-align-justify"></i>
+      </button>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
     <!-- Lists & Blocks -->
     <div class="btn-group btn-group-sm" role="group">
       <button
