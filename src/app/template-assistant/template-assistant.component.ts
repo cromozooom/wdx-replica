@@ -46,6 +46,8 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   private isScrolling = false;
   private editorScrollEl: HTMLElement | null = null;
   private previewScrollEl: HTMLElement | null = null;
+  private mdPreviewScrollEl: HTMLElement | null = null;
+  private htmlPreviewScrollEl: HTMLElement | null = null;
   fieldSelectorVisible = signal<boolean>(false);
   fieldSelectorPosition = signal<{ top: number; left: number }>({
     top: 0,
@@ -109,6 +111,19 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   }
 
   /**
+   * Re-trigger scroll sync setup when tabs change.
+   * This ensures the new tab's scroll container is properly synced.
+   */
+  onTabChange(): void {
+    if (this.scrollSyncEnabled()) {
+      console.log("Tab changed, re-triggering scroll sync...");
+      setTimeout(() => {
+        this.setupScrollSync();
+      }, 200);
+    }
+  }
+
+  /**
    * Load scroll sync preference from localStorage.
    */
   private loadScrollSyncPreference(): void {
@@ -156,11 +171,16 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
       const previewContainer = document.querySelector(
         "[data-scroll-preview]",
       ) as HTMLElement;
+      const mdPreviewContainer = document.querySelector(
+        "[data-scroll-md-preview]",
+      ) as HTMLElement;
+      const htmlPreviewContainer = document.querySelector(
+        "[data-scroll-html-preview]",
+      ) as HTMLElement;
 
-      if (!editorContainer || !previewContainer) {
-        console.warn("Scroll containers not found, retrying in 500ms...");
+      if (!editorContainer) {
+        console.warn("Editor container not found, retrying in 500ms...");
         console.log("Editor container:", editorContainer);
-        console.log("Preview container:", previewContainer);
 
         // Retry once more with longer delay
         setTimeout(() => {
@@ -169,35 +189,70 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
         return;
       }
 
-      console.log("Scroll containers found, adding listeners");
+      console.log("Editor container found");
+      console.log("Preview containers:", {
+        html: !!previewContainer,
+        markdown: !!mdPreviewContainer,
+        htmlWithVariables: !!htmlPreviewContainer,
+      });
+
       this.editorScrollEl = editorContainer;
       this.previewScrollEl = previewContainer;
+      this.mdPreviewScrollEl = mdPreviewContainer;
+      this.htmlPreviewScrollEl = htmlPreviewContainer;
 
       // Remove existing listeners first
       this.removeScrollListeners();
 
-      // Add scroll listeners
-      this.editorScrollEl.addEventListener("scroll", this.onEditorScroll);
-      this.previewScrollEl.addEventListener("scroll", this.onPreviewScroll);
+      // Add scroll listeners for editor
+      if (this.editorScrollEl) {
+        this.editorScrollEl.addEventListener("scroll", this.onEditorScroll);
+      }
+
+      // Add scroll listeners for all preview containers
+      if (this.previewScrollEl) {
+        this.previewScrollEl.addEventListener("scroll", this.onPreviewScroll);
+      }
+      if (this.mdPreviewScrollEl) {
+        this.mdPreviewScrollEl.addEventListener(
+          "scroll",
+          this.onMdPreviewScroll,
+        );
+      }
+      if (this.htmlPreviewScrollEl) {
+        this.htmlPreviewScrollEl.addEventListener(
+          "scroll",
+          this.onHtmlPreviewScroll,
+        );
+      }
 
       console.log("Scroll sync successfully enabled");
     }, 100);
   }
 
   private removeScrollListeners(): void {
-    if (this.editorScrollEl && this.previewScrollEl) {
+    if (this.editorScrollEl) {
       this.editorScrollEl.removeEventListener("scroll", this.onEditorScroll);
+    }
+    if (this.previewScrollEl) {
       this.previewScrollEl.removeEventListener("scroll", this.onPreviewScroll);
+    }
+    if (this.mdPreviewScrollEl) {
+      this.mdPreviewScrollEl.removeEventListener(
+        "scroll",
+        this.onMdPreviewScroll,
+      );
+    }
+    if (this.htmlPreviewScrollEl) {
+      this.htmlPreviewScrollEl.removeEventListener(
+        "scroll",
+        this.onHtmlPreviewScroll,
+      );
     }
   }
 
   private onEditorScroll = (): void => {
-    if (
-      this.isScrolling ||
-      !this.scrollSyncEnabled() ||
-      !this.editorScrollEl ||
-      !this.previewScrollEl
-    ) {
+    if (this.isScrolling || !this.scrollSyncEnabled() || !this.editorScrollEl) {
       return;
     }
 
@@ -205,9 +260,17 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
     const scrollPercentage =
       this.editorScrollEl.scrollTop /
       (this.editorScrollEl.scrollHeight - this.editorScrollEl.clientHeight);
-    this.previewScrollEl.scrollTop =
-      scrollPercentage *
-      (this.previewScrollEl.scrollHeight - this.previewScrollEl.clientHeight);
+
+    // Sync with all preview containers that are currently visible
+    [this.previewScrollEl, this.mdPreviewScrollEl, this.htmlPreviewScrollEl]
+      .filter((el) => el && this.isElementVisible(el))
+      .forEach((previewEl) => {
+        if (previewEl) {
+          previewEl.scrollTop =
+            scrollPercentage *
+            (previewEl.scrollHeight - previewEl.clientHeight);
+        }
+      });
 
     setTimeout(() => {
       this.isScrolling = false;
@@ -215,19 +278,30 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   };
 
   private onPreviewScroll = (): void => {
+    this.syncPreviewToEditor(this.previewScrollEl);
+  };
+
+  private onMdPreviewScroll = (): void => {
+    this.syncPreviewToEditor(this.mdPreviewScrollEl);
+  };
+
+  private onHtmlPreviewScroll = (): void => {
+    this.syncPreviewToEditor(this.htmlPreviewScrollEl);
+  };
+
+  private syncPreviewToEditor(previewEl: HTMLElement | null): void {
     if (
       this.isScrolling ||
       !this.scrollSyncEnabled() ||
       !this.editorScrollEl ||
-      !this.previewScrollEl
+      !previewEl
     ) {
       return;
     }
 
     this.isScrolling = true;
     const scrollPercentage =
-      this.previewScrollEl.scrollTop /
-      (this.previewScrollEl.scrollHeight - this.previewScrollEl.clientHeight);
+      previewEl.scrollTop / (previewEl.scrollHeight - previewEl.clientHeight);
     this.editorScrollEl.scrollTop =
       scrollPercentage *
       (this.editorScrollEl.scrollHeight - this.editorScrollEl.clientHeight);
@@ -235,7 +309,18 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.isScrolling = false;
     }, 50);
-  };
+  }
+
+  /**
+   * Check if an element is currently visible in the DOM
+   */
+  private isElementVisible(element: HTMLElement): boolean {
+    return !!(
+      element.offsetWidth ||
+      element.offsetHeight ||
+      element.getClientRects().length
+    );
+  }
 
   async loadSavedTemplates(): Promise<void> {
     const templates = await this.templateStorage.loadAll();

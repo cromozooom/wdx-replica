@@ -1,5 +1,11 @@
 <div class="border-start overflow-hidden d-flex flex-column">
-  <ul ngbNav #nav="ngbNav" [(activeId)]="activeTab" class="nav-tabs px-2 pt-2">
+  <ul
+    ngbNav
+    #nav="ngbNav"
+    [(activeId)]="activeTab"
+    (activeIdChange)="changeTab($event)"
+    class="nav-tabs px-2 pt-2"
+  >
     <li [ngbNavItem]="'html'">
       <button ngbNavLink>HTML Output</button>
       <ng-template ngbNavContent>
@@ -17,6 +23,7 @@
                 <option
                   *ngFor="let theme of availableThemes"
                   [value]="theme.value"
+                  [selected]="theme.value === selectedTheme()"
                 >
                   {{ theme.label }} Theme
                 </option>
@@ -31,6 +38,7 @@
                 <option
                   *ngFor="let viewport of availableViewports"
                   [value]="viewport.value"
+                  [selected]="viewport.value === selectedViewport()"
                 >
                   {{ viewport.label }}
                 </option>
@@ -62,7 +70,7 @@
           <div
             #syncScrollPreview
             data-scroll-preview
-            class="flex-grow-1 d-flex overflow-auto p-2"
+            class="flex-grow-1 d-flex overflow-auto px-2 py-4"
           >
             <div
               class="preview-content mx-auto"
@@ -79,8 +87,36 @@
     <li [ngbNavItem]="'markdown'">
       <button ngbNavLink>Markdown Source</button>
       <ng-template ngbNavContent>
-        <div class="p-3">
+        <div
+          #syncScrollMDPreview
+          data-scroll-md-preview
+          class="p-3 overflow-auto flex-grow-1"
+        >
           <pre class="markdown-source mb-0"><code>{{ _markdown() }}</code></pre>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="'htmlWithVariables'">
+      <button ngbNavLink>HTML with Variables & Inline CSS</button>
+      <ng-template ngbNavContent>
+        <div class="w-100 h-100 overflow-hidden d-flex flex-column">
+          <div class="p-2 border-bottom">
+            <small class="text-muted">
+              This HTML includes template variables ({{ "{{" }} ... {{ "}}" }})
+              and inline CSS styles from the {{ selectedTheme() }} theme. Copy
+              this for use in external email systems or document generators.
+            </small>
+          </div>
+
+          <div
+            #syncScrollHTMLPreview
+            data-scroll-html-preview
+            class="flex-grow-1 overflow-auto p-2"
+          >
+            <pre
+              class="html-source mb-0"
+            ><code>{{ htmlWithVariablesAndInlineCSS() }}</code></pre>
+          </div>
         </div>
       </ng-template>
     </li>

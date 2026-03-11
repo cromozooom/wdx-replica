@@ -25,10 +25,11 @@
   // Natural text wrapping for long content
   // white-space: pre-wrap;
   width: 100%;
+  padding-bottom: 3rem;
 
   // Mobile viewport simulation
   &.viewport-mobile {
-    max-width: 500px;
+    max-width: 20rem;
   }
 
   // Email-like paragraph spacing
@@ -185,9 +186,20 @@
   color: #212529;
   white-space: pre-wrap;
   word-wrap: break-word;
-  overflow-x: auto;
-  max-height: 600px;
-  overflow-y: auto;
+}
+
+// HTML source code display
+.html-source {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 1rem;
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #212529;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 // ============================================================================

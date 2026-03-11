@@ -323,9 +323,34 @@ export class TemplateEditorComponent implements AfterViewInit, OnDestroy {
   }
 
   insertTable(): void {
-    this.editor?.action((ctx) => {
-      ctx.get(commandsCtx).call(insertTableCommand.key, { row: 3, col: 3 });
-    });
+    const rows = prompt("Enter number of rows:", "3");
+    const cols = prompt("Enter number of columns:", "3");
+
+    if (rows && cols) {
+      const rowCount = parseInt(rows, 10);
+      const colCount = parseInt(cols, 10);
+
+      if (isNaN(rowCount) || isNaN(colCount) || rowCount < 1 || colCount < 1) {
+        alert("Please enter valid numbers for rows and columns (minimum 1)");
+        return;
+      }
+
+      if (rowCount > 20 || colCount > 10) {
+        if (
+          !confirm(
+            `Creating a ${rowCount}x${colCount} table. This might be large. Continue?`,
+          )
+        ) {
+          return;
+        }
+      }
+
+      this.editor?.action((ctx) => {
+        ctx
+          .get(commandsCtx)
+          .call(insertTableCommand.key, { row: rowCount, col: colCount });
+      });
+    }
   }
 
   insertImage(): void {
