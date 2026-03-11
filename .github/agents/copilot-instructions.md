@@ -3,6 +3,10 @@
 Auto-generated from all feature plans. Last updated: 2026-02-02
 
 ## Active Technologies
+- TypeScript 5.7+ (strict mode, as per constitution) (001-template-assistant)
+- Browser localStorage for template persistence, file system (001-template-assistant)
+- TypeScript 5.7+ (strict mode) with Angular 19.2+ + Milkdown v7.19.0 (~115 KB: core 30 KB + (001-template-assistant)
+- Browser localStorage for template persistence, draft auto-save (001-template-assistant)
 
 - TypeScript 5.7+ + Angular 19.2+ (standalone), @ngrx/signals 19.2+, RxJS 7.5+,
   Angular Material 19.2+, Bootstrap 5.3 (utilities)
@@ -48,19 +52,17 @@ npm test; npm run lint
 TypeScript 5.7+ (strict mode) with Angular 19.2+: Follow standard conventions
 
 ## Recent Changes
+- 001-template-assistant: Added TypeScript 5.7+ (strict mode) with Angular 19.2+ + Milkdown v7.19.0 (~115 KB: core 30 KB +
+- 001-template-assistant: Added TypeScript 5.7+ (strict mode, as per constitution)
 
 - 001-jira-sidebar-nav: Added TypeScript 5.7+ (strict mode enabled) + Angular
   19.2.10 (standalone components, signals),
-- 001-jira-sidebar-nav: Added [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS
   CLARIFICATION] + [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]
 
 # 001-spx-magic-selector: Added TypeScript 5.7+ with strict mode enabled + Angular 19.2+, Angular Material 19.2+, ng-select,
 
-- 001-jsoneditor-scroll-demo: Added TypeScript 5.7+ (strict mode) + Angular
   19.2+, jsoneditor ^9.10.5 (already installed),
-- 001-spx-magic-selector: Added TypeScript 5.7+ with strict mode enabled +
   Angular 19.2+, Angular Material 19.2+, ng-select,
-- 001-ag-grid-ng-select-demo: Added TypeScript 5.7+ (strict mode) + Angular
   19.2+, ag-grid-enterprise 33.3+,
 
 <!-- MANUAL ADDITIONS START -->

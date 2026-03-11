@@ -1,0 +1,125 @@
+// Minimal custom styling - rely on Bootstrap where possible
+.field-selector-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.field-selector-dropdown {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+}
+
+.search-container {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+
+  &:focus {
+    border-color: #1976d2;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.15);
+  }
+}
+
+.field-list {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 350px;
+}
+
+.category-header {
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.field-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  border-bottom: 1px solid #f8f9fa;
+
+  &:hover {
+    background-color: #e3f2fd;
+  }
+
+  &:active {
+    background-color: #bbdefb;
+  }
+}
+
+.field-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212529;
+  margin-bottom: 2px;
+}
+
+.field-id {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.no-results {
+  padding: 24px 16px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.field-selector-footer {
+  padding: 8px 16px;
+  border-top: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.hint-text {
+  font-size: 11px;
+  color: #6c757d;
+}
+
+// Scrollbar styling (webkit only)
+.field-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.field-list::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+.field-list::-webkit-scrollbar-thumb {
+  background: #ced4da;
+  border-radius: 3px;
+
+  &:hover {
+    background: #adb5bd;
+  }
+}

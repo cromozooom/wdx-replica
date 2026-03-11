@@ -1,0 +1,128 @@
+<div class="border-start overflow-hidden d-flex flex-column">
+  <ul
+    ngbNav
+    #nav="ngbNav"
+    [(activeId)]="activeTab"
+    (activeIdChange)="changeTab($event)"
+    class="nav-tabs px-2 pt-2"
+  >
+    <li [ngbNavItem]="'html'">
+      <button ngbNavLink>HTML Output</button>
+      <ng-template ngbNavContent>
+        <div class="w-100 overflow-hidden d-flex flex-column">
+          <div
+            class="border-bottom d-flex gap-2 justify-content-between align-items-center p-2"
+          >
+            <div class="d-flex gap-2 align-items-center">
+              <select
+                class="form-select form-select-sm"
+                style="width: auto"
+                [value]="selectedTheme()"
+                (change)="changeTheme($any($event.target).value)"
+              >
+                <option
+                  *ngFor="let theme of availableThemes"
+                  [value]="theme.value"
+                  [selected]="theme.value === selectedTheme()"
+                >
+                  {{ theme.label }} Theme
+                </option>
+              </select>
+
+              <select
+                class="form-select form-select-sm"
+                style="width: auto"
+                [value]="selectedViewport()"
+                (change)="changeViewport($any($event.target).value)"
+              >
+                <option
+                  *ngFor="let viewport of availableViewports"
+                  [value]="viewport.value"
+                  [selected]="viewport.value === selectedViewport()"
+                >
+                  {{ viewport.label }}
+                </option>
+              </select>
+            </div>
+            <div>
+              <small class="text-muted">
+                Customer {{ currentCustomerIndex() + 1 }} of
+                {{ customerCount() }}
+              </small>
+              <div class="btn-group">
+                <button
+                  class="btn btn-outline-primary btn-sm"
+                  (click)="previousCustomer()"
+                  [disabled]="!canGoPrevious()"
+                >
+                  Previous
+                </button>
+                <button
+                  class="btn btn-outline-primary btn-sm"
+                  (click)="nextCustomer()"
+                  [disabled]="!canGoNext()"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            #syncScrollPreview
+            data-scroll-preview
+            class="flex-grow-1 d-flex overflow-auto px-2 py-4"
+          >
+            <div
+              class="preview-content mx-auto"
+              [class.viewport-mobile]="selectedViewport() === 'mobile'"
+              [class.theme-professional]="selectedTheme() === 'professional'"
+              [class.theme-modern]="selectedTheme() === 'modern'"
+              [class.theme-minimal]="selectedTheme() === 'minimal'"
+              [innerHTML]="renderedHtml()"
+            ></div>
+          </div>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="'markdown'">
+      <button ngbNavLink>Markdown Source</button>
+      <ng-template ngbNavContent>
+        <div
+          #syncScrollMDPreview
+          data-scroll-md-preview
+          class="p-3 overflow-auto flex-grow-1"
+        >
+          <pre class="markdown-source mb-0"><code>{{ _markdown() }}</code></pre>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="'htmlWithVariables'">
+      <button ngbNavLink>HTML with Variables & Inline CSS</button>
+      <ng-template ngbNavContent>
+        <div class="w-100 h-100 overflow-hidden d-flex flex-column">
+          <div class="p-2 border-bottom">
+            <small class="text-muted">
+              This HTML includes template variables ({{ "{{" }} ... {{ "}}" }})
+              and inline CSS styles from the {{ selectedTheme() }} theme. Copy
+              this for use in external email systems or document generators.
+            </small>
+          </div>
+
+          <div
+            #syncScrollHTMLPreview
+            data-scroll-html-preview
+            class="flex-grow-1 overflow-auto p-2"
+          >
+            <pre
+              class="html-source mb-0"
+            ><code>{{ htmlWithVariablesAndInlineCSS() }}</code></pre>
+          </div>
+        </div>
+      </ng-template>
+    </li>
+  </ul>
+  <div
+    class="w-100 flex-grow-1 d-flex overflow-hidden"
+    [ngbNavOutlet]="nav"
+  ></div>
+</div>

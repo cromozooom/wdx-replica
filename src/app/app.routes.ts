@@ -67,6 +67,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: "template-assistant",
+    loadChildren: () =>
+      import("./template-assistant/template-assistant.routes").then(
+        (m) => m.TEMPLATE_ASSISTANT_ROUTES,
+      ),
+  },
+  {
     path: "",
     redirectTo: "dashboard",
     pathMatch: "full",

@@ -1,0 +1,150 @@
+<div
+  class="border rounded bg-white flex-grow-1 d-flex flex-column overflow-hidden"
+>
+  <!-- Formatting Toolbar -->
+  <div
+    class="editor-toolbar border-bottom p-2 d-flex gap-2 align-items-center flex-wrap"
+  >
+    <!-- Heading buttons -->
+    <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyParagraph()"
+        title="Paragraph (convert to normal text)"
+      >
+        <i class="fa-solid fa-paragraph"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary d-flex gap-1 align-items-center"
+        (click)="applyHeading(1)"
+        title="Heading 1"
+      >
+        <i class="fa-solid fa-heading"></i>1
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary d-flex gap-1 align-items-center"
+        (click)="applyHeading(2)"
+        title="Heading 2"
+      >
+        <i class="fa-solid fa-heading"></i>2
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary d-flex gap-1 align-items-center"
+        (click)="applyHeading(3)"
+        title="Heading 3"
+      >
+        <i class="fa-solid fa-heading"></i>3
+      </button>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <!-- Text formatting -->
+    <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="toggleBold()"
+        title="Bold (Ctrl+B)"
+      >
+        <i class="fa-solid fa-bold"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="toggleItalic()"
+        title="Italic (Ctrl+I)"
+      >
+        <i class="fa-solid fa-italic"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="toggleStrikethrough()"
+        title="Strikethrough"
+      >
+        <i class="fa-solid fa-strikethrough"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="toggleCode()"
+        title="Inline Code"
+      >
+        <i class="fa-solid fa-code"></i>
+      </button>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <!-- Lists & Blocks -->
+    <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyBulletList()"
+        title="Bullet List"
+      >
+        <i class="fa-solid fa-list-ul"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyOrderedList()"
+        title="Numbered List"
+      >
+        <i class="fa-solid fa-list-ol"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="applyBlockquote()"
+        title="Blockquote"
+      >
+        <i class="fa-solid fa-quote-left"></i>
+      </button>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <!-- Insert elements -->
+    <div class="btn-group btn-group-sm" role="group">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="insertTable()"
+        title="Insert Table (custom rows & columns)"
+      >
+        <i class="fa-solid fa-table"></i>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="insertImage()"
+        title="Insert Image"
+      >
+        <i class="fa-solid fa-image"></i>
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="insertHorizontalRule()"
+        title="Horizontal Divider"
+      >
+        <i class="fa-solid fa-ruler-horizontal"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Editor -->
+  <div class="flex-grow-1 d-flex overflow-hidden">
+    <div #syncScrollEditor data-scroll-editor class="overflow-auto w-100">
+      <div #editorRef class="milkdown p-3"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="field-selector-overlay" *ngIf="visible" (click)="close()">
+  <div
+    class="field-selector-dropdown"
+    [style.top.px]="position.top"
+    [style.left.px]="position.left"
+    (click)="$event.stopPropagation()"
+  >
+    <!-- Search input -->
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search fields..."
+        [value]="searchQuery()"
+        (input)="onSearchChange($any($event.target).value)"
+        autofocus
+      />
+    </div>
+
+    <!-- Field list -->
+    <div class="field-list">
+      <ng-container
+        *ngFor="let category of ['personal', 'account', 'address', 'other']"
+      >
+        <ng-container *ngIf="(groupedFields()[category]?.length || 0) > 0">
+          <div class="category-header">
+            {{ getCategoryLabel(category) }}
+          </div>
+
+          <div
+            *ngFor="let field of groupedFields()[category]"
+            class="field-item"
+            (click)="selectField(field)"
+          >
+            <div class="field-label">{{ field.label }}</div>
+            <div class="field-id" *ngIf="field.description">
+              {{ field.description }}
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+
+      <!-- No results message -->
+      <div class="no-results" *ngIf="filteredFields().length === 0">
+        No fields found matching "{{ searchQuery() }}"
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="field-selector-footer">
+      <span class="hint-text">↑↓ Navigate • Enter Select • Esc Close</span>
+    </div>
+  </div>
+</div>
