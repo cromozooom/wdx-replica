@@ -13,11 +13,13 @@ import {
   ElementRef,
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { TemplateEditorComponent } from "./components/template-editor/template-editor.component";
 import { DataFieldSelectorComponent } from "./components/data-field-selector/data-field-selector.component";
 import { TemplatePreviewComponent } from "./components/template-preview/template-preview.component";
 import { DataFieldRegistryService } from "./services/data-field-registry.service";
 import { TemplateStorageService } from "./services/template-storage.service";
+import { CustomerDataService } from "./services/customer-data.service";
 import { DocumentTemplate, DataField } from "./models";
 
 const SCROLL_SYNC_STORAGE_KEY = "wdx-scroll-sync-enabled";
@@ -37,6 +39,7 @@ const SCROLL_SYNC_STORAGE_KEY = "wdx-scroll-sync-enabled";
 export class TemplateAssistantComponent implements OnInit, OnDestroy {
   @ViewChild("editor") editorComponent!: TemplateEditorComponent;
   @ViewChild("fileUpload") fileUploadInput!: ElementRef<HTMLInputElement>;
+  @ViewChild("jsonModal") jsonModalTemplate!: ElementRef;
 
   openingBraces = "{{";
   // State
@@ -62,9 +65,14 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
   savedTemplates = signal<DocumentTemplate[]>([]);
   selectedTemplateId = signal<string | null>(null);
 
+  // JSON modal data
+  customerJsonData = signal<string>("");
+
   constructor(
     private fieldRegistry: DataFieldRegistryService,
     private templateStorage: TemplateStorageService,
+    private customerDataService: CustomerDataService,
+    private modalService: NgbModal,
   ) {
     // Reactively update available fields when registry loads them
     effect(() => {
@@ -521,5 +529,31 @@ export class TemplateAssistantComponent implements OnInit, OnDestroy {
 
     // Reset input so the same file can be uploaded again
     input.value = "";
+  }
+
+  /**
+   * Show customer data JSON in a modal.
+   */
+  async showJson(): Promise<void> {
+    const customers = await this.customerDataService.loadCustomers();
+    const jsonData = { customers };
+    this.customerJsonData.set(JSON.stringify(jsonData, null, 2));
+
+    this.modalService.open(this.jsonModalTemplate, {
+      size: "lg",
+      scrollable: true,
+    });
+  }
+
+  /**
+   * Copy JSON to clipboard.
+   */
+  copyJsonToClipboard(): void {
+    navigator.clipboard
+      .writeText(this.customerJsonData())
+      .then(() => {
+        alert("JSON copied to clipboard!");
+      })
+      .catch((err) => console.error("Failed to copy to clipboard:", err));
   }
 }
