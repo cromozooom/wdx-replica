@@ -12,10 +12,39 @@ two custom features:
 2. **Text Alignment**: `[align:center]...[/align]` - sections with custom
    alignment (left/center/right/justify)
 
+**Important**: This is designed for simple, professional email templates
+(welcome letters, notifications, basic reports) - NOT for converting complex
+Word documents or creating marketing campaigns with fancy layouts. Email clients
+have severe limitations; we work within them using a shortcode-based approach
+that ensures compatibility across all devices (especially mobile).
+
 ## The Core Principle: Markdown is King 👑
 
 **CRITICAL CONCEPT**: Everything starts from a markdown file with shortcodes and
 variables. This file is saved to localStorage and is the single source of truth.
+
+**📱 Mobile-First**: All features must work on mobile devices (50%+ of emails
+are read on phones). This drives our design decisions.
+
+**🔧 Shortcode Philosophy**: Every feature beyond standard markdown (headings,
+lists, bold, italic) is implemented as a shortcode. This keeps the system
+simple, predictable, and extensible:
+
+- Text alignment: `[align:center]...[/align]`
+- Variables: `{{Field_Name}}`
+- Future features: `[button:url]`, `[image:id]`, `[signature]`, etc.
+
+**⚠️ NOT a Word Replacement ⚠️ **: This is NOT a tool for converting complex
+Word documents into email. Email clients have severe limitations:
+
+- ⚠️ No floating elements
+- ⚠️ No absolute positioning
+- ⚠️ No complex layouts
+- ⚠️ No background images (unreliable)
+- ⚠️ No external stylesheets
+
+Keep templates simple: headings, paragraphs, alignment, lists, tables. If it
+needs complex layout or graphics, use a professional email design tool instead.
 
 ```markdown
 [align:center]
@@ -113,6 +142,10 @@ When you open a saved template:
 **Email compatibility**: Uses inline CSS because email clients don't support
 external stylesheets or `<style>` tags reliably.
 
+**📱 Mobile-First**: All HTML output includes responsive meta tags (`viewport`,
+`width=device-width`) and uses flexible layouts that adapt to screen width.
+Themes are tested to ensure readability on 320px mobile screens.
+
 ## Key Components
 
 ### Milkdown Editor (3rd Party Library)
@@ -193,6 +226,46 @@ spacing.
 - **Remark/Unified**: Markdown parser and transformer
 - **localStorage**: Browser storage for saved templates
 - **TypeScript**: Type-safe code with strict mode
+
+## Design Philosophy: Shortcode-First Extension
+
+**Core Principle**: Markdown is the foundation. Every feature beyond standard
+markdown syntax is implemented as a **shortcode** (text-based syntax wrapped in
+brackets).
+
+**Why Shortcodes?**
+
+1. **Portable**: Plain text that works in any editor
+2. **Version-controllable**: Git can track changes line-by-line
+3. **Extensible**: New features = new shortcode patterns
+4. **Predictable**: Same syntax pattern for all custom features
+5. **Mobile-friendly**: All shortcodes render responsively on small screens
+
+**Shortcode Pattern**: `[feature:option]content[/feature]`
+
+**Current Shortcodes**:
+
+- Variables: `{{Field_Name}}` (pill rendering in editor)
+- Alignment: `[align:center]...[/align]` (left/center/right/justify)
+
+**Future Shortcodes** (examples of how to extend):
+
+- Buttons: `[button:https://example.com]Click Here[/button]`
+- Signatures: `[signature:manager]` (pre-defined signature blocks)
+- Spacers: `[spacer:20px]` (vertical spacing control)
+- Images: `[image:logo-id]` (from approved image library)
+
+**NOT Supported** (by design):
+
+- ❌ Complex multi-column layouts
+- ❌ Floating elements or absolute positioning
+- ❌ Background images (unreliable in email)
+- ❌ Custom fonts (use web-safe fonts only)
+- ❌ JavaScript or interactive elements
+- ❌ Complex Word document conversions
+
+**Rule of Thumb**: If you can't describe it in 1 line of text syntax, it's too
+complex for email templates. Keep it simple, keep it readable.
 
 ## For New Developers
 
