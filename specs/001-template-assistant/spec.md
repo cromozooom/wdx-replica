@@ -283,6 +283,78 @@ Delivers a polished, error-resistant editing experience.
 
 ---
 
+### User Story 5 - Text Alignment for Professional Layout (Priority: P2)
+
+Analysts can apply text alignment (left, center, right, justify) to sections of
+the document template using shortcode syntax, enabling professional formatting
+for headers, signatures, footers, and structured content like addresses. The
+alignment system uses a block-level shortcode format that wraps multiple
+paragraphs or headings while preserving the underlying markdown structure.
+
+**Why this priority**: Professional email templates often require centered
+headers, right-aligned dates, justified body text, or centered signatures. This
+feature enables analysts to create visually polished documents that meet
+corporate branding standards without requiring HTML knowledge. It complements
+the data field system by allowing formatted layout around merged customer data.
+
+**Independent Test**: Can be tested by creating a document with various text
+blocks, applying alignment shortcodes, and verifying that:
+
+- The editor shows visual alignment styling (colored borders/badges)
+- Preview/export maintains alignment via inline CSS styles
+- Markdown source preserves shortcodes on save/reload
+- Alignment works with nested content (headings, pills, lists)
+
+**Acceptance Scenarios**:
+
+1. **Shortcode Syntax for Alignment**
+
+   - **Given** the Analyst is editing a document template
+   - **When** they wrap content with alignment shortcodes: `[align:center]`,
+     `[align:right]`, `[align:left]`, or `[align:justify]`
+   - **Then** the wrapped content displays with the specified alignment in both
+     editor and preview
+   - **And** the shortcode syntax is preserved when saving and reloading the
+     template
+   - **User Value**: Provides a simple, text-based method to apply alignment
+     without toolbar buttons or formatting menus
+
+2. **Block-Level Content Support**
+
+   - **Given** an alignment shortcode block exists in the document
+   - **When** the Analyst types multiple paragraphs, headings, or inserts data
+     field pills inside the alignment block
+   - **Then** all nested content maintains the specified alignment
+   - **And** markdown structure (headings, lists, pills) is preserved within the
+     aligned block
+   - **User Value**: Allows complex formatted sections (e.g., centered header
+     with company logo pill + subtitle paragraph) without breaking document
+     structure
+
+3. **Visual Editor Feedback**
+
+   - **Given** an alignment block exists in the document
+   - **When** the Analyst views the editor
+   - **Then** the alignment container displays a colored border (green=left,
+     blue=center, orange=right, purple=justify)
+   - **And** a small badge showing the alignment type appears on hover
+   - **And** the editor cursor can freely move into and edit content within the
+     alignment block
+   - **User Value**: Clear visual distinction helps analysts understand document
+     structure and identify aligned sections at a glance
+
+4. **HTML Email Compatibility**
+
+   - **Given** a document template with alignment shortcodes
+   - **When** the template is merged with customer data and exported for email
+   - **Then** alignment is rendered using inline CSS (`style="text-align: X;"`)
+   - **And** the HTML output works correctly in email clients that strip
+     external stylesheets
+   - **User Value**: Ensures professional formatting survives the email
+     rendering process across different email clients
+
+---
+
 ### Edge Cases
 
 - **No Customer Selected**: Analysts can create templates without having a
@@ -386,6 +458,27 @@ Delivers a polished, error-resistant editing experience.
 - **FR-028**: System MUST automatically save draft changes to localStorage
   (under a reserved "draft" key) every 30 seconds to prevent data loss, while
   keeping manual saves under user-specified names separate
+- **FR-029**: System MUST support text alignment shortcodes using the syntax
+  `[align:left]`, `[align:center]`, `[align:right]`, and `[align:justify]` with
+  corresponding closing tags `[/align]` to wrap content blocks
+- **FR-030**: Alignment shortcodes MUST support block-level content including
+  multiple paragraphs, headings, lists, and data field pills within a single
+  aligned block
+- **FR-031**: System MUST preserve alignment shortcode syntax when saving
+  templates to localStorage and when downloading templates to the file system,
+  ensuring perfect round-trip fidelity
+- **FR-032**: Editor MUST provide visual feedback for alignment blocks using
+  colored borders (green for left, blue for center, orange for right, purple for
+  justify) and hover badges showing the alignment type
+- **FR-033**: System MUST convert alignment shortcodes to inline CSS
+  (`style="text-align: X;"`) when exporting merged documents as HTML for email,
+  ensuring email client compatibility without external stylesheets
+- **FR-034**: Users MUST be able to edit content freely within alignment blocks,
+  with the cursor moving naturally into and out of aligned sections without
+  requiring special navigation commands
+- **FR-035**: System MUST render alignment correctly in the live preview pane,
+  showing the same text alignment that will appear in the final HTML email
+  output
 
 ### Key Entities _(include if feature involves data)_
 
@@ -430,6 +523,12 @@ Delivers a polished, error-resistant editing experience.
 - **SC-009**: Analysts can swap one data field for another in under 3 seconds
   using arrow key navigation or click-to-edit, without needing to delete and
   re-insert
+- **SC-010**: 100% of alignment shortcodes are preserved with perfect fidelity
+  when templates are saved to localStorage and reloaded, ensuring no data loss
+  or corruption of formatting markup
+- **SC-011**: Alignment formatting renders correctly in the HTML preview and
+  exported email output 100% of the time, matching the visual alignment shown in
+  the editor with colored borders and badges
 
 ## Assumptions & Dependencies _(optional)_
 
