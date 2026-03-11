@@ -49,6 +49,10 @@
           </label>
         </div>
         <div class="btn-group">
+          <!-- Open a Bootstrap modal with the JSON that is loaded as a source -->
+          <button class="btn btn-sm btn-outline-secondary" (click)="showJson()">
+            Show JSON
+          </button>
           <button
             class="btn btn-sm btn-outline-secondary"
             (click)="clearTemplate()"
@@ -120,3 +124,39 @@
     </div>
   </div>
 </div>
+
+<!-- JSON Modal Template -->
+<ng-template #jsonModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">Customer Data JSON</h5>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss()"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <small class="text-muted"
+        >Customer data source for template interpolation</small
+      >
+      <button
+        class="btn btn-sm btn-outline-primary"
+        (click)="copyJsonToClipboard()"
+      >
+        <i class="fa-solid fa-copy me-1"></i>
+        Copy to Clipboard
+      </button>
+    </div>
+    <pre
+      class="bg-light p-3 rounded border"
+      style="max-height: 60vh; overflow: auto"
+    ><code>{{ customerJsonData() }}</code></pre>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.close()">
+      Close
+    </button>
+  </div>
+</ng-template>
