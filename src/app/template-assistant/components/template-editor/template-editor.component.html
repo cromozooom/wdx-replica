@@ -13,31 +13,31 @@
         (click)="applyParagraph()"
         title="Paragraph (convert to normal text)"
       >
-        P
+        <i class="fa-solid fa-paragraph"></i>
       </button>
       <button
         type="button"
-        class="btn btn-outline-secondary"
+        class="btn btn-outline-secondary d-flex gap-1 align-items-center"
         (click)="applyHeading(1)"
         title="Heading 1"
       >
-        H1
+        <i class="fa-solid fa-heading"></i>1
       </button>
       <button
         type="button"
-        class="btn btn-outline-secondary"
+        class="btn btn-outline-secondary d-flex gap-1 align-items-center"
         (click)="applyHeading(2)"
         title="Heading 2"
       >
-        H2
+        <i class="fa-solid fa-heading"></i>2
       </button>
       <button
         type="button"
-        class="btn btn-outline-secondary"
+        class="btn btn-outline-secondary d-flex gap-1 align-items-center"
         (click)="applyHeading(3)"
         title="Heading 3"
       >
-        H3
+        <i class="fa-solid fa-heading"></i>3
       </button>
     </div>
 
@@ -51,7 +51,7 @@
         (click)="toggleBold()"
         title="Bold (Ctrl+B)"
       >
-        <strong>B</strong>
+        <i class="fa-solid fa-bold"></i>
       </button>
       <button
         type="button"
@@ -59,7 +59,7 @@
         (click)="toggleItalic()"
         title="Italic (Ctrl+I)"
       >
-        <em>I</em>
+        <i class="fa-solid fa-italic"></i>
       </button>
       <button
         type="button"
@@ -67,7 +67,7 @@
         (click)="toggleStrikethrough()"
         title="Strikethrough"
       >
-        <s>S</s>
+        <i class="fa-solid fa-strikethrough"></i>
       </button>
       <button
         type="button"
@@ -75,7 +75,7 @@
         (click)="toggleCode()"
         title="Inline Code"
       >
-        <code>&lt;/&gt;</code>
+        <i class="fa-solid fa-code"></i>
       </button>
     </div>
 
@@ -89,7 +89,7 @@
         (click)="applyBulletList()"
         title="Bullet List"
       >
-        • List
+        <i class="fa-solid fa-list-ul"></i>
       </button>
       <button
         type="button"
@@ -97,7 +97,7 @@
         (click)="applyOrderedList()"
         title="Numbered List"
       >
-        1. List
+        <i class="fa-solid fa-list-ol"></i>
       </button>
       <button
         type="button"
@@ -105,7 +105,7 @@
         (click)="applyBlockquote()"
         title="Blockquote"
       >
-        " Quote
+        <i class="fa-solid fa-quote-left"></i>
       </button>
     </div>
 
@@ -119,7 +119,7 @@
         (click)="insertTable()"
         title="Insert Table (custom rows & columns)"
       >
-        ⊞ Table
+        <i class="fa-solid fa-table"></i>
       </button>
       <button
         type="button"
@@ -127,23 +127,16 @@
         (click)="insertImage()"
         title="Insert Image"
       >
-        🖼 Image
+        <i class="fa-solid fa-image"></i>
       </button>
-      <button
-        type="button"
-        class="btn btn-outline-secondary"
-        (click)="insertCodeBlock()"
-        title="Code Block"
-      >
-        &lt;/&gt; Code
-      </button>
+
       <button
         type="button"
         class="btn btn-outline-secondary"
         (click)="insertHorizontalRule()"
         title="Horizontal Divider"
       >
-        ― HR
+        <i class="fa-solid fa-ruler-horizontal"></i>
       </button>
     </div>
   </div>
